@@ -6,8 +6,8 @@
   "files": [
     {
       "path": "CITATION.cff",
-      "bytes": 678,
-      "sha256": "554678ecb3d53500b7b87abf990e1af91aca7ded2accc876f30e992c16608f2e"
+      "bytes": 680,
+      "sha256": "ff404515138648d4734505ce61878cff27d0b25a785935c959b2ecbd76b60728"
     },
     {
       "path": "CURATION_REPORT.json",
@@ -96,8 +96,8 @@
     },
     {
       "path": "README.md",
-      "bytes": 3653,
-      "sha256": "b574e1e43e3de020c9f6c8e2bb31fe39425ed2a3d77d2314d19c1d4394a3beb5"
+      "bytes": 3662,
+      "sha256": "d124b948f6d07c06bee9d5c2a2b589957e5af6587f06aba68f17ab8fb1c03f4c"
     },
     {
       "path": "REPRODUCE.md",
@@ -22871,8 +22871,8 @@
     },
     {
       "path": "VERSION_POLICY.md",
-      "bytes": 1096,
-      "sha256": "a5b844bdf38dd6c268d2b7de353fc80ee8489b9c86d384db400ca26a0fccb944"
+      "bytes": 1072,
+      "sha256": "baed4661a451e77db2cb2b3054b3b5b4fde5f72ed4edd6c541067af1edab8433"
     }
   ]
 }

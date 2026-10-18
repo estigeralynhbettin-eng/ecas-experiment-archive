@@ -24,5 +24,5 @@
     "evidence contracts",
     "reproducibility"
   ],
-  "notes": "Dataset and documentation CC BY-SA 4.0; author software Apache-2.0; unchanged original R12 and third-party materials retain existing terms. This metadata file does not establish a Zenodo deposition or DOI. See LICENSE_STATUS.md and LICENSE_SCOPE.csv."
+  "notes": "Published Zenodo dataset: https://doi.org/10.5281/zenodo.23444761. Dataset/documentation CC BY-SA 4.0; author software Apache-2.0; original R12 and third-party materials retain existing terms. The initial GitHub v1.0.0 tag/assets predate DOI insertion and are preserved. See GITHUB_ARCHIVE_HISTORY.md."
 }

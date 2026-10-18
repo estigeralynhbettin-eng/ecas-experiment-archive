@@ -55,8 +55,10 @@ release. See `LICENSE_STATUS.md` before reuse.
 
 Original author software is licensed under Apache-2.0. Original author data, documentation and checklist material are licensed under CC BY-SA 4.0. Original R12 material and third-party material retain their existing terms. See `LICENSE_STATUS.md` and `LICENSE_SCOPE.csv` for the exact scope.
 
-Use `CITATION.cff` to cite version 1.0.0. The authors will add the actual Zenodo DOI after it is assigned; no DOI is claimed in this predeposit file.
+Use `CITATION.cff` to cite version 1.0.0. Zenodo DOI: https://doi.org/10.5281/zenodo.23444761.
 
 ## Funding
 
 This work was supported by the Discipline Breakthrough Pioneer Program of the Ministry of Education of China (Grant No. JYB2025XDXM122).
+
+Related ECAS resource: https://doi.org/10.5281/zenodo.23444774

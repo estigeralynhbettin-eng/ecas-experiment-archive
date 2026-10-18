@@ -15,4 +15,5 @@ authors:
 date-released: "2026-10-18"
 license: CC-BY-SA-4.0
 # Record-level dataset license; see LICENSE_STATUS.md for software and upstream exceptions.
-# DOI is intentionally absent until Zenodo assigns the real identifier.
+doi: 10.5281/zenodo.23444761
+url: https://doi.org/10.5281/zenodo.23444761
