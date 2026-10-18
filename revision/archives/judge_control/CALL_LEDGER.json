@@ -1,0 +1,178 @@
+[
+  {
+    "index": 1,
+    "global_attempt_index": 31,
+    "scope_id": "ECAS-TYPED-IR-SEMANTIC-JUDGE-CONTROL-20261014-01",
+    "task": "FSV-B19",
+    "status": "COMPLETED",
+    "started_at": "2026-10-15T01:00:07.927315+00:00",
+    "prompt_path": "/mnt/d/lunwen/EC-CSI投稿/working/exploration/20261014_matched_evidence_labor/judge_control/prompts/FSV-B19.txt",
+    "prompt_sha256": "69e887e58dc0fadfff3ccb28afa6a23d9603f15b5fdd45c67a367d9018b022f1",
+    "estimated_prompt_tokens": 10222,
+    "main_ledger_sha256_at_dispatch": "afe1cd8a5dcb6de7029291b102330cf5187f15213bb373609591d1fdaf9fa5c7",
+    "main_attempts": 30,
+    "raw_response_path": "/mnt/d/lunwen/EC-CSI投稿/working/exploration/20261014_matched_evidence_labor/judge_control/calls/01_FSV-B19_typed_ir_judge/response.raw.json",
+    "max_input_tokens": 16384,
+    "max_tokens": 16384,
+    "thinking": "enabled",
+    "reasoning_effort": "high",
+    "retry_count": 0,
+    "main_plus_judge_cap": 44,
+    "wrapper_exit": 0,
+    "latency_seconds": 23.5,
+    "raw_response_sha256": "729016fcf147de0932e543c26e08156be9eb281d3bbe4ec2be330df54bda78de",
+    "raw_response_bytes": 9128,
+    "returned_model": "glm-5.2",
+    "finish_reason": "stop",
+    "usage": {
+      "completion_tokens": 1979,
+      "completion_tokens_details": {
+        "reasoning_tokens": 1415
+      },
+      "prompt_tokens": 7324,
+      "prompt_tokens_details": {
+        "cached_tokens": 0
+      },
+      "total_tokens": 9303
+    },
+    "capture_mode": "direct_before_parse",
+    "cost_status": "not_reported_by_provider",
+    "output_path": "/mnt/d/lunwen/EC-CSI投稿/working/exploration/20261014_matched_evidence_labor/judge_control/calls/01_FSV-B19_typed_ir_judge/parsed_output.json",
+    "output_sha256": "d8b57b63afe02871f59a434843a8654bbd65cf8991b374642b5bb93e62c96ef1",
+    "parse_status": "PASS",
+    "completeness_gate": "PASS",
+    "completed_at": "2026-10-15T01:00:31.513375+00:00"
+  },
+  {
+    "index": 2,
+    "global_attempt_index": 32,
+    "scope_id": "ECAS-TYPED-IR-SEMANTIC-JUDGE-CONTROL-20261014-01",
+    "task": "FSV-B13",
+    "status": "COMPLETED",
+    "started_at": "2026-10-15T01:01:12.258248+00:00",
+    "prompt_path": "/mnt/d/lunwen/EC-CSI投稿/working/exploration/20261014_matched_evidence_labor/judge_control/prompts/FSV-B13.txt",
+    "prompt_sha256": "648ad663d617a34b26ed9b25abfeceaca7b3e4855fdfbdcc7025404a875a5825",
+    "estimated_prompt_tokens": 7677,
+    "main_ledger_sha256_at_dispatch": "afe1cd8a5dcb6de7029291b102330cf5187f15213bb373609591d1fdaf9fa5c7",
+    "main_attempts": 30,
+    "raw_response_path": "/mnt/d/lunwen/EC-CSI投稿/working/exploration/20261014_matched_evidence_labor/judge_control/calls/02_FSV-B13_typed_ir_judge/response.raw.json",
+    "max_input_tokens": 16384,
+    "max_tokens": 16384,
+    "thinking": "enabled",
+    "reasoning_effort": "high",
+    "retry_count": 0,
+    "main_plus_judge_cap": 44,
+    "wrapper_exit": 0,
+    "latency_seconds": 20.436,
+    "raw_response_sha256": "3295119582d4d2a7948b0288fd2e45b1dc6a0e8c11732b7a3318c0867acd8599",
+    "raw_response_bytes": 8449,
+    "returned_model": "glm-5.2",
+    "finish_reason": "stop",
+    "usage": {
+      "completion_tokens": 1784,
+      "completion_tokens_details": {
+        "reasoning_tokens": 1420
+      },
+      "prompt_tokens": 5331,
+      "prompt_tokens_details": {
+        "cached_tokens": 0
+      },
+      "total_tokens": 7115
+    },
+    "capture_mode": "direct_before_parse",
+    "cost_status": "not_reported_by_provider",
+    "output_path": "/mnt/d/lunwen/EC-CSI投稿/working/exploration/20261014_matched_evidence_labor/judge_control/calls/02_FSV-B13_typed_ir_judge/parsed_output.json",
+    "output_sha256": "8c526df75a7989745798a96bdbc9b495844489ad6306451811c4b6146c1aa9c3",
+    "parse_status": "PASS",
+    "completeness_gate": "PASS",
+    "completed_at": "2026-10-15T01:01:32.783413+00:00"
+  },
+  {
+    "index": 3,
+    "global_attempt_index": 33,
+    "scope_id": "ECAS-TYPED-IR-SEMANTIC-JUDGE-CONTROL-20261014-01",
+    "task": "FSV-B17",
+    "status": "COMPLETED",
+    "started_at": "2026-10-15T01:01:33.262783+00:00",
+    "prompt_path": "/mnt/d/lunwen/EC-CSI投稿/working/exploration/20261014_matched_evidence_labor/judge_control/prompts/FSV-B17.txt",
+    "prompt_sha256": "539fae9ab00858b2682721de9ec136db94be5e3142e35d3c495933a317cfc04e",
+    "estimated_prompt_tokens": 6690,
+    "main_ledger_sha256_at_dispatch": "afe1cd8a5dcb6de7029291b102330cf5187f15213bb373609591d1fdaf9fa5c7",
+    "main_attempts": 30,
+    "raw_response_path": "/mnt/d/lunwen/EC-CSI投稿/working/exploration/20261014_matched_evidence_labor/judge_control/calls/03_FSV-B17_typed_ir_judge/response.raw.json",
+    "max_input_tokens": 16384,
+    "max_tokens": 16384,
+    "thinking": "enabled",
+    "reasoning_effort": "high",
+    "retry_count": 0,
+    "main_plus_judge_cap": 44,
+    "wrapper_exit": 0,
+    "latency_seconds": 23.54,
+    "raw_response_sha256": "135816c74350815a873c2b90a3054f2d98622fd018880bf723b622e342dff85b",
+    "raw_response_bytes": 9592,
+    "returned_model": "glm-5.2",
+    "finish_reason": "stop",
+    "usage": {
+      "completion_tokens": 2014,
+      "completion_tokens_details": {
+        "reasoning_tokens": 1337
+      },
+      "prompt_tokens": 4685,
+      "prompt_tokens_details": {
+        "cached_tokens": 0
+      },
+      "total_tokens": 6699
+    },
+    "capture_mode": "direct_before_parse",
+    "cost_status": "not_reported_by_provider",
+    "output_path": "/mnt/d/lunwen/EC-CSI投稿/working/exploration/20261014_matched_evidence_labor/judge_control/calls/03_FSV-B17_typed_ir_judge/parsed_output.json",
+    "output_sha256": "c32f7304bc112ffbcca4a6394ade7867d9b6e18418870a26efd5f086e4f31f96",
+    "parse_status": "PASS",
+    "completeness_gate": "PASS",
+    "completed_at": "2026-10-15T01:01:56.865113+00:00"
+  },
+  {
+    "index": 4,
+    "global_attempt_index": 34,
+    "scope_id": "ECAS-TYPED-IR-SEMANTIC-JUDGE-CONTROL-20261014-01",
+    "task": "FSV-S03",
+    "status": "COMPLETED",
+    "started_at": "2026-10-15T01:01:57.267788+00:00",
+    "prompt_path": "/mnt/d/lunwen/EC-CSI投稿/working/exploration/20261014_matched_evidence_labor/judge_control/prompts/FSV-S03.txt",
+    "prompt_sha256": "0a95f4ed7f66e8f50b423570c6cb5d9911e837858f0c6d24c755fd0e606f76e9",
+    "estimated_prompt_tokens": 3853,
+    "main_ledger_sha256_at_dispatch": "afe1cd8a5dcb6de7029291b102330cf5187f15213bb373609591d1fdaf9fa5c7",
+    "main_attempts": 30,
+    "raw_response_path": "/mnt/d/lunwen/EC-CSI投稿/working/exploration/20261014_matched_evidence_labor/judge_control/calls/04_FSV-S03_typed_ir_judge/response.raw.json",
+    "max_input_tokens": 16384,
+    "max_tokens": 16384,
+    "thinking": "enabled",
+    "reasoning_effort": "high",
+    "retry_count": 0,
+    "main_plus_judge_cap": 44,
+    "wrapper_exit": 0,
+    "latency_seconds": 9.173,
+    "raw_response_sha256": "07a18576c68cc40dd1e6f7a56edf8ac66ff184f9518e70ebeb1ef97d5d3a3e7f",
+    "raw_response_bytes": 3860,
+    "returned_model": "glm-5.2",
+    "finish_reason": "stop",
+    "usage": {
+      "completion_tokens": 836,
+      "completion_tokens_details": {
+        "reasoning_tokens": 355
+      },
+      "prompt_tokens": 2659,
+      "prompt_tokens_details": {
+        "cached_tokens": 0
+      },
+      "total_tokens": 3495
+    },
+    "capture_mode": "direct_before_parse",
+    "cost_status": "not_reported_by_provider",
+    "output_path": "/mnt/d/lunwen/EC-CSI投稿/working/exploration/20261014_matched_evidence_labor/judge_control/calls/04_FSV-S03_typed_ir_judge/parsed_output.json",
+    "output_sha256": "10d7f1257f9b31335f0c980c06fc85aae10d2fedb70fc78f6038130729531335",
+    "parse_status": "PASS",
+    "completeness_gate": "PASS",
+    "completed_at": "2026-10-15T01:02:06.518825+00:00"
+  }
+]

@@ -1,0 +1,32 @@
+{
+  "ir_version": "EC-FIELD-MODEL-IR-V3",
+  "candidate_id": "FSV-B17-CAND-01",
+  "decision": "propose",
+  "target": {
+    "operation": "POST /api/resource/Sales Order",
+    "system": "ERPNext",
+    "version": "16.0.0"
+  },
+  "policy_id": "FSV-B17-CUSTOMER-DISABLED-DISALLOW-SO",
+  "evidence_refs": [
+    "VIS-FSV-B17-01",
+    "VIS-FSV-B17-02",
+    "VIS-FSV-B17-RUNTIME-ABI"
+  ],
+  "rules": [
+    {
+      "rule_id": "FSV-B17-RULE-01",
+      "primitive_id": "SP-SERVER-AUTHORITY-WORKFLOW",
+      "op": "not_registered",
+      "evidence_refs": [
+        "VIS-FSV-B17-01",
+        "VIS-FSV-B17-RUNTIME-ABI"
+      ],
+      "params": {
+        "path": "/trusted/customerDisabled"
+      }
+    }
+  ],
+  "reason_code": "none",
+  "missing_evidence": []
+}

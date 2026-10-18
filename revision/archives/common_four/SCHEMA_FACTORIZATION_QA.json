@@ -1,0 +1,11 @@
+{
+  "status": "PASS",
+  "classification": "LOSSLESS_DECOMPOSITION_FROM_FULL_SCHEMA",
+  "original_schema_sha256": "d9168bf982cc37e44d994268fba54bbd0ed0640afd41e3ceea2a6eaa2eebdac6",
+  "factored_schema_sha256": "83ab1a791b341b704c9db09bbeaf0c5050de5f639a40dee4cfe668f723d0737e",
+  "reconstructed_full_schema_equal": true,
+  "all_definitions_preserved_except_factored_rule": true,
+  "variant_count": 15,
+  "historical_prompt_schema_omitted_constraints": 25,
+  "model_calls": 0
+}

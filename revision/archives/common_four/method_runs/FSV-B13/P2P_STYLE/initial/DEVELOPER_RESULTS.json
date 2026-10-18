@@ -1,0 +1,95 @@
+{
+  "passed": true,
+  "rows": [
+    {
+      "id": "t1_qty_within_allowance",
+      "expected": "allow",
+      "actual": {
+        "status": "EXECUTED",
+        "decision": "allow",
+        "exit_code": 0
+      },
+      "pass": true
+    },
+    {
+      "id": "t2_qty_exceeds_allowance_with_authorized_role",
+      "expected": "allow",
+      "actual": {
+        "status": "EXECUTED",
+        "decision": "allow",
+        "exit_code": 0
+      },
+      "pass": true
+    },
+    {
+      "id": "t3_qty_exceeds_allowance_without_authorized_role",
+      "expected": "deny",
+      "actual": {
+        "status": "EXECUTED",
+        "decision": "deny",
+        "exit_code": 0
+      },
+      "pass": true
+    },
+    {
+      "id": "t4_qty_equals_maximum_allowance",
+      "expected": "allow",
+      "actual": {
+        "status": "EXECUTED",
+        "decision": "allow",
+        "exit_code": 0
+      },
+      "pass": true
+    },
+    {
+      "id": "t5_qty_exceeds_allowance_by_one_without_authorized_role",
+      "expected": "deny",
+      "actual": {
+        "status": "EXECUTED",
+        "decision": "deny",
+        "exit_code": 0
+      },
+      "pass": true
+    },
+    {
+      "id": "t6_qty_exceeds_allowance_with_authorized_role_false_edge_case",
+      "expected": "allow",
+      "actual": {
+        "status": "EXECUTED",
+        "decision": "allow",
+        "exit_code": 0
+      },
+      "pass": true
+    },
+    {
+      "id": "dev_limit",
+      "expected": "allow",
+      "actual": {
+        "status": "EXECUTED",
+        "decision": "allow",
+        "exit_code": 0
+      },
+      "pass": true
+    },
+    {
+      "id": "dev_over",
+      "expected": "deny",
+      "actual": {
+        "status": "EXECUTED",
+        "decision": "deny",
+        "exit_code": 0
+      },
+      "pass": true
+    },
+    {
+      "id": "dev_role_exception",
+      "expected": "allow",
+      "actual": {
+        "status": "EXECUTED",
+        "decision": "allow",
+        "exit_code": 0
+      },
+      "pass": true
+    }
+  ]
+}

@@ -1,0 +1,1522 @@
+[
+  {
+    "index": 1,
+    "task": "FSV-B19",
+    "stage": "p2p_rego",
+    "smoke": true,
+    "started_at": "2026-10-14T11:42:07.012695+00:00",
+    "status": "COMPLETED",
+    "prompt_path": "/mnt/d/lunwen/EC-CSI投稿/working/exploration/20261014_four_case_peer_baselines/calls/01_FSV-B19_p2p_rego/prompt.txt",
+    "prompt_sha256": "fc3dfc983ed69559d5693918ccb66511239cefec5d31b04d97199b22e38f7452",
+    "prompt_bytes": 26007,
+    "estimated_prompt_tokens": 13132,
+    "token_count_kind": "UTF8_BYTES_DIV_2_ESTIMATE_NOT_EXACT_GLM_TOKENIZER",
+    "raw_response_path": "/mnt/d/lunwen/EC-CSI投稿/working/exploration/20261014_four_case_peer_baselines/calls/01_FSV-B19_p2p_rego/response.raw.json",
+    "max_tokens": 16384,
+    "retry_count": 0,
+    "wrapper_exit": 0,
+    "latency_seconds": 32.444,
+    "raw_response_sha256": "6eefe4fe8b10b7e877a78b6cd4653f253d2d4599f5c403436c8d996f5e05711e",
+    "raw_response_bytes": 12375,
+    "returned_model": "glm-5.2",
+    "finish_reason": "stop",
+    "usage": {
+      "completion_tokens": 3124,
+      "completion_tokens_details": {
+        "reasoning_tokens": 2502
+      },
+      "prompt_tokens": 6430,
+      "prompt_tokens_details": {
+        "cached_tokens": 0
+      },
+      "total_tokens": 9554
+    },
+    "cost_status": "not_reported_by_provider",
+    "capture_mode": "direct_before_parse",
+    "content_chars": 1691,
+    "parse_status": "PASS",
+    "completeness_gate": "PASS",
+    "completed_at": "2026-10-14T11:42:41.231907+00:00",
+    "output_path": "/mnt/d/lunwen/EC-CSI投稿/working/exploration/20261014_four_case_peer_baselines/calls/01_FSV-B19_p2p_rego/parsed_output.json"
+  },
+  {
+    "index": 2,
+    "task": "FSV-B19",
+    "stage": "autopac_generate",
+    "smoke": true,
+    "started_at": "2026-10-14T11:42:41.966239+00:00",
+    "status": "COMPLETED",
+    "prompt_path": "/mnt/d/lunwen/EC-CSI投稿/working/exploration/20261014_four_case_peer_baselines/calls/02_FSV-B19_autopac_generate/prompt.txt",
+    "prompt_sha256": "7d07280a4db61feb076314d28306054406a0b119d31cbcb31f0f8d6f62e79f56",
+    "prompt_bytes": 25641,
+    "estimated_prompt_tokens": 12949,
+    "token_count_kind": "UTF8_BYTES_DIV_2_ESTIMATE_NOT_EXACT_GLM_TOKENIZER",
+    "raw_response_path": "/mnt/d/lunwen/EC-CSI投稿/working/exploration/20261014_four_case_peer_baselines/calls/02_FSV-B19_autopac_generate/response.raw.json",
+    "max_tokens": 16384,
+    "retry_count": 0,
+    "wrapper_exit": 0,
+    "latency_seconds": 11.368,
+    "raw_response_sha256": "a71fbfdda0eec87da8d3b693aec589d13336c07da33825f1a0de8d0c2fed38a4",
+    "raw_response_bytes": 4567,
+    "returned_model": "glm-5.2",
+    "finish_reason": "stop",
+    "usage": {
+      "completion_tokens": 994,
+      "completion_tokens_details": {
+        "reasoning_tokens": 566
+      },
+      "prompt_tokens": 6339,
+      "prompt_tokens_details": {
+        "cached_tokens": 0
+      },
+      "total_tokens": 7333
+    },
+    "cost_status": "not_reported_by_provider",
+    "capture_mode": "direct_before_parse",
+    "content_chars": 1549,
+    "parse_status": "PASS",
+    "completeness_gate": "PASS",
+    "completed_at": "2026-10-14T11:42:53.418511+00:00",
+    "output_path": "/mnt/d/lunwen/EC-CSI投稿/working/exploration/20261014_four_case_peer_baselines/calls/02_FSV-B19_autopac_generate/parsed_output.json"
+  },
+  {
+    "index": 3,
+    "task": "FSV-B19",
+    "stage": "ecas_generate",
+    "smoke": true,
+    "started_at": "2026-10-14T11:42:54.111984+00:00",
+    "status": "COMPLETED",
+    "prompt_path": "/mnt/d/lunwen/EC-CSI投稿/working/exploration/20261014_four_case_peer_baselines/calls/03_FSV-B19_ecas_generate/prompt.txt",
+    "prompt_sha256": "343034879e513b5005ec8636c9810ad4dae0e13b4e6e665f7908ce2876c25e9c",
+    "prompt_bytes": 31286,
+    "estimated_prompt_tokens": 15771,
+    "token_count_kind": "UTF8_BYTES_DIV_2_ESTIMATE_NOT_EXACT_GLM_TOKENIZER",
+    "raw_response_path": "/mnt/d/lunwen/EC-CSI投稿/working/exploration/20261014_four_case_peer_baselines/calls/03_FSV-B19_ecas_generate/response.raw.json",
+    "max_tokens": 16384,
+    "retry_count": 0,
+    "wrapper_exit": 0,
+    "latency_seconds": 26.074,
+    "raw_response_sha256": "34c4e2feedd788e76471ab18da4b6dabb29f0a2d7ed70d556d3ce63f2fd1f1d3",
+    "raw_response_bytes": 9879,
+    "returned_model": "glm-5.2",
+    "finish_reason": "stop",
+    "usage": {
+      "completion_tokens": 2270,
+      "completion_tokens_details": {
+        "reasoning_tokens": 1978
+      },
+      "prompt_tokens": 7722,
+      "prompt_tokens_details": {
+        "cached_tokens": 0
+      },
+      "total_tokens": 9992
+    },
+    "cost_status": "not_reported_by_provider",
+    "capture_mode": "direct_before_parse",
+    "content_chars": 996,
+    "parse_status": "PASS",
+    "completeness_gate": "PASS",
+    "completed_at": "2026-10-14T11:43:21.916285+00:00",
+    "output_path": "/mnt/d/lunwen/EC-CSI投稿/working/exploration/20261014_four_case_peer_baselines/calls/03_FSV-B19_ecas_generate/parsed_output.json"
+  },
+  {
+    "index": 4,
+    "task": "FSV-S03",
+    "stage": "p2p_detect",
+    "smoke": false,
+    "started_at": "2026-10-14T11:44:28.825142+00:00",
+    "status": "COMPLETED",
+    "prompt_path": "/mnt/d/lunwen/EC-CSI投稿/working/exploration/20261014_four_case_peer_baselines/calls/04_FSV-S03_p2p_detect/prompt.txt",
+    "prompt_sha256": "29a400e535f9edd2ae99fc999d83b77b5ac7e83c6ca29599bda9c46b9cd557ea",
+    "prompt_bytes": 4341,
+    "estimated_prompt_tokens": 2299,
+    "token_count_kind": "UTF8_BYTES_DIV_2_ESTIMATE_NOT_EXACT_GLM_TOKENIZER",
+    "raw_response_path": "/mnt/d/lunwen/EC-CSI投稿/working/exploration/20261014_four_case_peer_baselines/calls/04_FSV-S03_p2p_detect/response.raw.json",
+    "max_tokens": 16384,
+    "retry_count": 0,
+    "wrapper_exit": 0,
+    "latency_seconds": 6.956,
+    "raw_response_sha256": "d277dadf900473d18f5a43b2a1b6168cadaba7bc4fadf7ba5d0b2a7e7fb57569",
+    "raw_response_bytes": 2657,
+    "returned_model": "glm-5.2",
+    "finish_reason": "stop",
+    "usage": {
+      "completion_tokens": 456,
+      "completion_tokens_details": {
+        "reasoning_tokens": 317
+      },
+      "prompt_tokens": 1108,
+      "prompt_tokens_details": {
+        "cached_tokens": 0
+      },
+      "total_tokens": 1564
+    },
+    "cost_status": "not_reported_by_provider",
+    "capture_mode": "direct_before_parse",
+    "content_chars": 597,
+    "parse_status": "PASS",
+    "completeness_gate": "PASS",
+    "completed_at": "2026-10-14T11:44:35.854232+00:00",
+    "output_path": "/mnt/d/lunwen/EC-CSI投稿/working/exploration/20261014_four_case_peer_baselines/calls/04_FSV-S03_p2p_detect/parsed_output.json"
+  },
+  {
+    "index": 5,
+    "task": "FSV-S03",
+    "stage": "autopac_generate",
+    "smoke": false,
+    "started_at": "2026-10-14T11:44:36.685265+00:00",
+    "status": "COMPLETED",
+    "prompt_path": "/mnt/d/lunwen/EC-CSI投稿/working/exploration/20261014_four_case_peer_baselines/calls/05_FSV-S03_autopac_generate/prompt.txt",
+    "prompt_sha256": "0c8ed4be918173b6cdfed04f2e04d4292c3053b2216bc9a0d1196ec310aae67e",
+    "prompt_bytes": 4419,
+    "estimated_prompt_tokens": 2338,
+    "token_count_kind": "UTF8_BYTES_DIV_2_ESTIMATE_NOT_EXACT_GLM_TOKENIZER",
+    "raw_response_path": "/mnt/d/lunwen/EC-CSI投稿/working/exploration/20261014_four_case_peer_baselines/calls/05_FSV-S03_autopac_generate/response.raw.json",
+    "max_tokens": 16384,
+    "retry_count": 0,
+    "wrapper_exit": 0,
+    "latency_seconds": 54.096,
+    "raw_response_sha256": "fe5c0a71cbd77f49b171e7361d5b12e3d026b9f807815f15af2124584ec06b2d",
+    "raw_response_bytes": 20917,
+    "returned_model": "glm-5.2",
+    "finish_reason": "stop",
+    "usage": {
+      "completion_tokens": 4244,
+      "completion_tokens_details": {
+        "reasoning_tokens": 4040
+      },
+      "prompt_tokens": 1131,
+      "prompt_tokens_details": {
+        "cached_tokens": 192
+      },
+      "total_tokens": 5375
+    },
+    "cost_status": "not_reported_by_provider",
+    "capture_mode": "direct_before_parse",
+    "content_chars": 699,
+    "parse_status": "PASS",
+    "completeness_gate": "PASS",
+    "completed_at": "2026-10-14T11:45:34.271371+00:00",
+    "output_path": "/mnt/d/lunwen/EC-CSI投稿/working/exploration/20261014_four_case_peer_baselines/calls/05_FSV-S03_autopac_generate/parsed_output.json"
+  },
+  {
+    "index": 6,
+    "task": "FSV-S03",
+    "stage": "autopac_judge",
+    "smoke": false,
+    "started_at": "2026-10-14T11:45:35.039633+00:00",
+    "status": "COMPLETED",
+    "prompt_path": "/mnt/d/lunwen/EC-CSI投稿/working/exploration/20261014_four_case_peer_baselines/calls/06_FSV-S03_autopac_judge/prompt.txt",
+    "prompt_sha256": "95b6465f6879745a3975f05fc87f2ddb76a3a63f1e1d29112179afc5bca79ee2",
+    "prompt_bytes": 4949,
+    "estimated_prompt_tokens": 2603,
+    "token_count_kind": "UTF8_BYTES_DIV_2_ESTIMATE_NOT_EXACT_GLM_TOKENIZER",
+    "raw_response_path": "/mnt/d/lunwen/EC-CSI投稿/working/exploration/20261014_four_case_peer_baselines/calls/06_FSV-S03_autopac_judge/response.raw.json",
+    "max_tokens": 16384,
+    "retry_count": 0,
+    "wrapper_exit": 0,
+    "latency_seconds": 8.806,
+    "raw_response_sha256": "8fcd6320f7421384d7e20f46ed1d2161dabb2617cb11bc13e1aa66691dbdaafb",
+    "raw_response_bytes": 3200,
+    "returned_model": "glm-5.2",
+    "finish_reason": "stop",
+    "usage": {
+      "completion_tokens": 611,
+      "completion_tokens_details": {
+        "reasoning_tokens": 560
+      },
+      "prompt_tokens": 1259,
+      "prompt_tokens_details": {
+        "cached_tokens": 0
+      },
+      "total_tokens": 1870
+    },
+    "cost_status": "not_reported_by_provider",
+    "capture_mode": "direct_before_parse",
+    "content_chars": 149,
+    "parse_status": "PASS",
+    "completeness_gate": "PASS",
+    "completed_at": "2026-10-14T11:45:43.922628+00:00",
+    "output_path": "/mnt/d/lunwen/EC-CSI投稿/working/exploration/20261014_four_case_peer_baselines/calls/06_FSV-S03_autopac_judge/parsed_output.json"
+  },
+  {
+    "index": 7,
+    "task": "FSV-S03",
+    "stage": "repair",
+    "smoke": false,
+    "started_at": "2026-10-14T11:45:44.778296+00:00",
+    "status": "COMPLETED",
+    "prompt_path": "/mnt/d/lunwen/EC-CSI投稿/working/exploration/20261014_four_case_peer_baselines/calls/07_FSV-S03_repair/prompt.txt",
+    "prompt_sha256": "5af1a7207dc13e85945b370a6b9409c8022bbd9e0ac66f68b272c764ad89b578",
+    "prompt_bytes": 5857,
+    "estimated_prompt_tokens": 3057,
+    "token_count_kind": "UTF8_BYTES_DIV_2_ESTIMATE_NOT_EXACT_GLM_TOKENIZER",
+    "raw_response_path": "/mnt/d/lunwen/EC-CSI投稿/working/exploration/20261014_four_case_peer_baselines/calls/07_FSV-S03_repair/response.raw.json",
+    "max_tokens": 16384,
+    "retry_count": 0,
+    "wrapper_exit": 0,
+    "latency_seconds": 9.818,
+    "raw_response_sha256": "67c24e0accbb5d1029341b821f14b2c166dc39133ce64643269fc2f706628642",
+    "raw_response_bytes": 3120,
+    "returned_model": "glm-5.2",
+    "finish_reason": "stop",
+    "usage": {
+      "completion_tokens": 669,
+      "completion_tokens_details": {
+        "reasoning_tokens": 451
+      },
+      "prompt_tokens": 1510,
+      "prompt_tokens_details": {
+        "cached_tokens": 0
+      },
+      "total_tokens": 2179
+    },
+    "cost_status": "not_reported_by_provider",
+    "capture_mode": "direct_before_parse",
+    "content_chars": 776,
+    "parse_status": "PASS",
+    "completeness_gate": "PASS",
+    "completed_at": "2026-10-14T11:45:54.677731+00:00",
+    "output_path": "/mnt/d/lunwen/EC-CSI投稿/working/exploration/20261014_four_case_peer_baselines/calls/07_FSV-S03_repair/parsed_output.json"
+  },
+  {
+    "index": 8,
+    "task": "FSV-S03",
+    "stage": "ecas_generate",
+    "smoke": false,
+    "started_at": "2026-10-14T11:45:57.790164+00:00",
+    "status": "COMPLETED",
+    "prompt_path": "/mnt/d/lunwen/EC-CSI投稿/working/exploration/20261014_four_case_peer_baselines/calls/08_FSV-S03_ecas_generate/prompt.txt",
+    "prompt_sha256": "033b6451d9b4ad8e6dde2ace931390c48c65c54e1f8114094eee31571976f57b",
+    "prompt_bytes": 12855,
+    "estimated_prompt_tokens": 6556,
+    "token_count_kind": "UTF8_BYTES_DIV_2_ESTIMATE_NOT_EXACT_GLM_TOKENIZER",
+    "raw_response_path": "/mnt/d/lunwen/EC-CSI投稿/working/exploration/20261014_four_case_peer_baselines/calls/08_FSV-S03_ecas_generate/response.raw.json",
+    "max_tokens": 16384,
+    "retry_count": 0,
+    "wrapper_exit": 0,
+    "latency_seconds": 21.717,
+    "raw_response_sha256": "7af3ff293a9b9fd6b2db43d99d603173ba8b94fbb43ac22cb3a089552a494d7c",
+    "raw_response_bytes": 8174,
+    "returned_model": "glm-5.2",
+    "finish_reason": "stop",
+    "usage": {
+      "completion_tokens": 2006,
+      "completion_tokens_details": {
+        "reasoning_tokens": 1692
+      },
+      "prompt_tokens": 3236,
+      "prompt_tokens_details": {
+        "cached_tokens": 0
+      },
+      "total_tokens": 5242
+    },
+    "cost_status": "not_reported_by_provider",
+    "capture_mode": "direct_before_parse",
+    "content_chars": 693,
+    "parse_status": "PASS",
+    "completeness_gate": "PASS",
+    "completed_at": "2026-10-14T11:46:19.596856+00:00",
+    "output_path": "/mnt/d/lunwen/EC-CSI投稿/working/exploration/20261014_four_case_peer_baselines/calls/08_FSV-S03_ecas_generate/parsed_output.json"
+  },
+  {
+    "index": 9,
+    "task": "FSV-B13",
+    "stage": "p2p_detect",
+    "smoke": false,
+    "started_at": "2026-10-14T11:46:20.627567+00:00",
+    "status": "COMPLETED",
+    "prompt_path": "/mnt/d/lunwen/EC-CSI投稿/working/exploration/20261014_four_case_peer_baselines/calls/09_FSV-B13_p2p_detect/prompt.txt",
+    "prompt_sha256": "b34830cff76684e1243b955bfc81bba3df1d551613632c64d7ef10eaad0105fd",
+    "prompt_bytes": 14986,
+    "estimated_prompt_tokens": 7621,
+    "token_count_kind": "UTF8_BYTES_DIV_2_ESTIMATE_NOT_EXACT_GLM_TOKENIZER",
+    "raw_response_path": "/mnt/d/lunwen/EC-CSI投稿/working/exploration/20261014_four_case_peer_baselines/calls/09_FSV-B13_p2p_detect/response.raw.json",
+    "max_tokens": 16384,
+    "retry_count": 0,
+    "wrapper_exit": 0,
+    "latency_seconds": 18.75,
+    "raw_response_sha256": "9d76cbf3608569f5c51a9eddccf4672c9520eb36a0371a8824fc8adcde4813b7",
+    "raw_response_bytes": 7119,
+    "returned_model": "glm-5.2",
+    "finish_reason": "stop",
+    "usage": {
+      "completion_tokens": 1531,
+      "completion_tokens_details": {
+        "reasoning_tokens": 1254
+      },
+      "prompt_tokens": 3573,
+      "prompt_tokens_details": {
+        "cached_tokens": 0
+      },
+      "total_tokens": 5104
+    },
+    "cost_status": "not_reported_by_provider",
+    "capture_mode": "direct_before_parse",
+    "content_chars": 965,
+    "parse_status": "PASS",
+    "completeness_gate": "PASS",
+    "completed_at": "2026-10-14T11:46:41.187109+00:00",
+    "output_path": "/mnt/d/lunwen/EC-CSI投稿/working/exploration/20261014_four_case_peer_baselines/calls/09_FSV-B13_p2p_detect/parsed_output.json"
+  },
+  {
+    "index": 10,
+    "task": "FSV-B13",
+    "stage": "p2p_extract",
+    "smoke": false,
+    "started_at": "2026-10-14T11:46:41.945920+00:00",
+    "status": "COMPLETED",
+    "prompt_path": "/mnt/d/lunwen/EC-CSI投稿/working/exploration/20261014_four_case_peer_baselines/calls/10_FSV-B13_p2p_extract/prompt.txt",
+    "prompt_sha256": "b431fc340b9a206386a457f0f4de093dc14a2809320124cad55494a6b3377f32",
+    "prompt_bytes": 15950,
+    "estimated_prompt_tokens": 8103,
+    "token_count_kind": "UTF8_BYTES_DIV_2_ESTIMATE_NOT_EXACT_GLM_TOKENIZER",
+    "raw_response_path": "/mnt/d/lunwen/EC-CSI投稿/working/exploration/20261014_four_case_peer_baselines/calls/10_FSV-B13_p2p_extract/response.raw.json",
+    "max_tokens": 16384,
+    "retry_count": 0,
+    "wrapper_exit": 0,
+    "latency_seconds": 117.987,
+    "raw_response_sha256": "5a1d08c2b661879fdd66db3a24d177a3af6706e655a450ca84ea61c729f46c58",
+    "raw_response_bytes": 32754,
+    "returned_model": "glm-5.2",
+    "finish_reason": "stop",
+    "usage": {
+      "completion_tokens": 6825,
+      "completion_tokens_details": {
+        "reasoning_tokens": 6515
+      },
+      "prompt_tokens": 3771,
+      "prompt_tokens_details": {
+        "cached_tokens": 0
+      },
+      "total_tokens": 10596
+    },
+    "cost_status": "not_reported_by_provider",
+    "capture_mode": "direct_before_parse",
+    "content_chars": 866,
+    "parse_status": "PASS",
+    "completeness_gate": "PASS",
+    "completed_at": "2026-10-14T11:48:45.880890+00:00",
+    "output_path": "/mnt/d/lunwen/EC-CSI投稿/working/exploration/20261014_four_case_peer_baselines/calls/10_FSV-B13_p2p_extract/parsed_output.json"
+  },
+  {
+    "index": 11,
+    "task": "FSV-B13",
+    "stage": "autopac_generate",
+    "smoke": false,
+    "started_at": "2026-10-14T11:48:48.963202+00:00",
+    "status": "COMPLETED",
+    "prompt_path": "/mnt/d/lunwen/EC-CSI投稿/working/exploration/20261014_four_case_peer_baselines/calls/11_FSV-B13_autopac_generate/prompt.txt",
+    "prompt_sha256": "107fc501fc65885d6bb7c642af8d0c4c453fde6f702a832dfed852e8fd720343",
+    "prompt_bytes": 15064,
+    "estimated_prompt_tokens": 7660,
+    "token_count_kind": "UTF8_BYTES_DIV_2_ESTIMATE_NOT_EXACT_GLM_TOKENIZER",
+    "raw_response_path": "/mnt/d/lunwen/EC-CSI投稿/working/exploration/20261014_four_case_peer_baselines/calls/11_FSV-B13_autopac_generate/response.raw.json",
+    "max_tokens": 16384,
+    "retry_count": 0,
+    "wrapper_exit": 0,
+    "latency_seconds": 12.797,
+    "raw_response_sha256": "aede2a5df46e2f2102579af900260d1c19b1d8c07f1ae9714b8ab10d1511a013",
+    "raw_response_bytes": 4526,
+    "returned_model": "glm-5.2",
+    "finish_reason": "stop",
+    "usage": {
+      "completion_tokens": 953,
+      "completion_tokens_details": {
+        "reasoning_tokens": 795
+      },
+      "prompt_tokens": 3596,
+      "prompt_tokens_details": {
+        "cached_tokens": 0
+      },
+      "total_tokens": 4549
+    },
+    "cost_status": "not_reported_by_provider",
+    "capture_mode": "direct_before_parse",
+    "content_chars": 538,
+    "parse_status": "PASS",
+    "completeness_gate": "PASS",
+    "completed_at": "2026-10-14T11:49:01.844896+00:00",
+    "output_path": "/mnt/d/lunwen/EC-CSI投稿/working/exploration/20261014_four_case_peer_baselines/calls/11_FSV-B13_autopac_generate/parsed_output.json"
+  },
+  {
+    "index": 12,
+    "task": "FSV-B13",
+    "stage": "autopac_judge",
+    "smoke": false,
+    "started_at": "2026-10-14T11:49:02.568760+00:00",
+    "status": "COMPLETED",
+    "prompt_path": "/mnt/d/lunwen/EC-CSI投稿/working/exploration/20261014_four_case_peer_baselines/calls/12_FSV-B13_autopac_judge/prompt.txt",
+    "prompt_sha256": "ca4ad9aaab459c0cb8a5a5a9315fb2b7b98b8bdd64599166734bce98d592b393",
+    "prompt_bytes": 15433,
+    "estimated_prompt_tokens": 7845,
+    "token_count_kind": "UTF8_BYTES_DIV_2_ESTIMATE_NOT_EXACT_GLM_TOKENIZER",
+    "raw_response_path": "/mnt/d/lunwen/EC-CSI投稿/working/exploration/20261014_four_case_peer_baselines/calls/12_FSV-B13_autopac_judge/response.raw.json",
+    "max_tokens": 16384,
+    "retry_count": 0,
+    "wrapper_exit": 0,
+    "latency_seconds": 16.748,
+    "raw_response_sha256": "dd28e362f279796df85852f364b195ca5adf8fc57073b89552a17bf40c0d7b5a",
+    "raw_response_bytes": 7675,
+    "returned_model": "glm-5.2",
+    "finish_reason": "stop",
+    "usage": {
+      "completion_tokens": 1525,
+      "completion_tokens_details": {
+        "reasoning_tokens": 1455
+      },
+      "prompt_tokens": 3677,
+      "prompt_tokens_details": {
+        "cached_tokens": 0
+      },
+      "total_tokens": 5202
+    },
+    "cost_status": "not_reported_by_provider",
+    "capture_mode": "direct_before_parse",
+    "content_chars": 149,
+    "parse_status": "PASS",
+    "completeness_gate": "PASS",
+    "completed_at": "2026-10-14T11:49:19.411690+00:00",
+    "output_path": "/mnt/d/lunwen/EC-CSI投稿/working/exploration/20261014_four_case_peer_baselines/calls/12_FSV-B13_autopac_judge/parsed_output.json"
+  },
+  {
+    "index": 13,
+    "task": "FSV-B13",
+    "stage": "ecas_generate",
+    "smoke": false,
+    "started_at": "2026-10-14T11:49:20.807540+00:00",
+    "status": "COMPLETED",
+    "prompt_path": "/mnt/d/lunwen/EC-CSI投稿/working/exploration/20261014_four_case_peer_baselines/calls/13_FSV-B13_ecas_generate/prompt.txt",
+    "prompt_sha256": "9fd4462e1d7fb28e70ba46f097eda86187817987cf8e099d705e73aa36ebb045",
+    "prompt_bytes": 23500,
+    "estimated_prompt_tokens": 11878,
+    "token_count_kind": "UTF8_BYTES_DIV_2_ESTIMATE_NOT_EXACT_GLM_TOKENIZER",
+    "raw_response_path": "/mnt/d/lunwen/EC-CSI投稿/working/exploration/20261014_four_case_peer_baselines/calls/13_FSV-B13_ecas_generate/response.raw.json",
+    "max_tokens": 16384,
+    "retry_count": 0,
+    "wrapper_exit": 0,
+    "latency_seconds": 145.76,
+    "raw_response_sha256": "fccc445299d8dea1bfffa79efcce513934ff6cb58eb8ae646150fe3cdefaa9d3",
+    "raw_response_bytes": 35302,
+    "returned_model": "glm-5.2",
+    "finish_reason": "stop",
+    "usage": {
+      "completion_tokens": 7643,
+      "completion_tokens_details": {
+        "reasoning_tokens": 7090
+      },
+      "prompt_tokens": 5701,
+      "prompt_tokens_details": {
+        "cached_tokens": 0
+      },
+      "total_tokens": 13344
+    },
+    "cost_status": "not_reported_by_provider",
+    "capture_mode": "direct_before_parse",
+    "content_chars": 1299,
+    "parse_status": "PASS",
+    "completeness_gate": "PASS",
+    "completed_at": "2026-10-14T11:51:56.115494+00:00",
+    "output_path": "/mnt/d/lunwen/EC-CSI投稿/working/exploration/20261014_four_case_peer_baselines/calls/13_FSV-B13_ecas_generate/parsed_output.json"
+  },
+  {
+    "index": 14,
+    "task": "FSV-B17",
+    "stage": "p2p_detect",
+    "smoke": false,
+    "started_at": "2026-10-14T11:51:56.995080+00:00",
+    "status": "COMPLETED",
+    "prompt_path": "/mnt/d/lunwen/EC-CSI投稿/working/exploration/20261014_four_case_peer_baselines/calls/14_FSV-B17_p2p_detect/prompt.txt",
+    "prompt_sha256": "0a573e876b70270141a89686028d20742b952e5a7bb7449c969c562a3c052e1f",
+    "prompt_bytes": 12962,
+    "estimated_prompt_tokens": 6609,
+    "token_count_kind": "UTF8_BYTES_DIV_2_ESTIMATE_NOT_EXACT_GLM_TOKENIZER",
+    "raw_response_path": "/mnt/d/lunwen/EC-CSI投稿/working/exploration/20261014_four_case_peer_baselines/calls/14_FSV-B17_p2p_detect/response.raw.json",
+    "max_tokens": 16384,
+    "retry_count": 0,
+    "wrapper_exit": 0,
+    "latency_seconds": 7.912,
+    "raw_response_sha256": "eae477a473bc953dbf3e41ccd5115a936797c9d1649a030b3f3cf615374b851e",
+    "raw_response_bytes": 3452,
+    "returned_model": "glm-5.2",
+    "finish_reason": "stop",
+    "usage": {
+      "completion_tokens": 717,
+      "completion_tokens_details": {
+        "reasoning_tokens": 578
+      },
+      "prompt_tokens": 3129,
+      "prompt_tokens_details": {
+        "cached_tokens": 0
+      },
+      "total_tokens": 3846
+    },
+    "cost_status": "not_reported_by_provider",
+    "capture_mode": "direct_before_parse",
+    "content_chars": 408,
+    "parse_status": "PASS",
+    "completeness_gate": "PASS",
+    "completed_at": "2026-10-14T11:52:04.994490+00:00",
+    "output_path": "/mnt/d/lunwen/EC-CSI投稿/working/exploration/20261014_four_case_peer_baselines/calls/14_FSV-B17_p2p_detect/parsed_output.json"
+  },
+  {
+    "index": 15,
+    "task": "FSV-B17",
+    "stage": "p2p_extract",
+    "smoke": false,
+    "started_at": "2026-10-14T11:52:05.753843+00:00",
+    "status": "COMPLETED",
+    "prompt_path": "/mnt/d/lunwen/EC-CSI投稿/working/exploration/20261014_four_case_peer_baselines/calls/15_FSV-B17_p2p_extract/prompt.txt",
+    "prompt_sha256": "a3c31c55cb1cc905c2fa5157a807d4c77a4dd718e616632dff418a42da36aa1a",
+    "prompt_bytes": 13369,
+    "estimated_prompt_tokens": 6813,
+    "token_count_kind": "UTF8_BYTES_DIV_2_ESTIMATE_NOT_EXACT_GLM_TOKENIZER",
+    "raw_response_path": "/mnt/d/lunwen/EC-CSI投稿/working/exploration/20261014_four_case_peer_baselines/calls/15_FSV-B17_p2p_extract/response.raw.json",
+    "max_tokens": 16384,
+    "retry_count": 0,
+    "wrapper_exit": 0,
+    "latency_seconds": 10.383,
+    "raw_response_sha256": "ec45512153b5e246bf839def5aced9236b70077b8ada83e7088fdbeddb7c6003",
+    "raw_response_bytes": 3704,
+    "returned_model": "glm-5.2",
+    "finish_reason": "stop",
+    "usage": {
+      "completion_tokens": 808,
+      "completion_tokens_details": {
+        "reasoning_tokens": 606
+      },
+      "prompt_tokens": 3212,
+      "prompt_tokens_details": {
+        "cached_tokens": 0
+      },
+      "total_tokens": 4020
+    },
+    "cost_status": "not_reported_by_provider",
+    "capture_mode": "direct_before_parse",
+    "content_chars": 588,
+    "parse_status": "PASS",
+    "completeness_gate": "PASS",
+    "completed_at": "2026-10-14T11:52:18.107368+00:00",
+    "output_path": "/mnt/d/lunwen/EC-CSI投稿/working/exploration/20261014_four_case_peer_baselines/calls/15_FSV-B17_p2p_extract/parsed_output.json"
+  },
+  {
+    "index": 16,
+    "task": "FSV-B17",
+    "stage": "p2p_rego",
+    "smoke": false,
+    "started_at": "2026-10-14T11:52:18.812786+00:00",
+    "status": "COMPLETED",
+    "prompt_path": "/mnt/d/lunwen/EC-CSI投稿/working/exploration/20261014_four_case_peer_baselines/calls/16_FSV-B17_p2p_rego/prompt.txt",
+    "prompt_sha256": "4bffa21260cbe0823605990a28bc7a686ba3f3d8fb1a02fa580eaa2e73926ee2",
+    "prompt_bytes": 13803,
+    "estimated_prompt_tokens": 7030,
+    "token_count_kind": "UTF8_BYTES_DIV_2_ESTIMATE_NOT_EXACT_GLM_TOKENIZER",
+    "raw_response_path": "/mnt/d/lunwen/EC-CSI投稿/working/exploration/20261014_four_case_peer_baselines/calls/16_FSV-B17_p2p_rego/response.raw.json",
+    "max_tokens": 16384,
+    "retry_count": 0,
+    "wrapper_exit": 0,
+    "latency_seconds": 27.28,
+    "raw_response_sha256": "b50e83e120036324cc61a2dc2f945a2b25f91e85e6f2d22b3750b80715c788e9",
+    "raw_response_bytes": 2479,
+    "returned_model": "glm-5.2",
+    "finish_reason": "stop",
+    "usage": {
+      "completion_tokens": 481,
+      "completion_tokens_details": {
+        "reasoning_tokens": 343
+      },
+      "prompt_tokens": 3327,
+      "prompt_tokens_details": {
+        "cached_tokens": 0
+      },
+      "total_tokens": 3808
+    },
+    "cost_status": "not_reported_by_provider",
+    "capture_mode": "direct_before_parse",
+    "content_chars": 517,
+    "parse_status": "PASS",
+    "completeness_gate": "PASS",
+    "completed_at": "2026-10-14T11:52:46.199796+00:00",
+    "output_path": "/mnt/d/lunwen/EC-CSI投稿/working/exploration/20261014_four_case_peer_baselines/calls/16_FSV-B17_p2p_rego/parsed_output.json"
+  },
+  {
+    "index": 17,
+    "task": "FSV-B17",
+    "stage": "p2p_tests",
+    "smoke": false,
+    "started_at": "2026-10-14T11:52:47.029178+00:00",
+    "status": "COMPLETED",
+    "prompt_path": "/mnt/d/lunwen/EC-CSI投稿/working/exploration/20261014_four_case_peer_baselines/calls/17_FSV-B17_p2p_tests/prompt.txt",
+    "prompt_sha256": "451d7f128b09119ba98e9b6ba438f37e2f032e3f8739ac393ed9f38e4fb5e9a7",
+    "prompt_bytes": 14036,
+    "estimated_prompt_tokens": 7146,
+    "token_count_kind": "UTF8_BYTES_DIV_2_ESTIMATE_NOT_EXACT_GLM_TOKENIZER",
+    "raw_response_path": "/mnt/d/lunwen/EC-CSI投稿/working/exploration/20261014_four_case_peer_baselines/calls/17_FSV-B17_p2p_tests/response.raw.json",
+    "max_tokens": 16384,
+    "retry_count": 0,
+    "wrapper_exit": 0,
+    "latency_seconds": 7.655,
+    "raw_response_sha256": "ae1e42286527047dae616decdf88437c79235aba71a8a839651c62022b9c8fab",
+    "raw_response_bytes": 2336,
+    "returned_model": "glm-5.2",
+    "finish_reason": "stop",
+    "usage": {
+      "completion_tokens": 633,
+      "completion_tokens_details": {
+        "reasoning_tokens": 255
+      },
+      "prompt_tokens": 3354,
+      "prompt_tokens_details": {
+        "cached_tokens": 0
+      },
+      "total_tokens": 3987
+    },
+    "cost_status": "not_reported_by_provider",
+    "capture_mode": "direct_before_parse",
+    "content_chars": 728,
+    "parse_status": "PASS",
+    "completeness_gate": "PASS",
+    "completed_at": "2026-10-14T11:52:56.646785+00:00",
+    "output_path": "/mnt/d/lunwen/EC-CSI投稿/working/exploration/20261014_four_case_peer_baselines/calls/17_FSV-B17_p2p_tests/parsed_output.json"
+  },
+  {
+    "index": 18,
+    "task": "FSV-B17",
+    "stage": "repair",
+    "smoke": false,
+    "started_at": "2026-10-14T11:52:57.897709+00:00",
+    "status": "COMPLETED",
+    "prompt_path": "/mnt/d/lunwen/EC-CSI投稿/working/exploration/20261014_four_case_peer_baselines/calls/18_FSV-B17_repair/prompt.txt",
+    "prompt_sha256": "4d1797b22c709b68915ac3be21d5a33c2b4e257f2d228a1c6219c603b819eb7a",
+    "prompt_bytes": 17224,
+    "estimated_prompt_tokens": 8740,
+    "token_count_kind": "UTF8_BYTES_DIV_2_ESTIMATE_NOT_EXACT_GLM_TOKENIZER",
+    "raw_response_path": "/mnt/d/lunwen/EC-CSI投稿/working/exploration/20261014_four_case_peer_baselines/calls/18_FSV-B17_repair/response.raw.json",
+    "max_tokens": 16384,
+    "retry_count": 0,
+    "wrapper_exit": 0,
+    "latency_seconds": 41.031,
+    "raw_response_sha256": "4930564c6c3f863ac3e940dd6b8df99cab01d75b46d6180e5ba7bc456052441c",
+    "raw_response_bytes": 9233,
+    "returned_model": "glm-5.2",
+    "finish_reason": "stop",
+    "usage": {
+      "completion_tokens": 1852,
+      "completion_tokens_details": {
+        "reasoning_tokens": 1715
+      },
+      "prompt_tokens": 4197,
+      "prompt_tokens_details": {
+        "cached_tokens": 0
+      },
+      "total_tokens": 6049
+    },
+    "cost_status": "not_reported_by_provider",
+    "capture_mode": "direct_before_parse",
+    "content_chars": 539,
+    "parse_status": "PASS",
+    "completeness_gate": "PASS",
+    "completed_at": "2026-10-14T11:53:39.011656+00:00",
+    "output_path": "/mnt/d/lunwen/EC-CSI投稿/working/exploration/20261014_four_case_peer_baselines/calls/18_FSV-B17_repair/parsed_output.json"
+  },
+  {
+    "index": 19,
+    "task": "FSV-B17",
+    "stage": "autopac_generate",
+    "smoke": false,
+    "started_at": "2026-10-14T11:53:40.345765+00:00",
+    "status": "COMPLETED",
+    "prompt_path": "/mnt/d/lunwen/EC-CSI投稿/working/exploration/20261014_four_case_peer_baselines/calls/19_FSV-B17_autopac_generate/prompt.txt",
+    "prompt_sha256": "69936c70d2246bf84e5c074d83718489f5e98f02d3d1f33526d4436be5f8180e",
+    "prompt_bytes": 13040,
+    "estimated_prompt_tokens": 6648,
+    "token_count_kind": "UTF8_BYTES_DIV_2_ESTIMATE_NOT_EXACT_GLM_TOKENIZER",
+    "raw_response_path": "/mnt/d/lunwen/EC-CSI投稿/working/exploration/20261014_four_case_peer_baselines/calls/19_FSV-B17_autopac_generate/response.raw.json",
+    "max_tokens": 16384,
+    "retry_count": 0,
+    "wrapper_exit": 0,
+    "latency_seconds": 11.667,
+    "raw_response_sha256": "f5b33aaaba063af1e1ef09c6d3f6106f6a1b5527844bedeacd9b64f693a819b9",
+    "raw_response_bytes": 4929,
+    "returned_model": "glm-5.2",
+    "finish_reason": "stop",
+    "usage": {
+      "completion_tokens": 1018,
+      "completion_tokens_details": {
+        "reasoning_tokens": 794
+      },
+      "prompt_tokens": 3152,
+      "prompt_tokens_details": {
+        "cached_tokens": 0
+      },
+      "total_tokens": 4170
+    },
+    "cost_status": "not_reported_by_provider",
+    "capture_mode": "direct_before_parse",
+    "content_chars": 852,
+    "parse_status": "PASS",
+    "completeness_gate": "PASS",
+    "completed_at": "2026-10-14T11:53:52.100547+00:00",
+    "output_path": "/mnt/d/lunwen/EC-CSI投稿/working/exploration/20261014_four_case_peer_baselines/calls/19_FSV-B17_autopac_generate/parsed_output.json"
+  },
+  {
+    "index": 20,
+    "task": "FSV-B17",
+    "stage": "autopac_judge",
+    "smoke": false,
+    "started_at": "2026-10-14T11:53:52.902190+00:00",
+    "status": "COMPLETED",
+    "prompt_path": "/mnt/d/lunwen/EC-CSI投稿/working/exploration/20261014_four_case_peer_baselines/calls/20_FSV-B17_autopac_judge/prompt.txt",
+    "prompt_sha256": "f4dff2b74a8ced89959655ff486f5fb9a6d5aff0e0f6aa93fdfb14ff9fe0f88a",
+    "prompt_bytes": 13723,
+    "estimated_prompt_tokens": 6990,
+    "token_count_kind": "UTF8_BYTES_DIV_2_ESTIMATE_NOT_EXACT_GLM_TOKENIZER",
+    "raw_response_path": "/mnt/d/lunwen/EC-CSI投稿/working/exploration/20261014_four_case_peer_baselines/calls/20_FSV-B17_autopac_judge/response.raw.json",
+    "max_tokens": 16384,
+    "retry_count": 0,
+    "wrapper_exit": 0,
+    "latency_seconds": 13.532,
+    "raw_response_sha256": "25e7ca5323c8f7732492a1349e3195027675070a19c3ea268142b5dd9b6bdc04",
+    "raw_response_bytes": 3432,
+    "returned_model": "glm-5.2",
+    "finish_reason": "stop",
+    "usage": {
+      "completion_tokens": 728,
+      "completion_tokens_details": {
+        "reasoning_tokens": 657
+      },
+      "prompt_tokens": 3299,
+      "prompt_tokens_details": {
+        "cached_tokens": 0
+      },
+      "total_tokens": 4027
+    },
+    "cost_status": "not_reported_by_provider",
+    "capture_mode": "direct_before_parse",
+    "content_chars": 149,
+    "parse_status": "PASS",
+    "completeness_gate": "PASS",
+    "completed_at": "2026-10-14T11:54:10.415802+00:00",
+    "output_path": "/mnt/d/lunwen/EC-CSI投稿/working/exploration/20261014_four_case_peer_baselines/calls/20_FSV-B17_autopac_judge/parsed_output.json"
+  },
+  {
+    "index": 21,
+    "task": "FSV-B17",
+    "stage": "ecas_generate",
+    "smoke": false,
+    "started_at": "2026-10-14T11:54:11.869520+00:00",
+    "status": "COMPLETED",
+    "prompt_path": "/mnt/d/lunwen/EC-CSI投稿/working/exploration/20261014_four_case_peer_baselines/calls/21_FSV-B17_ecas_generate/prompt.txt",
+    "prompt_sha256": "3f5ff1f19a4d93cbd2fcd2f0fdf40375821f547268d2c724fae0c4d5af559ff3",
+    "prompt_bytes": 21476,
+    "estimated_prompt_tokens": 10866,
+    "token_count_kind": "UTF8_BYTES_DIV_2_ESTIMATE_NOT_EXACT_GLM_TOKENIZER",
+    "raw_response_path": "/mnt/d/lunwen/EC-CSI投稿/working/exploration/20261014_four_case_peer_baselines/calls/21_FSV-B17_ecas_generate/response.raw.json",
+    "max_tokens": 16384,
+    "retry_count": 0,
+    "wrapper_exit": 0,
+    "latency_seconds": 47.794,
+    "raw_response_sha256": "8d5a345aa7cf3abf1396e2c1b989c518d43d92d37f5df4cfb68208d87c9a387e",
+    "raw_response_bytes": 12083,
+    "returned_model": "glm-5.2",
+    "finish_reason": "stop",
+    "usage": {
+      "completion_tokens": 2725,
+      "completion_tokens_details": {
+        "reasoning_tokens": 2405
+      },
+      "prompt_tokens": 5257,
+      "prompt_tokens_details": {
+        "cached_tokens": 0
+      },
+      "total_tokens": 7982
+    },
+    "cost_status": "not_reported_by_provider",
+    "capture_mode": "direct_before_parse",
+    "content_chars": 711,
+    "parse_status": "PASS",
+    "completeness_gate": "PASS",
+    "completed_at": "2026-10-14T11:55:01.596111+00:00",
+    "output_path": "/mnt/d/lunwen/EC-CSI投稿/working/exploration/20261014_four_case_peer_baselines/calls/21_FSV-B17_ecas_generate/parsed_output.json"
+  },
+  {
+    "index": 22,
+    "task": "FSV-B19",
+    "stage": "p2p_detect",
+    "smoke": false,
+    "started_at": "2026-10-14T11:55:02.483732+00:00",
+    "status": "COMPLETED",
+    "prompt_path": "/mnt/d/lunwen/EC-CSI投稿/working/exploration/20261014_four_case_peer_baselines/calls/22_FSV-B19_p2p_detect/prompt.txt",
+    "prompt_sha256": "055c75e1013c4429d454bfa8513ca9dcb7912ce5027ff15806bce7d27139f1f9",
+    "prompt_bytes": 22770,
+    "estimated_prompt_tokens": 11513,
+    "token_count_kind": "UTF8_BYTES_DIV_2_ESTIMATE_NOT_EXACT_GLM_TOKENIZER",
+    "raw_response_path": "/mnt/d/lunwen/EC-CSI投稿/working/exploration/20261014_four_case_peer_baselines/calls/22_FSV-B19_p2p_detect/response.raw.json",
+    "max_tokens": 16384,
+    "retry_count": 0,
+    "wrapper_exit": 0,
+    "latency_seconds": 8.574,
+    "raw_response_sha256": "e4d8e8abf257621cb92e19dbe56d221559377666f2123458a2410798053cb09b",
+    "raw_response_bytes": 2988,
+    "returned_model": "glm-5.2",
+    "finish_reason": "stop",
+    "usage": {
+      "completion_tokens": 616,
+      "completion_tokens_details": {
+        "reasoning_tokens": 449
+      },
+      "prompt_tokens": 5590,
+      "prompt_tokens_details": {
+        "cached_tokens": 0
+      },
+      "total_tokens": 6206
+    },
+    "cost_status": "not_reported_by_provider",
+    "capture_mode": "direct_before_parse",
+    "content_chars": 529,
+    "parse_status": "PASS",
+    "completeness_gate": "PASS",
+    "completed_at": "2026-10-14T11:55:13.002096+00:00",
+    "output_path": "/mnt/d/lunwen/EC-CSI投稿/working/exploration/20261014_four_case_peer_baselines/calls/22_FSV-B19_p2p_detect/parsed_output.json"
+  },
+  {
+    "index": 23,
+    "task": "FSV-B19",
+    "stage": "p2p_extract",
+    "smoke": false,
+    "started_at": "2026-10-14T11:55:13.561183+00:00",
+    "status": "COMPLETED",
+    "prompt_path": "/mnt/d/lunwen/EC-CSI投稿/working/exploration/20261014_four_case_peer_baselines/calls/23_FSV-B19_p2p_extract/prompt.txt",
+    "prompt_sha256": "77de1fc0fc7cb04f84c1f18fd7baccae5dc04aec05acbcff92928bf15c56b970",
+    "prompt_bytes": 23298,
+    "estimated_prompt_tokens": 11777,
+    "token_count_kind": "UTF8_BYTES_DIV_2_ESTIMATE_NOT_EXACT_GLM_TOKENIZER",
+    "raw_response_path": "/mnt/d/lunwen/EC-CSI投稿/working/exploration/20261014_four_case_peer_baselines/calls/23_FSV-B19_p2p_extract/response.raw.json",
+    "max_tokens": 16384,
+    "retry_count": 0,
+    "wrapper_exit": 0,
+    "latency_seconds": 8.207,
+    "raw_response_sha256": "380cad29cff310a913ec364028ba51dd5e6c7ca262e762c2030bcd13373ecfee",
+    "raw_response_bytes": 2576,
+    "returned_model": "glm-5.2",
+    "finish_reason": "stop",
+    "usage": {
+      "completion_tokens": 589,
+      "completion_tokens_details": {
+        "reasoning_tokens": 364
+      },
+      "prompt_tokens": 5701,
+      "prompt_tokens_details": {
+        "cached_tokens": 0
+      },
+      "total_tokens": 6290
+    },
+    "cost_status": "not_reported_by_provider",
+    "capture_mode": "direct_before_parse",
+    "content_chars": 660,
+    "parse_status": "PASS",
+    "completeness_gate": "PASS",
+    "completed_at": "2026-10-14T11:55:21.860647+00:00",
+    "output_path": "/mnt/d/lunwen/EC-CSI投稿/working/exploration/20261014_four_case_peer_baselines/calls/23_FSV-B19_p2p_extract/parsed_output.json"
+  },
+  {
+    "index": 24,
+    "task": "FSV-B19",
+    "stage": "p2p_rego",
+    "smoke": false,
+    "started_at": "2026-10-14T11:55:22.610801+00:00",
+    "status": "COMPLETED",
+    "prompt_path": "/mnt/d/lunwen/EC-CSI投稿/working/exploration/20261014_four_case_peer_baselines/calls/24_FSV-B19_p2p_rego/prompt.txt",
+    "prompt_sha256": "d6b5c73d7717a620ea5ff86eb0f84de3f8dc970694e7f29e3981f552279b9a4d",
+    "prompt_bytes": 23804,
+    "estimated_prompt_tokens": 12030,
+    "token_count_kind": "UTF8_BYTES_DIV_2_ESTIMATE_NOT_EXACT_GLM_TOKENIZER",
+    "raw_response_path": "/mnt/d/lunwen/EC-CSI投稿/working/exploration/20261014_four_case_peer_baselines/calls/24_FSV-B19_p2p_rego/response.raw.json",
+    "max_tokens": 16384,
+    "retry_count": 0,
+    "wrapper_exit": 0,
+    "latency_seconds": 74.823,
+    "raw_response_sha256": "94fc5ecca41a40ac7751e7925e4dd0bf7e42d7e6e1d9095538fbffc04667ac2d",
+    "raw_response_bytes": 23134,
+    "returned_model": "glm-5.2",
+    "finish_reason": "stop",
+    "usage": {
+      "completion_tokens": 4854,
+      "completion_tokens_details": {
+        "reasoning_tokens": 4625
+      },
+      "prompt_tokens": 5839,
+      "prompt_tokens_details": {
+        "cached_tokens": 0
+      },
+      "total_tokens": 10693
+    },
+    "cost_status": "not_reported_by_provider",
+    "capture_mode": "direct_before_parse",
+    "content_chars": 741,
+    "parse_status": "PASS",
+    "completeness_gate": "PASS",
+    "completed_at": "2026-10-14T11:56:41.314705+00:00",
+    "output_path": "/mnt/d/lunwen/EC-CSI投稿/working/exploration/20261014_four_case_peer_baselines/calls/24_FSV-B19_p2p_rego/parsed_output.json"
+  },
+  {
+    "index": 25,
+    "task": "FSV-B19",
+    "stage": "p2p_tests",
+    "smoke": false,
+    "started_at": "2026-10-14T11:56:42.093107+00:00",
+    "status": "COMPLETED",
+    "prompt_path": "/mnt/d/lunwen/EC-CSI投稿/working/exploration/20261014_four_case_peer_baselines/calls/25_FSV-B19_p2p_tests/prompt.txt",
+    "prompt_sha256": "faf43e3d27032494f92c8faa8d9f5f16ee23029a96d89519706c900dd62185a5",
+    "prompt_bytes": 24037,
+    "estimated_prompt_tokens": 12147,
+    "token_count_kind": "UTF8_BYTES_DIV_2_ESTIMATE_NOT_EXACT_GLM_TOKENIZER",
+    "raw_response_path": "/mnt/d/lunwen/EC-CSI投稿/working/exploration/20261014_four_case_peer_baselines/calls/25_FSV-B19_p2p_tests/response.raw.json",
+    "max_tokens": 16384,
+    "retry_count": 0,
+    "wrapper_exit": 0,
+    "latency_seconds": 12.025,
+    "raw_response_sha256": "c8a34297953c747ae86c6df99120455e755981bb637892558addc366d2549b3d",
+    "raw_response_bytes": 3608,
+    "returned_model": "glm-5.2",
+    "finish_reason": "stop",
+    "usage": {
+      "completion_tokens": 1053,
+      "completion_tokens_details": {
+        "reasoning_tokens": 489
+      },
+      "prompt_tokens": 5866,
+      "prompt_tokens_details": {
+        "cached_tokens": 0
+      },
+      "total_tokens": 6919
+    },
+    "cost_status": "not_reported_by_provider",
+    "capture_mode": "direct_before_parse",
+    "content_chars": 1181,
+    "parse_status": "PASS",
+    "completeness_gate": "PASS",
+    "completed_at": "2026-10-14T11:56:55.986409+00:00",
+    "output_path": "/mnt/d/lunwen/EC-CSI投稿/working/exploration/20261014_four_case_peer_baselines/calls/25_FSV-B19_p2p_tests/parsed_output.json"
+  },
+  {
+    "index": 26,
+    "task": "FSV-B19",
+    "stage": "repair",
+    "smoke": false,
+    "started_at": "2026-10-14T11:56:57.257890+00:00",
+    "status": "COMPLETED",
+    "prompt_path": "/mnt/d/lunwen/EC-CSI投稿/working/exploration/20261014_four_case_peer_baselines/calls/26_FSV-B19_repair/prompt.txt",
+    "prompt_sha256": "d4e8c95298bf00bc644264c02c2e55fc72a1afff3eb4378eec5bf8023771668c",
+    "prompt_bytes": 28201,
+    "estimated_prompt_tokens": 14229,
+    "token_count_kind": "UTF8_BYTES_DIV_2_ESTIMATE_NOT_EXACT_GLM_TOKENIZER",
+    "raw_response_path": "/mnt/d/lunwen/EC-CSI投稿/working/exploration/20261014_four_case_peer_baselines/calls/26_FSV-B19_repair/response.raw.json",
+    "max_tokens": 16384,
+    "retry_count": 0,
+    "wrapper_exit": 0,
+    "latency_seconds": 44.147,
+    "raw_response_sha256": "1a5e19955290d7dc4a6458e7fb5a0f6f211e3a8e870a3e1edccb9363b4391c99",
+    "raw_response_bytes": 16230,
+    "returned_model": "glm-5.2",
+    "finish_reason": "stop",
+    "usage": {
+      "completion_tokens": 3375,
+      "completion_tokens_details": {
+        "reasoning_tokens": 3211
+      },
+      "prompt_tokens": 6981,
+      "prompt_tokens_details": {
+        "cached_tokens": 0
+      },
+      "total_tokens": 10356
+    },
+    "cost_status": "not_reported_by_provider",
+    "capture_mode": "direct_before_parse",
+    "content_chars": 635,
+    "parse_status": "PASS",
+    "completeness_gate": "PASS",
+    "completed_at": "2026-10-14T11:57:43.267303+00:00",
+    "output_path": "/mnt/d/lunwen/EC-CSI投稿/working/exploration/20261014_four_case_peer_baselines/calls/26_FSV-B19_repair/parsed_output.json"
+  },
+  {
+    "index": 27,
+    "task": "FSV-B19",
+    "stage": "autopac_generate",
+    "smoke": false,
+    "started_at": "2026-10-14T11:57:44.435874+00:00",
+    "status": "COMPLETED",
+    "prompt_path": "/mnt/d/lunwen/EC-CSI投稿/working/exploration/20261014_four_case_peer_baselines/calls/27_FSV-B19_autopac_generate/prompt.txt",
+    "prompt_sha256": "d76131c89acff762d79956b886f8e64ea74b584a6b26f71ab48ac9001ad50803",
+    "prompt_bytes": 22848,
+    "estimated_prompt_tokens": 11552,
+    "token_count_kind": "UTF8_BYTES_DIV_2_ESTIMATE_NOT_EXACT_GLM_TOKENIZER",
+    "raw_response_path": "/mnt/d/lunwen/EC-CSI投稿/working/exploration/20261014_four_case_peer_baselines/calls/27_FSV-B19_autopac_generate/response.raw.json",
+    "max_tokens": 16384,
+    "retry_count": 0,
+    "wrapper_exit": 0,
+    "latency_seconds": 8.975,
+    "raw_response_sha256": "34881ff3800c5afb6aec97ecf61858652a6835ea71e2319c317d50cf52a5dc06",
+    "raw_response_bytes": 3835,
+    "returned_model": "glm-5.2",
+    "finish_reason": "stop",
+    "usage": {
+      "completion_tokens": 811,
+      "completion_tokens_details": {
+        "reasoning_tokens": 590
+      },
+      "prompt_tokens": 5613,
+      "prompt_tokens_details": {
+        "cached_tokens": 0
+      },
+      "total_tokens": 6424
+    },
+    "cost_status": "not_reported_by_provider",
+    "capture_mode": "direct_before_parse",
+    "content_chars": 863,
+    "parse_status": "PASS",
+    "completeness_gate": "PASS",
+    "completed_at": "2026-10-14T11:57:53.494057+00:00",
+    "output_path": "/mnt/d/lunwen/EC-CSI投稿/working/exploration/20261014_four_case_peer_baselines/calls/27_FSV-B19_autopac_generate/parsed_output.json"
+  },
+  {
+    "index": 28,
+    "task": "FSV-B19",
+    "stage": "autopac_judge",
+    "smoke": false,
+    "started_at": "2026-10-14T11:57:54.341413+00:00",
+    "status": "COMPLETED",
+    "prompt_path": "/mnt/d/lunwen/EC-CSI投稿/working/exploration/20261014_four_case_peer_baselines/calls/28_FSV-B19_autopac_judge/prompt.txt",
+    "prompt_sha256": "aa6de40c97ae00c5ae9c6efb61622d3f5ece207a0fcfe4d56eb28d92f0d5f5ee",
+    "prompt_bytes": 23542,
+    "estimated_prompt_tokens": 11899,
+    "token_count_kind": "UTF8_BYTES_DIV_2_ESTIMATE_NOT_EXACT_GLM_TOKENIZER",
+    "raw_response_path": "/mnt/d/lunwen/EC-CSI投稿/working/exploration/20261014_four_case_peer_baselines/calls/28_FSV-B19_autopac_judge/response.raw.json",
+    "max_tokens": 16384,
+    "retry_count": 0,
+    "wrapper_exit": 0,
+    "latency_seconds": 30.832,
+    "raw_response_sha256": "8ded8a7dedde946340d5f65acfb95831a6f27e2ae3f0b967d7d0fc730108282f",
+    "raw_response_bytes": 7963,
+    "returned_model": "glm-5.2",
+    "finish_reason": "stop",
+    "usage": {
+      "completion_tokens": 1851,
+      "completion_tokens_details": {
+        "reasoning_tokens": 1697
+      },
+      "prompt_tokens": 5780,
+      "prompt_tokens_details": {
+        "cached_tokens": 0
+      },
+      "total_tokens": 7631
+    },
+    "cost_status": "not_reported_by_provider",
+    "capture_mode": "direct_before_parse",
+    "content_chars": 462,
+    "parse_status": "PASS",
+    "completeness_gate": "PASS",
+    "completed_at": "2026-10-14T11:58:26.945305+00:00",
+    "output_path": "/mnt/d/lunwen/EC-CSI投稿/working/exploration/20261014_four_case_peer_baselines/calls/28_FSV-B19_autopac_judge/parsed_output.json"
+  },
+  {
+    "index": 29,
+    "task": "FSV-B19",
+    "stage": "repair",
+    "smoke": false,
+    "started_at": "2026-10-14T11:58:28.164793+00:00",
+    "status": "COMPLETED",
+    "prompt_path": "/mnt/d/lunwen/EC-CSI投稿/working/exploration/20261014_four_case_peer_baselines/calls/29_FSV-B19_repair/prompt.txt",
+    "prompt_sha256": "bb236681da7f09ae407c10be053753e604efc86680ae74b6965c8cf0e8471638",
+    "prompt_bytes": 25269,
+    "estimated_prompt_tokens": 12763,
+    "token_count_kind": "UTF8_BYTES_DIV_2_ESTIMATE_NOT_EXACT_GLM_TOKENIZER",
+    "raw_response_path": "/mnt/d/lunwen/EC-CSI投稿/working/exploration/20261014_four_case_peer_baselines/calls/29_FSV-B19_repair/response.raw.json",
+    "max_tokens": 16384,
+    "retry_count": 0,
+    "wrapper_exit": 0,
+    "latency_seconds": 16.59,
+    "raw_response_sha256": "aa4fd5fd7384cffb4682de480905cf56e1ccf1ea9458a93bf14864a3bba2e1dd",
+    "raw_response_bytes": 7557,
+    "returned_model": "glm-5.2",
+    "finish_reason": "stop",
+    "usage": {
+      "completion_tokens": 1707,
+      "completion_tokens_details": {
+        "reasoning_tokens": 1485
+      },
+      "prompt_tokens": 6236,
+      "prompt_tokens_details": {
+        "cached_tokens": 0
+      },
+      "total_tokens": 7943
+    },
+    "cost_status": "not_reported_by_provider",
+    "capture_mode": "direct_before_parse",
+    "content_chars": 774,
+    "parse_status": "PASS",
+    "completeness_gate": "PASS",
+    "completed_at": "2026-10-14T11:58:46.677323+00:00",
+    "output_path": "/mnt/d/lunwen/EC-CSI投稿/working/exploration/20261014_four_case_peer_baselines/calls/29_FSV-B19_repair/parsed_output.json"
+  },
+  {
+    "index": 30,
+    "task": "FSV-B19",
+    "stage": "ecas_generate",
+    "smoke": false,
+    "started_at": "2026-10-14T11:58:47.944156+00:00",
+    "status": "COMPLETED",
+    "prompt_path": "/mnt/d/lunwen/EC-CSI投稿/working/exploration/20261014_four_case_peer_baselines/calls/30_FSV-B19_ecas_generate/prompt.txt",
+    "prompt_sha256": "7aea6bda29db8ed3b8f3bcff6f8ff29f933aaa6603a6170c5bb14ec8b2aa560b",
+    "prompt_bytes": 31284,
+    "estimated_prompt_tokens": 15770,
+    "token_count_kind": "UTF8_BYTES_DIV_2_ESTIMATE_NOT_EXACT_GLM_TOKENIZER",
+    "raw_response_path": "/mnt/d/lunwen/EC-CSI投稿/working/exploration/20261014_four_case_peer_baselines/calls/30_FSV-B19_ecas_generate/response.raw.json",
+    "max_tokens": 16384,
+    "retry_count": 0,
+    "wrapper_exit": 0,
+    "latency_seconds": 38.367,
+    "raw_response_sha256": "7ec57fd97164cf01c0e7086642adc515a642f753108a846e1edae2b2fa4a1187",
+    "raw_response_bytes": 12432,
+    "returned_model": "glm-5.2",
+    "finish_reason": "stop",
+    "usage": {
+      "completion_tokens": 2857,
+      "completion_tokens_details": {
+        "reasoning_tokens": 2501
+      },
+      "prompt_tokens": 7718,
+      "prompt_tokens_details": {
+        "cached_tokens": 0
+      },
+      "total_tokens": 10575
+    },
+    "cost_status": "not_reported_by_provider",
+    "capture_mode": "direct_before_parse",
+    "content_chars": 1275,
+    "parse_status": "PASS",
+    "completeness_gate": "PASS",
+    "completed_at": "2026-10-14T11:59:28.819315+00:00",
+    "output_path": "/mnt/d/lunwen/EC-CSI投稿/working/exploration/20261014_four_case_peer_baselines/calls/30_FSV-B19_ecas_generate/parsed_output.json"
+  },
+  {
+    "index": 31,
+    "task": "FSV-B13",
+    "stage": "p2p_rego",
+    "smoke": false,
+    "started_at": "2026-10-14T12:04:42.306859+00:00",
+    "status": "COMPLETED",
+    "prompt_path": "/mnt/d/lunwen/EC-CSI投稿/working/exploration/20261014_four_case_peer_baselines/calls/31_FSV-B13_p2p_rego/prompt.txt",
+    "prompt_sha256": "8fa933468b2e3c43b999e2b62a3e08e09263857cb6f56ea6daea9e7745c073e7",
+    "prompt_bytes": 16576,
+    "estimated_prompt_tokens": 8416,
+    "token_count_kind": "UTF8_BYTES_DIV_2_ESTIMATE_NOT_EXACT_GLM_TOKENIZER",
+    "raw_response_path": "/mnt/d/lunwen/EC-CSI投稿/working/exploration/20261014_four_case_peer_baselines/calls/31_FSV-B13_p2p_rego/response.raw.json",
+    "max_tokens": 16384,
+    "retry_count": 0,
+    "wrapper_exit": 0,
+    "latency_seconds": 12.421,
+    "raw_response_sha256": "272665fd1f44d11b38c5dea731271558aa1d07b98bcb0696b8fee67679d67b74",
+    "raw_response_bytes": 4379,
+    "returned_model": "glm-5.2",
+    "finish_reason": "stop",
+    "usage": {
+      "completion_tokens": 992,
+      "completion_tokens_details": {
+        "reasoning_tokens": 828
+      },
+      "prompt_tokens": 3944,
+      "prompt_tokens_details": {
+        "cached_tokens": 0
+      },
+      "total_tokens": 4936
+    },
+    "cost_status": "not_reported_by_provider",
+    "capture_mode": "direct_before_parse",
+    "content_chars": 522,
+    "parse_status": "PASS",
+    "completeness_gate": "PASS",
+    "completed_at": "2026-10-14T12:04:56.836523+00:00",
+    "output_path": "/mnt/d/lunwen/EC-CSI投稿/working/exploration/20261014_four_case_peer_baselines/calls/31_FSV-B13_p2p_rego/parsed_output.json"
+  },
+  {
+    "index": 32,
+    "task": "FSV-B13",
+    "stage": "p2p_tests",
+    "smoke": false,
+    "started_at": "2026-10-14T12:04:57.588791+00:00",
+    "status": "COMPLETED",
+    "prompt_path": "/mnt/d/lunwen/EC-CSI投稿/working/exploration/20261014_four_case_peer_baselines/calls/32_FSV-B13_p2p_tests/prompt.txt",
+    "prompt_sha256": "bb621d3b31468253dae9fd678c7561371c8e31ae1e25cdbe3128fbc5955f84be",
+    "prompt_bytes": 16809,
+    "estimated_prompt_tokens": 8533,
+    "token_count_kind": "UTF8_BYTES_DIV_2_ESTIMATE_NOT_EXACT_GLM_TOKENIZER",
+    "raw_response_path": "/mnt/d/lunwen/EC-CSI投稿/working/exploration/20261014_four_case_peer_baselines/calls/32_FSV-B13_p2p_tests/response.raw.json",
+    "max_tokens": 16384,
+    "retry_count": 0,
+    "wrapper_exit": 0,
+    "latency_seconds": 11.461,
+    "raw_response_sha256": "4e871aa0ff57a8c3bd6d4ac6d7d856dad4c55fe2d5b30c2568ca8407655885ae",
+    "raw_response_bytes": 4663,
+    "returned_model": "glm-5.2",
+    "finish_reason": "stop",
+    "usage": {
+      "completion_tokens": 1035,
+      "completion_tokens_details": {
+        "reasoning_tokens": 252
+      },
+      "prompt_tokens": 3971,
+      "prompt_tokens_details": {
+        "cached_tokens": 0
+      },
+      "total_tokens": 5006
+    },
+    "cost_status": "not_reported_by_provider",
+    "capture_mode": "direct_before_parse",
+    "content_chars": 2841,
+    "parse_status": "PASS",
+    "completeness_gate": "PASS",
+    "completed_at": "2026-10-14T12:05:09.122364+00:00",
+    "output_path": "/mnt/d/lunwen/EC-CSI投稿/working/exploration/20261014_four_case_peer_baselines/calls/32_FSV-B13_p2p_tests/parsed_output.json"
+  },
+  {
+    "index": 33,
+    "task": "FSV-B13",
+    "stage": "repair",
+    "smoke": false,
+    "started_at": "2026-10-14T12:05:10.315888+00:00",
+    "status": "COMPLETED",
+    "prompt_path": "/mnt/d/lunwen/EC-CSI投稿/working/exploration/20261014_four_case_peer_baselines/calls/33_FSV-B13_repair/prompt.txt",
+    "prompt_sha256": "553a8608fb59e167d9ec1f7739991445d0949907d3dae794d210499e18c58df0",
+    "prompt_bytes": 22292,
+    "estimated_prompt_tokens": 11274,
+    "token_count_kind": "UTF8_BYTES_DIV_2_ESTIMATE_NOT_EXACT_GLM_TOKENIZER",
+    "raw_response_path": "/mnt/d/lunwen/EC-CSI投稿/working/exploration/20261014_four_case_peer_baselines/calls/33_FSV-B13_repair/response.raw.json",
+    "max_tokens": 16384,
+    "retry_count": 0,
+    "wrapper_exit": 0,
+    "latency_seconds": 17.537,
+    "raw_response_sha256": "8d11875f6b10bde4883857cf1a14b520d32fe1ad67464b9ef006e6e5240350fb",
+    "raw_response_bytes": 5174,
+    "returned_model": "glm-5.2",
+    "finish_reason": "stop",
+    "usage": {
+      "completion_tokens": 1155,
+      "completion_tokens_details": {
+        "reasoning_tokens": 977
+      },
+      "prompt_tokens": 5429,
+      "prompt_tokens_details": {
+        "cached_tokens": 0
+      },
+      "total_tokens": 6584
+    },
+    "cost_status": "not_reported_by_provider",
+    "capture_mode": "direct_before_parse",
+    "content_chars": 632,
+    "parse_status": "PASS",
+    "completeness_gate": "PASS",
+    "completed_at": "2026-10-14T12:05:29.863242+00:00",
+    "output_path": "/mnt/d/lunwen/EC-CSI投稿/working/exploration/20261014_four_case_peer_baselines/calls/33_FSV-B13_repair/parsed_output.json"
+  },
+  {
+    "index": 34,
+    "task": "FSV-B19",
+    "stage": "ecas_generate",
+    "smoke": true,
+    "started_at": "2026-10-14T12:08:52.332227+00:00",
+    "status": "COMPLETED",
+    "prompt_path": "/mnt/d/lunwen/EC-CSI投稿/working/exploration/20261014_four_case_peer_baselines/calls/34_FSV-B19_ecas_generate/prompt.txt",
+    "prompt_sha256": "fc5e861f4b72d76f1145f0e6ccba14220408f5b6f8405c995feddab7f0ea5e42",
+    "prompt_bytes": 31780,
+    "estimated_prompt_tokens": 16018,
+    "token_count_kind": "UTF8_BYTES_DIV_2_ESTIMATE_NOT_EXACT_GLM_TOKENIZER",
+    "raw_response_path": "/mnt/d/lunwen/EC-CSI投稿/working/exploration/20261014_four_case_peer_baselines/calls/34_FSV-B19_ecas_generate/response.raw.json",
+    "max_tokens": 16384,
+    "retry_count": 0,
+    "wrapper_exit": 0,
+    "latency_seconds": 32.712,
+    "raw_response_sha256": "3d66ae9bab2f85e72c560b4628c0e3732a680a832a06654fd9e9d2aff0525135",
+    "raw_response_bytes": 12085,
+    "returned_model": "glm-5.2",
+    "finish_reason": "stop",
+    "usage": {
+      "completion_tokens": 2877,
+      "completion_tokens_details": {
+        "reasoning_tokens": 2425
+      },
+      "prompt_tokens": 7803,
+      "prompt_tokens_details": {
+        "cached_tokens": 0
+      },
+      "total_tokens": 10680
+    },
+    "cost_status": "not_reported_by_provider",
+    "capture_mode": "direct_before_parse",
+    "content_chars": 1041,
+    "parse_status": "PASS",
+    "completeness_gate": "PASS",
+    "completed_at": "2026-10-14T12:09:27.207189+00:00",
+    "output_path": "/mnt/d/lunwen/EC-CSI投稿/working/exploration/20261014_four_case_peer_baselines/calls/34_FSV-B19_ecas_generate/parsed_output.json"
+  },
+  {
+    "index": 35,
+    "task": "FSV-S03",
+    "stage": "ecas_generate",
+    "smoke": false,
+    "started_at": "2026-10-14T12:11:14.664346+00:00",
+    "status": "COMPLETED",
+    "prompt_path": "/mnt/d/lunwen/EC-CSI投稿/working/exploration/20261014_four_case_peer_baselines/calls/35_FSV-S03_ecas_generate/prompt.txt",
+    "prompt_sha256": "7595e6842a8482cffbef6d1d88a684987c75c596155b0370d2cbee08be9b85ac",
+    "prompt_bytes": 13491,
+    "estimated_prompt_tokens": 6874,
+    "token_count_kind": "UTF8_BYTES_DIV_2_ESTIMATE_NOT_EXACT_GLM_TOKENIZER",
+    "raw_response_path": "/mnt/d/lunwen/EC-CSI投稿/working/exploration/20261014_four_case_peer_baselines/calls/35_FSV-S03_ecas_generate/response.raw.json",
+    "max_tokens": 16384,
+    "retry_count": 0,
+    "wrapper_exit": 0,
+    "latency_seconds": 16.937,
+    "raw_response_sha256": "8d322bb8b4500a73b7676443b4f262c27394aa1d73a2de9bff1f506968877ec2",
+    "raw_response_bytes": 7912,
+    "returned_model": "glm-5.2",
+    "finish_reason": "stop",
+    "usage": {
+      "completion_tokens": 1850,
+      "completion_tokens_details": {
+        "reasoning_tokens": 1486
+      },
+      "prompt_tokens": 3339,
+      "prompt_tokens_details": {
+        "cached_tokens": 0
+      },
+      "total_tokens": 5189
+    },
+    "cost_status": "not_reported_by_provider",
+    "capture_mode": "direct_before_parse",
+    "content_chars": 922,
+    "parse_status": "PASS",
+    "completeness_gate": "PASS",
+    "completed_at": "2026-10-14T12:11:31.676467+00:00",
+    "output_path": "/mnt/d/lunwen/EC-CSI投稿/working/exploration/20261014_four_case_peer_baselines/calls/35_FSV-S03_ecas_generate/parsed_output.json"
+  },
+  {
+    "index": 36,
+    "task": "FSV-B13",
+    "stage": "ecas_generate",
+    "smoke": false,
+    "started_at": "2026-10-14T12:11:32.508955+00:00",
+    "status": "COMPLETED",
+    "prompt_path": "/mnt/d/lunwen/EC-CSI投稿/working/exploration/20261014_four_case_peer_baselines/calls/36_FSV-B13_ecas_generate/prompt.txt",
+    "prompt_sha256": "2e0c991f60415b17db80f4564f318b322a21a5d680ee189531187254a843b966",
+    "prompt_bytes": 24050,
+    "estimated_prompt_tokens": 12153,
+    "token_count_kind": "UTF8_BYTES_DIV_2_ESTIMATE_NOT_EXACT_GLM_TOKENIZER",
+    "raw_response_path": "/mnt/d/lunwen/EC-CSI投稿/working/exploration/20261014_four_case_peer_baselines/calls/36_FSV-B13_ecas_generate/response.raw.json",
+    "max_tokens": 16384,
+    "retry_count": 0,
+    "wrapper_exit": 0,
+    "latency_seconds": 11.723,
+    "raw_response_sha256": "7ab3a49a447713f0a780789ff84c0a6237b8b3c1dc689d808c20dbd16b2bd8f2",
+    "raw_response_bytes": 5653,
+    "returned_model": "glm-5.2",
+    "finish_reason": "stop",
+    "usage": {
+      "completion_tokens": 1220,
+      "completion_tokens_details": {
+        "reasoning_tokens": 921
+      },
+      "prompt_tokens": 5795,
+      "prompt_tokens_details": {
+        "cached_tokens": 0
+      },
+      "total_tokens": 7015
+    },
+    "cost_status": "not_reported_by_provider",
+    "capture_mode": "direct_before_parse",
+    "content_chars": 1039,
+    "parse_status": "PASS",
+    "completeness_gate": "PASS",
+    "completed_at": "2026-10-14T12:11:44.318228+00:00",
+    "output_path": "/mnt/d/lunwen/EC-CSI投稿/working/exploration/20261014_four_case_peer_baselines/calls/36_FSV-B13_ecas_generate/parsed_output.json"
+  },
+  {
+    "index": 37,
+    "task": "FSV-B17",
+    "stage": "ecas_generate",
+    "smoke": false,
+    "started_at": "2026-10-14T12:11:45.264805+00:00",
+    "status": "COMPLETED",
+    "prompt_path": "/mnt/d/lunwen/EC-CSI投稿/working/exploration/20261014_four_case_peer_baselines/calls/37_FSV-B17_ecas_generate/prompt.txt",
+    "prompt_sha256": "2f4e5e1dec3d8f47dc39e86206879c8d2063419edfaea4c2f3fff048b24e3f3a",
+    "prompt_bytes": 22115,
+    "estimated_prompt_tokens": 11186,
+    "token_count_kind": "UTF8_BYTES_DIV_2_ESTIMATE_NOT_EXACT_GLM_TOKENIZER",
+    "raw_response_path": "/mnt/d/lunwen/EC-CSI投稿/working/exploration/20261014_four_case_peer_baselines/calls/37_FSV-B17_ecas_generate/response.raw.json",
+    "max_tokens": 16384,
+    "retry_count": 0,
+    "wrapper_exit": 0,
+    "latency_seconds": 32.778,
+    "raw_response_sha256": "b6cdc3db7429c32eaa710b3e65ade0efb2a0756db6291224fcc782895e859970",
+    "raw_response_bytes": 12141,
+    "returned_model": "glm-5.2",
+    "finish_reason": "stop",
+    "usage": {
+      "completion_tokens": 2566,
+      "completion_tokens_details": {
+        "reasoning_tokens": 2318
+      },
+      "prompt_tokens": 5371,
+      "prompt_tokens_details": {
+        "cached_tokens": 0
+      },
+      "total_tokens": 7937
+    },
+    "cost_status": "not_reported_by_provider",
+    "capture_mode": "direct_before_parse",
+    "content_chars": 821,
+    "parse_status": "PASS",
+    "completeness_gate": "PASS",
+    "completed_at": "2026-10-14T12:12:20.146980+00:00",
+    "output_path": "/mnt/d/lunwen/EC-CSI投稿/working/exploration/20261014_four_case_peer_baselines/calls/37_FSV-B17_ecas_generate/parsed_output.json"
+  },
+  {
+    "index": 38,
+    "task": "FSV-B19",
+    "stage": "ecas_generate",
+    "smoke": false,
+    "started_at": "2026-10-14T12:12:22.978927+00:00",
+    "status": "COMPLETED",
+    "prompt_path": "/mnt/d/lunwen/EC-CSI投稿/working/exploration/20261014_four_case_peer_baselines/calls/38_FSV-B19_ecas_generate/prompt.txt",
+    "prompt_sha256": "cf8ad869816ddfb7c0be8bd726f81c9b8cc7dd2afdd6e5ca7bdbfcf4d170ddc5",
+    "prompt_bytes": 31778,
+    "estimated_prompt_tokens": 16017,
+    "token_count_kind": "UTF8_BYTES_DIV_2_ESTIMATE_NOT_EXACT_GLM_TOKENIZER",
+    "raw_response_path": "/mnt/d/lunwen/EC-CSI投稿/working/exploration/20261014_four_case_peer_baselines/calls/38_FSV-B19_ecas_generate/response.raw.json",
+    "max_tokens": 16384,
+    "retry_count": 0,
+    "wrapper_exit": 0,
+    "latency_seconds": 108.935,
+    "raw_response_sha256": "66aaa2702abc16634b4fd15138a6c198a02ae6f21bb03990a00c9c2a223bca5f",
+    "raw_response_bytes": 36549,
+    "returned_model": "glm-5.2",
+    "finish_reason": "stop",
+    "usage": {
+      "completion_tokens": 8106,
+      "completion_tokens_details": {
+        "reasoning_tokens": 7639
+      },
+      "prompt_tokens": 7799,
+      "prompt_tokens_details": {
+        "cached_tokens": 0
+      },
+      "total_tokens": 15905
+    },
+    "cost_status": "not_reported_by_provider",
+    "capture_mode": "direct_before_parse",
+    "content_chars": 1053,
+    "parse_status": "PASS",
+    "completeness_gate": "PASS",
+    "completed_at": "2026-10-14T12:14:18.023184+00:00",
+    "output_path": "/mnt/d/lunwen/EC-CSI投稿/working/exploration/20261014_four_case_peer_baselines/calls/38_FSV-B19_ecas_generate/parsed_output.json"
+  }
+]

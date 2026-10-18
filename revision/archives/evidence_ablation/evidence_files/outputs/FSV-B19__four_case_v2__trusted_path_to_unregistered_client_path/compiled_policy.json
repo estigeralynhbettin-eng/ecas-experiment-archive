@@ -1,0 +1,52 @@
+{
+  "policy_version": "EC-FIELD-SECURITY-V3",
+  "policy_id": "FSV-B19-POLICY-PO-HOLD-GUARD",
+  "target": {
+    "operation": "POST /api/resource/Purchase Order",
+    "system": "ERPNext",
+    "version": "16.0.0"
+  },
+  "evidence_refs": [
+    "VIS-FSV-B19-01",
+    "VIS-FSV-B19-RUNTIME-ABI",
+    "VIS-FSV-B19-04"
+  ],
+  "rules": [
+    {
+      "rule_id": "FSV-B19-RULE-PO-HOLD-GUARD",
+      "primitive_id": "SP-BOUNDED-BUSINESS-GUARD",
+      "evidence_refs": [
+        "VIS-FSV-B19-01",
+        "VIS-FSV-B19-RUNTIME-ABI"
+      ],
+      "op": "bounded_guard_dnf",
+      "alternatives": [
+        {
+          "clauses": [
+            {
+              "kind": "scalar_compare",
+              "left_path": "/request/body/ecasClientClaim/supplierOnHold",
+              "operator": "eq",
+              "right_source": "literal",
+              "right_path": "",
+              "right_value": false
+            }
+          ]
+        },
+        {
+          "clauses": [
+            {
+              "kind": "scalar_compare",
+              "left_path": "/request/body/ecasClientClaim/holdType",
+              "operator": "eq",
+              "right_source": "literal",
+              "right_path": "",
+              "right_value": "Payments"
+            }
+          ]
+        }
+      ],
+      "on_missing": "deny"
+    }
+  ]
+}

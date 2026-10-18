@@ -1,0 +1,18 @@
+cff-version: 1.2.0
+message: "Please cite this resource if you use its data, software or checks."
+title: "ECAS Experiment Data and Offline Replay for API Security Rules"
+type: dataset
+version: "1.0.0"
+authors:
+  - family-names: Lv
+    given-names: Yi
+    orcid: https://orcid.org/0009-0009-2973-620X
+    affiliation: Tongji University
+  - family-names: Wang
+    given-names: Cheng
+    orcid: https://orcid.org/0000-0002-4752-0316
+    affiliation: Tongji University
+date-released: "2026-10-18"
+license: CC-BY-SA-4.0
+# Record-level dataset license; see LICENSE_STATUS.md for software and upstream exceptions.
+# DOI is intentionally absent until Zenodo assigns the real identifier.

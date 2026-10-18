@@ -1,0 +1,28 @@
+{
+  "choices": [
+    {
+      "finish_reason": "stop",
+      "index": 0,
+      "message": {
+        "content": "{\"begin\":\"BEGIN_FSV-B06_autopac_judge_MAIN\",\"stage\":\"autopac_judge\",\"output\":{\"verdict\":\"REVISE\",\"issues\":[\"The policy requires `trusted.reAgeIsLatestTransaction == true` for all transaction reversals. Source VIS-FSV-B06-01 only applies this restriction to Re-Age transactions. Reversals of non-Re-Age transactions should not be subject to this condition, but the current Rego will deny them if the flag is false.\"]},\"end\":\"END_FSV-B06_autopac_judge_MAIN\"}",
+        "role": "assistant"
+      }
+    }
+  ],
+  "created": 1791950586,
+  "id": "202610141202525226a872d3db4c13",
+  "model": "glm-5.2",
+  "object": "chat.completion",
+  "request_id": "202610141202525226a872d3db4c13",
+  "usage": {
+    "completion_tokens": 1124,
+    "completion_tokens_details": {
+      "reasoning_tokens": 981
+    },
+    "prompt_tokens": 1288,
+    "prompt_tokens_details": {
+      "cached_tokens": 0
+    },
+    "total_tokens": 2412
+  }
+}

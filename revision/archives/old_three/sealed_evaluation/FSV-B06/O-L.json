@@ -1,0 +1,1 @@
+{"oracle_channel":"O-L","task_window_id":"FSV-B06","vectors":[{"envelope":{"request":{"body":{}},"trusted":{"reAgeIsLatestTransaction":true}},"expected_class":"allow","reason":"re-age is latest transaction","synthetic_data_only":true,"vector_id":"FSV-B06-OL-01","vector_suffix":"OL-01"}]}

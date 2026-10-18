@@ -1,0 +1,16 @@
+{
+  "original_status": "STOPPED_PROTOCOL_OR_TRANSPORT",
+  "changes": [
+    {
+      "field": "status",
+      "from": "EXTRACTED",
+      "to": "READY",
+      "classification": "EQUIVALENT_COMPLETED_EXTRACTION_STATUS_ALIAS"
+    }
+  ],
+  "raw_sha256": "05f7d4b6f347c8856774608bebe486f3e9cb98bf6c20cfac257dcfbeb9d50928",
+  "recovered_output_sha256": "8a9358ac601dd933f29173680be40e2a825a3c1f608585572a9e926212c4f08c",
+  "business_rules_changed": false,
+  "new_model_calls": 0,
+  "checked_at": "2026-10-14T04:02:03.453659+00:00"
+}

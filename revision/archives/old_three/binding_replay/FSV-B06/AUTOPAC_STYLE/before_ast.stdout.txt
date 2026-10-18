@@ -1,0 +1,260 @@
+{
+  "package": {
+    "path": [
+      {
+        "type": "var",
+        "value": "data"
+      },
+      {
+        "type": "string",
+        "value": "external_pilot"
+      }
+    ]
+  },
+  "imports": [
+    {
+      "path": {
+        "type": "ref",
+        "value": [
+          {
+            "type": "var",
+            "value": "rego"
+          },
+          {
+            "type": "string",
+            "value": "v1"
+          }
+        ]
+      }
+    }
+  ],
+  "rules": [
+    {
+      "body": [
+        {
+          "index": 0,
+          "terms": {
+            "type": "boolean",
+            "value": true
+          }
+        }
+      ],
+      "default": true,
+      "head": {
+        "name": "allow",
+        "value": {
+          "type": "boolean",
+          "value": false
+        },
+        "assign": true,
+        "ref": [
+          {
+            "type": "var",
+            "value": "allow"
+          }
+        ]
+      }
+    },
+    {
+      "body": [
+        {
+          "index": 0,
+          "terms": [
+            {
+              "type": "ref",
+              "value": [
+                {
+                  "type": "var",
+                  "value": "equal"
+                }
+              ]
+            },
+            {
+              "type": "ref",
+              "value": [
+                {
+                  "type": "var",
+                  "value": "input"
+                },
+                {
+                  "type": "string",
+                  "value": "subject_role"
+                }
+              ]
+            },
+            {
+              "type": "string",
+              "value": "authenticated_api_caller"
+            }
+          ]
+        },
+        {
+          "index": 1,
+          "terms": [
+            {
+              "type": "ref",
+              "value": [
+                {
+                  "type": "var",
+                  "value": "equal"
+                }
+              ]
+            },
+            {
+              "type": "ref",
+              "value": [
+                {
+                  "type": "var",
+                  "value": "input"
+                },
+                {
+                  "type": "string",
+                  "value": "action"
+                }
+              ]
+            },
+            {
+              "type": "string",
+              "value": "POST /v1/loans/{loanId}/transactions/{transactionId}?command=undo"
+            }
+          ]
+        },
+        {
+          "index": 2,
+          "terms": [
+            {
+              "type": "ref",
+              "value": [
+                {
+                  "type": "var",
+                  "value": "equal"
+                }
+              ]
+            },
+            {
+              "type": "ref",
+              "value": [
+                {
+                  "type": "var",
+                  "value": "input"
+                },
+                {
+                  "type": "string",
+                  "value": "resource_system"
+                }
+              ]
+            },
+            {
+              "type": "string",
+              "value": "Fineract"
+            }
+          ]
+        },
+        {
+          "index": 3,
+          "terms": [
+            {
+              "type": "ref",
+              "value": [
+                {
+                  "type": "var",
+                  "value": "equal"
+                }
+              ]
+            },
+            {
+              "type": "ref",
+              "value": [
+                {
+                  "type": "var",
+                  "value": "input"
+                },
+                {
+                  "type": "string",
+                  "value": "resource_version"
+                }
+              ]
+            },
+            {
+              "type": "string",
+              "value": "1.14.0"
+            }
+          ]
+        },
+        {
+          "index": 4,
+          "negated": true,
+          "terms": {
+            "type": "var",
+            "value": "re_age_reversal_blocked"
+          }
+        }
+      ],
+      "head": {
+        "name": "allow",
+        "value": {
+          "type": "boolean",
+          "value": true
+        },
+        "ref": [
+          {
+            "type": "var",
+            "value": "allow"
+          }
+        ]
+      }
+    },
+    {
+      "body": [
+        {
+          "index": 0,
+          "terms": [
+            {
+              "type": "ref",
+              "value": [
+                {
+                  "type": "var",
+                  "value": "equal"
+                }
+              ]
+            },
+            {
+              "type": "ref",
+              "value": [
+                {
+                  "type": "var",
+                  "value": "input"
+                },
+                {
+                  "type": "string",
+                  "value": "trusted"
+                },
+                {
+                  "type": "string",
+                  "value": "reAgeIsLatestTransaction"
+                }
+              ]
+            },
+            {
+              "type": "boolean",
+              "value": false
+            }
+          ]
+        }
+      ],
+      "head": {
+        "name": "re_age_reversal_blocked",
+        "value": {
+          "type": "boolean",
+          "value": true
+        },
+        "ref": [
+          {
+            "type": "var",
+            "value": "re_age_reversal_blocked"
+          }
+        ]
+      }
+    }
+  ]
+}

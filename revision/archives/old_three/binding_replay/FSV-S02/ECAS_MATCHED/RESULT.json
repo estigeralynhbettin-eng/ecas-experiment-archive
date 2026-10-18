@@ -1,0 +1,96 @@
+{
+  "task": "FSV-S02",
+  "method": "ECAS_MATCHED",
+  "initial_status": "EVALUATED",
+  "status": "EVALUATED",
+  "classification": "POST_HOC_ENGINEERING_INTERFACE_REPAIR_NOT_FRESH_MODEL_EFFECT",
+  "requests": [
+    {
+      "channel": "O-L",
+      "input": {
+        "request": {
+          "body": {
+            "documentKey": "SYNTHETIC-DOCUMENT-KEY",
+            "documentTypeId": 1,
+            "status": "Active"
+          }
+        },
+        "trusted": {}
+      },
+      "mapped_input": {
+        "request": {
+          "body": {
+            "documentKey": "SYNTHETIC-DOCUMENT-KEY",
+            "documentTypeId": 1,
+            "status": "Active"
+          }
+        },
+        "trusted": {},
+        "subject": {
+          "role": "authenticated_api_caller"
+        },
+        "action": "POST /v1/clients/{clientId}/identifiers",
+        "resource": "Fineract:1.14.0",
+        "subject_role": "authenticated_api_caller",
+        "resource_system": "Fineract",
+        "resource_version": "1.14.0"
+      },
+      "expected": "allow",
+      "actual": {
+        "policy_id": "pol-FSV-S02-001",
+        "decision": "allow",
+        "fail_closed": true,
+        "violations": []
+      }
+    },
+    {
+      "channel": "O-I",
+      "input": {
+        "request": {
+          "body": {
+            "documentKey": "SYNTHETIC-DOCUMENT-KEY",
+            "documentTypeId": 1,
+            "undeclared_script": "<script>alert(1)</script>"
+          }
+        },
+        "trusted": {}
+      },
+      "mapped_input": {
+        "request": {
+          "body": {
+            "documentKey": "SYNTHETIC-DOCUMENT-KEY",
+            "documentTypeId": 1,
+            "undeclared_script": "<script>alert(1)</script>"
+          }
+        },
+        "trusted": {},
+        "subject": {
+          "role": "authenticated_api_caller"
+        },
+        "action": "POST /v1/clients/{clientId}/identifiers",
+        "resource": "Fineract:1.14.0",
+        "subject_role": "authenticated_api_caller",
+        "resource_system": "Fineract",
+        "resource_version": "1.14.0"
+      },
+      "expected": "deny",
+      "actual": {
+        "policy_id": "pol-FSV-S02-001",
+        "decision": "deny",
+        "fail_closed": true,
+        "violations": [
+          {
+            "rule_id": "rule-FSV-S02-001",
+            "code": "unexpected_fields",
+            "detail": "undeclared_script"
+          }
+        ]
+      }
+    }
+  ],
+  "model_calls": [
+    18
+  ],
+  "original_policy_sha256": "996e022383557449a4b8a9663b8bf5457544e5065ffdc7bb4677842ab368bdff",
+  "request_pair_correct": true
+}

@@ -1,0 +1,41 @@
+{
+  "tests": [
+    {
+      "id": "p2p_test_reversal_latest_true",
+      "input": {
+        "request": {
+          "body": {}
+        },
+        "trusted": {
+          "reAgeIsLatestTransaction": true
+        }
+      },
+      "expected": "allow",
+      "source_ref": "VIS-FSV-B06-01"
+    },
+    {
+      "id": "p2p_test_reversal_latest_false",
+      "input": {
+        "request": {
+          "body": {}
+        },
+        "trusted": {
+          "reAgeIsLatestTransaction": false
+        }
+      },
+      "expected": "deny",
+      "source_ref": "VIS-FSV-B06-01"
+    },
+    {
+      "id": "p2p_test_reversal_latest_missing",
+      "input": {
+        "request": {
+          "body": {}
+        },
+        "trusted": {}
+      },
+      "expected": "deny",
+      "source_ref": "VIS-FSV-B06-01"
+    }
+  ]
+}

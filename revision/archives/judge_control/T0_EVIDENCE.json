@@ -1,0 +1,9 @@
+{
+  "status": "PASS",
+  "scope_id": "ECAS-TYPED-IR-SEMANTIC-JUDGE-CONTROL-20261014-01",
+  "run_id": "typed-ir-judge-t0-v3",
+  "runtime_lane": "/root/ecas_semantic_judge_control_20261014",
+  "receipt_path": "T0_RECEIPT.json",
+  "receipt_sha256": "7b5c3ca9cac2737cc773b63ced16ef3be1f3f130d538ba216ebf3f106a5c7b62",
+  "completed_at": "2026-10-15T00:57:47.404325+00:00"
+}

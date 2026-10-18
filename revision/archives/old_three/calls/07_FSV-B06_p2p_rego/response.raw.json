@@ -1,0 +1,28 @@
+{
+  "choices": [
+    {
+      "finish_reason": "stop",
+      "index": 0,
+      "message": {
+        "content": "{\"begin\":\"BEGIN_FSV-B06_p2p_rego_MAIN\",\"stage\":\"p2p_rego\",\"output\":{\"status\":\"READY\",\"rego\":\"package external_pilot\\n\\nimport rego.v1\\n\\ndefault allow := false\\n\\nallow if {\\n    input.trusted.reAgeIsLatestTransaction == true\\n}\",\"reason\":\"Source VIS-FSV-B06-01 states that re-age transactions can be reversed only if they are the latest transaction on the loan account. The trusted path /trusted/reAgeIsLatestTransaction is provided by the runtime ABI to evaluate this condition.\"},\"end\":\"END_FSV-B06_p2p_rego_MAIN\"}",
+        "role": "assistant"
+      }
+    }
+  ],
+  "created": 1791950536,
+  "id": "20261014120204b11b9b942e25409a",
+  "model": "glm-5.2",
+  "object": "chat.completion",
+  "request_id": "20261014120204b11b9b942e25409a",
+  "usage": {
+    "completion_tokens": 673,
+    "completion_tokens_details": {
+      "reasoning_tokens": 512
+    },
+    "prompt_tokens": 1457,
+    "prompt_tokens_details": {
+      "cached_tokens": 0
+    },
+    "total_tokens": 2130
+  }
+}

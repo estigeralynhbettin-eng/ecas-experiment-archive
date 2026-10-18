@@ -1,0 +1,53 @@
+{
+  "status": "COMPLETED_PENDING_REAL_TOKEN_GATE",
+  "scope_id": "ECAS-TYPED-IR-SEMANTIC-JUDGE-CONTROL-20261014-01",
+  "calls": [
+    1
+  ],
+  "model_calls": 1,
+  "pilot_task": "FSV-B19",
+  "total_planned_judge_calls": 4,
+  "remaining_new_calls": 3,
+  "pilot_records_sha256": "26fbb05080faea0e156e3c3c97bf3c0a1f355cb9e8dbc3e2c9b9a23e887fe0bc",
+  "pilot_ledger_sha256": "13f9de3e779e9810c3a716852b1bbeacb988d615131bc3d3b01d6afecebb7deb",
+  "reviews": [
+    {
+      "candidate_slot": "A",
+      "candidate_id": "FSV-B19-CAND-PO-HOLD-GUARD",
+      "verdict": "ACCEPT",
+      "target_implementation": "IMPLEMENTED",
+      "semantic_direction": "CONSISTENT",
+      "unsupported_extra_constraints": "NONE_IDENTIFIED",
+      "issues": [],
+      "reason": "Candidate A implements the supplier hold policy for Purchase Order creation. The bounded_guard_dnf ALLOW alternatives are: supplier not on hold, or holdType equals Payments. This matches the source: Invoices and All hold types block Purchase Orders, while Payments does not. Declared trusted paths /trusted/supplierOnHold and /trusted/holdType are used, and on_missing=deny satisfies the missing-input rejection requirement. No unsupported extra constraints or direction issues are visible."
+    },
+    {
+      "candidate_slot": "B",
+      "candidate_id": "FSV-B19-C01",
+      "verdict": "REVISE",
+      "target_implementation": "NOT_IMPLEMENTED",
+      "semantic_direction": "INVERTED",
+      "unsupported_extra_constraints": "NONE_IDENTIFIED",
+      "issues": [
+        {
+          "category": "DIRECTION_MISMATCH",
+          "rule_id": "FSV-B19-R01",
+          "evidence_refs": [
+            "VIS-FSV-B19-01"
+          ],
+          "detail": "The ALLOW alternatives require supplierOnHold=true and holdType in {Invoices, All}. Source says Invoices and All block Purchase Orders, so these are exactly the conditions that should deny, not allow. The rule is inverted."
+        },
+        {
+          "category": "MISSING_INPUT_HANDLING",
+          "rule_id": "FSV-B19-R01",
+          "evidence_refs": [
+            "VIS-FSV-B19-RUNTIME-ABI"
+          ],
+          "detail": "on_missing is set to skip, but the operation does not explicitly support skip. Missing trusted inputs should reject per declared semantics."
+        }
+      ],
+      "reason": "Candidate B inverts the hold-type semantics: it allows Purchase Order creation when supplierOnHold is true and holdType is Invoices or All, which source evidence states should block Purchase Orders. It also uses on_missing=skip despite no explicit skip support, contrary to the missing-input rejection requirement."
+    }
+  ],
+  "next_action": "root must call actual evaluate_llm_token_smoke and save receipt/ready before run"
+}

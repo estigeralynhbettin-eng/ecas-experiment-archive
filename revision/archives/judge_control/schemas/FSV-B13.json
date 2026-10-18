@@ -1,0 +1,243 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "type": "object",
+  "additionalProperties": false,
+  "required": [
+    "begin",
+    "stage",
+    "output",
+    "end"
+  ],
+  "properties": {
+    "begin": {
+      "const": "BEGIN_TYPED_IR_JUDGE_FSV_B13_20261014"
+    },
+    "end": {
+      "const": "END_TYPED_IR_JUDGE_FSV_B13_20261014"
+    },
+    "stage": {
+      "const": "typed_ir_semantic_judge_control"
+    },
+    "output": {
+      "type": "object",
+      "additionalProperties": false,
+      "required": [
+        "task_id",
+        "reviews"
+      ],
+      "properties": {
+        "task_id": {
+          "const": "FSV-B13"
+        },
+        "reviews": {
+          "type": "array",
+          "prefixItems": [
+            {
+              "type": "object",
+              "additionalProperties": false,
+              "required": [
+                "candidate_slot",
+                "candidate_id",
+                "verdict",
+                "target_implementation",
+                "semantic_direction",
+                "unsupported_extra_constraints",
+                "issues",
+                "reason"
+              ],
+              "properties": {
+                "candidate_slot": {
+                  "const": "A"
+                },
+                "candidate_id": {
+                  "const": "FSV-B13-CAND-001"
+                },
+                "verdict": {
+                  "enum": [
+                    "ACCEPT",
+                    "REVISE",
+                    "ABSTAIN"
+                  ]
+                },
+                "target_implementation": {
+                  "enum": [
+                    "IMPLEMENTED",
+                    "NOT_IMPLEMENTED",
+                    "UNCLEAR"
+                  ]
+                },
+                "semantic_direction": {
+                  "enum": [
+                    "CONSISTENT",
+                    "INVERTED",
+                    "UNCLEAR",
+                    "NOT_APPLICABLE"
+                  ]
+                },
+                "unsupported_extra_constraints": {
+                  "enum": [
+                    "NONE_IDENTIFIED",
+                    "IDENTIFIED",
+                    "UNCLEAR"
+                  ]
+                },
+                "issues": {
+                  "type": "array",
+                  "items": {
+                    "type": "object",
+                    "additionalProperties": false,
+                    "required": [
+                      "category",
+                      "rule_id",
+                      "evidence_refs",
+                      "detail"
+                    ],
+                    "properties": {
+                      "category": {
+                        "enum": [
+                          "TARGET_NOT_IMPLEMENTED",
+                          "DIRECTION_MISMATCH",
+                          "UNSUPPORTED_CONSTRAINT",
+                          "MISSING_SOURCE_SUPPORT",
+                          "UNDECLARED_PATH",
+                          "MISSING_INPUT_HANDLING",
+                          "OTHER_SOURCE_SEMANTIC_ISSUE"
+                        ]
+                      },
+                      "rule_id": {
+                        "type": "string",
+                        "maxLength": 128
+                      },
+                      "evidence_refs": {
+                        "type": "array",
+                        "items": {
+                          "type": "string"
+                        },
+                        "maxItems": 16,
+                        "uniqueItems": true
+                      },
+                      "detail": {
+                        "type": "string",
+                        "minLength": 1,
+                        "maxLength": 1600
+                      }
+                    }
+                  },
+                  "maxItems": 8
+                },
+                "reason": {
+                  "type": "string",
+                  "minLength": 1,
+                  "maxLength": 1800
+                }
+              }
+            },
+            {
+              "type": "object",
+              "additionalProperties": false,
+              "required": [
+                "candidate_slot",
+                "candidate_id",
+                "verdict",
+                "target_implementation",
+                "semantic_direction",
+                "unsupported_extra_constraints",
+                "issues",
+                "reason"
+              ],
+              "properties": {
+                "candidate_slot": {
+                  "const": "B"
+                },
+                "candidate_id": {
+                  "const": "FSV-B13-ECAS-PurchaseReceipt-OverReceiveQtyGuard"
+                },
+                "verdict": {
+                  "enum": [
+                    "ACCEPT",
+                    "REVISE",
+                    "ABSTAIN"
+                  ]
+                },
+                "target_implementation": {
+                  "enum": [
+                    "IMPLEMENTED",
+                    "NOT_IMPLEMENTED",
+                    "UNCLEAR"
+                  ]
+                },
+                "semantic_direction": {
+                  "enum": [
+                    "CONSISTENT",
+                    "INVERTED",
+                    "UNCLEAR",
+                    "NOT_APPLICABLE"
+                  ]
+                },
+                "unsupported_extra_constraints": {
+                  "enum": [
+                    "NONE_IDENTIFIED",
+                    "IDENTIFIED",
+                    "UNCLEAR"
+                  ]
+                },
+                "issues": {
+                  "type": "array",
+                  "items": {
+                    "type": "object",
+                    "additionalProperties": false,
+                    "required": [
+                      "category",
+                      "rule_id",
+                      "evidence_refs",
+                      "detail"
+                    ],
+                    "properties": {
+                      "category": {
+                        "enum": [
+                          "TARGET_NOT_IMPLEMENTED",
+                          "DIRECTION_MISMATCH",
+                          "UNSUPPORTED_CONSTRAINT",
+                          "MISSING_SOURCE_SUPPORT",
+                          "UNDECLARED_PATH",
+                          "MISSING_INPUT_HANDLING",
+                          "OTHER_SOURCE_SEMANTIC_ISSUE"
+                        ]
+                      },
+                      "rule_id": {
+                        "type": "string",
+                        "maxLength": 128
+                      },
+                      "evidence_refs": {
+                        "type": "array",
+                        "items": {
+                          "type": "string"
+                        },
+                        "maxItems": 16,
+                        "uniqueItems": true
+                      },
+                      "detail": {
+                        "type": "string",
+                        "minLength": 1,
+                        "maxLength": 1600
+                      }
+                    }
+                  },
+                  "maxItems": 8
+                },
+                "reason": {
+                  "type": "string",
+                  "minLength": 1,
+                  "maxLength": 1800
+                }
+              }
+            }
+          ],
+          "items": false,
+          "minItems": 2,
+          "maxItems": 2
+        }
+      }
+    }
+  }
+}

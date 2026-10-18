@@ -1,0 +1,69 @@
+{
+  "policy_version": "EC-FIELD-SECURITY-V3",
+  "policy_id": "FSV-B19-P01",
+  "target": {
+    "operation": "POST /api/resource/Purchase Order",
+    "system": "ERPNext",
+    "version": "16.0.0"
+  },
+  "evidence_refs": [
+    "VIS-FSV-B19-01",
+    "VIS-FSV-B19-03",
+    "VIS-FSV-B19-RUNTIME-ABI"
+  ],
+  "rules": [
+    {
+      "rule_id": "FSV-B19-R01",
+      "primitive_id": "SP-BOUNDED-BUSINESS-GUARD",
+      "evidence_refs": [
+        "VIS-FSV-B19-01",
+        "VIS-FSV-B19-03",
+        "VIS-FSV-B19-RUNTIME-ABI"
+      ],
+      "op": "bounded_guard_dnf",
+      "alternatives": [
+        {
+          "clauses": [
+            {
+              "kind": "scalar_compare",
+              "left_path": "/trusted/supplierOnHold",
+              "operator": "eq",
+              "right_source": "literal",
+              "right_path": "",
+              "right_value": true
+            },
+            {
+              "kind": "scalar_compare",
+              "left_path": "/trusted/holdType",
+              "operator": "eq",
+              "right_source": "literal",
+              "right_path": "",
+              "right_value": "Invoices"
+            }
+          ]
+        },
+        {
+          "clauses": [
+            {
+              "kind": "scalar_compare",
+              "left_path": "/trusted/supplierOnHold",
+              "operator": "eq",
+              "right_source": "literal",
+              "right_path": "",
+              "right_value": true
+            },
+            {
+              "kind": "scalar_compare",
+              "left_path": "/trusted/holdType",
+              "operator": "eq",
+              "right_source": "literal",
+              "right_path": "",
+              "right_value": "All"
+            }
+          ]
+        }
+      ],
+      "on_missing": "skip"
+    }
+  ]
+}

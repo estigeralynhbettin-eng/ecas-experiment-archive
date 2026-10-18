@@ -1,0 +1,91 @@
+{
+  "task": "FSV-S03",
+  "method": "ECAS_MATCHED",
+  "scope_id": "ECAS-MATCHED-EVIDENCE-LABOR-20261014-01",
+  "status": "ELIGIBLE",
+  "calls": [
+    9
+  ],
+  "repaired_once": false,
+  "execution_eligible": true,
+  "first_checks": {
+    "accepted": true,
+    "compile_status": "COMPILED",
+    "admission_status": "ADMITTED",
+    "developer_results": {
+      "passed": true,
+      "rows": [
+        {
+          "id": "dev_integer",
+          "expected": "allow",
+          "actual": {
+            "policy_id": "POL-FSV-S03-AGE-TYPE",
+            "decision": "allow",
+            "fail_closed": true,
+            "violations": []
+          },
+          "pass": true
+        },
+        {
+          "id": "dev_integer_string",
+          "expected": "deny",
+          "actual": {
+            "policy_id": "POL-FSV-S03-AGE-TYPE",
+            "decision": "deny",
+            "fail_closed": true,
+            "violations": [
+              {
+                "rule_id": "RULE-AGE-INTEGER",
+                "code": "type_mismatch",
+                "detail": "/request/body/age"
+              }
+            ]
+          },
+          "pass": true
+        }
+      ]
+    },
+    "policy_path": "/mnt/d/lunwen/EC-CSI投稿/working/exploration/20261014_matched_evidence_labor/matched_generation/method_runs/FSV-S03/ECAS_MATCHED/initial/admitted_policy.json"
+  },
+  "final_checks": {
+    "accepted": true,
+    "compile_status": "COMPILED",
+    "admission_status": "ADMITTED",
+    "developer_results": {
+      "passed": true,
+      "rows": [
+        {
+          "id": "dev_integer",
+          "expected": "allow",
+          "actual": {
+            "policy_id": "POL-FSV-S03-AGE-TYPE",
+            "decision": "allow",
+            "fail_closed": true,
+            "violations": []
+          },
+          "pass": true
+        },
+        {
+          "id": "dev_integer_string",
+          "expected": "deny",
+          "actual": {
+            "policy_id": "POL-FSV-S03-AGE-TYPE",
+            "decision": "deny",
+            "fail_closed": true,
+            "violations": [
+              {
+                "rule_id": "RULE-AGE-INTEGER",
+                "code": "type_mismatch",
+                "detail": "/request/body/age"
+              }
+            ]
+          },
+          "pass": true
+        }
+      ]
+    },
+    "policy_path": "/mnt/d/lunwen/EC-CSI投稿/working/exploration/20261014_matched_evidence_labor/matched_generation/method_runs/FSV-S03/ECAS_MATCHED/initial/admitted_policy.json"
+  },
+  "generation_frozen_at": "2026-10-14T15:53:22.580727+00:00",
+  "final_evaluation_not_yet_read": true
+}

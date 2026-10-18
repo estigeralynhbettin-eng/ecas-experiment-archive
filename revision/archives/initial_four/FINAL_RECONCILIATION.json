@@ -1,0 +1,512 @@
+{
+  "status": "PASS",
+  "checked_at": "2026-10-14T12:25:29.876468+00:00",
+  "checks": [
+    {
+      "check": "raw_call_1",
+      "pass": true,
+      "path": "/mnt/d/lunwen/EC-CSI投稿/working/exploration/20261014_four_case_peer_baselines/calls/01_FSV-B19_p2p_rego/response.raw.json",
+      "status": "COMPLETED"
+    },
+    {
+      "check": "raw_call_2",
+      "pass": true,
+      "path": "/mnt/d/lunwen/EC-CSI投稿/working/exploration/20261014_four_case_peer_baselines/calls/02_FSV-B19_autopac_generate/response.raw.json",
+      "status": "COMPLETED"
+    },
+    {
+      "check": "raw_call_3",
+      "pass": true,
+      "path": "/mnt/d/lunwen/EC-CSI投稿/working/exploration/20261014_four_case_peer_baselines/calls/03_FSV-B19_ecas_generate/response.raw.json",
+      "status": "COMPLETED"
+    },
+    {
+      "check": "raw_call_4",
+      "pass": true,
+      "path": "/mnt/d/lunwen/EC-CSI投稿/working/exploration/20261014_four_case_peer_baselines/calls/04_FSV-S03_p2p_detect/response.raw.json",
+      "status": "COMPLETED"
+    },
+    {
+      "check": "raw_call_5",
+      "pass": true,
+      "path": "/mnt/d/lunwen/EC-CSI投稿/working/exploration/20261014_four_case_peer_baselines/calls/05_FSV-S03_autopac_generate/response.raw.json",
+      "status": "COMPLETED"
+    },
+    {
+      "check": "raw_call_6",
+      "pass": true,
+      "path": "/mnt/d/lunwen/EC-CSI投稿/working/exploration/20261014_four_case_peer_baselines/calls/06_FSV-S03_autopac_judge/response.raw.json",
+      "status": "COMPLETED"
+    },
+    {
+      "check": "raw_call_7",
+      "pass": true,
+      "path": "/mnt/d/lunwen/EC-CSI投稿/working/exploration/20261014_four_case_peer_baselines/calls/07_FSV-S03_repair/response.raw.json",
+      "status": "COMPLETED"
+    },
+    {
+      "check": "raw_call_8",
+      "pass": true,
+      "path": "/mnt/d/lunwen/EC-CSI投稿/working/exploration/20261014_four_case_peer_baselines/calls/08_FSV-S03_ecas_generate/response.raw.json",
+      "status": "COMPLETED"
+    },
+    {
+      "check": "raw_call_9",
+      "pass": true,
+      "path": "/mnt/d/lunwen/EC-CSI投稿/working/exploration/20261014_four_case_peer_baselines/calls/09_FSV-B13_p2p_detect/response.raw.json",
+      "status": "COMPLETED"
+    },
+    {
+      "check": "raw_call_10",
+      "pass": true,
+      "path": "/mnt/d/lunwen/EC-CSI投稿/working/exploration/20261014_four_case_peer_baselines/calls/10_FSV-B13_p2p_extract/response.raw.json",
+      "status": "COMPLETED"
+    },
+    {
+      "check": "raw_call_11",
+      "pass": true,
+      "path": "/mnt/d/lunwen/EC-CSI投稿/working/exploration/20261014_four_case_peer_baselines/calls/11_FSV-B13_autopac_generate/response.raw.json",
+      "status": "COMPLETED"
+    },
+    {
+      "check": "raw_call_12",
+      "pass": true,
+      "path": "/mnt/d/lunwen/EC-CSI投稿/working/exploration/20261014_four_case_peer_baselines/calls/12_FSV-B13_autopac_judge/response.raw.json",
+      "status": "COMPLETED"
+    },
+    {
+      "check": "raw_call_13",
+      "pass": true,
+      "path": "/mnt/d/lunwen/EC-CSI投稿/working/exploration/20261014_four_case_peer_baselines/calls/13_FSV-B13_ecas_generate/response.raw.json",
+      "status": "COMPLETED"
+    },
+    {
+      "check": "raw_call_14",
+      "pass": true,
+      "path": "/mnt/d/lunwen/EC-CSI投稿/working/exploration/20261014_four_case_peer_baselines/calls/14_FSV-B17_p2p_detect/response.raw.json",
+      "status": "COMPLETED"
+    },
+    {
+      "check": "raw_call_15",
+      "pass": true,
+      "path": "/mnt/d/lunwen/EC-CSI投稿/working/exploration/20261014_four_case_peer_baselines/calls/15_FSV-B17_p2p_extract/response.raw.json",
+      "status": "COMPLETED"
+    },
+    {
+      "check": "raw_call_16",
+      "pass": true,
+      "path": "/mnt/d/lunwen/EC-CSI投稿/working/exploration/20261014_four_case_peer_baselines/calls/16_FSV-B17_p2p_rego/response.raw.json",
+      "status": "COMPLETED"
+    },
+    {
+      "check": "raw_call_17",
+      "pass": true,
+      "path": "/mnt/d/lunwen/EC-CSI投稿/working/exploration/20261014_four_case_peer_baselines/calls/17_FSV-B17_p2p_tests/response.raw.json",
+      "status": "COMPLETED"
+    },
+    {
+      "check": "raw_call_18",
+      "pass": true,
+      "path": "/mnt/d/lunwen/EC-CSI投稿/working/exploration/20261014_four_case_peer_baselines/calls/18_FSV-B17_repair/response.raw.json",
+      "status": "COMPLETED"
+    },
+    {
+      "check": "raw_call_19",
+      "pass": true,
+      "path": "/mnt/d/lunwen/EC-CSI投稿/working/exploration/20261014_four_case_peer_baselines/calls/19_FSV-B17_autopac_generate/response.raw.json",
+      "status": "COMPLETED"
+    },
+    {
+      "check": "raw_call_20",
+      "pass": true,
+      "path": "/mnt/d/lunwen/EC-CSI投稿/working/exploration/20261014_four_case_peer_baselines/calls/20_FSV-B17_autopac_judge/response.raw.json",
+      "status": "COMPLETED"
+    },
+    {
+      "check": "raw_call_21",
+      "pass": true,
+      "path": "/mnt/d/lunwen/EC-CSI投稿/working/exploration/20261014_four_case_peer_baselines/calls/21_FSV-B17_ecas_generate/response.raw.json",
+      "status": "COMPLETED"
+    },
+    {
+      "check": "raw_call_22",
+      "pass": true,
+      "path": "/mnt/d/lunwen/EC-CSI投稿/working/exploration/20261014_four_case_peer_baselines/calls/22_FSV-B19_p2p_detect/response.raw.json",
+      "status": "COMPLETED"
+    },
+    {
+      "check": "raw_call_23",
+      "pass": true,
+      "path": "/mnt/d/lunwen/EC-CSI投稿/working/exploration/20261014_four_case_peer_baselines/calls/23_FSV-B19_p2p_extract/response.raw.json",
+      "status": "COMPLETED"
+    },
+    {
+      "check": "raw_call_24",
+      "pass": true,
+      "path": "/mnt/d/lunwen/EC-CSI投稿/working/exploration/20261014_four_case_peer_baselines/calls/24_FSV-B19_p2p_rego/response.raw.json",
+      "status": "COMPLETED"
+    },
+    {
+      "check": "raw_call_25",
+      "pass": true,
+      "path": "/mnt/d/lunwen/EC-CSI投稿/working/exploration/20261014_four_case_peer_baselines/calls/25_FSV-B19_p2p_tests/response.raw.json",
+      "status": "COMPLETED"
+    },
+    {
+      "check": "raw_call_26",
+      "pass": true,
+      "path": "/mnt/d/lunwen/EC-CSI投稿/working/exploration/20261014_four_case_peer_baselines/calls/26_FSV-B19_repair/response.raw.json",
+      "status": "COMPLETED"
+    },
+    {
+      "check": "raw_call_27",
+      "pass": true,
+      "path": "/mnt/d/lunwen/EC-CSI投稿/working/exploration/20261014_four_case_peer_baselines/calls/27_FSV-B19_autopac_generate/response.raw.json",
+      "status": "COMPLETED"
+    },
+    {
+      "check": "raw_call_28",
+      "pass": true,
+      "path": "/mnt/d/lunwen/EC-CSI投稿/working/exploration/20261014_four_case_peer_baselines/calls/28_FSV-B19_autopac_judge/response.raw.json",
+      "status": "COMPLETED"
+    },
+    {
+      "check": "raw_call_29",
+      "pass": true,
+      "path": "/mnt/d/lunwen/EC-CSI投稿/working/exploration/20261014_four_case_peer_baselines/calls/29_FSV-B19_repair/response.raw.json",
+      "status": "COMPLETED"
+    },
+    {
+      "check": "raw_call_30",
+      "pass": true,
+      "path": "/mnt/d/lunwen/EC-CSI投稿/working/exploration/20261014_four_case_peer_baselines/calls/30_FSV-B19_ecas_generate/response.raw.json",
+      "status": "COMPLETED"
+    },
+    {
+      "check": "raw_call_31",
+      "pass": true,
+      "path": "/mnt/d/lunwen/EC-CSI投稿/working/exploration/20261014_four_case_peer_baselines/calls/31_FSV-B13_p2p_rego/response.raw.json",
+      "status": "COMPLETED"
+    },
+    {
+      "check": "raw_call_32",
+      "pass": true,
+      "path": "/mnt/d/lunwen/EC-CSI投稿/working/exploration/20261014_four_case_peer_baselines/calls/32_FSV-B13_p2p_tests/response.raw.json",
+      "status": "COMPLETED"
+    },
+    {
+      "check": "raw_call_33",
+      "pass": true,
+      "path": "/mnt/d/lunwen/EC-CSI投稿/working/exploration/20261014_four_case_peer_baselines/calls/33_FSV-B13_repair/response.raw.json",
+      "status": "COMPLETED"
+    },
+    {
+      "check": "raw_call_34",
+      "pass": true,
+      "path": "/mnt/d/lunwen/EC-CSI投稿/working/exploration/20261014_four_case_peer_baselines/calls/34_FSV-B19_ecas_generate/response.raw.json",
+      "status": "COMPLETED"
+    },
+    {
+      "check": "raw_call_35",
+      "pass": true,
+      "path": "/mnt/d/lunwen/EC-CSI投稿/working/exploration/20261014_four_case_peer_baselines/calls/35_FSV-S03_ecas_generate/response.raw.json",
+      "status": "COMPLETED"
+    },
+    {
+      "check": "raw_call_36",
+      "pass": true,
+      "path": "/mnt/d/lunwen/EC-CSI投稿/working/exploration/20261014_four_case_peer_baselines/calls/36_FSV-B13_ecas_generate/response.raw.json",
+      "status": "COMPLETED"
+    },
+    {
+      "check": "raw_call_37",
+      "pass": true,
+      "path": "/mnt/d/lunwen/EC-CSI投稿/working/exploration/20261014_four_case_peer_baselines/calls/37_FSV-B17_ecas_generate/response.raw.json",
+      "status": "COMPLETED"
+    },
+    {
+      "check": "raw_call_38",
+      "pass": true,
+      "path": "/mnt/d/lunwen/EC-CSI投稿/working/exploration/20261014_four_case_peer_baselines/calls/38_FSV-B19_ecas_generate/response.raw.json",
+      "status": "COMPLETED"
+    },
+    {
+      "check": "call_limit",
+      "pass": true
+    },
+    {
+      "check": "FSV-S03_AUTOPAC_STYLE_candidate_freeze_hash",
+      "pass": true
+    },
+    {
+      "check": "FSV-S03_AUTOPAC_STYLE_generation_matches_raw",
+      "pass": true
+    },
+    {
+      "check": "FSV-S03_AUTOPAC_STYLE_final_rego_exact_or_verified_format",
+      "pass": true
+    },
+    {
+      "check": "FSV-S03_AUTOPAC_STYLE_requests_replay",
+      "pass": true
+    },
+    {
+      "check": "FSV-S03_ECAS_MATCHED_candidate_freeze_hash",
+      "pass": true
+    },
+    {
+      "check": "FSV-S03_ECAS_MATCHED_candidate_matches_raw",
+      "pass": true
+    },
+    {
+      "check": "FSV-S03_ECAS_MATCHED_policy_matches_compile",
+      "pass": true
+    },
+    {
+      "check": "FSV-S03_ECAS_MATCHED_requests_replay",
+      "pass": true
+    },
+    {
+      "check": "FSV-B13_P2P_STYLE_candidate_freeze_hash",
+      "pass": true
+    },
+    {
+      "check": "FSV-B13_format_only_grounding_recovery",
+      "pass": true
+    },
+    {
+      "check": "FSV-B13_P2P_STYLE_generation_matches_raw",
+      "pass": true
+    },
+    {
+      "check": "FSV-B13_P2P_STYLE_initial_rego_exact_or_verified_format",
+      "pass": true
+    },
+    {
+      "check": "FSV-B13_P2P_STYLE_final_rego_exact_or_verified_format",
+      "pass": true
+    },
+    {
+      "check": "FSV-B13_P2P_STYLE_requests_replay",
+      "pass": true
+    },
+    {
+      "check": "FSV-B13_AUTOPAC_STYLE_candidate_freeze_hash",
+      "pass": true
+    },
+    {
+      "check": "FSV-B13_AUTOPAC_STYLE_generation_matches_raw",
+      "pass": true
+    },
+    {
+      "check": "FSV-B13_AUTOPAC_STYLE_initial_rego_exact_or_verified_format",
+      "pass": true
+    },
+    {
+      "check": "FSV-B13_AUTOPAC_STYLE_final_rego_exact_or_verified_format",
+      "pass": true
+    },
+    {
+      "check": "FSV-B13_AUTOPAC_STYLE_requests_replay",
+      "pass": true
+    },
+    {
+      "check": "FSV-B13_ECAS_MATCHED_candidate_freeze_hash",
+      "pass": true
+    },
+    {
+      "check": "FSV-B13_ECAS_MATCHED_candidate_matches_raw",
+      "pass": true
+    },
+    {
+      "check": "FSV-B13_ECAS_MATCHED_policy_matches_compile",
+      "pass": true
+    },
+    {
+      "check": "FSV-B13_ECAS_MATCHED_requests_replay",
+      "pass": true
+    },
+    {
+      "check": "FSV-B17_P2P_STYLE_candidate_freeze_hash",
+      "pass": true
+    },
+    {
+      "check": "FSV-B17_P2P_STYLE_format_ast_equal",
+      "pass": true
+    },
+    {
+      "check": "FSV-B17_P2P_STYLE_generation_matches_raw",
+      "pass": true
+    },
+    {
+      "check": "FSV-B17_P2P_STYLE_initial_rego_exact_or_verified_format",
+      "pass": true
+    },
+    {
+      "check": "FSV-B17_P2P_STYLE_final_rego_exact_or_verified_format",
+      "pass": true
+    },
+    {
+      "check": "FSV-B17_P2P_STYLE_requests_replay",
+      "pass": true
+    },
+    {
+      "check": "FSV-B17_AUTOPAC_STYLE_candidate_freeze_hash",
+      "pass": true
+    },
+    {
+      "check": "FSV-B17_AUTOPAC_STYLE_generation_matches_raw",
+      "pass": true
+    },
+    {
+      "check": "FSV-B17_AUTOPAC_STYLE_initial_rego_exact_or_verified_format",
+      "pass": true
+    },
+    {
+      "check": "FSV-B17_AUTOPAC_STYLE_final_rego_exact_or_verified_format",
+      "pass": true
+    },
+    {
+      "check": "FSV-B17_AUTOPAC_STYLE_requests_replay",
+      "pass": true
+    },
+    {
+      "check": "FSV-B17_ECAS_MATCHED_candidate_freeze_hash",
+      "pass": true
+    },
+    {
+      "check": "FSV-B17_ECAS_MATCHED_candidate_matches_raw",
+      "pass": true
+    },
+    {
+      "check": "FSV-B17_ECAS_MATCHED_policy_matches_compile",
+      "pass": true
+    },
+    {
+      "check": "FSV-B17_ECAS_MATCHED_requests_replay",
+      "pass": true
+    },
+    {
+      "check": "FSV-B19_P2P_STYLE_candidate_freeze_hash",
+      "pass": true
+    },
+    {
+      "check": "FSV-B19_P2P_STYLE_format_ast_equal",
+      "pass": true
+    },
+    {
+      "check": "FSV-B19_P2P_STYLE_generation_matches_raw",
+      "pass": true
+    },
+    {
+      "check": "FSV-B19_P2P_STYLE_initial_rego_exact_or_verified_format",
+      "pass": true
+    },
+    {
+      "check": "FSV-B19_P2P_STYLE_final_rego_exact_or_verified_format",
+      "pass": true
+    },
+    {
+      "check": "FSV-B19_P2P_STYLE_requests_replay",
+      "pass": true
+    },
+    {
+      "check": "FSV-B19_AUTOPAC_STYLE_candidate_freeze_hash",
+      "pass": true
+    },
+    {
+      "check": "FSV-B19_AUTOPAC_STYLE_generation_matches_raw",
+      "pass": true
+    },
+    {
+      "check": "FSV-B19_AUTOPAC_STYLE_initial_rego_exact_or_verified_format",
+      "pass": true
+    },
+    {
+      "check": "FSV-B19_AUTOPAC_STYLE_final_rego_exact_or_verified_format",
+      "pass": true
+    },
+    {
+      "check": "FSV-B19_AUTOPAC_STYLE_requests_replay",
+      "pass": true
+    },
+    {
+      "check": "FSV-B19_ECAS_MATCHED_candidate_freeze_hash",
+      "pass": true
+    },
+    {
+      "check": "FSV-B19_ECAS_MATCHED_candidate_matches_raw",
+      "pass": true
+    },
+    {
+      "check": "FSV-B19_ECAS_MATCHED_policy_matches_compile",
+      "pass": true
+    },
+    {
+      "check": "FSV-B19_ECAS_MATCHED_requests_replay",
+      "pass": true
+    },
+    {
+      "check": "original_source_FSV-S03_packet.json",
+      "pass": true
+    },
+    {
+      "check": "original_source_FSV-S03_O-L.json",
+      "pass": true
+    },
+    {
+      "check": "original_source_FSV-S03_O-I.json",
+      "pass": true
+    },
+    {
+      "check": "original_source_FSV-B13_packet.json",
+      "pass": true
+    },
+    {
+      "check": "original_source_FSV-B13_O-L.json",
+      "pass": true
+    },
+    {
+      "check": "original_source_FSV-B13_O-I.json",
+      "pass": true
+    },
+    {
+      "check": "original_source_FSV-B17_packet.json",
+      "pass": true
+    },
+    {
+      "check": "original_source_FSV-B17_O-L.json",
+      "pass": true
+    },
+    {
+      "check": "original_source_FSV-B17_O-I.json",
+      "pass": true
+    },
+    {
+      "check": "original_source_FSV-B19_packet.json",
+      "pass": true
+    },
+    {
+      "check": "original_source_FSV-B19_O-L.json",
+      "pass": true
+    },
+    {
+      "check": "original_source_FSV-B19_O-I.json",
+      "pass": true
+    },
+    {
+      "check": "FSV-B13_VIS-FSV-B13-01_complete_business_article",
+      "pass": true
+    },
+    {
+      "check": "FSV-B17_VIS-FSV-B17-01_complete_business_article",
+      "pass": true
+    },
+    {
+      "check": "FSV-B19_VIS-FSV-B19-01_complete_business_article",
+      "pass": true
+    }
+  ],
+  "scientific_clearance": false,
+  "scope_id": "ECAS-FOUR-PEER-BASELINES-20261014-01"
+}

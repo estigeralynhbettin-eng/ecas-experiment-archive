@@ -1,0 +1,17 @@
+{
+  "subject": [
+    "authenticated_api_caller"
+  ],
+  "action": [
+    "POST /api/resource/Purchase Order"
+  ],
+  "resource": [
+    "ERPNext:16.0.0"
+  ],
+  "condition_paths": [
+    "/request/body/action",
+    "/request/body/supplier",
+    "/trusted/holdType",
+    "/trusted/supplierOnHold"
+  ]
+}

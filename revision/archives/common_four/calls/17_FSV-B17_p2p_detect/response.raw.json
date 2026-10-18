@@ -1,0 +1,28 @@
+{
+  "choices": [
+    {
+      "finish_reason": "stop",
+      "index": 0,
+      "message": {
+        "content": "{\"begin\":\"BEGIN_FSV-B17_p2p_detect_MAIN\",\"stage\":\"p2p_detect\",\"output\":{\"status\":\"READY\",\"statements\":[{\"text\":\"You can disallow sales orders and sales invoices against a customer by clicking on 'Disabled'.\",\"evidence_refs\":[\"VIS-FSV-B17-01\",\"VIS-FSV-B17-03\",\"VIS-FSV-B17-RUNTIME-ABI\"]}],\"reason\":\"The source explicitly documents that a customer's Disabled status disallows sales orders against that customer. The runtime ABI supplies /trusted/customerDisabled for the target operation POST /api/resource/Sales Order, matching the TARGET_OBJECTIVE scope.\"},\"end\":\"END_FSV-B17_p2p_detect_MAIN\"}",
+        "role": "assistant"
+      }
+    }
+  ],
+  "created": 1792025625,
+  "id": "20261015085339470f26e07c994527",
+  "model": "glm-5.2",
+  "object": "chat.completion",
+  "request_id": "20261015085339470f26e07c994527",
+  "usage": {
+    "completion_tokens": 378,
+    "completion_tokens_details": {
+      "reasoning_tokens": 189
+    },
+    "prompt_tokens": 3146,
+    "prompt_tokens_details": {
+      "cached_tokens": 0
+    },
+    "total_tokens": 3524
+  }
+}

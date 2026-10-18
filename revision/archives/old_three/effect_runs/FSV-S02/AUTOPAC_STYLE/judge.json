@@ -1,0 +1,7 @@
+{
+  "verdict": "ACCEPT",
+  "issues": [
+    "Type validation for documentTypeId (integer/int64) and documentKey (string) is not enforced; however this is typical policy-scope limitation and presence of mandatory fields is correctly captured.",
+    "clientId path parameter required by OpenAPI spec is not checked, but the adapter only exposes /request/body, so this is an adapter constraint rather than a policy omission."
+  ]
+}

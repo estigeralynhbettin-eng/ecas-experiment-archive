@@ -1,0 +1,227 @@
+{
+  "task": "FSV-S03",
+  "method": "AUTOPAC_STYLE",
+  "status": "EVALUATED",
+  "requests": [
+    {
+      "channel": "O-L",
+      "input": {
+        "request": {
+          "body": {
+            "age": 30,
+            "firstName": "Synthetic",
+            "isDependent": false,
+            "relationshipId": 1
+          }
+        },
+        "trusted": {}
+      },
+      "expected": "allow",
+      "actual": {
+        "status": "EXECUTED",
+        "decision": "allow",
+        "exit_code": 0
+      }
+    },
+    {
+      "channel": "O-I",
+      "input": {
+        "request": {
+          "body": {
+            "age": "30",
+            "firstName": "Synthetic",
+            "isDependent": false,
+            "relationshipId": 1
+          }
+        },
+        "trusted": {}
+      },
+      "expected": "deny",
+      "actual": {
+        "status": "EXECUTED",
+        "decision": "deny",
+        "exit_code": 0
+      }
+    }
+  ],
+  "calls": [
+    5,
+    6,
+    7
+  ],
+  "repaired_once": true,
+  "reason": null,
+  "initial_requests": [],
+  "branch_probes": [
+    {
+      "id": "age-integer",
+      "input": {
+        "request": {
+          "body": {
+            "age": 31
+          }
+        },
+        "trusted": {}
+      },
+      "expected": "allow",
+      "basis": "documented_type",
+      "actual": {
+        "status": "EXECUTED",
+        "decision": "allow",
+        "exit_code": 0
+      },
+      "pass": true
+    },
+    {
+      "id": "age-string",
+      "input": {
+        "request": {
+          "body": {
+            "age": "31"
+          }
+        },
+        "trusted": {}
+      },
+      "expected": "deny",
+      "basis": "documented_type",
+      "actual": {
+        "status": "EXECUTED",
+        "decision": "deny",
+        "exit_code": 0
+      },
+      "pass": true
+    },
+    {
+      "id": "age-boolean",
+      "input": {
+        "request": {
+          "body": {
+            "age": true
+          }
+        },
+        "trusted": {}
+      },
+      "expected": "deny",
+      "basis": "documented_type",
+      "actual": {
+        "status": "EXECUTED",
+        "decision": "deny",
+        "exit_code": 0
+      },
+      "pass": true
+    },
+    {
+      "id": "age-fraction",
+      "input": {
+        "request": {
+          "body": {
+            "age": 31.5
+          }
+        },
+        "trusted": {}
+      },
+      "expected": "deny",
+      "basis": "documented_type",
+      "actual": {
+        "status": "EXECUTED",
+        "decision": "allow",
+        "exit_code": 0
+      },
+      "pass": false
+    }
+  ],
+  "source_folder": "/mnt/d/lunwen/EC-CSI投稿/working/exploration/20261014_four_case_peer_baselines/effect_runs/FSV-S03/AUTOPAC_STYLE",
+  "format_recovery": false,
+  "original_interface_status": "EVALUATED",
+  "format_only_recovery": false,
+  "documentation_revision": false,
+  "original_batch_status": "EVALUATED",
+  "original_batch_requests": [
+    {
+      "channel": "O-L",
+      "input": {
+        "request": {
+          "body": {
+            "age": 30,
+            "firstName": "Synthetic",
+            "isDependent": false,
+            "relationshipId": 1
+          }
+        },
+        "trusted": {}
+      },
+      "expected": "allow",
+      "actual": {
+        "status": "EXECUTED",
+        "decision": "allow",
+        "exit_code": 0
+      }
+    },
+    {
+      "channel": "O-I",
+      "input": {
+        "request": {
+          "body": {
+            "age": "30",
+            "firstName": "Synthetic",
+            "isDependent": false,
+            "relationshipId": 1
+          }
+        },
+        "trusted": {}
+      },
+      "expected": "deny",
+      "actual": {
+        "status": "EXECUTED",
+        "decision": "deny",
+        "exit_code": 0
+      }
+    }
+  ],
+  "original_batch_pair_correct": true,
+  "initial_developer_checks": {
+    "compile_exit": 1,
+    "compile_error": "1 error occurred: /mnt/d/lunwen/EC-CSI投稿/working/exploration/20261014_four_case_peer_baselines/effect_runs/FSV-S03/AUTOPAC_STYLE/initial/external_pilot/policy.rego:12: rego_type_error: undefined function is_integer\n",
+    "policy_path": "/mnt/d/lunwen/EC-CSI投稿/working/exploration/20261014_four_case_peer_baselines/effect_runs/FSV-S03/AUTOPAC_STYLE/initial/external_pilot/policy.rego",
+    "lint_exit": null,
+    "lint_report": null,
+    "accepted": false
+  },
+  "initial_developer_results": {
+    "passed": false,
+    "rows": []
+  },
+  "judge": {
+    "verdict": "ACCEPT",
+    "issues": []
+  },
+  "final_developer_results": {
+    "passed": true,
+    "rows": [
+      {
+        "id": "dev_integer",
+        "expected": "allow",
+        "actual": {
+          "status": "EXECUTED",
+          "decision": "allow",
+          "exit_code": 0
+        },
+        "pass": true
+      },
+      {
+        "id": "dev_integer_string",
+        "expected": "deny",
+        "actual": {
+          "status": "EXECUTED",
+          "decision": "deny",
+          "exit_code": 0
+        },
+        "pass": true
+      }
+    ]
+  },
+  "initial_pair_correct": null,
+  "pair_correct": true,
+  "branch_count": 4,
+  "branch_passed": 3
+}

@@ -1,0 +1,13 @@
+[
+  {
+    "name": "Open Policy Agent",
+    "version": "v1.19.0",
+    "asset": "opa_linux_amd64_static",
+    "url": "https://github.com/open-policy-agent/opa/releases/download/v1.19.0/opa_linux_amd64_static",
+    "sha256": "1dd5c5591ff856f5e20a1d66bafae9511ddf3c5552ed3b5070c70b2b6580ee3f",
+    "install_path": "runtime/bin/opa",
+    "distribution": "External preparation dependency; not bundled",
+    "release_api_url": "https://api.github.com/repos/open-policy-agent/opa/releases/362686946",
+    "embedded_build_marker": "v1.19.0+dirty; exact bytes match the official static release asset"
+  }
+]

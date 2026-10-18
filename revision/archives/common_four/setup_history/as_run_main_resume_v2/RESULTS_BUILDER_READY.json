@@ -1,0 +1,21 @@
+{
+  "status": "GENERATOR_READY_NOT_EXECUTED",
+  "script_path": "/mnt/d/lunwen/EC-CSI\u6295\u7a3f/working/exploration/20261014_matched_evidence_labor/matched_generation/build_results.py",
+  "script_sha256": "21bf05608b3a1df1c676be7cd8a436511d42ecf91525a569b8a417ac93af65af",
+  "syntax_check": "PASS_WSL_PY_COMPILE",
+  "new_model_calls": 0,
+  "production_frozen_files_changed": false,
+  "requires_main_state": "COMPLETED_WITH_EXACT_12_IDENTITIES",
+  "primary_results_qa_executed": false,
+  "report_generated": false,
+  "ledger_default": "PROPOSAL_ONLY; root optional --write-scope-ledger after QA",
+  "planned_outputs": [
+    "results_review_v1/RESULTS_CN.md",
+    "COMPARISON_SUMMARY.json",
+    "COMPARISON.csv",
+    "CALL_USAGE.csv",
+    "PRIMARY_RECONCILIATION.json",
+    "RESULT_TRACEABILITY_PROPOSED.csv",
+    "BUILD_RECEIPT.json"
+  ]
+}

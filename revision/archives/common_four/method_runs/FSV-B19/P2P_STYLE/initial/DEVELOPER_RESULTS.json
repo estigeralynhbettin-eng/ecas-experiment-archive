@@ -1,0 +1,75 @@
+{
+  "passed": true,
+  "rows": [
+    {
+      "id": "test_deny_on_hold_invoices",
+      "expected": "deny",
+      "actual": {
+        "status": "EXECUTED",
+        "decision": "deny",
+        "exit_code": 0
+      },
+      "pass": true
+    },
+    {
+      "id": "test_deny_on_hold_all",
+      "expected": "deny",
+      "actual": {
+        "status": "EXECUTED",
+        "decision": "deny",
+        "exit_code": 0
+      },
+      "pass": true
+    },
+    {
+      "id": "test_allow_on_hold_payments",
+      "expected": "allow",
+      "actual": {
+        "status": "EXECUTED",
+        "decision": "allow",
+        "exit_code": 0
+      },
+      "pass": true
+    },
+    {
+      "id": "test_allow_not_on_hold",
+      "expected": "allow",
+      "actual": {
+        "status": "EXECUTED",
+        "decision": "allow",
+        "exit_code": 0
+      },
+      "pass": true
+    },
+    {
+      "id": "dev_not_held",
+      "expected": "allow",
+      "actual": {
+        "status": "EXECUTED",
+        "decision": "allow",
+        "exit_code": 0
+      },
+      "pass": true
+    },
+    {
+      "id": "dev_invoices",
+      "expected": "deny",
+      "actual": {
+        "status": "EXECUTED",
+        "decision": "deny",
+        "exit_code": 0
+      },
+      "pass": true
+    },
+    {
+      "id": "dev_payments",
+      "expected": "allow",
+      "actual": {
+        "status": "EXECUTED",
+        "decision": "allow",
+        "exit_code": 0
+      },
+      "pass": true
+    }
+  ]
+}

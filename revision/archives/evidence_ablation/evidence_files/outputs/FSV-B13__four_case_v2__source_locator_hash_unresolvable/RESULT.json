@@ -1,0 +1,125 @@
+{
+  "parent_id": "FSV-B13__four_case_v2",
+  "case": "FSV-B13",
+  "configuration": "four_case_v2",
+  "row_id": "FSV-B13__four_case_v2__source_locator_hash_unresolvable",
+  "variant": "source_locator_hash_unresolvable",
+  "classification": "CONSTRUCTED_SOURCE_AUTHENTICITY_CHALLENGE",
+  "expected_full": "admit",
+  "notes": "Inventory fields have valid shape but source identity is intentionally unresolvable; source-file resolution is not performed by the gate",
+  "source_parent_candidate": "/root/ecas_evidence_ablation_20261014/inputs/FSV-B13__four_case_v2/candidate.json",
+  "source_parent_contract": "/root/ecas_evidence_ablation_20261014/inputs/FSV-B13__four_case_v2/contract.json",
+  "candidate_sha256": "9c0a436179130de1bd8bd5bcc153ff8136e492608706c067e389b7badda19791",
+  "contract_sha256": "977cd41aaa7ec5ef7502abb8a695f8264518391e43ace9c6b15f159fee6f7895",
+  "output_folder": "/root/ecas_evidence_ablation_20261014/outputs/FSV-B13__four_case_v2__source_locator_hash_unresolvable",
+  "full_executed": true,
+  "shape_executed": true,
+  "ir_status": "COMPILED",
+  "contract_shape_valid": true,
+  "full_status": "ADMITTED",
+  "shape_status": "COMPILED_NO_INVENTORY",
+  "eligible_admission_contrast": true,
+  "full_evaluations": [
+    {
+      "fixture_id": "FSV-B13-OL-01",
+      "fixture_class": "ARCHIVED_SYNTHETIC_REQUEST",
+      "expected": "allow",
+      "actual": {
+        "policy_id": "FSV-B13-POL-001",
+        "decision": "allow",
+        "fail_closed": true,
+        "violations": []
+      },
+      "correct": true
+    },
+    {
+      "fixture_id": "FSV-B13-OI-01",
+      "fixture_class": "ARCHIVED_SYNTHETIC_REQUEST",
+      "expected": "deny",
+      "actual": {
+        "policy_id": "FSV-B13-POL-001",
+        "decision": "deny",
+        "fail_closed": true,
+        "violations": [
+          {
+            "rule_id": "FSV-B13-RULE-001",
+            "code": "bounded_guard_rejected",
+            "detail": "FSV-B13-RULE-001"
+          }
+        ]
+      },
+      "correct": true
+    },
+    {
+      "fixture_id": "SYNTH-MISSING-TRUSTED",
+      "fixture_class": "CONSTRUCTED_MISSING_CONTEXT_CONTROL",
+      "expected": null,
+      "actual": {
+        "policy_id": "FSV-B13-POL-001",
+        "decision": "deny",
+        "fail_closed": true,
+        "violations": [
+          {
+            "rule_id": "FSV-B13-RULE-001",
+            "code": "required_input_missing",
+            "detail": "FSV-B13-RULE-001"
+          }
+        ]
+      },
+      "correct": null
+    }
+  ],
+  "shape_evaluations": [
+    {
+      "fixture_id": "FSV-B13-OL-01",
+      "fixture_class": "ARCHIVED_SYNTHETIC_REQUEST",
+      "expected": "allow",
+      "actual": {
+        "policy_id": "FSV-B13-POL-001",
+        "decision": "allow",
+        "fail_closed": true,
+        "violations": []
+      },
+      "correct": true
+    },
+    {
+      "fixture_id": "FSV-B13-OI-01",
+      "fixture_class": "ARCHIVED_SYNTHETIC_REQUEST",
+      "expected": "deny",
+      "actual": {
+        "policy_id": "FSV-B13-POL-001",
+        "decision": "deny",
+        "fail_closed": true,
+        "violations": [
+          {
+            "rule_id": "FSV-B13-RULE-001",
+            "code": "bounded_guard_rejected",
+            "detail": "FSV-B13-RULE-001"
+          }
+        ]
+      },
+      "correct": true
+    },
+    {
+      "fixture_id": "SYNTH-MISSING-TRUSTED",
+      "fixture_class": "CONSTRUCTED_MISSING_CONTEXT_CONTROL",
+      "expected": null,
+      "actual": {
+        "policy_id": "FSV-B13-POL-001",
+        "decision": "deny",
+        "fail_closed": true,
+        "violations": [
+          {
+            "rule_id": "FSV-B13-RULE-001",
+            "code": "required_input_missing",
+            "detail": "FSV-B13-RULE-001"
+          }
+        ]
+      },
+      "correct": null
+    }
+  ],
+  "original_pair_correct": null,
+  "full_execution_errors": 0,
+  "shape_execution_errors": 0
+}

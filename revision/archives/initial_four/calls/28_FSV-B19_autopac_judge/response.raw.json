@@ -1,0 +1,28 @@
+{
+  "choices": [
+    {
+      "finish_reason": "stop",
+      "index": 0,
+      "message": {
+        "content": "{\"begin\":\"BEGIN_FSV-B19_autopac_judge_MAIN\",\"stage\":\"autopac_judge\",\"output\":{\"verdict\":\"REVISE\",\"issues\":[\"Source VIS-FSV-B19-01 section 2.4 states that if a hold type is not selected, ERPNext defaults it to 'All'. The Rego assumes holdType will strictly be 'Invoices' or 'All' when supplierOnHold is true. It fails to block the request if trusted.holdType is an empty string or missing, missing a visible requirement.\"]},\"end\":\"END_FSV-B19_autopac_judge_MAIN\"}",
+        "role": "assistant"
+      }
+    }
+  ],
+  "created": 1791979108,
+  "id": "202610141957561b285321b1bc4784",
+  "model": "glm-5.2",
+  "object": "chat.completion",
+  "request_id": "202610141957561b285321b1bc4784",
+  "usage": {
+    "completion_tokens": 1851,
+    "completion_tokens_details": {
+      "reasoning_tokens": 1697
+    },
+    "prompt_tokens": 5780,
+    "prompt_tokens_details": {
+      "cached_tokens": 0
+    },
+    "total_tokens": 7631
+  }
+}

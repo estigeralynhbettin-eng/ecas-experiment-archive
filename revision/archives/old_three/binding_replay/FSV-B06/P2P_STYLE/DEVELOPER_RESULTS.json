@@ -1,0 +1,32 @@
+[
+  {
+    "id": "p2p_test_reversal_latest_true",
+    "expected": "allow",
+    "actual": {
+      "status": "EXECUTED",
+      "decision": "allow",
+      "exit_code": 0
+    },
+    "pass": true
+  },
+  {
+    "id": "p2p_test_reversal_latest_false",
+    "expected": "deny",
+    "actual": {
+      "status": "EXECUTED",
+      "decision": "deny",
+      "exit_code": 0
+    },
+    "pass": true
+  },
+  {
+    "id": "p2p_test_reversal_latest_missing",
+    "expected": "deny",
+    "actual": {
+      "status": "EXECUTED",
+      "decision": "deny",
+      "exit_code": 0
+    },
+    "pass": true
+  }
+]

@@ -1,0 +1,183 @@
+{
+  "package": {
+    "path": [
+      {
+        "type": "var",
+        "value": "data"
+      },
+      {
+        "type": "string",
+        "value": "external_pilot"
+      }
+    ]
+  },
+  "imports": [
+    {
+      "path": {
+        "type": "ref",
+        "value": [
+          {
+            "type": "var",
+            "value": "rego"
+          },
+          {
+            "type": "string",
+            "value": "v1"
+          }
+        ]
+      }
+    }
+  ],
+  "rules": [
+    {
+      "body": [
+        {
+          "index": 0,
+          "terms": {
+            "type": "boolean",
+            "value": true
+          }
+        }
+      ],
+      "default": true,
+      "head": {
+        "name": "allow",
+        "value": {
+          "type": "boolean",
+          "value": false
+        },
+        "assign": true,
+        "ref": [
+          {
+            "type": "var",
+            "value": "allow"
+          }
+        ]
+      }
+    },
+    {
+      "body": [
+        {
+          "index": 0,
+          "terms": {
+            "type": "ref",
+            "value": [
+              {
+                "type": "var",
+                "value": "input"
+              },
+              {
+                "type": "string",
+                "value": "trusted"
+              },
+              {
+                "type": "string",
+                "value": "authorizedRole"
+              }
+            ]
+          }
+        }
+      ],
+      "head": {
+        "name": "allow",
+        "value": {
+          "type": "boolean",
+          "value": true
+        },
+        "ref": [
+          {
+            "type": "var",
+            "value": "allow"
+          }
+        ]
+      }
+    },
+    {
+      "body": [
+        {
+          "index": 0,
+          "terms": [
+            {
+              "type": "ref",
+              "value": [
+                {
+                  "type": "var",
+                  "value": "lte"
+                }
+              ]
+            },
+            {
+              "type": "ref",
+              "value": [
+                {
+                  "type": "var",
+                  "value": "input"
+                },
+                {
+                  "type": "string",
+                  "value": "request"
+                },
+                {
+                  "type": "string",
+                  "value": "body"
+                },
+                {
+                  "type": "string",
+                  "value": "qty"
+                }
+              ]
+            },
+            {
+              "type": "ref",
+              "value": [
+                {
+                  "type": "var",
+                  "value": "input"
+                },
+                {
+                  "type": "string",
+                  "value": "trusted"
+                },
+                {
+                  "type": "string",
+                  "value": "derivedMaximumQty"
+                }
+              ]
+            }
+          ]
+        }
+      ],
+      "head": {
+        "name": "allow",
+        "value": {
+          "type": "boolean",
+          "value": true
+        },
+        "ref": [
+          {
+            "type": "var",
+            "value": "allow"
+          }
+        ]
+      }
+    }
+  ],
+  "comments": [
+    {
+      "Text": "IFJvbGUgQWxsb3dlZCB0byBPdmVyIERlbGl2ZXIvUmVjZWl2ZTogdXNlcnMgd2l0aCB0aGlzIHJvbGUgbWF5IGV4Y2VlZCB0aGUgYWxsb3dhbmNlIHBlcmNlbnRhZ2Uu",
+      "Location": {
+        "file": "/mnt/d/lunwen/EC-CSI投稿/working/exploration/20261014_matched_evidence_labor/matched_generation/method_runs/FSV-B13/AUTOPAC_STYLE/initial/external_pilot/policy.rego",
+        "row": 7,
+        "col": 1
+      }
+    },
+    {
+      "Text": "IE90aGVyd2lzZSwgdGhlIHJlY2VpcHQgcXVhbnRpdHkgbXVzdCBub3QgZXhjZWVkIHRoZSBkZXJpdmVkIG1heGltdW0gKGxpbWl0LXBlcmNlbnQgaW5jbHVzaXZlKS4=",
+      "Location": {
+        "file": "/mnt/d/lunwen/EC-CSI投稿/working/exploration/20261014_matched_evidence_labor/matched_generation/method_runs/FSV-B13/AUTOPAC_STYLE/initial/external_pilot/policy.rego",
+        "row": 12,
+        "col": 1
+      }
+    }
+  ]
+}

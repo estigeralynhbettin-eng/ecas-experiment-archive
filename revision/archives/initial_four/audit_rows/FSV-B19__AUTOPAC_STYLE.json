@@ -1,0 +1,611 @@
+{
+  "task": "FSV-B19",
+  "method": "AUTOPAC_STYLE",
+  "status": "EVALUATED",
+  "requests": [
+    {
+      "channel": "O-L",
+      "input": {
+        "request": {
+          "body": {
+            "action": "PURCHASE_ORDER",
+            "supplier": "SUPPLIER-SYNTH-1"
+          }
+        },
+        "trusted": {
+          "holdType": "",
+          "supplierOnHold": false
+        }
+      },
+      "expected": "allow",
+      "actual": {
+        "status": "EXECUTED",
+        "decision": "allow",
+        "exit_code": 0
+      }
+    },
+    {
+      "channel": "O-I",
+      "input": {
+        "request": {
+          "body": {
+            "action": "PURCHASE_ORDER",
+            "supplier": "SUPPLIER-SYNTH-1"
+          }
+        },
+        "trusted": {
+          "holdType": "All",
+          "supplierOnHold": true
+        }
+      },
+      "expected": "deny",
+      "actual": {
+        "status": "EXECUTED",
+        "decision": "deny",
+        "exit_code": 0
+      }
+    }
+  ],
+  "calls": [
+    27,
+    28,
+    29
+  ],
+  "repaired_once": true,
+  "reason": null,
+  "initial_requests": [
+    {
+      "id": "O-L",
+      "input": {
+        "request": {
+          "body": {
+            "action": "PURCHASE_ORDER",
+            "supplier": "SUPPLIER-SYNTH-1"
+          }
+        },
+        "trusted": {
+          "holdType": "",
+          "supplierOnHold": false
+        }
+      },
+      "expected": "allow",
+      "basis": "archived_original",
+      "actual": {
+        "status": "EXECUTED",
+        "decision": "allow",
+        "exit_code": 0
+      },
+      "pass": true
+    },
+    {
+      "id": "O-I",
+      "input": {
+        "request": {
+          "body": {
+            "action": "PURCHASE_ORDER",
+            "supplier": "SUPPLIER-SYNTH-1"
+          }
+        },
+        "trusted": {
+          "holdType": "All",
+          "supplierOnHold": true
+        }
+      },
+      "expected": "deny",
+      "basis": "archived_original",
+      "actual": {
+        "status": "EXECUTED",
+        "decision": "deny",
+        "exit_code": 0
+      },
+      "pass": true
+    }
+  ],
+  "branch_probes": [
+    {
+      "id": "not-held",
+      "input": {
+        "request": {
+          "body": {
+            "action": "PURCHASE_ORDER",
+            "supplier": "SUPPLIER-SYNTH-1"
+          }
+        },
+        "trusted": {
+          "supplierOnHold": false,
+          "holdType": ""
+        }
+      },
+      "expected": "allow",
+      "basis": "documented_rule",
+      "actual": {
+        "status": "EXECUTED",
+        "decision": "allow",
+        "exit_code": 0
+      },
+      "pass": true
+    },
+    {
+      "id": "held-all",
+      "input": {
+        "request": {
+          "body": {
+            "action": "PURCHASE_ORDER",
+            "supplier": "SUPPLIER-SYNTH-1"
+          }
+        },
+        "trusted": {
+          "supplierOnHold": true,
+          "holdType": "All"
+        }
+      },
+      "expected": "deny",
+      "basis": "documented_rule",
+      "actual": {
+        "status": "EXECUTED",
+        "decision": "deny",
+        "exit_code": 0
+      },
+      "pass": true
+    },
+    {
+      "id": "held-invoices",
+      "input": {
+        "request": {
+          "body": {
+            "action": "PURCHASE_ORDER",
+            "supplier": "SUPPLIER-SYNTH-1"
+          }
+        },
+        "trusted": {
+          "supplierOnHold": true,
+          "holdType": "Invoices"
+        }
+      },
+      "expected": "deny",
+      "basis": "documented_rule",
+      "actual": {
+        "status": "EXECUTED",
+        "decision": "deny",
+        "exit_code": 0
+      },
+      "pass": true
+    },
+    {
+      "id": "held-payments",
+      "input": {
+        "request": {
+          "body": {
+            "action": "PURCHASE_ORDER",
+            "supplier": "SUPPLIER-SYNTH-1"
+          }
+        },
+        "trusted": {
+          "supplierOnHold": true,
+          "holdType": "Payments"
+        }
+      },
+      "expected": "allow",
+      "basis": "documented_rule",
+      "actual": {
+        "status": "EXECUTED",
+        "decision": "allow",
+        "exit_code": 0
+      },
+      "pass": true
+    },
+    {
+      "id": "held-empty-type",
+      "input": {
+        "request": {
+          "body": {
+            "action": "PURCHASE_ORDER",
+            "supplier": "SUPPLIER-SYNTH-1"
+          }
+        },
+        "trusted": {
+          "supplierOnHold": true,
+          "holdType": ""
+        }
+      },
+      "expected": "deny",
+      "basis": "conservative_empty_type_control",
+      "actual": {
+        "status": "EXECUTED",
+        "decision": "deny",
+        "exit_code": 0
+      },
+      "pass": true
+    },
+    {
+      "id": "held-unknown-type",
+      "input": {
+        "request": {
+          "body": {
+            "action": "PURCHASE_ORDER",
+            "supplier": "SUPPLIER-SYNTH-1"
+          }
+        },
+        "trusted": {
+          "supplierOnHold": true,
+          "holdType": "Unknown"
+        }
+      },
+      "expected": "deny",
+      "basis": "engineering_unknown_type_control",
+      "actual": {
+        "status": "EXECUTED",
+        "decision": "deny",
+        "exit_code": 0
+      },
+      "pass": true
+    },
+    {
+      "id": "body-type-spoof",
+      "input": {
+        "request": {
+          "body": {
+            "action": "PURCHASE_ORDER",
+            "supplier": "SUPPLIER-SYNTH-1",
+            "holdType": "Payments"
+          }
+        },
+        "trusted": {
+          "supplierOnHold": true,
+          "holdType": "All"
+        }
+      },
+      "expected": "deny",
+      "basis": "engineering_trust_control",
+      "actual": {
+        "status": "EXECUTED",
+        "decision": "deny",
+        "exit_code": 0
+      },
+      "pass": true
+    },
+    {
+      "id": "missing-trusted",
+      "input": {
+        "request": {
+          "body": {
+            "action": "PURCHASE_ORDER",
+            "supplier": "SUPPLIER-SYNTH-1"
+          }
+        },
+        "trusted": {}
+      },
+      "expected": "deny",
+      "basis": "engineering_fail_closed_control",
+      "actual": {
+        "status": "EXECUTED",
+        "decision": "allow",
+        "exit_code": 0
+      },
+      "pass": false
+    }
+  ],
+  "source_folder": "/mnt/d/lunwen/EC-CSI投稿/working/exploration/20261014_four_case_peer_baselines/effect_runs/FSV-B19/AUTOPAC_STYLE",
+  "format_recovery": false,
+  "original_interface_status": "EVALUATED",
+  "format_only_recovery": false,
+  "documentation_revision": false,
+  "original_batch_status": "EVALUATED",
+  "original_batch_requests": [
+    {
+      "channel": "O-L",
+      "input": {
+        "request": {
+          "body": {
+            "action": "PURCHASE_ORDER",
+            "supplier": "SUPPLIER-SYNTH-1"
+          }
+        },
+        "trusted": {
+          "holdType": "",
+          "supplierOnHold": false
+        }
+      },
+      "expected": "allow",
+      "actual": {
+        "status": "EXECUTED",
+        "decision": "allow",
+        "exit_code": 0
+      }
+    },
+    {
+      "channel": "O-I",
+      "input": {
+        "request": {
+          "body": {
+            "action": "PURCHASE_ORDER",
+            "supplier": "SUPPLIER-SYNTH-1"
+          }
+        },
+        "trusted": {
+          "holdType": "All",
+          "supplierOnHold": true
+        }
+      },
+      "expected": "deny",
+      "actual": {
+        "status": "EXECUTED",
+        "decision": "deny",
+        "exit_code": 0
+      }
+    }
+  ],
+  "original_batch_pair_correct": true,
+  "initial_developer_checks": {
+    "compile_exit": 0,
+    "compile_error": "",
+    "policy_path": "/mnt/d/lunwen/EC-CSI投稿/working/exploration/20261014_four_case_peer_baselines/effect_runs/FSV-B19/AUTOPAC_STYLE/initial/external_pilot/policy.rego",
+    "lint_exit": null,
+    "lint_report": null,
+    "accepted": true
+  },
+  "initial_developer_results": {
+    "passed": true,
+    "rows": [
+      {
+        "id": "dev_not_held",
+        "expected": "allow",
+        "actual": {
+          "status": "EXECUTED",
+          "decision": "allow",
+          "exit_code": 0
+        },
+        "pass": true
+      },
+      {
+        "id": "dev_invoices",
+        "expected": "deny",
+        "actual": {
+          "status": "EXECUTED",
+          "decision": "deny",
+          "exit_code": 0
+        },
+        "pass": true
+      },
+      {
+        "id": "dev_payments",
+        "expected": "allow",
+        "actual": {
+          "status": "EXECUTED",
+          "decision": "allow",
+          "exit_code": 0
+        },
+        "pass": true
+      }
+    ]
+  },
+  "judge": {
+    "verdict": "REVISE",
+    "issues": [
+      "Source VIS-FSV-B19-01 section 2.4 states that if a hold type is not selected, ERPNext defaults it to 'All'. The Rego assumes holdType will strictly be 'Invoices' or 'All' when supplierOnHold is true. It fails to block the request if trusted.holdType is an empty string or missing, missing a visible requirement."
+    ]
+  },
+  "final_developer_results": {
+    "passed": true,
+    "rows": [
+      {
+        "id": "dev_not_held",
+        "expected": "allow",
+        "actual": {
+          "status": "EXECUTED",
+          "decision": "allow",
+          "exit_code": 0
+        },
+        "pass": true
+      },
+      {
+        "id": "dev_invoices",
+        "expected": "deny",
+        "actual": {
+          "status": "EXECUTED",
+          "decision": "deny",
+          "exit_code": 0
+        },
+        "pass": true
+      },
+      {
+        "id": "dev_payments",
+        "expected": "allow",
+        "actual": {
+          "status": "EXECUTED",
+          "decision": "allow",
+          "exit_code": 0
+        },
+        "pass": true
+      }
+    ]
+  },
+  "initial_branch_probes": [
+    {
+      "id": "not-held",
+      "input": {
+        "request": {
+          "body": {
+            "action": "PURCHASE_ORDER",
+            "supplier": "SUPPLIER-SYNTH-1"
+          }
+        },
+        "trusted": {
+          "supplierOnHold": false,
+          "holdType": ""
+        }
+      },
+      "expected": "allow",
+      "basis": "documented_rule",
+      "actual": {
+        "status": "EXECUTED",
+        "decision": "allow",
+        "exit_code": 0
+      },
+      "pass": true
+    },
+    {
+      "id": "held-all",
+      "input": {
+        "request": {
+          "body": {
+            "action": "PURCHASE_ORDER",
+            "supplier": "SUPPLIER-SYNTH-1"
+          }
+        },
+        "trusted": {
+          "supplierOnHold": true,
+          "holdType": "All"
+        }
+      },
+      "expected": "deny",
+      "basis": "documented_rule",
+      "actual": {
+        "status": "EXECUTED",
+        "decision": "deny",
+        "exit_code": 0
+      },
+      "pass": true
+    },
+    {
+      "id": "held-invoices",
+      "input": {
+        "request": {
+          "body": {
+            "action": "PURCHASE_ORDER",
+            "supplier": "SUPPLIER-SYNTH-1"
+          }
+        },
+        "trusted": {
+          "supplierOnHold": true,
+          "holdType": "Invoices"
+        }
+      },
+      "expected": "deny",
+      "basis": "documented_rule",
+      "actual": {
+        "status": "EXECUTED",
+        "decision": "deny",
+        "exit_code": 0
+      },
+      "pass": true
+    },
+    {
+      "id": "held-payments",
+      "input": {
+        "request": {
+          "body": {
+            "action": "PURCHASE_ORDER",
+            "supplier": "SUPPLIER-SYNTH-1"
+          }
+        },
+        "trusted": {
+          "supplierOnHold": true,
+          "holdType": "Payments"
+        }
+      },
+      "expected": "allow",
+      "basis": "documented_rule",
+      "actual": {
+        "status": "EXECUTED",
+        "decision": "allow",
+        "exit_code": 0
+      },
+      "pass": true
+    },
+    {
+      "id": "held-empty-type",
+      "input": {
+        "request": {
+          "body": {
+            "action": "PURCHASE_ORDER",
+            "supplier": "SUPPLIER-SYNTH-1"
+          }
+        },
+        "trusted": {
+          "supplierOnHold": true,
+          "holdType": ""
+        }
+      },
+      "expected": "deny",
+      "basis": "conservative_empty_type_control",
+      "actual": {
+        "status": "EXECUTED",
+        "decision": "allow",
+        "exit_code": 0
+      },
+      "pass": false
+    },
+    {
+      "id": "held-unknown-type",
+      "input": {
+        "request": {
+          "body": {
+            "action": "PURCHASE_ORDER",
+            "supplier": "SUPPLIER-SYNTH-1"
+          }
+        },
+        "trusted": {
+          "supplierOnHold": true,
+          "holdType": "Unknown"
+        }
+      },
+      "expected": "deny",
+      "basis": "engineering_unknown_type_control",
+      "actual": {
+        "status": "EXECUTED",
+        "decision": "allow",
+        "exit_code": 0
+      },
+      "pass": false
+    },
+    {
+      "id": "body-type-spoof",
+      "input": {
+        "request": {
+          "body": {
+            "action": "PURCHASE_ORDER",
+            "supplier": "SUPPLIER-SYNTH-1",
+            "holdType": "Payments"
+          }
+        },
+        "trusted": {
+          "supplierOnHold": true,
+          "holdType": "All"
+        }
+      },
+      "expected": "deny",
+      "basis": "engineering_trust_control",
+      "actual": {
+        "status": "EXECUTED",
+        "decision": "deny",
+        "exit_code": 0
+      },
+      "pass": true
+    },
+    {
+      "id": "missing-trusted",
+      "input": {
+        "request": {
+          "body": {
+            "action": "PURCHASE_ORDER",
+            "supplier": "SUPPLIER-SYNTH-1"
+          }
+        },
+        "trusted": {}
+      },
+      "expected": "deny",
+      "basis": "engineering_fail_closed_control",
+      "actual": {
+        "status": "EXECUTED",
+        "decision": "allow",
+        "exit_code": 0
+      },
+      "pass": false
+    }
+  ],
+  "initial_pair_correct": true,
+  "pair_correct": true,
+  "branch_count": 8,
+  "branch_passed": 7
+}

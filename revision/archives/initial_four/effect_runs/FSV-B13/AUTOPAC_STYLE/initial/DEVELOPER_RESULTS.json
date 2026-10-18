@@ -1,0 +1,32 @@
+[
+  {
+    "id": "dev_limit",
+    "expected": "allow",
+    "actual": {
+      "status": "EXECUTED",
+      "decision": "allow",
+      "exit_code": 0
+    },
+    "pass": true
+  },
+  {
+    "id": "dev_over",
+    "expected": "deny",
+    "actual": {
+      "status": "EXECUTED",
+      "decision": "deny",
+      "exit_code": 0
+    },
+    "pass": true
+  },
+  {
+    "id": "dev_role_exception",
+    "expected": "allow",
+    "actual": {
+      "status": "EXECUTED",
+      "decision": "allow",
+      "exit_code": 0
+    },
+    "pass": true
+  }
+]

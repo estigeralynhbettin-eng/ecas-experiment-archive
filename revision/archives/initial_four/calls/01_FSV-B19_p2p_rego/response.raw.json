@@ -1,0 +1,28 @@
+{
+  "choices": [
+    {
+      "finish_reason": "stop",
+      "index": 0,
+      "message": {
+        "content": "{\"begin\":\"BEGIN_FSV-B19_p2p_rego_SMOKE\",\"stage\":\"p2p_rego\",\"output\":{\"detection\":{\"status\":\"COMPLETED\",\"statements\":[{\"text\":\"When a supplier is blocked with a hold type of 'Invoices' or 'All', ERPNext will not allow Purchase Orders to be created for the supplier.\",\"evidence_refs\":[\"VIS-FSV-B19-01\"]}]},\"extraction\":{\"status\":\"COMPLETED\",\"components\":[{\"decision\":\"deny\",\"subject\":\"authenticated_api_caller\",\"action\":\"POST /api/resource/Purchase Order\",\"resource\":\"ERPNext:16.0.0\",\"condition\":\"trusted.supplierOnHold == true and (trusted.holdType == 'Invoices' or trusted.holdType == 'All')\",\"purpose\":\"Prevent creation of Purchase Orders for suppliers blocked with Invoices or All hold types.\",\"evidence_refs\":[\"VIS-FSV-B19-01\",\"VIS-FSV-B19-RUNTIME-ABI\"]}]},\"policy\":{\"status\":\"COMPLETED\",\"rego\":\"package external_pilot\\n\\nimport rego.v1\\n\\ndefault allow := false\\n\\n# synthetic allow for probe > 0\\nallow if {\\n\\tinput.request.body.probe > 0\\n}\\n\\n# allow if supplier is not on hold\\nallow if {\\n\\tinput.trusted.supplierOnHold == false\\n}\\n\\n# allow if supplier is on hold but holdType is Payments\\nallow if {\\n\\tinput.trusted.supplierOnHold == true\\n\\tinput.trusted.holdType == \\\"Payments\\\"\\n}\",\"reason\":\"Derived from supplier documentation stating Purchase Orders are blocked if supplier is on hold with Invoices or All hold type.\"},\"tests\":[{\"id\":\"synthetic_probe_allow\",\"input\":{\"request\":{\"body\":{\"probe\":1}},\"trusted\":{}},\"expected\":\"allow\",\"source_ref\":\"synthetic\"},{\"id\":\"actual_block_deny\",\"input\":{\"request\":{\"body\":{\"supplier\":\"S1\"}},\"trusted\":{\"supplierOnHold\":true,\"holdType\":\"Invoices\"}},\"expected\":\"deny\",\"source_ref\":\"VIS-FSV-B19-01\"}]},\"end\":\"END_FSV-B19_p2p_rego_SMOKE\"}",
+        "role": "assistant"
+      }
+    }
+  ],
+  "created": 1791978161,
+  "id": "20261014194208b00e977ce7cd4f0f",
+  "model": "glm-5.2",
+  "object": "chat.completion",
+  "request_id": "20261014194208b00e977ce7cd4f0f",
+  "usage": {
+    "completion_tokens": 3124,
+    "completion_tokens_details": {
+      "reasoning_tokens": 2502
+    },
+    "prompt_tokens": 6430,
+    "prompt_tokens_details": {
+      "cached_tokens": 0
+    },
+    "total_tokens": 9554
+  }
+}

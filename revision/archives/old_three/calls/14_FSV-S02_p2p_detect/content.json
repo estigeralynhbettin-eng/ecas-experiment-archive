@@ -1,0 +1,1 @@
+{"begin":"BEGIN_FSV-S02_p2p_detect_MAIN","stage":"p2p_detect","output":{"status":"OUT_OF_SCOPE","statements":[],"reason":"The visible sources contain only API schema definitions (mandatory fields, request body structure) and adapter metadata. There are no explicit access control or policy statements present."},"end":"END_FSV-S02_p2p_detect_MAIN"}

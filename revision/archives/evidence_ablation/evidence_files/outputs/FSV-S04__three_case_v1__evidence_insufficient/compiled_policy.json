@@ -1,0 +1,28 @@
+{
+  "policy_version": "EC-FIELD-SECURITY-V3",
+  "policy_id": "POL-FSV-S04-LEAD-EMAIL-FMT",
+  "target": {
+    "operation": "POST /api/resource/Lead",
+    "system": "ERPNext",
+    "version": "16.0.0"
+  },
+  "evidence_refs": [
+    "VIS-FSV-S04-01",
+    "VIS-FSV-S04-02",
+    "VIS-FSV-S04-RUNTIME-ABI"
+  ],
+  "rules": [
+    {
+      "rule_id": "RULE-LEAD-EMAIL-FMT",
+      "primitive_id": "SP-STRUCTURED-FORMAT",
+      "evidence_refs": [
+        "VIS-FSV-S04-02",
+        "VIS-FSV-S04-RUNTIME-ABI"
+      ],
+      "op": "named_validator",
+      "on_missing": "skip",
+      "path": "/request/body/email_id",
+      "validator_id": "email_basic_v1"
+    }
+  ]
+}

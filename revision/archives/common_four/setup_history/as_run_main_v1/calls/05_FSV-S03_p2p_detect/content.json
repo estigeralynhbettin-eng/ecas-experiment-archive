@@ -1,0 +1,1 @@
+{"begin":"BEGIN_FSV-S03_p2p_detect_MAIN","stage":"p2p_detect","output":{"status":"OUT_OF_SCOPE","statements":[],"reason":"The target source contains only structural API type validation for the age field, not access control policy statements."},"end":"END_FSV-S03_p2p_detect_MAIN"}

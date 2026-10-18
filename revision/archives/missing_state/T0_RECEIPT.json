@@ -1,0 +1,80 @@
+{
+  "status": "PASS",
+  "checks": [
+    {
+      "check": "no_network_library_imports",
+      "pass": true
+    },
+    {
+      "check": "FSV-B17P2P_STYLE_wrapper_strict_compile",
+      "pass": true
+    },
+    {
+      "check": "FSV-B17P2P_STYLE_empty_state_guard_deny",
+      "pass": true
+    },
+    {
+      "check": "FSV-B17AUTOPAC_STYLE_wrapper_strict_compile",
+      "pass": true
+    },
+    {
+      "check": "FSV-B17AUTOPAC_STYLE_empty_state_guard_deny",
+      "pass": true
+    },
+    {
+      "check": "FSV-B17_original_missing_parameter_deny",
+      "pass": true
+    },
+    {
+      "check": "FSV-B17_deny_full_shape_compiles",
+      "pass": true
+    },
+    {
+      "check": "FSV-B17_skip_full_shape_compiles",
+      "pass": true
+    },
+    {
+      "check": "FSV-B19P2P_STYLE_wrapper_strict_compile",
+      "pass": true
+    },
+    {
+      "check": "FSV-B19P2P_STYLE_empty_state_guard_deny",
+      "pass": true
+    },
+    {
+      "check": "FSV-B19AUTOPAC_STYLE_wrapper_strict_compile",
+      "pass": true
+    },
+    {
+      "check": "FSV-B19AUTOPAC_STYLE_empty_state_guard_deny",
+      "pass": true
+    },
+    {
+      "check": "FSV-B19_original_missing_parameter_deny",
+      "pass": true
+    },
+    {
+      "check": "FSV-B19_deny_full_shape_compiles",
+      "pass": true
+    },
+    {
+      "check": "FSV-B19_skip_full_shape_compiles",
+      "pass": true
+    },
+    {
+      "check": "18_frozen_vectors",
+      "pass": true
+    },
+    {
+      "check": "isolated_lane_space",
+      "pass": true
+    }
+  ],
+  "scope_id": "ECAS-MISSING-STATE-MECHANISM-20261015-01",
+  "run_id": "missing-state-mechanism-t0-v1",
+  "runtime_lane": "/root/ecas_missing_state_mechanism_20261015",
+  "completed_at": "2026-10-15T02:58:32.952517+00:00",
+  "new_model_calls": 0,
+  "scientific_result": false,
+  "manifest_sha256": "22221daf854961c41c3fb6d27ba371ed56d1a5f93291ddaaf37e6e144d62994e"
+}

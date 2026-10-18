@@ -1,0 +1,44 @@
+{
+  "passed": true,
+  "rows": [
+    {
+      "id": "dev_not_held",
+      "expected": "allow",
+      "actual": {
+        "policy_id": "FSV-B19-POLICY-PO-HOLD-GUARD",
+        "decision": "allow",
+        "fail_closed": true,
+        "violations": []
+      },
+      "pass": true
+    },
+    {
+      "id": "dev_invoices",
+      "expected": "deny",
+      "actual": {
+        "policy_id": "FSV-B19-POLICY-PO-HOLD-GUARD",
+        "decision": "deny",
+        "fail_closed": true,
+        "violations": [
+          {
+            "rule_id": "FSV-B19-RULE-PO-HOLD-GUARD",
+            "code": "bounded_guard_rejected",
+            "detail": "FSV-B19-RULE-PO-HOLD-GUARD"
+          }
+        ]
+      },
+      "pass": true
+    },
+    {
+      "id": "dev_payments",
+      "expected": "allow",
+      "actual": {
+        "policy_id": "FSV-B19-POLICY-PO-HOLD-GUARD",
+        "decision": "allow",
+        "fail_closed": true,
+        "violations": []
+      },
+      "pass": true
+    }
+  ]
+}

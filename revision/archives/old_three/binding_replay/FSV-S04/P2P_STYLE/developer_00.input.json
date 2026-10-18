@@ -1,0 +1,16 @@
+{
+  "request": {
+    "body": {
+      "email_id": "[email protected]"
+    }
+  },
+  "trusted": {},
+  "subject": {
+    "role": "authenticated_api_caller"
+  },
+  "action": "POST /api/resource/Lead",
+  "resource": "ERPNext:16.0.0",
+  "subject_role": "authenticated_api_caller",
+  "resource_system": "ERPNext",
+  "resource_version": "16.0.0"
+}

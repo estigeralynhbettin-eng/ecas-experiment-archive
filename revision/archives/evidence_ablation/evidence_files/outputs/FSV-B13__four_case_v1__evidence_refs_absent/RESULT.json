@@ -1,0 +1,77 @@
+{
+  "parent_id": "FSV-B13__four_case_v1",
+  "case": "FSV-B13",
+  "configuration": "four_case_v1",
+  "row_id": "FSV-B13__four_case_v1__evidence_refs_absent",
+  "variant": "evidence_refs_absent",
+  "classification": "CONSTRUCTED_INVENTORY_PERTURBATION",
+  "expected_full": "reject",
+  "notes": "All referenced records absent; schema remains valid",
+  "source_parent_candidate": "/root/ecas_evidence_ablation_20261014/inputs/FSV-B13__four_case_v1/candidate.json",
+  "source_parent_contract": "/root/ecas_evidence_ablation_20261014/inputs/FSV-B13__four_case_v1/contract.json",
+  "candidate_sha256": "cab4a1c4226940ab2ff36694167d50c8a8a529f60e628b19dac2a4f4c75c2723",
+  "contract_sha256": "d256825b19e0dfcf73c1444c23e5c244a04626cc8e3fccd274850baadfb8c44e",
+  "output_folder": "/root/ecas_evidence_ablation_20261014/outputs/FSV-B13__four_case_v1__evidence_refs_absent",
+  "full_executed": false,
+  "shape_executed": true,
+  "ir_status": "COMPILED",
+  "contract_shape_valid": true,
+  "full_status": "ADMISSION_REJECTED",
+  "full_error": "policy references evidence absent from the contract",
+  "shape_status": "COMPILED_NO_INVENTORY",
+  "eligible_admission_contrast": true,
+  "full_evaluations": [],
+  "shape_evaluations": [
+    {
+      "fixture_id": "FSV-B13-OL-01",
+      "fixture_class": "ARCHIVED_SYNTHETIC_REQUEST",
+      "expected": "allow",
+      "actual": {
+        "policy_id": "FSV-B13-PurchaseReceipt-OverReceiveQtyGuard",
+        "decision": "allow",
+        "fail_closed": true,
+        "violations": []
+      },
+      "correct": true
+    },
+    {
+      "fixture_id": "FSV-B13-OI-01",
+      "fixture_class": "ARCHIVED_SYNTHETIC_REQUEST",
+      "expected": "deny",
+      "actual": {
+        "policy_id": "FSV-B13-PurchaseReceipt-OverReceiveQtyGuard",
+        "decision": "deny",
+        "fail_closed": true,
+        "violations": [
+          {
+            "rule_id": "FSV-B13-R1-OverReceiveQtyGuard",
+            "code": "bounded_guard_rejected",
+            "detail": "FSV-B13-R1-OverReceiveQtyGuard"
+          }
+        ]
+      },
+      "correct": true
+    },
+    {
+      "fixture_id": "SYNTH-MISSING-TRUSTED",
+      "fixture_class": "CONSTRUCTED_MISSING_CONTEXT_CONTROL",
+      "expected": null,
+      "actual": {
+        "policy_id": "FSV-B13-PurchaseReceipt-OverReceiveQtyGuard",
+        "decision": "deny",
+        "fail_closed": true,
+        "violations": [
+          {
+            "rule_id": "FSV-B13-R1-OverReceiveQtyGuard",
+            "code": "required_input_missing",
+            "detail": "FSV-B13-R1-OverReceiveQtyGuard"
+          }
+        ]
+      },
+      "correct": null
+    }
+  ],
+  "original_pair_correct": null,
+  "full_execution_errors": 0,
+  "shape_execution_errors": 0
+}

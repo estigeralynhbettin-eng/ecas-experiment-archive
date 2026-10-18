@@ -1,0 +1,11 @@
+{
+  "batch": "B",
+  "task": "FSV-S03",
+  "method": "P2P_STYLE",
+  "final_status": "OUT_OF_SCOPE",
+  "original_pre_format_status": "OUT_OF_SCOPE",
+  "source_result": "archives/common_four/method_runs/FSV-S03/P2P_STYLE/RESULT.json",
+  "requests": [],
+  "replay_status": "NOT_EXECUTED_OUT_OF_SCOPE",
+  "qualification_match": true
+}

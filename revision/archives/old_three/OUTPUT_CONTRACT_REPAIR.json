@@ -1,0 +1,12 @@
+{
+  "classification": "DEVELOPMENT_SCHEMA_INTERFACE_REPAIR",
+  "original_failed_call": 3,
+  "failure": "3 rules violate original maxItems=1",
+  "root_cause": "Slim prompt schema omitted structural item limits",
+  "candidate_semantics_modified": false,
+  "additional_smoke_limit": 1,
+  "total_call_limit_unchanged": 30,
+  "old_version_archive": "setup_versions/v1",
+  "no_auto_same_prompt_retry": true,
+  "smoke_records_original_failure_retained": true
+}

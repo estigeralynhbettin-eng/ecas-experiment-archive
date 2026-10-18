@@ -1,0 +1,35 @@
+{
+  "candidate": {
+    "ir_version": "EC-FIELD-MODEL-IR-V3",
+    "candidate_id": "CAND-FSV-S03-AGE-TYPE",
+    "decision": "propose",
+    "target": {
+      "operation": "POST /v1/clients/{clientId}/familymembers",
+      "system": "Fineract",
+      "version": "1.14.0"
+    },
+    "policy_id": "POL-FSV-S03-AGE-TYPE",
+    "evidence_refs": [
+      "VIS-FSV-S03-01",
+      "VIS-FSV-S03-RUNTIME-ABI"
+    ],
+    "rules": [
+      {
+        "rule_id": "RULE-AGE-INTEGER",
+        "primitive_id": "SP-STRICT-TYPE",
+        "op": "strict_type",
+        "evidence_refs": [
+          "VIS-FSV-S03-01",
+          "VIS-FSV-S03-RUNTIME-ABI"
+        ],
+        "params": {
+          "path": "/request/body/age",
+          "expected_type": "integer",
+          "on_missing": "skip"
+        }
+      }
+    ],
+    "reason_code": "none",
+    "missing_evidence": []
+  }
+}

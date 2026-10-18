@@ -1,0 +1,28 @@
+{
+  "choices": [
+    {
+      "finish_reason": "stop",
+      "index": 0,
+      "message": {
+        "content": "{\"begin\":\"BEGIN_FSV-B13_p2p_detect_MAIN\",\"stage\":\"p2p_detect\",\"output\":{\"status\":\"READY\",\"statements\":[{\"text\":\"Limit Percent: This is the percentage you are allowed to receive or deliver more against the quantity ordered. For example: If you have ordered 100 units, Supplier sends 120 units and the percentage is set to 10% then you are allowed to receive 110 units. By default, this is set to 0.\",\"evidence_refs\":[\"VIS-FSV-B13-01#Limit Percent\",\"VIS-FSV-B13-03#over_delivery_receipt_allowance\"]},{\"text\":\"Role Allowed to Over Deliver/Receive: Users with this role are allowed to over deliver/receive against orders above the allowance percentage.\",\"evidence_refs\":[\"VIS-FSV-B13-01#Role Allowed to Over Deliver/Receive\",\"VIS-FSV-B13-03#role_allowed_to_over_deliver_receive\"]}],\"reason\":\"Visible source contains explicit quantity-allowance and authorized-role exception statements for over delivery/receipt, matching the target objective for Purchase Receipt qty validation.\"},\"end\":\"END_FSV-B13_p2p_detect_MAIN\"}",
+        "role": "assistant"
+      }
+    }
+  ],
+  "created": 1791993226,
+  "id": "20261014235325cfe33398a000424e",
+  "model": "glm-5.2",
+  "object": "chat.completion",
+  "request_id": "20261014235325cfe33398a000424e",
+  "usage": {
+    "completion_tokens": 1548,
+    "completion_tokens_details": {
+      "reasoning_tokens": 1253
+    },
+    "prompt_tokens": 3613,
+    "prompt_tokens_details": {
+      "cached_tokens": 0
+    },
+    "total_tokens": 5161
+  }
+}

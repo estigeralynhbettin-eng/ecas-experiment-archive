@@ -1,0 +1,9 @@
+{
+  "classification": "ISOLATED_GENERATED_REGEX_DIAGNOSTIC_NOT_METHOD_RESULT",
+  "literal_rego_string": "\"^[^@]+@[^@]+\\\\.[^@]+$\"",
+  "regex_runtime_string": "^[^@]+@[^@]+\\.[^@]+$",
+  "input_origin": "frozen positive operator developer test",
+  "observed_match": true,
+  "new_model_calls": 0,
+  "original_policy_changed": false
+}

@@ -1,0 +1,181 @@
+{
+  "task": "FSV-B06",
+  "method": "P2P_STYLE",
+  "initial_status": "EVALUATED",
+  "status": "EVALUATED",
+  "classification": "POST_HOC_ENGINEERING_INTERFACE_REPAIR_NOT_FRESH_MODEL_EFFECT",
+  "requests": [
+    {
+      "channel": "O-L",
+      "input": {
+        "request": {
+          "body": {}
+        },
+        "trusted": {
+          "reAgeIsLatestTransaction": true
+        }
+      },
+      "mapped_input": {
+        "request": {
+          "body": {}
+        },
+        "trusted": {
+          "reAgeIsLatestTransaction": true
+        },
+        "subject": {
+          "role": "authenticated_api_caller"
+        },
+        "action": "POST /v1/loans/{loanId}/transactions/{transactionId}?command=undo",
+        "resource": "Fineract:1.14.0",
+        "subject_role": "authenticated_api_caller",
+        "resource_system": "Fineract",
+        "resource_version": "1.14.0"
+      },
+      "expected": "allow",
+      "actual": {
+        "status": "EXECUTED",
+        "decision": "allow",
+        "exit_code": 0
+      }
+    },
+    {
+      "channel": "O-I",
+      "input": {
+        "request": {
+          "body": {}
+        },
+        "trusted": {
+          "reAgeIsLatestTransaction": false
+        }
+      },
+      "mapped_input": {
+        "request": {
+          "body": {}
+        },
+        "trusted": {
+          "reAgeIsLatestTransaction": false
+        },
+        "subject": {
+          "role": "authenticated_api_caller"
+        },
+        "action": "POST /v1/loans/{loanId}/transactions/{transactionId}?command=undo",
+        "resource": "Fineract:1.14.0",
+        "subject_role": "authenticated_api_caller",
+        "resource_system": "Fineract",
+        "resource_version": "1.14.0"
+      },
+      "expected": "deny",
+      "actual": {
+        "status": "EXECUTED",
+        "decision": "deny",
+        "exit_code": 0
+      }
+    }
+  ],
+  "model_calls": [
+    5,
+    6,
+    7,
+    8,
+    9
+  ],
+  "checks": {
+    "compile_exit": 0,
+    "compile_error": "",
+    "policy_path": "/mnt/d/lunwen/EC-CSI投稿/working/exploration/20261014_external_baseline_pilot/binding_replay/FSV-B06/P2P_STYLE/validation/external_pilot/policy.rego",
+    "lint_exit": 0,
+    "lint_report": {
+      "violations": [],
+      "notices": [
+        {
+          "title": "deprecated-builtin",
+          "description": "Since OPA 1.0, deprecated-builtin enabled only when provided a v0 policy,\nBUT please note that this may change in the future if new built-in functions\nare deprecated.\n",
+          "category": "bugs",
+          "level": "notice",
+          "severity": "none"
+        },
+        {
+          "title": "import-shadows-import",
+          "description": "Since OPA 1.0, import-shadows-import enabled only when provided a v0 policy,",
+          "category": "imports",
+          "level": "notice",
+          "severity": "none"
+        },
+        {
+          "title": "rule-named-if",
+          "description": "Since OPA 1.0, rule-named-if enabled only when provided a v0 policy",
+          "category": "bugs",
+          "level": "notice",
+          "severity": "none"
+        },
+        {
+          "title": "use-contains",
+          "description": "Since OPA 1.0, use-contains enabled only when provided a v0 policy",
+          "category": "idiomatic",
+          "level": "notice",
+          "severity": "none"
+        },
+        {
+          "title": "use-if",
+          "description": "Since OPA 1.0, use-if enabled only when provided a v0 policy",
+          "category": "idiomatic",
+          "level": "notice",
+          "severity": "none"
+        },
+        {
+          "title": "use-rego-v1",
+          "description": "Since OPA 1.0, use-rego-v1 enabled only when provided a v0 policy",
+          "category": "imports",
+          "level": "notice",
+          "severity": "none"
+        }
+      ],
+      "summary": {
+        "files_scanned": 1,
+        "files_failed": 0,
+        "rules_skipped": 0,
+        "num_violations": 0
+      }
+    },
+    "accepted": true
+  },
+  "format_receipt": {
+    "source_policy_sha256": "59781917a104645d79ab7f64ee6abc4ae3361b7865c48ea687fa71c04fd4b9c5",
+    "formatted_sha256": "59781917a104645d79ab7f64ee6abc4ae3361b7865c48ea687fa71c04fd4b9c5",
+    "ast_equal_without_locations": true,
+    "source_path": "/mnt/d/lunwen/EC-CSI投稿/working/exploration/20261014_external_baseline_pilot/effect_runs/FSV-B06/P2P_STYLE/formatted/validated/external_pilot/policy.rego"
+  },
+  "developer_results": [
+    {
+      "id": "p2p_test_reversal_latest_true",
+      "expected": "allow",
+      "actual": {
+        "status": "EXECUTED",
+        "decision": "allow",
+        "exit_code": 0
+      },
+      "pass": true
+    },
+    {
+      "id": "p2p_test_reversal_latest_false",
+      "expected": "deny",
+      "actual": {
+        "status": "EXECUTED",
+        "decision": "deny",
+        "exit_code": 0
+      },
+      "pass": true
+    },
+    {
+      "id": "p2p_test_reversal_latest_missing",
+      "expected": "deny",
+      "actual": {
+        "status": "EXECUTED",
+        "decision": "deny",
+        "exit_code": 0
+      },
+      "pass": true
+    }
+  ],
+  "request_pair_correct": true
+}

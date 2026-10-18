@@ -1,0 +1,34 @@
+{
+  "provider": "glm",
+  "endpoint": "https://open.bigmodel.cn/api/paas/v4/chat/completions",
+  "requested_model": "glm-5.2",
+  "returned_model": "glm-5.2",
+  "thinking_mode": "enabled:high",
+  "response_format": "json_object",
+  "max_tokens": 16384,
+  "content": "",
+  "finish_reason": "stop",
+  "request_id": "20261015085347359edc6dfe574375",
+  "usage": {
+    "completion_tokens": 745,
+    "completion_tokens_details": {
+      "reasoning_tokens": 516
+    },
+    "prompt_tokens": 3316,
+    "prompt_tokens_details": {
+      "cached_tokens": 0
+    },
+    "total_tokens": 4061
+  },
+  "cost": null,
+  "cost_status": "not_reported_by_provider",
+  "http_status": 200,
+  "latency_seconds": 9.408,
+  "raw_response_path": "D:\\lunwen\\EC-CSI投稿\\working\\exploration\\20261014_matched_evidence_labor\\matched_generation\\calls\\18_FSV-B17_p2p_extract\\response.raw.json",
+  "raw_response_sha256": "a3463cdcdf11596cccb7376c8f80d387b1b5f156f527c3855fa99bcc9288cf15",
+  "raw_response_bytes": 3321,
+  "normalized_content_chars": 689,
+  "capture_mode": "direct_before_parse",
+  "completeness_gate": "PASS",
+  "content_output_path": "D:\\lunwen\\EC-CSI投稿\\working\\exploration\\20261014_matched_evidence_labor\\matched_generation\\calls\\18_FSV-B17_p2p_extract\\content.json"
+}

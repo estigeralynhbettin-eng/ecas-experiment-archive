@@ -1,0 +1,12 @@
+{
+  "batch": "A",
+  "task": "FSV-S02",
+  "method": "AUTOPAC_STYLE",
+  "final_status": "DEVELOPMENT_REJECTED",
+  "original_pre_format_status": "DEVELOPMENT_REJECTED",
+  "source_result": "archives/old_three/effect_runs/FSV-S02/AUTOPAC_STYLE/RESULT.json",
+  "requests": [],
+  "replay_status": "NOT_EXECUTED_COMPILE_REJECTED",
+  "qualification_match": true,
+  "compile_exit": 1
+}

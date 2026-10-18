@@ -1,0 +1,28 @@
+{
+  "choices": [
+    {
+      "finish_reason": "stop",
+      "index": 0,
+      "message": {
+        "content": "{\"begin\":\"BEGIN_FSV-B13_p2p_tests_MAIN\",\"stage\":\"p2p_tests\",\"output\":{\"tests\":[{\"id\":\"t1_qty_within_allowance\",\"input\":{\"request\":{\"body\":{\"qty\":100}},\"trusted\":{\"derivedMaximumQty\":110,\"authorizedRole\":false}},\"expected\":\"allow\",\"source_ref\":\"VIS-FSV-B13-01#Limit Percent\"},{\"id\":\"t2_qty_exceeds_allowance_with_authorized_role\",\"input\":{\"request\":{\"body\":{\"qty\":120}},\"trusted\":{\"derivedMaximumQty\":110,\"authorizedRole\":true}},\"expected\":\"allow\",\"source_ref\":\"VIS-FSV-B13-01#Role Allowed to Over Deliver/Receive\"},{\"id\":\"t3_qty_exceeds_allowance_without_authorized_role\",\"input\":{\"request\":{\"body\":{\"qty\":120}},\"trusted\":{\"derivedMaximumQty\":110,\"authorizedRole\":false}},\"expected\":\"deny\",\"source_ref\":\"VIS-FSV-B13-01#Limit Percent\"},{\"id\":\"t4_qty_equals_maximum_allowance\",\"input\":{\"request\":{\"body\":{\"qty\":110}},\"trusted\":{\"derivedMaximumQty\":110,\"authorizedRole\":false}},\"expected\":\"allow\",\"source_ref\":\"VIS-FSV-B13-01#Limit Percent\"},{\"id\":\"t5_qty_exceeds_allowance_by_one_without_authorized_role\",\"input\":{\"request\":{\"body\":{\"qty\":111}},\"trusted\":{\"derivedMaximumQty\":110,\"authorizedRole\":false}},\"expected\":\"deny\",\"source_ref\":\"VIS-FSV-B13-01#Role Allowed to Over Deliver/Receive\"},{\"id\":\"t6_qty_exceeds_allowance_with_authorized_role_false_edge_case\",\"input\":{\"request\":{\"body\":{\"qty\":200}},\"trusted\":{\"derivedMaximumQty\":150,\"authorizedRole\":true}},\"expected\":\"allow\",\"source_ref\":\"VIS-FSV-B13-01#Role Allowed to Over Deliver/Receive\"}]},\"end\":\"END_FSV-B13_p2p_tests_MAIN\"}",
+        "role": "assistant"
+      }
+    }
+  ],
+  "created": 1791993351,
+  "id": "202610142355369ad442e46f3b4628",
+  "model": "glm-5.2",
+  "object": "chat.completion",
+  "request_id": "202610142355369ad442e46f3b4628",
+  "usage": {
+    "completion_tokens": 1225,
+    "completion_tokens_details": {
+      "reasoning_tokens": 572
+    },
+    "prompt_tokens": 4109,
+    "prompt_tokens_details": {
+      "cached_tokens": 0
+    },
+    "total_tokens": 5334
+  }
+}

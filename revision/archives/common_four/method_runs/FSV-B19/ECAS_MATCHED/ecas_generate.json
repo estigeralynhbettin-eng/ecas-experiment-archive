@@ -1,0 +1,59 @@
+{
+  "candidate": {
+    "candidate_id": "CAND-FSV-B19-001",
+    "decision": "propose",
+    "evidence_refs": [
+      "VIS-FSV-B19-01",
+      "VIS-FSV-B19-RUNTIME-ABI"
+    ],
+    "ir_version": "EC-FIELD-MODEL-IR-V3",
+    "missing_evidence": [],
+    "policy_id": "POL-FSV-B19-001",
+    "reason_code": "none",
+    "rules": [
+      {
+        "evidence_refs": [
+          "VIS-FSV-B19-01",
+          "VIS-FSV-B19-RUNTIME-ABI"
+        ],
+        "op": "bounded_guard_dnf",
+        "params": {
+          "alternatives": [
+            {
+              "clauses": [
+                {
+                  "kind": "scalar_compare",
+                  "left_path": "/trusted/supplierOnHold",
+                  "operator": "eq",
+                  "right_path": "",
+                  "right_source": "literal",
+                  "right_value": false
+                }
+              ]
+            },
+            {
+              "clauses": [
+                {
+                  "kind": "scalar_compare",
+                  "left_path": "/trusted/holdType",
+                  "operator": "eq",
+                  "right_path": "",
+                  "right_source": "literal",
+                  "right_value": "Payments"
+                }
+              ]
+            }
+          ],
+          "on_missing": "deny"
+        },
+        "primitive_id": "SP-BOUNDED-BUSINESS-GUARD",
+        "rule_id": "RULE-FSV-B19-001"
+      }
+    ],
+    "target": {
+      "operation": "POST /api/resource/Purchase Order",
+      "system": "ERPNext",
+      "version": "16.0.0"
+    }
+  }
+}

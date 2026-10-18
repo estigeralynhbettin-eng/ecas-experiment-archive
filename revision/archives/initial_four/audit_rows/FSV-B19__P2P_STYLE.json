@@ -1,0 +1,655 @@
+{
+  "task": "FSV-B19",
+  "method": "P2P_STYLE",
+  "status": "EVALUATED",
+  "requests": [
+    {
+      "channel": "O-L",
+      "input": {
+        "request": {
+          "body": {
+            "action": "PURCHASE_ORDER",
+            "supplier": "SUPPLIER-SYNTH-1"
+          }
+        },
+        "trusted": {
+          "holdType": "",
+          "supplierOnHold": false
+        }
+      },
+      "expected": "allow",
+      "actual": {
+        "status": "EXECUTED",
+        "decision": "allow",
+        "exit_code": 0
+      }
+    },
+    {
+      "channel": "O-I",
+      "input": {
+        "request": {
+          "body": {
+            "action": "PURCHASE_ORDER",
+            "supplier": "SUPPLIER-SYNTH-1"
+          }
+        },
+        "trusted": {
+          "holdType": "All",
+          "supplierOnHold": true
+        }
+      },
+      "expected": "deny",
+      "actual": {
+        "status": "EXECUTED",
+        "decision": "deny",
+        "exit_code": 0
+      }
+    }
+  ],
+  "calls": [
+    22,
+    23,
+    24,
+    25,
+    26
+  ],
+  "repaired_once": true,
+  "reason": null,
+  "initial_requests": [
+    {
+      "id": "O-L",
+      "input": {
+        "request": {
+          "body": {
+            "action": "PURCHASE_ORDER",
+            "supplier": "SUPPLIER-SYNTH-1"
+          }
+        },
+        "trusted": {
+          "holdType": "",
+          "supplierOnHold": false
+        }
+      },
+      "expected": "allow",
+      "basis": "archived_original",
+      "actual": {
+        "status": "EXECUTED",
+        "decision": "allow",
+        "exit_code": 0
+      },
+      "pass": true
+    },
+    {
+      "id": "O-I",
+      "input": {
+        "request": {
+          "body": {
+            "action": "PURCHASE_ORDER",
+            "supplier": "SUPPLIER-SYNTH-1"
+          }
+        },
+        "trusted": {
+          "holdType": "All",
+          "supplierOnHold": true
+        }
+      },
+      "expected": "deny",
+      "basis": "archived_original",
+      "actual": {
+        "status": "EXECUTED",
+        "decision": "deny",
+        "exit_code": 0
+      },
+      "pass": true
+    }
+  ],
+  "branch_probes": [
+    {
+      "id": "not-held",
+      "input": {
+        "request": {
+          "body": {
+            "action": "PURCHASE_ORDER",
+            "supplier": "SUPPLIER-SYNTH-1"
+          }
+        },
+        "trusted": {
+          "supplierOnHold": false,
+          "holdType": ""
+        }
+      },
+      "expected": "allow",
+      "basis": "documented_rule",
+      "actual": {
+        "status": "EXECUTED",
+        "decision": "allow",
+        "exit_code": 0
+      },
+      "pass": true
+    },
+    {
+      "id": "held-all",
+      "input": {
+        "request": {
+          "body": {
+            "action": "PURCHASE_ORDER",
+            "supplier": "SUPPLIER-SYNTH-1"
+          }
+        },
+        "trusted": {
+          "supplierOnHold": true,
+          "holdType": "All"
+        }
+      },
+      "expected": "deny",
+      "basis": "documented_rule",
+      "actual": {
+        "status": "EXECUTED",
+        "decision": "deny",
+        "exit_code": 0
+      },
+      "pass": true
+    },
+    {
+      "id": "held-invoices",
+      "input": {
+        "request": {
+          "body": {
+            "action": "PURCHASE_ORDER",
+            "supplier": "SUPPLIER-SYNTH-1"
+          }
+        },
+        "trusted": {
+          "supplierOnHold": true,
+          "holdType": "Invoices"
+        }
+      },
+      "expected": "deny",
+      "basis": "documented_rule",
+      "actual": {
+        "status": "EXECUTED",
+        "decision": "deny",
+        "exit_code": 0
+      },
+      "pass": true
+    },
+    {
+      "id": "held-payments",
+      "input": {
+        "request": {
+          "body": {
+            "action": "PURCHASE_ORDER",
+            "supplier": "SUPPLIER-SYNTH-1"
+          }
+        },
+        "trusted": {
+          "supplierOnHold": true,
+          "holdType": "Payments"
+        }
+      },
+      "expected": "allow",
+      "basis": "documented_rule",
+      "actual": {
+        "status": "EXECUTED",
+        "decision": "allow",
+        "exit_code": 0
+      },
+      "pass": true
+    },
+    {
+      "id": "held-empty-type",
+      "input": {
+        "request": {
+          "body": {
+            "action": "PURCHASE_ORDER",
+            "supplier": "SUPPLIER-SYNTH-1"
+          }
+        },
+        "trusted": {
+          "supplierOnHold": true,
+          "holdType": ""
+        }
+      },
+      "expected": "deny",
+      "basis": "conservative_empty_type_control",
+      "actual": {
+        "status": "EXECUTED",
+        "decision": "allow",
+        "exit_code": 0
+      },
+      "pass": false
+    },
+    {
+      "id": "held-unknown-type",
+      "input": {
+        "request": {
+          "body": {
+            "action": "PURCHASE_ORDER",
+            "supplier": "SUPPLIER-SYNTH-1"
+          }
+        },
+        "trusted": {
+          "supplierOnHold": true,
+          "holdType": "Unknown"
+        }
+      },
+      "expected": "deny",
+      "basis": "engineering_unknown_type_control",
+      "actual": {
+        "status": "EXECUTED",
+        "decision": "allow",
+        "exit_code": 0
+      },
+      "pass": false
+    },
+    {
+      "id": "body-type-spoof",
+      "input": {
+        "request": {
+          "body": {
+            "action": "PURCHASE_ORDER",
+            "supplier": "SUPPLIER-SYNTH-1",
+            "holdType": "Payments"
+          }
+        },
+        "trusted": {
+          "supplierOnHold": true,
+          "holdType": "All"
+        }
+      },
+      "expected": "deny",
+      "basis": "engineering_trust_control",
+      "actual": {
+        "status": "EXECUTED",
+        "decision": "deny",
+        "exit_code": 0
+      },
+      "pass": true
+    },
+    {
+      "id": "missing-trusted",
+      "input": {
+        "request": {
+          "body": {
+            "action": "PURCHASE_ORDER",
+            "supplier": "SUPPLIER-SYNTH-1"
+          }
+        },
+        "trusted": {}
+      },
+      "expected": "deny",
+      "basis": "engineering_fail_closed_control",
+      "actual": {
+        "status": "EXECUTED",
+        "decision": "allow",
+        "exit_code": 0
+      },
+      "pass": false
+    }
+  ],
+  "source_folder": "/mnt/d/lunwen/EC-CSI投稿/working/exploration/20261014_four_case_peer_baselines/format_replay/FSV-B19/P2P_STYLE",
+  "format_recovery": false,
+  "original_interface_status": "EVALUATED",
+  "format_only_recovery": true,
+  "documentation_revision": false,
+  "original_batch_status": "DEVELOPMENT_REJECTED",
+  "original_batch_requests": [],
+  "original_batch_pair_correct": false,
+  "initial_developer_checks": {
+    "compile_exit": 0,
+    "compile_error": "",
+    "policy_path": "/mnt/d/lunwen/EC-CSI投稿/working/exploration/20261014_four_case_peer_baselines/effect_runs/FSV-B19/P2P_STYLE/initial/external_pilot/policy.rego",
+    "lint_exit": 3,
+    "lint_report": {
+      "violations": [
+        {
+          "title": "opa-fmt",
+          "description": "File should be formatted with `opa fmt`",
+          "category": "style",
+          "level": "error",
+          "related_resources": [
+            {
+              "description": "documentation",
+              "ref": "https://www.openpolicyagent.org/projects/regal/rules/style/opa-fmt"
+            }
+          ],
+          "location": {
+            "text": "package external_pilot",
+            "file": "/mnt/d/lunwen/EC-CSI投稿/working/exploration/20261014_four_case_peer_baselines/effect_runs/FSV-B19/P2P_STYLE/initial/external_pilot/policy.rego",
+            "col": 1,
+            "row": 1
+          }
+        }
+      ],
+      "notices": [
+        {
+          "title": "deprecated-builtin",
+          "description": "Since OPA 1.0, deprecated-builtin enabled only when provided a v0 policy,\nBUT please note that this may change in the future if new built-in functions\nare deprecated.\n",
+          "category": "bugs",
+          "level": "notice",
+          "severity": "none"
+        },
+        {
+          "title": "import-shadows-import",
+          "description": "Since OPA 1.0, import-shadows-import enabled only when provided a v0 policy,",
+          "category": "imports",
+          "level": "notice",
+          "severity": "none"
+        },
+        {
+          "title": "rule-named-if",
+          "description": "Since OPA 1.0, rule-named-if enabled only when provided a v0 policy",
+          "category": "bugs",
+          "level": "notice",
+          "severity": "none"
+        },
+        {
+          "title": "use-contains",
+          "description": "Since OPA 1.0, use-contains enabled only when provided a v0 policy",
+          "category": "idiomatic",
+          "level": "notice",
+          "severity": "none"
+        },
+        {
+          "title": "use-if",
+          "description": "Since OPA 1.0, use-if enabled only when provided a v0 policy",
+          "category": "idiomatic",
+          "level": "notice",
+          "severity": "none"
+        },
+        {
+          "title": "use-rego-v1",
+          "description": "Since OPA 1.0, use-rego-v1 enabled only when provided a v0 policy",
+          "category": "imports",
+          "level": "notice",
+          "severity": "none"
+        }
+      ],
+      "summary": {
+        "files_scanned": 1,
+        "files_failed": 1,
+        "rules_skipped": 0,
+        "num_violations": 1
+      }
+    },
+    "accepted": false
+  },
+  "initial_developer_results": {
+    "passed": false,
+    "rows": []
+  },
+  "judge": null,
+  "final_developer_results": {
+    "passed": true,
+    "rows": [
+      {
+        "id": "T1",
+        "expected": "deny",
+        "actual": {
+          "status": "EXECUTED",
+          "decision": "deny",
+          "exit_code": 0
+        },
+        "pass": true
+      },
+      {
+        "id": "T2",
+        "expected": "deny",
+        "actual": {
+          "status": "EXECUTED",
+          "decision": "deny",
+          "exit_code": 0
+        },
+        "pass": true
+      },
+      {
+        "id": "T3",
+        "expected": "allow",
+        "actual": {
+          "status": "EXECUTED",
+          "decision": "allow",
+          "exit_code": 0
+        },
+        "pass": true
+      },
+      {
+        "id": "T4",
+        "expected": "allow",
+        "actual": {
+          "status": "EXECUTED",
+          "decision": "allow",
+          "exit_code": 0
+        },
+        "pass": true
+      },
+      {
+        "id": "T5",
+        "expected": "allow",
+        "actual": {
+          "status": "EXECUTED",
+          "decision": "allow",
+          "exit_code": 0
+        },
+        "pass": true
+      },
+      {
+        "id": "dev_not_held",
+        "expected": "allow",
+        "actual": {
+          "status": "EXECUTED",
+          "decision": "allow",
+          "exit_code": 0
+        },
+        "pass": true
+      },
+      {
+        "id": "dev_invoices",
+        "expected": "deny",
+        "actual": {
+          "status": "EXECUTED",
+          "decision": "deny",
+          "exit_code": 0
+        },
+        "pass": true
+      },
+      {
+        "id": "dev_payments",
+        "expected": "allow",
+        "actual": {
+          "status": "EXECUTED",
+          "decision": "allow",
+          "exit_code": 0
+        },
+        "pass": true
+      }
+    ]
+  },
+  "initial_branch_probes": [
+    {
+      "id": "not-held",
+      "input": {
+        "request": {
+          "body": {
+            "action": "PURCHASE_ORDER",
+            "supplier": "SUPPLIER-SYNTH-1"
+          }
+        },
+        "trusted": {
+          "supplierOnHold": false,
+          "holdType": ""
+        }
+      },
+      "expected": "allow",
+      "basis": "documented_rule",
+      "actual": {
+        "status": "EXECUTED",
+        "decision": "allow",
+        "exit_code": 0
+      },
+      "pass": true
+    },
+    {
+      "id": "held-all",
+      "input": {
+        "request": {
+          "body": {
+            "action": "PURCHASE_ORDER",
+            "supplier": "SUPPLIER-SYNTH-1"
+          }
+        },
+        "trusted": {
+          "supplierOnHold": true,
+          "holdType": "All"
+        }
+      },
+      "expected": "deny",
+      "basis": "documented_rule",
+      "actual": {
+        "status": "EXECUTED",
+        "decision": "deny",
+        "exit_code": 0
+      },
+      "pass": true
+    },
+    {
+      "id": "held-invoices",
+      "input": {
+        "request": {
+          "body": {
+            "action": "PURCHASE_ORDER",
+            "supplier": "SUPPLIER-SYNTH-1"
+          }
+        },
+        "trusted": {
+          "supplierOnHold": true,
+          "holdType": "Invoices"
+        }
+      },
+      "expected": "deny",
+      "basis": "documented_rule",
+      "actual": {
+        "status": "EXECUTED",
+        "decision": "deny",
+        "exit_code": 0
+      },
+      "pass": true
+    },
+    {
+      "id": "held-payments",
+      "input": {
+        "request": {
+          "body": {
+            "action": "PURCHASE_ORDER",
+            "supplier": "SUPPLIER-SYNTH-1"
+          }
+        },
+        "trusted": {
+          "supplierOnHold": true,
+          "holdType": "Payments"
+        }
+      },
+      "expected": "allow",
+      "basis": "documented_rule",
+      "actual": {
+        "status": "EXECUTED",
+        "decision": "allow",
+        "exit_code": 0
+      },
+      "pass": true
+    },
+    {
+      "id": "held-empty-type",
+      "input": {
+        "request": {
+          "body": {
+            "action": "PURCHASE_ORDER",
+            "supplier": "SUPPLIER-SYNTH-1"
+          }
+        },
+        "trusted": {
+          "supplierOnHold": true,
+          "holdType": ""
+        }
+      },
+      "expected": "deny",
+      "basis": "conservative_empty_type_control",
+      "actual": {
+        "status": "EXECUTED",
+        "decision": "allow",
+        "exit_code": 0
+      },
+      "pass": false
+    },
+    {
+      "id": "held-unknown-type",
+      "input": {
+        "request": {
+          "body": {
+            "action": "PURCHASE_ORDER",
+            "supplier": "SUPPLIER-SYNTH-1"
+          }
+        },
+        "trusted": {
+          "supplierOnHold": true,
+          "holdType": "Unknown"
+        }
+      },
+      "expected": "deny",
+      "basis": "engineering_unknown_type_control",
+      "actual": {
+        "status": "EXECUTED",
+        "decision": "allow",
+        "exit_code": 0
+      },
+      "pass": false
+    },
+    {
+      "id": "body-type-spoof",
+      "input": {
+        "request": {
+          "body": {
+            "action": "PURCHASE_ORDER",
+            "supplier": "SUPPLIER-SYNTH-1",
+            "holdType": "Payments"
+          }
+        },
+        "trusted": {
+          "supplierOnHold": true,
+          "holdType": "All"
+        }
+      },
+      "expected": "deny",
+      "basis": "engineering_trust_control",
+      "actual": {
+        "status": "EXECUTED",
+        "decision": "deny",
+        "exit_code": 0
+      },
+      "pass": true
+    },
+    {
+      "id": "missing-trusted",
+      "input": {
+        "request": {
+          "body": {
+            "action": "PURCHASE_ORDER",
+            "supplier": "SUPPLIER-SYNTH-1"
+          }
+        },
+        "trusted": {}
+      },
+      "expected": "deny",
+      "basis": "engineering_fail_closed_control",
+      "actual": {
+        "status": "EXECUTED",
+        "decision": "allow",
+        "exit_code": 0
+      },
+      "pass": false
+    }
+  ],
+  "initial_pair_correct": true,
+  "pair_correct": true,
+  "branch_count": 8,
+  "branch_passed": 5
+}

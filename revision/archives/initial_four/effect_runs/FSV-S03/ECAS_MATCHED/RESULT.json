@@ -1,0 +1,95 @@
+{
+  "task": "FSV-S03",
+  "method": "ECAS_MATCHED",
+  "classification": "RETROSPECTIVE_FOUR_CASE_ADAPTED_PEER_BASELINES_NOT_NATIVE_OR_BLIND",
+  "status": "EVALUATED",
+  "requests": [
+    {
+      "channel": "O-L",
+      "input": {
+        "request": {
+          "body": {
+            "age": 30,
+            "firstName": "Synthetic",
+            "isDependent": false,
+            "relationshipId": 1
+          }
+        },
+        "trusted": {}
+      },
+      "expected": "allow",
+      "actual": {
+        "policy_id": "FSV-S03-POL-01",
+        "decision": "allow",
+        "fail_closed": true,
+        "violations": []
+      }
+    },
+    {
+      "channel": "O-I",
+      "input": {
+        "request": {
+          "body": {
+            "age": "30",
+            "firstName": "Synthetic",
+            "isDependent": false,
+            "relationshipId": 1
+          }
+        },
+        "trusted": {}
+      },
+      "expected": "deny",
+      "actual": {
+        "policy_id": "FSV-S03-POL-01",
+        "decision": "deny",
+        "fail_closed": true,
+        "violations": [
+          {
+            "rule_id": "FSV-S03-R01",
+            "code": "type_mismatch",
+            "detail": "/request/body/age"
+          }
+        ]
+      }
+    }
+  ],
+  "calls": [
+    8
+  ],
+  "admission": "ADMITTED",
+  "common_developer_results": {
+    "passed": true,
+    "rows": [
+      {
+        "id": "dev_integer",
+        "expected": "allow",
+        "actual": {
+          "policy_id": "FSV-S03-POL-01",
+          "decision": "allow",
+          "fail_closed": true,
+          "violations": []
+        },
+        "pass": true
+      },
+      {
+        "id": "dev_integer_string",
+        "expected": "deny",
+        "actual": {
+          "policy_id": "FSV-S03-POL-01",
+          "decision": "deny",
+          "fail_closed": true,
+          "violations": [
+            {
+              "rule_id": "FSV-S03-R01",
+              "code": "type_mismatch",
+              "detail": "/request/body/age"
+            }
+          ]
+        },
+        "pass": true
+      }
+    ]
+  },
+  "request_pair_correct": true,
+  "completed_at": "2026-10-14T11:46:20.187840+00:00"
+}

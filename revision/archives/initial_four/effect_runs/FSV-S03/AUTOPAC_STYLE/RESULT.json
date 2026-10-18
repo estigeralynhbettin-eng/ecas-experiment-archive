@@ -1,0 +1,89 @@
+{
+  "task": "FSV-S03",
+  "method": "AUTOPAC_STYLE",
+  "classification": "RETROSPECTIVE_FOUR_CASE_ADAPTED_PEER_BASELINES_NOT_NATIVE_OR_BLIND",
+  "status": "EVALUATED",
+  "requests": [
+    {
+      "channel": "O-L",
+      "input": {
+        "request": {
+          "body": {
+            "age": 30,
+            "firstName": "Synthetic",
+            "isDependent": false,
+            "relationshipId": 1
+          }
+        },
+        "trusted": {}
+      },
+      "expected": "allow",
+      "actual": {
+        "status": "EXECUTED",
+        "decision": "allow",
+        "exit_code": 0
+      }
+    },
+    {
+      "channel": "O-I",
+      "input": {
+        "request": {
+          "body": {
+            "age": "30",
+            "firstName": "Synthetic",
+            "isDependent": false,
+            "relationshipId": 1
+          }
+        },
+        "trusted": {}
+      },
+      "expected": "deny",
+      "actual": {
+        "status": "EXECUTED",
+        "decision": "deny",
+        "exit_code": 0
+      }
+    }
+  ],
+  "calls": [
+    5,
+    6,
+    7
+  ],
+  "repaired_once": true,
+  "developer_checks": {
+    "compile_exit": 0,
+    "compile_error": "",
+    "policy_path": "/mnt/d/lunwen/EC-CSI投稿/working/exploration/20261014_four_case_peer_baselines/effect_runs/FSV-S03/AUTOPAC_STYLE/repaired/external_pilot/policy.rego",
+    "lint_exit": null,
+    "lint_report": null,
+    "accepted": true
+  },
+  "developer_results": {
+    "passed": true,
+    "rows": [
+      {
+        "id": "dev_integer",
+        "expected": "allow",
+        "actual": {
+          "status": "EXECUTED",
+          "decision": "allow",
+          "exit_code": 0
+        },
+        "pass": true
+      },
+      {
+        "id": "dev_integer_string",
+        "expected": "deny",
+        "actual": {
+          "status": "EXECUTED",
+          "decision": "deny",
+          "exit_code": 0
+        },
+        "pass": true
+      }
+    ]
+  },
+  "request_pair_correct": true,
+  "completed_at": "2026-10-14T11:45:57.338734+00:00"
+}

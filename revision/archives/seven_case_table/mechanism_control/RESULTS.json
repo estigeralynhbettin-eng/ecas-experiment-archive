@@ -1,0 +1,2605 @@
+{
+  "status": "COMPLETED",
+  "scope_id": "ECAS-MISSING-STATE-MECHANISM-20261015-01",
+  "rows": [
+    {
+      "task": "FSV-B17",
+      "arm": "ECAS_original_full",
+      "method": "ECAS",
+      "variant": "original",
+      "mode": "full",
+      "probe_id": "FSV-B17-OL-01",
+      "kind": "original_pair",
+      "historical_expected": "allow",
+      "decision": "allow",
+      "agrees_with_historical_label": true,
+      "classification": "COUNTERFACTUAL_CONTROL_NOT_NEW_GENERATION",
+      "actual": {
+        "policy_id": "FSV-B17-DISABLED-CUSTOMER-SO",
+        "decision": "allow",
+        "fail_closed": true,
+        "violations": []
+      }
+    },
+    {
+      "task": "FSV-B17",
+      "arm": "ECAS_original_full",
+      "method": "ECAS",
+      "variant": "original",
+      "mode": "full",
+      "probe_id": "FSV-B17-OI-01",
+      "kind": "original_pair",
+      "historical_expected": "deny",
+      "decision": "deny",
+      "agrees_with_historical_label": true,
+      "classification": "COUNTERFACTUAL_CONTROL_NOT_NEW_GENERATION",
+      "actual": {
+        "policy_id": "FSV-B17-DISABLED-CUSTOMER-SO",
+        "decision": "deny",
+        "fail_closed": true,
+        "violations": [
+          {
+            "rule_id": "FSV-B17-RULE-01",
+            "code": "bounded_guard_rejected",
+            "detail": "FSV-B17-RULE-01"
+          }
+        ]
+      }
+    },
+    {
+      "task": "FSV-B17",
+      "arm": "ECAS_original_full",
+      "method": "ECAS",
+      "variant": "original",
+      "mode": "full",
+      "probe_id": "enabled",
+      "kind": "documented_rule",
+      "historical_expected": "allow",
+      "decision": "allow",
+      "agrees_with_historical_label": true,
+      "classification": "COUNTERFACTUAL_CONTROL_NOT_NEW_GENERATION",
+      "actual": {
+        "policy_id": "FSV-B17-DISABLED-CUSTOMER-SO",
+        "decision": "allow",
+        "fail_closed": true,
+        "violations": []
+      }
+    },
+    {
+      "task": "FSV-B17",
+      "arm": "ECAS_original_full",
+      "method": "ECAS",
+      "variant": "original",
+      "mode": "full",
+      "probe_id": "disabled",
+      "kind": "documented_rule",
+      "historical_expected": "deny",
+      "decision": "deny",
+      "agrees_with_historical_label": true,
+      "classification": "COUNTERFACTUAL_CONTROL_NOT_NEW_GENERATION",
+      "actual": {
+        "policy_id": "FSV-B17-DISABLED-CUSTOMER-SO",
+        "decision": "deny",
+        "fail_closed": true,
+        "violations": [
+          {
+            "rule_id": "FSV-B17-RULE-01",
+            "code": "bounded_guard_rejected",
+            "detail": "FSV-B17-RULE-01"
+          }
+        ]
+      }
+    },
+    {
+      "task": "FSV-B17",
+      "arm": "ECAS_original_full",
+      "method": "ECAS",
+      "variant": "original",
+      "mode": "full",
+      "probe_id": "body-disable-spoof",
+      "kind": "engineering_trust_control",
+      "historical_expected": "deny",
+      "decision": "deny",
+      "agrees_with_historical_label": true,
+      "classification": "COUNTERFACTUAL_CONTROL_NOT_NEW_GENERATION",
+      "actual": {
+        "policy_id": "FSV-B17-DISABLED-CUSTOMER-SO",
+        "decision": "deny",
+        "fail_closed": true,
+        "violations": [
+          {
+            "rule_id": "FSV-B17-RULE-01",
+            "code": "bounded_guard_rejected",
+            "detail": "FSV-B17-RULE-01"
+          }
+        ]
+      }
+    },
+    {
+      "task": "FSV-B17",
+      "arm": "ECAS_original_full",
+      "method": "ECAS",
+      "variant": "original",
+      "mode": "full",
+      "probe_id": "missing-trusted",
+      "kind": "engineering_fail_closed_control",
+      "historical_expected": "deny",
+      "decision": "deny",
+      "agrees_with_historical_label": true,
+      "classification": "COUNTERFACTUAL_CONTROL_NOT_NEW_GENERATION",
+      "actual": {
+        "policy_id": "FSV-B17-DISABLED-CUSTOMER-SO",
+        "decision": "deny",
+        "fail_closed": true,
+        "violations": [
+          {
+            "rule_id": "FSV-B17-RULE-01",
+            "code": "required_input_missing",
+            "detail": "FSV-B17-RULE-01"
+          }
+        ]
+      }
+    },
+    {
+      "task": "FSV-B17",
+      "arm": "ECAS_original_shape",
+      "method": "ECAS",
+      "variant": "original",
+      "mode": "shape",
+      "probe_id": "FSV-B17-OL-01",
+      "kind": "original_pair",
+      "historical_expected": "allow",
+      "decision": "allow",
+      "agrees_with_historical_label": true,
+      "classification": "COUNTERFACTUAL_CONTROL_NOT_NEW_GENERATION",
+      "actual": {
+        "policy_id": "FSV-B17-DISABLED-CUSTOMER-SO",
+        "decision": "allow",
+        "fail_closed": true,
+        "violations": []
+      }
+    },
+    {
+      "task": "FSV-B17",
+      "arm": "ECAS_original_shape",
+      "method": "ECAS",
+      "variant": "original",
+      "mode": "shape",
+      "probe_id": "FSV-B17-OI-01",
+      "kind": "original_pair",
+      "historical_expected": "deny",
+      "decision": "deny",
+      "agrees_with_historical_label": true,
+      "classification": "COUNTERFACTUAL_CONTROL_NOT_NEW_GENERATION",
+      "actual": {
+        "policy_id": "FSV-B17-DISABLED-CUSTOMER-SO",
+        "decision": "deny",
+        "fail_closed": true,
+        "violations": [
+          {
+            "rule_id": "FSV-B17-RULE-01",
+            "code": "bounded_guard_rejected",
+            "detail": "FSV-B17-RULE-01"
+          }
+        ]
+      }
+    },
+    {
+      "task": "FSV-B17",
+      "arm": "ECAS_original_shape",
+      "method": "ECAS",
+      "variant": "original",
+      "mode": "shape",
+      "probe_id": "enabled",
+      "kind": "documented_rule",
+      "historical_expected": "allow",
+      "decision": "allow",
+      "agrees_with_historical_label": true,
+      "classification": "COUNTERFACTUAL_CONTROL_NOT_NEW_GENERATION",
+      "actual": {
+        "policy_id": "FSV-B17-DISABLED-CUSTOMER-SO",
+        "decision": "allow",
+        "fail_closed": true,
+        "violations": []
+      }
+    },
+    {
+      "task": "FSV-B17",
+      "arm": "ECAS_original_shape",
+      "method": "ECAS",
+      "variant": "original",
+      "mode": "shape",
+      "probe_id": "disabled",
+      "kind": "documented_rule",
+      "historical_expected": "deny",
+      "decision": "deny",
+      "agrees_with_historical_label": true,
+      "classification": "COUNTERFACTUAL_CONTROL_NOT_NEW_GENERATION",
+      "actual": {
+        "policy_id": "FSV-B17-DISABLED-CUSTOMER-SO",
+        "decision": "deny",
+        "fail_closed": true,
+        "violations": [
+          {
+            "rule_id": "FSV-B17-RULE-01",
+            "code": "bounded_guard_rejected",
+            "detail": "FSV-B17-RULE-01"
+          }
+        ]
+      }
+    },
+    {
+      "task": "FSV-B17",
+      "arm": "ECAS_original_shape",
+      "method": "ECAS",
+      "variant": "original",
+      "mode": "shape",
+      "probe_id": "body-disable-spoof",
+      "kind": "engineering_trust_control",
+      "historical_expected": "deny",
+      "decision": "deny",
+      "agrees_with_historical_label": true,
+      "classification": "COUNTERFACTUAL_CONTROL_NOT_NEW_GENERATION",
+      "actual": {
+        "policy_id": "FSV-B17-DISABLED-CUSTOMER-SO",
+        "decision": "deny",
+        "fail_closed": true,
+        "violations": [
+          {
+            "rule_id": "FSV-B17-RULE-01",
+            "code": "bounded_guard_rejected",
+            "detail": "FSV-B17-RULE-01"
+          }
+        ]
+      }
+    },
+    {
+      "task": "FSV-B17",
+      "arm": "ECAS_original_shape",
+      "method": "ECAS",
+      "variant": "original",
+      "mode": "shape",
+      "probe_id": "missing-trusted",
+      "kind": "engineering_fail_closed_control",
+      "historical_expected": "deny",
+      "decision": "deny",
+      "agrees_with_historical_label": true,
+      "classification": "COUNTERFACTUAL_CONTROL_NOT_NEW_GENERATION",
+      "actual": {
+        "policy_id": "FSV-B17-DISABLED-CUSTOMER-SO",
+        "decision": "deny",
+        "fail_closed": true,
+        "violations": [
+          {
+            "rule_id": "FSV-B17-RULE-01",
+            "code": "required_input_missing",
+            "detail": "FSV-B17-RULE-01"
+          }
+        ]
+      }
+    },
+    {
+      "task": "FSV-B17",
+      "arm": "ECAS_missing_skip_full",
+      "method": "ECAS",
+      "variant": "missing_skip",
+      "mode": "full",
+      "probe_id": "FSV-B17-OL-01",
+      "kind": "original_pair",
+      "historical_expected": "allow",
+      "decision": "allow",
+      "agrees_with_historical_label": true,
+      "classification": "COUNTERFACTUAL_CONTROL_NOT_NEW_GENERATION",
+      "actual": {
+        "policy_id": "FSV-B17-DISABLED-CUSTOMER-SO",
+        "decision": "allow",
+        "fail_closed": true,
+        "violations": []
+      }
+    },
+    {
+      "task": "FSV-B17",
+      "arm": "ECAS_missing_skip_full",
+      "method": "ECAS",
+      "variant": "missing_skip",
+      "mode": "full",
+      "probe_id": "FSV-B17-OI-01",
+      "kind": "original_pair",
+      "historical_expected": "deny",
+      "decision": "deny",
+      "agrees_with_historical_label": true,
+      "classification": "COUNTERFACTUAL_CONTROL_NOT_NEW_GENERATION",
+      "actual": {
+        "policy_id": "FSV-B17-DISABLED-CUSTOMER-SO",
+        "decision": "deny",
+        "fail_closed": true,
+        "violations": [
+          {
+            "rule_id": "FSV-B17-RULE-01",
+            "code": "bounded_guard_rejected",
+            "detail": "FSV-B17-RULE-01"
+          }
+        ]
+      }
+    },
+    {
+      "task": "FSV-B17",
+      "arm": "ECAS_missing_skip_full",
+      "method": "ECAS",
+      "variant": "missing_skip",
+      "mode": "full",
+      "probe_id": "enabled",
+      "kind": "documented_rule",
+      "historical_expected": "allow",
+      "decision": "allow",
+      "agrees_with_historical_label": true,
+      "classification": "COUNTERFACTUAL_CONTROL_NOT_NEW_GENERATION",
+      "actual": {
+        "policy_id": "FSV-B17-DISABLED-CUSTOMER-SO",
+        "decision": "allow",
+        "fail_closed": true,
+        "violations": []
+      }
+    },
+    {
+      "task": "FSV-B17",
+      "arm": "ECAS_missing_skip_full",
+      "method": "ECAS",
+      "variant": "missing_skip",
+      "mode": "full",
+      "probe_id": "disabled",
+      "kind": "documented_rule",
+      "historical_expected": "deny",
+      "decision": "deny",
+      "agrees_with_historical_label": true,
+      "classification": "COUNTERFACTUAL_CONTROL_NOT_NEW_GENERATION",
+      "actual": {
+        "policy_id": "FSV-B17-DISABLED-CUSTOMER-SO",
+        "decision": "deny",
+        "fail_closed": true,
+        "violations": [
+          {
+            "rule_id": "FSV-B17-RULE-01",
+            "code": "bounded_guard_rejected",
+            "detail": "FSV-B17-RULE-01"
+          }
+        ]
+      }
+    },
+    {
+      "task": "FSV-B17",
+      "arm": "ECAS_missing_skip_full",
+      "method": "ECAS",
+      "variant": "missing_skip",
+      "mode": "full",
+      "probe_id": "body-disable-spoof",
+      "kind": "engineering_trust_control",
+      "historical_expected": "deny",
+      "decision": "deny",
+      "agrees_with_historical_label": true,
+      "classification": "COUNTERFACTUAL_CONTROL_NOT_NEW_GENERATION",
+      "actual": {
+        "policy_id": "FSV-B17-DISABLED-CUSTOMER-SO",
+        "decision": "deny",
+        "fail_closed": true,
+        "violations": [
+          {
+            "rule_id": "FSV-B17-RULE-01",
+            "code": "bounded_guard_rejected",
+            "detail": "FSV-B17-RULE-01"
+          }
+        ]
+      }
+    },
+    {
+      "task": "FSV-B17",
+      "arm": "ECAS_missing_skip_full",
+      "method": "ECAS",
+      "variant": "missing_skip",
+      "mode": "full",
+      "probe_id": "missing-trusted",
+      "kind": "engineering_fail_closed_control",
+      "historical_expected": "deny",
+      "decision": "allow",
+      "agrees_with_historical_label": false,
+      "classification": "COUNTERFACTUAL_CONTROL_NOT_NEW_GENERATION",
+      "actual": {
+        "policy_id": "FSV-B17-DISABLED-CUSTOMER-SO",
+        "decision": "allow",
+        "fail_closed": true,
+        "violations": []
+      }
+    },
+    {
+      "task": "FSV-B17",
+      "arm": "ECAS_missing_skip_shape",
+      "method": "ECAS",
+      "variant": "missing_skip",
+      "mode": "shape",
+      "probe_id": "FSV-B17-OL-01",
+      "kind": "original_pair",
+      "historical_expected": "allow",
+      "decision": "allow",
+      "agrees_with_historical_label": true,
+      "classification": "COUNTERFACTUAL_CONTROL_NOT_NEW_GENERATION",
+      "actual": {
+        "policy_id": "FSV-B17-DISABLED-CUSTOMER-SO",
+        "decision": "allow",
+        "fail_closed": true,
+        "violations": []
+      }
+    },
+    {
+      "task": "FSV-B17",
+      "arm": "ECAS_missing_skip_shape",
+      "method": "ECAS",
+      "variant": "missing_skip",
+      "mode": "shape",
+      "probe_id": "FSV-B17-OI-01",
+      "kind": "original_pair",
+      "historical_expected": "deny",
+      "decision": "deny",
+      "agrees_with_historical_label": true,
+      "classification": "COUNTERFACTUAL_CONTROL_NOT_NEW_GENERATION",
+      "actual": {
+        "policy_id": "FSV-B17-DISABLED-CUSTOMER-SO",
+        "decision": "deny",
+        "fail_closed": true,
+        "violations": [
+          {
+            "rule_id": "FSV-B17-RULE-01",
+            "code": "bounded_guard_rejected",
+            "detail": "FSV-B17-RULE-01"
+          }
+        ]
+      }
+    },
+    {
+      "task": "FSV-B17",
+      "arm": "ECAS_missing_skip_shape",
+      "method": "ECAS",
+      "variant": "missing_skip",
+      "mode": "shape",
+      "probe_id": "enabled",
+      "kind": "documented_rule",
+      "historical_expected": "allow",
+      "decision": "allow",
+      "agrees_with_historical_label": true,
+      "classification": "COUNTERFACTUAL_CONTROL_NOT_NEW_GENERATION",
+      "actual": {
+        "policy_id": "FSV-B17-DISABLED-CUSTOMER-SO",
+        "decision": "allow",
+        "fail_closed": true,
+        "violations": []
+      }
+    },
+    {
+      "task": "FSV-B17",
+      "arm": "ECAS_missing_skip_shape",
+      "method": "ECAS",
+      "variant": "missing_skip",
+      "mode": "shape",
+      "probe_id": "disabled",
+      "kind": "documented_rule",
+      "historical_expected": "deny",
+      "decision": "deny",
+      "agrees_with_historical_label": true,
+      "classification": "COUNTERFACTUAL_CONTROL_NOT_NEW_GENERATION",
+      "actual": {
+        "policy_id": "FSV-B17-DISABLED-CUSTOMER-SO",
+        "decision": "deny",
+        "fail_closed": true,
+        "violations": [
+          {
+            "rule_id": "FSV-B17-RULE-01",
+            "code": "bounded_guard_rejected",
+            "detail": "FSV-B17-RULE-01"
+          }
+        ]
+      }
+    },
+    {
+      "task": "FSV-B17",
+      "arm": "ECAS_missing_skip_shape",
+      "method": "ECAS",
+      "variant": "missing_skip",
+      "mode": "shape",
+      "probe_id": "body-disable-spoof",
+      "kind": "engineering_trust_control",
+      "historical_expected": "deny",
+      "decision": "deny",
+      "agrees_with_historical_label": true,
+      "classification": "COUNTERFACTUAL_CONTROL_NOT_NEW_GENERATION",
+      "actual": {
+        "policy_id": "FSV-B17-DISABLED-CUSTOMER-SO",
+        "decision": "deny",
+        "fail_closed": true,
+        "violations": [
+          {
+            "rule_id": "FSV-B17-RULE-01",
+            "code": "bounded_guard_rejected",
+            "detail": "FSV-B17-RULE-01"
+          }
+        ]
+      }
+    },
+    {
+      "task": "FSV-B17",
+      "arm": "ECAS_missing_skip_shape",
+      "method": "ECAS",
+      "variant": "missing_skip",
+      "mode": "shape",
+      "probe_id": "missing-trusted",
+      "kind": "engineering_fail_closed_control",
+      "historical_expected": "deny",
+      "decision": "allow",
+      "agrees_with_historical_label": false,
+      "classification": "COUNTERFACTUAL_CONTROL_NOT_NEW_GENERATION",
+      "actual": {
+        "policy_id": "FSV-B17-DISABLED-CUSTOMER-SO",
+        "decision": "allow",
+        "fail_closed": true,
+        "violations": []
+      }
+    },
+    {
+      "task": "FSV-B17",
+      "arm": "P2P_STYLE_original",
+      "method": "P2P_STYLE",
+      "variant": "original",
+      "mode": "OPA",
+      "probe_id": "FSV-B17-OL-01",
+      "kind": "original_pair",
+      "historical_expected": "allow",
+      "decision": "allow",
+      "agrees_with_historical_label": true,
+      "classification": "FROZEN_ORIGINAL_REPLAY"
+    },
+    {
+      "task": "FSV-B17",
+      "arm": "P2P_STYLE_original",
+      "method": "P2P_STYLE",
+      "variant": "original",
+      "mode": "OPA",
+      "probe_id": "FSV-B17-OI-01",
+      "kind": "original_pair",
+      "historical_expected": "deny",
+      "decision": "deny",
+      "agrees_with_historical_label": true,
+      "classification": "FROZEN_ORIGINAL_REPLAY"
+    },
+    {
+      "task": "FSV-B17",
+      "arm": "P2P_STYLE_original",
+      "method": "P2P_STYLE",
+      "variant": "original",
+      "mode": "OPA",
+      "probe_id": "enabled",
+      "kind": "documented_rule",
+      "historical_expected": "allow",
+      "decision": "allow",
+      "agrees_with_historical_label": true,
+      "classification": "FROZEN_ORIGINAL_REPLAY"
+    },
+    {
+      "task": "FSV-B17",
+      "arm": "P2P_STYLE_original",
+      "method": "P2P_STYLE",
+      "variant": "original",
+      "mode": "OPA",
+      "probe_id": "disabled",
+      "kind": "documented_rule",
+      "historical_expected": "deny",
+      "decision": "deny",
+      "agrees_with_historical_label": true,
+      "classification": "FROZEN_ORIGINAL_REPLAY"
+    },
+    {
+      "task": "FSV-B17",
+      "arm": "P2P_STYLE_original",
+      "method": "P2P_STYLE",
+      "variant": "original",
+      "mode": "OPA",
+      "probe_id": "body-disable-spoof",
+      "kind": "engineering_trust_control",
+      "historical_expected": "deny",
+      "decision": "deny",
+      "agrees_with_historical_label": true,
+      "classification": "FROZEN_ORIGINAL_REPLAY"
+    },
+    {
+      "task": "FSV-B17",
+      "arm": "P2P_STYLE_original",
+      "method": "P2P_STYLE",
+      "variant": "original",
+      "mode": "OPA",
+      "probe_id": "missing-trusted",
+      "kind": "engineering_fail_closed_control",
+      "historical_expected": "deny",
+      "decision": "allow",
+      "agrees_with_historical_label": false,
+      "classification": "FROZEN_ORIGINAL_REPLAY"
+    },
+    {
+      "task": "FSV-B17",
+      "arm": "P2P_STYLE_manual_guard",
+      "method": "P2P_STYLE",
+      "variant": "manual_guard",
+      "mode": "OPA",
+      "probe_id": "FSV-B17-OL-01",
+      "kind": "original_pair",
+      "historical_expected": "allow",
+      "decision": "allow",
+      "agrees_with_historical_label": true,
+      "classification": "MANUAL_DETERMINISTIC_GUARD_CONTROL"
+    },
+    {
+      "task": "FSV-B17",
+      "arm": "P2P_STYLE_manual_guard",
+      "method": "P2P_STYLE",
+      "variant": "manual_guard",
+      "mode": "OPA",
+      "probe_id": "FSV-B17-OI-01",
+      "kind": "original_pair",
+      "historical_expected": "deny",
+      "decision": "deny",
+      "agrees_with_historical_label": true,
+      "classification": "MANUAL_DETERMINISTIC_GUARD_CONTROL"
+    },
+    {
+      "task": "FSV-B17",
+      "arm": "P2P_STYLE_manual_guard",
+      "method": "P2P_STYLE",
+      "variant": "manual_guard",
+      "mode": "OPA",
+      "probe_id": "enabled",
+      "kind": "documented_rule",
+      "historical_expected": "allow",
+      "decision": "allow",
+      "agrees_with_historical_label": true,
+      "classification": "MANUAL_DETERMINISTIC_GUARD_CONTROL"
+    },
+    {
+      "task": "FSV-B17",
+      "arm": "P2P_STYLE_manual_guard",
+      "method": "P2P_STYLE",
+      "variant": "manual_guard",
+      "mode": "OPA",
+      "probe_id": "disabled",
+      "kind": "documented_rule",
+      "historical_expected": "deny",
+      "decision": "deny",
+      "agrees_with_historical_label": true,
+      "classification": "MANUAL_DETERMINISTIC_GUARD_CONTROL"
+    },
+    {
+      "task": "FSV-B17",
+      "arm": "P2P_STYLE_manual_guard",
+      "method": "P2P_STYLE",
+      "variant": "manual_guard",
+      "mode": "OPA",
+      "probe_id": "body-disable-spoof",
+      "kind": "engineering_trust_control",
+      "historical_expected": "deny",
+      "decision": "deny",
+      "agrees_with_historical_label": true,
+      "classification": "MANUAL_DETERMINISTIC_GUARD_CONTROL"
+    },
+    {
+      "task": "FSV-B17",
+      "arm": "P2P_STYLE_manual_guard",
+      "method": "P2P_STYLE",
+      "variant": "manual_guard",
+      "mode": "OPA",
+      "probe_id": "missing-trusted",
+      "kind": "engineering_fail_closed_control",
+      "historical_expected": "deny",
+      "decision": "deny",
+      "agrees_with_historical_label": true,
+      "classification": "MANUAL_DETERMINISTIC_GUARD_CONTROL"
+    },
+    {
+      "task": "FSV-B17",
+      "arm": "AUTOPAC_STYLE_original",
+      "method": "AUTOPAC_STYLE",
+      "variant": "original",
+      "mode": "OPA",
+      "probe_id": "FSV-B17-OL-01",
+      "kind": "original_pair",
+      "historical_expected": "allow",
+      "decision": "allow",
+      "agrees_with_historical_label": true,
+      "classification": "FROZEN_ORIGINAL_REPLAY"
+    },
+    {
+      "task": "FSV-B17",
+      "arm": "AUTOPAC_STYLE_original",
+      "method": "AUTOPAC_STYLE",
+      "variant": "original",
+      "mode": "OPA",
+      "probe_id": "FSV-B17-OI-01",
+      "kind": "original_pair",
+      "historical_expected": "deny",
+      "decision": "deny",
+      "agrees_with_historical_label": true,
+      "classification": "FROZEN_ORIGINAL_REPLAY"
+    },
+    {
+      "task": "FSV-B17",
+      "arm": "AUTOPAC_STYLE_original",
+      "method": "AUTOPAC_STYLE",
+      "variant": "original",
+      "mode": "OPA",
+      "probe_id": "enabled",
+      "kind": "documented_rule",
+      "historical_expected": "allow",
+      "decision": "allow",
+      "agrees_with_historical_label": true,
+      "classification": "FROZEN_ORIGINAL_REPLAY"
+    },
+    {
+      "task": "FSV-B17",
+      "arm": "AUTOPAC_STYLE_original",
+      "method": "AUTOPAC_STYLE",
+      "variant": "original",
+      "mode": "OPA",
+      "probe_id": "disabled",
+      "kind": "documented_rule",
+      "historical_expected": "deny",
+      "decision": "deny",
+      "agrees_with_historical_label": true,
+      "classification": "FROZEN_ORIGINAL_REPLAY"
+    },
+    {
+      "task": "FSV-B17",
+      "arm": "AUTOPAC_STYLE_original",
+      "method": "AUTOPAC_STYLE",
+      "variant": "original",
+      "mode": "OPA",
+      "probe_id": "body-disable-spoof",
+      "kind": "engineering_trust_control",
+      "historical_expected": "deny",
+      "decision": "deny",
+      "agrees_with_historical_label": true,
+      "classification": "FROZEN_ORIGINAL_REPLAY"
+    },
+    {
+      "task": "FSV-B17",
+      "arm": "AUTOPAC_STYLE_original",
+      "method": "AUTOPAC_STYLE",
+      "variant": "original",
+      "mode": "OPA",
+      "probe_id": "missing-trusted",
+      "kind": "engineering_fail_closed_control",
+      "historical_expected": "deny",
+      "decision": "allow",
+      "agrees_with_historical_label": false,
+      "classification": "FROZEN_ORIGINAL_REPLAY"
+    },
+    {
+      "task": "FSV-B17",
+      "arm": "AUTOPAC_STYLE_manual_guard",
+      "method": "AUTOPAC_STYLE",
+      "variant": "manual_guard",
+      "mode": "OPA",
+      "probe_id": "FSV-B17-OL-01",
+      "kind": "original_pair",
+      "historical_expected": "allow",
+      "decision": "allow",
+      "agrees_with_historical_label": true,
+      "classification": "MANUAL_DETERMINISTIC_GUARD_CONTROL"
+    },
+    {
+      "task": "FSV-B17",
+      "arm": "AUTOPAC_STYLE_manual_guard",
+      "method": "AUTOPAC_STYLE",
+      "variant": "manual_guard",
+      "mode": "OPA",
+      "probe_id": "FSV-B17-OI-01",
+      "kind": "original_pair",
+      "historical_expected": "deny",
+      "decision": "deny",
+      "agrees_with_historical_label": true,
+      "classification": "MANUAL_DETERMINISTIC_GUARD_CONTROL"
+    },
+    {
+      "task": "FSV-B17",
+      "arm": "AUTOPAC_STYLE_manual_guard",
+      "method": "AUTOPAC_STYLE",
+      "variant": "manual_guard",
+      "mode": "OPA",
+      "probe_id": "enabled",
+      "kind": "documented_rule",
+      "historical_expected": "allow",
+      "decision": "allow",
+      "agrees_with_historical_label": true,
+      "classification": "MANUAL_DETERMINISTIC_GUARD_CONTROL"
+    },
+    {
+      "task": "FSV-B17",
+      "arm": "AUTOPAC_STYLE_manual_guard",
+      "method": "AUTOPAC_STYLE",
+      "variant": "manual_guard",
+      "mode": "OPA",
+      "probe_id": "disabled",
+      "kind": "documented_rule",
+      "historical_expected": "deny",
+      "decision": "deny",
+      "agrees_with_historical_label": true,
+      "classification": "MANUAL_DETERMINISTIC_GUARD_CONTROL"
+    },
+    {
+      "task": "FSV-B17",
+      "arm": "AUTOPAC_STYLE_manual_guard",
+      "method": "AUTOPAC_STYLE",
+      "variant": "manual_guard",
+      "mode": "OPA",
+      "probe_id": "body-disable-spoof",
+      "kind": "engineering_trust_control",
+      "historical_expected": "deny",
+      "decision": "deny",
+      "agrees_with_historical_label": true,
+      "classification": "MANUAL_DETERMINISTIC_GUARD_CONTROL"
+    },
+    {
+      "task": "FSV-B17",
+      "arm": "AUTOPAC_STYLE_manual_guard",
+      "method": "AUTOPAC_STYLE",
+      "variant": "manual_guard",
+      "mode": "OPA",
+      "probe_id": "missing-trusted",
+      "kind": "engineering_fail_closed_control",
+      "historical_expected": "deny",
+      "decision": "deny",
+      "agrees_with_historical_label": true,
+      "classification": "MANUAL_DETERMINISTIC_GUARD_CONTROL"
+    },
+    {
+      "task": "FSV-B19",
+      "arm": "ECAS_original_full",
+      "method": "ECAS",
+      "variant": "original",
+      "mode": "full",
+      "probe_id": "FSV-B19-OL-01",
+      "kind": "original_pair",
+      "historical_expected": "allow",
+      "decision": "allow",
+      "agrees_with_historical_label": true,
+      "classification": "COUNTERFACTUAL_CONTROL_NOT_NEW_GENERATION",
+      "actual": {
+        "policy_id": "POL-FSV-B19-001",
+        "decision": "allow",
+        "fail_closed": true,
+        "violations": []
+      }
+    },
+    {
+      "task": "FSV-B19",
+      "arm": "ECAS_original_full",
+      "method": "ECAS",
+      "variant": "original",
+      "mode": "full",
+      "probe_id": "FSV-B19-OI-01",
+      "kind": "original_pair",
+      "historical_expected": "deny",
+      "decision": "deny",
+      "agrees_with_historical_label": true,
+      "classification": "COUNTERFACTUAL_CONTROL_NOT_NEW_GENERATION",
+      "actual": {
+        "policy_id": "POL-FSV-B19-001",
+        "decision": "deny",
+        "fail_closed": true,
+        "violations": [
+          {
+            "rule_id": "RULE-FSV-B19-001",
+            "code": "bounded_guard_rejected",
+            "detail": "RULE-FSV-B19-001"
+          }
+        ]
+      }
+    },
+    {
+      "task": "FSV-B19",
+      "arm": "ECAS_original_full",
+      "method": "ECAS",
+      "variant": "original",
+      "mode": "full",
+      "probe_id": "not-held",
+      "kind": "documented_rule",
+      "historical_expected": "allow",
+      "decision": "allow",
+      "agrees_with_historical_label": true,
+      "classification": "COUNTERFACTUAL_CONTROL_NOT_NEW_GENERATION",
+      "actual": {
+        "policy_id": "POL-FSV-B19-001",
+        "decision": "allow",
+        "fail_closed": true,
+        "violations": []
+      }
+    },
+    {
+      "task": "FSV-B19",
+      "arm": "ECAS_original_full",
+      "method": "ECAS",
+      "variant": "original",
+      "mode": "full",
+      "probe_id": "held-all",
+      "kind": "documented_rule",
+      "historical_expected": "deny",
+      "decision": "deny",
+      "agrees_with_historical_label": true,
+      "classification": "COUNTERFACTUAL_CONTROL_NOT_NEW_GENERATION",
+      "actual": {
+        "policy_id": "POL-FSV-B19-001",
+        "decision": "deny",
+        "fail_closed": true,
+        "violations": [
+          {
+            "rule_id": "RULE-FSV-B19-001",
+            "code": "bounded_guard_rejected",
+            "detail": "RULE-FSV-B19-001"
+          }
+        ]
+      }
+    },
+    {
+      "task": "FSV-B19",
+      "arm": "ECAS_original_full",
+      "method": "ECAS",
+      "variant": "original",
+      "mode": "full",
+      "probe_id": "held-invoices",
+      "kind": "documented_rule",
+      "historical_expected": "deny",
+      "decision": "deny",
+      "agrees_with_historical_label": true,
+      "classification": "COUNTERFACTUAL_CONTROL_NOT_NEW_GENERATION",
+      "actual": {
+        "policy_id": "POL-FSV-B19-001",
+        "decision": "deny",
+        "fail_closed": true,
+        "violations": [
+          {
+            "rule_id": "RULE-FSV-B19-001",
+            "code": "bounded_guard_rejected",
+            "detail": "RULE-FSV-B19-001"
+          }
+        ]
+      }
+    },
+    {
+      "task": "FSV-B19",
+      "arm": "ECAS_original_full",
+      "method": "ECAS",
+      "variant": "original",
+      "mode": "full",
+      "probe_id": "held-payments",
+      "kind": "documented_rule",
+      "historical_expected": "allow",
+      "decision": "allow",
+      "agrees_with_historical_label": true,
+      "classification": "COUNTERFACTUAL_CONTROL_NOT_NEW_GENERATION",
+      "actual": {
+        "policy_id": "POL-FSV-B19-001",
+        "decision": "allow",
+        "fail_closed": true,
+        "violations": []
+      }
+    },
+    {
+      "task": "FSV-B19",
+      "arm": "ECAS_original_full",
+      "method": "ECAS",
+      "variant": "original",
+      "mode": "full",
+      "probe_id": "held-empty-type",
+      "kind": "conservative_empty_type_control",
+      "historical_expected": "deny",
+      "decision": "deny",
+      "agrees_with_historical_label": true,
+      "classification": "COUNTERFACTUAL_CONTROL_NOT_NEW_GENERATION",
+      "actual": {
+        "policy_id": "POL-FSV-B19-001",
+        "decision": "deny",
+        "fail_closed": true,
+        "violations": [
+          {
+            "rule_id": "RULE-FSV-B19-001",
+            "code": "bounded_guard_rejected",
+            "detail": "RULE-FSV-B19-001"
+          }
+        ]
+      }
+    },
+    {
+      "task": "FSV-B19",
+      "arm": "ECAS_original_full",
+      "method": "ECAS",
+      "variant": "original",
+      "mode": "full",
+      "probe_id": "held-unknown-type",
+      "kind": "engineering_unknown_type_control",
+      "historical_expected": "deny",
+      "decision": "deny",
+      "agrees_with_historical_label": true,
+      "classification": "COUNTERFACTUAL_CONTROL_NOT_NEW_GENERATION",
+      "actual": {
+        "policy_id": "POL-FSV-B19-001",
+        "decision": "deny",
+        "fail_closed": true,
+        "violations": [
+          {
+            "rule_id": "RULE-FSV-B19-001",
+            "code": "bounded_guard_rejected",
+            "detail": "RULE-FSV-B19-001"
+          }
+        ]
+      }
+    },
+    {
+      "task": "FSV-B19",
+      "arm": "ECAS_original_full",
+      "method": "ECAS",
+      "variant": "original",
+      "mode": "full",
+      "probe_id": "body-type-spoof",
+      "kind": "engineering_trust_control",
+      "historical_expected": "deny",
+      "decision": "deny",
+      "agrees_with_historical_label": true,
+      "classification": "COUNTERFACTUAL_CONTROL_NOT_NEW_GENERATION",
+      "actual": {
+        "policy_id": "POL-FSV-B19-001",
+        "decision": "deny",
+        "fail_closed": true,
+        "violations": [
+          {
+            "rule_id": "RULE-FSV-B19-001",
+            "code": "bounded_guard_rejected",
+            "detail": "RULE-FSV-B19-001"
+          }
+        ]
+      }
+    },
+    {
+      "task": "FSV-B19",
+      "arm": "ECAS_original_full",
+      "method": "ECAS",
+      "variant": "original",
+      "mode": "full",
+      "probe_id": "missing-trusted",
+      "kind": "engineering_fail_closed_control",
+      "historical_expected": "deny",
+      "decision": "deny",
+      "agrees_with_historical_label": true,
+      "classification": "COUNTERFACTUAL_CONTROL_NOT_NEW_GENERATION",
+      "actual": {
+        "policy_id": "POL-FSV-B19-001",
+        "decision": "deny",
+        "fail_closed": true,
+        "violations": [
+          {
+            "rule_id": "RULE-FSV-B19-001",
+            "code": "required_input_missing",
+            "detail": "RULE-FSV-B19-001"
+          }
+        ]
+      }
+    },
+    {
+      "task": "FSV-B19",
+      "arm": "ECAS_original_full",
+      "method": "ECAS",
+      "variant": "original",
+      "mode": "full",
+      "probe_id": "partial-status-false-only",
+      "kind": "partial_missing_observation_no_gold",
+      "historical_expected": null,
+      "decision": "allow",
+      "agrees_with_historical_label": null,
+      "classification": "COUNTERFACTUAL_CONTROL_NOT_NEW_GENERATION",
+      "actual": {
+        "policy_id": "POL-FSV-B19-001",
+        "decision": "allow",
+        "fail_closed": true,
+        "violations": []
+      }
+    },
+    {
+      "task": "FSV-B19",
+      "arm": "ECAS_original_full",
+      "method": "ECAS",
+      "variant": "original",
+      "mode": "full",
+      "probe_id": "partial-payments-only",
+      "kind": "partial_missing_observation_no_gold",
+      "historical_expected": null,
+      "decision": "allow",
+      "agrees_with_historical_label": null,
+      "classification": "COUNTERFACTUAL_CONTROL_NOT_NEW_GENERATION",
+      "actual": {
+        "policy_id": "POL-FSV-B19-001",
+        "decision": "allow",
+        "fail_closed": true,
+        "violations": []
+      }
+    },
+    {
+      "task": "FSV-B19",
+      "arm": "ECAS_original_shape",
+      "method": "ECAS",
+      "variant": "original",
+      "mode": "shape",
+      "probe_id": "FSV-B19-OL-01",
+      "kind": "original_pair",
+      "historical_expected": "allow",
+      "decision": "allow",
+      "agrees_with_historical_label": true,
+      "classification": "COUNTERFACTUAL_CONTROL_NOT_NEW_GENERATION",
+      "actual": {
+        "policy_id": "POL-FSV-B19-001",
+        "decision": "allow",
+        "fail_closed": true,
+        "violations": []
+      }
+    },
+    {
+      "task": "FSV-B19",
+      "arm": "ECAS_original_shape",
+      "method": "ECAS",
+      "variant": "original",
+      "mode": "shape",
+      "probe_id": "FSV-B19-OI-01",
+      "kind": "original_pair",
+      "historical_expected": "deny",
+      "decision": "deny",
+      "agrees_with_historical_label": true,
+      "classification": "COUNTERFACTUAL_CONTROL_NOT_NEW_GENERATION",
+      "actual": {
+        "policy_id": "POL-FSV-B19-001",
+        "decision": "deny",
+        "fail_closed": true,
+        "violations": [
+          {
+            "rule_id": "RULE-FSV-B19-001",
+            "code": "bounded_guard_rejected",
+            "detail": "RULE-FSV-B19-001"
+          }
+        ]
+      }
+    },
+    {
+      "task": "FSV-B19",
+      "arm": "ECAS_original_shape",
+      "method": "ECAS",
+      "variant": "original",
+      "mode": "shape",
+      "probe_id": "not-held",
+      "kind": "documented_rule",
+      "historical_expected": "allow",
+      "decision": "allow",
+      "agrees_with_historical_label": true,
+      "classification": "COUNTERFACTUAL_CONTROL_NOT_NEW_GENERATION",
+      "actual": {
+        "policy_id": "POL-FSV-B19-001",
+        "decision": "allow",
+        "fail_closed": true,
+        "violations": []
+      }
+    },
+    {
+      "task": "FSV-B19",
+      "arm": "ECAS_original_shape",
+      "method": "ECAS",
+      "variant": "original",
+      "mode": "shape",
+      "probe_id": "held-all",
+      "kind": "documented_rule",
+      "historical_expected": "deny",
+      "decision": "deny",
+      "agrees_with_historical_label": true,
+      "classification": "COUNTERFACTUAL_CONTROL_NOT_NEW_GENERATION",
+      "actual": {
+        "policy_id": "POL-FSV-B19-001",
+        "decision": "deny",
+        "fail_closed": true,
+        "violations": [
+          {
+            "rule_id": "RULE-FSV-B19-001",
+            "code": "bounded_guard_rejected",
+            "detail": "RULE-FSV-B19-001"
+          }
+        ]
+      }
+    },
+    {
+      "task": "FSV-B19",
+      "arm": "ECAS_original_shape",
+      "method": "ECAS",
+      "variant": "original",
+      "mode": "shape",
+      "probe_id": "held-invoices",
+      "kind": "documented_rule",
+      "historical_expected": "deny",
+      "decision": "deny",
+      "agrees_with_historical_label": true,
+      "classification": "COUNTERFACTUAL_CONTROL_NOT_NEW_GENERATION",
+      "actual": {
+        "policy_id": "POL-FSV-B19-001",
+        "decision": "deny",
+        "fail_closed": true,
+        "violations": [
+          {
+            "rule_id": "RULE-FSV-B19-001",
+            "code": "bounded_guard_rejected",
+            "detail": "RULE-FSV-B19-001"
+          }
+        ]
+      }
+    },
+    {
+      "task": "FSV-B19",
+      "arm": "ECAS_original_shape",
+      "method": "ECAS",
+      "variant": "original",
+      "mode": "shape",
+      "probe_id": "held-payments",
+      "kind": "documented_rule",
+      "historical_expected": "allow",
+      "decision": "allow",
+      "agrees_with_historical_label": true,
+      "classification": "COUNTERFACTUAL_CONTROL_NOT_NEW_GENERATION",
+      "actual": {
+        "policy_id": "POL-FSV-B19-001",
+        "decision": "allow",
+        "fail_closed": true,
+        "violations": []
+      }
+    },
+    {
+      "task": "FSV-B19",
+      "arm": "ECAS_original_shape",
+      "method": "ECAS",
+      "variant": "original",
+      "mode": "shape",
+      "probe_id": "held-empty-type",
+      "kind": "conservative_empty_type_control",
+      "historical_expected": "deny",
+      "decision": "deny",
+      "agrees_with_historical_label": true,
+      "classification": "COUNTERFACTUAL_CONTROL_NOT_NEW_GENERATION",
+      "actual": {
+        "policy_id": "POL-FSV-B19-001",
+        "decision": "deny",
+        "fail_closed": true,
+        "violations": [
+          {
+            "rule_id": "RULE-FSV-B19-001",
+            "code": "bounded_guard_rejected",
+            "detail": "RULE-FSV-B19-001"
+          }
+        ]
+      }
+    },
+    {
+      "task": "FSV-B19",
+      "arm": "ECAS_original_shape",
+      "method": "ECAS",
+      "variant": "original",
+      "mode": "shape",
+      "probe_id": "held-unknown-type",
+      "kind": "engineering_unknown_type_control",
+      "historical_expected": "deny",
+      "decision": "deny",
+      "agrees_with_historical_label": true,
+      "classification": "COUNTERFACTUAL_CONTROL_NOT_NEW_GENERATION",
+      "actual": {
+        "policy_id": "POL-FSV-B19-001",
+        "decision": "deny",
+        "fail_closed": true,
+        "violations": [
+          {
+            "rule_id": "RULE-FSV-B19-001",
+            "code": "bounded_guard_rejected",
+            "detail": "RULE-FSV-B19-001"
+          }
+        ]
+      }
+    },
+    {
+      "task": "FSV-B19",
+      "arm": "ECAS_original_shape",
+      "method": "ECAS",
+      "variant": "original",
+      "mode": "shape",
+      "probe_id": "body-type-spoof",
+      "kind": "engineering_trust_control",
+      "historical_expected": "deny",
+      "decision": "deny",
+      "agrees_with_historical_label": true,
+      "classification": "COUNTERFACTUAL_CONTROL_NOT_NEW_GENERATION",
+      "actual": {
+        "policy_id": "POL-FSV-B19-001",
+        "decision": "deny",
+        "fail_closed": true,
+        "violations": [
+          {
+            "rule_id": "RULE-FSV-B19-001",
+            "code": "bounded_guard_rejected",
+            "detail": "RULE-FSV-B19-001"
+          }
+        ]
+      }
+    },
+    {
+      "task": "FSV-B19",
+      "arm": "ECAS_original_shape",
+      "method": "ECAS",
+      "variant": "original",
+      "mode": "shape",
+      "probe_id": "missing-trusted",
+      "kind": "engineering_fail_closed_control",
+      "historical_expected": "deny",
+      "decision": "deny",
+      "agrees_with_historical_label": true,
+      "classification": "COUNTERFACTUAL_CONTROL_NOT_NEW_GENERATION",
+      "actual": {
+        "policy_id": "POL-FSV-B19-001",
+        "decision": "deny",
+        "fail_closed": true,
+        "violations": [
+          {
+            "rule_id": "RULE-FSV-B19-001",
+            "code": "required_input_missing",
+            "detail": "RULE-FSV-B19-001"
+          }
+        ]
+      }
+    },
+    {
+      "task": "FSV-B19",
+      "arm": "ECAS_original_shape",
+      "method": "ECAS",
+      "variant": "original",
+      "mode": "shape",
+      "probe_id": "partial-status-false-only",
+      "kind": "partial_missing_observation_no_gold",
+      "historical_expected": null,
+      "decision": "allow",
+      "agrees_with_historical_label": null,
+      "classification": "COUNTERFACTUAL_CONTROL_NOT_NEW_GENERATION",
+      "actual": {
+        "policy_id": "POL-FSV-B19-001",
+        "decision": "allow",
+        "fail_closed": true,
+        "violations": []
+      }
+    },
+    {
+      "task": "FSV-B19",
+      "arm": "ECAS_original_shape",
+      "method": "ECAS",
+      "variant": "original",
+      "mode": "shape",
+      "probe_id": "partial-payments-only",
+      "kind": "partial_missing_observation_no_gold",
+      "historical_expected": null,
+      "decision": "allow",
+      "agrees_with_historical_label": null,
+      "classification": "COUNTERFACTUAL_CONTROL_NOT_NEW_GENERATION",
+      "actual": {
+        "policy_id": "POL-FSV-B19-001",
+        "decision": "allow",
+        "fail_closed": true,
+        "violations": []
+      }
+    },
+    {
+      "task": "FSV-B19",
+      "arm": "ECAS_missing_skip_full",
+      "method": "ECAS",
+      "variant": "missing_skip",
+      "mode": "full",
+      "probe_id": "FSV-B19-OL-01",
+      "kind": "original_pair",
+      "historical_expected": "allow",
+      "decision": "allow",
+      "agrees_with_historical_label": true,
+      "classification": "COUNTERFACTUAL_CONTROL_NOT_NEW_GENERATION",
+      "actual": {
+        "policy_id": "POL-FSV-B19-001",
+        "decision": "allow",
+        "fail_closed": true,
+        "violations": []
+      }
+    },
+    {
+      "task": "FSV-B19",
+      "arm": "ECAS_missing_skip_full",
+      "method": "ECAS",
+      "variant": "missing_skip",
+      "mode": "full",
+      "probe_id": "FSV-B19-OI-01",
+      "kind": "original_pair",
+      "historical_expected": "deny",
+      "decision": "deny",
+      "agrees_with_historical_label": true,
+      "classification": "COUNTERFACTUAL_CONTROL_NOT_NEW_GENERATION",
+      "actual": {
+        "policy_id": "POL-FSV-B19-001",
+        "decision": "deny",
+        "fail_closed": true,
+        "violations": [
+          {
+            "rule_id": "RULE-FSV-B19-001",
+            "code": "bounded_guard_rejected",
+            "detail": "RULE-FSV-B19-001"
+          }
+        ]
+      }
+    },
+    {
+      "task": "FSV-B19",
+      "arm": "ECAS_missing_skip_full",
+      "method": "ECAS",
+      "variant": "missing_skip",
+      "mode": "full",
+      "probe_id": "not-held",
+      "kind": "documented_rule",
+      "historical_expected": "allow",
+      "decision": "allow",
+      "agrees_with_historical_label": true,
+      "classification": "COUNTERFACTUAL_CONTROL_NOT_NEW_GENERATION",
+      "actual": {
+        "policy_id": "POL-FSV-B19-001",
+        "decision": "allow",
+        "fail_closed": true,
+        "violations": []
+      }
+    },
+    {
+      "task": "FSV-B19",
+      "arm": "ECAS_missing_skip_full",
+      "method": "ECAS",
+      "variant": "missing_skip",
+      "mode": "full",
+      "probe_id": "held-all",
+      "kind": "documented_rule",
+      "historical_expected": "deny",
+      "decision": "deny",
+      "agrees_with_historical_label": true,
+      "classification": "COUNTERFACTUAL_CONTROL_NOT_NEW_GENERATION",
+      "actual": {
+        "policy_id": "POL-FSV-B19-001",
+        "decision": "deny",
+        "fail_closed": true,
+        "violations": [
+          {
+            "rule_id": "RULE-FSV-B19-001",
+            "code": "bounded_guard_rejected",
+            "detail": "RULE-FSV-B19-001"
+          }
+        ]
+      }
+    },
+    {
+      "task": "FSV-B19",
+      "arm": "ECAS_missing_skip_full",
+      "method": "ECAS",
+      "variant": "missing_skip",
+      "mode": "full",
+      "probe_id": "held-invoices",
+      "kind": "documented_rule",
+      "historical_expected": "deny",
+      "decision": "deny",
+      "agrees_with_historical_label": true,
+      "classification": "COUNTERFACTUAL_CONTROL_NOT_NEW_GENERATION",
+      "actual": {
+        "policy_id": "POL-FSV-B19-001",
+        "decision": "deny",
+        "fail_closed": true,
+        "violations": [
+          {
+            "rule_id": "RULE-FSV-B19-001",
+            "code": "bounded_guard_rejected",
+            "detail": "RULE-FSV-B19-001"
+          }
+        ]
+      }
+    },
+    {
+      "task": "FSV-B19",
+      "arm": "ECAS_missing_skip_full",
+      "method": "ECAS",
+      "variant": "missing_skip",
+      "mode": "full",
+      "probe_id": "held-payments",
+      "kind": "documented_rule",
+      "historical_expected": "allow",
+      "decision": "allow",
+      "agrees_with_historical_label": true,
+      "classification": "COUNTERFACTUAL_CONTROL_NOT_NEW_GENERATION",
+      "actual": {
+        "policy_id": "POL-FSV-B19-001",
+        "decision": "allow",
+        "fail_closed": true,
+        "violations": []
+      }
+    },
+    {
+      "task": "FSV-B19",
+      "arm": "ECAS_missing_skip_full",
+      "method": "ECAS",
+      "variant": "missing_skip",
+      "mode": "full",
+      "probe_id": "held-empty-type",
+      "kind": "conservative_empty_type_control",
+      "historical_expected": "deny",
+      "decision": "deny",
+      "agrees_with_historical_label": true,
+      "classification": "COUNTERFACTUAL_CONTROL_NOT_NEW_GENERATION",
+      "actual": {
+        "policy_id": "POL-FSV-B19-001",
+        "decision": "deny",
+        "fail_closed": true,
+        "violations": [
+          {
+            "rule_id": "RULE-FSV-B19-001",
+            "code": "bounded_guard_rejected",
+            "detail": "RULE-FSV-B19-001"
+          }
+        ]
+      }
+    },
+    {
+      "task": "FSV-B19",
+      "arm": "ECAS_missing_skip_full",
+      "method": "ECAS",
+      "variant": "missing_skip",
+      "mode": "full",
+      "probe_id": "held-unknown-type",
+      "kind": "engineering_unknown_type_control",
+      "historical_expected": "deny",
+      "decision": "deny",
+      "agrees_with_historical_label": true,
+      "classification": "COUNTERFACTUAL_CONTROL_NOT_NEW_GENERATION",
+      "actual": {
+        "policy_id": "POL-FSV-B19-001",
+        "decision": "deny",
+        "fail_closed": true,
+        "violations": [
+          {
+            "rule_id": "RULE-FSV-B19-001",
+            "code": "bounded_guard_rejected",
+            "detail": "RULE-FSV-B19-001"
+          }
+        ]
+      }
+    },
+    {
+      "task": "FSV-B19",
+      "arm": "ECAS_missing_skip_full",
+      "method": "ECAS",
+      "variant": "missing_skip",
+      "mode": "full",
+      "probe_id": "body-type-spoof",
+      "kind": "engineering_trust_control",
+      "historical_expected": "deny",
+      "decision": "deny",
+      "agrees_with_historical_label": true,
+      "classification": "COUNTERFACTUAL_CONTROL_NOT_NEW_GENERATION",
+      "actual": {
+        "policy_id": "POL-FSV-B19-001",
+        "decision": "deny",
+        "fail_closed": true,
+        "violations": [
+          {
+            "rule_id": "RULE-FSV-B19-001",
+            "code": "bounded_guard_rejected",
+            "detail": "RULE-FSV-B19-001"
+          }
+        ]
+      }
+    },
+    {
+      "task": "FSV-B19",
+      "arm": "ECAS_missing_skip_full",
+      "method": "ECAS",
+      "variant": "missing_skip",
+      "mode": "full",
+      "probe_id": "missing-trusted",
+      "kind": "engineering_fail_closed_control",
+      "historical_expected": "deny",
+      "decision": "allow",
+      "agrees_with_historical_label": false,
+      "classification": "COUNTERFACTUAL_CONTROL_NOT_NEW_GENERATION",
+      "actual": {
+        "policy_id": "POL-FSV-B19-001",
+        "decision": "allow",
+        "fail_closed": true,
+        "violations": []
+      }
+    },
+    {
+      "task": "FSV-B19",
+      "arm": "ECAS_missing_skip_full",
+      "method": "ECAS",
+      "variant": "missing_skip",
+      "mode": "full",
+      "probe_id": "partial-status-false-only",
+      "kind": "partial_missing_observation_no_gold",
+      "historical_expected": null,
+      "decision": "allow",
+      "agrees_with_historical_label": null,
+      "classification": "COUNTERFACTUAL_CONTROL_NOT_NEW_GENERATION",
+      "actual": {
+        "policy_id": "POL-FSV-B19-001",
+        "decision": "allow",
+        "fail_closed": true,
+        "violations": []
+      }
+    },
+    {
+      "task": "FSV-B19",
+      "arm": "ECAS_missing_skip_full",
+      "method": "ECAS",
+      "variant": "missing_skip",
+      "mode": "full",
+      "probe_id": "partial-payments-only",
+      "kind": "partial_missing_observation_no_gold",
+      "historical_expected": null,
+      "decision": "allow",
+      "agrees_with_historical_label": null,
+      "classification": "COUNTERFACTUAL_CONTROL_NOT_NEW_GENERATION",
+      "actual": {
+        "policy_id": "POL-FSV-B19-001",
+        "decision": "allow",
+        "fail_closed": true,
+        "violations": []
+      }
+    },
+    {
+      "task": "FSV-B19",
+      "arm": "ECAS_missing_skip_shape",
+      "method": "ECAS",
+      "variant": "missing_skip",
+      "mode": "shape",
+      "probe_id": "FSV-B19-OL-01",
+      "kind": "original_pair",
+      "historical_expected": "allow",
+      "decision": "allow",
+      "agrees_with_historical_label": true,
+      "classification": "COUNTERFACTUAL_CONTROL_NOT_NEW_GENERATION",
+      "actual": {
+        "policy_id": "POL-FSV-B19-001",
+        "decision": "allow",
+        "fail_closed": true,
+        "violations": []
+      }
+    },
+    {
+      "task": "FSV-B19",
+      "arm": "ECAS_missing_skip_shape",
+      "method": "ECAS",
+      "variant": "missing_skip",
+      "mode": "shape",
+      "probe_id": "FSV-B19-OI-01",
+      "kind": "original_pair",
+      "historical_expected": "deny",
+      "decision": "deny",
+      "agrees_with_historical_label": true,
+      "classification": "COUNTERFACTUAL_CONTROL_NOT_NEW_GENERATION",
+      "actual": {
+        "policy_id": "POL-FSV-B19-001",
+        "decision": "deny",
+        "fail_closed": true,
+        "violations": [
+          {
+            "rule_id": "RULE-FSV-B19-001",
+            "code": "bounded_guard_rejected",
+            "detail": "RULE-FSV-B19-001"
+          }
+        ]
+      }
+    },
+    {
+      "task": "FSV-B19",
+      "arm": "ECAS_missing_skip_shape",
+      "method": "ECAS",
+      "variant": "missing_skip",
+      "mode": "shape",
+      "probe_id": "not-held",
+      "kind": "documented_rule",
+      "historical_expected": "allow",
+      "decision": "allow",
+      "agrees_with_historical_label": true,
+      "classification": "COUNTERFACTUAL_CONTROL_NOT_NEW_GENERATION",
+      "actual": {
+        "policy_id": "POL-FSV-B19-001",
+        "decision": "allow",
+        "fail_closed": true,
+        "violations": []
+      }
+    },
+    {
+      "task": "FSV-B19",
+      "arm": "ECAS_missing_skip_shape",
+      "method": "ECAS",
+      "variant": "missing_skip",
+      "mode": "shape",
+      "probe_id": "held-all",
+      "kind": "documented_rule",
+      "historical_expected": "deny",
+      "decision": "deny",
+      "agrees_with_historical_label": true,
+      "classification": "COUNTERFACTUAL_CONTROL_NOT_NEW_GENERATION",
+      "actual": {
+        "policy_id": "POL-FSV-B19-001",
+        "decision": "deny",
+        "fail_closed": true,
+        "violations": [
+          {
+            "rule_id": "RULE-FSV-B19-001",
+            "code": "bounded_guard_rejected",
+            "detail": "RULE-FSV-B19-001"
+          }
+        ]
+      }
+    },
+    {
+      "task": "FSV-B19",
+      "arm": "ECAS_missing_skip_shape",
+      "method": "ECAS",
+      "variant": "missing_skip",
+      "mode": "shape",
+      "probe_id": "held-invoices",
+      "kind": "documented_rule",
+      "historical_expected": "deny",
+      "decision": "deny",
+      "agrees_with_historical_label": true,
+      "classification": "COUNTERFACTUAL_CONTROL_NOT_NEW_GENERATION",
+      "actual": {
+        "policy_id": "POL-FSV-B19-001",
+        "decision": "deny",
+        "fail_closed": true,
+        "violations": [
+          {
+            "rule_id": "RULE-FSV-B19-001",
+            "code": "bounded_guard_rejected",
+            "detail": "RULE-FSV-B19-001"
+          }
+        ]
+      }
+    },
+    {
+      "task": "FSV-B19",
+      "arm": "ECAS_missing_skip_shape",
+      "method": "ECAS",
+      "variant": "missing_skip",
+      "mode": "shape",
+      "probe_id": "held-payments",
+      "kind": "documented_rule",
+      "historical_expected": "allow",
+      "decision": "allow",
+      "agrees_with_historical_label": true,
+      "classification": "COUNTERFACTUAL_CONTROL_NOT_NEW_GENERATION",
+      "actual": {
+        "policy_id": "POL-FSV-B19-001",
+        "decision": "allow",
+        "fail_closed": true,
+        "violations": []
+      }
+    },
+    {
+      "task": "FSV-B19",
+      "arm": "ECAS_missing_skip_shape",
+      "method": "ECAS",
+      "variant": "missing_skip",
+      "mode": "shape",
+      "probe_id": "held-empty-type",
+      "kind": "conservative_empty_type_control",
+      "historical_expected": "deny",
+      "decision": "deny",
+      "agrees_with_historical_label": true,
+      "classification": "COUNTERFACTUAL_CONTROL_NOT_NEW_GENERATION",
+      "actual": {
+        "policy_id": "POL-FSV-B19-001",
+        "decision": "deny",
+        "fail_closed": true,
+        "violations": [
+          {
+            "rule_id": "RULE-FSV-B19-001",
+            "code": "bounded_guard_rejected",
+            "detail": "RULE-FSV-B19-001"
+          }
+        ]
+      }
+    },
+    {
+      "task": "FSV-B19",
+      "arm": "ECAS_missing_skip_shape",
+      "method": "ECAS",
+      "variant": "missing_skip",
+      "mode": "shape",
+      "probe_id": "held-unknown-type",
+      "kind": "engineering_unknown_type_control",
+      "historical_expected": "deny",
+      "decision": "deny",
+      "agrees_with_historical_label": true,
+      "classification": "COUNTERFACTUAL_CONTROL_NOT_NEW_GENERATION",
+      "actual": {
+        "policy_id": "POL-FSV-B19-001",
+        "decision": "deny",
+        "fail_closed": true,
+        "violations": [
+          {
+            "rule_id": "RULE-FSV-B19-001",
+            "code": "bounded_guard_rejected",
+            "detail": "RULE-FSV-B19-001"
+          }
+        ]
+      }
+    },
+    {
+      "task": "FSV-B19",
+      "arm": "ECAS_missing_skip_shape",
+      "method": "ECAS",
+      "variant": "missing_skip",
+      "mode": "shape",
+      "probe_id": "body-type-spoof",
+      "kind": "engineering_trust_control",
+      "historical_expected": "deny",
+      "decision": "deny",
+      "agrees_with_historical_label": true,
+      "classification": "COUNTERFACTUAL_CONTROL_NOT_NEW_GENERATION",
+      "actual": {
+        "policy_id": "POL-FSV-B19-001",
+        "decision": "deny",
+        "fail_closed": true,
+        "violations": [
+          {
+            "rule_id": "RULE-FSV-B19-001",
+            "code": "bounded_guard_rejected",
+            "detail": "RULE-FSV-B19-001"
+          }
+        ]
+      }
+    },
+    {
+      "task": "FSV-B19",
+      "arm": "ECAS_missing_skip_shape",
+      "method": "ECAS",
+      "variant": "missing_skip",
+      "mode": "shape",
+      "probe_id": "missing-trusted",
+      "kind": "engineering_fail_closed_control",
+      "historical_expected": "deny",
+      "decision": "allow",
+      "agrees_with_historical_label": false,
+      "classification": "COUNTERFACTUAL_CONTROL_NOT_NEW_GENERATION",
+      "actual": {
+        "policy_id": "POL-FSV-B19-001",
+        "decision": "allow",
+        "fail_closed": true,
+        "violations": []
+      }
+    },
+    {
+      "task": "FSV-B19",
+      "arm": "ECAS_missing_skip_shape",
+      "method": "ECAS",
+      "variant": "missing_skip",
+      "mode": "shape",
+      "probe_id": "partial-status-false-only",
+      "kind": "partial_missing_observation_no_gold",
+      "historical_expected": null,
+      "decision": "allow",
+      "agrees_with_historical_label": null,
+      "classification": "COUNTERFACTUAL_CONTROL_NOT_NEW_GENERATION",
+      "actual": {
+        "policy_id": "POL-FSV-B19-001",
+        "decision": "allow",
+        "fail_closed": true,
+        "violations": []
+      }
+    },
+    {
+      "task": "FSV-B19",
+      "arm": "ECAS_missing_skip_shape",
+      "method": "ECAS",
+      "variant": "missing_skip",
+      "mode": "shape",
+      "probe_id": "partial-payments-only",
+      "kind": "partial_missing_observation_no_gold",
+      "historical_expected": null,
+      "decision": "allow",
+      "agrees_with_historical_label": null,
+      "classification": "COUNTERFACTUAL_CONTROL_NOT_NEW_GENERATION",
+      "actual": {
+        "policy_id": "POL-FSV-B19-001",
+        "decision": "allow",
+        "fail_closed": true,
+        "violations": []
+      }
+    },
+    {
+      "task": "FSV-B19",
+      "arm": "P2P_STYLE_original",
+      "method": "P2P_STYLE",
+      "variant": "original",
+      "mode": "OPA",
+      "probe_id": "FSV-B19-OL-01",
+      "kind": "original_pair",
+      "historical_expected": "allow",
+      "decision": "allow",
+      "agrees_with_historical_label": true,
+      "classification": "FROZEN_ORIGINAL_REPLAY"
+    },
+    {
+      "task": "FSV-B19",
+      "arm": "P2P_STYLE_original",
+      "method": "P2P_STYLE",
+      "variant": "original",
+      "mode": "OPA",
+      "probe_id": "FSV-B19-OI-01",
+      "kind": "original_pair",
+      "historical_expected": "deny",
+      "decision": "deny",
+      "agrees_with_historical_label": true,
+      "classification": "FROZEN_ORIGINAL_REPLAY"
+    },
+    {
+      "task": "FSV-B19",
+      "arm": "P2P_STYLE_original",
+      "method": "P2P_STYLE",
+      "variant": "original",
+      "mode": "OPA",
+      "probe_id": "not-held",
+      "kind": "documented_rule",
+      "historical_expected": "allow",
+      "decision": "allow",
+      "agrees_with_historical_label": true,
+      "classification": "FROZEN_ORIGINAL_REPLAY"
+    },
+    {
+      "task": "FSV-B19",
+      "arm": "P2P_STYLE_original",
+      "method": "P2P_STYLE",
+      "variant": "original",
+      "mode": "OPA",
+      "probe_id": "held-all",
+      "kind": "documented_rule",
+      "historical_expected": "deny",
+      "decision": "deny",
+      "agrees_with_historical_label": true,
+      "classification": "FROZEN_ORIGINAL_REPLAY"
+    },
+    {
+      "task": "FSV-B19",
+      "arm": "P2P_STYLE_original",
+      "method": "P2P_STYLE",
+      "variant": "original",
+      "mode": "OPA",
+      "probe_id": "held-invoices",
+      "kind": "documented_rule",
+      "historical_expected": "deny",
+      "decision": "deny",
+      "agrees_with_historical_label": true,
+      "classification": "FROZEN_ORIGINAL_REPLAY"
+    },
+    {
+      "task": "FSV-B19",
+      "arm": "P2P_STYLE_original",
+      "method": "P2P_STYLE",
+      "variant": "original",
+      "mode": "OPA",
+      "probe_id": "held-payments",
+      "kind": "documented_rule",
+      "historical_expected": "allow",
+      "decision": "allow",
+      "agrees_with_historical_label": true,
+      "classification": "FROZEN_ORIGINAL_REPLAY"
+    },
+    {
+      "task": "FSV-B19",
+      "arm": "P2P_STYLE_original",
+      "method": "P2P_STYLE",
+      "variant": "original",
+      "mode": "OPA",
+      "probe_id": "held-empty-type",
+      "kind": "conservative_empty_type_control",
+      "historical_expected": "deny",
+      "decision": "allow",
+      "agrees_with_historical_label": false,
+      "classification": "FROZEN_ORIGINAL_REPLAY"
+    },
+    {
+      "task": "FSV-B19",
+      "arm": "P2P_STYLE_original",
+      "method": "P2P_STYLE",
+      "variant": "original",
+      "mode": "OPA",
+      "probe_id": "held-unknown-type",
+      "kind": "engineering_unknown_type_control",
+      "historical_expected": "deny",
+      "decision": "allow",
+      "agrees_with_historical_label": false,
+      "classification": "FROZEN_ORIGINAL_REPLAY"
+    },
+    {
+      "task": "FSV-B19",
+      "arm": "P2P_STYLE_original",
+      "method": "P2P_STYLE",
+      "variant": "original",
+      "mode": "OPA",
+      "probe_id": "body-type-spoof",
+      "kind": "engineering_trust_control",
+      "historical_expected": "deny",
+      "decision": "deny",
+      "agrees_with_historical_label": true,
+      "classification": "FROZEN_ORIGINAL_REPLAY"
+    },
+    {
+      "task": "FSV-B19",
+      "arm": "P2P_STYLE_original",
+      "method": "P2P_STYLE",
+      "variant": "original",
+      "mode": "OPA",
+      "probe_id": "missing-trusted",
+      "kind": "engineering_fail_closed_control",
+      "historical_expected": "deny",
+      "decision": "allow",
+      "agrees_with_historical_label": false,
+      "classification": "FROZEN_ORIGINAL_REPLAY"
+    },
+    {
+      "task": "FSV-B19",
+      "arm": "P2P_STYLE_original",
+      "method": "P2P_STYLE",
+      "variant": "original",
+      "mode": "OPA",
+      "probe_id": "partial-status-false-only",
+      "kind": "partial_missing_observation_no_gold",
+      "historical_expected": null,
+      "decision": "allow",
+      "agrees_with_historical_label": null,
+      "classification": "FROZEN_ORIGINAL_REPLAY"
+    },
+    {
+      "task": "FSV-B19",
+      "arm": "P2P_STYLE_original",
+      "method": "P2P_STYLE",
+      "variant": "original",
+      "mode": "OPA",
+      "probe_id": "partial-payments-only",
+      "kind": "partial_missing_observation_no_gold",
+      "historical_expected": null,
+      "decision": "allow",
+      "agrees_with_historical_label": null,
+      "classification": "FROZEN_ORIGINAL_REPLAY"
+    },
+    {
+      "task": "FSV-B19",
+      "arm": "P2P_STYLE_manual_guard",
+      "method": "P2P_STYLE",
+      "variant": "manual_guard",
+      "mode": "OPA",
+      "probe_id": "FSV-B19-OL-01",
+      "kind": "original_pair",
+      "historical_expected": "allow",
+      "decision": "allow",
+      "agrees_with_historical_label": true,
+      "classification": "MANUAL_DETERMINISTIC_GUARD_CONTROL"
+    },
+    {
+      "task": "FSV-B19",
+      "arm": "P2P_STYLE_manual_guard",
+      "method": "P2P_STYLE",
+      "variant": "manual_guard",
+      "mode": "OPA",
+      "probe_id": "FSV-B19-OI-01",
+      "kind": "original_pair",
+      "historical_expected": "deny",
+      "decision": "deny",
+      "agrees_with_historical_label": true,
+      "classification": "MANUAL_DETERMINISTIC_GUARD_CONTROL"
+    },
+    {
+      "task": "FSV-B19",
+      "arm": "P2P_STYLE_manual_guard",
+      "method": "P2P_STYLE",
+      "variant": "manual_guard",
+      "mode": "OPA",
+      "probe_id": "not-held",
+      "kind": "documented_rule",
+      "historical_expected": "allow",
+      "decision": "allow",
+      "agrees_with_historical_label": true,
+      "classification": "MANUAL_DETERMINISTIC_GUARD_CONTROL"
+    },
+    {
+      "task": "FSV-B19",
+      "arm": "P2P_STYLE_manual_guard",
+      "method": "P2P_STYLE",
+      "variant": "manual_guard",
+      "mode": "OPA",
+      "probe_id": "held-all",
+      "kind": "documented_rule",
+      "historical_expected": "deny",
+      "decision": "deny",
+      "agrees_with_historical_label": true,
+      "classification": "MANUAL_DETERMINISTIC_GUARD_CONTROL"
+    },
+    {
+      "task": "FSV-B19",
+      "arm": "P2P_STYLE_manual_guard",
+      "method": "P2P_STYLE",
+      "variant": "manual_guard",
+      "mode": "OPA",
+      "probe_id": "held-invoices",
+      "kind": "documented_rule",
+      "historical_expected": "deny",
+      "decision": "deny",
+      "agrees_with_historical_label": true,
+      "classification": "MANUAL_DETERMINISTIC_GUARD_CONTROL"
+    },
+    {
+      "task": "FSV-B19",
+      "arm": "P2P_STYLE_manual_guard",
+      "method": "P2P_STYLE",
+      "variant": "manual_guard",
+      "mode": "OPA",
+      "probe_id": "held-payments",
+      "kind": "documented_rule",
+      "historical_expected": "allow",
+      "decision": "allow",
+      "agrees_with_historical_label": true,
+      "classification": "MANUAL_DETERMINISTIC_GUARD_CONTROL"
+    },
+    {
+      "task": "FSV-B19",
+      "arm": "P2P_STYLE_manual_guard",
+      "method": "P2P_STYLE",
+      "variant": "manual_guard",
+      "mode": "OPA",
+      "probe_id": "held-empty-type",
+      "kind": "conservative_empty_type_control",
+      "historical_expected": "deny",
+      "decision": "deny",
+      "agrees_with_historical_label": true,
+      "classification": "MANUAL_DETERMINISTIC_GUARD_CONTROL"
+    },
+    {
+      "task": "FSV-B19",
+      "arm": "P2P_STYLE_manual_guard",
+      "method": "P2P_STYLE",
+      "variant": "manual_guard",
+      "mode": "OPA",
+      "probe_id": "held-unknown-type",
+      "kind": "engineering_unknown_type_control",
+      "historical_expected": "deny",
+      "decision": "deny",
+      "agrees_with_historical_label": true,
+      "classification": "MANUAL_DETERMINISTIC_GUARD_CONTROL"
+    },
+    {
+      "task": "FSV-B19",
+      "arm": "P2P_STYLE_manual_guard",
+      "method": "P2P_STYLE",
+      "variant": "manual_guard",
+      "mode": "OPA",
+      "probe_id": "body-type-spoof",
+      "kind": "engineering_trust_control",
+      "historical_expected": "deny",
+      "decision": "deny",
+      "agrees_with_historical_label": true,
+      "classification": "MANUAL_DETERMINISTIC_GUARD_CONTROL"
+    },
+    {
+      "task": "FSV-B19",
+      "arm": "P2P_STYLE_manual_guard",
+      "method": "P2P_STYLE",
+      "variant": "manual_guard",
+      "mode": "OPA",
+      "probe_id": "missing-trusted",
+      "kind": "engineering_fail_closed_control",
+      "historical_expected": "deny",
+      "decision": "deny",
+      "agrees_with_historical_label": true,
+      "classification": "MANUAL_DETERMINISTIC_GUARD_CONTROL"
+    },
+    {
+      "task": "FSV-B19",
+      "arm": "P2P_STYLE_manual_guard",
+      "method": "P2P_STYLE",
+      "variant": "manual_guard",
+      "mode": "OPA",
+      "probe_id": "partial-status-false-only",
+      "kind": "partial_missing_observation_no_gold",
+      "historical_expected": null,
+      "decision": "allow",
+      "agrees_with_historical_label": null,
+      "classification": "MANUAL_DETERMINISTIC_GUARD_CONTROL"
+    },
+    {
+      "task": "FSV-B19",
+      "arm": "P2P_STYLE_manual_guard",
+      "method": "P2P_STYLE",
+      "variant": "manual_guard",
+      "mode": "OPA",
+      "probe_id": "partial-payments-only",
+      "kind": "partial_missing_observation_no_gold",
+      "historical_expected": null,
+      "decision": "deny",
+      "agrees_with_historical_label": null,
+      "classification": "MANUAL_DETERMINISTIC_GUARD_CONTROL"
+    },
+    {
+      "task": "FSV-B19",
+      "arm": "AUTOPAC_STYLE_original",
+      "method": "AUTOPAC_STYLE",
+      "variant": "original",
+      "mode": "OPA",
+      "probe_id": "FSV-B19-OL-01",
+      "kind": "original_pair",
+      "historical_expected": "allow",
+      "decision": "allow",
+      "agrees_with_historical_label": true,
+      "classification": "FROZEN_ORIGINAL_REPLAY"
+    },
+    {
+      "task": "FSV-B19",
+      "arm": "AUTOPAC_STYLE_original",
+      "method": "AUTOPAC_STYLE",
+      "variant": "original",
+      "mode": "OPA",
+      "probe_id": "FSV-B19-OI-01",
+      "kind": "original_pair",
+      "historical_expected": "deny",
+      "decision": "deny",
+      "agrees_with_historical_label": true,
+      "classification": "FROZEN_ORIGINAL_REPLAY"
+    },
+    {
+      "task": "FSV-B19",
+      "arm": "AUTOPAC_STYLE_original",
+      "method": "AUTOPAC_STYLE",
+      "variant": "original",
+      "mode": "OPA",
+      "probe_id": "not-held",
+      "kind": "documented_rule",
+      "historical_expected": "allow",
+      "decision": "allow",
+      "agrees_with_historical_label": true,
+      "classification": "FROZEN_ORIGINAL_REPLAY"
+    },
+    {
+      "task": "FSV-B19",
+      "arm": "AUTOPAC_STYLE_original",
+      "method": "AUTOPAC_STYLE",
+      "variant": "original",
+      "mode": "OPA",
+      "probe_id": "held-all",
+      "kind": "documented_rule",
+      "historical_expected": "deny",
+      "decision": "deny",
+      "agrees_with_historical_label": true,
+      "classification": "FROZEN_ORIGINAL_REPLAY"
+    },
+    {
+      "task": "FSV-B19",
+      "arm": "AUTOPAC_STYLE_original",
+      "method": "AUTOPAC_STYLE",
+      "variant": "original",
+      "mode": "OPA",
+      "probe_id": "held-invoices",
+      "kind": "documented_rule",
+      "historical_expected": "deny",
+      "decision": "deny",
+      "agrees_with_historical_label": true,
+      "classification": "FROZEN_ORIGINAL_REPLAY"
+    },
+    {
+      "task": "FSV-B19",
+      "arm": "AUTOPAC_STYLE_original",
+      "method": "AUTOPAC_STYLE",
+      "variant": "original",
+      "mode": "OPA",
+      "probe_id": "held-payments",
+      "kind": "documented_rule",
+      "historical_expected": "allow",
+      "decision": "allow",
+      "agrees_with_historical_label": true,
+      "classification": "FROZEN_ORIGINAL_REPLAY"
+    },
+    {
+      "task": "FSV-B19",
+      "arm": "AUTOPAC_STYLE_original",
+      "method": "AUTOPAC_STYLE",
+      "variant": "original",
+      "mode": "OPA",
+      "probe_id": "held-empty-type",
+      "kind": "conservative_empty_type_control",
+      "historical_expected": "deny",
+      "decision": "allow",
+      "agrees_with_historical_label": false,
+      "classification": "FROZEN_ORIGINAL_REPLAY"
+    },
+    {
+      "task": "FSV-B19",
+      "arm": "AUTOPAC_STYLE_original",
+      "method": "AUTOPAC_STYLE",
+      "variant": "original",
+      "mode": "OPA",
+      "probe_id": "held-unknown-type",
+      "kind": "engineering_unknown_type_control",
+      "historical_expected": "deny",
+      "decision": "allow",
+      "agrees_with_historical_label": false,
+      "classification": "FROZEN_ORIGINAL_REPLAY"
+    },
+    {
+      "task": "FSV-B19",
+      "arm": "AUTOPAC_STYLE_original",
+      "method": "AUTOPAC_STYLE",
+      "variant": "original",
+      "mode": "OPA",
+      "probe_id": "body-type-spoof",
+      "kind": "engineering_trust_control",
+      "historical_expected": "deny",
+      "decision": "deny",
+      "agrees_with_historical_label": true,
+      "classification": "FROZEN_ORIGINAL_REPLAY"
+    },
+    {
+      "task": "FSV-B19",
+      "arm": "AUTOPAC_STYLE_original",
+      "method": "AUTOPAC_STYLE",
+      "variant": "original",
+      "mode": "OPA",
+      "probe_id": "missing-trusted",
+      "kind": "engineering_fail_closed_control",
+      "historical_expected": "deny",
+      "decision": "allow",
+      "agrees_with_historical_label": false,
+      "classification": "FROZEN_ORIGINAL_REPLAY"
+    },
+    {
+      "task": "FSV-B19",
+      "arm": "AUTOPAC_STYLE_original",
+      "method": "AUTOPAC_STYLE",
+      "variant": "original",
+      "mode": "OPA",
+      "probe_id": "partial-status-false-only",
+      "kind": "partial_missing_observation_no_gold",
+      "historical_expected": null,
+      "decision": "allow",
+      "agrees_with_historical_label": null,
+      "classification": "FROZEN_ORIGINAL_REPLAY"
+    },
+    {
+      "task": "FSV-B19",
+      "arm": "AUTOPAC_STYLE_original",
+      "method": "AUTOPAC_STYLE",
+      "variant": "original",
+      "mode": "OPA",
+      "probe_id": "partial-payments-only",
+      "kind": "partial_missing_observation_no_gold",
+      "historical_expected": null,
+      "decision": "allow",
+      "agrees_with_historical_label": null,
+      "classification": "FROZEN_ORIGINAL_REPLAY"
+    },
+    {
+      "task": "FSV-B19",
+      "arm": "AUTOPAC_STYLE_manual_guard",
+      "method": "AUTOPAC_STYLE",
+      "variant": "manual_guard",
+      "mode": "OPA",
+      "probe_id": "FSV-B19-OL-01",
+      "kind": "original_pair",
+      "historical_expected": "allow",
+      "decision": "allow",
+      "agrees_with_historical_label": true,
+      "classification": "MANUAL_DETERMINISTIC_GUARD_CONTROL"
+    },
+    {
+      "task": "FSV-B19",
+      "arm": "AUTOPAC_STYLE_manual_guard",
+      "method": "AUTOPAC_STYLE",
+      "variant": "manual_guard",
+      "mode": "OPA",
+      "probe_id": "FSV-B19-OI-01",
+      "kind": "original_pair",
+      "historical_expected": "deny",
+      "decision": "deny",
+      "agrees_with_historical_label": true,
+      "classification": "MANUAL_DETERMINISTIC_GUARD_CONTROL"
+    },
+    {
+      "task": "FSV-B19",
+      "arm": "AUTOPAC_STYLE_manual_guard",
+      "method": "AUTOPAC_STYLE",
+      "variant": "manual_guard",
+      "mode": "OPA",
+      "probe_id": "not-held",
+      "kind": "documented_rule",
+      "historical_expected": "allow",
+      "decision": "allow",
+      "agrees_with_historical_label": true,
+      "classification": "MANUAL_DETERMINISTIC_GUARD_CONTROL"
+    },
+    {
+      "task": "FSV-B19",
+      "arm": "AUTOPAC_STYLE_manual_guard",
+      "method": "AUTOPAC_STYLE",
+      "variant": "manual_guard",
+      "mode": "OPA",
+      "probe_id": "held-all",
+      "kind": "documented_rule",
+      "historical_expected": "deny",
+      "decision": "deny",
+      "agrees_with_historical_label": true,
+      "classification": "MANUAL_DETERMINISTIC_GUARD_CONTROL"
+    },
+    {
+      "task": "FSV-B19",
+      "arm": "AUTOPAC_STYLE_manual_guard",
+      "method": "AUTOPAC_STYLE",
+      "variant": "manual_guard",
+      "mode": "OPA",
+      "probe_id": "held-invoices",
+      "kind": "documented_rule",
+      "historical_expected": "deny",
+      "decision": "deny",
+      "agrees_with_historical_label": true,
+      "classification": "MANUAL_DETERMINISTIC_GUARD_CONTROL"
+    },
+    {
+      "task": "FSV-B19",
+      "arm": "AUTOPAC_STYLE_manual_guard",
+      "method": "AUTOPAC_STYLE",
+      "variant": "manual_guard",
+      "mode": "OPA",
+      "probe_id": "held-payments",
+      "kind": "documented_rule",
+      "historical_expected": "allow",
+      "decision": "allow",
+      "agrees_with_historical_label": true,
+      "classification": "MANUAL_DETERMINISTIC_GUARD_CONTROL"
+    },
+    {
+      "task": "FSV-B19",
+      "arm": "AUTOPAC_STYLE_manual_guard",
+      "method": "AUTOPAC_STYLE",
+      "variant": "manual_guard",
+      "mode": "OPA",
+      "probe_id": "held-empty-type",
+      "kind": "conservative_empty_type_control",
+      "historical_expected": "deny",
+      "decision": "deny",
+      "agrees_with_historical_label": true,
+      "classification": "MANUAL_DETERMINISTIC_GUARD_CONTROL"
+    },
+    {
+      "task": "FSV-B19",
+      "arm": "AUTOPAC_STYLE_manual_guard",
+      "method": "AUTOPAC_STYLE",
+      "variant": "manual_guard",
+      "mode": "OPA",
+      "probe_id": "held-unknown-type",
+      "kind": "engineering_unknown_type_control",
+      "historical_expected": "deny",
+      "decision": "deny",
+      "agrees_with_historical_label": true,
+      "classification": "MANUAL_DETERMINISTIC_GUARD_CONTROL"
+    },
+    {
+      "task": "FSV-B19",
+      "arm": "AUTOPAC_STYLE_manual_guard",
+      "method": "AUTOPAC_STYLE",
+      "variant": "manual_guard",
+      "mode": "OPA",
+      "probe_id": "body-type-spoof",
+      "kind": "engineering_trust_control",
+      "historical_expected": "deny",
+      "decision": "deny",
+      "agrees_with_historical_label": true,
+      "classification": "MANUAL_DETERMINISTIC_GUARD_CONTROL"
+    },
+    {
+      "task": "FSV-B19",
+      "arm": "AUTOPAC_STYLE_manual_guard",
+      "method": "AUTOPAC_STYLE",
+      "variant": "manual_guard",
+      "mode": "OPA",
+      "probe_id": "missing-trusted",
+      "kind": "engineering_fail_closed_control",
+      "historical_expected": "deny",
+      "decision": "deny",
+      "agrees_with_historical_label": true,
+      "classification": "MANUAL_DETERMINISTIC_GUARD_CONTROL"
+    },
+    {
+      "task": "FSV-B19",
+      "arm": "AUTOPAC_STYLE_manual_guard",
+      "method": "AUTOPAC_STYLE",
+      "variant": "manual_guard",
+      "mode": "OPA",
+      "probe_id": "partial-status-false-only",
+      "kind": "partial_missing_observation_no_gold",
+      "historical_expected": null,
+      "decision": "allow",
+      "agrees_with_historical_label": null,
+      "classification": "MANUAL_DETERMINISTIC_GUARD_CONTROL"
+    },
+    {
+      "task": "FSV-B19",
+      "arm": "AUTOPAC_STYLE_manual_guard",
+      "method": "AUTOPAC_STYLE",
+      "variant": "manual_guard",
+      "mode": "OPA",
+      "probe_id": "partial-payments-only",
+      "kind": "partial_missing_observation_no_gold",
+      "historical_expected": null,
+      "decision": "deny",
+      "agrees_with_historical_label": null,
+      "classification": "MANUAL_DETERMINISTIC_GUARD_CONTROL"
+    }
+  ],
+  "admissions": [
+    {
+      "task": "FSV-B17",
+      "arm": "ECAS_original_full",
+      "status": "ADMITTED",
+      "on_missing": "deny"
+    },
+    {
+      "task": "FSV-B17",
+      "arm": "ECAS_original_shape",
+      "status": "SHAPE_COMPILED",
+      "on_missing": "deny"
+    },
+    {
+      "task": "FSV-B17",
+      "arm": "ECAS_missing_skip_full",
+      "status": "ADMITTED",
+      "on_missing": "skip"
+    },
+    {
+      "task": "FSV-B17",
+      "arm": "ECAS_missing_skip_shape",
+      "status": "SHAPE_COMPILED",
+      "on_missing": "skip"
+    },
+    {
+      "task": "FSV-B19",
+      "arm": "ECAS_original_full",
+      "status": "ADMITTED",
+      "on_missing": "deny"
+    },
+    {
+      "task": "FSV-B19",
+      "arm": "ECAS_original_shape",
+      "status": "SHAPE_COMPILED",
+      "on_missing": "deny"
+    },
+    {
+      "task": "FSV-B19",
+      "arm": "ECAS_missing_skip_full",
+      "status": "ADMITTED",
+      "on_missing": "skip"
+    },
+    {
+      "task": "FSV-B19",
+      "arm": "ECAS_missing_skip_shape",
+      "status": "SHAPE_COMPILED",
+      "on_missing": "skip"
+    }
+  ],
+  "new_model_calls": 0,
+  "new_cases": 0,
+  "row_count": 144,
+  "classification": "POSTHOC_OFFLINE_COUNTERFACTUAL_MECHANISM_CONTROL",
+  "completed_at": "2026-10-15T03:00:33.338382+00:00"
+}

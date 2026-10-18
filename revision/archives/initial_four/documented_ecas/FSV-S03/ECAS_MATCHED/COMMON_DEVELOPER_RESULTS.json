@@ -1,0 +1,27 @@
+{
+  "passed": false,
+  "rows": [
+    {
+      "id": "dev_integer",
+      "expected": "allow",
+      "actual": {
+        "policy_id": "FSV-S03-P01",
+        "decision": "allow",
+        "fail_closed": true,
+        "violations": []
+      },
+      "pass": true
+    },
+    {
+      "id": "dev_integer_string",
+      "expected": "deny",
+      "actual": {
+        "policy_id": "FSV-S03-P01",
+        "decision": "allow",
+        "fail_closed": true,
+        "violations": []
+      },
+      "pass": false
+    }
+  ]
+}

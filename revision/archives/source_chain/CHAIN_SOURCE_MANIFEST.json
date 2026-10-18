@@ -1,0 +1,210 @@
+{
+  "source_files": [
+    {
+      "path": "D:\\lunwen\\EC-CSI投稿\\RESULT_TRACEABILITY.csv",
+      "sha256": "ed18461e2a4ac89600f52d50787f46aec37212b76915b944546db0eea857b6a6"
+    },
+    {
+      "path": "D:\\lunwen\\EC-CSI投稿\\CLAIM_EVIDENCE_MATRIX.csv",
+      "sha256": "a9d7c689a60e27de8ed13ee9de3ca35222dc85f0c3549f2f3af9db0763f9b9e8"
+    },
+    {
+      "path": "D:\\lunwen\\EC-CSI投稿\\working\\exploration\\20261015_semantic_comparison\\EXPERIMENT_SUMMARY_CN_R3.md",
+      "sha256": "e7f781c3573fe6a45c29728d75567f82276e62bd898fc58d99f96ef149d6f5e8"
+    },
+    {
+      "path": "D:\\lunwen\\EC-CSI投稿\\working\\exploration\\20261015_seven_case_mechanism\\EXPERIMENT_SUMMARY_CN_R2.md",
+      "sha256": "a023ad051a9c5abb31f3d78d46a0e0065974789cc0dff95c6ce040a0894159c9"
+    },
+    {
+      "path": "D:\\lunwen\\EC-CSI投稿\\working\\exploration\\20261014_external_baseline_pilot\\generation_inputs\\FSV-B06\\packet.json",
+      "sha256": "01ac46f8ed8d0b75d23a4adb7a16fafe35316f1e75fbe52d767540c39fe2f16f"
+    },
+    {
+      "path": "D:\\lunwen\\EC-CSI投稿\\working\\exploration\\20261014_external_baseline_pilot\\execution_inputs\\FSV-B06\\contract.json",
+      "sha256": "f5831f2c50ce5b317913a884c08caf832824a506cfff7704871731f88edd8090"
+    },
+    {
+      "path": "D:\\lunwen\\EC-CSI投稿\\working\\exploration\\20261014_external_baseline_pilot\\effect_runs\\FSV-B06\\ECAS_MATCHED\\candidate.json",
+      "sha256": "ca4a80a844a1a50519a3c958b18d3530b5799e97c3147bf19aba2573dd7a95ff"
+    },
+    {
+      "path": "D:\\lunwen\\EC-CSI投稿\\working\\exploration\\20261014_external_baseline_pilot\\effect_runs\\FSV-B06\\ECAS_MATCHED\\admitted_policy.json",
+      "sha256": "5cf6bc67f8f2c31e22a913be53f8b47aac3b2f8cd4b8f154b592de38f9c909c8"
+    },
+    {
+      "path": "D:\\lunwen\\EC-CSI投稿\\working\\exploration\\20261014_external_baseline_pilot\\effect_runs\\FSV-B06\\ECAS_MATCHED\\RESULT.json",
+      "sha256": "7ce11d95dd90462618b63c697e2978132ad4250cd5d7831399272c6c6607cdb3"
+    },
+    {
+      "path": "D:\\lunwen\\EC-CSI投稿\\working\\exploration\\20261015_semantic_comparison\\OLD_THREE_SEMANTIC_AUDIT.json",
+      "sha256": "b5064b348d70e7193202cb2a5fb3e57e636345156e9b00436b41375f877d08be"
+    },
+    {
+      "path": "D:\\lunwen\\EC-CSI投稿\\working\\exploration\\20261014_external_baseline_pilot\\generation_inputs\\FSV-S02\\packet.json",
+      "sha256": "5c8de100a097aa1cae1c236a1d9d7771e8c1e175d9c8601abc9d319dafca9611"
+    },
+    {
+      "path": "D:\\lunwen\\EC-CSI投稿\\working\\exploration\\20261014_external_baseline_pilot\\execution_inputs\\FSV-S02\\contract.json",
+      "sha256": "4c58c3e9082c3e58239f66c3bf72c113fdf93436586498822923c54738a11a59"
+    },
+    {
+      "path": "D:\\lunwen\\EC-CSI投稿\\working\\exploration\\20261014_external_baseline_pilot\\effect_runs\\FSV-S02\\ECAS_MATCHED\\candidate.json",
+      "sha256": "e6f5a2af7dee84e067b1a81f4b3dd56483b2ba306983039d0112c28efbf49fe6"
+    },
+    {
+      "path": "D:\\lunwen\\EC-CSI投稿\\working\\exploration\\20261014_external_baseline_pilot\\effect_runs\\FSV-S02\\ECAS_MATCHED\\admitted_policy.json",
+      "sha256": "996e022383557449a4b8a9663b8bf5457544e5065ffdc7bb4677842ab368bdff"
+    },
+    {
+      "path": "D:\\lunwen\\EC-CSI投稿\\working\\exploration\\20261014_external_baseline_pilot\\effect_runs\\FSV-S02\\ECAS_MATCHED\\RESULT.json",
+      "sha256": "6f6a57b261d3225205f6c946ab07b53a43ba71fb53034cdfe0de661ece1f0d59"
+    },
+    {
+      "path": "D:\\lunwen\\EC-CSI投稿\\working\\exploration\\20261014_external_baseline_pilot\\generation_inputs\\FSV-S04\\packet.json",
+      "sha256": "d37c94ec03d4901259ee058bd728fd0bc7736a3033a7b3347881626233bf5d49"
+    },
+    {
+      "path": "D:\\lunwen\\EC-CSI投稿\\working\\exploration\\20261014_external_baseline_pilot\\execution_inputs\\FSV-S04\\contract.json",
+      "sha256": "e59e4c9b5f1fc9dd4442d9f6d08f3b0c974390d4c601672bf615dc7d53932c14"
+    },
+    {
+      "path": "D:\\lunwen\\EC-CSI投稿\\working\\exploration\\20261014_external_baseline_pilot\\effect_runs\\FSV-S04\\ECAS_MATCHED\\candidate.json",
+      "sha256": "61100a221ee3fd6dca2ea31994cae0f377dbcf98e49c1c9963470917476dcf8d"
+    },
+    {
+      "path": "D:\\lunwen\\EC-CSI投稿\\working\\exploration\\20261014_external_baseline_pilot\\effect_runs\\FSV-S04\\ECAS_MATCHED\\admitted_policy.json",
+      "sha256": "386657b8b2358f38e051ed454d57934c70b27d6c37b2bd966959f16966271746"
+    },
+    {
+      "path": "D:\\lunwen\\EC-CSI投稿\\working\\exploration\\20261014_external_baseline_pilot\\effect_runs\\FSV-S04\\ECAS_MATCHED\\RESULT.json",
+      "sha256": "953f35a201462a86cf6546bd35ed77261797ef3f5e06da0c2479f5f0de2b3fa6"
+    },
+    {
+      "path": "D:\\lunwen\\EC-CSI投稿\\working\\exploration\\20261014_matched_evidence_labor\\matched_generation\\generation_inputs\\FSV-S03\\packet.json",
+      "sha256": "acddb441ffde6b492d77d8964ce22ba69bf037eb164daa9f8674ca1e4a8f596a"
+    },
+    {
+      "path": "D:\\lunwen\\EC-CSI投稿\\working\\exploration\\20261014_matched_evidence_labor\\matched_generation\\execution_inputs\\FSV-S03\\contract.json",
+      "sha256": "21d2d1611b1cde80efd859d93220ed39e3852a70a3e2115a0411d8b131e76da3"
+    },
+    {
+      "path": "D:\\lunwen\\EC-CSI投稿\\working\\exploration\\20261014_matched_evidence_labor\\matched_generation\\method_runs\\FSV-S03\\ECAS_MATCHED\\first_candidate.json",
+      "sha256": "12ea58385028e162ad95d0661f77b6468c329462dd3900b963f82b5117ab4890"
+    },
+    {
+      "path": "D:\\lunwen\\EC-CSI投稿\\working\\exploration\\20261014_matched_evidence_labor\\matched_generation\\method_runs\\FSV-S03\\ECAS_MATCHED\\initial\\admitted_policy.json",
+      "sha256": "5f370d900883fad34ac8eb547f3f0c18fcb4034f387204f52afeba654320f57f"
+    },
+    {
+      "path": "D:\\lunwen\\EC-CSI投稿\\working\\exploration\\20261014_matched_evidence_labor\\matched_generation\\method_runs\\FSV-S03\\ECAS_MATCHED\\RESULT.json",
+      "sha256": "29bbc1502b3919ddc92e2517729efe173a04df7bf4adc79b92ea86f977cb6957"
+    },
+    {
+      "path": "D:\\lunwen\\EC-CSI投稿\\working\\exploration\\20261015_semantic_comparison\\NEW_FOUR_SEMANTIC_AUDIT.json",
+      "sha256": "91eee9bdb3a9dacb75d056c44f131bd135d5706958bc458962bd1107f2f1b5b3"
+    },
+    {
+      "path": "D:\\lunwen\\EC-CSI投稿\\working\\exploration\\20261014_matched_evidence_labor\\matched_generation\\generation_inputs\\FSV-B13\\packet.json",
+      "sha256": "0b07fe5eb4c156c96759cb0ff7e45d58523efd87549f88932ef029003a4ecb9b"
+    },
+    {
+      "path": "D:\\lunwen\\EC-CSI投稿\\working\\exploration\\20261014_matched_evidence_labor\\matched_generation\\execution_inputs\\FSV-B13\\contract.json",
+      "sha256": "32e35f1485dc02131938191da1ef90600de1c272bd4ffa7f3f00aa3428982a84"
+    },
+    {
+      "path": "D:\\lunwen\\EC-CSI投稿\\working\\exploration\\20261014_matched_evidence_labor\\matched_generation\\method_runs\\FSV-B13\\ECAS_MATCHED\\first_candidate.json",
+      "sha256": "6632f38661f5c043e7742cc0a658260c191b08dd4ae53d5730d6caf8d10a5c3d"
+    },
+    {
+      "path": "D:\\lunwen\\EC-CSI投稿\\working\\exploration\\20261014_matched_evidence_labor\\matched_generation\\method_runs\\FSV-B13\\ECAS_MATCHED\\initial\\admitted_policy.json",
+      "sha256": "2c0c40bddf86afebb6ec9a483e9df0bfff922f7b116d3e180846cfe7232fbb00"
+    },
+    {
+      "path": "D:\\lunwen\\EC-CSI投稿\\working\\exploration\\20261014_matched_evidence_labor\\matched_generation\\method_runs\\FSV-B13\\ECAS_MATCHED\\RESULT.json",
+      "sha256": "b5f736c8180cc3a16611ffbe471cfde9588d27c1af8fad54a2a083eff489f744"
+    },
+    {
+      "path": "D:\\lunwen\\EC-CSI投稿\\working\\exploration\\20261014_matched_evidence_labor\\matched_generation\\generation_inputs\\FSV-B17\\packet.json",
+      "sha256": "03e726de50a01e76c55ce26e0925632c218de4ab96339c3752d37e33535a6479"
+    },
+    {
+      "path": "D:\\lunwen\\EC-CSI投稿\\working\\exploration\\20261014_matched_evidence_labor\\matched_generation\\execution_inputs\\FSV-B17\\contract.json",
+      "sha256": "ae7c83dcf8f9ee8d8bd1a0218cf8d7d72e0f54c97771e6b49e6acf387eeab0bf"
+    },
+    {
+      "path": "D:\\lunwen\\EC-CSI投稿\\working\\exploration\\20261014_matched_evidence_labor\\matched_generation\\method_runs\\FSV-B17\\ECAS_MATCHED\\first_candidate.json",
+      "sha256": "35603ce747a8a9003d8d8b4af95a29826669d07fb721524bb700f9ddbe355b39"
+    },
+    {
+      "path": "D:\\lunwen\\EC-CSI投稿\\working\\exploration\\20261014_matched_evidence_labor\\matched_generation\\method_runs\\FSV-B17\\ECAS_MATCHED\\initial\\admitted_policy.json",
+      "sha256": "a206e1535f6402c2864e7b3265b287dc3700c39e2f7aba4103ae62f0ecedc79d"
+    },
+    {
+      "path": "D:\\lunwen\\EC-CSI投稿\\working\\exploration\\20261014_matched_evidence_labor\\matched_generation\\method_runs\\FSV-B17\\ECAS_MATCHED\\RESULT.json",
+      "sha256": "1a4feb547d5ae6475d99d396a8644c24ffd1e627e43921dc4be64fef0e09f8e3"
+    },
+    {
+      "path": "D:\\lunwen\\EC-CSI投稿\\working\\exploration\\20261014_matched_evidence_labor\\matched_generation\\generation_inputs\\FSV-B19\\packet.json",
+      "sha256": "10c5597e97e4190aa041c53aa3aee8b4c1c48fa77d073bfb4fb5eb5a64a346fd"
+    },
+    {
+      "path": "D:\\lunwen\\EC-CSI投稿\\working\\exploration\\20261014_matched_evidence_labor\\matched_generation\\execution_inputs\\FSV-B19\\contract.json",
+      "sha256": "fd0a7bbb9c3d0588d2f6e8970af7b8d9c34cf0ae82dd494bce68478c6671fd30"
+    },
+    {
+      "path": "D:\\lunwen\\EC-CSI投稿\\working\\exploration\\20261014_matched_evidence_labor\\matched_generation\\method_runs\\FSV-B19\\ECAS_MATCHED\\first_candidate.json",
+      "sha256": "2d09501af519f2aa3a459adc4e9df36db1fa0b76332bd72c73189b019e369e90"
+    },
+    {
+      "path": "D:\\lunwen\\EC-CSI投稿\\working\\exploration\\20261014_matched_evidence_labor\\matched_generation\\method_runs\\FSV-B19\\ECAS_MATCHED\\initial\\admitted_policy.json",
+      "sha256": "ac7c5bbf8bbdf0ee773ce0b06a357a9b0d48e3bfa11b21bd229cfe22cf16d98d"
+    },
+    {
+      "path": "D:\\lunwen\\EC-CSI投稿\\working\\exploration\\20261014_matched_evidence_labor\\matched_generation\\method_runs\\FSV-B19\\ECAS_MATCHED\\RESULT.json",
+      "sha256": "8a781167ffc84f72d91d3599c92011af4324381dcd47b13ca38e25944fe5e3b7"
+    },
+    {
+      "path": "D:\\lunwen\\EC-CSI投稿\\working\\exploration\\20261015_source_rule_chain\\SOURCE_GAP_CLOSURE.json",
+      "sha256": "fd489acd6fb6c53f277f79c73cfa04c68d2611b46892f35fae02c325a681f338"
+    },
+    {
+      "path": "D:\\lunwen\\EC-CSI投稿\\working\\exploration\\20261015_source_rule_chain\\B19_SOURCE_PATH.json",
+      "sha256": "bc834f5ff287f6e3cbe44272e5c3cf6045991e321c93a636a3b19c7d763f4b0c"
+    },
+    {
+      "path": "D:\\lunwen\\EC-CSI投稿\\working\\exploration\\20261015_source_rule_chain\\RESULTS.json",
+      "sha256": "102b573248b04db8bcbae74cec79f5fb55175f4d362f9785ae8c86ca01e5089c"
+    },
+    {
+      "path": "D:\\lunwen\\EC-CSI投稿\\working\\exploration\\20261015_source_rule_chain\\T0_RECEIPT.json",
+      "sha256": "54675a65b719633b65d9ed85f292411207c64058ef5ebc32166b793ca98f6737"
+    },
+    {
+      "path": "D:\\lunwen\\EC-CSI投稿\\working\\exploration\\20261015_source_rule_chain\\SOURCE_MANIFEST.json",
+      "sha256": "a8bd2e6ee0995f3ea1fc6f72b4538bbc8eef4e09c39dc9ba0e5e2e6cf0001bd1"
+    },
+    {
+      "path": "D:\\lunwen\\EC-CSI投稿\\working\\exploration\\20261015_source_rule_chain\\INPUT_MANIFEST.json",
+      "sha256": "407bb0043f9ce8000ec37bf7d3751619dcb7c70061d142e60744b22422d4c49c"
+    },
+    {
+      "path": "D:\\lunwen\\EC-CSI投稿\\working\\exploration\\20261015_source_rule_chain\\RUN_REQUEST.json",
+      "sha256": "90aef99fcc1e42ca051cf48902a1ac0e939cc7a6c585b0b87d9ac2df9287a2ac"
+    },
+    {
+      "path": "D:\\lunwen\\EC-CSI投稿\\working\\exploration\\20261015_source_rule_chain\\PROTOCOL_CN.md",
+      "sha256": "e2737713dadc9e20fd254778ea49c42798bd84f708b1daa605f3a7a1195a6eca"
+    },
+    {
+      "path": "D:\\lunwen\\EC-CSI投稿\\working\\exploration\\20261015_source_rule_chain\\TASK_CONTRACT_CN.md",
+      "sha256": "5ce301ca8feb338e5d1feb88a756fe60365f01fd94207c1bc4a98857dcc5888a"
+    }
+  ],
+  "protected_files_before": {
+    "D:\\lunwen\\EC-CSI投稿\\RESULT_TRACEABILITY.csv": "ed18461e2a4ac89600f52d50787f46aec37212b76915b944546db0eea857b6a6",
+    "D:\\lunwen\\EC-CSI投稿\\CLAIM_EVIDENCE_MATRIX.csv": "a9d7c689a60e27de8ed13ee9de3ca35222dc85f0c3549f2f3af9db0763f9b9e8",
+    "D:\\lunwen\\EC-CSI投稿\\working\\exploration\\20261015_semantic_comparison\\EXPERIMENT_SUMMARY_CN_R3.md": "e7f781c3573fe6a45c29728d75567f82276e62bd898fc58d99f96ef149d6f5e8",
+    "D:\\lunwen\\EC-CSI投稿\\working\\exploration\\20261015_seven_case_mechanism\\EXPERIMENT_SUMMARY_CN_R2.md": "a023ad051a9c5abb31f3d78d46a0e0065974789cc0dff95c6ce040a0894159c9"
+  }
+}

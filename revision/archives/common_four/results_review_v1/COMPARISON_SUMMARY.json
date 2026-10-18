@@ -1,0 +1,2364 @@
+{
+  "scope_id": "ECAS-MATCHED-EVIDENCE-LABOR-20261014-01",
+  "classification": "RETROSPECTIVE_MATCHED_OBJECTIVE_ADAPTED_PEERS_SINGLE_ROUND_NOT_BLIND",
+  "rows": [
+    {
+      "task": "FSV-S03",
+      "case": "S03：age类型",
+      "method": "P2P_STYLE",
+      "method_name": "P2P适配版",
+      "initial_diagnostic_symbol": "—",
+      "initial_eligible": false,
+      "repaired_once": false,
+      "final_symbol": "—",
+      "final_execution_eligible": false,
+      "status": "OUT_OF_SCOPE",
+      "failure_class": "METHOD_SCOPE",
+      "calls": 1,
+      "call_indices": [
+        5
+      ],
+      "final_original_pair": [],
+      "final_branches": [],
+      "source_result": "/mnt/d/lunwen/EC-CSI投稿/working/exploration/20261014_matched_evidence_labor/matched_generation/method_runs/FSV-S03/P2P_STYLE/RESULT.json"
+    },
+    {
+      "task": "FSV-S03",
+      "case": "S03：age类型",
+      "method": "AUTOPAC_STYLE",
+      "method_name": "AutoPAC适配版",
+      "initial_diagnostic_symbol": "—",
+      "initial_eligible": false,
+      "repaired_once": true,
+      "final_symbol": "—",
+      "final_execution_eligible": false,
+      "status": "DEVELOPMENT_REJECTED",
+      "failure_class": "REGO_COMPILATION_REJECTION",
+      "calls": 3,
+      "call_indices": [
+        6,
+        7,
+        8
+      ],
+      "final_original_pair": [],
+      "final_branches": [],
+      "source_result": "/mnt/d/lunwen/EC-CSI投稿/working/exploration/20261014_matched_evidence_labor/matched_generation/method_runs/FSV-S03/AUTOPAC_STYLE/RESULT.json"
+    },
+    {
+      "task": "FSV-S03",
+      "case": "S03：age类型",
+      "method": "ECAS_MATCHED",
+      "method_name": "ECAS",
+      "initial_diagnostic_symbol": "●",
+      "initial_eligible": true,
+      "repaired_once": false,
+      "final_symbol": "●",
+      "final_execution_eligible": true,
+      "status": "ELIGIBLE",
+      "failure_class": "QUALIFIED_EXECUTION",
+      "calls": 1,
+      "call_indices": [
+        9
+      ],
+      "final_original_pair": [
+        {
+          "channel": "O-L",
+          "input": {
+            "request": {
+              "body": {
+                "age": 30,
+                "firstName": "Synthetic",
+                "isDependent": false,
+                "relationshipId": 1
+              }
+            },
+            "trusted": {}
+          },
+          "expected": "allow",
+          "actual": {
+            "policy_id": "POL-FSV-S03-AGE-TYPE",
+            "decision": "allow",
+            "fail_closed": true,
+            "violations": []
+          },
+          "pass": true
+        },
+        {
+          "channel": "O-I",
+          "input": {
+            "request": {
+              "body": {
+                "age": "30",
+                "firstName": "Synthetic",
+                "isDependent": false,
+                "relationshipId": 1
+              }
+            },
+            "trusted": {}
+          },
+          "expected": "deny",
+          "actual": {
+            "policy_id": "POL-FSV-S03-AGE-TYPE",
+            "decision": "deny",
+            "fail_closed": true,
+            "violations": [
+              {
+                "rule_id": "RULE-AGE-INTEGER",
+                "code": "type_mismatch",
+                "detail": "/request/body/age"
+              }
+            ]
+          },
+          "pass": true
+        }
+      ],
+      "final_branches": [
+        {
+          "label": "age-integer",
+          "input": {
+            "request": {
+              "body": {
+                "age": 31
+              }
+            },
+            "trusted": {}
+          },
+          "expected": "allow",
+          "kind": "documented_type",
+          "actual": {
+            "policy_id": "POL-FSV-S03-AGE-TYPE",
+            "decision": "allow",
+            "fail_closed": true,
+            "violations": []
+          },
+          "pass": true
+        },
+        {
+          "label": "age-string",
+          "input": {
+            "request": {
+              "body": {
+                "age": "31"
+              }
+            },
+            "trusted": {}
+          },
+          "expected": "deny",
+          "kind": "documented_type",
+          "actual": {
+            "policy_id": "POL-FSV-S03-AGE-TYPE",
+            "decision": "deny",
+            "fail_closed": true,
+            "violations": [
+              {
+                "rule_id": "RULE-AGE-INTEGER",
+                "code": "type_mismatch",
+                "detail": "/request/body/age"
+              }
+            ]
+          },
+          "pass": true
+        },
+        {
+          "label": "age-boolean",
+          "input": {
+            "request": {
+              "body": {
+                "age": true
+              }
+            },
+            "trusted": {}
+          },
+          "expected": "deny",
+          "kind": "documented_type",
+          "actual": {
+            "policy_id": "POL-FSV-S03-AGE-TYPE",
+            "decision": "deny",
+            "fail_closed": true,
+            "violations": [
+              {
+                "rule_id": "RULE-AGE-INTEGER",
+                "code": "type_mismatch",
+                "detail": "/request/body/age"
+              }
+            ]
+          },
+          "pass": true
+        },
+        {
+          "label": "age-fraction",
+          "input": {
+            "request": {
+              "body": {
+                "age": 31.5
+              }
+            },
+            "trusted": {}
+          },
+          "expected": "deny",
+          "kind": "documented_type",
+          "actual": {
+            "policy_id": "POL-FSV-S03-AGE-TYPE",
+            "decision": "deny",
+            "fail_closed": true,
+            "violations": [
+              {
+                "rule_id": "RULE-AGE-INTEGER",
+                "code": "type_mismatch",
+                "detail": "/request/body/age"
+              }
+            ]
+          },
+          "pass": true
+        }
+      ],
+      "source_result": "/mnt/d/lunwen/EC-CSI投稿/working/exploration/20261014_matched_evidence_labor/matched_generation/method_runs/FSV-S03/ECAS_MATCHED/RESULT.json"
+    },
+    {
+      "task": "FSV-B13",
+      "case": "B13：收货数量及授权例外",
+      "method": "P2P_STYLE",
+      "method_name": "P2P适配版",
+      "initial_diagnostic_symbol": "●",
+      "initial_eligible": true,
+      "repaired_once": false,
+      "final_symbol": "●",
+      "final_execution_eligible": true,
+      "status": "ELIGIBLE",
+      "failure_class": "QUALIFIED_EXECUTION",
+      "calls": 4,
+      "call_indices": [
+        10,
+        11,
+        12,
+        13
+      ],
+      "final_original_pair": [
+        {
+          "channel": "O-L",
+          "input": {
+            "request": {
+              "body": {
+                "qty": 110
+              }
+            },
+            "trusted": {
+              "allowancePercent": 10,
+              "authorizedRole": false,
+              "derivedMaximumQty": 110,
+              "orderedQty": 100
+            }
+          },
+          "expected": "allow",
+          "actual": {
+            "status": "EXECUTED",
+            "decision": "allow",
+            "exit_code": 0
+          },
+          "pass": true
+        },
+        {
+          "channel": "O-I",
+          "input": {
+            "request": {
+              "body": {
+                "qty": 111
+              }
+            },
+            "trusted": {
+              "allowancePercent": 10,
+              "authorizedRole": false,
+              "derivedMaximumQty": 110,
+              "orderedQty": 100
+            }
+          },
+          "expected": "deny",
+          "actual": {
+            "status": "EXECUTED",
+            "decision": "deny",
+            "exit_code": 0
+          },
+          "pass": true
+        }
+      ],
+      "final_branches": [
+        {
+          "label": "below-limit",
+          "input": {
+            "request": {
+              "body": {
+                "qty": 109
+              }
+            },
+            "trusted": {
+              "orderedQty": 100,
+              "allowancePercent": 10,
+              "derivedMaximumQty": 110,
+              "authorizedRole": false
+            }
+          },
+          "expected": "allow",
+          "kind": "documented_rule",
+          "actual": {
+            "status": "EXECUTED",
+            "decision": "allow",
+            "exit_code": 0
+          },
+          "pass": true
+        },
+        {
+          "label": "at-limit",
+          "input": {
+            "request": {
+              "body": {
+                "qty": 110
+              }
+            },
+            "trusted": {
+              "orderedQty": 100,
+              "allowancePercent": 10,
+              "derivedMaximumQty": 110,
+              "authorizedRole": false
+            }
+          },
+          "expected": "allow",
+          "kind": "documented_rule",
+          "actual": {
+            "status": "EXECUTED",
+            "decision": "allow",
+            "exit_code": 0
+          },
+          "pass": true
+        },
+        {
+          "label": "above-limit",
+          "input": {
+            "request": {
+              "body": {
+                "qty": 111
+              }
+            },
+            "trusted": {
+              "orderedQty": 100,
+              "allowancePercent": 10,
+              "derivedMaximumQty": 110,
+              "authorizedRole": false
+            }
+          },
+          "expected": "deny",
+          "kind": "documented_rule",
+          "actual": {
+            "status": "EXECUTED",
+            "decision": "deny",
+            "exit_code": 0
+          },
+          "pass": true
+        },
+        {
+          "label": "authorized-exception",
+          "input": {
+            "request": {
+              "body": {
+                "qty": 111
+              }
+            },
+            "trusted": {
+              "orderedQty": 100,
+              "allowancePercent": 10,
+              "derivedMaximumQty": 110,
+              "authorizedRole": true
+            }
+          },
+          "expected": "allow",
+          "kind": "documented_rule",
+          "actual": {
+            "status": "EXECUTED",
+            "decision": "allow",
+            "exit_code": 0
+          },
+          "pass": true
+        },
+        {
+          "label": "authorized-large-exception",
+          "input": {
+            "request": {
+              "body": {
+                "qty": 1000
+              }
+            },
+            "trusted": {
+              "orderedQty": 100,
+              "allowancePercent": 10,
+              "derivedMaximumQty": 110,
+              "authorizedRole": true
+            }
+          },
+          "expected": "allow",
+          "kind": "focused_rule_only",
+          "actual": {
+            "status": "EXECUTED",
+            "decision": "allow",
+            "exit_code": 0
+          },
+          "pass": true
+        },
+        {
+          "label": "body-role-spoof",
+          "input": {
+            "request": {
+              "body": {
+                "qty": 111,
+                "authorizedRole": true
+              }
+            },
+            "trusted": {
+              "orderedQty": 100,
+              "allowancePercent": 10,
+              "derivedMaximumQty": 110,
+              "authorizedRole": false
+            }
+          },
+          "expected": "deny",
+          "kind": "engineering_trust_control",
+          "actual": {
+            "status": "EXECUTED",
+            "decision": "deny",
+            "exit_code": 0
+          },
+          "pass": true
+        },
+        {
+          "label": "body-limit-spoof",
+          "input": {
+            "request": {
+              "body": {
+                "qty": 111,
+                "derivedMaximumQty": 1000
+              }
+            },
+            "trusted": {
+              "orderedQty": 100,
+              "allowancePercent": 10,
+              "derivedMaximumQty": 110,
+              "authorizedRole": false
+            }
+          },
+          "expected": "deny",
+          "kind": "engineering_trust_control",
+          "actual": {
+            "status": "EXECUTED",
+            "decision": "deny",
+            "exit_code": 0
+          },
+          "pass": true
+        },
+        {
+          "label": "missing-trusted",
+          "input": {
+            "request": {
+              "body": {
+                "qty": 111
+              }
+            },
+            "trusted": {}
+          },
+          "expected": "deny",
+          "kind": "engineering_fail_closed_control",
+          "actual": {
+            "status": "EXECUTED",
+            "decision": "deny",
+            "exit_code": 0
+          },
+          "pass": true
+        }
+      ],
+      "source_result": "/mnt/d/lunwen/EC-CSI投稿/working/exploration/20261014_matched_evidence_labor/matched_generation/method_runs/FSV-B13/P2P_STYLE/RESULT.json"
+    },
+    {
+      "task": "FSV-B13",
+      "case": "B13：收货数量及授权例外",
+      "method": "AUTOPAC_STYLE",
+      "method_name": "AutoPAC适配版",
+      "initial_diagnostic_symbol": "●",
+      "initial_eligible": true,
+      "repaired_once": false,
+      "final_symbol": "●",
+      "final_execution_eligible": true,
+      "status": "ELIGIBLE",
+      "failure_class": "QUALIFIED_EXECUTION",
+      "calls": 2,
+      "call_indices": [
+        14,
+        15
+      ],
+      "final_original_pair": [
+        {
+          "channel": "O-L",
+          "input": {
+            "request": {
+              "body": {
+                "qty": 110
+              }
+            },
+            "trusted": {
+              "allowancePercent": 10,
+              "authorizedRole": false,
+              "derivedMaximumQty": 110,
+              "orderedQty": 100
+            }
+          },
+          "expected": "allow",
+          "actual": {
+            "status": "EXECUTED",
+            "decision": "allow",
+            "exit_code": 0
+          },
+          "pass": true
+        },
+        {
+          "channel": "O-I",
+          "input": {
+            "request": {
+              "body": {
+                "qty": 111
+              }
+            },
+            "trusted": {
+              "allowancePercent": 10,
+              "authorizedRole": false,
+              "derivedMaximumQty": 110,
+              "orderedQty": 100
+            }
+          },
+          "expected": "deny",
+          "actual": {
+            "status": "EXECUTED",
+            "decision": "deny",
+            "exit_code": 0
+          },
+          "pass": true
+        }
+      ],
+      "final_branches": [
+        {
+          "label": "below-limit",
+          "input": {
+            "request": {
+              "body": {
+                "qty": 109
+              }
+            },
+            "trusted": {
+              "orderedQty": 100,
+              "allowancePercent": 10,
+              "derivedMaximumQty": 110,
+              "authorizedRole": false
+            }
+          },
+          "expected": "allow",
+          "kind": "documented_rule",
+          "actual": {
+            "status": "EXECUTED",
+            "decision": "allow",
+            "exit_code": 0
+          },
+          "pass": true
+        },
+        {
+          "label": "at-limit",
+          "input": {
+            "request": {
+              "body": {
+                "qty": 110
+              }
+            },
+            "trusted": {
+              "orderedQty": 100,
+              "allowancePercent": 10,
+              "derivedMaximumQty": 110,
+              "authorizedRole": false
+            }
+          },
+          "expected": "allow",
+          "kind": "documented_rule",
+          "actual": {
+            "status": "EXECUTED",
+            "decision": "allow",
+            "exit_code": 0
+          },
+          "pass": true
+        },
+        {
+          "label": "above-limit",
+          "input": {
+            "request": {
+              "body": {
+                "qty": 111
+              }
+            },
+            "trusted": {
+              "orderedQty": 100,
+              "allowancePercent": 10,
+              "derivedMaximumQty": 110,
+              "authorizedRole": false
+            }
+          },
+          "expected": "deny",
+          "kind": "documented_rule",
+          "actual": {
+            "status": "EXECUTED",
+            "decision": "deny",
+            "exit_code": 0
+          },
+          "pass": true
+        },
+        {
+          "label": "authorized-exception",
+          "input": {
+            "request": {
+              "body": {
+                "qty": 111
+              }
+            },
+            "trusted": {
+              "orderedQty": 100,
+              "allowancePercent": 10,
+              "derivedMaximumQty": 110,
+              "authorizedRole": true
+            }
+          },
+          "expected": "allow",
+          "kind": "documented_rule",
+          "actual": {
+            "status": "EXECUTED",
+            "decision": "allow",
+            "exit_code": 0
+          },
+          "pass": true
+        },
+        {
+          "label": "authorized-large-exception",
+          "input": {
+            "request": {
+              "body": {
+                "qty": 1000
+              }
+            },
+            "trusted": {
+              "orderedQty": 100,
+              "allowancePercent": 10,
+              "derivedMaximumQty": 110,
+              "authorizedRole": true
+            }
+          },
+          "expected": "allow",
+          "kind": "focused_rule_only",
+          "actual": {
+            "status": "EXECUTED",
+            "decision": "allow",
+            "exit_code": 0
+          },
+          "pass": true
+        },
+        {
+          "label": "body-role-spoof",
+          "input": {
+            "request": {
+              "body": {
+                "qty": 111,
+                "authorizedRole": true
+              }
+            },
+            "trusted": {
+              "orderedQty": 100,
+              "allowancePercent": 10,
+              "derivedMaximumQty": 110,
+              "authorizedRole": false
+            }
+          },
+          "expected": "deny",
+          "kind": "engineering_trust_control",
+          "actual": {
+            "status": "EXECUTED",
+            "decision": "deny",
+            "exit_code": 0
+          },
+          "pass": true
+        },
+        {
+          "label": "body-limit-spoof",
+          "input": {
+            "request": {
+              "body": {
+                "qty": 111,
+                "derivedMaximumQty": 1000
+              }
+            },
+            "trusted": {
+              "orderedQty": 100,
+              "allowancePercent": 10,
+              "derivedMaximumQty": 110,
+              "authorizedRole": false
+            }
+          },
+          "expected": "deny",
+          "kind": "engineering_trust_control",
+          "actual": {
+            "status": "EXECUTED",
+            "decision": "deny",
+            "exit_code": 0
+          },
+          "pass": true
+        },
+        {
+          "label": "missing-trusted",
+          "input": {
+            "request": {
+              "body": {
+                "qty": 111
+              }
+            },
+            "trusted": {}
+          },
+          "expected": "deny",
+          "kind": "engineering_fail_closed_control",
+          "actual": {
+            "status": "EXECUTED",
+            "decision": "deny",
+            "exit_code": 0
+          },
+          "pass": true
+        }
+      ],
+      "source_result": "/mnt/d/lunwen/EC-CSI投稿/working/exploration/20261014_matched_evidence_labor/matched_generation/method_runs/FSV-B13/AUTOPAC_STYLE/RESULT.json"
+    },
+    {
+      "task": "FSV-B13",
+      "case": "B13：收货数量及授权例外",
+      "method": "ECAS_MATCHED",
+      "method_name": "ECAS",
+      "initial_diagnostic_symbol": "●",
+      "initial_eligible": true,
+      "repaired_once": false,
+      "final_symbol": "●",
+      "final_execution_eligible": true,
+      "status": "ELIGIBLE",
+      "failure_class": "QUALIFIED_EXECUTION",
+      "calls": 1,
+      "call_indices": [
+        16
+      ],
+      "final_original_pair": [
+        {
+          "channel": "O-L",
+          "input": {
+            "request": {
+              "body": {
+                "qty": 110
+              }
+            },
+            "trusted": {
+              "allowancePercent": 10,
+              "authorizedRole": false,
+              "derivedMaximumQty": 110,
+              "orderedQty": 100
+            }
+          },
+          "expected": "allow",
+          "actual": {
+            "policy_id": "FSV-B13.PurchaseReceipt.QuantityAllowance",
+            "decision": "allow",
+            "fail_closed": true,
+            "violations": []
+          },
+          "pass": true
+        },
+        {
+          "channel": "O-I",
+          "input": {
+            "request": {
+              "body": {
+                "qty": 111
+              }
+            },
+            "trusted": {
+              "allowancePercent": 10,
+              "authorizedRole": false,
+              "derivedMaximumQty": 110,
+              "orderedQty": 100
+            }
+          },
+          "expected": "deny",
+          "actual": {
+            "policy_id": "FSV-B13.PurchaseReceipt.QuantityAllowance",
+            "decision": "deny",
+            "fail_closed": true,
+            "violations": [
+              {
+                "rule_id": "FSV-B13.PurchaseReceipt.QuantityAllowance.Rule",
+                "code": "bounded_guard_rejected",
+                "detail": "FSV-B13.PurchaseReceipt.QuantityAllowance.Rule"
+              }
+            ]
+          },
+          "pass": true
+        }
+      ],
+      "final_branches": [
+        {
+          "label": "below-limit",
+          "input": {
+            "request": {
+              "body": {
+                "qty": 109
+              }
+            },
+            "trusted": {
+              "orderedQty": 100,
+              "allowancePercent": 10,
+              "derivedMaximumQty": 110,
+              "authorizedRole": false
+            }
+          },
+          "expected": "allow",
+          "kind": "documented_rule",
+          "actual": {
+            "policy_id": "FSV-B13.PurchaseReceipt.QuantityAllowance",
+            "decision": "allow",
+            "fail_closed": true,
+            "violations": []
+          },
+          "pass": true
+        },
+        {
+          "label": "at-limit",
+          "input": {
+            "request": {
+              "body": {
+                "qty": 110
+              }
+            },
+            "trusted": {
+              "orderedQty": 100,
+              "allowancePercent": 10,
+              "derivedMaximumQty": 110,
+              "authorizedRole": false
+            }
+          },
+          "expected": "allow",
+          "kind": "documented_rule",
+          "actual": {
+            "policy_id": "FSV-B13.PurchaseReceipt.QuantityAllowance",
+            "decision": "allow",
+            "fail_closed": true,
+            "violations": []
+          },
+          "pass": true
+        },
+        {
+          "label": "above-limit",
+          "input": {
+            "request": {
+              "body": {
+                "qty": 111
+              }
+            },
+            "trusted": {
+              "orderedQty": 100,
+              "allowancePercent": 10,
+              "derivedMaximumQty": 110,
+              "authorizedRole": false
+            }
+          },
+          "expected": "deny",
+          "kind": "documented_rule",
+          "actual": {
+            "policy_id": "FSV-B13.PurchaseReceipt.QuantityAllowance",
+            "decision": "deny",
+            "fail_closed": true,
+            "violations": [
+              {
+                "rule_id": "FSV-B13.PurchaseReceipt.QuantityAllowance.Rule",
+                "code": "bounded_guard_rejected",
+                "detail": "FSV-B13.PurchaseReceipt.QuantityAllowance.Rule"
+              }
+            ]
+          },
+          "pass": true
+        },
+        {
+          "label": "authorized-exception",
+          "input": {
+            "request": {
+              "body": {
+                "qty": 111
+              }
+            },
+            "trusted": {
+              "orderedQty": 100,
+              "allowancePercent": 10,
+              "derivedMaximumQty": 110,
+              "authorizedRole": true
+            }
+          },
+          "expected": "allow",
+          "kind": "documented_rule",
+          "actual": {
+            "policy_id": "FSV-B13.PurchaseReceipt.QuantityAllowance",
+            "decision": "allow",
+            "fail_closed": true,
+            "violations": []
+          },
+          "pass": true
+        },
+        {
+          "label": "authorized-large-exception",
+          "input": {
+            "request": {
+              "body": {
+                "qty": 1000
+              }
+            },
+            "trusted": {
+              "orderedQty": 100,
+              "allowancePercent": 10,
+              "derivedMaximumQty": 110,
+              "authorizedRole": true
+            }
+          },
+          "expected": "allow",
+          "kind": "focused_rule_only",
+          "actual": {
+            "policy_id": "FSV-B13.PurchaseReceipt.QuantityAllowance",
+            "decision": "allow",
+            "fail_closed": true,
+            "violations": []
+          },
+          "pass": true
+        },
+        {
+          "label": "body-role-spoof",
+          "input": {
+            "request": {
+              "body": {
+                "qty": 111,
+                "authorizedRole": true
+              }
+            },
+            "trusted": {
+              "orderedQty": 100,
+              "allowancePercent": 10,
+              "derivedMaximumQty": 110,
+              "authorizedRole": false
+            }
+          },
+          "expected": "deny",
+          "kind": "engineering_trust_control",
+          "actual": {
+            "policy_id": "FSV-B13.PurchaseReceipt.QuantityAllowance",
+            "decision": "deny",
+            "fail_closed": true,
+            "violations": [
+              {
+                "rule_id": "FSV-B13.PurchaseReceipt.QuantityAllowance.Rule",
+                "code": "bounded_guard_rejected",
+                "detail": "FSV-B13.PurchaseReceipt.QuantityAllowance.Rule"
+              }
+            ]
+          },
+          "pass": true
+        },
+        {
+          "label": "body-limit-spoof",
+          "input": {
+            "request": {
+              "body": {
+                "qty": 111,
+                "derivedMaximumQty": 1000
+              }
+            },
+            "trusted": {
+              "orderedQty": 100,
+              "allowancePercent": 10,
+              "derivedMaximumQty": 110,
+              "authorizedRole": false
+            }
+          },
+          "expected": "deny",
+          "kind": "engineering_trust_control",
+          "actual": {
+            "policy_id": "FSV-B13.PurchaseReceipt.QuantityAllowance",
+            "decision": "deny",
+            "fail_closed": true,
+            "violations": [
+              {
+                "rule_id": "FSV-B13.PurchaseReceipt.QuantityAllowance.Rule",
+                "code": "bounded_guard_rejected",
+                "detail": "FSV-B13.PurchaseReceipt.QuantityAllowance.Rule"
+              }
+            ]
+          },
+          "pass": true
+        },
+        {
+          "label": "missing-trusted",
+          "input": {
+            "request": {
+              "body": {
+                "qty": 111
+              }
+            },
+            "trusted": {}
+          },
+          "expected": "deny",
+          "kind": "engineering_fail_closed_control",
+          "actual": {
+            "policy_id": "FSV-B13.PurchaseReceipt.QuantityAllowance",
+            "decision": "deny",
+            "fail_closed": true,
+            "violations": [
+              {
+                "rule_id": "FSV-B13.PurchaseReceipt.QuantityAllowance.Rule",
+                "code": "required_input_missing",
+                "detail": "FSV-B13.PurchaseReceipt.QuantityAllowance.Rule"
+              }
+            ]
+          },
+          "pass": true
+        }
+      ],
+      "source_result": "/mnt/d/lunwen/EC-CSI投稿/working/exploration/20261014_matched_evidence_labor/matched_generation/method_runs/FSV-B13/ECAS_MATCHED/RESULT.json"
+    },
+    {
+      "task": "FSV-B17",
+      "case": "B17：禁用客户",
+      "method": "P2P_STYLE",
+      "method_name": "P2P适配版",
+      "initial_diagnostic_symbol": "●",
+      "initial_eligible": true,
+      "repaired_once": false,
+      "final_symbol": "●",
+      "final_execution_eligible": true,
+      "status": "ELIGIBLE",
+      "failure_class": "QUALIFIED_EXECUTION",
+      "calls": 4,
+      "call_indices": [
+        17,
+        18,
+        19,
+        20
+      ],
+      "final_original_pair": [
+        {
+          "channel": "O-L",
+          "input": {
+            "request": {
+              "body": {
+                "customer": "CUSTOMER-SYNTH-1"
+              }
+            },
+            "trusted": {
+              "customerDisabled": false
+            }
+          },
+          "expected": "allow",
+          "actual": {
+            "status": "EXECUTED",
+            "decision": "allow",
+            "exit_code": 0
+          },
+          "pass": true
+        },
+        {
+          "channel": "O-I",
+          "input": {
+            "request": {
+              "body": {
+                "customer": "CUSTOMER-SYNTH-1"
+              }
+            },
+            "trusted": {
+              "customerDisabled": true
+            }
+          },
+          "expected": "deny",
+          "actual": {
+            "status": "EXECUTED",
+            "decision": "deny",
+            "exit_code": 0
+          },
+          "pass": true
+        }
+      ],
+      "final_branches": [
+        {
+          "label": "enabled",
+          "input": {
+            "request": {
+              "body": {
+                "customer": "CUSTOMER-SYNTH-1"
+              }
+            },
+            "trusted": {
+              "customerDisabled": false
+            }
+          },
+          "expected": "allow",
+          "kind": "documented_rule",
+          "actual": {
+            "status": "EXECUTED",
+            "decision": "allow",
+            "exit_code": 0
+          },
+          "pass": true
+        },
+        {
+          "label": "disabled",
+          "input": {
+            "request": {
+              "body": {
+                "customer": "CUSTOMER-SYNTH-1"
+              }
+            },
+            "trusted": {
+              "customerDisabled": true
+            }
+          },
+          "expected": "deny",
+          "kind": "documented_rule",
+          "actual": {
+            "status": "EXECUTED",
+            "decision": "deny",
+            "exit_code": 0
+          },
+          "pass": true
+        },
+        {
+          "label": "body-disable-spoof",
+          "input": {
+            "request": {
+              "body": {
+                "customer": "CUSTOMER-SYNTH-1",
+                "customerDisabled": false
+              }
+            },
+            "trusted": {
+              "customerDisabled": true
+            }
+          },
+          "expected": "deny",
+          "kind": "engineering_trust_control",
+          "actual": {
+            "status": "EXECUTED",
+            "decision": "deny",
+            "exit_code": 0
+          },
+          "pass": true
+        },
+        {
+          "label": "missing-trusted",
+          "input": {
+            "request": {
+              "body": {
+                "customer": "CUSTOMER-SYNTH-1"
+              }
+            },
+            "trusted": {}
+          },
+          "expected": "deny",
+          "kind": "engineering_fail_closed_control",
+          "actual": {
+            "status": "EXECUTED",
+            "decision": "allow",
+            "exit_code": 0
+          },
+          "pass": false
+        }
+      ],
+      "source_result": "/mnt/d/lunwen/EC-CSI投稿/working/exploration/20261014_matched_evidence_labor/matched_generation/method_runs/FSV-B17/P2P_STYLE/RESULT.json"
+    },
+    {
+      "task": "FSV-B17",
+      "case": "B17：禁用客户",
+      "method": "AUTOPAC_STYLE",
+      "method_name": "AutoPAC适配版",
+      "initial_diagnostic_symbol": "●",
+      "initial_eligible": true,
+      "repaired_once": false,
+      "final_symbol": "●",
+      "final_execution_eligible": true,
+      "status": "ELIGIBLE",
+      "failure_class": "QUALIFIED_EXECUTION",
+      "calls": 2,
+      "call_indices": [
+        21,
+        22
+      ],
+      "final_original_pair": [
+        {
+          "channel": "O-L",
+          "input": {
+            "request": {
+              "body": {
+                "customer": "CUSTOMER-SYNTH-1"
+              }
+            },
+            "trusted": {
+              "customerDisabled": false
+            }
+          },
+          "expected": "allow",
+          "actual": {
+            "status": "EXECUTED",
+            "decision": "allow",
+            "exit_code": 0
+          },
+          "pass": true
+        },
+        {
+          "channel": "O-I",
+          "input": {
+            "request": {
+              "body": {
+                "customer": "CUSTOMER-SYNTH-1"
+              }
+            },
+            "trusted": {
+              "customerDisabled": true
+            }
+          },
+          "expected": "deny",
+          "actual": {
+            "status": "EXECUTED",
+            "decision": "deny",
+            "exit_code": 0
+          },
+          "pass": true
+        }
+      ],
+      "final_branches": [
+        {
+          "label": "enabled",
+          "input": {
+            "request": {
+              "body": {
+                "customer": "CUSTOMER-SYNTH-1"
+              }
+            },
+            "trusted": {
+              "customerDisabled": false
+            }
+          },
+          "expected": "allow",
+          "kind": "documented_rule",
+          "actual": {
+            "status": "EXECUTED",
+            "decision": "allow",
+            "exit_code": 0
+          },
+          "pass": true
+        },
+        {
+          "label": "disabled",
+          "input": {
+            "request": {
+              "body": {
+                "customer": "CUSTOMER-SYNTH-1"
+              }
+            },
+            "trusted": {
+              "customerDisabled": true
+            }
+          },
+          "expected": "deny",
+          "kind": "documented_rule",
+          "actual": {
+            "status": "EXECUTED",
+            "decision": "deny",
+            "exit_code": 0
+          },
+          "pass": true
+        },
+        {
+          "label": "body-disable-spoof",
+          "input": {
+            "request": {
+              "body": {
+                "customer": "CUSTOMER-SYNTH-1",
+                "customerDisabled": false
+              }
+            },
+            "trusted": {
+              "customerDisabled": true
+            }
+          },
+          "expected": "deny",
+          "kind": "engineering_trust_control",
+          "actual": {
+            "status": "EXECUTED",
+            "decision": "deny",
+            "exit_code": 0
+          },
+          "pass": true
+        },
+        {
+          "label": "missing-trusted",
+          "input": {
+            "request": {
+              "body": {
+                "customer": "CUSTOMER-SYNTH-1"
+              }
+            },
+            "trusted": {}
+          },
+          "expected": "deny",
+          "kind": "engineering_fail_closed_control",
+          "actual": {
+            "status": "EXECUTED",
+            "decision": "allow",
+            "exit_code": 0
+          },
+          "pass": false
+        }
+      ],
+      "source_result": "/mnt/d/lunwen/EC-CSI投稿/working/exploration/20261014_matched_evidence_labor/matched_generation/method_runs/FSV-B17/AUTOPAC_STYLE/RESULT.json"
+    },
+    {
+      "task": "FSV-B17",
+      "case": "B17：禁用客户",
+      "method": "ECAS_MATCHED",
+      "method_name": "ECAS",
+      "initial_diagnostic_symbol": "●",
+      "initial_eligible": true,
+      "repaired_once": false,
+      "final_symbol": "●",
+      "final_execution_eligible": true,
+      "status": "ELIGIBLE",
+      "failure_class": "QUALIFIED_EXECUTION",
+      "calls": 1,
+      "call_indices": [
+        23
+      ],
+      "final_original_pair": [
+        {
+          "channel": "O-L",
+          "input": {
+            "request": {
+              "body": {
+                "customer": "CUSTOMER-SYNTH-1"
+              }
+            },
+            "trusted": {
+              "customerDisabled": false
+            }
+          },
+          "expected": "allow",
+          "actual": {
+            "policy_id": "FSV-B17-DISABLED-CUSTOMER-SO",
+            "decision": "allow",
+            "fail_closed": true,
+            "violations": []
+          },
+          "pass": true
+        },
+        {
+          "channel": "O-I",
+          "input": {
+            "request": {
+              "body": {
+                "customer": "CUSTOMER-SYNTH-1"
+              }
+            },
+            "trusted": {
+              "customerDisabled": true
+            }
+          },
+          "expected": "deny",
+          "actual": {
+            "policy_id": "FSV-B17-DISABLED-CUSTOMER-SO",
+            "decision": "deny",
+            "fail_closed": true,
+            "violations": [
+              {
+                "rule_id": "FSV-B17-RULE-01",
+                "code": "bounded_guard_rejected",
+                "detail": "FSV-B17-RULE-01"
+              }
+            ]
+          },
+          "pass": true
+        }
+      ],
+      "final_branches": [
+        {
+          "label": "enabled",
+          "input": {
+            "request": {
+              "body": {
+                "customer": "CUSTOMER-SYNTH-1"
+              }
+            },
+            "trusted": {
+              "customerDisabled": false
+            }
+          },
+          "expected": "allow",
+          "kind": "documented_rule",
+          "actual": {
+            "policy_id": "FSV-B17-DISABLED-CUSTOMER-SO",
+            "decision": "allow",
+            "fail_closed": true,
+            "violations": []
+          },
+          "pass": true
+        },
+        {
+          "label": "disabled",
+          "input": {
+            "request": {
+              "body": {
+                "customer": "CUSTOMER-SYNTH-1"
+              }
+            },
+            "trusted": {
+              "customerDisabled": true
+            }
+          },
+          "expected": "deny",
+          "kind": "documented_rule",
+          "actual": {
+            "policy_id": "FSV-B17-DISABLED-CUSTOMER-SO",
+            "decision": "deny",
+            "fail_closed": true,
+            "violations": [
+              {
+                "rule_id": "FSV-B17-RULE-01",
+                "code": "bounded_guard_rejected",
+                "detail": "FSV-B17-RULE-01"
+              }
+            ]
+          },
+          "pass": true
+        },
+        {
+          "label": "body-disable-spoof",
+          "input": {
+            "request": {
+              "body": {
+                "customer": "CUSTOMER-SYNTH-1",
+                "customerDisabled": false
+              }
+            },
+            "trusted": {
+              "customerDisabled": true
+            }
+          },
+          "expected": "deny",
+          "kind": "engineering_trust_control",
+          "actual": {
+            "policy_id": "FSV-B17-DISABLED-CUSTOMER-SO",
+            "decision": "deny",
+            "fail_closed": true,
+            "violations": [
+              {
+                "rule_id": "FSV-B17-RULE-01",
+                "code": "bounded_guard_rejected",
+                "detail": "FSV-B17-RULE-01"
+              }
+            ]
+          },
+          "pass": true
+        },
+        {
+          "label": "missing-trusted",
+          "input": {
+            "request": {
+              "body": {
+                "customer": "CUSTOMER-SYNTH-1"
+              }
+            },
+            "trusted": {}
+          },
+          "expected": "deny",
+          "kind": "engineering_fail_closed_control",
+          "actual": {
+            "policy_id": "FSV-B17-DISABLED-CUSTOMER-SO",
+            "decision": "deny",
+            "fail_closed": true,
+            "violations": [
+              {
+                "rule_id": "FSV-B17-RULE-01",
+                "code": "required_input_missing",
+                "detail": "FSV-B17-RULE-01"
+              }
+            ]
+          },
+          "pass": true
+        }
+      ],
+      "source_result": "/mnt/d/lunwen/EC-CSI投稿/working/exploration/20261014_matched_evidence_labor/matched_generation/method_runs/FSV-B17/ECAS_MATCHED/RESULT.json"
+    },
+    {
+      "task": "FSV-B19",
+      "case": "B19：供应商冻结类型",
+      "method": "P2P_STYLE",
+      "method_name": "P2P适配版",
+      "initial_diagnostic_symbol": "●",
+      "initial_eligible": true,
+      "repaired_once": false,
+      "final_symbol": "●",
+      "final_execution_eligible": true,
+      "status": "ELIGIBLE",
+      "failure_class": "QUALIFIED_EXECUTION",
+      "calls": 4,
+      "call_indices": [
+        24,
+        25,
+        26,
+        27
+      ],
+      "final_original_pair": [
+        {
+          "channel": "O-L",
+          "input": {
+            "request": {
+              "body": {
+                "action": "PURCHASE_ORDER",
+                "supplier": "SUPPLIER-SYNTH-1"
+              }
+            },
+            "trusted": {
+              "holdType": "",
+              "supplierOnHold": false
+            }
+          },
+          "expected": "allow",
+          "actual": {
+            "status": "EXECUTED",
+            "decision": "allow",
+            "exit_code": 0
+          },
+          "pass": true
+        },
+        {
+          "channel": "O-I",
+          "input": {
+            "request": {
+              "body": {
+                "action": "PURCHASE_ORDER",
+                "supplier": "SUPPLIER-SYNTH-1"
+              }
+            },
+            "trusted": {
+              "holdType": "All",
+              "supplierOnHold": true
+            }
+          },
+          "expected": "deny",
+          "actual": {
+            "status": "EXECUTED",
+            "decision": "deny",
+            "exit_code": 0
+          },
+          "pass": true
+        }
+      ],
+      "final_branches": [
+        {
+          "label": "not-held",
+          "input": {
+            "request": {
+              "body": {
+                "action": "PURCHASE_ORDER",
+                "supplier": "SUPPLIER-SYNTH-1"
+              }
+            },
+            "trusted": {
+              "supplierOnHold": false,
+              "holdType": ""
+            }
+          },
+          "expected": "allow",
+          "kind": "documented_rule",
+          "actual": {
+            "status": "EXECUTED",
+            "decision": "allow",
+            "exit_code": 0
+          },
+          "pass": true
+        },
+        {
+          "label": "held-all",
+          "input": {
+            "request": {
+              "body": {
+                "action": "PURCHASE_ORDER",
+                "supplier": "SUPPLIER-SYNTH-1"
+              }
+            },
+            "trusted": {
+              "supplierOnHold": true,
+              "holdType": "All"
+            }
+          },
+          "expected": "deny",
+          "kind": "documented_rule",
+          "actual": {
+            "status": "EXECUTED",
+            "decision": "deny",
+            "exit_code": 0
+          },
+          "pass": true
+        },
+        {
+          "label": "held-invoices",
+          "input": {
+            "request": {
+              "body": {
+                "action": "PURCHASE_ORDER",
+                "supplier": "SUPPLIER-SYNTH-1"
+              }
+            },
+            "trusted": {
+              "supplierOnHold": true,
+              "holdType": "Invoices"
+            }
+          },
+          "expected": "deny",
+          "kind": "documented_rule",
+          "actual": {
+            "status": "EXECUTED",
+            "decision": "deny",
+            "exit_code": 0
+          },
+          "pass": true
+        },
+        {
+          "label": "held-payments",
+          "input": {
+            "request": {
+              "body": {
+                "action": "PURCHASE_ORDER",
+                "supplier": "SUPPLIER-SYNTH-1"
+              }
+            },
+            "trusted": {
+              "supplierOnHold": true,
+              "holdType": "Payments"
+            }
+          },
+          "expected": "allow",
+          "kind": "documented_rule",
+          "actual": {
+            "status": "EXECUTED",
+            "decision": "allow",
+            "exit_code": 0
+          },
+          "pass": true
+        },
+        {
+          "label": "held-empty-type",
+          "input": {
+            "request": {
+              "body": {
+                "action": "PURCHASE_ORDER",
+                "supplier": "SUPPLIER-SYNTH-1"
+              }
+            },
+            "trusted": {
+              "supplierOnHold": true,
+              "holdType": ""
+            }
+          },
+          "expected": "deny",
+          "kind": "conservative_empty_type_control",
+          "actual": {
+            "status": "EXECUTED",
+            "decision": "allow",
+            "exit_code": 0
+          },
+          "pass": false
+        },
+        {
+          "label": "held-unknown-type",
+          "input": {
+            "request": {
+              "body": {
+                "action": "PURCHASE_ORDER",
+                "supplier": "SUPPLIER-SYNTH-1"
+              }
+            },
+            "trusted": {
+              "supplierOnHold": true,
+              "holdType": "Unknown"
+            }
+          },
+          "expected": "deny",
+          "kind": "engineering_unknown_type_control",
+          "actual": {
+            "status": "EXECUTED",
+            "decision": "allow",
+            "exit_code": 0
+          },
+          "pass": false
+        },
+        {
+          "label": "body-type-spoof",
+          "input": {
+            "request": {
+              "body": {
+                "action": "PURCHASE_ORDER",
+                "supplier": "SUPPLIER-SYNTH-1",
+                "holdType": "Payments"
+              }
+            },
+            "trusted": {
+              "supplierOnHold": true,
+              "holdType": "All"
+            }
+          },
+          "expected": "deny",
+          "kind": "engineering_trust_control",
+          "actual": {
+            "status": "EXECUTED",
+            "decision": "deny",
+            "exit_code": 0
+          },
+          "pass": true
+        },
+        {
+          "label": "missing-trusted",
+          "input": {
+            "request": {
+              "body": {
+                "action": "PURCHASE_ORDER",
+                "supplier": "SUPPLIER-SYNTH-1"
+              }
+            },
+            "trusted": {}
+          },
+          "expected": "deny",
+          "kind": "engineering_fail_closed_control",
+          "actual": {
+            "status": "EXECUTED",
+            "decision": "allow",
+            "exit_code": 0
+          },
+          "pass": false
+        }
+      ],
+      "source_result": "/mnt/d/lunwen/EC-CSI投稿/working/exploration/20261014_matched_evidence_labor/matched_generation/method_runs/FSV-B19/P2P_STYLE/RESULT.json"
+    },
+    {
+      "task": "FSV-B19",
+      "case": "B19：供应商冻结类型",
+      "method": "AUTOPAC_STYLE",
+      "method_name": "AutoPAC适配版",
+      "initial_diagnostic_symbol": "●",
+      "initial_eligible": true,
+      "repaired_once": false,
+      "final_symbol": "●",
+      "final_execution_eligible": true,
+      "status": "ELIGIBLE",
+      "failure_class": "QUALIFIED_EXECUTION",
+      "calls": 2,
+      "call_indices": [
+        28,
+        29
+      ],
+      "final_original_pair": [
+        {
+          "channel": "O-L",
+          "input": {
+            "request": {
+              "body": {
+                "action": "PURCHASE_ORDER",
+                "supplier": "SUPPLIER-SYNTH-1"
+              }
+            },
+            "trusted": {
+              "holdType": "",
+              "supplierOnHold": false
+            }
+          },
+          "expected": "allow",
+          "actual": {
+            "status": "EXECUTED",
+            "decision": "allow",
+            "exit_code": 0
+          },
+          "pass": true
+        },
+        {
+          "channel": "O-I",
+          "input": {
+            "request": {
+              "body": {
+                "action": "PURCHASE_ORDER",
+                "supplier": "SUPPLIER-SYNTH-1"
+              }
+            },
+            "trusted": {
+              "holdType": "All",
+              "supplierOnHold": true
+            }
+          },
+          "expected": "deny",
+          "actual": {
+            "status": "EXECUTED",
+            "decision": "deny",
+            "exit_code": 0
+          },
+          "pass": true
+        }
+      ],
+      "final_branches": [
+        {
+          "label": "not-held",
+          "input": {
+            "request": {
+              "body": {
+                "action": "PURCHASE_ORDER",
+                "supplier": "SUPPLIER-SYNTH-1"
+              }
+            },
+            "trusted": {
+              "supplierOnHold": false,
+              "holdType": ""
+            }
+          },
+          "expected": "allow",
+          "kind": "documented_rule",
+          "actual": {
+            "status": "EXECUTED",
+            "decision": "allow",
+            "exit_code": 0
+          },
+          "pass": true
+        },
+        {
+          "label": "held-all",
+          "input": {
+            "request": {
+              "body": {
+                "action": "PURCHASE_ORDER",
+                "supplier": "SUPPLIER-SYNTH-1"
+              }
+            },
+            "trusted": {
+              "supplierOnHold": true,
+              "holdType": "All"
+            }
+          },
+          "expected": "deny",
+          "kind": "documented_rule",
+          "actual": {
+            "status": "EXECUTED",
+            "decision": "deny",
+            "exit_code": 0
+          },
+          "pass": true
+        },
+        {
+          "label": "held-invoices",
+          "input": {
+            "request": {
+              "body": {
+                "action": "PURCHASE_ORDER",
+                "supplier": "SUPPLIER-SYNTH-1"
+              }
+            },
+            "trusted": {
+              "supplierOnHold": true,
+              "holdType": "Invoices"
+            }
+          },
+          "expected": "deny",
+          "kind": "documented_rule",
+          "actual": {
+            "status": "EXECUTED",
+            "decision": "deny",
+            "exit_code": 0
+          },
+          "pass": true
+        },
+        {
+          "label": "held-payments",
+          "input": {
+            "request": {
+              "body": {
+                "action": "PURCHASE_ORDER",
+                "supplier": "SUPPLIER-SYNTH-1"
+              }
+            },
+            "trusted": {
+              "supplierOnHold": true,
+              "holdType": "Payments"
+            }
+          },
+          "expected": "allow",
+          "kind": "documented_rule",
+          "actual": {
+            "status": "EXECUTED",
+            "decision": "allow",
+            "exit_code": 0
+          },
+          "pass": true
+        },
+        {
+          "label": "held-empty-type",
+          "input": {
+            "request": {
+              "body": {
+                "action": "PURCHASE_ORDER",
+                "supplier": "SUPPLIER-SYNTH-1"
+              }
+            },
+            "trusted": {
+              "supplierOnHold": true,
+              "holdType": ""
+            }
+          },
+          "expected": "deny",
+          "kind": "conservative_empty_type_control",
+          "actual": {
+            "status": "EXECUTED",
+            "decision": "allow",
+            "exit_code": 0
+          },
+          "pass": false
+        },
+        {
+          "label": "held-unknown-type",
+          "input": {
+            "request": {
+              "body": {
+                "action": "PURCHASE_ORDER",
+                "supplier": "SUPPLIER-SYNTH-1"
+              }
+            },
+            "trusted": {
+              "supplierOnHold": true,
+              "holdType": "Unknown"
+            }
+          },
+          "expected": "deny",
+          "kind": "engineering_unknown_type_control",
+          "actual": {
+            "status": "EXECUTED",
+            "decision": "allow",
+            "exit_code": 0
+          },
+          "pass": false
+        },
+        {
+          "label": "body-type-spoof",
+          "input": {
+            "request": {
+              "body": {
+                "action": "PURCHASE_ORDER",
+                "supplier": "SUPPLIER-SYNTH-1",
+                "holdType": "Payments"
+              }
+            },
+            "trusted": {
+              "supplierOnHold": true,
+              "holdType": "All"
+            }
+          },
+          "expected": "deny",
+          "kind": "engineering_trust_control",
+          "actual": {
+            "status": "EXECUTED",
+            "decision": "deny",
+            "exit_code": 0
+          },
+          "pass": true
+        },
+        {
+          "label": "missing-trusted",
+          "input": {
+            "request": {
+              "body": {
+                "action": "PURCHASE_ORDER",
+                "supplier": "SUPPLIER-SYNTH-1"
+              }
+            },
+            "trusted": {}
+          },
+          "expected": "deny",
+          "kind": "engineering_fail_closed_control",
+          "actual": {
+            "status": "EXECUTED",
+            "decision": "allow",
+            "exit_code": 0
+          },
+          "pass": false
+        }
+      ],
+      "source_result": "/mnt/d/lunwen/EC-CSI投稿/working/exploration/20261014_matched_evidence_labor/matched_generation/method_runs/FSV-B19/AUTOPAC_STYLE/RESULT.json"
+    },
+    {
+      "task": "FSV-B19",
+      "case": "B19：供应商冻结类型",
+      "method": "ECAS_MATCHED",
+      "method_name": "ECAS",
+      "initial_diagnostic_symbol": "●",
+      "initial_eligible": true,
+      "repaired_once": false,
+      "final_symbol": "●",
+      "final_execution_eligible": true,
+      "status": "ELIGIBLE",
+      "failure_class": "QUALIFIED_EXECUTION",
+      "calls": 1,
+      "call_indices": [
+        30
+      ],
+      "final_original_pair": [
+        {
+          "channel": "O-L",
+          "input": {
+            "request": {
+              "body": {
+                "action": "PURCHASE_ORDER",
+                "supplier": "SUPPLIER-SYNTH-1"
+              }
+            },
+            "trusted": {
+              "holdType": "",
+              "supplierOnHold": false
+            }
+          },
+          "expected": "allow",
+          "actual": {
+            "policy_id": "POL-FSV-B19-001",
+            "decision": "allow",
+            "fail_closed": true,
+            "violations": []
+          },
+          "pass": true
+        },
+        {
+          "channel": "O-I",
+          "input": {
+            "request": {
+              "body": {
+                "action": "PURCHASE_ORDER",
+                "supplier": "SUPPLIER-SYNTH-1"
+              }
+            },
+            "trusted": {
+              "holdType": "All",
+              "supplierOnHold": true
+            }
+          },
+          "expected": "deny",
+          "actual": {
+            "policy_id": "POL-FSV-B19-001",
+            "decision": "deny",
+            "fail_closed": true,
+            "violations": [
+              {
+                "rule_id": "RULE-FSV-B19-001",
+                "code": "bounded_guard_rejected",
+                "detail": "RULE-FSV-B19-001"
+              }
+            ]
+          },
+          "pass": true
+        }
+      ],
+      "final_branches": [
+        {
+          "label": "not-held",
+          "input": {
+            "request": {
+              "body": {
+                "action": "PURCHASE_ORDER",
+                "supplier": "SUPPLIER-SYNTH-1"
+              }
+            },
+            "trusted": {
+              "supplierOnHold": false,
+              "holdType": ""
+            }
+          },
+          "expected": "allow",
+          "kind": "documented_rule",
+          "actual": {
+            "policy_id": "POL-FSV-B19-001",
+            "decision": "allow",
+            "fail_closed": true,
+            "violations": []
+          },
+          "pass": true
+        },
+        {
+          "label": "held-all",
+          "input": {
+            "request": {
+              "body": {
+                "action": "PURCHASE_ORDER",
+                "supplier": "SUPPLIER-SYNTH-1"
+              }
+            },
+            "trusted": {
+              "supplierOnHold": true,
+              "holdType": "All"
+            }
+          },
+          "expected": "deny",
+          "kind": "documented_rule",
+          "actual": {
+            "policy_id": "POL-FSV-B19-001",
+            "decision": "deny",
+            "fail_closed": true,
+            "violations": [
+              {
+                "rule_id": "RULE-FSV-B19-001",
+                "code": "bounded_guard_rejected",
+                "detail": "RULE-FSV-B19-001"
+              }
+            ]
+          },
+          "pass": true
+        },
+        {
+          "label": "held-invoices",
+          "input": {
+            "request": {
+              "body": {
+                "action": "PURCHASE_ORDER",
+                "supplier": "SUPPLIER-SYNTH-1"
+              }
+            },
+            "trusted": {
+              "supplierOnHold": true,
+              "holdType": "Invoices"
+            }
+          },
+          "expected": "deny",
+          "kind": "documented_rule",
+          "actual": {
+            "policy_id": "POL-FSV-B19-001",
+            "decision": "deny",
+            "fail_closed": true,
+            "violations": [
+              {
+                "rule_id": "RULE-FSV-B19-001",
+                "code": "bounded_guard_rejected",
+                "detail": "RULE-FSV-B19-001"
+              }
+            ]
+          },
+          "pass": true
+        },
+        {
+          "label": "held-payments",
+          "input": {
+            "request": {
+              "body": {
+                "action": "PURCHASE_ORDER",
+                "supplier": "SUPPLIER-SYNTH-1"
+              }
+            },
+            "trusted": {
+              "supplierOnHold": true,
+              "holdType": "Payments"
+            }
+          },
+          "expected": "allow",
+          "kind": "documented_rule",
+          "actual": {
+            "policy_id": "POL-FSV-B19-001",
+            "decision": "allow",
+            "fail_closed": true,
+            "violations": []
+          },
+          "pass": true
+        },
+        {
+          "label": "held-empty-type",
+          "input": {
+            "request": {
+              "body": {
+                "action": "PURCHASE_ORDER",
+                "supplier": "SUPPLIER-SYNTH-1"
+              }
+            },
+            "trusted": {
+              "supplierOnHold": true,
+              "holdType": ""
+            }
+          },
+          "expected": "deny",
+          "kind": "conservative_empty_type_control",
+          "actual": {
+            "policy_id": "POL-FSV-B19-001",
+            "decision": "deny",
+            "fail_closed": true,
+            "violations": [
+              {
+                "rule_id": "RULE-FSV-B19-001",
+                "code": "bounded_guard_rejected",
+                "detail": "RULE-FSV-B19-001"
+              }
+            ]
+          },
+          "pass": true
+        },
+        {
+          "label": "held-unknown-type",
+          "input": {
+            "request": {
+              "body": {
+                "action": "PURCHASE_ORDER",
+                "supplier": "SUPPLIER-SYNTH-1"
+              }
+            },
+            "trusted": {
+              "supplierOnHold": true,
+              "holdType": "Unknown"
+            }
+          },
+          "expected": "deny",
+          "kind": "engineering_unknown_type_control",
+          "actual": {
+            "policy_id": "POL-FSV-B19-001",
+            "decision": "deny",
+            "fail_closed": true,
+            "violations": [
+              {
+                "rule_id": "RULE-FSV-B19-001",
+                "code": "bounded_guard_rejected",
+                "detail": "RULE-FSV-B19-001"
+              }
+            ]
+          },
+          "pass": true
+        },
+        {
+          "label": "body-type-spoof",
+          "input": {
+            "request": {
+              "body": {
+                "action": "PURCHASE_ORDER",
+                "supplier": "SUPPLIER-SYNTH-1",
+                "holdType": "Payments"
+              }
+            },
+            "trusted": {
+              "supplierOnHold": true,
+              "holdType": "All"
+            }
+          },
+          "expected": "deny",
+          "kind": "engineering_trust_control",
+          "actual": {
+            "policy_id": "POL-FSV-B19-001",
+            "decision": "deny",
+            "fail_closed": true,
+            "violations": [
+              {
+                "rule_id": "RULE-FSV-B19-001",
+                "code": "bounded_guard_rejected",
+                "detail": "RULE-FSV-B19-001"
+              }
+            ]
+          },
+          "pass": true
+        },
+        {
+          "label": "missing-trusted",
+          "input": {
+            "request": {
+              "body": {
+                "action": "PURCHASE_ORDER",
+                "supplier": "SUPPLIER-SYNTH-1"
+              }
+            },
+            "trusted": {}
+          },
+          "expected": "deny",
+          "kind": "engineering_fail_closed_control",
+          "actual": {
+            "policy_id": "POL-FSV-B19-001",
+            "decision": "deny",
+            "fail_closed": true,
+            "violations": [
+              {
+                "rule_id": "RULE-FSV-B19-001",
+                "code": "required_input_missing",
+                "detail": "RULE-FSV-B19-001"
+              }
+            ]
+          },
+          "pass": true
+        }
+      ],
+      "source_result": "/mnt/d/lunwen/EC-CSI投稿/working/exploration/20261014_matched_evidence_labor/matched_generation/method_runs/FSV-B19/ECAS_MATCHED/RESULT.json"
+    }
+  ],
+  "methods": [
+    {
+      "method": "P2P_STYLE",
+      "method_name": "P2P适配版",
+      "case_count": 4,
+      "eligible_cases": 3,
+      "pair_all_correct": 3,
+      "legal_allowed": 3,
+      "legal_total_target_cases": 4,
+      "illegal_misallowed": 0,
+      "illegal_executed": 3,
+      "repair_calls": 0,
+      "method_model_calls": 13,
+      "input_tokens": 53216,
+      "completion_tokens": 17279,
+      "latency_seconds": 241.582,
+      "actual_cost": "UNKNOWN"
+    },
+    {
+      "method": "AUTOPAC_STYLE",
+      "method_name": "AutoPAC适配版",
+      "case_count": 4,
+      "eligible_cases": 3,
+      "pair_all_correct": 3,
+      "legal_allowed": 3,
+      "legal_total_target_cases": 4,
+      "illegal_misallowed": 0,
+      "illegal_executed": 3,
+      "repair_calls": 1,
+      "method_model_calls": 9,
+      "input_tokens": 29348,
+      "completion_tokens": 12152,
+      "latency_seconds": 169.183,
+      "actual_cost": "UNKNOWN"
+    },
+    {
+      "method": "ECAS_MATCHED",
+      "method_name": "ECAS",
+      "case_count": 4,
+      "eligible_cases": 4,
+      "pair_all_correct": 4,
+      "legal_allowed": 4,
+      "legal_total_target_cases": 4,
+      "illegal_misallowed": 0,
+      "illegal_executed": 4,
+      "repair_calls": 0,
+      "method_model_calls": 4,
+      "input_tokens": 24357,
+      "completion_tokens": 9858,
+      "latency_seconds": 136.343,
+      "actual_cost": "UNKNOWN"
+    }
+  ],
+  "actual_total_paid_attempts": 30,
+  "smoke_attempts": 4,
+  "method_attempts": 26,
+  "local_recovered_as_run_failures": 1,
+  "input_tokens": 132101,
+  "completion_tokens": 45713,
+  "actual_cost": "UNKNOWN",
+  "primary_reconciliation_sha256": "daf23f1770a6fc89ed7eb87f63e82be6317dcaeecdfb19e2a10f7e717c8e8c2d",
+  "new_model_calls_for_build": 0
+}

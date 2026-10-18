@@ -1,0 +1,1091 @@
+[
+  {
+    "index": 1,
+    "task": "FSV-S04",
+    "stage": "p2p_rego",
+    "smoke": true,
+    "started_at": "2026-10-14T03:45:20.034807+00:00",
+    "status": "COMPLETED",
+    "prompt_path": "/mnt/d/lunwen/EC-CSI投稿/working/exploration/20261014_external_baseline_pilot/calls/01_FSV-S04_p2p_rego/prompt.txt",
+    "prompt_sha256": "381d22574c2646d0e8567dd541767c51474ef262b6bcacc1e9eee6175d27bd75",
+    "prompt_bytes": 22813,
+    "estimated_prompt_tokens": 11535,
+    "token_count_kind": "UTF8_BYTES_DIV_2_ESTIMATE_NOT_EXACT_GLM_TOKENIZER",
+    "raw_response_path": "/mnt/d/lunwen/EC-CSI投稿/working/exploration/20261014_external_baseline_pilot/calls/01_FSV-S04_p2p_rego/response.raw.json",
+    "max_tokens": 16384,
+    "retry_count": 0,
+    "wrapper_exit": 0,
+    "latency_seconds": 24.264,
+    "raw_response_sha256": "4e2ae01db589e6267026d65823e4170dc3f1411788517913ddbb366d3a02c4aa",
+    "raw_response_bytes": 7524,
+    "returned_model": "glm-5.2",
+    "finish_reason": "stop",
+    "usage": {
+      "completion_tokens": 1854,
+      "completion_tokens_details": {
+        "reasoning_tokens": 1067
+      },
+      "prompt_tokens": 5991,
+      "prompt_tokens_details": {
+        "cached_tokens": 0
+      },
+      "total_tokens": 7845
+    },
+    "cost_status": "not_reported_by_provider",
+    "capture_mode": "direct_before_parse",
+    "content_chars": 2431,
+    "parse_status": "PASS",
+    "completeness_gate": "PASS",
+    "completed_at": "2026-10-14T03:45:44.384195+00:00",
+    "output_path": "/mnt/d/lunwen/EC-CSI投稿/working/exploration/20261014_external_baseline_pilot/calls/01_FSV-S04_p2p_rego/parsed_output.json"
+  },
+  {
+    "index": 2,
+    "task": "FSV-S04",
+    "stage": "autopac_generate",
+    "smoke": true,
+    "started_at": "2026-10-14T03:45:46.040881+00:00",
+    "status": "COMPLETED",
+    "prompt_path": "/mnt/d/lunwen/EC-CSI投稿/working/exploration/20261014_external_baseline_pilot/calls/02_FSV-S04_autopac_generate/prompt.txt",
+    "prompt_sha256": "4d8c0ab7b54dcf0e4a04a5ec50437e89928b1f504877ec19ca6ddd74a35a3e0c",
+    "prompt_bytes": 22447,
+    "estimated_prompt_tokens": 11352,
+    "token_count_kind": "UTF8_BYTES_DIV_2_ESTIMATE_NOT_EXACT_GLM_TOKENIZER",
+    "raw_response_path": "/mnt/d/lunwen/EC-CSI投稿/working/exploration/20261014_external_baseline_pilot/calls/02_FSV-S04_autopac_generate/response.raw.json",
+    "max_tokens": 16384,
+    "retry_count": 0,
+    "wrapper_exit": 0,
+    "latency_seconds": 45.492,
+    "raw_response_sha256": "deac9118e089eb600850f24a14952bff0d2e4c7e7de813bb308fcd21492be19f",
+    "raw_response_bytes": 13360,
+    "returned_model": "glm-5.2",
+    "finish_reason": "stop",
+    "usage": {
+      "completion_tokens": 2944,
+      "completion_tokens_details": {
+        "reasoning_tokens": 2658
+      },
+      "prompt_tokens": 5900,
+      "prompt_tokens_details": {
+        "cached_tokens": 0
+      },
+      "total_tokens": 8844
+    },
+    "cost_status": "not_reported_by_provider",
+    "capture_mode": "direct_before_parse",
+    "content_chars": 938,
+    "parse_status": "PASS",
+    "completeness_gate": "PASS",
+    "completed_at": "2026-10-14T03:46:32.762330+00:00",
+    "output_path": "/mnt/d/lunwen/EC-CSI投稿/working/exploration/20261014_external_baseline_pilot/calls/02_FSV-S04_autopac_generate/parsed_output.json"
+  },
+  {
+    "index": 3,
+    "task": "FSV-S04",
+    "stage": "ecas_generate",
+    "smoke": true,
+    "started_at": "2026-10-14T03:46:33.216728+00:00",
+    "status": "STOPPED_PROTOCOL_OR_TRANSPORT",
+    "prompt_path": "/mnt/d/lunwen/EC-CSI投稿/working/exploration/20261014_external_baseline_pilot/calls/03_FSV-S04_ecas_generate/prompt.txt",
+    "prompt_sha256": "0261cce5ee8f8a0c2f30e95403166402447c60de7cf8cc47b77e5bc0a0a66199",
+    "prompt_bytes": 32431,
+    "estimated_prompt_tokens": 16344,
+    "token_count_kind": "UTF8_BYTES_DIV_2_ESTIMATE_NOT_EXACT_GLM_TOKENIZER",
+    "raw_response_path": "/mnt/d/lunwen/EC-CSI投稿/working/exploration/20261014_external_baseline_pilot/calls/03_FSV-S04_ecas_generate/response.raw.json",
+    "max_tokens": 16384,
+    "retry_count": 0,
+    "wrapper_exit": 0,
+    "latency_seconds": 25.982,
+    "raw_response_sha256": "e14b0a6672d11a1c92b81979966b97445e364179e9915eb7d04193ede995753a",
+    "raw_response_bytes": 9716,
+    "returned_model": "glm-5.2",
+    "finish_reason": "stop",
+    "usage": {
+      "completion_tokens": 2501,
+      "completion_tokens_details": {
+        "reasoning_tokens": 1962
+      },
+      "prompt_tokens": 8426,
+      "prompt_tokens_details": {
+        "cached_tokens": 0
+      },
+      "total_tokens": 10927
+    },
+    "cost_status": "not_reported_by_provider",
+    "capture_mode": "direct_before_parse",
+    "content_chars": 1203,
+    "error_type": "ValidationError",
+    "error": "{'ir_version': 'EC-FIELD-MODEL-IR-V3', 'candidate_id': 'CAND-FSV-S04-01', 'decision': 'propose', 'target': {'operation': 'POST /api/resource/Lead', 'system': 'ERPNext', 'version': '16.0.0'}, 'policy_id': 'POL-FSV-S04-LEAD-CREATE', 'evidence_refs': ['VIS-FSV-S04-01', 'VIS-FSV-S04-02', 'VIS-FSV-S04-RUNTIME-ABI'], 'rules': [{'rule_id': 'RULE-FSV-S04-BODY-TYPE', 'primitive_id': 'SP-STRICT-TYPE', 'op': 'strict_type', 'evidence_refs': ['VIS-FSV-S04-01', 'VIS-FSV-S04-RUNTIME-ABI'], 'params': {'path': '/request/body', 'expected_type': 'object', 'on_missing': 'deny'}}, {'rule_id': 'RULE-FSV-S04-EMAIL-TYPE', 'primitive_id': 'SP-STRICT-TYPE', 'op': 'strict_type', 'evidence_refs': ['VIS-FSV-S04-02', 'VIS-FSV-S04-RUNTIME-ABI'], 'params': {'path': '/request/body/email_id', 'expected_type': 'string', 'on_missing': 'skip'}}, {'rule_id': 'RULE-FSV-S04-EMAIL-FORMAT', 'primitive_id': 'SP-STRUCTURED-FORMAT', 'op': 'named_validator', 'evidence_refs': ['VIS-FSV-S04-02', 'VIS-FSV-S04-RUNTIME-ABI'], 'params': {'path': '/request/body/email_id', 'validator_id': 'email_basic_v1', 'on_missing': 'skip'}}], 'reason_code': 'none', 'missing_evidence': []} is not valid under any of the given schemas\n\nFailed validating 'oneOf' in schema:\n    {'$defs': {'abstain': {'additionalProperties': False,\n                           'properties': {'candidate_id': {'$ref': '#/$defs/id'},\n                                          'decision': {'const': 'abstain'},\n                                          'evidence_refs': {'maxItems': 0,\n                                                            'type': 'array'},\n                                          'ir_version': {'const': 'EC-FIELD-MODEL-IR-V3'},\n                                          'missing_evidence': {'items': {'maxLength': 256,\n                                                                         'minLength': 1,\n                                                                         'type': 'string'},\n                                                               'maxItems': 32,\n                                                               'minItems': 1,\n                                                               'type': 'array',\n                                                               'uniqueItems': True},\n                                          'policy_id': {'const': 'none'},\n                                          'reason_code': {'enum': ['missing_business_binding',\n                                                                   'missing_api_binding',\n                                                                   'missing_context',\n                                                                   'conflicting_evidence',\n                                                                   'unsupported_primitive',\n                                                                   'non_actionable_material']},\n                                          'rules': {'maxItems': 0,\n                                                    'type': 'array'},\n                                          'target': {'$ref': '#/$defs/target'}},\n                           'required': ['ir_version',\n                                        'candidate_id',\n                                        'decision',\n                                        'target',\n                                        'policy_id',\n                                        'evidence_refs',\n                                        'rules',\n                                        'reason_code',\n                                        'missing_evidence'],\n                           'type': 'object'},\n               'baseRuleProperties': {'properties': {'evidence_refs': {'items': {'$ref': '#/$defs/id'},\n                                                                       'maxItems': 16,\n                                                                       'minItems': 1,\n                                                                       'type': 'array',\n                                                                       'uniqueItems': True},\n                                                     'rule_id': {'$ref': '#/$defs/id'}},\n                                      'type': 'object'},\n               'evidenceRefs': {'items': {'$ref': '#/$defs/id'},\n                                'maxItems': 64,\n                                'minItems': 1,\n                                'type': 'array',\n                                'uniqueItems': True},\n               'id': {'pattern': '^[A-Za-z0-9][A-Za-z0-9._:-]{0,127}$',\n                      'type': 'string'},\n               'pointer': {'maxLength': 512,\n                           'pattern': '^/(request|trusted)(/([^~/]|~0|~1)+|/\\\\*)*$',\n                           'type': 'string'},\n               'propose': {'additionalProperties': False,\n                           'properties': {'candidate_id': {'$ref': '#/$defs/id'},\n                                          'decision': {'const': 'propose'},\n                                          'evidence_refs': {'$ref': '#/$defs/evidenceRefs'},\n                                          'ir_version': {'const': 'EC-FIELD-MODEL-IR-V3'},\n                                          'missing_evidence': {'maxItems': 0,\n                                                               'type': 'array'},\n                                          'policy_id': {'allOf': [{'$ref': '#/$defs/id'},\n                                                                  {'not': {'const': 'none'}}]},\n                                          'reason_code': {'const': 'none'},\n                                          'rules': {'items': {'$ref': '#/$defs/rule'},\n                                                    'maxItems': 1,\n                                                    'minItems': 1,\n                                                    'type': 'array'},\n                                          'target': {'$ref': '#/$defs/target'}},\n                           'required': ['ir_version',\n                                        'candidate_id',\n                                        'decision',\n                                        'target',\n                                        'policy_id',\n                                        'evidence_refs',\n                                        'rules',\n                                        'reason_code',\n                                        'missing_evidence'],\n                           'type': 'object'},\n               'rule': {'oneOf': [{'additionalProperties': False,\n                                   'properties': {'evidence_refs': {'$ref': '#/$defs/evidenceRefs'},\n                                                  'op': {'const': 'content_type_allowlist'},\n                                                  'params': {'additionalProperties': False,\n                                                             'properties': {'media_types': {'items': {'type': 'string'},\n                                                                                            'maxItems': 16,\n                                                                                            'minItems': 1,\n                                                                                            'type': 'array',\n                                                                                            'uniqueItems': True},\n                                                                            'on_missing': {'enum': ['deny',\n                                                                                                    'skip']},\n                                                                            'path': {'$ref': '#/$defs/pointer'}},\n                                                             'required': ['path',\n                                                                          'media_types',\n                                                                          'on_missing'],\n                                                             'type': 'object'},\n                                                  'primitive_id': {'const': 'SP-CONTENT-TYPE-ALLOWLIST'},\n                                                  'rule_id': {'$ref': '#/$defs/id'}},\n                                   'required': ['rule_id',\n                                                'primitive_id',\n                                                'op',\n                                                'evidence_refs',\n                                                'params'],\n                                   'type': 'object'},\n                                  {'additionalProperties': False,\n                                   'properties': {'evidence_refs': {'$ref': '#/$defs/evidenceRefs'},\n                                                  'op': {'const': 'request_size_limit'},\n                                                  'params': {'additionalProperties': False,\n                                                             'properties': {'max_bytes': {'maximum': 1073741824,\n                                                                                          'minimum': 0,\n                                                                                          'type': 'integer'},\n                                                                            'on_missing': {'enum': ['deny',\n                                                                                                    'skip']},\n                                                                            'path': {'$ref': '#/$defs/pointer'}},\n                                                             'required': ['path',\n                                                                          'max_bytes',\n                                                                          'on_missing'],\n                                                             'type': 'object'},\n                                                  'primitive_id': {'const': 'SP-REQUEST-SIZE-LIMIT'},\n                                                  'rule_id': {'$ref': '#/$defs/id'}},\n                                   'required': ['rule_id',\n                                                'primitive_id',\n                                                'op',\n                                                'evidence_refs',\n                                                'params'],\n                                   'type': 'object'},\n                                  {'additionalProperties': False,\n                                   'properties': {'evidence_refs': {'$ref': '#/$defs/evidenceRefs'},\n                                                  'op': {'const': 'allowed_fields'},\n                                                  'params': {'additionalProperties': False,\n                                                             'properties': {'fields': {'items': {'maxLength': 256,\n                                                                                                 'minLength': 1,\n                                                                                                 'type': 'string'},\n                                                                                       'maxItems': 512,\n                                                                                       'minItems': 1,\n                                                                                       'type': 'array',\n                                                                                       'uniqueItems': True},\n                                                                            'on_missing': {'enum': ['deny',\n                                                                                                    'skip']},\n                                                                            'path': {'$ref': '#/$defs/pointer'}},\n                                                             'required': ['fields'],\n                                                             'type': 'object'},\n                                                  'primitive_id': {'const': 'SP-OBJECT-PROPERTY-ALLOWLIST'},\n                                                  'rule_id': {'$ref': '#/$defs/id'}},\n                                   'required': ['rule_id',\n                                                'primitive_id',\n                                                'op',\n                                                'evidence_refs',\n                                                'params'],\n                                   'type': 'object'},\n                                  {'additionalProperties': False,\n                                   'properties': {'evidence_refs': {'$ref': '#/$defs/evidenceRefs'},\n                                                  'op': {'const': 'required'},\n                                                  'params': {'additionalProperties': False,\n                                                             'properties': {'allow_null': {'type': 'boolean'},\n                                                                            'path': {'$ref': '#/$defs/pointer'}},\n                                                             'required': ['path',\n                                                                          'allow_null'],\n                                                             'type': 'object'},\n                                                  'primitive_id': {'const': 'SP-PRESENCE-NULLABILITY'},\n                                                  'rule_id': {'$ref': '#/$defs/id'}},\n                                   'required': ['rule_id',\n                                                'primitive_id',\n                                                'op',\n                                                'evidence_refs',\n                                                'params'],\n                                   'type': 'object'},\n                                  {'additionalProperties': False,\n                                   'properties': {'evidence_refs': {'$ref': '#/$defs/evidenceRefs'},\n                                                  'op': {'const': 'strict_type'},\n                                                  'params': {'additionalProperties': False,\n                                                             'properties': {'expected_type': {'enum': ['object',\n                                                                                                       'array',\n                                                                                                       'string',\n                                                                                                       'boolean',\n                                                                                                       'integer',\n                                                                                                       'number',\n                                                                                                       'null']},\n                                                                            'on_missing': {'enum': ['deny',\n                                                                                                    'skip']},\n                                                                            'path': {'$ref': '#/$defs/pointer'}},\n                                                             'required': ['path',\n                                                                          'expected_type',\n                                                                          'on_missing'],\n                                                             'type': 'object'},\n                                                  'primitive_id': {'const': 'SP-STRICT-TYPE'},\n                                                  'rule_id': {'$ref': '#/$defs/id'}},\n                                   'required': ['rule_id',\n                                                'primitive_id',\n                                                'op',\n                                                'evidence_refs',\n                                                'params'],\n                                   'type': 'object'},\n                                  {'additionalProperties': False,\n                                   'properties': {'evidence_refs': {'$ref': '#/$defs/evidenceRefs'},\n                                                  'op': {'const': 'length_cardinality'},\n                                                  'params': {'additionalProperties': False,\n                                                             'properties': {'max': {'minimum': 0,\n                                                                                    'type': 'integer'},\n                                                                            'min': {'minimum': 0,\n                                                                                    'type': 'integer'},\n                                                                            'on_missing': {'enum': ['deny',\n                                                                                                    'skip']},\n                                                                            'path': {'$ref': '#/$defs/pointer'}},\n                                                             'required': ['path',\n                                                                          'min',\n                                                                          'max',\n                                                                          'on_missing'],\n                                                             'type': 'object'},\n                                                  'primitive_id': {'const': 'SP-LENGTH-CARDINALITY-BOUNDS'},\n                                                  'rule_id': {'$ref': '#/$defs/id'}},\n                                   'required': ['rule_id',\n                                                'primitive_id',\n                                                'op',\n                                                'evidence_refs',\n                                                'params'],\n                                   'type': 'object'},\n                                  {'additionalProperties': False,\n                                   'properties': {'evidence_refs': {'$ref': '#/$defs/evidenceRefs'},\n                                                  'op': {'const': 'number_range_precision'},\n                                                  'params': {'additionalProperties': False,\n                                                             'anyOf': [{'required': ['min']},\n                                                                       {'required': ['max']},\n                                                                       {'required': ['max_scale']}],\n                                                             'properties': {'max': {'type': 'number'},\n                                                                            'max_scale': {'maximum': 18,\n                                                                                          'minimum': 0,\n                                                                                          'type': 'integer'},\n                                                                            'min': {'type': 'number'},\n                                                                            'on_missing': {'enum': ['deny',\n                                                                                                    'skip']},\n                                                                            'path': {'$ref': '#/$defs/pointer'}},\n                                                             'required': ['path',\n                                                                          'on_missing'],\n                                                             'type': 'object'},\n                                                  'primitive_id': {'const': 'SP-NUMERIC-RANGE-PRECISION'},\n                                                  'rule_id': {'$ref': '#/$defs/id'}},\n                                   'required': ['rule_id',\n                                                'primitive_id',\n                                                'op',\n                                                'evidence_refs',\n                                                'params'],\n                                   'type': 'object'},\n                                  {'additionalProperties': False,\n                                   'properties': {'evidence_refs': {'$ref': '#/$defs/evidenceRefs'},\n                                                  'op': {'const': 'enum_allowlist'},\n                                                  'params': {'additionalProperties': False,\n                                                             'properties': {'on_missing': {'enum': ['deny',\n                                                                                                    'skip']},\n                                                                            'path': {'$ref': '#/$defs/pointer'},\n                                                                            'values': {'items': {'type': ['string',\n                                                                                                          'number',\n                                                                                                          'integer',\n                                                                                                          'boolean',\n                                                                                                          'null']},\n                                                                                       'maxItems': 256,\n                                                                                       'minItems': 1,\n                                                                                       'type': 'array',\n                                                                                       'uniqueItems': True}},\n                                                             'required': ['path',\n                                                                          'values',\n                                                                          'on_missing'],\n                                                             'type': 'object'},\n                                                  'primitive_id': {'const': 'SP-ENUM-ALLOWLIST'},\n                                                  'rule_id': {'$ref': '#/$defs/id'}},\n                                   'required': ['rule_id',\n                                                'primitive_id',\n                                                'op',\n                                                'evidence_refs',\n                                                'params'],\n                                   'type': 'object'},\n                                  {'additionalProperties': False,\n                                   'properties': {'evidence_refs': {'$ref': '#/$defs/evidenceRefs'},\n                                                  'op': {'const': 'named_validator'},\n                                                  'params': {'additionalProperties': False,\n                                                             'properties': {'on_missing': {'enum': ['deny',\n                                                                                                    'skip']},\n                                                                            'path': {'$ref': '#/$defs/pointer'},\n                                                                            'validator_id': {'enum': ['email_basic_v1',\n                                                                                                      'e164_phone_v1',\n                                                                                                      'cn_resident_id_v1',\n                                                                                                      'iso_date_v1']}},\n                                                             'required': ['path',\n                                                                          'validator_id',\n                                                                          'on_missing'],\n                                                             'type': 'object'},\n                                                  'primitive_id': {'const': 'SP-STRUCTURED-FORMAT'},\n                                                  'rule_id': {'$ref': '#/$defs/id'}},\n                                   'required': ['rule_id',\n                                                'primitive_id',\n                                                'op',\n                                                'evidence_refs',\n                                                'params'],\n                                   'type': 'object'},\n                                  {'additionalProperties': False,\n                                   'properties': {'evidence_refs': {'$ref': '#/$defs/evidenceRefs'},\n                                                  'op': {'const': 'canonical_form'},\n                                                  'params': {'additionalProperties': False,\n                                                             'properties': {'on_missing': {'enum': ['deny',\n                                                                                                    'skip']},\n                                                                            'path': {'$ref': '#/$defs/pointer'},\n                                                                            'reject_if_changed': {'const': True},\n                                                                            'strip_whitespace': {'type': 'boolean'},\n                                                                            'unicode_form': {'enum': ['NFC',\n                                                                                                      'NFKC']}},\n                                                             'required': ['path',\n                                                                          'unicode_form',\n                                                                          'strip_whitespace',\n                                                                          'reject_if_changed',\n                                                                          'on_missing'],\n                                                             'type': 'object'},\n                                                  'primitive_id': {'const': 'SP-CANONICAL-FORM'},\n                                                  'rule_id': {'$ref': '#/$defs/id'}},\n                                   'required': ['rule_id',\n                                                'primitive_id',\n                                                'op',\n                                                'evidence_refs',\n                                                'params'],\n                                   'type': 'object'},\n                                  {'additionalProperties': False,\n                                   'properties': {'evidence_refs': {'$ref': '#/$defs/evidenceRefs'},\n                                                  'op': {'const': 'date_order'},\n                                                  'params': {'additionalProperties': False,\n                                                             'properties': {'allow_equal': {'type': 'boolean'},\n                                                                            'earlier_path': {'$ref': '#/$defs/pointer'},\n                                                                            'later_path': {'$ref': '#/$defs/pointer'},\n                                                                            'on_missing': {'enum': ['deny',\n                                                                                                    'skip']}},\n                                                             'required': ['earlier_path',\n                                                                          'later_path',\n                                                                          'allow_equal',\n                                                                          'on_missing'],\n                                                             'type': 'object'},\n                                                  'primitive_id': {'const': 'SP-CROSS-FIELD-INVARIANT'},\n                                                  'rule_id': {'$ref': '#/$defs/id'}},\n                                   'required': ['rule_id',\n                                                'primitive_id',\n                                                'op',\n                                                'evidence_refs',\n                                                'params'],\n                                   'type': 'object'},\n                                  {'additionalProperties': False,\n                                   'properties': {'evidence_refs': {'$ref': '#/$defs/evidenceRefs'},\n                                                  'op': {'const': 'age_matches_dob'},\n                                                  'params': {'additionalProperties': False,\n                                                             'properties': {'age_path': {'$ref': '#/$defs/pointer'},\n                                                                            'as_of_path': {'$ref': '#/$defs/pointer'},\n                                                                            'dob_path': {'$ref': '#/$defs/pointer'},\n                                                                            'on_missing': {'enum': ['deny',\n                                                                                                    'skip']},\n                                                                            'tolerance_years': {'maximum': 2,\n                                                                                                'minimum': 0,\n                                                                                                'type': 'integer'}},\n                                                             'required': ['age_path',\n                                                                          'dob_path',\n                                                                          'as_of_path',\n                                                                          'tolerance_years',\n                                                                          'on_missing'],\n                                                             'type': 'object'},\n                                                  'primitive_id': {'const': 'SP-CROSS-FIELD-INVARIANT'},\n                                                  'rule_id': {'$ref': '#/$defs/id'}},\n                                   'required': ['rule_id',\n                                                'primitive_id',\n                                                'op',\n                                                'evidence_refs',\n                                                'params'],\n                                   'type': 'object'},\n                                  {'additionalProperties': False,\n                                   'properties': {'evidence_refs': {'$ref': '#/$defs/evidenceRefs'},\n                                                  'op': {'const': 'state_transition'},\n                                                  'params': {'additionalProperties': False,\n                                                             'properties': {'current_state_path': {'$ref': '#/$defs/pointer'},\n                                                                            'on_missing': {'enum': ['deny',\n                                                                                                    'skip']},\n                                                                            'requested_state_path': {'$ref': '#/$defs/pointer'},\n                                                                            'transitions': {'items': {'additionalProperties': False,\n                                                                                                      'properties': {'from': {'minLength': 1,\n                                                                                                                              'type': 'string'},\n                                                                                                                     'to': {'minLength': 1,\n                                                                                                                            'type': 'string'}},\n                                                                                                      'required': ['from',\n                                                                                                                   'to'],\n                                                                                                      'type': 'object'},\n                                                                                            'maxItems': 128,\n                                                                                            'minItems': 1,\n                                                                                            'type': 'array',\n                                                                                            'uniqueItems': True}},\n                                                             'required': ['current_state_path',\n                                                                          'requested_state_path',\n                                                                          'transitions',\n                                                                          'on_missing'],\n                                                             'type': 'object'},\n                                                  'primitive_id': {'const': 'SP-SERVER-AUTHORITY-WORKFLOW'},\n                                                  'rule_id': {'$ref': '#/$defs/id'}},\n                                   'required': ['rule_id',\n                                                'primitive_id',\n                                                'op',\n                                                'evidence_refs',\n                                                'params'],\n                                   'type': 'object'},\n                                  {'additionalProperties': False,\n                                   'properties': {'evidence_refs': {'$ref': '#/$defs/evidenceRefs'},\n                                                  'op': {'const': 'server_derived_reject'},\n                                                  'params': {'additionalProperties': False,\n                                                             'properties': {'path': {'$ref': '#/$defs/pointer'}},\n                                                             'required': ['path'],\n                                                             'type': 'object'},\n                                                  'primitive_id': {'const': 'SP-SERVER-AUTHORITY-WORKFLOW'},\n                                                  'rule_id': {'$ref': '#/$defs/id'}},\n                                   'required': ['rule_id',\n                                                'primitive_id',\n                                                'op',\n                                                'evidence_refs',\n                                                'params'],\n                                   'type': 'object'},\n                                  {'additionalProperties': False,\n                                   'properties': {'evidence_refs': {'$ref': '#/$defs/evidenceRefs'},\n                                                  'op': {'const': 'bounded_guard_dnf'},\n                                                  'params': {'additionalProperties': False,\n                                                             'properties': {'alternatives': {'items': {'additionalProperties': False,\n                                                                                                       'properties': {'clauses': {'items': {'additionalProperties': False,\n                                                                                                                                            'properties': {'kind': {'enum': ['scalar_compare',\n                                                                                                                                                                             'date_compare',\n                                                                                                                                                                             'cardinality_compare']},\n                                                                                                                                                           'left_path': {'maxLength': 512,\n                                                                                                                                                                         'pattern': '^/(request|trusted)(/([^~/]|~0|~1)+|/\\\\*)*$',\n                                                                                                                                                                         'type': 'string'},\n                                                                                                                                                           'operator': {'enum': ['eq',\n                                                                                                                                                                                 'ne',\n                                                                                                                                                                                 'lt',\n                                                                                                                                                                                 'lte',\n                                                                                                                                                                                 'gt',\n                                                                                                                                                                                 'gte']},\n                                                                                                                                                           'right_path': {'maxLength': 512,\n                                                                                                                                                                          'type': 'string'},\n                                                                                                                                                           'right_source': {'enum': ['path',\n                                                                                                                                                                                     'literal']},\n                                                                                                                                                           'right_value': {'type': ['string',\n                                                                                                                                                                                    'number',\n                                                                                                                                                                                    'integer',\n                                                                                                                                                                                    'boolean',\n                                                                                                                                                                                    'null']}},\n                                                                                                                                            'required': ['kind',\n                                                                                                                                                         'left_path',\n                                                                                                                                                         'operator',\n                                                                                                                                                         'right_source',\n                                                                                                                                                         'right_path',\n                                                                                                                                                         'right_value'],\n                                                                                                                                            'type': 'object'},\n                                                                                                                                  'maxItems': 4,\n                                                                                                                                  'minItems': 1,\n                                                                                                                                  'type': 'array'}},\n                                                                                                       'required': ['clauses'],\n                                                                                                       'type': 'object'},\n                                                                                             'maxItems': 4,\n                                                                                             'minItems': 1,\n                                                                                             'type': 'array'},\n                                                                            'on_missing': {'enum': ['deny',\n                                                                                                    'skip']}},\n                                                             'required': ['alternatives',\n                                                                          'on_missing'],\n                                                             'type': 'object'},\n                                                  'primitive_id': {'const': 'SP-BOUNDED-BUSINESS-GUARD'},\n                                                  'rule_id': {'$ref': '#/$defs/id'}},\n                                   'required': ['rule_id',\n                                                'primitive_id',\n                                                'op',\n                                                'evidence_refs',\n                                                'params'],\n                                   'type': 'object'}]},\n               'target': {'additionalProperties': False,\n                          'properties': {'operation': {'maxLength': 256,\n                                                       'minLength': 1,\n                                                       'type': 'string'},\n                                         'system': {'maxLength': 128,\n                                                    'minLength': 1,\n                                                    'type': 'string'},\n                                         'version': {'maxLength': 64,\n                                                     'minLength': 1,\n                                                     'type': 'string'}},\n                          'required': ['system', 'version', 'operation'],\n                          'type': 'object'}},\n     '$id': 'urn:ec:field-security-model-ir:v3',\n     '$schema': 'https://json-schema.org/draft/2020-12/schema',\n     'oneOf': [{'$ref': '#/$defs/propose'}, {'$ref': '#/$defs/abstain'}],\n     'title': 'EC Field Security Model IR V3'}\n\nOn instance:\n    {'ir_version': 'EC-FIELD-MODEL-IR-V3',\n     'candidate_id': 'CAND-FSV-S04-01',\n     'decision': 'propose',\n     'target': {'operation': 'POST /api/resource/Lead',\n                'system': 'ERPNext',\n                'version': '16.0.0'},\n     'policy_id': 'POL-FSV-S04-LEAD-CREATE',\n     'evidence_refs': ['VIS-FSV-S04-01',\n                       'VIS-FSV-S04-02',\n                       'VIS-FSV-S04-RUNTIME-ABI'],\n     'rules': [{'rule_id': 'RULE-FSV-S04-BODY-TYPE',\n                'primitive_id': 'SP-STRICT-TYPE',\n                'op': 'strict_type',\n                'evidence_refs': ['VIS-FSV-S04-01',\n                                  'VIS-FSV-S04-RUNTIME-ABI'],\n                'params': {'path': '/request/body',\n                           'expected_type': 'object',\n                           'on_missing': 'deny'}},\n               {'rule_id': 'RULE-FSV-S04-EMAIL-TYPE',\n                'primitive_id': 'SP-STRICT-TYPE',\n                'op': 'strict_type',\n                'evidence_refs': ['VIS-FSV-S04-02',\n                                  'VIS-FSV-S04-RUNTIME-ABI'],\n                'params': {'path': '/request/body/email_id',\n                           'expected_type': 'string',\n                           'on_missing': 'skip'}},\n               {'rule_id': 'RULE-FSV-S04-EMAIL-FORMAT',\n                'primitive_id': 'SP-STRUCTURED-FORMAT',\n                'op': 'named_validator',\n                'evidence_refs': ['VIS-FSV-S04-02',\n                                  'VIS-FSV-S04-RUNTIME-ABI'],\n                'params': {'path': '/request/body/email_id',\n                           'validator_id': 'email_basic_v1',\n                           'on_missing': 'skip'}}],\n     'reason_code': 'none',\n     'missing_evidence': []}",
+    "completed_at": "2026-10-14T03:47:00.622068+00:00"
+  },
+  {
+    "index": 4,
+    "task": "FSV-S04",
+    "stage": "ecas_generate",
+    "smoke": true,
+    "started_at": "2026-10-14T03:53:40.247694+00:00",
+    "status": "COMPLETED",
+    "prompt_path": "/mnt/d/lunwen/EC-CSI投稿/working/exploration/20261014_external_baseline_pilot/calls/04_FSV-S04_ecas_generate/prompt.txt",
+    "prompt_sha256": "ab58e0d474b6ee9dde4c6d71d054c1fa765eb1de20a8fbd1e614b797013aa818",
+    "prompt_bytes": 32062,
+    "estimated_prompt_tokens": 16159,
+    "token_count_kind": "UTF8_BYTES_DIV_2_ESTIMATE_NOT_EXACT_GLM_TOKENIZER",
+    "raw_response_path": "/mnt/d/lunwen/EC-CSI投稿/working/exploration/20261014_external_baseline_pilot/calls/04_FSV-S04_ecas_generate/response.raw.json",
+    "max_tokens": 16384,
+    "retry_count": 0,
+    "wrapper_exit": 0,
+    "latency_seconds": 20.703,
+    "raw_response_sha256": "c52cb03cc0d5e7c7a7d6d291ed3b39148003012b9ce0134d002f0a1c4e066e47",
+    "raw_response_bytes": 5885,
+    "returned_model": "glm-5.2",
+    "finish_reason": "stop",
+    "usage": {
+      "completion_tokens": 1560,
+      "completion_tokens_details": {
+        "reasoning_tokens": 1249
+      },
+      "prompt_tokens": 8247,
+      "prompt_tokens_details": {
+        "cached_tokens": 0
+      },
+      "total_tokens": 9807
+    },
+    "cost_status": "not_reported_by_provider",
+    "capture_mode": "direct_before_parse",
+    "content_chars": 688,
+    "parse_status": "PASS",
+    "completeness_gate": "PASS",
+    "completed_at": "2026-10-14T03:54:01.006172+00:00",
+    "output_path": "/mnt/d/lunwen/EC-CSI投稿/working/exploration/20261014_external_baseline_pilot/calls/04_FSV-S04_ecas_generate/parsed_output.json"
+  },
+  {
+    "index": 5,
+    "task": "FSV-B06",
+    "stage": "p2p_detect",
+    "smoke": false,
+    "started_at": "2026-10-14T03:55:50.753726+00:00",
+    "status": "COMPLETED",
+    "prompt_path": "/mnt/d/lunwen/EC-CSI投稿/working/exploration/20261014_external_baseline_pilot/calls/05_FSV-B06_p2p_detect/prompt.txt",
+    "prompt_sha256": "3248899b3e881f268e76bac2fd92ab4d516d0b0e8086e85d48a8b32a8d64bc2b",
+    "prompt_bytes": 4114,
+    "estimated_prompt_tokens": 2185,
+    "token_count_kind": "UTF8_BYTES_DIV_2_ESTIMATE_NOT_EXACT_GLM_TOKENIZER",
+    "raw_response_path": "/mnt/d/lunwen/EC-CSI投稿/working/exploration/20261014_external_baseline_pilot/calls/05_FSV-B06_p2p_detect/response.raw.json",
+    "max_tokens": 16384,
+    "retry_count": 0,
+    "wrapper_exit": 0,
+    "latency_seconds": 11.169,
+    "raw_response_sha256": "742bdcc0a9a7d3444e511bb6ddf10868865c065bc46451c33596a3b28c5358a4",
+    "raw_response_bytes": 3051,
+    "returned_model": "glm-5.2",
+    "finish_reason": "stop",
+    "usage": {
+      "completion_tokens": 596,
+      "completion_tokens_details": {
+        "reasoning_tokens": 388
+      },
+      "prompt_tokens": 1125,
+      "prompt_tokens_details": {
+        "cached_tokens": 0
+      },
+      "total_tokens": 1721
+    },
+    "cost_status": "not_reported_by_provider",
+    "capture_mode": "direct_before_parse",
+    "content_chars": 734,
+    "parse_status": "PASS",
+    "completeness_gate": "PASS",
+    "completed_at": "2026-10-14T03:56:01.958883+00:00",
+    "output_path": "/mnt/d/lunwen/EC-CSI投稿/working/exploration/20261014_external_baseline_pilot/calls/05_FSV-B06_p2p_detect/parsed_output.json"
+  },
+  {
+    "index": 6,
+    "task": "FSV-B06",
+    "stage": "p2p_extract",
+    "smoke": false,
+    "started_at": "2026-10-14T03:56:02.333708+00:00",
+    "status": "STOPPED_PROTOCOL_OR_TRANSPORT",
+    "prompt_path": "/mnt/d/lunwen/EC-CSI投稿/working/exploration/20261014_external_baseline_pilot/calls/06_FSV-B06_p2p_extract/prompt.txt",
+    "prompt_sha256": "3af9be90ecd01b99f4e525bd6d68cbe1cdba0eca810f1e676d8c3dde59a9d2db",
+    "prompt_bytes": 4797,
+    "estimated_prompt_tokens": 2527,
+    "token_count_kind": "UTF8_BYTES_DIV_2_ESTIMATE_NOT_EXACT_GLM_TOKENIZER",
+    "raw_response_path": "/mnt/d/lunwen/EC-CSI投稿/working/exploration/20261014_external_baseline_pilot/calls/06_FSV-B06_p2p_extract/response.raw.json",
+    "max_tokens": 16384,
+    "retry_count": 0,
+    "wrapper_exit": 0,
+    "latency_seconds": 8.006,
+    "raw_response_sha256": "05f7d4b6f347c8856774608bebe486f3e9cb98bf6c20cfac257dcfbeb9d50928",
+    "raw_response_bytes": 2326,
+    "returned_model": "glm-5.2",
+    "finish_reason": "stop",
+    "usage": {
+      "completion_tokens": 537,
+      "completion_tokens_details": {
+        "reasoning_tokens": 270
+      },
+      "prompt_tokens": 1268,
+      "prompt_tokens_details": {
+        "cached_tokens": 0
+      },
+      "total_tokens": 1805
+    },
+    "cost_status": "not_reported_by_provider",
+    "capture_mode": "direct_before_parse",
+    "content_chars": 815,
+    "error_type": "ValueError",
+    "error": "Invalid extraction status",
+    "completed_at": "2026-10-14T03:56:10.376187+00:00",
+    "local_recovery_status": "RECOVERED_LOCAL_STATUS_ALIAS",
+    "recovered_output_path": "/mnt/d/lunwen/EC-CSI投稿/working/exploration/20261014_external_baseline_pilot/calls/06_FSV-B06_p2p_extract/recovered_output.json",
+    "recovered_output_sha256": "8a9358ac601dd933f29173680be40e2a825a3c1f608585572a9e926212c4f08c"
+  },
+  {
+    "index": 7,
+    "task": "FSV-B06",
+    "stage": "p2p_rego",
+    "smoke": false,
+    "started_at": "2026-10-14T04:02:03.700674+00:00",
+    "status": "COMPLETED",
+    "prompt_path": "/mnt/d/lunwen/EC-CSI投稿/working/exploration/20261014_external_baseline_pilot/calls/07_FSV-B06_p2p_rego/prompt.txt",
+    "prompt_sha256": "7914d4f2fe68ba970f5c9d95671c55388a20128eaf6059c5237252bd488fe0ee",
+    "prompt_bytes": 5504,
+    "estimated_prompt_tokens": 2880,
+    "token_count_kind": "UTF8_BYTES_DIV_2_ESTIMATE_NOT_EXACT_GLM_TOKENIZER",
+    "raw_response_path": "/mnt/d/lunwen/EC-CSI投稿/working/exploration/20261014_external_baseline_pilot/calls/07_FSV-B06_p2p_rego/response.raw.json",
+    "max_tokens": 16384,
+    "retry_count": 0,
+    "wrapper_exit": 0,
+    "latency_seconds": 12.983,
+    "raw_response_sha256": "9bec9293ccc771fc44e23f31edc16b81855531d6225c8e4e0e99b3a621c8a44b",
+    "raw_response_bytes": 2907,
+    "returned_model": "glm-5.2",
+    "finish_reason": "stop",
+    "usage": {
+      "completion_tokens": 673,
+      "completion_tokens_details": {
+        "reasoning_tokens": 512
+      },
+      "prompt_tokens": 1457,
+      "prompt_tokens_details": {
+        "cached_tokens": 0
+      },
+      "total_tokens": 2130
+    },
+    "cost_status": "not_reported_by_provider",
+    "capture_mode": "direct_before_parse",
+    "content_chars": 517,
+    "parse_status": "PASS",
+    "completeness_gate": "PASS",
+    "completed_at": "2026-10-14T04:02:16.735923+00:00",
+    "output_path": "/mnt/d/lunwen/EC-CSI投稿/working/exploration/20261014_external_baseline_pilot/calls/07_FSV-B06_p2p_rego/parsed_output.json"
+  },
+  {
+    "index": 8,
+    "task": "FSV-B06",
+    "stage": "p2p_tests",
+    "smoke": false,
+    "started_at": "2026-10-14T04:02:17.163849+00:00",
+    "status": "COMPLETED",
+    "prompt_path": "/mnt/d/lunwen/EC-CSI投稿/working/exploration/20261014_external_baseline_pilot/calls/08_FSV-B06_p2p_tests/prompt.txt",
+    "prompt_sha256": "16ac03545c24be9eaeb702d49c68b0951ac76175b77ccd3982414b74b9287703",
+    "prompt_bytes": 5558,
+    "estimated_prompt_tokens": 2907,
+    "token_count_kind": "UTF8_BYTES_DIV_2_ESTIMATE_NOT_EXACT_GLM_TOKENIZER",
+    "raw_response_path": "/mnt/d/lunwen/EC-CSI投稿/working/exploration/20261014_external_baseline_pilot/calls/08_FSV-B06_p2p_tests/response.raw.json",
+    "max_tokens": 16384,
+    "retry_count": 0,
+    "wrapper_exit": 0,
+    "latency_seconds": 10.625,
+    "raw_response_sha256": "b389a1e63aa3a2f4e96df81387c19339e9a5cb74d95384fbf2ae29a81de13eea",
+    "raw_response_bytes": 3119,
+    "returned_model": "glm-5.2",
+    "finish_reason": "stop",
+    "usage": {
+      "completion_tokens": 763,
+      "completion_tokens_details": {
+        "reasoning_tokens": 484
+      },
+      "prompt_tokens": 1453,
+      "prompt_tokens_details": {
+        "cached_tokens": 0
+      },
+      "total_tokens": 2216
+    },
+    "cost_status": "not_reported_by_provider",
+    "capture_mode": "direct_before_parse",
+    "content_chars": 580,
+    "parse_status": "PASS",
+    "completeness_gate": "PASS",
+    "completed_at": "2026-10-14T04:02:27.776921+00:00",
+    "output_path": "/mnt/d/lunwen/EC-CSI投稿/working/exploration/20261014_external_baseline_pilot/calls/08_FSV-B06_p2p_tests/parsed_output.json"
+  },
+  {
+    "index": 9,
+    "task": "FSV-B06",
+    "stage": "repair",
+    "smoke": false,
+    "started_at": "2026-10-14T04:02:28.413265+00:00",
+    "status": "COMPLETED",
+    "prompt_path": "/mnt/d/lunwen/EC-CSI投稿/working/exploration/20261014_external_baseline_pilot/calls/09_FSV-B06_repair/prompt.txt",
+    "prompt_sha256": "dbbc55ef8489db8efe23c63556a471e8fe7dc30517774f1e939b2b1ff047d9e7",
+    "prompt_bytes": 8440,
+    "estimated_prompt_tokens": 4348,
+    "token_count_kind": "UTF8_BYTES_DIV_2_ESTIMATE_NOT_EXACT_GLM_TOKENIZER",
+    "raw_response_path": "/mnt/d/lunwen/EC-CSI投稿/working/exploration/20261014_external_baseline_pilot/calls/09_FSV-B06_repair/response.raw.json",
+    "max_tokens": 16384,
+    "retry_count": 0,
+    "wrapper_exit": 0,
+    "latency_seconds": 9.904,
+    "raw_response_sha256": "d57e85261b5c098cfb6a7476bb2ccc4944c5ae0ef36866e02f4e248c4eb56240",
+    "raw_response_bytes": 2765,
+    "returned_model": "glm-5.2",
+    "finish_reason": "stop",
+    "usage": {
+      "completion_tokens": 574,
+      "completion_tokens_details": {
+        "reasoning_tokens": 412
+      },
+      "prompt_tokens": 2197,
+      "prompt_tokens_details": {
+        "cached_tokens": 0
+      },
+      "total_tokens": 2771
+    },
+    "cost_status": "not_reported_by_provider",
+    "capture_mode": "direct_before_parse",
+    "content_chars": 531,
+    "parse_status": "PASS",
+    "completeness_gate": "PASS",
+    "completed_at": "2026-10-14T04:02:38.362423+00:00",
+    "output_path": "/mnt/d/lunwen/EC-CSI投稿/working/exploration/20261014_external_baseline_pilot/calls/09_FSV-B06_repair/parsed_output.json"
+  },
+  {
+    "index": 10,
+    "task": "FSV-B06",
+    "stage": "autopac_generate",
+    "smoke": false,
+    "started_at": "2026-10-14T04:02:39.045906+00:00",
+    "status": "COMPLETED",
+    "prompt_path": "/mnt/d/lunwen/EC-CSI投稿/working/exploration/20261014_external_baseline_pilot/calls/10_FSV-B06_autopac_generate/prompt.txt",
+    "prompt_sha256": "2e431d0ad51ddb495b243d41e88998f4ad5190866a3a2d8b378e05b5e86fcf3d",
+    "prompt_bytes": 4192,
+    "estimated_prompt_tokens": 2224,
+    "token_count_kind": "UTF8_BYTES_DIV_2_ESTIMATE_NOT_EXACT_GLM_TOKENIZER",
+    "raw_response_path": "/mnt/d/lunwen/EC-CSI投稿/working/exploration/20261014_external_baseline_pilot/calls/10_FSV-B06_autopac_generate/response.raw.json",
+    "max_tokens": 16384,
+    "retry_count": 0,
+    "wrapper_exit": 0,
+    "latency_seconds": 11.276,
+    "raw_response_sha256": "c82ff3b4cb16c79036b4c4d8a2afd40ba84576101ca8f4f07b0d2064eacc223d",
+    "raw_response_bytes": 3910,
+    "returned_model": "glm-5.2",
+    "finish_reason": "stop",
+    "usage": {
+      "completion_tokens": 868,
+      "completion_tokens_details": {
+        "reasoning_tokens": 651
+      },
+      "prompt_tokens": 1148,
+      "prompt_tokens_details": {
+        "cached_tokens": 0
+      },
+      "total_tokens": 2016
+    },
+    "cost_status": "not_reported_by_provider",
+    "capture_mode": "direct_before_parse",
+    "content_chars": 743,
+    "parse_status": "PASS",
+    "completeness_gate": "PASS",
+    "completed_at": "2026-10-14T04:02:50.366738+00:00",
+    "output_path": "/mnt/d/lunwen/EC-CSI投稿/working/exploration/20261014_external_baseline_pilot/calls/10_FSV-B06_autopac_generate/parsed_output.json"
+  },
+  {
+    "index": 11,
+    "task": "FSV-B06",
+    "stage": "autopac_judge",
+    "smoke": false,
+    "started_at": "2026-10-14T04:02:50.793166+00:00",
+    "status": "COMPLETED",
+    "prompt_path": "/mnt/d/lunwen/EC-CSI投稿/working/exploration/20261014_external_baseline_pilot/calls/11_FSV-B06_autopac_judge/prompt.txt",
+    "prompt_sha256": "a2fdf12d2f353193dc806a288a7a17e1b6ae81cd8735363a45139f788366abe2",
+    "prompt_bytes": 4766,
+    "estimated_prompt_tokens": 2511,
+    "token_count_kind": "UTF8_BYTES_DIV_2_ESTIMATE_NOT_EXACT_GLM_TOKENIZER",
+    "raw_response_path": "/mnt/d/lunwen/EC-CSI投稿/working/exploration/20261014_external_baseline_pilot/calls/11_FSV-B06_autopac_judge/response.raw.json",
+    "max_tokens": 16384,
+    "retry_count": 0,
+    "wrapper_exit": 0,
+    "latency_seconds": 14.331,
+    "raw_response_sha256": "e6f7fba2d0d0bda094a47ab87b3af75ef11a182bec5add5447710144e9e0c5c7",
+    "raw_response_bytes": 5453,
+    "returned_model": "glm-5.2",
+    "finish_reason": "stop",
+    "usage": {
+      "completion_tokens": 1124,
+      "completion_tokens_details": {
+        "reasoning_tokens": 981
+      },
+      "prompt_tokens": 1288,
+      "prompt_tokens_details": {
+        "cached_tokens": 0
+      },
+      "total_tokens": 2412
+    },
+    "cost_status": "not_reported_by_provider",
+    "capture_mode": "direct_before_parse",
+    "content_chars": 456,
+    "parse_status": "PASS",
+    "completeness_gate": "PASS",
+    "completed_at": "2026-10-14T04:03:06.409031+00:00",
+    "output_path": "/mnt/d/lunwen/EC-CSI投稿/working/exploration/20261014_external_baseline_pilot/calls/11_FSV-B06_autopac_judge/parsed_output.json"
+  },
+  {
+    "index": 12,
+    "task": "FSV-B06",
+    "stage": "repair",
+    "smoke": false,
+    "started_at": "2026-10-14T04:03:06.992962+00:00",
+    "status": "COMPLETED",
+    "prompt_path": "/mnt/d/lunwen/EC-CSI投稿/working/exploration/20261014_external_baseline_pilot/calls/12_FSV-B06_repair/prompt.txt",
+    "prompt_sha256": "c4df70b0d5ed7ae9759a8b4759066606a40bd40af0599573001f3f7d8da1ecdf",
+    "prompt_bytes": 6118,
+    "estimated_prompt_tokens": 3187,
+    "token_count_kind": "UTF8_BYTES_DIV_2_ESTIMATE_NOT_EXACT_GLM_TOKENIZER",
+    "raw_response_path": "/mnt/d/lunwen/EC-CSI投稿/working/exploration/20261014_external_baseline_pilot/calls/12_FSV-B06_repair/response.raw.json",
+    "max_tokens": 16384,
+    "retry_count": 0,
+    "wrapper_exit": 0,
+    "latency_seconds": 168.766,
+    "raw_response_sha256": "e493a200e628a0c00a5924514cfbd302b9b4c285d4cee162b35fbdeb3eec3011",
+    "raw_response_bytes": 61276,
+    "returned_model": "glm-5.2",
+    "finish_reason": "stop",
+    "usage": {
+      "completion_tokens": 13290,
+      "completion_tokens_details": {
+        "reasoning_tokens": 13037
+      },
+      "prompt_tokens": 1623,
+      "prompt_tokens_details": {
+        "cached_tokens": 0
+      },
+      "total_tokens": 14913
+    },
+    "cost_status": "not_reported_by_provider",
+    "capture_mode": "direct_before_parse",
+    "content_chars": 895,
+    "parse_status": "PASS",
+    "completeness_gate": "PASS",
+    "completed_at": "2026-10-14T04:06:02.519362+00:00",
+    "output_path": "/mnt/d/lunwen/EC-CSI投稿/working/exploration/20261014_external_baseline_pilot/calls/12_FSV-B06_repair/parsed_output.json"
+  },
+  {
+    "index": 13,
+    "task": "FSV-B06",
+    "stage": "ecas_generate",
+    "smoke": false,
+    "started_at": "2026-10-14T04:06:03.087977+00:00",
+    "status": "COMPLETED",
+    "prompt_path": "/mnt/d/lunwen/EC-CSI投稿/working/exploration/20261014_external_baseline_pilot/calls/13_FSV-B06_ecas_generate/prompt.txt",
+    "prompt_sha256": "0e330e748141a712a1e0d7f7b8d30a8800004b51fb25809357523f62e7345313",
+    "prompt_bytes": 15744,
+    "estimated_prompt_tokens": 8000,
+    "token_count_kind": "UTF8_BYTES_DIV_2_ESTIMATE_NOT_EXACT_GLM_TOKENIZER",
+    "raw_response_path": "/mnt/d/lunwen/EC-CSI投稿/working/exploration/20261014_external_baseline_pilot/calls/13_FSV-B06_ecas_generate/response.raw.json",
+    "max_tokens": 16384,
+    "retry_count": 0,
+    "wrapper_exit": 0,
+    "latency_seconds": 29.83,
+    "raw_response_sha256": "ea75f6f68d9ba16ef472bc27f6ee0f2b734a424e1bd970fd97790f0ff7c35ae8",
+    "raw_response_bytes": 8230,
+    "returned_model": "glm-5.2",
+    "finish_reason": "stop",
+    "usage": {
+      "completion_tokens": 1809,
+      "completion_tokens_details": {
+        "reasoning_tokens": 1535
+      },
+      "prompt_tokens": 4014,
+      "prompt_tokens_details": {
+        "cached_tokens": 0
+      },
+      "total_tokens": 5823
+    },
+    "cost_status": "not_reported_by_provider",
+    "capture_mode": "direct_before_parse",
+    "content_chars": 926,
+    "parse_status": "PASS",
+    "completeness_gate": "PASS",
+    "completed_at": "2026-10-14T04:06:34.247346+00:00",
+    "output_path": "/mnt/d/lunwen/EC-CSI投稿/working/exploration/20261014_external_baseline_pilot/calls/13_FSV-B06_ecas_generate/parsed_output.json"
+  },
+  {
+    "index": 14,
+    "task": "FSV-S02",
+    "stage": "p2p_detect",
+    "smoke": false,
+    "started_at": "2026-10-14T04:06:34.683969+00:00",
+    "status": "COMPLETED",
+    "prompt_path": "/mnt/d/lunwen/EC-CSI投稿/working/exploration/20261014_external_baseline_pilot/calls/14_FSV-S02_p2p_detect/prompt.txt",
+    "prompt_sha256": "b27eea78185e7b7ff962a2f32455a864aa494a9bfd55fecf3f25f0af2e9f922b",
+    "prompt_bytes": 2998,
+    "estimated_prompt_tokens": 1627,
+    "token_count_kind": "UTF8_BYTES_DIV_2_ESTIMATE_NOT_EXACT_GLM_TOKENIZER",
+    "raw_response_path": "/mnt/d/lunwen/EC-CSI投稿/working/exploration/20261014_external_baseline_pilot/calls/14_FSV-S02_p2p_detect/response.raw.json",
+    "max_tokens": 16384,
+    "retry_count": 0,
+    "wrapper_exit": 0,
+    "latency_seconds": 12.118,
+    "raw_response_sha256": "3a4d918539db6515bdc003f909cf0645526ef6a7e319748dc28e84122e713974",
+    "raw_response_bytes": 3080,
+    "returned_model": "glm-5.2",
+    "finish_reason": "stop",
+    "usage": {
+      "completion_tokens": 620,
+      "completion_tokens_details": {
+        "reasoning_tokens": 514
+      },
+      "prompt_tokens": 813,
+      "prompt_tokens_details": {
+        "cached_tokens": 0
+      },
+      "total_tokens": 1433
+    },
+    "cost_status": "not_reported_by_provider",
+    "capture_mode": "direct_before_parse",
+    "content_chars": 348,
+    "parse_status": "PASS",
+    "completeness_gate": "PASS",
+    "completed_at": "2026-10-14T04:06:46.846256+00:00",
+    "output_path": "/mnt/d/lunwen/EC-CSI投稿/working/exploration/20261014_external_baseline_pilot/calls/14_FSV-S02_p2p_detect/parsed_output.json"
+  },
+  {
+    "index": 15,
+    "task": "FSV-S02",
+    "stage": "autopac_generate",
+    "smoke": false,
+    "started_at": "2026-10-14T04:06:47.325629+00:00",
+    "status": "COMPLETED",
+    "prompt_path": "/mnt/d/lunwen/EC-CSI投稿/working/exploration/20261014_external_baseline_pilot/calls/15_FSV-S02_autopac_generate/prompt.txt",
+    "prompt_sha256": "2310fcdce7f7cb9f2597db38558d026db208ff2bdfc2c3889c340e27f666b1cc",
+    "prompt_bytes": 3076,
+    "estimated_prompt_tokens": 1666,
+    "token_count_kind": "UTF8_BYTES_DIV_2_ESTIMATE_NOT_EXACT_GLM_TOKENIZER",
+    "raw_response_path": "/mnt/d/lunwen/EC-CSI投稿/working/exploration/20261014_external_baseline_pilot/calls/15_FSV-S02_autopac_generate/response.raw.json",
+    "max_tokens": 16384,
+    "retry_count": 0,
+    "wrapper_exit": 0,
+    "latency_seconds": 12.113,
+    "raw_response_sha256": "6cbe5572e7fd4f6b3bbaf1687a3427646b607fa259057a5b90d46ed2d17b4fdc",
+    "raw_response_bytes": 3850,
+    "returned_model": "glm-5.2",
+    "finish_reason": "stop",
+    "usage": {
+      "completion_tokens": 803,
+      "completion_tokens_details": {
+        "reasoning_tokens": 604
+      },
+      "prompt_tokens": 836,
+      "prompt_tokens_details": {
+        "cached_tokens": 0
+      },
+      "total_tokens": 1639
+    },
+    "cost_status": "not_reported_by_provider",
+    "capture_mode": "direct_before_parse",
+    "content_chars": 705,
+    "parse_status": "PASS",
+    "completeness_gate": "PASS",
+    "completed_at": "2026-10-14T04:07:00.755767+00:00",
+    "output_path": "/mnt/d/lunwen/EC-CSI投稿/working/exploration/20261014_external_baseline_pilot/calls/15_FSV-S02_autopac_generate/parsed_output.json"
+  },
+  {
+    "index": 16,
+    "task": "FSV-S02",
+    "stage": "autopac_judge",
+    "smoke": false,
+    "started_at": "2026-10-14T04:07:01.146078+00:00",
+    "status": "COMPLETED",
+    "prompt_path": "/mnt/d/lunwen/EC-CSI投稿/working/exploration/20261014_external_baseline_pilot/calls/16_FSV-S02_autopac_judge/prompt.txt",
+    "prompt_sha256": "5fa5f8cf96134a383343cec6c722fd8d48ec47ea519af1fd0844362b059e6cf4",
+    "prompt_bytes": 3612,
+    "estimated_prompt_tokens": 1934,
+    "token_count_kind": "UTF8_BYTES_DIV_2_ESTIMATE_NOT_EXACT_GLM_TOKENIZER",
+    "raw_response_path": "/mnt/d/lunwen/EC-CSI投稿/working/exploration/20261014_external_baseline_pilot/calls/16_FSV-S02_autopac_judge/response.raw.json",
+    "max_tokens": 16384,
+    "retry_count": 0,
+    "wrapper_exit": 0,
+    "latency_seconds": 18.238,
+    "raw_response_sha256": "acd94d82c97664d09f74ee572f787a35341d74a5e991613baf052cb466ca61d5",
+    "raw_response_bytes": 6240,
+    "returned_model": "glm-5.2",
+    "finish_reason": "stop",
+    "usage": {
+      "completion_tokens": 1258,
+      "completion_tokens_details": {
+        "reasoning_tokens": 1137
+      },
+      "prompt_tokens": 959,
+      "prompt_tokens_details": {
+        "cached_tokens": 0
+      },
+      "total_tokens": 2217
+    },
+    "cost_status": "not_reported_by_provider",
+    "capture_mode": "direct_before_parse",
+    "content_chars": 522,
+    "parse_status": "PASS",
+    "completeness_gate": "PASS",
+    "completed_at": "2026-10-14T04:07:19.430904+00:00",
+    "output_path": "/mnt/d/lunwen/EC-CSI投稿/working/exploration/20261014_external_baseline_pilot/calls/16_FSV-S02_autopac_judge/parsed_output.json"
+  },
+  {
+    "index": 17,
+    "task": "FSV-S02",
+    "stage": "repair",
+    "smoke": false,
+    "started_at": "2026-10-14T04:07:20.051427+00:00",
+    "status": "COMPLETED",
+    "prompt_path": "/mnt/d/lunwen/EC-CSI投稿/working/exploration/20261014_external_baseline_pilot/calls/17_FSV-S02_repair/prompt.txt",
+    "prompt_sha256": "8177f56e8f44089f5b4ef7866eadbd47059331ef1ac7dddbc59f9bb44ff1fcd0",
+    "prompt_bytes": 5073,
+    "estimated_prompt_tokens": 2665,
+    "token_count_kind": "UTF8_BYTES_DIV_2_ESTIMATE_NOT_EXACT_GLM_TOKENIZER",
+    "raw_response_path": "/mnt/d/lunwen/EC-CSI投稿/working/exploration/20261014_external_baseline_pilot/calls/17_FSV-S02_repair/response.raw.json",
+    "max_tokens": 16384,
+    "retry_count": 0,
+    "wrapper_exit": 0,
+    "latency_seconds": 211.103,
+    "raw_response_sha256": "d38dfb77b9284c1d09ab51821e42f5404835bf627fff29d22aa898910e087b9c",
+    "raw_response_bytes": 68761,
+    "returned_model": "glm-5.2",
+    "finish_reason": "stop",
+    "usage": {
+      "completion_tokens": 15268,
+      "completion_tokens_details": {
+        "reasoning_tokens": 14916
+      },
+      "prompt_tokens": 1313,
+      "prompt_tokens_details": {
+        "cached_tokens": 0
+      },
+      "total_tokens": 16581
+    },
+    "cost_status": "not_reported_by_provider",
+    "capture_mode": "direct_before_parse",
+    "content_chars": 1280,
+    "parse_status": "PASS",
+    "completeness_gate": "PASS",
+    "completed_at": "2026-10-14T04:11:00.649549+00:00",
+    "output_path": "/mnt/d/lunwen/EC-CSI投稿/working/exploration/20261014_external_baseline_pilot/calls/17_FSV-S02_repair/parsed_output.json"
+  },
+  {
+    "index": 18,
+    "task": "FSV-S02",
+    "stage": "ecas_generate",
+    "smoke": false,
+    "started_at": "2026-10-14T04:11:01.168466+00:00",
+    "status": "COMPLETED",
+    "prompt_path": "/mnt/d/lunwen/EC-CSI投稿/working/exploration/20261014_external_baseline_pilot/calls/18_FSV-S02_ecas_generate/prompt.txt",
+    "prompt_sha256": "b4222cca4ec0eb17173806ec519adfaff586e6fb2da98de35bfc39c71e42a9d7",
+    "prompt_bytes": 14628,
+    "estimated_prompt_tokens": 7442,
+    "token_count_kind": "UTF8_BYTES_DIV_2_ESTIMATE_NOT_EXACT_GLM_TOKENIZER",
+    "raw_response_path": "/mnt/d/lunwen/EC-CSI投稿/working/exploration/20261014_external_baseline_pilot/calls/18_FSV-S02_ecas_generate/response.raw.json",
+    "max_tokens": 16384,
+    "retry_count": 0,
+    "wrapper_exit": 0,
+    "latency_seconds": 11.416,
+    "raw_response_sha256": "b083f036f9f7399ff0f66cca517a1404a7eaf7f65770eace36e88c97e40e5483",
+    "raw_response_bytes": 3768,
+    "returned_model": "glm-5.2",
+    "finish_reason": "stop",
+    "usage": {
+      "completion_tokens": 853,
+      "completion_tokens_details": {
+        "reasoning_tokens": 578
+      },
+      "prompt_tokens": 3702,
+      "prompt_tokens_details": {
+        "cached_tokens": 0
+      },
+      "total_tokens": 4555
+    },
+    "cost_status": "not_reported_by_provider",
+    "capture_mode": "direct_before_parse",
+    "content_chars": 655,
+    "parse_status": "PASS",
+    "completeness_gate": "PASS",
+    "completed_at": "2026-10-14T04:11:12.631101+00:00",
+    "output_path": "/mnt/d/lunwen/EC-CSI投稿/working/exploration/20261014_external_baseline_pilot/calls/18_FSV-S02_ecas_generate/parsed_output.json"
+  },
+  {
+    "index": 19,
+    "task": "FSV-S04",
+    "stage": "p2p_detect",
+    "smoke": false,
+    "started_at": "2026-10-14T04:11:13.181257+00:00",
+    "status": "COMPLETED",
+    "prompt_path": "/mnt/d/lunwen/EC-CSI投稿/working/exploration/20261014_external_baseline_pilot/calls/19_FSV-S04_p2p_detect/prompt.txt",
+    "prompt_sha256": "62c99a2eb27833b62e2e0baa2f239d2059f6519d354958cbc8a9108c37ae89a5",
+    "prompt_bytes": 20430,
+    "estimated_prompt_tokens": 10343,
+    "token_count_kind": "UTF8_BYTES_DIV_2_ESTIMATE_NOT_EXACT_GLM_TOKENIZER",
+    "raw_response_path": "/mnt/d/lunwen/EC-CSI投稿/working/exploration/20261014_external_baseline_pilot/calls/19_FSV-S04_p2p_detect/response.raw.json",
+    "max_tokens": 16384,
+    "retry_count": 0,
+    "wrapper_exit": 0,
+    "latency_seconds": 30.879,
+    "raw_response_sha256": "0619de7d33e27b992fb1536776631447ce87410c8a207582eca4c458529881b3",
+    "raw_response_bytes": 9010,
+    "returned_model": "glm-5.2",
+    "finish_reason": "stop",
+    "usage": {
+      "completion_tokens": 1852,
+      "completion_tokens_details": {
+        "reasoning_tokens": 1666
+      },
+      "prompt_tokens": 5354,
+      "prompt_tokens_details": {
+        "cached_tokens": 0
+      },
+      "total_tokens": 7206
+    },
+    "cost_status": "not_reported_by_provider",
+    "capture_mode": "direct_before_parse",
+    "content_chars": 588,
+    "parse_status": "PASS",
+    "completeness_gate": "PASS",
+    "completed_at": "2026-10-14T04:11:45.441395+00:00",
+    "output_path": "/mnt/d/lunwen/EC-CSI投稿/working/exploration/20261014_external_baseline_pilot/calls/19_FSV-S04_p2p_detect/parsed_output.json"
+  },
+  {
+    "index": 20,
+    "task": "FSV-S04",
+    "stage": "p2p_extract",
+    "smoke": false,
+    "started_at": "2026-10-14T04:11:45.856600+00:00",
+    "status": "COMPLETED",
+    "prompt_path": "/mnt/d/lunwen/EC-CSI投稿/working/exploration/20261014_external_baseline_pilot/calls/20_FSV-S04_p2p_extract/prompt.txt",
+    "prompt_sha256": "eed013fb19d345c7ed4f49b0b058b320caf7c893d9a8e255fa837ecdc470ce86",
+    "prompt_bytes": 20967,
+    "estimated_prompt_tokens": 10612,
+    "token_count_kind": "UTF8_BYTES_DIV_2_ESTIMATE_NOT_EXACT_GLM_TOKENIZER",
+    "raw_response_path": "/mnt/d/lunwen/EC-CSI投稿/working/exploration/20261014_external_baseline_pilot/calls/20_FSV-S04_p2p_extract/response.raw.json",
+    "max_tokens": 16384,
+    "retry_count": 0,
+    "wrapper_exit": 0,
+    "latency_seconds": 9.099,
+    "raw_response_sha256": "e617412dd14a9ba81e2783f1848a47ab5a6358c2b6e075f758f54378c8178011",
+    "raw_response_bytes": 3191,
+    "returned_model": "glm-5.2",
+    "finish_reason": "stop",
+    "usage": {
+      "completion_tokens": 688,
+      "completion_tokens_details": {
+        "reasoning_tokens": 500
+      },
+      "prompt_tokens": 5465,
+      "prompt_tokens_details": {
+        "cached_tokens": 0
+      },
+      "total_tokens": 6153
+    },
+    "cost_status": "not_reported_by_provider",
+    "capture_mode": "direct_before_parse",
+    "content_chars": 561,
+    "parse_status": "PASS",
+    "completeness_gate": "PASS",
+    "completed_at": "2026-10-14T04:11:54.994545+00:00",
+    "output_path": "/mnt/d/lunwen/EC-CSI投稿/working/exploration/20261014_external_baseline_pilot/calls/20_FSV-S04_p2p_extract/parsed_output.json",
+    "format_normalizations": [
+      {
+        "field": "status",
+        "from": "EXTRACTED",
+        "to": "READY",
+        "classification": "EQUIVALENT_COMPLETED_EXTRACTION_STATUS_ALIAS"
+      }
+    ]
+  },
+  {
+    "index": 21,
+    "task": "FSV-S04",
+    "stage": "p2p_rego",
+    "smoke": false,
+    "started_at": "2026-10-14T04:11:55.379711+00:00",
+    "status": "COMPLETED",
+    "prompt_path": "/mnt/d/lunwen/EC-CSI投稿/working/exploration/20261014_external_baseline_pilot/calls/21_FSV-S04_p2p_rego/prompt.txt",
+    "prompt_sha256": "8c6dd58f836f3028b0b2795c144d92ce9ee9cfba85c550a9cc2770b5936e494e",
+    "prompt_bytes": 21420,
+    "estimated_prompt_tokens": 10838,
+    "token_count_kind": "UTF8_BYTES_DIV_2_ESTIMATE_NOT_EXACT_GLM_TOKENIZER",
+    "raw_response_path": "/mnt/d/lunwen/EC-CSI投稿/working/exploration/20261014_external_baseline_pilot/calls/21_FSV-S04_p2p_rego/response.raw.json",
+    "max_tokens": 16384,
+    "retry_count": 0,
+    "wrapper_exit": 0,
+    "latency_seconds": 19.684,
+    "raw_response_sha256": "922b5e55fe9246bc8f01150b40fd33dc7364952a84b3272fcedfe5a47bf3d91e",
+    "raw_response_bytes": 9050,
+    "returned_model": "glm-5.2",
+    "finish_reason": "stop",
+    "usage": {
+      "completion_tokens": 1904,
+      "completion_tokens_details": {
+        "reasoning_tokens": 1729
+      },
+      "prompt_tokens": 5577,
+      "prompt_tokens_details": {
+        "cached_tokens": 0
+      },
+      "total_tokens": 7481
+    },
+    "cost_status": "not_reported_by_provider",
+    "capture_mode": "direct_before_parse",
+    "content_chars": 538,
+    "parse_status": "PASS",
+    "completeness_gate": "PASS",
+    "completed_at": "2026-10-14T04:12:16.440188+00:00",
+    "output_path": "/mnt/d/lunwen/EC-CSI投稿/working/exploration/20261014_external_baseline_pilot/calls/21_FSV-S04_p2p_rego/parsed_output.json"
+  },
+  {
+    "index": 22,
+    "task": "FSV-S04",
+    "stage": "p2p_tests",
+    "smoke": false,
+    "started_at": "2026-10-14T04:12:16.817696+00:00",
+    "status": "COMPLETED",
+    "prompt_path": "/mnt/d/lunwen/EC-CSI投稿/working/exploration/20261014_external_baseline_pilot/calls/22_FSV-S04_p2p_tests/prompt.txt",
+    "prompt_sha256": "bacbf5ad2e9a8e63891138b7b6cfea38a64ed2a3b4016ccaeb801b6bae7e6b7b",
+    "prompt_bytes": 21474,
+    "estimated_prompt_tokens": 10865,
+    "token_count_kind": "UTF8_BYTES_DIV_2_ESTIMATE_NOT_EXACT_GLM_TOKENIZER",
+    "raw_response_path": "/mnt/d/lunwen/EC-CSI投稿/working/exploration/20261014_external_baseline_pilot/calls/22_FSV-S04_p2p_tests/response.raw.json",
+    "max_tokens": 16384,
+    "retry_count": 0,
+    "wrapper_exit": 0,
+    "latency_seconds": 17.714,
+    "raw_response_sha256": "5639293e39c7c419370e427b759063b34b505798b0472c5c5d37bd0134f2e719",
+    "raw_response_bytes": 6195,
+    "returned_model": "glm-5.2",
+    "finish_reason": "stop",
+    "usage": {
+      "completion_tokens": 1567,
+      "completion_tokens_details": {
+        "reasoning_tokens": 1224
+      },
+      "prompt_tokens": 5573,
+      "prompt_tokens_details": {
+        "cached_tokens": 0
+      },
+      "total_tokens": 7140
+    },
+    "cost_status": "not_reported_by_provider",
+    "capture_mode": "direct_before_parse",
+    "content_chars": 661,
+    "parse_status": "PASS",
+    "completeness_gate": "PASS",
+    "completed_at": "2026-10-14T04:12:35.879672+00:00",
+    "output_path": "/mnt/d/lunwen/EC-CSI投稿/working/exploration/20261014_external_baseline_pilot/calls/22_FSV-S04_p2p_tests/parsed_output.json"
+  },
+  {
+    "index": 23,
+    "task": "FSV-S04",
+    "stage": "repair",
+    "smoke": false,
+    "started_at": "2026-10-14T04:12:36.518209+00:00",
+    "status": "COMPLETED",
+    "prompt_path": "/mnt/d/lunwen/EC-CSI投稿/working/exploration/20261014_external_baseline_pilot/calls/23_FSV-S04_repair/prompt.txt",
+    "prompt_sha256": "03ff8b04c5029483daeb4eefb9893a652c69c88dc62a414e449f898aba150763",
+    "prompt_bytes": 24458,
+    "estimated_prompt_tokens": 12357,
+    "token_count_kind": "UTF8_BYTES_DIV_2_ESTIMATE_NOT_EXACT_GLM_TOKENIZER",
+    "raw_response_path": "/mnt/d/lunwen/EC-CSI投稿/working/exploration/20261014_external_baseline_pilot/calls/23_FSV-S04_repair/response.raw.json",
+    "max_tokens": 16384,
+    "retry_count": 0,
+    "wrapper_exit": 0,
+    "latency_seconds": 32.064,
+    "raw_response_sha256": "2c285abe05aa04508aad596d98a4143b91669084f95a32e3dc73f232d1cd9b39",
+    "raw_response_bytes": 9915,
+    "returned_model": "glm-5.2",
+    "finish_reason": "stop",
+    "usage": {
+      "completion_tokens": 2373,
+      "completion_tokens_details": {
+        "reasoning_tokens": 2167
+      },
+      "prompt_tokens": 6369,
+      "prompt_tokens_details": {
+        "cached_tokens": 0
+      },
+      "total_tokens": 8742
+    },
+    "cost_status": "not_reported_by_provider",
+    "capture_mode": "direct_before_parse",
+    "content_chars": 715,
+    "parse_status": "PASS",
+    "completeness_gate": "PASS",
+    "completed_at": "2026-10-14T04:13:09.923051+00:00",
+    "output_path": "/mnt/d/lunwen/EC-CSI投稿/working/exploration/20261014_external_baseline_pilot/calls/23_FSV-S04_repair/parsed_output.json"
+  },
+  {
+    "index": 24,
+    "task": "FSV-S04",
+    "stage": "autopac_generate",
+    "smoke": false,
+    "started_at": "2026-10-14T04:13:10.818666+00:00",
+    "status": "COMPLETED",
+    "prompt_path": "/mnt/d/lunwen/EC-CSI投稿/working/exploration/20261014_external_baseline_pilot/calls/24_FSV-S04_autopac_generate/prompt.txt",
+    "prompt_sha256": "033ce3e790fbf452c79d3ba335e9e5f596f0a7e57ab054d6be263424d6ac3fbe",
+    "prompt_bytes": 20508,
+    "estimated_prompt_tokens": 10382,
+    "token_count_kind": "UTF8_BYTES_DIV_2_ESTIMATE_NOT_EXACT_GLM_TOKENIZER",
+    "raw_response_path": "/mnt/d/lunwen/EC-CSI投稿/working/exploration/20261014_external_baseline_pilot/calls/24_FSV-S04_autopac_generate/response.raw.json",
+    "max_tokens": 16384,
+    "retry_count": 0,
+    "wrapper_exit": 0,
+    "latency_seconds": 14.664,
+    "raw_response_sha256": "bfb3bfca2c9ab2c93754a1cafa52b71e5bf0d7f3ecc12274bbb9004f8eb87273",
+    "raw_response_bytes": 5198,
+    "returned_model": "glm-5.2",
+    "finish_reason": "stop",
+    "usage": {
+      "completion_tokens": 1111,
+      "completion_tokens_details": {
+        "reasoning_tokens": 920
+      },
+      "prompt_tokens": 5377,
+      "prompt_tokens_details": {
+        "cached_tokens": 0
+      },
+      "total_tokens": 6488
+    },
+    "cost_status": "not_reported_by_provider",
+    "capture_mode": "direct_before_parse",
+    "content_chars": 667,
+    "parse_status": "PASS",
+    "completeness_gate": "PASS",
+    "completed_at": "2026-10-14T04:13:25.524044+00:00",
+    "output_path": "/mnt/d/lunwen/EC-CSI投稿/working/exploration/20261014_external_baseline_pilot/calls/24_FSV-S04_autopac_generate/parsed_output.json"
+  },
+  {
+    "index": 25,
+    "task": "FSV-S04",
+    "stage": "autopac_judge",
+    "smoke": false,
+    "started_at": "2026-10-14T04:13:25.941352+00:00",
+    "status": "COMPLETED",
+    "prompt_path": "/mnt/d/lunwen/EC-CSI投稿/working/exploration/20261014_external_baseline_pilot/calls/25_FSV-S04_autopac_judge/prompt.txt",
+    "prompt_sha256": "38b1a2a38760d7cf193087fad7d537f6b07c432505abf8b2b420ffaf4e5ddedc",
+    "prompt_bytes": 21006,
+    "estimated_prompt_tokens": 10631,
+    "token_count_kind": "UTF8_BYTES_DIV_2_ESTIMATE_NOT_EXACT_GLM_TOKENIZER",
+    "raw_response_path": "/mnt/d/lunwen/EC-CSI投稿/working/exploration/20261014_external_baseline_pilot/calls/25_FSV-S04_autopac_judge/response.raw.json",
+    "max_tokens": 16384,
+    "retry_count": 0,
+    "wrapper_exit": 0,
+    "latency_seconds": 136.531,
+    "raw_response_sha256": "734a2640ce3fdf86fbf149df678718ec9b97faebf0d529e4506e29122cc7b023",
+    "raw_response_bytes": 38628,
+    "returned_model": "glm-5.2",
+    "finish_reason": "stop",
+    "usage": {
+      "completion_tokens": 7721,
+      "completion_tokens_details": {
+        "reasoning_tokens": 7650
+      },
+      "prompt_tokens": 5492,
+      "prompt_tokens_details": {
+        "cached_tokens": 0
+      },
+      "total_tokens": 13213
+    },
+    "cost_status": "not_reported_by_provider",
+    "capture_mode": "direct_before_parse",
+    "content_chars": 149,
+    "parse_status": "PASS",
+    "completeness_gate": "PASS",
+    "completed_at": "2026-10-14T04:15:47.403438+00:00",
+    "output_path": "/mnt/d/lunwen/EC-CSI投稿/working/exploration/20261014_external_baseline_pilot/calls/25_FSV-S04_autopac_judge/parsed_output.json"
+  },
+  {
+    "index": 26,
+    "task": "FSV-S04",
+    "stage": "repair",
+    "smoke": false,
+    "started_at": "2026-10-14T04:15:47.986279+00:00",
+    "status": "COMPLETED",
+    "prompt_path": "/mnt/d/lunwen/EC-CSI投稿/working/exploration/20261014_external_baseline_pilot/calls/26_FSV-S04_repair/prompt.txt",
+    "prompt_sha256": "68790ca8bfdfb3353093adfd63037a0abdd9344b8cb7e7e81ebc302f916a28ca",
+    "prompt_bytes": 22057,
+    "estimated_prompt_tokens": 11157,
+    "token_count_kind": "UTF8_BYTES_DIV_2_ESTIMATE_NOT_EXACT_GLM_TOKENIZER",
+    "raw_response_path": "/mnt/d/lunwen/EC-CSI投稿/working/exploration/20261014_external_baseline_pilot/calls/26_FSV-S04_repair/response.raw.json",
+    "max_tokens": 16384,
+    "retry_count": 0,
+    "wrapper_exit": 0,
+    "latency_seconds": 10.008,
+    "raw_response_sha256": "f73de23da6bc724d2c94a01f8826cfb0e395f5aafbfa05a2cf07338282ca1a45",
+    "raw_response_bytes": 3394,
+    "returned_model": "glm-5.2",
+    "finish_reason": "stop",
+    "usage": {
+      "completion_tokens": 687,
+      "completion_tokens_details": {
+        "reasoning_tokens": 468
+      },
+      "prompt_tokens": 5765,
+      "prompt_tokens_details": {
+        "cached_tokens": 5376
+      },
+      "total_tokens": 6452
+    },
+    "cost_status": "not_reported_by_provider",
+    "capture_mode": "direct_before_parse",
+    "content_chars": 918,
+    "parse_status": "PASS",
+    "completeness_gate": "PASS",
+    "completed_at": "2026-10-14T04:15:59.262150+00:00",
+    "output_path": "/mnt/d/lunwen/EC-CSI投稿/working/exploration/20261014_external_baseline_pilot/calls/26_FSV-S04_repair/parsed_output.json"
+  },
+  {
+    "index": 27,
+    "task": "FSV-S04",
+    "stage": "ecas_generate",
+    "smoke": false,
+    "started_at": "2026-10-14T04:15:59.842398+00:00",
+    "status": "COMPLETED",
+    "prompt_path": "/mnt/d/lunwen/EC-CSI投稿/working/exploration/20261014_external_baseline_pilot/calls/27_FSV-S04_ecas_generate/prompt.txt",
+    "prompt_sha256": "7b81172fa31b9c4a26c0d86214a158edd5f0ce3cd6fcf6f787a935cf159f7746",
+    "prompt_bytes": 32060,
+    "estimated_prompt_tokens": 16158,
+    "token_count_kind": "UTF8_BYTES_DIV_2_ESTIMATE_NOT_EXACT_GLM_TOKENIZER",
+    "raw_response_path": "/mnt/d/lunwen/EC-CSI投稿/working/exploration/20261014_external_baseline_pilot/calls/27_FSV-S04_ecas_generate/response.raw.json",
+    "max_tokens": 16384,
+    "retry_count": 0,
+    "wrapper_exit": 0,
+    "latency_seconds": 12.317,
+    "raw_response_sha256": "384c79f817e594450b5de5201a073fd2e26b7b6096c95772b5657144d1227515",
+    "raw_response_bytes": 3536,
+    "returned_model": "glm-5.2",
+    "finish_reason": "stop",
+    "usage": {
+      "completion_tokens": 930,
+      "completion_tokens_details": {
+        "reasoning_tokens": 600
+      },
+      "prompt_tokens": 8243,
+      "prompt_tokens_details": {
+        "cached_tokens": 0
+      },
+      "total_tokens": 9173
+    },
+    "cost_status": "not_reported_by_provider",
+    "capture_mode": "direct_before_parse",
+    "content_chars": 739,
+    "parse_status": "PASS",
+    "completeness_gate": "PASS",
+    "completed_at": "2026-10-14T04:16:12.212644+00:00",
+    "output_path": "/mnt/d/lunwen/EC-CSI投稿/working/exploration/20261014_external_baseline_pilot/calls/27_FSV-S04_ecas_generate/parsed_output.json"
+  }
+]

@@ -1,0 +1,50 @@
+{
+  "status": "PASS",
+  "checks": [
+    {
+      "check": "all_input_digests",
+      "pass": true,
+      "files": 4533
+    },
+    {
+      "check": "frozen_engine_archived_fixture",
+      "pass": true
+    },
+    {
+      "check": "opa_synthetic_allow_deny",
+      "pass": true,
+      "engineering_only": true
+    },
+    {
+      "check": "no_nonloopback_network_route",
+      "pass": true,
+      "required": true
+    },
+    {
+      "check": "space_at_least_300MiB",
+      "pass": true
+    }
+  ],
+  "python": "3.10.12 (main, Aug 31 2026, 10:18:17) [GCC 11.4.0]",
+  "platform": "Linux-6.6.114.1-microsoft-standard-WSL2-x86_64-with-glibc2.35",
+  "jsonschema": "4.26.0",
+  "python_dependencies": {
+    "jsonschema": "4.26.0",
+    "jsonschema-specifications": "2025.9.1",
+    "referencing": "0.37.0",
+    "rpds-py": "0.30.0",
+    "attrs": "26.1.0"
+  },
+  "network_route_table": "",
+  "uid": 0,
+  "cwd": "/root/ecas_a9_artifact_verify_v2/extracted",
+  "artifact_root": "/root/ecas_a9_artifact_verify_v2/extracted",
+  "offline_entry_sha256": "32a0fdfba5f84852e79fc0dd73a3a6140732c04e83be461dc33c4349ef305095",
+  "engine_sha256": "bd509670538cb31f7a271b4d6b353a862157fe968c240218db33065c36b980e3",
+  "opa_sha256": "1dd5c5591ff856f5e20a1d66bafae9511ddf3c5552ed3b5070c70b2b6580ee3f",
+  "shared_services_started": [],
+  "gpu_docker_model_api_used": false,
+  "new_model_calls": 0,
+  "scientific_result": false,
+  "completed_utc": "2026-10-17T00:55:28.121613+00:00"
+}

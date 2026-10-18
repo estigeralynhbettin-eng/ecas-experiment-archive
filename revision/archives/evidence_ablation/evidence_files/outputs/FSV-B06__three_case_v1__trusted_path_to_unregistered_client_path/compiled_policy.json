@@ -1,0 +1,39 @@
+{
+  "policy_version": "EC-FIELD-SECURITY-V3",
+  "policy_id": "pol-FSV-B06-reage-undo-latest-only",
+  "target": {
+    "operation": "POST /v1/loans/{loanId}/transactions/{transactionId}?command=undo",
+    "system": "Fineract",
+    "version": "1.14.0"
+  },
+  "evidence_refs": [
+    "VIS-FSV-B06-01",
+    "VIS-FSV-B06-RUNTIME-ABI"
+  ],
+  "rules": [
+    {
+      "rule_id": "rule-FSV-B06-reage-undo-latest-only",
+      "primitive_id": "SP-BOUNDED-BUSINESS-GUARD",
+      "evidence_refs": [
+        "VIS-FSV-B06-01",
+        "VIS-FSV-B06-RUNTIME-ABI"
+      ],
+      "op": "bounded_guard_dnf",
+      "alternatives": [
+        {
+          "clauses": [
+            {
+              "kind": "scalar_compare",
+              "left_path": "/request/body/ecasClientClaim/reAgeIsLatestTransaction",
+              "operator": "eq",
+              "right_source": "literal",
+              "right_path": "",
+              "right_value": true
+            }
+          ]
+        }
+      ],
+      "on_missing": "deny"
+    }
+  ]
+}

@@ -1,0 +1,33 @@
+{
+  "schema_version": 1,
+  "state": "SUCCEEDED",
+  "run_id": "evidence-ablation-t0-v1",
+  "run_dir": "/root/ecas_evidence_ablation_20261014/managed_runs/evidence-ablation-t0-v1",
+  "fingerprint": "636b7494d21578574c7e742bc58242ff0921ccd8215ee49e4c7590702305eb1b",
+  "created_at": 1791989908.3844235,
+  "exit_code": 0,
+  "worker": {
+    "pid": 904,
+    "start_ticks": "4256",
+    "boot_id": "80a51f57-9957-4963-bb20-e754e7c936b6"
+  },
+  "started_at": 1791989908.5849571,
+  "child": {
+    "pid": 905,
+    "start_ticks": "4323",
+    "boot_id": "80a51f57-9957-4963-bb20-e754e7c936b6"
+  },
+  "reason": "",
+  "finished_at": 1791989910.6131024,
+  "outputs": [
+    {
+      "path": "outputs/result.json",
+      "bytes": 1827,
+      "sha256": "d1cdb32aa374c10100a805f5673cf0a1f573695945ea33502dfee49ca01be7de",
+      "kind": "json"
+    }
+  ],
+  "stdout": "/root/ecas_evidence_ablation_20261014/managed_runs/evidence-ablation-t0-v1/stdout.log",
+  "stderr": "/root/ecas_evidence_ablation_20261014/managed_runs/evidence-ablation-t0-v1/stderr.log",
+  "scientific_validation": false
+}

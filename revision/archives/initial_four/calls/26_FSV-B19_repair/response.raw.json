@@ -1,0 +1,28 @@
+{
+  "choices": [
+    {
+      "finish_reason": "stop",
+      "index": 0,
+      "message": {
+        "content": "{\"begin\":\"BEGIN_FSV-B19_repair_MAIN\",\"stage\":\"repair\",\"output\":{\"status\":\"READY\",\"rego\":\"package external_pilot\\n\\nimport rego.v1\\n\\ndefault allow := false\\n\\nallow if {\\n    not blocked_supplier\\n}\\n\\nblocked_supplier if {\\n    input.trusted.supplierOnHold == true\\n    input.trusted.holdType in {\\\"Invoices\\\", \\\"All\\\"}\\n}\\n\",\"reason\":\"Fixed opa-fmt formatting and removed upstream authentication/action/resource checks. Policy now only enforces the focused VIS-FSV-B19-01 constraint: deny Purchase Order creation when trusted supplierOnHold is true and holdType is Invoices or All; otherwise allow.\"},\"end\":\"END_FSV-B19_repair_MAIN\"}",
+        "role": "assistant"
+      }
+    }
+  ],
+  "created": 1791979063,
+  "id": "20261014195658722c9aaeba88430b",
+  "model": "glm-5.2",
+  "object": "chat.completion",
+  "request_id": "20261014195658722c9aaeba88430b",
+  "usage": {
+    "completion_tokens": 3375,
+    "completion_tokens_details": {
+      "reasoning_tokens": 3211
+    },
+    "prompt_tokens": 6981,
+    "prompt_tokens_details": {
+      "cached_tokens": 0
+    },
+    "total_tokens": 10356
+  }
+}

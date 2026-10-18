@@ -1,0 +1,50 @@
+{
+  "accepted": true,
+  "compile_status": "COMPILED",
+  "admission_status": "ADMITTED",
+  "developer_results": {
+    "passed": true,
+    "rows": [
+      {
+        "id": "dev_not_held",
+        "expected": "allow",
+        "actual": {
+          "policy_id": "POL-FSV-B19-001",
+          "decision": "allow",
+          "fail_closed": true,
+          "violations": []
+        },
+        "pass": true
+      },
+      {
+        "id": "dev_invoices",
+        "expected": "deny",
+        "actual": {
+          "policy_id": "POL-FSV-B19-001",
+          "decision": "deny",
+          "fail_closed": true,
+          "violations": [
+            {
+              "rule_id": "RULE-FSV-B19-001",
+              "code": "bounded_guard_rejected",
+              "detail": "RULE-FSV-B19-001"
+            }
+          ]
+        },
+        "pass": true
+      },
+      {
+        "id": "dev_payments",
+        "expected": "allow",
+        "actual": {
+          "policy_id": "POL-FSV-B19-001",
+          "decision": "allow",
+          "fail_closed": true,
+          "violations": []
+        },
+        "pass": true
+      }
+    ]
+  },
+  "policy_path": "/mnt/d/lunwen/EC-CSI投稿/working/exploration/20261014_matched_evidence_labor/matched_generation/method_runs/FSV-B19/ECAS_MATCHED/initial/admitted_policy.json"
+}

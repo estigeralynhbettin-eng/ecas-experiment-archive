@@ -1,0 +1,22 @@
+{
+  "classification": "POST_HOC_ENGINEERING_INTERFACE_REPAIR_NOT_FRESH_MODEL_EFFECT",
+  "additional_model_calls": 0,
+  "apply_to_all_methods_and_cases": true,
+  "resource_profile": "object with id/system/version from declared constants",
+  "scalar_profile_reference": "binding_replay/SUMMARY.json",
+  "metadata_aliases": [
+    "subject_role",
+    "resource_system",
+    "resource_version"
+  ],
+  "alias_source": "original common_adapter constants",
+  "business_inputs_unchanged": [
+    "request",
+    "trusted"
+  ],
+  "business_rules_rewritten": false,
+  "earlier_candidate_selection": false,
+  "formatting": "OPA fmt; AST equality without location metadata required",
+  "original_run": "EXECUTION_STATE.json",
+  "created_at": "2026-10-14T04:27:18.067190+00:00"
+}

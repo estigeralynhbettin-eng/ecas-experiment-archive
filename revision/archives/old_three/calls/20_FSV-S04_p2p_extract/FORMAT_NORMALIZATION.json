@@ -1,0 +1,12 @@
+{
+  "changes": [
+    {
+      "field": "status",
+      "from": "EXTRACTED",
+      "to": "READY",
+      "classification": "EQUIVALENT_COMPLETED_EXTRACTION_STATUS_ALIAS"
+    }
+  ],
+  "business_rules_changed": false,
+  "raw_sha256": "e617412dd14a9ba81e2783f1848a47ab5a6358c2b6e075f758f54378c8178011"
+}

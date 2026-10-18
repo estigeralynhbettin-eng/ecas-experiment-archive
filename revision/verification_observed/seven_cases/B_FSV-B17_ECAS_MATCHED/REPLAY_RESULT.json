@@ -1,0 +1,44 @@
+{
+  "batch": "B",
+  "task": "FSV-B17",
+  "method": "ECAS_MATCHED",
+  "final_status": "ELIGIBLE",
+  "original_pre_format_status": "ELIGIBLE",
+  "source_result": "archives/common_four/method_runs/FSV-B17/ECAS_MATCHED/RESULT.json",
+  "requests": [
+    {
+      "channel": "O-L",
+      "expected": "allow",
+      "actual": {
+        "policy_id": "FSV-B17-DISABLED-CUSTOMER-SO",
+        "decision": "allow",
+        "fail_closed": true,
+        "violations": []
+      },
+      "archive_match": true,
+      "matches_archived_label": true,
+      "synthetic_input": true
+    },
+    {
+      "channel": "O-I",
+      "expected": "deny",
+      "actual": {
+        "policy_id": "FSV-B17-DISABLED-CUSTOMER-SO",
+        "decision": "deny",
+        "fail_closed": true,
+        "violations": [
+          {
+            "rule_id": "FSV-B17-RULE-01",
+            "code": "bounded_guard_rejected",
+            "detail": "FSV-B17-RULE-01"
+          }
+        ]
+      },
+      "archive_match": true,
+      "matches_archived_label": true,
+      "synthetic_input": true
+    }
+  ],
+  "replay_status": "EXECUTED",
+  "qualification_match": true
+}

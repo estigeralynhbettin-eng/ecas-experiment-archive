@@ -1,0 +1,50 @@
+[
+  {
+    "id": "FSV-S04-OL-01",
+    "input": {
+      "request": {
+        "body": {
+          "email_id": "oracle@example.invalid",
+          "first_name": "ECV2 Oracle",
+          "status": "Lead"
+        }
+      },
+      "trusted": {}
+    },
+    "expected": "allow",
+    "source": "/root/ecas_evidence_ablation_20261014/inputs/FSV-S04__three_case_v1/O-L.json",
+    "class": "ARCHIVED_SYNTHETIC_REQUEST"
+  },
+  {
+    "id": "FSV-S04-OI-01",
+    "input": {
+      "request": {
+        "body": {
+          "email_id": "not-an-email",
+          "first_name": "ECV2 Oracle",
+          "status": "Lead"
+        }
+      },
+      "trusted": {}
+    },
+    "expected": "deny",
+    "source": "/root/ecas_evidence_ablation_20261014/inputs/FSV-S04__three_case_v1/O-I.json",
+    "class": "ARCHIVED_SYNTHETIC_REQUEST"
+  },
+  {
+    "id": "SYNTH-MISSING-TRUSTED",
+    "input": {
+      "request": {
+        "body": {
+          "email_id": "oracle@example.invalid",
+          "first_name": "ECV2 Oracle",
+          "status": "Lead"
+        }
+      },
+      "trusted": {}
+    },
+    "expected": null,
+    "source": "archived legal request with trusted object emptied",
+    "class": "CONSTRUCTED_MISSING_CONTEXT_CONTROL"
+  }
+]

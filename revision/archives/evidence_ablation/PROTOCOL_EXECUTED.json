@@ -1,0 +1,32 @@
+{
+  "document_class": "POST_RUN_DURABLE_DESIGN_RECORD_NOT_FORMAL_PREREGISTRATION",
+  "scope_id": "ECAS-SAME-CANDIDATE-EVIDENCE-ABLATION-20261014-01",
+  "objective": "Isolate Inventory admission from candidate generation and runtime behavior",
+  "deliverables": [
+    "RESULTS_CN.md",
+    "COMPARISON_AUDITED.json",
+    "COMPARISON_AUDITED.csv",
+    "SOURCE_MANIFEST.json",
+    "DELIVERY_MANIFEST.json",
+    "DELIVERY_QA.json"
+  ],
+  "budget": {
+    "external_model_calls": 0,
+    "gpu": 0,
+    "services": 0
+  },
+  "authorization_ref": "Current user asks matched experiments, generation labor and evidence-driven option; parent delegated zero external admission ablation",
+  "done": "actual T0; frozen source hashes;11 raw candidates exact match;full vs shape control;rejections never execute;95 mutation rows;original request pair replay;Windows hash-reconciled delivery",
+  "stop_conditions": [
+    "T0 fail",
+    "input hash drift",
+    "dependency failure",
+    "unexpected original raw mismatch",
+    "unexplained execution error"
+  ],
+  "scientific_scope": "retrospective admission-mechanism observations only",
+  "inventory_assumption": "prestructured trusted declarations",
+  "script_frozen_before_run": true,
+  "no_human_labor_measured": true,
+  "no_new_generation_evidence_ablation": true
+}

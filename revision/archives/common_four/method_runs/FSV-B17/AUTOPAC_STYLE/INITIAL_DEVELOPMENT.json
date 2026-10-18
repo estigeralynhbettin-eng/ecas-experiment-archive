@@ -1,0 +1,47 @@
+{
+  "policy_path": "/mnt/d/lunwen/EC-CSI投稿/working/exploration/20261014_matched_evidence_labor/matched_generation/method_runs/FSV-B17/AUTOPAC_STYLE/initial/external_pilot/policy.rego",
+  "original_path": "/mnt/d/lunwen/EC-CSI投稿/working/exploration/20261014_matched_evidence_labor/matched_generation/method_runs/FSV-B17/AUTOPAC_STYLE/initial/original.rego",
+  "compile_exit": 0,
+  "compile_error": "",
+  "format_receipt": {
+    "original_sha256": "b984020ca487ffa8468e4ed38ad72d447f17061743b5b534109ef7edd1214e41",
+    "formatted_sha256": "83fb3cf00dcea3c7446241ce57acc9288c8efe758decac4bbb73720c1b0f3350",
+    "parse_before_exit": 0,
+    "format_exit": 0,
+    "parse_after_exit": 0,
+    "ast_semantics_equal_without_location": true,
+    "classification": "DETERMINISTIC_FORMAT_ONLY_NOT_MODEL_REPAIR"
+  },
+  "lint_exit": null,
+  "lint_report": null,
+  "accepted": true,
+  "developer_results": {
+    "passed": true,
+    "rows": [
+      {
+        "id": "dev_enabled",
+        "expected": "allow",
+        "actual": {
+          "status": "EXECUTED",
+          "decision": "allow",
+          "exit_code": 0
+        },
+        "pass": true
+      },
+      {
+        "id": "dev_disabled",
+        "expected": "deny",
+        "actual": {
+          "status": "EXECUTED",
+          "decision": "deny",
+          "exit_code": 0
+        },
+        "pass": true
+      }
+    ]
+  },
+  "judge": {
+    "verdict": "ACCEPT",
+    "issues": []
+  }
+}

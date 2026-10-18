@@ -1,0 +1,50 @@
+{
+  "accepted": true,
+  "compile_status": "COMPILED",
+  "admission_status": "ADMITTED",
+  "developer_results": {
+    "passed": true,
+    "rows": [
+      {
+        "id": "dev_limit",
+        "expected": "allow",
+        "actual": {
+          "policy_id": "FSV-B13.PurchaseReceipt.QuantityAllowance",
+          "decision": "allow",
+          "fail_closed": true,
+          "violations": []
+        },
+        "pass": true
+      },
+      {
+        "id": "dev_over",
+        "expected": "deny",
+        "actual": {
+          "policy_id": "FSV-B13.PurchaseReceipt.QuantityAllowance",
+          "decision": "deny",
+          "fail_closed": true,
+          "violations": [
+            {
+              "rule_id": "FSV-B13.PurchaseReceipt.QuantityAllowance.Rule",
+              "code": "bounded_guard_rejected",
+              "detail": "FSV-B13.PurchaseReceipt.QuantityAllowance.Rule"
+            }
+          ]
+        },
+        "pass": true
+      },
+      {
+        "id": "dev_role_exception",
+        "expected": "allow",
+        "actual": {
+          "policy_id": "FSV-B13.PurchaseReceipt.QuantityAllowance",
+          "decision": "allow",
+          "fail_closed": true,
+          "violations": []
+        },
+        "pass": true
+      }
+    ]
+  },
+  "policy_path": "/mnt/d/lunwen/EC-CSI投稿/working/exploration/20261014_matched_evidence_labor/matched_generation/method_runs/FSV-B13/ECAS_MATCHED/initial/admitted_policy.json"
+}

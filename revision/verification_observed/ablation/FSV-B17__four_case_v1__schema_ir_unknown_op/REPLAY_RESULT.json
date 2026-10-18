@@ -1,0 +1,18 @@
+{
+  "row_id": "FSV-B17__four_case_v1__schema_ir_unknown_op",
+  "parent_id": "FSV-B17__four_case_v1",
+  "task": "FSV-B17",
+  "configuration": "four_case_v1",
+  "variant": "schema_ir_unknown_op",
+  "classification": "ENGINEERING_MODEL_IR_SCHEMA_CONTROL",
+  "full_executed": false,
+  "shape_executed": false,
+  "full_evaluations": [],
+  "shape_evaluations": [],
+  "ir_status": "IR_SCHEMA_OR_TYPE_FAILURE",
+  "full_status": "NOT_ATTEMPTED",
+  "shape_status": "NOT_ATTEMPTED",
+  "eligible_admission_contrast": false,
+  "archive_match": true,
+  "mismatched_fields": []
+}

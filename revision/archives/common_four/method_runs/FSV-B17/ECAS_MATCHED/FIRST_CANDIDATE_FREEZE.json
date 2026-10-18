@@ -1,0 +1,9 @@
+{
+  "scope_id": "ECAS-MATCHED-EVIDENCE-LABOR-20261014-01",
+  "label": "FIRST_CANDIDATE",
+  "path": "/mnt/d/lunwen/EC-CSI投稿/working/exploration/20261014_matched_evidence_labor/matched_generation/method_runs/FSV-B17/ECAS_MATCHED/first_candidate.json",
+  "sha256": "35603ce747a8a9003d8d8b4af95a29826669d07fb721524bb700f9ddbe355b39",
+  "frozen_at": "2026-10-15T00:54:48.179302+00:00",
+  "final_evaluation_not_yet_read": true,
+  "final_labels_in_feedback": false
+}

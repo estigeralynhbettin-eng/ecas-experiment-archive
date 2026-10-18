@@ -1,0 +1,1947 @@
+{
+  "id": "ECAS-SEMANTIC-STAGE-COMPARISON-20261015-01",
+  "date": "2026-10-15",
+  "status": "POSTHOC_QUALITATIVE_SOURCE_POLICY_AUDIT",
+  "new_model_calls": 0,
+  "new_policy_executions": 0,
+  "label_definition": "Main-condition formation and later feedback stage; not pre-frozen independent semantic gold.",
+  "rows": [
+    {
+      "case": "FSV-B06",
+      "method": "ECAS_MATCHED",
+      "batch": "A",
+      "project_name": "Apache Fineract",
+      "audit_row": {
+        "case": "FSV-B06",
+        "project": "Apache Fineract",
+        "method": "ECAS_MATCHED",
+        "first_generated_policy_semantic_observation": "首次IR已有可信latest标志等于true；缺值deny。",
+        "later_stage_observation": "已归档编译/准入与请求结果另列；此观察不等于通用undo完整语义正确。",
+        "evidence": [
+          {
+            "path": "D:\\lunwen\\EC-CSI投稿\\working\\exploration\\20261014_external_baseline_pilot\\effect_runs\\FSV-B06\\ECAS_MATCHED\\candidate.json",
+            "sha256": "ca4a80a844a1a50519a3c958b18d3530b5799e97c3147bf19aba2573dd7a95ff",
+            "json_pointer": "/rules/0/params"
+          },
+          {
+            "path": "D:\\lunwen\\EC-CSI投稿\\working\\exploration\\20261014_external_baseline_pilot\\effect_runs\\FSV-B06\\ECAS_MATCHED\\RESULT.json",
+            "sha256": "7ce11d95dd90462618b63c697e2978132ad4250cd5d7831399272c6c6607cdb3",
+            "json_pointer": ""
+          }
+        ]
+      },
+      "curated_first": "已表达latest=true",
+      "curated_later": "首次IR已有主条件；运行结果另列。",
+      "scope": "Re-Age条款与通用undo接口的适用范围尚未闭合；不能由latest条件判全语义正确。"
+    },
+    {
+      "case": "FSV-B06",
+      "method": "P2P_STYLE",
+      "batch": "A",
+      "project_name": "Apache Fineract",
+      "audit_row": {
+        "case": "FSV-B06",
+        "project": "Apache Fineract",
+        "method": "P2P_STYLE",
+        "first_generated_policy_semantic_observation": "首次Rego已有latest == true；DSARCP已抽取该条件。",
+        "later_stage_observation": "修复仅改缩进；不改变主约束。",
+        "evidence": [
+          {
+            "path": "D:\\lunwen\\EC-CSI投稿\\working\\exploration\\20261014_external_baseline_pilot\\effect_runs\\FSV-B06\\P2P_STYLE\\extraction.json",
+            "sha256": "8a9358ac601dd933f29173680be40e2a825a3c1f608585572a9e926212c4f08c",
+            "json_pointer": "/components/0/condition"
+          },
+          {
+            "path": "D:\\lunwen\\EC-CSI投稿\\working\\exploration\\20261014_external_baseline_pilot\\effect_runs\\FSV-B06\\P2P_STYLE\\generation.json",
+            "sha256": "a6fdb67e256fbbaa1f4f6bc2813f15894b879de6ad539e56cc5f0985a10675cf",
+            "json_pointer": "/rego"
+          },
+          {
+            "path": "D:\\lunwen\\EC-CSI投稿\\working\\exploration\\20261014_external_baseline_pilot\\effect_runs\\FSV-B06\\P2P_STYLE\\repair.json",
+            "sha256": "71eb9c9dff1958d8b95f6f4b8ce8b9c09e486c82315ecb000cad9c218617fd97",
+            "json_pointer": "/rego"
+          }
+        ]
+      },
+      "curated_first": "已表达latest=true",
+      "curated_later": "修复只改格式，主条件不变。",
+      "scope": "Re-Age条款与通用undo接口的适用范围尚未闭合；不能由latest条件判全语义正确。"
+    },
+    {
+      "case": "FSV-B06",
+      "method": "AUTOPAC_STYLE",
+      "batch": "A",
+      "project_name": "Apache Fineract",
+      "audit_row": {
+        "case": "FSV-B06",
+        "project": "Apache Fineract",
+        "method": "AUTOPAC_STYLE",
+        "first_generated_policy_semantic_observation": "首次Rego已有latest == true。",
+        "later_stage_observation": "Judge指出仅适用于Re-Age；修复改为false时禁止，缺标志允许，未真正增加交易类型区分。",
+        "evidence": [
+          {
+            "path": "D:\\lunwen\\EC-CSI投稿\\working\\exploration\\20261014_external_baseline_pilot\\effect_runs\\FSV-B06\\AUTOPAC_STYLE\\generation.json",
+            "sha256": "7839f317484c6e97a3bf4b81bf1ae8545378cee143075ef1087bb06d12a9585f",
+            "json_pointer": "/rego"
+          },
+          {
+            "path": "D:\\lunwen\\EC-CSI投稿\\working\\exploration\\20261014_external_baseline_pilot\\effect_runs\\FSV-B06\\AUTOPAC_STYLE\\judge.json",
+            "sha256": "04f209999292dd80e6379b4046fda98b58a6e1da190e56ce866de1ac2747159b",
+            "json_pointer": "/issues/0"
+          },
+          {
+            "path": "D:\\lunwen\\EC-CSI投稿\\working\\exploration\\20261014_external_baseline_pilot\\effect_runs\\FSV-B06\\AUTOPAC_STYLE\\repair.json",
+            "sha256": "f6fe3771a552f22547be4de54648f2aa05eb655adff78193caea3a951221ed52",
+            "json_pointer": "/rego"
+          }
+        ]
+      },
+      "curated_first": "已表达latest=true",
+      "curated_later": "Judge指出Re-Age适用范围；修复未补交易类型区分。",
+      "scope": "Re-Age条款与通用undo接口的适用范围尚未闭合；不能由latest条件判全语义正确。"
+    },
+    {
+      "case": "FSV-S02",
+      "method": "ECAS_MATCHED",
+      "batch": "A",
+      "project_name": "Apache Fineract",
+      "audit_row": {
+        "case": "FSV-S02",
+        "project": "Apache Fineract",
+        "method": "ECAS_MATCHED",
+        "first_generated_policy_semantic_observation": "首次IR已有allowed_fields及四字段清单。",
+        "later_stage_observation": "来源仅列properties，没有additionalProperties=false；“闭集拒绝”只能归于既有任务约定，不能直接算原文唯一正确含义。",
+        "evidence": [
+          {
+            "path": "D:\\lunwen\\EC-CSI投稿\\working\\exploration\\20261014_external_baseline_pilot\\effect_runs\\FSV-S02\\ECAS_MATCHED\\candidate.json",
+            "sha256": "e6f5a2af7dee84e067b1a81f4b3dd56483b2ba306983039d0112c28efbf49fe6",
+            "json_pointer": "/rules/0"
+          },
+          {
+            "path": "D:\\lunwen\\EC-CSI投稿\\working\\exploration\\20261014_external_baseline_pilot\\generation_inputs\\FSV-S02\\packet.json",
+            "sha256": "5c8de100a097aa1cae1c236a1d9d7771e8c1e175d9c8601abc9d319dafca9611",
+            "json_pointer": "/visible_sources/0/content/requestBody/content/application~1json/schema"
+          }
+        ]
+      },
+      "curated_first": "已表达四字段白名单¹",
+      "curated_later": "首次allowed_fields；不能据任务约定反推原文唯一含义。",
+      "scope": "OpenAPI仅列properties，未声明additionalProperties=false；闭集是任务约定，原文支持尚未闭合。"
+    },
+    {
+      "case": "FSV-S02",
+      "method": "P2P_STYLE",
+      "batch": "A",
+      "project_name": "Apache Fineract",
+      "audit_row": {
+        "case": "FSV-S02",
+        "project": "Apache Fineract",
+        "method": "P2P_STYLE",
+        "first_generated_policy_semantic_observation": "入口OUT_OF_SCOPE；没有首次政策，不评语义错误。",
+        "later_stage_observation": "提示限定显式访问政策，不强制把结构校验作为访问控制。",
+        "evidence": [
+          {
+            "path": "D:\\lunwen\\EC-CSI投稿\\working\\exploration\\20261014_external_baseline_pilot\\effect_runs\\FSV-S02\\P2P_STYLE\\detection.json",
+            "sha256": "d17c721cf1770dd1a29cc9bd28fc497c0135ef69f57e1dd99f5481295ea19b8e",
+            "json_pointer": ""
+          },
+          {
+            "path": "D:\\lunwen\\EC-CSI投稿\\working\\exploration\\20261014_external_baseline_pilot\\calls\\14_FSV-S02_p2p_detect\\prompt.txt",
+            "sha256": "b27eea78185e7b7ff962a2f32455a864aa494a9bfd55fecf3f25f0af2e9f922b",
+            "json_pointer": ""
+          }
+        ]
+      },
+      "curated_first": "检测范围外，无政策可评",
+      "curated_later": "入口限定访问控制，不记语义理解错误。",
+      "scope": "OpenAPI仅列properties，未声明additionalProperties=false；闭集是任务约定，原文支持尚未闭合。"
+    },
+    {
+      "case": "FSV-S02",
+      "method": "AUTOPAC_STYLE",
+      "batch": "A",
+      "project_name": "Apache Fineract",
+      "audit_row": {
+        "case": "FSV-S02",
+        "project": "Apache Fineract",
+        "method": "AUTOPAC_STYLE",
+        "first_generated_policy_semantic_observation": "首次Rego只有documentKey/documentTypeId存在性；无白名单。",
+        "later_stage_observation": "Judge ACCEPT；操作者未知键deny测试反馈后修复有allowed_keys和逐键成员检查，但is_integer导致编译失败。",
+        "evidence": [
+          {
+            "path": "D:\\lunwen\\EC-CSI投稿\\working\\exploration\\20261014_external_baseline_pilot\\effect_runs\\FSV-S02\\AUTOPAC_STYLE\\generation.json",
+            "sha256": "9bfa733511ea5a68a928770d207263748cf3da678c1bbaccf6b506ea8398b47e",
+            "json_pointer": "/rego"
+          },
+          {
+            "path": "D:\\lunwen\\EC-CSI投稿\\working\\exploration\\20261014_external_baseline_pilot\\effect_runs\\FSV-S02\\AUTOPAC_STYLE\\judge.json",
+            "sha256": "eddab795ac57a0be086f476d9d99cc9f07088806c604cbb29cdece4a23f54d5a",
+            "json_pointer": ""
+          },
+          {
+            "path": "D:\\lunwen\\EC-CSI投稿\\working\\exploration\\20261014_external_baseline_pilot\\calls\\17_FSV-S02_repair\\prompt.txt",
+            "sha256": "8177f56e8f44089f5b4ef7866eadbd47059331ef1ac7dddbc59f9bb44ff1fcd0",
+            "json_pointer": ""
+          },
+          {
+            "path": "D:\\lunwen\\EC-CSI投稿\\working\\exploration\\20261014_external_baseline_pilot\\effect_runs\\FSV-S02\\AUTOPAC_STYLE\\repair.json",
+            "sha256": "00fa3e18e6b0b72e8a553e5831bee753294f3cd793602a069574f5e057ed6753",
+            "json_pointer": "/rego"
+          },
+          {
+            "path": "D:\\lunwen\\EC-CSI投稿\\working\\exploration\\20261014_external_baseline_pilot\\effect_runs\\FSV-S02\\AUTOPAC_STYLE\\repaired\\compile.stderr.txt",
+            "sha256": "326b670fd453317fffa3a55e9b23aeb9d22af7e4c3d1d242fe392e8ac052a68f",
+            "json_pointer": ""
+          }
+        ]
+      },
+      "curated_first": "仅检查必需字段，无白名单",
+      "curated_later": "Judge接受首次候选；操作者未知键反馈后补出白名单，但is_integer导致编译失败。",
+      "scope": "OpenAPI仅列properties，未声明additionalProperties=false；闭集是任务约定，原文支持尚未闭合。"
+    },
+    {
+      "case": "FSV-S04",
+      "method": "ECAS_MATCHED",
+      "batch": "A",
+      "project_name": "ERPNext",
+      "audit_row": {
+        "case": "FSV-S04",
+        "project": "ERPNext",
+        "method": "ECAS_MATCHED",
+        "first_generated_policy_semantic_observation": "首次IR已有named_validator/email_basic_v1绑定email_id。",
+        "later_stage_observation": "源字段options=Email；validator注册语义属于提供给模型的工具支持；不等于模型独立发明完整邮箱标准。",
+        "evidence": [
+          {
+            "path": "D:\\lunwen\\EC-CSI投稿\\working\\exploration\\20261014_external_baseline_pilot\\effect_runs\\FSV-S04\\ECAS_MATCHED\\candidate.json",
+            "sha256": "61100a221ee3fd6dca2ea31994cae0f377dbcf98e49c1c9963470917476dcf8d",
+            "json_pointer": "/rules/0"
+          },
+          {
+            "path": "D:\\lunwen\\EC-CSI投稿\\working\\exploration\\20261014_external_baseline_pilot\\generation_inputs\\FSV-S04\\packet.json",
+            "sha256": "d37c94ec03d4901259ee058bd728fd0bc7736a3033a7b3347881626233bf5d49",
+            "json_pointer": "/visible_sources/1/content/fields/3"
+          }
+        ]
+      },
+      "curated_first": "已绑定基本邮箱格式validator",
+      "curated_later": "首次named_validator/email_basic_v1绑定email_id。",
+      "scope": "来源options=Email；ECAS使用已注册email_basic_v1，不能据此宣称完整邮箱规范等价或模型独立发明validator。"
+    },
+    {
+      "case": "FSV-S04",
+      "method": "P2P_STYLE",
+      "batch": "A",
+      "project_name": "ERPNext",
+      "audit_row": {
+        "case": "FSV-S04",
+        "project": "ERPNext",
+        "method": "P2P_STYLE",
+        "first_generated_policy_semantic_observation": "首次Rego只有身份/操作/资源，无邮箱格式条件。",
+        "later_stage_observation": "DSARCP只提角色权限；开发修复加入is_string，没有邮箱格式校验。",
+        "evidence": [
+          {
+            "path": "D:\\lunwen\\EC-CSI投稿\\working\\exploration\\20261014_external_baseline_pilot\\effect_runs\\FSV-S04\\P2P_STYLE\\extraction.json",
+            "sha256": "b6d2299ff2b3cb767bf5e6d5911f5e548e79ffeab83ee0e496a492dcb440dcc6",
+            "json_pointer": "/components"
+          },
+          {
+            "path": "D:\\lunwen\\EC-CSI投稿\\working\\exploration\\20261014_external_baseline_pilot\\effect_runs\\FSV-S04\\P2P_STYLE\\generation.json",
+            "sha256": "06f7d66130515cacb25ee7b17461dd02c4cc7240ca16916bff29626ea878f102",
+            "json_pointer": "/rego"
+          },
+          {
+            "path": "D:\\lunwen\\EC-CSI投稿\\working\\exploration\\20261014_external_baseline_pilot\\effect_runs\\FSV-S04\\P2P_STYLE\\repair.json",
+            "sha256": "b60a7ed9458fc0a4f326541aba36cb26d0e7eace7167d871016bee4aeab9e749",
+            "json_pointer": "/rego"
+          }
+        ]
+      },
+      "curated_first": "仅身份/权限，无格式条件",
+      "curated_later": "开发修复仅补is_string，仍缺邮箱格式条件。",
+      "scope": "来源options=Email；ECAS使用已注册email_basic_v1，不能据此宣称完整邮箱规范等价或模型独立发明validator。"
+    },
+    {
+      "case": "FSV-S04",
+      "method": "AUTOPAC_STYLE",
+      "batch": "A",
+      "project_name": "ERPNext",
+      "audit_row": {
+        "case": "FSV-S04",
+        "project": "ERPNext",
+        "method": "AUTOPAC_STYLE",
+        "first_generated_policy_semantic_observation": "首次Rego只有身份/操作/资源，无邮箱格式条件。",
+        "later_stage_observation": "Judge ACCEPT且issues为空；操作者正负邮箱测试反馈后出现regex。原接口错误与事后统一接口复演须另列。",
+        "evidence": [
+          {
+            "path": "D:\\lunwen\\EC-CSI投稿\\working\\exploration\\20261014_external_baseline_pilot\\effect_runs\\FSV-S04\\AUTOPAC_STYLE\\generation.json",
+            "sha256": "1bd409eb8ba263dea5c99b5248745d11cc0cd13e2429aa0e827fa6f620e08649",
+            "json_pointer": "/rego"
+          },
+          {
+            "path": "D:\\lunwen\\EC-CSI投稿\\working\\exploration\\20261014_external_baseline_pilot\\effect_runs\\FSV-S04\\AUTOPAC_STYLE\\judge.json",
+            "sha256": "2f2f4fa27ccd9c8d6477c226a6f9547975256455962da20867bed3f93f113092",
+            "json_pointer": ""
+          },
+          {
+            "path": "D:\\lunwen\\EC-CSI投稿\\working\\exploration\\20261014_external_baseline_pilot\\calls\\26_FSV-S04_repair\\prompt.txt",
+            "sha256": "68790ca8bfdfb3353093adfd63037a0abdd9344b8cb7e7e81ebc302f916a28ca",
+            "json_pointer": ""
+          },
+          {
+            "path": "D:\\lunwen\\EC-CSI投稿\\working\\exploration\\20261014_external_baseline_pilot\\effect_runs\\FSV-S04\\AUTOPAC_STYLE\\repair.json",
+            "sha256": "a03ee4c2a6de6c07f6a1a870110cbc91490e6cb66abfa5195718b9ff7c1f12f7",
+            "json_pointer": "/rego"
+          },
+          {
+            "path": "D:\\lunwen\\EC-CSI投稿\\working\\exploration\\20261014_external_baseline_pilot\\binding_replay_resource_object\\SUMMARY.json",
+            "sha256": "5345278278ae46c7054bbc6c023ff46505c866ac0872f115605aefe222e5dba3",
+            "json_pointer": ""
+          }
+        ]
+      },
+      "curated_first": "仅身份/权限，无格式条件",
+      "curated_later": "Judge接受首次候选；操作者正负邮箱反馈后才补regex；接口恢复及最终复演另列。",
+      "scope": "来源options=Email；ECAS使用已注册email_basic_v1，不能据此宣称完整邮箱规范等价或模型独立发明validator。"
+    },
+    {
+      "case": "FSV-S03",
+      "method": "ECAS_MATCHED",
+      "batch": "B",
+      "project_name": "Apache Fineract",
+      "audit_row": {
+        "case": "FSV-S03",
+        "method": "ECAS_MATCHED",
+        "main_constraint_mapping": "MAIN_CONSTRAINT_CORRECT_STATIC_SOURCE_POLICY_MAPPING",
+        "decision_direction": "INTEGER_REQUIRED_IF_PRESENT",
+        "compound_or_exception": "NOT_APPLICABLE",
+        "optional_presence": "PRESERVED_BY_ON_MISSING_SKIP",
+        "source_default": "NO_SOURCE_DEFAULT_REQUIREMENT_IDENTIFIED_FOR_THIS_FOCUSED_TARGET",
+        "first_development_accepted": true,
+        "final_status": "ELIGIBLE",
+        "repaired_once": false,
+        "repair_semantic_observation": "NOT_RUN",
+        "auto_judge": null,
+        "archived_branch_observations": [],
+        "evidence_files": [
+          {
+            "path": "D:\\lunwen\\EC-CSI投稿\\working\\exploration\\20261014_matched_evidence_labor\\matched_generation\\method_runs\\FSV-S03\\ECAS_MATCHED\\first_candidate.json",
+            "sha256": "12ea58385028e162ad95d0661f77b6468c329462dd3900b963f82b5117ab4890"
+          },
+          {
+            "path": "D:\\lunwen\\EC-CSI投稿\\working\\exploration\\20261014_matched_evidence_labor\\matched_generation\\method_runs\\FSV-S03\\ECAS_MATCHED\\initial\\admitted_policy.json",
+            "sha256": "5f370d900883fad34ac8eb547f3f0c18fcb4034f387204f52afeba654320f57f"
+          },
+          {
+            "path": "D:\\lunwen\\EC-CSI投稿\\working\\exploration\\20261014_matched_evidence_labor\\matched_generation\\method_runs\\FSV-S03\\ECAS_MATCHED\\initial\\CHECKS.json",
+            "sha256": "ad53ef49d3aad67159374b23536a95d679d6898ee1c9e41ef9c1b2222a5a718e"
+          },
+          {
+            "path": "D:\\lunwen\\EC-CSI投稿\\working\\exploration\\20261014_matched_evidence_labor\\matched_generation\\method_runs\\FSV-S03\\ECAS_MATCHED\\RESULT.json",
+            "sha256": "29bbc1502b3919ddc92e2517729efe173a04df7bf4adc79b92ea86f977cb6957"
+          }
+        ]
+      },
+      "curated_first": "已表达integer且缺值skip",
+      "curated_later": "首次strict_type(integer)，on_missing=skip；类型与非必填边界均保留。",
+      "scope": "源码/任务未要求age必填；AutoPAC额外必填仅静态风险，原代码未编译，不能称缺值行为已实测。"
+    },
+    {
+      "case": "FSV-S03",
+      "method": "P2P_STYLE",
+      "batch": "B",
+      "project_name": "Apache Fineract",
+      "audit_row": {
+        "case": "FSV-S03",
+        "method": "P2P_STYLE",
+        "main_constraint_mapping": "OUT_OF_SCOPE_TYPE_VALIDATION_RECOGNIZED_NO_POLICY_GENERATED",
+        "decision_direction": "NO_POLICY_TO_ASSESS",
+        "compound_or_exception": "NOT_APPLICABLE",
+        "optional_presence": "NO_POLICY_TO_ASSESS",
+        "source_default": "NO_SOURCE_DEFAULT_REQUIREMENT_IDENTIFIED_FOR_THIS_FOCUSED_TARGET",
+        "first_development_accepted": null,
+        "final_status": "OUT_OF_SCOPE",
+        "repaired_once": false,
+        "repair_semantic_observation": "NOT_RUN",
+        "auto_judge": null,
+        "archived_branch_observations": [],
+        "evidence_files": [
+          {
+            "path": "D:\\lunwen\\EC-CSI投稿\\working\\exploration\\20261014_matched_evidence_labor\\matched_generation\\method_runs\\FSV-S03\\P2P_STYLE\\p2p_detect.json",
+            "sha256": "9466c5a07f00a39cb5956afce3112d58331974814f8e49cc7b6a0fc42e84d46e"
+          },
+          {
+            "path": "D:\\lunwen\\EC-CSI投稿\\working\\exploration\\20261014_matched_evidence_labor\\matched_generation\\method_runs\\FSV-S03\\P2P_STYLE\\RESULT.json",
+            "sha256": "0debecc0820f78bdfab4d38a2995d66e4f1957ad231e9ee436657eb8d9c758ef"
+          }
+        ]
+      },
+      "curated_first": "检测范围外，无政策可评",
+      "curated_later": "识别为类型校验后按访问控制入口退出，不记理解错误。",
+      "scope": "源码/任务未要求age必填；AutoPAC额外必填仅静态风险，原代码未编译，不能称缺值行为已实测。"
+    },
+    {
+      "case": "FSV-S03",
+      "method": "AUTOPAC_STYLE",
+      "batch": "B",
+      "project_name": "Apache Fineract",
+      "audit_row": {
+        "case": "FSV-S03",
+        "method": "AUTOPAC_STYLE",
+        "main_constraint_mapping": "INTEGER_TYPE_INTENT_IDENTIFIED_BUT_NONEXECUTABLE_CODE",
+        "decision_direction": "INTEGER_INTENT_CORRECT_NOT_VALIDATED_AS_EXECUTABLE_POLICY",
+        "compound_or_exception": "NOT_APPLICABLE",
+        "optional_presence": "STATIC_PRESENCE_OVERCONSTRAINT_RISK_DEFAULT_FALSE_NO_MISSING_ALLOW_BRANCH",
+        "source_default": "NO_SOURCE_DEFAULT_REQUIREMENT_IDENTIFIED_FOR_THIS_FOCUSED_TARGET",
+        "first_development_accepted": false,
+        "final_status": "DEVELOPMENT_REJECTED",
+        "repaired_once": true,
+        "repair_semantic_observation": "INTEGER_INTENT_RETAINED_UNDEFINED_TYPEOF_STILL_NONEXECUTABLE",
+        "auto_judge": {
+          "verdict": "ACCEPT",
+          "issues": []
+        },
+        "archived_branch_observations": [],
+        "evidence_files": [
+          {
+            "path": "D:\\lunwen\\EC-CSI投稿\\working\\exploration\\20261014_matched_evidence_labor\\matched_generation\\method_runs\\FSV-S03\\AUTOPAC_STYLE\\autopac_generate.json",
+            "sha256": "49416e3a7f0eeb853daa473c63dc6c71aaae1c7b2fbc0fdfb39d5a54018e379d"
+          },
+          {
+            "path": "D:\\lunwen\\EC-CSI投稿\\working\\exploration\\20261014_matched_evidence_labor\\matched_generation\\method_runs\\FSV-S03\\AUTOPAC_STYLE\\autopac_judge.json",
+            "sha256": "2f2f4fa27ccd9c8d6477c226a6f9547975256455962da20867bed3f93f113092"
+          },
+          {
+            "path": "D:\\lunwen\\EC-CSI投稿\\working\\exploration\\20261014_matched_evidence_labor\\matched_generation\\method_runs\\FSV-S03\\AUTOPAC_STYLE\\initial\\original.rego",
+            "sha256": "979a29451355e29190d1d00cd5eeee1dc48643165305acaf454d8cc4ebe1584a"
+          },
+          {
+            "path": "D:\\lunwen\\EC-CSI投稿\\working\\exploration\\20261014_matched_evidence_labor\\matched_generation\\method_runs\\FSV-S03\\AUTOPAC_STYLE\\initial\\CHECKS.json",
+            "sha256": "424e7b23ee91e1690a3dbd6ccd24f175eaea4d28081bc12b84ce3e2e807b3cfe"
+          },
+          {
+            "path": "D:\\lunwen\\EC-CSI投稿\\working\\exploration\\20261014_matched_evidence_labor\\matched_generation\\method_runs\\FSV-S03\\AUTOPAC_STYLE\\repair.json",
+            "sha256": "b9f40ec0986a70ef47902a3edbb199f6d34f7aed23e4c589330ed3b53f49f68b"
+          },
+          {
+            "path": "D:\\lunwen\\EC-CSI投稿\\working\\exploration\\20261014_matched_evidence_labor\\matched_generation\\method_runs\\FSV-S03\\AUTOPAC_STYLE\\repaired\\original.rego",
+            "sha256": "ef5d878b84c37ed3c9ccdaf5c272c903d7db6dca0e386da90324622845d2131b"
+          },
+          {
+            "path": "D:\\lunwen\\EC-CSI投稿\\working\\exploration\\20261014_matched_evidence_labor\\matched_generation\\method_runs\\FSV-S03\\AUTOPAC_STYLE\\repaired\\CHECKS.json",
+            "sha256": "4a4b3bfa49c37e9d448729fdfa0423c06a3f7ad30b60f813dd778db8bc1b6dff"
+          },
+          {
+            "path": "D:\\lunwen\\EC-CSI投稿\\working\\exploration\\20261014_matched_evidence_labor\\matched_generation\\method_runs\\FSV-S03\\AUTOPAC_STYLE\\RESULT.json",
+            "sha256": "58c0b95241e28fcef14116667dcc1c75ca176c8f0ea0871cb5a2baa696d9c5e3"
+          }
+        ]
+      },
+      "curated_first": "已识别整数要求；代码不可执行²",
+      "curated_later": "首次is_integer不存在；唯一修复换用同样不存在的typeof，仍无执行资格；静态存在额外必填风险。",
+      "scope": "源码/任务未要求age必填；AutoPAC额外必填仅静态风险，原代码未编译，不能称缺值行为已实测。"
+    },
+    {
+      "case": "FSV-B13",
+      "method": "ECAS_MATCHED",
+      "batch": "B",
+      "project_name": "ERPNext",
+      "audit_row": {
+        "case": "FSV-B13",
+        "method": "ECAS_MATCHED",
+        "main_constraint_mapping": "MAIN_CONSTRAINT_CORRECT_STATIC_SOURCE_POLICY_MAPPING",
+        "decision_direction": "CORRECT_WITHIN_DOCUMENTED_KNOWN_STATE_DOMAIN",
+        "compound_or_exception": "WITHIN_MAXIMUM_OR_AUTHORIZED_EXCEPTION_CORRECT",
+        "optional_presence": "NOT_APPLICABLE",
+        "source_default": "NO_SOURCE_DEFAULT_REQUIREMENT_IDENTIFIED_FOR_THIS_FOCUSED_TARGET",
+        "first_development_accepted": true,
+        "final_status": "ELIGIBLE",
+        "repaired_once": false,
+        "repair_semantic_observation": "NOT_RUN",
+        "auto_judge": null,
+        "archived_branch_observations": [
+          {
+            "label": "missing-trusted",
+            "archived_kind": "engineering_fail_closed_control",
+            "expected": "deny",
+            "actual": "deny"
+          }
+        ],
+        "evidence_files": [
+          {
+            "path": "D:\\lunwen\\EC-CSI投稿\\working\\exploration\\20261014_matched_evidence_labor\\matched_generation\\method_runs\\FSV-B13\\ECAS_MATCHED\\first_candidate.json",
+            "sha256": "6632f38661f5c043e7742cc0a658260c191b08dd4ae53d5730d6caf8d10a5c3d"
+          },
+          {
+            "path": "D:\\lunwen\\EC-CSI投稿\\working\\exploration\\20261014_matched_evidence_labor\\matched_generation\\method_runs\\FSV-B13\\ECAS_MATCHED\\initial\\admitted_policy.json",
+            "sha256": "2c0c40bddf86afebb6ec9a483e9df0bfff922f7b116d3e180846cfe7232fbb00"
+          },
+          {
+            "path": "D:\\lunwen\\EC-CSI投稿\\working\\exploration\\20261014_matched_evidence_labor\\matched_generation\\method_runs\\FSV-B13\\ECAS_MATCHED\\initial\\CHECKS.json",
+            "sha256": "3ccf677f7293e55b7e29ab3010b32afc77c12917c323d248358ebdfbd341af31"
+          },
+          {
+            "path": "D:\\lunwen\\EC-CSI投稿\\working\\exploration\\20261014_matched_evidence_labor\\matched_generation\\method_runs\\FSV-B13\\ECAS_MATCHED\\RESULT.json",
+            "sha256": "b5f736c8180cc3a16611ffbe471cfde9588d27c1af8fad54a2a083eff489f744"
+          }
+        ]
+      },
+      "curated_first": "已表达上限或授权例外",
+      "curated_later": "首次(qty≤max) OR (qty>max AND authorizedRole=true)。",
+      "scope": "等价性限qty/max已定义数值域；上限与角色状态由公共适配器提供，非各方法自行认证。"
+    },
+    {
+      "case": "FSV-B13",
+      "method": "P2P_STYLE",
+      "batch": "B",
+      "project_name": "ERPNext",
+      "audit_row": {
+        "case": "FSV-B13",
+        "method": "P2P_STYLE",
+        "main_constraint_mapping": "MAIN_CONSTRAINT_CORRECT_STATIC_SOURCE_POLICY_MAPPING",
+        "decision_direction": "CORRECT_WITHIN_DOCUMENTED_KNOWN_STATE_DOMAIN",
+        "compound_or_exception": "WITHIN_MAXIMUM_OR_AUTHORIZED_EXCEPTION_CORRECT",
+        "optional_presence": "NOT_APPLICABLE",
+        "source_default": "NO_SOURCE_DEFAULT_REQUIREMENT_IDENTIFIED_FOR_THIS_FOCUSED_TARGET",
+        "first_development_accepted": true,
+        "final_status": "ELIGIBLE",
+        "repaired_once": false,
+        "repair_semantic_observation": "NOT_RUN",
+        "auto_judge": null,
+        "archived_branch_observations": [
+          {
+            "label": "missing-trusted",
+            "archived_kind": "engineering_fail_closed_control",
+            "expected": "deny",
+            "actual": "deny"
+          }
+        ],
+        "evidence_files": [
+          {
+            "path": "D:\\lunwen\\EC-CSI投稿\\working\\exploration\\20261014_matched_evidence_labor\\matched_generation\\method_runs\\FSV-B13\\P2P_STYLE\\p2p_detect.json",
+            "sha256": "8313eed205bff3da6fd8f15cb83b08e613adf109a991b769af1adcf803210186"
+          },
+          {
+            "path": "D:\\lunwen\\EC-CSI投稿\\working\\exploration\\20261014_matched_evidence_labor\\matched_generation\\method_runs\\FSV-B13\\P2P_STYLE\\p2p_extract.json",
+            "sha256": "3eb7be503dc75baaab6df0d0b9aab11796692bdcab81584fa040fcaff79bb2e7"
+          },
+          {
+            "path": "D:\\lunwen\\EC-CSI投稿\\working\\exploration\\20261014_matched_evidence_labor\\matched_generation\\method_runs\\FSV-B13\\P2P_STYLE\\p2p_rego.json",
+            "sha256": "38ed83a1fb0755c39acdbc5148c5892df2238dd7606e5f1fd2d08ccaae04eec0"
+          },
+          {
+            "path": "D:\\lunwen\\EC-CSI投稿\\working\\exploration\\20261014_matched_evidence_labor\\matched_generation\\method_runs\\FSV-B13\\P2P_STYLE\\initial\\original.rego",
+            "sha256": "c22d07f3085d8557e76223a8983e6a6541aaa94ea1134736e9251fc6b0b87a3d"
+          },
+          {
+            "path": "D:\\lunwen\\EC-CSI投稿\\working\\exploration\\20261014_matched_evidence_labor\\matched_generation\\method_runs\\FSV-B13\\P2P_STYLE\\initial\\CHECKS.json",
+            "sha256": "8c2f0cdfa499569d61abd873cda7d524fc37dcb37fed45c4e69afc9d1bfe769d"
+          },
+          {
+            "path": "D:\\lunwen\\EC-CSI投稿\\working\\exploration\\20261014_matched_evidence_labor\\matched_generation\\method_runs\\FSV-B13\\P2P_STYLE\\RESULT.json",
+            "sha256": "6e61dc2d2e2ae9f23f4ff98b8a90830fe3bcc1f4cc76cec0ad44953f9eeb7b30"
+          }
+        ]
+      },
+      "curated_first": "已表达上限或授权例外",
+      "curated_later": "首次(qty≤max) OR authorizedRole=true。",
+      "scope": "等价性限qty/max已定义数值域；上限与角色状态由公共适配器提供，非各方法自行认证。"
+    },
+    {
+      "case": "FSV-B13",
+      "method": "AUTOPAC_STYLE",
+      "batch": "B",
+      "project_name": "ERPNext",
+      "audit_row": {
+        "case": "FSV-B13",
+        "method": "AUTOPAC_STYLE",
+        "main_constraint_mapping": "MAIN_CONSTRAINT_CORRECT_STATIC_SOURCE_POLICY_MAPPING",
+        "decision_direction": "CORRECT_WITHIN_DOCUMENTED_KNOWN_STATE_DOMAIN",
+        "compound_or_exception": "WITHIN_MAXIMUM_OR_AUTHORIZED_EXCEPTION_CORRECT",
+        "optional_presence": "NOT_APPLICABLE",
+        "source_default": "NO_SOURCE_DEFAULT_REQUIREMENT_IDENTIFIED_FOR_THIS_FOCUSED_TARGET",
+        "first_development_accepted": true,
+        "final_status": "ELIGIBLE",
+        "repaired_once": false,
+        "repair_semantic_observation": "NOT_RUN",
+        "auto_judge": {
+          "verdict": "ACCEPT",
+          "issues": []
+        },
+        "archived_branch_observations": [
+          {
+            "label": "missing-trusted",
+            "archived_kind": "engineering_fail_closed_control",
+            "expected": "deny",
+            "actual": "deny"
+          }
+        ],
+        "evidence_files": [
+          {
+            "path": "D:\\lunwen\\EC-CSI投稿\\working\\exploration\\20261014_matched_evidence_labor\\matched_generation\\method_runs\\FSV-B13\\AUTOPAC_STYLE\\autopac_generate.json",
+            "sha256": "54a1cb563ba0c1952c9ad6156cc24fe84e7756d8a62c1a8a39afe90210f93cdd"
+          },
+          {
+            "path": "D:\\lunwen\\EC-CSI投稿\\working\\exploration\\20261014_matched_evidence_labor\\matched_generation\\method_runs\\FSV-B13\\AUTOPAC_STYLE\\autopac_judge.json",
+            "sha256": "2f2f4fa27ccd9c8d6477c226a6f9547975256455962da20867bed3f93f113092"
+          },
+          {
+            "path": "D:\\lunwen\\EC-CSI投稿\\working\\exploration\\20261014_matched_evidence_labor\\matched_generation\\method_runs\\FSV-B13\\AUTOPAC_STYLE\\initial\\original.rego",
+            "sha256": "e959aafb99a485fcff7e558c089df21f1ae37a49f921aa2d518c5b16c82d728b"
+          },
+          {
+            "path": "D:\\lunwen\\EC-CSI投稿\\working\\exploration\\20261014_matched_evidence_labor\\matched_generation\\method_runs\\FSV-B13\\AUTOPAC_STYLE\\initial\\CHECKS.json",
+            "sha256": "037255109111fee1ba846aeb31325f923d79e17fca0db775bf1f45d12c6e5cc4"
+          },
+          {
+            "path": "D:\\lunwen\\EC-CSI投稿\\working\\exploration\\20261014_matched_evidence_labor\\matched_generation\\method_runs\\FSV-B13\\AUTOPAC_STYLE\\RESULT.json",
+            "sha256": "c160399026eeaea95a7edf9a7ea37dd3727f06f50ad103a792834738f242010f"
+          }
+        ]
+      },
+      "curated_first": "已表达上限或授权例外",
+      "curated_later": "首次两个allow分支对应授权与不超限；无需模型修复。",
+      "scope": "等价性限qty/max已定义数值域；上限与角色状态由公共适配器提供，非各方法自行认证。"
+    },
+    {
+      "case": "FSV-B17",
+      "method": "ECAS_MATCHED",
+      "batch": "B",
+      "project_name": "ERPNext",
+      "audit_row": {
+        "case": "FSV-B17",
+        "method": "ECAS_MATCHED",
+        "main_constraint_mapping": "MAIN_CONSTRAINT_CORRECT_STATIC_SOURCE_POLICY_MAPPING",
+        "decision_direction": "CORRECT_WITHIN_DOCUMENTED_KNOWN_STATE_DOMAIN",
+        "compound_or_exception": "NOT_APPLICABLE",
+        "optional_presence": "NOT_APPLICABLE",
+        "source_default": "NO_SOURCE_DEFAULT_REQUIREMENT_IDENTIFIED_FOR_THIS_FOCUSED_TARGET",
+        "first_development_accepted": true,
+        "final_status": "ELIGIBLE",
+        "repaired_once": false,
+        "repair_semantic_observation": "NOT_RUN",
+        "auto_judge": null,
+        "archived_branch_observations": [
+          {
+            "label": "missing-trusted",
+            "archived_kind": "engineering_fail_closed_control",
+            "expected": "deny",
+            "actual": "deny"
+          }
+        ],
+        "evidence_files": [
+          {
+            "path": "D:\\lunwen\\EC-CSI投稿\\working\\exploration\\20261014_matched_evidence_labor\\matched_generation\\method_runs\\FSV-B17\\ECAS_MATCHED\\first_candidate.json",
+            "sha256": "35603ce747a8a9003d8d8b4af95a29826669d07fb721524bb700f9ddbe355b39"
+          },
+          {
+            "path": "D:\\lunwen\\EC-CSI投稿\\working\\exploration\\20261014_matched_evidence_labor\\matched_generation\\method_runs\\FSV-B17\\ECAS_MATCHED\\initial\\admitted_policy.json",
+            "sha256": "a206e1535f6402c2864e7b3265b287dc3700c39e2f7aba4103ae62f0ecedc79d"
+          },
+          {
+            "path": "D:\\lunwen\\EC-CSI投稿\\working\\exploration\\20261014_matched_evidence_labor\\matched_generation\\method_runs\\FSV-B17\\ECAS_MATCHED\\initial\\CHECKS.json",
+            "sha256": "f0f7bd3b5d6b721a55fffe23c368dbb2061a56e909e54cf4f4165e77f32afeaa"
+          },
+          {
+            "path": "D:\\lunwen\\EC-CSI投稿\\working\\exploration\\20261014_matched_evidence_labor\\matched_generation\\method_runs\\FSV-B17\\ECAS_MATCHED\\RESULT.json",
+            "sha256": "1a4feb547d5ae6475d99d396a8644c24ffd1e627e43921dc4be64fef0e09f8e3"
+          }
+        ]
+      },
+      "curated_first": "已表达禁用状态禁止",
+      "curated_later": "首次允许customerDisabled=false；无需模型修复。",
+      "scope": "主业务比较限已知布尔状态；trusted缺值是另一控制层，不能自动当业务语义理解优势。"
+    },
+    {
+      "case": "FSV-B17",
+      "method": "P2P_STYLE",
+      "batch": "B",
+      "project_name": "ERPNext",
+      "audit_row": {
+        "case": "FSV-B17",
+        "method": "P2P_STYLE",
+        "main_constraint_mapping": "MAIN_CONSTRAINT_CORRECT_STATIC_SOURCE_POLICY_MAPPING",
+        "decision_direction": "CORRECT_WITHIN_DOCUMENTED_KNOWN_STATE_DOMAIN",
+        "compound_or_exception": "NOT_APPLICABLE",
+        "optional_presence": "NOT_APPLICABLE",
+        "source_default": "NO_SOURCE_DEFAULT_REQUIREMENT_IDENTIFIED_FOR_THIS_FOCUSED_TARGET",
+        "first_development_accepted": true,
+        "final_status": "ELIGIBLE",
+        "repaired_once": false,
+        "repair_semantic_observation": "NOT_RUN",
+        "auto_judge": null,
+        "archived_branch_observations": [
+          {
+            "label": "missing-trusted",
+            "archived_kind": "engineering_fail_closed_control",
+            "expected": "deny",
+            "actual": "allow"
+          }
+        ],
+        "evidence_files": [
+          {
+            "path": "D:\\lunwen\\EC-CSI投稿\\working\\exploration\\20261014_matched_evidence_labor\\matched_generation\\method_runs\\FSV-B17\\P2P_STYLE\\p2p_detect.json",
+            "sha256": "634c88f1e2a85c3ee8a27c9bf4ffcaf98628755761e699dcf5d940136a67563e"
+          },
+          {
+            "path": "D:\\lunwen\\EC-CSI投稿\\working\\exploration\\20261014_matched_evidence_labor\\matched_generation\\method_runs\\FSV-B17\\P2P_STYLE\\p2p_extract.json",
+            "sha256": "72b78a63392c15a92af62acd7c5a660fc95f775e4445c59e504e15b7aeb3912c"
+          },
+          {
+            "path": "D:\\lunwen\\EC-CSI投稿\\working\\exploration\\20261014_matched_evidence_labor\\matched_generation\\method_runs\\FSV-B17\\P2P_STYLE\\p2p_rego.json",
+            "sha256": "1fa942b8c57d5150085658421cceb991d54fb89d5b2a4e875ad6af4aedf7fd92"
+          },
+          {
+            "path": "D:\\lunwen\\EC-CSI投稿\\working\\exploration\\20261014_matched_evidence_labor\\matched_generation\\method_runs\\FSV-B17\\P2P_STYLE\\initial\\original.rego",
+            "sha256": "6870e87318fd3debd77aa853708c82dfdce3130277c2c3ccae62e1fe7a2b85a3"
+          },
+          {
+            "path": "D:\\lunwen\\EC-CSI投稿\\working\\exploration\\20261014_matched_evidence_labor\\matched_generation\\method_runs\\FSV-B17\\P2P_STYLE\\initial\\CHECKS.json",
+            "sha256": "b421edb35d21034c54ddf52f0d6ff27cbb9b3155c8e3778ddecec1314ffa3bad"
+          },
+          {
+            "path": "D:\\lunwen\\EC-CSI投稿\\working\\exploration\\20261014_matched_evidence_labor\\matched_generation\\method_runs\\FSV-B17\\P2P_STYLE\\RESULT.json",
+            "sha256": "51df3b6b338f71ae4c94f8a9ed25b2475b492f30a89000bd35550febf3f90a2d"
+          }
+        ]
+      },
+      "curated_first": "已表达禁用状态禁止",
+      "curated_later": "首次DENY disabled=true，Rego为not disabled；已知布尔域正确。",
+      "scope": "主业务比较限已知布尔状态；trusted缺值是另一控制层，不能自动当业务语义理解优势。"
+    },
+    {
+      "case": "FSV-B17",
+      "method": "AUTOPAC_STYLE",
+      "batch": "B",
+      "project_name": "ERPNext",
+      "audit_row": {
+        "case": "FSV-B17",
+        "method": "AUTOPAC_STYLE",
+        "main_constraint_mapping": "MAIN_CONSTRAINT_CORRECT_STATIC_SOURCE_POLICY_MAPPING",
+        "decision_direction": "CORRECT_WITHIN_DOCUMENTED_KNOWN_STATE_DOMAIN",
+        "compound_or_exception": "NOT_APPLICABLE",
+        "optional_presence": "NOT_APPLICABLE",
+        "source_default": "NO_SOURCE_DEFAULT_REQUIREMENT_IDENTIFIED_FOR_THIS_FOCUSED_TARGET",
+        "first_development_accepted": true,
+        "final_status": "ELIGIBLE",
+        "repaired_once": false,
+        "repair_semantic_observation": "NOT_RUN",
+        "auto_judge": {
+          "verdict": "ACCEPT",
+          "issues": []
+        },
+        "archived_branch_observations": [
+          {
+            "label": "missing-trusted",
+            "archived_kind": "engineering_fail_closed_control",
+            "expected": "deny",
+            "actual": "allow"
+          }
+        ],
+        "evidence_files": [
+          {
+            "path": "D:\\lunwen\\EC-CSI投稿\\working\\exploration\\20261014_matched_evidence_labor\\matched_generation\\method_runs\\FSV-B17\\AUTOPAC_STYLE\\autopac_generate.json",
+            "sha256": "533267c429bd5688d0710a3db3a351b2948e581d2e9fffff8d5ab9d667f46989"
+          },
+          {
+            "path": "D:\\lunwen\\EC-CSI投稿\\working\\exploration\\20261014_matched_evidence_labor\\matched_generation\\method_runs\\FSV-B17\\AUTOPAC_STYLE\\autopac_judge.json",
+            "sha256": "2f2f4fa27ccd9c8d6477c226a6f9547975256455962da20867bed3f93f113092"
+          },
+          {
+            "path": "D:\\lunwen\\EC-CSI投稿\\working\\exploration\\20261014_matched_evidence_labor\\matched_generation\\method_runs\\FSV-B17\\AUTOPAC_STYLE\\initial\\original.rego",
+            "sha256": "b984020ca487ffa8468e4ed38ad72d447f17061743b5b534109ef7edd1214e41"
+          },
+          {
+            "path": "D:\\lunwen\\EC-CSI投稿\\working\\exploration\\20261014_matched_evidence_labor\\matched_generation\\method_runs\\FSV-B17\\AUTOPAC_STYLE\\initial\\CHECKS.json",
+            "sha256": "84be5a0d02cf7ce07a7c2bc81cf4ebb7c2d997b5ca99e1330013998baa2e3a3f"
+          },
+          {
+            "path": "D:\\lunwen\\EC-CSI投稿\\working\\exploration\\20261014_matched_evidence_labor\\matched_generation\\method_runs\\FSV-B17\\AUTOPAC_STYLE\\RESULT.json",
+            "sha256": "972078202a8c6e1da3241323c36fcab249d8cc46c57f47584db78b8461cd8723"
+          }
+        ]
+      },
+      "curated_first": "已表达禁用状态禁止",
+      "curated_later": "首次not disabled；已知布尔域正确；无需模型修复。",
+      "scope": "主业务比较限已知布尔状态；trusted缺值是另一控制层，不能自动当业务语义理解优势。"
+    },
+    {
+      "case": "FSV-B19",
+      "method": "ECAS_MATCHED",
+      "batch": "B",
+      "project_name": "ERPNext",
+      "audit_row": {
+        "case": "FSV-B19",
+        "method": "ECAS_MATCHED",
+        "main_constraint_mapping": "MAIN_CONSTRAINT_CORRECT_STATIC_SOURCE_POLICY_MAPPING",
+        "decision_direction": "CORRECT_WITHIN_DOCUMENTED_KNOWN_STATE_DOMAIN",
+        "compound_or_exception": "ON_HOLD_AND_INVOICES_OR_ALL_BLOCKS_PURCHASE_ORDER_KNOWN_ENUMS_CORRECT",
+        "optional_presence": "NOT_APPLICABLE",
+        "source_default": "EMPTY_HELD_TYPE_DENIED_CONSISTENT_WITH_DOCUMENTED_DEFAULT_ALL_IF_RAW_EMPTY_REACHES_GATEWAY",
+        "first_development_accepted": true,
+        "final_status": "ELIGIBLE",
+        "repaired_once": false,
+        "repair_semantic_observation": "NOT_RUN",
+        "auto_judge": null,
+        "archived_branch_observations": [
+          {
+            "label": "held-empty-type",
+            "archived_kind": "conservative_empty_type_control",
+            "expected": "deny",
+            "actual": "deny"
+          },
+          {
+            "label": "held-unknown-type",
+            "archived_kind": "engineering_unknown_type_control",
+            "expected": "deny",
+            "actual": "deny"
+          },
+          {
+            "label": "missing-trusted",
+            "archived_kind": "engineering_fail_closed_control",
+            "expected": "deny",
+            "actual": "deny"
+          }
+        ],
+        "evidence_files": [
+          {
+            "path": "D:\\lunwen\\EC-CSI投稿\\working\\exploration\\20261014_matched_evidence_labor\\matched_generation\\method_runs\\FSV-B19\\ECAS_MATCHED\\first_candidate.json",
+            "sha256": "2d09501af519f2aa3a459adc4e9df36db1fa0b76332bd72c73189b019e369e90"
+          },
+          {
+            "path": "D:\\lunwen\\EC-CSI投稿\\working\\exploration\\20261014_matched_evidence_labor\\matched_generation\\method_runs\\FSV-B19\\ECAS_MATCHED\\initial\\admitted_policy.json",
+            "sha256": "ac7c5bbf8bbdf0ee773ce0b06a357a9b0d48e3bfa11b21bd229cfe22cf16d98d"
+          },
+          {
+            "path": "D:\\lunwen\\EC-CSI投稿\\working\\exploration\\20261014_matched_evidence_labor\\matched_generation\\method_runs\\FSV-B19\\ECAS_MATCHED\\initial\\CHECKS.json",
+            "sha256": "06b9cc9fe4efb660d60256b67981b1680e72edeb04a9d3a99fe6d0bc8a6a4022"
+          },
+          {
+            "path": "D:\\lunwen\\EC-CSI投稿\\working\\exploration\\20261014_matched_evidence_labor\\matched_generation\\method_runs\\FSV-B19\\ECAS_MATCHED\\RESULT.json",
+            "sha256": "8a781167ffc84f72d91d3599c92011af4324381dcd47b13ca38e25944fe5e3b7"
+          }
+        ]
+      },
+      "curated_first": "已表达冻结类型的组合条件³",
+      "curated_later": "首次允许!onHold OR holdType=Payments；无显式empty→All规则。",
+      "scope": "已知合法枚举域主条件一致；未选类型默认All另作事后线索，需确认适配器是否暴露未规范化空值，不能由结果反推模型显式提取默认值。"
+    },
+    {
+      "case": "FSV-B19",
+      "method": "P2P_STYLE",
+      "batch": "B",
+      "project_name": "ERPNext",
+      "audit_row": {
+        "case": "FSV-B19",
+        "method": "P2P_STYLE",
+        "main_constraint_mapping": "MAIN_CONSTRAINT_CORRECT_STATIC_SOURCE_POLICY_MAPPING",
+        "decision_direction": "CORRECT_WITHIN_DOCUMENTED_KNOWN_STATE_DOMAIN",
+        "compound_or_exception": "ON_HOLD_AND_INVOICES_OR_ALL_BLOCKS_PURCHASE_ORDER_KNOWN_ENUMS_CORRECT",
+        "optional_presence": "NOT_APPLICABLE",
+        "source_default": "EMPTY_HELD_TYPE_ALLOWED_DOCUMENT_DEFAULT_ALL_NOT_MAPPED_IF_RAW_EMPTY_REACHES_GATEWAY",
+        "first_development_accepted": true,
+        "final_status": "ELIGIBLE",
+        "repaired_once": false,
+        "repair_semantic_observation": "NOT_RUN",
+        "auto_judge": null,
+        "archived_branch_observations": [
+          {
+            "label": "held-empty-type",
+            "archived_kind": "conservative_empty_type_control",
+            "expected": "deny",
+            "actual": "allow"
+          },
+          {
+            "label": "held-unknown-type",
+            "archived_kind": "engineering_unknown_type_control",
+            "expected": "deny",
+            "actual": "allow"
+          },
+          {
+            "label": "missing-trusted",
+            "archived_kind": "engineering_fail_closed_control",
+            "expected": "deny",
+            "actual": "allow"
+          }
+        ],
+        "evidence_files": [
+          {
+            "path": "D:\\lunwen\\EC-CSI投稿\\working\\exploration\\20261014_matched_evidence_labor\\matched_generation\\method_runs\\FSV-B19\\P2P_STYLE\\p2p_detect.json",
+            "sha256": "9b48aa9e72484810e18fe0428cf559ae51cafd65d55608da3cb1e20270969d72"
+          },
+          {
+            "path": "D:\\lunwen\\EC-CSI投稿\\working\\exploration\\20261014_matched_evidence_labor\\matched_generation\\method_runs\\FSV-B19\\P2P_STYLE\\p2p_extract.json",
+            "sha256": "0101147306293a7b32766a86458a4ce7a90e4599ef13ecc1e1a71dddfc0331d1"
+          },
+          {
+            "path": "D:\\lunwen\\EC-CSI投稿\\working\\exploration\\20261014_matched_evidence_labor\\matched_generation\\method_runs\\FSV-B19\\P2P_STYLE\\p2p_rego.json",
+            "sha256": "96bec1ff70c792563ffdbf2c1e28e6ccb01d43db3ed58eebfba36201a3162c6e"
+          },
+          {
+            "path": "D:\\lunwen\\EC-CSI投稿\\working\\exploration\\20261014_matched_evidence_labor\\matched_generation\\method_runs\\FSV-B19\\P2P_STYLE\\initial\\original.rego",
+            "sha256": "bd9dee0463bd7c56b64639c048595efa412fa3c5f169d5a095135c7f8057e108"
+          },
+          {
+            "path": "D:\\lunwen\\EC-CSI投稿\\working\\exploration\\20261014_matched_evidence_labor\\matched_generation\\method_runs\\FSV-B19\\P2P_STYLE\\initial\\CHECKS.json",
+            "sha256": "5f6c53c64ac638683b9d961d90ec9e6004e8e72aec45497287b75919f6f85d2c"
+          },
+          {
+            "path": "D:\\lunwen\\EC-CSI投稿\\working\\exploration\\20261014_matched_evidence_labor\\matched_generation\\method_runs\\FSV-B19\\P2P_STYLE\\RESULT.json",
+            "sha256": "9dc5b63621f6c2177d54e7cb079e05306b8b0bc8b4fd846870dc6ca3acc78aa5"
+          }
+        ]
+      },
+      "curated_first": "已表达冻结类型的组合条件³",
+      "curated_later": "首次禁止onHold AND type∈{Invoices,All}；未显式表达空值默认All。",
+      "scope": "已知合法枚举域主条件一致；未选类型默认All另作事后线索，需确认适配器是否暴露未规范化空值，不能由结果反推模型显式提取默认值。"
+    },
+    {
+      "case": "FSV-B19",
+      "method": "AUTOPAC_STYLE",
+      "batch": "B",
+      "project_name": "ERPNext",
+      "audit_row": {
+        "case": "FSV-B19",
+        "method": "AUTOPAC_STYLE",
+        "main_constraint_mapping": "MAIN_CONSTRAINT_CORRECT_STATIC_SOURCE_POLICY_MAPPING",
+        "decision_direction": "CORRECT_WITHIN_DOCUMENTED_KNOWN_STATE_DOMAIN",
+        "compound_or_exception": "ON_HOLD_AND_INVOICES_OR_ALL_BLOCKS_PURCHASE_ORDER_KNOWN_ENUMS_CORRECT",
+        "optional_presence": "NOT_APPLICABLE",
+        "source_default": "EMPTY_HELD_TYPE_ALLOWED_DOCUMENT_DEFAULT_ALL_NOT_MAPPED_IF_RAW_EMPTY_REACHES_GATEWAY",
+        "first_development_accepted": true,
+        "final_status": "ELIGIBLE",
+        "repaired_once": false,
+        "repair_semantic_observation": "NOT_RUN",
+        "auto_judge": {
+          "verdict": "ACCEPT",
+          "issues": []
+        },
+        "archived_branch_observations": [
+          {
+            "label": "held-empty-type",
+            "archived_kind": "conservative_empty_type_control",
+            "expected": "deny",
+            "actual": "allow"
+          },
+          {
+            "label": "held-unknown-type",
+            "archived_kind": "engineering_unknown_type_control",
+            "expected": "deny",
+            "actual": "allow"
+          },
+          {
+            "label": "missing-trusted",
+            "archived_kind": "engineering_fail_closed_control",
+            "expected": "deny",
+            "actual": "allow"
+          }
+        ],
+        "evidence_files": [
+          {
+            "path": "D:\\lunwen\\EC-CSI投稿\\working\\exploration\\20261014_matched_evidence_labor\\matched_generation\\method_runs\\FSV-B19\\AUTOPAC_STYLE\\autopac_generate.json",
+            "sha256": "92bb11ed814fafc93fc74ae4736019898ac6cd257963e728a0c8487dbcd9de29"
+          },
+          {
+            "path": "D:\\lunwen\\EC-CSI投稿\\working\\exploration\\20261014_matched_evidence_labor\\matched_generation\\method_runs\\FSV-B19\\AUTOPAC_STYLE\\autopac_judge.json",
+            "sha256": "2f2f4fa27ccd9c8d6477c226a6f9547975256455962da20867bed3f93f113092"
+          },
+          {
+            "path": "D:\\lunwen\\EC-CSI投稿\\working\\exploration\\20261014_matched_evidence_labor\\matched_generation\\method_runs\\FSV-B19\\AUTOPAC_STYLE\\initial\\original.rego",
+            "sha256": "0ce13fdc20750fcc8d77f47a8abc66e0e29de746a752f3cf52d56a764e8ba083"
+          },
+          {
+            "path": "D:\\lunwen\\EC-CSI投稿\\working\\exploration\\20261014_matched_evidence_labor\\matched_generation\\method_runs\\FSV-B19\\AUTOPAC_STYLE\\initial\\CHECKS.json",
+            "sha256": "487ee45dcc85d811e06fe0f72986414de6170fb69b2a607905c94243e5dc86a8"
+          },
+          {
+            "path": "D:\\lunwen\\EC-CSI投稿\\working\\exploration\\20261014_matched_evidence_labor\\matched_generation\\method_runs\\FSV-B19\\AUTOPAC_STYLE\\RESULT.json",
+            "sha256": "a6b596082892264a7f63985070de49e265af76507c83e80100499fc1b69691ba"
+          }
+        ]
+      },
+      "curated_first": "已表达冻结类型的组合条件³",
+      "curated_later": "首次同样禁止onHold AND type∈{Invoices,All}；未显式表达空值默认All。",
+      "scope": "已知合法枚举域主条件一致；未选类型默认All另作事后线索，需确认适配器是否暴露未规范化空值，不能由结果反推模型显式提取默认值。"
+    }
+  ],
+  "old_visible_source_observations": [
+    {
+      "case": "FSV-B06",
+      "packet_path": "D:\\lunwen\\EC-CSI投稿\\working\\exploration\\20261014_external_baseline_pilot\\generation_inputs\\FSV-B06\\packet.json",
+      "packet_sha256": "01ac46f8ed8d0b75d23a4adb7a16fafe35316f1e75fbe52d767540c39fe2f16f",
+      "json_pointer": "/visible_sources/0",
+      "evidence_id": "VIS-FSV-B06-01",
+      "source_id": "fineract-re-ageing.adoc",
+      "source_sha256_as_recorded_in_packet": "95D99F4BEE0B70B23487CBEE14CC1C767AB4667240F297B6ECE0DE3545BE5F16",
+      "locator": "re-ageing.adoc:85-92;"
+    },
+    {
+      "case": "FSV-B06",
+      "packet_path": "D:\\lunwen\\EC-CSI投稿\\working\\exploration\\20261014_external_baseline_pilot\\generation_inputs\\FSV-B06\\packet.json",
+      "packet_sha256": "01ac46f8ed8d0b75d23a4adb7a16fafe35316f1e75fbe52d767540c39fe2f16f",
+      "json_pointer": "/visible_sources/1",
+      "evidence_id": "VIS-FSV-B06-02",
+      "source_id": "fineract-re-ageing.adoc",
+      "source_sha256_as_recorded_in_packet": "95D99F4BEE0B70B23487CBEE14CC1C767AB4667240F297B6ECE0DE3545BE5F16",
+      "locator": "re-ageing.adoc:95-110"
+    },
+    {
+      "case": "FSV-B06",
+      "packet_path": "D:\\lunwen\\EC-CSI投稿\\working\\exploration\\20261014_external_baseline_pilot\\generation_inputs\\FSV-B06\\packet.json",
+      "packet_sha256": "01ac46f8ed8d0b75d23a4adb7a16fafe35316f1e75fbe52d767540c39fe2f16f",
+      "json_pointer": "/visible_sources/2",
+      "evidence_id": "VIS-FSV-B06-RUNTIME-ABI",
+      "source_id": "EC-V2-RUNTIME-INTERFACE-CATALOG-V1",
+      "source_sha256_as_recorded_in_packet": "8221DA8A6720B0593A8D337F18569C9947AAB05B02E5C84FB0C50E3DE8C1ABD7",
+      "locator": "tasks.FSV-B06"
+    },
+    {
+      "case": "FSV-S02",
+      "packet_path": "D:\\lunwen\\EC-CSI投稿\\working\\exploration\\20261014_external_baseline_pilot\\generation_inputs\\FSV-S02\\packet.json",
+      "packet_sha256": "5c8de100a097aa1cae1c236a1d9d7771e8c1e175d9c8601abc9d319dafca9611",
+      "json_pointer": "/visible_sources/0",
+      "evidence_id": "VIS-FSV-S02-01",
+      "source_id": "fineract-openapi-1.14.0.json",
+      "source_sha256_as_recorded_in_packet": "A44D6FA247D495A4FB147CC8C5EA1A364D8F05A40762B31A055681373E455A48",
+      "locator": "paths./v1/clients/{clientId}/identifiers.post"
+    },
+    {
+      "case": "FSV-S02",
+      "packet_path": "D:\\lunwen\\EC-CSI投稿\\working\\exploration\\20261014_external_baseline_pilot\\generation_inputs\\FSV-S02\\packet.json",
+      "packet_sha256": "5c8de100a097aa1cae1c236a1d9d7771e8c1e175d9c8601abc9d319dafca9611",
+      "json_pointer": "/visible_sources/1",
+      "evidence_id": "VIS-FSV-S02-RUNTIME-ABI",
+      "source_id": "EC-V2-RUNTIME-INTERFACE-CATALOG-V1",
+      "source_sha256_as_recorded_in_packet": "8221DA8A6720B0593A8D337F18569C9947AAB05B02E5C84FB0C50E3DE8C1ABD7",
+      "locator": "tasks.FSV-S02"
+    },
+    {
+      "case": "FSV-S04",
+      "packet_path": "D:\\lunwen\\EC-CSI投稿\\working\\exploration\\20261014_external_baseline_pilot\\generation_inputs\\FSV-S04\\packet.json",
+      "packet_sha256": "d37c94ec03d4901259ee058bd728fd0bc7736a3033a7b3347881626233bf5d49",
+      "json_pointer": "/visible_sources/0",
+      "evidence_id": "VIS-FSV-S04-01",
+      "source_id": "frappe-rest-api.html",
+      "source_sha256_as_recorded_in_packet": "87CB28850081B1F7D6702521E98E5F242498A456491EF26BDE847C20CCBFE154",
+      "locator": "extracted/frappe-rest-api.md:article"
+    },
+    {
+      "case": "FSV-S04",
+      "packet_path": "D:\\lunwen\\EC-CSI投稿\\working\\exploration\\20261014_external_baseline_pilot\\generation_inputs\\FSV-S04\\packet.json",
+      "packet_sha256": "d37c94ec03d4901259ee058bd728fd0bc7736a3033a7b3347881626233bf5d49",
+      "json_pointer": "/visible_sources/1",
+      "evidence_id": "VIS-FSV-S04-02",
+      "source_id": "erpnext-lead-doctype.json",
+      "source_sha256_as_recorded_in_packet": "D381706B9196BA6FDF43945415288FD56BB671DA722B0EF4D17BD9B65CFBAF0B",
+      "locator": "erpnext-lead-doctype.json:complete-field-catalog"
+    },
+    {
+      "case": "FSV-S04",
+      "packet_path": "D:\\lunwen\\EC-CSI投稿\\working\\exploration\\20261014_external_baseline_pilot\\generation_inputs\\FSV-S04\\packet.json",
+      "packet_sha256": "d37c94ec03d4901259ee058bd728fd0bc7736a3033a7b3347881626233bf5d49",
+      "json_pointer": "/visible_sources/2",
+      "evidence_id": "VIS-FSV-S04-RUNTIME-ABI",
+      "source_id": "EC-V2-RUNTIME-INTERFACE-CATALOG-V1",
+      "source_sha256_as_recorded_in_packet": "8221DA8A6720B0593A8D337F18569C9947AAB05B02E5C84FB0C50E3DE8C1ABD7",
+      "locator": "tasks.FSV-S04"
+    }
+  ],
+  "new_visible_sources": [
+    {
+      "case": "FSV-S03",
+      "packet": {
+        "path": "D:\\lunwen\\EC-CSI投稿\\working\\exploration\\20261014_matched_evidence_labor\\matched_generation\\generation_inputs\\FSV-S03\\packet.json",
+        "sha256": "acddb441ffde6b492d77d8964ce22ba69bf037eb164daa9f8674ca1e4a8f596a"
+      },
+      "target": {
+        "operation": "POST /v1/clients/{clientId}/familymembers",
+        "system": "Fineract",
+        "version": "1.14.0"
+      },
+      "objective": {
+        "constraint_object": "The age field of a family-member creation request",
+        "constraint_kind": "The published API type requirement for age",
+        "scope": "Only the age type requirement in the supplied OpenAPI. Other fields, identity/authentication, age range and presence are outside this task unless the target source requires them for this type constraint."
+      },
+      "visible_sources": [
+        {
+          "evidence_id": "VIS-FSV-S03-01",
+          "source_id": "fineract-openapi-1.14.0.json",
+          "source_sha256": "A44D6FA247D495A4FB147CC8C5EA1A364D8F05A40762B31A055681373E455A48",
+          "locator": "paths./v1/clients/{clientId}/familymembers.post"
+        },
+        {
+          "evidence_id": "VIS-FSV-S03-RUNTIME-ABI",
+          "source_id": "EC-V2-RUNTIME-INTERFACE-CATALOG-V1",
+          "source_sha256": "8221DA8A6720B0593A8D337F18569C9947AAB05B02E5C84FB0C50E3DE8C1ABD7",
+          "locator": "tasks.FSV-S03"
+        }
+      ]
+    },
+    {
+      "case": "FSV-B13",
+      "packet": {
+        "path": "D:\\lunwen\\EC-CSI投稿\\working\\exploration\\20261014_matched_evidence_labor\\matched_generation\\generation_inputs\\FSV-B13\\packet.json",
+        "sha256": "0b07fe5eb4c156c96759cb0ff7e45d58523efd87549f88932ef029003a4ecb9b"
+      },
+      "target": {
+        "operation": "POST /api/resource/Purchase Receipt",
+        "system": "ERPNext",
+        "version": "16.0.0"
+      },
+      "objective": {
+        "constraint_object": "Quantity on a Purchase Receipt represented by request.body.qty, supplied quantity limit and authenticated role context",
+        "constraint_kind": "Receipt quantity allowance and the documented authorized-role exception",
+        "scope": "Implement the supplied Stock Settings quantity policy for this target; upstream supplies trusted derivedMaximumQty and authorizedRole. Do not add unrelated field, item, range or full-document validation."
+      },
+      "visible_sources": [
+        {
+          "evidence_id": "VIS-FSV-B13-01",
+          "source_id": "erpnext-stock-settings.html",
+          "source_sha256": "F866B7A7F90AEFCB06DA623C3F9EF25F5524D4261887FC80FFDE3AAA76A530EA",
+          "locator": "extracted/erpnext-stock-settings.md:article"
+        },
+        {
+          "evidence_id": "VIS-FSV-B13-02",
+          "source_id": "frappe-rest-api.html",
+          "source_sha256": "87CB28850081B1F7D6702521E98E5F242498A456491EF26BDE847C20CCBFE154",
+          "locator": "extracted/frappe-rest-api.md:article;operation-matched introduction and complete Create subsection"
+        },
+        {
+          "evidence_id": "VIS-FSV-B13-03",
+          "source_id": "erpnext-stock-settings-doctype.json",
+          "source_sha256": "68834EFE08CF24EA22F82D0393886526FF892A920389FAC4FE73CAA6EB5A7D91",
+          "locator": "erpnext-stock-settings-doctype.json:complete-field-catalog"
+        },
+        {
+          "evidence_id": "VIS-FSV-B13-RUNTIME-ABI",
+          "source_id": "EC-V2-RUNTIME-INTERFACE-CATALOG-V1",
+          "source_sha256": "8221DA8A6720B0593A8D337F18569C9947AAB05B02E5C84FB0C50E3DE8C1ABD7",
+          "locator": "tasks.FSV-B13"
+        }
+      ]
+    },
+    {
+      "case": "FSV-B17",
+      "packet": {
+        "path": "D:\\lunwen\\EC-CSI投稿\\working\\exploration\\20261014_matched_evidence_labor\\matched_generation\\generation_inputs\\FSV-B17\\packet.json",
+        "sha256": "03e726de50a01e76c55ce26e0925632c218de4ab96339c3752d37e33535a6479"
+      },
+      "target": {
+        "operation": "POST /api/resource/Sales Order",
+        "system": "ERPNext",
+        "version": "16.0.0"
+      },
+      "objective": {
+        "constraint_object": "Customer disabled status relevant to Sales Order creation",
+        "constraint_kind": "The documented disabled-customer condition for the target operation",
+        "scope": "Use the provided trusted customer state for this target only; do not add unrelated Customer or Sales Order validation."
+      },
+      "visible_sources": [
+        {
+          "evidence_id": "VIS-FSV-B17-01",
+          "source_id": "erpnext-customer.html",
+          "source_sha256": "BA52637ECC58763F80A1AB3F94CA82F51048E19EAC94DD1D2E41E92853CE1AE9",
+          "locator": "extracted/erpnext-customer.md:article"
+        },
+        {
+          "evidence_id": "VIS-FSV-B17-02",
+          "source_id": "frappe-rest-api.html",
+          "source_sha256": "87CB28850081B1F7D6702521E98E5F242498A456491EF26BDE847C20CCBFE154",
+          "locator": "extracted/frappe-rest-api.md:article;operation-matched introduction and complete Create subsection"
+        },
+        {
+          "evidence_id": "VIS-FSV-B17-03",
+          "source_id": "erpnext-customer-doctype.json",
+          "source_sha256": "F86FCB293BF970C6366E6E0DD1E232A0BA8EA635C25265D426383D05B428F648",
+          "locator": "erpnext-customer-doctype.json:complete-field-catalog"
+        },
+        {
+          "evidence_id": "VIS-FSV-B17-RUNTIME-ABI",
+          "source_id": "EC-V2-RUNTIME-INTERFACE-CATALOG-V1",
+          "source_sha256": "8221DA8A6720B0593A8D337F18569C9947AAB05B02E5C84FB0C50E3DE8C1ABD7",
+          "locator": "tasks.FSV-B17"
+        }
+      ]
+    },
+    {
+      "case": "FSV-B19",
+      "packet": {
+        "path": "D:\\lunwen\\EC-CSI投稿\\working\\exploration\\20261014_matched_evidence_labor\\matched_generation\\generation_inputs\\FSV-B19\\packet.json",
+        "sha256": "10c5597e97e4190aa041c53aa3aee8b4c1c48fa77d073bfb4fb5eb5a64a346fd"
+      },
+      "target": {
+        "operation": "POST /api/resource/Purchase Order",
+        "system": "ERPNext",
+        "version": "16.0.0"
+      },
+      "objective": {
+        "constraint_object": "Supplier on-hold status and hold type relevant to Purchase Order creation",
+        "constraint_kind": "The documented supplier hold-type condition for the target operation",
+        "scope": "Implement the supplier hold policy for this Purchase Order target only; do not add restrictions for invoices, payments, other endpoints or unrelated fields."
+      },
+      "visible_sources": [
+        {
+          "evidence_id": "VIS-FSV-B19-01",
+          "source_id": "erpnext-supplier.html",
+          "source_sha256": "1DD2CBED3915F83CC734BA23F7A016A9C386ED6BA9E54962619F70DB706F5C6F",
+          "locator": "extracted/erpnext-supplier.md:article"
+        },
+        {
+          "evidence_id": "VIS-FSV-B19-02",
+          "source_id": "frappe-rest-api.html",
+          "source_sha256": "87CB28850081B1F7D6702521E98E5F242498A456491EF26BDE847C20CCBFE154",
+          "locator": "extracted/frappe-rest-api.md:article;operation-matched introduction and complete Create subsection"
+        },
+        {
+          "evidence_id": "VIS-FSV-B19-03",
+          "source_id": "erpnext-supplier-doctype.json",
+          "source_sha256": "07347D26E75881232AC991A31F0560CE3676335C6A050E7412EF66670FD637CB",
+          "locator": "erpnext-supplier-doctype.json:complete-field-catalog"
+        },
+        {
+          "evidence_id": "VIS-FSV-B19-04",
+          "source_id": "erpnext-purchase-order-doctype.json",
+          "source_sha256": "99F835C958B3191B09EB61D232A3D6CDEF14990B666EA766979F8C7ACFEF800F",
+          "locator": "erpnext-purchase-order-doctype.json:complete-field-catalog"
+        },
+        {
+          "evidence_id": "VIS-FSV-B19-RUNTIME-ABI",
+          "source_id": "EC-V2-RUNTIME-INTERFACE-CATALOG-V1",
+          "source_sha256": "8221DA8A6720B0593A8D337F18569C9947AAB05B02E5C84FB0C50E3DE8C1ABD7",
+          "locator": "tasks.FSV-B19"
+        }
+      ]
+    }
+  ],
+  "b19_default_value_posthoc_clue": {
+    "classification": "POSTHOC_SOURCE_DEFAULT_CLUE_NOT_PREREGISTERED_SEMANTIC_PROBE",
+    "source_packet": {
+      "path": "D:\\lunwen\\EC-CSI投稿\\working\\exploration\\20261014_matched_evidence_labor\\matched_generation\\generation_inputs\\FSV-B19\\packet.json",
+      "sha256": "10c5597e97e4190aa041c53aa3aee8b4c1c48fa77d073bfb4fb5eb5a64a346fd"
+    },
+    "source_evidence_id": "VIS-FSV-B19-01",
+    "full_source_subsection": "### 2.4 Payment Terms and Block Supplier\n\n- Default Payment Terms Template: If a Payment Terms template is set here, it'll be automatically selected for future purchase transactions.\n\n- Block Supplier: You can block invoices, payments or both from a supplier till specific date. Choose 'Hold Type', if you do not select a hold type, ERPNext will set it to \"All\". When a supplier is blocked, their status will be shown as 'On Hold'.\n\nThe hold types are as follows:\n+ Invoices: ERPNext will not allow Purchase Invoices or Purchase Orders to be created for the supplier + Payments: ERPNext will not allow Payment Entries to be created for the Supplier + All: ERPNext will apply both hold types aboveIf you do not set a release date, ERPNext will hold the Supplier **indefinitely**.\n",
+    "supplier_doctype_fields": [
+      [
+        "on_hold",
+        "Check",
+        {
+          "default": "0"
+        }
+      ],
+      [
+        "hold_type",
+        "Select",
+        {
+          "options": "\nAll\nInvoices\nPayments"
+        }
+      ]
+    ],
+    "abi_evidence_id": "VIS-FSV-B19-RUNTIME-ABI",
+    "abi_hold_path": {
+      "authority": "server_state",
+      "path": "/trusted/holdType",
+      "type": "string"
+    },
+    "common_adapter": {
+      "subject_role": "authenticated_api_caller",
+      "subject_id": "authenticated_api_caller",
+      "action": "POST /api/resource/Purchase Order",
+      "resource_id": "ERPNext:16.0.0",
+      "resource_system": "ERPNext",
+      "resource_version": "16.0.0",
+      "request_and_trusted_paths": [
+        {
+          "authority": "client",
+          "path": "/request/body/action",
+          "type": "string"
+        },
+        {
+          "authority": "client",
+          "path": "/request/body/supplier",
+          "type": "string"
+        },
+        {
+          "authority": "server_state",
+          "path": "/trusted/holdType",
+          "type": "string"
+        },
+        {
+          "authority": "server_state",
+          "path": "/trusted/supplierOnHold",
+          "type": "boolean"
+        }
+      ],
+      "envelope_representation": {
+        "subject": {
+          "id": "authenticated_api_caller",
+          "role": "authenticated_api_caller"
+        },
+        "action": "POST /api/resource/Purchase Order",
+        "resource": {
+          "id": "ERPNext:16.0.0",
+          "system": "ERPNext",
+          "version": "16.0.0"
+        },
+        "request": "original request unchanged",
+        "trusted": "original trusted unchanged"
+      },
+      "notice": "resource is an object; compare resource.id to organization schema resource strings. Subject id/role are neutral aliases, not an added permission rule. Source evidence and runtime path declarations contain no evaluation label."
+    },
+    "source_layer": "Documentation says omitted hold type defaults to All; complete section includes the hold types and their affected operations.",
+    "abi_layer": "ABI declares string path only, without enum or normalization guarantee; common adapter says original trusted unchanged. Select catalog contains an empty leading option plus All, Invoices, Payments, but it is not proof of saved empty production state.",
+    "production_layer": "UNKNOWN whether production backend normalizes before adapter, whether empty held state is reachable, and whether adapter authenticates/freshens the state. No production vulnerability conclusion.",
+    "candidate_causality": "ECAS has no explicit empty-to-All normalization rule. Its restrictive allow list yields the same observed denial as the source default. This is outcome consistency, not direct proof that the model extracted default-All semantics.",
+    "archived_classification_preserved": "held-empty-type remains conservative_empty_type_control; no original result or branch classification modified."
+  },
+  "source_files": [
+    {
+      "path": "D:\\lunwen\\EC-CSI投稿\\working\\exploration\\20261014_external_baseline_pilot\\effect_runs\\FSV-B06\\P2P_STYLE\\extraction.json",
+      "sha256": "8a9358ac601dd933f29173680be40e2a825a3c1f608585572a9e926212c4f08c"
+    },
+    {
+      "path": "D:\\lunwen\\EC-CSI投稿\\working\\exploration\\20261014_external_baseline_pilot\\effect_runs\\FSV-B06\\P2P_STYLE\\generation.json",
+      "sha256": "a6fdb67e256fbbaa1f4f6bc2813f15894b879de6ad539e56cc5f0985a10675cf"
+    },
+    {
+      "path": "D:\\lunwen\\EC-CSI投稿\\working\\exploration\\20261014_external_baseline_pilot\\effect_runs\\FSV-B06\\P2P_STYLE\\repair.json",
+      "sha256": "71eb9c9dff1958d8b95f6f4b8ce8b9c09e486c82315ecb000cad9c218617fd97"
+    },
+    {
+      "path": "D:\\lunwen\\EC-CSI投稿\\working\\exploration\\20261014_external_baseline_pilot\\effect_runs\\FSV-B06\\AUTOPAC_STYLE\\generation.json",
+      "sha256": "7839f317484c6e97a3bf4b81bf1ae8545378cee143075ef1087bb06d12a9585f"
+    },
+    {
+      "path": "D:\\lunwen\\EC-CSI投稿\\working\\exploration\\20261014_external_baseline_pilot\\effect_runs\\FSV-B06\\AUTOPAC_STYLE\\judge.json",
+      "sha256": "04f209999292dd80e6379b4046fda98b58a6e1da190e56ce866de1ac2747159b"
+    },
+    {
+      "path": "D:\\lunwen\\EC-CSI投稿\\working\\exploration\\20261014_external_baseline_pilot\\effect_runs\\FSV-B06\\AUTOPAC_STYLE\\repair.json",
+      "sha256": "f6fe3771a552f22547be4de54648f2aa05eb655adff78193caea3a951221ed52"
+    },
+    {
+      "path": "D:\\lunwen\\EC-CSI投稿\\working\\exploration\\20261014_external_baseline_pilot\\effect_runs\\FSV-B06\\ECAS_MATCHED\\candidate.json",
+      "sha256": "ca4a80a844a1a50519a3c958b18d3530b5799e97c3147bf19aba2573dd7a95ff"
+    },
+    {
+      "path": "D:\\lunwen\\EC-CSI投稿\\working\\exploration\\20261014_external_baseline_pilot\\effect_runs\\FSV-B06\\ECAS_MATCHED\\RESULT.json",
+      "sha256": "7ce11d95dd90462618b63c697e2978132ad4250cd5d7831399272c6c6607cdb3"
+    },
+    {
+      "path": "D:\\lunwen\\EC-CSI投稿\\working\\exploration\\20261014_external_baseline_pilot\\effect_runs\\FSV-S02\\P2P_STYLE\\detection.json",
+      "sha256": "d17c721cf1770dd1a29cc9bd28fc497c0135ef69f57e1dd99f5481295ea19b8e"
+    },
+    {
+      "path": "D:\\lunwen\\EC-CSI投稿\\working\\exploration\\20261014_external_baseline_pilot\\calls\\14_FSV-S02_p2p_detect\\prompt.txt",
+      "sha256": "b27eea78185e7b7ff962a2f32455a864aa494a9bfd55fecf3f25f0af2e9f922b"
+    },
+    {
+      "path": "D:\\lunwen\\EC-CSI投稿\\working\\exploration\\20261014_external_baseline_pilot\\effect_runs\\FSV-S02\\AUTOPAC_STYLE\\generation.json",
+      "sha256": "9bfa733511ea5a68a928770d207263748cf3da678c1bbaccf6b506ea8398b47e"
+    },
+    {
+      "path": "D:\\lunwen\\EC-CSI投稿\\working\\exploration\\20261014_external_baseline_pilot\\effect_runs\\FSV-S02\\AUTOPAC_STYLE\\judge.json",
+      "sha256": "eddab795ac57a0be086f476d9d99cc9f07088806c604cbb29cdece4a23f54d5a"
+    },
+    {
+      "path": "D:\\lunwen\\EC-CSI投稿\\working\\exploration\\20261014_external_baseline_pilot\\calls\\17_FSV-S02_repair\\prompt.txt",
+      "sha256": "8177f56e8f44089f5b4ef7866eadbd47059331ef1ac7dddbc59f9bb44ff1fcd0"
+    },
+    {
+      "path": "D:\\lunwen\\EC-CSI投稿\\working\\exploration\\20261014_external_baseline_pilot\\effect_runs\\FSV-S02\\AUTOPAC_STYLE\\repair.json",
+      "sha256": "00fa3e18e6b0b72e8a553e5831bee753294f3cd793602a069574f5e057ed6753"
+    },
+    {
+      "path": "D:\\lunwen\\EC-CSI投稿\\working\\exploration\\20261014_external_baseline_pilot\\effect_runs\\FSV-S02\\AUTOPAC_STYLE\\repaired\\compile.stderr.txt",
+      "sha256": "326b670fd453317fffa3a55e9b23aeb9d22af7e4c3d1d242fe392e8ac052a68f"
+    },
+    {
+      "path": "D:\\lunwen\\EC-CSI投稿\\working\\exploration\\20261014_external_baseline_pilot\\effect_runs\\FSV-S02\\ECAS_MATCHED\\candidate.json",
+      "sha256": "e6f5a2af7dee84e067b1a81f4b3dd56483b2ba306983039d0112c28efbf49fe6"
+    },
+    {
+      "path": "D:\\lunwen\\EC-CSI投稿\\working\\exploration\\20261014_external_baseline_pilot\\generation_inputs\\FSV-S02\\packet.json",
+      "sha256": "5c8de100a097aa1cae1c236a1d9d7771e8c1e175d9c8601abc9d319dafca9611"
+    },
+    {
+      "path": "D:\\lunwen\\EC-CSI投稿\\working\\exploration\\20261014_external_baseline_pilot\\effect_runs\\FSV-S04\\P2P_STYLE\\extraction.json",
+      "sha256": "b6d2299ff2b3cb767bf5e6d5911f5e548e79ffeab83ee0e496a492dcb440dcc6"
+    },
+    {
+      "path": "D:\\lunwen\\EC-CSI投稿\\working\\exploration\\20261014_external_baseline_pilot\\effect_runs\\FSV-S04\\P2P_STYLE\\generation.json",
+      "sha256": "06f7d66130515cacb25ee7b17461dd02c4cc7240ca16916bff29626ea878f102"
+    },
+    {
+      "path": "D:\\lunwen\\EC-CSI投稿\\working\\exploration\\20261014_external_baseline_pilot\\effect_runs\\FSV-S04\\P2P_STYLE\\repair.json",
+      "sha256": "b60a7ed9458fc0a4f326541aba36cb26d0e7eace7167d871016bee4aeab9e749"
+    },
+    {
+      "path": "D:\\lunwen\\EC-CSI投稿\\working\\exploration\\20261014_external_baseline_pilot\\effect_runs\\FSV-S04\\AUTOPAC_STYLE\\generation.json",
+      "sha256": "1bd409eb8ba263dea5c99b5248745d11cc0cd13e2429aa0e827fa6f620e08649"
+    },
+    {
+      "path": "D:\\lunwen\\EC-CSI投稿\\working\\exploration\\20261014_external_baseline_pilot\\effect_runs\\FSV-S04\\AUTOPAC_STYLE\\judge.json",
+      "sha256": "2f2f4fa27ccd9c8d6477c226a6f9547975256455962da20867bed3f93f113092"
+    },
+    {
+      "path": "D:\\lunwen\\EC-CSI投稿\\working\\exploration\\20261014_external_baseline_pilot\\calls\\26_FSV-S04_repair\\prompt.txt",
+      "sha256": "68790ca8bfdfb3353093adfd63037a0abdd9344b8cb7e7e81ebc302f916a28ca"
+    },
+    {
+      "path": "D:\\lunwen\\EC-CSI投稿\\working\\exploration\\20261014_external_baseline_pilot\\effect_runs\\FSV-S04\\AUTOPAC_STYLE\\repair.json",
+      "sha256": "a03ee4c2a6de6c07f6a1a870110cbc91490e6cb66abfa5195718b9ff7c1f12f7"
+    },
+    {
+      "path": "D:\\lunwen\\EC-CSI投稿\\working\\exploration\\20261014_external_baseline_pilot\\binding_replay_resource_object\\SUMMARY.json",
+      "sha256": "5345278278ae46c7054bbc6c023ff46505c866ac0872f115605aefe222e5dba3"
+    },
+    {
+      "path": "D:\\lunwen\\EC-CSI投稿\\working\\exploration\\20261014_external_baseline_pilot\\effect_runs\\FSV-S04\\ECAS_MATCHED\\candidate.json",
+      "sha256": "61100a221ee3fd6dca2ea31994cae0f377dbcf98e49c1c9963470917476dcf8d"
+    },
+    {
+      "path": "D:\\lunwen\\EC-CSI投稿\\working\\exploration\\20261014_external_baseline_pilot\\generation_inputs\\FSV-S04\\packet.json",
+      "sha256": "d37c94ec03d4901259ee058bd728fd0bc7736a3033a7b3347881626233bf5d49"
+    },
+    {
+      "path": "D:\\lunwen\\EC-CSI投稿\\working\\exploration\\20261014_external_baseline_pilot\\calls\\05_FSV-B06_p2p_detect\\response.raw.json",
+      "sha256": "742bdcc0a9a7d3444e511bb6ddf10868865c065bc46451c33596a3b28c5358a4"
+    },
+    {
+      "path": "D:\\lunwen\\EC-CSI投稿\\working\\exploration\\20261014_external_baseline_pilot\\calls\\05_FSV-B06_p2p_detect\\content.json",
+      "sha256": "56ab8d4b7ba2564664a0672c87945449c6913b2338ef93f6718d67b04375c68b"
+    },
+    {
+      "path": "D:\\lunwen\\EC-CSI投稿\\working\\exploration\\20261014_external_baseline_pilot\\calls\\05_FSV-B06_p2p_detect\\prompt.txt",
+      "sha256": "3248899b3e881f268e76bac2fd92ab4d516d0b0e8086e85d48a8b32a8d64bc2b"
+    },
+    {
+      "path": "D:\\lunwen\\EC-CSI投稿\\working\\exploration\\20261014_external_baseline_pilot\\calls\\06_FSV-B06_p2p_extract\\response.raw.json",
+      "sha256": "05f7d4b6f347c8856774608bebe486f3e9cb98bf6c20cfac257dcfbeb9d50928"
+    },
+    {
+      "path": "D:\\lunwen\\EC-CSI投稿\\working\\exploration\\20261014_external_baseline_pilot\\calls\\06_FSV-B06_p2p_extract\\content.json",
+      "sha256": "42d17fa5fda68a75086b4efddd896a426883f6dc8be127023c565a8e3903f7f3"
+    },
+    {
+      "path": "D:\\lunwen\\EC-CSI投稿\\working\\exploration\\20261014_external_baseline_pilot\\calls\\06_FSV-B06_p2p_extract\\prompt.txt",
+      "sha256": "3af9be90ecd01b99f4e525bd6d68cbe1cdba0eca810f1e676d8c3dde59a9d2db"
+    },
+    {
+      "path": "D:\\lunwen\\EC-CSI投稿\\working\\exploration\\20261014_external_baseline_pilot\\calls\\07_FSV-B06_p2p_rego\\response.raw.json",
+      "sha256": "9bec9293ccc771fc44e23f31edc16b81855531d6225c8e4e0e99b3a621c8a44b"
+    },
+    {
+      "path": "D:\\lunwen\\EC-CSI投稿\\working\\exploration\\20261014_external_baseline_pilot\\calls\\07_FSV-B06_p2p_rego\\content.json",
+      "sha256": "bd683d56226f37b6d47c4cecc2139133c87ba543350604fc2dee6b114b22fa94"
+    },
+    {
+      "path": "D:\\lunwen\\EC-CSI投稿\\working\\exploration\\20261014_external_baseline_pilot\\calls\\07_FSV-B06_p2p_rego\\prompt.txt",
+      "sha256": "7914d4f2fe68ba970f5c9d95671c55388a20128eaf6059c5237252bd488fe0ee"
+    },
+    {
+      "path": "D:\\lunwen\\EC-CSI投稿\\working\\exploration\\20261014_external_baseline_pilot\\calls\\09_FSV-B06_repair\\response.raw.json",
+      "sha256": "d57e85261b5c098cfb6a7476bb2ccc4944c5ae0ef36866e02f4e248c4eb56240"
+    },
+    {
+      "path": "D:\\lunwen\\EC-CSI投稿\\working\\exploration\\20261014_external_baseline_pilot\\calls\\09_FSV-B06_repair\\content.json",
+      "sha256": "ee76264011310a8e37462e45a1d48bf169a6ba21b9e201f0f2fd38d93271b188"
+    },
+    {
+      "path": "D:\\lunwen\\EC-CSI投稿\\working\\exploration\\20261014_external_baseline_pilot\\calls\\09_FSV-B06_repair\\prompt.txt",
+      "sha256": "dbbc55ef8489db8efe23c63556a471e8fe7dc30517774f1e939b2b1ff047d9e7"
+    },
+    {
+      "path": "D:\\lunwen\\EC-CSI投稿\\working\\exploration\\20261014_external_baseline_pilot\\calls\\10_FSV-B06_autopac_generate\\response.raw.json",
+      "sha256": "c82ff3b4cb16c79036b4c4d8a2afd40ba84576101ca8f4f07b0d2064eacc223d"
+    },
+    {
+      "path": "D:\\lunwen\\EC-CSI投稿\\working\\exploration\\20261014_external_baseline_pilot\\calls\\10_FSV-B06_autopac_generate\\content.json",
+      "sha256": "bc974797022d424758932829d5644ea190498241baca90709b837638ddc07323"
+    },
+    {
+      "path": "D:\\lunwen\\EC-CSI投稿\\working\\exploration\\20261014_external_baseline_pilot\\calls\\10_FSV-B06_autopac_generate\\prompt.txt",
+      "sha256": "2e431d0ad51ddb495b243d41e88998f4ad5190866a3a2d8b378e05b5e86fcf3d"
+    },
+    {
+      "path": "D:\\lunwen\\EC-CSI投稿\\working\\exploration\\20261014_external_baseline_pilot\\calls\\11_FSV-B06_autopac_judge\\response.raw.json",
+      "sha256": "e6f7fba2d0d0bda094a47ab87b3af75ef11a182bec5add5447710144e9e0c5c7"
+    },
+    {
+      "path": "D:\\lunwen\\EC-CSI投稿\\working\\exploration\\20261014_external_baseline_pilot\\calls\\11_FSV-B06_autopac_judge\\content.json",
+      "sha256": "4c11a3c38e5fd02e050dc6048f2960939c1e43fc359f1b77ffd272b90578e7d9"
+    },
+    {
+      "path": "D:\\lunwen\\EC-CSI投稿\\working\\exploration\\20261014_external_baseline_pilot\\calls\\11_FSV-B06_autopac_judge\\prompt.txt",
+      "sha256": "a2fdf12d2f353193dc806a288a7a17e1b6ae81cd8735363a45139f788366abe2"
+    },
+    {
+      "path": "D:\\lunwen\\EC-CSI投稿\\working\\exploration\\20261014_external_baseline_pilot\\calls\\12_FSV-B06_repair\\response.raw.json",
+      "sha256": "e493a200e628a0c00a5924514cfbd302b9b4c285d4cee162b35fbdeb3eec3011"
+    },
+    {
+      "path": "D:\\lunwen\\EC-CSI投稿\\working\\exploration\\20261014_external_baseline_pilot\\calls\\12_FSV-B06_repair\\content.json",
+      "sha256": "a532280a5b256e6e39fe9be541d8c125d81a8b56b89401808da8fdbb01ca76c3"
+    },
+    {
+      "path": "D:\\lunwen\\EC-CSI投稿\\working\\exploration\\20261014_external_baseline_pilot\\calls\\12_FSV-B06_repair\\prompt.txt",
+      "sha256": "c4df70b0d5ed7ae9759a8b4759066606a40bd40af0599573001f3f7d8da1ecdf"
+    },
+    {
+      "path": "D:\\lunwen\\EC-CSI投稿\\working\\exploration\\20261014_external_baseline_pilot\\calls\\13_FSV-B06_ecas_generate\\response.raw.json",
+      "sha256": "ea75f6f68d9ba16ef472bc27f6ee0f2b734a424e1bd970fd97790f0ff7c35ae8"
+    },
+    {
+      "path": "D:\\lunwen\\EC-CSI投稿\\working\\exploration\\20261014_external_baseline_pilot\\calls\\13_FSV-B06_ecas_generate\\content.json",
+      "sha256": "42ff50c32cb31517a85a8bb0cd8b3f8d2782f4e448b3b60b59e7e2c5ab20421e"
+    },
+    {
+      "path": "D:\\lunwen\\EC-CSI投稿\\working\\exploration\\20261014_external_baseline_pilot\\calls\\13_FSV-B06_ecas_generate\\prompt.txt",
+      "sha256": "0e330e748141a712a1e0d7f7b8d30a8800004b51fb25809357523f62e7345313"
+    },
+    {
+      "path": "D:\\lunwen\\EC-CSI投稿\\working\\exploration\\20261014_external_baseline_pilot\\calls\\14_FSV-S02_p2p_detect\\response.raw.json",
+      "sha256": "3a4d918539db6515bdc003f909cf0645526ef6a7e319748dc28e84122e713974"
+    },
+    {
+      "path": "D:\\lunwen\\EC-CSI投稿\\working\\exploration\\20261014_external_baseline_pilot\\calls\\14_FSV-S02_p2p_detect\\content.json",
+      "sha256": "145504965974d46f3c77dc2a9ed937a2c3a99b2444631862aa58901b8cd4f8e7"
+    },
+    {
+      "path": "D:\\lunwen\\EC-CSI投稿\\working\\exploration\\20261014_external_baseline_pilot\\calls\\15_FSV-S02_autopac_generate\\response.raw.json",
+      "sha256": "6cbe5572e7fd4f6b3bbaf1687a3427646b607fa259057a5b90d46ed2d17b4fdc"
+    },
+    {
+      "path": "D:\\lunwen\\EC-CSI投稿\\working\\exploration\\20261014_external_baseline_pilot\\calls\\15_FSV-S02_autopac_generate\\content.json",
+      "sha256": "92970779e876b8d2b70450efa54405a4d7e53c1056b3ea7a72fb69f60e3740b7"
+    },
+    {
+      "path": "D:\\lunwen\\EC-CSI投稿\\working\\exploration\\20261014_external_baseline_pilot\\calls\\15_FSV-S02_autopac_generate\\prompt.txt",
+      "sha256": "2310fcdce7f7cb9f2597db38558d026db208ff2bdfc2c3889c340e27f666b1cc"
+    },
+    {
+      "path": "D:\\lunwen\\EC-CSI投稿\\working\\exploration\\20261014_external_baseline_pilot\\calls\\16_FSV-S02_autopac_judge\\response.raw.json",
+      "sha256": "acd94d82c97664d09f74ee572f787a35341d74a5e991613baf052cb466ca61d5"
+    },
+    {
+      "path": "D:\\lunwen\\EC-CSI投稿\\working\\exploration\\20261014_external_baseline_pilot\\calls\\16_FSV-S02_autopac_judge\\content.json",
+      "sha256": "eb79b5fa5f6ff0da64514e9d9facabc0f1c8ec621504139d11a00bdd8f8fa39a"
+    },
+    {
+      "path": "D:\\lunwen\\EC-CSI投稿\\working\\exploration\\20261014_external_baseline_pilot\\calls\\16_FSV-S02_autopac_judge\\prompt.txt",
+      "sha256": "5fa5f8cf96134a383343cec6c722fd8d48ec47ea519af1fd0844362b059e6cf4"
+    },
+    {
+      "path": "D:\\lunwen\\EC-CSI投稿\\working\\exploration\\20261014_external_baseline_pilot\\calls\\17_FSV-S02_repair\\response.raw.json",
+      "sha256": "d38dfb77b9284c1d09ab51821e42f5404835bf627fff29d22aa898910e087b9c"
+    },
+    {
+      "path": "D:\\lunwen\\EC-CSI投稿\\working\\exploration\\20261014_external_baseline_pilot\\calls\\17_FSV-S02_repair\\content.json",
+      "sha256": "fd5fbe23c8e26df9de25feb1b1e41a4e825f824e467563c534471cd9c5f5b8f3"
+    },
+    {
+      "path": "D:\\lunwen\\EC-CSI投稿\\working\\exploration\\20261014_external_baseline_pilot\\calls\\18_FSV-S02_ecas_generate\\response.raw.json",
+      "sha256": "b083f036f9f7399ff0f66cca517a1404a7eaf7f65770eace36e88c97e40e5483"
+    },
+    {
+      "path": "D:\\lunwen\\EC-CSI投稿\\working\\exploration\\20261014_external_baseline_pilot\\calls\\18_FSV-S02_ecas_generate\\content.json",
+      "sha256": "623183c481381a2ab4c4206bbe3ed3e403837ffe1cb54cc8bcb1d1bbea330c6c"
+    },
+    {
+      "path": "D:\\lunwen\\EC-CSI投稿\\working\\exploration\\20261014_external_baseline_pilot\\calls\\18_FSV-S02_ecas_generate\\prompt.txt",
+      "sha256": "b4222cca4ec0eb17173806ec519adfaff586e6fb2da98de35bfc39c71e42a9d7"
+    },
+    {
+      "path": "D:\\lunwen\\EC-CSI投稿\\working\\exploration\\20261014_external_baseline_pilot\\calls\\19_FSV-S04_p2p_detect\\response.raw.json",
+      "sha256": "0619de7d33e27b992fb1536776631447ce87410c8a207582eca4c458529881b3"
+    },
+    {
+      "path": "D:\\lunwen\\EC-CSI投稿\\working\\exploration\\20261014_external_baseline_pilot\\calls\\19_FSV-S04_p2p_detect\\content.json",
+      "sha256": "b51531806f8bdcf0d6437473b87bab1fc24547199a735cd009f732297b220a4a"
+    },
+    {
+      "path": "D:\\lunwen\\EC-CSI投稿\\working\\exploration\\20261014_external_baseline_pilot\\calls\\19_FSV-S04_p2p_detect\\prompt.txt",
+      "sha256": "62c99a2eb27833b62e2e0baa2f239d2059f6519d354958cbc8a9108c37ae89a5"
+    },
+    {
+      "path": "D:\\lunwen\\EC-CSI投稿\\working\\exploration\\20261014_external_baseline_pilot\\calls\\20_FSV-S04_p2p_extract\\response.raw.json",
+      "sha256": "e617412dd14a9ba81e2783f1848a47ab5a6358c2b6e075f758f54378c8178011"
+    },
+    {
+      "path": "D:\\lunwen\\EC-CSI投稿\\working\\exploration\\20261014_external_baseline_pilot\\calls\\20_FSV-S04_p2p_extract\\content.json",
+      "sha256": "4d33c18cb842b3ebb1a3864f7cede827afa1e2c2ddeea16ef35d08715895690d"
+    },
+    {
+      "path": "D:\\lunwen\\EC-CSI投稿\\working\\exploration\\20261014_external_baseline_pilot\\calls\\20_FSV-S04_p2p_extract\\prompt.txt",
+      "sha256": "eed013fb19d345c7ed4f49b0b058b320caf7c893d9a8e255fa837ecdc470ce86"
+    },
+    {
+      "path": "D:\\lunwen\\EC-CSI投稿\\working\\exploration\\20261014_external_baseline_pilot\\calls\\21_FSV-S04_p2p_rego\\response.raw.json",
+      "sha256": "922b5e55fe9246bc8f01150b40fd33dc7364952a84b3272fcedfe5a47bf3d91e"
+    },
+    {
+      "path": "D:\\lunwen\\EC-CSI投稿\\working\\exploration\\20261014_external_baseline_pilot\\calls\\21_FSV-S04_p2p_rego\\content.json",
+      "sha256": "d0162fcf54aa496d160ef96b6d5b4a9bff809479bee7e27dca9a8fc6d6ea15d6"
+    },
+    {
+      "path": "D:\\lunwen\\EC-CSI投稿\\working\\exploration\\20261014_external_baseline_pilot\\calls\\21_FSV-S04_p2p_rego\\prompt.txt",
+      "sha256": "8c6dd58f836f3028b0b2795c144d92ce9ee9cfba85c550a9cc2770b5936e494e"
+    },
+    {
+      "path": "D:\\lunwen\\EC-CSI投稿\\working\\exploration\\20261014_external_baseline_pilot\\calls\\23_FSV-S04_repair\\response.raw.json",
+      "sha256": "2c285abe05aa04508aad596d98a4143b91669084f95a32e3dc73f232d1cd9b39"
+    },
+    {
+      "path": "D:\\lunwen\\EC-CSI投稿\\working\\exploration\\20261014_external_baseline_pilot\\calls\\23_FSV-S04_repair\\content.json",
+      "sha256": "ca51479ff81c85ef97c49fdc55feee41ab192c311e70c7a147221f7adcb943f8"
+    },
+    {
+      "path": "D:\\lunwen\\EC-CSI投稿\\working\\exploration\\20261014_external_baseline_pilot\\calls\\23_FSV-S04_repair\\prompt.txt",
+      "sha256": "03ff8b04c5029483daeb4eefb9893a652c69c88dc62a414e449f898aba150763"
+    },
+    {
+      "path": "D:\\lunwen\\EC-CSI投稿\\working\\exploration\\20261014_external_baseline_pilot\\calls\\24_FSV-S04_autopac_generate\\response.raw.json",
+      "sha256": "bfb3bfca2c9ab2c93754a1cafa52b71e5bf0d7f3ecc12274bbb9004f8eb87273"
+    },
+    {
+      "path": "D:\\lunwen\\EC-CSI投稿\\working\\exploration\\20261014_external_baseline_pilot\\calls\\24_FSV-S04_autopac_generate\\content.json",
+      "sha256": "65a12af48f8e538fe107159eec77fc9a39138e3989141cf07949adcb9351ecf0"
+    },
+    {
+      "path": "D:\\lunwen\\EC-CSI投稿\\working\\exploration\\20261014_external_baseline_pilot\\calls\\24_FSV-S04_autopac_generate\\prompt.txt",
+      "sha256": "033ce3e790fbf452c79d3ba335e9e5f596f0a7e57ab054d6be263424d6ac3fbe"
+    },
+    {
+      "path": "D:\\lunwen\\EC-CSI投稿\\working\\exploration\\20261014_external_baseline_pilot\\calls\\25_FSV-S04_autopac_judge\\response.raw.json",
+      "sha256": "734a2640ce3fdf86fbf149df678718ec9b97faebf0d529e4506e29122cc7b023"
+    },
+    {
+      "path": "D:\\lunwen\\EC-CSI投稿\\working\\exploration\\20261014_external_baseline_pilot\\calls\\25_FSV-S04_autopac_judge\\content.json",
+      "sha256": "4fa5b76b7a68fb2e2a1067b657439e826619f268f632f559ba11101cf100fcb1"
+    },
+    {
+      "path": "D:\\lunwen\\EC-CSI投稿\\working\\exploration\\20261014_external_baseline_pilot\\calls\\25_FSV-S04_autopac_judge\\prompt.txt",
+      "sha256": "38b1a2a38760d7cf193087fad7d537f6b07c432505abf8b2b420ffaf4e5ddedc"
+    },
+    {
+      "path": "D:\\lunwen\\EC-CSI投稿\\working\\exploration\\20261014_external_baseline_pilot\\calls\\26_FSV-S04_repair\\response.raw.json",
+      "sha256": "f73de23da6bc724d2c94a01f8826cfb0e395f5aafbfa05a2cf07338282ca1a45"
+    },
+    {
+      "path": "D:\\lunwen\\EC-CSI投稿\\working\\exploration\\20261014_external_baseline_pilot\\calls\\26_FSV-S04_repair\\content.json",
+      "sha256": "a35f946f73b5584d5a741e13b7ad652aa8cb7d199dc3b3426e3df5164b1d45a1"
+    },
+    {
+      "path": "D:\\lunwen\\EC-CSI投稿\\working\\exploration\\20261014_external_baseline_pilot\\calls\\27_FSV-S04_ecas_generate\\response.raw.json",
+      "sha256": "384c79f817e594450b5de5201a073fd2e26b7b6096c95772b5657144d1227515"
+    },
+    {
+      "path": "D:\\lunwen\\EC-CSI投稿\\working\\exploration\\20261014_external_baseline_pilot\\calls\\27_FSV-S04_ecas_generate\\content.json",
+      "sha256": "11fec0dd96b709b627d322a25ad524668bd0015546bc1ccf32828fcaf2f331e7"
+    },
+    {
+      "path": "D:\\lunwen\\EC-CSI投稿\\working\\exploration\\20261014_external_baseline_pilot\\calls\\27_FSV-S04_ecas_generate\\prompt.txt",
+      "sha256": "7b81172fa31b9c4a26c0d86214a158edd5f0ce3cd6fcf6f787a935cf159f7746"
+    },
+    {
+      "path": "D:\\lunwen\\EC-CSI投稿\\working\\exploration\\20261014_external_baseline_pilot\\run_pilot.py",
+      "sha256": "a455476b72c23faed8a05b23b9abcb97578fbd04b514958c998eeab6ac8d925b"
+    },
+    {
+      "path": "D:\\lunwen\\EC-CSI投稿\\working\\exploration\\20261014_external_baseline_pilot\\calls\\06_FSV-B06_p2p_extract\\LOCAL_RECOVERY_RECEIPT.json",
+      "sha256": "cffa820c8e59e26986985f75b0570d32f039215c28e8edbf1f8e0b27ee6e1170"
+    },
+    {
+      "path": "D:\\lunwen\\EC-CSI投稿\\working\\exploration\\20261014_external_baseline_pilot\\generation_inputs\\FSV-B06\\packet.json",
+      "sha256": "01ac46f8ed8d0b75d23a4adb7a16fafe35316f1e75fbe52d767540c39fe2f16f"
+    },
+    {
+      "path": "D:\\lunwen\\EC-CSI投稿\\working\\exploration\\20261014_matched_evidence_labor\\matched_generation\\generation_inputs\\FSV-S03\\packet.json",
+      "sha256": "acddb441ffde6b492d77d8964ce22ba69bf037eb164daa9f8674ca1e4a8f596a"
+    },
+    {
+      "path": "D:\\lunwen\\EC-CSI投稿\\working\\exploration\\20261014_matched_evidence_labor\\matched_generation\\generation_inputs\\FSV-B13\\packet.json",
+      "sha256": "0b07fe5eb4c156c96759cb0ff7e45d58523efd87549f88932ef029003a4ecb9b"
+    },
+    {
+      "path": "D:\\lunwen\\EC-CSI投稿\\working\\exploration\\20261014_matched_evidence_labor\\matched_generation\\generation_inputs\\FSV-B17\\packet.json",
+      "sha256": "03e726de50a01e76c55ce26e0925632c218de4ab96339c3752d37e33535a6479"
+    },
+    {
+      "path": "D:\\lunwen\\EC-CSI投稿\\working\\exploration\\20261014_matched_evidence_labor\\matched_generation\\generation_inputs\\FSV-B19\\packet.json",
+      "sha256": "10c5597e97e4190aa041c53aa3aee8b4c1c48fa77d073bfb4fb5eb5a64a346fd"
+    },
+    {
+      "path": "D:\\lunwen\\EC-CSI投稿\\working\\exploration\\20261014_matched_evidence_labor\\matched_generation\\method_runs\\FSV-S03\\P2P_STYLE\\p2p_detect.json",
+      "sha256": "9466c5a07f00a39cb5956afce3112d58331974814f8e49cc7b6a0fc42e84d46e"
+    },
+    {
+      "path": "D:\\lunwen\\EC-CSI投稿\\working\\exploration\\20261014_matched_evidence_labor\\matched_generation\\method_runs\\FSV-S03\\P2P_STYLE\\RESULT.json",
+      "sha256": "0debecc0820f78bdfab4d38a2995d66e4f1957ad231e9ee436657eb8d9c758ef"
+    },
+    {
+      "path": "D:\\lunwen\\EC-CSI投稿\\working\\exploration\\20261014_matched_evidence_labor\\matched_generation\\method_runs\\FSV-S03\\AUTOPAC_STYLE\\autopac_generate.json",
+      "sha256": "49416e3a7f0eeb853daa473c63dc6c71aaae1c7b2fbc0fdfb39d5a54018e379d"
+    },
+    {
+      "path": "D:\\lunwen\\EC-CSI投稿\\working\\exploration\\20261014_matched_evidence_labor\\matched_generation\\method_runs\\FSV-S03\\AUTOPAC_STYLE\\autopac_judge.json",
+      "sha256": "2f2f4fa27ccd9c8d6477c226a6f9547975256455962da20867bed3f93f113092"
+    },
+    {
+      "path": "D:\\lunwen\\EC-CSI投稿\\working\\exploration\\20261014_matched_evidence_labor\\matched_generation\\method_runs\\FSV-S03\\AUTOPAC_STYLE\\initial\\original.rego",
+      "sha256": "979a29451355e29190d1d00cd5eeee1dc48643165305acaf454d8cc4ebe1584a"
+    },
+    {
+      "path": "D:\\lunwen\\EC-CSI投稿\\working\\exploration\\20261014_matched_evidence_labor\\matched_generation\\method_runs\\FSV-S03\\AUTOPAC_STYLE\\initial\\CHECKS.json",
+      "sha256": "424e7b23ee91e1690a3dbd6ccd24f175eaea4d28081bc12b84ce3e2e807b3cfe"
+    },
+    {
+      "path": "D:\\lunwen\\EC-CSI投稿\\working\\exploration\\20261014_matched_evidence_labor\\matched_generation\\method_runs\\FSV-S03\\AUTOPAC_STYLE\\repair.json",
+      "sha256": "b9f40ec0986a70ef47902a3edbb199f6d34f7aed23e4c589330ed3b53f49f68b"
+    },
+    {
+      "path": "D:\\lunwen\\EC-CSI投稿\\working\\exploration\\20261014_matched_evidence_labor\\matched_generation\\method_runs\\FSV-S03\\AUTOPAC_STYLE\\repaired\\original.rego",
+      "sha256": "ef5d878b84c37ed3c9ccdaf5c272c903d7db6dca0e386da90324622845d2131b"
+    },
+    {
+      "path": "D:\\lunwen\\EC-CSI投稿\\working\\exploration\\20261014_matched_evidence_labor\\matched_generation\\method_runs\\FSV-S03\\AUTOPAC_STYLE\\repaired\\CHECKS.json",
+      "sha256": "4a4b3bfa49c37e9d448729fdfa0423c06a3f7ad30b60f813dd778db8bc1b6dff"
+    },
+    {
+      "path": "D:\\lunwen\\EC-CSI投稿\\working\\exploration\\20261014_matched_evidence_labor\\matched_generation\\method_runs\\FSV-S03\\AUTOPAC_STYLE\\RESULT.json",
+      "sha256": "58c0b95241e28fcef14116667dcc1c75ca176c8f0ea0871cb5a2baa696d9c5e3"
+    },
+    {
+      "path": "D:\\lunwen\\EC-CSI投稿\\working\\exploration\\20261014_matched_evidence_labor\\matched_generation\\method_runs\\FSV-S03\\ECAS_MATCHED\\first_candidate.json",
+      "sha256": "12ea58385028e162ad95d0661f77b6468c329462dd3900b963f82b5117ab4890"
+    },
+    {
+      "path": "D:\\lunwen\\EC-CSI投稿\\working\\exploration\\20261014_matched_evidence_labor\\matched_generation\\method_runs\\FSV-S03\\ECAS_MATCHED\\initial\\admitted_policy.json",
+      "sha256": "5f370d900883fad34ac8eb547f3f0c18fcb4034f387204f52afeba654320f57f"
+    },
+    {
+      "path": "D:\\lunwen\\EC-CSI投稿\\working\\exploration\\20261014_matched_evidence_labor\\matched_generation\\method_runs\\FSV-S03\\ECAS_MATCHED\\initial\\CHECKS.json",
+      "sha256": "ad53ef49d3aad67159374b23536a95d679d6898ee1c9e41ef9c1b2222a5a718e"
+    },
+    {
+      "path": "D:\\lunwen\\EC-CSI投稿\\working\\exploration\\20261014_matched_evidence_labor\\matched_generation\\method_runs\\FSV-S03\\ECAS_MATCHED\\RESULT.json",
+      "sha256": "29bbc1502b3919ddc92e2517729efe173a04df7bf4adc79b92ea86f977cb6957"
+    },
+    {
+      "path": "D:\\lunwen\\EC-CSI投稿\\working\\exploration\\20261014_matched_evidence_labor\\matched_generation\\method_runs\\FSV-B13\\P2P_STYLE\\p2p_detect.json",
+      "sha256": "8313eed205bff3da6fd8f15cb83b08e613adf109a991b769af1adcf803210186"
+    },
+    {
+      "path": "D:\\lunwen\\EC-CSI投稿\\working\\exploration\\20261014_matched_evidence_labor\\matched_generation\\method_runs\\FSV-B13\\P2P_STYLE\\p2p_extract.json",
+      "sha256": "3eb7be503dc75baaab6df0d0b9aab11796692bdcab81584fa040fcaff79bb2e7"
+    },
+    {
+      "path": "D:\\lunwen\\EC-CSI投稿\\working\\exploration\\20261014_matched_evidence_labor\\matched_generation\\method_runs\\FSV-B13\\P2P_STYLE\\p2p_rego.json",
+      "sha256": "38ed83a1fb0755c39acdbc5148c5892df2238dd7606e5f1fd2d08ccaae04eec0"
+    },
+    {
+      "path": "D:\\lunwen\\EC-CSI投稿\\working\\exploration\\20261014_matched_evidence_labor\\matched_generation\\method_runs\\FSV-B13\\P2P_STYLE\\initial\\original.rego",
+      "sha256": "c22d07f3085d8557e76223a8983e6a6541aaa94ea1134736e9251fc6b0b87a3d"
+    },
+    {
+      "path": "D:\\lunwen\\EC-CSI投稿\\working\\exploration\\20261014_matched_evidence_labor\\matched_generation\\method_runs\\FSV-B13\\P2P_STYLE\\initial\\CHECKS.json",
+      "sha256": "8c2f0cdfa499569d61abd873cda7d524fc37dcb37fed45c4e69afc9d1bfe769d"
+    },
+    {
+      "path": "D:\\lunwen\\EC-CSI投稿\\working\\exploration\\20261014_matched_evidence_labor\\matched_generation\\method_runs\\FSV-B13\\P2P_STYLE\\RESULT.json",
+      "sha256": "6e61dc2d2e2ae9f23f4ff98b8a90830fe3bcc1f4cc76cec0ad44953f9eeb7b30"
+    },
+    {
+      "path": "D:\\lunwen\\EC-CSI投稿\\working\\exploration\\20261014_matched_evidence_labor\\matched_generation\\method_runs\\FSV-B13\\AUTOPAC_STYLE\\autopac_generate.json",
+      "sha256": "54a1cb563ba0c1952c9ad6156cc24fe84e7756d8a62c1a8a39afe90210f93cdd"
+    },
+    {
+      "path": "D:\\lunwen\\EC-CSI投稿\\working\\exploration\\20261014_matched_evidence_labor\\matched_generation\\method_runs\\FSV-B13\\AUTOPAC_STYLE\\autopac_judge.json",
+      "sha256": "2f2f4fa27ccd9c8d6477c226a6f9547975256455962da20867bed3f93f113092"
+    },
+    {
+      "path": "D:\\lunwen\\EC-CSI投稿\\working\\exploration\\20261014_matched_evidence_labor\\matched_generation\\method_runs\\FSV-B13\\AUTOPAC_STYLE\\initial\\original.rego",
+      "sha256": "e959aafb99a485fcff7e558c089df21f1ae37a49f921aa2d518c5b16c82d728b"
+    },
+    {
+      "path": "D:\\lunwen\\EC-CSI投稿\\working\\exploration\\20261014_matched_evidence_labor\\matched_generation\\method_runs\\FSV-B13\\AUTOPAC_STYLE\\initial\\CHECKS.json",
+      "sha256": "037255109111fee1ba846aeb31325f923d79e17fca0db775bf1f45d12c6e5cc4"
+    },
+    {
+      "path": "D:\\lunwen\\EC-CSI投稿\\working\\exploration\\20261014_matched_evidence_labor\\matched_generation\\method_runs\\FSV-B13\\AUTOPAC_STYLE\\RESULT.json",
+      "sha256": "c160399026eeaea95a7edf9a7ea37dd3727f06f50ad103a792834738f242010f"
+    },
+    {
+      "path": "D:\\lunwen\\EC-CSI投稿\\working\\exploration\\20261014_matched_evidence_labor\\matched_generation\\method_runs\\FSV-B13\\ECAS_MATCHED\\first_candidate.json",
+      "sha256": "6632f38661f5c043e7742cc0a658260c191b08dd4ae53d5730d6caf8d10a5c3d"
+    },
+    {
+      "path": "D:\\lunwen\\EC-CSI投稿\\working\\exploration\\20261014_matched_evidence_labor\\matched_generation\\method_runs\\FSV-B13\\ECAS_MATCHED\\initial\\admitted_policy.json",
+      "sha256": "2c0c40bddf86afebb6ec9a483e9df0bfff922f7b116d3e180846cfe7232fbb00"
+    },
+    {
+      "path": "D:\\lunwen\\EC-CSI投稿\\working\\exploration\\20261014_matched_evidence_labor\\matched_generation\\method_runs\\FSV-B13\\ECAS_MATCHED\\initial\\CHECKS.json",
+      "sha256": "3ccf677f7293e55b7e29ab3010b32afc77c12917c323d248358ebdfbd341af31"
+    },
+    {
+      "path": "D:\\lunwen\\EC-CSI投稿\\working\\exploration\\20261014_matched_evidence_labor\\matched_generation\\method_runs\\FSV-B13\\ECAS_MATCHED\\RESULT.json",
+      "sha256": "b5f736c8180cc3a16611ffbe471cfde9588d27c1af8fad54a2a083eff489f744"
+    },
+    {
+      "path": "D:\\lunwen\\EC-CSI投稿\\working\\exploration\\20261014_matched_evidence_labor\\matched_generation\\method_runs\\FSV-B17\\P2P_STYLE\\p2p_detect.json",
+      "sha256": "634c88f1e2a85c3ee8a27c9bf4ffcaf98628755761e699dcf5d940136a67563e"
+    },
+    {
+      "path": "D:\\lunwen\\EC-CSI投稿\\working\\exploration\\20261014_matched_evidence_labor\\matched_generation\\method_runs\\FSV-B17\\P2P_STYLE\\p2p_extract.json",
+      "sha256": "72b78a63392c15a92af62acd7c5a660fc95f775e4445c59e504e15b7aeb3912c"
+    },
+    {
+      "path": "D:\\lunwen\\EC-CSI投稿\\working\\exploration\\20261014_matched_evidence_labor\\matched_generation\\method_runs\\FSV-B17\\P2P_STYLE\\p2p_rego.json",
+      "sha256": "1fa942b8c57d5150085658421cceb991d54fb89d5b2a4e875ad6af4aedf7fd92"
+    },
+    {
+      "path": "D:\\lunwen\\EC-CSI投稿\\working\\exploration\\20261014_matched_evidence_labor\\matched_generation\\method_runs\\FSV-B17\\P2P_STYLE\\initial\\original.rego",
+      "sha256": "6870e87318fd3debd77aa853708c82dfdce3130277c2c3ccae62e1fe7a2b85a3"
+    },
+    {
+      "path": "D:\\lunwen\\EC-CSI投稿\\working\\exploration\\20261014_matched_evidence_labor\\matched_generation\\method_runs\\FSV-B17\\P2P_STYLE\\initial\\CHECKS.json",
+      "sha256": "b421edb35d21034c54ddf52f0d6ff27cbb9b3155c8e3778ddecec1314ffa3bad"
+    },
+    {
+      "path": "D:\\lunwen\\EC-CSI投稿\\working\\exploration\\20261014_matched_evidence_labor\\matched_generation\\method_runs\\FSV-B17\\P2P_STYLE\\RESULT.json",
+      "sha256": "51df3b6b338f71ae4c94f8a9ed25b2475b492f30a89000bd35550febf3f90a2d"
+    },
+    {
+      "path": "D:\\lunwen\\EC-CSI投稿\\working\\exploration\\20261014_matched_evidence_labor\\matched_generation\\method_runs\\FSV-B17\\AUTOPAC_STYLE\\autopac_generate.json",
+      "sha256": "533267c429bd5688d0710a3db3a351b2948e581d2e9fffff8d5ab9d667f46989"
+    },
+    {
+      "path": "D:\\lunwen\\EC-CSI投稿\\working\\exploration\\20261014_matched_evidence_labor\\matched_generation\\method_runs\\FSV-B17\\AUTOPAC_STYLE\\autopac_judge.json",
+      "sha256": "2f2f4fa27ccd9c8d6477c226a6f9547975256455962da20867bed3f93f113092"
+    },
+    {
+      "path": "D:\\lunwen\\EC-CSI投稿\\working\\exploration\\20261014_matched_evidence_labor\\matched_generation\\method_runs\\FSV-B17\\AUTOPAC_STYLE\\initial\\original.rego",
+      "sha256": "b984020ca487ffa8468e4ed38ad72d447f17061743b5b534109ef7edd1214e41"
+    },
+    {
+      "path": "D:\\lunwen\\EC-CSI投稿\\working\\exploration\\20261014_matched_evidence_labor\\matched_generation\\method_runs\\FSV-B17\\AUTOPAC_STYLE\\initial\\CHECKS.json",
+      "sha256": "84be5a0d02cf7ce07a7c2bc81cf4ebb7c2d997b5ca99e1330013998baa2e3a3f"
+    },
+    {
+      "path": "D:\\lunwen\\EC-CSI投稿\\working\\exploration\\20261014_matched_evidence_labor\\matched_generation\\method_runs\\FSV-B17\\AUTOPAC_STYLE\\RESULT.json",
+      "sha256": "972078202a8c6e1da3241323c36fcab249d8cc46c57f47584db78b8461cd8723"
+    },
+    {
+      "path": "D:\\lunwen\\EC-CSI投稿\\working\\exploration\\20261014_matched_evidence_labor\\matched_generation\\method_runs\\FSV-B17\\ECAS_MATCHED\\first_candidate.json",
+      "sha256": "35603ce747a8a9003d8d8b4af95a29826669d07fb721524bb700f9ddbe355b39"
+    },
+    {
+      "path": "D:\\lunwen\\EC-CSI投稿\\working\\exploration\\20261014_matched_evidence_labor\\matched_generation\\method_runs\\FSV-B17\\ECAS_MATCHED\\initial\\admitted_policy.json",
+      "sha256": "a206e1535f6402c2864e7b3265b287dc3700c39e2f7aba4103ae62f0ecedc79d"
+    },
+    {
+      "path": "D:\\lunwen\\EC-CSI投稿\\working\\exploration\\20261014_matched_evidence_labor\\matched_generation\\method_runs\\FSV-B17\\ECAS_MATCHED\\initial\\CHECKS.json",
+      "sha256": "f0f7bd3b5d6b721a55fffe23c368dbb2061a56e909e54cf4f4165e77f32afeaa"
+    },
+    {
+      "path": "D:\\lunwen\\EC-CSI投稿\\working\\exploration\\20261014_matched_evidence_labor\\matched_generation\\method_runs\\FSV-B17\\ECAS_MATCHED\\RESULT.json",
+      "sha256": "1a4feb547d5ae6475d99d396a8644c24ffd1e627e43921dc4be64fef0e09f8e3"
+    },
+    {
+      "path": "D:\\lunwen\\EC-CSI投稿\\working\\exploration\\20261014_matched_evidence_labor\\matched_generation\\method_runs\\FSV-B19\\P2P_STYLE\\p2p_detect.json",
+      "sha256": "9b48aa9e72484810e18fe0428cf559ae51cafd65d55608da3cb1e20270969d72"
+    },
+    {
+      "path": "D:\\lunwen\\EC-CSI投稿\\working\\exploration\\20261014_matched_evidence_labor\\matched_generation\\method_runs\\FSV-B19\\P2P_STYLE\\p2p_extract.json",
+      "sha256": "0101147306293a7b32766a86458a4ce7a90e4599ef13ecc1e1a71dddfc0331d1"
+    },
+    {
+      "path": "D:\\lunwen\\EC-CSI投稿\\working\\exploration\\20261014_matched_evidence_labor\\matched_generation\\method_runs\\FSV-B19\\P2P_STYLE\\p2p_rego.json",
+      "sha256": "96bec1ff70c792563ffdbf2c1e28e6ccb01d43db3ed58eebfba36201a3162c6e"
+    },
+    {
+      "path": "D:\\lunwen\\EC-CSI投稿\\working\\exploration\\20261014_matched_evidence_labor\\matched_generation\\method_runs\\FSV-B19\\P2P_STYLE\\initial\\original.rego",
+      "sha256": "bd9dee0463bd7c56b64639c048595efa412fa3c5f169d5a095135c7f8057e108"
+    },
+    {
+      "path": "D:\\lunwen\\EC-CSI投稿\\working\\exploration\\20261014_matched_evidence_labor\\matched_generation\\method_runs\\FSV-B19\\P2P_STYLE\\initial\\CHECKS.json",
+      "sha256": "5f6c53c64ac638683b9d961d90ec9e6004e8e72aec45497287b75919f6f85d2c"
+    },
+    {
+      "path": "D:\\lunwen\\EC-CSI投稿\\working\\exploration\\20261014_matched_evidence_labor\\matched_generation\\method_runs\\FSV-B19\\P2P_STYLE\\RESULT.json",
+      "sha256": "9dc5b63621f6c2177d54e7cb079e05306b8b0bc8b4fd846870dc6ca3acc78aa5"
+    },
+    {
+      "path": "D:\\lunwen\\EC-CSI投稿\\working\\exploration\\20261014_matched_evidence_labor\\matched_generation\\method_runs\\FSV-B19\\AUTOPAC_STYLE\\autopac_generate.json",
+      "sha256": "92bb11ed814fafc93fc74ae4736019898ac6cd257963e728a0c8487dbcd9de29"
+    },
+    {
+      "path": "D:\\lunwen\\EC-CSI投稿\\working\\exploration\\20261014_matched_evidence_labor\\matched_generation\\method_runs\\FSV-B19\\AUTOPAC_STYLE\\autopac_judge.json",
+      "sha256": "2f2f4fa27ccd9c8d6477c226a6f9547975256455962da20867bed3f93f113092"
+    },
+    {
+      "path": "D:\\lunwen\\EC-CSI投稿\\working\\exploration\\20261014_matched_evidence_labor\\matched_generation\\method_runs\\FSV-B19\\AUTOPAC_STYLE\\initial\\original.rego",
+      "sha256": "0ce13fdc20750fcc8d77f47a8abc66e0e29de746a752f3cf52d56a764e8ba083"
+    },
+    {
+      "path": "D:\\lunwen\\EC-CSI投稿\\working\\exploration\\20261014_matched_evidence_labor\\matched_generation\\method_runs\\FSV-B19\\AUTOPAC_STYLE\\initial\\CHECKS.json",
+      "sha256": "487ee45dcc85d811e06fe0f72986414de6170fb69b2a607905c94243e5dc86a8"
+    },
+    {
+      "path": "D:\\lunwen\\EC-CSI投稿\\working\\exploration\\20261014_matched_evidence_labor\\matched_generation\\method_runs\\FSV-B19\\AUTOPAC_STYLE\\RESULT.json",
+      "sha256": "a6b596082892264a7f63985070de49e265af76507c83e80100499fc1b69691ba"
+    },
+    {
+      "path": "D:\\lunwen\\EC-CSI投稿\\working\\exploration\\20261014_matched_evidence_labor\\matched_generation\\method_runs\\FSV-B19\\ECAS_MATCHED\\first_candidate.json",
+      "sha256": "2d09501af519f2aa3a459adc4e9df36db1fa0b76332bd72c73189b019e369e90"
+    },
+    {
+      "path": "D:\\lunwen\\EC-CSI投稿\\working\\exploration\\20261014_matched_evidence_labor\\matched_generation\\method_runs\\FSV-B19\\ECAS_MATCHED\\initial\\admitted_policy.json",
+      "sha256": "ac7c5bbf8bbdf0ee773ce0b06a357a9b0d48e3bfa11b21bd229cfe22cf16d98d"
+    },
+    {
+      "path": "D:\\lunwen\\EC-CSI投稿\\working\\exploration\\20261014_matched_evidence_labor\\matched_generation\\method_runs\\FSV-B19\\ECAS_MATCHED\\initial\\CHECKS.json",
+      "sha256": "06b9cc9fe4efb660d60256b67981b1680e72edeb04a9d3a99fe6d0bc8a6a4022"
+    },
+    {
+      "path": "D:\\lunwen\\EC-CSI投稿\\working\\exploration\\20261014_matched_evidence_labor\\matched_generation\\method_runs\\FSV-B19\\ECAS_MATCHED\\RESULT.json",
+      "sha256": "8a781167ffc84f72d91d3599c92011af4324381dcd47b13ca38e25944fe5e3b7"
+    },
+    {
+      "path": "D:\\lunwen\\EC-CSI投稿\\working\\exploration\\20261015_semantic_comparison\\OLD_THREE_SEMANTIC_AUDIT.json",
+      "sha256": "b5064b348d70e7193202cb2a5fb3e57e636345156e9b00436b41375f877d08be"
+    },
+    {
+      "path": "D:\\lunwen\\EC-CSI投稿\\working\\exploration\\20261015_semantic_comparison\\NEW_FOUR_SEMANTIC_AUDIT.json",
+      "sha256": "91eee9bdb3a9dacb75d056c44f131bd135d5706958bc458962bd1107f2f1b5b3"
+    },
+    {
+      "path": "D:\\lunwen\\EC-CSI投稿\\working\\exploration\\20261015_seven_case_mechanism\\EXPERIMENT_SUMMARY_CN_R2.md",
+      "sha256": "a023ad051a9c5abb31f3d78d46a0e0065974789cc0dff95c6ce040a0894159c9"
+    },
+    {
+      "path": "D:\\lunwen\\EC-CSI投稿\\working\\exploration\\20261015_seven_case_mechanism\\SEVEN_CASE_COMPARISON.csv",
+      "sha256": "5e5ae026b19218d162e2445775f6e667da1e8f2f898483d13a48eb1fbe7dd00f"
+    },
+    {
+      "path": "D:\\lunwen\\EC-CSI投稿\\working\\exploration\\20261014_matched_evidence_labor\\evidence_ablation\\RESULTS_CN.md",
+      "sha256": "baa45a61762759deca4cb8b4871ae0bcd80e46eee459b885e62c403cce580178"
+    },
+    {
+      "path": "D:\\lunwen\\EC-CSI投稿\\working\\exploration\\20261014_matched_evidence_labor\\human_effort\\MODE_FEATURE_MATRIX_CN.md",
+      "sha256": "aa89ac3f185d44636b08d94d2881f73d1861fe9d15a5c75da9fd3bd0370fa599"
+    },
+    {
+      "path": "D:\\lunwen\\EC-CSI投稿\\working\\exploration\\20261014_matched_evidence_labor\\judge_control\\RESULTS_CN.md",
+      "sha256": "dfd59dbc3d8428bb7527f8f9c7897c78439468aa4844f7ab105f94b1a38a34c8"
+    },
+    {
+      "path": "D:\\lunwen\\EC-CSI投稿\\working\\exploration\\20261015_seven_case_mechanism\\mechanism_control\\RESULTS_CN.md",
+      "sha256": "a9ba2ba4df8ca0d142d7befef6e635926b4a1f50f0217079c6466df2b432fc91"
+    },
+    {
+      "path": "D:\\lunwen\\EC-CSI投稿\\working\\exploration\\20261015_semantic_comparison\\TASK_CONTRACT_CN.md",
+      "sha256": "baa48820f8557fea79b0c61002d221190244ab025deeca4bf37e698b4a95aad1"
+    }
+  ]
+}

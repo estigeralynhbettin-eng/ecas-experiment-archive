@@ -1,0 +1,1399 @@
+{
+  "review_type": "INDEPENDENT_STATIC_RECONCILIATION_NO_POLICY_EXECUTION",
+  "input_hashes": [
+    {
+      "path": "TABLE_SOURCES.json",
+      "sha256": "edeac3ffaeebced865097e4ef687f56133b1bc0ab9755504faddf6731b047f67"
+    },
+    {
+      "path": "SEVEN_CASE_COMPARISON.csv",
+      "sha256": "b5df5dad5e59fe4582de33e31940b0a7814bb672e670556a0dbda67ae53e2753"
+    }
+  ],
+  "protocol_boundary": "A archived posthoc mapping and formatting replay; B common-target qualified run; no pooled accuracy or native-baseline performance inference",
+  "date": "2026-10-15",
+  "failures": [],
+  "checks": [
+    {
+      "check": "21_unique_rows",
+      "pass": true
+    },
+    {
+      "check": "21_source_entries",
+      "pass": true
+    },
+    {
+      "check": "FSV-B06/P2P_STYLE/csv_fields",
+      "pass": true
+    },
+    {
+      "check": "FSV-B06/P2P_STYLE/result/hash",
+      "pass": true
+    },
+    {
+      "check": "FSV-B06/P2P_STYLE/display_summary/hash",
+      "pass": true
+    },
+    {
+      "check": "FSV-B06/P2P_STYLE/policy/hash",
+      "pass": true
+    },
+    {
+      "check": "FSV-B06/P2P_STYLE/pre_mapping_policy/hash",
+      "pass": true
+    },
+    {
+      "check": "FSV-B06/P2P_STYLE/original_pre_format_state/hash",
+      "pass": true
+    },
+    {
+      "check": "FSV-B06/P2P_STYLE/call5/raw",
+      "pass": true
+    },
+    {
+      "check": "FSV-B06/P2P_STYLE/call5/prompt",
+      "pass": true
+    },
+    {
+      "check": "FSV-B06/P2P_STYLE/call5/parsed_output",
+      "pass": true
+    },
+    {
+      "check": "FSV-B06/P2P_STYLE/call6/raw",
+      "pass": true
+    },
+    {
+      "check": "FSV-B06/P2P_STYLE/call6/prompt",
+      "pass": true
+    },
+    {
+      "check": "FSV-B06/P2P_STYLE/call6/parsed_output",
+      "pass": true
+    },
+    {
+      "check": "FSV-B06/P2P_STYLE/call6/local_recovery_receipt",
+      "pass": true
+    },
+    {
+      "check": "FSV-B06/P2P_STYLE/call7/raw",
+      "pass": true
+    },
+    {
+      "check": "FSV-B06/P2P_STYLE/call7/prompt",
+      "pass": true
+    },
+    {
+      "check": "FSV-B06/P2P_STYLE/call7/parsed_output",
+      "pass": true
+    },
+    {
+      "check": "FSV-B06/P2P_STYLE/call8/raw",
+      "pass": true
+    },
+    {
+      "check": "FSV-B06/P2P_STYLE/call8/prompt",
+      "pass": true
+    },
+    {
+      "check": "FSV-B06/P2P_STYLE/call8/parsed_output",
+      "pass": true
+    },
+    {
+      "check": "FSV-B06/P2P_STYLE/call9/raw",
+      "pass": true
+    },
+    {
+      "check": "FSV-B06/P2P_STYLE/call9/prompt",
+      "pass": true
+    },
+    {
+      "check": "FSV-B06/P2P_STYLE/call9/parsed_output",
+      "pass": true
+    },
+    {
+      "check": "FSV-B06/P2P_STYLE/symbol",
+      "pass": true
+    },
+    {
+      "check": "FSV-B06/P2P_STYLE/pair_primary_identity",
+      "pass": true
+    },
+    {
+      "check": "FSV-B06/P2P_STYLE/display_status",
+      "pass": true
+    },
+    {
+      "check": "FSV-B06/AUTOPAC_STYLE/csv_fields",
+      "pass": true
+    },
+    {
+      "check": "FSV-B06/AUTOPAC_STYLE/result/hash",
+      "pass": true
+    },
+    {
+      "check": "FSV-B06/AUTOPAC_STYLE/display_summary/hash",
+      "pass": true
+    },
+    {
+      "check": "FSV-B06/AUTOPAC_STYLE/policy/hash",
+      "pass": true
+    },
+    {
+      "check": "FSV-B06/AUTOPAC_STYLE/pre_mapping_policy/hash",
+      "pass": true
+    },
+    {
+      "check": "FSV-B06/AUTOPAC_STYLE/original_pre_format_state/hash",
+      "pass": true
+    },
+    {
+      "check": "FSV-B06/AUTOPAC_STYLE/call10/raw",
+      "pass": true
+    },
+    {
+      "check": "FSV-B06/AUTOPAC_STYLE/call10/prompt",
+      "pass": true
+    },
+    {
+      "check": "FSV-B06/AUTOPAC_STYLE/call10/parsed_output",
+      "pass": true
+    },
+    {
+      "check": "FSV-B06/AUTOPAC_STYLE/call11/raw",
+      "pass": true
+    },
+    {
+      "check": "FSV-B06/AUTOPAC_STYLE/call11/prompt",
+      "pass": true
+    },
+    {
+      "check": "FSV-B06/AUTOPAC_STYLE/call11/parsed_output",
+      "pass": true
+    },
+    {
+      "check": "FSV-B06/AUTOPAC_STYLE/call12/raw",
+      "pass": true
+    },
+    {
+      "check": "FSV-B06/AUTOPAC_STYLE/call12/prompt",
+      "pass": true
+    },
+    {
+      "check": "FSV-B06/AUTOPAC_STYLE/call12/parsed_output",
+      "pass": true
+    },
+    {
+      "check": "FSV-B06/AUTOPAC_STYLE/symbol",
+      "pass": true
+    },
+    {
+      "check": "FSV-B06/AUTOPAC_STYLE/pair_primary_identity",
+      "pass": true
+    },
+    {
+      "check": "FSV-B06/AUTOPAC_STYLE/display_status",
+      "pass": true
+    },
+    {
+      "check": "FSV-B06/ECAS_MATCHED/csv_fields",
+      "pass": true
+    },
+    {
+      "check": "FSV-B06/ECAS_MATCHED/result/hash",
+      "pass": true
+    },
+    {
+      "check": "FSV-B06/ECAS_MATCHED/display_summary/hash",
+      "pass": true
+    },
+    {
+      "check": "FSV-B06/ECAS_MATCHED/policy/hash",
+      "pass": true
+    },
+    {
+      "check": "FSV-B06/ECAS_MATCHED/original_pre_format_state/hash",
+      "pass": true
+    },
+    {
+      "check": "FSV-B06/ECAS_MATCHED/call13/raw",
+      "pass": true
+    },
+    {
+      "check": "FSV-B06/ECAS_MATCHED/call13/prompt",
+      "pass": true
+    },
+    {
+      "check": "FSV-B06/ECAS_MATCHED/call13/parsed_output",
+      "pass": true
+    },
+    {
+      "check": "FSV-B06/ECAS_MATCHED/symbol",
+      "pass": true
+    },
+    {
+      "check": "FSV-B06/ECAS_MATCHED/pair_primary_identity",
+      "pass": true
+    },
+    {
+      "check": "FSV-B06/ECAS_MATCHED/display_status",
+      "pass": true
+    },
+    {
+      "check": "FSV-S02/P2P_STYLE/csv_fields",
+      "pass": true
+    },
+    {
+      "check": "FSV-S02/P2P_STYLE/result/hash",
+      "pass": true
+    },
+    {
+      "check": "FSV-S02/P2P_STYLE/display_summary/hash",
+      "pass": true
+    },
+    {
+      "check": "FSV-S02/P2P_STYLE/original_pre_format_state/hash",
+      "pass": true
+    },
+    {
+      "check": "FSV-S02/P2P_STYLE/call14/raw",
+      "pass": true
+    },
+    {
+      "check": "FSV-S02/P2P_STYLE/call14/prompt",
+      "pass": true
+    },
+    {
+      "check": "FSV-S02/P2P_STYLE/call14/parsed_output",
+      "pass": true
+    },
+    {
+      "check": "FSV-S02/P2P_STYLE/symbol",
+      "pass": true
+    },
+    {
+      "check": "FSV-S02/P2P_STYLE/pair_primary_identity",
+      "pass": true
+    },
+    {
+      "check": "FSV-S02/P2P_STYLE/display_status",
+      "pass": true
+    },
+    {
+      "check": "FSV-S02/AUTOPAC_STYLE/csv_fields",
+      "pass": true
+    },
+    {
+      "check": "FSV-S02/AUTOPAC_STYLE/result/hash",
+      "pass": true
+    },
+    {
+      "check": "FSV-S02/AUTOPAC_STYLE/display_summary/hash",
+      "pass": true
+    },
+    {
+      "check": "FSV-S02/AUTOPAC_STYLE/policy/hash",
+      "pass": true
+    },
+    {
+      "check": "FSV-S02/AUTOPAC_STYLE/original_pre_format_state/hash",
+      "pass": true
+    },
+    {
+      "check": "FSV-S02/AUTOPAC_STYLE/call15/raw",
+      "pass": true
+    },
+    {
+      "check": "FSV-S02/AUTOPAC_STYLE/call15/prompt",
+      "pass": true
+    },
+    {
+      "check": "FSV-S02/AUTOPAC_STYLE/call15/parsed_output",
+      "pass": true
+    },
+    {
+      "check": "FSV-S02/AUTOPAC_STYLE/call16/raw",
+      "pass": true
+    },
+    {
+      "check": "FSV-S02/AUTOPAC_STYLE/call16/prompt",
+      "pass": true
+    },
+    {
+      "check": "FSV-S02/AUTOPAC_STYLE/call16/parsed_output",
+      "pass": true
+    },
+    {
+      "check": "FSV-S02/AUTOPAC_STYLE/call17/raw",
+      "pass": true
+    },
+    {
+      "check": "FSV-S02/AUTOPAC_STYLE/call17/prompt",
+      "pass": true
+    },
+    {
+      "check": "FSV-S02/AUTOPAC_STYLE/call17/parsed_output",
+      "pass": true
+    },
+    {
+      "check": "FSV-S02/AUTOPAC_STYLE/symbol",
+      "pass": true
+    },
+    {
+      "check": "FSV-S02/AUTOPAC_STYLE/pair_primary_identity",
+      "pass": true
+    },
+    {
+      "check": "FSV-S02/AUTOPAC_STYLE/display_status",
+      "pass": true
+    },
+    {
+      "check": "FSV-S02/ECAS_MATCHED/csv_fields",
+      "pass": true
+    },
+    {
+      "check": "FSV-S02/ECAS_MATCHED/result/hash",
+      "pass": true
+    },
+    {
+      "check": "FSV-S02/ECAS_MATCHED/display_summary/hash",
+      "pass": true
+    },
+    {
+      "check": "FSV-S02/ECAS_MATCHED/policy/hash",
+      "pass": true
+    },
+    {
+      "check": "FSV-S02/ECAS_MATCHED/original_pre_format_state/hash",
+      "pass": true
+    },
+    {
+      "check": "FSV-S02/ECAS_MATCHED/call18/raw",
+      "pass": true
+    },
+    {
+      "check": "FSV-S02/ECAS_MATCHED/call18/prompt",
+      "pass": true
+    },
+    {
+      "check": "FSV-S02/ECAS_MATCHED/call18/parsed_output",
+      "pass": true
+    },
+    {
+      "check": "FSV-S02/ECAS_MATCHED/symbol",
+      "pass": true
+    },
+    {
+      "check": "FSV-S02/ECAS_MATCHED/pair_primary_identity",
+      "pass": true
+    },
+    {
+      "check": "FSV-S02/ECAS_MATCHED/display_status",
+      "pass": true
+    },
+    {
+      "check": "FSV-S04/P2P_STYLE/csv_fields",
+      "pass": true
+    },
+    {
+      "check": "FSV-S04/P2P_STYLE/result/hash",
+      "pass": true
+    },
+    {
+      "check": "FSV-S04/P2P_STYLE/display_summary/hash",
+      "pass": true
+    },
+    {
+      "check": "FSV-S04/P2P_STYLE/policy/hash",
+      "pass": true
+    },
+    {
+      "check": "FSV-S04/P2P_STYLE/pre_mapping_policy/hash",
+      "pass": true
+    },
+    {
+      "check": "FSV-S04/P2P_STYLE/original_pre_format_state/hash",
+      "pass": true
+    },
+    {
+      "check": "FSV-S04/P2P_STYLE/call19/raw",
+      "pass": true
+    },
+    {
+      "check": "FSV-S04/P2P_STYLE/call19/prompt",
+      "pass": true
+    },
+    {
+      "check": "FSV-S04/P2P_STYLE/call19/parsed_output",
+      "pass": true
+    },
+    {
+      "check": "FSV-S04/P2P_STYLE/call20/raw",
+      "pass": true
+    },
+    {
+      "check": "FSV-S04/P2P_STYLE/call20/prompt",
+      "pass": true
+    },
+    {
+      "check": "FSV-S04/P2P_STYLE/call20/parsed_output",
+      "pass": true
+    },
+    {
+      "check": "FSV-S04/P2P_STYLE/call21/raw",
+      "pass": true
+    },
+    {
+      "check": "FSV-S04/P2P_STYLE/call21/prompt",
+      "pass": true
+    },
+    {
+      "check": "FSV-S04/P2P_STYLE/call21/parsed_output",
+      "pass": true
+    },
+    {
+      "check": "FSV-S04/P2P_STYLE/call22/raw",
+      "pass": true
+    },
+    {
+      "check": "FSV-S04/P2P_STYLE/call22/prompt",
+      "pass": true
+    },
+    {
+      "check": "FSV-S04/P2P_STYLE/call22/parsed_output",
+      "pass": true
+    },
+    {
+      "check": "FSV-S04/P2P_STYLE/call23/raw",
+      "pass": true
+    },
+    {
+      "check": "FSV-S04/P2P_STYLE/call23/prompt",
+      "pass": true
+    },
+    {
+      "check": "FSV-S04/P2P_STYLE/call23/parsed_output",
+      "pass": true
+    },
+    {
+      "check": "FSV-S04/P2P_STYLE/symbol",
+      "pass": true
+    },
+    {
+      "check": "FSV-S04/P2P_STYLE/pair_primary_identity",
+      "pass": true
+    },
+    {
+      "check": "FSV-S04/P2P_STYLE/display_status",
+      "pass": true
+    },
+    {
+      "check": "FSV-S04/AUTOPAC_STYLE/csv_fields",
+      "pass": true
+    },
+    {
+      "check": "FSV-S04/AUTOPAC_STYLE/result/hash",
+      "pass": true
+    },
+    {
+      "check": "FSV-S04/AUTOPAC_STYLE/display_summary/hash",
+      "pass": true
+    },
+    {
+      "check": "FSV-S04/AUTOPAC_STYLE/policy/hash",
+      "pass": true
+    },
+    {
+      "check": "FSV-S04/AUTOPAC_STYLE/pre_mapping_policy/hash",
+      "pass": true
+    },
+    {
+      "check": "FSV-S04/AUTOPAC_STYLE/original_pre_format_state/hash",
+      "pass": true
+    },
+    {
+      "check": "FSV-S04/AUTOPAC_STYLE/call24/raw",
+      "pass": true
+    },
+    {
+      "check": "FSV-S04/AUTOPAC_STYLE/call24/prompt",
+      "pass": true
+    },
+    {
+      "check": "FSV-S04/AUTOPAC_STYLE/call24/parsed_output",
+      "pass": true
+    },
+    {
+      "check": "FSV-S04/AUTOPAC_STYLE/call25/raw",
+      "pass": true
+    },
+    {
+      "check": "FSV-S04/AUTOPAC_STYLE/call25/prompt",
+      "pass": true
+    },
+    {
+      "check": "FSV-S04/AUTOPAC_STYLE/call25/parsed_output",
+      "pass": true
+    },
+    {
+      "check": "FSV-S04/AUTOPAC_STYLE/call26/raw",
+      "pass": true
+    },
+    {
+      "check": "FSV-S04/AUTOPAC_STYLE/call26/prompt",
+      "pass": true
+    },
+    {
+      "check": "FSV-S04/AUTOPAC_STYLE/call26/parsed_output",
+      "pass": true
+    },
+    {
+      "check": "FSV-S04/AUTOPAC_STYLE/symbol",
+      "pass": true
+    },
+    {
+      "check": "FSV-S04/AUTOPAC_STYLE/pair_primary_identity",
+      "pass": true
+    },
+    {
+      "check": "FSV-S04/AUTOPAC_STYLE/display_status",
+      "pass": true
+    },
+    {
+      "check": "FSV-S04/ECAS_MATCHED/csv_fields",
+      "pass": true
+    },
+    {
+      "check": "FSV-S04/ECAS_MATCHED/result/hash",
+      "pass": true
+    },
+    {
+      "check": "FSV-S04/ECAS_MATCHED/display_summary/hash",
+      "pass": true
+    },
+    {
+      "check": "FSV-S04/ECAS_MATCHED/policy/hash",
+      "pass": true
+    },
+    {
+      "check": "FSV-S04/ECAS_MATCHED/original_pre_format_state/hash",
+      "pass": true
+    },
+    {
+      "check": "FSV-S04/ECAS_MATCHED/call27/raw",
+      "pass": true
+    },
+    {
+      "check": "FSV-S04/ECAS_MATCHED/call27/prompt",
+      "pass": true
+    },
+    {
+      "check": "FSV-S04/ECAS_MATCHED/call27/parsed_output",
+      "pass": true
+    },
+    {
+      "check": "FSV-S04/ECAS_MATCHED/symbol",
+      "pass": true
+    },
+    {
+      "check": "FSV-S04/ECAS_MATCHED/pair_primary_identity",
+      "pass": true
+    },
+    {
+      "check": "FSV-S04/ECAS_MATCHED/display_status",
+      "pass": true
+    },
+    {
+      "check": "FSV-S03/P2P_STYLE/csv_fields",
+      "pass": true
+    },
+    {
+      "check": "FSV-S03/P2P_STYLE/result/hash",
+      "pass": true
+    },
+    {
+      "check": "FSV-S03/P2P_STYLE/display_summary/hash",
+      "pass": true
+    },
+    {
+      "check": "FSV-S03/P2P_STYLE/primary_reconciliation/hash",
+      "pass": true
+    },
+    {
+      "check": "FSV-S03/P2P_STYLE/independent_reconciliation/hash",
+      "pass": true
+    },
+    {
+      "check": "FSV-S03/P2P_STYLE/call5/raw",
+      "pass": true
+    },
+    {
+      "check": "FSV-S03/P2P_STYLE/call5/prompt",
+      "pass": true
+    },
+    {
+      "check": "FSV-S03/P2P_STYLE/call5/parsed_output",
+      "pass": true
+    },
+    {
+      "check": "FSV-S03/P2P_STYLE/symbol",
+      "pass": true
+    },
+    {
+      "check": "FSV-S03/P2P_STYLE/pair_primary_identity",
+      "pass": true
+    },
+    {
+      "check": "FSV-S03/P2P_STYLE/display_status",
+      "pass": true
+    },
+    {
+      "check": "FSV-S03/AUTOPAC_STYLE/csv_fields",
+      "pass": true
+    },
+    {
+      "check": "FSV-S03/AUTOPAC_STYLE/result/hash",
+      "pass": true
+    },
+    {
+      "check": "FSV-S03/AUTOPAC_STYLE/display_summary/hash",
+      "pass": true
+    },
+    {
+      "check": "FSV-S03/AUTOPAC_STYLE/policy/hash",
+      "pass": true
+    },
+    {
+      "check": "FSV-S03/AUTOPAC_STYLE/primary_reconciliation/hash",
+      "pass": true
+    },
+    {
+      "check": "FSV-S03/AUTOPAC_STYLE/independent_reconciliation/hash",
+      "pass": true
+    },
+    {
+      "check": "FSV-S03/AUTOPAC_STYLE/call6/raw",
+      "pass": true
+    },
+    {
+      "check": "FSV-S03/AUTOPAC_STYLE/call6/prompt",
+      "pass": true
+    },
+    {
+      "check": "FSV-S03/AUTOPAC_STYLE/call6/parsed_output",
+      "pass": true
+    },
+    {
+      "check": "FSV-S03/AUTOPAC_STYLE/call7/raw",
+      "pass": true
+    },
+    {
+      "check": "FSV-S03/AUTOPAC_STYLE/call7/prompt",
+      "pass": true
+    },
+    {
+      "check": "FSV-S03/AUTOPAC_STYLE/call7/parsed_output",
+      "pass": true
+    },
+    {
+      "check": "FSV-S03/AUTOPAC_STYLE/call8/raw",
+      "pass": true
+    },
+    {
+      "check": "FSV-S03/AUTOPAC_STYLE/call8/prompt",
+      "pass": true
+    },
+    {
+      "check": "FSV-S03/AUTOPAC_STYLE/call8/parsed_output",
+      "pass": true
+    },
+    {
+      "check": "FSV-S03/AUTOPAC_STYLE/symbol",
+      "pass": true
+    },
+    {
+      "check": "FSV-S03/AUTOPAC_STYLE/pair_primary_identity",
+      "pass": true
+    },
+    {
+      "check": "FSV-S03/AUTOPAC_STYLE/display_status",
+      "pass": true
+    },
+    {
+      "check": "FSV-S03/ECAS_MATCHED/csv_fields",
+      "pass": true
+    },
+    {
+      "check": "FSV-S03/ECAS_MATCHED/result/hash",
+      "pass": true
+    },
+    {
+      "check": "FSV-S03/ECAS_MATCHED/display_summary/hash",
+      "pass": true
+    },
+    {
+      "check": "FSV-S03/ECAS_MATCHED/policy/hash",
+      "pass": true
+    },
+    {
+      "check": "FSV-S03/ECAS_MATCHED/primary_reconciliation/hash",
+      "pass": true
+    },
+    {
+      "check": "FSV-S03/ECAS_MATCHED/independent_reconciliation/hash",
+      "pass": true
+    },
+    {
+      "check": "FSV-S03/ECAS_MATCHED/call9/raw",
+      "pass": true
+    },
+    {
+      "check": "FSV-S03/ECAS_MATCHED/call9/prompt",
+      "pass": true
+    },
+    {
+      "check": "FSV-S03/ECAS_MATCHED/call9/parsed_output",
+      "pass": true
+    },
+    {
+      "check": "FSV-S03/ECAS_MATCHED/symbol",
+      "pass": true
+    },
+    {
+      "check": "FSV-S03/ECAS_MATCHED/pair_primary_identity",
+      "pass": true
+    },
+    {
+      "check": "FSV-S03/ECAS_MATCHED/display_status",
+      "pass": true
+    },
+    {
+      "check": "FSV-S03/ECAS_MATCHED/qualified",
+      "pass": true
+    },
+    {
+      "check": "FSV-B13/P2P_STYLE/csv_fields",
+      "pass": true
+    },
+    {
+      "check": "FSV-B13/P2P_STYLE/result/hash",
+      "pass": true
+    },
+    {
+      "check": "FSV-B13/P2P_STYLE/display_summary/hash",
+      "pass": true
+    },
+    {
+      "check": "FSV-B13/P2P_STYLE/policy/hash",
+      "pass": true
+    },
+    {
+      "check": "FSV-B13/P2P_STYLE/primary_reconciliation/hash",
+      "pass": true
+    },
+    {
+      "check": "FSV-B13/P2P_STYLE/independent_reconciliation/hash",
+      "pass": true
+    },
+    {
+      "check": "FSV-B13/P2P_STYLE/call10/raw",
+      "pass": true
+    },
+    {
+      "check": "FSV-B13/P2P_STYLE/call10/prompt",
+      "pass": true
+    },
+    {
+      "check": "FSV-B13/P2P_STYLE/call10/parsed_output",
+      "pass": true
+    },
+    {
+      "check": "FSV-B13/P2P_STYLE/call11/raw",
+      "pass": true
+    },
+    {
+      "check": "FSV-B13/P2P_STYLE/call11/prompt",
+      "pass": true
+    },
+    {
+      "check": "FSV-B13/P2P_STYLE/call11/parsed_output",
+      "pass": true
+    },
+    {
+      "check": "FSV-B13/P2P_STYLE/call12/raw",
+      "pass": true
+    },
+    {
+      "check": "FSV-B13/P2P_STYLE/call12/prompt",
+      "pass": true
+    },
+    {
+      "check": "FSV-B13/P2P_STYLE/call12/parsed_output",
+      "pass": true
+    },
+    {
+      "check": "FSV-B13/P2P_STYLE/call13/raw",
+      "pass": true
+    },
+    {
+      "check": "FSV-B13/P2P_STYLE/call13/prompt",
+      "pass": true
+    },
+    {
+      "check": "FSV-B13/P2P_STYLE/call13/parsed_output",
+      "pass": true
+    },
+    {
+      "check": "FSV-B13/P2P_STYLE/symbol",
+      "pass": true
+    },
+    {
+      "check": "FSV-B13/P2P_STYLE/pair_primary_identity",
+      "pass": true
+    },
+    {
+      "check": "FSV-B13/P2P_STYLE/display_status",
+      "pass": true
+    },
+    {
+      "check": "FSV-B13/P2P_STYLE/qualified",
+      "pass": true
+    },
+    {
+      "check": "FSV-B13/AUTOPAC_STYLE/csv_fields",
+      "pass": true
+    },
+    {
+      "check": "FSV-B13/AUTOPAC_STYLE/result/hash",
+      "pass": true
+    },
+    {
+      "check": "FSV-B13/AUTOPAC_STYLE/display_summary/hash",
+      "pass": true
+    },
+    {
+      "check": "FSV-B13/AUTOPAC_STYLE/policy/hash",
+      "pass": true
+    },
+    {
+      "check": "FSV-B13/AUTOPAC_STYLE/primary_reconciliation/hash",
+      "pass": true
+    },
+    {
+      "check": "FSV-B13/AUTOPAC_STYLE/independent_reconciliation/hash",
+      "pass": true
+    },
+    {
+      "check": "FSV-B13/AUTOPAC_STYLE/call14/raw",
+      "pass": true
+    },
+    {
+      "check": "FSV-B13/AUTOPAC_STYLE/call14/prompt",
+      "pass": true
+    },
+    {
+      "check": "FSV-B13/AUTOPAC_STYLE/call14/parsed_output",
+      "pass": true
+    },
+    {
+      "check": "FSV-B13/AUTOPAC_STYLE/call15/raw",
+      "pass": true
+    },
+    {
+      "check": "FSV-B13/AUTOPAC_STYLE/call15/prompt",
+      "pass": true
+    },
+    {
+      "check": "FSV-B13/AUTOPAC_STYLE/call15/parsed_output",
+      "pass": true
+    },
+    {
+      "check": "FSV-B13/AUTOPAC_STYLE/symbol",
+      "pass": true
+    },
+    {
+      "check": "FSV-B13/AUTOPAC_STYLE/pair_primary_identity",
+      "pass": true
+    },
+    {
+      "check": "FSV-B13/AUTOPAC_STYLE/display_status",
+      "pass": true
+    },
+    {
+      "check": "FSV-B13/AUTOPAC_STYLE/qualified",
+      "pass": true
+    },
+    {
+      "check": "FSV-B13/ECAS_MATCHED/csv_fields",
+      "pass": true
+    },
+    {
+      "check": "FSV-B13/ECAS_MATCHED/result/hash",
+      "pass": true
+    },
+    {
+      "check": "FSV-B13/ECAS_MATCHED/display_summary/hash",
+      "pass": true
+    },
+    {
+      "check": "FSV-B13/ECAS_MATCHED/policy/hash",
+      "pass": true
+    },
+    {
+      "check": "FSV-B13/ECAS_MATCHED/primary_reconciliation/hash",
+      "pass": true
+    },
+    {
+      "check": "FSV-B13/ECAS_MATCHED/independent_reconciliation/hash",
+      "pass": true
+    },
+    {
+      "check": "FSV-B13/ECAS_MATCHED/call16/raw",
+      "pass": true
+    },
+    {
+      "check": "FSV-B13/ECAS_MATCHED/call16/prompt",
+      "pass": true
+    },
+    {
+      "check": "FSV-B13/ECAS_MATCHED/call16/parsed_output",
+      "pass": true
+    },
+    {
+      "check": "FSV-B13/ECAS_MATCHED/symbol",
+      "pass": true
+    },
+    {
+      "check": "FSV-B13/ECAS_MATCHED/pair_primary_identity",
+      "pass": true
+    },
+    {
+      "check": "FSV-B13/ECAS_MATCHED/display_status",
+      "pass": true
+    },
+    {
+      "check": "FSV-B13/ECAS_MATCHED/qualified",
+      "pass": true
+    },
+    {
+      "check": "FSV-B17/P2P_STYLE/csv_fields",
+      "pass": true
+    },
+    {
+      "check": "FSV-B17/P2P_STYLE/result/hash",
+      "pass": true
+    },
+    {
+      "check": "FSV-B17/P2P_STYLE/display_summary/hash",
+      "pass": true
+    },
+    {
+      "check": "FSV-B17/P2P_STYLE/policy/hash",
+      "pass": true
+    },
+    {
+      "check": "FSV-B17/P2P_STYLE/primary_reconciliation/hash",
+      "pass": true
+    },
+    {
+      "check": "FSV-B17/P2P_STYLE/independent_reconciliation/hash",
+      "pass": true
+    },
+    {
+      "check": "FSV-B17/P2P_STYLE/call17/raw",
+      "pass": true
+    },
+    {
+      "check": "FSV-B17/P2P_STYLE/call17/prompt",
+      "pass": true
+    },
+    {
+      "check": "FSV-B17/P2P_STYLE/call17/parsed_output",
+      "pass": true
+    },
+    {
+      "check": "FSV-B17/P2P_STYLE/call18/raw",
+      "pass": true
+    },
+    {
+      "check": "FSV-B17/P2P_STYLE/call18/prompt",
+      "pass": true
+    },
+    {
+      "check": "FSV-B17/P2P_STYLE/call18/parsed_output",
+      "pass": true
+    },
+    {
+      "check": "FSV-B17/P2P_STYLE/call19/raw",
+      "pass": true
+    },
+    {
+      "check": "FSV-B17/P2P_STYLE/call19/prompt",
+      "pass": true
+    },
+    {
+      "check": "FSV-B17/P2P_STYLE/call19/parsed_output",
+      "pass": true
+    },
+    {
+      "check": "FSV-B17/P2P_STYLE/call20/raw",
+      "pass": true
+    },
+    {
+      "check": "FSV-B17/P2P_STYLE/call20/prompt",
+      "pass": true
+    },
+    {
+      "check": "FSV-B17/P2P_STYLE/call20/parsed_output",
+      "pass": true
+    },
+    {
+      "check": "FSV-B17/P2P_STYLE/symbol",
+      "pass": true
+    },
+    {
+      "check": "FSV-B17/P2P_STYLE/pair_primary_identity",
+      "pass": true
+    },
+    {
+      "check": "FSV-B17/P2P_STYLE/display_status",
+      "pass": true
+    },
+    {
+      "check": "FSV-B17/P2P_STYLE/qualified",
+      "pass": true
+    },
+    {
+      "check": "FSV-B17/AUTOPAC_STYLE/csv_fields",
+      "pass": true
+    },
+    {
+      "check": "FSV-B17/AUTOPAC_STYLE/result/hash",
+      "pass": true
+    },
+    {
+      "check": "FSV-B17/AUTOPAC_STYLE/display_summary/hash",
+      "pass": true
+    },
+    {
+      "check": "FSV-B17/AUTOPAC_STYLE/policy/hash",
+      "pass": true
+    },
+    {
+      "check": "FSV-B17/AUTOPAC_STYLE/primary_reconciliation/hash",
+      "pass": true
+    },
+    {
+      "check": "FSV-B17/AUTOPAC_STYLE/independent_reconciliation/hash",
+      "pass": true
+    },
+    {
+      "check": "FSV-B17/AUTOPAC_STYLE/call21/raw",
+      "pass": true
+    },
+    {
+      "check": "FSV-B17/AUTOPAC_STYLE/call21/prompt",
+      "pass": true
+    },
+    {
+      "check": "FSV-B17/AUTOPAC_STYLE/call21/parsed_output",
+      "pass": true
+    },
+    {
+      "check": "FSV-B17/AUTOPAC_STYLE/call22/raw",
+      "pass": true
+    },
+    {
+      "check": "FSV-B17/AUTOPAC_STYLE/call22/prompt",
+      "pass": true
+    },
+    {
+      "check": "FSV-B17/AUTOPAC_STYLE/call22/parsed_output",
+      "pass": true
+    },
+    {
+      "check": "FSV-B17/AUTOPAC_STYLE/symbol",
+      "pass": true
+    },
+    {
+      "check": "FSV-B17/AUTOPAC_STYLE/pair_primary_identity",
+      "pass": true
+    },
+    {
+      "check": "FSV-B17/AUTOPAC_STYLE/display_status",
+      "pass": true
+    },
+    {
+      "check": "FSV-B17/AUTOPAC_STYLE/qualified",
+      "pass": true
+    },
+    {
+      "check": "FSV-B17/ECAS_MATCHED/csv_fields",
+      "pass": true
+    },
+    {
+      "check": "FSV-B17/ECAS_MATCHED/result/hash",
+      "pass": true
+    },
+    {
+      "check": "FSV-B17/ECAS_MATCHED/display_summary/hash",
+      "pass": true
+    },
+    {
+      "check": "FSV-B17/ECAS_MATCHED/policy/hash",
+      "pass": true
+    },
+    {
+      "check": "FSV-B17/ECAS_MATCHED/primary_reconciliation/hash",
+      "pass": true
+    },
+    {
+      "check": "FSV-B17/ECAS_MATCHED/independent_reconciliation/hash",
+      "pass": true
+    },
+    {
+      "check": "FSV-B17/ECAS_MATCHED/call23/raw",
+      "pass": true
+    },
+    {
+      "check": "FSV-B17/ECAS_MATCHED/call23/prompt",
+      "pass": true
+    },
+    {
+      "check": "FSV-B17/ECAS_MATCHED/call23/parsed_output",
+      "pass": true
+    },
+    {
+      "check": "FSV-B17/ECAS_MATCHED/symbol",
+      "pass": true
+    },
+    {
+      "check": "FSV-B17/ECAS_MATCHED/pair_primary_identity",
+      "pass": true
+    },
+    {
+      "check": "FSV-B17/ECAS_MATCHED/display_status",
+      "pass": true
+    },
+    {
+      "check": "FSV-B17/ECAS_MATCHED/qualified",
+      "pass": true
+    },
+    {
+      "check": "FSV-B19/P2P_STYLE/csv_fields",
+      "pass": true
+    },
+    {
+      "check": "FSV-B19/P2P_STYLE/result/hash",
+      "pass": true
+    },
+    {
+      "check": "FSV-B19/P2P_STYLE/display_summary/hash",
+      "pass": true
+    },
+    {
+      "check": "FSV-B19/P2P_STYLE/policy/hash",
+      "pass": true
+    },
+    {
+      "check": "FSV-B19/P2P_STYLE/primary_reconciliation/hash",
+      "pass": true
+    },
+    {
+      "check": "FSV-B19/P2P_STYLE/independent_reconciliation/hash",
+      "pass": true
+    },
+    {
+      "check": "FSV-B19/P2P_STYLE/call24/raw",
+      "pass": true
+    },
+    {
+      "check": "FSV-B19/P2P_STYLE/call24/prompt",
+      "pass": true
+    },
+    {
+      "check": "FSV-B19/P2P_STYLE/call24/parsed_output",
+      "pass": true
+    },
+    {
+      "check": "FSV-B19/P2P_STYLE/call25/raw",
+      "pass": true
+    },
+    {
+      "check": "FSV-B19/P2P_STYLE/call25/prompt",
+      "pass": true
+    },
+    {
+      "check": "FSV-B19/P2P_STYLE/call25/parsed_output",
+      "pass": true
+    },
+    {
+      "check": "FSV-B19/P2P_STYLE/call26/raw",
+      "pass": true
+    },
+    {
+      "check": "FSV-B19/P2P_STYLE/call26/prompt",
+      "pass": true
+    },
+    {
+      "check": "FSV-B19/P2P_STYLE/call26/parsed_output",
+      "pass": true
+    },
+    {
+      "check": "FSV-B19/P2P_STYLE/call27/raw",
+      "pass": true
+    },
+    {
+      "check": "FSV-B19/P2P_STYLE/call27/prompt",
+      "pass": true
+    },
+    {
+      "check": "FSV-B19/P2P_STYLE/call27/parsed_output",
+      "pass": true
+    },
+    {
+      "check": "FSV-B19/P2P_STYLE/symbol",
+      "pass": true
+    },
+    {
+      "check": "FSV-B19/P2P_STYLE/pair_primary_identity",
+      "pass": true
+    },
+    {
+      "check": "FSV-B19/P2P_STYLE/display_status",
+      "pass": true
+    },
+    {
+      "check": "FSV-B19/P2P_STYLE/qualified",
+      "pass": true
+    },
+    {
+      "check": "FSV-B19/AUTOPAC_STYLE/csv_fields",
+      "pass": true
+    },
+    {
+      "check": "FSV-B19/AUTOPAC_STYLE/result/hash",
+      "pass": true
+    },
+    {
+      "check": "FSV-B19/AUTOPAC_STYLE/display_summary/hash",
+      "pass": true
+    },
+    {
+      "check": "FSV-B19/AUTOPAC_STYLE/policy/hash",
+      "pass": true
+    },
+    {
+      "check": "FSV-B19/AUTOPAC_STYLE/primary_reconciliation/hash",
+      "pass": true
+    },
+    {
+      "check": "FSV-B19/AUTOPAC_STYLE/independent_reconciliation/hash",
+      "pass": true
+    },
+    {
+      "check": "FSV-B19/AUTOPAC_STYLE/call28/raw",
+      "pass": true
+    },
+    {
+      "check": "FSV-B19/AUTOPAC_STYLE/call28/prompt",
+      "pass": true
+    },
+    {
+      "check": "FSV-B19/AUTOPAC_STYLE/call28/parsed_output",
+      "pass": true
+    },
+    {
+      "check": "FSV-B19/AUTOPAC_STYLE/call29/raw",
+      "pass": true
+    },
+    {
+      "check": "FSV-B19/AUTOPAC_STYLE/call29/prompt",
+      "pass": true
+    },
+    {
+      "check": "FSV-B19/AUTOPAC_STYLE/call29/parsed_output",
+      "pass": true
+    },
+    {
+      "check": "FSV-B19/AUTOPAC_STYLE/symbol",
+      "pass": true
+    },
+    {
+      "check": "FSV-B19/AUTOPAC_STYLE/pair_primary_identity",
+      "pass": true
+    },
+    {
+      "check": "FSV-B19/AUTOPAC_STYLE/display_status",
+      "pass": true
+    },
+    {
+      "check": "FSV-B19/AUTOPAC_STYLE/qualified",
+      "pass": true
+    },
+    {
+      "check": "FSV-B19/ECAS_MATCHED/csv_fields",
+      "pass": true
+    },
+    {
+      "check": "FSV-B19/ECAS_MATCHED/result/hash",
+      "pass": true
+    },
+    {
+      "check": "FSV-B19/ECAS_MATCHED/display_summary/hash",
+      "pass": true
+    },
+    {
+      "check": "FSV-B19/ECAS_MATCHED/policy/hash",
+      "pass": true
+    },
+    {
+      "check": "FSV-B19/ECAS_MATCHED/primary_reconciliation/hash",
+      "pass": true
+    },
+    {
+      "check": "FSV-B19/ECAS_MATCHED/independent_reconciliation/hash",
+      "pass": true
+    },
+    {
+      "check": "FSV-B19/ECAS_MATCHED/call30/raw",
+      "pass": true
+    },
+    {
+      "check": "FSV-B19/ECAS_MATCHED/call30/prompt",
+      "pass": true
+    },
+    {
+      "check": "FSV-B19/ECAS_MATCHED/call30/parsed_output",
+      "pass": true
+    },
+    {
+      "check": "FSV-B19/ECAS_MATCHED/symbol",
+      "pass": true
+    },
+    {
+      "check": "FSV-B19/ECAS_MATCHED/pair_primary_identity",
+      "pass": true
+    },
+    {
+      "check": "FSV-B19/ECAS_MATCHED/display_status",
+      "pass": true
+    },
+    {
+      "check": "FSV-B19/ECAS_MATCHED/qualified",
+      "pass": true
+    },
+    {
+      "check": "two_protocol_batches",
+      "pass": true
+    },
+    {
+      "check": "P2P_S04_partial_allowallow",
+      "pass": true
+    }
+  ],
+  "new_model_calls": 0,
+  "check_count": 344,
+  "status": "PASS",
+  "new_policy_executions": 0,
+  "post_audit_metadata_update": "Only TABLE_SOURCES status and table review sentence updated; rows and source identities unchanged."
+}

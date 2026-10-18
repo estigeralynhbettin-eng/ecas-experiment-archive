@@ -1,0 +1,18 @@
+{
+  "status": "COMPLETED",
+  "rows": [
+    {
+      "task": "FSV-B17",
+      "method": "P2P_STYLE",
+      "status": "EVALUATED",
+      "pair_correct": true
+    },
+    {
+      "task": "FSV-B19",
+      "method": "P2P_STYLE",
+      "status": "EVALUATED",
+      "pair_correct": true
+    }
+  ],
+  "new_model_calls": 0
+}

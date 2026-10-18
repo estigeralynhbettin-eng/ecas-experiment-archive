@@ -1,0 +1,28 @@
+{
+  "choices": [
+    {
+      "finish_reason": "stop",
+      "index": 0,
+      "message": {
+        "content": "{\"begin\":\"BEGIN_FSV-B19_p2p_detect_MAIN\",\"stage\":\"p2p_detect\",\"output\":{\"status\":\"READY\",\"statements\":[{\"text\":\"If a supplier is blocked (on hold) with a hold type of 'Invoices' or 'All', ERPNext will not allow Purchase Orders to be created for the supplier.\",\"evidence_refs\":[\"VIS-FSV-B19-01\"]}],\"reason\":\"Source explicitly defines a policy preventing the creation of Purchase Orders for suppliers with a specific hold type, matching the target operation and available trusted state paths.\"},\"end\":\"END_FSV-B19_p2p_detect_MAIN\"}",
+        "role": "assistant"
+      }
+    }
+  ],
+  "created": 1791978912,
+  "id": "202610141955043443d8824fe147ac",
+  "model": "glm-5.2",
+  "object": "chat.completion",
+  "request_id": "202610141955043443d8824fe147ac",
+  "usage": {
+    "completion_tokens": 616,
+    "completion_tokens_details": {
+      "reasoning_tokens": 449
+    },
+    "prompt_tokens": 5590,
+    "prompt_tokens_details": {
+      "cached_tokens": 0
+    },
+    "total_tokens": 6206
+  }
+}

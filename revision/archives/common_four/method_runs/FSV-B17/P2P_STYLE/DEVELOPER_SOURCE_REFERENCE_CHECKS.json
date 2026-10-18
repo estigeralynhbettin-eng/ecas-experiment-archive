@@ -1,0 +1,59 @@
+{
+  "classification": "SOURCE_LOCATOR_BINDING_NOT_TEST_ORACLE_CORRECTION",
+  "tests_path": "/mnt/d/lunwen/EC-CSI投稿/working/exploration/20261014_matched_evidence_labor/matched_generation/method_runs/FSV-B17/P2P_STYLE/p2p_tests.json",
+  "tests_sha256": "2d80bf0295dcb879832cd9ad3eae6a9c52340820c1f969a11f7552b4fff47ff1",
+  "references": [
+    {
+      "original_reference": "VIS-FSV-B17-01",
+      "accepted": true,
+      "binding_kind": "VISIBLE_BASE_ID",
+      "base_evidence_id": "VIS-FSV-B17-01",
+      "original_fragment": null,
+      "source_id": "erpnext-customer.html",
+      "source_metadata_sha256": "BA52637ECC58763F80A1AB3F94CA82F51048E19EAC94DD1D2E41E92853CE1AE9",
+      "developer_test_id": "test_allow_disabled_false"
+    },
+    {
+      "original_reference": "VIS-FSV-B17-01",
+      "accepted": true,
+      "binding_kind": "VISIBLE_BASE_ID",
+      "base_evidence_id": "VIS-FSV-B17-01",
+      "original_fragment": null,
+      "source_id": "erpnext-customer.html",
+      "source_metadata_sha256": "BA52637ECC58763F80A1AB3F94CA82F51048E19EAC94DD1D2E41E92853CE1AE9",
+      "developer_test_id": "test_deny_disabled_true"
+    },
+    {
+      "original_reference": "VIS-FSV-B17-01",
+      "accepted": true,
+      "binding_kind": "VISIBLE_BASE_ID",
+      "base_evidence_id": "VIS-FSV-B17-01",
+      "original_fragment": null,
+      "source_id": "erpnext-customer.html",
+      "source_metadata_sha256": "BA52637ECC58763F80A1AB3F94CA82F51048E19EAC94DD1D2E41E92853CE1AE9",
+      "developer_test_id": "test_allow_disabled_false_no_customer"
+    },
+    {
+      "original_reference": "VIS-FSV-B17-01",
+      "accepted": true,
+      "binding_kind": "VISIBLE_BASE_ID",
+      "base_evidence_id": "VIS-FSV-B17-01",
+      "original_fragment": null,
+      "source_id": "erpnext-customer.html",
+      "source_metadata_sha256": "BA52637ECC58763F80A1AB3F94CA82F51048E19EAC94DD1D2E41E92853CE1AE9",
+      "developer_test_id": "test_deny_disabled_true_no_customer"
+    },
+    {
+      "original_reference": "VIS-FSV-B17-01",
+      "accepted": true,
+      "binding_kind": "VISIBLE_BASE_ID",
+      "base_evidence_id": "VIS-FSV-B17-01",
+      "original_fragment": null,
+      "source_id": "erpnext-customer.html",
+      "source_metadata_sha256": "BA52637ECC58763F80A1AB3F94CA82F51048E19EAC94DD1D2E41E92853CE1AE9",
+      "developer_test_id": "test_allow_disabled_default_omitted"
+    }
+  ],
+  "all_accepted": true,
+  "original_inputs_expected_and_references_changed": false
+}

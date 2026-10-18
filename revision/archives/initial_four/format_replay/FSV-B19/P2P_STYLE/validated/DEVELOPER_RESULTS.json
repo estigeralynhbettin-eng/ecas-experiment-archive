@@ -1,0 +1,82 @@
+[
+  {
+    "id": "T1",
+    "expected": "deny",
+    "actual": {
+      "status": "EXECUTED",
+      "decision": "deny",
+      "exit_code": 0
+    },
+    "pass": true
+  },
+  {
+    "id": "T2",
+    "expected": "deny",
+    "actual": {
+      "status": "EXECUTED",
+      "decision": "deny",
+      "exit_code": 0
+    },
+    "pass": true
+  },
+  {
+    "id": "T3",
+    "expected": "allow",
+    "actual": {
+      "status": "EXECUTED",
+      "decision": "allow",
+      "exit_code": 0
+    },
+    "pass": true
+  },
+  {
+    "id": "T4",
+    "expected": "allow",
+    "actual": {
+      "status": "EXECUTED",
+      "decision": "allow",
+      "exit_code": 0
+    },
+    "pass": true
+  },
+  {
+    "id": "T5",
+    "expected": "allow",
+    "actual": {
+      "status": "EXECUTED",
+      "decision": "allow",
+      "exit_code": 0
+    },
+    "pass": true
+  },
+  {
+    "id": "dev_not_held",
+    "expected": "allow",
+    "actual": {
+      "status": "EXECUTED",
+      "decision": "allow",
+      "exit_code": 0
+    },
+    "pass": true
+  },
+  {
+    "id": "dev_invoices",
+    "expected": "deny",
+    "actual": {
+      "status": "EXECUTED",
+      "decision": "deny",
+      "exit_code": 0
+    },
+    "pass": true
+  },
+  {
+    "id": "dev_payments",
+    "expected": "allow",
+    "actual": {
+      "status": "EXECUTED",
+      "decision": "allow",
+      "exit_code": 0
+    },
+    "pass": true
+  }
+]

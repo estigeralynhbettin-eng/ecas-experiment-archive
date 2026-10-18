@@ -1,0 +1,34 @@
+[
+  {
+    "mode": "t0",
+    "argv": [
+      "/usr/bin/unshare",
+      "--net",
+      "--",
+      "/usr/bin/python3",
+      "/root/ecas_a9_artifact_verify_v2/extracted/offline/replay.py",
+      "t0",
+      "--output",
+      "/root/ecas_a9_artifact_verify_v2/run"
+    ],
+    "exit_code": 0,
+    "stdout_bytes": 104,
+    "stderr_bytes": 0
+  },
+  {
+    "mode": "replay",
+    "argv": [
+      "/usr/bin/unshare",
+      "--net",
+      "--",
+      "/usr/bin/python3",
+      "/root/ecas_a9_artifact_verify_v2/extracted/offline/replay.py",
+      "replay",
+      "--output",
+      "/root/ecas_a9_artifact_verify_v2/run"
+    ],
+    "exit_code": 0,
+    "stdout_bytes": 355,
+    "stderr_bytes": 0
+  }
+]

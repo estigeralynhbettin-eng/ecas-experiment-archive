@@ -1,0 +1,32 @@
+{
+  "classification": "ALL_OPERATION_INTERFACE_DOCUMENTATION_NOT_CASE_FEEDBACK",
+  "engine_v2_path": "/root/ecas_four_case_peer_20261014/runtime/scripts/ec_field_security_engine_v2.py",
+  "engine_v2_sha256": "21f65c64ea26897f62571ac147b48bc6a20c7426a48084f9cda8d0218e42d970",
+  "engine_v3_path": "/root/ecas_four_case_peer_20261014/runtime/scripts/ec_field_security_engine_v3.py",
+  "engine_v3_sha256": "bd509670538cb31f7a271b4d6b353a862157fe968c240218db33065c36b980e3",
+  "all_ops": [
+    "content_type_allowlist",
+    "request_size_limit",
+    "allowed_fields",
+    "required",
+    "strict_type",
+    "length_cardinality",
+    "number_range_precision",
+    "enum_allowlist",
+    "named_validator",
+    "canonical_form",
+    "date_order",
+    "age_matches_dob",
+    "state_transition",
+    "server_derived_reject",
+    "bounded_guard_dnf"
+  ],
+  "source_functions": [
+    "v2._evaluate_rule",
+    "v2._evaluate_value_rule",
+    "v3._evaluate_rule"
+  ],
+  "new_business_sources": 0,
+  "first_candidates_in_prompt": false,
+  "final_fixtures_in_prompt": false
+}

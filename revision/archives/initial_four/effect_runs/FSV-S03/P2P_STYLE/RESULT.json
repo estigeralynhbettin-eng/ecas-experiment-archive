@@ -1,0 +1,11 @@
+{
+  "task": "FSV-S03",
+  "method": "P2P_STYLE",
+  "classification": "RETROSPECTIVE_FOUR_CASE_ADAPTED_PEER_BASELINES_NOT_NATIVE_OR_BLIND",
+  "status": "OUT_OF_SCOPE",
+  "requests": [],
+  "calls": [
+    4
+  ],
+  "reason": "The visible sources contain only an OpenAPI endpoint specification (VIS-FSV-S03-01) and a runtime ABI path declaration catalog (VIS-FSV-S03-RUNTIME-ABI). Neither source contains explicit access policy statements such as permission grants, denials, or role-based constraints. The runtime ABI source explicitly disclaims any decision value, and the common adapter notice confirms subject id/role are neutral aliases, not permission rules."
+}

@@ -1,0 +1,8 @@
+{
+  "failed_call": 6,
+  "raw_status_preserved": "STOPPED_PROTOCOL_OR_TRANSPORT",
+  "equivalent_status_alias": "EXTRACTED -> READY",
+  "business_conditions_changed": false,
+  "new_model_calls_for_repair": 0,
+  "resumed_from_exact_prompt_and_raw": true
+}

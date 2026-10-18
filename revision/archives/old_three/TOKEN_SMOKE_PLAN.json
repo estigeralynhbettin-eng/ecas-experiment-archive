@@ -1,0 +1,53 @@
+{
+  "schema_version": "1.0",
+  "tool": "plan_llm_token_smoke",
+  "generated_at": "2026-10-14T03:45:09.103Z",
+  "data": {
+    "provider": "glm",
+    "model": "glm-5.2",
+    "schema_complexity": "complex",
+    "prompt_statistics": {
+      "count": 3,
+      "min": 11352,
+      "p50": 11535,
+      "p90": 16344,
+      "p95": 16344,
+      "p99": 16344,
+      "max": 16344
+    },
+    "max_output_candidates": [
+      16384
+    ],
+    "coverage_points": [
+      {
+        "label": "p95",
+        "prompt_tokens": 16344
+      },
+      {
+        "label": "p99",
+        "prompt_tokens": 16344
+      },
+      {
+        "label": "max",
+        "prompt_tokens": 16344
+      }
+    ],
+    "required_dimensions": {
+      "datasets": [
+        "ERPNext",
+        "Fineract"
+      ],
+      "maximum_k": null,
+      "fragile_case_ids": [
+        "FSV-S04_p2p_rego",
+        "FSV-S04_autopac_generate",
+        "FSV-S04_ecas_generate"
+      ],
+      "provider_model": "glm/glm-5.2"
+    },
+    "context_window": null,
+    "context_risks": [],
+    "final_budget_selected": false,
+    "rule": "A candidate budget is not a final budget. Run p95, p99, max, every dataset, maximum K, and fragile cases, then evaluate observed failures."
+  }
+}

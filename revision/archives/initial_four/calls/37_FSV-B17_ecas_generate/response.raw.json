@@ -1,0 +1,28 @@
+{
+  "choices": [
+    {
+      "finish_reason": "stop",
+      "index": 0,
+      "message": {
+        "content": "{\"begin\":\"BEGIN_FSV-B17_ecas_generate_DOCUMENTED_MAIN\",\"stage\":\"ecas_generate\",\"output\":{\"candidate\":{\"ir_version\":\"EC-FIELD-MODEL-IR-V3\",\"candidate_id\":\"FSV-B17-ECAS-CANDIDATE-DISABLED-CUSTOMER\",\"decision\":\"propose\",\"target\":{\"operation\":\"POST /api/resource/Sales Order\",\"system\":\"ERPNext\",\"version\":\"16.0.0\"},\"policy_id\":\"FSV-B17-disabled-customer-sales-order-block\",\"evidence_refs\":[\"VIS-FSV-B17-01\",\"VIS-FSV-B17-03\",\"VIS-FSV-B17-RUNTIME-ABI\"],\"rules\":[{\"rule_id\":\"FSV-B17-RULE-DISABLED-CUSTOMER-FALSE\",\"primitive_id\":\"SP-ENUM-ALLOWLIST\",\"op\":\"enum_allowlist\",\"evidence_refs\":[\"VIS-FSV-B17-01\",\"VIS-FSV-B17-03\",\"VIS-FSV-B17-RUNTIME-ABI\"],\"params\":{\"path\":\"/trusted/customerDisabled\",\"values\":[false],\"on_missing\":\"deny\"}}],\"reason_code\":\"none\",\"missing_evidence\":[]}},\"end\":\"END_FSV-B17_ecas_generate_DOCUMENTED_MAIN\"}",
+        "role": "assistant"
+      }
+    }
+  ],
+  "created": 1791979941,
+  "id": "20261014201147f2f4045813474555",
+  "model": "glm-5.2",
+  "object": "chat.completion",
+  "request_id": "20261014201147f2f4045813474555",
+  "usage": {
+    "completion_tokens": 2566,
+    "completion_tokens_details": {
+      "reasoning_tokens": 2318
+    },
+    "prompt_tokens": 5371,
+    "prompt_tokens_details": {
+      "cached_tokens": 0
+    },
+    "total_tokens": 7937
+  }
+}

@@ -1,0 +1,677 @@
+{
+  "task": "FSV-B13",
+  "method": "ECAS_MATCHED",
+  "status": "EVALUATED",
+  "requests": [
+    {
+      "channel": "O-L",
+      "input": {
+        "request": {
+          "body": {
+            "qty": 110
+          }
+        },
+        "trusted": {
+          "allowancePercent": 10,
+          "authorizedRole": false,
+          "derivedMaximumQty": 110,
+          "orderedQty": 100
+        }
+      },
+      "expected": "allow",
+      "actual": {
+        "policy_id": "FSV-B13-POL-001",
+        "decision": "allow",
+        "fail_closed": true,
+        "violations": []
+      }
+    },
+    {
+      "channel": "O-I",
+      "input": {
+        "request": {
+          "body": {
+            "qty": 111
+          }
+        },
+        "trusted": {
+          "allowancePercent": 10,
+          "authorizedRole": false,
+          "derivedMaximumQty": 110,
+          "orderedQty": 100
+        }
+      },
+      "expected": "deny",
+      "actual": {
+        "policy_id": "FSV-B13-POL-001",
+        "decision": "deny",
+        "fail_closed": true,
+        "violations": [
+          {
+            "rule_id": "FSV-B13-RULE-001",
+            "code": "bounded_guard_rejected",
+            "detail": "FSV-B13-RULE-001"
+          }
+        ]
+      }
+    }
+  ],
+  "calls": [
+    36
+  ],
+  "repaired_once": false,
+  "reason": null,
+  "initial_requests": [
+    {
+      "id": "O-L",
+      "input": {
+        "request": {
+          "body": {
+            "qty": 110
+          }
+        },
+        "trusted": {
+          "allowancePercent": 10,
+          "authorizedRole": false,
+          "derivedMaximumQty": 110,
+          "orderedQty": 100
+        }
+      },
+      "expected": "allow",
+      "basis": "archived_original",
+      "actual": {
+        "policy_id": "FSV-B13-POL-001",
+        "decision": "allow",
+        "fail_closed": true,
+        "violations": []
+      },
+      "pass": true
+    },
+    {
+      "id": "O-I",
+      "input": {
+        "request": {
+          "body": {
+            "qty": 111
+          }
+        },
+        "trusted": {
+          "allowancePercent": 10,
+          "authorizedRole": false,
+          "derivedMaximumQty": 110,
+          "orderedQty": 100
+        }
+      },
+      "expected": "deny",
+      "basis": "archived_original",
+      "actual": {
+        "policy_id": "FSV-B13-POL-001",
+        "decision": "deny",
+        "fail_closed": true,
+        "violations": [
+          {
+            "rule_id": "FSV-B13-RULE-001",
+            "code": "bounded_guard_rejected",
+            "detail": "FSV-B13-RULE-001"
+          }
+        ]
+      },
+      "pass": true
+    }
+  ],
+  "branch_probes": [
+    {
+      "id": "below-limit",
+      "input": {
+        "request": {
+          "body": {
+            "qty": 109
+          }
+        },
+        "trusted": {
+          "orderedQty": 100,
+          "allowancePercent": 10,
+          "derivedMaximumQty": 110,
+          "authorizedRole": false
+        }
+      },
+      "expected": "allow",
+      "basis": "documented_rule",
+      "actual": {
+        "policy_id": "FSV-B13-POL-001",
+        "decision": "allow",
+        "fail_closed": true,
+        "violations": []
+      },
+      "pass": true
+    },
+    {
+      "id": "at-limit",
+      "input": {
+        "request": {
+          "body": {
+            "qty": 110
+          }
+        },
+        "trusted": {
+          "orderedQty": 100,
+          "allowancePercent": 10,
+          "derivedMaximumQty": 110,
+          "authorizedRole": false
+        }
+      },
+      "expected": "allow",
+      "basis": "documented_rule",
+      "actual": {
+        "policy_id": "FSV-B13-POL-001",
+        "decision": "allow",
+        "fail_closed": true,
+        "violations": []
+      },
+      "pass": true
+    },
+    {
+      "id": "above-limit",
+      "input": {
+        "request": {
+          "body": {
+            "qty": 111
+          }
+        },
+        "trusted": {
+          "orderedQty": 100,
+          "allowancePercent": 10,
+          "derivedMaximumQty": 110,
+          "authorizedRole": false
+        }
+      },
+      "expected": "deny",
+      "basis": "documented_rule",
+      "actual": {
+        "policy_id": "FSV-B13-POL-001",
+        "decision": "deny",
+        "fail_closed": true,
+        "violations": [
+          {
+            "rule_id": "FSV-B13-RULE-001",
+            "code": "bounded_guard_rejected",
+            "detail": "FSV-B13-RULE-001"
+          }
+        ]
+      },
+      "pass": true
+    },
+    {
+      "id": "authorized-exception",
+      "input": {
+        "request": {
+          "body": {
+            "qty": 111
+          }
+        },
+        "trusted": {
+          "orderedQty": 100,
+          "allowancePercent": 10,
+          "derivedMaximumQty": 110,
+          "authorizedRole": true
+        }
+      },
+      "expected": "allow",
+      "basis": "documented_rule",
+      "actual": {
+        "policy_id": "FSV-B13-POL-001",
+        "decision": "allow",
+        "fail_closed": true,
+        "violations": []
+      },
+      "pass": true
+    },
+    {
+      "id": "authorized-large-exception",
+      "input": {
+        "request": {
+          "body": {
+            "qty": 1000
+          }
+        },
+        "trusted": {
+          "orderedQty": 100,
+          "allowancePercent": 10,
+          "derivedMaximumQty": 110,
+          "authorizedRole": true
+        }
+      },
+      "expected": "allow",
+      "basis": "focused_rule_only",
+      "actual": {
+        "policy_id": "FSV-B13-POL-001",
+        "decision": "allow",
+        "fail_closed": true,
+        "violations": []
+      },
+      "pass": true
+    },
+    {
+      "id": "body-role-spoof",
+      "input": {
+        "request": {
+          "body": {
+            "qty": 111,
+            "authorizedRole": true
+          }
+        },
+        "trusted": {
+          "orderedQty": 100,
+          "allowancePercent": 10,
+          "derivedMaximumQty": 110,
+          "authorizedRole": false
+        }
+      },
+      "expected": "deny",
+      "basis": "engineering_trust_control",
+      "actual": {
+        "policy_id": "FSV-B13-POL-001",
+        "decision": "deny",
+        "fail_closed": true,
+        "violations": [
+          {
+            "rule_id": "FSV-B13-RULE-001",
+            "code": "bounded_guard_rejected",
+            "detail": "FSV-B13-RULE-001"
+          }
+        ]
+      },
+      "pass": true
+    },
+    {
+      "id": "body-limit-spoof",
+      "input": {
+        "request": {
+          "body": {
+            "qty": 111,
+            "derivedMaximumQty": 1000
+          }
+        },
+        "trusted": {
+          "orderedQty": 100,
+          "allowancePercent": 10,
+          "derivedMaximumQty": 110,
+          "authorizedRole": false
+        }
+      },
+      "expected": "deny",
+      "basis": "engineering_trust_control",
+      "actual": {
+        "policy_id": "FSV-B13-POL-001",
+        "decision": "deny",
+        "fail_closed": true,
+        "violations": [
+          {
+            "rule_id": "FSV-B13-RULE-001",
+            "code": "bounded_guard_rejected",
+            "detail": "FSV-B13-RULE-001"
+          }
+        ]
+      },
+      "pass": true
+    },
+    {
+      "id": "missing-trusted",
+      "input": {
+        "request": {
+          "body": {
+            "qty": 111
+          }
+        },
+        "trusted": {}
+      },
+      "expected": "deny",
+      "basis": "engineering_fail_closed_control",
+      "actual": {
+        "policy_id": "FSV-B13-POL-001",
+        "decision": "deny",
+        "fail_closed": true,
+        "violations": [
+          {
+            "rule_id": "FSV-B13-RULE-001",
+            "code": "required_input_missing",
+            "detail": "FSV-B13-RULE-001"
+          }
+        ]
+      },
+      "pass": true
+    }
+  ],
+  "source_folder": "/mnt/d/lunwen/EC-CSI投稿/working/exploration/20261014_four_case_peer_baselines/documented_ecas/FSV-B13/ECAS_MATCHED",
+  "format_recovery": false,
+  "original_interface_status": "EVALUATED",
+  "format_only_recovery": false,
+  "documentation_revision": true,
+  "original_batch_status": "EVALUATED",
+  "original_batch_requests": [
+    {
+      "channel": "O-L",
+      "input": {
+        "request": {
+          "body": {
+            "qty": 110
+          }
+        },
+        "trusted": {
+          "allowancePercent": 10,
+          "authorizedRole": false,
+          "derivedMaximumQty": 110,
+          "orderedQty": 100
+        }
+      },
+      "expected": "allow",
+      "actual": {
+        "policy_id": "FSV-B13-PurchaseReceipt-OverReceiveQtyGuard",
+        "decision": "allow",
+        "fail_closed": true,
+        "violations": []
+      }
+    },
+    {
+      "channel": "O-I",
+      "input": {
+        "request": {
+          "body": {
+            "qty": 111
+          }
+        },
+        "trusted": {
+          "allowancePercent": 10,
+          "authorizedRole": false,
+          "derivedMaximumQty": 110,
+          "orderedQty": 100
+        }
+      },
+      "expected": "deny",
+      "actual": {
+        "policy_id": "FSV-B13-PurchaseReceipt-OverReceiveQtyGuard",
+        "decision": "deny",
+        "fail_closed": true,
+        "violations": [
+          {
+            "rule_id": "FSV-B13-R1-OverReceiveQtyGuard",
+            "code": "bounded_guard_rejected",
+            "detail": "FSV-B13-R1-OverReceiveQtyGuard"
+          }
+        ]
+      }
+    }
+  ],
+  "original_batch_pair_correct": true,
+  "common_developer_results": {
+    "passed": true,
+    "rows": [
+      {
+        "id": "dev_limit",
+        "expected": "allow",
+        "actual": {
+          "policy_id": "FSV-B13-POL-001",
+          "decision": "allow",
+          "fail_closed": true,
+          "violations": []
+        },
+        "pass": true
+      },
+      {
+        "id": "dev_over",
+        "expected": "deny",
+        "actual": {
+          "policy_id": "FSV-B13-POL-001",
+          "decision": "deny",
+          "fail_closed": true,
+          "violations": [
+            {
+              "rule_id": "FSV-B13-RULE-001",
+              "code": "bounded_guard_rejected",
+              "detail": "FSV-B13-RULE-001"
+            }
+          ]
+        },
+        "pass": true
+      },
+      {
+        "id": "dev_role_exception",
+        "expected": "allow",
+        "actual": {
+          "policy_id": "FSV-B13-POL-001",
+          "decision": "allow",
+          "fail_closed": true,
+          "violations": []
+        },
+        "pass": true
+      }
+    ]
+  },
+  "initial_branch_probes": [
+    {
+      "id": "below-limit",
+      "input": {
+        "request": {
+          "body": {
+            "qty": 109
+          }
+        },
+        "trusted": {
+          "orderedQty": 100,
+          "allowancePercent": 10,
+          "derivedMaximumQty": 110,
+          "authorizedRole": false
+        }
+      },
+      "expected": "allow",
+      "basis": "documented_rule",
+      "actual": {
+        "policy_id": "FSV-B13-POL-001",
+        "decision": "allow",
+        "fail_closed": true,
+        "violations": []
+      },
+      "pass": true
+    },
+    {
+      "id": "at-limit",
+      "input": {
+        "request": {
+          "body": {
+            "qty": 110
+          }
+        },
+        "trusted": {
+          "orderedQty": 100,
+          "allowancePercent": 10,
+          "derivedMaximumQty": 110,
+          "authorizedRole": false
+        }
+      },
+      "expected": "allow",
+      "basis": "documented_rule",
+      "actual": {
+        "policy_id": "FSV-B13-POL-001",
+        "decision": "allow",
+        "fail_closed": true,
+        "violations": []
+      },
+      "pass": true
+    },
+    {
+      "id": "above-limit",
+      "input": {
+        "request": {
+          "body": {
+            "qty": 111
+          }
+        },
+        "trusted": {
+          "orderedQty": 100,
+          "allowancePercent": 10,
+          "derivedMaximumQty": 110,
+          "authorizedRole": false
+        }
+      },
+      "expected": "deny",
+      "basis": "documented_rule",
+      "actual": {
+        "policy_id": "FSV-B13-POL-001",
+        "decision": "deny",
+        "fail_closed": true,
+        "violations": [
+          {
+            "rule_id": "FSV-B13-RULE-001",
+            "code": "bounded_guard_rejected",
+            "detail": "FSV-B13-RULE-001"
+          }
+        ]
+      },
+      "pass": true
+    },
+    {
+      "id": "authorized-exception",
+      "input": {
+        "request": {
+          "body": {
+            "qty": 111
+          }
+        },
+        "trusted": {
+          "orderedQty": 100,
+          "allowancePercent": 10,
+          "derivedMaximumQty": 110,
+          "authorizedRole": true
+        }
+      },
+      "expected": "allow",
+      "basis": "documented_rule",
+      "actual": {
+        "policy_id": "FSV-B13-POL-001",
+        "decision": "allow",
+        "fail_closed": true,
+        "violations": []
+      },
+      "pass": true
+    },
+    {
+      "id": "authorized-large-exception",
+      "input": {
+        "request": {
+          "body": {
+            "qty": 1000
+          }
+        },
+        "trusted": {
+          "orderedQty": 100,
+          "allowancePercent": 10,
+          "derivedMaximumQty": 110,
+          "authorizedRole": true
+        }
+      },
+      "expected": "allow",
+      "basis": "focused_rule_only",
+      "actual": {
+        "policy_id": "FSV-B13-POL-001",
+        "decision": "allow",
+        "fail_closed": true,
+        "violations": []
+      },
+      "pass": true
+    },
+    {
+      "id": "body-role-spoof",
+      "input": {
+        "request": {
+          "body": {
+            "qty": 111,
+            "authorizedRole": true
+          }
+        },
+        "trusted": {
+          "orderedQty": 100,
+          "allowancePercent": 10,
+          "derivedMaximumQty": 110,
+          "authorizedRole": false
+        }
+      },
+      "expected": "deny",
+      "basis": "engineering_trust_control",
+      "actual": {
+        "policy_id": "FSV-B13-POL-001",
+        "decision": "deny",
+        "fail_closed": true,
+        "violations": [
+          {
+            "rule_id": "FSV-B13-RULE-001",
+            "code": "bounded_guard_rejected",
+            "detail": "FSV-B13-RULE-001"
+          }
+        ]
+      },
+      "pass": true
+    },
+    {
+      "id": "body-limit-spoof",
+      "input": {
+        "request": {
+          "body": {
+            "qty": 111,
+            "derivedMaximumQty": 1000
+          }
+        },
+        "trusted": {
+          "orderedQty": 100,
+          "allowancePercent": 10,
+          "derivedMaximumQty": 110,
+          "authorizedRole": false
+        }
+      },
+      "expected": "deny",
+      "basis": "engineering_trust_control",
+      "actual": {
+        "policy_id": "FSV-B13-POL-001",
+        "decision": "deny",
+        "fail_closed": true,
+        "violations": [
+          {
+            "rule_id": "FSV-B13-RULE-001",
+            "code": "bounded_guard_rejected",
+            "detail": "FSV-B13-RULE-001"
+          }
+        ]
+      },
+      "pass": true
+    },
+    {
+      "id": "missing-trusted",
+      "input": {
+        "request": {
+          "body": {
+            "qty": 111
+          }
+        },
+        "trusted": {}
+      },
+      "expected": "deny",
+      "basis": "engineering_fail_closed_control",
+      "actual": {
+        "policy_id": "FSV-B13-POL-001",
+        "decision": "deny",
+        "fail_closed": true,
+        "violations": [
+          {
+            "rule_id": "FSV-B13-RULE-001",
+            "code": "required_input_missing",
+            "detail": "FSV-B13-RULE-001"
+          }
+        ]
+      },
+      "pass": true
+    }
+  ],
+  "initial_pair_correct": true,
+  "pair_correct": true,
+  "branch_count": 8,
+  "branch_passed": 8
+}

@@ -1,0 +1,114 @@
+{
+  "task": "FSV-B19",
+  "method": "ECAS_MATCHED",
+  "classification": "RETROSPECTIVE_FOUR_CASE_ADAPTED_PEER_BASELINES_NOT_NATIVE_OR_BLIND",
+  "status": "EVALUATED",
+  "requests": [
+    {
+      "channel": "O-L",
+      "input": {
+        "request": {
+          "body": {
+            "action": "PURCHASE_ORDER",
+            "supplier": "SUPPLIER-SYNTH-1"
+          }
+        },
+        "trusted": {
+          "holdType": "",
+          "supplierOnHold": false
+        }
+      },
+      "expected": "allow",
+      "actual": {
+        "policy_id": "FSV-B19-P01",
+        "decision": "deny",
+        "fail_closed": true,
+        "violations": [
+          {
+            "rule_id": "FSV-B19-R01",
+            "code": "bounded_guard_rejected",
+            "detail": "FSV-B19-R01"
+          }
+        ]
+      }
+    },
+    {
+      "channel": "O-I",
+      "input": {
+        "request": {
+          "body": {
+            "action": "PURCHASE_ORDER",
+            "supplier": "SUPPLIER-SYNTH-1"
+          }
+        },
+        "trusted": {
+          "holdType": "All",
+          "supplierOnHold": true
+        }
+      },
+      "expected": "deny",
+      "actual": {
+        "policy_id": "FSV-B19-P01",
+        "decision": "allow",
+        "fail_closed": true,
+        "violations": []
+      }
+    }
+  ],
+  "calls": [
+    30
+  ],
+  "admission": "ADMITTED",
+  "common_developer_results": {
+    "passed": false,
+    "rows": [
+      {
+        "id": "dev_not_held",
+        "expected": "allow",
+        "actual": {
+          "policy_id": "FSV-B19-P01",
+          "decision": "deny",
+          "fail_closed": true,
+          "violations": [
+            {
+              "rule_id": "FSV-B19-R01",
+              "code": "bounded_guard_rejected",
+              "detail": "FSV-B19-R01"
+            }
+          ]
+        },
+        "pass": false
+      },
+      {
+        "id": "dev_invoices",
+        "expected": "deny",
+        "actual": {
+          "policy_id": "FSV-B19-P01",
+          "decision": "allow",
+          "fail_closed": true,
+          "violations": []
+        },
+        "pass": false
+      },
+      {
+        "id": "dev_payments",
+        "expected": "allow",
+        "actual": {
+          "policy_id": "FSV-B19-P01",
+          "decision": "deny",
+          "fail_closed": true,
+          "violations": [
+            {
+              "rule_id": "FSV-B19-R01",
+              "code": "bounded_guard_rejected",
+              "detail": "FSV-B19-R01"
+            }
+          ]
+        },
+        "pass": false
+      }
+    ]
+  },
+  "request_pair_correct": false,
+  "completed_at": "2026-10-14T11:59:29.412908+00:00"
+}

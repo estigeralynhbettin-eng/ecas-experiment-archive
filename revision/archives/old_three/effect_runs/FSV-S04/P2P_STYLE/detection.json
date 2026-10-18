@@ -1,0 +1,18 @@
+{
+  "status": "READY",
+  "statements": [
+    {
+      "text": "Every request you make with these tokens will be logged against the user you selected in Step 1. This also means that roles will be checked against this user.",
+      "evidence_refs": [
+        "VIS-FSV-S04-01"
+      ]
+    },
+    {
+      "text": "These methods must be marked as whitelisted to make them accessible via REST.",
+      "evidence_refs": [
+        "VIS-FSV-S04-01"
+      ]
+    }
+  ],
+  "reason": "Extracted framework-level access control and authorization statements from the provided API documentation."
+}

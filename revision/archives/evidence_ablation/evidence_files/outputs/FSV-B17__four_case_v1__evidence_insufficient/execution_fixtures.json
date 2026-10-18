@@ -1,0 +1,48 @@
+[
+  {
+    "id": "FSV-B17-OL-01",
+    "input": {
+      "request": {
+        "body": {
+          "customer": "CUSTOMER-SYNTH-1"
+        }
+      },
+      "trusted": {
+        "customerDisabled": false
+      }
+    },
+    "expected": "allow",
+    "source": "/root/ecas_evidence_ablation_20261014/inputs/FSV-B17__four_case_v1/O-L.json",
+    "class": "ARCHIVED_SYNTHETIC_REQUEST"
+  },
+  {
+    "id": "FSV-B17-OI-01",
+    "input": {
+      "request": {
+        "body": {
+          "customer": "CUSTOMER-SYNTH-1"
+        }
+      },
+      "trusted": {
+        "customerDisabled": true
+      }
+    },
+    "expected": "deny",
+    "source": "/root/ecas_evidence_ablation_20261014/inputs/FSV-B17__four_case_v1/O-I.json",
+    "class": "ARCHIVED_SYNTHETIC_REQUEST"
+  },
+  {
+    "id": "SYNTH-MISSING-TRUSTED",
+    "input": {
+      "request": {
+        "body": {
+          "customer": "CUSTOMER-SYNTH-1"
+        }
+      },
+      "trusted": {}
+    },
+    "expected": null,
+    "source": "archived legal request with trusted object emptied",
+    "class": "CONSTRUCTED_MISSING_CONTEXT_CONTROL"
+  }
+]

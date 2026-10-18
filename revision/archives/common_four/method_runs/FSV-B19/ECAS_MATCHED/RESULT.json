@@ -1,0 +1,693 @@
+{
+  "task": "FSV-B19",
+  "method": "ECAS_MATCHED",
+  "scope_id": "ECAS-MATCHED-EVIDENCE-LABOR-20261014-01",
+  "status": "ELIGIBLE",
+  "calls": [
+    30
+  ],
+  "repaired_once": false,
+  "execution_eligible": true,
+  "first_checks": {
+    "accepted": true,
+    "compile_status": "COMPILED",
+    "admission_status": "ADMITTED",
+    "developer_results": {
+      "passed": true,
+      "rows": [
+        {
+          "id": "dev_not_held",
+          "expected": "allow",
+          "actual": {
+            "policy_id": "POL-FSV-B19-001",
+            "decision": "allow",
+            "fail_closed": true,
+            "violations": []
+          },
+          "pass": true
+        },
+        {
+          "id": "dev_invoices",
+          "expected": "deny",
+          "actual": {
+            "policy_id": "POL-FSV-B19-001",
+            "decision": "deny",
+            "fail_closed": true,
+            "violations": [
+              {
+                "rule_id": "RULE-FSV-B19-001",
+                "code": "bounded_guard_rejected",
+                "detail": "RULE-FSV-B19-001"
+              }
+            ]
+          },
+          "pass": true
+        },
+        {
+          "id": "dev_payments",
+          "expected": "allow",
+          "actual": {
+            "policy_id": "POL-FSV-B19-001",
+            "decision": "allow",
+            "fail_closed": true,
+            "violations": []
+          },
+          "pass": true
+        }
+      ]
+    },
+    "policy_path": "/mnt/d/lunwen/EC-CSI投稿/working/exploration/20261014_matched_evidence_labor/matched_generation/method_runs/FSV-B19/ECAS_MATCHED/initial/admitted_policy.json"
+  },
+  "final_checks": {
+    "accepted": true,
+    "compile_status": "COMPILED",
+    "admission_status": "ADMITTED",
+    "developer_results": {
+      "passed": true,
+      "rows": [
+        {
+          "id": "dev_not_held",
+          "expected": "allow",
+          "actual": {
+            "policy_id": "POL-FSV-B19-001",
+            "decision": "allow",
+            "fail_closed": true,
+            "violations": []
+          },
+          "pass": true
+        },
+        {
+          "id": "dev_invoices",
+          "expected": "deny",
+          "actual": {
+            "policy_id": "POL-FSV-B19-001",
+            "decision": "deny",
+            "fail_closed": true,
+            "violations": [
+              {
+                "rule_id": "RULE-FSV-B19-001",
+                "code": "bounded_guard_rejected",
+                "detail": "RULE-FSV-B19-001"
+              }
+            ]
+          },
+          "pass": true
+        },
+        {
+          "id": "dev_payments",
+          "expected": "allow",
+          "actual": {
+            "policy_id": "POL-FSV-B19-001",
+            "decision": "allow",
+            "fail_closed": true,
+            "violations": []
+          },
+          "pass": true
+        }
+      ]
+    },
+    "policy_path": "/mnt/d/lunwen/EC-CSI投稿/working/exploration/20261014_matched_evidence_labor/matched_generation/method_runs/FSV-B19/ECAS_MATCHED/initial/admitted_policy.json"
+  },
+  "generation_frozen_at": "2026-10-15T00:56:32.041227+00:00",
+  "final_evaluation_not_yet_read": true,
+  "first_diagnostic": {
+    "execution_status": "DIAGNOSTIC_ONLY",
+    "requests": [
+      {
+        "channel": "O-L",
+        "input": {
+          "request": {
+            "body": {
+              "action": "PURCHASE_ORDER",
+              "supplier": "SUPPLIER-SYNTH-1"
+            }
+          },
+          "trusted": {
+            "holdType": "",
+            "supplierOnHold": false
+          }
+        },
+        "expected": "allow",
+        "actual": {
+          "policy_id": "POL-FSV-B19-001",
+          "decision": "allow",
+          "fail_closed": true,
+          "violations": []
+        },
+        "pass": true
+      },
+      {
+        "channel": "O-I",
+        "input": {
+          "request": {
+            "body": {
+              "action": "PURCHASE_ORDER",
+              "supplier": "SUPPLIER-SYNTH-1"
+            }
+          },
+          "trusted": {
+            "holdType": "All",
+            "supplierOnHold": true
+          }
+        },
+        "expected": "deny",
+        "actual": {
+          "policy_id": "POL-FSV-B19-001",
+          "decision": "deny",
+          "fail_closed": true,
+          "violations": [
+            {
+              "rule_id": "RULE-FSV-B19-001",
+              "code": "bounded_guard_rejected",
+              "detail": "RULE-FSV-B19-001"
+            }
+          ]
+        },
+        "pass": true
+      }
+    ],
+    "branches": [
+      {
+        "label": "not-held",
+        "input": {
+          "request": {
+            "body": {
+              "action": "PURCHASE_ORDER",
+              "supplier": "SUPPLIER-SYNTH-1"
+            }
+          },
+          "trusted": {
+            "supplierOnHold": false,
+            "holdType": ""
+          }
+        },
+        "expected": "allow",
+        "kind": "documented_rule",
+        "actual": {
+          "policy_id": "POL-FSV-B19-001",
+          "decision": "allow",
+          "fail_closed": true,
+          "violations": []
+        },
+        "pass": true
+      },
+      {
+        "label": "held-all",
+        "input": {
+          "request": {
+            "body": {
+              "action": "PURCHASE_ORDER",
+              "supplier": "SUPPLIER-SYNTH-1"
+            }
+          },
+          "trusted": {
+            "supplierOnHold": true,
+            "holdType": "All"
+          }
+        },
+        "expected": "deny",
+        "kind": "documented_rule",
+        "actual": {
+          "policy_id": "POL-FSV-B19-001",
+          "decision": "deny",
+          "fail_closed": true,
+          "violations": [
+            {
+              "rule_id": "RULE-FSV-B19-001",
+              "code": "bounded_guard_rejected",
+              "detail": "RULE-FSV-B19-001"
+            }
+          ]
+        },
+        "pass": true
+      },
+      {
+        "label": "held-invoices",
+        "input": {
+          "request": {
+            "body": {
+              "action": "PURCHASE_ORDER",
+              "supplier": "SUPPLIER-SYNTH-1"
+            }
+          },
+          "trusted": {
+            "supplierOnHold": true,
+            "holdType": "Invoices"
+          }
+        },
+        "expected": "deny",
+        "kind": "documented_rule",
+        "actual": {
+          "policy_id": "POL-FSV-B19-001",
+          "decision": "deny",
+          "fail_closed": true,
+          "violations": [
+            {
+              "rule_id": "RULE-FSV-B19-001",
+              "code": "bounded_guard_rejected",
+              "detail": "RULE-FSV-B19-001"
+            }
+          ]
+        },
+        "pass": true
+      },
+      {
+        "label": "held-payments",
+        "input": {
+          "request": {
+            "body": {
+              "action": "PURCHASE_ORDER",
+              "supplier": "SUPPLIER-SYNTH-1"
+            }
+          },
+          "trusted": {
+            "supplierOnHold": true,
+            "holdType": "Payments"
+          }
+        },
+        "expected": "allow",
+        "kind": "documented_rule",
+        "actual": {
+          "policy_id": "POL-FSV-B19-001",
+          "decision": "allow",
+          "fail_closed": true,
+          "violations": []
+        },
+        "pass": true
+      },
+      {
+        "label": "held-empty-type",
+        "input": {
+          "request": {
+            "body": {
+              "action": "PURCHASE_ORDER",
+              "supplier": "SUPPLIER-SYNTH-1"
+            }
+          },
+          "trusted": {
+            "supplierOnHold": true,
+            "holdType": ""
+          }
+        },
+        "expected": "deny",
+        "kind": "conservative_empty_type_control",
+        "actual": {
+          "policy_id": "POL-FSV-B19-001",
+          "decision": "deny",
+          "fail_closed": true,
+          "violations": [
+            {
+              "rule_id": "RULE-FSV-B19-001",
+              "code": "bounded_guard_rejected",
+              "detail": "RULE-FSV-B19-001"
+            }
+          ]
+        },
+        "pass": true
+      },
+      {
+        "label": "held-unknown-type",
+        "input": {
+          "request": {
+            "body": {
+              "action": "PURCHASE_ORDER",
+              "supplier": "SUPPLIER-SYNTH-1"
+            }
+          },
+          "trusted": {
+            "supplierOnHold": true,
+            "holdType": "Unknown"
+          }
+        },
+        "expected": "deny",
+        "kind": "engineering_unknown_type_control",
+        "actual": {
+          "policy_id": "POL-FSV-B19-001",
+          "decision": "deny",
+          "fail_closed": true,
+          "violations": [
+            {
+              "rule_id": "RULE-FSV-B19-001",
+              "code": "bounded_guard_rejected",
+              "detail": "RULE-FSV-B19-001"
+            }
+          ]
+        },
+        "pass": true
+      },
+      {
+        "label": "body-type-spoof",
+        "input": {
+          "request": {
+            "body": {
+              "action": "PURCHASE_ORDER",
+              "supplier": "SUPPLIER-SYNTH-1",
+              "holdType": "Payments"
+            }
+          },
+          "trusted": {
+            "supplierOnHold": true,
+            "holdType": "All"
+          }
+        },
+        "expected": "deny",
+        "kind": "engineering_trust_control",
+        "actual": {
+          "policy_id": "POL-FSV-B19-001",
+          "decision": "deny",
+          "fail_closed": true,
+          "violations": [
+            {
+              "rule_id": "RULE-FSV-B19-001",
+              "code": "bounded_guard_rejected",
+              "detail": "RULE-FSV-B19-001"
+            }
+          ]
+        },
+        "pass": true
+      },
+      {
+        "label": "missing-trusted",
+        "input": {
+          "request": {
+            "body": {
+              "action": "PURCHASE_ORDER",
+              "supplier": "SUPPLIER-SYNTH-1"
+            }
+          },
+          "trusted": {}
+        },
+        "expected": "deny",
+        "kind": "engineering_fail_closed_control",
+        "actual": {
+          "policy_id": "POL-FSV-B19-001",
+          "decision": "deny",
+          "fail_closed": true,
+          "violations": [
+            {
+              "rule_id": "RULE-FSV-B19-001",
+              "code": "required_input_missing",
+              "detail": "RULE-FSV-B19-001"
+            }
+          ]
+        },
+        "pass": true
+      }
+    ],
+    "request_pair_correct": true,
+    "policy_sha256": "ac7c5bbf8bbdf0ee773ce0b06a357a9b0d48e3bfa11b21bd229cfe22cf16d98d",
+    "eligibility_at_generation": true,
+    "branch_classification": "HISTORICAL_POSTHOC_ENGINEERING_NOT_ACCURACY_DENOMINATOR"
+  },
+  "final_evaluation": {
+    "execution_status": "ELIGIBLE_POLICY_EXECUTED",
+    "requests": [
+      {
+        "channel": "O-L",
+        "input": {
+          "request": {
+            "body": {
+              "action": "PURCHASE_ORDER",
+              "supplier": "SUPPLIER-SYNTH-1"
+            }
+          },
+          "trusted": {
+            "holdType": "",
+            "supplierOnHold": false
+          }
+        },
+        "expected": "allow",
+        "actual": {
+          "policy_id": "POL-FSV-B19-001",
+          "decision": "allow",
+          "fail_closed": true,
+          "violations": []
+        },
+        "pass": true
+      },
+      {
+        "channel": "O-I",
+        "input": {
+          "request": {
+            "body": {
+              "action": "PURCHASE_ORDER",
+              "supplier": "SUPPLIER-SYNTH-1"
+            }
+          },
+          "trusted": {
+            "holdType": "All",
+            "supplierOnHold": true
+          }
+        },
+        "expected": "deny",
+        "actual": {
+          "policy_id": "POL-FSV-B19-001",
+          "decision": "deny",
+          "fail_closed": true,
+          "violations": [
+            {
+              "rule_id": "RULE-FSV-B19-001",
+              "code": "bounded_guard_rejected",
+              "detail": "RULE-FSV-B19-001"
+            }
+          ]
+        },
+        "pass": true
+      }
+    ],
+    "branches": [
+      {
+        "label": "not-held",
+        "input": {
+          "request": {
+            "body": {
+              "action": "PURCHASE_ORDER",
+              "supplier": "SUPPLIER-SYNTH-1"
+            }
+          },
+          "trusted": {
+            "supplierOnHold": false,
+            "holdType": ""
+          }
+        },
+        "expected": "allow",
+        "kind": "documented_rule",
+        "actual": {
+          "policy_id": "POL-FSV-B19-001",
+          "decision": "allow",
+          "fail_closed": true,
+          "violations": []
+        },
+        "pass": true
+      },
+      {
+        "label": "held-all",
+        "input": {
+          "request": {
+            "body": {
+              "action": "PURCHASE_ORDER",
+              "supplier": "SUPPLIER-SYNTH-1"
+            }
+          },
+          "trusted": {
+            "supplierOnHold": true,
+            "holdType": "All"
+          }
+        },
+        "expected": "deny",
+        "kind": "documented_rule",
+        "actual": {
+          "policy_id": "POL-FSV-B19-001",
+          "decision": "deny",
+          "fail_closed": true,
+          "violations": [
+            {
+              "rule_id": "RULE-FSV-B19-001",
+              "code": "bounded_guard_rejected",
+              "detail": "RULE-FSV-B19-001"
+            }
+          ]
+        },
+        "pass": true
+      },
+      {
+        "label": "held-invoices",
+        "input": {
+          "request": {
+            "body": {
+              "action": "PURCHASE_ORDER",
+              "supplier": "SUPPLIER-SYNTH-1"
+            }
+          },
+          "trusted": {
+            "supplierOnHold": true,
+            "holdType": "Invoices"
+          }
+        },
+        "expected": "deny",
+        "kind": "documented_rule",
+        "actual": {
+          "policy_id": "POL-FSV-B19-001",
+          "decision": "deny",
+          "fail_closed": true,
+          "violations": [
+            {
+              "rule_id": "RULE-FSV-B19-001",
+              "code": "bounded_guard_rejected",
+              "detail": "RULE-FSV-B19-001"
+            }
+          ]
+        },
+        "pass": true
+      },
+      {
+        "label": "held-payments",
+        "input": {
+          "request": {
+            "body": {
+              "action": "PURCHASE_ORDER",
+              "supplier": "SUPPLIER-SYNTH-1"
+            }
+          },
+          "trusted": {
+            "supplierOnHold": true,
+            "holdType": "Payments"
+          }
+        },
+        "expected": "allow",
+        "kind": "documented_rule",
+        "actual": {
+          "policy_id": "POL-FSV-B19-001",
+          "decision": "allow",
+          "fail_closed": true,
+          "violations": []
+        },
+        "pass": true
+      },
+      {
+        "label": "held-empty-type",
+        "input": {
+          "request": {
+            "body": {
+              "action": "PURCHASE_ORDER",
+              "supplier": "SUPPLIER-SYNTH-1"
+            }
+          },
+          "trusted": {
+            "supplierOnHold": true,
+            "holdType": ""
+          }
+        },
+        "expected": "deny",
+        "kind": "conservative_empty_type_control",
+        "actual": {
+          "policy_id": "POL-FSV-B19-001",
+          "decision": "deny",
+          "fail_closed": true,
+          "violations": [
+            {
+              "rule_id": "RULE-FSV-B19-001",
+              "code": "bounded_guard_rejected",
+              "detail": "RULE-FSV-B19-001"
+            }
+          ]
+        },
+        "pass": true
+      },
+      {
+        "label": "held-unknown-type",
+        "input": {
+          "request": {
+            "body": {
+              "action": "PURCHASE_ORDER",
+              "supplier": "SUPPLIER-SYNTH-1"
+            }
+          },
+          "trusted": {
+            "supplierOnHold": true,
+            "holdType": "Unknown"
+          }
+        },
+        "expected": "deny",
+        "kind": "engineering_unknown_type_control",
+        "actual": {
+          "policy_id": "POL-FSV-B19-001",
+          "decision": "deny",
+          "fail_closed": true,
+          "violations": [
+            {
+              "rule_id": "RULE-FSV-B19-001",
+              "code": "bounded_guard_rejected",
+              "detail": "RULE-FSV-B19-001"
+            }
+          ]
+        },
+        "pass": true
+      },
+      {
+        "label": "body-type-spoof",
+        "input": {
+          "request": {
+            "body": {
+              "action": "PURCHASE_ORDER",
+              "supplier": "SUPPLIER-SYNTH-1",
+              "holdType": "Payments"
+            }
+          },
+          "trusted": {
+            "supplierOnHold": true,
+            "holdType": "All"
+          }
+        },
+        "expected": "deny",
+        "kind": "engineering_trust_control",
+        "actual": {
+          "policy_id": "POL-FSV-B19-001",
+          "decision": "deny",
+          "fail_closed": true,
+          "violations": [
+            {
+              "rule_id": "RULE-FSV-B19-001",
+              "code": "bounded_guard_rejected",
+              "detail": "RULE-FSV-B19-001"
+            }
+          ]
+        },
+        "pass": true
+      },
+      {
+        "label": "missing-trusted",
+        "input": {
+          "request": {
+            "body": {
+              "action": "PURCHASE_ORDER",
+              "supplier": "SUPPLIER-SYNTH-1"
+            }
+          },
+          "trusted": {}
+        },
+        "expected": "deny",
+        "kind": "engineering_fail_closed_control",
+        "actual": {
+          "policy_id": "POL-FSV-B19-001",
+          "decision": "deny",
+          "fail_closed": true,
+          "violations": [
+            {
+              "rule_id": "RULE-FSV-B19-001",
+              "code": "required_input_missing",
+              "detail": "RULE-FSV-B19-001"
+            }
+          ]
+        },
+        "pass": true
+      }
+    ],
+    "request_pair_correct": true,
+    "policy_sha256": "ac7c5bbf8bbdf0ee773ce0b06a357a9b0d48e3bfa11b21bd229cfe22cf16d98d",
+    "eligibility_at_generation": true,
+    "branch_classification": "HISTORICAL_POSTHOC_ENGINEERING_NOT_ACCURACY_DENOMINATOR"
+  },
+  "request_pair_correct": true,
+  "evaluated_at": "2026-10-15T00:56:41.687894+00:00"
+}

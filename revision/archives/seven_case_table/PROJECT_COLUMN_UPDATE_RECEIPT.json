@@ -1,0 +1,57 @@
+{
+  "status": "PASS_PRESENTATION_ONLY_AMENDMENT",
+  "new_model_calls": 0,
+  "new_policy_executions": 0,
+  "projects": {
+    "FSV-B06": "Apache Fineract",
+    "FSV-S02": "Apache Fineract",
+    "FSV-S03": "Apache Fineract",
+    "FSV-S04": "ERPNext",
+    "FSV-B13": "ERPNext",
+    "FSV-B17": "ERPNext",
+    "FSV-B19": "ERPNext"
+  },
+  "method_rows": 21,
+  "case_rows_per_table": 7,
+  "prior_result_fields_unchanged": true,
+  "prior_independent_scientific_audits_preserved_in": "/mnt/d/lunwen/EC-CSI投稿/working/exploration/20261015_seven_case_mechanism/presentation_history/before_project_column_20261015T031759Z",
+  "prior_QA_applies_to": "Original report bytes in backup; current amendment verifies project labels and no result-field changes.",
+  "files": [
+    {
+      "file": "SEVEN_CASE_TABLE_CN.md",
+      "before_sha256": "249fdb1718cc32f2956801e3bb058f272266e13ee238abd3dd970368a3becc2d",
+      "after_sha256": "03fb5bf16283d26833627347f9ece3aa90ac52452432946e3fd0418b5bb7c020"
+    },
+    {
+      "file": "EXPERIMENT_SUMMARY_CN_R2.md",
+      "before_sha256": "e4222319e3cfc2fd5945be6cdf419717952665970699c24a87dce8bed5e301e4",
+      "after_sha256": "a023ad051a9c5abb31f3d78d46a0e0065974789cc0dff95c6ce040a0894159c9"
+    },
+    {
+      "file": "SEVEN_CASE_COMPARISON.csv",
+      "before_sha256": "b5df5dad5e59fe4582de33e31940b0a7814bb672e670556a0dbda67ae53e2753",
+      "after_sha256": "5e5ae026b19218d162e2445775f6e667da1e8f2f898483d13a48eb1fbe7dd00f"
+    },
+    {
+      "file": "TABLE_SOURCES.json",
+      "before_sha256": "edeac3ffaeebced865097e4ef687f56133b1bc0ab9755504faddf6731b047f67",
+      "after_sha256": "704b4491873cc83110ef2f60d61783bf1a986b8e1572246568668d22f378db25"
+    },
+    {
+      "file": "build_seven_case_table.py",
+      "before_sha256": "6d9b48ab80f7113f31927d90dbc40009bf2784b9de894d0dcfd74866f81ef42b",
+      "after_sha256": "99b6c6b3056e3202bc0b62d86daf66349d8e9ffa8d48b5e90c24c640f1434445"
+    },
+    {
+      "file": "R2_DELIVERY_QA.json",
+      "before_sha256": "c86095fb28373ba8ff169173432b9574ab15c2dedeb0da114df1072ab8cc1f5e",
+      "after_sha256": "c86095fb28373ba8ff169173432b9574ab15c2dedeb0da114df1072ab8cc1f5e"
+    },
+    {
+      "file": "TABLE_INDEPENDENT_AUDIT.json",
+      "before_sha256": "229fc76121a71106a0a0f5fbb80ede1df8713dff344113190ac7ca5b9a0f8898",
+      "after_sha256": "229fc76121a71106a0a0f5fbb80ede1df8713dff344113190ac7ca5b9a0f8898"
+    }
+  ],
+  "completed_at": "2026-10-15T03:17:59.701446+00:00"
+}

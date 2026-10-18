@@ -1,0 +1,11 @@
+{
+  "generation": {
+    "status": "READY",
+    "rego": "package external_pilot\n\nimport rego.v1\n\ndefault allow := false\n\nallow if {\n    not supplier_blocked_for_purchase_order\n}\n\nsupplier_blocked_for_purchase_order if {\n    input.trusted.supplierOnHold == true\n    hold_type_blocks_purchase_orders\n}\n\nhold_type_blocks_purchase_orders if {\n    input.trusted.holdType == \"Invoices\"\n}\n\nhold_type_blocks_purchase_orders if {\n    input.trusted.holdType == \"All\"\n}\n",
+    "reason": "The visible source documents that when a supplier is on hold with hold type 'Invoices', ERPNext will not allow Purchase Orders to be created; 'All' applies both invoice and payment hold types. Hold type 'Payments' only blocks Payment Entries. The policy denies PO creation only when supplierOnHold is true and holdType is 'Invoices' or 'All', and allows otherwise."
+  },
+  "judge": {
+    "verdict": "ACCEPT",
+    "issues": []
+  }
+}

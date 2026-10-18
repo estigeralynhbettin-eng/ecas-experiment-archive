@@ -1,0 +1,14 @@
+{
+  "task": "FSV-S02",
+  "method": "AUTOPAC_STYLE",
+  "initial_status": "DEVELOPMENT_REJECTED",
+  "status": "DEVELOPMENT_REJECTED",
+  "classification": "POST_HOC_ENGINEERING_INTERFACE_REPAIR_NOT_FRESH_MODEL_EFFECT",
+  "requests": [],
+  "model_calls": [
+    15,
+    16,
+    17
+  ],
+  "reason": null
+}

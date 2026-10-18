@@ -1,0 +1,1 @@
+{"oracle_channel":"O-L","task_window_id":"FSV-S04","vectors":[{"envelope":{"request":{"body":{"email_id":"oracle@example.invalid","first_name":"ECV2 Oracle","status":"Lead"}},"trusted":{}},"expected_class":"allow","reason":"email_id has a basic valid email structure","synthetic_data_only":true,"vector_id":"FSV-S04-OL-01","vector_suffix":"OL-01"}]}

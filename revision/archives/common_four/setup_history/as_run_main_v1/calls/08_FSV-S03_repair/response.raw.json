@@ -1,0 +1,28 @@
+{
+  "choices": [
+    {
+      "finish_reason": "stop",
+      "index": 0,
+      "message": {
+        "content": "{\"begin\":\"BEGIN_FSV-S03_repair_MAIN\",\"stage\":\"repair\",\"output\":{\"status\":\"READY\",\"rego\":\"package external_pilot\\n\\nimport rego.v1\\n\\ndefault allow := false\\n\\nallow if {\\n    typeof(input.request.body.age) == \\\"number\\\"\\n    regex.match(`^-?[0-9]+$`, sprintf(\\\"%v\\\", [input.request.body.age]))\\n}\",\"reason\":\"The OpenAPI source declares the age property as type integer (format int64). The prior policy failed to compile because `is_integer` is not a valid OPA built-in. This repaired policy enforces the same focused type constraint using the valid OPA built-ins `typeof` and `regex.match` to ensure the value is a number and contains no fractional part. No presence, range, authentication, or other field checks are included per the target objective.\"},\"end\":\"END_FSV-S03_repair_MAIN\"}",
+        "role": "assistant"
+      }
+    }
+  ],
+  "created": 1791993174,
+  "id": "202610142351239a05903525634480",
+  "model": "glm-5.2",
+  "object": "chat.completion",
+  "request_id": "202610142351239a05903525634480",
+  "usage": {
+    "completion_tokens": 6164,
+    "completion_tokens_details": {
+      "reasoning_tokens": 5945
+    },
+    "prompt_tokens": 1694,
+    "prompt_tokens_details": {
+      "cached_tokens": 0
+    },
+    "total_tokens": 7858
+  }
+}

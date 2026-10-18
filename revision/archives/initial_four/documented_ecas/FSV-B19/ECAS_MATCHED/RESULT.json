@@ -1,0 +1,108 @@
+{
+  "task": "FSV-B19",
+  "method": "ECAS_MATCHED",
+  "status": "EVALUATED",
+  "requests": [
+    {
+      "channel": "O-L",
+      "input": {
+        "request": {
+          "body": {
+            "action": "PURCHASE_ORDER",
+            "supplier": "SUPPLIER-SYNTH-1"
+          }
+        },
+        "trusted": {
+          "holdType": "",
+          "supplierOnHold": false
+        }
+      },
+      "expected": "allow",
+      "actual": {
+        "policy_id": "FSV-B19-POLICY-PO-HOLD-GUARD",
+        "decision": "allow",
+        "fail_closed": true,
+        "violations": []
+      }
+    },
+    {
+      "channel": "O-I",
+      "input": {
+        "request": {
+          "body": {
+            "action": "PURCHASE_ORDER",
+            "supplier": "SUPPLIER-SYNTH-1"
+          }
+        },
+        "trusted": {
+          "holdType": "All",
+          "supplierOnHold": true
+        }
+      },
+      "expected": "deny",
+      "actual": {
+        "policy_id": "FSV-B19-POLICY-PO-HOLD-GUARD",
+        "decision": "deny",
+        "fail_closed": true,
+        "violations": [
+          {
+            "rule_id": "FSV-B19-RULE-PO-HOLD-GUARD",
+            "code": "bounded_guard_rejected",
+            "detail": "FSV-B19-RULE-PO-HOLD-GUARD"
+          }
+        ]
+      }
+    }
+  ],
+  "calls": [
+    38
+  ],
+  "documentation_revision": true,
+  "configuration": "DOCUMENTED_PRIMITIVES_V2",
+  "admission": "ADMITTED",
+  "common_developer_results": {
+    "passed": true,
+    "rows": [
+      {
+        "id": "dev_not_held",
+        "expected": "allow",
+        "actual": {
+          "policy_id": "FSV-B19-POLICY-PO-HOLD-GUARD",
+          "decision": "allow",
+          "fail_closed": true,
+          "violations": []
+        },
+        "pass": true
+      },
+      {
+        "id": "dev_invoices",
+        "expected": "deny",
+        "actual": {
+          "policy_id": "FSV-B19-POLICY-PO-HOLD-GUARD",
+          "decision": "deny",
+          "fail_closed": true,
+          "violations": [
+            {
+              "rule_id": "FSV-B19-RULE-PO-HOLD-GUARD",
+              "code": "bounded_guard_rejected",
+              "detail": "FSV-B19-RULE-PO-HOLD-GUARD"
+            }
+          ]
+        },
+        "pass": true
+      },
+      {
+        "id": "dev_payments",
+        "expected": "allow",
+        "actual": {
+          "policy_id": "FSV-B19-POLICY-PO-HOLD-GUARD",
+          "decision": "allow",
+          "fail_closed": true,
+          "violations": []
+        },
+        "pass": true
+      }
+    ]
+  },
+  "request_pair_correct": true
+}

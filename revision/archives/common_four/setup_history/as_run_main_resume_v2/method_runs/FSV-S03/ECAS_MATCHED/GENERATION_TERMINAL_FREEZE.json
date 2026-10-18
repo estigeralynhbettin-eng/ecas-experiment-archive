@@ -1,0 +1,9 @@
+{
+  "task": "FSV-S03",
+  "method": "ECAS_MATCHED",
+  "status": "ELIGIBLE",
+  "execution_eligible": true,
+  "first_freeze_sha256": "3189042154b9d10761a6c73c1a78aa7b7b37bf684840a56c7ffeb13e7e7131b0",
+  "frozen_at": "2026-10-14T15:53:22.580727+00:00",
+  "final_evaluation_not_yet_read": true
+}

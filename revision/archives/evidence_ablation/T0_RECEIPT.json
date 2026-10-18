@@ -1,0 +1,75 @@
+{
+  "status": "PASS",
+  "scope_id": "ECAS-SAME-CANDIDATE-EVIDENCE-ABLATION-20261014-01",
+  "checks": [
+    {
+      "check": "semantic_synthetic_allow_deny",
+      "pass": true,
+      "observed": [
+        {
+          "policy_id": "SYNTH-T0-P",
+          "decision": "allow",
+          "fail_closed": true,
+          "violations": []
+        },
+        {
+          "policy_id": "SYNTH-T0-P",
+          "decision": "deny",
+          "fail_closed": true,
+          "violations": [
+            {
+              "rule_id": "SYNTH-T0-R",
+              "code": "type_mismatch",
+              "detail": "/request/body/age"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "check": "shape_only_synthetic_allow_deny",
+      "pass": true,
+      "observed": [
+        {
+          "policy_id": "SYNTH-T0-P",
+          "decision": "allow",
+          "fail_closed": true,
+          "violations": []
+        },
+        {
+          "policy_id": "SYNTH-T0-P",
+          "decision": "deny",
+          "fail_closed": true,
+          "violations": [
+            {
+              "rule_id": "SYNTH-T0-R",
+              "code": "type_mismatch",
+              "detail": "/request/body/age"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "check": "synthetic_missing_inventory_full_reject_shape_accept",
+      "pass": true
+    },
+    {
+      "check": "synthetic_ir_shape_failure",
+      "pass": true
+    },
+    {
+      "check": "isolated_lane_and_free_space",
+      "pass": true
+    }
+  ],
+  "completed_at": "2026-10-14T14:58:30.353424+00:00",
+  "python": "3.10.12",
+  "jsonschema": "4.26.0",
+  "lane": "/root/ecas_evidence_ablation_20261014",
+  "free_bytes": 714875392000,
+  "shared_resources_used": [],
+  "docker_gpu_ports_database": "NOT_APPLICABLE_no_services_started",
+  "model_calls": 0,
+  "scientific_result": false
+}

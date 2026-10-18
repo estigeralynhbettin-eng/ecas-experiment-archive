@@ -1,0 +1,28 @@
+{
+  "choices": [
+    {
+      "finish_reason": "stop",
+      "index": 0,
+      "message": {
+        "content": "{\"begin\":\"BEGIN_FSV-B06_autopac_generate_MAIN\",\"stage\":\"autopac_generate\",\"output\":{\"status\":\"READY\",\"rego\":\"package external_pilot\\n\\nimport rego.v1\\n\\ndefault allow := false\\n\\nallow if {\\n    input.subject.role == \\\"authenticated_api_caller\\\"\\n    input.action == \\\"POST /v1/loans/{loanId}/transactions/{transactionId}?command=undo\\\"\\n    input.resource.system == \\\"Fineract\\\"\\n    input.resource.version == \\\"1.14.0\\\"\\n    input.trusted.reAgeIsLatestTransaction == true\\n}\\n\",\"reason\":\"Source rule VIS-FSV-B06-01 states that Re-Age transactions can be reversed only if they are the latest transaction on the loan account, which is checked via the trusted path /trusted/reAgeIsLatestTransaction.\"},\"end\":\"END_FSV-B06_autopac_generate_MAIN\"}",
+        "role": "assistant"
+      }
+    }
+  ],
+  "created": 1791950570,
+  "id": "2026101412024041f9f34c922b4694",
+  "model": "glm-5.2",
+  "object": "chat.completion",
+  "request_id": "2026101412024041f9f34c922b4694",
+  "usage": {
+    "completion_tokens": 868,
+    "completion_tokens_details": {
+      "reasoning_tokens": 651
+    },
+    "prompt_tokens": 1148,
+    "prompt_tokens_details": {
+      "cached_tokens": 0
+    },
+    "total_tokens": 2016
+  }
+}

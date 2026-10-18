@@ -1,0 +1,8 @@
+{
+  "compile_exit": 0,
+  "compile_error": "",
+  "policy_path": "/mnt/d/lunwen/EC-CSI投稿/working/exploration/20261014_external_baseline_pilot/effect_runs/FSV-S04/AUTOPAC_STYLE/repaired/external_pilot/policy.rego",
+  "lint_exit": null,
+  "lint_report": null,
+  "accepted": true
+}

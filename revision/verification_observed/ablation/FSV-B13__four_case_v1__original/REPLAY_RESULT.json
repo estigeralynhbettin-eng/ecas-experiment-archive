@@ -1,0 +1,117 @@
+{
+  "row_id": "FSV-B13__four_case_v1__original",
+  "parent_id": "FSV-B13__four_case_v1",
+  "task": "FSV-B13",
+  "configuration": "four_case_v1",
+  "variant": "original",
+  "classification": "ARCHIVED_MODEL_OUTPUT",
+  "full_executed": true,
+  "shape_executed": true,
+  "full_evaluations": [
+    {
+      "fixture_id": "FSV-B13-OL-01",
+      "fixture_class": "ARCHIVED_SYNTHETIC_REQUEST",
+      "expected": "allow",
+      "actual": {
+        "policy_id": "FSV-B13-PurchaseReceipt-OverReceiveQtyGuard",
+        "decision": "allow",
+        "fail_closed": true,
+        "violations": []
+      },
+      "correct": true
+    },
+    {
+      "fixture_id": "FSV-B13-OI-01",
+      "fixture_class": "ARCHIVED_SYNTHETIC_REQUEST",
+      "expected": "deny",
+      "actual": {
+        "policy_id": "FSV-B13-PurchaseReceipt-OverReceiveQtyGuard",
+        "decision": "deny",
+        "fail_closed": true,
+        "violations": [
+          {
+            "rule_id": "FSV-B13-R1-OverReceiveQtyGuard",
+            "code": "bounded_guard_rejected",
+            "detail": "FSV-B13-R1-OverReceiveQtyGuard"
+          }
+        ]
+      },
+      "correct": true
+    },
+    {
+      "fixture_id": "SYNTH-MISSING-TRUSTED",
+      "fixture_class": "CONSTRUCTED_MISSING_CONTEXT_CONTROL",
+      "expected": null,
+      "actual": {
+        "policy_id": "FSV-B13-PurchaseReceipt-OverReceiveQtyGuard",
+        "decision": "deny",
+        "fail_closed": true,
+        "violations": [
+          {
+            "rule_id": "FSV-B13-R1-OverReceiveQtyGuard",
+            "code": "required_input_missing",
+            "detail": "FSV-B13-R1-OverReceiveQtyGuard"
+          }
+        ]
+      },
+      "correct": null
+    }
+  ],
+  "shape_evaluations": [
+    {
+      "fixture_id": "FSV-B13-OL-01",
+      "fixture_class": "ARCHIVED_SYNTHETIC_REQUEST",
+      "expected": "allow",
+      "actual": {
+        "policy_id": "FSV-B13-PurchaseReceipt-OverReceiveQtyGuard",
+        "decision": "allow",
+        "fail_closed": true,
+        "violations": []
+      },
+      "correct": true
+    },
+    {
+      "fixture_id": "FSV-B13-OI-01",
+      "fixture_class": "ARCHIVED_SYNTHETIC_REQUEST",
+      "expected": "deny",
+      "actual": {
+        "policy_id": "FSV-B13-PurchaseReceipt-OverReceiveQtyGuard",
+        "decision": "deny",
+        "fail_closed": true,
+        "violations": [
+          {
+            "rule_id": "FSV-B13-R1-OverReceiveQtyGuard",
+            "code": "bounded_guard_rejected",
+            "detail": "FSV-B13-R1-OverReceiveQtyGuard"
+          }
+        ]
+      },
+      "correct": true
+    },
+    {
+      "fixture_id": "SYNTH-MISSING-TRUSTED",
+      "fixture_class": "CONSTRUCTED_MISSING_CONTEXT_CONTROL",
+      "expected": null,
+      "actual": {
+        "policy_id": "FSV-B13-PurchaseReceipt-OverReceiveQtyGuard",
+        "decision": "deny",
+        "fail_closed": true,
+        "violations": [
+          {
+            "rule_id": "FSV-B13-R1-OverReceiveQtyGuard",
+            "code": "required_input_missing",
+            "detail": "FSV-B13-R1-OverReceiveQtyGuard"
+          }
+        ]
+      },
+      "correct": null
+    }
+  ],
+  "ir_status": "COMPILED",
+  "contract_shape_valid": true,
+  "full_status": "ADMITTED",
+  "shape_status": "COMPILED_NO_INVENTORY",
+  "eligible_admission_contrast": true,
+  "archive_match": true,
+  "mismatched_fields": []
+}

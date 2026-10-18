@@ -1,0 +1,270 @@
+[
+  {
+    "path": "/mnt/d/lunwen/EC-CSI投稿/working/exploration/20261014_matched_evidence_labor/matched_generation/AUTHORIZATION_CN.md",
+    "sha256": "dfdba403acd6cff61c451fb0e038f9a3647c3f80cf54e0f3b7796a9160acb1ab"
+  },
+  {
+    "path": "/mnt/d/lunwen/EC-CSI投稿/working/exploration/20261014_matched_evidence_labor/matched_generation/DOCUMENTED_OPERATOR_SEMANTICS.json",
+    "sha256": "8d110d5c5fb1b5963add2be151d1481eff4aa6c09cf4037f681ef96ba4b868ff"
+  },
+  {
+    "path": "/mnt/d/lunwen/EC-CSI投稿/working/exploration/20261014_matched_evidence_labor/matched_generation/EXECUTION_CONFIG.json",
+    "sha256": "82aeefed17a01f37fe5a3c9bd4c2d8297ee13454c60411b3f17f0adfcbb4c964"
+  },
+  {
+    "path": "/mnt/d/lunwen/EC-CSI投稿/working/exploration/20261014_matched_evidence_labor/matched_generation/EXPERIMENT_SCOPE.json",
+    "sha256": "010a03c984ee20219500568ed9de2a8b119b1e0547bbc62c424ad09a4d0ac2be"
+  },
+  {
+    "path": "/mnt/d/lunwen/EC-CSI投稿/working/exploration/20261014_matched_evidence_labor/matched_generation/FROZEN_PROTOCOL_CN.md",
+    "sha256": "29f3e07fa5fdc411ae23f7cf31cd7f221a73b4667a51894542380580490b2619"
+  },
+  {
+    "path": "/mnt/d/lunwen/EC-CSI投稿/working/exploration/20261014_matched_evidence_labor/matched_generation/INPUT_DERIVATIONS.json",
+    "sha256": "09f82ac0fb9249e5193c7ec5568b47fcb2f045d322cf934c8ddae4d5472a7ade"
+  },
+  {
+    "path": "/mnt/d/lunwen/EC-CSI投稿/working/exploration/20261014_matched_evidence_labor/matched_generation/MAIN_RESUME_AUTHORIZATION_V2.json",
+    "sha256": "034aebe0bc610f978eb49d784de5f8940950b460a9981a211da327a90241c563"
+  },
+  {
+    "path": "/mnt/d/lunwen/EC-CSI投稿/working/exploration/20261014_matched_evidence_labor/matched_generation/PROMPT_TEMPLATES.json",
+    "sha256": "990e6bc45c495b404b2b19bdbce05105906675689429d54827e20658a5294663"
+  },
+  {
+    "path": "/mnt/d/lunwen/EC-CSI投稿/working/exploration/20261014_matched_evidence_labor/matched_generation/SCHEMA_FACTORIZATION_QA.json",
+    "sha256": "8b7cc74c210d93b286e8307eecdfffd1a3efba027e72ec9fa89b7f4b8cd7d960"
+  },
+  {
+    "path": "/mnt/d/lunwen/EC-CSI投稿/working/exploration/20261014_matched_evidence_labor/matched_generation/SOURCE_COPY_RECEIPT.json",
+    "sha256": "e20f8ef4629ef484541799ec0d94b285e7e6a06f536f6b02e513cd71f7073773"
+  },
+  {
+    "path": "/mnt/d/lunwen/EC-CSI投稿/working/exploration/20261014_matched_evidence_labor/matched_generation/SOURCE_REFERENCE_ACCEPTANCE_V2.json",
+    "sha256": "9cef96385060629cfea54f66f6bb5ed3abca6cb0d4d56502f9147ed7c5a89183"
+  },
+  {
+    "path": "/mnt/d/lunwen/EC-CSI投稿/working/exploration/20261014_matched_evidence_labor/matched_generation/TASK_CONTRACT.md",
+    "sha256": "69d72b2c7aa76061de5e5725bd185fc66d72392a4019236d3a17ec905c2c9dbf"
+  },
+  {
+    "path": "/mnt/d/lunwen/EC-CSI投稿/working/exploration/20261014_matched_evidence_labor/matched_generation/TOKEN_ESTIMATOR_CALIBRATION.json",
+    "sha256": "70503e4914c2217465ed64e12960c2dae89e3280e9e6c8ef9c851bc8b3650f73"
+  },
+  {
+    "path": "/mnt/d/lunwen/EC-CSI投稿/working/exploration/20261014_matched_evidence_labor/matched_generation/USER_PROTOCOL_CN.md",
+    "sha256": "50d19bca8a206228939081564a72a378ed3116e072d09b88f5fee179cee3ac22"
+  },
+  {
+    "path": "/mnt/d/lunwen/EC-CSI投稿/working/exploration/20261014_matched_evidence_labor/matched_generation/execution_inputs/FSV-B13/contract.json",
+    "sha256": "32e35f1485dc02131938191da1ef90600de1c272bd4ffa7f3f00aa3428982a84"
+  },
+  {
+    "path": "/mnt/d/lunwen/EC-CSI投稿/working/exploration/20261014_matched_evidence_labor/matched_generation/execution_inputs/FSV-B17/contract.json",
+    "sha256": "ae7c83dcf8f9ee8d8bd1a0218cf8d7d72e0f54c97771e6b49e6acf387eeab0bf"
+  },
+  {
+    "path": "/mnt/d/lunwen/EC-CSI投稿/working/exploration/20261014_matched_evidence_labor/matched_generation/execution_inputs/FSV-B19/contract.json",
+    "sha256": "fd0a7bbb9c3d0588d2f6e8970af7b8d9c34cf0ae82dd494bce68478c6671fd30"
+  },
+  {
+    "path": "/mnt/d/lunwen/EC-CSI投稿/working/exploration/20261014_matched_evidence_labor/matched_generation/execution_inputs/FSV-S03/contract.json",
+    "sha256": "21d2d1611b1cde80efd859d93220ed39e3852a70a3e2115a0411d8b131e76da3"
+  },
+  {
+    "path": "/mnt/d/lunwen/EC-CSI投稿/working/exploration/20261014_matched_evidence_labor/matched_generation/execution_inputs/ecas_output_schema.json",
+    "sha256": "d9168bf982cc37e44d994268fba54bbd0ed0640afd41e3ceea2a6eaa2eebdac6"
+  },
+  {
+    "path": "/mnt/d/lunwen/EC-CSI投稿/working/exploration/20261014_matched_evidence_labor/matched_generation/execution_inputs/ecas_prompt_schema.json",
+    "sha256": "83ab1a791b341b704c9db09bbeaf0c5050de5f639a40dee4cfe668f723d0737e"
+  },
+  {
+    "path": "/mnt/d/lunwen/EC-CSI投稿/working/exploration/20261014_matched_evidence_labor/matched_generation/execution_inputs/operator_developer_tests.json",
+    "sha256": "466540587a70df8430398a72c3e4e83481aa109e45784eac9ed0ba96560b2344"
+  },
+  {
+    "path": "/mnt/d/lunwen/EC-CSI投稿/working/exploration/20261014_matched_evidence_labor/matched_generation/freeze.py",
+    "sha256": "e6d6e8e6a1711f088533f096bde7f341bfe0bbeaaa53db2424fb02babf70d8c9"
+  },
+  {
+    "path": "/mnt/d/lunwen/EC-CSI投稿/working/exploration/20261014_matched_evidence_labor/matched_generation/generation_inputs/FSV-B13/organization_schema.json",
+    "sha256": "60d081ff93569f0e571dd37031c547282ceccd54b24988b8b546d5c2962a0488"
+  },
+  {
+    "path": "/mnt/d/lunwen/EC-CSI投稿/working/exploration/20261014_matched_evidence_labor/matched_generation/generation_inputs/FSV-B13/packet.json",
+    "sha256": "0b07fe5eb4c156c96759cb0ff7e45d58523efd87549f88932ef029003a4ecb9b"
+  },
+  {
+    "path": "/mnt/d/lunwen/EC-CSI投稿/working/exploration/20261014_matched_evidence_labor/matched_generation/generation_inputs/FSV-B17/organization_schema.json",
+    "sha256": "7343f9bafd0a3aac861b0114e1427bb640b2851004a7f65aa68413cdf4683882"
+  },
+  {
+    "path": "/mnt/d/lunwen/EC-CSI投稿/working/exploration/20261014_matched_evidence_labor/matched_generation/generation_inputs/FSV-B17/packet.json",
+    "sha256": "03e726de50a01e76c55ce26e0925632c218de4ab96339c3752d37e33535a6479"
+  },
+  {
+    "path": "/mnt/d/lunwen/EC-CSI投稿/working/exploration/20261014_matched_evidence_labor/matched_generation/generation_inputs/FSV-B19/organization_schema.json",
+    "sha256": "a89677a956c0362060f9b47ad12e3bdb6ba0654f79bc3d94d527067b212d35dc"
+  },
+  {
+    "path": "/mnt/d/lunwen/EC-CSI投稿/working/exploration/20261014_matched_evidence_labor/matched_generation/generation_inputs/FSV-B19/packet.json",
+    "sha256": "10c5597e97e4190aa041c53aa3aee8b4c1c48fa77d073bfb4fb5eb5a64a346fd"
+  },
+  {
+    "path": "/mnt/d/lunwen/EC-CSI投稿/working/exploration/20261014_matched_evidence_labor/matched_generation/generation_inputs/FSV-S03/organization_schema.json",
+    "sha256": "8267d851fb0830f0e3f70c776d115ca7e447221764b62e38ee90571cf79a4eae"
+  },
+  {
+    "path": "/mnt/d/lunwen/EC-CSI投稿/working/exploration/20261014_matched_evidence_labor/matched_generation/generation_inputs/FSV-S03/packet.json",
+    "sha256": "acddb441ffde6b492d77d8964ce22ba69bf037eb164daa9f8674ca1e4a8f596a"
+  },
+  {
+    "path": "/mnt/d/lunwen/EC-CSI投稿/working/exploration/20261014_matched_evidence_labor/matched_generation/managed_entry.py",
+    "sha256": "82ddeff647085f5c89390f503b0ebec5847bebeb37f94c6e30bb64f7436dccc4"
+  },
+  {
+    "path": "/mnt/d/lunwen/EC-CSI投稿/working/exploration/20261014_matched_evidence_labor/matched_generation/pilot_lib.py",
+    "sha256": "b321d23eea3c2cd4bf03bab67f9401ccedcd1fb14abfb240056e071023f76bda"
+  },
+  {
+    "path": "/mnt/d/lunwen/EC-CSI投稿/working/exploration/20261014_matched_evidence_labor/matched_generation/prepare.py",
+    "sha256": "b4af80b21b2dccdc40412321915abeaa486306f47f11d4347236f2228276c0b3"
+  },
+  {
+    "path": "/mnt/d/lunwen/EC-CSI投稿/working/exploration/20261014_matched_evidence_labor/matched_generation/prepare_main_resume_v2.py",
+    "sha256": "968eb4a67ce36066594c179a8bfcf12f894e8dfbf45663f79adbf80e17e42744"
+  },
+  {
+    "path": "/mnt/d/lunwen/EC-CSI投稿/working/exploration/20261014_matched_evidence_labor/matched_generation/recover_wrapper_v2.py",
+    "sha256": "2dd02641ae53ef5f5283de34e3981f39225f3faa4c8ddd6477e7d0628fcba3dd"
+  },
+  {
+    "path": "/mnt/d/lunwen/EC-CSI投稿/working/exploration/20261014_matched_evidence_labor/matched_generation/run_matched.py",
+    "sha256": "19503dfa1a070730dd7eb94af7cc3eed4e4e416a3f94bb3ba8c8ffe0acd8f8a7"
+  },
+  {
+    "path": "/mnt/d/lunwen/EC-CSI投稿/working/exploration/20261014_matched_evidence_labor/matched_generation/run_t0.py",
+    "sha256": "3f9cdf8d9a497c5ec4843933806e26334d1b2d803dd4c40bdc6ca4e32e3e63f3"
+  },
+  {
+    "path": "/mnt/d/lunwen/EC-CSI投稿/working/exploration/20261014_matched_evidence_labor/matched_generation/sealed_evaluation/FSV-B13/O-I.json",
+    "sha256": "cc48bf54560691368e418bfdfa437ac1eacdea343e1027538069e569fd79f9cd"
+  },
+  {
+    "path": "/mnt/d/lunwen/EC-CSI投稿/working/exploration/20261014_matched_evidence_labor/matched_generation/sealed_evaluation/FSV-B13/O-L.json",
+    "sha256": "f42e16a4373f495013f8cfd865e4bf2f5282024f5010b513352cda2a87601e1f"
+  },
+  {
+    "path": "/mnt/d/lunwen/EC-CSI投稿/working/exploration/20261014_matched_evidence_labor/matched_generation/sealed_evaluation/FSV-B17/O-I.json",
+    "sha256": "1e4f014ba1a820cfd9a367a7053ed11038111af29c420cb341f4483a012f6009"
+  },
+  {
+    "path": "/mnt/d/lunwen/EC-CSI投稿/working/exploration/20261014_matched_evidence_labor/matched_generation/sealed_evaluation/FSV-B17/O-L.json",
+    "sha256": "7b3e59768aeef9b06d5181e2bf0d8511c6d6564eacbd76a0b14eaf42fcdfa6fd"
+  },
+  {
+    "path": "/mnt/d/lunwen/EC-CSI投稿/working/exploration/20261014_matched_evidence_labor/matched_generation/sealed_evaluation/FSV-B19/O-I.json",
+    "sha256": "ae1d51bf1a028081ed84b19c6b7f5c58ef48ab6a156838976db2ce5ec2257426"
+  },
+  {
+    "path": "/mnt/d/lunwen/EC-CSI投稿/working/exploration/20261014_matched_evidence_labor/matched_generation/sealed_evaluation/FSV-B19/O-L.json",
+    "sha256": "a93d62a64f0152442a0d4d33fd1378ab05f0b6f41b707359a3588cfc04f8d7f3"
+  },
+  {
+    "path": "/mnt/d/lunwen/EC-CSI投稿/working/exploration/20261014_matched_evidence_labor/matched_generation/sealed_evaluation/FSV-S03/O-I.json",
+    "sha256": "b19aaea5476ce507a73c43325d53b15bae0f5ea676c6d9cff5219b1f15c24888"
+  },
+  {
+    "path": "/mnt/d/lunwen/EC-CSI投稿/working/exploration/20261014_matched_evidence_labor/matched_generation/sealed_evaluation/FSV-S03/O-L.json",
+    "sha256": "7a4baf937960343565985be5dacc8ae4fd71819f21929568756e4e4bedd39366"
+  },
+  {
+    "path": "/mnt/d/lunwen/EC-CSI投稿/working/exploration/20261014_matched_evidence_labor/matched_generation/sealed_evaluation/branch_protocol.json",
+    "sha256": "11528a8fa0954a9523fe52d2adf52c3dfc9090b98f0eedf83123c2f7f6c30312"
+  },
+  {
+    "path": "/mnt/d/lunwen/EC-CSI投稿/working/exploration/20261014_matched_evidence_labor/matched_generation/source_snapshots/FSV-B13/visible_input.json",
+    "sha256": "59656473d4901528724f2aeeac13914aafd823cb8c94afa303074667cc1d3a60"
+  },
+  {
+    "path": "/mnt/d/lunwen/EC-CSI投稿/working/exploration/20261014_matched_evidence_labor/matched_generation/source_snapshots/FSV-B17/visible_input.json",
+    "sha256": "172d7713684a53321d1adc88fa22d4fa19eef73655e2ec93dbc76e0a41fc553d"
+  },
+  {
+    "path": "/mnt/d/lunwen/EC-CSI投稿/working/exploration/20261014_matched_evidence_labor/matched_generation/source_snapshots/FSV-B19/visible_input.json",
+    "sha256": "0d2f92d99e585945e4923e8195d7fae4b387dd36a42b2653b2c70824b3c62369"
+  },
+  {
+    "path": "/mnt/d/lunwen/EC-CSI投稿/working/exploration/20261014_matched_evidence_labor/matched_generation/source_snapshots/FSV-S03/visible_input.json",
+    "sha256": "80046646d6cd56df589905eae0fc105406de7c68a6ac47241dd51467352917a5"
+  },
+  {
+    "path": "/mnt/d/lunwen/EC-CSI投稿/working/exploration/20261014_matched_evidence_labor/matched_generation/t0_fixtures/known_s03_candidate.json",
+    "sha256": "4ea0d92c8a503671e937eca9e6510bbfbc442082f13238027dd801dec918606a"
+  },
+  {
+    "path": "/mnt/d/lunwen/load_llm_api_keys.ps1",
+    "sha256": "53c5ba620b3d591ff3d0f65c8034d8b009fcbb221e8ae86dc4d6e6b9ca628767"
+  },
+  {
+    "path": "/mnt/d/lunwen/tools/llm/invoke_glm_api.ps1",
+    "sha256": "5998574e3b40a4f6916531fe4b4f6b98ed372bc857412e70a1f799a0d5b445d2"
+  },
+  {
+    "path": "/root/ecas_matched_generation_20261014/runtime/EC_EVIDENCE_CONTRACT_SCHEMA_V2.json",
+    "sha256": "4b8e947bfffd9b95094358f07bcc4cfcffc44239e260cd12394f57c8fbb6e765"
+  },
+  {
+    "path": "/root/ecas_matched_generation_20261014/runtime/EC_EVIDENCE_CONTRACT_SCHEMA_V3.json",
+    "sha256": "733b1f5257239129040feaa9c4627b196f557d3d58208e28cda5e1deda0340dd"
+  },
+  {
+    "path": "/root/ecas_matched_generation_20261014/runtime/EC_FIELD_SECURITY_MODEL_IR_SCHEMA_V2.json",
+    "sha256": "055fcfc78027e73cf6d8c71544ca33e63d4d4354f97dcae29c6f44c12f9c4053"
+  },
+  {
+    "path": "/root/ecas_matched_generation_20261014/runtime/EC_FIELD_SECURITY_MODEL_IR_SCHEMA_V3.json",
+    "sha256": "d9168bf982cc37e44d994268fba54bbd0ed0640afd41e3ceea2a6eaa2eebdac6"
+  },
+  {
+    "path": "/root/ecas_matched_generation_20261014/runtime/EC_FIELD_SECURITY_POLICY_SCHEMA_V2.json",
+    "sha256": "077d7bfa1f251b072cc973490c7e600f566b690bf1f155d161d1e33071765b67"
+  },
+  {
+    "path": "/root/ecas_matched_generation_20261014/runtime/EC_FIELD_SECURITY_POLICY_SCHEMA_V3.json",
+    "sha256": "10073d09cfa0dcc597fe196da1169b27805ec76349671ce12f725dc3912d2cce"
+  },
+  {
+    "path": "/root/ecas_matched_generation_20261014/runtime/EC_FIELD_SECURITY_PROPOSAL_SCHEMA_V2.json",
+    "sha256": "d22a110c34a2a8ecde5056cd71585ebe6694724b6e331beb2ce16b0608046cb4"
+  },
+  {
+    "path": "/root/ecas_matched_generation_20261014/runtime/EC_FIELD_SECURITY_PROPOSAL_SCHEMA_V3.json",
+    "sha256": "2bd10ce48e8ef77be882b875a3ee42dfe63feaa4c686a30be50f62a09abc9b44"
+  },
+  {
+    "path": "/root/ecas_matched_generation_20261014/runtime/scripts/ec_field_security_engine_v2.py",
+    "sha256": "21f65c64ea26897f62571ac147b48bc6a20c7426a48084f9cda8d0218e42d970"
+  },
+  {
+    "path": "/root/ecas_matched_generation_20261014/runtime/scripts/ec_field_security_engine_v3.py",
+    "sha256": "bd509670538cb31f7a271b4d6b353a862157fe968c240218db33065c36b980e3"
+  },
+  {
+    "path": "/root/ecas_matched_generation_20261014/runtime/security_knowledge/SECURITY_PRIMITIVE_CATALOG_V1.json",
+    "sha256": "89fc9b59f35ab8f491f37c718647a86fc7f557e7f6666bc526046a8210cedf5d"
+  },
+  {
+    "path": "/root/ecas_matched_generation_20261014/runtime/security_knowledge/SECURITY_PRIMITIVE_CATALOG_V2.json",
+    "sha256": "d545c37fb4adda0b4428bcf5eedd379d69b51a8a70503668b611f5d89ae47b00"
+  },
+  {
+    "path": "/root/ecas_matched_generation_20261014/tools/opa",
+    "sha256": "1dd5c5591ff856f5e20a1d66bafae9511ddf3c5552ed3b5070c70b2b6580ee3f"
+  },
+  {
+    "path": "/root/ecas_matched_generation_20261014/tools/regal",
+    "sha256": "5e7d030064e307d54e6ffa3d85b8d9052d3d40b7afa10262c86c886f8a76559d"
+  }
+]

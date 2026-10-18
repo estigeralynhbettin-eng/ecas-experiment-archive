@@ -1,0 +1,1673 @@
+{
+  "status": "SOURCE_RULE_BINDING_ARCHIVE_CHAIN_AUDIT",
+  "rows": [
+    {
+      "case": "FSV-B06",
+      "project": "Apache Fineract",
+      "batch": "A",
+      "target": {
+        "operation": "POST /v1/loans/{loanId}/transactions/{transactionId}?command=undo",
+        "system": "Fineract",
+        "version": "1.14.0"
+      },
+      "source_condition_cn": "文档中的最新Re-Age交易约束",
+      "ir_condition_cn": "bounded_guard_dnf：reAgeIsLatestTransaction=true",
+      "scope_status_cn": "历史抽取/布尔判定演示；专用undoReAge与旧通用undo目标不一致，映射未闭合",
+      "visible_sources": [
+        {
+          "content": "85: === Reversal and Replay Rules\n86: \n87: * Re-Age transactions can be **reversed only if they are the latest transaction** on the loan account.\n88: * Any backdated repayment or reversal triggers **reverse + replay**:\n89: - Reverts schedule to original state before re-age.\n90: - Removes special collected installment if it exists.\n91: - Restores charge/fee mapping.\n92: * Backdated transaction posting or reversals triggers **reverse + replay**",
+          "evidence_id": "VIS-FSV-B06-01",
+          "locator": "re-ageing.adoc:85-92;",
+          "source_id": "fineract-re-ageing.adoc",
+          "source_sha256": "95D99F4BEE0B70B23487CBEE14CC1C767AB4667240F297B6ECE0DE3545BE5F16"
+        },
+        {
+          "content": {
+            "available_values": [
+              {
+                "authority": "server_state",
+                "path": "/trusted/reAgeIsLatestTransaction",
+                "type": "boolean"
+              }
+            ],
+            "target_operation": "POST /v1/loans/{loanId}/transactions/{transactionId}?command=undo",
+            "notice": "This declares available adapter paths and types only; it supplies no expected decision or hidden test value."
+          },
+          "evidence_id": "VIS-FSV-B06-RUNTIME-ABI",
+          "locator": "tasks.FSV-B06",
+          "source_id": "EC-V2-RUNTIME-INTERFACE-CATALOG-V1",
+          "source_sha256": "8221DA8A6720B0593A8D337F18569C9947AAB05B02E5C84FB0C50E3DE8C1ABD7"
+        }
+      ],
+      "binding_rows": [
+        {
+          "rule_pointer": "/rules/0",
+          "rule": {
+            "rule_id": "rule-FSV-B06-reage-undo-latest-only",
+            "primitive_id": "SP-BOUNDED-BUSINESS-GUARD",
+            "op": "bounded_guard_dnf",
+            "evidence_refs": [
+              "VIS-FSV-B06-01",
+              "VIS-FSV-B06-RUNTIME-ABI"
+            ],
+            "params": {
+              "alternatives": [
+                {
+                  "clauses": [
+                    {
+                      "kind": "scalar_compare",
+                      "left_path": "/trusted/reAgeIsLatestTransaction",
+                      "operator": "eq",
+                      "right_source": "literal",
+                      "right_path": "",
+                      "right_value": true
+                    }
+                  ]
+                }
+              ],
+              "on_missing": "deny"
+            }
+          },
+          "registered_evidence": [
+            {
+              "binding_facts": {
+                "visible_enum_values": true,
+                "visible_plain_language_invariant": true,
+                "visible_server_authority_or_workflow_contract": true
+              },
+              "bound_paths": [
+                "/trusted/reAgeIsLatestTransaction"
+              ],
+              "evidence_id": "VIS-FSV-B06-01",
+              "locator": "re-ageing.adoc:85-92;",
+              "operations": [
+                "POST /v1/loans/{loanId}/transactions/{transactionId}?command=undo"
+              ],
+              "relation": "supports",
+              "sha256": "95D99F4BEE0B70B23487CBEE14CC1C767AB4667240F297B6ECE0DE3545BE5F16",
+              "source_kind": "business_requirement",
+              "supports_primitives": [
+                "SP-BOUNDED-BUSINESS-GUARD",
+                "SP-ENUM-ALLOWLIST",
+                "SP-SERVER-AUTHORITY-WORKFLOW"
+              ],
+              "system": "Fineract",
+              "versions": [
+                "1.14.0"
+              ],
+              "visibility": "visible"
+            },
+            {
+              "binding_facts": {
+                "trusted_runtime_context_mapping": true,
+                "visible_field_mapping": true,
+                "visible_runtime_interface": true
+              },
+              "bound_paths": [
+                "/trusted/reAgeIsLatestTransaction"
+              ],
+              "evidence_id": "VIS-FSV-B06-RUNTIME-ABI",
+              "locator": "tasks.FSV-B06",
+              "operations": [
+                "POST /v1/loans/{loanId}/transactions/{transactionId}?command=undo"
+              ],
+              "relation": "supports",
+              "sha256": "8221DA8A6720B0593A8D337F18569C9947AAB05B02E5C84FB0C50E3DE8C1ABD7",
+              "source_kind": "runtime_context_contract",
+              "supports_primitives": [
+                "SP-BOUNDED-BUSINESS-GUARD",
+                "SP-ENUM-ALLOWLIST",
+                "SP-SERVER-AUTHORITY-WORKFLOW"
+              ],
+              "system": "Fineract",
+              "versions": [
+                "1.14.0"
+              ],
+              "visibility": "visible"
+            }
+          ],
+          "referenced_runtime_paths": [
+            "/trusted/reAgeIsLatestTransaction"
+          ],
+          "registered_bound_paths": [
+            "/trusted/reAgeIsLatestTransaction"
+          ],
+          "interpretation": "Inventory declaration consistency only; does not prove source meaning or runtime provenance"
+        }
+      ],
+      "archive_admission": "ADMITTED",
+      "archived_legal_decision": "allow",
+      "archived_violation_decision": "deny",
+      "evidence_files": [
+        {
+          "path": "D:\\lunwen\\EC-CSI投稿\\working\\exploration\\20261014_external_baseline_pilot\\generation_inputs\\FSV-B06\\packet.json",
+          "sha256": "01ac46f8ed8d0b75d23a4adb7a16fafe35316f1e75fbe52d767540c39fe2f16f"
+        },
+        {
+          "path": "D:\\lunwen\\EC-CSI投稿\\working\\exploration\\20261014_external_baseline_pilot\\execution_inputs\\FSV-B06\\contract.json",
+          "sha256": "f5831f2c50ce5b317913a884c08caf832824a506cfff7704871731f88edd8090"
+        },
+        {
+          "path": "D:\\lunwen\\EC-CSI投稿\\working\\exploration\\20261014_external_baseline_pilot\\effect_runs\\FSV-B06\\ECAS_MATCHED\\candidate.json",
+          "sha256": "ca4a80a844a1a50519a3c958b18d3530b5799e97c3147bf19aba2573dd7a95ff"
+        },
+        {
+          "path": "D:\\lunwen\\EC-CSI投稿\\working\\exploration\\20261014_external_baseline_pilot\\effect_runs\\FSV-B06\\ECAS_MATCHED\\admitted_policy.json",
+          "sha256": "5cf6bc67f8f2c31e22a913be53f8b47aac3b2f8cd4b8f154b592de38f9c909c8"
+        },
+        {
+          "path": "D:\\lunwen\\EC-CSI投稿\\working\\exploration\\20261014_external_baseline_pilot\\effect_runs\\FSV-B06\\ECAS_MATCHED\\RESULT.json",
+          "sha256": "7ce11d95dd90462618b63c697e2978132ad4250cd5d7831399272c6c6607cdb3"
+        }
+      ],
+      "raw_to_candidate_semantic_audit": {
+        "path": "D:\\lunwen\\EC-CSI投稿\\working\\exploration\\20261015_semantic_comparison\\OLD_THREE_SEMANTIC_AUDIT.json",
+        "sha256": "b5064b348d70e7193202cb2a5fb3e57e636345156e9b00436b41375f877d08be"
+      }
+    },
+    {
+      "case": "FSV-S02",
+      "project": "Apache Fineract",
+      "batch": "A",
+      "target": {
+        "operation": "POST /v1/clients/{clientId}/identifiers",
+        "system": "Fineract",
+        "version": "1.14.0"
+      },
+      "source_condition_cn": "OpenAPI四字段清单；未声明禁止额外字段",
+      "ir_condition_cn": "allowed_fields：四字段闭集",
+      "scope_status_cn": "历史网关策略约定；静态HTTP链先DTO绑定、关闭未知键报错，拒绝未知键未证成",
+      "visible_sources": [
+        {
+          "content": {
+            "description": "Mandatory Fields\ndocumentKey, documentTypeId ",
+            "method": "POST",
+            "parameters": [
+              {
+                "description": "clientId",
+                "required": true,
+                "schema": {
+                  "format": "int64",
+                  "type": "integer"
+                }
+              }
+            ],
+            "path": "/v1/clients/{clientId}/identifiers",
+            "requestBody": {
+              "content": {
+                "application/json": {
+                  "schema": {
+                    "description": "PostClientsClientIdIdentifiersRequest",
+                    "properties": {
+                      "description": {
+                        "example": "Document has been verified",
+                        "type": "string"
+                      },
+                      "documentKey": {
+                        "example": "KA-54677",
+                        "type": "string"
+                      },
+                      "documentTypeId": {
+                        "example": 1,
+                        "format": "int64",
+                        "type": "integer"
+                      },
+                      "status": {
+                        "example": "Active",
+                        "type": "string"
+                      }
+                    },
+                    "type": "object"
+                  }
+                }
+              },
+              "required": true
+            },
+            "summary": "Create an Identifier for a Client"
+          },
+          "evidence_id": "VIS-FSV-S02-01",
+          "locator": "paths./v1/clients/{clientId}/identifiers.post",
+          "source_id": "fineract-openapi-1.14.0.json",
+          "source_sha256": "A44D6FA247D495A4FB147CC8C5EA1A364D8F05A40762B31A055681373E455A48"
+        }
+      ],
+      "binding_rows": [
+        {
+          "rule_pointer": "/rules/0",
+          "rule": {
+            "rule_id": "rule-FSV-S02-001",
+            "primitive_id": "SP-OBJECT-PROPERTY-ALLOWLIST",
+            "op": "allowed_fields",
+            "evidence_refs": [
+              "VIS-FSV-S02-01"
+            ],
+            "params": {
+              "fields": [
+                "description",
+                "documentKey",
+                "documentTypeId",
+                "status"
+              ]
+            }
+          },
+          "registered_evidence": [
+            {
+              "binding_facts": {
+                "visible_request_schema_or_parameter_list": true
+              },
+              "bound_paths": [
+                "/request/body"
+              ],
+              "evidence_id": "VIS-FSV-S02-01",
+              "locator": "paths./v1/clients/{clientId}/identifiers.post",
+              "operations": [
+                "POST /v1/clients/{clientId}/identifiers"
+              ],
+              "relation": "supports",
+              "sha256": "A44D6FA247D495A4FB147CC8C5EA1A364D8F05A40762B31A055681373E455A48",
+              "source_kind": "api_documentation",
+              "supports_primitives": [
+                "SP-OBJECT-PROPERTY-ALLOWLIST"
+              ],
+              "system": "Fineract",
+              "versions": [
+                "1.14.0"
+              ],
+              "visibility": "visible"
+            }
+          ],
+          "referenced_runtime_paths": [],
+          "registered_bound_paths": [
+            "/request/body"
+          ],
+          "interpretation": "Inventory declaration consistency only; does not prove source meaning or runtime provenance"
+        }
+      ],
+      "archive_admission": "ADMITTED",
+      "archived_legal_decision": "allow",
+      "archived_violation_decision": "deny",
+      "evidence_files": [
+        {
+          "path": "D:\\lunwen\\EC-CSI投稿\\working\\exploration\\20261014_external_baseline_pilot\\generation_inputs\\FSV-S02\\packet.json",
+          "sha256": "5c8de100a097aa1cae1c236a1d9d7771e8c1e175d9c8601abc9d319dafca9611"
+        },
+        {
+          "path": "D:\\lunwen\\EC-CSI投稿\\working\\exploration\\20261014_external_baseline_pilot\\execution_inputs\\FSV-S02\\contract.json",
+          "sha256": "4c58c3e9082c3e58239f66c3bf72c113fdf93436586498822923c54738a11a59"
+        },
+        {
+          "path": "D:\\lunwen\\EC-CSI投稿\\working\\exploration\\20261014_external_baseline_pilot\\effect_runs\\FSV-S02\\ECAS_MATCHED\\candidate.json",
+          "sha256": "e6f5a2af7dee84e067b1a81f4b3dd56483b2ba306983039d0112c28efbf49fe6"
+        },
+        {
+          "path": "D:\\lunwen\\EC-CSI投稿\\working\\exploration\\20261014_external_baseline_pilot\\effect_runs\\FSV-S02\\ECAS_MATCHED\\admitted_policy.json",
+          "sha256": "996e022383557449a4b8a9663b8bf5457544e5065ffdc7bb4677842ab368bdff"
+        },
+        {
+          "path": "D:\\lunwen\\EC-CSI投稿\\working\\exploration\\20261014_external_baseline_pilot\\effect_runs\\FSV-S02\\ECAS_MATCHED\\RESULT.json",
+          "sha256": "6f6a57b261d3225205f6c946ab07b53a43ba71fb53034cdfe0de661ece1f0d59"
+        }
+      ],
+      "raw_to_candidate_semantic_audit": {
+        "path": "D:\\lunwen\\EC-CSI投稿\\working\\exploration\\20261015_semantic_comparison\\OLD_THREE_SEMANTIC_AUDIT.json",
+        "sha256": "b5064b348d70e7193202cb2a5fb3e57e636345156e9b00436b41375f877d08be"
+      }
+    },
+    {
+      "case": "FSV-S04",
+      "project": "ERPNext",
+      "batch": "A",
+      "target": {
+        "operation": "POST /api/resource/Lead",
+        "system": "ERPNext",
+        "version": "16.0.0"
+      },
+      "source_condition_cn": "Lead.email_id的options=Email",
+      "ir_condition_cn": "named_validator：email_basic_v1",
+      "scope_status_cn": "可展示Email属性到注册基本格式原语的映射；未证明与后端全部邮箱规范等价",
+      "visible_sources": [
+        {
+          "content": "Frappe framework generates REST API for all of your DocTypes out of the box. You can also run arbitrary python methods using their dotted module path.\n\n## Authentication\n\nThere are two ways to authenticate through Frappe REST API. Token based authentication and password based authentication.\n\n### 1. Token Based Authentication\n\nA token is a pair of API Key and API Secret. To generate these tokens follow these steps:\n\n- Go to User list and open a user.\n\n- Click on the \"Settings\" tab. (skip this step if you don't see tabs)\n\n- Expand the API Access section and click on Generate Keys.\n\n- You will get a popup with the API Secret. Copy this value and keep it somewhere safe (Password Manager).\n\n- You will also see another field \"API Key\" in this section.\n\nThe token is generated by concatenating api_key and api_secret with a colon :. Pass the string token api_key:api_secret to the Authorization header in the request.\nfetch('http://<base-url>/api/method/frappe.auth.get_logged_user', { headers: { 'Authorization': 'token api_key:api_secret' } }) .then(r => r.json()) .then(r => { console.log(r); }) ➜ curl http://<base-url>/api/method/frappe.auth.get_logged_user -H \"Authorization: token api_key:api_secret\"\nEvery request you make with these tokens will be logged against the user you selected in Step 1. This also means that roles will be checked against this user. You can also create a new user just for API calls.\n\n### 2. Password Based Authentication\n\nPassword based authentication relies on cookies and session data to maintain authentication in subsequent requests. In most cases, the library you are using to issue REST calls will handle session data, but if it doesn't you should use Token based authentication.\nfetch('http://<base-url>/api/method/login', { method: 'POST', headers: { 'Accept': 'application/json', 'Content-Type': 'application/json', }, body: JSON.stringify({ usr: 'username or email', pwd: 'password' }) }) .then(r => r.json()) .then(r => { console.log(r); }) ➜ curl --cookie-jar snowcookie --request POST \"http://<base-url>/api/method/login\" -H 'Content-Type: application/json' -H 'Accept: application/json' --data-raw \"{ \"usr\" : \"<username>\", \"pwd\": \"<password>\" }\" {\"message\":\"Logged In\",\"home_page\":\"/app\",\"full_name\":\"<user:full_name>\",\"dashboard_route\":\"/sites\"} ➜ curl --cookie snowcookie --request POST \"http://<base-url>/api/method/frappe.auth.get_logged_user\" -H 'Accept: application/json' {\"message\":\"<username>\"}\n### 3. Access Token\n\nRefer documentation for How to setup OAuth.\n\nUse the generated access_token in request header.\nfetch('http://<base-url>/api/method/frappe.auth.get_logged_user', { headers: { 'Authorization': 'Bearer access_token' } }) .then(r => r.json()) .then(r => { console.log(r); })\n## Listing Documents\n\nTo get a list of records of a DocType, send a GET request at /api/resource/:doctype. By default, it will return 20 records and will only fetch the name of the records. The result for the query can be found under data of the payload.\n\nWe'll be using the ToDo DocType to show example responses for the queries below.\nGET /api/resource/:doctype\nResponse\n{ \"data\":[ {\"name\":\"f765eef382\"}, {\"name\":\"2a26fa1c64\"}, {\"name\":\"f32c68060f\"}, {\"name\":\"9065fa9832\"}, {\"name\":\"419082fc38\"}, {\"name\":\"6234d15099\"}, {\"name\":\"62f2181ee0\"}, {\"name\":\"a50afbbfaa\"}, ... ] }\nYou can specify which fields to fetch in the fields param. It should be a JSON array.\nGET /api/resource/:doctype?fields=[\"field1\", \"field2\"]\nResponse\n{ \"data\":[ {\"description\":\"Business worker talk society. Each try theory prove notice middle. Crime couple trouble guy project hit.\",\"name\":\"f765eef382\"}, {\"description\":\"This reveal as look near sister. Car staff bar specific address.\",\"name\":\"2a26fa1c64\"}, {\"description\":\"Wear bag some walk. Movie partner new class tough run. Brother Democrat imagine.\",\"name\":\"f32c68060f\"}, {\"description\":\"Break laugh apply reveal new now focus heavy. Outside local staff research total. Else point try despite.\",\"name\":\"9065fa9832\"}, {\"description\":\"Truth reduce baby artist actually model. Cost phone us others himself wife almost. Language thing wonder share talk. Factor glass significant could window certain yet.\",\"name\":\"419082fc38\"}, {\"description\":\"Tv memory understand opportunity window beat physical.\",\"name\":\"6234d15099\"}, {\"description\":\"Should floor situation in response sell. Our assume company mean red majority shoulder.\",\"name\":\"62f2181ee0\"}, {\"description\":\"Performance seem sign recent. Court form me tonight simple trouble. Address job garden play teach. Happy speech amount offer change then.\",\"name\":\"a50afbbfaa\"}, ... ] }\nYou can specify which fields to expand in the expand param. It should be a JSON array.\nGET /api/resource/:doctype?expand=[\"priority\"]\nResponse\n{ \"data\":[ { \"name\":\"f765eef382\" \"priority\": { \"name\":\"a1b2c3\", \"title\": \"Medium\", \"creation\": \"2025-11-05 19:02:19.106966\", }, }, { \"name\":\"f765eef393\" \"priority\": { \"name\":\"a1b2c4\", \"title\": \"High\", \"creation\": \"2025-11-05 20:02:19.106966\", }, }, ... ] }\nYou can filter the records by passing filters param. Filters should be an array, where each filter is of the format: [field, operator, value]\nGET /api/resource/:doctype?filters=[[\"field1\", \"=\", \"value1\"], [\"field2\", \">\", \"value2\"]]\nResponse\n{ \"data\":[ {\"name\":\"f765eef382\"}, {\"name\":\"2a26fa1c64\"}, {\"name\":\"f32c68060f\"}, {\"name\":\"9065fa9832\"}, {\"name\":\"419082fc38\"}, {\"name\":\"6234d15099\"}, {\"name\":\"62f2181ee0\"}, {\"name\":\"a50afbbfaa\"}, ... ] }\nfilters parameter joins all the specified filters using AND SQL operator, if you want OR filters you can use the or_filters param. Syntax for or_filters is same as `filters.\n\nYou can also provide the sort field and order. It should be of the format fieldname asc or fieldname desc. The space should be URL encoded. In the following line, we're taking fieldname to be title.\nGET /api/resource/:doctype?order_by=title%20desc\nYou can also page the results by providing the limit_start and limit_page_length params.\nGET /api/resource/:doctype?limit_start=5&limit_page_length=10\nResponse\n{ \"data\": [ {\"name\":\"6234d15099\"}, {\"name\":\"62f2181ee0\"}, {\"name\":\"a50afbbfaa\"}, {\"name\":\"aa12a5cf71\"}, {\"name\":\"6ac9800d4e\"}, {\"name\":\"4bcf8b701c\"}, {\"name\":\"aee15f4c20\"}, {\"name\":\"6ba753afef\"}, ... ] }\nlimit is an alias for limit_page_length for accessing /api/resource in Version 13. This means the following should also return the same payload as the above query.\nGET /api/resource/:doctype?limit_start=5&limit=10\nBy default, you will receive the data as List[dict]. You can retrieve your data as List[List] by passing as_dict=False.\nGET /api/resource/:doctype?limit_start=5&limit=5&as_dict=False\nResponse\n{ \"data\": [ [\"6234d15099\"], [\"62f2181ee0\"], [\"a50afbbfaa\"], [\"aa12a5cf71\"], [\"6ac9800d4e\"] ] }\nTo debug the query built for your reqeusts, you can pass debug=True with the request. This returns the executed query and execution time under exc of the payload.\nGET /api/resource/:doctype?limit_start=10&limit=5&debug=True\nResponse\n{ \"data\": [ {\"name\":\"4bcf8b701c\"}, {\"name\":\"aee15f4c20\"}, {\"name\":\"6ba753afef\"}, {\"name\":\"f4b7e24abc\"}, {\"name\":\"bd9156096c\"} ], \"exc\": \"[\\\"select `tabToDo`.`name`\\\\n\\\\t\\\\t\\\\tfrom `tabToDo`\\\\n\\\\t\\\\t\\\\t\\\\n\\\\t\\\\t\\\\t\\\\n\\\\t\\\\t\\\\t order by `tabToDo`.`modified` DESC\\\\n\\\\t\\\\t\\\\tlimit 5 offset 10\\\", \\\"Execution time: 0.0 sec\\\"]\" }\n## CRUD Operations\n\nFrappe generates REST endpoints for CRUD operations for all DocTypes automatically. Make sure you set the following headers in your requests so that you get proper JSON responses.\n{ \"Accept\": \"application/json\", \"Content-Type\": \"application/json\", }\n### Create\n\nCreate a new document by sending a POST request to /api/resource/:doctype. Send the document as JSON in the Request Body.\nPOST /api/resource/:doctype # Body {\"description\": \"New ToDo\"}\nResponse\n{ \"data\": { \"name\": \"af2e2d0e33\", \"owner\": \"Administrator\", \"creation\": \"2019-06-03 14:19:00.281026\", \"modified\": \"2019-06-03 14:19:00.281026\", \"modified_by\": \"Administrator\", \"idx\": 0, \"docstatus\": 0, \"status\": \"Open\", \"priority\": \"Medium\", \"description\": \"New ToDo\", \"doctype\": \"ToDo\" } }\n### Read\n\nGet a document by sending a GET request to /api/resource/:doctype/:name.\nGET /api/resource/:doctype/:name\nResponse\n{ \"data\": { \"name\": \"bf2e760e13\", \"owner\": \"Administrator\", \"creation\": \"2019-06-03 14:19:00.281026\", \"modified\": \"2019-06-03 14:19:00.281026\", \"modified_by\": \"Administrator\", \"idx\": 0, \"docstatus\": 0, \"status\": \"Open\", \"priority\": \"Medium\", \"description\": \"\nTest description\n\", \"doctype\": \"ToDo\" } }\nExpand all link fields by sending a GET request to /api/resource/:doctype/:name?expand_links=True.\nGET /api/resource/:doctype/:name?expand_links=True\nResponse\n{ \"data\": { \"name\": \"bf2e760e13\", \"owner\": \"Administrator\", \"creation\": \"2019-06-03 14:19:00.281026\", \"modified\": \"2019-06-03 14:19:00.281026\", \"modified_by\": \"Administrator\", \"idx\": 0, \"docstatus\": 0, \"status\": \"Open\", \"priority\": { \"name\":\"a1b2c3\", \"title\": \"Medium\", \"creation\": \"2025-11-05 19:02:19.106966\", }, \"description\": \"\nTest description\n\", \"doctype\": \"ToDo\" } }\n### Update\n\nUpdate a document by sending a PUT request to /api/resource/:doctype/:name. You don't need to send the whole document, instead you can just send the fields that you want to update.\nPUT /api/resource/:doctype/:name # Body {\"description\": \"New description\"}\nResponse\n{ \"data\": { \"name\": \"bf2e760e13\", \"owner\": \"Administrator\", \"creation\": \"2019-06-03 14:19:00.281026\", \"modified\": \"2019-06-03 14:21:00.785117\", \"modified_by\": \"Administrator\", \"idx\": 0, \"docstatus\": 0, \"status\": \"Open\", \"priority\": \"Medium\", \"description\": \"New description\", \"doctype\": \"ToDo\" } }\n### Delete\n\nDelete a document by sending a DELETE request to /api/resource/:doctype/:name.\nDELETE /api/resource/:doctype/:name\nResponse\n{\"message\": \"ok\"}\n## Remote Method Calls\n\nFrappe allows you to trigger arbitrary python methods using the REST API for handling custom logic. These methods must be marked as whitelisted to make them accessible via REST.\n\nTo run a whitelisted python method at frappe.auth.get_logged_user, send a request to the endpoint /api/method/frappe.auth.get_logged_user.\nGET /api/method/frappe.auth.get_logged_user\nResponse\n{ \"message\": \"[email protected]\" }\n- If your method returns some values, you should send a GET request.\n\n- If your method changes the state of the database, use POST. After a successful POST request, the framework will automatically call frappe.db.commit() to commit the changes to the database.\n\n- A successful response will return a JSON object with a message key.\n\n- An errored response will return a JSON object with exc key which contains the stack trace and exc_type which contains the thrown Exception.\n\n- The return value of the method will be converted to a JSON and sent as the response.\n\n## File Uploads\n\nThere is a dedicated method /api/method/upload_file that accepts binary file data and uploads it into the system.\n\nHere is the curl command for it:\n➜ curl -X POST \\ http://<base-url>/api/method/upload_file \\ -H 'Accept: application/json' \\ -H 'Authorization: token xxxx:yyyy' \\ -F file=@/path/to/file/file.png\nIf you are using client side Javascript to upload files, you can append the uploaded files as FormData and send an XHR request. Here is the implementation code in Frappe Desk.\n",
+          "evidence_id": "VIS-FSV-S04-01",
+          "locator": "extracted/frappe-rest-api.md:article",
+          "source_id": "frappe-rest-api.html",
+          "source_sha256": "87CB28850081B1F7D6702521E98E5F242498A456491EF26BDE847C20CCBFE154"
+        },
+        {
+          "content": {
+            "doctype": "Lead",
+            "fields": [
+              {
+                "fieldname": "naming_series",
+                "fieldtype": "Select",
+                "label": "Series",
+                "options": "CRM-LEAD-.YYYY.-"
+              },
+              {
+                "fieldname": "lead_name",
+                "fieldtype": "Data",
+                "label": "Full Name",
+                "read_only": 1
+              },
+              {
+                "fieldname": "company_name",
+                "fieldtype": "Data",
+                "label": "Organization Name"
+              },
+              {
+                "fieldname": "email_id",
+                "fieldtype": "Data",
+                "label": "Email",
+                "options": "Email"
+              },
+              {
+                "fieldname": "col_break123",
+                "fieldtype": "Column Break"
+              },
+              {
+                "default": "__user",
+                "fieldname": "lead_owner",
+                "fieldtype": "Link",
+                "label": "Lead Owner",
+                "options": "User"
+              },
+              {
+                "default": "Lead",
+                "fieldname": "status",
+                "fieldtype": "Select",
+                "label": "Status",
+                "options": "Lead\nOpen\nReplied\nOpportunity\nQuotation\nLost Quotation\nInterested\nConverted\nDo Not Contact",
+                "reqd": 1
+              },
+              {
+                "fieldname": "salutation",
+                "fieldtype": "Link",
+                "label": "Salutation",
+                "options": "Salutation"
+              },
+              {
+                "fieldname": "gender",
+                "fieldtype": "Link",
+                "label": "Gender",
+                "options": "Gender"
+              },
+              {
+                "fieldname": "customer",
+                "fieldtype": "Link",
+                "label": "From Customer",
+                "options": "Customer"
+              },
+              {
+                "fieldname": "image",
+                "fieldtype": "Attach Image",
+                "label": "Image"
+              },
+              {
+                "fieldname": "contact_info_tab",
+                "fieldtype": "Section Break",
+                "label": "Contact Info"
+              },
+              {
+                "fieldname": "address_html",
+                "fieldtype": "HTML",
+                "label": "Address HTML",
+                "read_only": 1
+              },
+              {
+                "fieldname": "column_break2",
+                "fieldtype": "Column Break"
+              },
+              {
+                "fieldname": "contact_html",
+                "fieldtype": "HTML",
+                "label": "Contact HTML",
+                "read_only": 1
+              },
+              {
+                "fieldname": "phone",
+                "fieldtype": "Data",
+                "label": "Phone",
+                "options": "Phone"
+              },
+              {
+                "fieldname": "mobile_no",
+                "fieldtype": "Data",
+                "label": "Mobile No",
+                "options": "Phone"
+              },
+              {
+                "fieldname": "fax",
+                "fieldtype": "Data",
+                "label": "Fax"
+              },
+              {
+                "fieldname": "type",
+                "fieldtype": "Select",
+                "label": "Lead Type",
+                "options": "\nClient\nChannel Partner\nConsultant"
+              },
+              {
+                "fieldname": "market_segment",
+                "fieldtype": "Link",
+                "label": "Market Segment",
+                "options": "Market Segment"
+              },
+              {
+                "fieldname": "industry",
+                "fieldtype": "Link",
+                "label": "Industry",
+                "options": "Industry Type"
+              },
+              {
+                "fieldname": "request_type",
+                "fieldtype": "Select",
+                "label": "Request Type",
+                "options": "\nProduct Enquiry\nRequest for Information\nSuggestions\nOther"
+              },
+              {
+                "fieldname": "company",
+                "fieldtype": "Link",
+                "label": "Company",
+                "options": "Company"
+              },
+              {
+                "fieldname": "website",
+                "fieldtype": "Data",
+                "label": "Website"
+              },
+              {
+                "fieldname": "territory",
+                "fieldtype": "Link",
+                "label": "Territory",
+                "options": "Territory"
+              },
+              {
+                "default": "0",
+                "fieldname": "unsubscribed",
+                "fieldtype": "Check",
+                "label": "Unsubscribed"
+              },
+              {
+                "default": "0",
+                "fieldname": "blog_subscriber",
+                "fieldtype": "Check",
+                "label": "Blog Subscriber"
+              },
+              {
+                "fieldname": "title",
+                "fieldtype": "Data",
+                "label": "Title",
+                "read_only": 1
+              },
+              {
+                "fieldname": "language",
+                "fieldtype": "Link",
+                "label": "Print Language",
+                "options": "Language"
+              },
+              {
+                "fieldname": "first_name",
+                "fieldtype": "Data",
+                "label": "First Name"
+              },
+              {
+                "fieldname": "middle_name",
+                "fieldtype": "Data",
+                "label": "Middle Name"
+              },
+              {
+                "fieldname": "last_name",
+                "fieldtype": "Data",
+                "label": "Last Name"
+              },
+              {
+                "fieldname": "no_of_employees",
+                "fieldtype": "Select",
+                "label": "No of Employees",
+                "options": "1-10\n11-50\n51-200\n201-500\n501-1000\n1000+"
+              },
+              {
+                "fieldname": "column_break_22",
+                "fieldtype": "Column Break"
+              },
+              {
+                "fieldname": "whatsapp_no",
+                "fieldtype": "Data",
+                "label": "WhatsApp",
+                "options": "Phone"
+              },
+              {
+                "fieldname": "column_break_50",
+                "fieldtype": "Column Break"
+              },
+              {
+                "fieldname": "column_break_16",
+                "fieldtype": "Column Break"
+              },
+              {
+                "fieldname": "phone_ext",
+                "fieldtype": "Data",
+                "label": "Phone Ext."
+              },
+              {
+                "fieldname": "qualification_tab",
+                "fieldtype": "Section Break",
+                "label": "Qualification"
+              },
+              {
+                "fieldname": "notes_tab",
+                "fieldtype": "Tab Break",
+                "label": "Notes"
+              },
+              {
+                "fieldname": "other_info_tab",
+                "fieldtype": "Section Break",
+                "label": "Additional Information"
+              },
+              {
+                "fieldname": "column_break_1",
+                "fieldtype": "Column Break"
+              },
+              {
+                "fieldname": "qualified_by",
+                "fieldtype": "Link",
+                "label": "Qualified By",
+                "options": "User"
+              },
+              {
+                "fieldname": "qualified_on",
+                "fieldtype": "Date",
+                "label": "Qualified on"
+              },
+              {
+                "fieldname": "qualification_status",
+                "fieldtype": "Select",
+                "label": "Qualification Status",
+                "options": "Unqualified\nIn Process\nQualified"
+              },
+              {
+                "fieldname": "address_section",
+                "fieldtype": "Section Break",
+                "label": "Address & Contacts"
+              },
+              {
+                "fieldname": "column_break_64",
+                "fieldtype": "Column Break"
+              },
+              {
+                "fieldname": "column_break_20",
+                "fieldtype": "Column Break"
+              },
+              {
+                "fieldname": "job_title",
+                "fieldtype": "Data",
+                "label": "Job Title"
+              },
+              {
+                "fieldname": "annual_revenue",
+                "fieldtype": "Currency",
+                "label": "Annual Revenue"
+              },
+              {
+                "fieldname": "activities_tab",
+                "fieldtype": "Tab Break",
+                "label": "Activities"
+              },
+              {
+                "fieldname": "organization_section",
+                "fieldtype": "Section Break",
+                "label": "Organization"
+              },
+              {
+                "fieldname": "column_break_28",
+                "fieldtype": "Column Break"
+              },
+              {
+                "fieldname": "column_break_31",
+                "fieldtype": "Column Break"
+              },
+              {
+                "fieldname": "notes_html",
+                "fieldtype": "HTML",
+                "label": "Notes HTML"
+              },
+              {
+                "fieldname": "open_activities_html",
+                "fieldtype": "HTML",
+                "label": "Open Activities HTML"
+              },
+              {
+                "fieldname": "all_activities_section",
+                "fieldtype": "Section Break",
+                "label": "All Activities"
+              },
+              {
+                "fieldname": "all_activities_html",
+                "fieldtype": "HTML",
+                "label": "All Activities HTML"
+              },
+              {
+                "fieldname": "notes",
+                "fieldtype": "Table",
+                "label": "Notes",
+                "options": "CRM Note"
+              },
+              {
+                "default": "0",
+                "fieldname": "disabled",
+                "fieldtype": "Check",
+                "label": "Disabled"
+              },
+              {
+                "fieldname": "column_break_38",
+                "fieldtype": "Column Break"
+              },
+              {
+                "fieldname": "city",
+                "fieldtype": "Data",
+                "label": "City"
+              },
+              {
+                "fieldname": "state",
+                "fieldtype": "Data",
+                "label": "State/Province"
+              },
+              {
+                "fieldname": "country",
+                "fieldtype": "Link",
+                "label": "Country",
+                "options": "Country"
+              },
+              {
+                "fieldname": "dashboard_tab",
+                "fieldtype": "Tab Break",
+                "label": "Connections"
+              },
+              {
+                "fieldname": "column_break_gkxo",
+                "fieldtype": "Column Break"
+              },
+              {
+                "fieldname": "column_break_gqka",
+                "fieldtype": "Column Break"
+              },
+              {
+                "fieldname": "utm_content",
+                "fieldtype": "Data",
+                "label": "Content"
+              },
+              {
+                "fieldname": "utm_source",
+                "fieldtype": "Link",
+                "label": "Source",
+                "options": "UTM Source"
+              },
+              {
+                "fieldname": "utm_medium",
+                "fieldtype": "Link",
+                "label": "Medium",
+                "options": "UTM Medium"
+              },
+              {
+                "fieldname": "utm_campaign",
+                "fieldtype": "Link",
+                "label": "Campaign",
+                "options": "UTM Campaign"
+              },
+              {
+                "fieldname": "section_break_analytics",
+                "fieldtype": "Section Break",
+                "label": "Analytics"
+              }
+            ]
+          },
+          "evidence_id": "VIS-FSV-S04-02",
+          "locator": "erpnext-lead-doctype.json:complete-field-catalog",
+          "source_id": "erpnext-lead-doctype.json",
+          "source_sha256": "D381706B9196BA6FDF43945415288FD56BB671DA722B0EF4D17BD9B65CFBAF0B"
+        },
+        {
+          "content": {
+            "available_values": [
+              {
+                "authority": "client",
+                "path": "/request/body",
+                "type": "object"
+              },
+              {
+                "authority": "client",
+                "path": "/request/body/email_id",
+                "type": "string"
+              }
+            ],
+            "target_operation": "POST /api/resource/Lead",
+            "notice": "This declares available adapter paths and types only; it supplies no expected decision or hidden test value."
+          },
+          "evidence_id": "VIS-FSV-S04-RUNTIME-ABI",
+          "locator": "tasks.FSV-S04",
+          "source_id": "EC-V2-RUNTIME-INTERFACE-CATALOG-V1",
+          "source_sha256": "8221DA8A6720B0593A8D337F18569C9947AAB05B02E5C84FB0C50E3DE8C1ABD7"
+        }
+      ],
+      "binding_rows": [
+        {
+          "rule_pointer": "/rules/0",
+          "rule": {
+            "evidence_refs": [
+              "VIS-FSV-S04-02",
+              "VIS-FSV-S04-RUNTIME-ABI"
+            ],
+            "op": "named_validator",
+            "params": {
+              "on_missing": "skip",
+              "path": "/request/body/email_id",
+              "validator_id": "email_basic_v1"
+            },
+            "primitive_id": "SP-STRUCTURED-FORMAT",
+            "rule_id": "RULE-LEAD-EMAIL-FMT"
+          },
+          "registered_evidence": [
+            {
+              "binding_facts": {
+                "visible_context_required_by_validator": true,
+                "visible_format_identity": "email"
+              },
+              "bound_paths": [
+                "/request/body",
+                "/request/body/email_id"
+              ],
+              "evidence_id": "VIS-FSV-S04-02",
+              "locator": "erpnext-lead-doctype.json:complete-field-catalog",
+              "operations": [
+                "POST /api/resource/Lead"
+              ],
+              "relation": "supports",
+              "sha256": "D381706B9196BA6FDF43945415288FD56BB671DA722B0EF4D17BD9B65CFBAF0B",
+              "source_kind": "developer_manual",
+              "supports_primitives": [
+                "SP-STRUCTURED-FORMAT"
+              ],
+              "system": "ERPNext",
+              "versions": [
+                "16.0.0"
+              ],
+              "visibility": "visible"
+            },
+            {
+              "binding_facts": {
+                "trusted_runtime_context_mapping": true,
+                "visible_field_mapping": true,
+                "visible_runtime_interface": true
+              },
+              "bound_paths": [
+                "/request/body",
+                "/request/body/email_id"
+              ],
+              "evidence_id": "VIS-FSV-S04-RUNTIME-ABI",
+              "locator": "tasks.FSV-S04",
+              "operations": [
+                "POST /api/resource/Lead"
+              ],
+              "relation": "supports",
+              "sha256": "8221DA8A6720B0593A8D337F18569C9947AAB05B02E5C84FB0C50E3DE8C1ABD7",
+              "source_kind": "runtime_context_contract",
+              "supports_primitives": [
+                "SP-STRUCTURED-FORMAT"
+              ],
+              "system": "ERPNext",
+              "versions": [
+                "16.0.0"
+              ],
+              "visibility": "visible"
+            }
+          ],
+          "referenced_runtime_paths": [
+            "/request/body/email_id"
+          ],
+          "registered_bound_paths": [
+            "/request/body",
+            "/request/body/email_id"
+          ],
+          "interpretation": "Inventory declaration consistency only; does not prove source meaning or runtime provenance"
+        }
+      ],
+      "archive_admission": "ADMITTED",
+      "archived_legal_decision": "allow",
+      "archived_violation_decision": "deny",
+      "evidence_files": [
+        {
+          "path": "D:\\lunwen\\EC-CSI投稿\\working\\exploration\\20261014_external_baseline_pilot\\generation_inputs\\FSV-S04\\packet.json",
+          "sha256": "d37c94ec03d4901259ee058bd728fd0bc7736a3033a7b3347881626233bf5d49"
+        },
+        {
+          "path": "D:\\lunwen\\EC-CSI投稿\\working\\exploration\\20261014_external_baseline_pilot\\execution_inputs\\FSV-S04\\contract.json",
+          "sha256": "e59e4c9b5f1fc9dd4442d9f6d08f3b0c974390d4c601672bf615dc7d53932c14"
+        },
+        {
+          "path": "D:\\lunwen\\EC-CSI投稿\\working\\exploration\\20261014_external_baseline_pilot\\effect_runs\\FSV-S04\\ECAS_MATCHED\\candidate.json",
+          "sha256": "61100a221ee3fd6dca2ea31994cae0f377dbcf98e49c1c9963470917476dcf8d"
+        },
+        {
+          "path": "D:\\lunwen\\EC-CSI投稿\\working\\exploration\\20261014_external_baseline_pilot\\effect_runs\\FSV-S04\\ECAS_MATCHED\\admitted_policy.json",
+          "sha256": "386657b8b2358f38e051ed454d57934c70b27d6c37b2bd966959f16966271746"
+        },
+        {
+          "path": "D:\\lunwen\\EC-CSI投稿\\working\\exploration\\20261014_external_baseline_pilot\\effect_runs\\FSV-S04\\ECAS_MATCHED\\RESULT.json",
+          "sha256": "953f35a201462a86cf6546bd35ed77261797ef3f5e06da0c2479f5f0de2b3fa6"
+        }
+      ],
+      "raw_to_candidate_semantic_audit": {
+        "path": "D:\\lunwen\\EC-CSI投稿\\working\\exploration\\20261015_semantic_comparison\\OLD_THREE_SEMANTIC_AUDIT.json",
+        "sha256": "b5064b348d70e7193202cb2a5fb3e57e636345156e9b00436b41375f877d08be"
+      }
+    },
+    {
+      "case": "FSV-S03",
+      "project": "Apache Fineract",
+      "batch": "B",
+      "target": {
+        "operation": "POST /v1/clients/{clientId}/familymembers",
+        "system": "Fineract",
+        "version": "1.14.0"
+      },
+      "source_condition_cn": "OpenAPI age为integer，未要求必填",
+      "ir_condition_cn": "strict_type(integer)，on_missing=skip",
+      "scope_status_cn": "支持指定类型子约束的来源到IR及离线执行链",
+      "visible_sources": [
+        {
+          "content": {
+            "description": null,
+            "method": "POST",
+            "parameters": [
+              {
+                "required": true,
+                "schema": {
+                  "format": "int64",
+                  "type": "integer"
+                }
+              }
+            ],
+            "path": "/v1/clients/{clientId}/familymembers",
+            "requestBody": {
+              "content": {
+                "application/json": {
+                  "schema": {
+                    "properties": {
+                      "age": {
+                        "format": "int64",
+                        "type": "integer"
+                      },
+                      "clientId": {
+                        "format": "int64",
+                        "type": "integer"
+                      },
+                      "dateFormat": {
+                        "type": "string"
+                      },
+                      "dateOfBirth": {
+                        "type": "string"
+                      },
+                      "familyMembers": {
+                        "type": "string"
+                      },
+                      "firstName": {
+                        "type": "string"
+                      },
+                      "genderId": {
+                        "format": "int64",
+                        "type": "integer"
+                      },
+                      "id": {
+                        "format": "int64",
+                        "type": "integer"
+                      },
+                      "isDependent": {
+                        "type": "boolean"
+                      },
+                      "lastName": {
+                        "type": "string"
+                      },
+                      "locale": {
+                        "type": "string"
+                      },
+                      "maritalStatusId": {
+                        "format": "int64",
+                        "type": "integer"
+                      },
+                      "middleName": {
+                        "type": "string"
+                      },
+                      "mobileNumber": {
+                        "type": "string"
+                      },
+                      "professionId": {
+                        "format": "int64",
+                        "type": "integer"
+                      },
+                      "qualification": {
+                        "type": "string"
+                      },
+                      "relationshipId": {
+                        "format": "int64",
+                        "type": "integer"
+                      }
+                    },
+                    "type": "object"
+                  }
+                }
+              }
+            },
+            "summary": null
+          },
+          "evidence_id": "VIS-FSV-S03-01",
+          "locator": "paths./v1/clients/{clientId}/familymembers.post",
+          "source_id": "fineract-openapi-1.14.0.json",
+          "source_sha256": "A44D6FA247D495A4FB147CC8C5EA1A364D8F05A40762B31A055681373E455A48"
+        },
+        {
+          "content": {
+            "available_values": [
+              {
+                "authority": "client",
+                "path": "/request/body",
+                "type": "object"
+              },
+              {
+                "authority": "client",
+                "path": "/request/body/age",
+                "type": "integer"
+              }
+            ],
+            "target_operation": "POST /v1/clients/{clientId}/familymembers",
+            "notice": "This declares available adapter paths and types only; it supplies no expected decision or hidden test value."
+          },
+          "evidence_id": "VIS-FSV-S03-RUNTIME-ABI",
+          "locator": "tasks.FSV-S03",
+          "source_id": "EC-V2-RUNTIME-INTERFACE-CATALOG-V1",
+          "source_sha256": "8221DA8A6720B0593A8D337F18569C9947AAB05B02E5C84FB0C50E3DE8C1ABD7"
+        }
+      ],
+      "binding_rows": [
+        {
+          "rule_pointer": "/rules/0",
+          "rule": {
+            "rule_id": "RULE-AGE-INTEGER",
+            "primitive_id": "SP-STRICT-TYPE",
+            "op": "strict_type",
+            "evidence_refs": [
+              "VIS-FSV-S03-01",
+              "VIS-FSV-S03-RUNTIME-ABI"
+            ],
+            "params": {
+              "path": "/request/body/age",
+              "expected_type": "integer",
+              "on_missing": "skip"
+            }
+          },
+          "registered_evidence": [
+            {
+              "binding_facts": {
+                "visible_request_schema_or_parameter_list": true,
+                "visible_type_declaration": true
+              },
+              "bound_paths": [
+                "/request/body",
+                "/request/body/age"
+              ],
+              "evidence_id": "VIS-FSV-S03-01",
+              "locator": "paths./v1/clients/{clientId}/familymembers.post",
+              "operations": [
+                "POST /v1/clients/{clientId}/familymembers"
+              ],
+              "relation": "supports",
+              "sha256": "A44D6FA247D495A4FB147CC8C5EA1A364D8F05A40762B31A055681373E455A48",
+              "source_kind": "api_documentation",
+              "supports_primitives": [
+                "SP-OBJECT-PROPERTY-ALLOWLIST",
+                "SP-STRICT-TYPE"
+              ],
+              "system": "Fineract",
+              "versions": [
+                "1.14.0"
+              ],
+              "visibility": "visible"
+            },
+            {
+              "binding_facts": {
+                "trusted_runtime_context_mapping": true,
+                "visible_field_mapping": true,
+                "visible_runtime_interface": true
+              },
+              "bound_paths": [
+                "/request/body",
+                "/request/body/age"
+              ],
+              "evidence_id": "VIS-FSV-S03-RUNTIME-ABI",
+              "locator": "tasks.FSV-S03",
+              "operations": [
+                "POST /v1/clients/{clientId}/familymembers"
+              ],
+              "relation": "supports",
+              "sha256": "8221DA8A6720B0593A8D337F18569C9947AAB05B02E5C84FB0C50E3DE8C1ABD7",
+              "source_kind": "runtime_context_contract",
+              "supports_primitives": [
+                "SP-OBJECT-PROPERTY-ALLOWLIST",
+                "SP-STRICT-TYPE"
+              ],
+              "system": "Fineract",
+              "versions": [
+                "1.14.0"
+              ],
+              "visibility": "visible"
+            }
+          ],
+          "referenced_runtime_paths": [
+            "/request/body/age"
+          ],
+          "registered_bound_paths": [
+            "/request/body",
+            "/request/body/age"
+          ],
+          "interpretation": "Inventory declaration consistency only; does not prove source meaning or runtime provenance"
+        }
+      ],
+      "archive_admission": "ADMITTED",
+      "archived_legal_decision": "allow",
+      "archived_violation_decision": "deny",
+      "evidence_files": [
+        {
+          "path": "D:\\lunwen\\EC-CSI投稿\\working\\exploration\\20261014_matched_evidence_labor\\matched_generation\\generation_inputs\\FSV-S03\\packet.json",
+          "sha256": "acddb441ffde6b492d77d8964ce22ba69bf037eb164daa9f8674ca1e4a8f596a"
+        },
+        {
+          "path": "D:\\lunwen\\EC-CSI投稿\\working\\exploration\\20261014_matched_evidence_labor\\matched_generation\\execution_inputs\\FSV-S03\\contract.json",
+          "sha256": "21d2d1611b1cde80efd859d93220ed39e3852a70a3e2115a0411d8b131e76da3"
+        },
+        {
+          "path": "D:\\lunwen\\EC-CSI投稿\\working\\exploration\\20261014_matched_evidence_labor\\matched_generation\\method_runs\\FSV-S03\\ECAS_MATCHED\\first_candidate.json",
+          "sha256": "12ea58385028e162ad95d0661f77b6468c329462dd3900b963f82b5117ab4890"
+        },
+        {
+          "path": "D:\\lunwen\\EC-CSI投稿\\working\\exploration\\20261014_matched_evidence_labor\\matched_generation\\method_runs\\FSV-S03\\ECAS_MATCHED\\initial\\admitted_policy.json",
+          "sha256": "5f370d900883fad34ac8eb547f3f0c18fcb4034f387204f52afeba654320f57f"
+        },
+        {
+          "path": "D:\\lunwen\\EC-CSI投稿\\working\\exploration\\20261014_matched_evidence_labor\\matched_generation\\method_runs\\FSV-S03\\ECAS_MATCHED\\RESULT.json",
+          "sha256": "29bbc1502b3919ddc92e2517729efe173a04df7bf4adc79b92ea86f977cb6957"
+        }
+      ],
+      "raw_to_candidate_semantic_audit": {
+        "path": "D:\\lunwen\\EC-CSI投稿\\working\\exploration\\20261015_semantic_comparison\\NEW_FOUR_SEMANTIC_AUDIT.json",
+        "sha256": "91eee9bdb3a9dacb75d056c44f131bd135d5706958bc458962bd1107f2f1b5b3"
+      }
+    },
+    {
+      "case": "FSV-B13",
+      "project": "ERPNext",
+      "batch": "B",
+      "target": {
+        "operation": "POST /api/resource/Purchase Receipt",
+        "system": "ERPNext",
+        "version": "16.0.0"
+      },
+      "source_condition_cn": "数量容差上限及授权角色例外",
+      "ir_condition_cn": "bounded_guard_dnf：qty≤max，或超限且authorizedRole",
+      "scope_status_cn": "支持指定数量子约束；上限计算、角色认证与真实状态获取由公共ABI提供，未单独验证",
+      "visible_sources": [
+        {
+          "content": "You can set default settings for your stock-related transactions from the Stock Settings page...\n\n### Item Naming By\n\nBy default, the Item Name is set as per the Item Code entered. If you want Items to be named by a set Naming Series, choose the 'Naming Series' option.\n\n## Defaults\n\n### Default Item Group\n\nThis will be the default item group allocated to a newly created item. Item groups are useful for classification and setting properties for the whole group. To know more visit the Item Group page.\n\n### Default Stock UOM\n\nThe default unit of measure for stock is set as numbers (Nos), it can be changed from here.\n\n### Default Warehouse\n\nSet the default Warehouse from which the stock transactions are done. This will be fetched into the Default Warehouse in the Item master:\n\n### Sample Retention Warehouse\n\nThis is the Warehouse where sample retentions are stored. To know more, visit this page.\n\n### Default Valuation method\n\nYou can choose between FIFO (first in first out), LIFO (last in first out) or moving average valuation for your items. The default method is FIFO. If you select Moving Average or LIFO, new Items will be valuated on new method. You can change this when creating new Items in the Item form. Once the Item is saved, the Valuation Method cannot be changed. Read more here.\n\n### Limit Percent\n\nThis is the percentage you are allowed to receive or deliver more against the quantity ordered. For example: If you have ordered 100 units, Supplier sends 120 units and the percentage is set to 10% then you are allowed to receive 110 units. By default, this is set to 0.\n\n### Role Allowed to Over Deliver/Receive\n\nUsers with this role are allowed to over deliver/receive against orders above the allowance percentage\n\n### Show Barcode Field\n\nA field to enter Barcode details for an item. If unticked, the field won't be visible in the Item form.\n\n### Convert Item Description to Clean HTML\n\nUsually, descriptions are copy-pasted from a website or Word/PDF file and they contain a lot of embedded styles. This messes up the Print view of your invoices or quotes.\n\nTo fix this, you can check \"Convert Item Description to Clean HTML\" in Stock Settings. This will ensure that when you save the Items, their descriptions will be cleaned up.\n\nIf you want to control your description, views, and allow any HTML to be embedded, you can uncheck this property.\n\n### Auto insert\n\n### Auto insert Price List rate if missing\n\nEnabling this will insert an Item Price to the Price List of an Item automatically when using the Item in its first transaction. This price is fetched from the 'Rate' set in the first transaction with the Item. The Price List depends on whether you're using a Purchase or Sales transaction.\n\nNote that, the Item Price will be automatically inserted only in the first transaction if not already present.\n\nIf this is unticked, the 'Standard Selling Rate' set in the Item when creating the Item will be added as Item Price.\n\n### Automatically Set Serial Nos based on FIFO\n\nSerial numbers for stock will be set automatically based on the Items entered based on first in first out. The Serial Numbers will be set automatically in transactions like Purchase/Sales Invoices, Delivery Notes, etc.\n\n## Allow Negative Stock\n\nThis will allow stock items to be displayed in negative values. Using this option depends on your use case. For example, the stock transaction entries are entered at the weekend or month-end. In this case, negative stock needs to be enabled so that you can continue with your purchase/sales transaction entries.\n\nInstead of enabling negative stock globally you can also enable it for specific items.\n\nAllow Negative Stock has removed for Serial / Batch Items from version 15. So from version 15, users won't be able to make negative stock transactions for serial /batch items even though Allow Negative Stock has enabled in the Stock Settings.\n\n## Set Qty in Transactions based on Serial No Input\n\nThe quantity of items will be set according to the serial numbers. For example, if the user has added serial nos like A001, A002, and A003 then the system will set the quantity as 3 in the transaction.\n\n## Automatic Material Request\n\n### Raise Material Request when the stock reaches re-order level\n\nThis option is useful if you want to ensure a constant supply of raw materials/products and avoid shortage. A Material Request will be raised automatically when stock reached the re-order level defined in the Item form.\n\n### Notify by Email on the creation of automatic Material Request\n\nAn email will be sent to notify the User with the role 'Purchase Manager' when an automatic Material Request is created.\n\n## Inter Warehouse Transfer Settings\n\n### Enable customer warehouse for material transfer from Delivery Note and Sales Invoice\n\nThis option is useful when material transfer needs to be presented as a Delivery Note. For example, if there are statutory requirements where taxes are to be applied on each transfer of Material. It is easier to manage in a transaction like Delivery Note, than in the Stock Entry\n\n### Enable supplier warehouse for material transfer from Purchase Receipt and Purchase Invoice\n\nSimilar to above option this option is useful when material transfer needs to be presented as Purchase Receipt.\n\nTo know more about inter warehouse material transfer via Delivery Note and Purchase Invoice please refer this article Material Transfer From Delivery Note\n\n## Freeze Stock Entries\n\nThe User will not be allowed to make stock postings beyond this date.\n\n- Stock Frozen Upto: A threshold date till which stocks will be frozen.\n\n- Freeze Stocks Older Than [Days]: Stocks older than x days will be frozen. This is calculated based on the creation date of the item.\n\n- Role Allowed to edit frozen stock: The role you choose here will be allowed to edit frozen stock.\n\n### Batch identification\n\nGlobal setting for batches of stocks to be identified by a Naming Series. You can override this in the Item DocType.\n\n## Allow to Edit Stock Quantity\n\nEnable \"Allow to Edit Stock UOM Qty for Sales Documents / Allow to Edit Stock UOM Qty for Purchase Documents\" in the stock settings.\n\n## Allow to Edit Qty as per Stock UOM in Stock Entry\n\n### Why to Edit Stock Qty / Qty as Per Stock UOM\n\nIf you're using multi-uom and your stock uom is a whole number, then you might face the issue that the Stock UOM should be non-decimal. Users experience this problem when they are unable to set an accurate conversion factor..\n\nSolution\n\nUser will set the Stock Quantity and system will calculate the conversion factor\n\n### Allow UOM with Conversion Rate Defined in Item\n\nIf enabled, the system will allow selecting UOMs in sales and purchase transactions only if the conversion rate is set in the item master.\n",
+          "evidence_id": "VIS-FSV-B13-01",
+          "locator": "extracted/erpnext-stock-settings.md:article",
+          "source_id": "erpnext-stock-settings.html",
+          "source_sha256": "F866B7A7F90AEFCB06DA623C3F9EF25F5524D4261887FC80FFDE3AAA76A530EA"
+        },
+        {
+          "content": {
+            "available_values": [
+              {
+                "authority": "client",
+                "path": "/request/body/qty",
+                "type": "number"
+              },
+              {
+                "authority": "server_derived",
+                "path": "/trusted/derivedMaximumQty",
+                "type": "number"
+              },
+              {
+                "authority": "server_identity",
+                "path": "/trusted/authorizedRole",
+                "type": "boolean"
+              }
+            ],
+            "target_operation": "POST /api/resource/Purchase Receipt",
+            "notice": "This declares available adapter paths and types only; it supplies no expected decision or hidden test value."
+          },
+          "evidence_id": "VIS-FSV-B13-RUNTIME-ABI",
+          "locator": "tasks.FSV-B13",
+          "source_id": "EC-V2-RUNTIME-INTERFACE-CATALOG-V1",
+          "source_sha256": "8221DA8A6720B0593A8D337F18569C9947AAB05B02E5C84FB0C50E3DE8C1ABD7"
+        }
+      ],
+      "binding_rows": [
+        {
+          "rule_pointer": "/rules/0",
+          "rule": {
+            "rule_id": "FSV-B13.PurchaseReceipt.QuantityAllowance.Rule",
+            "primitive_id": "SP-BOUNDED-BUSINESS-GUARD",
+            "op": "bounded_guard_dnf",
+            "evidence_refs": [
+              "VIS-FSV-B13-01",
+              "VIS-FSV-B13-RUNTIME-ABI"
+            ],
+            "params": {
+              "on_missing": "deny",
+              "alternatives": [
+                {
+                  "clauses": [
+                    {
+                      "kind": "scalar_compare",
+                      "left_path": "/request/body/qty",
+                      "operator": "lte",
+                      "right_source": "path",
+                      "right_path": "/trusted/derivedMaximumQty",
+                      "right_value": null
+                    }
+                  ]
+                },
+                {
+                  "clauses": [
+                    {
+                      "kind": "scalar_compare",
+                      "left_path": "/request/body/qty",
+                      "operator": "gt",
+                      "right_source": "path",
+                      "right_path": "/trusted/derivedMaximumQty",
+                      "right_value": null
+                    },
+                    {
+                      "kind": "scalar_compare",
+                      "left_path": "/trusted/authorizedRole",
+                      "operator": "eq",
+                      "right_source": "literal",
+                      "right_path": "",
+                      "right_value": true
+                    }
+                  ]
+                }
+              ]
+            }
+          },
+          "registered_evidence": [
+            {
+              "binding_facts": {
+                "visible_plain_language_invariant": true
+              },
+              "bound_paths": [
+                "/request/body/qty",
+                "/trusted/derivedMaximumQty",
+                "/trusted/authorizedRole"
+              ],
+              "evidence_id": "VIS-FSV-B13-01",
+              "locator": "extracted/erpnext-stock-settings.md:article",
+              "operations": [
+                "POST /api/resource/Purchase Receipt"
+              ],
+              "relation": "supports",
+              "sha256": "F866B7A7F90AEFCB06DA623C3F9EF25F5524D4261887FC80FFDE3AAA76A530EA",
+              "source_kind": "business_requirement",
+              "supports_primitives": [
+                "SP-BOUNDED-BUSINESS-GUARD"
+              ],
+              "system": "ERPNext",
+              "versions": [
+                "16.0.0"
+              ],
+              "visibility": "visible"
+            },
+            {
+              "binding_facts": {
+                "trusted_runtime_context_mapping": true,
+                "visible_field_mapping": true,
+                "visible_runtime_interface": true
+              },
+              "bound_paths": [
+                "/request/body/qty",
+                "/trusted/derivedMaximumQty",
+                "/trusted/authorizedRole"
+              ],
+              "evidence_id": "VIS-FSV-B13-RUNTIME-ABI",
+              "locator": "tasks.FSV-B13",
+              "operations": [
+                "POST /api/resource/Purchase Receipt"
+              ],
+              "relation": "supports",
+              "sha256": "8221DA8A6720B0593A8D337F18569C9947AAB05B02E5C84FB0C50E3DE8C1ABD7",
+              "source_kind": "runtime_context_contract",
+              "supports_primitives": [
+                "SP-BOUNDED-BUSINESS-GUARD"
+              ],
+              "system": "ERPNext",
+              "versions": [
+                "16.0.0"
+              ],
+              "visibility": "visible"
+            }
+          ],
+          "referenced_runtime_paths": [
+            "/request/body/qty",
+            "/trusted/authorizedRole",
+            "/trusted/derivedMaximumQty"
+          ],
+          "registered_bound_paths": [
+            "/request/body/qty",
+            "/trusted/authorizedRole",
+            "/trusted/derivedMaximumQty"
+          ],
+          "interpretation": "Inventory declaration consistency only; does not prove source meaning or runtime provenance"
+        }
+      ],
+      "archive_admission": "ADMITTED",
+      "archived_legal_decision": "allow",
+      "archived_violation_decision": "deny",
+      "evidence_files": [
+        {
+          "path": "D:\\lunwen\\EC-CSI投稿\\working\\exploration\\20261014_matched_evidence_labor\\matched_generation\\generation_inputs\\FSV-B13\\packet.json",
+          "sha256": "0b07fe5eb4c156c96759cb0ff7e45d58523efd87549f88932ef029003a4ecb9b"
+        },
+        {
+          "path": "D:\\lunwen\\EC-CSI投稿\\working\\exploration\\20261014_matched_evidence_labor\\matched_generation\\execution_inputs\\FSV-B13\\contract.json",
+          "sha256": "32e35f1485dc02131938191da1ef90600de1c272bd4ffa7f3f00aa3428982a84"
+        },
+        {
+          "path": "D:\\lunwen\\EC-CSI投稿\\working\\exploration\\20261014_matched_evidence_labor\\matched_generation\\method_runs\\FSV-B13\\ECAS_MATCHED\\first_candidate.json",
+          "sha256": "6632f38661f5c043e7742cc0a658260c191b08dd4ae53d5730d6caf8d10a5c3d"
+        },
+        {
+          "path": "D:\\lunwen\\EC-CSI投稿\\working\\exploration\\20261014_matched_evidence_labor\\matched_generation\\method_runs\\FSV-B13\\ECAS_MATCHED\\initial\\admitted_policy.json",
+          "sha256": "2c0c40bddf86afebb6ec9a483e9df0bfff922f7b116d3e180846cfe7232fbb00"
+        },
+        {
+          "path": "D:\\lunwen\\EC-CSI投稿\\working\\exploration\\20261014_matched_evidence_labor\\matched_generation\\method_runs\\FSV-B13\\ECAS_MATCHED\\RESULT.json",
+          "sha256": "b5f736c8180cc3a16611ffbe471cfde9588d27c1af8fad54a2a083eff489f744"
+        }
+      ],
+      "raw_to_candidate_semantic_audit": {
+        "path": "D:\\lunwen\\EC-CSI投稿\\working\\exploration\\20261015_semantic_comparison\\NEW_FOUR_SEMANTIC_AUDIT.json",
+        "sha256": "91eee9bdb3a9dacb75d056c44f131bd135d5706958bc458962bd1107f2f1b5b3"
+      }
+    },
+    {
+      "case": "FSV-B17",
+      "project": "ERPNext",
+      "batch": "B",
+      "target": {
+        "operation": "POST /api/resource/Sales Order",
+        "system": "ERPNext",
+        "version": "16.0.0"
+      },
+      "source_condition_cn": "Disabled客户不得创建Sales Order",
+      "ir_condition_cn": "bounded_guard_dnf：customerDisabled=false",
+      "scope_status_cn": "支持已知布尔状态下的方向映射；状态认证及生产转发未验证",
+      "visible_sources": [
+        {
+          "content": "A customer, who is sometimes known as a client, buyer, or purchaser is the one who receives goods, services, products, or ideas, from a seller for a monetary consideration.\n\nEvery customer needs to be assigned a unique id. Customer name itself can be the id or you can set a naming series for ids to be generated in Selling Settings.\n\nTo access the Customer list, go to:\n\nHome > Selling > Customers\n\n### 1. How to create a Customer\n\n- Go to the Customer list and click on New.\n\n- Enter Full Name of the customer.\n\n- Select Individual if the customer represents an individual or Company if the customer represents a company in Type field.\n\n- Select a Customer Group. Individual, Commercial, Non Profit and Government are available by default. You can create additional groups if you need.\n\n- Select the Territory.\n\n- If the customer is being created against a lead, you can select the same in From Lead field.\n\n- Save.\n\nYou can disallow sales orders and sales invoices against a customer by clicking on 'Disabled'.\n\nAdvanced Tip: If the customer represents one of your own companies then check 'Is Internal Customer'. Check Inter Company Invoices for more details.\n\nYou can also upload customer details via the Data Import Tool.\n\n### 2.Features\n\nGeneral flow of transactions for a customer is as following:\n\nNote: Customers are separate from Contacts and Addresses. A Customer can have multiple Contacts and Addresses.\n\n### 2.1 Multiple Contacts and Addresses\n\nContacts and Addresses are stored separately so that you can attach multiple Contacts or Addresses to the customer.\n\n### 2.2 Allow creation of Sales Invoice without Sales Order and Delivery Note\n\nIf the \"Delivery Note Required\" or \"Sales Order Required\" option is configured as \"Yes\" in Selling Settings, it can be overridden for a particular customer by enabling the \"Allow Sales Invoice Creation Without Sales Order\" or \"Allow Sales Invoice Creation Without Delivery Note\" in the Customer Master.\n\n### 2.3 Set Tax Withholding Category\n\nYou can set the Tax Withholding Category to set up TCS against eligible customers. For more information, visit the Tax Withholding Category page.\n\n### 2.4 Default Currency and Price List\n\nERPNext supports Multiple Currencies and Price Lists.\n\nYou can set the default currency to be used for this customer in sales orders and sales invoices by selecting the appropriate currency in Billing Currency.\n\nSimilarly, you can set the default price list to be used for this customer in sales orders and sales invoices by selecting the appropriate currency in Default Price List.\n\n### 2.5 Integration with Accounts\n\nUnlike many accounting software, you need not create a separate accounting ledger for each customer. By default a unified ledger named Debtors is created.\n\nHowever if you specifically need a separate ledger for a customer, first create the ledger under Accounts Receivable in the Chart of Accounts and then add it in ACCOUNTING section of the customer.\n\nAdvanced Tip: ERPNext supports Multi-company Accounting. You can use the same customer records in multiple companies. Since an accounting ledger is company specific, you need to select the company and the corresponding ledger in ACCOUNTING section if you decide have separate accounting ledger for a customer.\n\n### 2.6 Credit Limit and Payment Terms\n\nYou can set the credit limit by entering the amount in 'Credit Limit' field. Read Credit Limit for more details.\n\nYou can select the default Payment Terms to be applied in sales orders and sales invoices in 'Default Payment Terms Template' field.\n\n### 2.7 Sales Team and Sales Partner\n\nIf you have one or more Sales Person to manage the sales to the customer, you can add them in SALES TEAM section. If multiple sales person are involved you can split the contribution among them. Make sure that the sum of all sales persons contribution equals to 100%.\n\nCheck Sales Persons in Sales Transaction for more details.\n\nA Sales Partner is a third party distributor / dealer / commission agent / affiliate / reseller who facilitates your products/services sales, for a commission. If you sell your products/services to the customer through a sales partner you can set it in 'Sales Partner' field and mention the 'Commission Rate' for calculation of commission.\n\n### 2.8 Loyalty Program\n\nIf you would like offer a Loyalty Program to the customer, select the same in Loyalty Program field.\n\n### 2.9 View Accounting Ledger and Accounts Receivable\n\nClick on Accounting Ledger button to view all accounting transactions with the customer.\n\nClick on Accounts Receivable button to view the details of all outstanding invoices.\n\n### 2.10 Set Customer Id, Default Customer Group, Territory, and Price List\n\nYou can set how a unique id should be generated each the customer in Selling Settings.\n\n- Naming Series: If you would like a unique id to be generated for each customer based on the naming series select 'Naming Series' in Customer Naming By.\n\n- Customer Name: If customer name itself should be used as an id then select 'Customer Name' in Customer Naming By. In this case, if you create two customers with identical names, - 1 will be suffixed to the second customer.\n\nYou can set the default customer group, territory and price list in Selling Settings.\n\nYou can customize the Customer DocType using Customize Form tool.\n\n### 3. Related Topics\n\n- Customer Group\n\n- Quotation\n\n- Price List\n\n- Contact\n\n- Difference between Lead, Contact, and Customer\n",
+          "evidence_id": "VIS-FSV-B17-01",
+          "locator": "extracted/erpnext-customer.md:article",
+          "source_id": "erpnext-customer.html",
+          "source_sha256": "BA52637ECC58763F80A1AB3F94CA82F51048E19EAC94DD1D2E41E92853CE1AE9"
+        },
+        {
+          "content": {
+            "available_values": [
+              {
+                "authority": "client",
+                "path": "/request/body/customer",
+                "type": "string"
+              },
+              {
+                "authority": "server_state",
+                "path": "/trusted/customerDisabled",
+                "type": "boolean"
+              }
+            ],
+            "target_operation": "POST /api/resource/Sales Order",
+            "notice": "This declares available adapter paths and types only; it supplies no expected decision or hidden test value."
+          },
+          "evidence_id": "VIS-FSV-B17-RUNTIME-ABI",
+          "locator": "tasks.FSV-B17",
+          "source_id": "EC-V2-RUNTIME-INTERFACE-CATALOG-V1",
+          "source_sha256": "8221DA8A6720B0593A8D337F18569C9947AAB05B02E5C84FB0C50E3DE8C1ABD7"
+        }
+      ],
+      "binding_rows": [
+        {
+          "rule_pointer": "/rules/0",
+          "rule": {
+            "rule_id": "FSV-B17-RULE-01",
+            "primitive_id": "SP-BOUNDED-BUSINESS-GUARD",
+            "op": "bounded_guard_dnf",
+            "evidence_refs": [
+              "VIS-FSV-B17-01",
+              "VIS-FSV-B17-RUNTIME-ABI"
+            ],
+            "params": {
+              "alternatives": [
+                {
+                  "clauses": [
+                    {
+                      "kind": "scalar_compare",
+                      "left_path": "/trusted/customerDisabled",
+                      "operator": "eq",
+                      "right_source": "literal",
+                      "right_path": "",
+                      "right_value": false
+                    }
+                  ]
+                }
+              ],
+              "on_missing": "deny"
+            }
+          },
+          "registered_evidence": [
+            {
+              "binding_facts": {
+                "visible_enum_values": true,
+                "visible_plain_language_invariant": true,
+                "visible_server_authority_or_workflow_contract": true
+              },
+              "bound_paths": [
+                "/request/body/customer",
+                "/trusted/customerDisabled"
+              ],
+              "evidence_id": "VIS-FSV-B17-01",
+              "locator": "extracted/erpnext-customer.md:article",
+              "operations": [
+                "POST /api/resource/Sales Order"
+              ],
+              "relation": "supports",
+              "sha256": "BA52637ECC58763F80A1AB3F94CA82F51048E19EAC94DD1D2E41E92853CE1AE9",
+              "source_kind": "business_requirement",
+              "supports_primitives": [
+                "SP-BOUNDED-BUSINESS-GUARD",
+                "SP-ENUM-ALLOWLIST",
+                "SP-SERVER-AUTHORITY-WORKFLOW"
+              ],
+              "system": "ERPNext",
+              "versions": [
+                "16.0.0"
+              ],
+              "visibility": "visible"
+            },
+            {
+              "binding_facts": {
+                "trusted_runtime_context_mapping": true,
+                "visible_field_mapping": true,
+                "visible_runtime_interface": true
+              },
+              "bound_paths": [
+                "/request/body/customer",
+                "/trusted/customerDisabled"
+              ],
+              "evidence_id": "VIS-FSV-B17-RUNTIME-ABI",
+              "locator": "tasks.FSV-B17",
+              "operations": [
+                "POST /api/resource/Sales Order"
+              ],
+              "relation": "supports",
+              "sha256": "8221DA8A6720B0593A8D337F18569C9947AAB05B02E5C84FB0C50E3DE8C1ABD7",
+              "source_kind": "runtime_context_contract",
+              "supports_primitives": [
+                "SP-BOUNDED-BUSINESS-GUARD",
+                "SP-ENUM-ALLOWLIST",
+                "SP-SERVER-AUTHORITY-WORKFLOW"
+              ],
+              "system": "ERPNext",
+              "versions": [
+                "16.0.0"
+              ],
+              "visibility": "visible"
+            }
+          ],
+          "referenced_runtime_paths": [
+            "/trusted/customerDisabled"
+          ],
+          "registered_bound_paths": [
+            "/request/body/customer",
+            "/trusted/customerDisabled"
+          ],
+          "interpretation": "Inventory declaration consistency only; does not prove source meaning or runtime provenance"
+        }
+      ],
+      "archive_admission": "ADMITTED",
+      "archived_legal_decision": "allow",
+      "archived_violation_decision": "deny",
+      "evidence_files": [
+        {
+          "path": "D:\\lunwen\\EC-CSI投稿\\working\\exploration\\20261014_matched_evidence_labor\\matched_generation\\generation_inputs\\FSV-B17\\packet.json",
+          "sha256": "03e726de50a01e76c55ce26e0925632c218de4ab96339c3752d37e33535a6479"
+        },
+        {
+          "path": "D:\\lunwen\\EC-CSI投稿\\working\\exploration\\20261014_matched_evidence_labor\\matched_generation\\execution_inputs\\FSV-B17\\contract.json",
+          "sha256": "ae7c83dcf8f9ee8d8bd1a0218cf8d7d72e0f54c97771e6b49e6acf387eeab0bf"
+        },
+        {
+          "path": "D:\\lunwen\\EC-CSI投稿\\working\\exploration\\20261014_matched_evidence_labor\\matched_generation\\method_runs\\FSV-B17\\ECAS_MATCHED\\first_candidate.json",
+          "sha256": "35603ce747a8a9003d8d8b4af95a29826669d07fb721524bb700f9ddbe355b39"
+        },
+        {
+          "path": "D:\\lunwen\\EC-CSI投稿\\working\\exploration\\20261014_matched_evidence_labor\\matched_generation\\method_runs\\FSV-B17\\ECAS_MATCHED\\initial\\admitted_policy.json",
+          "sha256": "a206e1535f6402c2864e7b3265b287dc3700c39e2f7aba4103ae62f0ecedc79d"
+        },
+        {
+          "path": "D:\\lunwen\\EC-CSI投稿\\working\\exploration\\20261014_matched_evidence_labor\\matched_generation\\method_runs\\FSV-B17\\ECAS_MATCHED\\RESULT.json",
+          "sha256": "1a4feb547d5ae6475d99d396a8644c24ffd1e627e43921dc4be64fef0e09f8e3"
+        }
+      ],
+      "raw_to_candidate_semantic_audit": {
+        "path": "D:\\lunwen\\EC-CSI投稿\\working\\exploration\\20261015_semantic_comparison\\NEW_FOUR_SEMANTIC_AUDIT.json",
+        "sha256": "91eee9bdb3a9dacb75d056c44f131bd135d5706958bc458962bd1107f2f1b5b3"
+      }
+    },
+    {
+      "case": "FSV-B19",
+      "project": "ERPNext",
+      "batch": "B",
+      "target": {
+        "operation": "POST /api/resource/Purchase Order",
+        "system": "ERPNext",
+        "version": "16.0.0"
+      },
+      "source_condition_cn": "Supplier冻结类型控制Purchase Order；完整源码还含默认值与解冻日期",
+      "ir_condition_cn": "bounded_guard_dnf：supplierOnHold=false OR holdType=Payments",
+      "scope_status_cn": "支持冻结类型子规则；原ABI未声明规范化和有效期语义，完整冻结生命周期未闭合",
+      "visible_sources": [
+        {
+          "content": "Suppliers are companies or individuals who provide you with products or services.\n\nTo access the Supplier list, go to: > Home > Buying > Supplier > Supplier\n\n- How to create a Supplier\n\n- Go to the Supplier list and click on New.\n\n- Enter a name for the supplier.\n\n- Select the supplier group whether Pharmaceutical, Hardware etc.\n\n- Save.\n\nThe options to Warn RFQs, POs, Prevent RFQs, POs will be available once you create a Supplier Scorecard and transactions are made.\n\n- Features\n\nFields in future transactions will be auto-populated if the 'Default' fields like Default Bank Account, Default Payment Terms Template etc., are set in Supplier.\n\n### 2.1 Tax details\n\n- Country: If the supplier is from another country, you can change it here.\n\n- Tax ID: Tax identification number of the supplier.\n\n- Tax Category: This is linked to Tax Rule. If a Tax Category is set here, when you select this supplier, the respective Purchase Tax and Charges template will be applied. This template is linked to the Tax Rule and the Tax Rule is linked with a Tax Category. Tax Category can be used to group suppliers to whom same tax will be applied. For example: Government, commercial, etc,.\n\n- Print Language: The language in which the document will be printed.\n\n- Tax Withholding Category: For India, TDS category for the Supplier. On setting a category here, it will be fetched into the Purchase Invoice. For more information, visit the Tax Withholding Category page.\n\n- Disabled: Disables the Supplier and they won't be shown in the Supplier List.\n\n- Is Transporter: If the supplier is selling your transport services, tick this box. 'GST Transporter ID' field will be visible if this field is ticked.\n\n- Internal Supplier: If the supplier is from a sister or parent/child company, tick this field and select the company which they represent.\n\nFor India:\n\n- GST Category: Select a GST Category of the supplier.\n\n- PAN: For India, PAN (Permanent Account Number) card details of the Supplier.\n\n### 2.2 Allow creation of Purchase Invoice without Purchase Order and Purchase Receipt\n\nIf the \"Purchase Order Required\" or \"Purchase Receipt Required\" option is configured as \"Yes\" in Buying Settings, it can be overridden for a particular supplier by enabling the \"Allow Purchase Invoice Creation Without Purchase Order\" or \"Allow Purchase Invoice Creation Without Purchase Receipt\" in the Supplier Master.\n\n### 2.3 Currency and Price List\n\nBilling Currency: Your supplier's currency can be different from your company currency. If you choose JPY for a supplier, then the currency will be filled as JPY and the exchange rate shown for future purchase transactions.\n\nEach Supplier can have a default Price List so that every time you buy a new item from this supplier for different prices, the price list associated with the supplier would be updated as well. Under the price list comes item price, you can see the prices in Buying > Items and Pricing > Item Price.\n\nIf you select this particular supplier, then the associated Price List will be fetched in Purchase transactions.\n\n### 2.4 Payment Terms and Block Supplier\n\n- Default Payment Terms Template: If a Payment Terms template is set here, it'll be automatically selected for future purchase transactions.\n\n- Block Supplier: You can block invoices, payments or both from a supplier till specific date. Choose 'Hold Type', if you do not select a hold type, ERPNext will set it to \"All\". When a supplier is blocked, their status will be shown as 'On Hold'.\n\nThe hold types are as follows:\n+ Invoices: ERPNext will not allow Purchase Invoices or Purchase Orders to be created for the supplier + Payments: ERPNext will not allow Payment Entries to be created for the Supplier + All: ERPNext will apply both hold types aboveIf you do not set a release date, ERPNext will hold the Supplier **indefinitely**.\n### 2.5 Default Payable Accounts\n\nAdd the default account from which invoices against this supplier will be paid. Add additional rows for more companies, you can select only one account per company.\n\nYou can integrate a supplier with an account. For all Suppliers, \"Creditor\" account is set as the default payable Account. When Purchase Invoice is created, payable towards the supplier is booked against \"Creditors\" account.\n\nIf you want to customize payable account for the Supplier, you should first add a payable Account in the Chart of Account, and then select that Payable Account in the Supplier master.\n\nIf you don't want to customize payable account, and proceed with default payable account \"Creditor\", then do not update any value in the Default Supplier Account's table.\n\nTip: Default Payable Account is set in the Company master. If you want to set another account as Account as default for payable instead of Creditors Account, go to Company master, and set that account as \"Default Payable Account\".\n\nDepending on your plan, you can add multiple companies in your ERPNext instance. One Supplier can be used across multiple companies. In this case, you should define Company-wise Payable Account for the Supplier in the \"Default Payable Accounts\" table, i.e, add multiple rows.\n\n### 2.6 More Information\n\nYou can add the supplier's website and any additional details about your supplier in this section. If you freeze a supplier with the 'Is Frozen' option, accounting entries for the supplier will be frozen. In this case the only user whose entries will surpass the 'freeze' is the role assigned in 'Role Allowed to Set Frozen Accounts & Edit Frozen Entries' in Accounting > Settings > Accounts Settings. This is useful when the supplier's name or bank details are being amended.\n\n### 2.7 Address and Contacts\n\nContacts and Addresses in ERPNext are stored separately so that you can create multiple Contacts and Addresses for one Supplier. Once Supplier is saved, you will find the option to create Contact and Address for that Supplier.\n\nTip: When you select a Supplier in any transaction, Contact for which \"Is Primary\" field id checked, it will auto-fetch with the Supplier details.\n\n### 2.8 After saving\n\nOnce all the necessary details are filled, save the document. On saving, options to create the following will be seen in the Dashboard:\n\n- Request for Quotation: An RFQ against this supplier.\n\n- Supplier Quotation: Any quotations that the supplier has sent you and you have submitted into the system.\n\n- Purchase Order: Purchase Orders you've made against this supplier.\n\n- Purchase Receipt: Purchase receipts given by this supplier that you've saved in the system.\n\n- Purchase Invoice: Purchase Invoices you've made against this supplier.\n\n- Payment Entry: Payment Entries for the Purchase Invoices against this supplier.\n\n- Pricing Rule: Any Pricing Rules linked with this supplier. See section 2.2 Currency and Price List to know how it works.\n\nBy clicking on the View button, you can view the Accounting Ledger or Accounts Payable directly for this supplier.\n\nThere's a button to 'Send GST Update Reminder' to the supplier. You need to have a default email account setup first.\n\n- Video\n\n### 4. Related Topics\n\n- Supplier Quotation\n\n- Supplier Scorecard\n\n- Maintaining Supplier's Item Code In the Item Master\n\n## Frequently Asked Questions\n\n### 1. How to add multiple supplier address?\n\nYou can link multiple addresses (such as billing, shipping, warehouse, or office locations) to a single supplier in ERPNext using the Address doctype.\n\n#### Steps\n\n- Go to Buying > Supplier and open the supplier.\n\n- In the Addresses and Contacts section, click New Address.\n\n- Fill in the address details:\n\n- Address Title (for example, ABC Suppliers – Mumbai Warehouse)\n\n- Address Line 1 & 2\n\n- City\n\n- State (if applicable)\n\n- Country\n\n- (Optional) Configure address preferences:\n\n- Enable Is Primary Address if this is the default address.\n\n- Mark it as the preferred Billing or Shipping address if required.\n\n- In the Links table, verify:\n\n- Link DocType:Supplier\n\n- Link Name: The supplier's name\n\n- Click Save.\n\nRepeat these steps to add as many addresses as needed.\n\n#### Using Supplier Addresses\n\nWhen creating documents such as a Purchase Order or Purchase Invoice, you can select the appropriate supplier address from the dropdown. ERPNext automatically uses the selected address for document printing and applies the relevant regional information, such as taxes, where applicable.\n",
+          "evidence_id": "VIS-FSV-B19-01",
+          "locator": "extracted/erpnext-supplier.md:article",
+          "source_id": "erpnext-supplier.html",
+          "source_sha256": "1DD2CBED3915F83CC734BA23F7A016A9C386ED6BA9E54962619F70DB706F5C6F"
+        },
+        {
+          "content": {
+            "available_values": [
+              {
+                "authority": "client",
+                "path": "/request/body/action",
+                "type": "string"
+              },
+              {
+                "authority": "client",
+                "path": "/request/body/supplier",
+                "type": "string"
+              },
+              {
+                "authority": "server_state",
+                "path": "/trusted/holdType",
+                "type": "string"
+              },
+              {
+                "authority": "server_state",
+                "path": "/trusted/supplierOnHold",
+                "type": "boolean"
+              }
+            ],
+            "target_operation": "POST /api/resource/Purchase Order",
+            "notice": "This declares available adapter paths and types only; it supplies no expected decision or hidden test value."
+          },
+          "evidence_id": "VIS-FSV-B19-RUNTIME-ABI",
+          "locator": "tasks.FSV-B19",
+          "source_id": "EC-V2-RUNTIME-INTERFACE-CATALOG-V1",
+          "source_sha256": "8221DA8A6720B0593A8D337F18569C9947AAB05B02E5C84FB0C50E3DE8C1ABD7"
+        }
+      ],
+      "binding_rows": [
+        {
+          "rule_pointer": "/rules/0",
+          "rule": {
+            "evidence_refs": [
+              "VIS-FSV-B19-01",
+              "VIS-FSV-B19-RUNTIME-ABI"
+            ],
+            "op": "bounded_guard_dnf",
+            "params": {
+              "alternatives": [
+                {
+                  "clauses": [
+                    {
+                      "kind": "scalar_compare",
+                      "left_path": "/trusted/supplierOnHold",
+                      "operator": "eq",
+                      "right_path": "",
+                      "right_source": "literal",
+                      "right_value": false
+                    }
+                  ]
+                },
+                {
+                  "clauses": [
+                    {
+                      "kind": "scalar_compare",
+                      "left_path": "/trusted/holdType",
+                      "operator": "eq",
+                      "right_path": "",
+                      "right_source": "literal",
+                      "right_value": "Payments"
+                    }
+                  ]
+                }
+              ],
+              "on_missing": "deny"
+            },
+            "primitive_id": "SP-BOUNDED-BUSINESS-GUARD",
+            "rule_id": "RULE-FSV-B19-001"
+          },
+          "registered_evidence": [
+            {
+              "binding_facts": {
+                "visible_plain_language_invariant": true,
+                "visible_server_authority_or_workflow_contract": true
+              },
+              "bound_paths": [
+                "/request/body/action",
+                "/request/body/supplier",
+                "/trusted/holdType",
+                "/trusted/supplierOnHold"
+              ],
+              "evidence_id": "VIS-FSV-B19-01",
+              "locator": "extracted/erpnext-supplier.md:article",
+              "operations": [
+                "POST /api/resource/Purchase Order"
+              ],
+              "relation": "supports",
+              "sha256": "1DD2CBED3915F83CC734BA23F7A016A9C386ED6BA9E54962619F70DB706F5C6F",
+              "source_kind": "business_requirement",
+              "supports_primitives": [
+                "SP-BOUNDED-BUSINESS-GUARD",
+                "SP-SERVER-AUTHORITY-WORKFLOW"
+              ],
+              "system": "ERPNext",
+              "versions": [
+                "16.0.0"
+              ],
+              "visibility": "visible"
+            },
+            {
+              "binding_facts": {
+                "trusted_runtime_context_mapping": true,
+                "visible_field_mapping": true,
+                "visible_runtime_interface": true
+              },
+              "bound_paths": [
+                "/request/body/action",
+                "/request/body/supplier",
+                "/trusted/holdType",
+                "/trusted/supplierOnHold"
+              ],
+              "evidence_id": "VIS-FSV-B19-RUNTIME-ABI",
+              "locator": "tasks.FSV-B19",
+              "operations": [
+                "POST /api/resource/Purchase Order"
+              ],
+              "relation": "supports",
+              "sha256": "8221DA8A6720B0593A8D337F18569C9947AAB05B02E5C84FB0C50E3DE8C1ABD7",
+              "source_kind": "runtime_context_contract",
+              "supports_primitives": [
+                "SP-BOUNDED-BUSINESS-GUARD",
+                "SP-SERVER-AUTHORITY-WORKFLOW"
+              ],
+              "system": "ERPNext",
+              "versions": [
+                "16.0.0"
+              ],
+              "visibility": "visible"
+            }
+          ],
+          "referenced_runtime_paths": [
+            "/trusted/holdType",
+            "/trusted/supplierOnHold"
+          ],
+          "registered_bound_paths": [
+            "/request/body/action",
+            "/request/body/supplier",
+            "/trusted/holdType",
+            "/trusted/supplierOnHold"
+          ],
+          "interpretation": "Inventory declaration consistency only; does not prove source meaning or runtime provenance"
+        }
+      ],
+      "archive_admission": "ADMITTED",
+      "archived_legal_decision": "allow",
+      "archived_violation_decision": "deny",
+      "evidence_files": [
+        {
+          "path": "D:\\lunwen\\EC-CSI投稿\\working\\exploration\\20261014_matched_evidence_labor\\matched_generation\\generation_inputs\\FSV-B19\\packet.json",
+          "sha256": "10c5597e97e4190aa041c53aa3aee8b4c1c48fa77d073bfb4fb5eb5a64a346fd"
+        },
+        {
+          "path": "D:\\lunwen\\EC-CSI投稿\\working\\exploration\\20261014_matched_evidence_labor\\matched_generation\\execution_inputs\\FSV-B19\\contract.json",
+          "sha256": "fd0a7bbb9c3d0588d2f6e8970af7b8d9c34cf0ae82dd494bce68478c6671fd30"
+        },
+        {
+          "path": "D:\\lunwen\\EC-CSI投稿\\working\\exploration\\20261014_matched_evidence_labor\\matched_generation\\method_runs\\FSV-B19\\ECAS_MATCHED\\first_candidate.json",
+          "sha256": "2d09501af519f2aa3a459adc4e9df36db1fa0b76332bd72c73189b019e369e90"
+        },
+        {
+          "path": "D:\\lunwen\\EC-CSI投稿\\working\\exploration\\20261014_matched_evidence_labor\\matched_generation\\method_runs\\FSV-B19\\ECAS_MATCHED\\initial\\admitted_policy.json",
+          "sha256": "ac7c5bbf8bbdf0ee773ce0b06a357a9b0d48e3bfa11b21bd229cfe22cf16d98d"
+        },
+        {
+          "path": "D:\\lunwen\\EC-CSI投稿\\working\\exploration\\20261014_matched_evidence_labor\\matched_generation\\method_runs\\FSV-B19\\ECAS_MATCHED\\RESULT.json",
+          "sha256": "8a781167ffc84f72d91d3599c92011af4324381dcd47b13ca38e25944fe5e3b7"
+        }
+      ],
+      "raw_to_candidate_semantic_audit": {
+        "path": "D:\\lunwen\\EC-CSI投稿\\working\\exploration\\20261015_semantic_comparison\\NEW_FOUR_SEMANTIC_AUDIT.json",
+        "sha256": "91eee9bdb3a9dacb75d056c44f131bd135d5706958bc458962bd1107f2f1b5b3"
+      }
+    }
+  ],
+  "new_model_calls": 0,
+  "note": "Historical admission and request decisions; structural reconciliation is not a new compiler or policy run."
+}

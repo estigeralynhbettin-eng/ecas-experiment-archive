@@ -1,0 +1,28 @@
+{
+  "choices": [
+    {
+      "finish_reason": "stop",
+      "index": 0,
+      "message": {
+        "content": "{\"begin\":\"BEGIN_FSV-S04_ecas_generate_SMOKE\",\"stage\":\"ecas_generate\",\"output\":{\"candidate\":{\"ir_version\":\"EC-FIELD-MODEL-IR-V3\",\"candidate_id\":\"CAND-FSV-S04-01\",\"decision\":\"propose\",\"target\":{\"operation\":\"POST /api/resource/Lead\",\"system\":\"ERPNext\",\"version\":\"16.0.0\"},\"policy_id\":\"POL-FSV-S04-LEAD-CREATE\",\"evidence_refs\":[\"VIS-FSV-S04-01\",\"VIS-FSV-S04-02\",\"VIS-FSV-S04-RUNTIME-ABI\"],\"rules\":[{\"rule_id\":\"RULE-FSV-S04-BODY-TYPE\",\"primitive_id\":\"SP-STRICT-TYPE\",\"op\":\"strict_type\",\"evidence_refs\":[\"VIS-FSV-S04-01\",\"VIS-FSV-S04-RUNTIME-ABI\"],\"params\":{\"path\":\"/request/body\",\"expected_type\":\"object\",\"on_missing\":\"deny\"}},{\"rule_id\":\"RULE-FSV-S04-EMAIL-TYPE\",\"primitive_id\":\"SP-STRICT-TYPE\",\"op\":\"strict_type\",\"evidence_refs\":[\"VIS-FSV-S04-02\",\"VIS-FSV-S04-RUNTIME-ABI\"],\"params\":{\"path\":\"/request/body/email_id\",\"expected_type\":\"string\",\"on_missing\":\"skip\"}},{\"rule_id\":\"RULE-FSV-S04-EMAIL-FORMAT\",\"primitive_id\":\"SP-STRUCTURED-FORMAT\",\"op\":\"named_validator\",\"evidence_refs\":[\"VIS-FSV-S04-02\",\"VIS-FSV-S04-RUNTIME-ABI\"],\"params\":{\"path\":\"/request/body/email_id\",\"validator_id\":\"email_basic_v1\",\"on_missing\":\"skip\"}}],\"reason_code\":\"none\",\"missing_evidence\":[]}},\"end\":\"END_FSV-S04_ecas_generate_SMOKE\"}",
+        "role": "assistant"
+      }
+    }
+  ],
+  "created": 1791949620,
+  "id": "20261014114635e0cada05b4a549f2",
+  "model": "glm-5.2",
+  "object": "chat.completion",
+  "request_id": "20261014114635e0cada05b4a549f2",
+  "usage": {
+    "completion_tokens": 2501,
+    "completion_tokens_details": {
+      "reasoning_tokens": 1962
+    },
+    "prompt_tokens": 8426,
+    "prompt_tokens_details": {
+      "cached_tokens": 0
+    },
+    "total_tokens": 10927
+  }
+}

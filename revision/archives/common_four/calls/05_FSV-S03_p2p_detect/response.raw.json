@@ -1,0 +1,28 @@
+{
+  "choices": [
+    {
+      "finish_reason": "stop",
+      "index": 0,
+      "message": {
+        "content": "{\"begin\":\"BEGIN_FSV-S03_p2p_detect_MAIN\",\"stage\":\"p2p_detect\",\"output\":{\"status\":\"OUT_OF_SCOPE\",\"statements\":[],\"reason\":\"The target source contains only structural API type validation for the age field, not access control policy statements.\"},\"end\":\"END_FSV-S03_p2p_detect_MAIN\"}",
+        "role": "assistant"
+      }
+    }
+  ],
+  "created": 1791993050,
+  "id": "20261014235036e9e1ce75eff64d2e",
+  "model": "glm-5.2",
+  "object": "chat.completion",
+  "request_id": "20261014235036e9e1ce75eff64d2e",
+  "usage": {
+    "completion_tokens": 1113,
+    "completion_tokens_details": {
+      "reasoning_tokens": 1019
+    },
+    "prompt_tokens": 1132,
+    "prompt_tokens_details": {
+      "cached_tokens": 0
+    },
+    "total_tokens": 2245
+  }
+}

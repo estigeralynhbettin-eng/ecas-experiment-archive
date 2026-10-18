@@ -1,0 +1,100 @@
+{
+  "classification": "OPERATOR_AUTHORED_PUBLIC_SOURCE_TESTS_NOT_ORIGINAL_AUTOPAC_TESTS",
+  "tasks": {
+    "FSV-B06": [
+      {
+        "id": "dev_latest_true",
+        "input": {
+          "request": {
+            "body": {
+              "developer_probe": "transaction_92001"
+            }
+          },
+          "trusted": {
+            "reAgeIsLatestTransaction": true
+          }
+        },
+        "expected": "allow",
+        "source_ref": "VIS-FSV-B06-01"
+      },
+      {
+        "id": "dev_latest_false",
+        "input": {
+          "request": {
+            "body": {
+              "developer_probe": "transaction_92002"
+            }
+          },
+          "trusted": {
+            "reAgeIsLatestTransaction": false
+          }
+        },
+        "expected": "deny",
+        "source_ref": "VIS-FSV-B06-01"
+      }
+    ],
+    "FSV-S02": [
+      {
+        "id": "dev_declared_keys",
+        "input": {
+          "request": {
+            "body": {
+              "documentKey": "DEV-83001",
+              "documentTypeId": 8,
+              "description": "developer-source-test",
+              "status": "Active"
+            }
+          },
+          "trusted": {}
+        },
+        "expected": "allow",
+        "source_ref": "VIS-FSV-S02-01"
+      },
+      {
+        "id": "dev_unknown_key",
+        "input": {
+          "request": {
+            "body": {
+              "documentKey": "DEV-83002",
+              "documentTypeId": 8,
+              "undeclared_developer_probe": true
+            }
+          },
+          "trusted": {}
+        },
+        "expected": "deny",
+        "source_ref": "VIS-FSV-S02-01"
+      }
+    ],
+    "FSV-S04": [
+      {
+        "id": "dev_email_positive",
+        "input": {
+          "request": {
+            "body": {
+              "first_name": "DevProbeA",
+              "email_id": "developer.73001@example.net"
+            }
+          },
+          "trusted": {}
+        },
+        "expected": "allow",
+        "source_ref": "VIS-FSV-S04-01"
+      },
+      {
+        "id": "dev_email_negative",
+        "input": {
+          "request": {
+            "body": {
+              "first_name": "DevProbeB",
+              "email_id": "developer_73002_at_example_net"
+            }
+          },
+          "trusted": {}
+        },
+        "expected": "deny",
+        "source_ref": "VIS-FSV-S04-01"
+      }
+    ]
+  }
+}

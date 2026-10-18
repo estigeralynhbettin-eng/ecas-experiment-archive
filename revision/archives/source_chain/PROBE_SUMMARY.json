@@ -1,0 +1,115 @@
+{
+  "rows": [
+    {
+      "arm": "effective_manual",
+      "method": "AUTOPAC_STYLE",
+      "related_states": 32,
+      "source_check_not_blocked_but_policy_deny": 0,
+      "source_check_blocked_but_policy_allow": 0,
+      "disagreement_count": 0,
+      "disagreement_state_ids": []
+    },
+    {
+      "arm": "effective_manual",
+      "method": "ECAS_MATCHED",
+      "related_states": 32,
+      "source_check_not_blocked_but_policy_deny": 0,
+      "source_check_blocked_but_policy_allow": 0,
+      "disagreement_count": 0,
+      "disagreement_state_ids": []
+    },
+    {
+      "arm": "effective_manual",
+      "method": "P2P_STYLE",
+      "related_states": 32,
+      "source_check_not_blocked_but_policy_deny": 0,
+      "source_check_blocked_but_policy_allow": 0,
+      "disagreement_count": 0,
+      "disagreement_state_ids": []
+    },
+    {
+      "arm": "raw",
+      "method": "AUTOPAC_STYLE",
+      "related_states": 32,
+      "source_check_not_blocked_but_policy_deny": 2,
+      "source_check_blocked_but_policy_allow": 3,
+      "disagreement_count": 5,
+      "disagreement_state_ids": [
+        "state-17",
+        "state-19",
+        "state-20",
+        "state-22",
+        "state-26"
+      ]
+    },
+    {
+      "arm": "raw",
+      "method": "ECAS_MATCHED",
+      "related_states": 32,
+      "source_check_not_blocked_but_policy_deny": 3,
+      "source_check_blocked_but_policy_allow": 0,
+      "disagreement_count": 3,
+      "disagreement_state_ids": [
+        "state-18",
+        "state-22",
+        "state-26"
+      ]
+    },
+    {
+      "arm": "raw",
+      "method": "P2P_STYLE",
+      "related_states": 32,
+      "source_check_not_blocked_but_policy_deny": 2,
+      "source_check_blocked_but_policy_allow": 3,
+      "disagreement_count": 5,
+      "disagreement_state_ids": [
+        "state-17",
+        "state-19",
+        "state-20",
+        "state-22",
+        "state-26"
+      ]
+    },
+    {
+      "arm": "saved",
+      "method": "AUTOPAC_STYLE",
+      "related_states": 32,
+      "source_check_not_blocked_but_policy_deny": 3,
+      "source_check_blocked_but_policy_allow": 0,
+      "disagreement_count": 3,
+      "disagreement_state_ids": [
+        "state-18",
+        "state-22",
+        "state-26"
+      ]
+    },
+    {
+      "arm": "saved",
+      "method": "ECAS_MATCHED",
+      "related_states": 32,
+      "source_check_not_blocked_but_policy_deny": 3,
+      "source_check_blocked_but_policy_allow": 0,
+      "disagreement_count": 3,
+      "disagreement_state_ids": [
+        "state-18",
+        "state-22",
+        "state-26"
+      ]
+    },
+    {
+      "arm": "saved",
+      "method": "P2P_STYLE",
+      "related_states": 32,
+      "source_check_not_blocked_but_policy_deny": 3,
+      "source_check_blocked_but_policy_allow": 0,
+      "disagreement_count": 3,
+      "disagreement_state_ids": [
+        "state-18",
+        "state-22",
+        "state-26"
+      ]
+    }
+  ],
+  "source_scope": "Only supplier hold check; allow means this check did not block, not full Purchase Order acceptance.",
+  "denominator_scope": "32 related manually constructed states, not independent cases or model accuracy."
+}

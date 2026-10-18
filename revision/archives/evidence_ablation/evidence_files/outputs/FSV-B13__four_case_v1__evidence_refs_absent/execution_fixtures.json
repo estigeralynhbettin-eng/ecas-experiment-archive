@@ -1,0 +1,54 @@
+[
+  {
+    "id": "FSV-B13-OL-01",
+    "input": {
+      "request": {
+        "body": {
+          "qty": 110
+        }
+      },
+      "trusted": {
+        "allowancePercent": 10,
+        "authorizedRole": false,
+        "derivedMaximumQty": 110,
+        "orderedQty": 100
+      }
+    },
+    "expected": "allow",
+    "source": "/root/ecas_evidence_ablation_20261014/inputs/FSV-B13__four_case_v1/O-L.json",
+    "class": "ARCHIVED_SYNTHETIC_REQUEST"
+  },
+  {
+    "id": "FSV-B13-OI-01",
+    "input": {
+      "request": {
+        "body": {
+          "qty": 111
+        }
+      },
+      "trusted": {
+        "allowancePercent": 10,
+        "authorizedRole": false,
+        "derivedMaximumQty": 110,
+        "orderedQty": 100
+      }
+    },
+    "expected": "deny",
+    "source": "/root/ecas_evidence_ablation_20261014/inputs/FSV-B13__four_case_v1/O-I.json",
+    "class": "ARCHIVED_SYNTHETIC_REQUEST"
+  },
+  {
+    "id": "SYNTH-MISSING-TRUSTED",
+    "input": {
+      "request": {
+        "body": {
+          "qty": 110
+        }
+      },
+      "trusted": {}
+    },
+    "expected": null,
+    "source": "archived legal request with trusted object emptied",
+    "class": "CONSTRUCTED_MISSING_CONTEXT_CONTROL"
+  }
+]

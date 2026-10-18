@@ -1,0 +1,59 @@
+[
+  {
+    "source_url": "https://api.github.com/repos/apache/fineract/contents/APACHE_LICENSETEXT.md?ref=7923d9e6cb67611c506b6c527b64497996acdc58",
+    "public_name": "FINERACT_APACHE_LICENSE_2.0.txt",
+    "sha256": "1420334db7dcd5979afefa6ffff48d6005b7e4c6116a090322b3ddb686a51de9",
+    "bytes": 749,
+    "retrieved_utc": "2026-10-17T17:52:05.300469+00:00",
+    "upstream_blob_sha": "4eacb643179731b0c1fc2f8300420cf5c735b502",
+    "reconstruction": "Official GitHub contents response base64 decoded; git blob SHA verified"
+  },
+  {
+    "source_url": "https://api.github.com/repos/apache/fineract/contents/LICENSE_SOURCE?ref=7923d9e6cb67611c506b6c527b64497996acdc58",
+    "public_name": "FINERACT_LICENSE_SOURCE.txt",
+    "sha256": "ad2056de4c533af13b64d449bb7b60ff8350eac7d2464266f4341dc61bf420c1",
+    "bytes": 12305,
+    "retrieved_utc": "2026-10-17T17:52:05.300469+00:00",
+    "upstream_blob_sha": "ffb67c50233eb803d54b32b77c4ea75174a385f8",
+    "reconstruction": "Official GitHub contents response base64 decoded; git blob SHA verified"
+  },
+  {
+    "source_url": "https://api.github.com/repos/apache/fineract/contents/NOTICE_SOURCE?ref=7923d9e6cb67611c506b6c527b64497996acdc58",
+    "public_name": "FINERACT_NOTICE_SOURCE.txt",
+    "sha256": "3e9b097df85708ed2f323ec56c2692e2dcce686a5e30969c5c096caae6fd05ca",
+    "bytes": 169,
+    "retrieved_utc": "2026-10-17T17:52:05.300469+00:00",
+    "upstream_blob_sha": "085a410974bde957a17319c3736f16d0dee3b43c",
+    "reconstruction": "Official GitHub contents response base64 decoded; git blob SHA verified"
+  },
+  {
+    "source_url": "https://api.github.com/repos/frappe/frappe/contents/LICENSE?ref=v16.1.1",
+    "public_name": "FRAPPE_v16.1.1_LICENSE.txt",
+    "sha256": "bc6001a54ffcc4ab520424d7dbb85b293578efcdcb7d8f8055e00dddf942e5d7",
+    "bytes": 1118,
+    "retrieved_utc": "2026-10-17T17:52:05.301452+00:00",
+    "upstream_blob_sha": "6919960f8ba9c6ea72a8a0b07d6e98b4b46c7531",
+    "reconstruction": "Official GitHub contents response base64 decoded; git blob SHA verified"
+  },
+  {
+    "source_url": "https://creativecommons.org/licenses/by-sa/4.0/legalcode.txt",
+    "public_name": "CC_BY_SA_4.0_legalcode.txt",
+    "sha256": "28a9529c7d0bb4dc51f4bf5c116a3d16ef247a052f7591466768ddf563fd1cf5",
+    "bytes": 20138,
+    "retrieved_utc": "2026-10-17T17:44:26.041831Z"
+  },
+  {
+    "source_url": "https://api.github.com/repos/frappe/erpnext/contents/license.txt?ref=v16.0.0",
+    "public_name": "ERPNEXT_v16.0.0_license.txt",
+    "sha256": "3972dc9744f6499f0f9b2dbf76696f2ae7ad8af9b23dde66d6af86c9dfb36986",
+    "bytes": 35149,
+    "retrieved_utc": "2026-10-17T17:45:16.2536164Z"
+  },
+  {
+    "source_url": "https://api.github.com/repos/open-policy-agent/opa/contents/LICENSE?ref=v1.19.0",
+    "public_name": "OPA_v1.19.0_LICENSE.txt",
+    "sha256": "c6596eb7be8581c18be736c846fb9173b69eccf6ef94c5135893ec56bd92ba08",
+    "bytes": 11358,
+    "retrieved_utc": "2026-10-17T17:45:16.5668013Z"
+  }
+]

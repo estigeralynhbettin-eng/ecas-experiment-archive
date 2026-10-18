@@ -1,0 +1,39 @@
+{
+  "policy_version": "EC-FIELD-SECURITY-V3",
+  "policy_id": "FSV-B17-DISABLED-CUSTOMER-SO",
+  "target": {
+    "operation": "POST /api/resource/Sales Order",
+    "system": "ERPNext",
+    "version": "16.0.0"
+  },
+  "evidence_refs": [
+    "VIS-FSV-B17-01",
+    "VIS-FSV-B17-RUNTIME-ABI"
+  ],
+  "rules": [
+    {
+      "rule_id": "FSV-B17-RULE-01",
+      "primitive_id": "SP-BOUNDED-BUSINESS-GUARD",
+      "evidence_refs": [
+        "VIS-FSV-B17-01",
+        "VIS-FSV-B17-RUNTIME-ABI"
+      ],
+      "op": "bounded_guard_dnf",
+      "alternatives": [
+        {
+          "clauses": [
+            {
+              "kind": "scalar_compare",
+              "left_path": "/trusted/customerDisabled",
+              "operator": "eq",
+              "right_source": "literal",
+              "right_path": "",
+              "right_value": false
+            }
+          ]
+        }
+      ],
+      "on_missing": "deny"
+    }
+  ]
+}

@@ -1,0 +1,180 @@
+{
+  "status": "STOPPED_PROTOCOL_OR_TRANSPORT",
+  "scope_id": "ECAS-MATCHED-EVIDENCE-LABOR-20261014-01",
+  "started_at": "2026-10-14T15:50:33.283816+00:00",
+  "rows": [
+    {
+      "task": "FSV-S03",
+      "method": "P2P_STYLE",
+      "scope_id": "ECAS-MATCHED-EVIDENCE-LABOR-20261014-01",
+      "status": "OUT_OF_SCOPE",
+      "calls": [
+        5
+      ],
+      "repaired_once": false,
+      "execution_eligible": false,
+      "reason": "The target source contains only structural API type validation for the age field, not access control policy statements.",
+      "generation_frozen_at": "2026-10-14T15:50:50.445663+00:00",
+      "final_evaluation_not_yet_read": true
+    },
+    {
+      "task": "FSV-S03",
+      "method": "AUTOPAC_STYLE",
+      "scope_id": "ECAS-MATCHED-EVIDENCE-LABOR-20261014-01",
+      "status": "DEVELOPMENT_REJECTED",
+      "calls": [
+        6,
+        7,
+        8
+      ],
+      "repaired_once": true,
+      "execution_eligible": false,
+      "first_checks": {
+        "policy_path": "/mnt/d/lunwen/EC-CSI投稿/working/exploration/20261014_matched_evidence_labor/matched_generation/method_runs/FSV-S03/AUTOPAC_STYLE/initial/external_pilot/policy.rego",
+        "original_path": "/mnt/d/lunwen/EC-CSI投稿/working/exploration/20261014_matched_evidence_labor/matched_generation/method_runs/FSV-S03/AUTOPAC_STYLE/initial/original.rego",
+        "compile_exit": 1,
+        "compile_error": "1 error occurred: /mnt/d/lunwen/EC-CSI投稿/working/exploration/20261014_matched_evidence_labor/matched_generation/method_runs/FSV-S03/AUTOPAC_STYLE/initial/external_pilot/policy.rego:8: rego_type_error: undefined function is_integer\n",
+        "format_receipt": {
+          "original_sha256": "979a29451355e29190d1d00cd5eeee1dc48643165305acaf454d8cc4ebe1584a",
+          "formatted_sha256": "f9d8bc50071d052c2eae80fd0dce85babdba44830d8529034d402e2cc01b31e2",
+          "parse_before_exit": 0,
+          "format_exit": 0,
+          "parse_after_exit": 0,
+          "ast_semantics_equal_without_location": true,
+          "classification": "DETERMINISTIC_FORMAT_ONLY_NOT_MODEL_REPAIR"
+        },
+        "lint_exit": null,
+        "lint_report": null,
+        "accepted": false,
+        "developer_results": {
+          "passed": false,
+          "rows": []
+        },
+        "judge": {
+          "verdict": "ACCEPT",
+          "issues": []
+        }
+      },
+      "final_checks": {
+        "policy_path": "/mnt/d/lunwen/EC-CSI投稿/working/exploration/20261014_matched_evidence_labor/matched_generation/method_runs/FSV-S03/AUTOPAC_STYLE/repaired/external_pilot/policy.rego",
+        "original_path": "/mnt/d/lunwen/EC-CSI投稿/working/exploration/20261014_matched_evidence_labor/matched_generation/method_runs/FSV-S03/AUTOPAC_STYLE/repaired/original.rego",
+        "compile_exit": 1,
+        "compile_error": "1 error occurred: /mnt/d/lunwen/EC-CSI投稿/working/exploration/20261014_matched_evidence_labor/matched_generation/method_runs/FSV-S03/AUTOPAC_STYLE/repaired/external_pilot/policy.rego:8: rego_type_error: undefined function typeof\n",
+        "format_receipt": {
+          "original_sha256": "ef5d878b84c37ed3c9ccdaf5c272c903d7db6dca0e386da90324622845d2131b",
+          "formatted_sha256": "c4b87aa50a5e98d75eecfb98590f861083d123b56bfe0f923861bd6e328bba94",
+          "parse_before_exit": 0,
+          "format_exit": 0,
+          "parse_after_exit": 0,
+          "ast_semantics_equal_without_location": true,
+          "classification": "DETERMINISTIC_FORMAT_ONLY_NOT_MODEL_REPAIR"
+        },
+        "lint_exit": null,
+        "lint_report": null,
+        "accepted": false,
+        "developer_results": {
+          "passed": false,
+          "rows": []
+        },
+        "judge_after_repair": "NOT_RUN_ONE_REPAIR_BUDGET"
+      },
+      "generation_frozen_at": "2026-10-14T15:52:55.682186+00:00",
+      "final_evaluation_not_yet_read": true
+    },
+    {
+      "task": "FSV-S03",
+      "method": "ECAS_MATCHED",
+      "scope_id": "ECAS-MATCHED-EVIDENCE-LABOR-20261014-01",
+      "status": "ELIGIBLE",
+      "calls": [
+        9
+      ],
+      "repaired_once": false,
+      "execution_eligible": true,
+      "first_checks": {
+        "accepted": true,
+        "compile_status": "COMPILED",
+        "admission_status": "ADMITTED",
+        "developer_results": {
+          "passed": true,
+          "rows": [
+            {
+              "id": "dev_integer",
+              "expected": "allow",
+              "actual": {
+                "policy_id": "POL-FSV-S03-AGE-TYPE",
+                "decision": "allow",
+                "fail_closed": true,
+                "violations": []
+              },
+              "pass": true
+            },
+            {
+              "id": "dev_integer_string",
+              "expected": "deny",
+              "actual": {
+                "policy_id": "POL-FSV-S03-AGE-TYPE",
+                "decision": "deny",
+                "fail_closed": true,
+                "violations": [
+                  {
+                    "rule_id": "RULE-AGE-INTEGER",
+                    "code": "type_mismatch",
+                    "detail": "/request/body/age"
+                  }
+                ]
+              },
+              "pass": true
+            }
+          ]
+        },
+        "policy_path": "/mnt/d/lunwen/EC-CSI投稿/working/exploration/20261014_matched_evidence_labor/matched_generation/method_runs/FSV-S03/ECAS_MATCHED/initial/admitted_policy.json"
+      },
+      "final_checks": {
+        "accepted": true,
+        "compile_status": "COMPILED",
+        "admission_status": "ADMITTED",
+        "developer_results": {
+          "passed": true,
+          "rows": [
+            {
+              "id": "dev_integer",
+              "expected": "allow",
+              "actual": {
+                "policy_id": "POL-FSV-S03-AGE-TYPE",
+                "decision": "allow",
+                "fail_closed": true,
+                "violations": []
+              },
+              "pass": true
+            },
+            {
+              "id": "dev_integer_string",
+              "expected": "deny",
+              "actual": {
+                "policy_id": "POL-FSV-S03-AGE-TYPE",
+                "decision": "deny",
+                "fail_closed": true,
+                "violations": [
+                  {
+                    "rule_id": "RULE-AGE-INTEGER",
+                    "code": "type_mismatch",
+                    "detail": "/request/body/age"
+                  }
+                ]
+              },
+              "pass": true
+            }
+          ]
+        },
+        "policy_path": "/mnt/d/lunwen/EC-CSI投稿/working/exploration/20261014_matched_evidence_labor/matched_generation/method_runs/FSV-S03/ECAS_MATCHED/initial/admitted_policy.json"
+      },
+      "generation_frozen_at": "2026-10-14T15:53:22.580727+00:00",
+      "final_evaluation_not_yet_read": true
+    }
+  ],
+  "final_evaluation_read": false,
+  "error_type": "ValueError",
+  "error": "P2P developer source_ref not visible",
+  "stopped_at": "2026-10-14T15:55:51.541210+00:00"
+}

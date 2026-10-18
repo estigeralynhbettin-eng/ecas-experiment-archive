@@ -1,0 +1,14 @@
+{
+  "classification": "OPA_AST_LOCATION_METADATA_ONLY",
+  "scope_id": "ECAS-MATCHED-EVIDENCE-LABOR-20261014-01",
+  "original_ast_sha256": "825da21e27c5edaee41fa8f028c87aaea4a523c007d36e15a1e733d15bb660d8",
+  "formatted_ast_sha256": "59b298dff527c276c686ba8d187f3cfaa924c73650cc2c5d60ba70f756d87d24",
+  "normalized_ast_equal": true,
+  "ignored_metadata_fields": [
+    "location",
+    "Location"
+  ],
+  "business_fields_changed": false,
+  "new_API_calls": 0,
+  "final_evaluation_read": false
+}

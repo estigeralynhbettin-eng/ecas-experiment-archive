@@ -1,0 +1,651 @@
+{
+  "status": "PASS",
+  "checks": [
+    {
+      "check": "actual_managed_run_succeeded",
+      "pass": true
+    },
+    {
+      "check": "144_related_observations_not_independent_cases",
+      "pass": true
+    },
+    {
+      "check": "unique_task_arm_probe",
+      "pass": true
+    },
+    {
+      "check": "all_actual_decisions_boolean_outcomes",
+      "pass": true
+    },
+    {
+      "check": "frozen_/mnt/d/lunwen/EC-CSI投稿/working/exploration/20261015_seven_case_mechanism/mechanism_control/EXPERIMENT_SCOPE.json",
+      "pass": true
+    },
+    {
+      "check": "frozen_/mnt/d/lunwen/EC-CSI投稿/working/exploration/20261015_seven_case_mechanism/mechanism_control/FROZEN_VECTORS.json",
+      "pass": true
+    },
+    {
+      "check": "frozen_/mnt/d/lunwen/EC-CSI投稿/working/exploration/20261015_seven_case_mechanism/mechanism_control/PROTOCOL_CN.md",
+      "pass": true
+    },
+    {
+      "check": "frozen_/mnt/d/lunwen/EC-CSI投稿/working/exploration/20261015_seven_case_mechanism/mechanism_control/SOURCE_MANIFEST.json",
+      "pass": true
+    },
+    {
+      "check": "frozen_/mnt/d/lunwen/EC-CSI投稿/working/exploration/20261015_seven_case_mechanism/mechanism_control/TASK_CONTRACT_CN.md",
+      "pass": true
+    },
+    {
+      "check": "frozen_/mnt/d/lunwen/EC-CSI投稿/working/exploration/20261015_seven_case_mechanism/mechanism_control/guards/FSV-B17.rego",
+      "pass": true
+    },
+    {
+      "check": "frozen_/mnt/d/lunwen/EC-CSI投稿/working/exploration/20261015_seven_case_mechanism/mechanism_control/guards/FSV-B19.rego",
+      "pass": true
+    },
+    {
+      "check": "frozen_/mnt/d/lunwen/EC-CSI投稿/working/exploration/20261015_seven_case_mechanism/mechanism_control/inputs/FSV-B17/AUTOPAC_STYLE.rego",
+      "pass": true
+    },
+    {
+      "check": "frozen_/mnt/d/lunwen/EC-CSI投稿/working/exploration/20261015_seven_case_mechanism/mechanism_control/inputs/FSV-B17/O-I.json",
+      "pass": true
+    },
+    {
+      "check": "frozen_/mnt/d/lunwen/EC-CSI投稿/working/exploration/20261015_seven_case_mechanism/mechanism_control/inputs/FSV-B17/O-L.json",
+      "pass": true
+    },
+    {
+      "check": "frozen_/mnt/d/lunwen/EC-CSI投稿/working/exploration/20261015_seven_case_mechanism/mechanism_control/inputs/FSV-B17/P2P_STYLE.rego",
+      "pass": true
+    },
+    {
+      "check": "frozen_/mnt/d/lunwen/EC-CSI投稿/working/exploration/20261015_seven_case_mechanism/mechanism_control/inputs/FSV-B17/candidate.json",
+      "pass": true
+    },
+    {
+      "check": "frozen_/mnt/d/lunwen/EC-CSI投稿/working/exploration/20261015_seven_case_mechanism/mechanism_control/inputs/FSV-B17/contract.json",
+      "pass": true
+    },
+    {
+      "check": "frozen_/mnt/d/lunwen/EC-CSI投稿/working/exploration/20261015_seven_case_mechanism/mechanism_control/inputs/FSV-B17/packet.json",
+      "pass": true
+    },
+    {
+      "check": "frozen_/mnt/d/lunwen/EC-CSI投稿/working/exploration/20261015_seven_case_mechanism/mechanism_control/inputs/FSV-B19/AUTOPAC_STYLE.rego",
+      "pass": true
+    },
+    {
+      "check": "frozen_/mnt/d/lunwen/EC-CSI投稿/working/exploration/20261015_seven_case_mechanism/mechanism_control/inputs/FSV-B19/O-I.json",
+      "pass": true
+    },
+    {
+      "check": "frozen_/mnt/d/lunwen/EC-CSI投稿/working/exploration/20261015_seven_case_mechanism/mechanism_control/inputs/FSV-B19/O-L.json",
+      "pass": true
+    },
+    {
+      "check": "frozen_/mnt/d/lunwen/EC-CSI投稿/working/exploration/20261015_seven_case_mechanism/mechanism_control/inputs/FSV-B19/P2P_STYLE.rego",
+      "pass": true
+    },
+    {
+      "check": "frozen_/mnt/d/lunwen/EC-CSI投稿/working/exploration/20261015_seven_case_mechanism/mechanism_control/inputs/FSV-B19/candidate.json",
+      "pass": true
+    },
+    {
+      "check": "frozen_/mnt/d/lunwen/EC-CSI投稿/working/exploration/20261015_seven_case_mechanism/mechanism_control/inputs/FSV-B19/contract.json",
+      "pass": true
+    },
+    {
+      "check": "frozen_/mnt/d/lunwen/EC-CSI投稿/working/exploration/20261015_seven_case_mechanism/mechanism_control/inputs/FSV-B19/packet.json",
+      "pass": true
+    },
+    {
+      "check": "frozen_/mnt/d/lunwen/EC-CSI投稿/working/exploration/20261015_seven_case_mechanism/mechanism_control/inputs/branch_protocol.json",
+      "pass": true
+    },
+    {
+      "check": "frozen_/mnt/d/lunwen/EC-CSI投稿/working/exploration/20261015_seven_case_mechanism/mechanism_control/inputs/prior_main_manifest.json",
+      "pass": true
+    },
+    {
+      "check": "frozen_/mnt/d/lunwen/EC-CSI投稿/working/exploration/20261015_seven_case_mechanism/mechanism_control/inputs/restricted_capabilities.json",
+      "pass": true
+    },
+    {
+      "check": "frozen_/mnt/d/lunwen/EC-CSI投稿/working/exploration/20261015_seven_case_mechanism/mechanism_control/mechanism_probe.py",
+      "pass": true
+    },
+    {
+      "check": "frozen_/root/ecas_missing_state_mechanism_20261015/runtime/EC_EVIDENCE_CONTRACT_SCHEMA_V2.json",
+      "pass": true
+    },
+    {
+      "check": "frozen_/root/ecas_missing_state_mechanism_20261015/runtime/EC_EVIDENCE_CONTRACT_SCHEMA_V3.json",
+      "pass": true
+    },
+    {
+      "check": "frozen_/root/ecas_missing_state_mechanism_20261015/runtime/EC_FIELD_SECURITY_MODEL_IR_SCHEMA_V2.json",
+      "pass": true
+    },
+    {
+      "check": "frozen_/root/ecas_missing_state_mechanism_20261015/runtime/EC_FIELD_SECURITY_MODEL_IR_SCHEMA_V3.json",
+      "pass": true
+    },
+    {
+      "check": "frozen_/root/ecas_missing_state_mechanism_20261015/runtime/EC_FIELD_SECURITY_POLICY_SCHEMA_V2.json",
+      "pass": true
+    },
+    {
+      "check": "frozen_/root/ecas_missing_state_mechanism_20261015/runtime/EC_FIELD_SECURITY_POLICY_SCHEMA_V3.json",
+      "pass": true
+    },
+    {
+      "check": "frozen_/root/ecas_missing_state_mechanism_20261015/runtime/EC_FIELD_SECURITY_PROPOSAL_SCHEMA_V2.json",
+      "pass": true
+    },
+    {
+      "check": "frozen_/root/ecas_missing_state_mechanism_20261015/runtime/EC_FIELD_SECURITY_PROPOSAL_SCHEMA_V3.json",
+      "pass": true
+    },
+    {
+      "check": "frozen_/root/ecas_missing_state_mechanism_20261015/runtime/scripts/ec_field_security_engine_v2.py",
+      "pass": true
+    },
+    {
+      "check": "frozen_/root/ecas_missing_state_mechanism_20261015/runtime/scripts/ec_field_security_engine_v3.py",
+      "pass": true
+    },
+    {
+      "check": "frozen_/root/ecas_missing_state_mechanism_20261015/runtime/security_knowledge/SECURITY_PRIMITIVE_CATALOG_V1.json",
+      "pass": true
+    },
+    {
+      "check": "frozen_/root/ecas_missing_state_mechanism_20261015/runtime/security_knowledge/SECURITY_PRIMITIVE_CATALOG_V2.json",
+      "pass": true
+    },
+    {
+      "check": "frozen_/root/ecas_missing_state_mechanism_20261015/tools/opa",
+      "pass": true
+    },
+    {
+      "check": "source_/mnt/d/lunwen/EC-CSI投稿/working/exploration/20261014_matched_evidence_labor/matched_generation/sealed_evaluation/branch_protocol.json",
+      "pass": true
+    },
+    {
+      "check": "source_/mnt/d/lunwen/EC-CSI投稿/working/exploration/20261014_matched_evidence_labor/matched_generation/EXECUTION_INPUT_MANIFEST.json",
+      "pass": true
+    },
+    {
+      "check": "source_/mnt/d/lunwen/EC-CSI投稿/working/exploration/20261014_matched_evidence_labor/matched_generation/method_runs/FSV-B17/ECAS_MATCHED/first_candidate.json",
+      "pass": true
+    },
+    {
+      "check": "source_/mnt/d/lunwen/EC-CSI投稿/working/exploration/20261014_matched_evidence_labor/matched_generation/execution_inputs/FSV-B17/contract.json",
+      "pass": true
+    },
+    {
+      "check": "source_/mnt/d/lunwen/EC-CSI投稿/working/exploration/20261014_matched_evidence_labor/matched_generation/generation_inputs/FSV-B17/packet.json",
+      "pass": true
+    },
+    {
+      "check": "source_/mnt/d/lunwen/EC-CSI投稿/working/exploration/20261014_matched_evidence_labor/matched_generation/method_runs/FSV-B17/P2P_STYLE/initial/external_pilot/policy.rego",
+      "pass": true
+    },
+    {
+      "check": "source_/mnt/d/lunwen/EC-CSI投稿/working/exploration/20261014_matched_evidence_labor/matched_generation/method_runs/FSV-B17/AUTOPAC_STYLE/initial/external_pilot/policy.rego",
+      "pass": true
+    },
+    {
+      "check": "source_/mnt/d/lunwen/EC-CSI投稿/working/exploration/20261014_matched_evidence_labor/matched_generation/sealed_evaluation/FSV-B17/O-L.json",
+      "pass": true
+    },
+    {
+      "check": "source_/mnt/d/lunwen/EC-CSI投稿/working/exploration/20261014_matched_evidence_labor/matched_generation/sealed_evaluation/FSV-B17/O-I.json",
+      "pass": true
+    },
+    {
+      "check": "source_/mnt/d/lunwen/EC-CSI投稿/working/exploration/20261014_matched_evidence_labor/matched_generation/method_runs/FSV-B19/ECAS_MATCHED/first_candidate.json",
+      "pass": true
+    },
+    {
+      "check": "source_/mnt/d/lunwen/EC-CSI投稿/working/exploration/20261014_matched_evidence_labor/matched_generation/execution_inputs/FSV-B19/contract.json",
+      "pass": true
+    },
+    {
+      "check": "source_/mnt/d/lunwen/EC-CSI投稿/working/exploration/20261014_matched_evidence_labor/matched_generation/generation_inputs/FSV-B19/packet.json",
+      "pass": true
+    },
+    {
+      "check": "source_/mnt/d/lunwen/EC-CSI投稿/working/exploration/20261014_matched_evidence_labor/matched_generation/method_runs/FSV-B19/P2P_STYLE/initial/external_pilot/policy.rego",
+      "pass": true
+    },
+    {
+      "check": "source_/mnt/d/lunwen/EC-CSI投稿/working/exploration/20261014_matched_evidence_labor/matched_generation/method_runs/FSV-B19/AUTOPAC_STYLE/initial/external_pilot/policy.rego",
+      "pass": true
+    },
+    {
+      "check": "source_/mnt/d/lunwen/EC-CSI投稿/working/exploration/20261014_matched_evidence_labor/matched_generation/sealed_evaluation/FSV-B19/O-L.json",
+      "pass": true
+    },
+    {
+      "check": "source_/mnt/d/lunwen/EC-CSI投稿/working/exploration/20261014_matched_evidence_labor/matched_generation/sealed_evaluation/FSV-B19/O-I.json",
+      "pass": true
+    },
+    {
+      "check": "source_/root/ecas_matched_generation_20261014/outputs/t0/restricted_capabilities.json",
+      "pass": true
+    },
+    {
+      "check": "FSV-B17originalFSV-B17-OL-01_full_shape_equal",
+      "pass": true
+    },
+    {
+      "check": "FSV-B17originalFSV-B17-OI-01_full_shape_equal",
+      "pass": true
+    },
+    {
+      "check": "FSV-B17originalenabled_full_shape_equal",
+      "pass": true
+    },
+    {
+      "check": "FSV-B17originaldisabled_full_shape_equal",
+      "pass": true
+    },
+    {
+      "check": "FSV-B17originalbody-disable-spoof_full_shape_equal",
+      "pass": true
+    },
+    {
+      "check": "FSV-B17originalmissing-trusted_full_shape_equal",
+      "pass": true
+    },
+    {
+      "check": "FSV-B17missing_skipFSV-B17-OL-01_full_shape_equal",
+      "pass": true
+    },
+    {
+      "check": "FSV-B17missing_skipFSV-B17-OI-01_full_shape_equal",
+      "pass": true
+    },
+    {
+      "check": "FSV-B17missing_skipenabled_full_shape_equal",
+      "pass": true
+    },
+    {
+      "check": "FSV-B17missing_skipdisabled_full_shape_equal",
+      "pass": true
+    },
+    {
+      "check": "FSV-B17missing_skipbody-disable-spoof_full_shape_equal",
+      "pass": true
+    },
+    {
+      "check": "FSV-B17missing_skipmissing-trusted_full_shape_equal",
+      "pass": true
+    },
+    {
+      "check": "FSV-B17_deny_and_skip_both_admitted",
+      "pass": true
+    },
+    {
+      "check": "FSV-B17_original_missing_deny",
+      "pass": true
+    },
+    {
+      "check": "FSV-B17_skip_missing_allow",
+      "pass": true
+    },
+    {
+      "check": "FSV-B17_counterfactual_only_changes_missing_parameter",
+      "pass": true
+    },
+    {
+      "check": "FSV-B17P2P_STYLE_original_missing_allows",
+      "pass": true
+    },
+    {
+      "check": "FSV-B17P2P_STYLE_manual_guard_missing_denies",
+      "pass": true
+    },
+    {
+      "check": "FSV-B17AUTOPAC_STYLE_original_missing_allows",
+      "pass": true
+    },
+    {
+      "check": "FSV-B17AUTOPAC_STYLE_manual_guard_missing_denies",
+      "pass": true
+    },
+    {
+      "check": "FSV-B19originalFSV-B19-OL-01_full_shape_equal",
+      "pass": true
+    },
+    {
+      "check": "FSV-B19originalFSV-B19-OI-01_full_shape_equal",
+      "pass": true
+    },
+    {
+      "check": "FSV-B19originalnot-held_full_shape_equal",
+      "pass": true
+    },
+    {
+      "check": "FSV-B19originalheld-all_full_shape_equal",
+      "pass": true
+    },
+    {
+      "check": "FSV-B19originalheld-invoices_full_shape_equal",
+      "pass": true
+    },
+    {
+      "check": "FSV-B19originalheld-payments_full_shape_equal",
+      "pass": true
+    },
+    {
+      "check": "FSV-B19originalheld-empty-type_full_shape_equal",
+      "pass": true
+    },
+    {
+      "check": "FSV-B19originalheld-unknown-type_full_shape_equal",
+      "pass": true
+    },
+    {
+      "check": "FSV-B19originalbody-type-spoof_full_shape_equal",
+      "pass": true
+    },
+    {
+      "check": "FSV-B19originalmissing-trusted_full_shape_equal",
+      "pass": true
+    },
+    {
+      "check": "FSV-B19originalpartial-status-false-only_full_shape_equal",
+      "pass": true
+    },
+    {
+      "check": "FSV-B19originalpartial-payments-only_full_shape_equal",
+      "pass": true
+    },
+    {
+      "check": "FSV-B19missing_skipFSV-B19-OL-01_full_shape_equal",
+      "pass": true
+    },
+    {
+      "check": "FSV-B19missing_skipFSV-B19-OI-01_full_shape_equal",
+      "pass": true
+    },
+    {
+      "check": "FSV-B19missing_skipnot-held_full_shape_equal",
+      "pass": true
+    },
+    {
+      "check": "FSV-B19missing_skipheld-all_full_shape_equal",
+      "pass": true
+    },
+    {
+      "check": "FSV-B19missing_skipheld-invoices_full_shape_equal",
+      "pass": true
+    },
+    {
+      "check": "FSV-B19missing_skipheld-payments_full_shape_equal",
+      "pass": true
+    },
+    {
+      "check": "FSV-B19missing_skipheld-empty-type_full_shape_equal",
+      "pass": true
+    },
+    {
+      "check": "FSV-B19missing_skipheld-unknown-type_full_shape_equal",
+      "pass": true
+    },
+    {
+      "check": "FSV-B19missing_skipbody-type-spoof_full_shape_equal",
+      "pass": true
+    },
+    {
+      "check": "FSV-B19missing_skipmissing-trusted_full_shape_equal",
+      "pass": true
+    },
+    {
+      "check": "FSV-B19missing_skippartial-status-false-only_full_shape_equal",
+      "pass": true
+    },
+    {
+      "check": "FSV-B19missing_skippartial-payments-only_full_shape_equal",
+      "pass": true
+    },
+    {
+      "check": "FSV-B19_deny_and_skip_both_admitted",
+      "pass": true
+    },
+    {
+      "check": "FSV-B19_original_missing_deny",
+      "pass": true
+    },
+    {
+      "check": "FSV-B19_skip_missing_allow",
+      "pass": true
+    },
+    {
+      "check": "FSV-B19_counterfactual_only_changes_missing_parameter",
+      "pass": true
+    },
+    {
+      "check": "FSV-B19P2P_STYLE_original_missing_allows",
+      "pass": true
+    },
+    {
+      "check": "FSV-B19P2P_STYLE_manual_guard_missing_denies",
+      "pass": true
+    },
+    {
+      "check": "FSV-B19AUTOPAC_STYLE_original_missing_allows",
+      "pass": true
+    },
+    {
+      "check": "FSV-B19AUTOPAC_STYLE_manual_guard_missing_denies",
+      "pass": true
+    },
+    {
+      "check": "FSV-B17ECAS_original_fullFSV-B17-OL-01_original_pair_coverage",
+      "pass": true
+    },
+    {
+      "check": "FSV-B17ECAS_original_fullFSV-B17-OI-01_original_pair_coverage",
+      "pass": true
+    },
+    {
+      "check": "FSV-B17ECAS_original_shapeFSV-B17-OL-01_original_pair_coverage",
+      "pass": true
+    },
+    {
+      "check": "FSV-B17ECAS_original_shapeFSV-B17-OI-01_original_pair_coverage",
+      "pass": true
+    },
+    {
+      "check": "FSV-B17ECAS_missing_skip_fullFSV-B17-OL-01_original_pair_coverage",
+      "pass": true
+    },
+    {
+      "check": "FSV-B17ECAS_missing_skip_fullFSV-B17-OI-01_original_pair_coverage",
+      "pass": true
+    },
+    {
+      "check": "FSV-B17ECAS_missing_skip_shapeFSV-B17-OL-01_original_pair_coverage",
+      "pass": true
+    },
+    {
+      "check": "FSV-B17ECAS_missing_skip_shapeFSV-B17-OI-01_original_pair_coverage",
+      "pass": true
+    },
+    {
+      "check": "FSV-B17P2P_STYLE_originalFSV-B17-OL-01_original_pair_coverage",
+      "pass": true
+    },
+    {
+      "check": "FSV-B17P2P_STYLE_originalFSV-B17-OI-01_original_pair_coverage",
+      "pass": true
+    },
+    {
+      "check": "FSV-B17P2P_STYLE_manual_guardFSV-B17-OL-01_original_pair_coverage",
+      "pass": true
+    },
+    {
+      "check": "FSV-B17P2P_STYLE_manual_guardFSV-B17-OI-01_original_pair_coverage",
+      "pass": true
+    },
+    {
+      "check": "FSV-B17AUTOPAC_STYLE_originalFSV-B17-OL-01_original_pair_coverage",
+      "pass": true
+    },
+    {
+      "check": "FSV-B17AUTOPAC_STYLE_originalFSV-B17-OI-01_original_pair_coverage",
+      "pass": true
+    },
+    {
+      "check": "FSV-B17AUTOPAC_STYLE_manual_guardFSV-B17-OL-01_original_pair_coverage",
+      "pass": true
+    },
+    {
+      "check": "FSV-B17AUTOPAC_STYLE_manual_guardFSV-B17-OI-01_original_pair_coverage",
+      "pass": true
+    },
+    {
+      "check": "FSV-B19ECAS_original_fullFSV-B19-OL-01_original_pair_coverage",
+      "pass": true
+    },
+    {
+      "check": "FSV-B19ECAS_original_fullFSV-B19-OI-01_original_pair_coverage",
+      "pass": true
+    },
+    {
+      "check": "ECAS_original_fullpartial-status-false-only_no_gold",
+      "pass": true
+    },
+    {
+      "check": "ECAS_original_fullpartial-payments-only_no_gold",
+      "pass": true
+    },
+    {
+      "check": "FSV-B19ECAS_original_shapeFSV-B19-OL-01_original_pair_coverage",
+      "pass": true
+    },
+    {
+      "check": "FSV-B19ECAS_original_shapeFSV-B19-OI-01_original_pair_coverage",
+      "pass": true
+    },
+    {
+      "check": "ECAS_original_shapepartial-status-false-only_no_gold",
+      "pass": true
+    },
+    {
+      "check": "ECAS_original_shapepartial-payments-only_no_gold",
+      "pass": true
+    },
+    {
+      "check": "FSV-B19ECAS_missing_skip_fullFSV-B19-OL-01_original_pair_coverage",
+      "pass": true
+    },
+    {
+      "check": "FSV-B19ECAS_missing_skip_fullFSV-B19-OI-01_original_pair_coverage",
+      "pass": true
+    },
+    {
+      "check": "ECAS_missing_skip_fullpartial-status-false-only_no_gold",
+      "pass": true
+    },
+    {
+      "check": "ECAS_missing_skip_fullpartial-payments-only_no_gold",
+      "pass": true
+    },
+    {
+      "check": "FSV-B19ECAS_missing_skip_shapeFSV-B19-OL-01_original_pair_coverage",
+      "pass": true
+    },
+    {
+      "check": "FSV-B19ECAS_missing_skip_shapeFSV-B19-OI-01_original_pair_coverage",
+      "pass": true
+    },
+    {
+      "check": "ECAS_missing_skip_shapepartial-status-false-only_no_gold",
+      "pass": true
+    },
+    {
+      "check": "ECAS_missing_skip_shapepartial-payments-only_no_gold",
+      "pass": true
+    },
+    {
+      "check": "FSV-B19P2P_STYLE_originalFSV-B19-OL-01_original_pair_coverage",
+      "pass": true
+    },
+    {
+      "check": "FSV-B19P2P_STYLE_originalFSV-B19-OI-01_original_pair_coverage",
+      "pass": true
+    },
+    {
+      "check": "P2P_STYLE_originalpartial-status-false-only_no_gold",
+      "pass": true
+    },
+    {
+      "check": "P2P_STYLE_originalpartial-payments-only_no_gold",
+      "pass": true
+    },
+    {
+      "check": "FSV-B19P2P_STYLE_manual_guardFSV-B19-OL-01_original_pair_coverage",
+      "pass": true
+    },
+    {
+      "check": "FSV-B19P2P_STYLE_manual_guardFSV-B19-OI-01_original_pair_coverage",
+      "pass": true
+    },
+    {
+      "check": "P2P_STYLE_manual_guardpartial-status-false-only_no_gold",
+      "pass": true
+    },
+    {
+      "check": "P2P_STYLE_manual_guardpartial-payments-only_no_gold",
+      "pass": true
+    },
+    {
+      "check": "FSV-B19AUTOPAC_STYLE_originalFSV-B19-OL-01_original_pair_coverage",
+      "pass": true
+    },
+    {
+      "check": "FSV-B19AUTOPAC_STYLE_originalFSV-B19-OI-01_original_pair_coverage",
+      "pass": true
+    },
+    {
+      "check": "AUTOPAC_STYLE_originalpartial-status-false-only_no_gold",
+      "pass": true
+    },
+    {
+      "check": "AUTOPAC_STYLE_originalpartial-payments-only_no_gold",
+      "pass": true
+    },
+    {
+      "check": "FSV-B19AUTOPAC_STYLE_manual_guardFSV-B19-OL-01_original_pair_coverage",
+      "pass": true
+    },
+    {
+      "check": "FSV-B19AUTOPAC_STYLE_manual_guardFSV-B19-OI-01_original_pair_coverage",
+      "pass": true
+    },
+    {
+      "check": "AUTOPAC_STYLE_manual_guardpartial-status-false-only_no_gold",
+      "pass": true
+    },
+    {
+      "check": "AUTOPAC_STYLE_manual_guardpartial-payments-only_no_gold",
+      "pass": true
+    },
+    {
+      "check": "all_partial_payments_original_ecas_allow",
+      "pass": true
+    }
+  ],
+  "new_model_calls": 0,
+  "result_sha256": "5232adb59ae1f6230930010b9a03c959ab46be85c0b0111c2ffc7a58f9f55b18",
+  "result_rows": 144,
+  "independent_cases_added": 0,
+  "scope_id": "ECAS-MISSING-STATE-MECHANISM-20261015-01",
+  "completed_at": "2026-10-15T03:03:58.566728+00:00"
+}

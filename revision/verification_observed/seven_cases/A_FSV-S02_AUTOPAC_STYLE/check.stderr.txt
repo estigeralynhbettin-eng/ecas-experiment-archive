@@ -1,0 +1,3 @@
+2 errors occurred:
+/root/ecas_a9_artifact_verify_v2/extracted/archives/old_three/effect_runs/FSV-S02/AUTOPAC_STYLE/repaired/external_pilot/policy.rego:25: rego_type_error: undefined function is_integer
+/root/ecas_a9_artifact_verify_v2/extracted/archives/old_three/effect_runs/FSV-S02/AUTOPAC_STYLE/repaired/external_pilot/policy.rego:35: rego_type_error: undefined function is_integer

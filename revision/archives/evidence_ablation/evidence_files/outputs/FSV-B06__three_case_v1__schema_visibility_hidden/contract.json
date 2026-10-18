@@ -1,0 +1,96 @@
+{
+  "catalog_id": "EC-SECURITY-PRIMITIVE-CATALOG-V2",
+  "contract_id": "ECV2-CONTRACT-FSV-B06",
+  "contract_version": "EC-EVIDENCE-CONTRACT-V3",
+  "evidence": [
+    {
+      "binding_facts": {
+        "visible_enum_values": true,
+        "visible_plain_language_invariant": true,
+        "visible_server_authority_or_workflow_contract": true
+      },
+      "bound_paths": [
+        "/trusted/reAgeIsLatestTransaction"
+      ],
+      "evidence_id": "VIS-FSV-B06-01",
+      "locator": "re-ageing.adoc:85-92;",
+      "operations": [
+        "POST /v1/loans/{loanId}/transactions/{transactionId}?command=undo"
+      ],
+      "relation": "supports",
+      "sha256": "95D99F4BEE0B70B23487CBEE14CC1C767AB4667240F297B6ECE0DE3545BE5F16",
+      "source_kind": "business_requirement",
+      "supports_primitives": [
+        "SP-BOUNDED-BUSINESS-GUARD",
+        "SP-ENUM-ALLOWLIST",
+        "SP-SERVER-AUTHORITY-WORKFLOW"
+      ],
+      "system": "Fineract",
+      "versions": [
+        "1.14.0"
+      ],
+      "visibility": "hidden"
+    },
+    {
+      "binding_facts": {
+        "visible_enum_values": true,
+        "visible_plain_language_invariant": true,
+        "visible_server_authority_or_workflow_contract": true
+      },
+      "bound_paths": [
+        "/trusted/reAgeIsLatestTransaction"
+      ],
+      "evidence_id": "VIS-FSV-B06-02",
+      "locator": "re-ageing.adoc:95-110",
+      "operations": [
+        "POST /v1/loans/{loanId}/transactions/{transactionId}?command=undo"
+      ],
+      "relation": "supports",
+      "sha256": "95D99F4BEE0B70B23487CBEE14CC1C767AB4667240F297B6ECE0DE3545BE5F16",
+      "source_kind": "business_requirement",
+      "supports_primitives": [
+        "SP-BOUNDED-BUSINESS-GUARD",
+        "SP-ENUM-ALLOWLIST",
+        "SP-SERVER-AUTHORITY-WORKFLOW"
+      ],
+      "system": "Fineract",
+      "versions": [
+        "1.14.0"
+      ],
+      "visibility": "visible"
+    },
+    {
+      "binding_facts": {
+        "trusted_runtime_context_mapping": true,
+        "visible_field_mapping": true,
+        "visible_runtime_interface": true
+      },
+      "bound_paths": [
+        "/trusted/reAgeIsLatestTransaction"
+      ],
+      "evidence_id": "VIS-FSV-B06-RUNTIME-ABI",
+      "locator": "tasks.FSV-B06",
+      "operations": [
+        "POST /v1/loans/{loanId}/transactions/{transactionId}?command=undo"
+      ],
+      "relation": "supports",
+      "sha256": "8221DA8A6720B0593A8D337F18569C9947AAB05B02E5C84FB0C50E3DE8C1ABD7",
+      "source_kind": "runtime_context_contract",
+      "supports_primitives": [
+        "SP-BOUNDED-BUSINESS-GUARD",
+        "SP-ENUM-ALLOWLIST",
+        "SP-SERVER-AUTHORITY-WORKFLOW"
+      ],
+      "system": "Fineract",
+      "versions": [
+        "1.14.0"
+      ],
+      "visibility": "visible"
+    }
+  ],
+  "target": {
+    "operation": "POST /v1/loans/{loanId}/transactions/{transactionId}?command=undo",
+    "system": "Fineract",
+    "version": "1.14.0"
+  }
+}

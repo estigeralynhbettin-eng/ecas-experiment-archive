@@ -1,0 +1,18 @@
+{
+  "request": {
+    "body": {
+      "age": true
+    }
+  },
+  "trusted": {},
+  "subject": {
+    "role": "authenticated_api_caller",
+    "id": "authenticated_api_caller"
+  },
+  "action": "POST /v1/clients/{clientId}/familymembers",
+  "resource": {
+    "id": "Fineract:1.14.0",
+    "system": "Fineract",
+    "version": "1.14.0"
+  }
+}

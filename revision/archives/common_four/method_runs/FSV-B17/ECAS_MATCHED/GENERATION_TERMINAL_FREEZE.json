@@ -1,0 +1,9 @@
+{
+  "task": "FSV-B17",
+  "method": "ECAS_MATCHED",
+  "status": "ELIGIBLE",
+  "execution_eligible": true,
+  "first_freeze_sha256": "7a997326e3815803b48bb452cc44e3d827c4b88cb272321a9edb9eb6d836c0b2",
+  "frozen_at": "2026-10-15T00:54:48.333592+00:00",
+  "final_evaluation_not_yet_read": true
+}

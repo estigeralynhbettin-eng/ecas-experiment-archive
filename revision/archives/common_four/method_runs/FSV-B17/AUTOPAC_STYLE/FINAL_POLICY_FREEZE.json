@@ -1,0 +1,9 @@
+{
+  "scope_id": "ECAS-MATCHED-EVIDENCE-LABOR-20261014-01",
+  "label": "FINAL_POLICY",
+  "path": "/mnt/d/lunwen/EC-CSI投稿/working/exploration/20261014_matched_evidence_labor/matched_generation/method_runs/FSV-B17/AUTOPAC_STYLE/initial/external_pilot/policy.rego",
+  "sha256": "83fb3cf00dcea3c7446241ce57acc9288c8efe758decac4bbb73720c1b0f3350",
+  "frozen_at": "2026-10-15T00:54:30.995394+00:00",
+  "final_evaluation_not_yet_read": true,
+  "final_labels_in_feedback": false
+}

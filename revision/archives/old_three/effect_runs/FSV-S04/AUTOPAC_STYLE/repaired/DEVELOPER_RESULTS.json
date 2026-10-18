@@ -1,0 +1,22 @@
+[
+  {
+    "id": "dev_email_positive",
+    "expected": "allow",
+    "actual": {
+      "status": "EXECUTED",
+      "decision": "deny",
+      "exit_code": 0
+    },
+    "pass": false
+  },
+  {
+    "id": "dev_email_negative",
+    "expected": "deny",
+    "actual": {
+      "status": "EXECUTED",
+      "decision": "deny",
+      "exit_code": 0
+    },
+    "pass": true
+  }
+]

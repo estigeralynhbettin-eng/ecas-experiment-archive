@@ -1,0 +1,26 @@
+{
+  "policy_version": "EC-FIELD-SECURITY-V3",
+  "policy_id": "FSV-B17-CUSTOMER-DISABLED-DISALLOW-SO",
+  "target": {
+    "operation": "POST /api/resource/Sales Order",
+    "system": "ERPNext",
+    "version": "16.0.0"
+  },
+  "evidence_refs": [
+    "VIS-FSV-B17-01",
+    "VIS-FSV-B17-02",
+    "VIS-FSV-B17-RUNTIME-ABI"
+  ],
+  "rules": [
+    {
+      "rule_id": "FSV-B17-RULE-01",
+      "primitive_id": "SP-SERVER-AUTHORITY-WORKFLOW",
+      "evidence_refs": [
+        "VIS-FSV-B17-01",
+        "VIS-FSV-B17-RUNTIME-ABI"
+      ],
+      "op": "server_derived_reject",
+      "path": "/request/body/ecasClientClaim/customerDisabled"
+    }
+  ]
+}

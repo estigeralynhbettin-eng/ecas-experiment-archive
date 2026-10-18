@@ -1,0 +1,53 @@
+[
+  {
+    "id": "FSV-B19-OL-01",
+    "input": {
+      "request": {
+        "body": {
+          "action": "PURCHASE_ORDER",
+          "supplier": "SUPPLIER-SYNTH-1"
+        }
+      },
+      "trusted": {
+        "holdType": "",
+        "supplierOnHold": false
+      }
+    },
+    "expected": "allow",
+    "source": "/root/ecas_evidence_ablation_20261014/inputs/FSV-B19__four_case_v2/O-L.json",
+    "class": "ARCHIVED_SYNTHETIC_REQUEST"
+  },
+  {
+    "id": "FSV-B19-OI-01",
+    "input": {
+      "request": {
+        "body": {
+          "action": "PURCHASE_ORDER",
+          "supplier": "SUPPLIER-SYNTH-1"
+        }
+      },
+      "trusted": {
+        "holdType": "All",
+        "supplierOnHold": true
+      }
+    },
+    "expected": "deny",
+    "source": "/root/ecas_evidence_ablation_20261014/inputs/FSV-B19__four_case_v2/O-I.json",
+    "class": "ARCHIVED_SYNTHETIC_REQUEST"
+  },
+  {
+    "id": "SYNTH-MISSING-TRUSTED",
+    "input": {
+      "request": {
+        "body": {
+          "action": "PURCHASE_ORDER",
+          "supplier": "SUPPLIER-SYNTH-1"
+        }
+      },
+      "trusted": {}
+    },
+    "expected": null,
+    "source": "archived legal request with trusted object emptied",
+    "class": "CONSTRUCTED_MISSING_CONTEXT_CONTROL"
+  }
+]

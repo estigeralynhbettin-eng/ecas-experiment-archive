@@ -1,0 +1,5 @@
+{
+  "status": "READY",
+  "rego": "package external_pilot\n\nimport rego.v1\n\ndefault allow := false\n\nallow if {\n    input.subject.role == \"authenticated_api_caller\"\n    input.action == \"POST /api/resource/Lead\"\n    input.resource.system == \"ERPNext\"\n    input.resource.version == \"16.0.0\"\n}",
+  "reason": "The source indicates Frappe REST API supports creating records via POST /api/resource/:doctype for authenticated users. The adapter confirms the subject is an authenticated_api_caller targeting the Lead DocType in ERPNext 16.0.0."
+}

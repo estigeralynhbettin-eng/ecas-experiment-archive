@@ -1,0 +1,41 @@
+[
+  {
+    "case_id": "FSV-S04_p2p_rego",
+    "coverage": "p2p_rego",
+    "dataset": "ERPNext+Fineract_public_smoke",
+    "max_output_tokens": 16384,
+    "actual_output_tokens": 1854,
+    "prompt_tokens": 5991,
+    "finish_reason": "stop",
+    "parse_status": "PASS",
+    "content_empty": false,
+    "retry_count": 0,
+    "truncated": false
+  },
+  {
+    "case_id": "FSV-S04_autopac_generate",
+    "coverage": "autopac_generate",
+    "dataset": "ERPNext+Fineract_public_smoke",
+    "max_output_tokens": 16384,
+    "actual_output_tokens": 2944,
+    "prompt_tokens": 5900,
+    "finish_reason": "stop",
+    "parse_status": "PASS",
+    "content_empty": false,
+    "retry_count": 0,
+    "truncated": false
+  },
+  {
+    "case_id": "FSV-S04_ecas_generate",
+    "coverage": "ecas_generate",
+    "dataset": "ERPNext",
+    "max_output_tokens": 16384,
+    "actual_output_tokens": 1560,
+    "prompt_tokens": 8247,
+    "finish_reason": "stop",
+    "parse_status": "PASS",
+    "content_empty": false,
+    "retry_count": 0,
+    "truncated": false
+  }
+]

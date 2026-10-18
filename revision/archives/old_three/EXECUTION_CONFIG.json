@@ -1,0 +1,31 @@
+{
+  "scope_id": "ECAS-EXTERNAL-ADAPTATION-20261014-01",
+  "authorization": "AUTHORIZATION_CN.md",
+  "runtime_lane": "/root/ecas_external_pilot_20261014",
+  "tasks": [
+    "FSV-B06",
+    "FSV-S02",
+    "FSV-S04"
+  ],
+  "provider": "glm",
+  "model": "glm-5.2",
+  "thinking": "enabled",
+  "reasoning_effort": "high",
+  "max_calls": 30,
+  "max_smoke_calls": 4,
+  "max_tokens": 16384,
+  "max_prompt_tokens": 16384,
+  "model_wrapper": "/mnt/d/lunwen/tools/llm/invoke_glm_api.ps1",
+  "pwsh": "/mnt/c/Users/PBCDCI/.cache/codex-runtimes/codex-primary-runtime/dependencies/native/powershell/pwsh.exe",
+  "contracts": {
+    "FSV-B06": "/mnt/d/lunwen/EC-CSI投稿/working/exploration/20261014_external_baseline_pilot/execution_inputs/FSV-B06/contract.json",
+    "FSV-S02": "/mnt/d/lunwen/EC-CSI投稿/working/exploration/20261014_external_baseline_pilot/execution_inputs/FSV-S02/contract.json",
+    "FSV-S04": "/mnt/d/lunwen/EC-CSI投稿/working/exploration/20261014_external_baseline_pilot/execution_inputs/FSV-S04/contract.json"
+  },
+  "timeout_seconds": 600,
+  "repair_per_external_case": 1,
+  "temperature": "PROVIDER_DEFAULT_NOT_WRAPPER_CONFIGURABLE",
+  "seed": "NOT_SET",
+  "classification": "RETROSPECTIVE_ADAPTED_LOCAL_PILOT_NOT_NATIVE_OR_BLIND",
+  "max_total_external_repair_calls": 5
+}

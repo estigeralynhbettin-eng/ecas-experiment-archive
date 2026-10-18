@@ -1,0 +1,192 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "https://example.invalid/ec/field-security-policy-v2.schema.json",
+  "title": "EC Field Security Policy V2",
+  "type": "object",
+  "additionalProperties": false,
+  "required": ["policy_version", "policy_id", "target", "evidence_refs", "rules"],
+  "properties": {
+    "policy_version": {"const": "EC-FIELD-SECURITY-V2"},
+    "policy_id": {"$ref": "#/$defs/id"},
+    "target": {"$ref": "#/$defs/target"},
+    "evidence_refs": {"$ref": "#/$defs/evidenceRefs"},
+    "rules": {
+      "type": "array",
+      "minItems": 1,
+      "maxItems": 16,
+      "items": {"$ref": "#/$defs/rule"}
+    }
+  },
+  "$defs": {
+    "id": {"type": "string", "pattern": "^[A-Za-z0-9][A-Za-z0-9._:-]{0,127}$"},
+    "pointer": {"type": "string", "pattern": "^/(request|trusted)(/([^~/]|~0|~1)+|/\\*)*$", "maxLength": 512},
+    "evidenceRefs": {
+      "type": "array",
+      "minItems": 1,
+      "maxItems": 64,
+      "uniqueItems": true,
+      "items": {"$ref": "#/$defs/id"}
+    },
+    "target": {
+      "type": "object",
+      "additionalProperties": false,
+      "required": ["system", "version", "operation"],
+      "properties": {
+        "system": {"$ref": "#/$defs/id"},
+        "version": {"type": "string", "minLength": 1, "maxLength": 64},
+        "operation": {"type": "string", "minLength": 1, "maxLength": 256}
+      }
+    },
+    "commonRule": {
+      "type": "object",
+      "properties": {
+        "rule_id": {"$ref": "#/$defs/id"},
+        "primitive_id": {"$ref": "#/$defs/id"},
+        "evidence_refs": {"$ref": "#/$defs/evidenceRefs"},
+        "op": {"type": "string"},
+        "on_missing": {"enum": ["deny", "skip"]}
+      }
+    },
+    "rule": {
+      "type": "object",
+      "required": ["rule_id", "primitive_id", "evidence_refs", "op"],
+      "allOf": [
+        {"$ref": "#/$defs/commonRule"},
+        {
+          "oneOf": [
+            {
+              "required": ["path", "media_types", "on_missing"],
+              "properties": {
+                "op": {"const": "content_type_allowlist"},
+                "path": {"$ref": "#/$defs/pointer"},
+                "media_types": {"type": "array", "minItems": 1, "maxItems": 16, "uniqueItems": true, "items": {"type": "string", "pattern": "^[A-Za-z0-9!#$&^_.+-]+/[A-Za-z0-9!#$&^_.+-]+$"}}
+              }
+            },
+            {
+              "required": ["path", "max_bytes", "on_missing"],
+              "properties": {
+                "op": {"const": "request_size_limit"},
+                "path": {"$ref": "#/$defs/pointer"},
+                "max_bytes": {"type": "integer", "minimum": 0, "maximum": 1073741824}
+              }
+            },
+            {
+              "required": ["path", "fields", "on_missing"],
+              "properties": {
+                "op": {"const": "allowed_fields"},
+                "path": {"$ref": "#/$defs/pointer"},
+                "fields": {"type": "array", "minItems": 1, "maxItems": 512, "uniqueItems": true, "items": {"type": "string", "minLength": 1, "maxLength": 256}}
+              }
+            },
+            {
+              "required": ["path", "allow_null"],
+              "properties": {
+                "op": {"const": "required"},
+                "path": {"$ref": "#/$defs/pointer"},
+                "allow_null": {"type": "boolean"}
+              },
+              "not": {"required": ["on_missing"]}
+            },
+            {
+              "required": ["path", "expected_type", "on_missing"],
+              "properties": {
+                "op": {"const": "strict_type"},
+                "path": {"$ref": "#/$defs/pointer"},
+                "expected_type": {"enum": ["object", "array", "string", "boolean", "integer", "number", "null"]}
+              }
+            },
+            {
+              "required": ["path", "min", "max", "on_missing"],
+              "properties": {
+                "op": {"const": "length_cardinality"},
+                "path": {"$ref": "#/$defs/pointer"},
+                "min": {"type": "integer", "minimum": 0},
+                "max": {"type": "integer", "minimum": 0}
+              }
+            },
+            {
+              "required": ["path", "on_missing"],
+              "anyOf": [{"required": ["min"]}, {"required": ["max"]}, {"required": ["max_scale"]}],
+              "properties": {
+                "op": {"const": "number_range_precision"},
+                "path": {"$ref": "#/$defs/pointer"},
+                "min": {"type": "number"},
+                "max": {"type": "number"},
+                "max_scale": {"type": "integer", "minimum": 0, "maximum": 18}
+              }
+            },
+            {
+              "required": ["path", "values", "on_missing"],
+              "properties": {
+                "op": {"const": "enum_allowlist"},
+                "path": {"$ref": "#/$defs/pointer"},
+                "values": {"type": "array", "minItems": 1, "maxItems": 256, "uniqueItems": true, "items": {"type": ["string", "number", "integer", "boolean", "null"]}}
+              }
+            },
+            {
+              "required": ["path", "validator_id", "on_missing"],
+              "properties": {
+                "op": {"const": "named_validator"},
+                "path": {"$ref": "#/$defs/pointer"},
+                "validator_id": {"enum": ["email_basic_v1", "e164_phone_v1", "cn_resident_id_v1", "iso_date_v1"]}
+              }
+            },
+            {
+              "required": ["path", "unicode_form", "strip_whitespace", "reject_if_changed", "on_missing"],
+              "properties": {
+                "op": {"const": "canonical_form"},
+                "path": {"$ref": "#/$defs/pointer"},
+                "unicode_form": {"enum": ["NFC", "NFKC"]},
+                "strip_whitespace": {"type": "boolean"},
+                "reject_if_changed": {"const": true}
+              }
+            },
+            {
+              "required": ["earlier_path", "later_path", "allow_equal", "on_missing"],
+              "properties": {
+                "op": {"const": "date_order"},
+                "earlier_path": {"$ref": "#/$defs/pointer"},
+                "later_path": {"$ref": "#/$defs/pointer"},
+                "allow_equal": {"type": "boolean"}
+              }
+            },
+            {
+              "required": ["age_path", "dob_path", "as_of_path", "tolerance_years", "on_missing"],
+              "properties": {
+                "op": {"const": "age_matches_dob"},
+                "age_path": {"$ref": "#/$defs/pointer"},
+                "dob_path": {"$ref": "#/$defs/pointer"},
+                "as_of_path": {"$ref": "#/$defs/pointer"},
+                "tolerance_years": {"type": "integer", "minimum": 0, "maximum": 2}
+              }
+            },
+            {
+              "required": ["current_state_path", "requested_state_path", "transitions", "on_missing"],
+              "properties": {
+                "op": {"const": "state_transition"},
+                "current_state_path": {"$ref": "#/$defs/pointer"},
+                "requested_state_path": {"$ref": "#/$defs/pointer"},
+                "transitions": {
+                  "type": "array", "minItems": 1, "maxItems": 128, "uniqueItems": true,
+                  "items": {
+                    "type": "object", "additionalProperties": false, "required": ["from", "to"],
+                    "properties": {"from": {"type": "string", "minLength": 1}, "to": {"type": "string", "minLength": 1}}
+                  }
+                }
+              }
+            },
+            {
+              "required": ["path"],
+              "properties": {
+                "op": {"const": "server_derived_reject"},
+                "path": {"$ref": "#/$defs/pointer"}
+              },
+              "not": {"required": ["on_missing"]}
+            }
+          ]
+        }
+      ],
+      "unevaluatedProperties": false
+    }
+  }
+}

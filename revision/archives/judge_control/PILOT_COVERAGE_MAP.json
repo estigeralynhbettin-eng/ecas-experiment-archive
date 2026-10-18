@@ -1,0 +1,22 @@
+{
+  "actual_plan_receipt": "TOKEN_SMOKE_PLAN_ACTUAL.json",
+  "actual_plan_sha256": "b0dc243ad3a39c730e4e6027696d2a89e1f76c37b4fb1f0ff0e964153a6d0d34",
+  "pilot_task": "FSV-B19",
+  "one_actual_call_only": true,
+  "estimated_prompt_tokens": 10222,
+  "required_coverage": [
+    "longest_typed_ir_judge_input"
+  ],
+  "maps_to_plan_dimensions": [
+    "p95",
+    "p99",
+    "max"
+  ],
+  "dataset": "FOUR_TASKS_TYPED_IR_PUBLIC_SOURCE_CONTROL",
+  "maximum_k": 2,
+  "fragile_case_id": "FSV-B19_longest_two_candidate_review",
+  "all_response_schema_structures_same": true,
+  "not_independent_observations": true,
+  "total_judge_call_cap_unchanged": 4,
+  "shared_attempt_cap_unchanged": 44
+}

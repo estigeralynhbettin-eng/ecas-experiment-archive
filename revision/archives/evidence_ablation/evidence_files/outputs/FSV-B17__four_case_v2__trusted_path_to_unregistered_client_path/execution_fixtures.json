@@ -1,0 +1,73 @@
+[
+  {
+    "id": "FSV-B17-OL-01",
+    "input": {
+      "request": {
+        "body": {
+          "customer": "CUSTOMER-SYNTH-1",
+          "ecasClientClaim": {
+            "customerDisabled": false
+          }
+        }
+      },
+      "trusted": {
+        "customerDisabled": false
+      }
+    },
+    "expected": null,
+    "source": "/root/ecas_evidence_ablation_20261014/inputs/FSV-B17__four_case_v2/O-L.json",
+    "class": "CONSTRUCTED_CLIENT_PATH_REPLAY"
+  },
+  {
+    "id": "FSV-B17-OI-01",
+    "input": {
+      "request": {
+        "body": {
+          "customer": "CUSTOMER-SYNTH-1",
+          "ecasClientClaim": {
+            "customerDisabled": true
+          }
+        }
+      },
+      "trusted": {
+        "customerDisabled": true
+      }
+    },
+    "expected": null,
+    "source": "/root/ecas_evidence_ablation_20261014/inputs/FSV-B17__four_case_v2/O-I.json",
+    "class": "CONSTRUCTED_CLIENT_PATH_REPLAY"
+  },
+  {
+    "id": "SYNTH-CLIENT-SPOOF",
+    "input": {
+      "request": {
+        "body": {
+          "customer": "CUSTOMER-SYNTH-1",
+          "ecasClientClaim": {
+            "customerDisabled": false
+          }
+        }
+      },
+      "trusted": {
+        "customerDisabled": true
+      }
+    },
+    "expected": null,
+    "source": "paired archived request values copied into client body",
+    "class": "CONSTRUCTED_CLIENT_SPOOF_PROBE"
+  },
+  {
+    "id": "SYNTH-MISSING-TRUSTED",
+    "input": {
+      "request": {
+        "body": {
+          "customer": "CUSTOMER-SYNTH-1"
+        }
+      },
+      "trusted": {}
+    },
+    "expected": null,
+    "source": "archived legal request with trusted object emptied",
+    "class": "CONSTRUCTED_MISSING_CONTEXT_CONTROL"
+  }
+]

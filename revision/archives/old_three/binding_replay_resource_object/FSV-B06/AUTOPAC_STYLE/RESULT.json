@@ -1,0 +1,125 @@
+{
+  "task": "FSV-B06",
+  "method": "AUTOPAC_STYLE",
+  "initial_status": "DEVELOPMENT_REJECTED",
+  "status": "EVALUATED",
+  "classification": "POST_HOC_ENGINEERING_INTERFACE_REPAIR_NOT_FRESH_MODEL_EFFECT",
+  "requests": [
+    {
+      "channel": "O-L",
+      "input": {
+        "request": {
+          "body": {}
+        },
+        "trusted": {
+          "reAgeIsLatestTransaction": true
+        }
+      },
+      "mapped_input": {
+        "request": {
+          "body": {}
+        },
+        "trusted": {
+          "reAgeIsLatestTransaction": true
+        },
+        "subject": {
+          "role": "authenticated_api_caller"
+        },
+        "action": "POST /v1/loans/{loanId}/transactions/{transactionId}?command=undo",
+        "resource": {
+          "id": "Fineract:1.14.0",
+          "system": "Fineract",
+          "version": "1.14.0"
+        },
+        "subject_role": "authenticated_api_caller",
+        "resource_system": "Fineract",
+        "resource_version": "1.14.0"
+      },
+      "expected": "allow",
+      "actual": {
+        "status": "EXECUTED",
+        "decision": "allow",
+        "exit_code": 0
+      }
+    },
+    {
+      "channel": "O-I",
+      "input": {
+        "request": {
+          "body": {}
+        },
+        "trusted": {
+          "reAgeIsLatestTransaction": false
+        }
+      },
+      "mapped_input": {
+        "request": {
+          "body": {}
+        },
+        "trusted": {
+          "reAgeIsLatestTransaction": false
+        },
+        "subject": {
+          "role": "authenticated_api_caller"
+        },
+        "action": "POST /v1/loans/{loanId}/transactions/{transactionId}?command=undo",
+        "resource": {
+          "id": "Fineract:1.14.0",
+          "system": "Fineract",
+          "version": "1.14.0"
+        },
+        "subject_role": "authenticated_api_caller",
+        "resource_system": "Fineract",
+        "resource_version": "1.14.0"
+      },
+      "expected": "deny",
+      "actual": {
+        "status": "EXECUTED",
+        "decision": "deny",
+        "exit_code": 0
+      }
+    }
+  ],
+  "model_calls": [
+    10,
+    11,
+    12
+  ],
+  "checks": {
+    "compile_exit": 0,
+    "compile_error": "",
+    "policy_path": "/mnt/d/lunwen/EC-CSI投稿/working/exploration/20261014_external_baseline_pilot/binding_replay_resource_object/FSV-B06/AUTOPAC_STYLE/validation/external_pilot/policy.rego",
+    "lint_exit": null,
+    "lint_report": null,
+    "accepted": true
+  },
+  "format_receipt": {
+    "source_policy_sha256": "df2ae855232480e7ad4041fd4d6d5576301d4b414ac6483f6571018dbd9c4d77",
+    "formatted_sha256": "1c5d26ad1f61a1d82672be2695520197a49bbfbb381559f076e2f0c887f8b4ea",
+    "ast_equal_without_locations": true,
+    "source_path": "/mnt/d/lunwen/EC-CSI投稿/working/exploration/20261014_external_baseline_pilot/effect_runs/FSV-B06/AUTOPAC_STYLE/repaired/external_pilot/policy.rego"
+  },
+  "developer_results": [
+    {
+      "id": "dev_latest_true",
+      "expected": "allow",
+      "actual": {
+        "status": "EXECUTED",
+        "decision": "allow",
+        "exit_code": 0
+      },
+      "pass": true
+    },
+    {
+      "id": "dev_latest_false",
+      "expected": "deny",
+      "actual": {
+        "status": "EXECUTED",
+        "decision": "deny",
+        "exit_code": 0
+      },
+      "pass": true
+    }
+  ],
+  "request_pair_correct": true
+}

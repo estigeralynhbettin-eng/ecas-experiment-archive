@@ -1,0 +1,22 @@
+[
+  {
+    "id": "dev_latest_true",
+    "expected": "allow",
+    "actual": {
+      "status": "EXECUTED",
+      "decision": "allow",
+      "exit_code": 0
+    },
+    "pass": true
+  },
+  {
+    "id": "dev_latest_false",
+    "expected": "deny",
+    "actual": {
+      "status": "EXECUTED",
+      "decision": "deny",
+      "exit_code": 0
+    },
+    "pass": true
+  }
+]

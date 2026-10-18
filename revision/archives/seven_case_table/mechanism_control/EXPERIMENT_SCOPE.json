@@ -1,0 +1,14 @@
+{
+  "kind": "new-experiment-block",
+  "status": "FROZEN",
+  "protocol_path": "PROTOCOL_CN.md",
+  "protocol_sha256": "fa1021b2f164bc6c513f735a11c14cdca00bd20ea728b1291930de225eb61419",
+  "scope_id": "ECAS-MISSING-STATE-MECHANISM-20261015-01",
+  "project_id": "EC-CSI",
+  "experiment_id": "missing-state-mechanism",
+  "runtime_lane": "/root/ecas_missing_state_mechanism_20261015",
+  "classification": "OFFLINE_COUNTERFACTUAL_EXPOSED_TASKS_NOT_MODEL_GENERATION",
+  "new_model_calls": 0,
+  "new_cases": 0,
+  "new_systems": 0
+}

@@ -1,0 +1,28 @@
+{
+  "choices": [
+    {
+      "finish_reason": "stop",
+      "index": 0,
+      "message": {
+        "content": "{\"begin\":\"BEGIN_FSV-S02_autopac_judge_MAIN\",\"stage\":\"autopac_judge\",\"output\":{\"verdict\":\"ACCEPT\",\"issues\":[\"Type validation for documentTypeId (integer/int64) and documentKey (string) is not enforced; however this is typical policy-scope limitation and presence of mandatory fields is correctly captured.\",\"clientId path parameter required by OpenAPI spec is not checked, but the adapter only exposes /request/body, so this is an adapter constraint rather than a policy omission.\"]},\"end\":\"END_FSV-S02_autopac_judge_MAIN\"}",
+        "role": "assistant"
+      }
+    }
+  ],
+  "created": 1791950840,
+  "id": "20261014120702e93af494bd774e00",
+  "model": "glm-5.2",
+  "object": "chat.completion",
+  "request_id": "20261014120702e93af494bd774e00",
+  "usage": {
+    "completion_tokens": 1258,
+    "completion_tokens_details": {
+      "reasoning_tokens": 1137
+    },
+    "prompt_tokens": 959,
+    "prompt_tokens_details": {
+      "cached_tokens": 0
+    },
+    "total_tokens": 2217
+  }
+}

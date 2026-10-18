@@ -1,0 +1,76 @@
+{
+  "checked_date": "2026-10-14",
+  "classification": "NATIVE_IMPLEMENTATION_QUALIFICATION_ONLY",
+  "p2p": {
+    "official_url": "https://machinelearning.apple.com/research/prose2policy",
+    "search_url": "https://api.github.com/search/repositories?q=Prose2Policy",
+    "search_total_count": 0,
+    "search_incomplete_results": false,
+    "conclusion": "No confirmed original implementation found in bounded search",
+    "execution_status": "NOT_RUN"
+  },
+  "autopac": {
+    "official_repository": "https://github.com/NehaChowdhary/AutoPAC",
+    "commit": "e31641a64d91d18574e338b8a38409d3f94391d7",
+    "tree_truncated": false,
+    "tree_entries": 218,
+    "checkpoint_matches": 0,
+    "release_count": 0,
+    "license_path_matches": 0,
+    "conclusion": "Required fine-tuned checkpoint not located in audited tree/releases",
+    "execution_status": "NOT_RUN"
+  },
+  "sources": [
+    {
+      "path": "sources/autopac_tree_latest.json",
+      "bytes": 67198,
+      "sha256": "443D9577BD12359A221118EDB17FA2964DA3CF478640736DF8342A0E50EB46C2"
+    },
+    {
+      "path": "sources/autopac_releases.json",
+      "bytes": 5,
+      "sha256": "2BA33CA0557F1BB5B7BA88D67F9D0093C7185A36EC51FE2B7BD9372D3E001D6D"
+    },
+    {
+      "path": "sources/p2p_apple_latest.html",
+      "bytes": 25108,
+      "sha256": "AFCB9DC12DDFC0E8E11A5092846CF80855E6E198553AE30F614309EF35A7F89C"
+    },
+    {
+      "path": "sources/p2p_github_search.json",
+      "bytes": 73,
+      "sha256": "08C082FDF7CA87BA911A2AABB0F0CF2D3E482A6FEEAAC9713E4578C20B2600B2"
+    },
+    {
+      "path": "sources/p2p_text.txt",
+      "bytes": 34083,
+      "sha256": "ABF13B8B5B16BD3E97D5A15077CB6770400367F0A5AA5EDAC60418E4197850D0"
+    },
+    {
+      "path": "sources/autopac_text.txt",
+      "bytes": 87505,
+      "sha256": "5225A0C0D629D3F4E1A0C577D8048778A1A68687F03B1C51BBE319369CC40FA5"
+    },
+    {
+      "path": "sources/regal_release_latest.json",
+      "bytes": 22351,
+      "sha256": "ABB4A46665FE36FB6FF70870BA063FFF018F00DC6899CCA7E4B2B5EB264B60B8"
+    }
+  ],
+  "network_failures": [
+    {
+      "object": "Hugging Face AutoPAC weight query",
+      "status": "NETWORK_FAILURE",
+      "evidence_location": "Prior preparation tool outputs; no transport log saved in this directory",
+      "conclusion_not_supported": "No weights exist"
+    },
+    {
+      "object": "Linux OPA and Regal official release downloads",
+      "status": "NETWORK_FAILURE",
+      "evidence_location": "Prior preparation tool outputs; frozen Windows OPA conformance summary records exception",
+      "conclusion_not_supported": "Baseline cannot detect violations"
+    }
+  ],
+  "model_calls": 0,
+  "baseline_effect_results": 0
+}

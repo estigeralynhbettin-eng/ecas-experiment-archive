@@ -1,0 +1,28 @@
+{
+  "choices": [
+    {
+      "finish_reason": "stop",
+      "index": 0,
+      "message": {
+        "content": "{\"begin\":\"BEGIN_FSV-B17_p2p_tests_MAIN\",\"stage\":\"p2p_tests\",\"output\":{\"tests\":[{\"id\":\"T1\",\"input\":{\"request\":{\"body\":{\"customer\":\"CUST-2024-001\"}},\"trusted\":{\"customerDisabled\":false}},\"expected\":\"allow\",\"source_ref\":\"VIS-FSV-B17-01\"},{\"id\":\"T2\",\"input\":{\"request\":{\"body\":{\"customer\":\"CUST-2024-001\"}},\"trusted\":{\"customerDisabled\":true}},\"expected\":\"deny\",\"source_ref\":\"VIS-FSV-B17-01\"},{\"id\":\"T3\",\"input\":{\"request\":{\"body\":{\"customer\":\"Acme Corp\"}},\"trusted\":{\"customerDisabled\":false}},\"expected\":\"allow\",\"source_ref\":\"VIS-FSV-B17-01\"},{\"id\":\"T4\",\"input\":{\"request\":{\"body\":{\"customer\":\"Acme Corp\"}},\"trusted\":{\"customerDisabled\":true}},\"expected\":\"deny\",\"source_ref\":\"VIS-FSV-B17-01\"}]},\"end\":\"END_FSV-B17_p2p_tests_MAIN\"}",
+        "role": "assistant"
+      }
+    }
+  ],
+  "created": 1791978776,
+  "id": "202610141952497996d95c90914d2a",
+  "model": "glm-5.2",
+  "object": "chat.completion",
+  "request_id": "202610141952497996d95c90914d2a",
+  "usage": {
+    "completion_tokens": 633,
+    "completion_tokens_details": {
+      "reasoning_tokens": 255
+    },
+    "prompt_tokens": 3354,
+    "prompt_tokens_details": {
+      "cached_tokens": 0
+    },
+    "total_tokens": 3987
+  }
+}

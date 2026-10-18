@@ -1,0 +1,35 @@
+{
+  "status": "COMPLETED_SOURCE_HASH_RECONCILED_AWAITING_INDEPENDENT_SEMANTIC_REVIEW",
+  "rows": 21,
+  "cases": 7,
+  "methods": 3,
+  "source_file_count": 162,
+  "all_recorded_hashes_matched": true,
+  "new_model_calls": 0,
+  "new_policy_executions": 0,
+  "protected_files_unchanged": {
+    "D:\\lunwen\\EC-CSI投稿\\working\\exploration\\20261015_seven_case_mechanism\\EXPERIMENT_SUMMARY_CN_R2.md": "a023ad051a9c5abb31f3d78d46a0e0065974789cc0dff95c6ce040a0894159c9",
+    "D:\\lunwen\\EC-CSI投稿\\working\\exploration\\20261015_seven_case_mechanism\\SEVEN_CASE_COMPARISON.csv": "5e5ae026b19218d162e2445775f6e667da1e8f2f898483d13a48eb1fbe7dd00f",
+    "D:\\lunwen\\EC-CSI投稿\\RESULT_TRACEABILITY.csv": "ed18461e2a4ac89600f52d50787f46aec37212b76915b944546db0eea857b6a6",
+    "D:\\lunwen\\EC-CSI投稿\\CLAIM_EVIDENCE_MATRIX.csv": "a9d7c689a60e27de8ed13ee9de3ca35222dc85f0c3549f2f3af9db0763f9b9e8"
+  },
+  "outputs": [
+    {
+      "path": "D:\\lunwen\\EC-CSI投稿\\working\\exploration\\20261015_semantic_comparison\\SEMANTIC_COMPARISON.csv",
+      "sha256": "1c6aec2cf83b3be15712d57e5e03025829d45f5aa43fa0101f0e7b312a4565fb"
+    },
+    {
+      "path": "D:\\lunwen\\EC-CSI投稿\\working\\exploration\\20261015_semantic_comparison\\SEMANTIC_EVIDENCE_INDEX.json",
+      "sha256": "27752cc24f75192516a231055681f823b72701da77d6d06f8a7483ba54fa5b05"
+    },
+    {
+      "path": "D:\\lunwen\\EC-CSI投稿\\working\\exploration\\20261015_semantic_comparison\\SEMANTIC_COMPARISON_CN.md",
+      "sha256": "9bc9c05a640b73fb777705ff8e09281b559ba4327697730b5a8cd59c5ce02987"
+    },
+    {
+      "path": "D:\\lunwen\\EC-CSI投稿\\working\\exploration\\20261015_semantic_comparison\\EXPERIMENT_SUMMARY_CN_R3.md",
+      "sha256": "e7f781c3573fe6a45c29728d75567f82276e62bd898fc58d99f96ef149d6f5e8"
+    }
+  ],
+  "verification_scope": "File hashes, exact 21-key join, no semantic accuracy rate; content review recorded separately."
+}

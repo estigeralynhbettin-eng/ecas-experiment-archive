@@ -1,0 +1,12 @@
+{
+  "status": "READY",
+  "statements": [
+    {
+      "text": "You can disallow sales orders and sales invoices against a customer by clicking on 'Disabled'.",
+      "evidence_refs": [
+        "VIS-FSV-B17-01"
+      ]
+    }
+  ],
+  "reason": "The source explicitly provides an access policy statement for disallowing sales orders against disabled customers."
+}

@@ -1,0 +1,73 @@
+{
+  "tests": [
+    {
+      "id": "test_allow_disabled_false",
+      "input": {
+        "request": {
+          "body": {
+            "customer": "CUST-001"
+          }
+        },
+        "trusted": {
+          "customerDisabled": false
+        }
+      },
+      "expected": "allow",
+      "source_ref": "VIS-FSV-B17-01"
+    },
+    {
+      "id": "test_deny_disabled_true",
+      "input": {
+        "request": {
+          "body": {
+            "customer": "CUST-001"
+          }
+        },
+        "trusted": {
+          "customerDisabled": true
+        }
+      },
+      "expected": "deny",
+      "source_ref": "VIS-FSV-B17-01"
+    },
+    {
+      "id": "test_allow_disabled_false_no_customer",
+      "input": {
+        "request": {
+          "body": {}
+        },
+        "trusted": {
+          "customerDisabled": false
+        }
+      },
+      "expected": "allow",
+      "source_ref": "VIS-FSV-B17-01"
+    },
+    {
+      "id": "test_deny_disabled_true_no_customer",
+      "input": {
+        "request": {
+          "body": {}
+        },
+        "trusted": {
+          "customerDisabled": true
+        }
+      },
+      "expected": "deny",
+      "source_ref": "VIS-FSV-B17-01"
+    },
+    {
+      "id": "test_allow_disabled_default_omitted",
+      "input": {
+        "request": {
+          "body": {
+            "customer": "Acme Corp"
+          }
+        },
+        "trusted": {}
+      },
+      "expected": "allow",
+      "source_ref": "VIS-FSV-B17-01"
+    }
+  ]
+}

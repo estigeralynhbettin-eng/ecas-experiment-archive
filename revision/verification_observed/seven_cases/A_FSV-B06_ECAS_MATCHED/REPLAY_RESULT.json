@@ -1,0 +1,44 @@
+{
+  "batch": "A",
+  "task": "FSV-B06",
+  "method": "ECAS_MATCHED",
+  "final_status": "EVALUATED",
+  "original_pre_format_status": "EVALUATED",
+  "source_result": "archives/old_three/effect_runs/FSV-B06/ECAS_MATCHED/RESULT.json",
+  "requests": [
+    {
+      "channel": "O-L",
+      "expected": "allow",
+      "actual": {
+        "policy_id": "pol-FSV-B06-reage-undo-latest-only",
+        "decision": "allow",
+        "fail_closed": true,
+        "violations": []
+      },
+      "archive_match": true,
+      "matches_archived_label": true,
+      "synthetic_input": true
+    },
+    {
+      "channel": "O-I",
+      "expected": "deny",
+      "actual": {
+        "policy_id": "pol-FSV-B06-reage-undo-latest-only",
+        "decision": "deny",
+        "fail_closed": true,
+        "violations": [
+          {
+            "rule_id": "rule-FSV-B06-reage-undo-latest-only",
+            "code": "bounded_guard_rejected",
+            "detail": "rule-FSV-B06-reage-undo-latest-only"
+          }
+        ]
+      },
+      "archive_match": true,
+      "matches_archived_label": true,
+      "synthetic_input": true
+    }
+  ],
+  "replay_status": "EXECUTED",
+  "qualification_match": true
+}

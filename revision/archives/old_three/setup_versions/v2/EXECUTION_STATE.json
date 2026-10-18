@@ -1,0 +1,7 @@
+{
+  "status": "STOPPED_PROTOCOL_OR_TRANSPORT",
+  "completed_at": "2026-10-14T03:56:10.387868+00:00",
+  "rows": [],
+  "error_type": "ValueError",
+  "error": "Invalid extraction status"
+}

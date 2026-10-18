@@ -1,0 +1,110 @@
+{
+  "task": "FSV-B13",
+  "method": "ECAS_MATCHED",
+  "classification": "RETROSPECTIVE_FOUR_CASE_ADAPTED_PEER_BASELINES_NOT_NATIVE_OR_BLIND",
+  "status": "EVALUATED",
+  "requests": [
+    {
+      "channel": "O-L",
+      "input": {
+        "request": {
+          "body": {
+            "qty": 110
+          }
+        },
+        "trusted": {
+          "allowancePercent": 10,
+          "authorizedRole": false,
+          "derivedMaximumQty": 110,
+          "orderedQty": 100
+        }
+      },
+      "expected": "allow",
+      "actual": {
+        "policy_id": "FSV-B13-PurchaseReceipt-OverReceiveQtyGuard",
+        "decision": "allow",
+        "fail_closed": true,
+        "violations": []
+      }
+    },
+    {
+      "channel": "O-I",
+      "input": {
+        "request": {
+          "body": {
+            "qty": 111
+          }
+        },
+        "trusted": {
+          "allowancePercent": 10,
+          "authorizedRole": false,
+          "derivedMaximumQty": 110,
+          "orderedQty": 100
+        }
+      },
+      "expected": "deny",
+      "actual": {
+        "policy_id": "FSV-B13-PurchaseReceipt-OverReceiveQtyGuard",
+        "decision": "deny",
+        "fail_closed": true,
+        "violations": [
+          {
+            "rule_id": "FSV-B13-R1-OverReceiveQtyGuard",
+            "code": "bounded_guard_rejected",
+            "detail": "FSV-B13-R1-OverReceiveQtyGuard"
+          }
+        ]
+      }
+    }
+  ],
+  "calls": [
+    13
+  ],
+  "admission": "ADMITTED",
+  "common_developer_results": {
+    "passed": true,
+    "rows": [
+      {
+        "id": "dev_limit",
+        "expected": "allow",
+        "actual": {
+          "policy_id": "FSV-B13-PurchaseReceipt-OverReceiveQtyGuard",
+          "decision": "allow",
+          "fail_closed": true,
+          "violations": []
+        },
+        "pass": true
+      },
+      {
+        "id": "dev_over",
+        "expected": "deny",
+        "actual": {
+          "policy_id": "FSV-B13-PurchaseReceipt-OverReceiveQtyGuard",
+          "decision": "deny",
+          "fail_closed": true,
+          "violations": [
+            {
+              "rule_id": "FSV-B13-R1-OverReceiveQtyGuard",
+              "code": "bounded_guard_rejected",
+              "detail": "FSV-B13-R1-OverReceiveQtyGuard"
+            }
+          ]
+        },
+        "pass": true
+      },
+      {
+        "id": "dev_role_exception",
+        "expected": "allow",
+        "actual": {
+          "policy_id": "FSV-B13-PurchaseReceipt-OverReceiveQtyGuard",
+          "decision": "allow",
+          "fail_closed": true,
+          "violations": []
+        },
+        "pass": true
+      }
+    ]
+  },
+  "request_pair_correct": true,
+  "completed_at": "2026-10-14T11:51:56.705801+00:00"
+}

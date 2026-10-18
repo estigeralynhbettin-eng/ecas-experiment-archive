@@ -1,0 +1,368 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "urn:ec:field-security-model-ir:v2",
+  "title": "EC Field Security Model IR V2",
+  "oneOf": [
+    {"$ref": "#/$defs/propose"},
+    {"$ref": "#/$defs/abstain"}
+  ],
+  "$defs": {
+    "id": {
+      "type": "string",
+      "pattern": "^[A-Za-z0-9][A-Za-z0-9._:-]{0,127}$"
+    },
+    "pointer": {
+      "type": "string",
+      "pattern": "^/(request|trusted)(/([^~/]|~0|~1)+|/\\*)*$",
+      "maxLength": 512
+    },
+    "evidenceRefs": {
+      "type": "array",
+      "minItems": 1,
+      "maxItems": 64,
+      "uniqueItems": true,
+      "items": {"$ref": "#/$defs/id"}
+    },
+    "target": {
+      "type": "object",
+      "additionalProperties": false,
+      "required": ["system", "version", "operation"],
+      "properties": {
+        "system": {"type": "string", "minLength": 1, "maxLength": 128},
+        "version": {"type": "string", "minLength": 1, "maxLength": 64},
+        "operation": {"type": "string", "minLength": 1, "maxLength": 256}
+      }
+    },
+    "baseRuleProperties": {
+      "type": "object",
+      "properties": {
+        "rule_id": {"$ref": "#/$defs/id"},
+        "evidence_refs": {
+          "type": "array",
+          "minItems": 1,
+          "maxItems": 16,
+          "uniqueItems": true,
+          "items": {"$ref": "#/$defs/id"}
+        }
+      }
+    },
+    "rule": {
+      "oneOf": [
+        {
+          "type": "object",
+          "additionalProperties": false,
+          "required": ["rule_id", "primitive_id", "op", "evidence_refs", "params"],
+          "properties": {
+            "rule_id": {"$ref": "#/$defs/id"},
+            "primitive_id": {"const": "SP-CONTENT-TYPE-ALLOWLIST"},
+            "op": {"const": "content_type_allowlist"},
+            "evidence_refs": {"$ref": "#/$defs/evidenceRefs"},
+            "params": {
+              "type": "object", "additionalProperties": false,
+              "required": ["path", "media_types", "on_missing"],
+              "properties": {
+                "path": {"$ref": "#/$defs/pointer"},
+                "media_types": {"type": "array", "minItems": 1, "maxItems": 16, "uniqueItems": true, "items": {"type": "string"}},
+                "on_missing": {"enum": ["deny", "skip"]}
+              }
+            }
+          }
+        },
+        {
+          "type": "object", "additionalProperties": false,
+          "required": ["rule_id", "primitive_id", "op", "evidence_refs", "params"],
+          "properties": {
+            "rule_id": {"$ref": "#/$defs/id"},
+            "primitive_id": {"const": "SP-REQUEST-SIZE-LIMIT"},
+            "op": {"const": "request_size_limit"},
+            "evidence_refs": {"$ref": "#/$defs/evidenceRefs"},
+            "params": {
+              "type": "object", "additionalProperties": false,
+              "required": ["path", "max_bytes", "on_missing"],
+              "properties": {
+                "path": {"$ref": "#/$defs/pointer"},
+                "max_bytes": {"type": "integer", "minimum": 0, "maximum": 1073741824},
+                "on_missing": {"enum": ["deny", "skip"]}
+              }
+            }
+          }
+        },
+        {
+          "type": "object", "additionalProperties": false,
+          "required": ["rule_id", "primitive_id", "op", "evidence_refs", "params"],
+          "properties": {
+            "rule_id": {"$ref": "#/$defs/id"},
+            "primitive_id": {"const": "SP-OBJECT-PROPERTY-ALLOWLIST"},
+            "op": {"const": "allowed_fields"},
+            "evidence_refs": {"$ref": "#/$defs/evidenceRefs"},
+            "params": {
+              "type": "object", "additionalProperties": false,
+              "required": ["fields"],
+              "properties": {
+                "path": {"$ref": "#/$defs/pointer"},
+                "fields": {"type": "array", "minItems": 1, "maxItems": 512, "uniqueItems": true, "items": {"type": "string", "minLength": 1, "maxLength": 256}},
+                "on_missing": {"enum": ["deny", "skip"]}
+              }
+            }
+          }
+        },
+        {
+          "type": "object", "additionalProperties": false,
+          "required": ["rule_id", "primitive_id", "op", "evidence_refs", "params"],
+          "properties": {
+            "rule_id": {"$ref": "#/$defs/id"},
+            "primitive_id": {"const": "SP-PRESENCE-NULLABILITY"},
+            "op": {"const": "required"},
+            "evidence_refs": {"$ref": "#/$defs/evidenceRefs"},
+            "params": {
+              "type": "object", "additionalProperties": false,
+              "required": ["path", "allow_null"],
+              "properties": {
+                "path": {"$ref": "#/$defs/pointer"},
+                "allow_null": {"type": "boolean"}
+              }
+            }
+          }
+        },
+        {
+          "type": "object", "additionalProperties": false,
+          "required": ["rule_id", "primitive_id", "op", "evidence_refs", "params"],
+          "properties": {
+            "rule_id": {"$ref": "#/$defs/id"},
+            "primitive_id": {"const": "SP-STRICT-TYPE"},
+            "op": {"const": "strict_type"},
+            "evidence_refs": {"$ref": "#/$defs/evidenceRefs"},
+            "params": {
+              "type": "object", "additionalProperties": false,
+              "required": ["path", "expected_type", "on_missing"],
+              "properties": {
+                "path": {"$ref": "#/$defs/pointer"},
+                "expected_type": {"enum": ["object", "array", "string", "boolean", "integer", "number", "null"]},
+                "on_missing": {"enum": ["deny", "skip"]}
+              }
+            }
+          }
+        },
+        {
+          "type": "object", "additionalProperties": false,
+          "required": ["rule_id", "primitive_id", "op", "evidence_refs", "params"],
+          "properties": {
+            "rule_id": {"$ref": "#/$defs/id"},
+            "primitive_id": {"const": "SP-LENGTH-CARDINALITY-BOUNDS"},
+            "op": {"const": "length_cardinality"},
+            "evidence_refs": {"$ref": "#/$defs/evidenceRefs"},
+            "params": {
+              "type": "object", "additionalProperties": false,
+              "required": ["path", "min", "max", "on_missing"],
+              "properties": {
+                "path": {"$ref": "#/$defs/pointer"},
+                "min": {"type": "integer", "minimum": 0},
+                "max": {"type": "integer", "minimum": 0},
+                "on_missing": {"enum": ["deny", "skip"]}
+              }
+            }
+          }
+        },
+        {
+          "type": "object", "additionalProperties": false,
+          "required": ["rule_id", "primitive_id", "op", "evidence_refs", "params"],
+          "properties": {
+            "rule_id": {"$ref": "#/$defs/id"},
+            "primitive_id": {"const": "SP-NUMERIC-RANGE-PRECISION"},
+            "op": {"const": "number_range_precision"},
+            "evidence_refs": {"$ref": "#/$defs/evidenceRefs"},
+            "params": {
+              "type": "object", "additionalProperties": false,
+              "required": ["path", "on_missing"],
+              "anyOf": [{"required": ["min"]}, {"required": ["max"]}, {"required": ["max_scale"]}],
+              "properties": {
+                "path": {"$ref": "#/$defs/pointer"},
+                "min": {"type": "number"},
+                "max": {"type": "number"},
+                "max_scale": {"type": "integer", "minimum": 0, "maximum": 18},
+                "on_missing": {"enum": ["deny", "skip"]}
+              }
+            }
+          }
+        },
+        {
+          "type": "object", "additionalProperties": false,
+          "required": ["rule_id", "primitive_id", "op", "evidence_refs", "params"],
+          "properties": {
+            "rule_id": {"$ref": "#/$defs/id"},
+            "primitive_id": {"const": "SP-ENUM-ALLOWLIST"},
+            "op": {"const": "enum_allowlist"},
+            "evidence_refs": {"$ref": "#/$defs/evidenceRefs"},
+            "params": {
+              "type": "object", "additionalProperties": false,
+              "required": ["path", "values", "on_missing"],
+              "properties": {
+                "path": {"$ref": "#/$defs/pointer"},
+                "values": {"type": "array", "minItems": 1, "maxItems": 256, "uniqueItems": true, "items": {"type": ["string", "number", "integer", "boolean", "null"]}},
+                "on_missing": {"enum": ["deny", "skip"]}
+              }
+            }
+          }
+        },
+        {
+          "type": "object", "additionalProperties": false,
+          "required": ["rule_id", "primitive_id", "op", "evidence_refs", "params"],
+          "properties": {
+            "rule_id": {"$ref": "#/$defs/id"},
+            "primitive_id": {"const": "SP-STRUCTURED-FORMAT"},
+            "op": {"const": "named_validator"},
+            "evidence_refs": {"$ref": "#/$defs/evidenceRefs"},
+            "params": {
+              "type": "object", "additionalProperties": false,
+              "required": ["path", "validator_id", "on_missing"],
+              "properties": {
+                "path": {"$ref": "#/$defs/pointer"},
+                "validator_id": {"enum": ["email_basic_v1", "e164_phone_v1", "cn_resident_id_v1", "iso_date_v1"]},
+                "on_missing": {"enum": ["deny", "skip"]}
+              }
+            }
+          }
+        },
+        {
+          "type": "object", "additionalProperties": false,
+          "required": ["rule_id", "primitive_id", "op", "evidence_refs", "params"],
+          "properties": {
+            "rule_id": {"$ref": "#/$defs/id"},
+            "primitive_id": {"const": "SP-CANONICAL-FORM"},
+            "op": {"const": "canonical_form"},
+            "evidence_refs": {"$ref": "#/$defs/evidenceRefs"},
+            "params": {
+              "type": "object", "additionalProperties": false,
+              "required": ["path", "unicode_form", "strip_whitespace", "reject_if_changed", "on_missing"],
+              "properties": {
+                "path": {"$ref": "#/$defs/pointer"},
+                "unicode_form": {"enum": ["NFC", "NFKC"]},
+                "strip_whitespace": {"type": "boolean"},
+                "reject_if_changed": {"const": true},
+                "on_missing": {"enum": ["deny", "skip"]}
+              }
+            }
+          }
+        },
+        {
+          "type": "object", "additionalProperties": false,
+          "required": ["rule_id", "primitive_id", "op", "evidence_refs", "params"],
+          "properties": {
+            "rule_id": {"$ref": "#/$defs/id"},
+            "primitive_id": {"const": "SP-CROSS-FIELD-INVARIANT"},
+            "op": {"const": "date_order"},
+            "evidence_refs": {"$ref": "#/$defs/evidenceRefs"},
+            "params": {
+              "type": "object", "additionalProperties": false,
+              "required": ["earlier_path", "later_path", "allow_equal", "on_missing"],
+              "properties": {
+                "earlier_path": {"$ref": "#/$defs/pointer"},
+                "later_path": {"$ref": "#/$defs/pointer"},
+                "allow_equal": {"type": "boolean"},
+                "on_missing": {"enum": ["deny", "skip"]}
+              }
+            }
+          }
+        },
+        {
+          "type": "object", "additionalProperties": false,
+          "required": ["rule_id", "primitive_id", "op", "evidence_refs", "params"],
+          "properties": {
+            "rule_id": {"$ref": "#/$defs/id"},
+            "primitive_id": {"const": "SP-CROSS-FIELD-INVARIANT"},
+            "op": {"const": "age_matches_dob"},
+            "evidence_refs": {"$ref": "#/$defs/evidenceRefs"},
+            "params": {
+              "type": "object", "additionalProperties": false,
+              "required": ["age_path", "dob_path", "as_of_path", "tolerance_years", "on_missing"],
+              "properties": {
+                "age_path": {"$ref": "#/$defs/pointer"},
+                "dob_path": {"$ref": "#/$defs/pointer"},
+                "as_of_path": {"$ref": "#/$defs/pointer"},
+                "tolerance_years": {"type": "integer", "minimum": 0, "maximum": 2},
+                "on_missing": {"enum": ["deny", "skip"]}
+              }
+            }
+          }
+        },
+        {
+          "type": "object", "additionalProperties": false,
+          "required": ["rule_id", "primitive_id", "op", "evidence_refs", "params"],
+          "properties": {
+            "rule_id": {"$ref": "#/$defs/id"},
+            "primitive_id": {"const": "SP-SERVER-AUTHORITY-WORKFLOW"},
+            "op": {"const": "state_transition"},
+            "evidence_refs": {"$ref": "#/$defs/evidenceRefs"},
+            "params": {
+              "type": "object", "additionalProperties": false,
+              "required": ["current_state_path", "requested_state_path", "transitions", "on_missing"],
+              "properties": {
+                "current_state_path": {"$ref": "#/$defs/pointer"},
+                "requested_state_path": {"$ref": "#/$defs/pointer"},
+                "transitions": {
+                  "type": "array", "minItems": 1, "maxItems": 128, "uniqueItems": true,
+                  "items": {
+                    "type": "object", "additionalProperties": false,
+                    "required": ["from", "to"],
+                    "properties": {
+                      "from": {"type": "string", "minLength": 1},
+                      "to": {"type": "string", "minLength": 1}
+                    }
+                  }
+                },
+                "on_missing": {"enum": ["deny", "skip"]}
+              }
+            }
+          }
+        },
+        {
+          "type": "object", "additionalProperties": false,
+          "required": ["rule_id", "primitive_id", "op", "evidence_refs", "params"],
+          "properties": {
+            "rule_id": {"$ref": "#/$defs/id"},
+            "primitive_id": {"const": "SP-SERVER-AUTHORITY-WORKFLOW"},
+            "op": {"const": "server_derived_reject"},
+            "evidence_refs": {"$ref": "#/$defs/evidenceRefs"},
+            "params": {
+              "type": "object", "additionalProperties": false,
+              "required": ["path"],
+              "properties": {"path": {"$ref": "#/$defs/pointer"}}
+            }
+          }
+        }
+      ]
+    },
+    "propose": {
+      "type": "object",
+      "additionalProperties": false,
+      "required": ["ir_version", "candidate_id", "decision", "target", "policy_id", "evidence_refs", "rules", "reason_code", "missing_evidence"],
+      "properties": {
+        "ir_version": {"const": "EC-FIELD-MODEL-IR-V2"},
+        "candidate_id": {"$ref": "#/$defs/id"},
+        "decision": {"const": "propose"},
+        "target": {"$ref": "#/$defs/target"},
+        "policy_id": {"allOf": [{"$ref": "#/$defs/id"}, {"not": {"const": "none"}}]},
+        "evidence_refs": {"$ref": "#/$defs/evidenceRefs"},
+        "rules": {"type": "array", "minItems": 1, "maxItems": 1, "items": {"$ref": "#/$defs/rule"}},
+        "reason_code": {"const": "none"},
+        "missing_evidence": {"type": "array", "maxItems": 0}
+      }
+    },
+    "abstain": {
+      "type": "object",
+      "additionalProperties": false,
+      "required": ["ir_version", "candidate_id", "decision", "target", "policy_id", "evidence_refs", "rules", "reason_code", "missing_evidence"],
+      "properties": {
+        "ir_version": {"const": "EC-FIELD-MODEL-IR-V2"},
+        "candidate_id": {"$ref": "#/$defs/id"},
+        "decision": {"const": "abstain"},
+        "target": {"$ref": "#/$defs/target"},
+        "policy_id": {"const": "none"},
+        "evidence_refs": {"type": "array", "maxItems": 0},
+        "rules": {"type": "array", "maxItems": 0},
+        "reason_code": {"enum": ["missing_business_binding", "missing_api_binding", "missing_context", "conflicting_evidence", "unsupported_primitive", "non_actionable_material"]},
+        "missing_evidence": {"type": "array", "minItems": 1, "maxItems": 32, "uniqueItems": true, "items": {"type": "string", "minLength": 1, "maxLength": 256}}
+      }
+    }
+  }
+}

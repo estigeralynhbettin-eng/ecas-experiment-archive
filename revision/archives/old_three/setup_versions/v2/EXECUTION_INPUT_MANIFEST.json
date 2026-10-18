@@ -1,0 +1,182 @@
+[
+  {
+    "path": "/mnt/d/lunwen/EC-CSI投稿/working/exploration/20261014_external_baseline_pilot/AUTHORIZATION_CN.md",
+    "sha256": "b302cbd3ee8918497595eb18834db3b567de7566ebcafe390340ba2dc8e25fbc"
+  },
+  {
+    "path": "/mnt/d/lunwen/EC-CSI投稿/working/exploration/20261014_external_baseline_pilot/FROZEN_PROTOCOL_CN.md",
+    "sha256": "e29ef82edc7b4021a785cc5e57c5862488f312c185ba017456d8b9aac202ba5e"
+  },
+  {
+    "path": "/mnt/d/lunwen/EC-CSI投稿/working/exploration/20261014_external_baseline_pilot/PROMPT_TEMPLATES.json",
+    "sha256": "ec75117ee4daf96f8be17c1eed35a741920fd5458f67cb3241ceee1c6c4d0129"
+  },
+  {
+    "path": "/mnt/d/lunwen/EC-CSI投稿/working/exploration/20261014_external_baseline_pilot/EXECUTION_CONFIG.json",
+    "sha256": "8c4c55c74802e6a42d9daf84b60c8b248945a9388e909463e21fdad7d8853534"
+  },
+  {
+    "path": "/mnt/d/lunwen/EC-CSI投稿/working/exploration/20261014_external_baseline_pilot/prepare_execution.py",
+    "sha256": "29cad26847433316297da2003a8bbb88cde32d26d8a9641dfe07562cfbad2fa7"
+  },
+  {
+    "path": "/mnt/d/lunwen/EC-CSI投稿/working/exploration/20261014_external_baseline_pilot/generation_inputs/FSV-B06/organization_schema.json",
+    "sha256": "59ad23d490e5c6b488be144ae05370a054f453e8578e893c67281faacdd1a42b"
+  },
+  {
+    "path": "/mnt/d/lunwen/EC-CSI投稿/working/exploration/20261014_external_baseline_pilot/generation_inputs/FSV-B06/packet.json",
+    "sha256": "01ac46f8ed8d0b75d23a4adb7a16fafe35316f1e75fbe52d767540c39fe2f16f"
+  },
+  {
+    "path": "/mnt/d/lunwen/EC-CSI投稿/working/exploration/20261014_external_baseline_pilot/generation_inputs/FSV-S02/organization_schema.json",
+    "sha256": "33a4f29bdd5573fdb958fcbb39fb73f66a6e4eec48b0c114dd03a83ce476b584"
+  },
+  {
+    "path": "/mnt/d/lunwen/EC-CSI投稿/working/exploration/20261014_external_baseline_pilot/generation_inputs/FSV-S02/packet.json",
+    "sha256": "5c8de100a097aa1cae1c236a1d9d7771e8c1e175d9c8601abc9d319dafca9611"
+  },
+  {
+    "path": "/mnt/d/lunwen/EC-CSI投稿/working/exploration/20261014_external_baseline_pilot/generation_inputs/FSV-S04/organization_schema.json",
+    "sha256": "a2c727f7f2644fd04384f076d0ff3cbcef2979be0db90c7e6e42d8769a544f06"
+  },
+  {
+    "path": "/mnt/d/lunwen/EC-CSI投稿/working/exploration/20261014_external_baseline_pilot/generation_inputs/FSV-S04/packet.json",
+    "sha256": "d37c94ec03d4901259ee058bd728fd0bc7736a3033a7b3347881626233bf5d49"
+  },
+  {
+    "path": "/mnt/d/lunwen/EC-CSI投稿/working/exploration/20261014_external_baseline_pilot/sealed_evaluation/FSV-B06/O-I.json",
+    "sha256": "bbb69cb133b42ffb40c119b23449e38c51e0d18d4800d339b869e314c4bda816"
+  },
+  {
+    "path": "/mnt/d/lunwen/EC-CSI投稿/working/exploration/20261014_external_baseline_pilot/sealed_evaluation/FSV-B06/O-L.json",
+    "sha256": "d91d2dad0e84a8e88a7a8b5253b70042ca326787f0c4d2a0e1282a4c24ae9c7d"
+  },
+  {
+    "path": "/mnt/d/lunwen/EC-CSI投稿/working/exploration/20261014_external_baseline_pilot/sealed_evaluation/FSV-S02/O-I.json",
+    "sha256": "b0c5e8c64cbea3775f531c57ba1d3a8adf648a47c862c87ffd326147a93d7b50"
+  },
+  {
+    "path": "/mnt/d/lunwen/EC-CSI投稿/working/exploration/20261014_external_baseline_pilot/sealed_evaluation/FSV-S02/O-L.json",
+    "sha256": "0a3fa3a8aed810de7c3f410bda9b1a5723ecde0e81a76f9f1137d7ac038572e0"
+  },
+  {
+    "path": "/mnt/d/lunwen/EC-CSI投稿/working/exploration/20261014_external_baseline_pilot/sealed_evaluation/FSV-S04/O-I.json",
+    "sha256": "2186eb0967d9e7254c1f469862b3bb061c5d7996116e04cf3c067d2fc23f109c"
+  },
+  {
+    "path": "/mnt/d/lunwen/EC-CSI投稿/working/exploration/20261014_external_baseline_pilot/sealed_evaluation/FSV-S04/O-L.json",
+    "sha256": "dd177326772f0915f58692f07e143200f158fae22da8aeffc262e5a47ae111f1"
+  },
+  {
+    "path": "/mnt/d/lunwen/EC-CSI投稿/working/exploration/20261014_external_baseline_pilot/execution_inputs/ecas_output_schema.json",
+    "sha256": "d9168bf982cc37e44d994268fba54bbd0ed0640afd41e3ceea2a6eaa2eebdac6"
+  },
+  {
+    "path": "/mnt/d/lunwen/EC-CSI投稿/working/exploration/20261014_external_baseline_pilot/execution_inputs/ecas_prompt_schema.json",
+    "sha256": "438a730426e7374e78c8a2c93d9cc2c4e034a6c237b61e25c429cf0f1020c141"
+  },
+  {
+    "path": "/mnt/d/lunwen/EC-CSI投稿/working/exploration/20261014_external_baseline_pilot/execution_inputs/operator_developer_tests.json",
+    "sha256": "3040f1aa5d76d796e475b8281a063bf10d56d2fb47d25c15597179e6a4ed7fda"
+  },
+  {
+    "path": "/mnt/d/lunwen/EC-CSI投稿/working/exploration/20261014_external_baseline_pilot/execution_inputs/FSV-B06/contract.json",
+    "sha256": "f5831f2c50ce5b317913a884c08caf832824a506cfff7704871731f88edd8090"
+  },
+  {
+    "path": "/mnt/d/lunwen/EC-CSI投稿/working/exploration/20261014_external_baseline_pilot/execution_inputs/FSV-S02/contract.json",
+    "sha256": "4c58c3e9082c3e58239f66c3bf72c113fdf93436586498822923c54738a11a59"
+  },
+  {
+    "path": "/mnt/d/lunwen/EC-CSI投稿/working/exploration/20261014_external_baseline_pilot/execution_inputs/FSV-S04/contract.json",
+    "sha256": "e59e4c9b5f1fc9dd4442d9f6d08f3b0c974390d4c601672bf615dc7d53932c14"
+  },
+  {
+    "path": "/root/ecas_external_pilot_20261014/runtime/EC_FIELD_SECURITY_POLICY_SCHEMA_V3.json",
+    "sha256": "10073d09cfa0dcc597fe196da1169b27805ec76349671ce12f725dc3912d2cce"
+  },
+  {
+    "path": "/root/ecas_external_pilot_20261014/runtime/EC_EVIDENCE_CONTRACT_SCHEMA_V2.json",
+    "sha256": "4b8e947bfffd9b95094358f07bcc4cfcffc44239e260cd12394f57c8fbb6e765"
+  },
+  {
+    "path": "/root/ecas_external_pilot_20261014/runtime/EC_FIELD_SECURITY_PROPOSAL_SCHEMA_V3.json",
+    "sha256": "2bd10ce48e8ef77be882b875a3ee42dfe63feaa4c686a30be50f62a09abc9b44"
+  },
+  {
+    "path": "/root/ecas_external_pilot_20261014/runtime/EC_EVIDENCE_CONTRACT_SCHEMA_V3.json",
+    "sha256": "733b1f5257239129040feaa9c4627b196f557d3d58208e28cda5e1deda0340dd"
+  },
+  {
+    "path": "/root/ecas_external_pilot_20261014/runtime/EC_FIELD_SECURITY_MODEL_IR_SCHEMA_V3.json",
+    "sha256": "d9168bf982cc37e44d994268fba54bbd0ed0640afd41e3ceea2a6eaa2eebdac6"
+  },
+  {
+    "path": "/root/ecas_external_pilot_20261014/runtime/EC_FIELD_SECURITY_PROPOSAL_SCHEMA_V2.json",
+    "sha256": "d22a110c34a2a8ecde5056cd71585ebe6694724b6e331beb2ce16b0608046cb4"
+  },
+  {
+    "path": "/root/ecas_external_pilot_20261014/runtime/EC_FIELD_SECURITY_MODEL_IR_SCHEMA_V2.json",
+    "sha256": "055fcfc78027e73cf6d8c71544ca33e63d4d4354f97dcae29c6f44c12f9c4053"
+  },
+  {
+    "path": "/root/ecas_external_pilot_20261014/runtime/EC_FIELD_SECURITY_POLICY_SCHEMA_V2.json",
+    "sha256": "077d7bfa1f251b072cc973490c7e600f566b690bf1f155d161d1e33071765b67"
+  },
+  {
+    "path": "/root/ecas_external_pilot_20261014/runtime/security_knowledge/SECURITY_PRIMITIVE_CATALOG_V2.json",
+    "sha256": "d545c37fb4adda0b4428bcf5eedd379d69b51a8a70503668b611f5d89ae47b00"
+  },
+  {
+    "path": "/root/ecas_external_pilot_20261014/runtime/security_knowledge/SECURITY_PRIMITIVE_CATALOG_V1.json",
+    "sha256": "89fc9b59f35ab8f491f37c718647a86fc7f557e7f6666bc526046a8210cedf5d"
+  },
+  {
+    "path": "/root/ecas_external_pilot_20261014/runtime/scripts/ec_field_security_engine_v3.py",
+    "sha256": "bd509670538cb31f7a271b4d6b353a862157fe968c240218db33065c36b980e3"
+  },
+  {
+    "path": "/root/ecas_external_pilot_20261014/runtime/scripts/ec_field_security_engine_v2.py",
+    "sha256": "21f65c64ea26897f62571ac147b48bc6a20c7426a48084f9cda8d0218e42d970"
+  },
+  {
+    "path": "/root/ecas_external_pilot_20261014/tools/regal",
+    "sha256": "5e7d030064e307d54e6ffa3d85b8d9052d3d40b7afa10262c86c886f8a76559d"
+  },
+  {
+    "path": "/root/ecas_external_pilot_20261014/tools/opa",
+    "sha256": "1dd5c5591ff856f5e20a1d66bafae9511ddf3c5552ed3b5070c70b2b6580ee3f"
+  },
+  {
+    "path": "/mnt/d/lunwen/EC-CSI投稿/working/exploration/20261014_external_baseline_pilot/pilot_lib.py",
+    "sha256": "02ac26bc58c798dc344133dc91290ceee6e1b0060761a782a31c0d9b78cc0220"
+  },
+  {
+    "path": "/mnt/d/lunwen/EC-CSI投稿/working/exploration/20261014_external_baseline_pilot/run_t0.py",
+    "sha256": "c322b1d0c21cc26983cfe00ca0afbe41a78ac3fb88c6e573421e32a2d9ed7a4c"
+  },
+  {
+    "path": "/mnt/d/lunwen/EC-CSI投稿/working/exploration/20261014_external_baseline_pilot/run_pilot.py",
+    "sha256": "0b54659c48b2bca3dd0fd6d4d201514aa2df4bf2e0d02f4492e31cf7acc19268"
+  },
+  {
+    "path": "/mnt/d/lunwen/EC-CSI投稿/working/exploration/20261014_external_baseline_pilot/finalize_setup.py",
+    "sha256": "5f6f1552c4e1ad87964cb97447e7e08289217025007226b32f8519d1ad7d4cd3"
+  },
+  {
+    "path": "/mnt/d/lunwen/EC-CSI投稿/working/exploration/20261014_external_baseline_pilot/T0_RECEIPT.json",
+    "sha256": "4a64322b59e85f794985095e797eb12b9fa94f1b8a9e0375c77dc98f8a26b83b"
+  },
+  {
+    "path": "/mnt/d/lunwen/tools/llm/invoke_glm_api.ps1",
+    "sha256": "5998574e3b40a4f6916531fe4b4f6b98ed372bc857412e70a1f799a0d5b445d2"
+  },
+  {
+    "path": "/mnt/d/lunwen/load_llm_api_keys.ps1",
+    "sha256": "53c5ba620b3d591ff3d0f65c8034d8b009fcbb221e8ae86dc4d6e6b9ca628767"
+  },
+  {
+    "path": "/mnt/d/lunwen/EC-CSI投稿/working/exploration/20261014_external_baseline_pilot/repair_output_contract.py",
+    "sha256": "319cf87c816912033f8a11cbf745fc2297802df2d5b8350de10f2fadb67ab198"
+  }
+]

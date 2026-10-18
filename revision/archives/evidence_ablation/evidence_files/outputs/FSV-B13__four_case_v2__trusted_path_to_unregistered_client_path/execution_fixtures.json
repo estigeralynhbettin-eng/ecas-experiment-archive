@@ -1,0 +1,85 @@
+[
+  {
+    "id": "FSV-B13-OL-01",
+    "input": {
+      "request": {
+        "body": {
+          "qty": 110,
+          "ecasClientClaim": {
+            "authorizedRole": false,
+            "derivedMaximumQty": 110
+          }
+        }
+      },
+      "trusted": {
+        "allowancePercent": 10,
+        "authorizedRole": false,
+        "derivedMaximumQty": 110,
+        "orderedQty": 100
+      }
+    },
+    "expected": null,
+    "source": "/root/ecas_evidence_ablation_20261014/inputs/FSV-B13__four_case_v2/O-L.json",
+    "class": "CONSTRUCTED_CLIENT_PATH_REPLAY"
+  },
+  {
+    "id": "FSV-B13-OI-01",
+    "input": {
+      "request": {
+        "body": {
+          "qty": 111,
+          "ecasClientClaim": {
+            "authorizedRole": false,
+            "derivedMaximumQty": 110
+          }
+        }
+      },
+      "trusted": {
+        "allowancePercent": 10,
+        "authorizedRole": false,
+        "derivedMaximumQty": 110,
+        "orderedQty": 100
+      }
+    },
+    "expected": null,
+    "source": "/root/ecas_evidence_ablation_20261014/inputs/FSV-B13__four_case_v2/O-I.json",
+    "class": "CONSTRUCTED_CLIENT_PATH_REPLAY"
+  },
+  {
+    "id": "SYNTH-CLIENT-SPOOF",
+    "input": {
+      "request": {
+        "body": {
+          "qty": 111,
+          "ecasClientClaim": {
+            "authorizedRole": false,
+            "derivedMaximumQty": 110
+          }
+        }
+      },
+      "trusted": {
+        "allowancePercent": 10,
+        "authorizedRole": false,
+        "derivedMaximumQty": 110,
+        "orderedQty": 100
+      }
+    },
+    "expected": null,
+    "source": "paired archived request values copied into client body",
+    "class": "CONSTRUCTED_CLIENT_SPOOF_PROBE"
+  },
+  {
+    "id": "SYNTH-MISSING-TRUSTED",
+    "input": {
+      "request": {
+        "body": {
+          "qty": 110
+        }
+      },
+      "trusted": {}
+    },
+    "expected": null,
+    "source": "archived legal request with trusted object emptied",
+    "class": "CONSTRUCTED_MISSING_CONTEXT_CONTROL"
+  }
+]

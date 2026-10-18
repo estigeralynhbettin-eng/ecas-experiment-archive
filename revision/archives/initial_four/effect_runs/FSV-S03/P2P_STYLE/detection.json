@@ -1,0 +1,5 @@
+{
+  "status": "OUT_OF_SCOPE",
+  "statements": [],
+  "reason": "The visible sources contain only an OpenAPI endpoint specification (VIS-FSV-S03-01) and a runtime ABI path declaration catalog (VIS-FSV-S03-RUNTIME-ABI). Neither source contains explicit access policy statements such as permission grants, denials, or role-based constraints. The runtime ABI source explicitly disclaims any decision value, and the common adapter notice confirms subject id/role are neutral aliases, not permission rules."
+}

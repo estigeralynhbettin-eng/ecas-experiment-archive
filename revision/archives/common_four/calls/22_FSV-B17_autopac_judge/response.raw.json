@@ -1,0 +1,28 @@
+{
+  "choices": [
+    {
+      "finish_reason": "stop",
+      "index": 0,
+      "message": {
+        "content": "{\"begin\":\"BEGIN_FSV-B17_autopac_judge_MAIN\",\"stage\":\"autopac_judge\",\"output\":{\"verdict\":\"ACCEPT\",\"issues\":[]},\"end\":\"END_FSV-B17_autopac_judge_MAIN\"}",
+        "role": "assistant"
+      }
+    }
+  ],
+  "created": 1792025669,
+  "id": "202610150854255edb7550d38e4fd8",
+  "model": "glm-5.2",
+  "object": "chat.completion",
+  "request_id": "202610150854255edb7550d38e4fd8",
+  "usage": {
+    "completion_tokens": 258,
+    "completion_tokens_details": {
+      "reasoning_tokens": 188
+    },
+    "prompt_tokens": 3248,
+    "prompt_tokens_details": {
+      "cached_tokens": 0
+    },
+    "total_tokens": 3506
+  }
+}

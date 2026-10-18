@@ -1,0 +1,141 @@
+{
+  "status": "COMPLETED",
+  "rows": [
+    {
+      "task": "FSV-B06",
+      "method": "P2P_NATIVE",
+      "execution_status": "NOT_RUN",
+      "observed_legal_decision": null,
+      "observed_invalid_decision": null
+    },
+    {
+      "task": "FSV-B06",
+      "method": "AUTOPAC_NATIVE",
+      "execution_status": "NOT_RUN",
+      "observed_legal_decision": null,
+      "observed_invalid_decision": null
+    },
+    {
+      "task": "FSV-B06",
+      "method": "P2P_STYLE_PROPOSED",
+      "execution_status": "EVALUATED",
+      "observed_legal_decision": "allow",
+      "observed_invalid_decision": "deny",
+      "posthoc_corrected_replay_status": "EVALUATED",
+      "posthoc_corrected_legal": "allow",
+      "posthoc_corrected_invalid": "deny"
+    },
+    {
+      "task": "FSV-B06",
+      "method": "AUTOPAC_STYLE_PROPOSED",
+      "execution_status": "DEVELOPMENT_REJECTED",
+      "observed_legal_decision": null,
+      "observed_invalid_decision": null,
+      "posthoc_corrected_replay_status": "EVALUATED",
+      "posthoc_corrected_legal": "allow",
+      "posthoc_corrected_invalid": "deny"
+    },
+    {
+      "task": "FSV-B06",
+      "method": "ECAS_MATCHED_PROPOSED",
+      "execution_status": "EVALUATED",
+      "observed_legal_decision": "allow",
+      "observed_invalid_decision": "deny",
+      "posthoc_corrected_replay_status": "EVALUATED",
+      "posthoc_corrected_legal": "allow",
+      "posthoc_corrected_invalid": "deny"
+    },
+    {
+      "task": "FSV-S02",
+      "method": "P2P_NATIVE",
+      "execution_status": "NOT_RUN",
+      "observed_legal_decision": null,
+      "observed_invalid_decision": null
+    },
+    {
+      "task": "FSV-S02",
+      "method": "AUTOPAC_NATIVE",
+      "execution_status": "NOT_RUN",
+      "observed_legal_decision": null,
+      "observed_invalid_decision": null
+    },
+    {
+      "task": "FSV-S02",
+      "method": "P2P_STYLE_PROPOSED",
+      "execution_status": "OUT_OF_SCOPE",
+      "observed_legal_decision": null,
+      "observed_invalid_decision": null,
+      "posthoc_corrected_replay_status": "OUT_OF_SCOPE",
+      "posthoc_corrected_legal": null,
+      "posthoc_corrected_invalid": null
+    },
+    {
+      "task": "FSV-S02",
+      "method": "AUTOPAC_STYLE_PROPOSED",
+      "execution_status": "DEVELOPMENT_REJECTED",
+      "observed_legal_decision": null,
+      "observed_invalid_decision": null,
+      "posthoc_corrected_replay_status": "DEVELOPMENT_REJECTED",
+      "posthoc_corrected_legal": null,
+      "posthoc_corrected_invalid": null
+    },
+    {
+      "task": "FSV-S02",
+      "method": "ECAS_MATCHED_PROPOSED",
+      "execution_status": "EVALUATED",
+      "observed_legal_decision": "allow",
+      "observed_invalid_decision": "deny",
+      "posthoc_corrected_replay_status": "EVALUATED",
+      "posthoc_corrected_legal": "allow",
+      "posthoc_corrected_invalid": "deny"
+    },
+    {
+      "task": "FSV-S04",
+      "method": "P2P_NATIVE",
+      "execution_status": "NOT_RUN",
+      "observed_legal_decision": null,
+      "observed_invalid_decision": null
+    },
+    {
+      "task": "FSV-S04",
+      "method": "AUTOPAC_NATIVE",
+      "execution_status": "NOT_RUN",
+      "observed_legal_decision": null,
+      "observed_invalid_decision": null
+    },
+    {
+      "task": "FSV-S04",
+      "method": "P2P_STYLE_PROPOSED",
+      "execution_status": "DEVELOPMENT_REJECTED",
+      "observed_legal_decision": null,
+      "observed_invalid_decision": null,
+      "posthoc_corrected_replay_status": "EVALUATED",
+      "posthoc_corrected_legal": "allow",
+      "posthoc_corrected_invalid": "allow"
+    },
+    {
+      "task": "FSV-S04",
+      "method": "AUTOPAC_STYLE_PROPOSED",
+      "execution_status": "DEVELOPMENT_REJECTED",
+      "observed_legal_decision": null,
+      "observed_invalid_decision": null,
+      "posthoc_corrected_replay_status": "EVALUATED",
+      "posthoc_corrected_legal": "allow",
+      "posthoc_corrected_invalid": "deny"
+    },
+    {
+      "task": "FSV-S04",
+      "method": "ECAS_MATCHED_PROPOSED",
+      "execution_status": "EVALUATED",
+      "observed_legal_decision": "allow",
+      "observed_invalid_decision": "deny",
+      "posthoc_corrected_replay_status": "EVALUATED",
+      "posthoc_corrected_legal": "allow",
+      "posthoc_corrected_invalid": "deny"
+    }
+  ],
+  "model_calls": 27,
+  "native_methods_not_run": true,
+  "summary": "FINAL_SUMMARY.json",
+  "posthoc_summary": "COMPARISON_FINAL_SUMMARY.json"
+}

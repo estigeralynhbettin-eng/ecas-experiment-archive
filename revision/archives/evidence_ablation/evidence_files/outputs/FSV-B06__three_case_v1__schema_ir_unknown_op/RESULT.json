@@ -1,0 +1,22 @@
+{
+  "parent_id": "FSV-B06__three_case_v1",
+  "case": "FSV-B06",
+  "configuration": "three_case_v1",
+  "row_id": "FSV-B06__three_case_v1__schema_ir_unknown_op",
+  "variant": "schema_ir_unknown_op",
+  "classification": "ENGINEERING_MODEL_IR_SCHEMA_CONTROL",
+  "expected_full": "schema_fail",
+  "notes": "Unknown operation; excluded from scientific denominator",
+  "source_parent_candidate": "/root/ecas_evidence_ablation_20261014/inputs/FSV-B06__three_case_v1/candidate.json",
+  "source_parent_contract": "/root/ecas_evidence_ablation_20261014/inputs/FSV-B06__three_case_v1/contract.json",
+  "candidate_sha256": "aa40325d93a2ec719fac41616e711d21c0b45577b8037eac79a14781f1ff933d",
+  "contract_sha256": "f5831f2c50ce5b317913a884c08caf832824a506cfff7704871731f88edd8090",
+  "output_folder": "/root/ecas_evidence_ablation_20261014/outputs/FSV-B06__three_case_v1__schema_ir_unknown_op",
+  "full_executed": false,
+  "shape_executed": false,
+  "ir_status": "IR_SCHEMA_OR_TYPE_FAILURE",
+  "full_status": "NOT_ATTEMPTED",
+  "shape_status": "NOT_ATTEMPTED",
+  "error": "model IR schema rejected: /: {'ir_version': 'EC-FIELD-MODEL-IR-V3', 'candidate_id': 'cand-FSV-B06-reage-undo-latest-only', 'decision': 'propose', 'target': {'operation': 'POST /v1/loans/{loanId}/transactions/{transactionId}?command=undo', 'system': 'Fineract', 'version': '1.14.0'}, 'policy_id': 'pol-FSV-B06-reage-undo-latest-only', 'evidence_refs': ['VIS-FSV-B06-01', 'VIS-FSV-B06-RUNTIME-ABI'], 'rules': [{'rule_id': 'rule-FSV-B06-reage-undo-latest-only', 'primitive_id': 'SP-BOUNDED-BUSINESS-GUARD', 'op': 'not_registered', 'evidence_refs': ['VIS-FSV-B06-01', 'VIS-FSV-B06-RUNTIME-ABI'], 'params': {'alternatives': [{'clauses': [{'kind': 'scalar_compare', 'left_path': '/trusted/reAgeIsLatestTransaction', 'operator': 'eq', 'right_source': 'literal', 'right_path': '', 'right_value': True}]}], 'on_missing': 'deny'}}], 'reason_code': 'none', 'missing_evidence': []} is not valid under any of the given schemas",
+  "eligible_admission_contrast": false
+}

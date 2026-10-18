@@ -1,0 +1,580 @@
+{
+  "status": "PASS",
+  "scope_id": "ECAS-MATCHED-EVIDENCE-LABOR-20261014-01",
+  "run_id": "matched-generation-t0-v7",
+  "runtime_lane": "/root/ecas_matched_generation_20261014",
+  "setup_version": "v7",
+  "frozen_manifest_sha256": "e4a7358923e605ab853c99cfb77932a26c90dcfb69a967c17e1a669cfe875bba",
+  "completed_at": "2026-10-15T00:51:02.625373+00:00",
+  "observations": [
+    {
+      "check": "opa_startup",
+      "pass": true,
+      "detail": "Version: 1.19.0\nBuild Commit: 1e32c796e8979b1bda2f768138500b1deb95ff24-dirty\nBuild Timestamp: 2026-07-30T19:38:54Z\nBuild Hostname: \nGo Version: go1.26.5\nPlatform: linux/amd64\nRego Version: v1\nWebAssembly: available\n"
+    },
+    {
+      "check": "regal_startup",
+      "pass": true,
+      "detail": "Version:       0.43.0\nGo Version:    go1.26.0\nOPA Version:   1.21.0\nPlatform:      linux/amd64\nCommit:        6189089eff8c384af8a0e821f2ef9bad594970e9\nTimestamp:     2026-09-29T14:16:51Z\nInstalled via: github.actions.local\n"
+    },
+    {
+      "check": "format_ast_compile_full_regal",
+      "pass": true,
+      "detail": {
+        "policy_path": "/root/ecas_matched_generation_20261014/outputs/t0_v7/good/external_pilot/policy.rego",
+        "original_path": "/root/ecas_matched_generation_20261014/outputs/t0_v7/good/original.rego",
+        "compile_exit": 0,
+        "compile_error": "",
+        "format_receipt": {
+          "original_sha256": "7376f4559ccfc888c47c8ab125091ccc2642b18d9d46d2124a88e54aa2e8b43d",
+          "formatted_sha256": "1631f2fe253828f6cffb6ada0a9547cf0ed87a93c81dbcfed8de9c298f25b696",
+          "parse_before_exit": 0,
+          "format_exit": 0,
+          "parse_after_exit": 0,
+          "ast_semantics_equal_without_location": true,
+          "classification": "DETERMINISTIC_FORMAT_ONLY_NOT_MODEL_REPAIR"
+        },
+        "lint_exit": 0,
+        "lint_report": {
+          "violations": [],
+          "notices": [
+            {
+              "title": "deprecated-builtin",
+              "description": "Since OPA 1.0, deprecated-builtin enabled only when provided a v0 policy,\nBUT please note that this may change in the future if new built-in functions\nare deprecated.\n",
+              "category": "bugs",
+              "level": "notice",
+              "severity": "none"
+            },
+            {
+              "title": "import-shadows-import",
+              "description": "Since OPA 1.0, import-shadows-import enabled only when provided a v0 policy,",
+              "category": "imports",
+              "level": "notice",
+              "severity": "none"
+            },
+            {
+              "title": "rule-named-if",
+              "description": "Since OPA 1.0, rule-named-if enabled only when provided a v0 policy",
+              "category": "bugs",
+              "level": "notice",
+              "severity": "none"
+            },
+            {
+              "title": "use-contains",
+              "description": "Since OPA 1.0, use-contains enabled only when provided a v0 policy",
+              "category": "idiomatic",
+              "level": "notice",
+              "severity": "none"
+            },
+            {
+              "title": "use-if",
+              "description": "Since OPA 1.0, use-if enabled only when provided a v0 policy",
+              "category": "idiomatic",
+              "level": "notice",
+              "severity": "none"
+            },
+            {
+              "title": "use-rego-v1",
+              "description": "Since OPA 1.0, use-rego-v1 enabled only when provided a v0 policy",
+              "category": "imports",
+              "level": "notice",
+              "severity": "none"
+            }
+          ],
+          "summary": {
+            "files_scanned": 1,
+            "files_failed": 0,
+            "rules_skipped": 0,
+            "num_violations": 0
+          }
+        },
+        "accepted": true
+      }
+    },
+    {
+      "check": "format_preserves_original",
+      "pass": true,
+      "detail": null
+    },
+    {
+      "check": "opa_allow",
+      "pass": true,
+      "detail": {
+        "status": "EXECUTED",
+        "decision": "allow",
+        "exit_code": 0
+      }
+    },
+    {
+      "check": "opa_deny",
+      "pass": true,
+      "detail": {
+        "status": "EXECUTED",
+        "decision": "deny",
+        "exit_code": 0
+      }
+    },
+    {
+      "check": "syntax",
+      "pass": true,
+      "detail": {
+        "expected": "COMPILE_REJECTED",
+        "observed": "COMPILE_REJECTED"
+      }
+    },
+    {
+      "check": "network",
+      "pass": true,
+      "detail": {
+        "expected": "COMPILE_REJECTED",
+        "observed": "COMPILE_REJECTED"
+      }
+    },
+    {
+      "check": "undefined",
+      "pass": true,
+      "detail": {
+        "expected": "UNDEFINED_OR_AMBIGUOUS",
+        "observed": "UNDEFINED_OR_AMBIGUOUS"
+      }
+    },
+    {
+      "check": "non_boolean",
+      "pass": true,
+      "detail": {
+        "expected": "NON_BOOLEAN",
+        "observed": "NON_BOOLEAN"
+      }
+    },
+    {
+      "check": "known_ecas_43",
+      "pass": true,
+      "detail": {
+        "policy_id": "POL-FSV-S03-AGE-STRICT-TYPE",
+        "decision": "allow",
+        "fail_closed": true,
+        "violations": []
+      }
+    },
+    {
+      "check": "known_ecas_'43'",
+      "pass": true,
+      "detail": {
+        "policy_id": "POL-FSV-S03-AGE-STRICT-TYPE",
+        "decision": "deny",
+        "fail_closed": true,
+        "violations": [
+          {
+            "rule_id": "RULE-FSV-S03-AGE-STRICT-TYPE",
+            "code": "type_mismatch",
+            "detail": "/request/body/age"
+          }
+        ]
+      }
+    },
+    {
+      "check": "known_ecas_True",
+      "pass": true,
+      "detail": {
+        "policy_id": "POL-FSV-S03-AGE-STRICT-TYPE",
+        "decision": "deny",
+        "fail_closed": true,
+        "violations": [
+          {
+            "rule_id": "RULE-FSV-S03-AGE-STRICT-TYPE",
+            "code": "type_mismatch",
+            "detail": "/request/body/age"
+          }
+        ]
+      }
+    },
+    {
+      "check": "known_ecas_43.5",
+      "pass": true,
+      "detail": {
+        "policy_id": "POL-FSV-S03-AGE-STRICT-TYPE",
+        "decision": "deny",
+        "fail_closed": true,
+        "violations": [
+          {
+            "rule_id": "RULE-FSV-S03-AGE-STRICT-TYPE",
+            "code": "type_mismatch",
+            "detail": "/request/body/age"
+          }
+        ]
+      }
+    },
+    {
+      "check": "ecas_missing_evidence_rejected",
+      "pass": true,
+      "detail": null
+    },
+    {
+      "check": "ecas_wrong_evidence_id_rejected",
+      "pass": true,
+      "detail": null
+    },
+    {
+      "check": "valid_direct_ir_outer_wrapper_only",
+      "pass": true,
+      "detail": null
+    },
+    {
+      "check": "valid_existing_wrapper_unchanged",
+      "pass": true,
+      "detail": null
+    },
+    {
+      "check": "wrapper_normalization_partial_ir_rejected",
+      "pass": true,
+      "detail": null
+    },
+    {
+      "check": "wrapper_normalization_wrong_version_rejected",
+      "pass": true,
+      "detail": null
+    },
+    {
+      "check": "wrapper_normalization_ambiguous_wrapper_rejected",
+      "pass": true,
+      "detail": null
+    },
+    {
+      "check": "wrapper_normalization_extra_ir_field_rejected",
+      "pass": true,
+      "detail": null
+    },
+    {
+      "check": "wrapper_normalization_list_shape_rejected",
+      "pass": true,
+      "detail": null
+    },
+    {
+      "check": "wrapper_normalization_candidate_string_rejected",
+      "pass": true,
+      "detail": null
+    },
+    {
+      "check": "schema_missing_field_rejected",
+      "pass": true,
+      "detail": null
+    },
+    {
+      "check": "schema_wrong_schema_version_rejected",
+      "pass": true,
+      "detail": null
+    },
+    {
+      "check": "schema_duplicate_rules_rejected",
+      "pass": true,
+      "detail": null
+    },
+    {
+      "check": "json_truncated_rejected",
+      "pass": true,
+      "detail": null
+    },
+    {
+      "check": "json_empty_rejected",
+      "pass": true,
+      "detail": null
+    },
+    {
+      "check": "stage_p2p_extract_missing_fields_rejected",
+      "pass": true,
+      "detail": null
+    },
+    {
+      "check": "stage_autopac_judge_missing_fields_rejected",
+      "pass": true,
+      "detail": null
+    },
+    {
+      "check": "stage_repair_missing_fields_rejected",
+      "pass": true,
+      "detail": null
+    },
+    {
+      "check": "neutral_adapter_FSV-S03",
+      "pass": true,
+      "detail": null
+    },
+    {
+      "check": "exact_object_mapping_FSV-S03",
+      "pass": true,
+      "detail": null
+    },
+    {
+      "check": "wrong_object_mapping_rejected_FSV-S03",
+      "pass": true,
+      "detail": null
+    },
+    {
+      "check": "neutral_adapter_FSV-B13",
+      "pass": true,
+      "detail": null
+    },
+    {
+      "check": "exact_object_mapping_FSV-B13",
+      "pass": true,
+      "detail": null
+    },
+    {
+      "check": "wrong_object_mapping_rejected_FSV-B13",
+      "pass": true,
+      "detail": null
+    },
+    {
+      "check": "neutral_adapter_FSV-B17",
+      "pass": true,
+      "detail": null
+    },
+    {
+      "check": "exact_object_mapping_FSV-B17",
+      "pass": true,
+      "detail": null
+    },
+    {
+      "check": "wrong_object_mapping_rejected_FSV-B17",
+      "pass": true,
+      "detail": null
+    },
+    {
+      "check": "neutral_adapter_FSV-B19",
+      "pass": true,
+      "detail": null
+    },
+    {
+      "check": "exact_object_mapping_FSV-B19",
+      "pass": true,
+      "detail": null
+    },
+    {
+      "check": "wrong_object_mapping_rejected_FSV-B19",
+      "pass": true,
+      "detail": null
+    },
+    {
+      "check": "max_call_accounting",
+      "pass": true,
+      "detail": null
+    },
+    {
+      "check": "new_scope_identity",
+      "pass": true,
+      "detail": null
+    },
+    {
+      "check": "lossless_complete_schema_factorization",
+      "pass": true,
+      "detail": null
+    },
+    {
+      "check": "as_run_smoke_snapshot_preserved",
+      "pass": true,
+      "detail": null
+    },
+    {
+      "check": "as_run_main_snapshot_preserved",
+      "pass": true,
+      "detail": null
+    },
+    {
+      "check": "source_reference_base",
+      "pass": true,
+      "detail": {
+        "original_reference": "VIS-FSV-B13-01",
+        "accepted": true,
+        "binding_kind": "VISIBLE_BASE_ID",
+        "base_evidence_id": "VIS-FSV-B13-01",
+        "original_fragment": null,
+        "source_id": "erpnext-stock-settings.html",
+        "source_metadata_sha256": "F866B7A7F90AEFCB06DA623C3F9EF25F5524D4261887FC80FFDE3AAA76A530EA"
+      }
+    },
+    {
+      "check": "source_reference_limit_anchor",
+      "pass": true,
+      "detail": {
+        "original_reference": "VIS-FSV-B13-01#Limit Percent",
+        "accepted": true,
+        "binding_kind": "EXACT_NORMALIZED_VISIBLE_HEADING",
+        "base_evidence_id": "VIS-FSV-B13-01",
+        "original_fragment": "Limit Percent",
+        "source_id": "erpnext-stock-settings.html",
+        "source_metadata_sha256": "F866B7A7F90AEFCB06DA623C3F9EF25F5524D4261887FC80FFDE3AAA76A530EA",
+        "visible_text_sha256": "26e91efd1a8efa893d8b1f991477c3a4717a31205e5252c739df4ba8056c7cfa",
+        "normalized_fragment": "limit percent",
+        "heading_locations": [
+          {
+            "line_number": 29,
+            "original_heading": "Limit Percent"
+          }
+        ],
+        "original_source_reference_preserved": true
+      }
+    },
+    {
+      "check": "source_reference_role_anchor",
+      "pass": true,
+      "detail": {
+        "original_reference": "VIS-FSV-B13-01#Role Allowed to Over Deliver/Receive",
+        "accepted": true,
+        "binding_kind": "EXACT_NORMALIZED_VISIBLE_HEADING",
+        "base_evidence_id": "VIS-FSV-B13-01",
+        "original_fragment": "Role Allowed to Over Deliver/Receive",
+        "source_id": "erpnext-stock-settings.html",
+        "source_metadata_sha256": "F866B7A7F90AEFCB06DA623C3F9EF25F5524D4261887FC80FFDE3AAA76A530EA",
+        "visible_text_sha256": "26e91efd1a8efa893d8b1f991477c3a4717a31205e5252c739df4ba8056c7cfa",
+        "normalized_fragment": "role allowed to over deliver/receive",
+        "heading_locations": [
+          {
+            "line_number": 33,
+            "original_heading": "Role Allowed to Over Deliver/Receive"
+          }
+        ],
+        "original_source_reference_preserved": true
+      }
+    },
+    {
+      "check": "source_reference_case_whitespace",
+      "pass": true,
+      "detail": {
+        "original_reference": "VIS-FSV-B13-01#  LIMIT   percent ",
+        "accepted": true,
+        "binding_kind": "EXACT_NORMALIZED_VISIBLE_HEADING",
+        "base_evidence_id": "VIS-FSV-B13-01",
+        "original_fragment": "  LIMIT   percent ",
+        "source_id": "erpnext-stock-settings.html",
+        "source_metadata_sha256": "F866B7A7F90AEFCB06DA623C3F9EF25F5524D4261887FC80FFDE3AAA76A530EA",
+        "visible_text_sha256": "26e91efd1a8efa893d8b1f991477c3a4717a31205e5252c739df4ba8056c7cfa",
+        "normalized_fragment": "limit percent",
+        "heading_locations": [
+          {
+            "line_number": 29,
+            "original_heading": "Limit Percent"
+          }
+        ],
+        "original_source_reference_preserved": true
+      }
+    },
+    {
+      "check": "source_reference_unknown_base",
+      "pass": true,
+      "detail": {
+        "original_reference": "VIS-NOT-IN-PACKET#Limit Percent",
+        "accepted": false,
+        "binding_kind": null,
+        "base_evidence_id": "VIS-NOT-IN-PACKET",
+        "original_fragment": "Limit Percent",
+        "reason": "UNKNOWN_BASE_EVIDENCE_ID"
+      }
+    },
+    {
+      "check": "source_reference_unknown_fragment",
+      "pass": true,
+      "detail": {
+        "original_reference": "VIS-FSV-B13-01#T0_SECTION_DOES_NOT_EXIST",
+        "accepted": false,
+        "binding_kind": null,
+        "base_evidence_id": "VIS-FSV-B13-01",
+        "original_fragment": "T0_SECTION_DOES_NOT_EXIST",
+        "source_id": "erpnext-stock-settings.html",
+        "source_metadata_sha256": "F866B7A7F90AEFCB06DA623C3F9EF25F5524D4261887FC80FFDE3AAA76A530EA",
+        "visible_text_sha256": "26e91efd1a8efa893d8b1f991477c3a4717a31205e5252c739df4ba8056c7cfa",
+        "normalized_fragment": "t0_section_does_not_exist",
+        "reason": "FRAGMENT_NOT_IN_VISIBLE_SOURCE"
+      }
+    },
+    {
+      "check": "source_reference_empty_fragment",
+      "pass": true,
+      "detail": {
+        "original_reference": "VIS-FSV-B13-01#   ",
+        "accepted": false,
+        "binding_kind": null,
+        "base_evidence_id": "VIS-FSV-B13-01",
+        "original_fragment": "   ",
+        "source_id": "erpnext-stock-settings.html",
+        "source_metadata_sha256": "F866B7A7F90AEFCB06DA623C3F9EF25F5524D4261887FC80FFDE3AAA76A530EA",
+        "reason": "EMPTY_FRAGMENT"
+      }
+    },
+    {
+      "check": "source_reference_invalid_type",
+      "pass": true,
+      "detail": {
+        "original_reference": 13,
+        "accepted": false,
+        "binding_kind": null,
+        "reason": "SOURCE_REFERENCE_NOT_NONEMPTY_STRING"
+      }
+    },
+    {
+      "check": "explicit_resume_gate_valid_complete_cache",
+      "pass": true,
+      "detail": null
+    },
+    {
+      "check": "explicit_resume_gate_running_rejected",
+      "pass": true,
+      "detail": null
+    },
+    {
+      "check": "explicit_resume_gate_sealed_read_rejected",
+      "pass": true,
+      "detail": null
+    },
+    {
+      "check": "explicit_resume_gate_state_hash_mismatch_rejected",
+      "pass": true,
+      "detail": null
+    },
+    {
+      "check": "explicit_resume_gate_unresolved_call_rejected",
+      "pass": true,
+      "detail": null
+    },
+    {
+      "check": "opa_comment_location_metadata_equal",
+      "pass": true,
+      "detail": null
+    },
+    {
+      "check": "opa_comment_normalization_preserves_rule_semantics",
+      "pass": true,
+      "detail": null
+    },
+    {
+      "check": "opa_comment_normalization_preserves_comment_text",
+      "pass": true,
+      "detail": null
+    },
+    {
+      "check": "mcp_scope_record_schema",
+      "pass": true,
+      "detail": null
+    },
+    {
+      "check": "old_runtime_hash_copies_match",
+      "pass": true,
+      "detail": null
+    },
+    {
+      "check": "free_space_min_2gb",
+      "pass": true,
+      "detail": 714862059520
+    }
+  ],
+  "python": "3.10.12",
+  "jsonschema": "4.26.0",
+  "free_bytes": 714862059520,
+  "uses_docker_gpu_or_services": false,
+  "shared_resources_used": [],
+  "outputs_isolated": true,
+  "raw_model_calls": 0,
+  "api_key_loaded": false,
+  "scope_paid_model_attempts_at_T0": 15,
+  "scientific_result": false,
+  "fixture_classification": "ARCHIVED_S03_CANDIDATE_ENGINEERING_FIXTURE_EXCLUDED_FROM_GENERATION"
+}

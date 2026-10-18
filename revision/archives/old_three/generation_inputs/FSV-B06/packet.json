@@ -1,0 +1,55 @@
+{
+  "task_window_id": "FSV-B06",
+  "target": {
+    "operation": "POST /v1/loans/{loanId}/transactions/{transactionId}?command=undo",
+    "system": "Fineract",
+    "version": "1.14.0"
+  },
+  "visible_sources": [
+    {
+      "content": "85: === Reversal and Replay Rules\n86: \n87: * Re-Age transactions can be **reversed only if they are the latest transaction** on the loan account.\n88: * Any backdated repayment or reversal triggers **reverse + replay**:\n89: - Reverts schedule to original state before re-age.\n90: - Removes special collected installment if it exists.\n91: - Restores charge/fee mapping.\n92: * Backdated transaction posting or reversals triggers **reverse + replay**",
+      "evidence_id": "VIS-FSV-B06-01",
+      "locator": "re-ageing.adoc:85-92;",
+      "source_id": "fineract-re-ageing.adoc",
+      "source_sha256": "95D99F4BEE0B70B23487CBEE14CC1C767AB4667240F297B6ECE0DE3545BE5F16"
+    },
+    {
+      "content": "95: === User Input Parameters\n96: \n97: Users must provide the following inputs when applying re-aging:\n98: * **Start Date**: first due date of the re-aged schedule.\n99: * **Number of Re-aged Installments**: total installments to generate.\n100: * **Period Type**: Daily, Weekly, Monthly, or Yearly.\n101: * **Period Frequency**: number of units per period type.\n102: * **Interest Handling Method**: Default, Equal Amortization.\n103: * These inputs drive the schedule generation, replacement of future installments, and calculation of N+1 installment.\n104: * In case of non-interest-bearing loans interest handling strategy is omitted\n105: \n106: === Implementation details\n107: \n108: Implementation core is located in AdvancedPaymentScheduleTransactionProcessor.\n109: the entrypoint of the feature is handleReAge.\n110: handleReAge function is the purpose of configure the different re-age strategies and handle both interest bearing and non interest bearing scenarios.",
+      "evidence_id": "VIS-FSV-B06-02",
+      "locator": "re-ageing.adoc:95-110",
+      "source_id": "fineract-re-ageing.adoc",
+      "source_sha256": "95D99F4BEE0B70B23487CBEE14CC1C767AB4667240F297B6ECE0DE3545BE5F16"
+    },
+    {
+      "content": {
+        "available_values": [
+          {
+            "authority": "server_state",
+            "path": "/trusted/reAgeIsLatestTransaction",
+            "type": "boolean"
+          }
+        ],
+        "target_operation": "POST /v1/loans/{loanId}/transactions/{transactionId}?command=undo",
+        "notice": "This declares available adapter paths and types only; it supplies no expected decision or hidden test value."
+      },
+      "evidence_id": "VIS-FSV-B06-RUNTIME-ABI",
+      "locator": "tasks.FSV-B06",
+      "source_id": "EC-V2-RUNTIME-INTERFACE-CATALOG-V1",
+      "source_sha256": "8221DA8A6720B0593A8D337F18569C9947AAB05B02E5C84FB0C50E3DE8C1ABD7"
+    }
+  ],
+  "common_adapter": {
+    "subject_role": "authenticated_api_caller",
+    "action": "POST /v1/loans/{loanId}/transactions/{transactionId}?command=undo",
+    "resource_system": "Fineract",
+    "resource_version": "1.14.0",
+    "request_and_trusted_paths": [
+      {
+        "authority": "server_state",
+        "path": "/trusted/reAgeIsLatestTransaction",
+        "type": "boolean"
+      }
+    ],
+    "notice": "The adapter supplies identity/target constants only. It does not supply a policy condition, expected decision, test value, or evaluation label."
+  }
+}

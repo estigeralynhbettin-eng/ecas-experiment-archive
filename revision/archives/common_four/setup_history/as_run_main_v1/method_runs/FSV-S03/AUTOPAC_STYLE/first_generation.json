@@ -1,0 +1,5 @@
+{
+  "status": "READY",
+  "rego": "package external_pilot\n\nimport rego.v1\n\ndefault allow := false\n\nallow if {\n    is_integer(input.request.body.age)\n}\n",
+  "reason": "The OpenAPI source declares the age property of the family-member creation request body as type integer (format int64). The policy enforces only this published type requirement: input.request.body.age must be an integer. No presence, range, authentication, or other field checks are included per the focused target objective."
+}

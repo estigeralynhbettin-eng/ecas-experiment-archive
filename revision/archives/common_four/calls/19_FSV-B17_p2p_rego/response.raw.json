@@ -1,0 +1,28 @@
+{
+  "choices": [
+    {
+      "finish_reason": "stop",
+      "index": 0,
+      "message": {
+        "content": "{\"begin\":\"BEGIN_FSV-B17_p2p_rego_MAIN\",\"stage\":\"p2p_rego\",\"output\":{\"status\":\"READY\",\"rego\":\"package external_pilot\\n\\nimport rego.v1\\n\\ndefault allow := false\\n\\nallow if {\\n    not input.trusted.customerDisabled\\n}\",\"reason\":\"The source explicitly documents that a disabled customer disallows sales orders. The policy denies the target operation POST /api/resource/Sales Order when input.trusted.customerDisabled is true, and permits it otherwise.\"},\"end\":\"END_FSV-B17_p2p_rego_MAIN\"}",
+        "role": "assistant"
+      }
+    }
+  ],
+  "created": 1792025648,
+  "id": "2026101508535865deef9f5e3d4af8",
+  "model": "glm-5.2",
+  "object": "chat.completion",
+  "request_id": "2026101508535865deef9f5e3d4af8",
+  "usage": {
+    "completion_tokens": 850,
+    "completion_tokens_details": {
+      "reasoning_tokens": 702
+    },
+    "prompt_tokens": 3413,
+    "prompt_tokens_details": {
+      "cached_tokens": 320
+    },
+    "total_tokens": 4263
+  }
+}

@@ -1,0 +1,3879 @@
+{
+  "status": "PASS",
+  "scope_id": "ECAS-MATCHED-EVIDENCE-LABOR-20261014-01",
+  "checked_at": "2026-10-15T00:57:14.047493+00:00",
+  "checks": 567,
+  "observations": [
+    {
+      "check": "frozen_source_script_tool_sha256",
+      "pass": true,
+      "object_path": "/mnt/d/lunwen/EC-CSI投稿/working/exploration/20261014_matched_evidence_labor/matched_generation/AUTHORIZATION_CN.md",
+      "detail": null
+    },
+    {
+      "check": "frozen_source_script_tool_sha256",
+      "pass": true,
+      "object_path": "/mnt/d/lunwen/EC-CSI投稿/working/exploration/20261014_matched_evidence_labor/matched_generation/DOCUMENTED_OPERATOR_SEMANTICS.json",
+      "detail": null
+    },
+    {
+      "check": "frozen_source_script_tool_sha256",
+      "pass": true,
+      "object_path": "/mnt/d/lunwen/EC-CSI投稿/working/exploration/20261014_matched_evidence_labor/matched_generation/EXECUTION_CONFIG.json",
+      "detail": null
+    },
+    {
+      "check": "frozen_source_script_tool_sha256",
+      "pass": true,
+      "object_path": "/mnt/d/lunwen/EC-CSI投稿/working/exploration/20261014_matched_evidence_labor/matched_generation/EXPERIMENT_SCOPE.json",
+      "detail": null
+    },
+    {
+      "check": "frozen_source_script_tool_sha256",
+      "pass": true,
+      "object_path": "/mnt/d/lunwen/EC-CSI投稿/working/exploration/20261014_matched_evidence_labor/matched_generation/FROZEN_PROTOCOL_CN.md",
+      "detail": null
+    },
+    {
+      "check": "frozen_source_script_tool_sha256",
+      "pass": true,
+      "object_path": "/mnt/d/lunwen/EC-CSI投稿/working/exploration/20261014_matched_evidence_labor/matched_generation/INPUT_DERIVATIONS.json",
+      "detail": null
+    },
+    {
+      "check": "frozen_source_script_tool_sha256",
+      "pass": true,
+      "object_path": "/mnt/d/lunwen/EC-CSI投稿/working/exploration/20261014_matched_evidence_labor/matched_generation/MAIN_RESUME_AUTHORIZATION_V2.json",
+      "detail": null
+    },
+    {
+      "check": "frozen_source_script_tool_sha256",
+      "pass": true,
+      "object_path": "/mnt/d/lunwen/EC-CSI投稿/working/exploration/20261014_matched_evidence_labor/matched_generation/MAIN_RESUME_AUTHORIZATION_V3.json",
+      "detail": null
+    },
+    {
+      "check": "frozen_source_script_tool_sha256",
+      "pass": true,
+      "object_path": "/mnt/d/lunwen/EC-CSI投稿/working/exploration/20261014_matched_evidence_labor/matched_generation/OPA_COMMENT_LOCATION_ACCEPTANCE_V3.json",
+      "detail": null
+    },
+    {
+      "check": "frozen_source_script_tool_sha256",
+      "pass": true,
+      "object_path": "/mnt/d/lunwen/EC-CSI投稿/working/exploration/20261014_matched_evidence_labor/matched_generation/PROMPT_TEMPLATES.json",
+      "detail": null
+    },
+    {
+      "check": "frozen_source_script_tool_sha256",
+      "pass": true,
+      "object_path": "/mnt/d/lunwen/EC-CSI投稿/working/exploration/20261014_matched_evidence_labor/matched_generation/SCHEMA_FACTORIZATION_QA.json",
+      "detail": null
+    },
+    {
+      "check": "frozen_source_script_tool_sha256",
+      "pass": true,
+      "object_path": "/mnt/d/lunwen/EC-CSI投稿/working/exploration/20261014_matched_evidence_labor/matched_generation/SOURCE_COPY_RECEIPT.json",
+      "detail": null
+    },
+    {
+      "check": "frozen_source_script_tool_sha256",
+      "pass": true,
+      "object_path": "/mnt/d/lunwen/EC-CSI投稿/working/exploration/20261014_matched_evidence_labor/matched_generation/SOURCE_REFERENCE_ACCEPTANCE_V2.json",
+      "detail": null
+    },
+    {
+      "check": "frozen_source_script_tool_sha256",
+      "pass": true,
+      "object_path": "/mnt/d/lunwen/EC-CSI投稿/working/exploration/20261014_matched_evidence_labor/matched_generation/TASK_CONTRACT.md",
+      "detail": null
+    },
+    {
+      "check": "frozen_source_script_tool_sha256",
+      "pass": true,
+      "object_path": "/mnt/d/lunwen/EC-CSI投稿/working/exploration/20261014_matched_evidence_labor/matched_generation/TOKEN_ESTIMATOR_CALIBRATION.json",
+      "detail": null
+    },
+    {
+      "check": "frozen_source_script_tool_sha256",
+      "pass": true,
+      "object_path": "/mnt/d/lunwen/EC-CSI投稿/working/exploration/20261014_matched_evidence_labor/matched_generation/USER_PROTOCOL_CN.md",
+      "detail": null
+    },
+    {
+      "check": "frozen_source_script_tool_sha256",
+      "pass": true,
+      "object_path": "/mnt/d/lunwen/EC-CSI投稿/working/exploration/20261014_matched_evidence_labor/matched_generation/execution_inputs/FSV-B13/contract.json",
+      "detail": null
+    },
+    {
+      "check": "frozen_source_script_tool_sha256",
+      "pass": true,
+      "object_path": "/mnt/d/lunwen/EC-CSI投稿/working/exploration/20261014_matched_evidence_labor/matched_generation/execution_inputs/FSV-B17/contract.json",
+      "detail": null
+    },
+    {
+      "check": "frozen_source_script_tool_sha256",
+      "pass": true,
+      "object_path": "/mnt/d/lunwen/EC-CSI投稿/working/exploration/20261014_matched_evidence_labor/matched_generation/execution_inputs/FSV-B19/contract.json",
+      "detail": null
+    },
+    {
+      "check": "frozen_source_script_tool_sha256",
+      "pass": true,
+      "object_path": "/mnt/d/lunwen/EC-CSI投稿/working/exploration/20261014_matched_evidence_labor/matched_generation/execution_inputs/FSV-S03/contract.json",
+      "detail": null
+    },
+    {
+      "check": "frozen_source_script_tool_sha256",
+      "pass": true,
+      "object_path": "/mnt/d/lunwen/EC-CSI投稿/working/exploration/20261014_matched_evidence_labor/matched_generation/execution_inputs/ecas_output_schema.json",
+      "detail": null
+    },
+    {
+      "check": "frozen_source_script_tool_sha256",
+      "pass": true,
+      "object_path": "/mnt/d/lunwen/EC-CSI投稿/working/exploration/20261014_matched_evidence_labor/matched_generation/execution_inputs/ecas_prompt_schema.json",
+      "detail": null
+    },
+    {
+      "check": "frozen_source_script_tool_sha256",
+      "pass": true,
+      "object_path": "/mnt/d/lunwen/EC-CSI投稿/working/exploration/20261014_matched_evidence_labor/matched_generation/execution_inputs/operator_developer_tests.json",
+      "detail": null
+    },
+    {
+      "check": "frozen_source_script_tool_sha256",
+      "pass": true,
+      "object_path": "/mnt/d/lunwen/EC-CSI投稿/working/exploration/20261014_matched_evidence_labor/matched_generation/freeze.py",
+      "detail": null
+    },
+    {
+      "check": "frozen_source_script_tool_sha256",
+      "pass": true,
+      "object_path": "/mnt/d/lunwen/EC-CSI投稿/working/exploration/20261014_matched_evidence_labor/matched_generation/generation_inputs/FSV-B13/organization_schema.json",
+      "detail": null
+    },
+    {
+      "check": "frozen_source_script_tool_sha256",
+      "pass": true,
+      "object_path": "/mnt/d/lunwen/EC-CSI投稿/working/exploration/20261014_matched_evidence_labor/matched_generation/generation_inputs/FSV-B13/packet.json",
+      "detail": null
+    },
+    {
+      "check": "frozen_source_script_tool_sha256",
+      "pass": true,
+      "object_path": "/mnt/d/lunwen/EC-CSI投稿/working/exploration/20261014_matched_evidence_labor/matched_generation/generation_inputs/FSV-B17/organization_schema.json",
+      "detail": null
+    },
+    {
+      "check": "frozen_source_script_tool_sha256",
+      "pass": true,
+      "object_path": "/mnt/d/lunwen/EC-CSI投稿/working/exploration/20261014_matched_evidence_labor/matched_generation/generation_inputs/FSV-B17/packet.json",
+      "detail": null
+    },
+    {
+      "check": "frozen_source_script_tool_sha256",
+      "pass": true,
+      "object_path": "/mnt/d/lunwen/EC-CSI投稿/working/exploration/20261014_matched_evidence_labor/matched_generation/generation_inputs/FSV-B19/organization_schema.json",
+      "detail": null
+    },
+    {
+      "check": "frozen_source_script_tool_sha256",
+      "pass": true,
+      "object_path": "/mnt/d/lunwen/EC-CSI投稿/working/exploration/20261014_matched_evidence_labor/matched_generation/generation_inputs/FSV-B19/packet.json",
+      "detail": null
+    },
+    {
+      "check": "frozen_source_script_tool_sha256",
+      "pass": true,
+      "object_path": "/mnt/d/lunwen/EC-CSI投稿/working/exploration/20261014_matched_evidence_labor/matched_generation/generation_inputs/FSV-S03/organization_schema.json",
+      "detail": null
+    },
+    {
+      "check": "frozen_source_script_tool_sha256",
+      "pass": true,
+      "object_path": "/mnt/d/lunwen/EC-CSI投稿/working/exploration/20261014_matched_evidence_labor/matched_generation/generation_inputs/FSV-S03/packet.json",
+      "detail": null
+    },
+    {
+      "check": "frozen_source_script_tool_sha256",
+      "pass": true,
+      "object_path": "/mnt/d/lunwen/EC-CSI投稿/working/exploration/20261014_matched_evidence_labor/matched_generation/managed_entry.py",
+      "detail": null
+    },
+    {
+      "check": "frozen_source_script_tool_sha256",
+      "pass": true,
+      "object_path": "/mnt/d/lunwen/EC-CSI投稿/working/exploration/20261014_matched_evidence_labor/matched_generation/pilot_lib.py",
+      "detail": null
+    },
+    {
+      "check": "frozen_source_script_tool_sha256",
+      "pass": true,
+      "object_path": "/mnt/d/lunwen/EC-CSI投稿/working/exploration/20261014_matched_evidence_labor/matched_generation/prepare.py",
+      "detail": null
+    },
+    {
+      "check": "frozen_source_script_tool_sha256",
+      "pass": true,
+      "object_path": "/mnt/d/lunwen/EC-CSI投稿/working/exploration/20261014_matched_evidence_labor/matched_generation/prepare_main_resume_v2.py",
+      "detail": null
+    },
+    {
+      "check": "frozen_source_script_tool_sha256",
+      "pass": true,
+      "object_path": "/mnt/d/lunwen/EC-CSI投稿/working/exploration/20261014_matched_evidence_labor/matched_generation/prepare_main_resume_v3.py",
+      "detail": null
+    },
+    {
+      "check": "frozen_source_script_tool_sha256",
+      "pass": true,
+      "object_path": "/mnt/d/lunwen/EC-CSI投稿/working/exploration/20261014_matched_evidence_labor/matched_generation/recover_wrapper_v2.py",
+      "detail": null
+    },
+    {
+      "check": "frozen_source_script_tool_sha256",
+      "pass": true,
+      "object_path": "/mnt/d/lunwen/EC-CSI投稿/working/exploration/20261014_matched_evidence_labor/matched_generation/run_matched.py",
+      "detail": null
+    },
+    {
+      "check": "frozen_source_script_tool_sha256",
+      "pass": true,
+      "object_path": "/mnt/d/lunwen/EC-CSI投稿/working/exploration/20261014_matched_evidence_labor/matched_generation/run_t0.py",
+      "detail": null
+    },
+    {
+      "check": "frozen_source_script_tool_sha256",
+      "pass": true,
+      "object_path": "/mnt/d/lunwen/EC-CSI投稿/working/exploration/20261014_matched_evidence_labor/matched_generation/sealed_evaluation/FSV-B13/O-I.json",
+      "detail": null
+    },
+    {
+      "check": "frozen_source_script_tool_sha256",
+      "pass": true,
+      "object_path": "/mnt/d/lunwen/EC-CSI投稿/working/exploration/20261014_matched_evidence_labor/matched_generation/sealed_evaluation/FSV-B13/O-L.json",
+      "detail": null
+    },
+    {
+      "check": "frozen_source_script_tool_sha256",
+      "pass": true,
+      "object_path": "/mnt/d/lunwen/EC-CSI投稿/working/exploration/20261014_matched_evidence_labor/matched_generation/sealed_evaluation/FSV-B17/O-I.json",
+      "detail": null
+    },
+    {
+      "check": "frozen_source_script_tool_sha256",
+      "pass": true,
+      "object_path": "/mnt/d/lunwen/EC-CSI投稿/working/exploration/20261014_matched_evidence_labor/matched_generation/sealed_evaluation/FSV-B17/O-L.json",
+      "detail": null
+    },
+    {
+      "check": "frozen_source_script_tool_sha256",
+      "pass": true,
+      "object_path": "/mnt/d/lunwen/EC-CSI投稿/working/exploration/20261014_matched_evidence_labor/matched_generation/sealed_evaluation/FSV-B19/O-I.json",
+      "detail": null
+    },
+    {
+      "check": "frozen_source_script_tool_sha256",
+      "pass": true,
+      "object_path": "/mnt/d/lunwen/EC-CSI投稿/working/exploration/20261014_matched_evidence_labor/matched_generation/sealed_evaluation/FSV-B19/O-L.json",
+      "detail": null
+    },
+    {
+      "check": "frozen_source_script_tool_sha256",
+      "pass": true,
+      "object_path": "/mnt/d/lunwen/EC-CSI投稿/working/exploration/20261014_matched_evidence_labor/matched_generation/sealed_evaluation/FSV-S03/O-I.json",
+      "detail": null
+    },
+    {
+      "check": "frozen_source_script_tool_sha256",
+      "pass": true,
+      "object_path": "/mnt/d/lunwen/EC-CSI投稿/working/exploration/20261014_matched_evidence_labor/matched_generation/sealed_evaluation/FSV-S03/O-L.json",
+      "detail": null
+    },
+    {
+      "check": "frozen_source_script_tool_sha256",
+      "pass": true,
+      "object_path": "/mnt/d/lunwen/EC-CSI投稿/working/exploration/20261014_matched_evidence_labor/matched_generation/sealed_evaluation/branch_protocol.json",
+      "detail": null
+    },
+    {
+      "check": "frozen_source_script_tool_sha256",
+      "pass": true,
+      "object_path": "/mnt/d/lunwen/EC-CSI投稿/working/exploration/20261014_matched_evidence_labor/matched_generation/source_snapshots/FSV-B13/visible_input.json",
+      "detail": null
+    },
+    {
+      "check": "frozen_source_script_tool_sha256",
+      "pass": true,
+      "object_path": "/mnt/d/lunwen/EC-CSI投稿/working/exploration/20261014_matched_evidence_labor/matched_generation/source_snapshots/FSV-B17/visible_input.json",
+      "detail": null
+    },
+    {
+      "check": "frozen_source_script_tool_sha256",
+      "pass": true,
+      "object_path": "/mnt/d/lunwen/EC-CSI投稿/working/exploration/20261014_matched_evidence_labor/matched_generation/source_snapshots/FSV-B19/visible_input.json",
+      "detail": null
+    },
+    {
+      "check": "frozen_source_script_tool_sha256",
+      "pass": true,
+      "object_path": "/mnt/d/lunwen/EC-CSI投稿/working/exploration/20261014_matched_evidence_labor/matched_generation/source_snapshots/FSV-S03/visible_input.json",
+      "detail": null
+    },
+    {
+      "check": "frozen_source_script_tool_sha256",
+      "pass": true,
+      "object_path": "/mnt/d/lunwen/EC-CSI投稿/working/exploration/20261014_matched_evidence_labor/matched_generation/t0_fixtures/known_s03_candidate.json",
+      "detail": null
+    },
+    {
+      "check": "frozen_source_script_tool_sha256",
+      "pass": true,
+      "object_path": "/mnt/d/lunwen/load_llm_api_keys.ps1",
+      "detail": null
+    },
+    {
+      "check": "frozen_source_script_tool_sha256",
+      "pass": true,
+      "object_path": "/mnt/d/lunwen/tools/llm/invoke_glm_api.ps1",
+      "detail": null
+    },
+    {
+      "check": "frozen_source_script_tool_sha256",
+      "pass": true,
+      "object_path": "/root/ecas_matched_generation_20261014/runtime/EC_EVIDENCE_CONTRACT_SCHEMA_V2.json",
+      "detail": null
+    },
+    {
+      "check": "frozen_source_script_tool_sha256",
+      "pass": true,
+      "object_path": "/root/ecas_matched_generation_20261014/runtime/EC_EVIDENCE_CONTRACT_SCHEMA_V3.json",
+      "detail": null
+    },
+    {
+      "check": "frozen_source_script_tool_sha256",
+      "pass": true,
+      "object_path": "/root/ecas_matched_generation_20261014/runtime/EC_FIELD_SECURITY_MODEL_IR_SCHEMA_V2.json",
+      "detail": null
+    },
+    {
+      "check": "frozen_source_script_tool_sha256",
+      "pass": true,
+      "object_path": "/root/ecas_matched_generation_20261014/runtime/EC_FIELD_SECURITY_MODEL_IR_SCHEMA_V3.json",
+      "detail": null
+    },
+    {
+      "check": "frozen_source_script_tool_sha256",
+      "pass": true,
+      "object_path": "/root/ecas_matched_generation_20261014/runtime/EC_FIELD_SECURITY_POLICY_SCHEMA_V2.json",
+      "detail": null
+    },
+    {
+      "check": "frozen_source_script_tool_sha256",
+      "pass": true,
+      "object_path": "/root/ecas_matched_generation_20261014/runtime/EC_FIELD_SECURITY_POLICY_SCHEMA_V3.json",
+      "detail": null
+    },
+    {
+      "check": "frozen_source_script_tool_sha256",
+      "pass": true,
+      "object_path": "/root/ecas_matched_generation_20261014/runtime/EC_FIELD_SECURITY_PROPOSAL_SCHEMA_V2.json",
+      "detail": null
+    },
+    {
+      "check": "frozen_source_script_tool_sha256",
+      "pass": true,
+      "object_path": "/root/ecas_matched_generation_20261014/runtime/EC_FIELD_SECURITY_PROPOSAL_SCHEMA_V3.json",
+      "detail": null
+    },
+    {
+      "check": "frozen_source_script_tool_sha256",
+      "pass": true,
+      "object_path": "/root/ecas_matched_generation_20261014/runtime/scripts/ec_field_security_engine_v2.py",
+      "detail": null
+    },
+    {
+      "check": "frozen_source_script_tool_sha256",
+      "pass": true,
+      "object_path": "/root/ecas_matched_generation_20261014/runtime/scripts/ec_field_security_engine_v3.py",
+      "detail": null
+    },
+    {
+      "check": "frozen_source_script_tool_sha256",
+      "pass": true,
+      "object_path": "/root/ecas_matched_generation_20261014/runtime/security_knowledge/SECURITY_PRIMITIVE_CATALOG_V1.json",
+      "detail": null
+    },
+    {
+      "check": "frozen_source_script_tool_sha256",
+      "pass": true,
+      "object_path": "/root/ecas_matched_generation_20261014/runtime/security_knowledge/SECURITY_PRIMITIVE_CATALOG_V2.json",
+      "detail": null
+    },
+    {
+      "check": "frozen_source_script_tool_sha256",
+      "pass": true,
+      "object_path": "/root/ecas_matched_generation_20261014/tools/opa",
+      "detail": null
+    },
+    {
+      "check": "frozen_source_script_tool_sha256",
+      "pass": true,
+      "object_path": "/root/ecas_matched_generation_20261014/tools/regal",
+      "detail": null
+    },
+    {
+      "check": "t0_binds_current_manifest",
+      "pass": true,
+      "object_path": "/mnt/d/lunwen/EC-CSI投稿/working/exploration/20261014_matched_evidence_labor/matched_generation/T0_RECEIPT.json",
+      "detail": null
+    },
+    {
+      "check": "call_indices_contiguous_and_total_cap",
+      "pass": true,
+      "object_path": "/mnt/d/lunwen/EC-CSI投稿/working/exploration/20261014_matched_evidence_labor/matched_generation/CALL_LEDGER.json",
+      "detail": null
+    },
+    {
+      "check": "smoke_actual_attempts_cap",
+      "pass": true,
+      "object_path": "/mnt/d/lunwen/EC-CSI投稿/working/exploration/20261014_matched_evidence_labor/matched_generation/CALL_LEDGER.json",
+      "detail": null
+    },
+    {
+      "check": "call_raw_prompt_identity",
+      "pass": true,
+      "object_path": "/mnt/d/lunwen/EC-CSI投稿/working/exploration/20261014_matched_evidence_labor/matched_generation/calls/01_FSV-B19_p2p_rego/response.raw.json",
+      "detail": {
+        "index": 1
+      }
+    },
+    {
+      "check": "call_model_finish_settings_usage",
+      "pass": true,
+      "object_path": "/mnt/d/lunwen/EC-CSI投稿/working/exploration/20261014_matched_evidence_labor/matched_generation/calls/01_FSV-B19_p2p_rego/response.raw.json",
+      "detail": {
+        "index": 1
+      }
+    },
+    {
+      "check": "call_sentinel_and_raw_content_correspondence",
+      "pass": true,
+      "object_path": "/mnt/d/lunwen/EC-CSI投稿/working/exploration/20261014_matched_evidence_labor/matched_generation/calls/01_FSV-B19_p2p_rego/content.json",
+      "detail": null
+    },
+    {
+      "check": "call_derived_output_equal",
+      "pass": true,
+      "object_path": "/mnt/d/lunwen/EC-CSI投稿/working/exploration/20261014_matched_evidence_labor/matched_generation/calls/01_FSV-B19_p2p_rego/parsed_output.json",
+      "detail": null
+    },
+    {
+      "check": "wrapper_capture_and_completeness",
+      "pass": true,
+      "object_path": "/mnt/d/lunwen/EC-CSI投稿/working/exploration/20261014_matched_evidence_labor/matched_generation/calls/01_FSV-B19_p2p_rego/wrapper_summary.json",
+      "detail": null
+    },
+    {
+      "check": "call_raw_prompt_identity",
+      "pass": true,
+      "object_path": "/mnt/d/lunwen/EC-CSI投稿/working/exploration/20261014_matched_evidence_labor/matched_generation/calls/02_FSV-B19_autopac_generate/response.raw.json",
+      "detail": {
+        "index": 2
+      }
+    },
+    {
+      "check": "call_model_finish_settings_usage",
+      "pass": true,
+      "object_path": "/mnt/d/lunwen/EC-CSI投稿/working/exploration/20261014_matched_evidence_labor/matched_generation/calls/02_FSV-B19_autopac_generate/response.raw.json",
+      "detail": {
+        "index": 2
+      }
+    },
+    {
+      "check": "call_sentinel_and_raw_content_correspondence",
+      "pass": true,
+      "object_path": "/mnt/d/lunwen/EC-CSI投稿/working/exploration/20261014_matched_evidence_labor/matched_generation/calls/02_FSV-B19_autopac_generate/content.json",
+      "detail": null
+    },
+    {
+      "check": "call_derived_output_equal",
+      "pass": true,
+      "object_path": "/mnt/d/lunwen/EC-CSI投稿/working/exploration/20261014_matched_evidence_labor/matched_generation/calls/02_FSV-B19_autopac_generate/parsed_output.json",
+      "detail": null
+    },
+    {
+      "check": "wrapper_capture_and_completeness",
+      "pass": true,
+      "object_path": "/mnt/d/lunwen/EC-CSI投稿/working/exploration/20261014_matched_evidence_labor/matched_generation/calls/02_FSV-B19_autopac_generate/wrapper_summary.json",
+      "detail": null
+    },
+    {
+      "check": "call_raw_prompt_identity",
+      "pass": true,
+      "object_path": "/mnt/d/lunwen/EC-CSI投稿/working/exploration/20261014_matched_evidence_labor/matched_generation/calls/03_FSV-B19_ecas_generate/response.raw.json",
+      "detail": {
+        "index": 3
+      }
+    },
+    {
+      "check": "call_model_finish_settings_usage",
+      "pass": true,
+      "object_path": "/mnt/d/lunwen/EC-CSI投稿/working/exploration/20261014_matched_evidence_labor/matched_generation/calls/03_FSV-B19_ecas_generate/response.raw.json",
+      "detail": {
+        "index": 3
+      }
+    },
+    {
+      "check": "call_sentinel_and_raw_content_correspondence",
+      "pass": true,
+      "object_path": "/mnt/d/lunwen/EC-CSI投稿/working/exploration/20261014_matched_evidence_labor/matched_generation/calls/03_FSV-B19_ecas_generate/content.json",
+      "detail": null
+    },
+    {
+      "check": "call_derived_output_equal",
+      "pass": true,
+      "object_path": "/mnt/d/lunwen/EC-CSI投稿/working/exploration/20261014_matched_evidence_labor/matched_generation/calls/03_FSV-B19_ecas_generate/locally_recovered_output_v2.json",
+      "detail": null
+    },
+    {
+      "check": "wrapper_capture_and_completeness",
+      "pass": true,
+      "object_path": "/mnt/d/lunwen/EC-CSI投稿/working/exploration/20261014_matched_evidence_labor/matched_generation/calls/03_FSV-B19_ecas_generate/wrapper_summary.json",
+      "detail": null
+    },
+    {
+      "check": "call_raw_prompt_identity",
+      "pass": true,
+      "object_path": "/mnt/d/lunwen/EC-CSI投稿/working/exploration/20261014_matched_evidence_labor/matched_generation/calls/04_FSV-S03_ecas_generate/response.raw.json",
+      "detail": {
+        "index": 4
+      }
+    },
+    {
+      "check": "call_model_finish_settings_usage",
+      "pass": true,
+      "object_path": "/mnt/d/lunwen/EC-CSI投稿/working/exploration/20261014_matched_evidence_labor/matched_generation/calls/04_FSV-S03_ecas_generate/response.raw.json",
+      "detail": {
+        "index": 4
+      }
+    },
+    {
+      "check": "call_sentinel_and_raw_content_correspondence",
+      "pass": true,
+      "object_path": "/mnt/d/lunwen/EC-CSI投稿/working/exploration/20261014_matched_evidence_labor/matched_generation/calls/04_FSV-S03_ecas_generate/content.json",
+      "detail": null
+    },
+    {
+      "check": "call_derived_output_equal",
+      "pass": true,
+      "object_path": "/mnt/d/lunwen/EC-CSI投稿/working/exploration/20261014_matched_evidence_labor/matched_generation/calls/04_FSV-S03_ecas_generate/parsed_output.json",
+      "detail": null
+    },
+    {
+      "check": "wrapper_capture_and_completeness",
+      "pass": true,
+      "object_path": "/mnt/d/lunwen/EC-CSI投稿/working/exploration/20261014_matched_evidence_labor/matched_generation/calls/04_FSV-S03_ecas_generate/wrapper_summary.json",
+      "detail": null
+    },
+    {
+      "check": "call_raw_prompt_identity",
+      "pass": true,
+      "object_path": "/mnt/d/lunwen/EC-CSI投稿/working/exploration/20261014_matched_evidence_labor/matched_generation/calls/05_FSV-S03_p2p_detect/response.raw.json",
+      "detail": {
+        "index": 5
+      }
+    },
+    {
+      "check": "call_model_finish_settings_usage",
+      "pass": true,
+      "object_path": "/mnt/d/lunwen/EC-CSI投稿/working/exploration/20261014_matched_evidence_labor/matched_generation/calls/05_FSV-S03_p2p_detect/response.raw.json",
+      "detail": {
+        "index": 5
+      }
+    },
+    {
+      "check": "call_sentinel_and_raw_content_correspondence",
+      "pass": true,
+      "object_path": "/mnt/d/lunwen/EC-CSI投稿/working/exploration/20261014_matched_evidence_labor/matched_generation/calls/05_FSV-S03_p2p_detect/content.json",
+      "detail": null
+    },
+    {
+      "check": "call_derived_output_equal",
+      "pass": true,
+      "object_path": "/mnt/d/lunwen/EC-CSI投稿/working/exploration/20261014_matched_evidence_labor/matched_generation/calls/05_FSV-S03_p2p_detect/parsed_output.json",
+      "detail": null
+    },
+    {
+      "check": "wrapper_capture_and_completeness",
+      "pass": true,
+      "object_path": "/mnt/d/lunwen/EC-CSI投稿/working/exploration/20261014_matched_evidence_labor/matched_generation/calls/05_FSV-S03_p2p_detect/wrapper_summary.json",
+      "detail": null
+    },
+    {
+      "check": "call_raw_prompt_identity",
+      "pass": true,
+      "object_path": "/mnt/d/lunwen/EC-CSI投稿/working/exploration/20261014_matched_evidence_labor/matched_generation/calls/06_FSV-S03_autopac_generate/response.raw.json",
+      "detail": {
+        "index": 6
+      }
+    },
+    {
+      "check": "call_model_finish_settings_usage",
+      "pass": true,
+      "object_path": "/mnt/d/lunwen/EC-CSI投稿/working/exploration/20261014_matched_evidence_labor/matched_generation/calls/06_FSV-S03_autopac_generate/response.raw.json",
+      "detail": {
+        "index": 6
+      }
+    },
+    {
+      "check": "call_sentinel_and_raw_content_correspondence",
+      "pass": true,
+      "object_path": "/mnt/d/lunwen/EC-CSI投稿/working/exploration/20261014_matched_evidence_labor/matched_generation/calls/06_FSV-S03_autopac_generate/content.json",
+      "detail": null
+    },
+    {
+      "check": "call_derived_output_equal",
+      "pass": true,
+      "object_path": "/mnt/d/lunwen/EC-CSI投稿/working/exploration/20261014_matched_evidence_labor/matched_generation/calls/06_FSV-S03_autopac_generate/parsed_output.json",
+      "detail": null
+    },
+    {
+      "check": "wrapper_capture_and_completeness",
+      "pass": true,
+      "object_path": "/mnt/d/lunwen/EC-CSI投稿/working/exploration/20261014_matched_evidence_labor/matched_generation/calls/06_FSV-S03_autopac_generate/wrapper_summary.json",
+      "detail": null
+    },
+    {
+      "check": "call_raw_prompt_identity",
+      "pass": true,
+      "object_path": "/mnt/d/lunwen/EC-CSI投稿/working/exploration/20261014_matched_evidence_labor/matched_generation/calls/07_FSV-S03_autopac_judge/response.raw.json",
+      "detail": {
+        "index": 7
+      }
+    },
+    {
+      "check": "call_model_finish_settings_usage",
+      "pass": true,
+      "object_path": "/mnt/d/lunwen/EC-CSI投稿/working/exploration/20261014_matched_evidence_labor/matched_generation/calls/07_FSV-S03_autopac_judge/response.raw.json",
+      "detail": {
+        "index": 7
+      }
+    },
+    {
+      "check": "call_sentinel_and_raw_content_correspondence",
+      "pass": true,
+      "object_path": "/mnt/d/lunwen/EC-CSI投稿/working/exploration/20261014_matched_evidence_labor/matched_generation/calls/07_FSV-S03_autopac_judge/content.json",
+      "detail": null
+    },
+    {
+      "check": "call_derived_output_equal",
+      "pass": true,
+      "object_path": "/mnt/d/lunwen/EC-CSI投稿/working/exploration/20261014_matched_evidence_labor/matched_generation/calls/07_FSV-S03_autopac_judge/parsed_output.json",
+      "detail": null
+    },
+    {
+      "check": "wrapper_capture_and_completeness",
+      "pass": true,
+      "object_path": "/mnt/d/lunwen/EC-CSI投稿/working/exploration/20261014_matched_evidence_labor/matched_generation/calls/07_FSV-S03_autopac_judge/wrapper_summary.json",
+      "detail": null
+    },
+    {
+      "check": "call_raw_prompt_identity",
+      "pass": true,
+      "object_path": "/mnt/d/lunwen/EC-CSI投稿/working/exploration/20261014_matched_evidence_labor/matched_generation/calls/08_FSV-S03_repair/response.raw.json",
+      "detail": {
+        "index": 8
+      }
+    },
+    {
+      "check": "call_model_finish_settings_usage",
+      "pass": true,
+      "object_path": "/mnt/d/lunwen/EC-CSI投稿/working/exploration/20261014_matched_evidence_labor/matched_generation/calls/08_FSV-S03_repair/response.raw.json",
+      "detail": {
+        "index": 8
+      }
+    },
+    {
+      "check": "call_sentinel_and_raw_content_correspondence",
+      "pass": true,
+      "object_path": "/mnt/d/lunwen/EC-CSI投稿/working/exploration/20261014_matched_evidence_labor/matched_generation/calls/08_FSV-S03_repair/content.json",
+      "detail": null
+    },
+    {
+      "check": "call_derived_output_equal",
+      "pass": true,
+      "object_path": "/mnt/d/lunwen/EC-CSI投稿/working/exploration/20261014_matched_evidence_labor/matched_generation/calls/08_FSV-S03_repair/parsed_output.json",
+      "detail": null
+    },
+    {
+      "check": "wrapper_capture_and_completeness",
+      "pass": true,
+      "object_path": "/mnt/d/lunwen/EC-CSI投稿/working/exploration/20261014_matched_evidence_labor/matched_generation/calls/08_FSV-S03_repair/wrapper_summary.json",
+      "detail": null
+    },
+    {
+      "check": "call_raw_prompt_identity",
+      "pass": true,
+      "object_path": "/mnt/d/lunwen/EC-CSI投稿/working/exploration/20261014_matched_evidence_labor/matched_generation/calls/09_FSV-S03_ecas_generate/response.raw.json",
+      "detail": {
+        "index": 9
+      }
+    },
+    {
+      "check": "call_model_finish_settings_usage",
+      "pass": true,
+      "object_path": "/mnt/d/lunwen/EC-CSI投稿/working/exploration/20261014_matched_evidence_labor/matched_generation/calls/09_FSV-S03_ecas_generate/response.raw.json",
+      "detail": {
+        "index": 9
+      }
+    },
+    {
+      "check": "call_sentinel_and_raw_content_correspondence",
+      "pass": true,
+      "object_path": "/mnt/d/lunwen/EC-CSI投稿/working/exploration/20261014_matched_evidence_labor/matched_generation/calls/09_FSV-S03_ecas_generate/content.json",
+      "detail": null
+    },
+    {
+      "check": "call_derived_output_equal",
+      "pass": true,
+      "object_path": "/mnt/d/lunwen/EC-CSI投稿/working/exploration/20261014_matched_evidence_labor/matched_generation/calls/09_FSV-S03_ecas_generate/parsed_output.json",
+      "detail": null
+    },
+    {
+      "check": "wrapper_capture_and_completeness",
+      "pass": true,
+      "object_path": "/mnt/d/lunwen/EC-CSI投稿/working/exploration/20261014_matched_evidence_labor/matched_generation/calls/09_FSV-S03_ecas_generate/wrapper_summary.json",
+      "detail": null
+    },
+    {
+      "check": "call_raw_prompt_identity",
+      "pass": true,
+      "object_path": "/mnt/d/lunwen/EC-CSI投稿/working/exploration/20261014_matched_evidence_labor/matched_generation/calls/10_FSV-B13_p2p_detect/response.raw.json",
+      "detail": {
+        "index": 10
+      }
+    },
+    {
+      "check": "call_model_finish_settings_usage",
+      "pass": true,
+      "object_path": "/mnt/d/lunwen/EC-CSI投稿/working/exploration/20261014_matched_evidence_labor/matched_generation/calls/10_FSV-B13_p2p_detect/response.raw.json",
+      "detail": {
+        "index": 10
+      }
+    },
+    {
+      "check": "call_sentinel_and_raw_content_correspondence",
+      "pass": true,
+      "object_path": "/mnt/d/lunwen/EC-CSI投稿/working/exploration/20261014_matched_evidence_labor/matched_generation/calls/10_FSV-B13_p2p_detect/content.json",
+      "detail": null
+    },
+    {
+      "check": "call_derived_output_equal",
+      "pass": true,
+      "object_path": "/mnt/d/lunwen/EC-CSI投稿/working/exploration/20261014_matched_evidence_labor/matched_generation/calls/10_FSV-B13_p2p_detect/parsed_output.json",
+      "detail": null
+    },
+    {
+      "check": "wrapper_capture_and_completeness",
+      "pass": true,
+      "object_path": "/mnt/d/lunwen/EC-CSI投稿/working/exploration/20261014_matched_evidence_labor/matched_generation/calls/10_FSV-B13_p2p_detect/wrapper_summary.json",
+      "detail": null
+    },
+    {
+      "check": "call_raw_prompt_identity",
+      "pass": true,
+      "object_path": "/mnt/d/lunwen/EC-CSI投稿/working/exploration/20261014_matched_evidence_labor/matched_generation/calls/11_FSV-B13_p2p_extract/response.raw.json",
+      "detail": {
+        "index": 11
+      }
+    },
+    {
+      "check": "call_model_finish_settings_usage",
+      "pass": true,
+      "object_path": "/mnt/d/lunwen/EC-CSI投稿/working/exploration/20261014_matched_evidence_labor/matched_generation/calls/11_FSV-B13_p2p_extract/response.raw.json",
+      "detail": {
+        "index": 11
+      }
+    },
+    {
+      "check": "call_sentinel_and_raw_content_correspondence",
+      "pass": true,
+      "object_path": "/mnt/d/lunwen/EC-CSI投稿/working/exploration/20261014_matched_evidence_labor/matched_generation/calls/11_FSV-B13_p2p_extract/content.json",
+      "detail": null
+    },
+    {
+      "check": "call_derived_output_equal",
+      "pass": true,
+      "object_path": "/mnt/d/lunwen/EC-CSI投稿/working/exploration/20261014_matched_evidence_labor/matched_generation/calls/11_FSV-B13_p2p_extract/parsed_output.json",
+      "detail": null
+    },
+    {
+      "check": "wrapper_capture_and_completeness",
+      "pass": true,
+      "object_path": "/mnt/d/lunwen/EC-CSI投稿/working/exploration/20261014_matched_evidence_labor/matched_generation/calls/11_FSV-B13_p2p_extract/wrapper_summary.json",
+      "detail": null
+    },
+    {
+      "check": "call_raw_prompt_identity",
+      "pass": true,
+      "object_path": "/mnt/d/lunwen/EC-CSI投稿/working/exploration/20261014_matched_evidence_labor/matched_generation/calls/12_FSV-B13_p2p_rego/response.raw.json",
+      "detail": {
+        "index": 12
+      }
+    },
+    {
+      "check": "call_model_finish_settings_usage",
+      "pass": true,
+      "object_path": "/mnt/d/lunwen/EC-CSI投稿/working/exploration/20261014_matched_evidence_labor/matched_generation/calls/12_FSV-B13_p2p_rego/response.raw.json",
+      "detail": {
+        "index": 12
+      }
+    },
+    {
+      "check": "call_sentinel_and_raw_content_correspondence",
+      "pass": true,
+      "object_path": "/mnt/d/lunwen/EC-CSI投稿/working/exploration/20261014_matched_evidence_labor/matched_generation/calls/12_FSV-B13_p2p_rego/content.json",
+      "detail": null
+    },
+    {
+      "check": "call_derived_output_equal",
+      "pass": true,
+      "object_path": "/mnt/d/lunwen/EC-CSI投稿/working/exploration/20261014_matched_evidence_labor/matched_generation/calls/12_FSV-B13_p2p_rego/parsed_output.json",
+      "detail": null
+    },
+    {
+      "check": "wrapper_capture_and_completeness",
+      "pass": true,
+      "object_path": "/mnt/d/lunwen/EC-CSI投稿/working/exploration/20261014_matched_evidence_labor/matched_generation/calls/12_FSV-B13_p2p_rego/wrapper_summary.json",
+      "detail": null
+    },
+    {
+      "check": "call_raw_prompt_identity",
+      "pass": true,
+      "object_path": "/mnt/d/lunwen/EC-CSI投稿/working/exploration/20261014_matched_evidence_labor/matched_generation/calls/13_FSV-B13_p2p_tests/response.raw.json",
+      "detail": {
+        "index": 13
+      }
+    },
+    {
+      "check": "call_model_finish_settings_usage",
+      "pass": true,
+      "object_path": "/mnt/d/lunwen/EC-CSI投稿/working/exploration/20261014_matched_evidence_labor/matched_generation/calls/13_FSV-B13_p2p_tests/response.raw.json",
+      "detail": {
+        "index": 13
+      }
+    },
+    {
+      "check": "call_sentinel_and_raw_content_correspondence",
+      "pass": true,
+      "object_path": "/mnt/d/lunwen/EC-CSI投稿/working/exploration/20261014_matched_evidence_labor/matched_generation/calls/13_FSV-B13_p2p_tests/content.json",
+      "detail": null
+    },
+    {
+      "check": "call_derived_output_equal",
+      "pass": true,
+      "object_path": "/mnt/d/lunwen/EC-CSI投稿/working/exploration/20261014_matched_evidence_labor/matched_generation/calls/13_FSV-B13_p2p_tests/parsed_output.json",
+      "detail": null
+    },
+    {
+      "check": "wrapper_capture_and_completeness",
+      "pass": true,
+      "object_path": "/mnt/d/lunwen/EC-CSI投稿/working/exploration/20261014_matched_evidence_labor/matched_generation/calls/13_FSV-B13_p2p_tests/wrapper_summary.json",
+      "detail": null
+    },
+    {
+      "check": "call_raw_prompt_identity",
+      "pass": true,
+      "object_path": "/mnt/d/lunwen/EC-CSI投稿/working/exploration/20261014_matched_evidence_labor/matched_generation/calls/14_FSV-B13_autopac_generate/response.raw.json",
+      "detail": {
+        "index": 14
+      }
+    },
+    {
+      "check": "call_model_finish_settings_usage",
+      "pass": true,
+      "object_path": "/mnt/d/lunwen/EC-CSI投稿/working/exploration/20261014_matched_evidence_labor/matched_generation/calls/14_FSV-B13_autopac_generate/response.raw.json",
+      "detail": {
+        "index": 14
+      }
+    },
+    {
+      "check": "call_sentinel_and_raw_content_correspondence",
+      "pass": true,
+      "object_path": "/mnt/d/lunwen/EC-CSI投稿/working/exploration/20261014_matched_evidence_labor/matched_generation/calls/14_FSV-B13_autopac_generate/content.json",
+      "detail": null
+    },
+    {
+      "check": "call_derived_output_equal",
+      "pass": true,
+      "object_path": "/mnt/d/lunwen/EC-CSI投稿/working/exploration/20261014_matched_evidence_labor/matched_generation/calls/14_FSV-B13_autopac_generate/parsed_output.json",
+      "detail": null
+    },
+    {
+      "check": "wrapper_capture_and_completeness",
+      "pass": true,
+      "object_path": "/mnt/d/lunwen/EC-CSI投稿/working/exploration/20261014_matched_evidence_labor/matched_generation/calls/14_FSV-B13_autopac_generate/wrapper_summary.json",
+      "detail": null
+    },
+    {
+      "check": "call_raw_prompt_identity",
+      "pass": true,
+      "object_path": "/mnt/d/lunwen/EC-CSI投稿/working/exploration/20261014_matched_evidence_labor/matched_generation/calls/15_FSV-B13_autopac_judge/response.raw.json",
+      "detail": {
+        "index": 15
+      }
+    },
+    {
+      "check": "call_model_finish_settings_usage",
+      "pass": true,
+      "object_path": "/mnt/d/lunwen/EC-CSI投稿/working/exploration/20261014_matched_evidence_labor/matched_generation/calls/15_FSV-B13_autopac_judge/response.raw.json",
+      "detail": {
+        "index": 15
+      }
+    },
+    {
+      "check": "call_sentinel_and_raw_content_correspondence",
+      "pass": true,
+      "object_path": "/mnt/d/lunwen/EC-CSI投稿/working/exploration/20261014_matched_evidence_labor/matched_generation/calls/15_FSV-B13_autopac_judge/content.json",
+      "detail": null
+    },
+    {
+      "check": "call_derived_output_equal",
+      "pass": true,
+      "object_path": "/mnt/d/lunwen/EC-CSI投稿/working/exploration/20261014_matched_evidence_labor/matched_generation/calls/15_FSV-B13_autopac_judge/parsed_output.json",
+      "detail": null
+    },
+    {
+      "check": "wrapper_capture_and_completeness",
+      "pass": true,
+      "object_path": "/mnt/d/lunwen/EC-CSI投稿/working/exploration/20261014_matched_evidence_labor/matched_generation/calls/15_FSV-B13_autopac_judge/wrapper_summary.json",
+      "detail": null
+    },
+    {
+      "check": "call_raw_prompt_identity",
+      "pass": true,
+      "object_path": "/mnt/d/lunwen/EC-CSI投稿/working/exploration/20261014_matched_evidence_labor/matched_generation/calls/16_FSV-B13_ecas_generate/response.raw.json",
+      "detail": {
+        "index": 16
+      }
+    },
+    {
+      "check": "call_model_finish_settings_usage",
+      "pass": true,
+      "object_path": "/mnt/d/lunwen/EC-CSI投稿/working/exploration/20261014_matched_evidence_labor/matched_generation/calls/16_FSV-B13_ecas_generate/response.raw.json",
+      "detail": {
+        "index": 16
+      }
+    },
+    {
+      "check": "call_sentinel_and_raw_content_correspondence",
+      "pass": true,
+      "object_path": "/mnt/d/lunwen/EC-CSI投稿/working/exploration/20261014_matched_evidence_labor/matched_generation/calls/16_FSV-B13_ecas_generate/content.json",
+      "detail": null
+    },
+    {
+      "check": "call_derived_output_equal",
+      "pass": true,
+      "object_path": "/mnt/d/lunwen/EC-CSI投稿/working/exploration/20261014_matched_evidence_labor/matched_generation/calls/16_FSV-B13_ecas_generate/parsed_output.json",
+      "detail": null
+    },
+    {
+      "check": "wrapper_capture_and_completeness",
+      "pass": true,
+      "object_path": "/mnt/d/lunwen/EC-CSI投稿/working/exploration/20261014_matched_evidence_labor/matched_generation/calls/16_FSV-B13_ecas_generate/wrapper_summary.json",
+      "detail": null
+    },
+    {
+      "check": "call_raw_prompt_identity",
+      "pass": true,
+      "object_path": "/mnt/d/lunwen/EC-CSI投稿/working/exploration/20261014_matched_evidence_labor/matched_generation/calls/17_FSV-B17_p2p_detect/response.raw.json",
+      "detail": {
+        "index": 17
+      }
+    },
+    {
+      "check": "call_model_finish_settings_usage",
+      "pass": true,
+      "object_path": "/mnt/d/lunwen/EC-CSI投稿/working/exploration/20261014_matched_evidence_labor/matched_generation/calls/17_FSV-B17_p2p_detect/response.raw.json",
+      "detail": {
+        "index": 17
+      }
+    },
+    {
+      "check": "call_sentinel_and_raw_content_correspondence",
+      "pass": true,
+      "object_path": "/mnt/d/lunwen/EC-CSI投稿/working/exploration/20261014_matched_evidence_labor/matched_generation/calls/17_FSV-B17_p2p_detect/content.json",
+      "detail": null
+    },
+    {
+      "check": "call_derived_output_equal",
+      "pass": true,
+      "object_path": "/mnt/d/lunwen/EC-CSI投稿/working/exploration/20261014_matched_evidence_labor/matched_generation/calls/17_FSV-B17_p2p_detect/parsed_output.json",
+      "detail": null
+    },
+    {
+      "check": "wrapper_capture_and_completeness",
+      "pass": true,
+      "object_path": "/mnt/d/lunwen/EC-CSI投稿/working/exploration/20261014_matched_evidence_labor/matched_generation/calls/17_FSV-B17_p2p_detect/wrapper_summary.json",
+      "detail": null
+    },
+    {
+      "check": "call_raw_prompt_identity",
+      "pass": true,
+      "object_path": "/mnt/d/lunwen/EC-CSI投稿/working/exploration/20261014_matched_evidence_labor/matched_generation/calls/18_FSV-B17_p2p_extract/response.raw.json",
+      "detail": {
+        "index": 18
+      }
+    },
+    {
+      "check": "call_model_finish_settings_usage",
+      "pass": true,
+      "object_path": "/mnt/d/lunwen/EC-CSI投稿/working/exploration/20261014_matched_evidence_labor/matched_generation/calls/18_FSV-B17_p2p_extract/response.raw.json",
+      "detail": {
+        "index": 18
+      }
+    },
+    {
+      "check": "call_sentinel_and_raw_content_correspondence",
+      "pass": true,
+      "object_path": "/mnt/d/lunwen/EC-CSI投稿/working/exploration/20261014_matched_evidence_labor/matched_generation/calls/18_FSV-B17_p2p_extract/content.json",
+      "detail": null
+    },
+    {
+      "check": "call_derived_output_equal",
+      "pass": true,
+      "object_path": "/mnt/d/lunwen/EC-CSI投稿/working/exploration/20261014_matched_evidence_labor/matched_generation/calls/18_FSV-B17_p2p_extract/parsed_output.json",
+      "detail": null
+    },
+    {
+      "check": "wrapper_capture_and_completeness",
+      "pass": true,
+      "object_path": "/mnt/d/lunwen/EC-CSI投稿/working/exploration/20261014_matched_evidence_labor/matched_generation/calls/18_FSV-B17_p2p_extract/wrapper_summary.json",
+      "detail": null
+    },
+    {
+      "check": "call_raw_prompt_identity",
+      "pass": true,
+      "object_path": "/mnt/d/lunwen/EC-CSI投稿/working/exploration/20261014_matched_evidence_labor/matched_generation/calls/19_FSV-B17_p2p_rego/response.raw.json",
+      "detail": {
+        "index": 19
+      }
+    },
+    {
+      "check": "call_model_finish_settings_usage",
+      "pass": true,
+      "object_path": "/mnt/d/lunwen/EC-CSI投稿/working/exploration/20261014_matched_evidence_labor/matched_generation/calls/19_FSV-B17_p2p_rego/response.raw.json",
+      "detail": {
+        "index": 19
+      }
+    },
+    {
+      "check": "call_sentinel_and_raw_content_correspondence",
+      "pass": true,
+      "object_path": "/mnt/d/lunwen/EC-CSI投稿/working/exploration/20261014_matched_evidence_labor/matched_generation/calls/19_FSV-B17_p2p_rego/content.json",
+      "detail": null
+    },
+    {
+      "check": "call_derived_output_equal",
+      "pass": true,
+      "object_path": "/mnt/d/lunwen/EC-CSI投稿/working/exploration/20261014_matched_evidence_labor/matched_generation/calls/19_FSV-B17_p2p_rego/parsed_output.json",
+      "detail": null
+    },
+    {
+      "check": "wrapper_capture_and_completeness",
+      "pass": true,
+      "object_path": "/mnt/d/lunwen/EC-CSI投稿/working/exploration/20261014_matched_evidence_labor/matched_generation/calls/19_FSV-B17_p2p_rego/wrapper_summary.json",
+      "detail": null
+    },
+    {
+      "check": "call_raw_prompt_identity",
+      "pass": true,
+      "object_path": "/mnt/d/lunwen/EC-CSI投稿/working/exploration/20261014_matched_evidence_labor/matched_generation/calls/20_FSV-B17_p2p_tests/response.raw.json",
+      "detail": {
+        "index": 20
+      }
+    },
+    {
+      "check": "call_model_finish_settings_usage",
+      "pass": true,
+      "object_path": "/mnt/d/lunwen/EC-CSI投稿/working/exploration/20261014_matched_evidence_labor/matched_generation/calls/20_FSV-B17_p2p_tests/response.raw.json",
+      "detail": {
+        "index": 20
+      }
+    },
+    {
+      "check": "call_sentinel_and_raw_content_correspondence",
+      "pass": true,
+      "object_path": "/mnt/d/lunwen/EC-CSI投稿/working/exploration/20261014_matched_evidence_labor/matched_generation/calls/20_FSV-B17_p2p_tests/content.json",
+      "detail": null
+    },
+    {
+      "check": "call_derived_output_equal",
+      "pass": true,
+      "object_path": "/mnt/d/lunwen/EC-CSI投稿/working/exploration/20261014_matched_evidence_labor/matched_generation/calls/20_FSV-B17_p2p_tests/parsed_output.json",
+      "detail": null
+    },
+    {
+      "check": "wrapper_capture_and_completeness",
+      "pass": true,
+      "object_path": "/mnt/d/lunwen/EC-CSI投稿/working/exploration/20261014_matched_evidence_labor/matched_generation/calls/20_FSV-B17_p2p_tests/wrapper_summary.json",
+      "detail": null
+    },
+    {
+      "check": "call_raw_prompt_identity",
+      "pass": true,
+      "object_path": "/mnt/d/lunwen/EC-CSI投稿/working/exploration/20261014_matched_evidence_labor/matched_generation/calls/21_FSV-B17_autopac_generate/response.raw.json",
+      "detail": {
+        "index": 21
+      }
+    },
+    {
+      "check": "call_model_finish_settings_usage",
+      "pass": true,
+      "object_path": "/mnt/d/lunwen/EC-CSI投稿/working/exploration/20261014_matched_evidence_labor/matched_generation/calls/21_FSV-B17_autopac_generate/response.raw.json",
+      "detail": {
+        "index": 21
+      }
+    },
+    {
+      "check": "call_sentinel_and_raw_content_correspondence",
+      "pass": true,
+      "object_path": "/mnt/d/lunwen/EC-CSI投稿/working/exploration/20261014_matched_evidence_labor/matched_generation/calls/21_FSV-B17_autopac_generate/content.json",
+      "detail": null
+    },
+    {
+      "check": "call_derived_output_equal",
+      "pass": true,
+      "object_path": "/mnt/d/lunwen/EC-CSI投稿/working/exploration/20261014_matched_evidence_labor/matched_generation/calls/21_FSV-B17_autopac_generate/parsed_output.json",
+      "detail": null
+    },
+    {
+      "check": "wrapper_capture_and_completeness",
+      "pass": true,
+      "object_path": "/mnt/d/lunwen/EC-CSI投稿/working/exploration/20261014_matched_evidence_labor/matched_generation/calls/21_FSV-B17_autopac_generate/wrapper_summary.json",
+      "detail": null
+    },
+    {
+      "check": "call_raw_prompt_identity",
+      "pass": true,
+      "object_path": "/mnt/d/lunwen/EC-CSI投稿/working/exploration/20261014_matched_evidence_labor/matched_generation/calls/22_FSV-B17_autopac_judge/response.raw.json",
+      "detail": {
+        "index": 22
+      }
+    },
+    {
+      "check": "call_model_finish_settings_usage",
+      "pass": true,
+      "object_path": "/mnt/d/lunwen/EC-CSI投稿/working/exploration/20261014_matched_evidence_labor/matched_generation/calls/22_FSV-B17_autopac_judge/response.raw.json",
+      "detail": {
+        "index": 22
+      }
+    },
+    {
+      "check": "call_sentinel_and_raw_content_correspondence",
+      "pass": true,
+      "object_path": "/mnt/d/lunwen/EC-CSI投稿/working/exploration/20261014_matched_evidence_labor/matched_generation/calls/22_FSV-B17_autopac_judge/content.json",
+      "detail": null
+    },
+    {
+      "check": "call_derived_output_equal",
+      "pass": true,
+      "object_path": "/mnt/d/lunwen/EC-CSI投稿/working/exploration/20261014_matched_evidence_labor/matched_generation/calls/22_FSV-B17_autopac_judge/parsed_output.json",
+      "detail": null
+    },
+    {
+      "check": "wrapper_capture_and_completeness",
+      "pass": true,
+      "object_path": "/mnt/d/lunwen/EC-CSI投稿/working/exploration/20261014_matched_evidence_labor/matched_generation/calls/22_FSV-B17_autopac_judge/wrapper_summary.json",
+      "detail": null
+    },
+    {
+      "check": "call_raw_prompt_identity",
+      "pass": true,
+      "object_path": "/mnt/d/lunwen/EC-CSI投稿/working/exploration/20261014_matched_evidence_labor/matched_generation/calls/23_FSV-B17_ecas_generate/response.raw.json",
+      "detail": {
+        "index": 23
+      }
+    },
+    {
+      "check": "call_model_finish_settings_usage",
+      "pass": true,
+      "object_path": "/mnt/d/lunwen/EC-CSI投稿/working/exploration/20261014_matched_evidence_labor/matched_generation/calls/23_FSV-B17_ecas_generate/response.raw.json",
+      "detail": {
+        "index": 23
+      }
+    },
+    {
+      "check": "call_sentinel_and_raw_content_correspondence",
+      "pass": true,
+      "object_path": "/mnt/d/lunwen/EC-CSI投稿/working/exploration/20261014_matched_evidence_labor/matched_generation/calls/23_FSV-B17_ecas_generate/content.json",
+      "detail": null
+    },
+    {
+      "check": "call_derived_output_equal",
+      "pass": true,
+      "object_path": "/mnt/d/lunwen/EC-CSI投稿/working/exploration/20261014_matched_evidence_labor/matched_generation/calls/23_FSV-B17_ecas_generate/parsed_output.json",
+      "detail": null
+    },
+    {
+      "check": "wrapper_capture_and_completeness",
+      "pass": true,
+      "object_path": "/mnt/d/lunwen/EC-CSI投稿/working/exploration/20261014_matched_evidence_labor/matched_generation/calls/23_FSV-B17_ecas_generate/wrapper_summary.json",
+      "detail": null
+    },
+    {
+      "check": "call_raw_prompt_identity",
+      "pass": true,
+      "object_path": "/mnt/d/lunwen/EC-CSI投稿/working/exploration/20261014_matched_evidence_labor/matched_generation/calls/24_FSV-B19_p2p_detect/response.raw.json",
+      "detail": {
+        "index": 24
+      }
+    },
+    {
+      "check": "call_model_finish_settings_usage",
+      "pass": true,
+      "object_path": "/mnt/d/lunwen/EC-CSI投稿/working/exploration/20261014_matched_evidence_labor/matched_generation/calls/24_FSV-B19_p2p_detect/response.raw.json",
+      "detail": {
+        "index": 24
+      }
+    },
+    {
+      "check": "call_sentinel_and_raw_content_correspondence",
+      "pass": true,
+      "object_path": "/mnt/d/lunwen/EC-CSI投稿/working/exploration/20261014_matched_evidence_labor/matched_generation/calls/24_FSV-B19_p2p_detect/content.json",
+      "detail": null
+    },
+    {
+      "check": "call_derived_output_equal",
+      "pass": true,
+      "object_path": "/mnt/d/lunwen/EC-CSI投稿/working/exploration/20261014_matched_evidence_labor/matched_generation/calls/24_FSV-B19_p2p_detect/parsed_output.json",
+      "detail": null
+    },
+    {
+      "check": "wrapper_capture_and_completeness",
+      "pass": true,
+      "object_path": "/mnt/d/lunwen/EC-CSI投稿/working/exploration/20261014_matched_evidence_labor/matched_generation/calls/24_FSV-B19_p2p_detect/wrapper_summary.json",
+      "detail": null
+    },
+    {
+      "check": "call_raw_prompt_identity",
+      "pass": true,
+      "object_path": "/mnt/d/lunwen/EC-CSI投稿/working/exploration/20261014_matched_evidence_labor/matched_generation/calls/25_FSV-B19_p2p_extract/response.raw.json",
+      "detail": {
+        "index": 25
+      }
+    },
+    {
+      "check": "call_model_finish_settings_usage",
+      "pass": true,
+      "object_path": "/mnt/d/lunwen/EC-CSI投稿/working/exploration/20261014_matched_evidence_labor/matched_generation/calls/25_FSV-B19_p2p_extract/response.raw.json",
+      "detail": {
+        "index": 25
+      }
+    },
+    {
+      "check": "call_sentinel_and_raw_content_correspondence",
+      "pass": true,
+      "object_path": "/mnt/d/lunwen/EC-CSI投稿/working/exploration/20261014_matched_evidence_labor/matched_generation/calls/25_FSV-B19_p2p_extract/content.json",
+      "detail": null
+    },
+    {
+      "check": "call_derived_output_equal",
+      "pass": true,
+      "object_path": "/mnt/d/lunwen/EC-CSI投稿/working/exploration/20261014_matched_evidence_labor/matched_generation/calls/25_FSV-B19_p2p_extract/parsed_output.json",
+      "detail": null
+    },
+    {
+      "check": "wrapper_capture_and_completeness",
+      "pass": true,
+      "object_path": "/mnt/d/lunwen/EC-CSI投稿/working/exploration/20261014_matched_evidence_labor/matched_generation/calls/25_FSV-B19_p2p_extract/wrapper_summary.json",
+      "detail": null
+    },
+    {
+      "check": "call_raw_prompt_identity",
+      "pass": true,
+      "object_path": "/mnt/d/lunwen/EC-CSI投稿/working/exploration/20261014_matched_evidence_labor/matched_generation/calls/26_FSV-B19_p2p_rego/response.raw.json",
+      "detail": {
+        "index": 26
+      }
+    },
+    {
+      "check": "call_model_finish_settings_usage",
+      "pass": true,
+      "object_path": "/mnt/d/lunwen/EC-CSI投稿/working/exploration/20261014_matched_evidence_labor/matched_generation/calls/26_FSV-B19_p2p_rego/response.raw.json",
+      "detail": {
+        "index": 26
+      }
+    },
+    {
+      "check": "call_sentinel_and_raw_content_correspondence",
+      "pass": true,
+      "object_path": "/mnt/d/lunwen/EC-CSI投稿/working/exploration/20261014_matched_evidence_labor/matched_generation/calls/26_FSV-B19_p2p_rego/content.json",
+      "detail": null
+    },
+    {
+      "check": "call_derived_output_equal",
+      "pass": true,
+      "object_path": "/mnt/d/lunwen/EC-CSI投稿/working/exploration/20261014_matched_evidence_labor/matched_generation/calls/26_FSV-B19_p2p_rego/parsed_output.json",
+      "detail": null
+    },
+    {
+      "check": "wrapper_capture_and_completeness",
+      "pass": true,
+      "object_path": "/mnt/d/lunwen/EC-CSI投稿/working/exploration/20261014_matched_evidence_labor/matched_generation/calls/26_FSV-B19_p2p_rego/wrapper_summary.json",
+      "detail": null
+    },
+    {
+      "check": "call_raw_prompt_identity",
+      "pass": true,
+      "object_path": "/mnt/d/lunwen/EC-CSI投稿/working/exploration/20261014_matched_evidence_labor/matched_generation/calls/27_FSV-B19_p2p_tests/response.raw.json",
+      "detail": {
+        "index": 27
+      }
+    },
+    {
+      "check": "call_model_finish_settings_usage",
+      "pass": true,
+      "object_path": "/mnt/d/lunwen/EC-CSI投稿/working/exploration/20261014_matched_evidence_labor/matched_generation/calls/27_FSV-B19_p2p_tests/response.raw.json",
+      "detail": {
+        "index": 27
+      }
+    },
+    {
+      "check": "call_sentinel_and_raw_content_correspondence",
+      "pass": true,
+      "object_path": "/mnt/d/lunwen/EC-CSI投稿/working/exploration/20261014_matched_evidence_labor/matched_generation/calls/27_FSV-B19_p2p_tests/content.json",
+      "detail": null
+    },
+    {
+      "check": "call_derived_output_equal",
+      "pass": true,
+      "object_path": "/mnt/d/lunwen/EC-CSI投稿/working/exploration/20261014_matched_evidence_labor/matched_generation/calls/27_FSV-B19_p2p_tests/parsed_output.json",
+      "detail": null
+    },
+    {
+      "check": "wrapper_capture_and_completeness",
+      "pass": true,
+      "object_path": "/mnt/d/lunwen/EC-CSI投稿/working/exploration/20261014_matched_evidence_labor/matched_generation/calls/27_FSV-B19_p2p_tests/wrapper_summary.json",
+      "detail": null
+    },
+    {
+      "check": "call_raw_prompt_identity",
+      "pass": true,
+      "object_path": "/mnt/d/lunwen/EC-CSI投稿/working/exploration/20261014_matched_evidence_labor/matched_generation/calls/28_FSV-B19_autopac_generate/response.raw.json",
+      "detail": {
+        "index": 28
+      }
+    },
+    {
+      "check": "call_model_finish_settings_usage",
+      "pass": true,
+      "object_path": "/mnt/d/lunwen/EC-CSI投稿/working/exploration/20261014_matched_evidence_labor/matched_generation/calls/28_FSV-B19_autopac_generate/response.raw.json",
+      "detail": {
+        "index": 28
+      }
+    },
+    {
+      "check": "call_sentinel_and_raw_content_correspondence",
+      "pass": true,
+      "object_path": "/mnt/d/lunwen/EC-CSI投稿/working/exploration/20261014_matched_evidence_labor/matched_generation/calls/28_FSV-B19_autopac_generate/content.json",
+      "detail": null
+    },
+    {
+      "check": "call_derived_output_equal",
+      "pass": true,
+      "object_path": "/mnt/d/lunwen/EC-CSI投稿/working/exploration/20261014_matched_evidence_labor/matched_generation/calls/28_FSV-B19_autopac_generate/parsed_output.json",
+      "detail": null
+    },
+    {
+      "check": "wrapper_capture_and_completeness",
+      "pass": true,
+      "object_path": "/mnt/d/lunwen/EC-CSI投稿/working/exploration/20261014_matched_evidence_labor/matched_generation/calls/28_FSV-B19_autopac_generate/wrapper_summary.json",
+      "detail": null
+    },
+    {
+      "check": "call_raw_prompt_identity",
+      "pass": true,
+      "object_path": "/mnt/d/lunwen/EC-CSI投稿/working/exploration/20261014_matched_evidence_labor/matched_generation/calls/29_FSV-B19_autopac_judge/response.raw.json",
+      "detail": {
+        "index": 29
+      }
+    },
+    {
+      "check": "call_model_finish_settings_usage",
+      "pass": true,
+      "object_path": "/mnt/d/lunwen/EC-CSI投稿/working/exploration/20261014_matched_evidence_labor/matched_generation/calls/29_FSV-B19_autopac_judge/response.raw.json",
+      "detail": {
+        "index": 29
+      }
+    },
+    {
+      "check": "call_sentinel_and_raw_content_correspondence",
+      "pass": true,
+      "object_path": "/mnt/d/lunwen/EC-CSI投稿/working/exploration/20261014_matched_evidence_labor/matched_generation/calls/29_FSV-B19_autopac_judge/content.json",
+      "detail": null
+    },
+    {
+      "check": "call_derived_output_equal",
+      "pass": true,
+      "object_path": "/mnt/d/lunwen/EC-CSI投稿/working/exploration/20261014_matched_evidence_labor/matched_generation/calls/29_FSV-B19_autopac_judge/parsed_output.json",
+      "detail": null
+    },
+    {
+      "check": "wrapper_capture_and_completeness",
+      "pass": true,
+      "object_path": "/mnt/d/lunwen/EC-CSI投稿/working/exploration/20261014_matched_evidence_labor/matched_generation/calls/29_FSV-B19_autopac_judge/wrapper_summary.json",
+      "detail": null
+    },
+    {
+      "check": "call_raw_prompt_identity",
+      "pass": true,
+      "object_path": "/mnt/d/lunwen/EC-CSI投稿/working/exploration/20261014_matched_evidence_labor/matched_generation/calls/30_FSV-B19_ecas_generate/response.raw.json",
+      "detail": {
+        "index": 30
+      }
+    },
+    {
+      "check": "call_model_finish_settings_usage",
+      "pass": true,
+      "object_path": "/mnt/d/lunwen/EC-CSI投稿/working/exploration/20261014_matched_evidence_labor/matched_generation/calls/30_FSV-B19_ecas_generate/response.raw.json",
+      "detail": {
+        "index": 30
+      }
+    },
+    {
+      "check": "call_sentinel_and_raw_content_correspondence",
+      "pass": true,
+      "object_path": "/mnt/d/lunwen/EC-CSI投稿/working/exploration/20261014_matched_evidence_labor/matched_generation/calls/30_FSV-B19_ecas_generate/content.json",
+      "detail": null
+    },
+    {
+      "check": "call_derived_output_equal",
+      "pass": true,
+      "object_path": "/mnt/d/lunwen/EC-CSI投稿/working/exploration/20261014_matched_evidence_labor/matched_generation/calls/30_FSV-B19_ecas_generate/parsed_output.json",
+      "detail": null
+    },
+    {
+      "check": "wrapper_capture_and_completeness",
+      "pass": true,
+      "object_path": "/mnt/d/lunwen/EC-CSI投稿/working/exploration/20261014_matched_evidence_labor/matched_generation/calls/30_FSV-B19_ecas_generate/wrapper_summary.json",
+      "detail": null
+    },
+    {
+      "check": "raw_file_count_equals_actual_attempts",
+      "pass": true,
+      "object_path": "/mnt/d/lunwen/EC-CSI投稿/working/exploration/20261014_matched_evidence_labor/matched_generation/calls",
+      "detail": null
+    },
+    {
+      "check": "all_generation_frozen_before_evaluation",
+      "pass": true,
+      "object_path": "/mnt/d/lunwen/EC-CSI投稿/working/exploration/20261014_matched_evidence_labor/matched_generation/ALL_GENERATION_FROZEN.json",
+      "detail": null
+    },
+    {
+      "check": "state_equals_case_primary_result",
+      "pass": true,
+      "object_path": "/mnt/d/lunwen/EC-CSI投稿/working/exploration/20261014_matched_evidence_labor/matched_generation/method_runs/FSV-S03/P2P_STYLE/RESULT.json",
+      "detail": null
+    },
+    {
+      "check": "case_terminal_bound_by_all_freeze",
+      "pass": true,
+      "object_path": "/mnt/d/lunwen/EC-CSI投稿/working/exploration/20261014_matched_evidence_labor/matched_generation/method_runs/FSV-S03/P2P_STYLE/GENERATION_TERMINAL_FREEZE.json",
+      "detail": null
+    },
+    {
+      "check": "method_case_calls_and_repair_cap",
+      "pass": true,
+      "object_path": "/mnt/d/lunwen/EC-CSI投稿/working/exploration/20261014_matched_evidence_labor/matched_generation/method_runs/FSV-S03/P2P_STYLE/RESULT.json",
+      "detail": null
+    },
+    {
+      "check": "ineligible_not_executed_or_counted_as_success",
+      "pass": true,
+      "object_path": "/mnt/d/lunwen/EC-CSI投稿/working/exploration/20261014_matched_evidence_labor/matched_generation/method_runs/FSV-S03/P2P_STYLE/RESULT.json",
+      "detail": null
+    },
+    {
+      "check": "state_equals_case_primary_result",
+      "pass": true,
+      "object_path": "/mnt/d/lunwen/EC-CSI投稿/working/exploration/20261014_matched_evidence_labor/matched_generation/method_runs/FSV-S03/AUTOPAC_STYLE/RESULT.json",
+      "detail": null
+    },
+    {
+      "check": "case_terminal_bound_by_all_freeze",
+      "pass": true,
+      "object_path": "/mnt/d/lunwen/EC-CSI投稿/working/exploration/20261014_matched_evidence_labor/matched_generation/method_runs/FSV-S03/AUTOPAC_STYLE/GENERATION_TERMINAL_FREEZE.json",
+      "detail": null
+    },
+    {
+      "check": "first_candidate_frozen_hash",
+      "pass": true,
+      "object_path": "/mnt/d/lunwen/EC-CSI投稿/working/exploration/20261014_matched_evidence_labor/matched_generation/method_runs/FSV-S03/AUTOPAC_STYLE/FIRST_CANDIDATE_FREEZE.json",
+      "detail": null
+    },
+    {
+      "check": "method_case_calls_and_repair_cap",
+      "pass": true,
+      "object_path": "/mnt/d/lunwen/EC-CSI投稿/working/exploration/20261014_matched_evidence_labor/matched_generation/method_runs/FSV-S03/AUTOPAC_STYLE/RESULT.json",
+      "detail": null
+    },
+    {
+      "check": "rego_original_equals_model_output",
+      "pass": true,
+      "object_path": "/mnt/d/lunwen/EC-CSI投稿/working/exploration/20261014_matched_evidence_labor/matched_generation/method_runs/FSV-S03/AUTOPAC_STYLE/initial/original.rego",
+      "detail": null
+    },
+    {
+      "check": "rego_original_formatted_checksums",
+      "pass": true,
+      "object_path": "/mnt/d/lunwen/EC-CSI投稿/working/exploration/20261014_matched_evidence_labor/matched_generation/method_runs/FSV-S03/AUTOPAC_STYLE/initial/FORMAT_RECEIPT.json",
+      "detail": null
+    },
+    {
+      "check": "independent_opa_ast_semantics_equal",
+      "pass": true,
+      "object_path": "/mnt/d/lunwen/EC-CSI投稿/working/exploration/20261014_matched_evidence_labor/matched_generation/method_runs/FSV-S03/AUTOPAC_STYLE/initial/FORMAT_RECEIPT.json",
+      "detail": null
+    },
+    {
+      "check": "rego_original_equals_model_output",
+      "pass": true,
+      "object_path": "/mnt/d/lunwen/EC-CSI投稿/working/exploration/20261014_matched_evidence_labor/matched_generation/method_runs/FSV-S03/AUTOPAC_STYLE/repaired/original.rego",
+      "detail": null
+    },
+    {
+      "check": "rego_original_formatted_checksums",
+      "pass": true,
+      "object_path": "/mnt/d/lunwen/EC-CSI投稿/working/exploration/20261014_matched_evidence_labor/matched_generation/method_runs/FSV-S03/AUTOPAC_STYLE/repaired/FORMAT_RECEIPT.json",
+      "detail": null
+    },
+    {
+      "check": "independent_opa_ast_semantics_equal",
+      "pass": true,
+      "object_path": "/mnt/d/lunwen/EC-CSI投稿/working/exploration/20261014_matched_evidence_labor/matched_generation/method_runs/FSV-S03/AUTOPAC_STYLE/repaired/FORMAT_RECEIPT.json",
+      "detail": null
+    },
+    {
+      "check": "ineligible_not_executed_or_counted_as_success",
+      "pass": true,
+      "object_path": "/mnt/d/lunwen/EC-CSI投稿/working/exploration/20261014_matched_evidence_labor/matched_generation/method_runs/FSV-S03/AUTOPAC_STYLE/RESULT.json",
+      "detail": null
+    },
+    {
+      "check": "state_equals_case_primary_result",
+      "pass": true,
+      "object_path": "/mnt/d/lunwen/EC-CSI投稿/working/exploration/20261014_matched_evidence_labor/matched_generation/method_runs/FSV-S03/ECAS_MATCHED/RESULT.json",
+      "detail": null
+    },
+    {
+      "check": "case_terminal_bound_by_all_freeze",
+      "pass": true,
+      "object_path": "/mnt/d/lunwen/EC-CSI投稿/working/exploration/20261014_matched_evidence_labor/matched_generation/method_runs/FSV-S03/ECAS_MATCHED/GENERATION_TERMINAL_FREEZE.json",
+      "detail": null
+    },
+    {
+      "check": "first_candidate_frozen_hash",
+      "pass": true,
+      "object_path": "/mnt/d/lunwen/EC-CSI投稿/working/exploration/20261014_matched_evidence_labor/matched_generation/method_runs/FSV-S03/ECAS_MATCHED/FIRST_CANDIDATE_FREEZE.json",
+      "detail": null
+    },
+    {
+      "check": "method_case_calls_and_repair_cap",
+      "pass": true,
+      "object_path": "/mnt/d/lunwen/EC-CSI投稿/working/exploration/20261014_matched_evidence_labor/matched_generation/method_runs/FSV-S03/ECAS_MATCHED/RESULT.json",
+      "detail": null
+    },
+    {
+      "check": "ecas_candidate_raw_stage_and_target",
+      "pass": true,
+      "object_path": "/mnt/d/lunwen/EC-CSI投稿/working/exploration/20261014_matched_evidence_labor/matched_generation/method_runs/FSV-S03/ECAS_MATCHED/initial/candidate.json",
+      "detail": null
+    },
+    {
+      "check": "ecas_compiled_proposal_reproduced",
+      "pass": true,
+      "object_path": "/mnt/d/lunwen/EC-CSI投稿/working/exploration/20261014_matched_evidence_labor/matched_generation/method_runs/FSV-S03/ECAS_MATCHED/initial/compiled_proposal.json",
+      "detail": null
+    },
+    {
+      "check": "ecas_admitted_policy_reproduced",
+      "pass": true,
+      "object_path": "/mnt/d/lunwen/EC-CSI投稿/working/exploration/20261014_matched_evidence_labor/matched_generation/method_runs/FSV-S03/ECAS_MATCHED/initial/admitted_policy.json",
+      "detail": null
+    },
+    {
+      "check": "eligible_developer_gate_pass",
+      "pass": true,
+      "object_path": "/mnt/d/lunwen/EC-CSI投稿/working/exploration/20261014_matched_evidence_labor/matched_generation/method_runs/FSV-S03/ECAS_MATCHED/RESULT.json",
+      "detail": null
+    },
+    {
+      "check": "final_policy_frozen_hash",
+      "pass": true,
+      "object_path": "/mnt/d/lunwen/EC-CSI投稿/working/exploration/20261014_matched_evidence_labor/matched_generation/method_runs/FSV-S03/ECAS_MATCHED/FINAL_POLICY_FREEZE.json",
+      "detail": null
+    },
+    {
+      "check": "pair_source_identity_first_diagnostic",
+      "pass": true,
+      "object_path": "/mnt/d/lunwen/EC-CSI投稿/working/exploration/20261014_matched_evidence_labor/matched_generation/method_runs/FSV-S03/ECAS_MATCHED/RESULT.json",
+      "detail": null
+    },
+    {
+      "check": "branch_source_identity_first_diagnostic",
+      "pass": true,
+      "object_path": "/mnt/d/lunwen/EC-CSI投稿/working/exploration/20261014_matched_evidence_labor/matched_generation/method_runs/FSV-S03/ECAS_MATCHED/RESULT.json",
+      "detail": null
+    },
+    {
+      "check": "actual_request_replay_first_diagnostic",
+      "pass": true,
+      "object_path": "/mnt/d/lunwen/EC-CSI投稿/working/exploration/20261014_matched_evidence_labor/matched_generation/method_runs/FSV-S03/ECAS_MATCHED/RESULT.json",
+      "detail": {
+        "request_index": 0
+      }
+    },
+    {
+      "check": "actual_request_replay_first_diagnostic",
+      "pass": true,
+      "object_path": "/mnt/d/lunwen/EC-CSI投稿/working/exploration/20261014_matched_evidence_labor/matched_generation/method_runs/FSV-S03/ECAS_MATCHED/RESULT.json",
+      "detail": {
+        "request_index": 1
+      }
+    },
+    {
+      "check": "actual_request_replay_first_diagnostic",
+      "pass": true,
+      "object_path": "/mnt/d/lunwen/EC-CSI投稿/working/exploration/20261014_matched_evidence_labor/matched_generation/method_runs/FSV-S03/ECAS_MATCHED/RESULT.json",
+      "detail": {
+        "request_index": 2
+      }
+    },
+    {
+      "check": "actual_request_replay_first_diagnostic",
+      "pass": true,
+      "object_path": "/mnt/d/lunwen/EC-CSI投稿/working/exploration/20261014_matched_evidence_labor/matched_generation/method_runs/FSV-S03/ECAS_MATCHED/RESULT.json",
+      "detail": {
+        "request_index": 3
+      }
+    },
+    {
+      "check": "actual_request_replay_first_diagnostic",
+      "pass": true,
+      "object_path": "/mnt/d/lunwen/EC-CSI投稿/working/exploration/20261014_matched_evidence_labor/matched_generation/method_runs/FSV-S03/ECAS_MATCHED/RESULT.json",
+      "detail": {
+        "request_index": 4
+      }
+    },
+    {
+      "check": "actual_request_replay_first_diagnostic",
+      "pass": true,
+      "object_path": "/mnt/d/lunwen/EC-CSI投稿/working/exploration/20261014_matched_evidence_labor/matched_generation/method_runs/FSV-S03/ECAS_MATCHED/RESULT.json",
+      "detail": {
+        "request_index": 5
+      }
+    },
+    {
+      "check": "pair_symbol_computed_not_handfilled_first_diagnostic",
+      "pass": true,
+      "object_path": "/mnt/d/lunwen/EC-CSI投稿/working/exploration/20261014_matched_evidence_labor/matched_generation/method_runs/FSV-S03/ECAS_MATCHED/RESULT.json",
+      "detail": null
+    },
+    {
+      "check": "pair_source_identity_final_evaluation",
+      "pass": true,
+      "object_path": "/mnt/d/lunwen/EC-CSI投稿/working/exploration/20261014_matched_evidence_labor/matched_generation/method_runs/FSV-S03/ECAS_MATCHED/RESULT.json",
+      "detail": null
+    },
+    {
+      "check": "branch_source_identity_final_evaluation",
+      "pass": true,
+      "object_path": "/mnt/d/lunwen/EC-CSI投稿/working/exploration/20261014_matched_evidence_labor/matched_generation/method_runs/FSV-S03/ECAS_MATCHED/RESULT.json",
+      "detail": null
+    },
+    {
+      "check": "actual_request_replay_final_evaluation",
+      "pass": true,
+      "object_path": "/mnt/d/lunwen/EC-CSI投稿/working/exploration/20261014_matched_evidence_labor/matched_generation/method_runs/FSV-S03/ECAS_MATCHED/RESULT.json",
+      "detail": {
+        "request_index": 0
+      }
+    },
+    {
+      "check": "actual_request_replay_final_evaluation",
+      "pass": true,
+      "object_path": "/mnt/d/lunwen/EC-CSI投稿/working/exploration/20261014_matched_evidence_labor/matched_generation/method_runs/FSV-S03/ECAS_MATCHED/RESULT.json",
+      "detail": {
+        "request_index": 1
+      }
+    },
+    {
+      "check": "actual_request_replay_final_evaluation",
+      "pass": true,
+      "object_path": "/mnt/d/lunwen/EC-CSI投稿/working/exploration/20261014_matched_evidence_labor/matched_generation/method_runs/FSV-S03/ECAS_MATCHED/RESULT.json",
+      "detail": {
+        "request_index": 2
+      }
+    },
+    {
+      "check": "actual_request_replay_final_evaluation",
+      "pass": true,
+      "object_path": "/mnt/d/lunwen/EC-CSI投稿/working/exploration/20261014_matched_evidence_labor/matched_generation/method_runs/FSV-S03/ECAS_MATCHED/RESULT.json",
+      "detail": {
+        "request_index": 3
+      }
+    },
+    {
+      "check": "actual_request_replay_final_evaluation",
+      "pass": true,
+      "object_path": "/mnt/d/lunwen/EC-CSI投稿/working/exploration/20261014_matched_evidence_labor/matched_generation/method_runs/FSV-S03/ECAS_MATCHED/RESULT.json",
+      "detail": {
+        "request_index": 4
+      }
+    },
+    {
+      "check": "actual_request_replay_final_evaluation",
+      "pass": true,
+      "object_path": "/mnt/d/lunwen/EC-CSI投稿/working/exploration/20261014_matched_evidence_labor/matched_generation/method_runs/FSV-S03/ECAS_MATCHED/RESULT.json",
+      "detail": {
+        "request_index": 5
+      }
+    },
+    {
+      "check": "pair_symbol_computed_not_handfilled_final_evaluation",
+      "pass": true,
+      "object_path": "/mnt/d/lunwen/EC-CSI投稿/working/exploration/20261014_matched_evidence_labor/matched_generation/method_runs/FSV-S03/ECAS_MATCHED/RESULT.json",
+      "detail": null
+    },
+    {
+      "check": "state_equals_case_primary_result",
+      "pass": true,
+      "object_path": "/mnt/d/lunwen/EC-CSI投稿/working/exploration/20261014_matched_evidence_labor/matched_generation/method_runs/FSV-B13/P2P_STYLE/RESULT.json",
+      "detail": null
+    },
+    {
+      "check": "case_terminal_bound_by_all_freeze",
+      "pass": true,
+      "object_path": "/mnt/d/lunwen/EC-CSI投稿/working/exploration/20261014_matched_evidence_labor/matched_generation/method_runs/FSV-B13/P2P_STYLE/GENERATION_TERMINAL_FREEZE.json",
+      "detail": null
+    },
+    {
+      "check": "first_candidate_frozen_hash",
+      "pass": true,
+      "object_path": "/mnt/d/lunwen/EC-CSI投稿/working/exploration/20261014_matched_evidence_labor/matched_generation/method_runs/FSV-B13/P2P_STYLE/FIRST_CANDIDATE_FREEZE.json",
+      "detail": null
+    },
+    {
+      "check": "method_case_calls_and_repair_cap",
+      "pass": true,
+      "object_path": "/mnt/d/lunwen/EC-CSI投稿/working/exploration/20261014_matched_evidence_labor/matched_generation/method_runs/FSV-B13/P2P_STYLE/RESULT.json",
+      "detail": null
+    },
+    {
+      "check": "rego_original_equals_model_output",
+      "pass": true,
+      "object_path": "/mnt/d/lunwen/EC-CSI投稿/working/exploration/20261014_matched_evidence_labor/matched_generation/method_runs/FSV-B13/P2P_STYLE/initial/original.rego",
+      "detail": null
+    },
+    {
+      "check": "rego_original_formatted_checksums",
+      "pass": true,
+      "object_path": "/mnt/d/lunwen/EC-CSI投稿/working/exploration/20261014_matched_evidence_labor/matched_generation/method_runs/FSV-B13/P2P_STYLE/initial/FORMAT_RECEIPT.json",
+      "detail": null
+    },
+    {
+      "check": "independent_opa_ast_semantics_equal",
+      "pass": true,
+      "object_path": "/mnt/d/lunwen/EC-CSI投稿/working/exploration/20261014_matched_evidence_labor/matched_generation/method_runs/FSV-B13/P2P_STYLE/initial/FORMAT_RECEIPT.json",
+      "detail": null
+    },
+    {
+      "check": "p2p_full_lint_record_retained",
+      "pass": true,
+      "object_path": "/mnt/d/lunwen/EC-CSI投稿/working/exploration/20261014_matched_evidence_labor/matched_generation/method_runs/FSV-B13/P2P_STYLE/initial/CHECKS.json",
+      "detail": null
+    },
+    {
+      "check": "p2p_grounding_conditions_unchanged",
+      "pass": true,
+      "object_path": "/mnt/d/lunwen/EC-CSI投稿/working/exploration/20261014_matched_evidence_labor/matched_generation/method_runs/FSV-B13/P2P_STYLE/GROUNDING_RECEIPT.json",
+      "detail": {
+        "component": 0
+      }
+    },
+    {
+      "check": "p2p_grounding_status_matches_result",
+      "pass": true,
+      "object_path": "/mnt/d/lunwen/EC-CSI投稿/working/exploration/20261014_matched_evidence_labor/matched_generation/method_runs/FSV-B13/P2P_STYLE/GROUNDING_RECEIPT.json",
+      "detail": null
+    },
+    {
+      "check": "eligible_developer_gate_pass",
+      "pass": true,
+      "object_path": "/mnt/d/lunwen/EC-CSI投稿/working/exploration/20261014_matched_evidence_labor/matched_generation/method_runs/FSV-B13/P2P_STYLE/RESULT.json",
+      "detail": null
+    },
+    {
+      "check": "final_policy_frozen_hash",
+      "pass": true,
+      "object_path": "/mnt/d/lunwen/EC-CSI投稿/working/exploration/20261014_matched_evidence_labor/matched_generation/method_runs/FSV-B13/P2P_STYLE/FINAL_POLICY_FREEZE.json",
+      "detail": null
+    },
+    {
+      "check": "pair_source_identity_first_diagnostic",
+      "pass": true,
+      "object_path": "/mnt/d/lunwen/EC-CSI投稿/working/exploration/20261014_matched_evidence_labor/matched_generation/method_runs/FSV-B13/P2P_STYLE/RESULT.json",
+      "detail": null
+    },
+    {
+      "check": "branch_source_identity_first_diagnostic",
+      "pass": true,
+      "object_path": "/mnt/d/lunwen/EC-CSI投稿/working/exploration/20261014_matched_evidence_labor/matched_generation/method_runs/FSV-B13/P2P_STYLE/RESULT.json",
+      "detail": null
+    },
+    {
+      "check": "actual_request_replay_first_diagnostic",
+      "pass": true,
+      "object_path": "/mnt/d/lunwen/EC-CSI投稿/working/exploration/20261014_matched_evidence_labor/matched_generation/method_runs/FSV-B13/P2P_STYLE/RESULT.json",
+      "detail": {
+        "request_index": 0
+      }
+    },
+    {
+      "check": "actual_request_replay_first_diagnostic",
+      "pass": true,
+      "object_path": "/mnt/d/lunwen/EC-CSI投稿/working/exploration/20261014_matched_evidence_labor/matched_generation/method_runs/FSV-B13/P2P_STYLE/RESULT.json",
+      "detail": {
+        "request_index": 1
+      }
+    },
+    {
+      "check": "actual_request_replay_first_diagnostic",
+      "pass": true,
+      "object_path": "/mnt/d/lunwen/EC-CSI投稿/working/exploration/20261014_matched_evidence_labor/matched_generation/method_runs/FSV-B13/P2P_STYLE/RESULT.json",
+      "detail": {
+        "request_index": 2
+      }
+    },
+    {
+      "check": "actual_request_replay_first_diagnostic",
+      "pass": true,
+      "object_path": "/mnt/d/lunwen/EC-CSI投稿/working/exploration/20261014_matched_evidence_labor/matched_generation/method_runs/FSV-B13/P2P_STYLE/RESULT.json",
+      "detail": {
+        "request_index": 3
+      }
+    },
+    {
+      "check": "actual_request_replay_first_diagnostic",
+      "pass": true,
+      "object_path": "/mnt/d/lunwen/EC-CSI投稿/working/exploration/20261014_matched_evidence_labor/matched_generation/method_runs/FSV-B13/P2P_STYLE/RESULT.json",
+      "detail": {
+        "request_index": 4
+      }
+    },
+    {
+      "check": "actual_request_replay_first_diagnostic",
+      "pass": true,
+      "object_path": "/mnt/d/lunwen/EC-CSI投稿/working/exploration/20261014_matched_evidence_labor/matched_generation/method_runs/FSV-B13/P2P_STYLE/RESULT.json",
+      "detail": {
+        "request_index": 5
+      }
+    },
+    {
+      "check": "actual_request_replay_first_diagnostic",
+      "pass": true,
+      "object_path": "/mnt/d/lunwen/EC-CSI投稿/working/exploration/20261014_matched_evidence_labor/matched_generation/method_runs/FSV-B13/P2P_STYLE/RESULT.json",
+      "detail": {
+        "request_index": 6
+      }
+    },
+    {
+      "check": "actual_request_replay_first_diagnostic",
+      "pass": true,
+      "object_path": "/mnt/d/lunwen/EC-CSI投稿/working/exploration/20261014_matched_evidence_labor/matched_generation/method_runs/FSV-B13/P2P_STYLE/RESULT.json",
+      "detail": {
+        "request_index": 7
+      }
+    },
+    {
+      "check": "actual_request_replay_first_diagnostic",
+      "pass": true,
+      "object_path": "/mnt/d/lunwen/EC-CSI投稿/working/exploration/20261014_matched_evidence_labor/matched_generation/method_runs/FSV-B13/P2P_STYLE/RESULT.json",
+      "detail": {
+        "request_index": 8
+      }
+    },
+    {
+      "check": "actual_request_replay_first_diagnostic",
+      "pass": true,
+      "object_path": "/mnt/d/lunwen/EC-CSI投稿/working/exploration/20261014_matched_evidence_labor/matched_generation/method_runs/FSV-B13/P2P_STYLE/RESULT.json",
+      "detail": {
+        "request_index": 9
+      }
+    },
+    {
+      "check": "pair_symbol_computed_not_handfilled_first_diagnostic",
+      "pass": true,
+      "object_path": "/mnt/d/lunwen/EC-CSI投稿/working/exploration/20261014_matched_evidence_labor/matched_generation/method_runs/FSV-B13/P2P_STYLE/RESULT.json",
+      "detail": null
+    },
+    {
+      "check": "pair_source_identity_final_evaluation",
+      "pass": true,
+      "object_path": "/mnt/d/lunwen/EC-CSI投稿/working/exploration/20261014_matched_evidence_labor/matched_generation/method_runs/FSV-B13/P2P_STYLE/RESULT.json",
+      "detail": null
+    },
+    {
+      "check": "branch_source_identity_final_evaluation",
+      "pass": true,
+      "object_path": "/mnt/d/lunwen/EC-CSI投稿/working/exploration/20261014_matched_evidence_labor/matched_generation/method_runs/FSV-B13/P2P_STYLE/RESULT.json",
+      "detail": null
+    },
+    {
+      "check": "actual_request_replay_final_evaluation",
+      "pass": true,
+      "object_path": "/mnt/d/lunwen/EC-CSI投稿/working/exploration/20261014_matched_evidence_labor/matched_generation/method_runs/FSV-B13/P2P_STYLE/RESULT.json",
+      "detail": {
+        "request_index": 0
+      }
+    },
+    {
+      "check": "actual_request_replay_final_evaluation",
+      "pass": true,
+      "object_path": "/mnt/d/lunwen/EC-CSI投稿/working/exploration/20261014_matched_evidence_labor/matched_generation/method_runs/FSV-B13/P2P_STYLE/RESULT.json",
+      "detail": {
+        "request_index": 1
+      }
+    },
+    {
+      "check": "actual_request_replay_final_evaluation",
+      "pass": true,
+      "object_path": "/mnt/d/lunwen/EC-CSI投稿/working/exploration/20261014_matched_evidence_labor/matched_generation/method_runs/FSV-B13/P2P_STYLE/RESULT.json",
+      "detail": {
+        "request_index": 2
+      }
+    },
+    {
+      "check": "actual_request_replay_final_evaluation",
+      "pass": true,
+      "object_path": "/mnt/d/lunwen/EC-CSI投稿/working/exploration/20261014_matched_evidence_labor/matched_generation/method_runs/FSV-B13/P2P_STYLE/RESULT.json",
+      "detail": {
+        "request_index": 3
+      }
+    },
+    {
+      "check": "actual_request_replay_final_evaluation",
+      "pass": true,
+      "object_path": "/mnt/d/lunwen/EC-CSI投稿/working/exploration/20261014_matched_evidence_labor/matched_generation/method_runs/FSV-B13/P2P_STYLE/RESULT.json",
+      "detail": {
+        "request_index": 4
+      }
+    },
+    {
+      "check": "actual_request_replay_final_evaluation",
+      "pass": true,
+      "object_path": "/mnt/d/lunwen/EC-CSI投稿/working/exploration/20261014_matched_evidence_labor/matched_generation/method_runs/FSV-B13/P2P_STYLE/RESULT.json",
+      "detail": {
+        "request_index": 5
+      }
+    },
+    {
+      "check": "actual_request_replay_final_evaluation",
+      "pass": true,
+      "object_path": "/mnt/d/lunwen/EC-CSI投稿/working/exploration/20261014_matched_evidence_labor/matched_generation/method_runs/FSV-B13/P2P_STYLE/RESULT.json",
+      "detail": {
+        "request_index": 6
+      }
+    },
+    {
+      "check": "actual_request_replay_final_evaluation",
+      "pass": true,
+      "object_path": "/mnt/d/lunwen/EC-CSI投稿/working/exploration/20261014_matched_evidence_labor/matched_generation/method_runs/FSV-B13/P2P_STYLE/RESULT.json",
+      "detail": {
+        "request_index": 7
+      }
+    },
+    {
+      "check": "actual_request_replay_final_evaluation",
+      "pass": true,
+      "object_path": "/mnt/d/lunwen/EC-CSI投稿/working/exploration/20261014_matched_evidence_labor/matched_generation/method_runs/FSV-B13/P2P_STYLE/RESULT.json",
+      "detail": {
+        "request_index": 8
+      }
+    },
+    {
+      "check": "actual_request_replay_final_evaluation",
+      "pass": true,
+      "object_path": "/mnt/d/lunwen/EC-CSI投稿/working/exploration/20261014_matched_evidence_labor/matched_generation/method_runs/FSV-B13/P2P_STYLE/RESULT.json",
+      "detail": {
+        "request_index": 9
+      }
+    },
+    {
+      "check": "pair_symbol_computed_not_handfilled_final_evaluation",
+      "pass": true,
+      "object_path": "/mnt/d/lunwen/EC-CSI投稿/working/exploration/20261014_matched_evidence_labor/matched_generation/method_runs/FSV-B13/P2P_STYLE/RESULT.json",
+      "detail": null
+    },
+    {
+      "check": "state_equals_case_primary_result",
+      "pass": true,
+      "object_path": "/mnt/d/lunwen/EC-CSI投稿/working/exploration/20261014_matched_evidence_labor/matched_generation/method_runs/FSV-B13/AUTOPAC_STYLE/RESULT.json",
+      "detail": null
+    },
+    {
+      "check": "case_terminal_bound_by_all_freeze",
+      "pass": true,
+      "object_path": "/mnt/d/lunwen/EC-CSI投稿/working/exploration/20261014_matched_evidence_labor/matched_generation/method_runs/FSV-B13/AUTOPAC_STYLE/GENERATION_TERMINAL_FREEZE.json",
+      "detail": null
+    },
+    {
+      "check": "first_candidate_frozen_hash",
+      "pass": true,
+      "object_path": "/mnt/d/lunwen/EC-CSI投稿/working/exploration/20261014_matched_evidence_labor/matched_generation/method_runs/FSV-B13/AUTOPAC_STYLE/FIRST_CANDIDATE_FREEZE.json",
+      "detail": null
+    },
+    {
+      "check": "method_case_calls_and_repair_cap",
+      "pass": true,
+      "object_path": "/mnt/d/lunwen/EC-CSI投稿/working/exploration/20261014_matched_evidence_labor/matched_generation/method_runs/FSV-B13/AUTOPAC_STYLE/RESULT.json",
+      "detail": null
+    },
+    {
+      "check": "rego_original_equals_model_output",
+      "pass": true,
+      "object_path": "/mnt/d/lunwen/EC-CSI投稿/working/exploration/20261014_matched_evidence_labor/matched_generation/method_runs/FSV-B13/AUTOPAC_STYLE/initial/original.rego",
+      "detail": null
+    },
+    {
+      "check": "rego_original_formatted_checksums",
+      "pass": true,
+      "object_path": "/mnt/d/lunwen/EC-CSI投稿/working/exploration/20261014_matched_evidence_labor/matched_generation/method_runs/FSV-B13/AUTOPAC_STYLE/initial/FORMAT_RECEIPT.json",
+      "detail": null
+    },
+    {
+      "check": "independent_opa_ast_semantics_equal",
+      "pass": true,
+      "object_path": "/mnt/d/lunwen/EC-CSI投稿/working/exploration/20261014_matched_evidence_labor/matched_generation/method_runs/FSV-B13/AUTOPAC_STYLE/initial/FORMAT_RECEIPT.json",
+      "detail": null
+    },
+    {
+      "check": "eligible_developer_gate_pass",
+      "pass": true,
+      "object_path": "/mnt/d/lunwen/EC-CSI投稿/working/exploration/20261014_matched_evidence_labor/matched_generation/method_runs/FSV-B13/AUTOPAC_STYLE/RESULT.json",
+      "detail": null
+    },
+    {
+      "check": "final_policy_frozen_hash",
+      "pass": true,
+      "object_path": "/mnt/d/lunwen/EC-CSI投稿/working/exploration/20261014_matched_evidence_labor/matched_generation/method_runs/FSV-B13/AUTOPAC_STYLE/FINAL_POLICY_FREEZE.json",
+      "detail": null
+    },
+    {
+      "check": "pair_source_identity_first_diagnostic",
+      "pass": true,
+      "object_path": "/mnt/d/lunwen/EC-CSI投稿/working/exploration/20261014_matched_evidence_labor/matched_generation/method_runs/FSV-B13/AUTOPAC_STYLE/RESULT.json",
+      "detail": null
+    },
+    {
+      "check": "branch_source_identity_first_diagnostic",
+      "pass": true,
+      "object_path": "/mnt/d/lunwen/EC-CSI投稿/working/exploration/20261014_matched_evidence_labor/matched_generation/method_runs/FSV-B13/AUTOPAC_STYLE/RESULT.json",
+      "detail": null
+    },
+    {
+      "check": "actual_request_replay_first_diagnostic",
+      "pass": true,
+      "object_path": "/mnt/d/lunwen/EC-CSI投稿/working/exploration/20261014_matched_evidence_labor/matched_generation/method_runs/FSV-B13/AUTOPAC_STYLE/RESULT.json",
+      "detail": {
+        "request_index": 0
+      }
+    },
+    {
+      "check": "actual_request_replay_first_diagnostic",
+      "pass": true,
+      "object_path": "/mnt/d/lunwen/EC-CSI投稿/working/exploration/20261014_matched_evidence_labor/matched_generation/method_runs/FSV-B13/AUTOPAC_STYLE/RESULT.json",
+      "detail": {
+        "request_index": 1
+      }
+    },
+    {
+      "check": "actual_request_replay_first_diagnostic",
+      "pass": true,
+      "object_path": "/mnt/d/lunwen/EC-CSI投稿/working/exploration/20261014_matched_evidence_labor/matched_generation/method_runs/FSV-B13/AUTOPAC_STYLE/RESULT.json",
+      "detail": {
+        "request_index": 2
+      }
+    },
+    {
+      "check": "actual_request_replay_first_diagnostic",
+      "pass": true,
+      "object_path": "/mnt/d/lunwen/EC-CSI投稿/working/exploration/20261014_matched_evidence_labor/matched_generation/method_runs/FSV-B13/AUTOPAC_STYLE/RESULT.json",
+      "detail": {
+        "request_index": 3
+      }
+    },
+    {
+      "check": "actual_request_replay_first_diagnostic",
+      "pass": true,
+      "object_path": "/mnt/d/lunwen/EC-CSI投稿/working/exploration/20261014_matched_evidence_labor/matched_generation/method_runs/FSV-B13/AUTOPAC_STYLE/RESULT.json",
+      "detail": {
+        "request_index": 4
+      }
+    },
+    {
+      "check": "actual_request_replay_first_diagnostic",
+      "pass": true,
+      "object_path": "/mnt/d/lunwen/EC-CSI投稿/working/exploration/20261014_matched_evidence_labor/matched_generation/method_runs/FSV-B13/AUTOPAC_STYLE/RESULT.json",
+      "detail": {
+        "request_index": 5
+      }
+    },
+    {
+      "check": "actual_request_replay_first_diagnostic",
+      "pass": true,
+      "object_path": "/mnt/d/lunwen/EC-CSI投稿/working/exploration/20261014_matched_evidence_labor/matched_generation/method_runs/FSV-B13/AUTOPAC_STYLE/RESULT.json",
+      "detail": {
+        "request_index": 6
+      }
+    },
+    {
+      "check": "actual_request_replay_first_diagnostic",
+      "pass": true,
+      "object_path": "/mnt/d/lunwen/EC-CSI投稿/working/exploration/20261014_matched_evidence_labor/matched_generation/method_runs/FSV-B13/AUTOPAC_STYLE/RESULT.json",
+      "detail": {
+        "request_index": 7
+      }
+    },
+    {
+      "check": "actual_request_replay_first_diagnostic",
+      "pass": true,
+      "object_path": "/mnt/d/lunwen/EC-CSI投稿/working/exploration/20261014_matched_evidence_labor/matched_generation/method_runs/FSV-B13/AUTOPAC_STYLE/RESULT.json",
+      "detail": {
+        "request_index": 8
+      }
+    },
+    {
+      "check": "actual_request_replay_first_diagnostic",
+      "pass": true,
+      "object_path": "/mnt/d/lunwen/EC-CSI投稿/working/exploration/20261014_matched_evidence_labor/matched_generation/method_runs/FSV-B13/AUTOPAC_STYLE/RESULT.json",
+      "detail": {
+        "request_index": 9
+      }
+    },
+    {
+      "check": "pair_symbol_computed_not_handfilled_first_diagnostic",
+      "pass": true,
+      "object_path": "/mnt/d/lunwen/EC-CSI投稿/working/exploration/20261014_matched_evidence_labor/matched_generation/method_runs/FSV-B13/AUTOPAC_STYLE/RESULT.json",
+      "detail": null
+    },
+    {
+      "check": "pair_source_identity_final_evaluation",
+      "pass": true,
+      "object_path": "/mnt/d/lunwen/EC-CSI投稿/working/exploration/20261014_matched_evidence_labor/matched_generation/method_runs/FSV-B13/AUTOPAC_STYLE/RESULT.json",
+      "detail": null
+    },
+    {
+      "check": "branch_source_identity_final_evaluation",
+      "pass": true,
+      "object_path": "/mnt/d/lunwen/EC-CSI投稿/working/exploration/20261014_matched_evidence_labor/matched_generation/method_runs/FSV-B13/AUTOPAC_STYLE/RESULT.json",
+      "detail": null
+    },
+    {
+      "check": "actual_request_replay_final_evaluation",
+      "pass": true,
+      "object_path": "/mnt/d/lunwen/EC-CSI投稿/working/exploration/20261014_matched_evidence_labor/matched_generation/method_runs/FSV-B13/AUTOPAC_STYLE/RESULT.json",
+      "detail": {
+        "request_index": 0
+      }
+    },
+    {
+      "check": "actual_request_replay_final_evaluation",
+      "pass": true,
+      "object_path": "/mnt/d/lunwen/EC-CSI投稿/working/exploration/20261014_matched_evidence_labor/matched_generation/method_runs/FSV-B13/AUTOPAC_STYLE/RESULT.json",
+      "detail": {
+        "request_index": 1
+      }
+    },
+    {
+      "check": "actual_request_replay_final_evaluation",
+      "pass": true,
+      "object_path": "/mnt/d/lunwen/EC-CSI投稿/working/exploration/20261014_matched_evidence_labor/matched_generation/method_runs/FSV-B13/AUTOPAC_STYLE/RESULT.json",
+      "detail": {
+        "request_index": 2
+      }
+    },
+    {
+      "check": "actual_request_replay_final_evaluation",
+      "pass": true,
+      "object_path": "/mnt/d/lunwen/EC-CSI投稿/working/exploration/20261014_matched_evidence_labor/matched_generation/method_runs/FSV-B13/AUTOPAC_STYLE/RESULT.json",
+      "detail": {
+        "request_index": 3
+      }
+    },
+    {
+      "check": "actual_request_replay_final_evaluation",
+      "pass": true,
+      "object_path": "/mnt/d/lunwen/EC-CSI投稿/working/exploration/20261014_matched_evidence_labor/matched_generation/method_runs/FSV-B13/AUTOPAC_STYLE/RESULT.json",
+      "detail": {
+        "request_index": 4
+      }
+    },
+    {
+      "check": "actual_request_replay_final_evaluation",
+      "pass": true,
+      "object_path": "/mnt/d/lunwen/EC-CSI投稿/working/exploration/20261014_matched_evidence_labor/matched_generation/method_runs/FSV-B13/AUTOPAC_STYLE/RESULT.json",
+      "detail": {
+        "request_index": 5
+      }
+    },
+    {
+      "check": "actual_request_replay_final_evaluation",
+      "pass": true,
+      "object_path": "/mnt/d/lunwen/EC-CSI投稿/working/exploration/20261014_matched_evidence_labor/matched_generation/method_runs/FSV-B13/AUTOPAC_STYLE/RESULT.json",
+      "detail": {
+        "request_index": 6
+      }
+    },
+    {
+      "check": "actual_request_replay_final_evaluation",
+      "pass": true,
+      "object_path": "/mnt/d/lunwen/EC-CSI投稿/working/exploration/20261014_matched_evidence_labor/matched_generation/method_runs/FSV-B13/AUTOPAC_STYLE/RESULT.json",
+      "detail": {
+        "request_index": 7
+      }
+    },
+    {
+      "check": "actual_request_replay_final_evaluation",
+      "pass": true,
+      "object_path": "/mnt/d/lunwen/EC-CSI投稿/working/exploration/20261014_matched_evidence_labor/matched_generation/method_runs/FSV-B13/AUTOPAC_STYLE/RESULT.json",
+      "detail": {
+        "request_index": 8
+      }
+    },
+    {
+      "check": "actual_request_replay_final_evaluation",
+      "pass": true,
+      "object_path": "/mnt/d/lunwen/EC-CSI投稿/working/exploration/20261014_matched_evidence_labor/matched_generation/method_runs/FSV-B13/AUTOPAC_STYLE/RESULT.json",
+      "detail": {
+        "request_index": 9
+      }
+    },
+    {
+      "check": "pair_symbol_computed_not_handfilled_final_evaluation",
+      "pass": true,
+      "object_path": "/mnt/d/lunwen/EC-CSI投稿/working/exploration/20261014_matched_evidence_labor/matched_generation/method_runs/FSV-B13/AUTOPAC_STYLE/RESULT.json",
+      "detail": null
+    },
+    {
+      "check": "state_equals_case_primary_result",
+      "pass": true,
+      "object_path": "/mnt/d/lunwen/EC-CSI投稿/working/exploration/20261014_matched_evidence_labor/matched_generation/method_runs/FSV-B13/ECAS_MATCHED/RESULT.json",
+      "detail": null
+    },
+    {
+      "check": "case_terminal_bound_by_all_freeze",
+      "pass": true,
+      "object_path": "/mnt/d/lunwen/EC-CSI投稿/working/exploration/20261014_matched_evidence_labor/matched_generation/method_runs/FSV-B13/ECAS_MATCHED/GENERATION_TERMINAL_FREEZE.json",
+      "detail": null
+    },
+    {
+      "check": "first_candidate_frozen_hash",
+      "pass": true,
+      "object_path": "/mnt/d/lunwen/EC-CSI投稿/working/exploration/20261014_matched_evidence_labor/matched_generation/method_runs/FSV-B13/ECAS_MATCHED/FIRST_CANDIDATE_FREEZE.json",
+      "detail": null
+    },
+    {
+      "check": "method_case_calls_and_repair_cap",
+      "pass": true,
+      "object_path": "/mnt/d/lunwen/EC-CSI投稿/working/exploration/20261014_matched_evidence_labor/matched_generation/method_runs/FSV-B13/ECAS_MATCHED/RESULT.json",
+      "detail": null
+    },
+    {
+      "check": "ecas_candidate_raw_stage_and_target",
+      "pass": true,
+      "object_path": "/mnt/d/lunwen/EC-CSI投稿/working/exploration/20261014_matched_evidence_labor/matched_generation/method_runs/FSV-B13/ECAS_MATCHED/initial/candidate.json",
+      "detail": null
+    },
+    {
+      "check": "ecas_compiled_proposal_reproduced",
+      "pass": true,
+      "object_path": "/mnt/d/lunwen/EC-CSI投稿/working/exploration/20261014_matched_evidence_labor/matched_generation/method_runs/FSV-B13/ECAS_MATCHED/initial/compiled_proposal.json",
+      "detail": null
+    },
+    {
+      "check": "ecas_admitted_policy_reproduced",
+      "pass": true,
+      "object_path": "/mnt/d/lunwen/EC-CSI投稿/working/exploration/20261014_matched_evidence_labor/matched_generation/method_runs/FSV-B13/ECAS_MATCHED/initial/admitted_policy.json",
+      "detail": null
+    },
+    {
+      "check": "eligible_developer_gate_pass",
+      "pass": true,
+      "object_path": "/mnt/d/lunwen/EC-CSI投稿/working/exploration/20261014_matched_evidence_labor/matched_generation/method_runs/FSV-B13/ECAS_MATCHED/RESULT.json",
+      "detail": null
+    },
+    {
+      "check": "final_policy_frozen_hash",
+      "pass": true,
+      "object_path": "/mnt/d/lunwen/EC-CSI投稿/working/exploration/20261014_matched_evidence_labor/matched_generation/method_runs/FSV-B13/ECAS_MATCHED/FINAL_POLICY_FREEZE.json",
+      "detail": null
+    },
+    {
+      "check": "pair_source_identity_first_diagnostic",
+      "pass": true,
+      "object_path": "/mnt/d/lunwen/EC-CSI投稿/working/exploration/20261014_matched_evidence_labor/matched_generation/method_runs/FSV-B13/ECAS_MATCHED/RESULT.json",
+      "detail": null
+    },
+    {
+      "check": "branch_source_identity_first_diagnostic",
+      "pass": true,
+      "object_path": "/mnt/d/lunwen/EC-CSI投稿/working/exploration/20261014_matched_evidence_labor/matched_generation/method_runs/FSV-B13/ECAS_MATCHED/RESULT.json",
+      "detail": null
+    },
+    {
+      "check": "actual_request_replay_first_diagnostic",
+      "pass": true,
+      "object_path": "/mnt/d/lunwen/EC-CSI投稿/working/exploration/20261014_matched_evidence_labor/matched_generation/method_runs/FSV-B13/ECAS_MATCHED/RESULT.json",
+      "detail": {
+        "request_index": 0
+      }
+    },
+    {
+      "check": "actual_request_replay_first_diagnostic",
+      "pass": true,
+      "object_path": "/mnt/d/lunwen/EC-CSI投稿/working/exploration/20261014_matched_evidence_labor/matched_generation/method_runs/FSV-B13/ECAS_MATCHED/RESULT.json",
+      "detail": {
+        "request_index": 1
+      }
+    },
+    {
+      "check": "actual_request_replay_first_diagnostic",
+      "pass": true,
+      "object_path": "/mnt/d/lunwen/EC-CSI投稿/working/exploration/20261014_matched_evidence_labor/matched_generation/method_runs/FSV-B13/ECAS_MATCHED/RESULT.json",
+      "detail": {
+        "request_index": 2
+      }
+    },
+    {
+      "check": "actual_request_replay_first_diagnostic",
+      "pass": true,
+      "object_path": "/mnt/d/lunwen/EC-CSI投稿/working/exploration/20261014_matched_evidence_labor/matched_generation/method_runs/FSV-B13/ECAS_MATCHED/RESULT.json",
+      "detail": {
+        "request_index": 3
+      }
+    },
+    {
+      "check": "actual_request_replay_first_diagnostic",
+      "pass": true,
+      "object_path": "/mnt/d/lunwen/EC-CSI投稿/working/exploration/20261014_matched_evidence_labor/matched_generation/method_runs/FSV-B13/ECAS_MATCHED/RESULT.json",
+      "detail": {
+        "request_index": 4
+      }
+    },
+    {
+      "check": "actual_request_replay_first_diagnostic",
+      "pass": true,
+      "object_path": "/mnt/d/lunwen/EC-CSI投稿/working/exploration/20261014_matched_evidence_labor/matched_generation/method_runs/FSV-B13/ECAS_MATCHED/RESULT.json",
+      "detail": {
+        "request_index": 5
+      }
+    },
+    {
+      "check": "actual_request_replay_first_diagnostic",
+      "pass": true,
+      "object_path": "/mnt/d/lunwen/EC-CSI投稿/working/exploration/20261014_matched_evidence_labor/matched_generation/method_runs/FSV-B13/ECAS_MATCHED/RESULT.json",
+      "detail": {
+        "request_index": 6
+      }
+    },
+    {
+      "check": "actual_request_replay_first_diagnostic",
+      "pass": true,
+      "object_path": "/mnt/d/lunwen/EC-CSI投稿/working/exploration/20261014_matched_evidence_labor/matched_generation/method_runs/FSV-B13/ECAS_MATCHED/RESULT.json",
+      "detail": {
+        "request_index": 7
+      }
+    },
+    {
+      "check": "actual_request_replay_first_diagnostic",
+      "pass": true,
+      "object_path": "/mnt/d/lunwen/EC-CSI投稿/working/exploration/20261014_matched_evidence_labor/matched_generation/method_runs/FSV-B13/ECAS_MATCHED/RESULT.json",
+      "detail": {
+        "request_index": 8
+      }
+    },
+    {
+      "check": "actual_request_replay_first_diagnostic",
+      "pass": true,
+      "object_path": "/mnt/d/lunwen/EC-CSI投稿/working/exploration/20261014_matched_evidence_labor/matched_generation/method_runs/FSV-B13/ECAS_MATCHED/RESULT.json",
+      "detail": {
+        "request_index": 9
+      }
+    },
+    {
+      "check": "pair_symbol_computed_not_handfilled_first_diagnostic",
+      "pass": true,
+      "object_path": "/mnt/d/lunwen/EC-CSI投稿/working/exploration/20261014_matched_evidence_labor/matched_generation/method_runs/FSV-B13/ECAS_MATCHED/RESULT.json",
+      "detail": null
+    },
+    {
+      "check": "pair_source_identity_final_evaluation",
+      "pass": true,
+      "object_path": "/mnt/d/lunwen/EC-CSI投稿/working/exploration/20261014_matched_evidence_labor/matched_generation/method_runs/FSV-B13/ECAS_MATCHED/RESULT.json",
+      "detail": null
+    },
+    {
+      "check": "branch_source_identity_final_evaluation",
+      "pass": true,
+      "object_path": "/mnt/d/lunwen/EC-CSI投稿/working/exploration/20261014_matched_evidence_labor/matched_generation/method_runs/FSV-B13/ECAS_MATCHED/RESULT.json",
+      "detail": null
+    },
+    {
+      "check": "actual_request_replay_final_evaluation",
+      "pass": true,
+      "object_path": "/mnt/d/lunwen/EC-CSI投稿/working/exploration/20261014_matched_evidence_labor/matched_generation/method_runs/FSV-B13/ECAS_MATCHED/RESULT.json",
+      "detail": {
+        "request_index": 0
+      }
+    },
+    {
+      "check": "actual_request_replay_final_evaluation",
+      "pass": true,
+      "object_path": "/mnt/d/lunwen/EC-CSI投稿/working/exploration/20261014_matched_evidence_labor/matched_generation/method_runs/FSV-B13/ECAS_MATCHED/RESULT.json",
+      "detail": {
+        "request_index": 1
+      }
+    },
+    {
+      "check": "actual_request_replay_final_evaluation",
+      "pass": true,
+      "object_path": "/mnt/d/lunwen/EC-CSI投稿/working/exploration/20261014_matched_evidence_labor/matched_generation/method_runs/FSV-B13/ECAS_MATCHED/RESULT.json",
+      "detail": {
+        "request_index": 2
+      }
+    },
+    {
+      "check": "actual_request_replay_final_evaluation",
+      "pass": true,
+      "object_path": "/mnt/d/lunwen/EC-CSI投稿/working/exploration/20261014_matched_evidence_labor/matched_generation/method_runs/FSV-B13/ECAS_MATCHED/RESULT.json",
+      "detail": {
+        "request_index": 3
+      }
+    },
+    {
+      "check": "actual_request_replay_final_evaluation",
+      "pass": true,
+      "object_path": "/mnt/d/lunwen/EC-CSI投稿/working/exploration/20261014_matched_evidence_labor/matched_generation/method_runs/FSV-B13/ECAS_MATCHED/RESULT.json",
+      "detail": {
+        "request_index": 4
+      }
+    },
+    {
+      "check": "actual_request_replay_final_evaluation",
+      "pass": true,
+      "object_path": "/mnt/d/lunwen/EC-CSI投稿/working/exploration/20261014_matched_evidence_labor/matched_generation/method_runs/FSV-B13/ECAS_MATCHED/RESULT.json",
+      "detail": {
+        "request_index": 5
+      }
+    },
+    {
+      "check": "actual_request_replay_final_evaluation",
+      "pass": true,
+      "object_path": "/mnt/d/lunwen/EC-CSI投稿/working/exploration/20261014_matched_evidence_labor/matched_generation/method_runs/FSV-B13/ECAS_MATCHED/RESULT.json",
+      "detail": {
+        "request_index": 6
+      }
+    },
+    {
+      "check": "actual_request_replay_final_evaluation",
+      "pass": true,
+      "object_path": "/mnt/d/lunwen/EC-CSI投稿/working/exploration/20261014_matched_evidence_labor/matched_generation/method_runs/FSV-B13/ECAS_MATCHED/RESULT.json",
+      "detail": {
+        "request_index": 7
+      }
+    },
+    {
+      "check": "actual_request_replay_final_evaluation",
+      "pass": true,
+      "object_path": "/mnt/d/lunwen/EC-CSI投稿/working/exploration/20261014_matched_evidence_labor/matched_generation/method_runs/FSV-B13/ECAS_MATCHED/RESULT.json",
+      "detail": {
+        "request_index": 8
+      }
+    },
+    {
+      "check": "actual_request_replay_final_evaluation",
+      "pass": true,
+      "object_path": "/mnt/d/lunwen/EC-CSI投稿/working/exploration/20261014_matched_evidence_labor/matched_generation/method_runs/FSV-B13/ECAS_MATCHED/RESULT.json",
+      "detail": {
+        "request_index": 9
+      }
+    },
+    {
+      "check": "pair_symbol_computed_not_handfilled_final_evaluation",
+      "pass": true,
+      "object_path": "/mnt/d/lunwen/EC-CSI投稿/working/exploration/20261014_matched_evidence_labor/matched_generation/method_runs/FSV-B13/ECAS_MATCHED/RESULT.json",
+      "detail": null
+    },
+    {
+      "check": "state_equals_case_primary_result",
+      "pass": true,
+      "object_path": "/mnt/d/lunwen/EC-CSI投稿/working/exploration/20261014_matched_evidence_labor/matched_generation/method_runs/FSV-B17/P2P_STYLE/RESULT.json",
+      "detail": null
+    },
+    {
+      "check": "case_terminal_bound_by_all_freeze",
+      "pass": true,
+      "object_path": "/mnt/d/lunwen/EC-CSI投稿/working/exploration/20261014_matched_evidence_labor/matched_generation/method_runs/FSV-B17/P2P_STYLE/GENERATION_TERMINAL_FREEZE.json",
+      "detail": null
+    },
+    {
+      "check": "first_candidate_frozen_hash",
+      "pass": true,
+      "object_path": "/mnt/d/lunwen/EC-CSI投稿/working/exploration/20261014_matched_evidence_labor/matched_generation/method_runs/FSV-B17/P2P_STYLE/FIRST_CANDIDATE_FREEZE.json",
+      "detail": null
+    },
+    {
+      "check": "method_case_calls_and_repair_cap",
+      "pass": true,
+      "object_path": "/mnt/d/lunwen/EC-CSI投稿/working/exploration/20261014_matched_evidence_labor/matched_generation/method_runs/FSV-B17/P2P_STYLE/RESULT.json",
+      "detail": null
+    },
+    {
+      "check": "rego_original_equals_model_output",
+      "pass": true,
+      "object_path": "/mnt/d/lunwen/EC-CSI投稿/working/exploration/20261014_matched_evidence_labor/matched_generation/method_runs/FSV-B17/P2P_STYLE/initial/original.rego",
+      "detail": null
+    },
+    {
+      "check": "rego_original_formatted_checksums",
+      "pass": true,
+      "object_path": "/mnt/d/lunwen/EC-CSI投稿/working/exploration/20261014_matched_evidence_labor/matched_generation/method_runs/FSV-B17/P2P_STYLE/initial/FORMAT_RECEIPT.json",
+      "detail": null
+    },
+    {
+      "check": "independent_opa_ast_semantics_equal",
+      "pass": true,
+      "object_path": "/mnt/d/lunwen/EC-CSI投稿/working/exploration/20261014_matched_evidence_labor/matched_generation/method_runs/FSV-B17/P2P_STYLE/initial/FORMAT_RECEIPT.json",
+      "detail": null
+    },
+    {
+      "check": "p2p_full_lint_record_retained",
+      "pass": true,
+      "object_path": "/mnt/d/lunwen/EC-CSI投稿/working/exploration/20261014_matched_evidence_labor/matched_generation/method_runs/FSV-B17/P2P_STYLE/initial/CHECKS.json",
+      "detail": null
+    },
+    {
+      "check": "p2p_grounding_conditions_unchanged",
+      "pass": true,
+      "object_path": "/mnt/d/lunwen/EC-CSI投稿/working/exploration/20261014_matched_evidence_labor/matched_generation/method_runs/FSV-B17/P2P_STYLE/GROUNDING_RECEIPT.json",
+      "detail": {
+        "component": 0
+      }
+    },
+    {
+      "check": "p2p_grounding_status_matches_result",
+      "pass": true,
+      "object_path": "/mnt/d/lunwen/EC-CSI投稿/working/exploration/20261014_matched_evidence_labor/matched_generation/method_runs/FSV-B17/P2P_STYLE/GROUNDING_RECEIPT.json",
+      "detail": null
+    },
+    {
+      "check": "eligible_developer_gate_pass",
+      "pass": true,
+      "object_path": "/mnt/d/lunwen/EC-CSI投稿/working/exploration/20261014_matched_evidence_labor/matched_generation/method_runs/FSV-B17/P2P_STYLE/RESULT.json",
+      "detail": null
+    },
+    {
+      "check": "final_policy_frozen_hash",
+      "pass": true,
+      "object_path": "/mnt/d/lunwen/EC-CSI投稿/working/exploration/20261014_matched_evidence_labor/matched_generation/method_runs/FSV-B17/P2P_STYLE/FINAL_POLICY_FREEZE.json",
+      "detail": null
+    },
+    {
+      "check": "pair_source_identity_first_diagnostic",
+      "pass": true,
+      "object_path": "/mnt/d/lunwen/EC-CSI投稿/working/exploration/20261014_matched_evidence_labor/matched_generation/method_runs/FSV-B17/P2P_STYLE/RESULT.json",
+      "detail": null
+    },
+    {
+      "check": "branch_source_identity_first_diagnostic",
+      "pass": true,
+      "object_path": "/mnt/d/lunwen/EC-CSI投稿/working/exploration/20261014_matched_evidence_labor/matched_generation/method_runs/FSV-B17/P2P_STYLE/RESULT.json",
+      "detail": null
+    },
+    {
+      "check": "actual_request_replay_first_diagnostic",
+      "pass": true,
+      "object_path": "/mnt/d/lunwen/EC-CSI投稿/working/exploration/20261014_matched_evidence_labor/matched_generation/method_runs/FSV-B17/P2P_STYLE/RESULT.json",
+      "detail": {
+        "request_index": 0
+      }
+    },
+    {
+      "check": "actual_request_replay_first_diagnostic",
+      "pass": true,
+      "object_path": "/mnt/d/lunwen/EC-CSI投稿/working/exploration/20261014_matched_evidence_labor/matched_generation/method_runs/FSV-B17/P2P_STYLE/RESULT.json",
+      "detail": {
+        "request_index": 1
+      }
+    },
+    {
+      "check": "actual_request_replay_first_diagnostic",
+      "pass": true,
+      "object_path": "/mnt/d/lunwen/EC-CSI投稿/working/exploration/20261014_matched_evidence_labor/matched_generation/method_runs/FSV-B17/P2P_STYLE/RESULT.json",
+      "detail": {
+        "request_index": 2
+      }
+    },
+    {
+      "check": "actual_request_replay_first_diagnostic",
+      "pass": true,
+      "object_path": "/mnt/d/lunwen/EC-CSI投稿/working/exploration/20261014_matched_evidence_labor/matched_generation/method_runs/FSV-B17/P2P_STYLE/RESULT.json",
+      "detail": {
+        "request_index": 3
+      }
+    },
+    {
+      "check": "actual_request_replay_first_diagnostic",
+      "pass": true,
+      "object_path": "/mnt/d/lunwen/EC-CSI投稿/working/exploration/20261014_matched_evidence_labor/matched_generation/method_runs/FSV-B17/P2P_STYLE/RESULT.json",
+      "detail": {
+        "request_index": 4
+      }
+    },
+    {
+      "check": "actual_request_replay_first_diagnostic",
+      "pass": true,
+      "object_path": "/mnt/d/lunwen/EC-CSI投稿/working/exploration/20261014_matched_evidence_labor/matched_generation/method_runs/FSV-B17/P2P_STYLE/RESULT.json",
+      "detail": {
+        "request_index": 5
+      }
+    },
+    {
+      "check": "pair_symbol_computed_not_handfilled_first_diagnostic",
+      "pass": true,
+      "object_path": "/mnt/d/lunwen/EC-CSI投稿/working/exploration/20261014_matched_evidence_labor/matched_generation/method_runs/FSV-B17/P2P_STYLE/RESULT.json",
+      "detail": null
+    },
+    {
+      "check": "pair_source_identity_final_evaluation",
+      "pass": true,
+      "object_path": "/mnt/d/lunwen/EC-CSI投稿/working/exploration/20261014_matched_evidence_labor/matched_generation/method_runs/FSV-B17/P2P_STYLE/RESULT.json",
+      "detail": null
+    },
+    {
+      "check": "branch_source_identity_final_evaluation",
+      "pass": true,
+      "object_path": "/mnt/d/lunwen/EC-CSI投稿/working/exploration/20261014_matched_evidence_labor/matched_generation/method_runs/FSV-B17/P2P_STYLE/RESULT.json",
+      "detail": null
+    },
+    {
+      "check": "actual_request_replay_final_evaluation",
+      "pass": true,
+      "object_path": "/mnt/d/lunwen/EC-CSI投稿/working/exploration/20261014_matched_evidence_labor/matched_generation/method_runs/FSV-B17/P2P_STYLE/RESULT.json",
+      "detail": {
+        "request_index": 0
+      }
+    },
+    {
+      "check": "actual_request_replay_final_evaluation",
+      "pass": true,
+      "object_path": "/mnt/d/lunwen/EC-CSI投稿/working/exploration/20261014_matched_evidence_labor/matched_generation/method_runs/FSV-B17/P2P_STYLE/RESULT.json",
+      "detail": {
+        "request_index": 1
+      }
+    },
+    {
+      "check": "actual_request_replay_final_evaluation",
+      "pass": true,
+      "object_path": "/mnt/d/lunwen/EC-CSI投稿/working/exploration/20261014_matched_evidence_labor/matched_generation/method_runs/FSV-B17/P2P_STYLE/RESULT.json",
+      "detail": {
+        "request_index": 2
+      }
+    },
+    {
+      "check": "actual_request_replay_final_evaluation",
+      "pass": true,
+      "object_path": "/mnt/d/lunwen/EC-CSI投稿/working/exploration/20261014_matched_evidence_labor/matched_generation/method_runs/FSV-B17/P2P_STYLE/RESULT.json",
+      "detail": {
+        "request_index": 3
+      }
+    },
+    {
+      "check": "actual_request_replay_final_evaluation",
+      "pass": true,
+      "object_path": "/mnt/d/lunwen/EC-CSI投稿/working/exploration/20261014_matched_evidence_labor/matched_generation/method_runs/FSV-B17/P2P_STYLE/RESULT.json",
+      "detail": {
+        "request_index": 4
+      }
+    },
+    {
+      "check": "actual_request_replay_final_evaluation",
+      "pass": true,
+      "object_path": "/mnt/d/lunwen/EC-CSI投稿/working/exploration/20261014_matched_evidence_labor/matched_generation/method_runs/FSV-B17/P2P_STYLE/RESULT.json",
+      "detail": {
+        "request_index": 5
+      }
+    },
+    {
+      "check": "pair_symbol_computed_not_handfilled_final_evaluation",
+      "pass": true,
+      "object_path": "/mnt/d/lunwen/EC-CSI投稿/working/exploration/20261014_matched_evidence_labor/matched_generation/method_runs/FSV-B17/P2P_STYLE/RESULT.json",
+      "detail": null
+    },
+    {
+      "check": "state_equals_case_primary_result",
+      "pass": true,
+      "object_path": "/mnt/d/lunwen/EC-CSI投稿/working/exploration/20261014_matched_evidence_labor/matched_generation/method_runs/FSV-B17/AUTOPAC_STYLE/RESULT.json",
+      "detail": null
+    },
+    {
+      "check": "case_terminal_bound_by_all_freeze",
+      "pass": true,
+      "object_path": "/mnt/d/lunwen/EC-CSI投稿/working/exploration/20261014_matched_evidence_labor/matched_generation/method_runs/FSV-B17/AUTOPAC_STYLE/GENERATION_TERMINAL_FREEZE.json",
+      "detail": null
+    },
+    {
+      "check": "first_candidate_frozen_hash",
+      "pass": true,
+      "object_path": "/mnt/d/lunwen/EC-CSI投稿/working/exploration/20261014_matched_evidence_labor/matched_generation/method_runs/FSV-B17/AUTOPAC_STYLE/FIRST_CANDIDATE_FREEZE.json",
+      "detail": null
+    },
+    {
+      "check": "method_case_calls_and_repair_cap",
+      "pass": true,
+      "object_path": "/mnt/d/lunwen/EC-CSI投稿/working/exploration/20261014_matched_evidence_labor/matched_generation/method_runs/FSV-B17/AUTOPAC_STYLE/RESULT.json",
+      "detail": null
+    },
+    {
+      "check": "rego_original_equals_model_output",
+      "pass": true,
+      "object_path": "/mnt/d/lunwen/EC-CSI投稿/working/exploration/20261014_matched_evidence_labor/matched_generation/method_runs/FSV-B17/AUTOPAC_STYLE/initial/original.rego",
+      "detail": null
+    },
+    {
+      "check": "rego_original_formatted_checksums",
+      "pass": true,
+      "object_path": "/mnt/d/lunwen/EC-CSI投稿/working/exploration/20261014_matched_evidence_labor/matched_generation/method_runs/FSV-B17/AUTOPAC_STYLE/initial/FORMAT_RECEIPT.json",
+      "detail": null
+    },
+    {
+      "check": "independent_opa_ast_semantics_equal",
+      "pass": true,
+      "object_path": "/mnt/d/lunwen/EC-CSI投稿/working/exploration/20261014_matched_evidence_labor/matched_generation/method_runs/FSV-B17/AUTOPAC_STYLE/initial/FORMAT_RECEIPT.json",
+      "detail": null
+    },
+    {
+      "check": "eligible_developer_gate_pass",
+      "pass": true,
+      "object_path": "/mnt/d/lunwen/EC-CSI投稿/working/exploration/20261014_matched_evidence_labor/matched_generation/method_runs/FSV-B17/AUTOPAC_STYLE/RESULT.json",
+      "detail": null
+    },
+    {
+      "check": "final_policy_frozen_hash",
+      "pass": true,
+      "object_path": "/mnt/d/lunwen/EC-CSI投稿/working/exploration/20261014_matched_evidence_labor/matched_generation/method_runs/FSV-B17/AUTOPAC_STYLE/FINAL_POLICY_FREEZE.json",
+      "detail": null
+    },
+    {
+      "check": "pair_source_identity_first_diagnostic",
+      "pass": true,
+      "object_path": "/mnt/d/lunwen/EC-CSI投稿/working/exploration/20261014_matched_evidence_labor/matched_generation/method_runs/FSV-B17/AUTOPAC_STYLE/RESULT.json",
+      "detail": null
+    },
+    {
+      "check": "branch_source_identity_first_diagnostic",
+      "pass": true,
+      "object_path": "/mnt/d/lunwen/EC-CSI投稿/working/exploration/20261014_matched_evidence_labor/matched_generation/method_runs/FSV-B17/AUTOPAC_STYLE/RESULT.json",
+      "detail": null
+    },
+    {
+      "check": "actual_request_replay_first_diagnostic",
+      "pass": true,
+      "object_path": "/mnt/d/lunwen/EC-CSI投稿/working/exploration/20261014_matched_evidence_labor/matched_generation/method_runs/FSV-B17/AUTOPAC_STYLE/RESULT.json",
+      "detail": {
+        "request_index": 0
+      }
+    },
+    {
+      "check": "actual_request_replay_first_diagnostic",
+      "pass": true,
+      "object_path": "/mnt/d/lunwen/EC-CSI投稿/working/exploration/20261014_matched_evidence_labor/matched_generation/method_runs/FSV-B17/AUTOPAC_STYLE/RESULT.json",
+      "detail": {
+        "request_index": 1
+      }
+    },
+    {
+      "check": "actual_request_replay_first_diagnostic",
+      "pass": true,
+      "object_path": "/mnt/d/lunwen/EC-CSI投稿/working/exploration/20261014_matched_evidence_labor/matched_generation/method_runs/FSV-B17/AUTOPAC_STYLE/RESULT.json",
+      "detail": {
+        "request_index": 2
+      }
+    },
+    {
+      "check": "actual_request_replay_first_diagnostic",
+      "pass": true,
+      "object_path": "/mnt/d/lunwen/EC-CSI投稿/working/exploration/20261014_matched_evidence_labor/matched_generation/method_runs/FSV-B17/AUTOPAC_STYLE/RESULT.json",
+      "detail": {
+        "request_index": 3
+      }
+    },
+    {
+      "check": "actual_request_replay_first_diagnostic",
+      "pass": true,
+      "object_path": "/mnt/d/lunwen/EC-CSI投稿/working/exploration/20261014_matched_evidence_labor/matched_generation/method_runs/FSV-B17/AUTOPAC_STYLE/RESULT.json",
+      "detail": {
+        "request_index": 4
+      }
+    },
+    {
+      "check": "actual_request_replay_first_diagnostic",
+      "pass": true,
+      "object_path": "/mnt/d/lunwen/EC-CSI投稿/working/exploration/20261014_matched_evidence_labor/matched_generation/method_runs/FSV-B17/AUTOPAC_STYLE/RESULT.json",
+      "detail": {
+        "request_index": 5
+      }
+    },
+    {
+      "check": "pair_symbol_computed_not_handfilled_first_diagnostic",
+      "pass": true,
+      "object_path": "/mnt/d/lunwen/EC-CSI投稿/working/exploration/20261014_matched_evidence_labor/matched_generation/method_runs/FSV-B17/AUTOPAC_STYLE/RESULT.json",
+      "detail": null
+    },
+    {
+      "check": "pair_source_identity_final_evaluation",
+      "pass": true,
+      "object_path": "/mnt/d/lunwen/EC-CSI投稿/working/exploration/20261014_matched_evidence_labor/matched_generation/method_runs/FSV-B17/AUTOPAC_STYLE/RESULT.json",
+      "detail": null
+    },
+    {
+      "check": "branch_source_identity_final_evaluation",
+      "pass": true,
+      "object_path": "/mnt/d/lunwen/EC-CSI投稿/working/exploration/20261014_matched_evidence_labor/matched_generation/method_runs/FSV-B17/AUTOPAC_STYLE/RESULT.json",
+      "detail": null
+    },
+    {
+      "check": "actual_request_replay_final_evaluation",
+      "pass": true,
+      "object_path": "/mnt/d/lunwen/EC-CSI投稿/working/exploration/20261014_matched_evidence_labor/matched_generation/method_runs/FSV-B17/AUTOPAC_STYLE/RESULT.json",
+      "detail": {
+        "request_index": 0
+      }
+    },
+    {
+      "check": "actual_request_replay_final_evaluation",
+      "pass": true,
+      "object_path": "/mnt/d/lunwen/EC-CSI投稿/working/exploration/20261014_matched_evidence_labor/matched_generation/method_runs/FSV-B17/AUTOPAC_STYLE/RESULT.json",
+      "detail": {
+        "request_index": 1
+      }
+    },
+    {
+      "check": "actual_request_replay_final_evaluation",
+      "pass": true,
+      "object_path": "/mnt/d/lunwen/EC-CSI投稿/working/exploration/20261014_matched_evidence_labor/matched_generation/method_runs/FSV-B17/AUTOPAC_STYLE/RESULT.json",
+      "detail": {
+        "request_index": 2
+      }
+    },
+    {
+      "check": "actual_request_replay_final_evaluation",
+      "pass": true,
+      "object_path": "/mnt/d/lunwen/EC-CSI投稿/working/exploration/20261014_matched_evidence_labor/matched_generation/method_runs/FSV-B17/AUTOPAC_STYLE/RESULT.json",
+      "detail": {
+        "request_index": 3
+      }
+    },
+    {
+      "check": "actual_request_replay_final_evaluation",
+      "pass": true,
+      "object_path": "/mnt/d/lunwen/EC-CSI投稿/working/exploration/20261014_matched_evidence_labor/matched_generation/method_runs/FSV-B17/AUTOPAC_STYLE/RESULT.json",
+      "detail": {
+        "request_index": 4
+      }
+    },
+    {
+      "check": "actual_request_replay_final_evaluation",
+      "pass": true,
+      "object_path": "/mnt/d/lunwen/EC-CSI投稿/working/exploration/20261014_matched_evidence_labor/matched_generation/method_runs/FSV-B17/AUTOPAC_STYLE/RESULT.json",
+      "detail": {
+        "request_index": 5
+      }
+    },
+    {
+      "check": "pair_symbol_computed_not_handfilled_final_evaluation",
+      "pass": true,
+      "object_path": "/mnt/d/lunwen/EC-CSI投稿/working/exploration/20261014_matched_evidence_labor/matched_generation/method_runs/FSV-B17/AUTOPAC_STYLE/RESULT.json",
+      "detail": null
+    },
+    {
+      "check": "state_equals_case_primary_result",
+      "pass": true,
+      "object_path": "/mnt/d/lunwen/EC-CSI投稿/working/exploration/20261014_matched_evidence_labor/matched_generation/method_runs/FSV-B17/ECAS_MATCHED/RESULT.json",
+      "detail": null
+    },
+    {
+      "check": "case_terminal_bound_by_all_freeze",
+      "pass": true,
+      "object_path": "/mnt/d/lunwen/EC-CSI投稿/working/exploration/20261014_matched_evidence_labor/matched_generation/method_runs/FSV-B17/ECAS_MATCHED/GENERATION_TERMINAL_FREEZE.json",
+      "detail": null
+    },
+    {
+      "check": "first_candidate_frozen_hash",
+      "pass": true,
+      "object_path": "/mnt/d/lunwen/EC-CSI投稿/working/exploration/20261014_matched_evidence_labor/matched_generation/method_runs/FSV-B17/ECAS_MATCHED/FIRST_CANDIDATE_FREEZE.json",
+      "detail": null
+    },
+    {
+      "check": "method_case_calls_and_repair_cap",
+      "pass": true,
+      "object_path": "/mnt/d/lunwen/EC-CSI投稿/working/exploration/20261014_matched_evidence_labor/matched_generation/method_runs/FSV-B17/ECAS_MATCHED/RESULT.json",
+      "detail": null
+    },
+    {
+      "check": "ecas_candidate_raw_stage_and_target",
+      "pass": true,
+      "object_path": "/mnt/d/lunwen/EC-CSI投稿/working/exploration/20261014_matched_evidence_labor/matched_generation/method_runs/FSV-B17/ECAS_MATCHED/initial/candidate.json",
+      "detail": null
+    },
+    {
+      "check": "ecas_compiled_proposal_reproduced",
+      "pass": true,
+      "object_path": "/mnt/d/lunwen/EC-CSI投稿/working/exploration/20261014_matched_evidence_labor/matched_generation/method_runs/FSV-B17/ECAS_MATCHED/initial/compiled_proposal.json",
+      "detail": null
+    },
+    {
+      "check": "ecas_admitted_policy_reproduced",
+      "pass": true,
+      "object_path": "/mnt/d/lunwen/EC-CSI投稿/working/exploration/20261014_matched_evidence_labor/matched_generation/method_runs/FSV-B17/ECAS_MATCHED/initial/admitted_policy.json",
+      "detail": null
+    },
+    {
+      "check": "eligible_developer_gate_pass",
+      "pass": true,
+      "object_path": "/mnt/d/lunwen/EC-CSI投稿/working/exploration/20261014_matched_evidence_labor/matched_generation/method_runs/FSV-B17/ECAS_MATCHED/RESULT.json",
+      "detail": null
+    },
+    {
+      "check": "final_policy_frozen_hash",
+      "pass": true,
+      "object_path": "/mnt/d/lunwen/EC-CSI投稿/working/exploration/20261014_matched_evidence_labor/matched_generation/method_runs/FSV-B17/ECAS_MATCHED/FINAL_POLICY_FREEZE.json",
+      "detail": null
+    },
+    {
+      "check": "pair_source_identity_first_diagnostic",
+      "pass": true,
+      "object_path": "/mnt/d/lunwen/EC-CSI投稿/working/exploration/20261014_matched_evidence_labor/matched_generation/method_runs/FSV-B17/ECAS_MATCHED/RESULT.json",
+      "detail": null
+    },
+    {
+      "check": "branch_source_identity_first_diagnostic",
+      "pass": true,
+      "object_path": "/mnt/d/lunwen/EC-CSI投稿/working/exploration/20261014_matched_evidence_labor/matched_generation/method_runs/FSV-B17/ECAS_MATCHED/RESULT.json",
+      "detail": null
+    },
+    {
+      "check": "actual_request_replay_first_diagnostic",
+      "pass": true,
+      "object_path": "/mnt/d/lunwen/EC-CSI投稿/working/exploration/20261014_matched_evidence_labor/matched_generation/method_runs/FSV-B17/ECAS_MATCHED/RESULT.json",
+      "detail": {
+        "request_index": 0
+      }
+    },
+    {
+      "check": "actual_request_replay_first_diagnostic",
+      "pass": true,
+      "object_path": "/mnt/d/lunwen/EC-CSI投稿/working/exploration/20261014_matched_evidence_labor/matched_generation/method_runs/FSV-B17/ECAS_MATCHED/RESULT.json",
+      "detail": {
+        "request_index": 1
+      }
+    },
+    {
+      "check": "actual_request_replay_first_diagnostic",
+      "pass": true,
+      "object_path": "/mnt/d/lunwen/EC-CSI投稿/working/exploration/20261014_matched_evidence_labor/matched_generation/method_runs/FSV-B17/ECAS_MATCHED/RESULT.json",
+      "detail": {
+        "request_index": 2
+      }
+    },
+    {
+      "check": "actual_request_replay_first_diagnostic",
+      "pass": true,
+      "object_path": "/mnt/d/lunwen/EC-CSI投稿/working/exploration/20261014_matched_evidence_labor/matched_generation/method_runs/FSV-B17/ECAS_MATCHED/RESULT.json",
+      "detail": {
+        "request_index": 3
+      }
+    },
+    {
+      "check": "actual_request_replay_first_diagnostic",
+      "pass": true,
+      "object_path": "/mnt/d/lunwen/EC-CSI投稿/working/exploration/20261014_matched_evidence_labor/matched_generation/method_runs/FSV-B17/ECAS_MATCHED/RESULT.json",
+      "detail": {
+        "request_index": 4
+      }
+    },
+    {
+      "check": "actual_request_replay_first_diagnostic",
+      "pass": true,
+      "object_path": "/mnt/d/lunwen/EC-CSI投稿/working/exploration/20261014_matched_evidence_labor/matched_generation/method_runs/FSV-B17/ECAS_MATCHED/RESULT.json",
+      "detail": {
+        "request_index": 5
+      }
+    },
+    {
+      "check": "pair_symbol_computed_not_handfilled_first_diagnostic",
+      "pass": true,
+      "object_path": "/mnt/d/lunwen/EC-CSI投稿/working/exploration/20261014_matched_evidence_labor/matched_generation/method_runs/FSV-B17/ECAS_MATCHED/RESULT.json",
+      "detail": null
+    },
+    {
+      "check": "pair_source_identity_final_evaluation",
+      "pass": true,
+      "object_path": "/mnt/d/lunwen/EC-CSI投稿/working/exploration/20261014_matched_evidence_labor/matched_generation/method_runs/FSV-B17/ECAS_MATCHED/RESULT.json",
+      "detail": null
+    },
+    {
+      "check": "branch_source_identity_final_evaluation",
+      "pass": true,
+      "object_path": "/mnt/d/lunwen/EC-CSI投稿/working/exploration/20261014_matched_evidence_labor/matched_generation/method_runs/FSV-B17/ECAS_MATCHED/RESULT.json",
+      "detail": null
+    },
+    {
+      "check": "actual_request_replay_final_evaluation",
+      "pass": true,
+      "object_path": "/mnt/d/lunwen/EC-CSI投稿/working/exploration/20261014_matched_evidence_labor/matched_generation/method_runs/FSV-B17/ECAS_MATCHED/RESULT.json",
+      "detail": {
+        "request_index": 0
+      }
+    },
+    {
+      "check": "actual_request_replay_final_evaluation",
+      "pass": true,
+      "object_path": "/mnt/d/lunwen/EC-CSI投稿/working/exploration/20261014_matched_evidence_labor/matched_generation/method_runs/FSV-B17/ECAS_MATCHED/RESULT.json",
+      "detail": {
+        "request_index": 1
+      }
+    },
+    {
+      "check": "actual_request_replay_final_evaluation",
+      "pass": true,
+      "object_path": "/mnt/d/lunwen/EC-CSI投稿/working/exploration/20261014_matched_evidence_labor/matched_generation/method_runs/FSV-B17/ECAS_MATCHED/RESULT.json",
+      "detail": {
+        "request_index": 2
+      }
+    },
+    {
+      "check": "actual_request_replay_final_evaluation",
+      "pass": true,
+      "object_path": "/mnt/d/lunwen/EC-CSI投稿/working/exploration/20261014_matched_evidence_labor/matched_generation/method_runs/FSV-B17/ECAS_MATCHED/RESULT.json",
+      "detail": {
+        "request_index": 3
+      }
+    },
+    {
+      "check": "actual_request_replay_final_evaluation",
+      "pass": true,
+      "object_path": "/mnt/d/lunwen/EC-CSI投稿/working/exploration/20261014_matched_evidence_labor/matched_generation/method_runs/FSV-B17/ECAS_MATCHED/RESULT.json",
+      "detail": {
+        "request_index": 4
+      }
+    },
+    {
+      "check": "actual_request_replay_final_evaluation",
+      "pass": true,
+      "object_path": "/mnt/d/lunwen/EC-CSI投稿/working/exploration/20261014_matched_evidence_labor/matched_generation/method_runs/FSV-B17/ECAS_MATCHED/RESULT.json",
+      "detail": {
+        "request_index": 5
+      }
+    },
+    {
+      "check": "pair_symbol_computed_not_handfilled_final_evaluation",
+      "pass": true,
+      "object_path": "/mnt/d/lunwen/EC-CSI投稿/working/exploration/20261014_matched_evidence_labor/matched_generation/method_runs/FSV-B17/ECAS_MATCHED/RESULT.json",
+      "detail": null
+    },
+    {
+      "check": "state_equals_case_primary_result",
+      "pass": true,
+      "object_path": "/mnt/d/lunwen/EC-CSI投稿/working/exploration/20261014_matched_evidence_labor/matched_generation/method_runs/FSV-B19/P2P_STYLE/RESULT.json",
+      "detail": null
+    },
+    {
+      "check": "case_terminal_bound_by_all_freeze",
+      "pass": true,
+      "object_path": "/mnt/d/lunwen/EC-CSI投稿/working/exploration/20261014_matched_evidence_labor/matched_generation/method_runs/FSV-B19/P2P_STYLE/GENERATION_TERMINAL_FREEZE.json",
+      "detail": null
+    },
+    {
+      "check": "first_candidate_frozen_hash",
+      "pass": true,
+      "object_path": "/mnt/d/lunwen/EC-CSI投稿/working/exploration/20261014_matched_evidence_labor/matched_generation/method_runs/FSV-B19/P2P_STYLE/FIRST_CANDIDATE_FREEZE.json",
+      "detail": null
+    },
+    {
+      "check": "method_case_calls_and_repair_cap",
+      "pass": true,
+      "object_path": "/mnt/d/lunwen/EC-CSI投稿/working/exploration/20261014_matched_evidence_labor/matched_generation/method_runs/FSV-B19/P2P_STYLE/RESULT.json",
+      "detail": null
+    },
+    {
+      "check": "rego_original_equals_model_output",
+      "pass": true,
+      "object_path": "/mnt/d/lunwen/EC-CSI投稿/working/exploration/20261014_matched_evidence_labor/matched_generation/method_runs/FSV-B19/P2P_STYLE/initial/original.rego",
+      "detail": null
+    },
+    {
+      "check": "rego_original_formatted_checksums",
+      "pass": true,
+      "object_path": "/mnt/d/lunwen/EC-CSI投稿/working/exploration/20261014_matched_evidence_labor/matched_generation/method_runs/FSV-B19/P2P_STYLE/initial/FORMAT_RECEIPT.json",
+      "detail": null
+    },
+    {
+      "check": "independent_opa_ast_semantics_equal",
+      "pass": true,
+      "object_path": "/mnt/d/lunwen/EC-CSI投稿/working/exploration/20261014_matched_evidence_labor/matched_generation/method_runs/FSV-B19/P2P_STYLE/initial/FORMAT_RECEIPT.json",
+      "detail": null
+    },
+    {
+      "check": "p2p_full_lint_record_retained",
+      "pass": true,
+      "object_path": "/mnt/d/lunwen/EC-CSI投稿/working/exploration/20261014_matched_evidence_labor/matched_generation/method_runs/FSV-B19/P2P_STYLE/initial/CHECKS.json",
+      "detail": null
+    },
+    {
+      "check": "p2p_grounding_conditions_unchanged",
+      "pass": true,
+      "object_path": "/mnt/d/lunwen/EC-CSI投稿/working/exploration/20261014_matched_evidence_labor/matched_generation/method_runs/FSV-B19/P2P_STYLE/GROUNDING_RECEIPT.json",
+      "detail": {
+        "component": 0
+      }
+    },
+    {
+      "check": "p2p_grounding_status_matches_result",
+      "pass": true,
+      "object_path": "/mnt/d/lunwen/EC-CSI投稿/working/exploration/20261014_matched_evidence_labor/matched_generation/method_runs/FSV-B19/P2P_STYLE/GROUNDING_RECEIPT.json",
+      "detail": null
+    },
+    {
+      "check": "eligible_developer_gate_pass",
+      "pass": true,
+      "object_path": "/mnt/d/lunwen/EC-CSI投稿/working/exploration/20261014_matched_evidence_labor/matched_generation/method_runs/FSV-B19/P2P_STYLE/RESULT.json",
+      "detail": null
+    },
+    {
+      "check": "final_policy_frozen_hash",
+      "pass": true,
+      "object_path": "/mnt/d/lunwen/EC-CSI投稿/working/exploration/20261014_matched_evidence_labor/matched_generation/method_runs/FSV-B19/P2P_STYLE/FINAL_POLICY_FREEZE.json",
+      "detail": null
+    },
+    {
+      "check": "pair_source_identity_first_diagnostic",
+      "pass": true,
+      "object_path": "/mnt/d/lunwen/EC-CSI投稿/working/exploration/20261014_matched_evidence_labor/matched_generation/method_runs/FSV-B19/P2P_STYLE/RESULT.json",
+      "detail": null
+    },
+    {
+      "check": "branch_source_identity_first_diagnostic",
+      "pass": true,
+      "object_path": "/mnt/d/lunwen/EC-CSI投稿/working/exploration/20261014_matched_evidence_labor/matched_generation/method_runs/FSV-B19/P2P_STYLE/RESULT.json",
+      "detail": null
+    },
+    {
+      "check": "actual_request_replay_first_diagnostic",
+      "pass": true,
+      "object_path": "/mnt/d/lunwen/EC-CSI投稿/working/exploration/20261014_matched_evidence_labor/matched_generation/method_runs/FSV-B19/P2P_STYLE/RESULT.json",
+      "detail": {
+        "request_index": 0
+      }
+    },
+    {
+      "check": "actual_request_replay_first_diagnostic",
+      "pass": true,
+      "object_path": "/mnt/d/lunwen/EC-CSI投稿/working/exploration/20261014_matched_evidence_labor/matched_generation/method_runs/FSV-B19/P2P_STYLE/RESULT.json",
+      "detail": {
+        "request_index": 1
+      }
+    },
+    {
+      "check": "actual_request_replay_first_diagnostic",
+      "pass": true,
+      "object_path": "/mnt/d/lunwen/EC-CSI投稿/working/exploration/20261014_matched_evidence_labor/matched_generation/method_runs/FSV-B19/P2P_STYLE/RESULT.json",
+      "detail": {
+        "request_index": 2
+      }
+    },
+    {
+      "check": "actual_request_replay_first_diagnostic",
+      "pass": true,
+      "object_path": "/mnt/d/lunwen/EC-CSI投稿/working/exploration/20261014_matched_evidence_labor/matched_generation/method_runs/FSV-B19/P2P_STYLE/RESULT.json",
+      "detail": {
+        "request_index": 3
+      }
+    },
+    {
+      "check": "actual_request_replay_first_diagnostic",
+      "pass": true,
+      "object_path": "/mnt/d/lunwen/EC-CSI投稿/working/exploration/20261014_matched_evidence_labor/matched_generation/method_runs/FSV-B19/P2P_STYLE/RESULT.json",
+      "detail": {
+        "request_index": 4
+      }
+    },
+    {
+      "check": "actual_request_replay_first_diagnostic",
+      "pass": true,
+      "object_path": "/mnt/d/lunwen/EC-CSI投稿/working/exploration/20261014_matched_evidence_labor/matched_generation/method_runs/FSV-B19/P2P_STYLE/RESULT.json",
+      "detail": {
+        "request_index": 5
+      }
+    },
+    {
+      "check": "actual_request_replay_first_diagnostic",
+      "pass": true,
+      "object_path": "/mnt/d/lunwen/EC-CSI投稿/working/exploration/20261014_matched_evidence_labor/matched_generation/method_runs/FSV-B19/P2P_STYLE/RESULT.json",
+      "detail": {
+        "request_index": 6
+      }
+    },
+    {
+      "check": "actual_request_replay_first_diagnostic",
+      "pass": true,
+      "object_path": "/mnt/d/lunwen/EC-CSI投稿/working/exploration/20261014_matched_evidence_labor/matched_generation/method_runs/FSV-B19/P2P_STYLE/RESULT.json",
+      "detail": {
+        "request_index": 7
+      }
+    },
+    {
+      "check": "actual_request_replay_first_diagnostic",
+      "pass": true,
+      "object_path": "/mnt/d/lunwen/EC-CSI投稿/working/exploration/20261014_matched_evidence_labor/matched_generation/method_runs/FSV-B19/P2P_STYLE/RESULT.json",
+      "detail": {
+        "request_index": 8
+      }
+    },
+    {
+      "check": "actual_request_replay_first_diagnostic",
+      "pass": true,
+      "object_path": "/mnt/d/lunwen/EC-CSI投稿/working/exploration/20261014_matched_evidence_labor/matched_generation/method_runs/FSV-B19/P2P_STYLE/RESULT.json",
+      "detail": {
+        "request_index": 9
+      }
+    },
+    {
+      "check": "pair_symbol_computed_not_handfilled_first_diagnostic",
+      "pass": true,
+      "object_path": "/mnt/d/lunwen/EC-CSI投稿/working/exploration/20261014_matched_evidence_labor/matched_generation/method_runs/FSV-B19/P2P_STYLE/RESULT.json",
+      "detail": null
+    },
+    {
+      "check": "pair_source_identity_final_evaluation",
+      "pass": true,
+      "object_path": "/mnt/d/lunwen/EC-CSI投稿/working/exploration/20261014_matched_evidence_labor/matched_generation/method_runs/FSV-B19/P2P_STYLE/RESULT.json",
+      "detail": null
+    },
+    {
+      "check": "branch_source_identity_final_evaluation",
+      "pass": true,
+      "object_path": "/mnt/d/lunwen/EC-CSI投稿/working/exploration/20261014_matched_evidence_labor/matched_generation/method_runs/FSV-B19/P2P_STYLE/RESULT.json",
+      "detail": null
+    },
+    {
+      "check": "actual_request_replay_final_evaluation",
+      "pass": true,
+      "object_path": "/mnt/d/lunwen/EC-CSI投稿/working/exploration/20261014_matched_evidence_labor/matched_generation/method_runs/FSV-B19/P2P_STYLE/RESULT.json",
+      "detail": {
+        "request_index": 0
+      }
+    },
+    {
+      "check": "actual_request_replay_final_evaluation",
+      "pass": true,
+      "object_path": "/mnt/d/lunwen/EC-CSI投稿/working/exploration/20261014_matched_evidence_labor/matched_generation/method_runs/FSV-B19/P2P_STYLE/RESULT.json",
+      "detail": {
+        "request_index": 1
+      }
+    },
+    {
+      "check": "actual_request_replay_final_evaluation",
+      "pass": true,
+      "object_path": "/mnt/d/lunwen/EC-CSI投稿/working/exploration/20261014_matched_evidence_labor/matched_generation/method_runs/FSV-B19/P2P_STYLE/RESULT.json",
+      "detail": {
+        "request_index": 2
+      }
+    },
+    {
+      "check": "actual_request_replay_final_evaluation",
+      "pass": true,
+      "object_path": "/mnt/d/lunwen/EC-CSI投稿/working/exploration/20261014_matched_evidence_labor/matched_generation/method_runs/FSV-B19/P2P_STYLE/RESULT.json",
+      "detail": {
+        "request_index": 3
+      }
+    },
+    {
+      "check": "actual_request_replay_final_evaluation",
+      "pass": true,
+      "object_path": "/mnt/d/lunwen/EC-CSI投稿/working/exploration/20261014_matched_evidence_labor/matched_generation/method_runs/FSV-B19/P2P_STYLE/RESULT.json",
+      "detail": {
+        "request_index": 4
+      }
+    },
+    {
+      "check": "actual_request_replay_final_evaluation",
+      "pass": true,
+      "object_path": "/mnt/d/lunwen/EC-CSI投稿/working/exploration/20261014_matched_evidence_labor/matched_generation/method_runs/FSV-B19/P2P_STYLE/RESULT.json",
+      "detail": {
+        "request_index": 5
+      }
+    },
+    {
+      "check": "actual_request_replay_final_evaluation",
+      "pass": true,
+      "object_path": "/mnt/d/lunwen/EC-CSI投稿/working/exploration/20261014_matched_evidence_labor/matched_generation/method_runs/FSV-B19/P2P_STYLE/RESULT.json",
+      "detail": {
+        "request_index": 6
+      }
+    },
+    {
+      "check": "actual_request_replay_final_evaluation",
+      "pass": true,
+      "object_path": "/mnt/d/lunwen/EC-CSI投稿/working/exploration/20261014_matched_evidence_labor/matched_generation/method_runs/FSV-B19/P2P_STYLE/RESULT.json",
+      "detail": {
+        "request_index": 7
+      }
+    },
+    {
+      "check": "actual_request_replay_final_evaluation",
+      "pass": true,
+      "object_path": "/mnt/d/lunwen/EC-CSI投稿/working/exploration/20261014_matched_evidence_labor/matched_generation/method_runs/FSV-B19/P2P_STYLE/RESULT.json",
+      "detail": {
+        "request_index": 8
+      }
+    },
+    {
+      "check": "actual_request_replay_final_evaluation",
+      "pass": true,
+      "object_path": "/mnt/d/lunwen/EC-CSI投稿/working/exploration/20261014_matched_evidence_labor/matched_generation/method_runs/FSV-B19/P2P_STYLE/RESULT.json",
+      "detail": {
+        "request_index": 9
+      }
+    },
+    {
+      "check": "pair_symbol_computed_not_handfilled_final_evaluation",
+      "pass": true,
+      "object_path": "/mnt/d/lunwen/EC-CSI投稿/working/exploration/20261014_matched_evidence_labor/matched_generation/method_runs/FSV-B19/P2P_STYLE/RESULT.json",
+      "detail": null
+    },
+    {
+      "check": "state_equals_case_primary_result",
+      "pass": true,
+      "object_path": "/mnt/d/lunwen/EC-CSI投稿/working/exploration/20261014_matched_evidence_labor/matched_generation/method_runs/FSV-B19/AUTOPAC_STYLE/RESULT.json",
+      "detail": null
+    },
+    {
+      "check": "case_terminal_bound_by_all_freeze",
+      "pass": true,
+      "object_path": "/mnt/d/lunwen/EC-CSI投稿/working/exploration/20261014_matched_evidence_labor/matched_generation/method_runs/FSV-B19/AUTOPAC_STYLE/GENERATION_TERMINAL_FREEZE.json",
+      "detail": null
+    },
+    {
+      "check": "first_candidate_frozen_hash",
+      "pass": true,
+      "object_path": "/mnt/d/lunwen/EC-CSI投稿/working/exploration/20261014_matched_evidence_labor/matched_generation/method_runs/FSV-B19/AUTOPAC_STYLE/FIRST_CANDIDATE_FREEZE.json",
+      "detail": null
+    },
+    {
+      "check": "method_case_calls_and_repair_cap",
+      "pass": true,
+      "object_path": "/mnt/d/lunwen/EC-CSI投稿/working/exploration/20261014_matched_evidence_labor/matched_generation/method_runs/FSV-B19/AUTOPAC_STYLE/RESULT.json",
+      "detail": null
+    },
+    {
+      "check": "rego_original_equals_model_output",
+      "pass": true,
+      "object_path": "/mnt/d/lunwen/EC-CSI投稿/working/exploration/20261014_matched_evidence_labor/matched_generation/method_runs/FSV-B19/AUTOPAC_STYLE/initial/original.rego",
+      "detail": null
+    },
+    {
+      "check": "rego_original_formatted_checksums",
+      "pass": true,
+      "object_path": "/mnt/d/lunwen/EC-CSI投稿/working/exploration/20261014_matched_evidence_labor/matched_generation/method_runs/FSV-B19/AUTOPAC_STYLE/initial/FORMAT_RECEIPT.json",
+      "detail": null
+    },
+    {
+      "check": "independent_opa_ast_semantics_equal",
+      "pass": true,
+      "object_path": "/mnt/d/lunwen/EC-CSI投稿/working/exploration/20261014_matched_evidence_labor/matched_generation/method_runs/FSV-B19/AUTOPAC_STYLE/initial/FORMAT_RECEIPT.json",
+      "detail": null
+    },
+    {
+      "check": "eligible_developer_gate_pass",
+      "pass": true,
+      "object_path": "/mnt/d/lunwen/EC-CSI投稿/working/exploration/20261014_matched_evidence_labor/matched_generation/method_runs/FSV-B19/AUTOPAC_STYLE/RESULT.json",
+      "detail": null
+    },
+    {
+      "check": "final_policy_frozen_hash",
+      "pass": true,
+      "object_path": "/mnt/d/lunwen/EC-CSI投稿/working/exploration/20261014_matched_evidence_labor/matched_generation/method_runs/FSV-B19/AUTOPAC_STYLE/FINAL_POLICY_FREEZE.json",
+      "detail": null
+    },
+    {
+      "check": "pair_source_identity_first_diagnostic",
+      "pass": true,
+      "object_path": "/mnt/d/lunwen/EC-CSI投稿/working/exploration/20261014_matched_evidence_labor/matched_generation/method_runs/FSV-B19/AUTOPAC_STYLE/RESULT.json",
+      "detail": null
+    },
+    {
+      "check": "branch_source_identity_first_diagnostic",
+      "pass": true,
+      "object_path": "/mnt/d/lunwen/EC-CSI投稿/working/exploration/20261014_matched_evidence_labor/matched_generation/method_runs/FSV-B19/AUTOPAC_STYLE/RESULT.json",
+      "detail": null
+    },
+    {
+      "check": "actual_request_replay_first_diagnostic",
+      "pass": true,
+      "object_path": "/mnt/d/lunwen/EC-CSI投稿/working/exploration/20261014_matched_evidence_labor/matched_generation/method_runs/FSV-B19/AUTOPAC_STYLE/RESULT.json",
+      "detail": {
+        "request_index": 0
+      }
+    },
+    {
+      "check": "actual_request_replay_first_diagnostic",
+      "pass": true,
+      "object_path": "/mnt/d/lunwen/EC-CSI投稿/working/exploration/20261014_matched_evidence_labor/matched_generation/method_runs/FSV-B19/AUTOPAC_STYLE/RESULT.json",
+      "detail": {
+        "request_index": 1
+      }
+    },
+    {
+      "check": "actual_request_replay_first_diagnostic",
+      "pass": true,
+      "object_path": "/mnt/d/lunwen/EC-CSI投稿/working/exploration/20261014_matched_evidence_labor/matched_generation/method_runs/FSV-B19/AUTOPAC_STYLE/RESULT.json",
+      "detail": {
+        "request_index": 2
+      }
+    },
+    {
+      "check": "actual_request_replay_first_diagnostic",
+      "pass": true,
+      "object_path": "/mnt/d/lunwen/EC-CSI投稿/working/exploration/20261014_matched_evidence_labor/matched_generation/method_runs/FSV-B19/AUTOPAC_STYLE/RESULT.json",
+      "detail": {
+        "request_index": 3
+      }
+    },
+    {
+      "check": "actual_request_replay_first_diagnostic",
+      "pass": true,
+      "object_path": "/mnt/d/lunwen/EC-CSI投稿/working/exploration/20261014_matched_evidence_labor/matched_generation/method_runs/FSV-B19/AUTOPAC_STYLE/RESULT.json",
+      "detail": {
+        "request_index": 4
+      }
+    },
+    {
+      "check": "actual_request_replay_first_diagnostic",
+      "pass": true,
+      "object_path": "/mnt/d/lunwen/EC-CSI投稿/working/exploration/20261014_matched_evidence_labor/matched_generation/method_runs/FSV-B19/AUTOPAC_STYLE/RESULT.json",
+      "detail": {
+        "request_index": 5
+      }
+    },
+    {
+      "check": "actual_request_replay_first_diagnostic",
+      "pass": true,
+      "object_path": "/mnt/d/lunwen/EC-CSI投稿/working/exploration/20261014_matched_evidence_labor/matched_generation/method_runs/FSV-B19/AUTOPAC_STYLE/RESULT.json",
+      "detail": {
+        "request_index": 6
+      }
+    },
+    {
+      "check": "actual_request_replay_first_diagnostic",
+      "pass": true,
+      "object_path": "/mnt/d/lunwen/EC-CSI投稿/working/exploration/20261014_matched_evidence_labor/matched_generation/method_runs/FSV-B19/AUTOPAC_STYLE/RESULT.json",
+      "detail": {
+        "request_index": 7
+      }
+    },
+    {
+      "check": "actual_request_replay_first_diagnostic",
+      "pass": true,
+      "object_path": "/mnt/d/lunwen/EC-CSI投稿/working/exploration/20261014_matched_evidence_labor/matched_generation/method_runs/FSV-B19/AUTOPAC_STYLE/RESULT.json",
+      "detail": {
+        "request_index": 8
+      }
+    },
+    {
+      "check": "actual_request_replay_first_diagnostic",
+      "pass": true,
+      "object_path": "/mnt/d/lunwen/EC-CSI投稿/working/exploration/20261014_matched_evidence_labor/matched_generation/method_runs/FSV-B19/AUTOPAC_STYLE/RESULT.json",
+      "detail": {
+        "request_index": 9
+      }
+    },
+    {
+      "check": "pair_symbol_computed_not_handfilled_first_diagnostic",
+      "pass": true,
+      "object_path": "/mnt/d/lunwen/EC-CSI投稿/working/exploration/20261014_matched_evidence_labor/matched_generation/method_runs/FSV-B19/AUTOPAC_STYLE/RESULT.json",
+      "detail": null
+    },
+    {
+      "check": "pair_source_identity_final_evaluation",
+      "pass": true,
+      "object_path": "/mnt/d/lunwen/EC-CSI投稿/working/exploration/20261014_matched_evidence_labor/matched_generation/method_runs/FSV-B19/AUTOPAC_STYLE/RESULT.json",
+      "detail": null
+    },
+    {
+      "check": "branch_source_identity_final_evaluation",
+      "pass": true,
+      "object_path": "/mnt/d/lunwen/EC-CSI投稿/working/exploration/20261014_matched_evidence_labor/matched_generation/method_runs/FSV-B19/AUTOPAC_STYLE/RESULT.json",
+      "detail": null
+    },
+    {
+      "check": "actual_request_replay_final_evaluation",
+      "pass": true,
+      "object_path": "/mnt/d/lunwen/EC-CSI投稿/working/exploration/20261014_matched_evidence_labor/matched_generation/method_runs/FSV-B19/AUTOPAC_STYLE/RESULT.json",
+      "detail": {
+        "request_index": 0
+      }
+    },
+    {
+      "check": "actual_request_replay_final_evaluation",
+      "pass": true,
+      "object_path": "/mnt/d/lunwen/EC-CSI投稿/working/exploration/20261014_matched_evidence_labor/matched_generation/method_runs/FSV-B19/AUTOPAC_STYLE/RESULT.json",
+      "detail": {
+        "request_index": 1
+      }
+    },
+    {
+      "check": "actual_request_replay_final_evaluation",
+      "pass": true,
+      "object_path": "/mnt/d/lunwen/EC-CSI投稿/working/exploration/20261014_matched_evidence_labor/matched_generation/method_runs/FSV-B19/AUTOPAC_STYLE/RESULT.json",
+      "detail": {
+        "request_index": 2
+      }
+    },
+    {
+      "check": "actual_request_replay_final_evaluation",
+      "pass": true,
+      "object_path": "/mnt/d/lunwen/EC-CSI投稿/working/exploration/20261014_matched_evidence_labor/matched_generation/method_runs/FSV-B19/AUTOPAC_STYLE/RESULT.json",
+      "detail": {
+        "request_index": 3
+      }
+    },
+    {
+      "check": "actual_request_replay_final_evaluation",
+      "pass": true,
+      "object_path": "/mnt/d/lunwen/EC-CSI投稿/working/exploration/20261014_matched_evidence_labor/matched_generation/method_runs/FSV-B19/AUTOPAC_STYLE/RESULT.json",
+      "detail": {
+        "request_index": 4
+      }
+    },
+    {
+      "check": "actual_request_replay_final_evaluation",
+      "pass": true,
+      "object_path": "/mnt/d/lunwen/EC-CSI投稿/working/exploration/20261014_matched_evidence_labor/matched_generation/method_runs/FSV-B19/AUTOPAC_STYLE/RESULT.json",
+      "detail": {
+        "request_index": 5
+      }
+    },
+    {
+      "check": "actual_request_replay_final_evaluation",
+      "pass": true,
+      "object_path": "/mnt/d/lunwen/EC-CSI投稿/working/exploration/20261014_matched_evidence_labor/matched_generation/method_runs/FSV-B19/AUTOPAC_STYLE/RESULT.json",
+      "detail": {
+        "request_index": 6
+      }
+    },
+    {
+      "check": "actual_request_replay_final_evaluation",
+      "pass": true,
+      "object_path": "/mnt/d/lunwen/EC-CSI投稿/working/exploration/20261014_matched_evidence_labor/matched_generation/method_runs/FSV-B19/AUTOPAC_STYLE/RESULT.json",
+      "detail": {
+        "request_index": 7
+      }
+    },
+    {
+      "check": "actual_request_replay_final_evaluation",
+      "pass": true,
+      "object_path": "/mnt/d/lunwen/EC-CSI投稿/working/exploration/20261014_matched_evidence_labor/matched_generation/method_runs/FSV-B19/AUTOPAC_STYLE/RESULT.json",
+      "detail": {
+        "request_index": 8
+      }
+    },
+    {
+      "check": "actual_request_replay_final_evaluation",
+      "pass": true,
+      "object_path": "/mnt/d/lunwen/EC-CSI投稿/working/exploration/20261014_matched_evidence_labor/matched_generation/method_runs/FSV-B19/AUTOPAC_STYLE/RESULT.json",
+      "detail": {
+        "request_index": 9
+      }
+    },
+    {
+      "check": "pair_symbol_computed_not_handfilled_final_evaluation",
+      "pass": true,
+      "object_path": "/mnt/d/lunwen/EC-CSI投稿/working/exploration/20261014_matched_evidence_labor/matched_generation/method_runs/FSV-B19/AUTOPAC_STYLE/RESULT.json",
+      "detail": null
+    },
+    {
+      "check": "state_equals_case_primary_result",
+      "pass": true,
+      "object_path": "/mnt/d/lunwen/EC-CSI投稿/working/exploration/20261014_matched_evidence_labor/matched_generation/method_runs/FSV-B19/ECAS_MATCHED/RESULT.json",
+      "detail": null
+    },
+    {
+      "check": "case_terminal_bound_by_all_freeze",
+      "pass": true,
+      "object_path": "/mnt/d/lunwen/EC-CSI投稿/working/exploration/20261014_matched_evidence_labor/matched_generation/method_runs/FSV-B19/ECAS_MATCHED/GENERATION_TERMINAL_FREEZE.json",
+      "detail": null
+    },
+    {
+      "check": "first_candidate_frozen_hash",
+      "pass": true,
+      "object_path": "/mnt/d/lunwen/EC-CSI投稿/working/exploration/20261014_matched_evidence_labor/matched_generation/method_runs/FSV-B19/ECAS_MATCHED/FIRST_CANDIDATE_FREEZE.json",
+      "detail": null
+    },
+    {
+      "check": "method_case_calls_and_repair_cap",
+      "pass": true,
+      "object_path": "/mnt/d/lunwen/EC-CSI投稿/working/exploration/20261014_matched_evidence_labor/matched_generation/method_runs/FSV-B19/ECAS_MATCHED/RESULT.json",
+      "detail": null
+    },
+    {
+      "check": "ecas_candidate_raw_stage_and_target",
+      "pass": true,
+      "object_path": "/mnt/d/lunwen/EC-CSI投稿/working/exploration/20261014_matched_evidence_labor/matched_generation/method_runs/FSV-B19/ECAS_MATCHED/initial/candidate.json",
+      "detail": null
+    },
+    {
+      "check": "ecas_compiled_proposal_reproduced",
+      "pass": true,
+      "object_path": "/mnt/d/lunwen/EC-CSI投稿/working/exploration/20261014_matched_evidence_labor/matched_generation/method_runs/FSV-B19/ECAS_MATCHED/initial/compiled_proposal.json",
+      "detail": null
+    },
+    {
+      "check": "ecas_admitted_policy_reproduced",
+      "pass": true,
+      "object_path": "/mnt/d/lunwen/EC-CSI投稿/working/exploration/20261014_matched_evidence_labor/matched_generation/method_runs/FSV-B19/ECAS_MATCHED/initial/admitted_policy.json",
+      "detail": null
+    },
+    {
+      "check": "eligible_developer_gate_pass",
+      "pass": true,
+      "object_path": "/mnt/d/lunwen/EC-CSI投稿/working/exploration/20261014_matched_evidence_labor/matched_generation/method_runs/FSV-B19/ECAS_MATCHED/RESULT.json",
+      "detail": null
+    },
+    {
+      "check": "final_policy_frozen_hash",
+      "pass": true,
+      "object_path": "/mnt/d/lunwen/EC-CSI投稿/working/exploration/20261014_matched_evidence_labor/matched_generation/method_runs/FSV-B19/ECAS_MATCHED/FINAL_POLICY_FREEZE.json",
+      "detail": null
+    },
+    {
+      "check": "pair_source_identity_first_diagnostic",
+      "pass": true,
+      "object_path": "/mnt/d/lunwen/EC-CSI投稿/working/exploration/20261014_matched_evidence_labor/matched_generation/method_runs/FSV-B19/ECAS_MATCHED/RESULT.json",
+      "detail": null
+    },
+    {
+      "check": "branch_source_identity_first_diagnostic",
+      "pass": true,
+      "object_path": "/mnt/d/lunwen/EC-CSI投稿/working/exploration/20261014_matched_evidence_labor/matched_generation/method_runs/FSV-B19/ECAS_MATCHED/RESULT.json",
+      "detail": null
+    },
+    {
+      "check": "actual_request_replay_first_diagnostic",
+      "pass": true,
+      "object_path": "/mnt/d/lunwen/EC-CSI投稿/working/exploration/20261014_matched_evidence_labor/matched_generation/method_runs/FSV-B19/ECAS_MATCHED/RESULT.json",
+      "detail": {
+        "request_index": 0
+      }
+    },
+    {
+      "check": "actual_request_replay_first_diagnostic",
+      "pass": true,
+      "object_path": "/mnt/d/lunwen/EC-CSI投稿/working/exploration/20261014_matched_evidence_labor/matched_generation/method_runs/FSV-B19/ECAS_MATCHED/RESULT.json",
+      "detail": {
+        "request_index": 1
+      }
+    },
+    {
+      "check": "actual_request_replay_first_diagnostic",
+      "pass": true,
+      "object_path": "/mnt/d/lunwen/EC-CSI投稿/working/exploration/20261014_matched_evidence_labor/matched_generation/method_runs/FSV-B19/ECAS_MATCHED/RESULT.json",
+      "detail": {
+        "request_index": 2
+      }
+    },
+    {
+      "check": "actual_request_replay_first_diagnostic",
+      "pass": true,
+      "object_path": "/mnt/d/lunwen/EC-CSI投稿/working/exploration/20261014_matched_evidence_labor/matched_generation/method_runs/FSV-B19/ECAS_MATCHED/RESULT.json",
+      "detail": {
+        "request_index": 3
+      }
+    },
+    {
+      "check": "actual_request_replay_first_diagnostic",
+      "pass": true,
+      "object_path": "/mnt/d/lunwen/EC-CSI投稿/working/exploration/20261014_matched_evidence_labor/matched_generation/method_runs/FSV-B19/ECAS_MATCHED/RESULT.json",
+      "detail": {
+        "request_index": 4
+      }
+    },
+    {
+      "check": "actual_request_replay_first_diagnostic",
+      "pass": true,
+      "object_path": "/mnt/d/lunwen/EC-CSI投稿/working/exploration/20261014_matched_evidence_labor/matched_generation/method_runs/FSV-B19/ECAS_MATCHED/RESULT.json",
+      "detail": {
+        "request_index": 5
+      }
+    },
+    {
+      "check": "actual_request_replay_first_diagnostic",
+      "pass": true,
+      "object_path": "/mnt/d/lunwen/EC-CSI投稿/working/exploration/20261014_matched_evidence_labor/matched_generation/method_runs/FSV-B19/ECAS_MATCHED/RESULT.json",
+      "detail": {
+        "request_index": 6
+      }
+    },
+    {
+      "check": "actual_request_replay_first_diagnostic",
+      "pass": true,
+      "object_path": "/mnt/d/lunwen/EC-CSI投稿/working/exploration/20261014_matched_evidence_labor/matched_generation/method_runs/FSV-B19/ECAS_MATCHED/RESULT.json",
+      "detail": {
+        "request_index": 7
+      }
+    },
+    {
+      "check": "actual_request_replay_first_diagnostic",
+      "pass": true,
+      "object_path": "/mnt/d/lunwen/EC-CSI投稿/working/exploration/20261014_matched_evidence_labor/matched_generation/method_runs/FSV-B19/ECAS_MATCHED/RESULT.json",
+      "detail": {
+        "request_index": 8
+      }
+    },
+    {
+      "check": "actual_request_replay_first_diagnostic",
+      "pass": true,
+      "object_path": "/mnt/d/lunwen/EC-CSI投稿/working/exploration/20261014_matched_evidence_labor/matched_generation/method_runs/FSV-B19/ECAS_MATCHED/RESULT.json",
+      "detail": {
+        "request_index": 9
+      }
+    },
+    {
+      "check": "pair_symbol_computed_not_handfilled_first_diagnostic",
+      "pass": true,
+      "object_path": "/mnt/d/lunwen/EC-CSI投稿/working/exploration/20261014_matched_evidence_labor/matched_generation/method_runs/FSV-B19/ECAS_MATCHED/RESULT.json",
+      "detail": null
+    },
+    {
+      "check": "pair_source_identity_final_evaluation",
+      "pass": true,
+      "object_path": "/mnt/d/lunwen/EC-CSI投稿/working/exploration/20261014_matched_evidence_labor/matched_generation/method_runs/FSV-B19/ECAS_MATCHED/RESULT.json",
+      "detail": null
+    },
+    {
+      "check": "branch_source_identity_final_evaluation",
+      "pass": true,
+      "object_path": "/mnt/d/lunwen/EC-CSI投稿/working/exploration/20261014_matched_evidence_labor/matched_generation/method_runs/FSV-B19/ECAS_MATCHED/RESULT.json",
+      "detail": null
+    },
+    {
+      "check": "actual_request_replay_final_evaluation",
+      "pass": true,
+      "object_path": "/mnt/d/lunwen/EC-CSI投稿/working/exploration/20261014_matched_evidence_labor/matched_generation/method_runs/FSV-B19/ECAS_MATCHED/RESULT.json",
+      "detail": {
+        "request_index": 0
+      }
+    },
+    {
+      "check": "actual_request_replay_final_evaluation",
+      "pass": true,
+      "object_path": "/mnt/d/lunwen/EC-CSI投稿/working/exploration/20261014_matched_evidence_labor/matched_generation/method_runs/FSV-B19/ECAS_MATCHED/RESULT.json",
+      "detail": {
+        "request_index": 1
+      }
+    },
+    {
+      "check": "actual_request_replay_final_evaluation",
+      "pass": true,
+      "object_path": "/mnt/d/lunwen/EC-CSI投稿/working/exploration/20261014_matched_evidence_labor/matched_generation/method_runs/FSV-B19/ECAS_MATCHED/RESULT.json",
+      "detail": {
+        "request_index": 2
+      }
+    },
+    {
+      "check": "actual_request_replay_final_evaluation",
+      "pass": true,
+      "object_path": "/mnt/d/lunwen/EC-CSI投稿/working/exploration/20261014_matched_evidence_labor/matched_generation/method_runs/FSV-B19/ECAS_MATCHED/RESULT.json",
+      "detail": {
+        "request_index": 3
+      }
+    },
+    {
+      "check": "actual_request_replay_final_evaluation",
+      "pass": true,
+      "object_path": "/mnt/d/lunwen/EC-CSI投稿/working/exploration/20261014_matched_evidence_labor/matched_generation/method_runs/FSV-B19/ECAS_MATCHED/RESULT.json",
+      "detail": {
+        "request_index": 4
+      }
+    },
+    {
+      "check": "actual_request_replay_final_evaluation",
+      "pass": true,
+      "object_path": "/mnt/d/lunwen/EC-CSI投稿/working/exploration/20261014_matched_evidence_labor/matched_generation/method_runs/FSV-B19/ECAS_MATCHED/RESULT.json",
+      "detail": {
+        "request_index": 5
+      }
+    },
+    {
+      "check": "actual_request_replay_final_evaluation",
+      "pass": true,
+      "object_path": "/mnt/d/lunwen/EC-CSI投稿/working/exploration/20261014_matched_evidence_labor/matched_generation/method_runs/FSV-B19/ECAS_MATCHED/RESULT.json",
+      "detail": {
+        "request_index": 6
+      }
+    },
+    {
+      "check": "actual_request_replay_final_evaluation",
+      "pass": true,
+      "object_path": "/mnt/d/lunwen/EC-CSI投稿/working/exploration/20261014_matched_evidence_labor/matched_generation/method_runs/FSV-B19/ECAS_MATCHED/RESULT.json",
+      "detail": {
+        "request_index": 7
+      }
+    },
+    {
+      "check": "actual_request_replay_final_evaluation",
+      "pass": true,
+      "object_path": "/mnt/d/lunwen/EC-CSI投稿/working/exploration/20261014_matched_evidence_labor/matched_generation/method_runs/FSV-B19/ECAS_MATCHED/RESULT.json",
+      "detail": {
+        "request_index": 8
+      }
+    },
+    {
+      "check": "actual_request_replay_final_evaluation",
+      "pass": true,
+      "object_path": "/mnt/d/lunwen/EC-CSI投稿/working/exploration/20261014_matched_evidence_labor/matched_generation/method_runs/FSV-B19/ECAS_MATCHED/RESULT.json",
+      "detail": {
+        "request_index": 9
+      }
+    },
+    {
+      "check": "pair_symbol_computed_not_handfilled_final_evaluation",
+      "pass": true,
+      "object_path": "/mnt/d/lunwen/EC-CSI投稿/working/exploration/20261014_matched_evidence_labor/matched_generation/method_runs/FSV-B19/ECAS_MATCHED/RESULT.json",
+      "detail": null
+    }
+  ],
+  "failures": [],
+  "actual_paid_attempts": 30,
+  "new_model_calls_for_this_build": 0,
+  "builder_sha256": "21bf05608b3a1df1c676be7cd8a436511d42ecf91525a569b8a417ac93af65af",
+  "generation_manifest_sha256": "e4a7358923e605ab853c99cfb77932a26c90dcfb69a967c17e1a669cfe875bba",
+  "primary_state_sha256": "3abec673de9813f0175d751abdecf91feddbaad9bee64a11ae3ae4ed8a879a26",
+  "qa_scope": "RAW_SCHEMA_INPUT_IDENTITY_CODE_TOOL_POLICY_REQUEST_REPLAY_NOT_GENERAL_SCIENTIFIC_VALIDITY"
+}

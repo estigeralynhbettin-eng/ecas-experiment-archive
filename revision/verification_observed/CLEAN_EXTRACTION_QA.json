@@ -1,0 +1,61 @@
+{
+  "status": "PASS",
+  "run_label": "v2",
+  "archive_sha256": "3d627a1114a97f49344b93feb862f381c61d8843fde3332b81bcb9a100cec9b0",
+  "archive_bytes": 46393827,
+  "clean_extraction": "/root/ecas_a9_artifact_verify_v2/extracted",
+  "run_output": "/root/ecas_a9_artifact_verify_v2/run",
+  "windows_run_output": "/mnt/d/lunwen/EC-CSI投稿/working/paper/retarget/ASE_20261017_REVIEW_COMPLETION_R15_A9/qa/clean_artifact_check_v2/run",
+  "processes": [
+    {
+      "mode": "t0",
+      "argv": [
+        "/usr/bin/unshare",
+        "--net",
+        "--",
+        "/usr/bin/python3",
+        "/root/ecas_a9_artifact_verify_v2/extracted/offline/replay.py",
+        "t0",
+        "--output",
+        "/root/ecas_a9_artifact_verify_v2/run"
+      ],
+      "exit_code": 0,
+      "stdout_bytes": 104,
+      "stderr_bytes": 0
+    },
+    {
+      "mode": "replay",
+      "argv": [
+        "/usr/bin/unshare",
+        "--net",
+        "--",
+        "/usr/bin/python3",
+        "/root/ecas_a9_artifact_verify_v2/extracted/offline/replay.py",
+        "replay",
+        "--output",
+        "/root/ecas_a9_artifact_verify_v2/run"
+      ],
+      "exit_code": 0,
+      "stdout_bytes": 355,
+      "stderr_bytes": 0
+    }
+  ],
+  "t0_receipt_sha256": "253e62ef288a65d2fed4444044dda2645334a88c4916f5c95a04dd056ca0faf5",
+  "replay_summary_sha256": "935948a81c7517092455c6426ba74225f97d47965839cd48bd42ebd1425f59d7",
+  "counts": {
+    "traces": 21,
+    "qualified_traces": 17,
+    "unexecuted_traces": 4,
+    "original_request_decisions": 34,
+    "ablation_rows": 95,
+    "ablation_parents": 11,
+    "admission_contrast": 73,
+    "schema_controls": 22,
+    "invalid_evidence_or_path_variants": 51
+  },
+  "ablation_engine_observations": 325,
+  "new_model_calls": 0,
+  "new_candidate_generation": 0,
+  "all_archived_observations_match": true,
+  "completed_utc": "2026-10-17T00:55:50.179863+00:00"
+}

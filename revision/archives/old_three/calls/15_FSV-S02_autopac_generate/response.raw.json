@@ -1,0 +1,28 @@
+{
+  "choices": [
+    {
+      "finish_reason": "stop",
+      "index": 0,
+      "message": {
+        "content": "{\"begin\":\"BEGIN_FSV-S02_autopac_generate_MAIN\",\"stage\":\"autopac_generate\",\"output\":{\"status\":\"READY\",\"rego\":\"package external_pilot\\n\\nimport rego.v1\\n\\ndefault allow := false\\n\\nallow if {\\n    input.subject.role == \\\"authenticated_api_caller\\\"\\n    input.action == \\\"POST /v1/clients/{clientId}/identifiers\\\"\\n    input.resource.system == \\\"Fineract\\\"\\n    input.resource.version == \\\"1.14.0\\\"\\n    input.request.body.documentKey\\n    input.request.body.documentTypeId\\n}\",\"reason\":\"Policy allows authenticated API callers to create client identifiers in Fineract 1.14.0 if the mandatory documentKey and documentTypeId fields are present in the request body.\"},\"end\":\"END_FSV-S02_autopac_generate_MAIN\"}",
+        "role": "assistant"
+      }
+    }
+  ],
+  "created": 1791950820,
+  "id": "20261014120649e7e1d799e1344447",
+  "model": "glm-5.2",
+  "object": "chat.completion",
+  "request_id": "20261014120649e7e1d799e1344447",
+  "usage": {
+    "completion_tokens": 803,
+    "completion_tokens_details": {
+      "reasoning_tokens": 604
+    },
+    "prompt_tokens": 836,
+    "prompt_tokens_details": {
+      "cached_tokens": 0
+    },
+    "total_tokens": 1639
+  }
+}

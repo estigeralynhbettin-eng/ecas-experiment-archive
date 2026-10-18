@@ -1,0 +1,118 @@
+{
+  "catalog_id": "EC-SECURITY-PRIMITIVE-CATALOG-V2",
+  "contract_id": "ECV2-CONTRACT-FSV-B13",
+  "contract_version": "EC-EVIDENCE-CONTRACT-V3",
+  "evidence": [
+    {
+      "binding_facts": {
+        "visible_plain_language_invariant": true
+      },
+      "bound_paths": [
+        "/request/body/qty",
+        "/trusted/derivedMaximumQty",
+        "/trusted/authorizedRole"
+      ],
+      "evidence_id": "VIS-FSV-B13-01",
+      "locator": "nonexistent/synthetic-source-only.txt:1",
+      "operations": [
+        "POST /api/resource/Purchase Receipt"
+      ],
+      "relation": "supports",
+      "sha256": "0000000000000000000000000000000000000000000000000000000000000000",
+      "source_kind": "business_requirement",
+      "supports_primitives": [
+        "SP-BOUNDED-BUSINESS-GUARD"
+      ],
+      "system": "ERPNext",
+      "versions": [
+        "16.0.0"
+      ],
+      "visibility": "visible"
+    },
+    {
+      "binding_facts": {
+        "visible_plain_language_invariant": true
+      },
+      "bound_paths": [
+        "/request/body/qty",
+        "/trusted/derivedMaximumQty",
+        "/trusted/authorizedRole"
+      ],
+      "evidence_id": "VIS-FSV-B13-02",
+      "locator": "nonexistent/synthetic-source-only.txt:1",
+      "operations": [
+        "POST /api/resource/Purchase Receipt"
+      ],
+      "relation": "supports",
+      "sha256": "0000000000000000000000000000000000000000000000000000000000000000",
+      "source_kind": "api_documentation",
+      "supports_primitives": [
+        "SP-BOUNDED-BUSINESS-GUARD"
+      ],
+      "system": "ERPNext",
+      "versions": [
+        "16.0.0"
+      ],
+      "visibility": "visible"
+    },
+    {
+      "binding_facts": {
+        "visible_plain_language_invariant": true
+      },
+      "bound_paths": [
+        "/request/body/qty",
+        "/trusted/derivedMaximumQty",
+        "/trusted/authorizedRole"
+      ],
+      "evidence_id": "VIS-FSV-B13-03",
+      "locator": "nonexistent/synthetic-source-only.txt:1",
+      "operations": [
+        "POST /api/resource/Purchase Receipt"
+      ],
+      "relation": "supports",
+      "sha256": "0000000000000000000000000000000000000000000000000000000000000000",
+      "source_kind": "developer_manual",
+      "supports_primitives": [
+        "SP-BOUNDED-BUSINESS-GUARD"
+      ],
+      "system": "ERPNext",
+      "versions": [
+        "16.0.0"
+      ],
+      "visibility": "visible"
+    },
+    {
+      "binding_facts": {
+        "trusted_runtime_context_mapping": true,
+        "visible_field_mapping": true,
+        "visible_runtime_interface": true
+      },
+      "bound_paths": [
+        "/request/body/qty",
+        "/trusted/derivedMaximumQty",
+        "/trusted/authorizedRole"
+      ],
+      "evidence_id": "VIS-FSV-B13-RUNTIME-ABI",
+      "locator": "nonexistent/synthetic-source-only.txt:1",
+      "operations": [
+        "POST /api/resource/Purchase Receipt"
+      ],
+      "relation": "supports",
+      "sha256": "0000000000000000000000000000000000000000000000000000000000000000",
+      "source_kind": "runtime_context_contract",
+      "supports_primitives": [
+        "SP-BOUNDED-BUSINESS-GUARD"
+      ],
+      "system": "ERPNext",
+      "versions": [
+        "16.0.0"
+      ],
+      "visibility": "visible"
+    }
+  ],
+  "target": {
+    "operation": "POST /api/resource/Purchase Receipt",
+    "system": "ERPNext",
+    "version": "16.0.0"
+  }
+}

@@ -1,0 +1,74 @@
+[
+  {
+    "path": "generation_inputs/FSV-B06/packet.json",
+    "source_path": "/mnt/d/lunwen/ec/ec_v2_field_security_materials_v4/visible/FSV-B06/visible_input.json",
+    "source_sha256": "69165C4221CD5367D385CDB7101FBA60634EB2480BA7422F42BDE1AA926399B0",
+    "sha256": "01AC46F8ED8D0B75D23A4ADB7A16FAFE35316F1E75FBE52D767540C39FE2F16F",
+    "derivation": "retain original sources; remove ECAS primitive focus from runtime ABI; append neutral adapter constants"
+  },
+  {
+    "path": "generation_inputs/FSV-B06/organization_schema.json",
+    "sha256": "59AD23D490E5C6B488BE144AE05370A054F453E8578E893C67281FAACDD1A42B",
+    "derivation": "common target and available paths; no business condition supplied"
+  },
+  {
+    "path": "sealed_evaluation/FSV-B06/O-L.json",
+    "source_path": "/mnt/d/lunwen/ec/ec_v2_hidden_oracle_repository_v1/hidden/FSV-B06/O-L.json",
+    "sha256": "D91D2DAD0E84A8E88A7A8B5253B70042CA326787F0C4D2A0E1282A4C24AE9C7D",
+    "derivation": "byte identical archived synthetic fixture; generator must not read"
+  },
+  {
+    "path": "sealed_evaluation/FSV-B06/O-I.json",
+    "source_path": "/mnt/d/lunwen/ec/ec_v2_hidden_oracle_repository_v1/hidden/FSV-B06/O-I.json",
+    "sha256": "BBB69CB133B42FFB40C119B23449E38C51E0D18D4800D339B869E314C4BDA816",
+    "derivation": "byte identical archived synthetic fixture; generator must not read"
+  },
+  {
+    "path": "generation_inputs/FSV-S02/packet.json",
+    "source_path": "/mnt/d/lunwen/ec/ec_v2_field_security_materials_v4/visible/FSV-S02/visible_input.json",
+    "source_sha256": "2D7B4AA2EE256FC4797E800F84256BE7C8D349F0DF7E15190260A331ACE01346",
+    "sha256": "5C8DE100A097AA1CAE1C236A1D9D7771E8C1E175D9C8601ABC9D319DAFCA9611",
+    "derivation": "retain original sources; remove ECAS primitive focus from runtime ABI; append neutral adapter constants"
+  },
+  {
+    "path": "generation_inputs/FSV-S02/organization_schema.json",
+    "sha256": "33A4F29BDD5573FDB958FCBB39FB73F66A6E4EEC48B0C114DD03A83CE476B584",
+    "derivation": "common target and available paths; no business condition supplied"
+  },
+  {
+    "path": "sealed_evaluation/FSV-S02/O-L.json",
+    "source_path": "/mnt/d/lunwen/ec/ec_v2_hidden_oracle_repository_v1/hidden/FSV-S02/O-L.json",
+    "sha256": "0A3FA3A8AED810DE7C3F410BDA9B1A5723ECDE0E81A76F9F1137D7AC038572E0",
+    "derivation": "byte identical archived synthetic fixture; generator must not read"
+  },
+  {
+    "path": "sealed_evaluation/FSV-S02/O-I.json",
+    "source_path": "/mnt/d/lunwen/ec/ec_v2_hidden_oracle_repository_v1/hidden/FSV-S02/O-I.json",
+    "sha256": "B0C5E8C64CBEA3775F531C57BA1D3A8ADF648A47C862C87FFD326147A93D7B50",
+    "derivation": "byte identical archived synthetic fixture; generator must not read"
+  },
+  {
+    "path": "generation_inputs/FSV-S04/packet.json",
+    "source_path": "/mnt/d/lunwen/ec/ec_v2_field_security_materials_v4/visible/FSV-S04/visible_input.json",
+    "source_sha256": "6F56B2ADA420649507266F48DDAD344E623A1DEF51C3DBA1C95ABFD3472E7527",
+    "sha256": "D37C94EC03D4901259EE058BD728FD0BC7736A3033A7B3347881626233BF5D49",
+    "derivation": "retain original sources; remove ECAS primitive focus from runtime ABI; append neutral adapter constants"
+  },
+  {
+    "path": "generation_inputs/FSV-S04/organization_schema.json",
+    "sha256": "A2C727F7F2644FD04384F076D0FF3CBCEF2979BE0DB90C7E6E42D8769A544F06",
+    "derivation": "common target and available paths; no business condition supplied"
+  },
+  {
+    "path": "sealed_evaluation/FSV-S04/O-L.json",
+    "source_path": "/mnt/d/lunwen/ec/ec_v2_hidden_oracle_repository_v1/hidden/FSV-S04/O-L.json",
+    "sha256": "DD177326772F0915F58692F07E143200F158FAE22DA8AEFFC262E5A47AE111F1",
+    "derivation": "byte identical archived synthetic fixture; generator must not read"
+  },
+  {
+    "path": "sealed_evaluation/FSV-S04/O-I.json",
+    "source_path": "/mnt/d/lunwen/ec/ec_v2_hidden_oracle_repository_v1/hidden/FSV-S04/O-I.json",
+    "sha256": "2186EB0967D9E7254C1F469862B3BB061C5D7996116E04CF3C067D2FC23F109C",
+    "derivation": "byte identical archived synthetic fixture; generator must not read"
+  }
+]

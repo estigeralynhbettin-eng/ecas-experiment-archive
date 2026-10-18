@@ -1,0 +1,20 @@
+{
+  "status": "COMPLETED_SEVEN_CASE_TABLE_AND_OFFLINE_MECHANISM_CONTROL",
+  "date": "2026-10-15",
+  "overview": "EXPERIMENT_SUMMARY_CN_R2.md",
+  "table": "SEVEN_CASE_TABLE_CN.md",
+  "table_method_rows": 21,
+  "table_batches": 2,
+  "table_independent_checks": 344,
+  "new_model_calls": 0,
+  "new_independent_cases": 0,
+  "mechanism_observations": 144,
+  "mechanism_managed_run": "missing-state-mechanism-v1",
+  "mechanism_managed_status": "SUCCEEDED",
+  "mechanism_reconciliation_checks": 160,
+  "mechanism_independent_checks": 2191,
+  "paid_experiment_started": false,
+  "old_results_overwritten": false,
+  "r2_delivery_checks": 135,
+  "r2_delivery_status": "PASS"
+}

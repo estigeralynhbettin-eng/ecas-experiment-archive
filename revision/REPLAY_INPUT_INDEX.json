@@ -1,0 +1,3228 @@
+{
+  "schema_version": 1,
+  "traces": [
+    {
+      "batch": "A",
+      "task": "FSV-B06",
+      "method": "P2P_STYLE",
+      "final_status": "EVALUATED",
+      "original_pre_format_status": "DEVELOPMENT_REJECTED",
+      "source_result": "archives/old_three/effect_runs/FSV-B06/P2P_STYLE/RESULT.json",
+      "display_summary": "archives/old_three/binding_replay_resource_object/SUMMARY.json",
+      "policy": "archives/old_three/binding_replay_resource_object/FSV-B06/P2P_STYLE/validation/external_pilot/policy.rego",
+      "candidate": null,
+      "contract": "archives/old_three/execution_inputs/FSV-B06/contract.json",
+      "fixtures": [
+        {
+          "channel": "O-L",
+          "original_input": {
+            "request": {
+              "body": {}
+            },
+            "trusted": {
+              "reAgeIsLatestTransaction": true
+            }
+          },
+          "mapped_input": {
+            "request": {
+              "body": {}
+            },
+            "trusted": {
+              "reAgeIsLatestTransaction": true
+            },
+            "subject": {
+              "role": "authenticated_api_caller"
+            },
+            "action": "POST /v1/loans/{loanId}/transactions/{transactionId}?command=undo",
+            "resource": {
+              "id": "Fineract:1.14.0",
+              "system": "Fineract",
+              "version": "1.14.0"
+            },
+            "subject_role": "authenticated_api_caller",
+            "resource_system": "Fineract",
+            "resource_version": "1.14.0"
+          },
+          "expected": "allow",
+          "archived_actual": {
+            "status": "EXECUTED",
+            "decision": "allow",
+            "exit_code": 0
+          }
+        },
+        {
+          "channel": "O-I",
+          "original_input": {
+            "request": {
+              "body": {}
+            },
+            "trusted": {
+              "reAgeIsLatestTransaction": false
+            }
+          },
+          "mapped_input": {
+            "request": {
+              "body": {}
+            },
+            "trusted": {
+              "reAgeIsLatestTransaction": false
+            },
+            "subject": {
+              "role": "authenticated_api_caller"
+            },
+            "action": "POST /v1/loans/{loanId}/transactions/{transactionId}?command=undo",
+            "resource": {
+              "id": "Fineract:1.14.0",
+              "system": "Fineract",
+              "version": "1.14.0"
+            },
+            "subject_role": "authenticated_api_caller",
+            "resource_system": "Fineract",
+            "resource_version": "1.14.0"
+          },
+          "expected": "deny",
+          "archived_actual": {
+            "status": "EXECUTED",
+            "decision": "deny",
+            "exit_code": 0
+          }
+        }
+      ],
+      "calls": [
+        {
+          "index": 5,
+          "stage": "p2p_detect",
+          "raw": "archives/old_three/calls/05_FSV-B06_p2p_detect/response.raw.json",
+          "prompt": "archives/old_three/calls/05_FSV-B06_p2p_detect/prompt.txt",
+          "parsed_output": "archives/old_three/calls/05_FSV-B06_p2p_detect/parsed_output.json"
+        },
+        {
+          "index": 6,
+          "stage": "p2p_extract",
+          "raw": "archives/old_three/calls/06_FSV-B06_p2p_extract/response.raw.json",
+          "prompt": "archives/old_three/calls/06_FSV-B06_p2p_extract/prompt.txt",
+          "parsed_output": "archives/old_three/calls/06_FSV-B06_p2p_extract/recovered_output.json"
+        },
+        {
+          "index": 7,
+          "stage": "p2p_rego",
+          "raw": "archives/old_three/calls/07_FSV-B06_p2p_rego/response.raw.json",
+          "prompt": "archives/old_three/calls/07_FSV-B06_p2p_rego/prompt.txt",
+          "parsed_output": "archives/old_three/calls/07_FSV-B06_p2p_rego/parsed_output.json"
+        },
+        {
+          "index": 8,
+          "stage": "p2p_tests",
+          "raw": "archives/old_three/calls/08_FSV-B06_p2p_tests/response.raw.json",
+          "prompt": "archives/old_three/calls/08_FSV-B06_p2p_tests/prompt.txt",
+          "parsed_output": "archives/old_three/calls/08_FSV-B06_p2p_tests/parsed_output.json"
+        },
+        {
+          "index": 9,
+          "stage": "repair",
+          "raw": "archives/old_three/calls/09_FSV-B06_repair/response.raw.json",
+          "prompt": "archives/old_three/calls/09_FSV-B06_repair/prompt.txt",
+          "parsed_output": "archives/old_three/calls/09_FSV-B06_repair/parsed_output.json"
+        }
+      ],
+      "adapter_source": "archives/old_three/pilot_lib.py",
+      "packet": "archives/old_three/generation_inputs/FSV-B06/packet.json"
+    },
+    {
+      "batch": "A",
+      "task": "FSV-B06",
+      "method": "AUTOPAC_STYLE",
+      "final_status": "EVALUATED",
+      "original_pre_format_status": "DEVELOPMENT_REJECTED",
+      "source_result": "archives/old_three/effect_runs/FSV-B06/AUTOPAC_STYLE/RESULT.json",
+      "display_summary": "archives/old_three/binding_replay_resource_object/SUMMARY.json",
+      "policy": "archives/old_three/binding_replay_resource_object/FSV-B06/AUTOPAC_STYLE/validation/external_pilot/policy.rego",
+      "candidate": null,
+      "contract": "archives/old_three/execution_inputs/FSV-B06/contract.json",
+      "fixtures": [
+        {
+          "channel": "O-L",
+          "original_input": {
+            "request": {
+              "body": {}
+            },
+            "trusted": {
+              "reAgeIsLatestTransaction": true
+            }
+          },
+          "mapped_input": {
+            "request": {
+              "body": {}
+            },
+            "trusted": {
+              "reAgeIsLatestTransaction": true
+            },
+            "subject": {
+              "role": "authenticated_api_caller"
+            },
+            "action": "POST /v1/loans/{loanId}/transactions/{transactionId}?command=undo",
+            "resource": {
+              "id": "Fineract:1.14.0",
+              "system": "Fineract",
+              "version": "1.14.0"
+            },
+            "subject_role": "authenticated_api_caller",
+            "resource_system": "Fineract",
+            "resource_version": "1.14.0"
+          },
+          "expected": "allow",
+          "archived_actual": {
+            "status": "EXECUTED",
+            "decision": "allow",
+            "exit_code": 0
+          }
+        },
+        {
+          "channel": "O-I",
+          "original_input": {
+            "request": {
+              "body": {}
+            },
+            "trusted": {
+              "reAgeIsLatestTransaction": false
+            }
+          },
+          "mapped_input": {
+            "request": {
+              "body": {}
+            },
+            "trusted": {
+              "reAgeIsLatestTransaction": false
+            },
+            "subject": {
+              "role": "authenticated_api_caller"
+            },
+            "action": "POST /v1/loans/{loanId}/transactions/{transactionId}?command=undo",
+            "resource": {
+              "id": "Fineract:1.14.0",
+              "system": "Fineract",
+              "version": "1.14.0"
+            },
+            "subject_role": "authenticated_api_caller",
+            "resource_system": "Fineract",
+            "resource_version": "1.14.0"
+          },
+          "expected": "deny",
+          "archived_actual": {
+            "status": "EXECUTED",
+            "decision": "deny",
+            "exit_code": 0
+          }
+        }
+      ],
+      "calls": [
+        {
+          "index": 10,
+          "stage": "autopac_generate",
+          "raw": "archives/old_three/calls/10_FSV-B06_autopac_generate/response.raw.json",
+          "prompt": "archives/old_three/calls/10_FSV-B06_autopac_generate/prompt.txt",
+          "parsed_output": "archives/old_three/calls/10_FSV-B06_autopac_generate/parsed_output.json"
+        },
+        {
+          "index": 11,
+          "stage": "autopac_judge",
+          "raw": "archives/old_three/calls/11_FSV-B06_autopac_judge/response.raw.json",
+          "prompt": "archives/old_three/calls/11_FSV-B06_autopac_judge/prompt.txt",
+          "parsed_output": "archives/old_three/calls/11_FSV-B06_autopac_judge/parsed_output.json"
+        },
+        {
+          "index": 12,
+          "stage": "repair",
+          "raw": "archives/old_three/calls/12_FSV-B06_repair/response.raw.json",
+          "prompt": "archives/old_three/calls/12_FSV-B06_repair/prompt.txt",
+          "parsed_output": "archives/old_three/calls/12_FSV-B06_repair/parsed_output.json"
+        }
+      ],
+      "adapter_source": "archives/old_three/pilot_lib.py",
+      "packet": "archives/old_three/generation_inputs/FSV-B06/packet.json"
+    },
+    {
+      "batch": "A",
+      "task": "FSV-B06",
+      "method": "ECAS_MATCHED",
+      "final_status": "EVALUATED",
+      "original_pre_format_status": "EVALUATED",
+      "source_result": "archives/old_three/effect_runs/FSV-B06/ECAS_MATCHED/RESULT.json",
+      "display_summary": "archives/old_three/binding_replay_resource_object/SUMMARY.json",
+      "policy": "archives/old_three/effect_runs/FSV-B06/ECAS_MATCHED/admitted_policy.json",
+      "candidate": "archives/old_three/effect_runs/FSV-B06/ECAS_MATCHED/candidate.json",
+      "contract": "archives/old_three/execution_inputs/FSV-B06/contract.json",
+      "fixtures": [
+        {
+          "channel": "O-L",
+          "original_input": {
+            "request": {
+              "body": {}
+            },
+            "trusted": {
+              "reAgeIsLatestTransaction": true
+            }
+          },
+          "mapped_input": {
+            "request": {
+              "body": {}
+            },
+            "trusted": {
+              "reAgeIsLatestTransaction": true
+            },
+            "subject": {
+              "role": "authenticated_api_caller"
+            },
+            "action": "POST /v1/loans/{loanId}/transactions/{transactionId}?command=undo",
+            "resource": {
+              "id": "Fineract:1.14.0",
+              "system": "Fineract",
+              "version": "1.14.0"
+            },
+            "subject_role": "authenticated_api_caller",
+            "resource_system": "Fineract",
+            "resource_version": "1.14.0"
+          },
+          "expected": "allow",
+          "archived_actual": {
+            "policy_id": "pol-FSV-B06-reage-undo-latest-only",
+            "decision": "allow",
+            "fail_closed": true,
+            "violations": []
+          }
+        },
+        {
+          "channel": "O-I",
+          "original_input": {
+            "request": {
+              "body": {}
+            },
+            "trusted": {
+              "reAgeIsLatestTransaction": false
+            }
+          },
+          "mapped_input": {
+            "request": {
+              "body": {}
+            },
+            "trusted": {
+              "reAgeIsLatestTransaction": false
+            },
+            "subject": {
+              "role": "authenticated_api_caller"
+            },
+            "action": "POST /v1/loans/{loanId}/transactions/{transactionId}?command=undo",
+            "resource": {
+              "id": "Fineract:1.14.0",
+              "system": "Fineract",
+              "version": "1.14.0"
+            },
+            "subject_role": "authenticated_api_caller",
+            "resource_system": "Fineract",
+            "resource_version": "1.14.0"
+          },
+          "expected": "deny",
+          "archived_actual": {
+            "policy_id": "pol-FSV-B06-reage-undo-latest-only",
+            "decision": "deny",
+            "fail_closed": true,
+            "violations": [
+              {
+                "rule_id": "rule-FSV-B06-reage-undo-latest-only",
+                "code": "bounded_guard_rejected",
+                "detail": "rule-FSV-B06-reage-undo-latest-only"
+              }
+            ]
+          }
+        }
+      ],
+      "calls": [
+        {
+          "index": 13,
+          "stage": "ecas_generate",
+          "raw": "archives/old_three/calls/13_FSV-B06_ecas_generate/response.raw.json",
+          "prompt": "archives/old_three/calls/13_FSV-B06_ecas_generate/prompt.txt",
+          "parsed_output": "archives/old_three/calls/13_FSV-B06_ecas_generate/parsed_output.json"
+        }
+      ],
+      "adapter_source": "archives/old_three/pilot_lib.py",
+      "packet": "archives/old_three/generation_inputs/FSV-B06/packet.json"
+    },
+    {
+      "batch": "A",
+      "task": "FSV-S02",
+      "method": "P2P_STYLE",
+      "final_status": "OUT_OF_SCOPE",
+      "original_pre_format_status": "OUT_OF_SCOPE",
+      "source_result": "archives/old_three/effect_runs/FSV-S02/P2P_STYLE/RESULT.json",
+      "display_summary": "archives/old_three/binding_replay_resource_object/SUMMARY.json",
+      "policy": null,
+      "candidate": null,
+      "contract": "archives/old_three/execution_inputs/FSV-S02/contract.json",
+      "fixtures": [],
+      "calls": [
+        {
+          "index": 14,
+          "stage": "p2p_detect",
+          "raw": "archives/old_three/calls/14_FSV-S02_p2p_detect/response.raw.json",
+          "prompt": "archives/old_three/calls/14_FSV-S02_p2p_detect/prompt.txt",
+          "parsed_output": "archives/old_three/calls/14_FSV-S02_p2p_detect/parsed_output.json"
+        }
+      ],
+      "adapter_source": "archives/old_three/pilot_lib.py",
+      "packet": "archives/old_three/generation_inputs/FSV-S02/packet.json"
+    },
+    {
+      "batch": "A",
+      "task": "FSV-S02",
+      "method": "AUTOPAC_STYLE",
+      "final_status": "DEVELOPMENT_REJECTED",
+      "original_pre_format_status": "DEVELOPMENT_REJECTED",
+      "source_result": "archives/old_three/effect_runs/FSV-S02/AUTOPAC_STYLE/RESULT.json",
+      "display_summary": "archives/old_three/binding_replay_resource_object/SUMMARY.json",
+      "policy": "archives/old_three/effect_runs/FSV-S02/AUTOPAC_STYLE/repaired/external_pilot/policy.rego",
+      "candidate": null,
+      "contract": "archives/old_three/execution_inputs/FSV-S02/contract.json",
+      "fixtures": [],
+      "calls": [
+        {
+          "index": 15,
+          "stage": "autopac_generate",
+          "raw": "archives/old_three/calls/15_FSV-S02_autopac_generate/response.raw.json",
+          "prompt": "archives/old_three/calls/15_FSV-S02_autopac_generate/prompt.txt",
+          "parsed_output": "archives/old_three/calls/15_FSV-S02_autopac_generate/parsed_output.json"
+        },
+        {
+          "index": 16,
+          "stage": "autopac_judge",
+          "raw": "archives/old_three/calls/16_FSV-S02_autopac_judge/response.raw.json",
+          "prompt": "archives/old_three/calls/16_FSV-S02_autopac_judge/prompt.txt",
+          "parsed_output": "archives/old_three/calls/16_FSV-S02_autopac_judge/parsed_output.json"
+        },
+        {
+          "index": 17,
+          "stage": "repair",
+          "raw": "archives/old_three/calls/17_FSV-S02_repair/response.raw.json",
+          "prompt": "archives/old_three/calls/17_FSV-S02_repair/prompt.txt",
+          "parsed_output": "archives/old_three/calls/17_FSV-S02_repair/parsed_output.json"
+        }
+      ],
+      "adapter_source": "archives/old_three/pilot_lib.py",
+      "packet": "archives/old_three/generation_inputs/FSV-S02/packet.json"
+    },
+    {
+      "batch": "A",
+      "task": "FSV-S02",
+      "method": "ECAS_MATCHED",
+      "final_status": "EVALUATED",
+      "original_pre_format_status": "EVALUATED",
+      "source_result": "archives/old_three/effect_runs/FSV-S02/ECAS_MATCHED/RESULT.json",
+      "display_summary": "archives/old_three/binding_replay_resource_object/SUMMARY.json",
+      "policy": "archives/old_three/effect_runs/FSV-S02/ECAS_MATCHED/admitted_policy.json",
+      "candidate": "archives/old_three/effect_runs/FSV-S02/ECAS_MATCHED/candidate.json",
+      "contract": "archives/old_three/execution_inputs/FSV-S02/contract.json",
+      "fixtures": [
+        {
+          "channel": "O-L",
+          "original_input": {
+            "request": {
+              "body": {
+                "documentKey": "SYNTHETIC-DOCUMENT-KEY",
+                "documentTypeId": 1,
+                "status": "Active"
+              }
+            },
+            "trusted": {}
+          },
+          "mapped_input": {
+            "request": {
+              "body": {
+                "documentKey": "SYNTHETIC-DOCUMENT-KEY",
+                "documentTypeId": 1,
+                "status": "Active"
+              }
+            },
+            "trusted": {},
+            "subject": {
+              "role": "authenticated_api_caller"
+            },
+            "action": "POST /v1/clients/{clientId}/identifiers",
+            "resource": {
+              "id": "Fineract:1.14.0",
+              "system": "Fineract",
+              "version": "1.14.0"
+            },
+            "subject_role": "authenticated_api_caller",
+            "resource_system": "Fineract",
+            "resource_version": "1.14.0"
+          },
+          "expected": "allow",
+          "archived_actual": {
+            "policy_id": "pol-FSV-S02-001",
+            "decision": "allow",
+            "fail_closed": true,
+            "violations": []
+          }
+        },
+        {
+          "channel": "O-I",
+          "original_input": {
+            "request": {
+              "body": {
+                "documentKey": "SYNTHETIC-DOCUMENT-KEY",
+                "documentTypeId": 1,
+                "undeclared_script": "<script>alert(1)</script>"
+              }
+            },
+            "trusted": {}
+          },
+          "mapped_input": {
+            "request": {
+              "body": {
+                "documentKey": "SYNTHETIC-DOCUMENT-KEY",
+                "documentTypeId": 1,
+                "undeclared_script": "<script>alert(1)</script>"
+              }
+            },
+            "trusted": {},
+            "subject": {
+              "role": "authenticated_api_caller"
+            },
+            "action": "POST /v1/clients/{clientId}/identifiers",
+            "resource": {
+              "id": "Fineract:1.14.0",
+              "system": "Fineract",
+              "version": "1.14.0"
+            },
+            "subject_role": "authenticated_api_caller",
+            "resource_system": "Fineract",
+            "resource_version": "1.14.0"
+          },
+          "expected": "deny",
+          "archived_actual": {
+            "policy_id": "pol-FSV-S02-001",
+            "decision": "deny",
+            "fail_closed": true,
+            "violations": [
+              {
+                "rule_id": "rule-FSV-S02-001",
+                "code": "unexpected_fields",
+                "detail": "undeclared_script"
+              }
+            ]
+          }
+        }
+      ],
+      "calls": [
+        {
+          "index": 18,
+          "stage": "ecas_generate",
+          "raw": "archives/old_three/calls/18_FSV-S02_ecas_generate/response.raw.json",
+          "prompt": "archives/old_three/calls/18_FSV-S02_ecas_generate/prompt.txt",
+          "parsed_output": "archives/old_three/calls/18_FSV-S02_ecas_generate/parsed_output.json"
+        }
+      ],
+      "adapter_source": "archives/old_three/pilot_lib.py",
+      "packet": "archives/old_three/generation_inputs/FSV-S02/packet.json"
+    },
+    {
+      "batch": "A",
+      "task": "FSV-S04",
+      "method": "P2P_STYLE",
+      "final_status": "EVALUATED",
+      "original_pre_format_status": "DEVELOPMENT_REJECTED",
+      "source_result": "archives/old_three/effect_runs/FSV-S04/P2P_STYLE/RESULT.json",
+      "display_summary": "archives/old_three/binding_replay_resource_object/SUMMARY.json",
+      "policy": "archives/old_three/binding_replay_resource_object/FSV-S04/P2P_STYLE/validation/external_pilot/policy.rego",
+      "candidate": null,
+      "contract": "archives/old_three/execution_inputs/FSV-S04/contract.json",
+      "fixtures": [
+        {
+          "channel": "O-L",
+          "original_input": {
+            "request": {
+              "body": {
+                "email_id": "oracle@example.invalid",
+                "first_name": "ECV2 Oracle",
+                "status": "Lead"
+              }
+            },
+            "trusted": {}
+          },
+          "mapped_input": {
+            "request": {
+              "body": {
+                "email_id": "oracle@example.invalid",
+                "first_name": "ECV2 Oracle",
+                "status": "Lead"
+              }
+            },
+            "trusted": {},
+            "subject": {
+              "role": "authenticated_api_caller"
+            },
+            "action": "POST /api/resource/Lead",
+            "resource": {
+              "id": "ERPNext:16.0.0",
+              "system": "ERPNext",
+              "version": "16.0.0"
+            },
+            "subject_role": "authenticated_api_caller",
+            "resource_system": "ERPNext",
+            "resource_version": "16.0.0"
+          },
+          "expected": "allow",
+          "archived_actual": {
+            "status": "EXECUTED",
+            "decision": "allow",
+            "exit_code": 0
+          }
+        },
+        {
+          "channel": "O-I",
+          "original_input": {
+            "request": {
+              "body": {
+                "email_id": "not-an-email",
+                "first_name": "ECV2 Oracle",
+                "status": "Lead"
+              }
+            },
+            "trusted": {}
+          },
+          "mapped_input": {
+            "request": {
+              "body": {
+                "email_id": "not-an-email",
+                "first_name": "ECV2 Oracle",
+                "status": "Lead"
+              }
+            },
+            "trusted": {},
+            "subject": {
+              "role": "authenticated_api_caller"
+            },
+            "action": "POST /api/resource/Lead",
+            "resource": {
+              "id": "ERPNext:16.0.0",
+              "system": "ERPNext",
+              "version": "16.0.0"
+            },
+            "subject_role": "authenticated_api_caller",
+            "resource_system": "ERPNext",
+            "resource_version": "16.0.0"
+          },
+          "expected": "deny",
+          "archived_actual": {
+            "status": "EXECUTED",
+            "decision": "allow",
+            "exit_code": 0
+          }
+        }
+      ],
+      "calls": [
+        {
+          "index": 19,
+          "stage": "p2p_detect",
+          "raw": "archives/old_three/calls/19_FSV-S04_p2p_detect/response.raw.json",
+          "prompt": "archives/old_three/calls/19_FSV-S04_p2p_detect/prompt.txt",
+          "parsed_output": "archives/old_three/calls/19_FSV-S04_p2p_detect/parsed_output.json"
+        },
+        {
+          "index": 20,
+          "stage": "p2p_extract",
+          "raw": "archives/old_three/calls/20_FSV-S04_p2p_extract/response.raw.json",
+          "prompt": "archives/old_three/calls/20_FSV-S04_p2p_extract/prompt.txt",
+          "parsed_output": "archives/old_three/calls/20_FSV-S04_p2p_extract/parsed_output.json"
+        },
+        {
+          "index": 21,
+          "stage": "p2p_rego",
+          "raw": "archives/old_three/calls/21_FSV-S04_p2p_rego/response.raw.json",
+          "prompt": "archives/old_three/calls/21_FSV-S04_p2p_rego/prompt.txt",
+          "parsed_output": "archives/old_three/calls/21_FSV-S04_p2p_rego/parsed_output.json"
+        },
+        {
+          "index": 22,
+          "stage": "p2p_tests",
+          "raw": "archives/old_three/calls/22_FSV-S04_p2p_tests/response.raw.json",
+          "prompt": "archives/old_three/calls/22_FSV-S04_p2p_tests/prompt.txt",
+          "parsed_output": "archives/old_three/calls/22_FSV-S04_p2p_tests/parsed_output.json"
+        },
+        {
+          "index": 23,
+          "stage": "repair",
+          "raw": "archives/old_three/calls/23_FSV-S04_repair/response.raw.json",
+          "prompt": "archives/old_three/calls/23_FSV-S04_repair/prompt.txt",
+          "parsed_output": "archives/old_three/calls/23_FSV-S04_repair/parsed_output.json"
+        }
+      ],
+      "adapter_source": "archives/old_three/pilot_lib.py",
+      "packet": "archives/old_three/generation_inputs/FSV-S04/packet.json"
+    },
+    {
+      "batch": "A",
+      "task": "FSV-S04",
+      "method": "AUTOPAC_STYLE",
+      "final_status": "EVALUATED",
+      "original_pre_format_status": "DEVELOPMENT_REJECTED",
+      "source_result": "archives/old_three/effect_runs/FSV-S04/AUTOPAC_STYLE/RESULT.json",
+      "display_summary": "archives/old_three/binding_replay_resource_object/SUMMARY.json",
+      "policy": "archives/old_three/binding_replay_resource_object/FSV-S04/AUTOPAC_STYLE/validation/external_pilot/policy.rego",
+      "candidate": null,
+      "contract": "archives/old_three/execution_inputs/FSV-S04/contract.json",
+      "fixtures": [
+        {
+          "channel": "O-L",
+          "original_input": {
+            "request": {
+              "body": {
+                "email_id": "oracle@example.invalid",
+                "first_name": "ECV2 Oracle",
+                "status": "Lead"
+              }
+            },
+            "trusted": {}
+          },
+          "mapped_input": {
+            "request": {
+              "body": {
+                "email_id": "oracle@example.invalid",
+                "first_name": "ECV2 Oracle",
+                "status": "Lead"
+              }
+            },
+            "trusted": {},
+            "subject": {
+              "role": "authenticated_api_caller"
+            },
+            "action": "POST /api/resource/Lead",
+            "resource": {
+              "id": "ERPNext:16.0.0",
+              "system": "ERPNext",
+              "version": "16.0.0"
+            },
+            "subject_role": "authenticated_api_caller",
+            "resource_system": "ERPNext",
+            "resource_version": "16.0.0"
+          },
+          "expected": "allow",
+          "archived_actual": {
+            "status": "EXECUTED",
+            "decision": "allow",
+            "exit_code": 0
+          }
+        },
+        {
+          "channel": "O-I",
+          "original_input": {
+            "request": {
+              "body": {
+                "email_id": "not-an-email",
+                "first_name": "ECV2 Oracle",
+                "status": "Lead"
+              }
+            },
+            "trusted": {}
+          },
+          "mapped_input": {
+            "request": {
+              "body": {
+                "email_id": "not-an-email",
+                "first_name": "ECV2 Oracle",
+                "status": "Lead"
+              }
+            },
+            "trusted": {},
+            "subject": {
+              "role": "authenticated_api_caller"
+            },
+            "action": "POST /api/resource/Lead",
+            "resource": {
+              "id": "ERPNext:16.0.0",
+              "system": "ERPNext",
+              "version": "16.0.0"
+            },
+            "subject_role": "authenticated_api_caller",
+            "resource_system": "ERPNext",
+            "resource_version": "16.0.0"
+          },
+          "expected": "deny",
+          "archived_actual": {
+            "status": "EXECUTED",
+            "decision": "deny",
+            "exit_code": 0
+          }
+        }
+      ],
+      "calls": [
+        {
+          "index": 24,
+          "stage": "autopac_generate",
+          "raw": "archives/old_three/calls/24_FSV-S04_autopac_generate/response.raw.json",
+          "prompt": "archives/old_three/calls/24_FSV-S04_autopac_generate/prompt.txt",
+          "parsed_output": "archives/old_three/calls/24_FSV-S04_autopac_generate/parsed_output.json"
+        },
+        {
+          "index": 25,
+          "stage": "autopac_judge",
+          "raw": "archives/old_three/calls/25_FSV-S04_autopac_judge/response.raw.json",
+          "prompt": "archives/old_three/calls/25_FSV-S04_autopac_judge/prompt.txt",
+          "parsed_output": "archives/old_three/calls/25_FSV-S04_autopac_judge/parsed_output.json"
+        },
+        {
+          "index": 26,
+          "stage": "repair",
+          "raw": "archives/old_three/calls/26_FSV-S04_repair/response.raw.json",
+          "prompt": "archives/old_three/calls/26_FSV-S04_repair/prompt.txt",
+          "parsed_output": "archives/old_three/calls/26_FSV-S04_repair/parsed_output.json"
+        }
+      ],
+      "adapter_source": "archives/old_three/pilot_lib.py",
+      "packet": "archives/old_three/generation_inputs/FSV-S04/packet.json"
+    },
+    {
+      "batch": "A",
+      "task": "FSV-S04",
+      "method": "ECAS_MATCHED",
+      "final_status": "EVALUATED",
+      "original_pre_format_status": "EVALUATED",
+      "source_result": "archives/old_three/effect_runs/FSV-S04/ECAS_MATCHED/RESULT.json",
+      "display_summary": "archives/old_three/binding_replay_resource_object/SUMMARY.json",
+      "policy": "archives/old_three/effect_runs/FSV-S04/ECAS_MATCHED/admitted_policy.json",
+      "candidate": "archives/old_three/effect_runs/FSV-S04/ECAS_MATCHED/candidate.json",
+      "contract": "archives/old_three/execution_inputs/FSV-S04/contract.json",
+      "fixtures": [
+        {
+          "channel": "O-L",
+          "original_input": {
+            "request": {
+              "body": {
+                "email_id": "oracle@example.invalid",
+                "first_name": "ECV2 Oracle",
+                "status": "Lead"
+              }
+            },
+            "trusted": {}
+          },
+          "mapped_input": {
+            "request": {
+              "body": {
+                "email_id": "oracle@example.invalid",
+                "first_name": "ECV2 Oracle",
+                "status": "Lead"
+              }
+            },
+            "trusted": {},
+            "subject": {
+              "role": "authenticated_api_caller"
+            },
+            "action": "POST /api/resource/Lead",
+            "resource": {
+              "id": "ERPNext:16.0.0",
+              "system": "ERPNext",
+              "version": "16.0.0"
+            },
+            "subject_role": "authenticated_api_caller",
+            "resource_system": "ERPNext",
+            "resource_version": "16.0.0"
+          },
+          "expected": "allow",
+          "archived_actual": {
+            "policy_id": "POL-FSV-S04-LEAD-EMAIL-FMT",
+            "decision": "allow",
+            "fail_closed": true,
+            "violations": []
+          }
+        },
+        {
+          "channel": "O-I",
+          "original_input": {
+            "request": {
+              "body": {
+                "email_id": "not-an-email",
+                "first_name": "ECV2 Oracle",
+                "status": "Lead"
+              }
+            },
+            "trusted": {}
+          },
+          "mapped_input": {
+            "request": {
+              "body": {
+                "email_id": "not-an-email",
+                "first_name": "ECV2 Oracle",
+                "status": "Lead"
+              }
+            },
+            "trusted": {},
+            "subject": {
+              "role": "authenticated_api_caller"
+            },
+            "action": "POST /api/resource/Lead",
+            "resource": {
+              "id": "ERPNext:16.0.0",
+              "system": "ERPNext",
+              "version": "16.0.0"
+            },
+            "subject_role": "authenticated_api_caller",
+            "resource_system": "ERPNext",
+            "resource_version": "16.0.0"
+          },
+          "expected": "deny",
+          "archived_actual": {
+            "policy_id": "POL-FSV-S04-LEAD-EMAIL-FMT",
+            "decision": "deny",
+            "fail_closed": true,
+            "violations": [
+              {
+                "rule_id": "RULE-LEAD-EMAIL-FMT",
+                "code": "validator_rejected",
+                "detail": "email_basic_v1"
+              }
+            ]
+          }
+        }
+      ],
+      "calls": [
+        {
+          "index": 27,
+          "stage": "ecas_generate",
+          "raw": "archives/old_three/calls/27_FSV-S04_ecas_generate/response.raw.json",
+          "prompt": "archives/old_three/calls/27_FSV-S04_ecas_generate/prompt.txt",
+          "parsed_output": "archives/old_three/calls/27_FSV-S04_ecas_generate/parsed_output.json"
+        }
+      ],
+      "adapter_source": "archives/old_three/pilot_lib.py",
+      "packet": "archives/old_three/generation_inputs/FSV-S04/packet.json"
+    },
+    {
+      "batch": "B",
+      "task": "FSV-S03",
+      "method": "P2P_STYLE",
+      "final_status": "OUT_OF_SCOPE",
+      "original_pre_format_status": "OUT_OF_SCOPE",
+      "source_result": "archives/common_four/method_runs/FSV-S03/P2P_STYLE/RESULT.json",
+      "display_summary": "archives/common_four/results_review_v1/COMPARISON_SUMMARY.json",
+      "policy": null,
+      "candidate": null,
+      "contract": "archives/common_four/execution_inputs/FSV-S03/contract.json",
+      "fixtures": [],
+      "calls": [
+        {
+          "index": 5,
+          "stage": "p2p_detect",
+          "raw": "archives/common_four/calls/05_FSV-S03_p2p_detect/response.raw.json",
+          "prompt": "archives/common_four/calls/05_FSV-S03_p2p_detect/prompt.txt",
+          "parsed_output": "archives/common_four/calls/05_FSV-S03_p2p_detect/parsed_output.json"
+        }
+      ],
+      "adapter_source": "archives/common_four/pilot_lib.py",
+      "packet": "archives/common_four/generation_inputs/FSV-S03/packet.json"
+    },
+    {
+      "batch": "B",
+      "task": "FSV-S03",
+      "method": "AUTOPAC_STYLE",
+      "final_status": "DEVELOPMENT_REJECTED",
+      "original_pre_format_status": "DEVELOPMENT_REJECTED",
+      "source_result": "archives/common_four/method_runs/FSV-S03/AUTOPAC_STYLE/RESULT.json",
+      "display_summary": "archives/common_four/results_review_v1/COMPARISON_SUMMARY.json",
+      "policy": "archives/common_four/method_runs/FSV-S03/AUTOPAC_STYLE/repaired/external_pilot/policy.rego",
+      "candidate": null,
+      "contract": "archives/common_four/execution_inputs/FSV-S03/contract.json",
+      "fixtures": [],
+      "calls": [
+        {
+          "index": 6,
+          "stage": "autopac_generate",
+          "raw": "archives/common_four/calls/06_FSV-S03_autopac_generate/response.raw.json",
+          "prompt": "archives/common_four/calls/06_FSV-S03_autopac_generate/prompt.txt",
+          "parsed_output": "archives/common_four/calls/06_FSV-S03_autopac_generate/parsed_output.json"
+        },
+        {
+          "index": 7,
+          "stage": "autopac_judge",
+          "raw": "archives/common_four/calls/07_FSV-S03_autopac_judge/response.raw.json",
+          "prompt": "archives/common_four/calls/07_FSV-S03_autopac_judge/prompt.txt",
+          "parsed_output": "archives/common_four/calls/07_FSV-S03_autopac_judge/parsed_output.json"
+        },
+        {
+          "index": 8,
+          "stage": "repair",
+          "raw": "archives/common_four/calls/08_FSV-S03_repair/response.raw.json",
+          "prompt": "archives/common_four/calls/08_FSV-S03_repair/prompt.txt",
+          "parsed_output": "archives/common_four/calls/08_FSV-S03_repair/parsed_output.json"
+        }
+      ],
+      "adapter_source": "archives/common_four/pilot_lib.py",
+      "packet": "archives/common_four/generation_inputs/FSV-S03/packet.json"
+    },
+    {
+      "batch": "B",
+      "task": "FSV-S03",
+      "method": "ECAS_MATCHED",
+      "final_status": "ELIGIBLE",
+      "original_pre_format_status": "ELIGIBLE",
+      "source_result": "archives/common_four/method_runs/FSV-S03/ECAS_MATCHED/RESULT.json",
+      "display_summary": "archives/common_four/results_review_v1/COMPARISON_SUMMARY.json",
+      "policy": "archives/common_four/method_runs/FSV-S03/ECAS_MATCHED/initial/admitted_policy.json",
+      "candidate": "archives/common_four/method_runs/FSV-S03/ECAS_MATCHED/first_candidate.json",
+      "contract": "archives/common_four/execution_inputs/FSV-S03/contract.json",
+      "fixtures": [
+        {
+          "channel": "O-L",
+          "original_input": {
+            "request": {
+              "body": {
+                "age": 30,
+                "firstName": "Synthetic",
+                "isDependent": false,
+                "relationshipId": 1
+              }
+            },
+            "trusted": {}
+          },
+          "mapped_input": null,
+          "expected": "allow",
+          "archived_actual": {
+            "policy_id": "POL-FSV-S03-AGE-TYPE",
+            "decision": "allow",
+            "fail_closed": true,
+            "violations": []
+          }
+        },
+        {
+          "channel": "O-I",
+          "original_input": {
+            "request": {
+              "body": {
+                "age": "30",
+                "firstName": "Synthetic",
+                "isDependent": false,
+                "relationshipId": 1
+              }
+            },
+            "trusted": {}
+          },
+          "mapped_input": null,
+          "expected": "deny",
+          "archived_actual": {
+            "policy_id": "POL-FSV-S03-AGE-TYPE",
+            "decision": "deny",
+            "fail_closed": true,
+            "violations": [
+              {
+                "rule_id": "RULE-AGE-INTEGER",
+                "code": "type_mismatch",
+                "detail": "/request/body/age"
+              }
+            ]
+          }
+        }
+      ],
+      "calls": [
+        {
+          "index": 9,
+          "stage": "ecas_generate",
+          "raw": "archives/common_four/calls/09_FSV-S03_ecas_generate/response.raw.json",
+          "prompt": "archives/common_four/calls/09_FSV-S03_ecas_generate/prompt.txt",
+          "parsed_output": "archives/common_four/calls/09_FSV-S03_ecas_generate/parsed_output.json"
+        }
+      ],
+      "adapter_source": "archives/common_four/pilot_lib.py",
+      "packet": "archives/common_four/generation_inputs/FSV-S03/packet.json"
+    },
+    {
+      "batch": "B",
+      "task": "FSV-B13",
+      "method": "P2P_STYLE",
+      "final_status": "ELIGIBLE",
+      "original_pre_format_status": "ELIGIBLE",
+      "source_result": "archives/common_four/method_runs/FSV-B13/P2P_STYLE/RESULT.json",
+      "display_summary": "archives/common_four/results_review_v1/COMPARISON_SUMMARY.json",
+      "policy": "archives/common_four/method_runs/FSV-B13/P2P_STYLE/initial/external_pilot/policy.rego",
+      "candidate": null,
+      "contract": "archives/common_four/execution_inputs/FSV-B13/contract.json",
+      "fixtures": [
+        {
+          "channel": "O-L",
+          "original_input": {
+            "request": {
+              "body": {
+                "qty": 110
+              }
+            },
+            "trusted": {
+              "allowancePercent": 10,
+              "authorizedRole": false,
+              "derivedMaximumQty": 110,
+              "orderedQty": 100
+            }
+          },
+          "mapped_input": null,
+          "expected": "allow",
+          "archived_actual": {
+            "status": "EXECUTED",
+            "decision": "allow",
+            "exit_code": 0
+          }
+        },
+        {
+          "channel": "O-I",
+          "original_input": {
+            "request": {
+              "body": {
+                "qty": 111
+              }
+            },
+            "trusted": {
+              "allowancePercent": 10,
+              "authorizedRole": false,
+              "derivedMaximumQty": 110,
+              "orderedQty": 100
+            }
+          },
+          "mapped_input": null,
+          "expected": "deny",
+          "archived_actual": {
+            "status": "EXECUTED",
+            "decision": "deny",
+            "exit_code": 0
+          }
+        }
+      ],
+      "calls": [
+        {
+          "index": 10,
+          "stage": "p2p_detect",
+          "raw": "archives/common_four/calls/10_FSV-B13_p2p_detect/response.raw.json",
+          "prompt": "archives/common_four/calls/10_FSV-B13_p2p_detect/prompt.txt",
+          "parsed_output": "archives/common_four/calls/10_FSV-B13_p2p_detect/parsed_output.json"
+        },
+        {
+          "index": 11,
+          "stage": "p2p_extract",
+          "raw": "archives/common_four/calls/11_FSV-B13_p2p_extract/response.raw.json",
+          "prompt": "archives/common_four/calls/11_FSV-B13_p2p_extract/prompt.txt",
+          "parsed_output": "archives/common_four/calls/11_FSV-B13_p2p_extract/parsed_output.json"
+        },
+        {
+          "index": 12,
+          "stage": "p2p_rego",
+          "raw": "archives/common_four/calls/12_FSV-B13_p2p_rego/response.raw.json",
+          "prompt": "archives/common_four/calls/12_FSV-B13_p2p_rego/prompt.txt",
+          "parsed_output": "archives/common_four/calls/12_FSV-B13_p2p_rego/parsed_output.json"
+        },
+        {
+          "index": 13,
+          "stage": "p2p_tests",
+          "raw": "archives/common_four/calls/13_FSV-B13_p2p_tests/response.raw.json",
+          "prompt": "archives/common_four/calls/13_FSV-B13_p2p_tests/prompt.txt",
+          "parsed_output": "archives/common_four/calls/13_FSV-B13_p2p_tests/parsed_output.json"
+        }
+      ],
+      "adapter_source": "archives/common_four/pilot_lib.py",
+      "packet": "archives/common_four/generation_inputs/FSV-B13/packet.json"
+    },
+    {
+      "batch": "B",
+      "task": "FSV-B13",
+      "method": "AUTOPAC_STYLE",
+      "final_status": "ELIGIBLE",
+      "original_pre_format_status": "ELIGIBLE",
+      "source_result": "archives/common_four/method_runs/FSV-B13/AUTOPAC_STYLE/RESULT.json",
+      "display_summary": "archives/common_four/results_review_v1/COMPARISON_SUMMARY.json",
+      "policy": "archives/common_four/method_runs/FSV-B13/AUTOPAC_STYLE/initial/external_pilot/policy.rego",
+      "candidate": null,
+      "contract": "archives/common_four/execution_inputs/FSV-B13/contract.json",
+      "fixtures": [
+        {
+          "channel": "O-L",
+          "original_input": {
+            "request": {
+              "body": {
+                "qty": 110
+              }
+            },
+            "trusted": {
+              "allowancePercent": 10,
+              "authorizedRole": false,
+              "derivedMaximumQty": 110,
+              "orderedQty": 100
+            }
+          },
+          "mapped_input": null,
+          "expected": "allow",
+          "archived_actual": {
+            "status": "EXECUTED",
+            "decision": "allow",
+            "exit_code": 0
+          }
+        },
+        {
+          "channel": "O-I",
+          "original_input": {
+            "request": {
+              "body": {
+                "qty": 111
+              }
+            },
+            "trusted": {
+              "allowancePercent": 10,
+              "authorizedRole": false,
+              "derivedMaximumQty": 110,
+              "orderedQty": 100
+            }
+          },
+          "mapped_input": null,
+          "expected": "deny",
+          "archived_actual": {
+            "status": "EXECUTED",
+            "decision": "deny",
+            "exit_code": 0
+          }
+        }
+      ],
+      "calls": [
+        {
+          "index": 14,
+          "stage": "autopac_generate",
+          "raw": "archives/common_four/calls/14_FSV-B13_autopac_generate/response.raw.json",
+          "prompt": "archives/common_four/calls/14_FSV-B13_autopac_generate/prompt.txt",
+          "parsed_output": "archives/common_four/calls/14_FSV-B13_autopac_generate/parsed_output.json"
+        },
+        {
+          "index": 15,
+          "stage": "autopac_judge",
+          "raw": "archives/common_four/calls/15_FSV-B13_autopac_judge/response.raw.json",
+          "prompt": "archives/common_four/calls/15_FSV-B13_autopac_judge/prompt.txt",
+          "parsed_output": "archives/common_four/calls/15_FSV-B13_autopac_judge/parsed_output.json"
+        }
+      ],
+      "adapter_source": "archives/common_four/pilot_lib.py",
+      "packet": "archives/common_four/generation_inputs/FSV-B13/packet.json"
+    },
+    {
+      "batch": "B",
+      "task": "FSV-B13",
+      "method": "ECAS_MATCHED",
+      "final_status": "ELIGIBLE",
+      "original_pre_format_status": "ELIGIBLE",
+      "source_result": "archives/common_four/method_runs/FSV-B13/ECAS_MATCHED/RESULT.json",
+      "display_summary": "archives/common_four/results_review_v1/COMPARISON_SUMMARY.json",
+      "policy": "archives/common_four/method_runs/FSV-B13/ECAS_MATCHED/initial/admitted_policy.json",
+      "candidate": "archives/common_four/method_runs/FSV-B13/ECAS_MATCHED/first_candidate.json",
+      "contract": "archives/common_four/execution_inputs/FSV-B13/contract.json",
+      "fixtures": [
+        {
+          "channel": "O-L",
+          "original_input": {
+            "request": {
+              "body": {
+                "qty": 110
+              }
+            },
+            "trusted": {
+              "allowancePercent": 10,
+              "authorizedRole": false,
+              "derivedMaximumQty": 110,
+              "orderedQty": 100
+            }
+          },
+          "mapped_input": null,
+          "expected": "allow",
+          "archived_actual": {
+            "policy_id": "FSV-B13.PurchaseReceipt.QuantityAllowance",
+            "decision": "allow",
+            "fail_closed": true,
+            "violations": []
+          }
+        },
+        {
+          "channel": "O-I",
+          "original_input": {
+            "request": {
+              "body": {
+                "qty": 111
+              }
+            },
+            "trusted": {
+              "allowancePercent": 10,
+              "authorizedRole": false,
+              "derivedMaximumQty": 110,
+              "orderedQty": 100
+            }
+          },
+          "mapped_input": null,
+          "expected": "deny",
+          "archived_actual": {
+            "policy_id": "FSV-B13.PurchaseReceipt.QuantityAllowance",
+            "decision": "deny",
+            "fail_closed": true,
+            "violations": [
+              {
+                "rule_id": "FSV-B13.PurchaseReceipt.QuantityAllowance.Rule",
+                "code": "bounded_guard_rejected",
+                "detail": "FSV-B13.PurchaseReceipt.QuantityAllowance.Rule"
+              }
+            ]
+          }
+        }
+      ],
+      "calls": [
+        {
+          "index": 16,
+          "stage": "ecas_generate",
+          "raw": "archives/common_four/calls/16_FSV-B13_ecas_generate/response.raw.json",
+          "prompt": "archives/common_four/calls/16_FSV-B13_ecas_generate/prompt.txt",
+          "parsed_output": "archives/common_four/calls/16_FSV-B13_ecas_generate/parsed_output.json"
+        }
+      ],
+      "adapter_source": "archives/common_four/pilot_lib.py",
+      "packet": "archives/common_four/generation_inputs/FSV-B13/packet.json"
+    },
+    {
+      "batch": "B",
+      "task": "FSV-B17",
+      "method": "P2P_STYLE",
+      "final_status": "ELIGIBLE",
+      "original_pre_format_status": "ELIGIBLE",
+      "source_result": "archives/common_four/method_runs/FSV-B17/P2P_STYLE/RESULT.json",
+      "display_summary": "archives/common_four/results_review_v1/COMPARISON_SUMMARY.json",
+      "policy": "archives/common_four/method_runs/FSV-B17/P2P_STYLE/initial/external_pilot/policy.rego",
+      "candidate": null,
+      "contract": "archives/common_four/execution_inputs/FSV-B17/contract.json",
+      "fixtures": [
+        {
+          "channel": "O-L",
+          "original_input": {
+            "request": {
+              "body": {
+                "customer": "CUSTOMER-SYNTH-1"
+              }
+            },
+            "trusted": {
+              "customerDisabled": false
+            }
+          },
+          "mapped_input": null,
+          "expected": "allow",
+          "archived_actual": {
+            "status": "EXECUTED",
+            "decision": "allow",
+            "exit_code": 0
+          }
+        },
+        {
+          "channel": "O-I",
+          "original_input": {
+            "request": {
+              "body": {
+                "customer": "CUSTOMER-SYNTH-1"
+              }
+            },
+            "trusted": {
+              "customerDisabled": true
+            }
+          },
+          "mapped_input": null,
+          "expected": "deny",
+          "archived_actual": {
+            "status": "EXECUTED",
+            "decision": "deny",
+            "exit_code": 0
+          }
+        }
+      ],
+      "calls": [
+        {
+          "index": 17,
+          "stage": "p2p_detect",
+          "raw": "archives/common_four/calls/17_FSV-B17_p2p_detect/response.raw.json",
+          "prompt": "archives/common_four/calls/17_FSV-B17_p2p_detect/prompt.txt",
+          "parsed_output": "archives/common_four/calls/17_FSV-B17_p2p_detect/parsed_output.json"
+        },
+        {
+          "index": 18,
+          "stage": "p2p_extract",
+          "raw": "archives/common_four/calls/18_FSV-B17_p2p_extract/response.raw.json",
+          "prompt": "archives/common_four/calls/18_FSV-B17_p2p_extract/prompt.txt",
+          "parsed_output": "archives/common_four/calls/18_FSV-B17_p2p_extract/parsed_output.json"
+        },
+        {
+          "index": 19,
+          "stage": "p2p_rego",
+          "raw": "archives/common_four/calls/19_FSV-B17_p2p_rego/response.raw.json",
+          "prompt": "archives/common_four/calls/19_FSV-B17_p2p_rego/prompt.txt",
+          "parsed_output": "archives/common_four/calls/19_FSV-B17_p2p_rego/parsed_output.json"
+        },
+        {
+          "index": 20,
+          "stage": "p2p_tests",
+          "raw": "archives/common_four/calls/20_FSV-B17_p2p_tests/response.raw.json",
+          "prompt": "archives/common_four/calls/20_FSV-B17_p2p_tests/prompt.txt",
+          "parsed_output": "archives/common_four/calls/20_FSV-B17_p2p_tests/parsed_output.json"
+        }
+      ],
+      "adapter_source": "archives/common_four/pilot_lib.py",
+      "packet": "archives/common_four/generation_inputs/FSV-B17/packet.json"
+    },
+    {
+      "batch": "B",
+      "task": "FSV-B17",
+      "method": "AUTOPAC_STYLE",
+      "final_status": "ELIGIBLE",
+      "original_pre_format_status": "ELIGIBLE",
+      "source_result": "archives/common_four/method_runs/FSV-B17/AUTOPAC_STYLE/RESULT.json",
+      "display_summary": "archives/common_four/results_review_v1/COMPARISON_SUMMARY.json",
+      "policy": "archives/common_four/method_runs/FSV-B17/AUTOPAC_STYLE/initial/external_pilot/policy.rego",
+      "candidate": null,
+      "contract": "archives/common_four/execution_inputs/FSV-B17/contract.json",
+      "fixtures": [
+        {
+          "channel": "O-L",
+          "original_input": {
+            "request": {
+              "body": {
+                "customer": "CUSTOMER-SYNTH-1"
+              }
+            },
+            "trusted": {
+              "customerDisabled": false
+            }
+          },
+          "mapped_input": null,
+          "expected": "allow",
+          "archived_actual": {
+            "status": "EXECUTED",
+            "decision": "allow",
+            "exit_code": 0
+          }
+        },
+        {
+          "channel": "O-I",
+          "original_input": {
+            "request": {
+              "body": {
+                "customer": "CUSTOMER-SYNTH-1"
+              }
+            },
+            "trusted": {
+              "customerDisabled": true
+            }
+          },
+          "mapped_input": null,
+          "expected": "deny",
+          "archived_actual": {
+            "status": "EXECUTED",
+            "decision": "deny",
+            "exit_code": 0
+          }
+        }
+      ],
+      "calls": [
+        {
+          "index": 21,
+          "stage": "autopac_generate",
+          "raw": "archives/common_four/calls/21_FSV-B17_autopac_generate/response.raw.json",
+          "prompt": "archives/common_four/calls/21_FSV-B17_autopac_generate/prompt.txt",
+          "parsed_output": "archives/common_four/calls/21_FSV-B17_autopac_generate/parsed_output.json"
+        },
+        {
+          "index": 22,
+          "stage": "autopac_judge",
+          "raw": "archives/common_four/calls/22_FSV-B17_autopac_judge/response.raw.json",
+          "prompt": "archives/common_four/calls/22_FSV-B17_autopac_judge/prompt.txt",
+          "parsed_output": "archives/common_four/calls/22_FSV-B17_autopac_judge/parsed_output.json"
+        }
+      ],
+      "adapter_source": "archives/common_four/pilot_lib.py",
+      "packet": "archives/common_four/generation_inputs/FSV-B17/packet.json"
+    },
+    {
+      "batch": "B",
+      "task": "FSV-B17",
+      "method": "ECAS_MATCHED",
+      "final_status": "ELIGIBLE",
+      "original_pre_format_status": "ELIGIBLE",
+      "source_result": "archives/common_four/method_runs/FSV-B17/ECAS_MATCHED/RESULT.json",
+      "display_summary": "archives/common_four/results_review_v1/COMPARISON_SUMMARY.json",
+      "policy": "archives/common_four/method_runs/FSV-B17/ECAS_MATCHED/initial/admitted_policy.json",
+      "candidate": "archives/common_four/method_runs/FSV-B17/ECAS_MATCHED/first_candidate.json",
+      "contract": "archives/common_four/execution_inputs/FSV-B17/contract.json",
+      "fixtures": [
+        {
+          "channel": "O-L",
+          "original_input": {
+            "request": {
+              "body": {
+                "customer": "CUSTOMER-SYNTH-1"
+              }
+            },
+            "trusted": {
+              "customerDisabled": false
+            }
+          },
+          "mapped_input": null,
+          "expected": "allow",
+          "archived_actual": {
+            "policy_id": "FSV-B17-DISABLED-CUSTOMER-SO",
+            "decision": "allow",
+            "fail_closed": true,
+            "violations": []
+          }
+        },
+        {
+          "channel": "O-I",
+          "original_input": {
+            "request": {
+              "body": {
+                "customer": "CUSTOMER-SYNTH-1"
+              }
+            },
+            "trusted": {
+              "customerDisabled": true
+            }
+          },
+          "mapped_input": null,
+          "expected": "deny",
+          "archived_actual": {
+            "policy_id": "FSV-B17-DISABLED-CUSTOMER-SO",
+            "decision": "deny",
+            "fail_closed": true,
+            "violations": [
+              {
+                "rule_id": "FSV-B17-RULE-01",
+                "code": "bounded_guard_rejected",
+                "detail": "FSV-B17-RULE-01"
+              }
+            ]
+          }
+        }
+      ],
+      "calls": [
+        {
+          "index": 23,
+          "stage": "ecas_generate",
+          "raw": "archives/common_four/calls/23_FSV-B17_ecas_generate/response.raw.json",
+          "prompt": "archives/common_four/calls/23_FSV-B17_ecas_generate/prompt.txt",
+          "parsed_output": "archives/common_four/calls/23_FSV-B17_ecas_generate/parsed_output.json"
+        }
+      ],
+      "adapter_source": "archives/common_four/pilot_lib.py",
+      "packet": "archives/common_four/generation_inputs/FSV-B17/packet.json"
+    },
+    {
+      "batch": "B",
+      "task": "FSV-B19",
+      "method": "P2P_STYLE",
+      "final_status": "ELIGIBLE",
+      "original_pre_format_status": "ELIGIBLE",
+      "source_result": "archives/common_four/method_runs/FSV-B19/P2P_STYLE/RESULT.json",
+      "display_summary": "archives/common_four/results_review_v1/COMPARISON_SUMMARY.json",
+      "policy": "archives/common_four/method_runs/FSV-B19/P2P_STYLE/initial/external_pilot/policy.rego",
+      "candidate": null,
+      "contract": "archives/common_four/execution_inputs/FSV-B19/contract.json",
+      "fixtures": [
+        {
+          "channel": "O-L",
+          "original_input": {
+            "request": {
+              "body": {
+                "action": "PURCHASE_ORDER",
+                "supplier": "SUPPLIER-SYNTH-1"
+              }
+            },
+            "trusted": {
+              "holdType": "",
+              "supplierOnHold": false
+            }
+          },
+          "mapped_input": null,
+          "expected": "allow",
+          "archived_actual": {
+            "status": "EXECUTED",
+            "decision": "allow",
+            "exit_code": 0
+          }
+        },
+        {
+          "channel": "O-I",
+          "original_input": {
+            "request": {
+              "body": {
+                "action": "PURCHASE_ORDER",
+                "supplier": "SUPPLIER-SYNTH-1"
+              }
+            },
+            "trusted": {
+              "holdType": "All",
+              "supplierOnHold": true
+            }
+          },
+          "mapped_input": null,
+          "expected": "deny",
+          "archived_actual": {
+            "status": "EXECUTED",
+            "decision": "deny",
+            "exit_code": 0
+          }
+        }
+      ],
+      "calls": [
+        {
+          "index": 24,
+          "stage": "p2p_detect",
+          "raw": "archives/common_four/calls/24_FSV-B19_p2p_detect/response.raw.json",
+          "prompt": "archives/common_four/calls/24_FSV-B19_p2p_detect/prompt.txt",
+          "parsed_output": "archives/common_four/calls/24_FSV-B19_p2p_detect/parsed_output.json"
+        },
+        {
+          "index": 25,
+          "stage": "p2p_extract",
+          "raw": "archives/common_four/calls/25_FSV-B19_p2p_extract/response.raw.json",
+          "prompt": "archives/common_four/calls/25_FSV-B19_p2p_extract/prompt.txt",
+          "parsed_output": "archives/common_four/calls/25_FSV-B19_p2p_extract/parsed_output.json"
+        },
+        {
+          "index": 26,
+          "stage": "p2p_rego",
+          "raw": "archives/common_four/calls/26_FSV-B19_p2p_rego/response.raw.json",
+          "prompt": "archives/common_four/calls/26_FSV-B19_p2p_rego/prompt.txt",
+          "parsed_output": "archives/common_four/calls/26_FSV-B19_p2p_rego/parsed_output.json"
+        },
+        {
+          "index": 27,
+          "stage": "p2p_tests",
+          "raw": "archives/common_four/calls/27_FSV-B19_p2p_tests/response.raw.json",
+          "prompt": "archives/common_four/calls/27_FSV-B19_p2p_tests/prompt.txt",
+          "parsed_output": "archives/common_four/calls/27_FSV-B19_p2p_tests/parsed_output.json"
+        }
+      ],
+      "adapter_source": "archives/common_four/pilot_lib.py",
+      "packet": "archives/common_four/generation_inputs/FSV-B19/packet.json"
+    },
+    {
+      "batch": "B",
+      "task": "FSV-B19",
+      "method": "AUTOPAC_STYLE",
+      "final_status": "ELIGIBLE",
+      "original_pre_format_status": "ELIGIBLE",
+      "source_result": "archives/common_four/method_runs/FSV-B19/AUTOPAC_STYLE/RESULT.json",
+      "display_summary": "archives/common_four/results_review_v1/COMPARISON_SUMMARY.json",
+      "policy": "archives/common_four/method_runs/FSV-B19/AUTOPAC_STYLE/initial/external_pilot/policy.rego",
+      "candidate": null,
+      "contract": "archives/common_four/execution_inputs/FSV-B19/contract.json",
+      "fixtures": [
+        {
+          "channel": "O-L",
+          "original_input": {
+            "request": {
+              "body": {
+                "action": "PURCHASE_ORDER",
+                "supplier": "SUPPLIER-SYNTH-1"
+              }
+            },
+            "trusted": {
+              "holdType": "",
+              "supplierOnHold": false
+            }
+          },
+          "mapped_input": null,
+          "expected": "allow",
+          "archived_actual": {
+            "status": "EXECUTED",
+            "decision": "allow",
+            "exit_code": 0
+          }
+        },
+        {
+          "channel": "O-I",
+          "original_input": {
+            "request": {
+              "body": {
+                "action": "PURCHASE_ORDER",
+                "supplier": "SUPPLIER-SYNTH-1"
+              }
+            },
+            "trusted": {
+              "holdType": "All",
+              "supplierOnHold": true
+            }
+          },
+          "mapped_input": null,
+          "expected": "deny",
+          "archived_actual": {
+            "status": "EXECUTED",
+            "decision": "deny",
+            "exit_code": 0
+          }
+        }
+      ],
+      "calls": [
+        {
+          "index": 28,
+          "stage": "autopac_generate",
+          "raw": "archives/common_four/calls/28_FSV-B19_autopac_generate/response.raw.json",
+          "prompt": "archives/common_four/calls/28_FSV-B19_autopac_generate/prompt.txt",
+          "parsed_output": "archives/common_four/calls/28_FSV-B19_autopac_generate/parsed_output.json"
+        },
+        {
+          "index": 29,
+          "stage": "autopac_judge",
+          "raw": "archives/common_four/calls/29_FSV-B19_autopac_judge/response.raw.json",
+          "prompt": "archives/common_four/calls/29_FSV-B19_autopac_judge/prompt.txt",
+          "parsed_output": "archives/common_four/calls/29_FSV-B19_autopac_judge/parsed_output.json"
+        }
+      ],
+      "adapter_source": "archives/common_four/pilot_lib.py",
+      "packet": "archives/common_four/generation_inputs/FSV-B19/packet.json"
+    },
+    {
+      "batch": "B",
+      "task": "FSV-B19",
+      "method": "ECAS_MATCHED",
+      "final_status": "ELIGIBLE",
+      "original_pre_format_status": "ELIGIBLE",
+      "source_result": "archives/common_four/method_runs/FSV-B19/ECAS_MATCHED/RESULT.json",
+      "display_summary": "archives/common_four/results_review_v1/COMPARISON_SUMMARY.json",
+      "policy": "archives/common_four/method_runs/FSV-B19/ECAS_MATCHED/initial/admitted_policy.json",
+      "candidate": "archives/common_four/method_runs/FSV-B19/ECAS_MATCHED/first_candidate.json",
+      "contract": "archives/common_four/execution_inputs/FSV-B19/contract.json",
+      "fixtures": [
+        {
+          "channel": "O-L",
+          "original_input": {
+            "request": {
+              "body": {
+                "action": "PURCHASE_ORDER",
+                "supplier": "SUPPLIER-SYNTH-1"
+              }
+            },
+            "trusted": {
+              "holdType": "",
+              "supplierOnHold": false
+            }
+          },
+          "mapped_input": null,
+          "expected": "allow",
+          "archived_actual": {
+            "policy_id": "POL-FSV-B19-001",
+            "decision": "allow",
+            "fail_closed": true,
+            "violations": []
+          }
+        },
+        {
+          "channel": "O-I",
+          "original_input": {
+            "request": {
+              "body": {
+                "action": "PURCHASE_ORDER",
+                "supplier": "SUPPLIER-SYNTH-1"
+              }
+            },
+            "trusted": {
+              "holdType": "All",
+              "supplierOnHold": true
+            }
+          },
+          "mapped_input": null,
+          "expected": "deny",
+          "archived_actual": {
+            "policy_id": "POL-FSV-B19-001",
+            "decision": "deny",
+            "fail_closed": true,
+            "violations": [
+              {
+                "rule_id": "RULE-FSV-B19-001",
+                "code": "bounded_guard_rejected",
+                "detail": "RULE-FSV-B19-001"
+              }
+            ]
+          }
+        }
+      ],
+      "calls": [
+        {
+          "index": 30,
+          "stage": "ecas_generate",
+          "raw": "archives/common_four/calls/30_FSV-B19_ecas_generate/response.raw.json",
+          "prompt": "archives/common_four/calls/30_FSV-B19_ecas_generate/prompt.txt",
+          "parsed_output": "archives/common_four/calls/30_FSV-B19_ecas_generate/parsed_output.json"
+        }
+      ],
+      "adapter_source": "archives/common_four/pilot_lib.py",
+      "packet": "archives/common_four/generation_inputs/FSV-B19/packet.json"
+    }
+  ],
+  "variants": [
+    {
+      "row_id": "FSV-B06__three_case_v1__original",
+      "parent_id": "FSV-B06__three_case_v1",
+      "task": "FSV-B06",
+      "configuration": "three_case_v1",
+      "variant": "original",
+      "classification": "ARCHIVED_MODEL_OUTPUT",
+      "candidate": "archives/evidence_ablation/evidence_files/outputs/FSV-B06__three_case_v1__original/candidate.json",
+      "contract": "archives/evidence_ablation/evidence_files/outputs/FSV-B06__three_case_v1__original/contract.json",
+      "fixtures": "archives/evidence_ablation/evidence_files/outputs/FSV-B06__three_case_v1__original/execution_fixtures.json",
+      "compiled_policy": "archives/evidence_ablation/evidence_files/outputs/FSV-B06__three_case_v1__original/compiled_policy.json",
+      "archived_result": "archives/evidence_ablation/evidence_files/outputs/FSV-B06__three_case_v1__original/RESULT.json",
+      "audited_result_summary": "archives/evidence_ablation/COMPARISON_AUDITED.json"
+    },
+    {
+      "row_id": "FSV-B06__three_case_v1__evidence_refs_absent",
+      "parent_id": "FSV-B06__three_case_v1",
+      "task": "FSV-B06",
+      "configuration": "three_case_v1",
+      "variant": "evidence_refs_absent",
+      "classification": "CONSTRUCTED_INVENTORY_PERTURBATION",
+      "candidate": "archives/evidence_ablation/evidence_files/outputs/FSV-B06__three_case_v1__evidence_refs_absent/candidate.json",
+      "contract": "archives/evidence_ablation/evidence_files/outputs/FSV-B06__three_case_v1__evidence_refs_absent/contract.json",
+      "fixtures": "archives/evidence_ablation/evidence_files/outputs/FSV-B06__three_case_v1__evidence_refs_absent/execution_fixtures.json",
+      "compiled_policy": "archives/evidence_ablation/evidence_files/outputs/FSV-B06__three_case_v1__evidence_refs_absent/compiled_policy.json",
+      "archived_result": "archives/evidence_ablation/evidence_files/outputs/FSV-B06__three_case_v1__evidence_refs_absent/RESULT.json",
+      "audited_result_summary": "archives/evidence_ablation/COMPARISON_AUDITED.json"
+    },
+    {
+      "row_id": "FSV-B06__three_case_v1__evidence_version_mismatch",
+      "parent_id": "FSV-B06__three_case_v1",
+      "task": "FSV-B06",
+      "configuration": "three_case_v1",
+      "variant": "evidence_version_mismatch",
+      "classification": "CONSTRUCTED_INVENTORY_PERTURBATION",
+      "candidate": "archives/evidence_ablation/evidence_files/outputs/FSV-B06__three_case_v1__evidence_version_mismatch/candidate.json",
+      "contract": "archives/evidence_ablation/evidence_files/outputs/FSV-B06__three_case_v1__evidence_version_mismatch/contract.json",
+      "fixtures": "archives/evidence_ablation/evidence_files/outputs/FSV-B06__three_case_v1__evidence_version_mismatch/execution_fixtures.json",
+      "compiled_policy": "archives/evidence_ablation/evidence_files/outputs/FSV-B06__three_case_v1__evidence_version_mismatch/compiled_policy.json",
+      "archived_result": "archives/evidence_ablation/evidence_files/outputs/FSV-B06__three_case_v1__evidence_version_mismatch/RESULT.json",
+      "audited_result_summary": "archives/evidence_ablation/COMPARISON_AUDITED.json"
+    },
+    {
+      "row_id": "FSV-B06__three_case_v1__evidence_insufficient",
+      "parent_id": "FSV-B06__three_case_v1",
+      "task": "FSV-B06",
+      "configuration": "three_case_v1",
+      "variant": "evidence_insufficient",
+      "classification": "CONSTRUCTED_INVENTORY_PERTURBATION",
+      "candidate": "archives/evidence_ablation/evidence_files/outputs/FSV-B06__three_case_v1__evidence_insufficient/candidate.json",
+      "contract": "archives/evidence_ablation/evidence_files/outputs/FSV-B06__three_case_v1__evidence_insufficient/contract.json",
+      "fixtures": "archives/evidence_ablation/evidence_files/outputs/FSV-B06__three_case_v1__evidence_insufficient/execution_fixtures.json",
+      "compiled_policy": "archives/evidence_ablation/evidence_files/outputs/FSV-B06__three_case_v1__evidence_insufficient/compiled_policy.json",
+      "archived_result": "archives/evidence_ablation/evidence_files/outputs/FSV-B06__three_case_v1__evidence_insufficient/RESULT.json",
+      "audited_result_summary": "archives/evidence_ablation/COMPARISON_AUDITED.json"
+    },
+    {
+      "row_id": "FSV-B06__three_case_v1__required_binding_facts_absent",
+      "parent_id": "FSV-B06__three_case_v1",
+      "task": "FSV-B06",
+      "configuration": "three_case_v1",
+      "variant": "required_binding_facts_absent",
+      "classification": "CONSTRUCTED_INVENTORY_PERTURBATION",
+      "candidate": "archives/evidence_ablation/evidence_files/outputs/FSV-B06__three_case_v1__required_binding_facts_absent/candidate.json",
+      "contract": "archives/evidence_ablation/evidence_files/outputs/FSV-B06__three_case_v1__required_binding_facts_absent/contract.json",
+      "fixtures": "archives/evidence_ablation/evidence_files/outputs/FSV-B06__three_case_v1__required_binding_facts_absent/execution_fixtures.json",
+      "compiled_policy": "archives/evidence_ablation/evidence_files/outputs/FSV-B06__three_case_v1__required_binding_facts_absent/compiled_policy.json",
+      "archived_result": "archives/evidence_ablation/evidence_files/outputs/FSV-B06__three_case_v1__required_binding_facts_absent/RESULT.json",
+      "audited_result_summary": "archives/evidence_ablation/COMPARISON_AUDITED.json"
+    },
+    {
+      "row_id": "FSV-B06__three_case_v1__source_locator_hash_unresolvable",
+      "parent_id": "FSV-B06__three_case_v1",
+      "task": "FSV-B06",
+      "configuration": "three_case_v1",
+      "variant": "source_locator_hash_unresolvable",
+      "classification": "CONSTRUCTED_SOURCE_AUTHENTICITY_CHALLENGE",
+      "candidate": "archives/evidence_ablation/evidence_files/outputs/FSV-B06__three_case_v1__source_locator_hash_unresolvable/candidate.json",
+      "contract": "archives/evidence_ablation/evidence_files/outputs/FSV-B06__three_case_v1__source_locator_hash_unresolvable/contract.json",
+      "fixtures": "archives/evidence_ablation/evidence_files/outputs/FSV-B06__three_case_v1__source_locator_hash_unresolvable/execution_fixtures.json",
+      "compiled_policy": "archives/evidence_ablation/evidence_files/outputs/FSV-B06__three_case_v1__source_locator_hash_unresolvable/compiled_policy.json",
+      "archived_result": "archives/evidence_ablation/evidence_files/outputs/FSV-B06__three_case_v1__source_locator_hash_unresolvable/RESULT.json",
+      "audited_result_summary": "archives/evidence_ablation/COMPARISON_AUDITED.json"
+    },
+    {
+      "row_id": "FSV-B06__three_case_v1__trusted_path_to_unregistered_client_path",
+      "parent_id": "FSV-B06__three_case_v1",
+      "task": "FSV-B06",
+      "configuration": "three_case_v1",
+      "variant": "trusted_path_to_unregistered_client_path",
+      "classification": "CONSTRUCTED_POLICY_PATH_PERTURBATION",
+      "candidate": "archives/evidence_ablation/evidence_files/outputs/FSV-B06__three_case_v1__trusted_path_to_unregistered_client_path/candidate.json",
+      "contract": "archives/evidence_ablation/evidence_files/outputs/FSV-B06__three_case_v1__trusted_path_to_unregistered_client_path/contract.json",
+      "fixtures": "archives/evidence_ablation/evidence_files/outputs/FSV-B06__three_case_v1__trusted_path_to_unregistered_client_path/execution_fixtures.json",
+      "compiled_policy": "archives/evidence_ablation/evidence_files/outputs/FSV-B06__three_case_v1__trusted_path_to_unregistered_client_path/compiled_policy.json",
+      "archived_result": "archives/evidence_ablation/evidence_files/outputs/FSV-B06__three_case_v1__trusted_path_to_unregistered_client_path/RESULT.json",
+      "audited_result_summary": "archives/evidence_ablation/COMPARISON_AUDITED.json"
+    },
+    {
+      "row_id": "FSV-B06__three_case_v1__schema_visibility_hidden",
+      "parent_id": "FSV-B06__three_case_v1",
+      "task": "FSV-B06",
+      "configuration": "three_case_v1",
+      "variant": "schema_visibility_hidden",
+      "classification": "ENGINEERING_CONTRACT_SCHEMA_CONTROL",
+      "candidate": "archives/evidence_ablation/evidence_files/outputs/FSV-B06__three_case_v1__schema_visibility_hidden/candidate.json",
+      "contract": "archives/evidence_ablation/evidence_files/outputs/FSV-B06__three_case_v1__schema_visibility_hidden/contract.json",
+      "fixtures": "archives/evidence_ablation/evidence_files/outputs/FSV-B06__three_case_v1__schema_visibility_hidden/execution_fixtures.json",
+      "compiled_policy": "archives/evidence_ablation/evidence_files/outputs/FSV-B06__three_case_v1__schema_visibility_hidden/compiled_policy.json",
+      "archived_result": "archives/evidence_ablation/evidence_files/outputs/FSV-B06__three_case_v1__schema_visibility_hidden/RESULT.json",
+      "audited_result_summary": "archives/evidence_ablation/COMPARISON_AUDITED.json"
+    },
+    {
+      "row_id": "FSV-B06__three_case_v1__schema_ir_unknown_op",
+      "parent_id": "FSV-B06__three_case_v1",
+      "task": "FSV-B06",
+      "configuration": "three_case_v1",
+      "variant": "schema_ir_unknown_op",
+      "classification": "ENGINEERING_MODEL_IR_SCHEMA_CONTROL",
+      "candidate": "archives/evidence_ablation/evidence_files/outputs/FSV-B06__three_case_v1__schema_ir_unknown_op/candidate.json",
+      "contract": "archives/evidence_ablation/evidence_files/outputs/FSV-B06__three_case_v1__schema_ir_unknown_op/contract.json",
+      "fixtures": null,
+      "compiled_policy": null,
+      "archived_result": "archives/evidence_ablation/evidence_files/outputs/FSV-B06__three_case_v1__schema_ir_unknown_op/RESULT.json",
+      "audited_result_summary": "archives/evidence_ablation/COMPARISON_AUDITED.json"
+    },
+    {
+      "row_id": "FSV-S02__three_case_v1__original",
+      "parent_id": "FSV-S02__three_case_v1",
+      "task": "FSV-S02",
+      "configuration": "three_case_v1",
+      "variant": "original",
+      "classification": "ARCHIVED_MODEL_OUTPUT",
+      "candidate": "archives/evidence_ablation/evidence_files/outputs/FSV-S02__three_case_v1__original/candidate.json",
+      "contract": "archives/evidence_ablation/evidence_files/outputs/FSV-S02__three_case_v1__original/contract.json",
+      "fixtures": "archives/evidence_ablation/evidence_files/outputs/FSV-S02__three_case_v1__original/execution_fixtures.json",
+      "compiled_policy": "archives/evidence_ablation/evidence_files/outputs/FSV-S02__three_case_v1__original/compiled_policy.json",
+      "archived_result": "archives/evidence_ablation/evidence_files/outputs/FSV-S02__three_case_v1__original/RESULT.json",
+      "audited_result_summary": "archives/evidence_ablation/COMPARISON_AUDITED.json"
+    },
+    {
+      "row_id": "FSV-S02__three_case_v1__evidence_refs_absent",
+      "parent_id": "FSV-S02__three_case_v1",
+      "task": "FSV-S02",
+      "configuration": "three_case_v1",
+      "variant": "evidence_refs_absent",
+      "classification": "CONSTRUCTED_INVENTORY_PERTURBATION",
+      "candidate": "archives/evidence_ablation/evidence_files/outputs/FSV-S02__three_case_v1__evidence_refs_absent/candidate.json",
+      "contract": "archives/evidence_ablation/evidence_files/outputs/FSV-S02__three_case_v1__evidence_refs_absent/contract.json",
+      "fixtures": "archives/evidence_ablation/evidence_files/outputs/FSV-S02__three_case_v1__evidence_refs_absent/execution_fixtures.json",
+      "compiled_policy": "archives/evidence_ablation/evidence_files/outputs/FSV-S02__three_case_v1__evidence_refs_absent/compiled_policy.json",
+      "archived_result": "archives/evidence_ablation/evidence_files/outputs/FSV-S02__three_case_v1__evidence_refs_absent/RESULT.json",
+      "audited_result_summary": "archives/evidence_ablation/COMPARISON_AUDITED.json"
+    },
+    {
+      "row_id": "FSV-S02__three_case_v1__evidence_version_mismatch",
+      "parent_id": "FSV-S02__three_case_v1",
+      "task": "FSV-S02",
+      "configuration": "three_case_v1",
+      "variant": "evidence_version_mismatch",
+      "classification": "CONSTRUCTED_INVENTORY_PERTURBATION",
+      "candidate": "archives/evidence_ablation/evidence_files/outputs/FSV-S02__three_case_v1__evidence_version_mismatch/candidate.json",
+      "contract": "archives/evidence_ablation/evidence_files/outputs/FSV-S02__three_case_v1__evidence_version_mismatch/contract.json",
+      "fixtures": "archives/evidence_ablation/evidence_files/outputs/FSV-S02__three_case_v1__evidence_version_mismatch/execution_fixtures.json",
+      "compiled_policy": "archives/evidence_ablation/evidence_files/outputs/FSV-S02__three_case_v1__evidence_version_mismatch/compiled_policy.json",
+      "archived_result": "archives/evidence_ablation/evidence_files/outputs/FSV-S02__three_case_v1__evidence_version_mismatch/RESULT.json",
+      "audited_result_summary": "archives/evidence_ablation/COMPARISON_AUDITED.json"
+    },
+    {
+      "row_id": "FSV-S02__three_case_v1__evidence_insufficient",
+      "parent_id": "FSV-S02__three_case_v1",
+      "task": "FSV-S02",
+      "configuration": "three_case_v1",
+      "variant": "evidence_insufficient",
+      "classification": "CONSTRUCTED_INVENTORY_PERTURBATION",
+      "candidate": "archives/evidence_ablation/evidence_files/outputs/FSV-S02__three_case_v1__evidence_insufficient/candidate.json",
+      "contract": "archives/evidence_ablation/evidence_files/outputs/FSV-S02__three_case_v1__evidence_insufficient/contract.json",
+      "fixtures": "archives/evidence_ablation/evidence_files/outputs/FSV-S02__three_case_v1__evidence_insufficient/execution_fixtures.json",
+      "compiled_policy": "archives/evidence_ablation/evidence_files/outputs/FSV-S02__three_case_v1__evidence_insufficient/compiled_policy.json",
+      "archived_result": "archives/evidence_ablation/evidence_files/outputs/FSV-S02__three_case_v1__evidence_insufficient/RESULT.json",
+      "audited_result_summary": "archives/evidence_ablation/COMPARISON_AUDITED.json"
+    },
+    {
+      "row_id": "FSV-S02__three_case_v1__required_binding_facts_absent",
+      "parent_id": "FSV-S02__three_case_v1",
+      "task": "FSV-S02",
+      "configuration": "three_case_v1",
+      "variant": "required_binding_facts_absent",
+      "classification": "CONSTRUCTED_INVENTORY_PERTURBATION",
+      "candidate": "archives/evidence_ablation/evidence_files/outputs/FSV-S02__three_case_v1__required_binding_facts_absent/candidate.json",
+      "contract": "archives/evidence_ablation/evidence_files/outputs/FSV-S02__three_case_v1__required_binding_facts_absent/contract.json",
+      "fixtures": "archives/evidence_ablation/evidence_files/outputs/FSV-S02__three_case_v1__required_binding_facts_absent/execution_fixtures.json",
+      "compiled_policy": "archives/evidence_ablation/evidence_files/outputs/FSV-S02__three_case_v1__required_binding_facts_absent/compiled_policy.json",
+      "archived_result": "archives/evidence_ablation/evidence_files/outputs/FSV-S02__three_case_v1__required_binding_facts_absent/RESULT.json",
+      "audited_result_summary": "archives/evidence_ablation/COMPARISON_AUDITED.json"
+    },
+    {
+      "row_id": "FSV-S02__three_case_v1__source_locator_hash_unresolvable",
+      "parent_id": "FSV-S02__three_case_v1",
+      "task": "FSV-S02",
+      "configuration": "three_case_v1",
+      "variant": "source_locator_hash_unresolvable",
+      "classification": "CONSTRUCTED_SOURCE_AUTHENTICITY_CHALLENGE",
+      "candidate": "archives/evidence_ablation/evidence_files/outputs/FSV-S02__three_case_v1__source_locator_hash_unresolvable/candidate.json",
+      "contract": "archives/evidence_ablation/evidence_files/outputs/FSV-S02__three_case_v1__source_locator_hash_unresolvable/contract.json",
+      "fixtures": "archives/evidence_ablation/evidence_files/outputs/FSV-S02__three_case_v1__source_locator_hash_unresolvable/execution_fixtures.json",
+      "compiled_policy": "archives/evidence_ablation/evidence_files/outputs/FSV-S02__three_case_v1__source_locator_hash_unresolvable/compiled_policy.json",
+      "archived_result": "archives/evidence_ablation/evidence_files/outputs/FSV-S02__three_case_v1__source_locator_hash_unresolvable/RESULT.json",
+      "audited_result_summary": "archives/evidence_ablation/COMPARISON_AUDITED.json"
+    },
+    {
+      "row_id": "FSV-S02__three_case_v1__schema_visibility_hidden",
+      "parent_id": "FSV-S02__three_case_v1",
+      "task": "FSV-S02",
+      "configuration": "three_case_v1",
+      "variant": "schema_visibility_hidden",
+      "classification": "ENGINEERING_CONTRACT_SCHEMA_CONTROL",
+      "candidate": "archives/evidence_ablation/evidence_files/outputs/FSV-S02__three_case_v1__schema_visibility_hidden/candidate.json",
+      "contract": "archives/evidence_ablation/evidence_files/outputs/FSV-S02__three_case_v1__schema_visibility_hidden/contract.json",
+      "fixtures": "archives/evidence_ablation/evidence_files/outputs/FSV-S02__three_case_v1__schema_visibility_hidden/execution_fixtures.json",
+      "compiled_policy": "archives/evidence_ablation/evidence_files/outputs/FSV-S02__three_case_v1__schema_visibility_hidden/compiled_policy.json",
+      "archived_result": "archives/evidence_ablation/evidence_files/outputs/FSV-S02__three_case_v1__schema_visibility_hidden/RESULT.json",
+      "audited_result_summary": "archives/evidence_ablation/COMPARISON_AUDITED.json"
+    },
+    {
+      "row_id": "FSV-S02__three_case_v1__schema_ir_unknown_op",
+      "parent_id": "FSV-S02__three_case_v1",
+      "task": "FSV-S02",
+      "configuration": "three_case_v1",
+      "variant": "schema_ir_unknown_op",
+      "classification": "ENGINEERING_MODEL_IR_SCHEMA_CONTROL",
+      "candidate": "archives/evidence_ablation/evidence_files/outputs/FSV-S02__three_case_v1__schema_ir_unknown_op/candidate.json",
+      "contract": "archives/evidence_ablation/evidence_files/outputs/FSV-S02__three_case_v1__schema_ir_unknown_op/contract.json",
+      "fixtures": null,
+      "compiled_policy": null,
+      "archived_result": "archives/evidence_ablation/evidence_files/outputs/FSV-S02__three_case_v1__schema_ir_unknown_op/RESULT.json",
+      "audited_result_summary": "archives/evidence_ablation/COMPARISON_AUDITED.json"
+    },
+    {
+      "row_id": "FSV-S04__three_case_v1__original",
+      "parent_id": "FSV-S04__three_case_v1",
+      "task": "FSV-S04",
+      "configuration": "three_case_v1",
+      "variant": "original",
+      "classification": "ARCHIVED_MODEL_OUTPUT",
+      "candidate": "archives/evidence_ablation/evidence_files/outputs/FSV-S04__three_case_v1__original/candidate.json",
+      "contract": "archives/evidence_ablation/evidence_files/outputs/FSV-S04__three_case_v1__original/contract.json",
+      "fixtures": "archives/evidence_ablation/evidence_files/outputs/FSV-S04__three_case_v1__original/execution_fixtures.json",
+      "compiled_policy": "archives/evidence_ablation/evidence_files/outputs/FSV-S04__three_case_v1__original/compiled_policy.json",
+      "archived_result": "archives/evidence_ablation/evidence_files/outputs/FSV-S04__three_case_v1__original/RESULT.json",
+      "audited_result_summary": "archives/evidence_ablation/COMPARISON_AUDITED.json"
+    },
+    {
+      "row_id": "FSV-S04__three_case_v1__evidence_refs_absent",
+      "parent_id": "FSV-S04__three_case_v1",
+      "task": "FSV-S04",
+      "configuration": "three_case_v1",
+      "variant": "evidence_refs_absent",
+      "classification": "CONSTRUCTED_INVENTORY_PERTURBATION",
+      "candidate": "archives/evidence_ablation/evidence_files/outputs/FSV-S04__three_case_v1__evidence_refs_absent/candidate.json",
+      "contract": "archives/evidence_ablation/evidence_files/outputs/FSV-S04__three_case_v1__evidence_refs_absent/contract.json",
+      "fixtures": "archives/evidence_ablation/evidence_files/outputs/FSV-S04__three_case_v1__evidence_refs_absent/execution_fixtures.json",
+      "compiled_policy": "archives/evidence_ablation/evidence_files/outputs/FSV-S04__three_case_v1__evidence_refs_absent/compiled_policy.json",
+      "archived_result": "archives/evidence_ablation/evidence_files/outputs/FSV-S04__three_case_v1__evidence_refs_absent/RESULT.json",
+      "audited_result_summary": "archives/evidence_ablation/COMPARISON_AUDITED.json"
+    },
+    {
+      "row_id": "FSV-S04__three_case_v1__evidence_version_mismatch",
+      "parent_id": "FSV-S04__three_case_v1",
+      "task": "FSV-S04",
+      "configuration": "three_case_v1",
+      "variant": "evidence_version_mismatch",
+      "classification": "CONSTRUCTED_INVENTORY_PERTURBATION",
+      "candidate": "archives/evidence_ablation/evidence_files/outputs/FSV-S04__three_case_v1__evidence_version_mismatch/candidate.json",
+      "contract": "archives/evidence_ablation/evidence_files/outputs/FSV-S04__three_case_v1__evidence_version_mismatch/contract.json",
+      "fixtures": "archives/evidence_ablation/evidence_files/outputs/FSV-S04__three_case_v1__evidence_version_mismatch/execution_fixtures.json",
+      "compiled_policy": "archives/evidence_ablation/evidence_files/outputs/FSV-S04__three_case_v1__evidence_version_mismatch/compiled_policy.json",
+      "archived_result": "archives/evidence_ablation/evidence_files/outputs/FSV-S04__three_case_v1__evidence_version_mismatch/RESULT.json",
+      "audited_result_summary": "archives/evidence_ablation/COMPARISON_AUDITED.json"
+    },
+    {
+      "row_id": "FSV-S04__three_case_v1__evidence_insufficient",
+      "parent_id": "FSV-S04__three_case_v1",
+      "task": "FSV-S04",
+      "configuration": "three_case_v1",
+      "variant": "evidence_insufficient",
+      "classification": "CONSTRUCTED_INVENTORY_PERTURBATION",
+      "candidate": "archives/evidence_ablation/evidence_files/outputs/FSV-S04__three_case_v1__evidence_insufficient/candidate.json",
+      "contract": "archives/evidence_ablation/evidence_files/outputs/FSV-S04__three_case_v1__evidence_insufficient/contract.json",
+      "fixtures": "archives/evidence_ablation/evidence_files/outputs/FSV-S04__three_case_v1__evidence_insufficient/execution_fixtures.json",
+      "compiled_policy": "archives/evidence_ablation/evidence_files/outputs/FSV-S04__three_case_v1__evidence_insufficient/compiled_policy.json",
+      "archived_result": "archives/evidence_ablation/evidence_files/outputs/FSV-S04__three_case_v1__evidence_insufficient/RESULT.json",
+      "audited_result_summary": "archives/evidence_ablation/COMPARISON_AUDITED.json"
+    },
+    {
+      "row_id": "FSV-S04__three_case_v1__required_binding_facts_absent",
+      "parent_id": "FSV-S04__three_case_v1",
+      "task": "FSV-S04",
+      "configuration": "three_case_v1",
+      "variant": "required_binding_facts_absent",
+      "classification": "CONSTRUCTED_INVENTORY_PERTURBATION",
+      "candidate": "archives/evidence_ablation/evidence_files/outputs/FSV-S04__three_case_v1__required_binding_facts_absent/candidate.json",
+      "contract": "archives/evidence_ablation/evidence_files/outputs/FSV-S04__three_case_v1__required_binding_facts_absent/contract.json",
+      "fixtures": "archives/evidence_ablation/evidence_files/outputs/FSV-S04__three_case_v1__required_binding_facts_absent/execution_fixtures.json",
+      "compiled_policy": "archives/evidence_ablation/evidence_files/outputs/FSV-S04__three_case_v1__required_binding_facts_absent/compiled_policy.json",
+      "archived_result": "archives/evidence_ablation/evidence_files/outputs/FSV-S04__three_case_v1__required_binding_facts_absent/RESULT.json",
+      "audited_result_summary": "archives/evidence_ablation/COMPARISON_AUDITED.json"
+    },
+    {
+      "row_id": "FSV-S04__three_case_v1__source_locator_hash_unresolvable",
+      "parent_id": "FSV-S04__three_case_v1",
+      "task": "FSV-S04",
+      "configuration": "three_case_v1",
+      "variant": "source_locator_hash_unresolvable",
+      "classification": "CONSTRUCTED_SOURCE_AUTHENTICITY_CHALLENGE",
+      "candidate": "archives/evidence_ablation/evidence_files/outputs/FSV-S04__three_case_v1__source_locator_hash_unresolvable/candidate.json",
+      "contract": "archives/evidence_ablation/evidence_files/outputs/FSV-S04__three_case_v1__source_locator_hash_unresolvable/contract.json",
+      "fixtures": "archives/evidence_ablation/evidence_files/outputs/FSV-S04__three_case_v1__source_locator_hash_unresolvable/execution_fixtures.json",
+      "compiled_policy": "archives/evidence_ablation/evidence_files/outputs/FSV-S04__three_case_v1__source_locator_hash_unresolvable/compiled_policy.json",
+      "archived_result": "archives/evidence_ablation/evidence_files/outputs/FSV-S04__three_case_v1__source_locator_hash_unresolvable/RESULT.json",
+      "audited_result_summary": "archives/evidence_ablation/COMPARISON_AUDITED.json"
+    },
+    {
+      "row_id": "FSV-S04__three_case_v1__schema_visibility_hidden",
+      "parent_id": "FSV-S04__three_case_v1",
+      "task": "FSV-S04",
+      "configuration": "three_case_v1",
+      "variant": "schema_visibility_hidden",
+      "classification": "ENGINEERING_CONTRACT_SCHEMA_CONTROL",
+      "candidate": "archives/evidence_ablation/evidence_files/outputs/FSV-S04__three_case_v1__schema_visibility_hidden/candidate.json",
+      "contract": "archives/evidence_ablation/evidence_files/outputs/FSV-S04__three_case_v1__schema_visibility_hidden/contract.json",
+      "fixtures": "archives/evidence_ablation/evidence_files/outputs/FSV-S04__three_case_v1__schema_visibility_hidden/execution_fixtures.json",
+      "compiled_policy": "archives/evidence_ablation/evidence_files/outputs/FSV-S04__three_case_v1__schema_visibility_hidden/compiled_policy.json",
+      "archived_result": "archives/evidence_ablation/evidence_files/outputs/FSV-S04__three_case_v1__schema_visibility_hidden/RESULT.json",
+      "audited_result_summary": "archives/evidence_ablation/COMPARISON_AUDITED.json"
+    },
+    {
+      "row_id": "FSV-S04__three_case_v1__schema_ir_unknown_op",
+      "parent_id": "FSV-S04__three_case_v1",
+      "task": "FSV-S04",
+      "configuration": "three_case_v1",
+      "variant": "schema_ir_unknown_op",
+      "classification": "ENGINEERING_MODEL_IR_SCHEMA_CONTROL",
+      "candidate": "archives/evidence_ablation/evidence_files/outputs/FSV-S04__three_case_v1__schema_ir_unknown_op/candidate.json",
+      "contract": "archives/evidence_ablation/evidence_files/outputs/FSV-S04__three_case_v1__schema_ir_unknown_op/contract.json",
+      "fixtures": null,
+      "compiled_policy": null,
+      "archived_result": "archives/evidence_ablation/evidence_files/outputs/FSV-S04__three_case_v1__schema_ir_unknown_op/RESULT.json",
+      "audited_result_summary": "archives/evidence_ablation/COMPARISON_AUDITED.json"
+    },
+    {
+      "row_id": "FSV-S03__four_case_v1__original",
+      "parent_id": "FSV-S03__four_case_v1",
+      "task": "FSV-S03",
+      "configuration": "four_case_v1",
+      "variant": "original",
+      "classification": "ARCHIVED_MODEL_OUTPUT",
+      "candidate": "archives/evidence_ablation/evidence_files/outputs/FSV-S03__four_case_v1__original/candidate.json",
+      "contract": "archives/evidence_ablation/evidence_files/outputs/FSV-S03__four_case_v1__original/contract.json",
+      "fixtures": "archives/evidence_ablation/evidence_files/outputs/FSV-S03__four_case_v1__original/execution_fixtures.json",
+      "compiled_policy": "archives/evidence_ablation/evidence_files/outputs/FSV-S03__four_case_v1__original/compiled_policy.json",
+      "archived_result": "archives/evidence_ablation/evidence_files/outputs/FSV-S03__four_case_v1__original/RESULT.json",
+      "audited_result_summary": "archives/evidence_ablation/COMPARISON_AUDITED.json"
+    },
+    {
+      "row_id": "FSV-S03__four_case_v1__evidence_refs_absent",
+      "parent_id": "FSV-S03__four_case_v1",
+      "task": "FSV-S03",
+      "configuration": "four_case_v1",
+      "variant": "evidence_refs_absent",
+      "classification": "CONSTRUCTED_INVENTORY_PERTURBATION",
+      "candidate": "archives/evidence_ablation/evidence_files/outputs/FSV-S03__four_case_v1__evidence_refs_absent/candidate.json",
+      "contract": "archives/evidence_ablation/evidence_files/outputs/FSV-S03__four_case_v1__evidence_refs_absent/contract.json",
+      "fixtures": "archives/evidence_ablation/evidence_files/outputs/FSV-S03__four_case_v1__evidence_refs_absent/execution_fixtures.json",
+      "compiled_policy": "archives/evidence_ablation/evidence_files/outputs/FSV-S03__four_case_v1__evidence_refs_absent/compiled_policy.json",
+      "archived_result": "archives/evidence_ablation/evidence_files/outputs/FSV-S03__four_case_v1__evidence_refs_absent/RESULT.json",
+      "audited_result_summary": "archives/evidence_ablation/COMPARISON_AUDITED.json"
+    },
+    {
+      "row_id": "FSV-S03__four_case_v1__evidence_version_mismatch",
+      "parent_id": "FSV-S03__four_case_v1",
+      "task": "FSV-S03",
+      "configuration": "four_case_v1",
+      "variant": "evidence_version_mismatch",
+      "classification": "CONSTRUCTED_INVENTORY_PERTURBATION",
+      "candidate": "archives/evidence_ablation/evidence_files/outputs/FSV-S03__four_case_v1__evidence_version_mismatch/candidate.json",
+      "contract": "archives/evidence_ablation/evidence_files/outputs/FSV-S03__four_case_v1__evidence_version_mismatch/contract.json",
+      "fixtures": "archives/evidence_ablation/evidence_files/outputs/FSV-S03__four_case_v1__evidence_version_mismatch/execution_fixtures.json",
+      "compiled_policy": "archives/evidence_ablation/evidence_files/outputs/FSV-S03__four_case_v1__evidence_version_mismatch/compiled_policy.json",
+      "archived_result": "archives/evidence_ablation/evidence_files/outputs/FSV-S03__four_case_v1__evidence_version_mismatch/RESULT.json",
+      "audited_result_summary": "archives/evidence_ablation/COMPARISON_AUDITED.json"
+    },
+    {
+      "row_id": "FSV-S03__four_case_v1__evidence_insufficient",
+      "parent_id": "FSV-S03__four_case_v1",
+      "task": "FSV-S03",
+      "configuration": "four_case_v1",
+      "variant": "evidence_insufficient",
+      "classification": "CONSTRUCTED_INVENTORY_PERTURBATION",
+      "candidate": "archives/evidence_ablation/evidence_files/outputs/FSV-S03__four_case_v1__evidence_insufficient/candidate.json",
+      "contract": "archives/evidence_ablation/evidence_files/outputs/FSV-S03__four_case_v1__evidence_insufficient/contract.json",
+      "fixtures": "archives/evidence_ablation/evidence_files/outputs/FSV-S03__four_case_v1__evidence_insufficient/execution_fixtures.json",
+      "compiled_policy": "archives/evidence_ablation/evidence_files/outputs/FSV-S03__four_case_v1__evidence_insufficient/compiled_policy.json",
+      "archived_result": "archives/evidence_ablation/evidence_files/outputs/FSV-S03__four_case_v1__evidence_insufficient/RESULT.json",
+      "audited_result_summary": "archives/evidence_ablation/COMPARISON_AUDITED.json"
+    },
+    {
+      "row_id": "FSV-S03__four_case_v1__required_binding_facts_absent",
+      "parent_id": "FSV-S03__four_case_v1",
+      "task": "FSV-S03",
+      "configuration": "four_case_v1",
+      "variant": "required_binding_facts_absent",
+      "classification": "CONSTRUCTED_INVENTORY_PERTURBATION",
+      "candidate": "archives/evidence_ablation/evidence_files/outputs/FSV-S03__four_case_v1__required_binding_facts_absent/candidate.json",
+      "contract": "archives/evidence_ablation/evidence_files/outputs/FSV-S03__four_case_v1__required_binding_facts_absent/contract.json",
+      "fixtures": "archives/evidence_ablation/evidence_files/outputs/FSV-S03__four_case_v1__required_binding_facts_absent/execution_fixtures.json",
+      "compiled_policy": "archives/evidence_ablation/evidence_files/outputs/FSV-S03__four_case_v1__required_binding_facts_absent/compiled_policy.json",
+      "archived_result": "archives/evidence_ablation/evidence_files/outputs/FSV-S03__four_case_v1__required_binding_facts_absent/RESULT.json",
+      "audited_result_summary": "archives/evidence_ablation/COMPARISON_AUDITED.json"
+    },
+    {
+      "row_id": "FSV-S03__four_case_v1__source_locator_hash_unresolvable",
+      "parent_id": "FSV-S03__four_case_v1",
+      "task": "FSV-S03",
+      "configuration": "four_case_v1",
+      "variant": "source_locator_hash_unresolvable",
+      "classification": "CONSTRUCTED_SOURCE_AUTHENTICITY_CHALLENGE",
+      "candidate": "archives/evidence_ablation/evidence_files/outputs/FSV-S03__four_case_v1__source_locator_hash_unresolvable/candidate.json",
+      "contract": "archives/evidence_ablation/evidence_files/outputs/FSV-S03__four_case_v1__source_locator_hash_unresolvable/contract.json",
+      "fixtures": "archives/evidence_ablation/evidence_files/outputs/FSV-S03__four_case_v1__source_locator_hash_unresolvable/execution_fixtures.json",
+      "compiled_policy": "archives/evidence_ablation/evidence_files/outputs/FSV-S03__four_case_v1__source_locator_hash_unresolvable/compiled_policy.json",
+      "archived_result": "archives/evidence_ablation/evidence_files/outputs/FSV-S03__four_case_v1__source_locator_hash_unresolvable/RESULT.json",
+      "audited_result_summary": "archives/evidence_ablation/COMPARISON_AUDITED.json"
+    },
+    {
+      "row_id": "FSV-S03__four_case_v1__schema_visibility_hidden",
+      "parent_id": "FSV-S03__four_case_v1",
+      "task": "FSV-S03",
+      "configuration": "four_case_v1",
+      "variant": "schema_visibility_hidden",
+      "classification": "ENGINEERING_CONTRACT_SCHEMA_CONTROL",
+      "candidate": "archives/evidence_ablation/evidence_files/outputs/FSV-S03__four_case_v1__schema_visibility_hidden/candidate.json",
+      "contract": "archives/evidence_ablation/evidence_files/outputs/FSV-S03__four_case_v1__schema_visibility_hidden/contract.json",
+      "fixtures": "archives/evidence_ablation/evidence_files/outputs/FSV-S03__four_case_v1__schema_visibility_hidden/execution_fixtures.json",
+      "compiled_policy": "archives/evidence_ablation/evidence_files/outputs/FSV-S03__four_case_v1__schema_visibility_hidden/compiled_policy.json",
+      "archived_result": "archives/evidence_ablation/evidence_files/outputs/FSV-S03__four_case_v1__schema_visibility_hidden/RESULT.json",
+      "audited_result_summary": "archives/evidence_ablation/COMPARISON_AUDITED.json"
+    },
+    {
+      "row_id": "FSV-S03__four_case_v1__schema_ir_unknown_op",
+      "parent_id": "FSV-S03__four_case_v1",
+      "task": "FSV-S03",
+      "configuration": "four_case_v1",
+      "variant": "schema_ir_unknown_op",
+      "classification": "ENGINEERING_MODEL_IR_SCHEMA_CONTROL",
+      "candidate": "archives/evidence_ablation/evidence_files/outputs/FSV-S03__four_case_v1__schema_ir_unknown_op/candidate.json",
+      "contract": "archives/evidence_ablation/evidence_files/outputs/FSV-S03__four_case_v1__schema_ir_unknown_op/contract.json",
+      "fixtures": null,
+      "compiled_policy": null,
+      "archived_result": "archives/evidence_ablation/evidence_files/outputs/FSV-S03__four_case_v1__schema_ir_unknown_op/RESULT.json",
+      "audited_result_summary": "archives/evidence_ablation/COMPARISON_AUDITED.json"
+    },
+    {
+      "row_id": "FSV-S03__four_case_v2__original",
+      "parent_id": "FSV-S03__four_case_v2",
+      "task": "FSV-S03",
+      "configuration": "four_case_v2",
+      "variant": "original",
+      "classification": "ARCHIVED_MODEL_OUTPUT",
+      "candidate": "archives/evidence_ablation/evidence_files/outputs/FSV-S03__four_case_v2__original/candidate.json",
+      "contract": "archives/evidence_ablation/evidence_files/outputs/FSV-S03__four_case_v2__original/contract.json",
+      "fixtures": "archives/evidence_ablation/evidence_files/outputs/FSV-S03__four_case_v2__original/execution_fixtures.json",
+      "compiled_policy": "archives/evidence_ablation/evidence_files/outputs/FSV-S03__four_case_v2__original/compiled_policy.json",
+      "archived_result": "archives/evidence_ablation/evidence_files/outputs/FSV-S03__four_case_v2__original/RESULT.json",
+      "audited_result_summary": "archives/evidence_ablation/COMPARISON_AUDITED.json"
+    },
+    {
+      "row_id": "FSV-S03__four_case_v2__evidence_refs_absent",
+      "parent_id": "FSV-S03__four_case_v2",
+      "task": "FSV-S03",
+      "configuration": "four_case_v2",
+      "variant": "evidence_refs_absent",
+      "classification": "CONSTRUCTED_INVENTORY_PERTURBATION",
+      "candidate": "archives/evidence_ablation/evidence_files/outputs/FSV-S03__four_case_v2__evidence_refs_absent/candidate.json",
+      "contract": "archives/evidence_ablation/evidence_files/outputs/FSV-S03__four_case_v2__evidence_refs_absent/contract.json",
+      "fixtures": "archives/evidence_ablation/evidence_files/outputs/FSV-S03__four_case_v2__evidence_refs_absent/execution_fixtures.json",
+      "compiled_policy": "archives/evidence_ablation/evidence_files/outputs/FSV-S03__four_case_v2__evidence_refs_absent/compiled_policy.json",
+      "archived_result": "archives/evidence_ablation/evidence_files/outputs/FSV-S03__four_case_v2__evidence_refs_absent/RESULT.json",
+      "audited_result_summary": "archives/evidence_ablation/COMPARISON_AUDITED.json"
+    },
+    {
+      "row_id": "FSV-S03__four_case_v2__evidence_version_mismatch",
+      "parent_id": "FSV-S03__four_case_v2",
+      "task": "FSV-S03",
+      "configuration": "four_case_v2",
+      "variant": "evidence_version_mismatch",
+      "classification": "CONSTRUCTED_INVENTORY_PERTURBATION",
+      "candidate": "archives/evidence_ablation/evidence_files/outputs/FSV-S03__four_case_v2__evidence_version_mismatch/candidate.json",
+      "contract": "archives/evidence_ablation/evidence_files/outputs/FSV-S03__four_case_v2__evidence_version_mismatch/contract.json",
+      "fixtures": "archives/evidence_ablation/evidence_files/outputs/FSV-S03__four_case_v2__evidence_version_mismatch/execution_fixtures.json",
+      "compiled_policy": "archives/evidence_ablation/evidence_files/outputs/FSV-S03__four_case_v2__evidence_version_mismatch/compiled_policy.json",
+      "archived_result": "archives/evidence_ablation/evidence_files/outputs/FSV-S03__four_case_v2__evidence_version_mismatch/RESULT.json",
+      "audited_result_summary": "archives/evidence_ablation/COMPARISON_AUDITED.json"
+    },
+    {
+      "row_id": "FSV-S03__four_case_v2__evidence_insufficient",
+      "parent_id": "FSV-S03__four_case_v2",
+      "task": "FSV-S03",
+      "configuration": "four_case_v2",
+      "variant": "evidence_insufficient",
+      "classification": "CONSTRUCTED_INVENTORY_PERTURBATION",
+      "candidate": "archives/evidence_ablation/evidence_files/outputs/FSV-S03__four_case_v2__evidence_insufficient/candidate.json",
+      "contract": "archives/evidence_ablation/evidence_files/outputs/FSV-S03__four_case_v2__evidence_insufficient/contract.json",
+      "fixtures": "archives/evidence_ablation/evidence_files/outputs/FSV-S03__four_case_v2__evidence_insufficient/execution_fixtures.json",
+      "compiled_policy": "archives/evidence_ablation/evidence_files/outputs/FSV-S03__four_case_v2__evidence_insufficient/compiled_policy.json",
+      "archived_result": "archives/evidence_ablation/evidence_files/outputs/FSV-S03__four_case_v2__evidence_insufficient/RESULT.json",
+      "audited_result_summary": "archives/evidence_ablation/COMPARISON_AUDITED.json"
+    },
+    {
+      "row_id": "FSV-S03__four_case_v2__required_binding_facts_absent",
+      "parent_id": "FSV-S03__four_case_v2",
+      "task": "FSV-S03",
+      "configuration": "four_case_v2",
+      "variant": "required_binding_facts_absent",
+      "classification": "CONSTRUCTED_INVENTORY_PERTURBATION",
+      "candidate": "archives/evidence_ablation/evidence_files/outputs/FSV-S03__four_case_v2__required_binding_facts_absent/candidate.json",
+      "contract": "archives/evidence_ablation/evidence_files/outputs/FSV-S03__four_case_v2__required_binding_facts_absent/contract.json",
+      "fixtures": "archives/evidence_ablation/evidence_files/outputs/FSV-S03__four_case_v2__required_binding_facts_absent/execution_fixtures.json",
+      "compiled_policy": "archives/evidence_ablation/evidence_files/outputs/FSV-S03__four_case_v2__required_binding_facts_absent/compiled_policy.json",
+      "archived_result": "archives/evidence_ablation/evidence_files/outputs/FSV-S03__four_case_v2__required_binding_facts_absent/RESULT.json",
+      "audited_result_summary": "archives/evidence_ablation/COMPARISON_AUDITED.json"
+    },
+    {
+      "row_id": "FSV-S03__four_case_v2__source_locator_hash_unresolvable",
+      "parent_id": "FSV-S03__four_case_v2",
+      "task": "FSV-S03",
+      "configuration": "four_case_v2",
+      "variant": "source_locator_hash_unresolvable",
+      "classification": "CONSTRUCTED_SOURCE_AUTHENTICITY_CHALLENGE",
+      "candidate": "archives/evidence_ablation/evidence_files/outputs/FSV-S03__four_case_v2__source_locator_hash_unresolvable/candidate.json",
+      "contract": "archives/evidence_ablation/evidence_files/outputs/FSV-S03__four_case_v2__source_locator_hash_unresolvable/contract.json",
+      "fixtures": "archives/evidence_ablation/evidence_files/outputs/FSV-S03__four_case_v2__source_locator_hash_unresolvable/execution_fixtures.json",
+      "compiled_policy": "archives/evidence_ablation/evidence_files/outputs/FSV-S03__four_case_v2__source_locator_hash_unresolvable/compiled_policy.json",
+      "archived_result": "archives/evidence_ablation/evidence_files/outputs/FSV-S03__four_case_v2__source_locator_hash_unresolvable/RESULT.json",
+      "audited_result_summary": "archives/evidence_ablation/COMPARISON_AUDITED.json"
+    },
+    {
+      "row_id": "FSV-S03__four_case_v2__schema_visibility_hidden",
+      "parent_id": "FSV-S03__four_case_v2",
+      "task": "FSV-S03",
+      "configuration": "four_case_v2",
+      "variant": "schema_visibility_hidden",
+      "classification": "ENGINEERING_CONTRACT_SCHEMA_CONTROL",
+      "candidate": "archives/evidence_ablation/evidence_files/outputs/FSV-S03__four_case_v2__schema_visibility_hidden/candidate.json",
+      "contract": "archives/evidence_ablation/evidence_files/outputs/FSV-S03__four_case_v2__schema_visibility_hidden/contract.json",
+      "fixtures": "archives/evidence_ablation/evidence_files/outputs/FSV-S03__four_case_v2__schema_visibility_hidden/execution_fixtures.json",
+      "compiled_policy": "archives/evidence_ablation/evidence_files/outputs/FSV-S03__four_case_v2__schema_visibility_hidden/compiled_policy.json",
+      "archived_result": "archives/evidence_ablation/evidence_files/outputs/FSV-S03__four_case_v2__schema_visibility_hidden/RESULT.json",
+      "audited_result_summary": "archives/evidence_ablation/COMPARISON_AUDITED.json"
+    },
+    {
+      "row_id": "FSV-S03__four_case_v2__schema_ir_unknown_op",
+      "parent_id": "FSV-S03__four_case_v2",
+      "task": "FSV-S03",
+      "configuration": "four_case_v2",
+      "variant": "schema_ir_unknown_op",
+      "classification": "ENGINEERING_MODEL_IR_SCHEMA_CONTROL",
+      "candidate": "archives/evidence_ablation/evidence_files/outputs/FSV-S03__four_case_v2__schema_ir_unknown_op/candidate.json",
+      "contract": "archives/evidence_ablation/evidence_files/outputs/FSV-S03__four_case_v2__schema_ir_unknown_op/contract.json",
+      "fixtures": null,
+      "compiled_policy": null,
+      "archived_result": "archives/evidence_ablation/evidence_files/outputs/FSV-S03__four_case_v2__schema_ir_unknown_op/RESULT.json",
+      "audited_result_summary": "archives/evidence_ablation/COMPARISON_AUDITED.json"
+    },
+    {
+      "row_id": "FSV-B13__four_case_v1__original",
+      "parent_id": "FSV-B13__four_case_v1",
+      "task": "FSV-B13",
+      "configuration": "four_case_v1",
+      "variant": "original",
+      "classification": "ARCHIVED_MODEL_OUTPUT",
+      "candidate": "archives/evidence_ablation/evidence_files/outputs/FSV-B13__four_case_v1__original/candidate.json",
+      "contract": "archives/evidence_ablation/evidence_files/outputs/FSV-B13__four_case_v1__original/contract.json",
+      "fixtures": "archives/evidence_ablation/evidence_files/outputs/FSV-B13__four_case_v1__original/execution_fixtures.json",
+      "compiled_policy": "archives/evidence_ablation/evidence_files/outputs/FSV-B13__four_case_v1__original/compiled_policy.json",
+      "archived_result": "archives/evidence_ablation/evidence_files/outputs/FSV-B13__four_case_v1__original/RESULT.json",
+      "audited_result_summary": "archives/evidence_ablation/COMPARISON_AUDITED.json"
+    },
+    {
+      "row_id": "FSV-B13__four_case_v1__evidence_refs_absent",
+      "parent_id": "FSV-B13__four_case_v1",
+      "task": "FSV-B13",
+      "configuration": "four_case_v1",
+      "variant": "evidence_refs_absent",
+      "classification": "CONSTRUCTED_INVENTORY_PERTURBATION",
+      "candidate": "archives/evidence_ablation/evidence_files/outputs/FSV-B13__four_case_v1__evidence_refs_absent/candidate.json",
+      "contract": "archives/evidence_ablation/evidence_files/outputs/FSV-B13__four_case_v1__evidence_refs_absent/contract.json",
+      "fixtures": "archives/evidence_ablation/evidence_files/outputs/FSV-B13__four_case_v1__evidence_refs_absent/execution_fixtures.json",
+      "compiled_policy": "archives/evidence_ablation/evidence_files/outputs/FSV-B13__four_case_v1__evidence_refs_absent/compiled_policy.json",
+      "archived_result": "archives/evidence_ablation/evidence_files/outputs/FSV-B13__four_case_v1__evidence_refs_absent/RESULT.json",
+      "audited_result_summary": "archives/evidence_ablation/COMPARISON_AUDITED.json"
+    },
+    {
+      "row_id": "FSV-B13__four_case_v1__evidence_version_mismatch",
+      "parent_id": "FSV-B13__four_case_v1",
+      "task": "FSV-B13",
+      "configuration": "four_case_v1",
+      "variant": "evidence_version_mismatch",
+      "classification": "CONSTRUCTED_INVENTORY_PERTURBATION",
+      "candidate": "archives/evidence_ablation/evidence_files/outputs/FSV-B13__four_case_v1__evidence_version_mismatch/candidate.json",
+      "contract": "archives/evidence_ablation/evidence_files/outputs/FSV-B13__four_case_v1__evidence_version_mismatch/contract.json",
+      "fixtures": "archives/evidence_ablation/evidence_files/outputs/FSV-B13__four_case_v1__evidence_version_mismatch/execution_fixtures.json",
+      "compiled_policy": "archives/evidence_ablation/evidence_files/outputs/FSV-B13__four_case_v1__evidence_version_mismatch/compiled_policy.json",
+      "archived_result": "archives/evidence_ablation/evidence_files/outputs/FSV-B13__four_case_v1__evidence_version_mismatch/RESULT.json",
+      "audited_result_summary": "archives/evidence_ablation/COMPARISON_AUDITED.json"
+    },
+    {
+      "row_id": "FSV-B13__four_case_v1__evidence_insufficient",
+      "parent_id": "FSV-B13__four_case_v1",
+      "task": "FSV-B13",
+      "configuration": "four_case_v1",
+      "variant": "evidence_insufficient",
+      "classification": "CONSTRUCTED_INVENTORY_PERTURBATION",
+      "candidate": "archives/evidence_ablation/evidence_files/outputs/FSV-B13__four_case_v1__evidence_insufficient/candidate.json",
+      "contract": "archives/evidence_ablation/evidence_files/outputs/FSV-B13__four_case_v1__evidence_insufficient/contract.json",
+      "fixtures": "archives/evidence_ablation/evidence_files/outputs/FSV-B13__four_case_v1__evidence_insufficient/execution_fixtures.json",
+      "compiled_policy": "archives/evidence_ablation/evidence_files/outputs/FSV-B13__four_case_v1__evidence_insufficient/compiled_policy.json",
+      "archived_result": "archives/evidence_ablation/evidence_files/outputs/FSV-B13__four_case_v1__evidence_insufficient/RESULT.json",
+      "audited_result_summary": "archives/evidence_ablation/COMPARISON_AUDITED.json"
+    },
+    {
+      "row_id": "FSV-B13__four_case_v1__required_binding_facts_absent",
+      "parent_id": "FSV-B13__four_case_v1",
+      "task": "FSV-B13",
+      "configuration": "four_case_v1",
+      "variant": "required_binding_facts_absent",
+      "classification": "CONSTRUCTED_INVENTORY_PERTURBATION",
+      "candidate": "archives/evidence_ablation/evidence_files/outputs/FSV-B13__four_case_v1__required_binding_facts_absent/candidate.json",
+      "contract": "archives/evidence_ablation/evidence_files/outputs/FSV-B13__four_case_v1__required_binding_facts_absent/contract.json",
+      "fixtures": "archives/evidence_ablation/evidence_files/outputs/FSV-B13__four_case_v1__required_binding_facts_absent/execution_fixtures.json",
+      "compiled_policy": "archives/evidence_ablation/evidence_files/outputs/FSV-B13__four_case_v1__required_binding_facts_absent/compiled_policy.json",
+      "archived_result": "archives/evidence_ablation/evidence_files/outputs/FSV-B13__four_case_v1__required_binding_facts_absent/RESULT.json",
+      "audited_result_summary": "archives/evidence_ablation/COMPARISON_AUDITED.json"
+    },
+    {
+      "row_id": "FSV-B13__four_case_v1__source_locator_hash_unresolvable",
+      "parent_id": "FSV-B13__four_case_v1",
+      "task": "FSV-B13",
+      "configuration": "four_case_v1",
+      "variant": "source_locator_hash_unresolvable",
+      "classification": "CONSTRUCTED_SOURCE_AUTHENTICITY_CHALLENGE",
+      "candidate": "archives/evidence_ablation/evidence_files/outputs/FSV-B13__four_case_v1__source_locator_hash_unresolvable/candidate.json",
+      "contract": "archives/evidence_ablation/evidence_files/outputs/FSV-B13__four_case_v1__source_locator_hash_unresolvable/contract.json",
+      "fixtures": "archives/evidence_ablation/evidence_files/outputs/FSV-B13__four_case_v1__source_locator_hash_unresolvable/execution_fixtures.json",
+      "compiled_policy": "archives/evidence_ablation/evidence_files/outputs/FSV-B13__four_case_v1__source_locator_hash_unresolvable/compiled_policy.json",
+      "archived_result": "archives/evidence_ablation/evidence_files/outputs/FSV-B13__four_case_v1__source_locator_hash_unresolvable/RESULT.json",
+      "audited_result_summary": "archives/evidence_ablation/COMPARISON_AUDITED.json"
+    },
+    {
+      "row_id": "FSV-B13__four_case_v1__trusted_path_to_unregistered_client_path",
+      "parent_id": "FSV-B13__four_case_v1",
+      "task": "FSV-B13",
+      "configuration": "four_case_v1",
+      "variant": "trusted_path_to_unregistered_client_path",
+      "classification": "CONSTRUCTED_POLICY_PATH_PERTURBATION",
+      "candidate": "archives/evidence_ablation/evidence_files/outputs/FSV-B13__four_case_v1__trusted_path_to_unregistered_client_path/candidate.json",
+      "contract": "archives/evidence_ablation/evidence_files/outputs/FSV-B13__four_case_v1__trusted_path_to_unregistered_client_path/contract.json",
+      "fixtures": "archives/evidence_ablation/evidence_files/outputs/FSV-B13__four_case_v1__trusted_path_to_unregistered_client_path/execution_fixtures.json",
+      "compiled_policy": "archives/evidence_ablation/evidence_files/outputs/FSV-B13__four_case_v1__trusted_path_to_unregistered_client_path/compiled_policy.json",
+      "archived_result": "archives/evidence_ablation/evidence_files/outputs/FSV-B13__four_case_v1__trusted_path_to_unregistered_client_path/RESULT.json",
+      "audited_result_summary": "archives/evidence_ablation/COMPARISON_AUDITED.json"
+    },
+    {
+      "row_id": "FSV-B13__four_case_v1__schema_visibility_hidden",
+      "parent_id": "FSV-B13__four_case_v1",
+      "task": "FSV-B13",
+      "configuration": "four_case_v1",
+      "variant": "schema_visibility_hidden",
+      "classification": "ENGINEERING_CONTRACT_SCHEMA_CONTROL",
+      "candidate": "archives/evidence_ablation/evidence_files/outputs/FSV-B13__four_case_v1__schema_visibility_hidden/candidate.json",
+      "contract": "archives/evidence_ablation/evidence_files/outputs/FSV-B13__four_case_v1__schema_visibility_hidden/contract.json",
+      "fixtures": "archives/evidence_ablation/evidence_files/outputs/FSV-B13__four_case_v1__schema_visibility_hidden/execution_fixtures.json",
+      "compiled_policy": "archives/evidence_ablation/evidence_files/outputs/FSV-B13__four_case_v1__schema_visibility_hidden/compiled_policy.json",
+      "archived_result": "archives/evidence_ablation/evidence_files/outputs/FSV-B13__four_case_v1__schema_visibility_hidden/RESULT.json",
+      "audited_result_summary": "archives/evidence_ablation/COMPARISON_AUDITED.json"
+    },
+    {
+      "row_id": "FSV-B13__four_case_v1__schema_ir_unknown_op",
+      "parent_id": "FSV-B13__four_case_v1",
+      "task": "FSV-B13",
+      "configuration": "four_case_v1",
+      "variant": "schema_ir_unknown_op",
+      "classification": "ENGINEERING_MODEL_IR_SCHEMA_CONTROL",
+      "candidate": "archives/evidence_ablation/evidence_files/outputs/FSV-B13__four_case_v1__schema_ir_unknown_op/candidate.json",
+      "contract": "archives/evidence_ablation/evidence_files/outputs/FSV-B13__four_case_v1__schema_ir_unknown_op/contract.json",
+      "fixtures": null,
+      "compiled_policy": null,
+      "archived_result": "archives/evidence_ablation/evidence_files/outputs/FSV-B13__four_case_v1__schema_ir_unknown_op/RESULT.json",
+      "audited_result_summary": "archives/evidence_ablation/COMPARISON_AUDITED.json"
+    },
+    {
+      "row_id": "FSV-B13__four_case_v2__original",
+      "parent_id": "FSV-B13__four_case_v2",
+      "task": "FSV-B13",
+      "configuration": "four_case_v2",
+      "variant": "original",
+      "classification": "ARCHIVED_MODEL_OUTPUT",
+      "candidate": "archives/evidence_ablation/evidence_files/outputs/FSV-B13__four_case_v2__original/candidate.json",
+      "contract": "archives/evidence_ablation/evidence_files/outputs/FSV-B13__four_case_v2__original/contract.json",
+      "fixtures": "archives/evidence_ablation/evidence_files/outputs/FSV-B13__four_case_v2__original/execution_fixtures.json",
+      "compiled_policy": "archives/evidence_ablation/evidence_files/outputs/FSV-B13__four_case_v2__original/compiled_policy.json",
+      "archived_result": "archives/evidence_ablation/evidence_files/outputs/FSV-B13__four_case_v2__original/RESULT.json",
+      "audited_result_summary": "archives/evidence_ablation/COMPARISON_AUDITED.json"
+    },
+    {
+      "row_id": "FSV-B13__four_case_v2__evidence_refs_absent",
+      "parent_id": "FSV-B13__four_case_v2",
+      "task": "FSV-B13",
+      "configuration": "four_case_v2",
+      "variant": "evidence_refs_absent",
+      "classification": "CONSTRUCTED_INVENTORY_PERTURBATION",
+      "candidate": "archives/evidence_ablation/evidence_files/outputs/FSV-B13__four_case_v2__evidence_refs_absent/candidate.json",
+      "contract": "archives/evidence_ablation/evidence_files/outputs/FSV-B13__four_case_v2__evidence_refs_absent/contract.json",
+      "fixtures": "archives/evidence_ablation/evidence_files/outputs/FSV-B13__four_case_v2__evidence_refs_absent/execution_fixtures.json",
+      "compiled_policy": "archives/evidence_ablation/evidence_files/outputs/FSV-B13__four_case_v2__evidence_refs_absent/compiled_policy.json",
+      "archived_result": "archives/evidence_ablation/evidence_files/outputs/FSV-B13__four_case_v2__evidence_refs_absent/RESULT.json",
+      "audited_result_summary": "archives/evidence_ablation/COMPARISON_AUDITED.json"
+    },
+    {
+      "row_id": "FSV-B13__four_case_v2__evidence_version_mismatch",
+      "parent_id": "FSV-B13__four_case_v2",
+      "task": "FSV-B13",
+      "configuration": "four_case_v2",
+      "variant": "evidence_version_mismatch",
+      "classification": "CONSTRUCTED_INVENTORY_PERTURBATION",
+      "candidate": "archives/evidence_ablation/evidence_files/outputs/FSV-B13__four_case_v2__evidence_version_mismatch/candidate.json",
+      "contract": "archives/evidence_ablation/evidence_files/outputs/FSV-B13__four_case_v2__evidence_version_mismatch/contract.json",
+      "fixtures": "archives/evidence_ablation/evidence_files/outputs/FSV-B13__four_case_v2__evidence_version_mismatch/execution_fixtures.json",
+      "compiled_policy": "archives/evidence_ablation/evidence_files/outputs/FSV-B13__four_case_v2__evidence_version_mismatch/compiled_policy.json",
+      "archived_result": "archives/evidence_ablation/evidence_files/outputs/FSV-B13__four_case_v2__evidence_version_mismatch/RESULT.json",
+      "audited_result_summary": "archives/evidence_ablation/COMPARISON_AUDITED.json"
+    },
+    {
+      "row_id": "FSV-B13__four_case_v2__evidence_insufficient",
+      "parent_id": "FSV-B13__four_case_v2",
+      "task": "FSV-B13",
+      "configuration": "four_case_v2",
+      "variant": "evidence_insufficient",
+      "classification": "CONSTRUCTED_INVENTORY_PERTURBATION",
+      "candidate": "archives/evidence_ablation/evidence_files/outputs/FSV-B13__four_case_v2__evidence_insufficient/candidate.json",
+      "contract": "archives/evidence_ablation/evidence_files/outputs/FSV-B13__four_case_v2__evidence_insufficient/contract.json",
+      "fixtures": "archives/evidence_ablation/evidence_files/outputs/FSV-B13__four_case_v2__evidence_insufficient/execution_fixtures.json",
+      "compiled_policy": "archives/evidence_ablation/evidence_files/outputs/FSV-B13__four_case_v2__evidence_insufficient/compiled_policy.json",
+      "archived_result": "archives/evidence_ablation/evidence_files/outputs/FSV-B13__four_case_v2__evidence_insufficient/RESULT.json",
+      "audited_result_summary": "archives/evidence_ablation/COMPARISON_AUDITED.json"
+    },
+    {
+      "row_id": "FSV-B13__four_case_v2__required_binding_facts_absent",
+      "parent_id": "FSV-B13__four_case_v2",
+      "task": "FSV-B13",
+      "configuration": "four_case_v2",
+      "variant": "required_binding_facts_absent",
+      "classification": "CONSTRUCTED_INVENTORY_PERTURBATION",
+      "candidate": "archives/evidence_ablation/evidence_files/outputs/FSV-B13__four_case_v2__required_binding_facts_absent/candidate.json",
+      "contract": "archives/evidence_ablation/evidence_files/outputs/FSV-B13__four_case_v2__required_binding_facts_absent/contract.json",
+      "fixtures": "archives/evidence_ablation/evidence_files/outputs/FSV-B13__four_case_v2__required_binding_facts_absent/execution_fixtures.json",
+      "compiled_policy": "archives/evidence_ablation/evidence_files/outputs/FSV-B13__four_case_v2__required_binding_facts_absent/compiled_policy.json",
+      "archived_result": "archives/evidence_ablation/evidence_files/outputs/FSV-B13__four_case_v2__required_binding_facts_absent/RESULT.json",
+      "audited_result_summary": "archives/evidence_ablation/COMPARISON_AUDITED.json"
+    },
+    {
+      "row_id": "FSV-B13__four_case_v2__source_locator_hash_unresolvable",
+      "parent_id": "FSV-B13__four_case_v2",
+      "task": "FSV-B13",
+      "configuration": "four_case_v2",
+      "variant": "source_locator_hash_unresolvable",
+      "classification": "CONSTRUCTED_SOURCE_AUTHENTICITY_CHALLENGE",
+      "candidate": "archives/evidence_ablation/evidence_files/outputs/FSV-B13__four_case_v2__source_locator_hash_unresolvable/candidate.json",
+      "contract": "archives/evidence_ablation/evidence_files/outputs/FSV-B13__four_case_v2__source_locator_hash_unresolvable/contract.json",
+      "fixtures": "archives/evidence_ablation/evidence_files/outputs/FSV-B13__four_case_v2__source_locator_hash_unresolvable/execution_fixtures.json",
+      "compiled_policy": "archives/evidence_ablation/evidence_files/outputs/FSV-B13__four_case_v2__source_locator_hash_unresolvable/compiled_policy.json",
+      "archived_result": "archives/evidence_ablation/evidence_files/outputs/FSV-B13__four_case_v2__source_locator_hash_unresolvable/RESULT.json",
+      "audited_result_summary": "archives/evidence_ablation/COMPARISON_AUDITED.json"
+    },
+    {
+      "row_id": "FSV-B13__four_case_v2__trusted_path_to_unregistered_client_path",
+      "parent_id": "FSV-B13__four_case_v2",
+      "task": "FSV-B13",
+      "configuration": "four_case_v2",
+      "variant": "trusted_path_to_unregistered_client_path",
+      "classification": "CONSTRUCTED_POLICY_PATH_PERTURBATION",
+      "candidate": "archives/evidence_ablation/evidence_files/outputs/FSV-B13__four_case_v2__trusted_path_to_unregistered_client_path/candidate.json",
+      "contract": "archives/evidence_ablation/evidence_files/outputs/FSV-B13__four_case_v2__trusted_path_to_unregistered_client_path/contract.json",
+      "fixtures": "archives/evidence_ablation/evidence_files/outputs/FSV-B13__four_case_v2__trusted_path_to_unregistered_client_path/execution_fixtures.json",
+      "compiled_policy": "archives/evidence_ablation/evidence_files/outputs/FSV-B13__four_case_v2__trusted_path_to_unregistered_client_path/compiled_policy.json",
+      "archived_result": "archives/evidence_ablation/evidence_files/outputs/FSV-B13__four_case_v2__trusted_path_to_unregistered_client_path/RESULT.json",
+      "audited_result_summary": "archives/evidence_ablation/COMPARISON_AUDITED.json"
+    },
+    {
+      "row_id": "FSV-B13__four_case_v2__schema_visibility_hidden",
+      "parent_id": "FSV-B13__four_case_v2",
+      "task": "FSV-B13",
+      "configuration": "four_case_v2",
+      "variant": "schema_visibility_hidden",
+      "classification": "ENGINEERING_CONTRACT_SCHEMA_CONTROL",
+      "candidate": "archives/evidence_ablation/evidence_files/outputs/FSV-B13__four_case_v2__schema_visibility_hidden/candidate.json",
+      "contract": "archives/evidence_ablation/evidence_files/outputs/FSV-B13__four_case_v2__schema_visibility_hidden/contract.json",
+      "fixtures": "archives/evidence_ablation/evidence_files/outputs/FSV-B13__four_case_v2__schema_visibility_hidden/execution_fixtures.json",
+      "compiled_policy": "archives/evidence_ablation/evidence_files/outputs/FSV-B13__four_case_v2__schema_visibility_hidden/compiled_policy.json",
+      "archived_result": "archives/evidence_ablation/evidence_files/outputs/FSV-B13__four_case_v2__schema_visibility_hidden/RESULT.json",
+      "audited_result_summary": "archives/evidence_ablation/COMPARISON_AUDITED.json"
+    },
+    {
+      "row_id": "FSV-B13__four_case_v2__schema_ir_unknown_op",
+      "parent_id": "FSV-B13__four_case_v2",
+      "task": "FSV-B13",
+      "configuration": "four_case_v2",
+      "variant": "schema_ir_unknown_op",
+      "classification": "ENGINEERING_MODEL_IR_SCHEMA_CONTROL",
+      "candidate": "archives/evidence_ablation/evidence_files/outputs/FSV-B13__four_case_v2__schema_ir_unknown_op/candidate.json",
+      "contract": "archives/evidence_ablation/evidence_files/outputs/FSV-B13__four_case_v2__schema_ir_unknown_op/contract.json",
+      "fixtures": null,
+      "compiled_policy": null,
+      "archived_result": "archives/evidence_ablation/evidence_files/outputs/FSV-B13__four_case_v2__schema_ir_unknown_op/RESULT.json",
+      "audited_result_summary": "archives/evidence_ablation/COMPARISON_AUDITED.json"
+    },
+    {
+      "row_id": "FSV-B17__four_case_v1__original",
+      "parent_id": "FSV-B17__four_case_v1",
+      "task": "FSV-B17",
+      "configuration": "four_case_v1",
+      "variant": "original",
+      "classification": "ARCHIVED_MODEL_OUTPUT",
+      "candidate": "archives/evidence_ablation/evidence_files/outputs/FSV-B17__four_case_v1__original/candidate.json",
+      "contract": "archives/evidence_ablation/evidence_files/outputs/FSV-B17__four_case_v1__original/contract.json",
+      "fixtures": "archives/evidence_ablation/evidence_files/outputs/FSV-B17__four_case_v1__original/execution_fixtures.json",
+      "compiled_policy": "archives/evidence_ablation/evidence_files/outputs/FSV-B17__four_case_v1__original/compiled_policy.json",
+      "archived_result": "archives/evidence_ablation/evidence_files/outputs/FSV-B17__four_case_v1__original/RESULT.json",
+      "audited_result_summary": "archives/evidence_ablation/COMPARISON_AUDITED.json"
+    },
+    {
+      "row_id": "FSV-B17__four_case_v1__evidence_refs_absent",
+      "parent_id": "FSV-B17__four_case_v1",
+      "task": "FSV-B17",
+      "configuration": "four_case_v1",
+      "variant": "evidence_refs_absent",
+      "classification": "CONSTRUCTED_INVENTORY_PERTURBATION",
+      "candidate": "archives/evidence_ablation/evidence_files/outputs/FSV-B17__four_case_v1__evidence_refs_absent/candidate.json",
+      "contract": "archives/evidence_ablation/evidence_files/outputs/FSV-B17__four_case_v1__evidence_refs_absent/contract.json",
+      "fixtures": "archives/evidence_ablation/evidence_files/outputs/FSV-B17__four_case_v1__evidence_refs_absent/execution_fixtures.json",
+      "compiled_policy": "archives/evidence_ablation/evidence_files/outputs/FSV-B17__four_case_v1__evidence_refs_absent/compiled_policy.json",
+      "archived_result": "archives/evidence_ablation/evidence_files/outputs/FSV-B17__four_case_v1__evidence_refs_absent/RESULT.json",
+      "audited_result_summary": "archives/evidence_ablation/COMPARISON_AUDITED.json"
+    },
+    {
+      "row_id": "FSV-B17__four_case_v1__evidence_version_mismatch",
+      "parent_id": "FSV-B17__four_case_v1",
+      "task": "FSV-B17",
+      "configuration": "four_case_v1",
+      "variant": "evidence_version_mismatch",
+      "classification": "CONSTRUCTED_INVENTORY_PERTURBATION",
+      "candidate": "archives/evidence_ablation/evidence_files/outputs/FSV-B17__four_case_v1__evidence_version_mismatch/candidate.json",
+      "contract": "archives/evidence_ablation/evidence_files/outputs/FSV-B17__four_case_v1__evidence_version_mismatch/contract.json",
+      "fixtures": "archives/evidence_ablation/evidence_files/outputs/FSV-B17__four_case_v1__evidence_version_mismatch/execution_fixtures.json",
+      "compiled_policy": "archives/evidence_ablation/evidence_files/outputs/FSV-B17__four_case_v1__evidence_version_mismatch/compiled_policy.json",
+      "archived_result": "archives/evidence_ablation/evidence_files/outputs/FSV-B17__four_case_v1__evidence_version_mismatch/RESULT.json",
+      "audited_result_summary": "archives/evidence_ablation/COMPARISON_AUDITED.json"
+    },
+    {
+      "row_id": "FSV-B17__four_case_v1__evidence_insufficient",
+      "parent_id": "FSV-B17__four_case_v1",
+      "task": "FSV-B17",
+      "configuration": "four_case_v1",
+      "variant": "evidence_insufficient",
+      "classification": "CONSTRUCTED_INVENTORY_PERTURBATION",
+      "candidate": "archives/evidence_ablation/evidence_files/outputs/FSV-B17__four_case_v1__evidence_insufficient/candidate.json",
+      "contract": "archives/evidence_ablation/evidence_files/outputs/FSV-B17__four_case_v1__evidence_insufficient/contract.json",
+      "fixtures": "archives/evidence_ablation/evidence_files/outputs/FSV-B17__four_case_v1__evidence_insufficient/execution_fixtures.json",
+      "compiled_policy": "archives/evidence_ablation/evidence_files/outputs/FSV-B17__four_case_v1__evidence_insufficient/compiled_policy.json",
+      "archived_result": "archives/evidence_ablation/evidence_files/outputs/FSV-B17__four_case_v1__evidence_insufficient/RESULT.json",
+      "audited_result_summary": "archives/evidence_ablation/COMPARISON_AUDITED.json"
+    },
+    {
+      "row_id": "FSV-B17__four_case_v1__required_binding_facts_absent",
+      "parent_id": "FSV-B17__four_case_v1",
+      "task": "FSV-B17",
+      "configuration": "four_case_v1",
+      "variant": "required_binding_facts_absent",
+      "classification": "CONSTRUCTED_INVENTORY_PERTURBATION",
+      "candidate": "archives/evidence_ablation/evidence_files/outputs/FSV-B17__four_case_v1__required_binding_facts_absent/candidate.json",
+      "contract": "archives/evidence_ablation/evidence_files/outputs/FSV-B17__four_case_v1__required_binding_facts_absent/contract.json",
+      "fixtures": "archives/evidence_ablation/evidence_files/outputs/FSV-B17__four_case_v1__required_binding_facts_absent/execution_fixtures.json",
+      "compiled_policy": "archives/evidence_ablation/evidence_files/outputs/FSV-B17__four_case_v1__required_binding_facts_absent/compiled_policy.json",
+      "archived_result": "archives/evidence_ablation/evidence_files/outputs/FSV-B17__four_case_v1__required_binding_facts_absent/RESULT.json",
+      "audited_result_summary": "archives/evidence_ablation/COMPARISON_AUDITED.json"
+    },
+    {
+      "row_id": "FSV-B17__four_case_v1__source_locator_hash_unresolvable",
+      "parent_id": "FSV-B17__four_case_v1",
+      "task": "FSV-B17",
+      "configuration": "four_case_v1",
+      "variant": "source_locator_hash_unresolvable",
+      "classification": "CONSTRUCTED_SOURCE_AUTHENTICITY_CHALLENGE",
+      "candidate": "archives/evidence_ablation/evidence_files/outputs/FSV-B17__four_case_v1__source_locator_hash_unresolvable/candidate.json",
+      "contract": "archives/evidence_ablation/evidence_files/outputs/FSV-B17__four_case_v1__source_locator_hash_unresolvable/contract.json",
+      "fixtures": "archives/evidence_ablation/evidence_files/outputs/FSV-B17__four_case_v1__source_locator_hash_unresolvable/execution_fixtures.json",
+      "compiled_policy": "archives/evidence_ablation/evidence_files/outputs/FSV-B17__four_case_v1__source_locator_hash_unresolvable/compiled_policy.json",
+      "archived_result": "archives/evidence_ablation/evidence_files/outputs/FSV-B17__four_case_v1__source_locator_hash_unresolvable/RESULT.json",
+      "audited_result_summary": "archives/evidence_ablation/COMPARISON_AUDITED.json"
+    },
+    {
+      "row_id": "FSV-B17__four_case_v1__trusted_path_to_unregistered_client_path",
+      "parent_id": "FSV-B17__four_case_v1",
+      "task": "FSV-B17",
+      "configuration": "four_case_v1",
+      "variant": "trusted_path_to_unregistered_client_path",
+      "classification": "CONSTRUCTED_POLICY_PATH_PERTURBATION",
+      "candidate": "archives/evidence_ablation/evidence_files/outputs/FSV-B17__four_case_v1__trusted_path_to_unregistered_client_path/candidate.json",
+      "contract": "archives/evidence_ablation/evidence_files/outputs/FSV-B17__four_case_v1__trusted_path_to_unregistered_client_path/contract.json",
+      "fixtures": "archives/evidence_ablation/evidence_files/outputs/FSV-B17__four_case_v1__trusted_path_to_unregistered_client_path/execution_fixtures.json",
+      "compiled_policy": "archives/evidence_ablation/evidence_files/outputs/FSV-B17__four_case_v1__trusted_path_to_unregistered_client_path/compiled_policy.json",
+      "archived_result": "archives/evidence_ablation/evidence_files/outputs/FSV-B17__four_case_v1__trusted_path_to_unregistered_client_path/RESULT.json",
+      "audited_result_summary": "archives/evidence_ablation/COMPARISON_AUDITED.json"
+    },
+    {
+      "row_id": "FSV-B17__four_case_v1__schema_visibility_hidden",
+      "parent_id": "FSV-B17__four_case_v1",
+      "task": "FSV-B17",
+      "configuration": "four_case_v1",
+      "variant": "schema_visibility_hidden",
+      "classification": "ENGINEERING_CONTRACT_SCHEMA_CONTROL",
+      "candidate": "archives/evidence_ablation/evidence_files/outputs/FSV-B17__four_case_v1__schema_visibility_hidden/candidate.json",
+      "contract": "archives/evidence_ablation/evidence_files/outputs/FSV-B17__four_case_v1__schema_visibility_hidden/contract.json",
+      "fixtures": "archives/evidence_ablation/evidence_files/outputs/FSV-B17__four_case_v1__schema_visibility_hidden/execution_fixtures.json",
+      "compiled_policy": "archives/evidence_ablation/evidence_files/outputs/FSV-B17__four_case_v1__schema_visibility_hidden/compiled_policy.json",
+      "archived_result": "archives/evidence_ablation/evidence_files/outputs/FSV-B17__four_case_v1__schema_visibility_hidden/RESULT.json",
+      "audited_result_summary": "archives/evidence_ablation/COMPARISON_AUDITED.json"
+    },
+    {
+      "row_id": "FSV-B17__four_case_v1__schema_ir_unknown_op",
+      "parent_id": "FSV-B17__four_case_v1",
+      "task": "FSV-B17",
+      "configuration": "four_case_v1",
+      "variant": "schema_ir_unknown_op",
+      "classification": "ENGINEERING_MODEL_IR_SCHEMA_CONTROL",
+      "candidate": "archives/evidence_ablation/evidence_files/outputs/FSV-B17__four_case_v1__schema_ir_unknown_op/candidate.json",
+      "contract": "archives/evidence_ablation/evidence_files/outputs/FSV-B17__four_case_v1__schema_ir_unknown_op/contract.json",
+      "fixtures": null,
+      "compiled_policy": null,
+      "archived_result": "archives/evidence_ablation/evidence_files/outputs/FSV-B17__four_case_v1__schema_ir_unknown_op/RESULT.json",
+      "audited_result_summary": "archives/evidence_ablation/COMPARISON_AUDITED.json"
+    },
+    {
+      "row_id": "FSV-B17__four_case_v2__original",
+      "parent_id": "FSV-B17__four_case_v2",
+      "task": "FSV-B17",
+      "configuration": "four_case_v2",
+      "variant": "original",
+      "classification": "ARCHIVED_MODEL_OUTPUT",
+      "candidate": "archives/evidence_ablation/evidence_files/outputs/FSV-B17__four_case_v2__original/candidate.json",
+      "contract": "archives/evidence_ablation/evidence_files/outputs/FSV-B17__four_case_v2__original/contract.json",
+      "fixtures": "archives/evidence_ablation/evidence_files/outputs/FSV-B17__four_case_v2__original/execution_fixtures.json",
+      "compiled_policy": "archives/evidence_ablation/evidence_files/outputs/FSV-B17__four_case_v2__original/compiled_policy.json",
+      "archived_result": "archives/evidence_ablation/evidence_files/outputs/FSV-B17__four_case_v2__original/RESULT.json",
+      "audited_result_summary": "archives/evidence_ablation/COMPARISON_AUDITED.json"
+    },
+    {
+      "row_id": "FSV-B17__four_case_v2__evidence_refs_absent",
+      "parent_id": "FSV-B17__four_case_v2",
+      "task": "FSV-B17",
+      "configuration": "four_case_v2",
+      "variant": "evidence_refs_absent",
+      "classification": "CONSTRUCTED_INVENTORY_PERTURBATION",
+      "candidate": "archives/evidence_ablation/evidence_files/outputs/FSV-B17__four_case_v2__evidence_refs_absent/candidate.json",
+      "contract": "archives/evidence_ablation/evidence_files/outputs/FSV-B17__four_case_v2__evidence_refs_absent/contract.json",
+      "fixtures": "archives/evidence_ablation/evidence_files/outputs/FSV-B17__four_case_v2__evidence_refs_absent/execution_fixtures.json",
+      "compiled_policy": "archives/evidence_ablation/evidence_files/outputs/FSV-B17__four_case_v2__evidence_refs_absent/compiled_policy.json",
+      "archived_result": "archives/evidence_ablation/evidence_files/outputs/FSV-B17__four_case_v2__evidence_refs_absent/RESULT.json",
+      "audited_result_summary": "archives/evidence_ablation/COMPARISON_AUDITED.json"
+    },
+    {
+      "row_id": "FSV-B17__four_case_v2__evidence_version_mismatch",
+      "parent_id": "FSV-B17__four_case_v2",
+      "task": "FSV-B17",
+      "configuration": "four_case_v2",
+      "variant": "evidence_version_mismatch",
+      "classification": "CONSTRUCTED_INVENTORY_PERTURBATION",
+      "candidate": "archives/evidence_ablation/evidence_files/outputs/FSV-B17__four_case_v2__evidence_version_mismatch/candidate.json",
+      "contract": "archives/evidence_ablation/evidence_files/outputs/FSV-B17__four_case_v2__evidence_version_mismatch/contract.json",
+      "fixtures": "archives/evidence_ablation/evidence_files/outputs/FSV-B17__four_case_v2__evidence_version_mismatch/execution_fixtures.json",
+      "compiled_policy": "archives/evidence_ablation/evidence_files/outputs/FSV-B17__four_case_v2__evidence_version_mismatch/compiled_policy.json",
+      "archived_result": "archives/evidence_ablation/evidence_files/outputs/FSV-B17__four_case_v2__evidence_version_mismatch/RESULT.json",
+      "audited_result_summary": "archives/evidence_ablation/COMPARISON_AUDITED.json"
+    },
+    {
+      "row_id": "FSV-B17__four_case_v2__evidence_insufficient",
+      "parent_id": "FSV-B17__four_case_v2",
+      "task": "FSV-B17",
+      "configuration": "four_case_v2",
+      "variant": "evidence_insufficient",
+      "classification": "CONSTRUCTED_INVENTORY_PERTURBATION",
+      "candidate": "archives/evidence_ablation/evidence_files/outputs/FSV-B17__four_case_v2__evidence_insufficient/candidate.json",
+      "contract": "archives/evidence_ablation/evidence_files/outputs/FSV-B17__four_case_v2__evidence_insufficient/contract.json",
+      "fixtures": "archives/evidence_ablation/evidence_files/outputs/FSV-B17__four_case_v2__evidence_insufficient/execution_fixtures.json",
+      "compiled_policy": "archives/evidence_ablation/evidence_files/outputs/FSV-B17__four_case_v2__evidence_insufficient/compiled_policy.json",
+      "archived_result": "archives/evidence_ablation/evidence_files/outputs/FSV-B17__four_case_v2__evidence_insufficient/RESULT.json",
+      "audited_result_summary": "archives/evidence_ablation/COMPARISON_AUDITED.json"
+    },
+    {
+      "row_id": "FSV-B17__four_case_v2__required_binding_facts_absent",
+      "parent_id": "FSV-B17__four_case_v2",
+      "task": "FSV-B17",
+      "configuration": "four_case_v2",
+      "variant": "required_binding_facts_absent",
+      "classification": "CONSTRUCTED_INVENTORY_PERTURBATION",
+      "candidate": "archives/evidence_ablation/evidence_files/outputs/FSV-B17__four_case_v2__required_binding_facts_absent/candidate.json",
+      "contract": "archives/evidence_ablation/evidence_files/outputs/FSV-B17__four_case_v2__required_binding_facts_absent/contract.json",
+      "fixtures": "archives/evidence_ablation/evidence_files/outputs/FSV-B17__four_case_v2__required_binding_facts_absent/execution_fixtures.json",
+      "compiled_policy": "archives/evidence_ablation/evidence_files/outputs/FSV-B17__four_case_v2__required_binding_facts_absent/compiled_policy.json",
+      "archived_result": "archives/evidence_ablation/evidence_files/outputs/FSV-B17__four_case_v2__required_binding_facts_absent/RESULT.json",
+      "audited_result_summary": "archives/evidence_ablation/COMPARISON_AUDITED.json"
+    },
+    {
+      "row_id": "FSV-B17__four_case_v2__source_locator_hash_unresolvable",
+      "parent_id": "FSV-B17__four_case_v2",
+      "task": "FSV-B17",
+      "configuration": "four_case_v2",
+      "variant": "source_locator_hash_unresolvable",
+      "classification": "CONSTRUCTED_SOURCE_AUTHENTICITY_CHALLENGE",
+      "candidate": "archives/evidence_ablation/evidence_files/outputs/FSV-B17__four_case_v2__source_locator_hash_unresolvable/candidate.json",
+      "contract": "archives/evidence_ablation/evidence_files/outputs/FSV-B17__four_case_v2__source_locator_hash_unresolvable/contract.json",
+      "fixtures": "archives/evidence_ablation/evidence_files/outputs/FSV-B17__four_case_v2__source_locator_hash_unresolvable/execution_fixtures.json",
+      "compiled_policy": "archives/evidence_ablation/evidence_files/outputs/FSV-B17__four_case_v2__source_locator_hash_unresolvable/compiled_policy.json",
+      "archived_result": "archives/evidence_ablation/evidence_files/outputs/FSV-B17__four_case_v2__source_locator_hash_unresolvable/RESULT.json",
+      "audited_result_summary": "archives/evidence_ablation/COMPARISON_AUDITED.json"
+    },
+    {
+      "row_id": "FSV-B17__four_case_v2__trusted_path_to_unregistered_client_path",
+      "parent_id": "FSV-B17__four_case_v2",
+      "task": "FSV-B17",
+      "configuration": "four_case_v2",
+      "variant": "trusted_path_to_unregistered_client_path",
+      "classification": "CONSTRUCTED_POLICY_PATH_PERTURBATION",
+      "candidate": "archives/evidence_ablation/evidence_files/outputs/FSV-B17__four_case_v2__trusted_path_to_unregistered_client_path/candidate.json",
+      "contract": "archives/evidence_ablation/evidence_files/outputs/FSV-B17__four_case_v2__trusted_path_to_unregistered_client_path/contract.json",
+      "fixtures": "archives/evidence_ablation/evidence_files/outputs/FSV-B17__four_case_v2__trusted_path_to_unregistered_client_path/execution_fixtures.json",
+      "compiled_policy": "archives/evidence_ablation/evidence_files/outputs/FSV-B17__four_case_v2__trusted_path_to_unregistered_client_path/compiled_policy.json",
+      "archived_result": "archives/evidence_ablation/evidence_files/outputs/FSV-B17__four_case_v2__trusted_path_to_unregistered_client_path/RESULT.json",
+      "audited_result_summary": "archives/evidence_ablation/COMPARISON_AUDITED.json"
+    },
+    {
+      "row_id": "FSV-B17__four_case_v2__schema_visibility_hidden",
+      "parent_id": "FSV-B17__four_case_v2",
+      "task": "FSV-B17",
+      "configuration": "four_case_v2",
+      "variant": "schema_visibility_hidden",
+      "classification": "ENGINEERING_CONTRACT_SCHEMA_CONTROL",
+      "candidate": "archives/evidence_ablation/evidence_files/outputs/FSV-B17__four_case_v2__schema_visibility_hidden/candidate.json",
+      "contract": "archives/evidence_ablation/evidence_files/outputs/FSV-B17__four_case_v2__schema_visibility_hidden/contract.json",
+      "fixtures": "archives/evidence_ablation/evidence_files/outputs/FSV-B17__four_case_v2__schema_visibility_hidden/execution_fixtures.json",
+      "compiled_policy": "archives/evidence_ablation/evidence_files/outputs/FSV-B17__four_case_v2__schema_visibility_hidden/compiled_policy.json",
+      "archived_result": "archives/evidence_ablation/evidence_files/outputs/FSV-B17__four_case_v2__schema_visibility_hidden/RESULT.json",
+      "audited_result_summary": "archives/evidence_ablation/COMPARISON_AUDITED.json"
+    },
+    {
+      "row_id": "FSV-B17__four_case_v2__schema_ir_unknown_op",
+      "parent_id": "FSV-B17__four_case_v2",
+      "task": "FSV-B17",
+      "configuration": "four_case_v2",
+      "variant": "schema_ir_unknown_op",
+      "classification": "ENGINEERING_MODEL_IR_SCHEMA_CONTROL",
+      "candidate": "archives/evidence_ablation/evidence_files/outputs/FSV-B17__four_case_v2__schema_ir_unknown_op/candidate.json",
+      "contract": "archives/evidence_ablation/evidence_files/outputs/FSV-B17__four_case_v2__schema_ir_unknown_op/contract.json",
+      "fixtures": null,
+      "compiled_policy": null,
+      "archived_result": "archives/evidence_ablation/evidence_files/outputs/FSV-B17__four_case_v2__schema_ir_unknown_op/RESULT.json",
+      "audited_result_summary": "archives/evidence_ablation/COMPARISON_AUDITED.json"
+    },
+    {
+      "row_id": "FSV-B19__four_case_v1__original",
+      "parent_id": "FSV-B19__four_case_v1",
+      "task": "FSV-B19",
+      "configuration": "four_case_v1",
+      "variant": "original",
+      "classification": "ARCHIVED_MODEL_OUTPUT",
+      "candidate": "archives/evidence_ablation/evidence_files/outputs/FSV-B19__four_case_v1__original/candidate.json",
+      "contract": "archives/evidence_ablation/evidence_files/outputs/FSV-B19__four_case_v1__original/contract.json",
+      "fixtures": "archives/evidence_ablation/evidence_files/outputs/FSV-B19__four_case_v1__original/execution_fixtures.json",
+      "compiled_policy": "archives/evidence_ablation/evidence_files/outputs/FSV-B19__four_case_v1__original/compiled_policy.json",
+      "archived_result": "archives/evidence_ablation/evidence_files/outputs/FSV-B19__four_case_v1__original/RESULT.json",
+      "audited_result_summary": "archives/evidence_ablation/COMPARISON_AUDITED.json"
+    },
+    {
+      "row_id": "FSV-B19__four_case_v1__evidence_refs_absent",
+      "parent_id": "FSV-B19__four_case_v1",
+      "task": "FSV-B19",
+      "configuration": "four_case_v1",
+      "variant": "evidence_refs_absent",
+      "classification": "CONSTRUCTED_INVENTORY_PERTURBATION",
+      "candidate": "archives/evidence_ablation/evidence_files/outputs/FSV-B19__four_case_v1__evidence_refs_absent/candidate.json",
+      "contract": "archives/evidence_ablation/evidence_files/outputs/FSV-B19__four_case_v1__evidence_refs_absent/contract.json",
+      "fixtures": "archives/evidence_ablation/evidence_files/outputs/FSV-B19__four_case_v1__evidence_refs_absent/execution_fixtures.json",
+      "compiled_policy": "archives/evidence_ablation/evidence_files/outputs/FSV-B19__four_case_v1__evidence_refs_absent/compiled_policy.json",
+      "archived_result": "archives/evidence_ablation/evidence_files/outputs/FSV-B19__four_case_v1__evidence_refs_absent/RESULT.json",
+      "audited_result_summary": "archives/evidence_ablation/COMPARISON_AUDITED.json"
+    },
+    {
+      "row_id": "FSV-B19__four_case_v1__evidence_version_mismatch",
+      "parent_id": "FSV-B19__four_case_v1",
+      "task": "FSV-B19",
+      "configuration": "four_case_v1",
+      "variant": "evidence_version_mismatch",
+      "classification": "CONSTRUCTED_INVENTORY_PERTURBATION",
+      "candidate": "archives/evidence_ablation/evidence_files/outputs/FSV-B19__four_case_v1__evidence_version_mismatch/candidate.json",
+      "contract": "archives/evidence_ablation/evidence_files/outputs/FSV-B19__four_case_v1__evidence_version_mismatch/contract.json",
+      "fixtures": "archives/evidence_ablation/evidence_files/outputs/FSV-B19__four_case_v1__evidence_version_mismatch/execution_fixtures.json",
+      "compiled_policy": "archives/evidence_ablation/evidence_files/outputs/FSV-B19__four_case_v1__evidence_version_mismatch/compiled_policy.json",
+      "archived_result": "archives/evidence_ablation/evidence_files/outputs/FSV-B19__four_case_v1__evidence_version_mismatch/RESULT.json",
+      "audited_result_summary": "archives/evidence_ablation/COMPARISON_AUDITED.json"
+    },
+    {
+      "row_id": "FSV-B19__four_case_v1__evidence_insufficient",
+      "parent_id": "FSV-B19__four_case_v1",
+      "task": "FSV-B19",
+      "configuration": "four_case_v1",
+      "variant": "evidence_insufficient",
+      "classification": "CONSTRUCTED_INVENTORY_PERTURBATION",
+      "candidate": "archives/evidence_ablation/evidence_files/outputs/FSV-B19__four_case_v1__evidence_insufficient/candidate.json",
+      "contract": "archives/evidence_ablation/evidence_files/outputs/FSV-B19__four_case_v1__evidence_insufficient/contract.json",
+      "fixtures": "archives/evidence_ablation/evidence_files/outputs/FSV-B19__four_case_v1__evidence_insufficient/execution_fixtures.json",
+      "compiled_policy": "archives/evidence_ablation/evidence_files/outputs/FSV-B19__four_case_v1__evidence_insufficient/compiled_policy.json",
+      "archived_result": "archives/evidence_ablation/evidence_files/outputs/FSV-B19__four_case_v1__evidence_insufficient/RESULT.json",
+      "audited_result_summary": "archives/evidence_ablation/COMPARISON_AUDITED.json"
+    },
+    {
+      "row_id": "FSV-B19__four_case_v1__required_binding_facts_absent",
+      "parent_id": "FSV-B19__four_case_v1",
+      "task": "FSV-B19",
+      "configuration": "four_case_v1",
+      "variant": "required_binding_facts_absent",
+      "classification": "CONSTRUCTED_INVENTORY_PERTURBATION",
+      "candidate": "archives/evidence_ablation/evidence_files/outputs/FSV-B19__four_case_v1__required_binding_facts_absent/candidate.json",
+      "contract": "archives/evidence_ablation/evidence_files/outputs/FSV-B19__four_case_v1__required_binding_facts_absent/contract.json",
+      "fixtures": "archives/evidence_ablation/evidence_files/outputs/FSV-B19__four_case_v1__required_binding_facts_absent/execution_fixtures.json",
+      "compiled_policy": "archives/evidence_ablation/evidence_files/outputs/FSV-B19__four_case_v1__required_binding_facts_absent/compiled_policy.json",
+      "archived_result": "archives/evidence_ablation/evidence_files/outputs/FSV-B19__four_case_v1__required_binding_facts_absent/RESULT.json",
+      "audited_result_summary": "archives/evidence_ablation/COMPARISON_AUDITED.json"
+    },
+    {
+      "row_id": "FSV-B19__four_case_v1__source_locator_hash_unresolvable",
+      "parent_id": "FSV-B19__four_case_v1",
+      "task": "FSV-B19",
+      "configuration": "four_case_v1",
+      "variant": "source_locator_hash_unresolvable",
+      "classification": "CONSTRUCTED_SOURCE_AUTHENTICITY_CHALLENGE",
+      "candidate": "archives/evidence_ablation/evidence_files/outputs/FSV-B19__four_case_v1__source_locator_hash_unresolvable/candidate.json",
+      "contract": "archives/evidence_ablation/evidence_files/outputs/FSV-B19__four_case_v1__source_locator_hash_unresolvable/contract.json",
+      "fixtures": "archives/evidence_ablation/evidence_files/outputs/FSV-B19__four_case_v1__source_locator_hash_unresolvable/execution_fixtures.json",
+      "compiled_policy": "archives/evidence_ablation/evidence_files/outputs/FSV-B19__four_case_v1__source_locator_hash_unresolvable/compiled_policy.json",
+      "archived_result": "archives/evidence_ablation/evidence_files/outputs/FSV-B19__four_case_v1__source_locator_hash_unresolvable/RESULT.json",
+      "audited_result_summary": "archives/evidence_ablation/COMPARISON_AUDITED.json"
+    },
+    {
+      "row_id": "FSV-B19__four_case_v1__trusted_path_to_unregistered_client_path",
+      "parent_id": "FSV-B19__four_case_v1",
+      "task": "FSV-B19",
+      "configuration": "four_case_v1",
+      "variant": "trusted_path_to_unregistered_client_path",
+      "classification": "CONSTRUCTED_POLICY_PATH_PERTURBATION",
+      "candidate": "archives/evidence_ablation/evidence_files/outputs/FSV-B19__four_case_v1__trusted_path_to_unregistered_client_path/candidate.json",
+      "contract": "archives/evidence_ablation/evidence_files/outputs/FSV-B19__four_case_v1__trusted_path_to_unregistered_client_path/contract.json",
+      "fixtures": "archives/evidence_ablation/evidence_files/outputs/FSV-B19__four_case_v1__trusted_path_to_unregistered_client_path/execution_fixtures.json",
+      "compiled_policy": "archives/evidence_ablation/evidence_files/outputs/FSV-B19__four_case_v1__trusted_path_to_unregistered_client_path/compiled_policy.json",
+      "archived_result": "archives/evidence_ablation/evidence_files/outputs/FSV-B19__four_case_v1__trusted_path_to_unregistered_client_path/RESULT.json",
+      "audited_result_summary": "archives/evidence_ablation/COMPARISON_AUDITED.json"
+    },
+    {
+      "row_id": "FSV-B19__four_case_v1__schema_visibility_hidden",
+      "parent_id": "FSV-B19__four_case_v1",
+      "task": "FSV-B19",
+      "configuration": "four_case_v1",
+      "variant": "schema_visibility_hidden",
+      "classification": "ENGINEERING_CONTRACT_SCHEMA_CONTROL",
+      "candidate": "archives/evidence_ablation/evidence_files/outputs/FSV-B19__four_case_v1__schema_visibility_hidden/candidate.json",
+      "contract": "archives/evidence_ablation/evidence_files/outputs/FSV-B19__four_case_v1__schema_visibility_hidden/contract.json",
+      "fixtures": "archives/evidence_ablation/evidence_files/outputs/FSV-B19__four_case_v1__schema_visibility_hidden/execution_fixtures.json",
+      "compiled_policy": "archives/evidence_ablation/evidence_files/outputs/FSV-B19__four_case_v1__schema_visibility_hidden/compiled_policy.json",
+      "archived_result": "archives/evidence_ablation/evidence_files/outputs/FSV-B19__four_case_v1__schema_visibility_hidden/RESULT.json",
+      "audited_result_summary": "archives/evidence_ablation/COMPARISON_AUDITED.json"
+    },
+    {
+      "row_id": "FSV-B19__four_case_v1__schema_ir_unknown_op",
+      "parent_id": "FSV-B19__four_case_v1",
+      "task": "FSV-B19",
+      "configuration": "four_case_v1",
+      "variant": "schema_ir_unknown_op",
+      "classification": "ENGINEERING_MODEL_IR_SCHEMA_CONTROL",
+      "candidate": "archives/evidence_ablation/evidence_files/outputs/FSV-B19__four_case_v1__schema_ir_unknown_op/candidate.json",
+      "contract": "archives/evidence_ablation/evidence_files/outputs/FSV-B19__four_case_v1__schema_ir_unknown_op/contract.json",
+      "fixtures": null,
+      "compiled_policy": null,
+      "archived_result": "archives/evidence_ablation/evidence_files/outputs/FSV-B19__four_case_v1__schema_ir_unknown_op/RESULT.json",
+      "audited_result_summary": "archives/evidence_ablation/COMPARISON_AUDITED.json"
+    },
+    {
+      "row_id": "FSV-B19__four_case_v2__original",
+      "parent_id": "FSV-B19__four_case_v2",
+      "task": "FSV-B19",
+      "configuration": "four_case_v2",
+      "variant": "original",
+      "classification": "ARCHIVED_MODEL_OUTPUT",
+      "candidate": "archives/evidence_ablation/evidence_files/outputs/FSV-B19__four_case_v2__original/candidate.json",
+      "contract": "archives/evidence_ablation/evidence_files/outputs/FSV-B19__four_case_v2__original/contract.json",
+      "fixtures": "archives/evidence_ablation/evidence_files/outputs/FSV-B19__four_case_v2__original/execution_fixtures.json",
+      "compiled_policy": "archives/evidence_ablation/evidence_files/outputs/FSV-B19__four_case_v2__original/compiled_policy.json",
+      "archived_result": "archives/evidence_ablation/evidence_files/outputs/FSV-B19__four_case_v2__original/RESULT.json",
+      "audited_result_summary": "archives/evidence_ablation/COMPARISON_AUDITED.json"
+    },
+    {
+      "row_id": "FSV-B19__four_case_v2__evidence_refs_absent",
+      "parent_id": "FSV-B19__four_case_v2",
+      "task": "FSV-B19",
+      "configuration": "four_case_v2",
+      "variant": "evidence_refs_absent",
+      "classification": "CONSTRUCTED_INVENTORY_PERTURBATION",
+      "candidate": "archives/evidence_ablation/evidence_files/outputs/FSV-B19__four_case_v2__evidence_refs_absent/candidate.json",
+      "contract": "archives/evidence_ablation/evidence_files/outputs/FSV-B19__four_case_v2__evidence_refs_absent/contract.json",
+      "fixtures": "archives/evidence_ablation/evidence_files/outputs/FSV-B19__four_case_v2__evidence_refs_absent/execution_fixtures.json",
+      "compiled_policy": "archives/evidence_ablation/evidence_files/outputs/FSV-B19__four_case_v2__evidence_refs_absent/compiled_policy.json",
+      "archived_result": "archives/evidence_ablation/evidence_files/outputs/FSV-B19__four_case_v2__evidence_refs_absent/RESULT.json",
+      "audited_result_summary": "archives/evidence_ablation/COMPARISON_AUDITED.json"
+    },
+    {
+      "row_id": "FSV-B19__four_case_v2__evidence_version_mismatch",
+      "parent_id": "FSV-B19__four_case_v2",
+      "task": "FSV-B19",
+      "configuration": "four_case_v2",
+      "variant": "evidence_version_mismatch",
+      "classification": "CONSTRUCTED_INVENTORY_PERTURBATION",
+      "candidate": "archives/evidence_ablation/evidence_files/outputs/FSV-B19__four_case_v2__evidence_version_mismatch/candidate.json",
+      "contract": "archives/evidence_ablation/evidence_files/outputs/FSV-B19__four_case_v2__evidence_version_mismatch/contract.json",
+      "fixtures": "archives/evidence_ablation/evidence_files/outputs/FSV-B19__four_case_v2__evidence_version_mismatch/execution_fixtures.json",
+      "compiled_policy": "archives/evidence_ablation/evidence_files/outputs/FSV-B19__four_case_v2__evidence_version_mismatch/compiled_policy.json",
+      "archived_result": "archives/evidence_ablation/evidence_files/outputs/FSV-B19__four_case_v2__evidence_version_mismatch/RESULT.json",
+      "audited_result_summary": "archives/evidence_ablation/COMPARISON_AUDITED.json"
+    },
+    {
+      "row_id": "FSV-B19__four_case_v2__evidence_insufficient",
+      "parent_id": "FSV-B19__four_case_v2",
+      "task": "FSV-B19",
+      "configuration": "four_case_v2",
+      "variant": "evidence_insufficient",
+      "classification": "CONSTRUCTED_INVENTORY_PERTURBATION",
+      "candidate": "archives/evidence_ablation/evidence_files/outputs/FSV-B19__four_case_v2__evidence_insufficient/candidate.json",
+      "contract": "archives/evidence_ablation/evidence_files/outputs/FSV-B19__four_case_v2__evidence_insufficient/contract.json",
+      "fixtures": "archives/evidence_ablation/evidence_files/outputs/FSV-B19__four_case_v2__evidence_insufficient/execution_fixtures.json",
+      "compiled_policy": "archives/evidence_ablation/evidence_files/outputs/FSV-B19__four_case_v2__evidence_insufficient/compiled_policy.json",
+      "archived_result": "archives/evidence_ablation/evidence_files/outputs/FSV-B19__four_case_v2__evidence_insufficient/RESULT.json",
+      "audited_result_summary": "archives/evidence_ablation/COMPARISON_AUDITED.json"
+    },
+    {
+      "row_id": "FSV-B19__four_case_v2__required_binding_facts_absent",
+      "parent_id": "FSV-B19__four_case_v2",
+      "task": "FSV-B19",
+      "configuration": "four_case_v2",
+      "variant": "required_binding_facts_absent",
+      "classification": "CONSTRUCTED_INVENTORY_PERTURBATION",
+      "candidate": "archives/evidence_ablation/evidence_files/outputs/FSV-B19__four_case_v2__required_binding_facts_absent/candidate.json",
+      "contract": "archives/evidence_ablation/evidence_files/outputs/FSV-B19__four_case_v2__required_binding_facts_absent/contract.json",
+      "fixtures": "archives/evidence_ablation/evidence_files/outputs/FSV-B19__four_case_v2__required_binding_facts_absent/execution_fixtures.json",
+      "compiled_policy": "archives/evidence_ablation/evidence_files/outputs/FSV-B19__four_case_v2__required_binding_facts_absent/compiled_policy.json",
+      "archived_result": "archives/evidence_ablation/evidence_files/outputs/FSV-B19__four_case_v2__required_binding_facts_absent/RESULT.json",
+      "audited_result_summary": "archives/evidence_ablation/COMPARISON_AUDITED.json"
+    },
+    {
+      "row_id": "FSV-B19__four_case_v2__source_locator_hash_unresolvable",
+      "parent_id": "FSV-B19__four_case_v2",
+      "task": "FSV-B19",
+      "configuration": "four_case_v2",
+      "variant": "source_locator_hash_unresolvable",
+      "classification": "CONSTRUCTED_SOURCE_AUTHENTICITY_CHALLENGE",
+      "candidate": "archives/evidence_ablation/evidence_files/outputs/FSV-B19__four_case_v2__source_locator_hash_unresolvable/candidate.json",
+      "contract": "archives/evidence_ablation/evidence_files/outputs/FSV-B19__four_case_v2__source_locator_hash_unresolvable/contract.json",
+      "fixtures": "archives/evidence_ablation/evidence_files/outputs/FSV-B19__four_case_v2__source_locator_hash_unresolvable/execution_fixtures.json",
+      "compiled_policy": "archives/evidence_ablation/evidence_files/outputs/FSV-B19__four_case_v2__source_locator_hash_unresolvable/compiled_policy.json",
+      "archived_result": "archives/evidence_ablation/evidence_files/outputs/FSV-B19__four_case_v2__source_locator_hash_unresolvable/RESULT.json",
+      "audited_result_summary": "archives/evidence_ablation/COMPARISON_AUDITED.json"
+    },
+    {
+      "row_id": "FSV-B19__four_case_v2__trusted_path_to_unregistered_client_path",
+      "parent_id": "FSV-B19__four_case_v2",
+      "task": "FSV-B19",
+      "configuration": "four_case_v2",
+      "variant": "trusted_path_to_unregistered_client_path",
+      "classification": "CONSTRUCTED_POLICY_PATH_PERTURBATION",
+      "candidate": "archives/evidence_ablation/evidence_files/outputs/FSV-B19__four_case_v2__trusted_path_to_unregistered_client_path/candidate.json",
+      "contract": "archives/evidence_ablation/evidence_files/outputs/FSV-B19__four_case_v2__trusted_path_to_unregistered_client_path/contract.json",
+      "fixtures": "archives/evidence_ablation/evidence_files/outputs/FSV-B19__four_case_v2__trusted_path_to_unregistered_client_path/execution_fixtures.json",
+      "compiled_policy": "archives/evidence_ablation/evidence_files/outputs/FSV-B19__four_case_v2__trusted_path_to_unregistered_client_path/compiled_policy.json",
+      "archived_result": "archives/evidence_ablation/evidence_files/outputs/FSV-B19__four_case_v2__trusted_path_to_unregistered_client_path/RESULT.json",
+      "audited_result_summary": "archives/evidence_ablation/COMPARISON_AUDITED.json"
+    },
+    {
+      "row_id": "FSV-B19__four_case_v2__schema_visibility_hidden",
+      "parent_id": "FSV-B19__four_case_v2",
+      "task": "FSV-B19",
+      "configuration": "four_case_v2",
+      "variant": "schema_visibility_hidden",
+      "classification": "ENGINEERING_CONTRACT_SCHEMA_CONTROL",
+      "candidate": "archives/evidence_ablation/evidence_files/outputs/FSV-B19__four_case_v2__schema_visibility_hidden/candidate.json",
+      "contract": "archives/evidence_ablation/evidence_files/outputs/FSV-B19__four_case_v2__schema_visibility_hidden/contract.json",
+      "fixtures": "archives/evidence_ablation/evidence_files/outputs/FSV-B19__four_case_v2__schema_visibility_hidden/execution_fixtures.json",
+      "compiled_policy": "archives/evidence_ablation/evidence_files/outputs/FSV-B19__four_case_v2__schema_visibility_hidden/compiled_policy.json",
+      "archived_result": "archives/evidence_ablation/evidence_files/outputs/FSV-B19__four_case_v2__schema_visibility_hidden/RESULT.json",
+      "audited_result_summary": "archives/evidence_ablation/COMPARISON_AUDITED.json"
+    },
+    {
+      "row_id": "FSV-B19__four_case_v2__schema_ir_unknown_op",
+      "parent_id": "FSV-B19__four_case_v2",
+      "task": "FSV-B19",
+      "configuration": "four_case_v2",
+      "variant": "schema_ir_unknown_op",
+      "classification": "ENGINEERING_MODEL_IR_SCHEMA_CONTROL",
+      "candidate": "archives/evidence_ablation/evidence_files/outputs/FSV-B19__four_case_v2__schema_ir_unknown_op/candidate.json",
+      "contract": "archives/evidence_ablation/evidence_files/outputs/FSV-B19__four_case_v2__schema_ir_unknown_op/contract.json",
+      "fixtures": null,
+      "compiled_policy": null,
+      "archived_result": "archives/evidence_ablation/evidence_files/outputs/FSV-B19__four_case_v2__schema_ir_unknown_op/RESULT.json",
+      "audited_result_summary": "archives/evidence_ablation/COMPARISON_AUDITED.json"
+    }
+  ],
+  "ablation_parents": [
+    {
+      "parent_id": "FSV-B06__three_case_v1",
+      "case": "FSV-B06",
+      "configuration": "three_case_v1",
+      "candidate": "archives/evidence_ablation/evidence_files/inputs/FSV-B06__three_case_v1/candidate.json",
+      "contract": "archives/evidence_ablation/evidence_files/inputs/FSV-B06__three_case_v1/contract.json",
+      "original_result": "archives/evidence_ablation/evidence_files/inputs/FSV-B06__three_case_v1/original_result.json",
+      "raw_response": "archives/evidence_ablation/evidence_files/inputs/FSV-B06__three_case_v1/response.raw.json",
+      "parsed_response": "archives/evidence_ablation/evidence_files/inputs/FSV-B06__three_case_v1/parsed_output.json",
+      "original_source_folder": "/mnt/d/lunwen/EC-CSI投稿/working/exploration/20261014_external_baseline_pilot/effect_runs/FSV-B06/ECAS_MATCHED"
+    },
+    {
+      "parent_id": "FSV-S02__three_case_v1",
+      "case": "FSV-S02",
+      "configuration": "three_case_v1",
+      "candidate": "archives/evidence_ablation/evidence_files/inputs/FSV-S02__three_case_v1/candidate.json",
+      "contract": "archives/evidence_ablation/evidence_files/inputs/FSV-S02__three_case_v1/contract.json",
+      "original_result": "archives/evidence_ablation/evidence_files/inputs/FSV-S02__three_case_v1/original_result.json",
+      "raw_response": "archives/evidence_ablation/evidence_files/inputs/FSV-S02__three_case_v1/response.raw.json",
+      "parsed_response": "archives/evidence_ablation/evidence_files/inputs/FSV-S02__three_case_v1/parsed_output.json",
+      "original_source_folder": "/mnt/d/lunwen/EC-CSI投稿/working/exploration/20261014_external_baseline_pilot/effect_runs/FSV-S02/ECAS_MATCHED"
+    },
+    {
+      "parent_id": "FSV-S04__three_case_v1",
+      "case": "FSV-S04",
+      "configuration": "three_case_v1",
+      "candidate": "archives/evidence_ablation/evidence_files/inputs/FSV-S04__three_case_v1/candidate.json",
+      "contract": "archives/evidence_ablation/evidence_files/inputs/FSV-S04__three_case_v1/contract.json",
+      "original_result": "archives/evidence_ablation/evidence_files/inputs/FSV-S04__three_case_v1/original_result.json",
+      "raw_response": "archives/evidence_ablation/evidence_files/inputs/FSV-S04__three_case_v1/response.raw.json",
+      "parsed_response": "archives/evidence_ablation/evidence_files/inputs/FSV-S04__three_case_v1/parsed_output.json",
+      "original_source_folder": "/mnt/d/lunwen/EC-CSI投稿/working/exploration/20261014_external_baseline_pilot/effect_runs/FSV-S04/ECAS_MATCHED"
+    },
+    {
+      "parent_id": "FSV-S03__four_case_v1",
+      "case": "FSV-S03",
+      "configuration": "four_case_v1",
+      "candidate": "archives/evidence_ablation/evidence_files/inputs/FSV-S03__four_case_v1/candidate.json",
+      "contract": "archives/evidence_ablation/evidence_files/inputs/FSV-S03__four_case_v1/contract.json",
+      "original_result": "archives/evidence_ablation/evidence_files/inputs/FSV-S03__four_case_v1/original_result.json",
+      "raw_response": "archives/evidence_ablation/evidence_files/inputs/FSV-S03__four_case_v1/response.raw.json",
+      "parsed_response": "archives/evidence_ablation/evidence_files/inputs/FSV-S03__four_case_v1/parsed_output.json",
+      "original_source_folder": "/mnt/d/lunwen/EC-CSI投稿/working/exploration/20261014_four_case_peer_baselines/effect_runs/FSV-S03/ECAS_MATCHED"
+    },
+    {
+      "parent_id": "FSV-S03__four_case_v2",
+      "case": "FSV-S03",
+      "configuration": "four_case_v2",
+      "candidate": "archives/evidence_ablation/evidence_files/inputs/FSV-S03__four_case_v2/candidate.json",
+      "contract": "archives/evidence_ablation/evidence_files/inputs/FSV-S03__four_case_v2/contract.json",
+      "original_result": "archives/evidence_ablation/evidence_files/inputs/FSV-S03__four_case_v2/original_result.json",
+      "raw_response": "archives/evidence_ablation/evidence_files/inputs/FSV-S03__four_case_v2/response.raw.json",
+      "parsed_response": "archives/evidence_ablation/evidence_files/inputs/FSV-S03__four_case_v2/parsed_output.json",
+      "original_source_folder": "/mnt/d/lunwen/EC-CSI投稿/working/exploration/20261014_four_case_peer_baselines/documented_ecas/FSV-S03/ECAS_MATCHED"
+    },
+    {
+      "parent_id": "FSV-B13__four_case_v1",
+      "case": "FSV-B13",
+      "configuration": "four_case_v1",
+      "candidate": "archives/evidence_ablation/evidence_files/inputs/FSV-B13__four_case_v1/candidate.json",
+      "contract": "archives/evidence_ablation/evidence_files/inputs/FSV-B13__four_case_v1/contract.json",
+      "original_result": "archives/evidence_ablation/evidence_files/inputs/FSV-B13__four_case_v1/original_result.json",
+      "raw_response": "archives/evidence_ablation/evidence_files/inputs/FSV-B13__four_case_v1/response.raw.json",
+      "parsed_response": "archives/evidence_ablation/evidence_files/inputs/FSV-B13__four_case_v1/parsed_output.json",
+      "original_source_folder": "/mnt/d/lunwen/EC-CSI投稿/working/exploration/20261014_four_case_peer_baselines/effect_runs/FSV-B13/ECAS_MATCHED"
+    },
+    {
+      "parent_id": "FSV-B13__four_case_v2",
+      "case": "FSV-B13",
+      "configuration": "four_case_v2",
+      "candidate": "archives/evidence_ablation/evidence_files/inputs/FSV-B13__four_case_v2/candidate.json",
+      "contract": "archives/evidence_ablation/evidence_files/inputs/FSV-B13__four_case_v2/contract.json",
+      "original_result": "archives/evidence_ablation/evidence_files/inputs/FSV-B13__four_case_v2/original_result.json",
+      "raw_response": "archives/evidence_ablation/evidence_files/inputs/FSV-B13__four_case_v2/response.raw.json",
+      "parsed_response": "archives/evidence_ablation/evidence_files/inputs/FSV-B13__four_case_v2/parsed_output.json",
+      "original_source_folder": "/mnt/d/lunwen/EC-CSI投稿/working/exploration/20261014_four_case_peer_baselines/documented_ecas/FSV-B13/ECAS_MATCHED"
+    },
+    {
+      "parent_id": "FSV-B17__four_case_v1",
+      "case": "FSV-B17",
+      "configuration": "four_case_v1",
+      "candidate": "archives/evidence_ablation/evidence_files/inputs/FSV-B17__four_case_v1/candidate.json",
+      "contract": "archives/evidence_ablation/evidence_files/inputs/FSV-B17__four_case_v1/contract.json",
+      "original_result": "archives/evidence_ablation/evidence_files/inputs/FSV-B17__four_case_v1/original_result.json",
+      "raw_response": "archives/evidence_ablation/evidence_files/inputs/FSV-B17__four_case_v1/response.raw.json",
+      "parsed_response": "archives/evidence_ablation/evidence_files/inputs/FSV-B17__four_case_v1/parsed_output.json",
+      "original_source_folder": "/mnt/d/lunwen/EC-CSI投稿/working/exploration/20261014_four_case_peer_baselines/effect_runs/FSV-B17/ECAS_MATCHED"
+    },
+    {
+      "parent_id": "FSV-B17__four_case_v2",
+      "case": "FSV-B17",
+      "configuration": "four_case_v2",
+      "candidate": "archives/evidence_ablation/evidence_files/inputs/FSV-B17__four_case_v2/candidate.json",
+      "contract": "archives/evidence_ablation/evidence_files/inputs/FSV-B17__four_case_v2/contract.json",
+      "original_result": "archives/evidence_ablation/evidence_files/inputs/FSV-B17__four_case_v2/original_result.json",
+      "raw_response": "archives/evidence_ablation/evidence_files/inputs/FSV-B17__four_case_v2/response.raw.json",
+      "parsed_response": "archives/evidence_ablation/evidence_files/inputs/FSV-B17__four_case_v2/parsed_output.json",
+      "original_source_folder": "/mnt/d/lunwen/EC-CSI投稿/working/exploration/20261014_four_case_peer_baselines/documented_ecas/FSV-B17/ECAS_MATCHED"
+    },
+    {
+      "parent_id": "FSV-B19__four_case_v1",
+      "case": "FSV-B19",
+      "configuration": "four_case_v1",
+      "candidate": "archives/evidence_ablation/evidence_files/inputs/FSV-B19__four_case_v1/candidate.json",
+      "contract": "archives/evidence_ablation/evidence_files/inputs/FSV-B19__four_case_v1/contract.json",
+      "original_result": "archives/evidence_ablation/evidence_files/inputs/FSV-B19__four_case_v1/original_result.json",
+      "raw_response": "archives/evidence_ablation/evidence_files/inputs/FSV-B19__four_case_v1/response.raw.json",
+      "parsed_response": "archives/evidence_ablation/evidence_files/inputs/FSV-B19__four_case_v1/parsed_output.json",
+      "original_source_folder": "/mnt/d/lunwen/EC-CSI投稿/working/exploration/20261014_four_case_peer_baselines/effect_runs/FSV-B19/ECAS_MATCHED"
+    },
+    {
+      "parent_id": "FSV-B19__four_case_v2",
+      "case": "FSV-B19",
+      "configuration": "four_case_v2",
+      "candidate": "archives/evidence_ablation/evidence_files/inputs/FSV-B19__four_case_v2/candidate.json",
+      "contract": "archives/evidence_ablation/evidence_files/inputs/FSV-B19__four_case_v2/contract.json",
+      "original_result": "archives/evidence_ablation/evidence_files/inputs/FSV-B19__four_case_v2/original_result.json",
+      "raw_response": "archives/evidence_ablation/evidence_files/inputs/FSV-B19__four_case_v2/response.raw.json",
+      "parsed_response": "archives/evidence_ablation/evidence_files/inputs/FSV-B19__four_case_v2/parsed_output.json",
+      "original_source_folder": "/mnt/d/lunwen/EC-CSI投稿/working/exploration/20261014_four_case_peer_baselines/documented_ecas/FSV-B19/ECAS_MATCHED"
+    }
+  ],
+  "ablation_parent_identity": "A three-case plus earlier E14 initial-four v1/v2; NOT the E15 common-target four candidates",
+  "expected_counts": {
+    "traces": 21,
+    "qualified_traces": 17,
+    "unexecuted_traces": 4,
+    "original_request_decisions": 34,
+    "ablation_rows": 95,
+    "ablation_parents": 11,
+    "admission_contrast": 73,
+    "schema_controls": 22,
+    "invalid_evidence_or_path_variants": 51
+  },
+  "expected_not_execution": "OUT_OF_SCOPE and DEVELOPMENT_REJECTED are NOT_EXECUTED, never request deny"
+}

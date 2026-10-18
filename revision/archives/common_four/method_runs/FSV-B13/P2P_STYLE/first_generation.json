@@ -1,0 +1,5 @@
+{
+  "status": "READY",
+  "rego": "package external_pilot\n\nimport rego.v1\n\ndefault allow := false\n\nallow if {\n    input.request.body.qty <= input.trusted.derivedMaximumQty\n}\n\nallow if {\n    input.trusted.authorizedRole == true\n}\n",
+  "reason": "Enforces the documented Stock Settings receipt quantity allowance using trusted derivedMaximumQty and allows the documented over-receive exception when trusted.authorizedRole is true."
+}

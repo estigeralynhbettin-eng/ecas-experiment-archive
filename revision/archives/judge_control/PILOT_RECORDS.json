@@ -1,0 +1,16 @@
+[
+  {
+    "case_id": "FSV-B19_longest_two_candidate_review",
+    "coverage": "longest_typed_ir_judge_input",
+    "dataset": "FOUR_TASKS_TYPED_IR_PUBLIC_SOURCE_CONTROL",
+    "k": 2,
+    "max_output_tokens": 16384,
+    "actual_output_tokens": 1979,
+    "prompt_tokens": 7324,
+    "finish_reason": "stop",
+    "parse_status": "PASS",
+    "content_empty": false,
+    "retry_count": 0,
+    "truncated": false
+  }
+]

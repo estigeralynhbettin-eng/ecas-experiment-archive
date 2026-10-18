@@ -1,0 +1,36 @@
+{
+  "batch": "B",
+  "task": "FSV-B13",
+  "method": "AUTOPAC_STYLE",
+  "final_status": "ELIGIBLE",
+  "original_pre_format_status": "ELIGIBLE",
+  "source_result": "archives/common_four/method_runs/FSV-B13/AUTOPAC_STYLE/RESULT.json",
+  "requests": [
+    {
+      "channel": "O-L",
+      "expected": "allow",
+      "actual": {
+        "status": "EXECUTED",
+        "decision": "allow",
+        "exit_code": 0
+      },
+      "archive_match": true,
+      "matches_archived_label": true,
+      "synthetic_input": true
+    },
+    {
+      "channel": "O-I",
+      "expected": "deny",
+      "actual": {
+        "status": "EXECUTED",
+        "decision": "deny",
+        "exit_code": 0
+      },
+      "archive_match": true,
+      "matches_archived_label": true,
+      "synthetic_input": true
+    }
+  ],
+  "replay_status": "EXECUTED",
+  "qualification_match": true
+}

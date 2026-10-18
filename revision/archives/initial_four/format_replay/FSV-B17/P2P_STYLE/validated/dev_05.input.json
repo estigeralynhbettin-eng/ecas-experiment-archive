@@ -1,0 +1,20 @@
+{
+  "request": {
+    "body": {
+      "customer": "DEV-CUSTOMER-843"
+    }
+  },
+  "trusted": {
+    "customerDisabled": true
+  },
+  "subject": {
+    "role": "authenticated_api_caller",
+    "id": "authenticated_api_caller"
+  },
+  "action": "POST /api/resource/Sales Order",
+  "resource": {
+    "id": "ERPNext:16.0.0",
+    "system": "ERPNext",
+    "version": "16.0.0"
+  }
+}

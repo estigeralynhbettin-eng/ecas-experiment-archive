@@ -1,0 +1,28 @@
+{
+  "choices": [
+    {
+      "finish_reason": "stop",
+      "index": 0,
+      "message": {
+        "content": "{\"begin\":\"BEGIN_FSV-B17_autopac_generate_MAIN\",\"stage\":\"autopac_generate\",\"output\":{\"status\":\"READY\",\"rego\":\"package external_pilot\\n\\nimport rego.v1\\n\\ndefault allow := false\\n\\nallow if {\\n    input.action == \\\"POST /api/resource/Sales Order\\\"\\n    input.resource.id == \\\"ERPNext:16.0.0\\\"\\n    input.trusted.customerDisabled == false\\n}\\n\",\"reason\":\"Source VIS-FSV-B17-01 states that sales orders can be disallowed against a customer via the 'Disabled' flag. Runtime ABI declares /trusted/customerDisabled (boolean) representing this server-side state and /request/body/customer (string) as the referenced customer. The focused target constraint is: deny sales order creation when the customer is disabled. Policy checks action, resource.id against organization schema, and that customerDisabled is false.\"},\"end\":\"END_FSV-B17_autopac_generate_MAIN\"}",
+        "role": "assistant"
+      }
+    }
+  ],
+  "created": 1791978834,
+  "id": "2026101419534420e97247fc9544fb",
+  "model": "glm-5.2",
+  "object": "chat.completion",
+  "request_id": "2026101419534420e97247fc9544fb",
+  "usage": {
+    "completion_tokens": 1018,
+    "completion_tokens_details": {
+      "reasoning_tokens": 794
+    },
+    "prompt_tokens": 3152,
+    "prompt_tokens_details": {
+      "cached_tokens": 0
+    },
+    "total_tokens": 4170
+  }
+}

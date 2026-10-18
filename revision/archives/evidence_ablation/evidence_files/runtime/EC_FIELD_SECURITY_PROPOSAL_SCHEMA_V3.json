@@ -1,0 +1,76 @@
+{
+  "$id": "https://example.invalid/ec/field-security-proposal-v3.schema.json",
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "oneOf": [
+    {
+      "additionalProperties": false,
+      "properties": {
+        "candidate_id": {
+          "pattern": "^[A-Za-z0-9][A-Za-z0-9._:-]{0,127}$",
+          "type": "string"
+        },
+        "decision": {
+          "const": "propose"
+        },
+        "policy": {
+          "$ref": "https://example.invalid/ec/field-security-policy-v3.schema.json"
+        },
+        "proposal_version": {
+          "const": "EC-FIELD-PROPOSAL-V3"
+        }
+      },
+      "required": [
+        "proposal_version",
+        "candidate_id",
+        "decision",
+        "policy"
+      ],
+      "type": "object"
+    },
+    {
+      "additionalProperties": false,
+      "properties": {
+        "candidate_id": {
+          "pattern": "^[A-Za-z0-9][A-Za-z0-9._:-]{0,127}$",
+          "type": "string"
+        },
+        "decision": {
+          "const": "abstain"
+        },
+        "missing_evidence": {
+          "items": {
+            "maxLength": 256,
+            "minLength": 1,
+            "type": "string"
+          },
+          "maxItems": 32,
+          "minItems": 1,
+          "type": "array",
+          "uniqueItems": true
+        },
+        "proposal_version": {
+          "const": "EC-FIELD-PROPOSAL-V3"
+        },
+        "reason_code": {
+          "enum": [
+            "missing_business_binding",
+            "missing_api_binding",
+            "missing_context",
+            "conflicting_evidence",
+            "unsupported_primitive",
+            "non_actionable_material"
+          ]
+        }
+      },
+      "required": [
+        "proposal_version",
+        "candidate_id",
+        "decision",
+        "reason_code",
+        "missing_evidence"
+      ],
+      "type": "object"
+    }
+  ],
+  "title": "EC Field Security Proposal or Abstention V3"
+}

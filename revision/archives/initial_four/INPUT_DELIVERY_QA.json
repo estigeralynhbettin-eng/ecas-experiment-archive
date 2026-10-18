@@ -1,0 +1,155 @@
+{
+  "status": "PASS",
+  "checks": [
+    {
+      "check": "FSV-S03_identity",
+      "pass": true
+    },
+    {
+      "check": "FSV-S03_VIS-FSV-S03-01_source_metadata",
+      "pass": true
+    },
+    {
+      "check": "FSV-S03_VIS-FSV-S03-01_structured_source",
+      "pass": true
+    },
+    {
+      "check": "FSV-S03_VIS-FSV-S03-RUNTIME-ABI_source_metadata",
+      "pass": true
+    },
+    {
+      "check": "FSV-S03_neutral_abi",
+      "pass": true
+    },
+    {
+      "check": "FSV-B13_identity",
+      "pass": true
+    },
+    {
+      "check": "FSV-B13_VIS-FSV-B13-01_source_metadata",
+      "pass": true
+    },
+    {
+      "check": "FSV-B13_VIS-FSV-B13-01_text",
+      "pass": true
+    },
+    {
+      "check": "FSV-B13_VIS-FSV-B13-02_source_metadata",
+      "pass": true
+    },
+    {
+      "check": "FSV-B13_VIS-FSV-B13-02_text",
+      "pass": true
+    },
+    {
+      "check": "FSV-B13_VIS-FSV-B13-03_source_metadata",
+      "pass": true
+    },
+    {
+      "check": "FSV-B13_VIS-FSV-B13-03_complete_data_catalog",
+      "pass": true,
+      "field_count": 47
+    },
+    {
+      "check": "FSV-B13_VIS-FSV-B13-RUNTIME-ABI_source_metadata",
+      "pass": true
+    },
+    {
+      "check": "FSV-B13_neutral_abi",
+      "pass": true
+    },
+    {
+      "check": "FSV-B17_identity",
+      "pass": true
+    },
+    {
+      "check": "FSV-B17_VIS-FSV-B17-01_source_metadata",
+      "pass": true
+    },
+    {
+      "check": "FSV-B17_VIS-FSV-B17-01_text",
+      "pass": true
+    },
+    {
+      "check": "FSV-B17_VIS-FSV-B17-02_source_metadata",
+      "pass": true
+    },
+    {
+      "check": "FSV-B17_VIS-FSV-B17-02_text",
+      "pass": true
+    },
+    {
+      "check": "FSV-B17_VIS-FSV-B17-03_source_metadata",
+      "pass": true
+    },
+    {
+      "check": "FSV-B17_VIS-FSV-B17-03_complete_data_catalog",
+      "pass": true,
+      "field_count": 49
+    },
+    {
+      "check": "FSV-B17_VIS-FSV-B17-RUNTIME-ABI_source_metadata",
+      "pass": true
+    },
+    {
+      "check": "FSV-B17_neutral_abi",
+      "pass": true
+    },
+    {
+      "check": "FSV-B19_identity",
+      "pass": true
+    },
+    {
+      "check": "FSV-B19_VIS-FSV-B19-01_source_metadata",
+      "pass": true
+    },
+    {
+      "check": "FSV-B19_VIS-FSV-B19-01_text",
+      "pass": true
+    },
+    {
+      "check": "FSV-B19_VIS-FSV-B19-02_source_metadata",
+      "pass": true
+    },
+    {
+      "check": "FSV-B19_VIS-FSV-B19-02_text",
+      "pass": true
+    },
+    {
+      "check": "FSV-B19_VIS-FSV-B19-03_source_metadata",
+      "pass": true
+    },
+    {
+      "check": "FSV-B19_VIS-FSV-B19-03_complete_data_catalog",
+      "pass": true,
+      "field_count": 40
+    },
+    {
+      "check": "FSV-B19_VIS-FSV-B19-04_source_metadata",
+      "pass": true
+    },
+    {
+      "check": "FSV-B19_VIS-FSV-B19-04_complete_data_catalog",
+      "pass": true,
+      "field_count": 104
+    },
+    {
+      "check": "FSV-B19_VIS-FSV-B19-RUNTIME-ABI_source_metadata",
+      "pass": true
+    },
+    {
+      "check": "FSV-B19_neutral_abi",
+      "pass": true
+    },
+    {
+      "check": "all_15_schema_variants_equivalent",
+      "pass": true
+    },
+    {
+      "check": "root_constraints_retained",
+      "pass": true
+    }
+  ],
+  "model_calls": 0,
+  "note": "This script only checks delivery transformations; it does not initiate inference."
+}

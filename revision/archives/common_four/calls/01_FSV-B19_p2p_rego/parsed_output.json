@@ -1,0 +1,141 @@
+{
+  "detection": {
+    "status": "complete",
+    "statements": [
+      {
+        "text": "When a supplier is blocked, hold type 'Invoices' prevents Purchase Orders from being created, hold type 'Payments' prevents Payment Entries, and hold type 'All' applies both.",
+        "evidence_refs": [
+          "VIS-FSV-B19-01"
+        ]
+      },
+      {
+        "text": "The Purchase Order doctype has a supplier Link field that is required, linking each Purchase Order to a Supplier whose hold status governs creation.",
+        "evidence_refs": [
+          "VIS-FSV-B19-04"
+        ]
+      },
+      {
+        "text": "Trusted server state provides supplierOnHold (boolean) and holdType (string) for evaluating the hold policy at runtime.",
+        "evidence_refs": [
+          "VIS-FSV-B19-RUNTIME-ABI"
+        ]
+      }
+    ]
+  },
+  "extraction": {
+    "status": "complete",
+    "components": [
+      {
+        "decision": "deny",
+        "subject": {
+          "id": "authenticated_api_caller",
+          "role": "authenticated_api_caller"
+        },
+        "action": "POST /api/resource/Purchase Order",
+        "resource": {
+          "id": "ERPNext:16.0.0",
+          "system": "ERPNext",
+          "version": "16.0.0"
+        },
+        "condition": "trusted.supplierOnHold == true AND trusted.holdType in {\"Invoices\", \"All\"}",
+        "purpose": "Prevent Purchase Order creation for suppliers on hold with Invoices or All hold type",
+        "evidence_refs": [
+          "VIS-FSV-B19-01",
+          "VIS-FSV-B19-RUNTIME-ABI"
+        ]
+      }
+    ]
+  },
+  "policy": {
+    "status": "READY",
+    "rego": "package external_pilot\n\nimport rego.v1\n\ndefault allow := false\n\nallow if {\n    not supplier_blocked_for_pos\n}\n\nsupplier_blocked_for_pos if {\n    input.trusted.supplierOnHold == true\n    input.trusted.holdType in {\"Invoices\", \"All\"}\n}\n",
+    "reason": "Source VIS-FSV-B19-01 documents that when a supplier is on hold with hold type 'Invoices' or 'All', Purchase Orders cannot be created. The policy denies creation under those conditions and allows otherwise."
+  },
+  "tests": [
+    {
+      "id": "t1_on_hold_invoices_deny",
+      "input": {
+        "request": {
+          "body": {
+            "action": "POST /api/resource/Purchase Order",
+            "supplier": "SUP-2025-001"
+          }
+        },
+        "trusted": {
+          "holdType": "Invoices",
+          "supplierOnHold": true
+        }
+      },
+      "expected": "deny",
+      "source_ref": "VIS-FSV-B19-01"
+    },
+    {
+      "id": "t2_on_hold_all_deny",
+      "input": {
+        "request": {
+          "body": {
+            "action": "POST /api/resource/Purchase Order",
+            "supplier": "SUP-2025-002"
+          }
+        },
+        "trusted": {
+          "holdType": "All",
+          "supplierOnHold": true
+        }
+      },
+      "expected": "deny",
+      "source_ref": "VIS-FSV-B19-01"
+    },
+    {
+      "id": "t3_on_hold_payments_allow",
+      "input": {
+        "request": {
+          "body": {
+            "action": "POST /api/resource/Purchase Order",
+            "supplier": "SUP-2025-003"
+          }
+        },
+        "trusted": {
+          "holdType": "Payments",
+          "supplierOnHold": true
+        }
+      },
+      "expected": "allow",
+      "source_ref": "VIS-FSV-B19-01"
+    },
+    {
+      "id": "t4_not_on_hold_allow",
+      "input": {
+        "request": {
+          "body": {
+            "action": "POST /api/resource/Purchase Order",
+            "supplier": "SUP-2025-004"
+          }
+        },
+        "trusted": {
+          "holdType": "All",
+          "supplierOnHold": false
+        }
+      },
+      "expected": "allow",
+      "source_ref": "VIS-FSV-B19-01"
+    },
+    {
+      "id": "t5_no_hold_type_allow",
+      "input": {
+        "request": {
+          "body": {
+            "action": "POST /api/resource/Purchase Order",
+            "supplier": "SUP-2025-005"
+          }
+        },
+        "trusted": {
+          "holdType": "",
+          "supplierOnHold": false
+        }
+      },
+      "expected": "allow",
+      "source_ref": "VIS-FSV-B19-01"
+    }
+  ]
+}

@@ -1,0 +1,50 @@
+{
+  "proposal_version": "EC-FIELD-PROPOSAL-V3",
+  "candidate_id": "FSV-S03-C01",
+  "decision": "propose",
+  "policy": {
+    "policy_version": "EC-FIELD-SECURITY-V3",
+    "policy_id": "FSV-S03-P01",
+    "target": {
+      "operation": "POST /v1/clients/{clientId}/familymembers",
+      "system": "Fineract",
+      "version": "1.14.0"
+    },
+    "evidence_refs": [
+      "VIS-FSV-S03-01",
+      "VIS-FSV-S03-RUNTIME-ABI"
+    ],
+    "rules": [
+      {
+        "rule_id": "FSV-S03-R01",
+        "primitive_id": "SP-OBJECT-PROPERTY-ALLOWLIST",
+        "evidence_refs": [
+          "VIS-FSV-S03-01",
+          "VIS-FSV-S03-RUNTIME-ABI"
+        ],
+        "op": "allowed_fields",
+        "path": "/request/body",
+        "fields": [
+          "age",
+          "clientId",
+          "dateFormat",
+          "dateOfBirth",
+          "familyMembers",
+          "firstName",
+          "genderId",
+          "id",
+          "isDependent",
+          "lastName",
+          "locale",
+          "maritalStatusId",
+          "middleName",
+          "mobileNumber",
+          "professionId",
+          "qualification",
+          "relationshipId"
+        ],
+        "on_missing": "deny"
+      }
+    ]
+  }
+}

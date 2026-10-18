@@ -1,0 +1,28 @@
+{
+  "choices": [
+    {
+      "finish_reason": "stop",
+      "index": 0,
+      "message": {
+        "content": "{\"begin\":\"BEGIN_FSV-S03_ecas_generate_DOCUMENTED_MAIN\",\"stage\":\"ecas_generate\",\"output\":{\"candidate\":{\"ir_version\":\"EC-FIELD-MODEL-IR-V3\",\"candidate_id\":\"FSV-S03-C01\",\"decision\":\"propose\",\"target\":{\"operation\":\"POST /v1/clients/{clientId}/familymembers\",\"system\":\"Fineract\",\"version\":\"1.14.0\"},\"policy_id\":\"FSV-S03-P01\",\"evidence_refs\":[\"VIS-FSV-S03-01\",\"VIS-FSV-S03-RUNTIME-ABI\"],\"rules\":[{\"rule_id\":\"FSV-S03-R01\",\"primitive_id\":\"SP-OBJECT-PROPERTY-ALLOWLIST\",\"op\":\"allowed_fields\",\"evidence_refs\":[\"VIS-FSV-S03-01\",\"VIS-FSV-S03-RUNTIME-ABI\"],\"params\":{\"path\":\"/request/body\",\"fields\":[\"age\",\"clientId\",\"dateFormat\",\"dateOfBirth\",\"familyMembers\",\"firstName\",\"genderId\",\"id\",\"isDependent\",\"lastName\",\"locale\",\"maritalStatusId\",\"middleName\",\"mobileNumber\",\"professionId\",\"qualification\",\"relationshipId\"],\"on_missing\":\"deny\"}}],\"reason_code\":\"none\",\"missing_evidence\":[]}},\"end\":\"END_FSV-S03_ecas_generate_DOCUMENTED_MAIN\"}",
+        "role": "assistant"
+      }
+    }
+  ],
+  "created": 1791979892,
+  "id": "2026101420111558d751d68a2b4c6e",
+  "model": "glm-5.2",
+  "object": "chat.completion",
+  "request_id": "2026101420111558d751d68a2b4c6e",
+  "usage": {
+    "completion_tokens": 1850,
+    "completion_tokens_details": {
+      "reasoning_tokens": 1486
+    },
+    "prompt_tokens": 3339,
+    "prompt_tokens_details": {
+      "cached_tokens": 0
+    },
+    "total_tokens": 5189
+  }
+}

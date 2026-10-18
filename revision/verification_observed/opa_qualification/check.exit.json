@@ -1,0 +1,11 @@
+{
+  "exit_code": 0,
+  "argv": [
+    "runtime/bin/opa",
+    "check",
+    "--strict",
+    "--capabilities",
+    "/root/ecas_a9_artifact_verify_v2/run/restricted_capabilities.json",
+    "/root/ecas_a9_artifact_verify_v2/run/qualification.rego"
+  ]
+}

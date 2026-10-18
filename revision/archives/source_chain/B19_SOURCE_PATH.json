@@ -1,0 +1,1713 @@
+{
+  "audit_id": "ECAS-B19-SOURCE-PATH-20261015-01",
+  "date": "2026-10-15",
+  "status": "LOCAL_READ_ONLY_SOURCE_AUDIT_FOR_ROOT_REVIEW",
+  "new_model_calls": 0,
+  "network_calls": 0,
+  "new_policy_executions": 0,
+  "source_function_executions": 0,
+  "version": {
+    "erpnext": "16.0.0",
+    "frappe": "16.1.1",
+    "upstream_git_commit": "UNKNOWN_NO_GIT_COMMIT_VERIFIED",
+    "evidence_basis": "Local version declarations plus archive-entry byte equivalence; historical bench-version record is contextual only.",
+    "full_copy_note": "The -full ERPNext copy uses CRLF. Four targeted files have unequal byte hashes but equal text after CRLF-to-LF normalization; this audit uses original extracted copy matching zip bytes.",
+    "historical_bench_version": {
+      "path": "D:\\lunwen\\ec\\e1_erpnext_runs\\ec-e1b-erpnext-v16_0_0-logout-20260713T145427Z\\bench_version.txt",
+      "sha256": "1d012adb46d93a3f039db94e21e994ad9676b15f611b085bc4256ec4121588a0",
+      "exposure": "POSTHOC_SOURCE_READ_THIS_TASK"
+    },
+    "full_copy_normalization_checks": [
+      {
+        "original_path": "D:\\lunwen\\ec\\runtime\\erpnext_qualification\\erpnext-v16.0.0\\erpnext-16.0.0\\erpnext\\__init__.py",
+        "original_sha256": "7dc62e3e31da76e3f69df963884ec601153b61596687353e33b0d658e0c9ec7a",
+        "full_copy_path": "D:\\lunwen\\ec\\runtime\\erpnext_qualification\\erpnext-v16.0.0-full\\erpnext\\__init__.py",
+        "full_copy_sha256": "f561eafa0b17f88dbceaabc728d60d9469ac440ad7dadc89c9f957c5d1e07992",
+        "equal_after_CRLF_to_LF": true
+      },
+      {
+        "original_path": "D:\\lunwen\\ec\\runtime\\erpnext_qualification\\erpnext-v16.0.0\\erpnext-16.0.0\\erpnext\\buying\\doctype\\supplier\\supplier.py",
+        "original_sha256": "4b2246f9ec73ab5add741b5594db5a0cf401b651d21a47bc0ccfcff3ca5b56d7",
+        "full_copy_path": "D:\\lunwen\\ec\\runtime\\erpnext_qualification\\erpnext-v16.0.0-full\\erpnext\\buying\\doctype\\supplier\\supplier.py",
+        "full_copy_sha256": "79b0589738e3d6e3c41b82d04cdf959162601a3f41905ced3b2762f65ca6104f",
+        "equal_after_CRLF_to_LF": true
+      },
+      {
+        "original_path": "D:\\lunwen\\ec\\runtime\\erpnext_qualification\\erpnext-v16.0.0\\erpnext-16.0.0\\erpnext\\controllers\\accounts_controller.py",
+        "original_sha256": "5a0c66476cb87853b500dc666b8d09b7f6d18dfb93af7f7538bb2e4b4d645e94",
+        "full_copy_path": "D:\\lunwen\\ec\\runtime\\erpnext_qualification\\erpnext-v16.0.0-full\\erpnext\\controllers\\accounts_controller.py",
+        "full_copy_sha256": "e1cd779b74328a698e6bbee0fb30f4c8269b9c19418d58a8df895a5f04fbb5fb",
+        "equal_after_CRLF_to_LF": true
+      },
+      {
+        "original_path": "D:\\lunwen\\ec\\runtime\\erpnext_qualification\\erpnext-v16.0.0\\erpnext-16.0.0\\erpnext\\buying\\doctype\\purchase_order\\purchase_order.py",
+        "original_sha256": "0dc97a544a8e24f7d6d7808fe1c1b1d4cef93f0552b247323d3c801bbd768abd",
+        "full_copy_path": "D:\\lunwen\\ec\\runtime\\erpnext_qualification\\erpnext-v16.0.0-full\\erpnext\\buying\\doctype\\purchase_order\\purchase_order.py",
+        "full_copy_sha256": "f95749cf22cf31bb6f75b33054ab994b1ff390d6cb4aedb068f3d61e05d2574a",
+        "equal_after_CRLF_to_LF": true
+      }
+    ]
+  },
+  "source_files": [
+    {
+      "path": "D:\\lunwen\\ec\\runtime\\erpnext_qualification\\erpnext-v16.0.0\\erpnext-16.0.0\\erpnext\\buying\\doctype\\supplier\\supplier.py",
+      "sha256": "4b2246f9ec73ab5add741b5594db5a0cf401b651d21a47bc0ccfcff3ca5b56d7",
+      "exposure": "POSTHOC_SOURCE_READ_THIS_TASK",
+      "line_start": 88,
+      "line_end": 93,
+      "excerpt": "\tdef before_save(self):\n\t\tif not self.on_hold:\n\t\t\tself.hold_type = \"\"\n\t\t\tself.release_date = \"\"\n\t\telif self.on_hold and not self.hold_type:\n\t\t\tself.hold_type = \"All\""
+    },
+    {
+      "path": "D:\\lunwen\\ec\\runtime\\erpnext_qualification\\erpnext-v16.0.0\\erpnext-16.0.0\\erpnext\\controllers\\accounts_controller.py",
+      "sha256": "5a0c66476cb87853b500dc666b8d09b7f6d18dfb93af7f7538bb2e4b4d645e94",
+      "exposure": "POSTHOC_SOURCE_READ_THIS_TASK",
+      "line_start": 157,
+      "line_end": 174,
+      "excerpt": "\tdef ensure_supplier_is_not_blocked(self):\n\t\tis_supplier_payment = self.doctype == \"Payment Entry\" and self.party_type == \"Supplier\"\n\t\tis_buying_invoice = self.doctype in [\"Purchase Invoice\", \"Purchase Order\"]\n\t\tsupplier_name = self.supplier if is_buying_invoice else self.party if is_supplier_payment else None\n\t\tsupplier = None\n\n\t\tif supplier_name:\n\t\t\tsupplier = frappe.get_lazy_doc(\"Supplier\", supplier_name)\n\n\t\tif supplier and supplier.on_hold:\n\t\t\tif (is_buying_invoice and supplier.hold_type in [\"All\", \"Invoices\"]) or (\n\t\t\t\tis_supplier_payment and supplier.hold_type in [\"All\", \"Payments\"]\n\t\t\t):\n\t\t\t\tif not supplier.release_date or getdate(nowdate()) <= supplier.release_date:\n\t\t\t\t\tfrappe.msgprint(\n\t\t\t\t\t\t_(\"{0} is blocked so this transaction cannot proceed\").format(supplier_name),\n\t\t\t\t\t\traise_exception=1,\n\t\t\t\t\t)"
+    },
+    {
+      "path": "D:\\lunwen\\ec\\runtime\\erpnext_qualification\\erpnext-v16.0.0\\erpnext-16.0.0\\erpnext\\controllers\\accounts_controller.py",
+      "sha256": "5a0c66476cb87853b500dc666b8d09b7f6d18dfb93af7f7538bb2e4b4d645e94",
+      "exposure": "POSTHOC_SOURCE_READ_THIS_TASK",
+      "line_start": 218,
+      "line_end": 235,
+      "excerpt": "\tdef validate(self):\n\t\tif not self.get(\"is_return\") and not self.get(\"is_debit_note\"):\n\t\t\tself.validate_qty_is_not_zero()\n\n\t\tif (\n\t\t\tself.doctype in [\"Sales Invoice\", \"Purchase Invoice\", \"POS Invoice\"]\n\t\t\tand self.get(\"is_return\")\n\t\t\tand self.get(\"update_stock\")\n\t\t):\n\t\t\tself.validate_zero_qty_for_return_invoices_with_stock()\n\n\t\tif self.get(\"_action\") and self._action != \"update_after_submit\":\n\t\t\tself.set_missing_values(for_validate=True)\n\n\t\tif self.get(\"_action\") == \"submit\":\n\t\t\tself.remove_bundle_for_non_stock_invoices()\n\n\t\tself.ensure_supplier_is_not_blocked()"
+    },
+    {
+      "path": "D:\\lunwen\\ec\\runtime\\erpnext_qualification\\erpnext-v16.0.0\\erpnext-16.0.0\\erpnext\\controllers\\accounts_controller.py",
+      "sha256": "5a0c66476cb87853b500dc666b8d09b7f6d18dfb93af7f7538bb2e4b4d645e94",
+      "exposure": "POSTHOC_SOURCE_READ_THIS_TASK",
+      "line_start": 3635,
+      "line_end": 3646,
+      "excerpt": "def get_supplier_block_status(party_name):\n\t\"\"\"\n\tReturns a dict containing the values of `on_hold`, `release_date` and `hold_type` of\n\ta `Supplier`\n\t\"\"\"\n\tsupplier = frappe.get_doc(\"Supplier\", party_name)\n\tinfo = {\n\t\t\"on_hold\": supplier.on_hold,\n\t\t\"release_date\": supplier.release_date,\n\t\t\"hold_type\": supplier.hold_type,\n\t}\n\treturn info"
+    },
+    {
+      "path": "D:\\lunwen\\ec\\runtime\\erpnext_qualification\\erpnext-v16.0.0\\erpnext-16.0.0\\erpnext\\buying\\doctype\\purchase_order\\purchase_order.py",
+      "sha256": "0dc97a544a8e24f7d6d7808fe1c1b1d4cef93f0552b247323d3c801bbd768abd",
+      "exposure": "POSTHOC_SOURCE_READ_THIS_TASK",
+      "line_start": 189,
+      "line_end": 201,
+      "excerpt": "\tdef before_validate(self):\n\t\tself.set_has_unit_price_items()\n\t\tself.flags.allow_zero_qty = self.has_unit_price_items\n\n\tdef validate(self):\n\t\tsuper().validate()\n\n\t\tself.set_status()\n\n\t\tself.validate_supplier()\n\t\tself.validate_schedule_date()\n\t\tvalidate_for_items(self)\n\t\tself.check_on_hold_or_closed_status()"
+    },
+    {
+      "path": "D:\\lunwen\\ec\\runtime\\erpnext_qualification\\erpnext-v16.0.0\\erpnext-16.0.0\\erpnext\\buying\\doctype\\purchase_order\\purchase_order.py",
+      "sha256": "0dc97a544a8e24f7d6d7808fe1c1b1d4cef93f0552b247323d3c801bbd768abd",
+      "exposure": "POSTHOC_SOURCE_READ_THIS_TASK",
+      "line_start": 275,
+      "line_end": 294,
+      "excerpt": "\tdef validate_supplier(self):\n\t\tprevent_po = frappe.db.get_value(\"Supplier\", self.supplier, \"prevent_pos\")\n\t\tif prevent_po:\n\t\t\tstanding = frappe.db.get_value(\"Supplier Scorecard\", self.supplier, \"status\")\n\t\t\tif standing:\n\t\t\t\tfrappe.throw(\n\t\t\t\t\t_(\"Purchase Orders are not allowed for {0} due to a scorecard standing of {1}.\").format(\n\t\t\t\t\t\tself.supplier, standing\n\t\t\t\t\t)\n\t\t\t\t)\n\n\t\twarn_po = frappe.db.get_value(\"Supplier\", self.supplier, \"warn_pos\")\n\t\tif warn_po:\n\t\t\tstanding = frappe.db.get_value(\"Supplier Scorecard\", self.supplier, \"status\")\n\t\t\tfrappe.msgprint(\n\t\t\t\t_(\n\t\t\t\t\t\"{0} currently has a {1} Supplier Scorecard standing, and Purchase Orders to this supplier should be issued with caution.\"\n\t\t\t\t).format(self.supplier, standing),\n\t\t\t\ttitle=_(\"Caution\"),\n\t\t\t\tindicator=\"orange\","
+    },
+    {
+      "path": "D:\\lunwen\\ec\\runtime\\erpnext_qualification\\erpnext-v16.0.0\\erpnext-16.0.0\\erpnext\\controllers\\buying_controller.py",
+      "sha256": "5eb03b770297f7f06b49c365eba0c786c742817af3ec3f34fb14b7a73eecf9df",
+      "exposure": "POSTHOC_SOURCE_READ_THIS_TASK",
+      "line_start": 29,
+      "line_end": 37,
+      "excerpt": "class BuyingController(SubcontractingController):\n\tdef __setup__(self):\n\t\tself.flags.ignore_permlevel_for_fields = [\"buying_price_list\", \"price_list_currency\"]\n\n\tdef validate(self):\n\t\tself.set_rate_for_standalone_debit_note()\n\n\t\tsuper().validate()\n\t\tif getattr(self, \"supplier\", None) and not self.supplier_name:"
+    },
+    {
+      "path": "D:\\lunwen\\ec\\runtime\\erpnext_qualification\\erpnext-v16.0.0\\erpnext-16.0.0\\erpnext\\controllers\\subcontracting_controller.py",
+      "sha256": "6263fe9d295d48c3727be622d9df286d00fbbf6203d3fd33a8e1842df127c5b0",
+      "exposure": "POSTHOC_SOURCE_READ_THIS_TASK",
+      "line_start": 26,
+      "line_end": 26,
+      "excerpt": "class SubcontractingController(StockController):"
+    },
+    {
+      "path": "D:\\lunwen\\ec\\runtime\\erpnext_qualification\\erpnext-v16.0.0\\erpnext-16.0.0\\erpnext\\controllers\\subcontracting_controller.py",
+      "sha256": "6263fe9d295d48c3727be622d9df286d00fbbf6203d3fd33a8e1842df127c5b0",
+      "exposure": "POSTHOC_SOURCE_READ_THIS_TASK",
+      "line_start": 67,
+      "line_end": 77,
+      "excerpt": "\tdef validate(self):\n\t\tif self.doctype in [\"Subcontracting Order\", \"Subcontracting Receipt\", \"Subcontracting Inward Order\"]:\n\t\t\tself.validate_items()\n\t\t\tself.create_raw_materials_supplied_or_received(\n\t\t\t\traw_material_table=\"supplied_items\"\n\t\t\t\tif self.doctype != \"Subcontracting Inward Order\"\n\t\t\t\telse \"received_items\"\n\t\t\t)\n\t\t\tself.set_valuation_rate_for_rm()\n\t\telse:\n\t\t\tsuper().validate()"
+    },
+    {
+      "path": "D:\\lunwen\\ec\\runtime\\erpnext_qualification\\erpnext-v16.0.0\\erpnext-16.0.0\\erpnext\\controllers\\stock_controller.py",
+      "sha256": "5f2a9317ea1a5f9dd3855ceb49e39df5d8225f7d2dfcec1a32d6c83983f0df68",
+      "exposure": "POSTHOC_SOURCE_READ_THIS_TASK",
+      "line_start": 56,
+      "line_end": 58,
+      "excerpt": "class StockController(AccountsController):\n\tdef validate(self):\n\t\tsuper().validate()"
+    },
+    {
+      "path": "D:\\lunwen\\ec\\runtime\\erpnext_qualification\\erpnext-v16.0.0\\erpnext-16.0.0\\erpnext\\buying\\doctype\\purchase_order\\test_purchase_order.py",
+      "sha256": "7df82c1055d7308e71ea5d0382cf53af34412fea1fd0891fd37a331b7287b8b3",
+      "exposure": "POSTHOC_SOURCE_READ_THIS_TASK",
+      "line_start": 628,
+      "line_end": 667,
+      "excerpt": "\tdef test_po_for_blocked_supplier_all(self):\n\t\tsupplier = frappe.get_doc(\"Supplier\", \"_Test Supplier\")\n\t\tsupplier.on_hold = 1\n\t\tsupplier.save()\n\n\t\tself.assertEqual(supplier.hold_type, \"All\")\n\t\tself.assertRaises(frappe.ValidationError, create_purchase_order)\n\n\t\tsupplier.on_hold = 0\n\t\tsupplier.save()\n\n\tdef test_po_for_blocked_supplier_invoices(self):\n\t\tsupplier = frappe.get_doc(\"Supplier\", \"_Test Supplier\")\n\t\tsupplier.on_hold = 1\n\t\tsupplier.hold_type = \"Invoices\"\n\t\tsupplier.save()\n\n\t\tself.assertRaises(frappe.ValidationError, create_purchase_order)\n\n\t\tsupplier.on_hold = 0\n\t\tsupplier.save()\n\n\tdef test_po_for_blocked_supplier_payments(self):\n\t\tsupplier = frappe.get_doc(\"Supplier\", \"_Test Supplier\")\n\t\tsupplier.on_hold = 1\n\t\tsupplier.hold_type = \"Payments\"\n\t\tsupplier.save()\n\n\t\tpo = create_purchase_order()\n\n\t\tself.assertRaises(\n\t\t\tfrappe.ValidationError,\n\t\t\tget_payment_entry,\n\t\t\tdt=\"Purchase Order\",\n\t\t\tdn=po.name,\n\t\t\tbank_account=\"_Test Bank - _TC\",\n\t\t)\n\n\t\tsupplier.on_hold = 0\n\t\tsupplier.save()"
+    },
+    {
+      "path": "D:\\lunwen\\ec\\runtime\\erpnext_qualification\\erpnext-v16.0.0\\erpnext-16.0.0\\erpnext\\__init__.py",
+      "sha256": "7dc62e3e31da76e3f69df963884ec601153b61596687353e33b0d658e0c9ec7a",
+      "exposure": "POSTHOC_SOURCE_READ_THIS_TASK",
+      "line_start": 1,
+      "line_end": 10,
+      "excerpt": "import functools\nimport inspect\nfrom typing import TypeVar\n\nimport frappe\nfrom frappe.model.document import Document\nfrom frappe.utils.user import is_website_user\n\n__version__ = \"16.0.0\"\n"
+    },
+    {
+      "path": "D:\\lunwen\\ec\\runtime\\erpnext_qualification\\frappe-v16.1.1\\frappe-16.1.1\\frappe\\model\\document.py",
+      "sha256": "e4f80af70712c50a16d574123cd4c4dab115f60ff0f2a0f8bdb7ae668f4a69e2",
+      "exposure": "POSTHOC_SOURCE_READ_THIS_TASK",
+      "line_start": 435,
+      "line_end": 458,
+      "excerpt": "\t\tself._set_defaults()\n\t\tself.set_user_and_timestamp()\n\t\tself.set_docstatus()\n\t\tself.check_permission(\"create\")\n\t\tself.check_if_latest()\n\t\tself._validate_links()\n\t\tself.run_method(\"before_insert\")\n\t\tself.set_new_name(set_name=set_name, set_child_names=set_child_names)\n\t\tself.set_parent_in_children()\n\t\tself.validate_higher_perm_levels()\n\n\t\tself.flags.in_insert = True\n\t\tself.run_before_save_methods()\n\t\tself._validate()\n\t\tself.set_docstatus()\n\t\tself.flags.in_insert = False\n\n\t\t# run validate, on update etc.\n\n\t\t# parent\n\t\tif getattr(self.meta, \"issingle\", 0):\n\t\t\tself.update_single(self.get_valid_dict())\n\t\telse:\n\t\t\tself.db_insert(ignore_if_duplicate=ignore_if_duplicate)"
+    },
+    {
+      "path": "D:\\lunwen\\ec\\runtime\\erpnext_qualification\\frappe-v16.1.1\\frappe-16.1.1\\frappe\\model\\document.py",
+      "sha256": "e4f80af70712c50a16d574123cd4c4dab115f60ff0f2a0f8bdb7ae668f4a69e2",
+      "exposure": "POSTHOC_SOURCE_READ_THIS_TASK",
+      "line_start": 540,
+      "line_end": 568,
+      "excerpt": "\t\t\treturn self.insert()\n\n\t\tself.check_if_locked()\n\t\tself._set_defaults()\n\t\tself.check_permission(\"write\", \"save\")\n\n\t\tself.set_user_and_timestamp()\n\t\tself.set_docstatus()\n\t\tself.check_if_latest()\n\t\tself.set_parent_in_children()\n\t\tself.set_name_in_children()\n\n\t\tself.validate_higher_perm_levels()\n\t\tself._validate_links()\n\t\tself.run_before_save_methods()\n\n\t\tif self._action != \"cancel\":\n\t\t\tself._validate()\n\n\t\tif self._action == \"update_after_submit\":\n\t\t\tself.validate_update_after_submit()\n\n\t\tself.set_docstatus()\n\n\t\t# parent\n\t\tif self.meta.issingle:\n\t\t\tself.update_single(self.get_valid_dict())\n\t\telse:\n\t\t\tself.db_update()"
+    },
+    {
+      "path": "D:\\lunwen\\ec\\runtime\\erpnext_qualification\\frappe-v16.1.1\\frappe-16.1.1\\frappe\\model\\document.py",
+      "sha256": "e4f80af70712c50a16d574123cd4c4dab115f60ff0f2a0f8bdb7ae668f4a69e2",
+      "exposure": "POSTHOC_SOURCE_READ_THIS_TASK",
+      "line_start": 1312,
+      "line_end": 1340,
+      "excerpt": "\tdef run_before_save_methods(self):\n\t\t\"\"\"Run standard methods before\t`INSERT` or `UPDATE`. Standard Methods are:\n\n\t\t- `validate`, `before_save` for **Save**.\n\t\t- `validate`, `before_submit` for **Submit**.\n\t\t- `before_cancel` for **Cancel**\n\t\t- `before_update_after_submit` for **Update after Submit**\n\n\t\tWill also update title_field if set\"\"\"\n\n\t\tself.reset_seen()\n\n\t\t# before_validate method should be executed before ignoring validations\n\t\tif self._action in (\"save\", \"submit\"):\n\t\t\tself.run_method(\"before_validate\")\n\n\t\tif self.flags.ignore_validate:\n\t\t\treturn\n\n\t\tif self._action == \"save\":\n\t\t\tself.run_method(\"validate\")\n\t\t\tself.run_method(\"before_save\")\n\t\telif self._action == \"submit\":\n\t\t\tself.run_method(\"validate\")\n\t\t\tself.run_method(\"before_submit\")\n\t\telif self._action == \"cancel\":\n\t\t\tself.run_method(\"before_cancel\")\n\t\telif self._action == \"update_after_submit\":\n\t\t\tself.run_method(\"before_update_after_submit\")"
+    },
+    {
+      "path": "D:\\lunwen\\ec\\runtime\\erpnext_qualification\\frappe-v16.1.1\\frappe-16.1.1\\frappe\\__init__.py",
+      "sha256": "404295d19d26d43cd984b943baaf6c9a2b44bbc16ad62911d4def43b4af0aabe",
+      "exposure": "POSTHOC_SOURCE_READ_THIS_TASK",
+      "line_start": 52,
+      "line_end": 59,
+      "excerpt": "\tget_jloader,\n\tget_template,\n\trender_template,\n)\n\n__version__ = \"16.1.1\"\n__title__ = \"Frappe Framework\"\n"
+    }
+  ],
+  "archive_entry_checks": [
+    {
+      "archive": {
+        "path": "D:\\lunwen\\ec\\runtime\\erpnext_qualification\\erpnext-v16.0.0.zip",
+        "sha256": "7103792459ba0d8c3995ad17bffa8d932b48b8c4f51d3c28313e1b6a2d22d484",
+        "exposure": "POSTHOC_SOURCE_READ_THIS_TASK"
+      },
+      "entry": "erpnext-16.0.0/erpnext/__init__.py",
+      "entry_sha256": "7dc62e3e31da76e3f69df963884ec601153b61596687353e33b0d658e0c9ec7a",
+      "local_file": "D:\\lunwen\\ec\\runtime\\erpnext_qualification\\erpnext-v16.0.0\\erpnext-16.0.0\\erpnext\\__init__.py",
+      "local_sha256": "7dc62e3e31da76e3f69df963884ec601153b61596687353e33b0d658e0c9ec7a",
+      "equal": true
+    },
+    {
+      "archive": {
+        "path": "D:\\lunwen\\ec\\runtime\\erpnext_qualification\\erpnext-v16.0.0.zip",
+        "sha256": "7103792459ba0d8c3995ad17bffa8d932b48b8c4f51d3c28313e1b6a2d22d484",
+        "exposure": "POSTHOC_SOURCE_READ_THIS_TASK"
+      },
+      "entry": "erpnext-16.0.0/erpnext/buying/doctype/supplier/supplier.py",
+      "entry_sha256": "4b2246f9ec73ab5add741b5594db5a0cf401b651d21a47bc0ccfcff3ca5b56d7",
+      "local_file": "D:\\lunwen\\ec\\runtime\\erpnext_qualification\\erpnext-v16.0.0\\erpnext-16.0.0\\erpnext\\buying\\doctype\\supplier\\supplier.py",
+      "local_sha256": "4b2246f9ec73ab5add741b5594db5a0cf401b651d21a47bc0ccfcff3ca5b56d7",
+      "equal": true
+    },
+    {
+      "archive": {
+        "path": "D:\\lunwen\\ec\\runtime\\erpnext_qualification\\erpnext-v16.0.0.zip",
+        "sha256": "7103792459ba0d8c3995ad17bffa8d932b48b8c4f51d3c28313e1b6a2d22d484",
+        "exposure": "POSTHOC_SOURCE_READ_THIS_TASK"
+      },
+      "entry": "erpnext-16.0.0/erpnext/controllers/accounts_controller.py",
+      "entry_sha256": "5a0c66476cb87853b500dc666b8d09b7f6d18dfb93af7f7538bb2e4b4d645e94",
+      "local_file": "D:\\lunwen\\ec\\runtime\\erpnext_qualification\\erpnext-v16.0.0\\erpnext-16.0.0\\erpnext\\controllers\\accounts_controller.py",
+      "local_sha256": "5a0c66476cb87853b500dc666b8d09b7f6d18dfb93af7f7538bb2e4b4d645e94",
+      "equal": true
+    },
+    {
+      "archive": {
+        "path": "D:\\lunwen\\ec\\runtime\\erpnext_qualification\\erpnext-v16.0.0.zip",
+        "sha256": "7103792459ba0d8c3995ad17bffa8d932b48b8c4f51d3c28313e1b6a2d22d484",
+        "exposure": "POSTHOC_SOURCE_READ_THIS_TASK"
+      },
+      "entry": "erpnext-16.0.0/erpnext/buying/doctype/purchase_order/purchase_order.py",
+      "entry_sha256": "0dc97a544a8e24f7d6d7808fe1c1b1d4cef93f0552b247323d3c801bbd768abd",
+      "local_file": "D:\\lunwen\\ec\\runtime\\erpnext_qualification\\erpnext-v16.0.0\\erpnext-16.0.0\\erpnext\\buying\\doctype\\purchase_order\\purchase_order.py",
+      "local_sha256": "0dc97a544a8e24f7d6d7808fe1c1b1d4cef93f0552b247323d3c801bbd768abd",
+      "equal": true
+    },
+    {
+      "archive": {
+        "path": "D:\\lunwen\\ec\\runtime\\erpnext_qualification\\frappe-v16.1.1.zip",
+        "sha256": "e46d2225997d67381e24a05b6941314d94c96bf7297cd0c4497549db3a6a55ef",
+        "exposure": "POSTHOC_SOURCE_READ_THIS_TASK"
+      },
+      "entry": "frappe-16.1.1/frappe/__init__.py",
+      "entry_sha256": "404295d19d26d43cd984b943baaf6c9a2b44bbc16ad62911d4def43b4af0aabe",
+      "local_file": "D:\\lunwen\\ec\\runtime\\erpnext_qualification\\frappe-v16.1.1\\frappe-16.1.1\\frappe\\__init__.py",
+      "local_sha256": "404295d19d26d43cd984b943baaf6c9a2b44bbc16ad62911d4def43b4af0aabe",
+      "equal": true
+    },
+    {
+      "archive": {
+        "path": "D:\\lunwen\\ec\\runtime\\erpnext_qualification\\frappe-v16.1.1.zip",
+        "sha256": "e46d2225997d67381e24a05b6941314d94c96bf7297cd0c4497549db3a6a55ef",
+        "exposure": "POSTHOC_SOURCE_READ_THIS_TASK"
+      },
+      "entry": "frappe-16.1.1/frappe/model/document.py",
+      "entry_sha256": "e4f80af70712c50a16d574123cd4c4dab115f60ff0f2a0f8bdb7ae668f4a69e2",
+      "local_file": "D:\\lunwen\\ec\\runtime\\erpnext_qualification\\frappe-v16.1.1\\frappe-16.1.1\\frappe\\model\\document.py",
+      "local_sha256": "e4f80af70712c50a16d574123cd4c4dab115f60ff0f2a0f8bdb7ae668f4a69e2",
+      "equal": true
+    }
+  ],
+  "generation_visibility": {
+    "packet": {
+      "path": "D:\\lunwen\\EC-CSI投稿\\working\\exploration\\20261014_matched_evidence_labor\\matched_generation\\generation_inputs\\FSV-B19\\packet.json",
+      "sha256": "10c5597e97e4190aa041c53aa3aee8b4c1c48fa77d073bfb4fb5eb5a64a346fd",
+      "exposure": "GENERATION_VISIBLE_PACKET"
+    },
+    "target": {
+      "operation": "POST /api/resource/Purchase Order",
+      "system": "ERPNext",
+      "version": "16.0.0"
+    },
+    "objective": {
+      "constraint_object": "Supplier on-hold status and hold type relevant to Purchase Order creation",
+      "constraint_kind": "The documented supplier hold-type condition for the target operation",
+      "scope": "Implement the supplier hold policy for this Purchase Order target only; do not add restrictions for invoices, payments, other endpoints or unrelated fields."
+    },
+    "source_manifest": {
+      "path": "D:\\lunwen\\ec\\ec_v2_visible_sources_v1\\SOURCE_MANIFEST.json",
+      "sha256": "859e2443a59b981b7d57bece8085daf51653edbf87d12fff7e310e433650a9b4",
+      "exposure": "POSTHOC_SOURCE_READ_THIS_TASK"
+    },
+    "source_ids": [
+      {
+        "id": "VIS-FSV-B19-01",
+        "source_id": "erpnext-supplier.html",
+        "locator": "extracted/erpnext-supplier.md:article",
+        "source_sha256": "1DD2CBED3915F83CC734BA23F7A016A9C386ED6BA9E54962619F70DB706F5C6F"
+      },
+      {
+        "id": "VIS-FSV-B19-02",
+        "source_id": "frappe-rest-api.html",
+        "locator": "extracted/frappe-rest-api.md:article;operation-matched introduction and complete Create subsection",
+        "source_sha256": "87CB28850081B1F7D6702521E98E5F242498A456491EF26BDE847C20CCBFE154"
+      },
+      {
+        "id": "VIS-FSV-B19-03",
+        "source_id": "erpnext-supplier-doctype.json",
+        "locator": "erpnext-supplier-doctype.json:complete-field-catalog",
+        "source_sha256": "07347D26E75881232AC991A31F0560CE3676335C6A050E7412EF66670FD637CB"
+      },
+      {
+        "id": "VIS-FSV-B19-04",
+        "source_id": "erpnext-purchase-order-doctype.json",
+        "locator": "erpnext-purchase-order-doctype.json:complete-field-catalog",
+        "source_sha256": "99F835C958B3191B09EB61D232A3D6CDEF14990B666EA766979F8C7ACFEF800F"
+      },
+      {
+        "id": "VIS-FSV-B19-RUNTIME-ABI",
+        "source_id": "EC-V2-RUNTIME-INTERFACE-CATALOG-V1",
+        "locator": "tasks.FSV-B19",
+        "source_sha256": "8221DA8A6720B0593A8D337F18569C9947AAB05B02E5C84FB0C50E3DE8C1ABD7"
+      }
+    ],
+    "abi": {
+      "content": {
+        "available_values": [
+          {
+            "authority": "client",
+            "path": "/request/body/action",
+            "type": "string"
+          },
+          {
+            "authority": "client",
+            "path": "/request/body/supplier",
+            "type": "string"
+          },
+          {
+            "authority": "server_state",
+            "path": "/trusted/holdType",
+            "type": "string"
+          },
+          {
+            "authority": "server_state",
+            "path": "/trusted/supplierOnHold",
+            "type": "boolean"
+          }
+        ],
+        "target_operation": "POST /api/resource/Purchase Order",
+        "notice": "This declares available adapter paths and types only; it supplies no expected decision or hidden test value."
+      },
+      "evidence_id": "VIS-FSV-B19-RUNTIME-ABI",
+      "locator": "tasks.FSV-B19",
+      "source_id": "EC-V2-RUNTIME-INTERFACE-CATALOG-V1",
+      "source_sha256": "8221DA8A6720B0593A8D337F18569C9947AAB05B02E5C84FB0C50E3DE8C1ABD7"
+    },
+    "common_adapter": {
+      "subject_role": "authenticated_api_caller",
+      "subject_id": "authenticated_api_caller",
+      "action": "POST /api/resource/Purchase Order",
+      "resource_id": "ERPNext:16.0.0",
+      "resource_system": "ERPNext",
+      "resource_version": "16.0.0",
+      "request_and_trusted_paths": [
+        {
+          "authority": "client",
+          "path": "/request/body/action",
+          "type": "string"
+        },
+        {
+          "authority": "client",
+          "path": "/request/body/supplier",
+          "type": "string"
+        },
+        {
+          "authority": "server_state",
+          "path": "/trusted/holdType",
+          "type": "string"
+        },
+        {
+          "authority": "server_state",
+          "path": "/trusted/supplierOnHold",
+          "type": "boolean"
+        }
+      ],
+      "envelope_representation": {
+        "subject": {
+          "id": "authenticated_api_caller",
+          "role": "authenticated_api_caller"
+        },
+        "action": "POST /api/resource/Purchase Order",
+        "resource": {
+          "id": "ERPNext:16.0.0",
+          "system": "ERPNext",
+          "version": "16.0.0"
+        },
+        "request": "original request unchanged",
+        "trusted": "original trusted unchanged"
+      },
+      "notice": "resource is an object; compare resource.id to organization schema resource strings. Subject id/role are neutral aliases, not an added permission rule. Source evidence and runtime path declarations contain no evaluation label."
+    },
+    "scope_note": "Dynamic Supplier HTML is an operator-visible snapshot, explicitly not claimed to be v16.0.0 tag documentation. Python implementation and Frappe lifecycle were not supplied in this matched generation packet."
+  },
+  "static_chain": [
+    "Supplier save -> Document.run_before_save_methods -> Supplier.validate -> Supplier.before_save -> DB insert/update",
+    "Supplier.before_save: not on_hold clears hold_type and release_date; on_hold with falsy hold_type sets All",
+    "PurchaseOrder.validate -> BuyingController.validate -> SubcontractingController.validate -> StockController.validate -> AccountsController.validate -> ensure_supplier_is_not_blocked",
+    "ensure_supplier_is_not_blocked reads Supplier via get_lazy_doc; for Purchase Order blocks All/Invoices only while no release_date or today <= release_date",
+    "get_supplier_block_status returns on_hold, release_date, hold_type; matched ABI contains no release_date"
+  ],
+  "coverage": {
+    "archive_branches": [
+      {
+        "case": "FSV-B13",
+        "method": "ECAS_MATCHED",
+        "result": {
+          "path": "D:\\lunwen\\EC-CSI投稿\\working\\exploration\\20261014_matched_evidence_labor\\matched_generation\\method_runs\\FSV-B13\\ECAS_MATCHED\\RESULT.json",
+          "sha256": "b5f736c8180cc3a16611ffbe471cfde9588d27c1af8fad54a2a083eff489f744",
+          "exposure": "ARCHIVED_RESULT_READ_POSTHOC"
+        },
+        "observed_branches": [
+          {
+            "label": "below-limit",
+            "kind": "documented_rule",
+            "input": {
+              "request": {
+                "body": {
+                  "qty": 109
+                }
+              },
+              "trusted": {
+                "orderedQty": 100,
+                "allowancePercent": 10,
+                "derivedMaximumQty": 110,
+                "authorizedRole": false
+              }
+            },
+            "expected": "allow",
+            "actual": "allow",
+            "pass": true
+          },
+          {
+            "label": "at-limit",
+            "kind": "documented_rule",
+            "input": {
+              "request": {
+                "body": {
+                  "qty": 110
+                }
+              },
+              "trusted": {
+                "orderedQty": 100,
+                "allowancePercent": 10,
+                "derivedMaximumQty": 110,
+                "authorizedRole": false
+              }
+            },
+            "expected": "allow",
+            "actual": "allow",
+            "pass": true
+          },
+          {
+            "label": "above-limit",
+            "kind": "documented_rule",
+            "input": {
+              "request": {
+                "body": {
+                  "qty": 111
+                }
+              },
+              "trusted": {
+                "orderedQty": 100,
+                "allowancePercent": 10,
+                "derivedMaximumQty": 110,
+                "authorizedRole": false
+              }
+            },
+            "expected": "deny",
+            "actual": "deny",
+            "pass": true
+          },
+          {
+            "label": "authorized-exception",
+            "kind": "documented_rule",
+            "input": {
+              "request": {
+                "body": {
+                  "qty": 111
+                }
+              },
+              "trusted": {
+                "orderedQty": 100,
+                "allowancePercent": 10,
+                "derivedMaximumQty": 110,
+                "authorizedRole": true
+              }
+            },
+            "expected": "allow",
+            "actual": "allow",
+            "pass": true
+          },
+          {
+            "label": "authorized-large-exception",
+            "kind": "focused_rule_only",
+            "input": {
+              "request": {
+                "body": {
+                  "qty": 1000
+                }
+              },
+              "trusted": {
+                "orderedQty": 100,
+                "allowancePercent": 10,
+                "derivedMaximumQty": 110,
+                "authorizedRole": true
+              }
+            },
+            "expected": "allow",
+            "actual": "allow",
+            "pass": true
+          },
+          {
+            "label": "body-role-spoof",
+            "kind": "engineering_trust_control",
+            "input": {
+              "request": {
+                "body": {
+                  "qty": 111,
+                  "authorizedRole": true
+                }
+              },
+              "trusted": {
+                "orderedQty": 100,
+                "allowancePercent": 10,
+                "derivedMaximumQty": 110,
+                "authorizedRole": false
+              }
+            },
+            "expected": "deny",
+            "actual": "deny",
+            "pass": true
+          },
+          {
+            "label": "body-limit-spoof",
+            "kind": "engineering_trust_control",
+            "input": {
+              "request": {
+                "body": {
+                  "qty": 111,
+                  "derivedMaximumQty": 1000
+                }
+              },
+              "trusted": {
+                "orderedQty": 100,
+                "allowancePercent": 10,
+                "derivedMaximumQty": 110,
+                "authorizedRole": false
+              }
+            },
+            "expected": "deny",
+            "actual": "deny",
+            "pass": true
+          },
+          {
+            "label": "missing-trusted",
+            "kind": "engineering_fail_closed_control",
+            "input": {
+              "request": {
+                "body": {
+                  "qty": 111
+                }
+              },
+              "trusted": {}
+            },
+            "expected": "deny",
+            "actual": "deny",
+            "pass": true
+          }
+        ]
+      },
+      {
+        "case": "FSV-B13",
+        "method": "P2P_STYLE",
+        "result": {
+          "path": "D:\\lunwen\\EC-CSI投稿\\working\\exploration\\20261014_matched_evidence_labor\\matched_generation\\method_runs\\FSV-B13\\P2P_STYLE\\RESULT.json",
+          "sha256": "6e61dc2d2e2ae9f23f4ff98b8a90830fe3bcc1f4cc76cec0ad44953f9eeb7b30",
+          "exposure": "ARCHIVED_RESULT_READ_POSTHOC"
+        },
+        "observed_branches": [
+          {
+            "label": "below-limit",
+            "kind": "documented_rule",
+            "input": {
+              "request": {
+                "body": {
+                  "qty": 109
+                }
+              },
+              "trusted": {
+                "orderedQty": 100,
+                "allowancePercent": 10,
+                "derivedMaximumQty": 110,
+                "authorizedRole": false
+              }
+            },
+            "expected": "allow",
+            "actual": "allow",
+            "pass": true
+          },
+          {
+            "label": "at-limit",
+            "kind": "documented_rule",
+            "input": {
+              "request": {
+                "body": {
+                  "qty": 110
+                }
+              },
+              "trusted": {
+                "orderedQty": 100,
+                "allowancePercent": 10,
+                "derivedMaximumQty": 110,
+                "authorizedRole": false
+              }
+            },
+            "expected": "allow",
+            "actual": "allow",
+            "pass": true
+          },
+          {
+            "label": "above-limit",
+            "kind": "documented_rule",
+            "input": {
+              "request": {
+                "body": {
+                  "qty": 111
+                }
+              },
+              "trusted": {
+                "orderedQty": 100,
+                "allowancePercent": 10,
+                "derivedMaximumQty": 110,
+                "authorizedRole": false
+              }
+            },
+            "expected": "deny",
+            "actual": "deny",
+            "pass": true
+          },
+          {
+            "label": "authorized-exception",
+            "kind": "documented_rule",
+            "input": {
+              "request": {
+                "body": {
+                  "qty": 111
+                }
+              },
+              "trusted": {
+                "orderedQty": 100,
+                "allowancePercent": 10,
+                "derivedMaximumQty": 110,
+                "authorizedRole": true
+              }
+            },
+            "expected": "allow",
+            "actual": "allow",
+            "pass": true
+          },
+          {
+            "label": "authorized-large-exception",
+            "kind": "focused_rule_only",
+            "input": {
+              "request": {
+                "body": {
+                  "qty": 1000
+                }
+              },
+              "trusted": {
+                "orderedQty": 100,
+                "allowancePercent": 10,
+                "derivedMaximumQty": 110,
+                "authorizedRole": true
+              }
+            },
+            "expected": "allow",
+            "actual": "allow",
+            "pass": true
+          },
+          {
+            "label": "body-role-spoof",
+            "kind": "engineering_trust_control",
+            "input": {
+              "request": {
+                "body": {
+                  "qty": 111,
+                  "authorizedRole": true
+                }
+              },
+              "trusted": {
+                "orderedQty": 100,
+                "allowancePercent": 10,
+                "derivedMaximumQty": 110,
+                "authorizedRole": false
+              }
+            },
+            "expected": "deny",
+            "actual": "deny",
+            "pass": true
+          },
+          {
+            "label": "body-limit-spoof",
+            "kind": "engineering_trust_control",
+            "input": {
+              "request": {
+                "body": {
+                  "qty": 111,
+                  "derivedMaximumQty": 1000
+                }
+              },
+              "trusted": {
+                "orderedQty": 100,
+                "allowancePercent": 10,
+                "derivedMaximumQty": 110,
+                "authorizedRole": false
+              }
+            },
+            "expected": "deny",
+            "actual": "deny",
+            "pass": true
+          },
+          {
+            "label": "missing-trusted",
+            "kind": "engineering_fail_closed_control",
+            "input": {
+              "request": {
+                "body": {
+                  "qty": 111
+                }
+              },
+              "trusted": {}
+            },
+            "expected": "deny",
+            "actual": "deny",
+            "pass": true
+          }
+        ]
+      },
+      {
+        "case": "FSV-B13",
+        "method": "AUTOPAC_STYLE",
+        "result": {
+          "path": "D:\\lunwen\\EC-CSI投稿\\working\\exploration\\20261014_matched_evidence_labor\\matched_generation\\method_runs\\FSV-B13\\AUTOPAC_STYLE\\RESULT.json",
+          "sha256": "c160399026eeaea95a7edf9a7ea37dd3727f06f50ad103a792834738f242010f",
+          "exposure": "ARCHIVED_RESULT_READ_POSTHOC"
+        },
+        "observed_branches": [
+          {
+            "label": "below-limit",
+            "kind": "documented_rule",
+            "input": {
+              "request": {
+                "body": {
+                  "qty": 109
+                }
+              },
+              "trusted": {
+                "orderedQty": 100,
+                "allowancePercent": 10,
+                "derivedMaximumQty": 110,
+                "authorizedRole": false
+              }
+            },
+            "expected": "allow",
+            "actual": "allow",
+            "pass": true
+          },
+          {
+            "label": "at-limit",
+            "kind": "documented_rule",
+            "input": {
+              "request": {
+                "body": {
+                  "qty": 110
+                }
+              },
+              "trusted": {
+                "orderedQty": 100,
+                "allowancePercent": 10,
+                "derivedMaximumQty": 110,
+                "authorizedRole": false
+              }
+            },
+            "expected": "allow",
+            "actual": "allow",
+            "pass": true
+          },
+          {
+            "label": "above-limit",
+            "kind": "documented_rule",
+            "input": {
+              "request": {
+                "body": {
+                  "qty": 111
+                }
+              },
+              "trusted": {
+                "orderedQty": 100,
+                "allowancePercent": 10,
+                "derivedMaximumQty": 110,
+                "authorizedRole": false
+              }
+            },
+            "expected": "deny",
+            "actual": "deny",
+            "pass": true
+          },
+          {
+            "label": "authorized-exception",
+            "kind": "documented_rule",
+            "input": {
+              "request": {
+                "body": {
+                  "qty": 111
+                }
+              },
+              "trusted": {
+                "orderedQty": 100,
+                "allowancePercent": 10,
+                "derivedMaximumQty": 110,
+                "authorizedRole": true
+              }
+            },
+            "expected": "allow",
+            "actual": "allow",
+            "pass": true
+          },
+          {
+            "label": "authorized-large-exception",
+            "kind": "focused_rule_only",
+            "input": {
+              "request": {
+                "body": {
+                  "qty": 1000
+                }
+              },
+              "trusted": {
+                "orderedQty": 100,
+                "allowancePercent": 10,
+                "derivedMaximumQty": 110,
+                "authorizedRole": true
+              }
+            },
+            "expected": "allow",
+            "actual": "allow",
+            "pass": true
+          },
+          {
+            "label": "body-role-spoof",
+            "kind": "engineering_trust_control",
+            "input": {
+              "request": {
+                "body": {
+                  "qty": 111,
+                  "authorizedRole": true
+                }
+              },
+              "trusted": {
+                "orderedQty": 100,
+                "allowancePercent": 10,
+                "derivedMaximumQty": 110,
+                "authorizedRole": false
+              }
+            },
+            "expected": "deny",
+            "actual": "deny",
+            "pass": true
+          },
+          {
+            "label": "body-limit-spoof",
+            "kind": "engineering_trust_control",
+            "input": {
+              "request": {
+                "body": {
+                  "qty": 111,
+                  "derivedMaximumQty": 1000
+                }
+              },
+              "trusted": {
+                "orderedQty": 100,
+                "allowancePercent": 10,
+                "derivedMaximumQty": 110,
+                "authorizedRole": false
+              }
+            },
+            "expected": "deny",
+            "actual": "deny",
+            "pass": true
+          },
+          {
+            "label": "missing-trusted",
+            "kind": "engineering_fail_closed_control",
+            "input": {
+              "request": {
+                "body": {
+                  "qty": 111
+                }
+              },
+              "trusted": {}
+            },
+            "expected": "deny",
+            "actual": "deny",
+            "pass": true
+          }
+        ]
+      },
+      {
+        "case": "FSV-B17",
+        "method": "ECAS_MATCHED",
+        "result": {
+          "path": "D:\\lunwen\\EC-CSI投稿\\working\\exploration\\20261014_matched_evidence_labor\\matched_generation\\method_runs\\FSV-B17\\ECAS_MATCHED\\RESULT.json",
+          "sha256": "1a4feb547d5ae6475d99d396a8644c24ffd1e627e43921dc4be64fef0e09f8e3",
+          "exposure": "ARCHIVED_RESULT_READ_POSTHOC"
+        },
+        "observed_branches": [
+          {
+            "label": "enabled",
+            "kind": "documented_rule",
+            "input": {
+              "request": {
+                "body": {
+                  "customer": "CUSTOMER-SYNTH-1"
+                }
+              },
+              "trusted": {
+                "customerDisabled": false
+              }
+            },
+            "expected": "allow",
+            "actual": "allow",
+            "pass": true
+          },
+          {
+            "label": "disabled",
+            "kind": "documented_rule",
+            "input": {
+              "request": {
+                "body": {
+                  "customer": "CUSTOMER-SYNTH-1"
+                }
+              },
+              "trusted": {
+                "customerDisabled": true
+              }
+            },
+            "expected": "deny",
+            "actual": "deny",
+            "pass": true
+          },
+          {
+            "label": "body-disable-spoof",
+            "kind": "engineering_trust_control",
+            "input": {
+              "request": {
+                "body": {
+                  "customer": "CUSTOMER-SYNTH-1",
+                  "customerDisabled": false
+                }
+              },
+              "trusted": {
+                "customerDisabled": true
+              }
+            },
+            "expected": "deny",
+            "actual": "deny",
+            "pass": true
+          },
+          {
+            "label": "missing-trusted",
+            "kind": "engineering_fail_closed_control",
+            "input": {
+              "request": {
+                "body": {
+                  "customer": "CUSTOMER-SYNTH-1"
+                }
+              },
+              "trusted": {}
+            },
+            "expected": "deny",
+            "actual": "deny",
+            "pass": true
+          }
+        ]
+      },
+      {
+        "case": "FSV-B17",
+        "method": "P2P_STYLE",
+        "result": {
+          "path": "D:\\lunwen\\EC-CSI投稿\\working\\exploration\\20261014_matched_evidence_labor\\matched_generation\\method_runs\\FSV-B17\\P2P_STYLE\\RESULT.json",
+          "sha256": "51df3b6b338f71ae4c94f8a9ed25b2475b492f30a89000bd35550febf3f90a2d",
+          "exposure": "ARCHIVED_RESULT_READ_POSTHOC"
+        },
+        "observed_branches": [
+          {
+            "label": "enabled",
+            "kind": "documented_rule",
+            "input": {
+              "request": {
+                "body": {
+                  "customer": "CUSTOMER-SYNTH-1"
+                }
+              },
+              "trusted": {
+                "customerDisabled": false
+              }
+            },
+            "expected": "allow",
+            "actual": "allow",
+            "pass": true
+          },
+          {
+            "label": "disabled",
+            "kind": "documented_rule",
+            "input": {
+              "request": {
+                "body": {
+                  "customer": "CUSTOMER-SYNTH-1"
+                }
+              },
+              "trusted": {
+                "customerDisabled": true
+              }
+            },
+            "expected": "deny",
+            "actual": "deny",
+            "pass": true
+          },
+          {
+            "label": "body-disable-spoof",
+            "kind": "engineering_trust_control",
+            "input": {
+              "request": {
+                "body": {
+                  "customer": "CUSTOMER-SYNTH-1",
+                  "customerDisabled": false
+                }
+              },
+              "trusted": {
+                "customerDisabled": true
+              }
+            },
+            "expected": "deny",
+            "actual": "deny",
+            "pass": true
+          },
+          {
+            "label": "missing-trusted",
+            "kind": "engineering_fail_closed_control",
+            "input": {
+              "request": {
+                "body": {
+                  "customer": "CUSTOMER-SYNTH-1"
+                }
+              },
+              "trusted": {}
+            },
+            "expected": "deny",
+            "actual": "allow",
+            "pass": false
+          }
+        ]
+      },
+      {
+        "case": "FSV-B17",
+        "method": "AUTOPAC_STYLE",
+        "result": {
+          "path": "D:\\lunwen\\EC-CSI投稿\\working\\exploration\\20261014_matched_evidence_labor\\matched_generation\\method_runs\\FSV-B17\\AUTOPAC_STYLE\\RESULT.json",
+          "sha256": "972078202a8c6e1da3241323c36fcab249d8cc46c57f47584db78b8461cd8723",
+          "exposure": "ARCHIVED_RESULT_READ_POSTHOC"
+        },
+        "observed_branches": [
+          {
+            "label": "enabled",
+            "kind": "documented_rule",
+            "input": {
+              "request": {
+                "body": {
+                  "customer": "CUSTOMER-SYNTH-1"
+                }
+              },
+              "trusted": {
+                "customerDisabled": false
+              }
+            },
+            "expected": "allow",
+            "actual": "allow",
+            "pass": true
+          },
+          {
+            "label": "disabled",
+            "kind": "documented_rule",
+            "input": {
+              "request": {
+                "body": {
+                  "customer": "CUSTOMER-SYNTH-1"
+                }
+              },
+              "trusted": {
+                "customerDisabled": true
+              }
+            },
+            "expected": "deny",
+            "actual": "deny",
+            "pass": true
+          },
+          {
+            "label": "body-disable-spoof",
+            "kind": "engineering_trust_control",
+            "input": {
+              "request": {
+                "body": {
+                  "customer": "CUSTOMER-SYNTH-1",
+                  "customerDisabled": false
+                }
+              },
+              "trusted": {
+                "customerDisabled": true
+              }
+            },
+            "expected": "deny",
+            "actual": "deny",
+            "pass": true
+          },
+          {
+            "label": "missing-trusted",
+            "kind": "engineering_fail_closed_control",
+            "input": {
+              "request": {
+                "body": {
+                  "customer": "CUSTOMER-SYNTH-1"
+                }
+              },
+              "trusted": {}
+            },
+            "expected": "deny",
+            "actual": "allow",
+            "pass": false
+          }
+        ]
+      },
+      {
+        "case": "FSV-B19",
+        "method": "ECAS_MATCHED",
+        "result": {
+          "path": "D:\\lunwen\\EC-CSI投稿\\working\\exploration\\20261014_matched_evidence_labor\\matched_generation\\method_runs\\FSV-B19\\ECAS_MATCHED\\RESULT.json",
+          "sha256": "8a781167ffc84f72d91d3599c92011af4324381dcd47b13ca38e25944fe5e3b7",
+          "exposure": "ARCHIVED_RESULT_READ_POSTHOC"
+        },
+        "observed_branches": [
+          {
+            "label": "not-held",
+            "kind": "documented_rule",
+            "input": {
+              "request": {
+                "body": {
+                  "action": "PURCHASE_ORDER",
+                  "supplier": "SUPPLIER-SYNTH-1"
+                }
+              },
+              "trusted": {
+                "supplierOnHold": false,
+                "holdType": ""
+              }
+            },
+            "expected": "allow",
+            "actual": "allow",
+            "pass": true
+          },
+          {
+            "label": "held-all",
+            "kind": "documented_rule",
+            "input": {
+              "request": {
+                "body": {
+                  "action": "PURCHASE_ORDER",
+                  "supplier": "SUPPLIER-SYNTH-1"
+                }
+              },
+              "trusted": {
+                "supplierOnHold": true,
+                "holdType": "All"
+              }
+            },
+            "expected": "deny",
+            "actual": "deny",
+            "pass": true
+          },
+          {
+            "label": "held-invoices",
+            "kind": "documented_rule",
+            "input": {
+              "request": {
+                "body": {
+                  "action": "PURCHASE_ORDER",
+                  "supplier": "SUPPLIER-SYNTH-1"
+                }
+              },
+              "trusted": {
+                "supplierOnHold": true,
+                "holdType": "Invoices"
+              }
+            },
+            "expected": "deny",
+            "actual": "deny",
+            "pass": true
+          },
+          {
+            "label": "held-payments",
+            "kind": "documented_rule",
+            "input": {
+              "request": {
+                "body": {
+                  "action": "PURCHASE_ORDER",
+                  "supplier": "SUPPLIER-SYNTH-1"
+                }
+              },
+              "trusted": {
+                "supplierOnHold": true,
+                "holdType": "Payments"
+              }
+            },
+            "expected": "allow",
+            "actual": "allow",
+            "pass": true
+          },
+          {
+            "label": "held-empty-type",
+            "kind": "conservative_empty_type_control",
+            "input": {
+              "request": {
+                "body": {
+                  "action": "PURCHASE_ORDER",
+                  "supplier": "SUPPLIER-SYNTH-1"
+                }
+              },
+              "trusted": {
+                "supplierOnHold": true,
+                "holdType": ""
+              }
+            },
+            "expected": "deny",
+            "actual": "deny",
+            "pass": true
+          },
+          {
+            "label": "held-unknown-type",
+            "kind": "engineering_unknown_type_control",
+            "input": {
+              "request": {
+                "body": {
+                  "action": "PURCHASE_ORDER",
+                  "supplier": "SUPPLIER-SYNTH-1"
+                }
+              },
+              "trusted": {
+                "supplierOnHold": true,
+                "holdType": "Unknown"
+              }
+            },
+            "expected": "deny",
+            "actual": "deny",
+            "pass": true
+          },
+          {
+            "label": "body-type-spoof",
+            "kind": "engineering_trust_control",
+            "input": {
+              "request": {
+                "body": {
+                  "action": "PURCHASE_ORDER",
+                  "supplier": "SUPPLIER-SYNTH-1",
+                  "holdType": "Payments"
+                }
+              },
+              "trusted": {
+                "supplierOnHold": true,
+                "holdType": "All"
+              }
+            },
+            "expected": "deny",
+            "actual": "deny",
+            "pass": true
+          },
+          {
+            "label": "missing-trusted",
+            "kind": "engineering_fail_closed_control",
+            "input": {
+              "request": {
+                "body": {
+                  "action": "PURCHASE_ORDER",
+                  "supplier": "SUPPLIER-SYNTH-1"
+                }
+              },
+              "trusted": {}
+            },
+            "expected": "deny",
+            "actual": "deny",
+            "pass": true
+          }
+        ]
+      },
+      {
+        "case": "FSV-B19",
+        "method": "P2P_STYLE",
+        "result": {
+          "path": "D:\\lunwen\\EC-CSI投稿\\working\\exploration\\20261014_matched_evidence_labor\\matched_generation\\method_runs\\FSV-B19\\P2P_STYLE\\RESULT.json",
+          "sha256": "9dc5b63621f6c2177d54e7cb079e05306b8b0bc8b4fd846870dc6ca3acc78aa5",
+          "exposure": "ARCHIVED_RESULT_READ_POSTHOC"
+        },
+        "observed_branches": [
+          {
+            "label": "not-held",
+            "kind": "documented_rule",
+            "input": {
+              "request": {
+                "body": {
+                  "action": "PURCHASE_ORDER",
+                  "supplier": "SUPPLIER-SYNTH-1"
+                }
+              },
+              "trusted": {
+                "supplierOnHold": false,
+                "holdType": ""
+              }
+            },
+            "expected": "allow",
+            "actual": "allow",
+            "pass": true
+          },
+          {
+            "label": "held-all",
+            "kind": "documented_rule",
+            "input": {
+              "request": {
+                "body": {
+                  "action": "PURCHASE_ORDER",
+                  "supplier": "SUPPLIER-SYNTH-1"
+                }
+              },
+              "trusted": {
+                "supplierOnHold": true,
+                "holdType": "All"
+              }
+            },
+            "expected": "deny",
+            "actual": "deny",
+            "pass": true
+          },
+          {
+            "label": "held-invoices",
+            "kind": "documented_rule",
+            "input": {
+              "request": {
+                "body": {
+                  "action": "PURCHASE_ORDER",
+                  "supplier": "SUPPLIER-SYNTH-1"
+                }
+              },
+              "trusted": {
+                "supplierOnHold": true,
+                "holdType": "Invoices"
+              }
+            },
+            "expected": "deny",
+            "actual": "deny",
+            "pass": true
+          },
+          {
+            "label": "held-payments",
+            "kind": "documented_rule",
+            "input": {
+              "request": {
+                "body": {
+                  "action": "PURCHASE_ORDER",
+                  "supplier": "SUPPLIER-SYNTH-1"
+                }
+              },
+              "trusted": {
+                "supplierOnHold": true,
+                "holdType": "Payments"
+              }
+            },
+            "expected": "allow",
+            "actual": "allow",
+            "pass": true
+          },
+          {
+            "label": "held-empty-type",
+            "kind": "conservative_empty_type_control",
+            "input": {
+              "request": {
+                "body": {
+                  "action": "PURCHASE_ORDER",
+                  "supplier": "SUPPLIER-SYNTH-1"
+                }
+              },
+              "trusted": {
+                "supplierOnHold": true,
+                "holdType": ""
+              }
+            },
+            "expected": "deny",
+            "actual": "allow",
+            "pass": false
+          },
+          {
+            "label": "held-unknown-type",
+            "kind": "engineering_unknown_type_control",
+            "input": {
+              "request": {
+                "body": {
+                  "action": "PURCHASE_ORDER",
+                  "supplier": "SUPPLIER-SYNTH-1"
+                }
+              },
+              "trusted": {
+                "supplierOnHold": true,
+                "holdType": "Unknown"
+              }
+            },
+            "expected": "deny",
+            "actual": "allow",
+            "pass": false
+          },
+          {
+            "label": "body-type-spoof",
+            "kind": "engineering_trust_control",
+            "input": {
+              "request": {
+                "body": {
+                  "action": "PURCHASE_ORDER",
+                  "supplier": "SUPPLIER-SYNTH-1",
+                  "holdType": "Payments"
+                }
+              },
+              "trusted": {
+                "supplierOnHold": true,
+                "holdType": "All"
+              }
+            },
+            "expected": "deny",
+            "actual": "deny",
+            "pass": true
+          },
+          {
+            "label": "missing-trusted",
+            "kind": "engineering_fail_closed_control",
+            "input": {
+              "request": {
+                "body": {
+                  "action": "PURCHASE_ORDER",
+                  "supplier": "SUPPLIER-SYNTH-1"
+                }
+              },
+              "trusted": {}
+            },
+            "expected": "deny",
+            "actual": "allow",
+            "pass": false
+          }
+        ]
+      },
+      {
+        "case": "FSV-B19",
+        "method": "AUTOPAC_STYLE",
+        "result": {
+          "path": "D:\\lunwen\\EC-CSI投稿\\working\\exploration\\20261014_matched_evidence_labor\\matched_generation\\method_runs\\FSV-B19\\AUTOPAC_STYLE\\RESULT.json",
+          "sha256": "a6b596082892264a7f63985070de49e265af76507c83e80100499fc1b69691ba",
+          "exposure": "ARCHIVED_RESULT_READ_POSTHOC"
+        },
+        "observed_branches": [
+          {
+            "label": "not-held",
+            "kind": "documented_rule",
+            "input": {
+              "request": {
+                "body": {
+                  "action": "PURCHASE_ORDER",
+                  "supplier": "SUPPLIER-SYNTH-1"
+                }
+              },
+              "trusted": {
+                "supplierOnHold": false,
+                "holdType": ""
+              }
+            },
+            "expected": "allow",
+            "actual": "allow",
+            "pass": true
+          },
+          {
+            "label": "held-all",
+            "kind": "documented_rule",
+            "input": {
+              "request": {
+                "body": {
+                  "action": "PURCHASE_ORDER",
+                  "supplier": "SUPPLIER-SYNTH-1"
+                }
+              },
+              "trusted": {
+                "supplierOnHold": true,
+                "holdType": "All"
+              }
+            },
+            "expected": "deny",
+            "actual": "deny",
+            "pass": true
+          },
+          {
+            "label": "held-invoices",
+            "kind": "documented_rule",
+            "input": {
+              "request": {
+                "body": {
+                  "action": "PURCHASE_ORDER",
+                  "supplier": "SUPPLIER-SYNTH-1"
+                }
+              },
+              "trusted": {
+                "supplierOnHold": true,
+                "holdType": "Invoices"
+              }
+            },
+            "expected": "deny",
+            "actual": "deny",
+            "pass": true
+          },
+          {
+            "label": "held-payments",
+            "kind": "documented_rule",
+            "input": {
+              "request": {
+                "body": {
+                  "action": "PURCHASE_ORDER",
+                  "supplier": "SUPPLIER-SYNTH-1"
+                }
+              },
+              "trusted": {
+                "supplierOnHold": true,
+                "holdType": "Payments"
+              }
+            },
+            "expected": "allow",
+            "actual": "allow",
+            "pass": true
+          },
+          {
+            "label": "held-empty-type",
+            "kind": "conservative_empty_type_control",
+            "input": {
+              "request": {
+                "body": {
+                  "action": "PURCHASE_ORDER",
+                  "supplier": "SUPPLIER-SYNTH-1"
+                }
+              },
+              "trusted": {
+                "supplierOnHold": true,
+                "holdType": ""
+              }
+            },
+            "expected": "deny",
+            "actual": "allow",
+            "pass": false
+          },
+          {
+            "label": "held-unknown-type",
+            "kind": "engineering_unknown_type_control",
+            "input": {
+              "request": {
+                "body": {
+                  "action": "PURCHASE_ORDER",
+                  "supplier": "SUPPLIER-SYNTH-1"
+                }
+              },
+              "trusted": {
+                "supplierOnHold": true,
+                "holdType": "Unknown"
+              }
+            },
+            "expected": "deny",
+            "actual": "allow",
+            "pass": false
+          },
+          {
+            "label": "body-type-spoof",
+            "kind": "engineering_trust_control",
+            "input": {
+              "request": {
+                "body": {
+                  "action": "PURCHASE_ORDER",
+                  "supplier": "SUPPLIER-SYNTH-1",
+                  "holdType": "Payments"
+                }
+              },
+              "trusted": {
+                "supplierOnHold": true,
+                "holdType": "All"
+              }
+            },
+            "expected": "deny",
+            "actual": "deny",
+            "pass": true
+          },
+          {
+            "label": "missing-trusted",
+            "kind": "engineering_fail_closed_control",
+            "input": {
+              "request": {
+                "body": {
+                  "action": "PURCHASE_ORDER",
+                  "supplier": "SUPPLIER-SYNTH-1"
+                }
+              },
+              "trusted": {}
+            },
+            "expected": "deny",
+            "actual": "allow",
+            "pass": false
+          }
+        ]
+      }
+    ],
+    "B13": {
+      "main_logic_sufficient": true,
+      "unexecuted_full_six_partition_combinations": [
+        "qty < maximum AND authorizedRole=true",
+        "qty = maximum AND authorizedRole=true"
+      ],
+      "limit": "Arithmetic derivation and authenticated-role production mapping are supplied upstream and not validated here."
+    },
+    "B17": {
+      "main_boolean_domain_complete": true,
+      "unexecuted_in_scope_combinations": [],
+      "limit": "Trusted state authentication/freshness and identity mapping remain unverified."
+    },
+    "B19": {
+      "normalized_hold_type_domain_complete": true,
+      "normalized_states": [
+        "on_hold=false, hold_type=empty",
+        "on_hold=true, hold_type=All",
+        "on_hold=true, hold_type=Invoices",
+        "on_hold=true, hold_type=Payments"
+      ],
+      "unexecuted_full_source_lifecycle": [
+        "release_date absent",
+        "release_date equals today",
+        "release_date later than today",
+        "release_date earlier than today"
+      ],
+      "warning": "No release_date in current ABI; do not insert synthetic date tests into current generation success. Existing branches imply only focused hold/type subset."
+    },
+    "cross_method_input_checks": [
+      {
+        "case": "FSV-B13",
+        "method": "ECAS_MATCHED",
+        "same_order_labels_inputs_expected_as_first_method": true,
+        "branch_count": 8
+      },
+      {
+        "case": "FSV-B13",
+        "method": "P2P_STYLE",
+        "same_order_labels_inputs_expected_as_first_method": true,
+        "branch_count": 8
+      },
+      {
+        "case": "FSV-B13",
+        "method": "AUTOPAC_STYLE",
+        "same_order_labels_inputs_expected_as_first_method": true,
+        "branch_count": 8
+      },
+      {
+        "case": "FSV-B17",
+        "method": "ECAS_MATCHED",
+        "same_order_labels_inputs_expected_as_first_method": true,
+        "branch_count": 4
+      },
+      {
+        "case": "FSV-B17",
+        "method": "P2P_STYLE",
+        "same_order_labels_inputs_expected_as_first_method": true,
+        "branch_count": 4
+      },
+      {
+        "case": "FSV-B17",
+        "method": "AUTOPAC_STYLE",
+        "same_order_labels_inputs_expected_as_first_method": true,
+        "branch_count": 4
+      },
+      {
+        "case": "FSV-B19",
+        "method": "ECAS_MATCHED",
+        "same_order_labels_inputs_expected_as_first_method": true,
+        "branch_count": 8
+      },
+      {
+        "case": "FSV-B19",
+        "method": "P2P_STYLE",
+        "same_order_labels_inputs_expected_as_first_method": true,
+        "branch_count": 8
+      },
+      {
+        "case": "FSV-B19",
+        "method": "AUTOPAC_STYLE",
+        "same_order_labels_inputs_expected_as_first_method": true,
+        "branch_count": 8
+      }
+    ]
+  },
+  "unknowns": [
+    "No live document-save or Purchase Order request observed in this task.",
+    "No proof that held+empty reaches production adapter. Normal document save normalizes it first; direct DB writes, skipped hooks, stale caches and concurrent modifications were not tested.",
+    "No evidence establishes whether supplierOnHold is raw on_hold or a derived effective flag that already incorporates release_date. If raw, expired All/Invoices may be over-rejected by the current gateway candidate; this is an unresolved mapping risk, not a new observed failure.",
+    "No explicit empty-to-All clause appears in current ECAS candidate; observed denial does not prove model extraction of the default.",
+    "Archive filename and in-file __version__ are local identity evidence, not independent verification of upstream Git commit.",
+    "Upstream tests read as source only; no claim that those tests passed this task.",
+    "Legacy held-empty-type classification remains conservative_empty_type_control, not retroactively preregistered semantics."
+  ]
+}

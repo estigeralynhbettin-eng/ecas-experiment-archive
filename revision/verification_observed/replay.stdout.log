@@ -1,0 +1,1 @@
+{"status": "PASS", "mode": "ARCHIVED_ENGINE_REPLAY", "counts": {"traces": 21, "qualified_traces": 17, "unexecuted_traces": 4, "original_request_decisions": 34, "ablation_rows": 95, "ablation_parents": 11, "admission_contrast": 73, "schema_controls": 22, "invalid_evidence_or_path_variants": 51}, "ablation_engine_observations": 325, "new_model_calls": 0}

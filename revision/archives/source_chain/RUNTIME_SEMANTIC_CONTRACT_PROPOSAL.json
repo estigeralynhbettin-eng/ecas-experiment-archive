@@ -1,0 +1,36 @@
+{
+  "status": "DESIGN_PROPOSAL_NOT_IMPLEMENTED_IN_CURRENT_ENGINE",
+  "purpose": "Bind runtime-path business meaning and lifecycle assumptions to source-supported policy scope.",
+  "existing_B19_ABI": {
+    "supplierOnHold": "boolean, server_state; raw/effective definition unspecified",
+    "holdType": "string; normalization unspecified"
+  },
+  "required_profile_fields": [
+    "target_operation_and_version",
+    "field_semantic_definition",
+    "raw_or_effective_state",
+    "snapshot_lifecycle_point",
+    "normalization_rule_source",
+    "dependency_fields",
+    "time_reference_and_timezone",
+    "adapter_implementation_id_and_hash",
+    "qualification_vectors_and_result_refs",
+    "state_provenance_and_freshness_policy"
+  ],
+  "B19_alternatives": [
+    {
+      "id": "RAW_WITH_EXPIRY",
+      "meaning": "Read actual on_hold, normalized hold_type and release_date; rule explicitly evaluates expiry using a bound clock."
+    },
+    {
+      "id": "EFFECTIVE_ACTIVE_HOLD",
+      "meaning": "Adapter provides derived active hold after before_save normalization and expiry; derivation implementation/source/time are registered."
+    }
+  ],
+  "proposed_rejection_conditions": [
+    "Full hold-lifecycle claim but raw flag with no expiry/date mapping",
+    "Policy and adapter profiles disagree about normalized versus unsaved state",
+    "Required qualification/provenance/version binding unavailable"
+  ],
+  "limitations": "Metadata alone cannot prove actual adapter semantics or input authenticity. The selected implementation must be verified and its runtime provenance observed; current engine does not enforce this proposal."
+}

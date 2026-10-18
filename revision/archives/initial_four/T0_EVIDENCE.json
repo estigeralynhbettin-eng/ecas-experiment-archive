@@ -1,0 +1,8 @@
+{
+  "status": "PASS",
+  "scope_id": "ECAS-FOUR-PEER-BASELINES-20261014-01",
+  "run_id": "four-peer-t0-v1",
+  "receipt_path": "T0_RECEIPT.json",
+  "receipt_sha256": "f53f8fc2787e4f59369cc6c032fcb0ebc043ad9300092dc037ff0417f2cf451f",
+  "completed_at": "2026-10-14T11:40:09.109521+00:00"
+}

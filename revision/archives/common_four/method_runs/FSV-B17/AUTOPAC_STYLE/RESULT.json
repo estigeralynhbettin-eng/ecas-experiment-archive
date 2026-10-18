@@ -1,0 +1,378 @@
+{
+  "task": "FSV-B17",
+  "method": "AUTOPAC_STYLE",
+  "scope_id": "ECAS-MATCHED-EVIDENCE-LABOR-20261014-01",
+  "status": "ELIGIBLE",
+  "calls": [
+    21,
+    22
+  ],
+  "repaired_once": false,
+  "execution_eligible": true,
+  "first_checks": {
+    "policy_path": "/mnt/d/lunwen/EC-CSI投稿/working/exploration/20261014_matched_evidence_labor/matched_generation/method_runs/FSV-B17/AUTOPAC_STYLE/initial/external_pilot/policy.rego",
+    "original_path": "/mnt/d/lunwen/EC-CSI投稿/working/exploration/20261014_matched_evidence_labor/matched_generation/method_runs/FSV-B17/AUTOPAC_STYLE/initial/original.rego",
+    "compile_exit": 0,
+    "compile_error": "",
+    "format_receipt": {
+      "original_sha256": "b984020ca487ffa8468e4ed38ad72d447f17061743b5b534109ef7edd1214e41",
+      "formatted_sha256": "83fb3cf00dcea3c7446241ce57acc9288c8efe758decac4bbb73720c1b0f3350",
+      "parse_before_exit": 0,
+      "format_exit": 0,
+      "parse_after_exit": 0,
+      "ast_semantics_equal_without_location": true,
+      "classification": "DETERMINISTIC_FORMAT_ONLY_NOT_MODEL_REPAIR"
+    },
+    "lint_exit": null,
+    "lint_report": null,
+    "accepted": true,
+    "developer_results": {
+      "passed": true,
+      "rows": [
+        {
+          "id": "dev_enabled",
+          "expected": "allow",
+          "actual": {
+            "status": "EXECUTED",
+            "decision": "allow",
+            "exit_code": 0
+          },
+          "pass": true
+        },
+        {
+          "id": "dev_disabled",
+          "expected": "deny",
+          "actual": {
+            "status": "EXECUTED",
+            "decision": "deny",
+            "exit_code": 0
+          },
+          "pass": true
+        }
+      ]
+    },
+    "judge": {
+      "verdict": "ACCEPT",
+      "issues": []
+    }
+  },
+  "final_checks": {
+    "policy_path": "/mnt/d/lunwen/EC-CSI投稿/working/exploration/20261014_matched_evidence_labor/matched_generation/method_runs/FSV-B17/AUTOPAC_STYLE/initial/external_pilot/policy.rego",
+    "original_path": "/mnt/d/lunwen/EC-CSI投稿/working/exploration/20261014_matched_evidence_labor/matched_generation/method_runs/FSV-B17/AUTOPAC_STYLE/initial/original.rego",
+    "compile_exit": 0,
+    "compile_error": "",
+    "format_receipt": {
+      "original_sha256": "b984020ca487ffa8468e4ed38ad72d447f17061743b5b534109ef7edd1214e41",
+      "formatted_sha256": "83fb3cf00dcea3c7446241ce57acc9288c8efe758decac4bbb73720c1b0f3350",
+      "parse_before_exit": 0,
+      "format_exit": 0,
+      "parse_after_exit": 0,
+      "ast_semantics_equal_without_location": true,
+      "classification": "DETERMINISTIC_FORMAT_ONLY_NOT_MODEL_REPAIR"
+    },
+    "lint_exit": null,
+    "lint_report": null,
+    "accepted": true,
+    "developer_results": {
+      "passed": true,
+      "rows": [
+        {
+          "id": "dev_enabled",
+          "expected": "allow",
+          "actual": {
+            "status": "EXECUTED",
+            "decision": "allow",
+            "exit_code": 0
+          },
+          "pass": true
+        },
+        {
+          "id": "dev_disabled",
+          "expected": "deny",
+          "actual": {
+            "status": "EXECUTED",
+            "decision": "deny",
+            "exit_code": 0
+          },
+          "pass": true
+        }
+      ]
+    },
+    "judge": {
+      "verdict": "ACCEPT",
+      "issues": []
+    }
+  },
+  "generation_frozen_at": "2026-10-15T00:54:31.014410+00:00",
+  "final_evaluation_not_yet_read": true,
+  "first_diagnostic": {
+    "execution_status": "DIAGNOSTIC_ONLY",
+    "requests": [
+      {
+        "channel": "O-L",
+        "input": {
+          "request": {
+            "body": {
+              "customer": "CUSTOMER-SYNTH-1"
+            }
+          },
+          "trusted": {
+            "customerDisabled": false
+          }
+        },
+        "expected": "allow",
+        "actual": {
+          "status": "EXECUTED",
+          "decision": "allow",
+          "exit_code": 0
+        },
+        "pass": true
+      },
+      {
+        "channel": "O-I",
+        "input": {
+          "request": {
+            "body": {
+              "customer": "CUSTOMER-SYNTH-1"
+            }
+          },
+          "trusted": {
+            "customerDisabled": true
+          }
+        },
+        "expected": "deny",
+        "actual": {
+          "status": "EXECUTED",
+          "decision": "deny",
+          "exit_code": 0
+        },
+        "pass": true
+      }
+    ],
+    "branches": [
+      {
+        "label": "enabled",
+        "input": {
+          "request": {
+            "body": {
+              "customer": "CUSTOMER-SYNTH-1"
+            }
+          },
+          "trusted": {
+            "customerDisabled": false
+          }
+        },
+        "expected": "allow",
+        "kind": "documented_rule",
+        "actual": {
+          "status": "EXECUTED",
+          "decision": "allow",
+          "exit_code": 0
+        },
+        "pass": true
+      },
+      {
+        "label": "disabled",
+        "input": {
+          "request": {
+            "body": {
+              "customer": "CUSTOMER-SYNTH-1"
+            }
+          },
+          "trusted": {
+            "customerDisabled": true
+          }
+        },
+        "expected": "deny",
+        "kind": "documented_rule",
+        "actual": {
+          "status": "EXECUTED",
+          "decision": "deny",
+          "exit_code": 0
+        },
+        "pass": true
+      },
+      {
+        "label": "body-disable-spoof",
+        "input": {
+          "request": {
+            "body": {
+              "customer": "CUSTOMER-SYNTH-1",
+              "customerDisabled": false
+            }
+          },
+          "trusted": {
+            "customerDisabled": true
+          }
+        },
+        "expected": "deny",
+        "kind": "engineering_trust_control",
+        "actual": {
+          "status": "EXECUTED",
+          "decision": "deny",
+          "exit_code": 0
+        },
+        "pass": true
+      },
+      {
+        "label": "missing-trusted",
+        "input": {
+          "request": {
+            "body": {
+              "customer": "CUSTOMER-SYNTH-1"
+            }
+          },
+          "trusted": {}
+        },
+        "expected": "deny",
+        "kind": "engineering_fail_closed_control",
+        "actual": {
+          "status": "EXECUTED",
+          "decision": "allow",
+          "exit_code": 0
+        },
+        "pass": false
+      }
+    ],
+    "request_pair_correct": true,
+    "policy_sha256": "83fb3cf00dcea3c7446241ce57acc9288c8efe758decac4bbb73720c1b0f3350",
+    "eligibility_at_generation": true,
+    "branch_classification": "HISTORICAL_POSTHOC_ENGINEERING_NOT_ACCURACY_DENOMINATOR"
+  },
+  "final_evaluation": {
+    "execution_status": "ELIGIBLE_POLICY_EXECUTED",
+    "requests": [
+      {
+        "channel": "O-L",
+        "input": {
+          "request": {
+            "body": {
+              "customer": "CUSTOMER-SYNTH-1"
+            }
+          },
+          "trusted": {
+            "customerDisabled": false
+          }
+        },
+        "expected": "allow",
+        "actual": {
+          "status": "EXECUTED",
+          "decision": "allow",
+          "exit_code": 0
+        },
+        "pass": true
+      },
+      {
+        "channel": "O-I",
+        "input": {
+          "request": {
+            "body": {
+              "customer": "CUSTOMER-SYNTH-1"
+            }
+          },
+          "trusted": {
+            "customerDisabled": true
+          }
+        },
+        "expected": "deny",
+        "actual": {
+          "status": "EXECUTED",
+          "decision": "deny",
+          "exit_code": 0
+        },
+        "pass": true
+      }
+    ],
+    "branches": [
+      {
+        "label": "enabled",
+        "input": {
+          "request": {
+            "body": {
+              "customer": "CUSTOMER-SYNTH-1"
+            }
+          },
+          "trusted": {
+            "customerDisabled": false
+          }
+        },
+        "expected": "allow",
+        "kind": "documented_rule",
+        "actual": {
+          "status": "EXECUTED",
+          "decision": "allow",
+          "exit_code": 0
+        },
+        "pass": true
+      },
+      {
+        "label": "disabled",
+        "input": {
+          "request": {
+            "body": {
+              "customer": "CUSTOMER-SYNTH-1"
+            }
+          },
+          "trusted": {
+            "customerDisabled": true
+          }
+        },
+        "expected": "deny",
+        "kind": "documented_rule",
+        "actual": {
+          "status": "EXECUTED",
+          "decision": "deny",
+          "exit_code": 0
+        },
+        "pass": true
+      },
+      {
+        "label": "body-disable-spoof",
+        "input": {
+          "request": {
+            "body": {
+              "customer": "CUSTOMER-SYNTH-1",
+              "customerDisabled": false
+            }
+          },
+          "trusted": {
+            "customerDisabled": true
+          }
+        },
+        "expected": "deny",
+        "kind": "engineering_trust_control",
+        "actual": {
+          "status": "EXECUTED",
+          "decision": "deny",
+          "exit_code": 0
+        },
+        "pass": true
+      },
+      {
+        "label": "missing-trusted",
+        "input": {
+          "request": {
+            "body": {
+              "customer": "CUSTOMER-SYNTH-1"
+            }
+          },
+          "trusted": {}
+        },
+        "expected": "deny",
+        "kind": "engineering_fail_closed_control",
+        "actual": {
+          "status": "EXECUTED",
+          "decision": "allow",
+          "exit_code": 0
+        },
+        "pass": false
+      }
+    ],
+    "request_pair_correct": true,
+    "policy_sha256": "83fb3cf00dcea3c7446241ce57acc9288c8efe758decac4bbb73720c1b0f3350",
+    "eligibility_at_generation": true,
+    "branch_classification": "HISTORICAL_POSTHOC_ENGINEERING_NOT_ACCURACY_DENOMINATOR"
+  },
+  "request_pair_correct": true,
+  "evaluated_at": "2026-10-15T00:56:38.028013+00:00"
+}

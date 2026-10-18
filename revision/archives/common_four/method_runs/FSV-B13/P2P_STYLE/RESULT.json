@@ -1,0 +1,842 @@
+{
+  "task": "FSV-B13",
+  "method": "P2P_STYLE",
+  "scope_id": "ECAS-MATCHED-EVIDENCE-LABOR-20261014-01",
+  "status": "ELIGIBLE",
+  "calls": [
+    10,
+    11,
+    12,
+    13
+  ],
+  "repaired_once": false,
+  "execution_eligible": true,
+  "first_checks": {
+    "policy_path": "/mnt/d/lunwen/EC-CSI投稿/working/exploration/20261014_matched_evidence_labor/matched_generation/method_runs/FSV-B13/P2P_STYLE/initial/external_pilot/policy.rego",
+    "original_path": "/mnt/d/lunwen/EC-CSI投稿/working/exploration/20261014_matched_evidence_labor/matched_generation/method_runs/FSV-B13/P2P_STYLE/initial/original.rego",
+    "compile_exit": 0,
+    "compile_error": "",
+    "format_receipt": {
+      "original_sha256": "c22d07f3085d8557e76223a8983e6a6541aaa94ea1134736e9251fc6b0b87a3d",
+      "formatted_sha256": "a211c57e2bf6bd8f0cbae478273b65fc6e26dbd1c1e855cfa4cbda0015978bb7",
+      "parse_before_exit": 0,
+      "format_exit": 0,
+      "parse_after_exit": 0,
+      "ast_semantics_equal_without_location": true,
+      "classification": "DETERMINISTIC_FORMAT_ONLY_NOT_MODEL_REPAIR"
+    },
+    "lint_exit": 0,
+    "lint_report": {
+      "violations": [],
+      "notices": [
+        {
+          "title": "deprecated-builtin",
+          "description": "Since OPA 1.0, deprecated-builtin enabled only when provided a v0 policy,\nBUT please note that this may change in the future if new built-in functions\nare deprecated.\n",
+          "category": "bugs",
+          "level": "notice",
+          "severity": "none"
+        },
+        {
+          "title": "import-shadows-import",
+          "description": "Since OPA 1.0, import-shadows-import enabled only when provided a v0 policy,",
+          "category": "imports",
+          "level": "notice",
+          "severity": "none"
+        },
+        {
+          "title": "rule-named-if",
+          "description": "Since OPA 1.0, rule-named-if enabled only when provided a v0 policy",
+          "category": "bugs",
+          "level": "notice",
+          "severity": "none"
+        },
+        {
+          "title": "use-contains",
+          "description": "Since OPA 1.0, use-contains enabled only when provided a v0 policy",
+          "category": "idiomatic",
+          "level": "notice",
+          "severity": "none"
+        },
+        {
+          "title": "use-if",
+          "description": "Since OPA 1.0, use-if enabled only when provided a v0 policy",
+          "category": "idiomatic",
+          "level": "notice",
+          "severity": "none"
+        },
+        {
+          "title": "use-rego-v1",
+          "description": "Since OPA 1.0, use-rego-v1 enabled only when provided a v0 policy",
+          "category": "imports",
+          "level": "notice",
+          "severity": "none"
+        }
+      ],
+      "summary": {
+        "files_scanned": 1,
+        "files_failed": 0,
+        "rules_skipped": 0,
+        "num_violations": 0
+      }
+    },
+    "accepted": true,
+    "developer_results": {
+      "passed": true,
+      "rows": [
+        {
+          "id": "t1_qty_within_allowance",
+          "expected": "allow",
+          "actual": {
+            "status": "EXECUTED",
+            "decision": "allow",
+            "exit_code": 0
+          },
+          "pass": true
+        },
+        {
+          "id": "t2_qty_exceeds_allowance_with_authorized_role",
+          "expected": "allow",
+          "actual": {
+            "status": "EXECUTED",
+            "decision": "allow",
+            "exit_code": 0
+          },
+          "pass": true
+        },
+        {
+          "id": "t3_qty_exceeds_allowance_without_authorized_role",
+          "expected": "deny",
+          "actual": {
+            "status": "EXECUTED",
+            "decision": "deny",
+            "exit_code": 0
+          },
+          "pass": true
+        },
+        {
+          "id": "t4_qty_equals_maximum_allowance",
+          "expected": "allow",
+          "actual": {
+            "status": "EXECUTED",
+            "decision": "allow",
+            "exit_code": 0
+          },
+          "pass": true
+        },
+        {
+          "id": "t5_qty_exceeds_allowance_by_one_without_authorized_role",
+          "expected": "deny",
+          "actual": {
+            "status": "EXECUTED",
+            "decision": "deny",
+            "exit_code": 0
+          },
+          "pass": true
+        },
+        {
+          "id": "t6_qty_exceeds_allowance_with_authorized_role_false_edge_case",
+          "expected": "allow",
+          "actual": {
+            "status": "EXECUTED",
+            "decision": "allow",
+            "exit_code": 0
+          },
+          "pass": true
+        },
+        {
+          "id": "dev_limit",
+          "expected": "allow",
+          "actual": {
+            "status": "EXECUTED",
+            "decision": "allow",
+            "exit_code": 0
+          },
+          "pass": true
+        },
+        {
+          "id": "dev_over",
+          "expected": "deny",
+          "actual": {
+            "status": "EXECUTED",
+            "decision": "deny",
+            "exit_code": 0
+          },
+          "pass": true
+        },
+        {
+          "id": "dev_role_exception",
+          "expected": "allow",
+          "actual": {
+            "status": "EXECUTED",
+            "decision": "allow",
+            "exit_code": 0
+          },
+          "pass": true
+        }
+      ]
+    },
+    "judge": null
+  },
+  "final_checks": {
+    "policy_path": "/mnt/d/lunwen/EC-CSI投稿/working/exploration/20261014_matched_evidence_labor/matched_generation/method_runs/FSV-B13/P2P_STYLE/initial/external_pilot/policy.rego",
+    "original_path": "/mnt/d/lunwen/EC-CSI投稿/working/exploration/20261014_matched_evidence_labor/matched_generation/method_runs/FSV-B13/P2P_STYLE/initial/original.rego",
+    "compile_exit": 0,
+    "compile_error": "",
+    "format_receipt": {
+      "original_sha256": "c22d07f3085d8557e76223a8983e6a6541aaa94ea1134736e9251fc6b0b87a3d",
+      "formatted_sha256": "a211c57e2bf6bd8f0cbae478273b65fc6e26dbd1c1e855cfa4cbda0015978bb7",
+      "parse_before_exit": 0,
+      "format_exit": 0,
+      "parse_after_exit": 0,
+      "ast_semantics_equal_without_location": true,
+      "classification": "DETERMINISTIC_FORMAT_ONLY_NOT_MODEL_REPAIR"
+    },
+    "lint_exit": 0,
+    "lint_report": {
+      "violations": [],
+      "notices": [
+        {
+          "title": "deprecated-builtin",
+          "description": "Since OPA 1.0, deprecated-builtin enabled only when provided a v0 policy,\nBUT please note that this may change in the future if new built-in functions\nare deprecated.\n",
+          "category": "bugs",
+          "level": "notice",
+          "severity": "none"
+        },
+        {
+          "title": "import-shadows-import",
+          "description": "Since OPA 1.0, import-shadows-import enabled only when provided a v0 policy,",
+          "category": "imports",
+          "level": "notice",
+          "severity": "none"
+        },
+        {
+          "title": "rule-named-if",
+          "description": "Since OPA 1.0, rule-named-if enabled only when provided a v0 policy",
+          "category": "bugs",
+          "level": "notice",
+          "severity": "none"
+        },
+        {
+          "title": "use-contains",
+          "description": "Since OPA 1.0, use-contains enabled only when provided a v0 policy",
+          "category": "idiomatic",
+          "level": "notice",
+          "severity": "none"
+        },
+        {
+          "title": "use-if",
+          "description": "Since OPA 1.0, use-if enabled only when provided a v0 policy",
+          "category": "idiomatic",
+          "level": "notice",
+          "severity": "none"
+        },
+        {
+          "title": "use-rego-v1",
+          "description": "Since OPA 1.0, use-rego-v1 enabled only when provided a v0 policy",
+          "category": "imports",
+          "level": "notice",
+          "severity": "none"
+        }
+      ],
+      "summary": {
+        "files_scanned": 1,
+        "files_failed": 0,
+        "rules_skipped": 0,
+        "num_violations": 0
+      }
+    },
+    "accepted": true,
+    "developer_results": {
+      "passed": true,
+      "rows": [
+        {
+          "id": "t1_qty_within_allowance",
+          "expected": "allow",
+          "actual": {
+            "status": "EXECUTED",
+            "decision": "allow",
+            "exit_code": 0
+          },
+          "pass": true
+        },
+        {
+          "id": "t2_qty_exceeds_allowance_with_authorized_role",
+          "expected": "allow",
+          "actual": {
+            "status": "EXECUTED",
+            "decision": "allow",
+            "exit_code": 0
+          },
+          "pass": true
+        },
+        {
+          "id": "t3_qty_exceeds_allowance_without_authorized_role",
+          "expected": "deny",
+          "actual": {
+            "status": "EXECUTED",
+            "decision": "deny",
+            "exit_code": 0
+          },
+          "pass": true
+        },
+        {
+          "id": "t4_qty_equals_maximum_allowance",
+          "expected": "allow",
+          "actual": {
+            "status": "EXECUTED",
+            "decision": "allow",
+            "exit_code": 0
+          },
+          "pass": true
+        },
+        {
+          "id": "t5_qty_exceeds_allowance_by_one_without_authorized_role",
+          "expected": "deny",
+          "actual": {
+            "status": "EXECUTED",
+            "decision": "deny",
+            "exit_code": 0
+          },
+          "pass": true
+        },
+        {
+          "id": "t6_qty_exceeds_allowance_with_authorized_role_false_edge_case",
+          "expected": "allow",
+          "actual": {
+            "status": "EXECUTED",
+            "decision": "allow",
+            "exit_code": 0
+          },
+          "pass": true
+        },
+        {
+          "id": "dev_limit",
+          "expected": "allow",
+          "actual": {
+            "status": "EXECUTED",
+            "decision": "allow",
+            "exit_code": 0
+          },
+          "pass": true
+        },
+        {
+          "id": "dev_over",
+          "expected": "deny",
+          "actual": {
+            "status": "EXECUTED",
+            "decision": "deny",
+            "exit_code": 0
+          },
+          "pass": true
+        },
+        {
+          "id": "dev_role_exception",
+          "expected": "allow",
+          "actual": {
+            "status": "EXECUTED",
+            "decision": "allow",
+            "exit_code": 0
+          },
+          "pass": true
+        }
+      ]
+    },
+    "judge": null
+  },
+  "generation_frozen_at": "2026-10-15T00:48:33.313712+00:00",
+  "final_evaluation_not_yet_read": true,
+  "first_diagnostic": {
+    "execution_status": "DIAGNOSTIC_ONLY",
+    "requests": [
+      {
+        "channel": "O-L",
+        "input": {
+          "request": {
+            "body": {
+              "qty": 110
+            }
+          },
+          "trusted": {
+            "allowancePercent": 10,
+            "authorizedRole": false,
+            "derivedMaximumQty": 110,
+            "orderedQty": 100
+          }
+        },
+        "expected": "allow",
+        "actual": {
+          "status": "EXECUTED",
+          "decision": "allow",
+          "exit_code": 0
+        },
+        "pass": true
+      },
+      {
+        "channel": "O-I",
+        "input": {
+          "request": {
+            "body": {
+              "qty": 111
+            }
+          },
+          "trusted": {
+            "allowancePercent": 10,
+            "authorizedRole": false,
+            "derivedMaximumQty": 110,
+            "orderedQty": 100
+          }
+        },
+        "expected": "deny",
+        "actual": {
+          "status": "EXECUTED",
+          "decision": "deny",
+          "exit_code": 0
+        },
+        "pass": true
+      }
+    ],
+    "branches": [
+      {
+        "label": "below-limit",
+        "input": {
+          "request": {
+            "body": {
+              "qty": 109
+            }
+          },
+          "trusted": {
+            "orderedQty": 100,
+            "allowancePercent": 10,
+            "derivedMaximumQty": 110,
+            "authorizedRole": false
+          }
+        },
+        "expected": "allow",
+        "kind": "documented_rule",
+        "actual": {
+          "status": "EXECUTED",
+          "decision": "allow",
+          "exit_code": 0
+        },
+        "pass": true
+      },
+      {
+        "label": "at-limit",
+        "input": {
+          "request": {
+            "body": {
+              "qty": 110
+            }
+          },
+          "trusted": {
+            "orderedQty": 100,
+            "allowancePercent": 10,
+            "derivedMaximumQty": 110,
+            "authorizedRole": false
+          }
+        },
+        "expected": "allow",
+        "kind": "documented_rule",
+        "actual": {
+          "status": "EXECUTED",
+          "decision": "allow",
+          "exit_code": 0
+        },
+        "pass": true
+      },
+      {
+        "label": "above-limit",
+        "input": {
+          "request": {
+            "body": {
+              "qty": 111
+            }
+          },
+          "trusted": {
+            "orderedQty": 100,
+            "allowancePercent": 10,
+            "derivedMaximumQty": 110,
+            "authorizedRole": false
+          }
+        },
+        "expected": "deny",
+        "kind": "documented_rule",
+        "actual": {
+          "status": "EXECUTED",
+          "decision": "deny",
+          "exit_code": 0
+        },
+        "pass": true
+      },
+      {
+        "label": "authorized-exception",
+        "input": {
+          "request": {
+            "body": {
+              "qty": 111
+            }
+          },
+          "trusted": {
+            "orderedQty": 100,
+            "allowancePercent": 10,
+            "derivedMaximumQty": 110,
+            "authorizedRole": true
+          }
+        },
+        "expected": "allow",
+        "kind": "documented_rule",
+        "actual": {
+          "status": "EXECUTED",
+          "decision": "allow",
+          "exit_code": 0
+        },
+        "pass": true
+      },
+      {
+        "label": "authorized-large-exception",
+        "input": {
+          "request": {
+            "body": {
+              "qty": 1000
+            }
+          },
+          "trusted": {
+            "orderedQty": 100,
+            "allowancePercent": 10,
+            "derivedMaximumQty": 110,
+            "authorizedRole": true
+          }
+        },
+        "expected": "allow",
+        "kind": "focused_rule_only",
+        "actual": {
+          "status": "EXECUTED",
+          "decision": "allow",
+          "exit_code": 0
+        },
+        "pass": true
+      },
+      {
+        "label": "body-role-spoof",
+        "input": {
+          "request": {
+            "body": {
+              "qty": 111,
+              "authorizedRole": true
+            }
+          },
+          "trusted": {
+            "orderedQty": 100,
+            "allowancePercent": 10,
+            "derivedMaximumQty": 110,
+            "authorizedRole": false
+          }
+        },
+        "expected": "deny",
+        "kind": "engineering_trust_control",
+        "actual": {
+          "status": "EXECUTED",
+          "decision": "deny",
+          "exit_code": 0
+        },
+        "pass": true
+      },
+      {
+        "label": "body-limit-spoof",
+        "input": {
+          "request": {
+            "body": {
+              "qty": 111,
+              "derivedMaximumQty": 1000
+            }
+          },
+          "trusted": {
+            "orderedQty": 100,
+            "allowancePercent": 10,
+            "derivedMaximumQty": 110,
+            "authorizedRole": false
+          }
+        },
+        "expected": "deny",
+        "kind": "engineering_trust_control",
+        "actual": {
+          "status": "EXECUTED",
+          "decision": "deny",
+          "exit_code": 0
+        },
+        "pass": true
+      },
+      {
+        "label": "missing-trusted",
+        "input": {
+          "request": {
+            "body": {
+              "qty": 111
+            }
+          },
+          "trusted": {}
+        },
+        "expected": "deny",
+        "kind": "engineering_fail_closed_control",
+        "actual": {
+          "status": "EXECUTED",
+          "decision": "deny",
+          "exit_code": 0
+        },
+        "pass": true
+      }
+    ],
+    "request_pair_correct": true,
+    "policy_sha256": "a211c57e2bf6bd8f0cbae478273b65fc6e26dbd1c1e855cfa4cbda0015978bb7",
+    "eligibility_at_generation": true,
+    "branch_classification": "HISTORICAL_POSTHOC_ENGINEERING_NOT_ACCURACY_DENOMINATOR"
+  },
+  "final_evaluation": {
+    "execution_status": "ELIGIBLE_POLICY_EXECUTED",
+    "requests": [
+      {
+        "channel": "O-L",
+        "input": {
+          "request": {
+            "body": {
+              "qty": 110
+            }
+          },
+          "trusted": {
+            "allowancePercent": 10,
+            "authorizedRole": false,
+            "derivedMaximumQty": 110,
+            "orderedQty": 100
+          }
+        },
+        "expected": "allow",
+        "actual": {
+          "status": "EXECUTED",
+          "decision": "allow",
+          "exit_code": 0
+        },
+        "pass": true
+      },
+      {
+        "channel": "O-I",
+        "input": {
+          "request": {
+            "body": {
+              "qty": 111
+            }
+          },
+          "trusted": {
+            "allowancePercent": 10,
+            "authorizedRole": false,
+            "derivedMaximumQty": 110,
+            "orderedQty": 100
+          }
+        },
+        "expected": "deny",
+        "actual": {
+          "status": "EXECUTED",
+          "decision": "deny",
+          "exit_code": 0
+        },
+        "pass": true
+      }
+    ],
+    "branches": [
+      {
+        "label": "below-limit",
+        "input": {
+          "request": {
+            "body": {
+              "qty": 109
+            }
+          },
+          "trusted": {
+            "orderedQty": 100,
+            "allowancePercent": 10,
+            "derivedMaximumQty": 110,
+            "authorizedRole": false
+          }
+        },
+        "expected": "allow",
+        "kind": "documented_rule",
+        "actual": {
+          "status": "EXECUTED",
+          "decision": "allow",
+          "exit_code": 0
+        },
+        "pass": true
+      },
+      {
+        "label": "at-limit",
+        "input": {
+          "request": {
+            "body": {
+              "qty": 110
+            }
+          },
+          "trusted": {
+            "orderedQty": 100,
+            "allowancePercent": 10,
+            "derivedMaximumQty": 110,
+            "authorizedRole": false
+          }
+        },
+        "expected": "allow",
+        "kind": "documented_rule",
+        "actual": {
+          "status": "EXECUTED",
+          "decision": "allow",
+          "exit_code": 0
+        },
+        "pass": true
+      },
+      {
+        "label": "above-limit",
+        "input": {
+          "request": {
+            "body": {
+              "qty": 111
+            }
+          },
+          "trusted": {
+            "orderedQty": 100,
+            "allowancePercent": 10,
+            "derivedMaximumQty": 110,
+            "authorizedRole": false
+          }
+        },
+        "expected": "deny",
+        "kind": "documented_rule",
+        "actual": {
+          "status": "EXECUTED",
+          "decision": "deny",
+          "exit_code": 0
+        },
+        "pass": true
+      },
+      {
+        "label": "authorized-exception",
+        "input": {
+          "request": {
+            "body": {
+              "qty": 111
+            }
+          },
+          "trusted": {
+            "orderedQty": 100,
+            "allowancePercent": 10,
+            "derivedMaximumQty": 110,
+            "authorizedRole": true
+          }
+        },
+        "expected": "allow",
+        "kind": "documented_rule",
+        "actual": {
+          "status": "EXECUTED",
+          "decision": "allow",
+          "exit_code": 0
+        },
+        "pass": true
+      },
+      {
+        "label": "authorized-large-exception",
+        "input": {
+          "request": {
+            "body": {
+              "qty": 1000
+            }
+          },
+          "trusted": {
+            "orderedQty": 100,
+            "allowancePercent": 10,
+            "derivedMaximumQty": 110,
+            "authorizedRole": true
+          }
+        },
+        "expected": "allow",
+        "kind": "focused_rule_only",
+        "actual": {
+          "status": "EXECUTED",
+          "decision": "allow",
+          "exit_code": 0
+        },
+        "pass": true
+      },
+      {
+        "label": "body-role-spoof",
+        "input": {
+          "request": {
+            "body": {
+              "qty": 111,
+              "authorizedRole": true
+            }
+          },
+          "trusted": {
+            "orderedQty": 100,
+            "allowancePercent": 10,
+            "derivedMaximumQty": 110,
+            "authorizedRole": false
+          }
+        },
+        "expected": "deny",
+        "kind": "engineering_trust_control",
+        "actual": {
+          "status": "EXECUTED",
+          "decision": "deny",
+          "exit_code": 0
+        },
+        "pass": true
+      },
+      {
+        "label": "body-limit-spoof",
+        "input": {
+          "request": {
+            "body": {
+              "qty": 111,
+              "derivedMaximumQty": 1000
+            }
+          },
+          "trusted": {
+            "orderedQty": 100,
+            "allowancePercent": 10,
+            "derivedMaximumQty": 110,
+            "authorizedRole": false
+          }
+        },
+        "expected": "deny",
+        "kind": "engineering_trust_control",
+        "actual": {
+          "status": "EXECUTED",
+          "decision": "deny",
+          "exit_code": 0
+        },
+        "pass": true
+      },
+      {
+        "label": "missing-trusted",
+        "input": {
+          "request": {
+            "body": {
+              "qty": 111
+            }
+          },
+          "trusted": {}
+        },
+        "expected": "deny",
+        "kind": "engineering_fail_closed_control",
+        "actual": {
+          "status": "EXECUTED",
+          "decision": "deny",
+          "exit_code": 0
+        },
+        "pass": true
+      }
+    ],
+    "request_pair_correct": true,
+    "policy_sha256": "a211c57e2bf6bd8f0cbae478273b65fc6e26dbd1c1e855cfa4cbda0015978bb7",
+    "eligibility_at_generation": true,
+    "branch_classification": "HISTORICAL_POSTHOC_ENGINEERING_NOT_ACCURACY_DENOMINATOR"
+  },
+  "request_pair_correct": true,
+  "evaluated_at": "2026-10-15T00:56:34.038469+00:00"
+}

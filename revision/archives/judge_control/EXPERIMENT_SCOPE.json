@@ -1,0 +1,25 @@
+{
+  "kind": "new-experiment-block",
+  "status": "FROZEN",
+  "protocol_path": "PROTOCOL_CN.md",
+  "protocol_sha256": "e878c8b6fe97559de1ce6d2c9a6f5cc16fcf4b836c83568106d25fdb2f860884",
+  "scope_id": "ECAS-TYPED-IR-SEMANTIC-JUDGE-CONTROL-20261014-01",
+  "project_id": "EC-CSI",
+  "experiment_id": "typed-ir-semantic-judge-control",
+  "tasks": [
+    "FSV-S03",
+    "FSV-B13",
+    "FSV-B17",
+    "FSV-B19"
+  ],
+  "classification": "RETROSPECTIVE_TYPED_IR_SEMANTIC_JUDGE_INTERNAL_CONTROL_NOT_NATIVE_AUTOPAC",
+  "runtime_lane": "/root/ecas_semantic_judge_control_20261014",
+  "historical_exposure": "Four previously exposed tasks, eight archived parent candidates; not blind or independent holdout.",
+  "paid_calls_authorized_total_cap": 44,
+  "judge_calls_within_shared_cap": 4,
+  "pilot_calls_within_judge_four": 1,
+  "remaining_calls_after_pilot": 3,
+  "automatic_api_retries": 0,
+  "new_systems": 0,
+  "new_cases": 0
+}

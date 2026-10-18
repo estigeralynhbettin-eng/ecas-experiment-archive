@@ -1,0 +1,27 @@
+{
+  "task": "FSV-S02",
+  "method": "AUTOPAC_STYLE",
+  "classification": "RETROSPECTIVE_ADAPTED_LOCAL_PILOT_NOT_NATIVE_OR_BLIND",
+  "status": "DEVELOPMENT_REJECTED",
+  "requests": [],
+  "calls": [
+    15,
+    16,
+    17
+  ],
+  "repaired_once": true,
+  "developer_checks": {
+    "compile_exit": 1,
+    "compile_error": "2 errors occurred:\n/mnt/d/lunwen/EC-CSI投稿/working/exploration/20261014_external_baseline_pilot/effect_runs/FSV-S02/AUTOPAC_STYLE/repaired/external_pilot/policy.rego:25: rego_type_error: undefined function is_integer\n/mnt/d/lunwen/EC-CSI投稿/working/exploration/20261014_external_baseline_pilot/effect_runs/FSV-S02/AUTOPAC_STYLE/repaired/external_pilot/policy.rego:35: rego_type_error: undefined function is_integer\n",
+    "policy_path": "/mnt/d/lunwen/EC-CSI投稿/working/exploration/20261014_external_baseline_pilot/effect_runs/FSV-S02/AUTOPAC_STYLE/repaired/external_pilot/policy.rego",
+    "lint_exit": null,
+    "lint_report": null,
+    "accepted": false
+  },
+  "developer_results": {
+    "passed": false,
+    "rows": []
+  },
+  "request_pair_correct": false,
+  "completed_at": "2026-10-14T04:11:00.941206+00:00"
+}

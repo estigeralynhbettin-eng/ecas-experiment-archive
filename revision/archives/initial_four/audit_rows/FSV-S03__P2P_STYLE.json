@@ -1,0 +1,26 @@
+{
+  "task": "FSV-S03",
+  "method": "P2P_STYLE",
+  "status": "OUT_OF_SCOPE",
+  "requests": [],
+  "calls": [
+    4
+  ],
+  "repaired_once": false,
+  "reason": "The visible sources contain only an OpenAPI endpoint specification (VIS-FSV-S03-01) and a runtime ABI path declaration catalog (VIS-FSV-S03-RUNTIME-ABI). Neither source contains explicit access policy statements such as permission grants, denials, or role-based constraints. The runtime ABI source explicitly disclaims any decision value, and the common adapter notice confirms subject id/role are neutral aliases, not permission rules.",
+  "initial_requests": [],
+  "branch_probes": [],
+  "source_folder": "/mnt/d/lunwen/EC-CSI投稿/working/exploration/20261014_four_case_peer_baselines/effect_runs/FSV-S03/P2P_STYLE",
+  "format_recovery": false,
+  "original_interface_status": "OUT_OF_SCOPE",
+  "format_only_recovery": false,
+  "documentation_revision": false,
+  "original_batch_status": "OUT_OF_SCOPE",
+  "original_batch_requests": [],
+  "original_batch_pair_correct": false,
+  "final_developer_results": null,
+  "initial_pair_correct": null,
+  "pair_correct": null,
+  "branch_count": 0,
+  "branch_passed": 0
+}

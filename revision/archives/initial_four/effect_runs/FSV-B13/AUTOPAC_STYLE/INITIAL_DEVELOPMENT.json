@@ -1,0 +1,99 @@
+{
+  "checks": {
+    "compile_exit": 0,
+    "compile_error": "",
+    "policy_path": "/mnt/d/lunwen/EC-CSI投稿/working/exploration/20261014_four_case_peer_baselines/effect_runs/FSV-B13/AUTOPAC_STYLE/initial/external_pilot/policy.rego",
+    "lint_exit": null,
+    "lint_report": null,
+    "accepted": true
+  },
+  "tests": [
+    {
+      "id": "dev_limit",
+      "input": {
+        "request": {
+          "body": {
+            "qty": 54
+          }
+        },
+        "trusted": {
+          "derivedMaximumQty": 54,
+          "authorizedRole": false
+        }
+      },
+      "expected": "allow",
+      "source_ref": "VIS-FSV-B13-01"
+    },
+    {
+      "id": "dev_over",
+      "input": {
+        "request": {
+          "body": {
+            "qty": 55
+          }
+        },
+        "trusted": {
+          "derivedMaximumQty": 54,
+          "authorizedRole": false
+        }
+      },
+      "expected": "deny",
+      "source_ref": "VIS-FSV-B13-01"
+    },
+    {
+      "id": "dev_role_exception",
+      "input": {
+        "request": {
+          "body": {
+            "qty": 55
+          }
+        },
+        "trusted": {
+          "derivedMaximumQty": 54,
+          "authorizedRole": true
+        }
+      },
+      "expected": "allow",
+      "source_ref": "VIS-FSV-B13-01"
+    }
+  ],
+  "developer_results": {
+    "passed": true,
+    "rows": [
+      {
+        "id": "dev_limit",
+        "expected": "allow",
+        "actual": {
+          "status": "EXECUTED",
+          "decision": "allow",
+          "exit_code": 0
+        },
+        "pass": true
+      },
+      {
+        "id": "dev_over",
+        "expected": "deny",
+        "actual": {
+          "status": "EXECUTED",
+          "decision": "deny",
+          "exit_code": 0
+        },
+        "pass": true
+      },
+      {
+        "id": "dev_role_exception",
+        "expected": "allow",
+        "actual": {
+          "status": "EXECUTED",
+          "decision": "allow",
+          "exit_code": 0
+        },
+        "pass": true
+      }
+    ]
+  },
+  "judge": {
+    "verdict": "ACCEPT",
+    "issues": []
+  }
+}

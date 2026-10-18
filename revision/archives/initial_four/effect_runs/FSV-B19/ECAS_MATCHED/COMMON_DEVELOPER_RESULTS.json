@@ -1,0 +1,50 @@
+{
+  "passed": false,
+  "rows": [
+    {
+      "id": "dev_not_held",
+      "expected": "allow",
+      "actual": {
+        "policy_id": "FSV-B19-P01",
+        "decision": "deny",
+        "fail_closed": true,
+        "violations": [
+          {
+            "rule_id": "FSV-B19-R01",
+            "code": "bounded_guard_rejected",
+            "detail": "FSV-B19-R01"
+          }
+        ]
+      },
+      "pass": false
+    },
+    {
+      "id": "dev_invoices",
+      "expected": "deny",
+      "actual": {
+        "policy_id": "FSV-B19-P01",
+        "decision": "allow",
+        "fail_closed": true,
+        "violations": []
+      },
+      "pass": false
+    },
+    {
+      "id": "dev_payments",
+      "expected": "allow",
+      "actual": {
+        "policy_id": "FSV-B19-P01",
+        "decision": "deny",
+        "fail_closed": true,
+        "violations": [
+          {
+            "rule_id": "FSV-B19-R01",
+            "code": "bounded_guard_rejected",
+            "detail": "FSV-B19-R01"
+          }
+        ]
+      },
+      "pass": false
+    }
+  ]
+}

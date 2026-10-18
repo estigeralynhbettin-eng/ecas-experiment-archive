@@ -1,0 +1,9 @@
+{
+  "task": "FSV-B17",
+  "method": "P2P_STYLE",
+  "status": "ELIGIBLE",
+  "execution_eligible": true,
+  "first_freeze_sha256": "7e264169754db8f16189310fb5ad95a0df1a106a4881e6560e079cc6938e821f",
+  "frozen_at": "2026-10-15T00:54:17.888584+00:00",
+  "final_evaluation_not_yet_read": true
+}

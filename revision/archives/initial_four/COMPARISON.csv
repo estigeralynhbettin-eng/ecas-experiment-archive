@@ -1,0 +1,13 @@
+﻿task,method,status,initial_pair_correct,pair_correct,branch_passed,branch_count,repaired_once,reason
+FSV-S03,P2P_STYLE,OUT_OF_SCOPE,,,0,0,False,"The visible sources contain only an OpenAPI endpoint specification (VIS-FSV-S03-01) and a runtime ABI path declaration catalog (VIS-FSV-S03-RUNTIME-ABI). Neither source contains explicit access policy statements such as permission grants, denials, or role-based constraints. The runtime ABI source explicitly disclaims any decision value, and the common adapter notice confirms subject id/role are neutral aliases, not permission rules."
+FSV-S03,AUTOPAC_STYLE,EVALUATED,,True,3,4,True,
+FSV-S03,ECAS_MATCHED,EVALUATED,False,False,1,4,False,
+FSV-B13,P2P_STYLE,EVALUATED,True,True,8,8,True,
+FSV-B13,AUTOPAC_STYLE,EVALUATED,True,True,8,8,False,
+FSV-B13,ECAS_MATCHED,EVALUATED,True,True,8,8,False,
+FSV-B17,P2P_STYLE,EVALUATED,True,True,4,4,True,
+FSV-B17,AUTOPAC_STYLE,EVALUATED,True,True,4,4,False,
+FSV-B17,ECAS_MATCHED,EVALUATED,True,True,4,4,False,
+FSV-B19,P2P_STYLE,EVALUATED,True,True,5,8,True,
+FSV-B19,AUTOPAC_STYLE,EVALUATED,True,True,7,8,True,
+FSV-B19,ECAS_MATCHED,EVALUATED,True,True,8,8,False,

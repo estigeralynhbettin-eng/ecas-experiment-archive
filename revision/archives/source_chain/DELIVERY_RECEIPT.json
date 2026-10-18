@@ -1,0 +1,53 @@
+{
+  "status": "COMPLETED_SCOPED_REVIEWS_PASSED",
+  "date": "2026-10-15",
+  "new_external_model_calls": 0,
+  "new_cases": 0,
+  "related_source_states": 32,
+  "policy_observations": 288,
+  "experiment_run_id": "source-rule-chain-main-v1",
+  "experiment_state": "SUCCEEDED",
+  "result_sha256": "102b573248b04db8bcbae74cec79f5fb55175f4d362f9785ae8c86ca01e5089c",
+  "probe_review_status": "PASS_WITH_EXPLICIT_SCOPE_LIMITS",
+  "integrated_review_status": "PASS_WITH_EXPLICIT_SCOPE_LIMITS",
+  "outputs": [
+    {
+      "path": "D:\\lunwen\\EC-CSI投稿\\working\\exploration\\20261015_source_rule_chain\\SEVEN_CASE_CHAIN.json",
+      "sha256": "72d7dc2df90577251fcc2f854ccc2052b6bb199cbe87e746a7a3f9c9cfaa27cc"
+    },
+    {
+      "path": "D:\\lunwen\\EC-CSI投稿\\working\\exploration\\20261015_source_rule_chain\\SEVEN_CASE_CHAIN.csv",
+      "sha256": "5b94003145ce8a165a014a733d7cde0a6bff31b0bc6ce0b61fff625f4b48065d"
+    },
+    {
+      "path": "D:\\lunwen\\EC-CSI投稿\\working\\exploration\\20261015_source_rule_chain\\SEVEN_CASE_CHAIN_CN.md",
+      "sha256": "985b2948fd9197260c8873874c4604a7f87d2af578660b0acb91ec27815ee51b"
+    },
+    {
+      "path": "D:\\lunwen\\EC-CSI投稿\\working\\exploration\\20261015_source_rule_chain\\PROBE_SUMMARY.json",
+      "sha256": "8eb8b6f8cfa24a34848ce6c7f08550265f89e1d6464ee81b1083631b1813a5cd"
+    },
+    {
+      "path": "D:\\lunwen\\EC-CSI投稿\\working\\exploration\\20261015_source_rule_chain\\EXPERIMENT_SUMMARY_CN_R4.md",
+      "sha256": "684903bda2bc7d12a099361cdbcb8ec3fc704afc9309d2305c6863144ebffaf6"
+    },
+    {
+      "path": "D:\\lunwen\\EC-CSI投稿\\working\\exploration\\20261015_source_rule_chain\\RUNTIME_SEMANTIC_CONTRACT_PROPOSAL.json",
+      "sha256": "563c9b78b3b5ad7b25c12a9d70b83ea75f61d24cc66ae02b3628a04c56e083b3"
+    },
+    {
+      "path": "D:\\lunwen\\EC-CSI投稿\\working\\exploration\\20261015_source_rule_chain\\RUNTIME_SEMANTIC_CONTRACT_PROPOSAL_CN.md",
+      "sha256": "c9cc579fb97ebdfd5a7dbcea431977c999fb42fd596f9ed8fc3d4ceeacdefd47"
+    }
+  ],
+  "protected_files_unchanged": {
+    "D:\\lunwen\\EC-CSI投稿\\RESULT_TRACEABILITY.csv": "ed18461e2a4ac89600f52d50787f46aec37212b76915b944546db0eea857b6a6",
+    "D:\\lunwen\\EC-CSI投稿\\CLAIM_EVIDENCE_MATRIX.csv": "a9d7c689a60e27de8ed13ee9de3ca35222dc85f0c3549f2f3af9db0763f9b9e8",
+    "D:\\lunwen\\EC-CSI投稿\\working\\exploration\\20261015_semantic_comparison\\EXPERIMENT_SUMMARY_CN_R3.md": "e7f781c3573fe6a45c29728d75567f82276e62bd898fc58d99f96ef149d6f5e8",
+    "D:\\lunwen\\EC-CSI投稿\\working\\exploration\\20261015_seven_case_mechanism\\EXPERIMENT_SUMMARY_CN_R2.md": "a023ad051a9c5abb31f3d78d46a0e0065974789cc0dff95c6ce040a0894159c9"
+  },
+  "R1_scope": "Retained and no task write path; no applicable pre-task hash baseline asserted",
+  "traceability_status": "pass",
+  "closeout_status": "pass",
+  "caveat": "Source allow is only hold-check pass; raw is unsaved challenge; effective_manual is a shared manual adapter; contract proposal is not implemented in original engine; no production or new model benchmark."
+}

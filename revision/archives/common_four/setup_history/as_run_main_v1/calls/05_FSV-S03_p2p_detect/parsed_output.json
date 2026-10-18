@@ -1,0 +1,5 @@
+{
+  "status": "OUT_OF_SCOPE",
+  "statements": [],
+  "reason": "The target source contains only structural API type validation for the age field, not access control policy statements."
+}

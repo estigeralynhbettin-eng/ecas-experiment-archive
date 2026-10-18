@@ -1,0 +1,46 @@
+[
+  {
+    "index": 1,
+    "global_attempt_index": 31,
+    "scope_id": "ECAS-TYPED-IR-SEMANTIC-JUDGE-CONTROL-20261014-01",
+    "task": "FSV-B19",
+    "status": "COMPLETED",
+    "started_at": "2026-10-15T01:00:07.927315+00:00",
+    "prompt_path": "/mnt/d/lunwen/EC-CSI投稿/working/exploration/20261014_matched_evidence_labor/judge_control/prompts/FSV-B19.txt",
+    "prompt_sha256": "69e887e58dc0fadfff3ccb28afa6a23d9603f15b5fdd45c67a367d9018b022f1",
+    "estimated_prompt_tokens": 10222,
+    "main_ledger_sha256_at_dispatch": "afe1cd8a5dcb6de7029291b102330cf5187f15213bb373609591d1fdaf9fa5c7",
+    "main_attempts": 30,
+    "raw_response_path": "/mnt/d/lunwen/EC-CSI投稿/working/exploration/20261014_matched_evidence_labor/judge_control/calls/01_FSV-B19_typed_ir_judge/response.raw.json",
+    "max_input_tokens": 16384,
+    "max_tokens": 16384,
+    "thinking": "enabled",
+    "reasoning_effort": "high",
+    "retry_count": 0,
+    "main_plus_judge_cap": 44,
+    "wrapper_exit": 0,
+    "latency_seconds": 23.5,
+    "raw_response_sha256": "729016fcf147de0932e543c26e08156be9eb281d3bbe4ec2be330df54bda78de",
+    "raw_response_bytes": 9128,
+    "returned_model": "glm-5.2",
+    "finish_reason": "stop",
+    "usage": {
+      "completion_tokens": 1979,
+      "completion_tokens_details": {
+        "reasoning_tokens": 1415
+      },
+      "prompt_tokens": 7324,
+      "prompt_tokens_details": {
+        "cached_tokens": 0
+      },
+      "total_tokens": 9303
+    },
+    "capture_mode": "direct_before_parse",
+    "cost_status": "not_reported_by_provider",
+    "output_path": "/mnt/d/lunwen/EC-CSI投稿/working/exploration/20261014_matched_evidence_labor/judge_control/calls/01_FSV-B19_typed_ir_judge/parsed_output.json",
+    "output_sha256": "d8b57b63afe02871f59a434843a8654bbd65cf8991b374642b5bb93e62c96ef1",
+    "parse_status": "PASS",
+    "completeness_gate": "PASS",
+    "completed_at": "2026-10-15T01:00:31.513375+00:00"
+  }
+]

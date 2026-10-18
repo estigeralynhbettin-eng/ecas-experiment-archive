@@ -1,0 +1,28 @@
+[
+  {
+    "id": "dev_integer",
+    "input": {
+      "request": {
+        "body": {
+          "age": 42
+        }
+      },
+      "trusted": {}
+    },
+    "expected": "allow",
+    "source_ref": "VIS-FSV-S03-01"
+  },
+  {
+    "id": "dev_integer_string",
+    "input": {
+      "request": {
+        "body": {
+          "age": "42"
+        }
+      },
+      "trusted": {}
+    },
+    "expected": "deny",
+    "source_ref": "VIS-FSV-S03-01"
+  }
+]

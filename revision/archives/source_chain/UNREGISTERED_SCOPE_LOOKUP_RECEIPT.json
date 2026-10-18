@@ -1,0 +1,15 @@
+{
+  "schema_version": "1.0",
+  "tool": "audit_experiment_traceability",
+  "generated_at": "2026-10-15T04:16:17.585Z",
+  "data": {
+    "found": false,
+    "project": "D:\\lunwen\\EC-CSI投稿\\working\\exploration\\20261015_source_rule_chain",
+    "status": "block",
+    "p0": [
+      {
+        "code": "PROJECT_NOT_FOUND"
+      }
+    ]
+  }
+}

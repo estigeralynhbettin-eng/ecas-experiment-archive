@@ -1,0 +1,1 @@
+1 error occurred: /root/ecas_a9_artifact_verify_v2/extracted/archives/common_four/method_runs/FSV-S03/AUTOPAC_STYLE/repaired/external_pilot/policy.rego:8: rego_type_error: undefined function typeof

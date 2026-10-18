@@ -1,0 +1,71 @@
+{
+  "checks": {
+    "compile_exit": 0,
+    "compile_error": "",
+    "policy_path": "/mnt/d/lunwen/EC-CSI投稿/working/exploration/20261014_four_case_peer_baselines/effect_runs/FSV-B17/AUTOPAC_STYLE/initial/external_pilot/policy.rego",
+    "lint_exit": null,
+    "lint_report": null,
+    "accepted": true
+  },
+  "tests": [
+    {
+      "id": "dev_enabled",
+      "input": {
+        "request": {
+          "body": {
+            "customer": "DEV-CUSTOMER-842"
+          }
+        },
+        "trusted": {
+          "customerDisabled": false
+        }
+      },
+      "expected": "allow",
+      "source_ref": "VIS-FSV-B17-01"
+    },
+    {
+      "id": "dev_disabled",
+      "input": {
+        "request": {
+          "body": {
+            "customer": "DEV-CUSTOMER-843"
+          }
+        },
+        "trusted": {
+          "customerDisabled": true
+        }
+      },
+      "expected": "deny",
+      "source_ref": "VIS-FSV-B17-01"
+    }
+  ],
+  "developer_results": {
+    "passed": true,
+    "rows": [
+      {
+        "id": "dev_enabled",
+        "expected": "allow",
+        "actual": {
+          "status": "EXECUTED",
+          "decision": "allow",
+          "exit_code": 0
+        },
+        "pass": true
+      },
+      {
+        "id": "dev_disabled",
+        "expected": "deny",
+        "actual": {
+          "status": "EXECUTED",
+          "decision": "deny",
+          "exit_code": 0
+        },
+        "pass": true
+      }
+    ]
+  },
+  "judge": {
+    "verdict": "ACCEPT",
+    "issues": []
+  }
+}

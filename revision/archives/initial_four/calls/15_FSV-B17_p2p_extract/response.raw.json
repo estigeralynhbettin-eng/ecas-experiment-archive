@@ -1,0 +1,28 @@
+{
+  "choices": [
+    {
+      "finish_reason": "stop",
+      "index": 0,
+      "message": {
+        "content": "{\"begin\":\"BEGIN_FSV-B17_p2p_extract_MAIN\",\"stage\":\"p2p_extract\",\"output\":{\"status\":\"READY\",\"components\":[{\"decision\":\"Deny\",\"subject\":\"authenticated_api_caller\",\"action\":\"POST /api/resource/Sales Order\",\"resource\":\"ERPNext:16.0.0\",\"condition\":\"/trusted/customerDisabled == true\",\"purpose\":\"unspecified\",\"evidence_refs\":[\"VIS-FSV-B17-01\"]}],\"reason\":\"Source VIS-FSV-B17-01 explicitly states that sales orders and sales invoices can be disallowed against a customer when 'Disabled' is enabled. This maps to the /trusted/customerDisabled runtime path.\"},\"end\":\"END_FSV-B17_p2p_extract_MAIN\"}",
+        "role": "assistant"
+      }
+    }
+  ],
+  "created": 1791978737,
+  "id": "20261014195208a9460981d6064752",
+  "model": "glm-5.2",
+  "object": "chat.completion",
+  "request_id": "20261014195208a9460981d6064752",
+  "usage": {
+    "completion_tokens": 808,
+    "completion_tokens_details": {
+      "reasoning_tokens": 606
+    },
+    "prompt_tokens": 3212,
+    "prompt_tokens_details": {
+      "cached_tokens": 0
+    },
+    "total_tokens": 4020
+  }
+}

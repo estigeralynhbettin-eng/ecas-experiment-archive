@@ -1,0 +1,90 @@
+{
+  "status": "PASS",
+  "checks": [
+    {
+      "case": "FSV-S03",
+      "expected": [
+        "—",
+        "●",
+        "●",
+        "◐"
+      ],
+      "rendered": [
+        "—",
+        "●",
+        "●",
+        "◐"
+      ],
+      "pass": true
+    },
+    {
+      "case": "FSV-B13",
+      "expected": [
+        "●",
+        "●",
+        "●",
+        "●"
+      ],
+      "rendered": [
+        "●",
+        "●",
+        "●",
+        "●"
+      ],
+      "pass": true
+    },
+    {
+      "case": "FSV-B17",
+      "expected": [
+        "●",
+        "●",
+        "◐",
+        "●"
+      ],
+      "rendered": [
+        "●",
+        "●",
+        "◐",
+        "●"
+      ],
+      "pass": true
+    },
+    {
+      "case": "FSV-B19",
+      "expected": [
+        "●",
+        "●",
+        "○",
+        "●"
+      ],
+      "rendered": [
+        "●",
+        "●",
+        "○",
+        "●"
+      ],
+      "pass": true
+    },
+    {
+      "case": "FSV-S03",
+      "check": "v1_original_requests_match",
+      "pass": true
+    },
+    {
+      "case": "FSV-B13",
+      "check": "v1_original_requests_match",
+      "pass": true
+    },
+    {
+      "case": "FSV-B17",
+      "check": "v1_original_requests_match",
+      "pass": true
+    },
+    {
+      "case": "FSV-B19",
+      "check": "v1_original_requests_match",
+      "pass": true
+    }
+  ],
+  "note": "Circle cells computed from raw per-request decisions; source and engineering controls remain separate."
+}

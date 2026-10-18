@@ -1,0 +1,733 @@
+{
+  "task": "FSV-B13",
+  "method": "P2P_STYLE",
+  "status": "EVALUATED",
+  "requests": [
+    {
+      "channel": "O-L",
+      "input": {
+        "request": {
+          "body": {
+            "qty": 110
+          }
+        },
+        "trusted": {
+          "allowancePercent": 10,
+          "authorizedRole": false,
+          "derivedMaximumQty": 110,
+          "orderedQty": 100
+        }
+      },
+      "expected": "allow",
+      "actual": {
+        "status": "EXECUTED",
+        "decision": "allow",
+        "exit_code": 0
+      }
+    },
+    {
+      "channel": "O-I",
+      "input": {
+        "request": {
+          "body": {
+            "qty": 111
+          }
+        },
+        "trusted": {
+          "allowancePercent": 10,
+          "authorizedRole": false,
+          "derivedMaximumQty": 110,
+          "orderedQty": 100
+        }
+      },
+      "expected": "deny",
+      "actual": {
+        "status": "EXECUTED",
+        "decision": "deny",
+        "exit_code": 0
+      }
+    }
+  ],
+  "calls": [
+    9,
+    10,
+    31,
+    32,
+    33
+  ],
+  "repaired_once": true,
+  "reason": null,
+  "initial_requests": [
+    {
+      "id": "O-L",
+      "input": {
+        "request": {
+          "body": {
+            "qty": 110
+          }
+        },
+        "trusted": {
+          "allowancePercent": 10,
+          "authorizedRole": false,
+          "derivedMaximumQty": 110,
+          "orderedQty": 100
+        }
+      },
+      "expected": "allow",
+      "basis": "archived_original",
+      "actual": {
+        "status": "EXECUTED",
+        "decision": "allow",
+        "exit_code": 0
+      },
+      "pass": true
+    },
+    {
+      "id": "O-I",
+      "input": {
+        "request": {
+          "body": {
+            "qty": 111
+          }
+        },
+        "trusted": {
+          "allowancePercent": 10,
+          "authorizedRole": false,
+          "derivedMaximumQty": 110,
+          "orderedQty": 100
+        }
+      },
+      "expected": "deny",
+      "basis": "archived_original",
+      "actual": {
+        "status": "EXECUTED",
+        "decision": "deny",
+        "exit_code": 0
+      },
+      "pass": true
+    }
+  ],
+  "branch_probes": [
+    {
+      "id": "below-limit",
+      "input": {
+        "request": {
+          "body": {
+            "qty": 109
+          }
+        },
+        "trusted": {
+          "orderedQty": 100,
+          "allowancePercent": 10,
+          "derivedMaximumQty": 110,
+          "authorizedRole": false
+        }
+      },
+      "expected": "allow",
+      "basis": "documented_rule",
+      "actual": {
+        "status": "EXECUTED",
+        "decision": "allow",
+        "exit_code": 0
+      },
+      "pass": true
+    },
+    {
+      "id": "at-limit",
+      "input": {
+        "request": {
+          "body": {
+            "qty": 110
+          }
+        },
+        "trusted": {
+          "orderedQty": 100,
+          "allowancePercent": 10,
+          "derivedMaximumQty": 110,
+          "authorizedRole": false
+        }
+      },
+      "expected": "allow",
+      "basis": "documented_rule",
+      "actual": {
+        "status": "EXECUTED",
+        "decision": "allow",
+        "exit_code": 0
+      },
+      "pass": true
+    },
+    {
+      "id": "above-limit",
+      "input": {
+        "request": {
+          "body": {
+            "qty": 111
+          }
+        },
+        "trusted": {
+          "orderedQty": 100,
+          "allowancePercent": 10,
+          "derivedMaximumQty": 110,
+          "authorizedRole": false
+        }
+      },
+      "expected": "deny",
+      "basis": "documented_rule",
+      "actual": {
+        "status": "EXECUTED",
+        "decision": "deny",
+        "exit_code": 0
+      },
+      "pass": true
+    },
+    {
+      "id": "authorized-exception",
+      "input": {
+        "request": {
+          "body": {
+            "qty": 111
+          }
+        },
+        "trusted": {
+          "orderedQty": 100,
+          "allowancePercent": 10,
+          "derivedMaximumQty": 110,
+          "authorizedRole": true
+        }
+      },
+      "expected": "allow",
+      "basis": "documented_rule",
+      "actual": {
+        "status": "EXECUTED",
+        "decision": "allow",
+        "exit_code": 0
+      },
+      "pass": true
+    },
+    {
+      "id": "authorized-large-exception",
+      "input": {
+        "request": {
+          "body": {
+            "qty": 1000
+          }
+        },
+        "trusted": {
+          "orderedQty": 100,
+          "allowancePercent": 10,
+          "derivedMaximumQty": 110,
+          "authorizedRole": true
+        }
+      },
+      "expected": "allow",
+      "basis": "focused_rule_only",
+      "actual": {
+        "status": "EXECUTED",
+        "decision": "allow",
+        "exit_code": 0
+      },
+      "pass": true
+    },
+    {
+      "id": "body-role-spoof",
+      "input": {
+        "request": {
+          "body": {
+            "qty": 111,
+            "authorizedRole": true
+          }
+        },
+        "trusted": {
+          "orderedQty": 100,
+          "allowancePercent": 10,
+          "derivedMaximumQty": 110,
+          "authorizedRole": false
+        }
+      },
+      "expected": "deny",
+      "basis": "engineering_trust_control",
+      "actual": {
+        "status": "EXECUTED",
+        "decision": "deny",
+        "exit_code": 0
+      },
+      "pass": true
+    },
+    {
+      "id": "body-limit-spoof",
+      "input": {
+        "request": {
+          "body": {
+            "qty": 111,
+            "derivedMaximumQty": 1000
+          }
+        },
+        "trusted": {
+          "orderedQty": 100,
+          "allowancePercent": 10,
+          "derivedMaximumQty": 110,
+          "authorizedRole": false
+        }
+      },
+      "expected": "deny",
+      "basis": "engineering_trust_control",
+      "actual": {
+        "status": "EXECUTED",
+        "decision": "deny",
+        "exit_code": 0
+      },
+      "pass": true
+    },
+    {
+      "id": "missing-trusted",
+      "input": {
+        "request": {
+          "body": {
+            "qty": 111
+          }
+        },
+        "trusted": {}
+      },
+      "expected": "deny",
+      "basis": "engineering_fail_closed_control",
+      "actual": {
+        "status": "EXECUTED",
+        "decision": "deny",
+        "exit_code": 0
+      },
+      "pass": true
+    }
+  ],
+  "source_folder": "/mnt/d/lunwen/EC-CSI投稿/working/exploration/20261014_four_case_peer_baselines/format_recovery/FSV-B13/P2P_STYLE",
+  "format_recovery": true,
+  "original_interface_status": "SCHEMA_GROUNDING_REJECTED",
+  "format_only_recovery": false,
+  "documentation_revision": false,
+  "original_batch_status": "SCHEMA_GROUNDING_REJECTED",
+  "original_batch_requests": [],
+  "original_batch_pair_correct": false,
+  "initial_developer_checks": {
+    "compile_exit": 0,
+    "compile_error": "",
+    "policy_path": "/mnt/d/lunwen/EC-CSI投稿/working/exploration/20261014_four_case_peer_baselines/format_recovery/FSV-B13/P2P_STYLE/initial/external_pilot/policy.rego",
+    "lint_exit": 3,
+    "lint_report": {
+      "violations": [
+        {
+          "title": "opa-fmt",
+          "description": "File should be formatted with `opa fmt`",
+          "category": "style",
+          "level": "error",
+          "related_resources": [
+            {
+              "description": "documentation",
+              "ref": "https://www.openpolicyagent.org/projects/regal/rules/style/opa-fmt"
+            }
+          ],
+          "location": {
+            "text": "package external_pilot",
+            "file": "/mnt/d/lunwen/EC-CSI投稿/working/exploration/20261014_four_case_peer_baselines/format_recovery/FSV-B13/P2P_STYLE/initial/external_pilot/policy.rego",
+            "col": 1,
+            "row": 1
+          }
+        }
+      ],
+      "notices": [
+        {
+          "title": "deprecated-builtin",
+          "description": "Since OPA 1.0, deprecated-builtin enabled only when provided a v0 policy,\nBUT please note that this may change in the future if new built-in functions\nare deprecated.\n",
+          "category": "bugs",
+          "level": "notice",
+          "severity": "none"
+        },
+        {
+          "title": "import-shadows-import",
+          "description": "Since OPA 1.0, import-shadows-import enabled only when provided a v0 policy,",
+          "category": "imports",
+          "level": "notice",
+          "severity": "none"
+        },
+        {
+          "title": "rule-named-if",
+          "description": "Since OPA 1.0, rule-named-if enabled only when provided a v0 policy",
+          "category": "bugs",
+          "level": "notice",
+          "severity": "none"
+        },
+        {
+          "title": "use-contains",
+          "description": "Since OPA 1.0, use-contains enabled only when provided a v0 policy",
+          "category": "idiomatic",
+          "level": "notice",
+          "severity": "none"
+        },
+        {
+          "title": "use-if",
+          "description": "Since OPA 1.0, use-if enabled only when provided a v0 policy",
+          "category": "idiomatic",
+          "level": "notice",
+          "severity": "none"
+        },
+        {
+          "title": "use-rego-v1",
+          "description": "Since OPA 1.0, use-rego-v1 enabled only when provided a v0 policy",
+          "category": "imports",
+          "level": "notice",
+          "severity": "none"
+        }
+      ],
+      "summary": {
+        "files_scanned": 1,
+        "files_failed": 1,
+        "rules_skipped": 0,
+        "num_violations": 1
+      }
+    },
+    "accepted": false
+  },
+  "initial_developer_results": {
+    "passed": false,
+    "rows": []
+  },
+  "judge": null,
+  "final_developer_results": {
+    "passed": true,
+    "rows": [
+      {
+        "id": "T1_qty_within_limit_no_role",
+        "expected": "allow",
+        "actual": {
+          "status": "EXECUTED",
+          "decision": "allow",
+          "exit_code": 0
+        },
+        "pass": true
+      },
+      {
+        "id": "T2_qty_within_limit_with_role",
+        "expected": "allow",
+        "actual": {
+          "status": "EXECUTED",
+          "decision": "allow",
+          "exit_code": 0
+        },
+        "pass": true
+      },
+      {
+        "id": "T3_qty_at_boundary_no_role",
+        "expected": "allow",
+        "actual": {
+          "status": "EXECUTED",
+          "decision": "allow",
+          "exit_code": 0
+        },
+        "pass": true
+      },
+      {
+        "id": "T4_qty_at_boundary_with_role",
+        "expected": "allow",
+        "actual": {
+          "status": "EXECUTED",
+          "decision": "allow",
+          "exit_code": 0
+        },
+        "pass": true
+      },
+      {
+        "id": "T5_qty_over_limit_with_role",
+        "expected": "allow",
+        "actual": {
+          "status": "EXECUTED",
+          "decision": "allow",
+          "exit_code": 0
+        },
+        "pass": true
+      },
+      {
+        "id": "T6_qty_over_limit_no_role",
+        "expected": "deny",
+        "actual": {
+          "status": "EXECUTED",
+          "decision": "deny",
+          "exit_code": 0
+        },
+        "pass": true
+      },
+      {
+        "id": "T7_qty_slightly_over_limit_no_role",
+        "expected": "deny",
+        "actual": {
+          "status": "EXECUTED",
+          "decision": "deny",
+          "exit_code": 0
+        },
+        "pass": true
+      },
+      {
+        "id": "T8_qty_slightly_over_limit_with_role",
+        "expected": "allow",
+        "actual": {
+          "status": "EXECUTED",
+          "decision": "allow",
+          "exit_code": 0
+        },
+        "pass": true
+      },
+      {
+        "id": "T9_qty_zero_within_limit_no_role",
+        "expected": "allow",
+        "actual": {
+          "status": "EXECUTED",
+          "decision": "allow",
+          "exit_code": 0
+        },
+        "pass": true
+      },
+      {
+        "id": "T10_qty_far_over_limit_with_role",
+        "expected": "allow",
+        "actual": {
+          "status": "EXECUTED",
+          "decision": "allow",
+          "exit_code": 0
+        },
+        "pass": true
+      },
+      {
+        "id": "T11_qty_far_over_limit_no_role",
+        "expected": "deny",
+        "actual": {
+          "status": "EXECUTED",
+          "decision": "deny",
+          "exit_code": 0
+        },
+        "pass": true
+      },
+      {
+        "id": "dev_limit",
+        "expected": "allow",
+        "actual": {
+          "status": "EXECUTED",
+          "decision": "allow",
+          "exit_code": 0
+        },
+        "pass": true
+      },
+      {
+        "id": "dev_over",
+        "expected": "deny",
+        "actual": {
+          "status": "EXECUTED",
+          "decision": "deny",
+          "exit_code": 0
+        },
+        "pass": true
+      },
+      {
+        "id": "dev_role_exception",
+        "expected": "allow",
+        "actual": {
+          "status": "EXECUTED",
+          "decision": "allow",
+          "exit_code": 0
+        },
+        "pass": true
+      }
+    ]
+  },
+  "initial_branch_probes": [
+    {
+      "id": "below-limit",
+      "input": {
+        "request": {
+          "body": {
+            "qty": 109
+          }
+        },
+        "trusted": {
+          "orderedQty": 100,
+          "allowancePercent": 10,
+          "derivedMaximumQty": 110,
+          "authorizedRole": false
+        }
+      },
+      "expected": "allow",
+      "basis": "documented_rule",
+      "actual": {
+        "status": "EXECUTED",
+        "decision": "allow",
+        "exit_code": 0
+      },
+      "pass": true
+    },
+    {
+      "id": "at-limit",
+      "input": {
+        "request": {
+          "body": {
+            "qty": 110
+          }
+        },
+        "trusted": {
+          "orderedQty": 100,
+          "allowancePercent": 10,
+          "derivedMaximumQty": 110,
+          "authorizedRole": false
+        }
+      },
+      "expected": "allow",
+      "basis": "documented_rule",
+      "actual": {
+        "status": "EXECUTED",
+        "decision": "allow",
+        "exit_code": 0
+      },
+      "pass": true
+    },
+    {
+      "id": "above-limit",
+      "input": {
+        "request": {
+          "body": {
+            "qty": 111
+          }
+        },
+        "trusted": {
+          "orderedQty": 100,
+          "allowancePercent": 10,
+          "derivedMaximumQty": 110,
+          "authorizedRole": false
+        }
+      },
+      "expected": "deny",
+      "basis": "documented_rule",
+      "actual": {
+        "status": "EXECUTED",
+        "decision": "deny",
+        "exit_code": 0
+      },
+      "pass": true
+    },
+    {
+      "id": "authorized-exception",
+      "input": {
+        "request": {
+          "body": {
+            "qty": 111
+          }
+        },
+        "trusted": {
+          "orderedQty": 100,
+          "allowancePercent": 10,
+          "derivedMaximumQty": 110,
+          "authorizedRole": true
+        }
+      },
+      "expected": "allow",
+      "basis": "documented_rule",
+      "actual": {
+        "status": "EXECUTED",
+        "decision": "allow",
+        "exit_code": 0
+      },
+      "pass": true
+    },
+    {
+      "id": "authorized-large-exception",
+      "input": {
+        "request": {
+          "body": {
+            "qty": 1000
+          }
+        },
+        "trusted": {
+          "orderedQty": 100,
+          "allowancePercent": 10,
+          "derivedMaximumQty": 110,
+          "authorizedRole": true
+        }
+      },
+      "expected": "allow",
+      "basis": "focused_rule_only",
+      "actual": {
+        "status": "EXECUTED",
+        "decision": "allow",
+        "exit_code": 0
+      },
+      "pass": true
+    },
+    {
+      "id": "body-role-spoof",
+      "input": {
+        "request": {
+          "body": {
+            "qty": 111,
+            "authorizedRole": true
+          }
+        },
+        "trusted": {
+          "orderedQty": 100,
+          "allowancePercent": 10,
+          "derivedMaximumQty": 110,
+          "authorizedRole": false
+        }
+      },
+      "expected": "deny",
+      "basis": "engineering_trust_control",
+      "actual": {
+        "status": "EXECUTED",
+        "decision": "deny",
+        "exit_code": 0
+      },
+      "pass": true
+    },
+    {
+      "id": "body-limit-spoof",
+      "input": {
+        "request": {
+          "body": {
+            "qty": 111,
+            "derivedMaximumQty": 1000
+          }
+        },
+        "trusted": {
+          "orderedQty": 100,
+          "allowancePercent": 10,
+          "derivedMaximumQty": 110,
+          "authorizedRole": false
+        }
+      },
+      "expected": "deny",
+      "basis": "engineering_trust_control",
+      "actual": {
+        "status": "EXECUTED",
+        "decision": "deny",
+        "exit_code": 0
+      },
+      "pass": true
+    },
+    {
+      "id": "missing-trusted",
+      "input": {
+        "request": {
+          "body": {
+            "qty": 111
+          }
+        },
+        "trusted": {}
+      },
+      "expected": "deny",
+      "basis": "engineering_fail_closed_control",
+      "actual": {
+        "status": "EXECUTED",
+        "decision": "deny",
+        "exit_code": 0
+      },
+      "pass": true
+    }
+  ],
+  "initial_pair_correct": true,
+  "pair_correct": true,
+  "branch_count": 8,
+  "branch_passed": 8
+}

@@ -1,0 +1,354 @@
+{
+  "task": "FSV-S03",
+  "method": "ECAS_MATCHED",
+  "status": "EVALUATED",
+  "requests": [
+    {
+      "channel": "O-L",
+      "input": {
+        "request": {
+          "body": {
+            "age": 30,
+            "firstName": "Synthetic",
+            "isDependent": false,
+            "relationshipId": 1
+          }
+        },
+        "trusted": {}
+      },
+      "expected": "allow",
+      "actual": {
+        "policy_id": "FSV-S03-P01",
+        "decision": "allow",
+        "fail_closed": true,
+        "violations": []
+      }
+    },
+    {
+      "channel": "O-I",
+      "input": {
+        "request": {
+          "body": {
+            "age": "30",
+            "firstName": "Synthetic",
+            "isDependent": false,
+            "relationshipId": 1
+          }
+        },
+        "trusted": {}
+      },
+      "expected": "deny",
+      "actual": {
+        "policy_id": "FSV-S03-P01",
+        "decision": "allow",
+        "fail_closed": true,
+        "violations": []
+      }
+    }
+  ],
+  "calls": [
+    35
+  ],
+  "repaired_once": false,
+  "reason": null,
+  "initial_requests": [
+    {
+      "id": "O-L",
+      "input": {
+        "request": {
+          "body": {
+            "age": 30,
+            "firstName": "Synthetic",
+            "isDependent": false,
+            "relationshipId": 1
+          }
+        },
+        "trusted": {}
+      },
+      "expected": "allow",
+      "basis": "archived_original",
+      "actual": {
+        "policy_id": "FSV-S03-P01",
+        "decision": "allow",
+        "fail_closed": true,
+        "violations": []
+      },
+      "pass": true
+    },
+    {
+      "id": "O-I",
+      "input": {
+        "request": {
+          "body": {
+            "age": "30",
+            "firstName": "Synthetic",
+            "isDependent": false,
+            "relationshipId": 1
+          }
+        },
+        "trusted": {}
+      },
+      "expected": "deny",
+      "basis": "archived_original",
+      "actual": {
+        "policy_id": "FSV-S03-P01",
+        "decision": "allow",
+        "fail_closed": true,
+        "violations": []
+      },
+      "pass": false
+    }
+  ],
+  "branch_probes": [
+    {
+      "id": "age-integer",
+      "input": {
+        "request": {
+          "body": {
+            "age": 31
+          }
+        },
+        "trusted": {}
+      },
+      "expected": "allow",
+      "basis": "documented_type",
+      "actual": {
+        "policy_id": "FSV-S03-P01",
+        "decision": "allow",
+        "fail_closed": true,
+        "violations": []
+      },
+      "pass": true
+    },
+    {
+      "id": "age-string",
+      "input": {
+        "request": {
+          "body": {
+            "age": "31"
+          }
+        },
+        "trusted": {}
+      },
+      "expected": "deny",
+      "basis": "documented_type",
+      "actual": {
+        "policy_id": "FSV-S03-P01",
+        "decision": "allow",
+        "fail_closed": true,
+        "violations": []
+      },
+      "pass": false
+    },
+    {
+      "id": "age-boolean",
+      "input": {
+        "request": {
+          "body": {
+            "age": true
+          }
+        },
+        "trusted": {}
+      },
+      "expected": "deny",
+      "basis": "documented_type",
+      "actual": {
+        "policy_id": "FSV-S03-P01",
+        "decision": "allow",
+        "fail_closed": true,
+        "violations": []
+      },
+      "pass": false
+    },
+    {
+      "id": "age-fraction",
+      "input": {
+        "request": {
+          "body": {
+            "age": 31.5
+          }
+        },
+        "trusted": {}
+      },
+      "expected": "deny",
+      "basis": "documented_type",
+      "actual": {
+        "policy_id": "FSV-S03-P01",
+        "decision": "allow",
+        "fail_closed": true,
+        "violations": []
+      },
+      "pass": false
+    }
+  ],
+  "source_folder": "/mnt/d/lunwen/EC-CSI投稿/working/exploration/20261014_four_case_peer_baselines/documented_ecas/FSV-S03/ECAS_MATCHED",
+  "format_recovery": false,
+  "original_interface_status": "EVALUATED",
+  "format_only_recovery": false,
+  "documentation_revision": true,
+  "original_batch_status": "EVALUATED",
+  "original_batch_requests": [
+    {
+      "channel": "O-L",
+      "input": {
+        "request": {
+          "body": {
+            "age": 30,
+            "firstName": "Synthetic",
+            "isDependent": false,
+            "relationshipId": 1
+          }
+        },
+        "trusted": {}
+      },
+      "expected": "allow",
+      "actual": {
+        "policy_id": "FSV-S03-POL-01",
+        "decision": "allow",
+        "fail_closed": true,
+        "violations": []
+      }
+    },
+    {
+      "channel": "O-I",
+      "input": {
+        "request": {
+          "body": {
+            "age": "30",
+            "firstName": "Synthetic",
+            "isDependent": false,
+            "relationshipId": 1
+          }
+        },
+        "trusted": {}
+      },
+      "expected": "deny",
+      "actual": {
+        "policy_id": "FSV-S03-POL-01",
+        "decision": "deny",
+        "fail_closed": true,
+        "violations": [
+          {
+            "rule_id": "FSV-S03-R01",
+            "code": "type_mismatch",
+            "detail": "/request/body/age"
+          }
+        ]
+      }
+    }
+  ],
+  "original_batch_pair_correct": true,
+  "common_developer_results": {
+    "passed": false,
+    "rows": [
+      {
+        "id": "dev_integer",
+        "expected": "allow",
+        "actual": {
+          "policy_id": "FSV-S03-P01",
+          "decision": "allow",
+          "fail_closed": true,
+          "violations": []
+        },
+        "pass": true
+      },
+      {
+        "id": "dev_integer_string",
+        "expected": "deny",
+        "actual": {
+          "policy_id": "FSV-S03-P01",
+          "decision": "allow",
+          "fail_closed": true,
+          "violations": []
+        },
+        "pass": false
+      }
+    ]
+  },
+  "initial_branch_probes": [
+    {
+      "id": "age-integer",
+      "input": {
+        "request": {
+          "body": {
+            "age": 31
+          }
+        },
+        "trusted": {}
+      },
+      "expected": "allow",
+      "basis": "documented_type",
+      "actual": {
+        "policy_id": "FSV-S03-P01",
+        "decision": "allow",
+        "fail_closed": true,
+        "violations": []
+      },
+      "pass": true
+    },
+    {
+      "id": "age-string",
+      "input": {
+        "request": {
+          "body": {
+            "age": "31"
+          }
+        },
+        "trusted": {}
+      },
+      "expected": "deny",
+      "basis": "documented_type",
+      "actual": {
+        "policy_id": "FSV-S03-P01",
+        "decision": "allow",
+        "fail_closed": true,
+        "violations": []
+      },
+      "pass": false
+    },
+    {
+      "id": "age-boolean",
+      "input": {
+        "request": {
+          "body": {
+            "age": true
+          }
+        },
+        "trusted": {}
+      },
+      "expected": "deny",
+      "basis": "documented_type",
+      "actual": {
+        "policy_id": "FSV-S03-P01",
+        "decision": "allow",
+        "fail_closed": true,
+        "violations": []
+      },
+      "pass": false
+    },
+    {
+      "id": "age-fraction",
+      "input": {
+        "request": {
+          "body": {
+            "age": 31.5
+          }
+        },
+        "trusted": {}
+      },
+      "expected": "deny",
+      "basis": "documented_type",
+      "actual": {
+        "policy_id": "FSV-S03-P01",
+        "decision": "allow",
+        "fail_closed": true,
+        "violations": []
+      },
+      "pass": false
+    }
+  ],
+  "initial_pair_correct": false,
+  "pair_correct": false,
+  "branch_count": 4,
+  "branch_passed": 1
+}

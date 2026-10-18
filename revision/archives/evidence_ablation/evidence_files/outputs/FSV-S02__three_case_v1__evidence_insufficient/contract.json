@@ -1,0 +1,62 @@
+{
+  "catalog_id": "EC-SECURITY-PRIMITIVE-CATALOG-V2",
+  "contract_id": "ECV2-CONTRACT-FSV-S02",
+  "contract_version": "EC-EVIDENCE-CONTRACT-V3",
+  "evidence": [
+    {
+      "binding_facts": {
+        "visible_request_schema_or_parameter_list": true
+      },
+      "bound_paths": [
+        "/request/body"
+      ],
+      "evidence_id": "VIS-FSV-S02-01",
+      "locator": "paths./v1/clients/{clientId}/identifiers.post",
+      "operations": [
+        "POST /v1/clients/{clientId}/identifiers"
+      ],
+      "relation": "insufficient",
+      "sha256": "A44D6FA247D495A4FB147CC8C5EA1A364D8F05A40762B31A055681373E455A48",
+      "source_kind": "api_documentation",
+      "supports_primitives": [
+        "SP-OBJECT-PROPERTY-ALLOWLIST"
+      ],
+      "system": "Fineract",
+      "versions": [
+        "1.14.0"
+      ],
+      "visibility": "visible"
+    },
+    {
+      "binding_facts": {
+        "trusted_runtime_context_mapping": true,
+        "visible_field_mapping": true,
+        "visible_runtime_interface": true
+      },
+      "bound_paths": [
+        "/request/body"
+      ],
+      "evidence_id": "VIS-FSV-S02-RUNTIME-ABI",
+      "locator": "tasks.FSV-S02",
+      "operations": [
+        "POST /v1/clients/{clientId}/identifiers"
+      ],
+      "relation": "insufficient",
+      "sha256": "8221DA8A6720B0593A8D337F18569C9947AAB05B02E5C84FB0C50E3DE8C1ABD7",
+      "source_kind": "runtime_context_contract",
+      "supports_primitives": [
+        "SP-OBJECT-PROPERTY-ALLOWLIST"
+      ],
+      "system": "Fineract",
+      "versions": [
+        "1.14.0"
+      ],
+      "visibility": "visible"
+    }
+  ],
+  "target": {
+    "operation": "POST /v1/clients/{clientId}/identifiers",
+    "system": "Fineract",
+    "version": "1.14.0"
+  }
+}

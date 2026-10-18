@@ -1,0 +1,361 @@
+{
+  "classification": "INDEPENDENT_LOCAL_FORMAT_METADATA_FAILURE_AUDIT",
+  "auditor": "root/resume_audit",
+  "audited_at": "2026-10-15T00:50:38.719199+00:00",
+  "status": "PASS",
+  "checks_passed": 25,
+  "checks_total": 25,
+  "blockers": [],
+  "finding": "No observed semantic change. Only two comment Location.file metadata paths differ. Existing strip_location removes lowercase location, not capitalized Location.",
+  "narrow_repair": "Drop only both OPA AST location metadata keys location and Location recursively. Preserve all rules, imports, comment text and other fields. Add comment-containing positive regression and changed-operator/path/default negative regression. Freeze repaired code and pass T0 before explicit exact-cache resume.",
+  "original_sha256": "e959aafb99a485fcff7e558c089df21f1ae37a49f921aa2d518c5b16c82d728b",
+  "formatted_sha256": "5379121851d6cb35c212c6edd3bea9e84fd61ec5906c325b7802c6d3bdd7e8dc",
+  "pilot_lib_sha256_at_audit": "b321d23eea3c2cd4bf03bab67f9401ccedcd1fb14abfb240056e071023f76bda",
+  "actual_paid_attempts_observed": 15,
+  "new_API_calls": 0,
+  "final_labels_read": false,
+  "changed_originals": false,
+  "checks": [
+    {
+      "check": "original_exact_candidate_rego",
+      "pass": true,
+      "detail": null
+    },
+    {
+      "check": "original_exact_raw_model_rego",
+      "pass": true,
+      "detail": null
+    },
+    {
+      "check": "raw_and_output_hashes_preserved",
+      "pass": true,
+      "detail": null
+    },
+    {
+      "check": "old_lowercase_location_comparison_fails",
+      "pass": true,
+      "detail": null
+    },
+    {
+      "check": "only_two_comment_Location_file_differences",
+      "pass": true,
+      "detail": [
+        {
+          "path": "/comments/0/Location/file",
+          "before": "/mnt/d/lunwen/EC-CSI投稿/working/exploration/20261014_matched_evidence_labor/matched_generation/method_runs/FSV-B13/AUTOPAC_STYLE/initial/original.rego",
+          "after": "/mnt/d/lunwen/EC-CSI投稿/working/exploration/20261014_matched_evidence_labor/matched_generation/method_runs/FSV-B13/AUTOPAC_STYLE/initial/external_pilot/policy.rego"
+        },
+        {
+          "path": "/comments/1/Location/file",
+          "before": "/mnt/d/lunwen/EC-CSI投稿/working/exploration/20261014_matched_evidence_labor/matched_generation/method_runs/FSV-B13/AUTOPAC_STYLE/initial/original.rego",
+          "after": "/mnt/d/lunwen/EC-CSI投稿/working/exploration/20261014_matched_evidence_labor/matched_generation/method_runs/FSV-B13/AUTOPAC_STYLE/initial/external_pilot/policy.rego"
+        }
+      ]
+    },
+    {
+      "check": "both_location_case_normalization_preserves_equal_ast",
+      "pass": true,
+      "detail": null
+    },
+    {
+      "check": "rules_ast_already_equal",
+      "pass": true,
+      "detail": null
+    },
+    {
+      "check": "comment_texts_preserved",
+      "pass": true,
+      "detail": null
+    },
+    {
+      "check": "actual_parse_original",
+      "pass": true,
+      "detail": null
+    },
+    {
+      "check": "parse_without_comments_original",
+      "pass": true,
+      "detail": null
+    },
+    {
+      "check": "strict_compile_original",
+      "pass": true,
+      "detail": {
+        "exit_code": 0,
+        "stderr": ""
+      }
+    },
+    {
+      "check": "actual_parse_formatted",
+      "pass": true,
+      "detail": null
+    },
+    {
+      "check": "parse_without_comments_formatted",
+      "pass": true,
+      "detail": null
+    },
+    {
+      "check": "strict_compile_formatted",
+      "pass": true,
+      "detail": {
+        "exit_code": 0,
+        "stderr": ""
+      }
+    },
+    {
+      "check": "negative_change_detected_operator",
+      "pass": true,
+      "detail": null
+    },
+    {
+      "check": "negative_change_detected_trusted_path",
+      "pass": true,
+      "detail": null
+    },
+    {
+      "check": "negative_change_detected_decision_default",
+      "pass": true,
+      "detail": null
+    },
+    {
+      "check": "negative_change_detected_comment_text",
+      "pass": true,
+      "detail": null
+    },
+    {
+      "check": "synthetic_developer_only_semantics_0",
+      "pass": true,
+      "detail": null
+    },
+    {
+      "check": "synthetic_developer_only_semantics_1",
+      "pass": true,
+      "detail": null
+    },
+    {
+      "check": "synthetic_developer_only_semantics_2",
+      "pass": true,
+      "detail": null
+    },
+    {
+      "check": "synthetic_developer_only_semantics_3",
+      "pass": true,
+      "detail": null
+    },
+    {
+      "check": "synthetic_developer_only_semantics_4",
+      "pass": true,
+      "detail": null
+    },
+    {
+      "check": "synthetic_developer_only_semantics_5",
+      "pass": true,
+      "detail": null
+    },
+    {
+      "check": "not_final_evaluated",
+      "pass": true,
+      "detail": null
+    }
+  ],
+  "synthetic_developer_only_replay": [
+    {
+      "input": {
+        "request": {
+          "body": {
+            "qty": 0
+          }
+        },
+        "trusted": {
+          "derivedMaximumQty": 0,
+          "authorizedRole": false
+        }
+      },
+      "before_after_equal": true,
+      "observed": {
+        "exit_code": 0,
+        "result": {
+          "result": [
+            {
+              "expressions": [
+                {
+                  "value": true,
+                  "text": "data.external_pilot.allow",
+                  "location": {
+                    "row": 1,
+                    "col": 1
+                  }
+                }
+              ]
+            }
+          ]
+        }
+      }
+    },
+    {
+      "input": {
+        "request": {
+          "body": {
+            "qty": 3
+          }
+        },
+        "trusted": {
+          "derivedMaximumQty": 3,
+          "authorizedRole": false
+        }
+      },
+      "before_after_equal": true,
+      "observed": {
+        "exit_code": 0,
+        "result": {
+          "result": [
+            {
+              "expressions": [
+                {
+                  "value": true,
+                  "text": "data.external_pilot.allow",
+                  "location": {
+                    "row": 1,
+                    "col": 1
+                  }
+                }
+              ]
+            }
+          ]
+        }
+      }
+    },
+    {
+      "input": {
+        "request": {
+          "body": {
+            "qty": 4
+          }
+        },
+        "trusted": {
+          "derivedMaximumQty": 3,
+          "authorizedRole": false
+        }
+      },
+      "before_after_equal": true,
+      "observed": {
+        "exit_code": 0,
+        "result": {
+          "result": [
+            {
+              "expressions": [
+                {
+                  "value": false,
+                  "text": "data.external_pilot.allow",
+                  "location": {
+                    "row": 1,
+                    "col": 1
+                  }
+                }
+              ]
+            }
+          ]
+        }
+      }
+    },
+    {
+      "input": {
+        "request": {
+          "body": {
+            "qty": 4
+          }
+        },
+        "trusted": {
+          "derivedMaximumQty": 3,
+          "authorizedRole": true
+        }
+      },
+      "before_after_equal": true,
+      "observed": {
+        "exit_code": 0,
+        "result": {
+          "result": [
+            {
+              "expressions": [
+                {
+                  "value": true,
+                  "text": "data.external_pilot.allow",
+                  "location": {
+                    "row": 1,
+                    "col": 1
+                  }
+                }
+              ]
+            }
+          ]
+        }
+      }
+    },
+    {
+      "input": {
+        "request": {
+          "body": {
+            "qty": -1
+          }
+        },
+        "trusted": {
+          "derivedMaximumQty": 3,
+          "authorizedRole": false
+        }
+      },
+      "before_after_equal": true,
+      "observed": {
+        "exit_code": 0,
+        "result": {
+          "result": [
+            {
+              "expressions": [
+                {
+                  "value": true,
+                  "text": "data.external_pilot.allow",
+                  "location": {
+                    "row": 1,
+                    "col": 1
+                  }
+                }
+              ]
+            }
+          ]
+        }
+      }
+    },
+    {
+      "input": {
+        "request": {
+          "body": {
+            "qty": 4
+          }
+        },
+        "trusted": {
+          "derivedMaximumQty": 3
+        }
+      },
+      "before_after_equal": true,
+      "observed": {
+        "exit_code": 0,
+        "result": {
+          "result": [
+            {
+              "expressions": [
+                {
+                  "value": false,
+                  "text": "data.external_pilot.allow",
+                  "location": {
+                    "row": 1,
+                    "col": 1
+                  }
+                }
+              ]
+            }
+          ]
+        }
+      }
+    }
+  ]
+}

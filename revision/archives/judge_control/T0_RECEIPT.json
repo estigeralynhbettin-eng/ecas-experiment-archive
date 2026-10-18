@@ -1,0 +1,189 @@
+{
+  "status": "PASS",
+  "checks": [
+    {
+      "check": "all_15_public_operations",
+      "pass": true
+    },
+    {
+      "check": "same_archived_ir_shape_and_original_gate_FSV-S03__four_case_v1",
+      "pass": true,
+      "scientific_semantic_claim": false,
+      "gate_outcome_sent_to_judge": false
+    },
+    {
+      "check": "same_archived_ir_shape_and_original_gate_FSV-S03__four_case_v2",
+      "pass": true,
+      "scientific_semantic_claim": false,
+      "gate_outcome_sent_to_judge": false
+    },
+    {
+      "check": "same_archived_ir_shape_and_original_gate_FSV-B13__four_case_v2",
+      "pass": true,
+      "scientific_semantic_claim": false,
+      "gate_outcome_sent_to_judge": false
+    },
+    {
+      "check": "same_archived_ir_shape_and_original_gate_FSV-B13__four_case_v1",
+      "pass": true,
+      "scientific_semantic_claim": false,
+      "gate_outcome_sent_to_judge": false
+    },
+    {
+      "check": "same_archived_ir_shape_and_original_gate_FSV-B17__four_case_v1",
+      "pass": true,
+      "scientific_semantic_claim": false,
+      "gate_outcome_sent_to_judge": false
+    },
+    {
+      "check": "same_archived_ir_shape_and_original_gate_FSV-B17__four_case_v2",
+      "pass": true,
+      "scientific_semantic_claim": false,
+      "gate_outcome_sent_to_judge": false
+    },
+    {
+      "check": "same_archived_ir_shape_and_original_gate_FSV-B19__four_case_v2",
+      "pass": true,
+      "scientific_semantic_claim": false,
+      "gate_outcome_sent_to_judge": false
+    },
+    {
+      "check": "same_archived_ir_shape_and_original_gate_FSV-B19__four_case_v1",
+      "pass": true,
+      "scientific_semantic_claim": false,
+      "gate_outcome_sent_to_judge": false
+    },
+    {
+      "check": "response_schema_positive_negative_FSV-B19",
+      "pass": true,
+      "scientific_result": false
+    },
+    {
+      "check": "public_packet_no_hidden_or_developer_fields_FSV-B19",
+      "pass": true
+    },
+    {
+      "check": "response_schema_positive_negative_FSV-B13",
+      "pass": true,
+      "scientific_result": false
+    },
+    {
+      "check": "public_packet_no_hidden_or_developer_fields_FSV-B13",
+      "pass": true
+    },
+    {
+      "check": "response_schema_positive_negative_FSV-B17",
+      "pass": true,
+      "scientific_result": false
+    },
+    {
+      "check": "public_packet_no_hidden_or_developer_fields_FSV-B17",
+      "pass": true
+    },
+    {
+      "check": "response_schema_positive_negative_FSV-S03",
+      "pass": true,
+      "scientific_result": false
+    },
+    {
+      "check": "public_packet_no_hidden_or_developer_fields_FSV-S03",
+      "pass": true
+    },
+    {
+      "check": "independent_lane_free_space",
+      "pass": true
+    },
+    {
+      "check": "root_selects_real_successful_resume_fixture",
+      "pass": true,
+      "scientific_result": false
+    },
+    {
+      "check": "root_binding_rejects_wrong_run",
+      "pass": true,
+      "scientific_result": false
+    },
+    {
+      "check": "root_binding_rejects_changed_ledger",
+      "pass": true,
+      "scientific_result": false
+    },
+    {
+      "check": "root_binding_rejects_changed_state",
+      "pass": true,
+      "scientific_result": false
+    },
+    {
+      "check": "root_binding_rejects_changed_request",
+      "pass": true,
+      "scientific_result": false
+    },
+    {
+      "check": "root_binding_rejects_changed_status",
+      "pass": true,
+      "scientific_result": false
+    },
+    {
+      "check": "root_binding_rejects_changed_receipt",
+      "pass": true,
+      "scientific_result": false
+    },
+    {
+      "check": "root_binding_rejects_wrong_directory",
+      "pass": true,
+      "scientific_result": false
+    },
+    {
+      "check": "root_binding_rejects_failed_run_even_with_matching_hash",
+      "pass": true,
+      "scientific_result": false
+    },
+    {
+      "check": "shared_budget_includes_main_smoke_and_all_attempts",
+      "pass": true,
+      "scientific_result": false
+    },
+    {
+      "check": "pilot_exact_cache_and_gate_positive_fixture",
+      "pass": true,
+      "scientific_result": false
+    },
+    {
+      "check": "pilot_gate_rejects_allow_formal_run",
+      "pass": true,
+      "scientific_result": false
+    },
+    {
+      "check": "pilot_gate_rejects_pilot_records_sha256",
+      "pass": true,
+      "scientific_result": false
+    },
+    {
+      "check": "pilot_gate_rejects_pilot_ledger_sha256",
+      "pass": true,
+      "scientific_result": false
+    },
+    {
+      "check": "pilot_gate_rejects_actual_gate_receipt_sha256",
+      "pass": true,
+      "scientific_result": false
+    },
+    {
+      "check": "pilot_gate_rejects_cache_ledger_drift",
+      "pass": true,
+      "scientific_result": false
+    },
+    {
+      "check": "pilot_gate_rejects_real_block_even_if_ready_self_reports_pass",
+      "pass": true,
+      "scientific_result": false
+    }
+  ],
+  "scope_id": "ECAS-TYPED-IR-SEMANTIC-JUDGE-CONTROL-20261014-01",
+  "model_calls": 0,
+  "scientific_result": false,
+  "python": "3.10.12",
+  "jsonschema": "4.26.0",
+  "shared_resources_used": [],
+  "completed_at": "2026-10-15T00:57:47.404325+00:00"
+}

@@ -1,0 +1,295 @@
+{
+  "FSV-B17": [
+    {
+      "id": "FSV-B17-OL-01",
+      "envelope": {
+        "request": {
+          "body": {
+            "customer": "CUSTOMER-SYNTH-1"
+          }
+        },
+        "trusted": {
+          "customerDisabled": false
+        }
+      },
+      "expected": "allow",
+      "kind": "original_pair"
+    },
+    {
+      "id": "FSV-B17-OI-01",
+      "envelope": {
+        "request": {
+          "body": {
+            "customer": "CUSTOMER-SYNTH-1"
+          }
+        },
+        "trusted": {
+          "customerDisabled": true
+        }
+      },
+      "expected": "deny",
+      "kind": "original_pair"
+    },
+    {
+      "id": "enabled",
+      "envelope": {
+        "request": {
+          "body": {
+            "customer": "CUSTOMER-SYNTH-1"
+          }
+        },
+        "trusted": {
+          "customerDisabled": false
+        }
+      },
+      "expected": "allow",
+      "kind": "documented_rule"
+    },
+    {
+      "id": "disabled",
+      "envelope": {
+        "request": {
+          "body": {
+            "customer": "CUSTOMER-SYNTH-1"
+          }
+        },
+        "trusted": {
+          "customerDisabled": true
+        }
+      },
+      "expected": "deny",
+      "kind": "documented_rule"
+    },
+    {
+      "id": "body-disable-spoof",
+      "envelope": {
+        "request": {
+          "body": {
+            "customer": "CUSTOMER-SYNTH-1",
+            "customerDisabled": false
+          }
+        },
+        "trusted": {
+          "customerDisabled": true
+        }
+      },
+      "expected": "deny",
+      "kind": "engineering_trust_control"
+    },
+    {
+      "id": "missing-trusted",
+      "envelope": {
+        "request": {
+          "body": {
+            "customer": "CUSTOMER-SYNTH-1"
+          }
+        },
+        "trusted": {}
+      },
+      "expected": "deny",
+      "kind": "engineering_fail_closed_control"
+    }
+  ],
+  "FSV-B19": [
+    {
+      "id": "FSV-B19-OL-01",
+      "envelope": {
+        "request": {
+          "body": {
+            "action": "PURCHASE_ORDER",
+            "supplier": "SUPPLIER-SYNTH-1"
+          }
+        },
+        "trusted": {
+          "holdType": "",
+          "supplierOnHold": false
+        }
+      },
+      "expected": "allow",
+      "kind": "original_pair"
+    },
+    {
+      "id": "FSV-B19-OI-01",
+      "envelope": {
+        "request": {
+          "body": {
+            "action": "PURCHASE_ORDER",
+            "supplier": "SUPPLIER-SYNTH-1"
+          }
+        },
+        "trusted": {
+          "holdType": "All",
+          "supplierOnHold": true
+        }
+      },
+      "expected": "deny",
+      "kind": "original_pair"
+    },
+    {
+      "id": "not-held",
+      "envelope": {
+        "request": {
+          "body": {
+            "action": "PURCHASE_ORDER",
+            "supplier": "SUPPLIER-SYNTH-1"
+          }
+        },
+        "trusted": {
+          "supplierOnHold": false,
+          "holdType": ""
+        }
+      },
+      "expected": "allow",
+      "kind": "documented_rule"
+    },
+    {
+      "id": "held-all",
+      "envelope": {
+        "request": {
+          "body": {
+            "action": "PURCHASE_ORDER",
+            "supplier": "SUPPLIER-SYNTH-1"
+          }
+        },
+        "trusted": {
+          "supplierOnHold": true,
+          "holdType": "All"
+        }
+      },
+      "expected": "deny",
+      "kind": "documented_rule"
+    },
+    {
+      "id": "held-invoices",
+      "envelope": {
+        "request": {
+          "body": {
+            "action": "PURCHASE_ORDER",
+            "supplier": "SUPPLIER-SYNTH-1"
+          }
+        },
+        "trusted": {
+          "supplierOnHold": true,
+          "holdType": "Invoices"
+        }
+      },
+      "expected": "deny",
+      "kind": "documented_rule"
+    },
+    {
+      "id": "held-payments",
+      "envelope": {
+        "request": {
+          "body": {
+            "action": "PURCHASE_ORDER",
+            "supplier": "SUPPLIER-SYNTH-1"
+          }
+        },
+        "trusted": {
+          "supplierOnHold": true,
+          "holdType": "Payments"
+        }
+      },
+      "expected": "allow",
+      "kind": "documented_rule"
+    },
+    {
+      "id": "held-empty-type",
+      "envelope": {
+        "request": {
+          "body": {
+            "action": "PURCHASE_ORDER",
+            "supplier": "SUPPLIER-SYNTH-1"
+          }
+        },
+        "trusted": {
+          "supplierOnHold": true,
+          "holdType": ""
+        }
+      },
+      "expected": "deny",
+      "kind": "conservative_empty_type_control"
+    },
+    {
+      "id": "held-unknown-type",
+      "envelope": {
+        "request": {
+          "body": {
+            "action": "PURCHASE_ORDER",
+            "supplier": "SUPPLIER-SYNTH-1"
+          }
+        },
+        "trusted": {
+          "supplierOnHold": true,
+          "holdType": "Unknown"
+        }
+      },
+      "expected": "deny",
+      "kind": "engineering_unknown_type_control"
+    },
+    {
+      "id": "body-type-spoof",
+      "envelope": {
+        "request": {
+          "body": {
+            "action": "PURCHASE_ORDER",
+            "supplier": "SUPPLIER-SYNTH-1",
+            "holdType": "Payments"
+          }
+        },
+        "trusted": {
+          "supplierOnHold": true,
+          "holdType": "All"
+        }
+      },
+      "expected": "deny",
+      "kind": "engineering_trust_control"
+    },
+    {
+      "id": "missing-trusted",
+      "envelope": {
+        "request": {
+          "body": {
+            "action": "PURCHASE_ORDER",
+            "supplier": "SUPPLIER-SYNTH-1"
+          }
+        },
+        "trusted": {}
+      },
+      "expected": "deny",
+      "kind": "engineering_fail_closed_control"
+    },
+    {
+      "id": "partial-status-false-only",
+      "envelope": {
+        "request": {
+          "body": {
+            "action": "PURCHASE_ORDER",
+            "supplier": "SUPPLIER-SYNTH-1"
+          }
+        },
+        "trusted": {
+          "supplierOnHold": false
+        }
+      },
+      "expected": null,
+      "kind": "partial_missing_observation_no_gold"
+    },
+    {
+      "id": "partial-payments-only",
+      "envelope": {
+        "request": {
+          "body": {
+            "action": "PURCHASE_ORDER",
+            "supplier": "SUPPLIER-SYNTH-1"
+          }
+        },
+        "trusted": {
+          "holdType": "Payments"
+        }
+      },
+      "expected": null,
+      "kind": "partial_missing_observation_no_gold"
+    }
+  ]
+}

@@ -1,0 +1,14 @@
+{
+  "case_id": "FSV-B19_ecas_documented",
+  "coverage": "ecas_documented",
+  "dataset": "ERPNext_longest_source",
+  "max_output_tokens": 16384,
+  "actual_output_tokens": 2877,
+  "prompt_tokens": 7803,
+  "finish_reason": "stop",
+  "parse_status": "PASS",
+  "content_empty": false,
+  "retry_count": 0,
+  "truncated": false,
+  "call_index": 34
+}

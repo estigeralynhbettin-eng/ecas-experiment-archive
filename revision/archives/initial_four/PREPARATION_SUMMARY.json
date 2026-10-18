@@ -1,0 +1,14 @@
+{
+  "status": "PREPARED_NO_MODEL_CALL",
+  "scope": "ECAS-FOUR-PEER-BASELINES-20261014-01",
+  "packet_bytes": {
+    "FSV-S03": 2795,
+    "FSV-B13": 27372,
+    "FSV-B17": 25304,
+    "FSV-B19": 39665
+  },
+  "schema_prompt_bytes": 11240,
+  "smoke_task": "FSV-B19",
+  "model_calls": 0,
+  "windows_exception": "Mandated approved Windows model wrapper/key loader; orchestration and all policy evaluation in WSL"
+}

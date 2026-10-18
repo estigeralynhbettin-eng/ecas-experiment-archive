@@ -1,0 +1,57 @@
+{
+  "status": "PASS",
+  "classification": "SYNTHETIC_LOCAL_EVALUATOR_CONFORMANCE_ONLY",
+  "execution_lane": "WINDOWS_NATIVE_FROZEN_OPA",
+  "exception_reason": "Linux OPA/Regal download routes failed; reuse frozen Windows OPA for preparatory conformance only",
+  "opa_path": "D:\\lunwen\\EC-CSI投稿\\working\\exploration\\20260807_stage3_no_result_engineering_acceptance\\tools\\opa_windows_amd64_v1.19.0.exe",
+  "opa_sha256": "ED4EE673B2182352AF3A9D5F0DE4A74D23A063CBBB447723FB21AC5EAD8CD599",
+  "runner_sha256": "13EF2E0249D783356C8D25E7E1565CE10C298DD46791B29A34EDDFD300179C49",
+  "checks": [
+    {
+      "fixture": "known_allow",
+      "expected": "allow",
+      "actual": {
+        "status": "EXECUTED",
+        "check_exit": 0,
+        "eval_exit": 0,
+        "decision": "allow"
+      },
+      "pass": true
+    },
+    {
+      "fixture": "known_deny",
+      "expected": "deny",
+      "actual": {
+        "status": "EXECUTED",
+        "check_exit": 0,
+        "eval_exit": 0,
+        "decision": "deny"
+      },
+      "pass": true
+    },
+    {
+      "fixture": "invalid_syntax",
+      "expected": null,
+      "actual": {
+        "status": "COMPILE_REJECTED",
+        "check_exit": 1,
+        "decision": null
+      },
+      "pass": true
+    },
+    {
+      "fixture": "forbidden_builtin",
+      "expected": null,
+      "actual": {
+        "status": "COMPILE_REJECTED",
+        "check_exit": 1,
+        "decision": null
+      },
+      "pass": true
+    }
+  ],
+  "baseline_model_calls": 0,
+  "baseline_effect_results": 0,
+  "formal_experiment_ready": false,
+  "regal_available": false
+}

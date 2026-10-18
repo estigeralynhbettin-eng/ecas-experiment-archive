@@ -1,0 +1,198 @@
+{
+  "fixed_today": "2026-10-15",
+  "vectors": [
+    {
+      "id": "state-01",
+      "on_hold": false,
+      "hold_type": "",
+      "release_date": ""
+    },
+    {
+      "id": "state-02",
+      "on_hold": false,
+      "hold_type": "",
+      "release_date": "2026-10-14"
+    },
+    {
+      "id": "state-03",
+      "on_hold": false,
+      "hold_type": "",
+      "release_date": "2026-10-15"
+    },
+    {
+      "id": "state-04",
+      "on_hold": false,
+      "hold_type": "",
+      "release_date": "2026-10-16"
+    },
+    {
+      "id": "state-05",
+      "on_hold": false,
+      "hold_type": "All",
+      "release_date": ""
+    },
+    {
+      "id": "state-06",
+      "on_hold": false,
+      "hold_type": "All",
+      "release_date": "2026-10-14"
+    },
+    {
+      "id": "state-07",
+      "on_hold": false,
+      "hold_type": "All",
+      "release_date": "2026-10-15"
+    },
+    {
+      "id": "state-08",
+      "on_hold": false,
+      "hold_type": "All",
+      "release_date": "2026-10-16"
+    },
+    {
+      "id": "state-09",
+      "on_hold": false,
+      "hold_type": "Invoices",
+      "release_date": ""
+    },
+    {
+      "id": "state-10",
+      "on_hold": false,
+      "hold_type": "Invoices",
+      "release_date": "2026-10-14"
+    },
+    {
+      "id": "state-11",
+      "on_hold": false,
+      "hold_type": "Invoices",
+      "release_date": "2026-10-15"
+    },
+    {
+      "id": "state-12",
+      "on_hold": false,
+      "hold_type": "Invoices",
+      "release_date": "2026-10-16"
+    },
+    {
+      "id": "state-13",
+      "on_hold": false,
+      "hold_type": "Payments",
+      "release_date": ""
+    },
+    {
+      "id": "state-14",
+      "on_hold": false,
+      "hold_type": "Payments",
+      "release_date": "2026-10-14"
+    },
+    {
+      "id": "state-15",
+      "on_hold": false,
+      "hold_type": "Payments",
+      "release_date": "2026-10-15"
+    },
+    {
+      "id": "state-16",
+      "on_hold": false,
+      "hold_type": "Payments",
+      "release_date": "2026-10-16"
+    },
+    {
+      "id": "state-17",
+      "on_hold": true,
+      "hold_type": "",
+      "release_date": ""
+    },
+    {
+      "id": "state-18",
+      "on_hold": true,
+      "hold_type": "",
+      "release_date": "2026-10-14"
+    },
+    {
+      "id": "state-19",
+      "on_hold": true,
+      "hold_type": "",
+      "release_date": "2026-10-15"
+    },
+    {
+      "id": "state-20",
+      "on_hold": true,
+      "hold_type": "",
+      "release_date": "2026-10-16"
+    },
+    {
+      "id": "state-21",
+      "on_hold": true,
+      "hold_type": "All",
+      "release_date": ""
+    },
+    {
+      "id": "state-22",
+      "on_hold": true,
+      "hold_type": "All",
+      "release_date": "2026-10-14"
+    },
+    {
+      "id": "state-23",
+      "on_hold": true,
+      "hold_type": "All",
+      "release_date": "2026-10-15"
+    },
+    {
+      "id": "state-24",
+      "on_hold": true,
+      "hold_type": "All",
+      "release_date": "2026-10-16"
+    },
+    {
+      "id": "state-25",
+      "on_hold": true,
+      "hold_type": "Invoices",
+      "release_date": ""
+    },
+    {
+      "id": "state-26",
+      "on_hold": true,
+      "hold_type": "Invoices",
+      "release_date": "2026-10-14"
+    },
+    {
+      "id": "state-27",
+      "on_hold": true,
+      "hold_type": "Invoices",
+      "release_date": "2026-10-15"
+    },
+    {
+      "id": "state-28",
+      "on_hold": true,
+      "hold_type": "Invoices",
+      "release_date": "2026-10-16"
+    },
+    {
+      "id": "state-29",
+      "on_hold": true,
+      "hold_type": "Payments",
+      "release_date": ""
+    },
+    {
+      "id": "state-30",
+      "on_hold": true,
+      "hold_type": "Payments",
+      "release_date": "2026-10-14"
+    },
+    {
+      "id": "state-31",
+      "on_hold": true,
+      "hold_type": "Payments",
+      "release_date": "2026-10-15"
+    },
+    {
+      "id": "state-32",
+      "on_hold": true,
+      "hold_type": "Payments",
+      "release_date": "2026-10-16"
+    }
+  ],
+  "classification": "MANUAL_RELATED_SOURCE_STATE_GRID"
+}

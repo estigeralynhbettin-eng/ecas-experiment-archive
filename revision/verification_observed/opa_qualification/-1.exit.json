@@ -1,0 +1,15 @@
+{
+  "exit_code": 0,
+  "argv": [
+    "runtime/bin/opa",
+    "eval",
+    "--capabilities",
+    "/root/ecas_a9_artifact_verify_v2/run/restricted_capabilities.json",
+    "--format=json",
+    "--data",
+    "/root/ecas_a9_artifact_verify_v2/run/qualification.rego",
+    "--input",
+    "/root/ecas_a9_artifact_verify_v2/run/opa_qualification/-1.input.json",
+    "data.external_pilot.allow"
+  ]
+}

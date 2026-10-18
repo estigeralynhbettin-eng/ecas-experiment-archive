@@ -1,0 +1,96 @@
+{
+  "task": "FSV-B06",
+  "method": "ECAS_MATCHED",
+  "initial_status": "EVALUATED",
+  "status": "EVALUATED",
+  "classification": "POST_HOC_ENGINEERING_INTERFACE_REPAIR_NOT_FRESH_MODEL_EFFECT",
+  "requests": [
+    {
+      "channel": "O-L",
+      "input": {
+        "request": {
+          "body": {}
+        },
+        "trusted": {
+          "reAgeIsLatestTransaction": true
+        }
+      },
+      "mapped_input": {
+        "request": {
+          "body": {}
+        },
+        "trusted": {
+          "reAgeIsLatestTransaction": true
+        },
+        "subject": {
+          "role": "authenticated_api_caller"
+        },
+        "action": "POST /v1/loans/{loanId}/transactions/{transactionId}?command=undo",
+        "resource": {
+          "id": "Fineract:1.14.0",
+          "system": "Fineract",
+          "version": "1.14.0"
+        },
+        "subject_role": "authenticated_api_caller",
+        "resource_system": "Fineract",
+        "resource_version": "1.14.0"
+      },
+      "expected": "allow",
+      "actual": {
+        "policy_id": "pol-FSV-B06-reage-undo-latest-only",
+        "decision": "allow",
+        "fail_closed": true,
+        "violations": []
+      }
+    },
+    {
+      "channel": "O-I",
+      "input": {
+        "request": {
+          "body": {}
+        },
+        "trusted": {
+          "reAgeIsLatestTransaction": false
+        }
+      },
+      "mapped_input": {
+        "request": {
+          "body": {}
+        },
+        "trusted": {
+          "reAgeIsLatestTransaction": false
+        },
+        "subject": {
+          "role": "authenticated_api_caller"
+        },
+        "action": "POST /v1/loans/{loanId}/transactions/{transactionId}?command=undo",
+        "resource": {
+          "id": "Fineract:1.14.0",
+          "system": "Fineract",
+          "version": "1.14.0"
+        },
+        "subject_role": "authenticated_api_caller",
+        "resource_system": "Fineract",
+        "resource_version": "1.14.0"
+      },
+      "expected": "deny",
+      "actual": {
+        "policy_id": "pol-FSV-B06-reage-undo-latest-only",
+        "decision": "deny",
+        "fail_closed": true,
+        "violations": [
+          {
+            "rule_id": "rule-FSV-B06-reage-undo-latest-only",
+            "code": "bounded_guard_rejected",
+            "detail": "rule-FSV-B06-reage-undo-latest-only"
+          }
+        ]
+      }
+    }
+  ],
+  "model_calls": [
+    13
+  ],
+  "original_policy_sha256": "5cf6bc67f8f2c31e22a913be53f8b47aac3b2f8cd4b8f154b592de38f9c909c8",
+  "request_pair_correct": true
+}

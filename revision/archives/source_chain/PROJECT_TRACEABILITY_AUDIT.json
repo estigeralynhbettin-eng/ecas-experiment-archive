@@ -1,0 +1,42 @@
+{
+  "schema_version": "1.0",
+  "tool": "audit_experiment_traceability",
+  "generated_at": "2026-10-15T04:16:50.221Z",
+  "data": {
+    "found": true,
+    "project": {
+      "name": "EC-CSI投稿",
+      "path": "D:\\lunwen\\EC-CSI投稿",
+      "source": "D:\\lunwen\\PROJECT_INDEX.json"
+    },
+    "ledger_root": "D:\\lunwen\\EC-CSI投稿",
+    "status": "pass",
+    "diagnostics": {
+      "result_file": {
+        "path": "D:\\lunwen\\EC-CSI投稿\\RESULT_TRACEABILITY.csv",
+        "exists": true,
+        "is_file": true,
+        "is_directory": false,
+        "size_bytes": 23713,
+        "last_write_time": "2026-08-06T15:07:21.224Z"
+      },
+      "claim_file": {
+        "path": "D:\\lunwen\\EC-CSI投稿\\CLAIM_EVIDENCE_MATRIX.csv",
+        "exists": true,
+        "is_file": true,
+        "is_directory": false,
+        "size_bytes": 13588,
+        "last_write_time": "2026-08-06T15:06:59.395Z"
+      },
+      "result_rows": 30,
+      "claim_rows": 30
+    },
+    "p0_count": 0,
+    "p1_count": 0,
+    "p0": [],
+    "p1": [],
+    "details_truncated": false,
+    "submission_freeze_allowed": true,
+    "rule": "MISMATCH, SOURCE_MISSING, and NON_REPRODUCIBLE are P0 submission blockers."
+  }
+}

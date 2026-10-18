@@ -1,0 +1,91 @@
+{
+  "catalog_id": "EC-SECURITY-PRIMITIVE-CATALOG-V2",
+  "contract_id": "ECV2-CONTRACT-FSV-S04",
+  "contract_version": "EC-EVIDENCE-CONTRACT-V3",
+  "evidence": [
+    {
+      "binding_facts": {
+        "visible_context_required_by_validator": true,
+        "visible_format_identity": "email"
+      },
+      "bound_paths": [
+        "/request/body",
+        "/request/body/email_id"
+      ],
+      "evidence_id": "ABSENT-VIS-FSV-S04-01",
+      "locator": "extracted/frappe-rest-api.md:article",
+      "operations": [
+        "POST /api/resource/Lead"
+      ],
+      "relation": "supports",
+      "sha256": "87CB28850081B1F7D6702521E98E5F242498A456491EF26BDE847C20CCBFE154",
+      "source_kind": "api_documentation",
+      "supports_primitives": [
+        "SP-STRUCTURED-FORMAT"
+      ],
+      "system": "ERPNext",
+      "versions": [
+        "16.0.0"
+      ],
+      "visibility": "visible"
+    },
+    {
+      "binding_facts": {
+        "visible_context_required_by_validator": true,
+        "visible_format_identity": "email"
+      },
+      "bound_paths": [
+        "/request/body",
+        "/request/body/email_id"
+      ],
+      "evidence_id": "ABSENT-VIS-FSV-S04-02",
+      "locator": "erpnext-lead-doctype.json:complete-field-catalog",
+      "operations": [
+        "POST /api/resource/Lead"
+      ],
+      "relation": "supports",
+      "sha256": "D381706B9196BA6FDF43945415288FD56BB671DA722B0EF4D17BD9B65CFBAF0B",
+      "source_kind": "developer_manual",
+      "supports_primitives": [
+        "SP-STRUCTURED-FORMAT"
+      ],
+      "system": "ERPNext",
+      "versions": [
+        "16.0.0"
+      ],
+      "visibility": "visible"
+    },
+    {
+      "binding_facts": {
+        "trusted_runtime_context_mapping": true,
+        "visible_field_mapping": true,
+        "visible_runtime_interface": true
+      },
+      "bound_paths": [
+        "/request/body",
+        "/request/body/email_id"
+      ],
+      "evidence_id": "ABSENT-VIS-FSV-S04-RUNTIME-ABI",
+      "locator": "tasks.FSV-S04",
+      "operations": [
+        "POST /api/resource/Lead"
+      ],
+      "relation": "supports",
+      "sha256": "8221DA8A6720B0593A8D337F18569C9947AAB05B02E5C84FB0C50E3DE8C1ABD7",
+      "source_kind": "runtime_context_contract",
+      "supports_primitives": [
+        "SP-STRUCTURED-FORMAT"
+      ],
+      "system": "ERPNext",
+      "versions": [
+        "16.0.0"
+      ],
+      "visibility": "visible"
+    }
+  ],
+  "target": {
+    "operation": "POST /api/resource/Lead",
+    "system": "ERPNext",
+    "version": "16.0.0"
+  }
+}

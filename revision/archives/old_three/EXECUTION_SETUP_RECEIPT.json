@@ -1,0 +1,8 @@
+{
+  "status": "FROZEN_BEFORE_CALLS",
+  "files": 44,
+  "config_locator_fix_only": true,
+  "t0_status": "PASS",
+  "model_calls": 0,
+  "windows_exception": "Windows approved wrapper required for mandated Windows key loader; all policy compilation/lint/evaluation in WSL"
+}

@@ -1,0 +1,8 @@
+{
+  "exit_code": 0,
+  "argv": [
+    "runtime/bin/opa",
+    "capabilities",
+    "--current"
+  ]
+}

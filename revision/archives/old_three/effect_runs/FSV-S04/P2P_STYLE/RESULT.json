@@ -1,0 +1,112 @@
+{
+  "task": "FSV-S04",
+  "method": "P2P_STYLE",
+  "classification": "RETROSPECTIVE_ADAPTED_LOCAL_PILOT_NOT_NATIVE_OR_BLIND",
+  "status": "DEVELOPMENT_REJECTED",
+  "requests": [],
+  "calls": [
+    19,
+    20,
+    21,
+    22,
+    23
+  ],
+  "repaired_once": true,
+  "developer_checks": {
+    "compile_exit": 0,
+    "compile_error": "",
+    "policy_path": "/mnt/d/lunwen/EC-CSI投稿/working/exploration/20261014_external_baseline_pilot/effect_runs/FSV-S04/P2P_STYLE/repaired/external_pilot/policy.rego",
+    "lint_exit": 0,
+    "lint_report": {
+      "violations": [],
+      "notices": [
+        {
+          "title": "deprecated-builtin",
+          "description": "Since OPA 1.0, deprecated-builtin enabled only when provided a v0 policy,\nBUT please note that this may change in the future if new built-in functions\nare deprecated.\n",
+          "category": "bugs",
+          "level": "notice",
+          "severity": "none"
+        },
+        {
+          "title": "import-shadows-import",
+          "description": "Since OPA 1.0, import-shadows-import enabled only when provided a v0 policy,",
+          "category": "imports",
+          "level": "notice",
+          "severity": "none"
+        },
+        {
+          "title": "rule-named-if",
+          "description": "Since OPA 1.0, rule-named-if enabled only when provided a v0 policy",
+          "category": "bugs",
+          "level": "notice",
+          "severity": "none"
+        },
+        {
+          "title": "use-contains",
+          "description": "Since OPA 1.0, use-contains enabled only when provided a v0 policy",
+          "category": "idiomatic",
+          "level": "notice",
+          "severity": "none"
+        },
+        {
+          "title": "use-if",
+          "description": "Since OPA 1.0, use-if enabled only when provided a v0 policy",
+          "category": "idiomatic",
+          "level": "notice",
+          "severity": "none"
+        },
+        {
+          "title": "use-rego-v1",
+          "description": "Since OPA 1.0, use-rego-v1 enabled only when provided a v0 policy",
+          "category": "imports",
+          "level": "notice",
+          "severity": "none"
+        }
+      ],
+      "summary": {
+        "files_scanned": 1,
+        "files_failed": 0,
+        "rules_skipped": 0,
+        "num_violations": 0
+      }
+    },
+    "accepted": true
+  },
+  "developer_results": {
+    "passed": false,
+    "rows": [
+      {
+        "id": "test_pos_1",
+        "expected": "allow",
+        "actual": {
+          "status": "EXECUTED",
+          "decision": "deny",
+          "exit_code": 0
+        },
+        "pass": false
+      },
+      {
+        "id": "test_pos_2",
+        "expected": "allow",
+        "actual": {
+          "status": "EXECUTED",
+          "decision": "deny",
+          "exit_code": 0
+        },
+        "pass": false
+      },
+      {
+        "id": "test_neg_1",
+        "expected": "deny",
+        "actual": {
+          "status": "EXECUTED",
+          "decision": "deny",
+          "exit_code": 0
+        },
+        "pass": true
+      }
+    ]
+  },
+  "request_pair_correct": false,
+  "completed_at": "2026-10-14T04:13:10.607527+00:00"
+}

@@ -1,0 +1,9 @@
+{
+  "status": "PASS",
+  "scope_id": "ECAS-MISSING-STATE-MECHANISM-20261015-01",
+  "run_id": "missing-state-mechanism-t0-v1",
+  "runtime_lane": "/root/ecas_missing_state_mechanism_20261015",
+  "receipt_path": "T0_RECEIPT.json",
+  "receipt_sha256": "918f6f47f43921a6889c65866b35c5ea5bc10bc7cd6d1aa96c107cf54d292c7a",
+  "completed_at": "2026-10-15T02:58:32.952517+00:00"
+}

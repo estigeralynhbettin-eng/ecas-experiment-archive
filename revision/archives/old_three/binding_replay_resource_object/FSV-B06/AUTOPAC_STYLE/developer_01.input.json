@@ -1,0 +1,22 @@
+{
+  "request": {
+    "body": {
+      "developer_probe": "transaction_92002"
+    }
+  },
+  "trusted": {
+    "reAgeIsLatestTransaction": false
+  },
+  "subject": {
+    "role": "authenticated_api_caller"
+  },
+  "action": "POST /v1/loans/{loanId}/transactions/{transactionId}?command=undo",
+  "resource": {
+    "id": "Fineract:1.14.0",
+    "system": "Fineract",
+    "version": "1.14.0"
+  },
+  "subject_role": "authenticated_api_caller",
+  "resource_system": "Fineract",
+  "resource_version": "1.14.0"
+}

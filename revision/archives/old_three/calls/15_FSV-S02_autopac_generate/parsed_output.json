@@ -1,0 +1,5 @@
+{
+  "status": "READY",
+  "rego": "package external_pilot\n\nimport rego.v1\n\ndefault allow := false\n\nallow if {\n    input.subject.role == \"authenticated_api_caller\"\n    input.action == \"POST /v1/clients/{clientId}/identifiers\"\n    input.resource.system == \"Fineract\"\n    input.resource.version == \"1.14.0\"\n    input.request.body.documentKey\n    input.request.body.documentTypeId\n}",
+  "reason": "Policy allows authenticated API callers to create client identifiers in Fineract 1.14.0 if the mandatory documentKey and documentTypeId fields are present in the request body."
+}

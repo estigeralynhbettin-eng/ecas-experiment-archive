@@ -1,0 +1,77 @@
+{
+  "parent_id": "FSV-B19__four_case_v2",
+  "case": "FSV-B19",
+  "configuration": "four_case_v2",
+  "row_id": "FSV-B19__four_case_v2__evidence_refs_absent",
+  "variant": "evidence_refs_absent",
+  "classification": "CONSTRUCTED_INVENTORY_PERTURBATION",
+  "expected_full": "reject",
+  "notes": "All referenced records absent; schema remains valid",
+  "source_parent_candidate": "/root/ecas_evidence_ablation_20261014/inputs/FSV-B19__four_case_v2/candidate.json",
+  "source_parent_contract": "/root/ecas_evidence_ablation_20261014/inputs/FSV-B19__four_case_v2/contract.json",
+  "candidate_sha256": "e50064ef266b67f38bf736238a32946ae7c88a8b6315a97519a5c17b71ab3712",
+  "contract_sha256": "7296a7586b5209f7ce0c63846fa8586e461a11e0038900db116293adff43a874",
+  "output_folder": "/root/ecas_evidence_ablation_20261014/outputs/FSV-B19__four_case_v2__evidence_refs_absent",
+  "full_executed": false,
+  "shape_executed": true,
+  "ir_status": "COMPILED",
+  "contract_shape_valid": true,
+  "full_status": "ADMISSION_REJECTED",
+  "full_error": "policy references evidence absent from the contract",
+  "shape_status": "COMPILED_NO_INVENTORY",
+  "eligible_admission_contrast": true,
+  "full_evaluations": [],
+  "shape_evaluations": [
+    {
+      "fixture_id": "FSV-B19-OL-01",
+      "fixture_class": "ARCHIVED_SYNTHETIC_REQUEST",
+      "expected": "allow",
+      "actual": {
+        "policy_id": "FSV-B19-POLICY-PO-HOLD-GUARD",
+        "decision": "allow",
+        "fail_closed": true,
+        "violations": []
+      },
+      "correct": true
+    },
+    {
+      "fixture_id": "FSV-B19-OI-01",
+      "fixture_class": "ARCHIVED_SYNTHETIC_REQUEST",
+      "expected": "deny",
+      "actual": {
+        "policy_id": "FSV-B19-POLICY-PO-HOLD-GUARD",
+        "decision": "deny",
+        "fail_closed": true,
+        "violations": [
+          {
+            "rule_id": "FSV-B19-RULE-PO-HOLD-GUARD",
+            "code": "bounded_guard_rejected",
+            "detail": "FSV-B19-RULE-PO-HOLD-GUARD"
+          }
+        ]
+      },
+      "correct": true
+    },
+    {
+      "fixture_id": "SYNTH-MISSING-TRUSTED",
+      "fixture_class": "CONSTRUCTED_MISSING_CONTEXT_CONTROL",
+      "expected": null,
+      "actual": {
+        "policy_id": "FSV-B19-POLICY-PO-HOLD-GUARD",
+        "decision": "deny",
+        "fail_closed": true,
+        "violations": [
+          {
+            "rule_id": "FSV-B19-RULE-PO-HOLD-GUARD",
+            "code": "required_input_missing",
+            "detail": "FSV-B19-RULE-PO-HOLD-GUARD"
+          }
+        ]
+      },
+      "correct": null
+    }
+  ],
+  "original_pair_correct": null,
+  "full_execution_errors": 0,
+  "shape_execution_errors": 0
+}

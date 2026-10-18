@@ -1,0 +1,400 @@
+{
+  "status": "COMPLETED",
+  "configuration": "DOCUMENTED_PRIMITIVES_V2",
+  "rows": [
+    {
+      "task": "FSV-S03",
+      "method": "ECAS_MATCHED",
+      "status": "EVALUATED",
+      "requests": [
+        {
+          "channel": "O-L",
+          "input": {
+            "request": {
+              "body": {
+                "age": 30,
+                "firstName": "Synthetic",
+                "isDependent": false,
+                "relationshipId": 1
+              }
+            },
+            "trusted": {}
+          },
+          "expected": "allow",
+          "actual": {
+            "policy_id": "FSV-S03-P01",
+            "decision": "allow",
+            "fail_closed": true,
+            "violations": []
+          }
+        },
+        {
+          "channel": "O-I",
+          "input": {
+            "request": {
+              "body": {
+                "age": "30",
+                "firstName": "Synthetic",
+                "isDependent": false,
+                "relationshipId": 1
+              }
+            },
+            "trusted": {}
+          },
+          "expected": "deny",
+          "actual": {
+            "policy_id": "FSV-S03-P01",
+            "decision": "allow",
+            "fail_closed": true,
+            "violations": []
+          }
+        }
+      ],
+      "calls": [
+        35
+      ],
+      "documentation_revision": true,
+      "configuration": "DOCUMENTED_PRIMITIVES_V2",
+      "admission": "ADMITTED",
+      "common_developer_results": {
+        "passed": false,
+        "rows": [
+          {
+            "id": "dev_integer",
+            "expected": "allow",
+            "actual": {
+              "policy_id": "FSV-S03-P01",
+              "decision": "allow",
+              "fail_closed": true,
+              "violations": []
+            },
+            "pass": true
+          },
+          {
+            "id": "dev_integer_string",
+            "expected": "deny",
+            "actual": {
+              "policy_id": "FSV-S03-P01",
+              "decision": "allow",
+              "fail_closed": true,
+              "violations": []
+            },
+            "pass": false
+          }
+        ]
+      },
+      "request_pair_correct": false
+    },
+    {
+      "task": "FSV-B13",
+      "method": "ECAS_MATCHED",
+      "status": "EVALUATED",
+      "requests": [
+        {
+          "channel": "O-L",
+          "input": {
+            "request": {
+              "body": {
+                "qty": 110
+              }
+            },
+            "trusted": {
+              "allowancePercent": 10,
+              "authorizedRole": false,
+              "derivedMaximumQty": 110,
+              "orderedQty": 100
+            }
+          },
+          "expected": "allow",
+          "actual": {
+            "policy_id": "FSV-B13-POL-001",
+            "decision": "allow",
+            "fail_closed": true,
+            "violations": []
+          }
+        },
+        {
+          "channel": "O-I",
+          "input": {
+            "request": {
+              "body": {
+                "qty": 111
+              }
+            },
+            "trusted": {
+              "allowancePercent": 10,
+              "authorizedRole": false,
+              "derivedMaximumQty": 110,
+              "orderedQty": 100
+            }
+          },
+          "expected": "deny",
+          "actual": {
+            "policy_id": "FSV-B13-POL-001",
+            "decision": "deny",
+            "fail_closed": true,
+            "violations": [
+              {
+                "rule_id": "FSV-B13-RULE-001",
+                "code": "bounded_guard_rejected",
+                "detail": "FSV-B13-RULE-001"
+              }
+            ]
+          }
+        }
+      ],
+      "calls": [
+        36
+      ],
+      "documentation_revision": true,
+      "configuration": "DOCUMENTED_PRIMITIVES_V2",
+      "admission": "ADMITTED",
+      "common_developer_results": {
+        "passed": true,
+        "rows": [
+          {
+            "id": "dev_limit",
+            "expected": "allow",
+            "actual": {
+              "policy_id": "FSV-B13-POL-001",
+              "decision": "allow",
+              "fail_closed": true,
+              "violations": []
+            },
+            "pass": true
+          },
+          {
+            "id": "dev_over",
+            "expected": "deny",
+            "actual": {
+              "policy_id": "FSV-B13-POL-001",
+              "decision": "deny",
+              "fail_closed": true,
+              "violations": [
+                {
+                  "rule_id": "FSV-B13-RULE-001",
+                  "code": "bounded_guard_rejected",
+                  "detail": "FSV-B13-RULE-001"
+                }
+              ]
+            },
+            "pass": true
+          },
+          {
+            "id": "dev_role_exception",
+            "expected": "allow",
+            "actual": {
+              "policy_id": "FSV-B13-POL-001",
+              "decision": "allow",
+              "fail_closed": true,
+              "violations": []
+            },
+            "pass": true
+          }
+        ]
+      },
+      "request_pair_correct": true
+    },
+    {
+      "task": "FSV-B17",
+      "method": "ECAS_MATCHED",
+      "status": "EVALUATED",
+      "requests": [
+        {
+          "channel": "O-L",
+          "input": {
+            "request": {
+              "body": {
+                "customer": "CUSTOMER-SYNTH-1"
+              }
+            },
+            "trusted": {
+              "customerDisabled": false
+            }
+          },
+          "expected": "allow",
+          "actual": {
+            "policy_id": "FSV-B17-disabled-customer-sales-order-block",
+            "decision": "allow",
+            "fail_closed": true,
+            "violations": []
+          }
+        },
+        {
+          "channel": "O-I",
+          "input": {
+            "request": {
+              "body": {
+                "customer": "CUSTOMER-SYNTH-1"
+              }
+            },
+            "trusted": {
+              "customerDisabled": true
+            }
+          },
+          "expected": "deny",
+          "actual": {
+            "policy_id": "FSV-B17-disabled-customer-sales-order-block",
+            "decision": "deny",
+            "fail_closed": true,
+            "violations": [
+              {
+                "rule_id": "FSV-B17-RULE-DISABLED-CUSTOMER-FALSE",
+                "code": "enum_mismatch",
+                "detail": "/trusted/customerDisabled"
+              }
+            ]
+          }
+        }
+      ],
+      "calls": [
+        37
+      ],
+      "documentation_revision": true,
+      "configuration": "DOCUMENTED_PRIMITIVES_V2",
+      "admission": "ADMITTED",
+      "common_developer_results": {
+        "passed": true,
+        "rows": [
+          {
+            "id": "dev_enabled",
+            "expected": "allow",
+            "actual": {
+              "policy_id": "FSV-B17-disabled-customer-sales-order-block",
+              "decision": "allow",
+              "fail_closed": true,
+              "violations": []
+            },
+            "pass": true
+          },
+          {
+            "id": "dev_disabled",
+            "expected": "deny",
+            "actual": {
+              "policy_id": "FSV-B17-disabled-customer-sales-order-block",
+              "decision": "deny",
+              "fail_closed": true,
+              "violations": [
+                {
+                  "rule_id": "FSV-B17-RULE-DISABLED-CUSTOMER-FALSE",
+                  "code": "enum_mismatch",
+                  "detail": "/trusted/customerDisabled"
+                }
+              ]
+            },
+            "pass": true
+          }
+        ]
+      },
+      "request_pair_correct": true
+    },
+    {
+      "task": "FSV-B19",
+      "method": "ECAS_MATCHED",
+      "status": "EVALUATED",
+      "requests": [
+        {
+          "channel": "O-L",
+          "input": {
+            "request": {
+              "body": {
+                "action": "PURCHASE_ORDER",
+                "supplier": "SUPPLIER-SYNTH-1"
+              }
+            },
+            "trusted": {
+              "holdType": "",
+              "supplierOnHold": false
+            }
+          },
+          "expected": "allow",
+          "actual": {
+            "policy_id": "FSV-B19-POLICY-PO-HOLD-GUARD",
+            "decision": "allow",
+            "fail_closed": true,
+            "violations": []
+          }
+        },
+        {
+          "channel": "O-I",
+          "input": {
+            "request": {
+              "body": {
+                "action": "PURCHASE_ORDER",
+                "supplier": "SUPPLIER-SYNTH-1"
+              }
+            },
+            "trusted": {
+              "holdType": "All",
+              "supplierOnHold": true
+            }
+          },
+          "expected": "deny",
+          "actual": {
+            "policy_id": "FSV-B19-POLICY-PO-HOLD-GUARD",
+            "decision": "deny",
+            "fail_closed": true,
+            "violations": [
+              {
+                "rule_id": "FSV-B19-RULE-PO-HOLD-GUARD",
+                "code": "bounded_guard_rejected",
+                "detail": "FSV-B19-RULE-PO-HOLD-GUARD"
+              }
+            ]
+          }
+        }
+      ],
+      "calls": [
+        38
+      ],
+      "documentation_revision": true,
+      "configuration": "DOCUMENTED_PRIMITIVES_V2",
+      "admission": "ADMITTED",
+      "common_developer_results": {
+        "passed": true,
+        "rows": [
+          {
+            "id": "dev_not_held",
+            "expected": "allow",
+            "actual": {
+              "policy_id": "FSV-B19-POLICY-PO-HOLD-GUARD",
+              "decision": "allow",
+              "fail_closed": true,
+              "violations": []
+            },
+            "pass": true
+          },
+          {
+            "id": "dev_invoices",
+            "expected": "deny",
+            "actual": {
+              "policy_id": "FSV-B19-POLICY-PO-HOLD-GUARD",
+              "decision": "deny",
+              "fail_closed": true,
+              "violations": [
+                {
+                  "rule_id": "FSV-B19-RULE-PO-HOLD-GUARD",
+                  "code": "bounded_guard_rejected",
+                  "detail": "FSV-B19-RULE-PO-HOLD-GUARD"
+                }
+              ]
+            },
+            "pass": true
+          },
+          {
+            "id": "dev_payments",
+            "expected": "allow",
+            "actual": {
+              "policy_id": "FSV-B19-POLICY-PO-HOLD-GUARD",
+              "decision": "allow",
+              "fail_closed": true,
+              "violations": []
+            },
+            "pass": true
+          }
+        ]
+      },
+      "request_pair_correct": true
+    }
+  ]
+}

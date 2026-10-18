@@ -1,0 +1,430 @@
+[
+  {
+    "parent_id": "FSV-S03__four_case_v1",
+    "packet_path": "/mnt/d/lunwen/EC-CSI投稿/working/exploration/20261014_matched_evidence_labor/judge_control/generation_inputs/FSV-S03/packet.json",
+    "packet_sha256": "acddb441ffde6b492d77d8964ce22ba69bf037eb164daa9f8674ca1e4a8f596a",
+    "objective": {
+      "constraint_object": "The age field of a family-member creation request",
+      "constraint_kind": "The published API type requirement for age",
+      "scope": "Only the age type requirement in the supplied OpenAPI. Other fields, identity/authentication, age range and presence are outside this task unless the target source requires them for this type constraint."
+    },
+    "source_excerpts": [
+      {
+        "evidence_id": "VIS-FSV-S03-01",
+        "source_id": "fineract-openapi-1.14.0.json",
+        "locator": "paths./v1/clients/{clientId}/familymembers.post",
+        "source_sha256": "A44D6FA247D495A4FB147CC8C5EA1A364D8F05A40762B31A055681373E455A48",
+        "snapshot_content_lines": [
+          {
+            "line": 18,
+            "text": "          \"properties\": {"
+          },
+          {
+            "line": 19,
+            "text": "            \"age\": {"
+          },
+          {
+            "line": 20,
+            "text": "              \"format\": \"int64\","
+          },
+          {
+            "line": 21,
+            "text": "              \"type\": \"integer\""
+          }
+        ]
+      }
+    ],
+    "author_audit": "原v1以strict_type整数实现age类型；原v2仅列全体字段白名单，未约束age类型，并超出本次只检查age的任务范围。存在性不在目标内，v1缺值skip不据此判错。",
+    "issue_audit": []
+  },
+  {
+    "parent_id": "FSV-S03__four_case_v2",
+    "packet_path": "/mnt/d/lunwen/EC-CSI投稿/working/exploration/20261014_matched_evidence_labor/judge_control/generation_inputs/FSV-S03/packet.json",
+    "packet_sha256": "acddb441ffde6b492d77d8964ce22ba69bf037eb164daa9f8674ca1e4a8f596a",
+    "objective": {
+      "constraint_object": "The age field of a family-member creation request",
+      "constraint_kind": "The published API type requirement for age",
+      "scope": "Only the age type requirement in the supplied OpenAPI. Other fields, identity/authentication, age range and presence are outside this task unless the target source requires them for this type constraint."
+    },
+    "source_excerpts": [
+      {
+        "evidence_id": "VIS-FSV-S03-01",
+        "source_id": "fineract-openapi-1.14.0.json",
+        "locator": "paths./v1/clients/{clientId}/familymembers.post",
+        "source_sha256": "A44D6FA247D495A4FB147CC8C5EA1A364D8F05A40762B31A055681373E455A48",
+        "snapshot_content_lines": [
+          {
+            "line": 18,
+            "text": "          \"properties\": {"
+          },
+          {
+            "line": 19,
+            "text": "            \"age\": {"
+          },
+          {
+            "line": 20,
+            "text": "              \"format\": \"int64\","
+          },
+          {
+            "line": 21,
+            "text": "              \"type\": \"integer\""
+          }
+        ]
+      }
+    ],
+    "author_audit": "原v1以strict_type整数实现age类型；原v2仅列全体字段白名单，未约束age类型，并超出本次只检查age的任务范围。存在性不在目标内，v1缺值skip不据此判错。",
+    "issue_audit": [
+      {
+        "category": "TARGET_NOT_IMPLEMENTED",
+        "source_audit": "SUPPORTED_FOR_FOCUSED_TARGET"
+      },
+      {
+        "category": "UNSUPPORTED_CONSTRAINT",
+        "source_audit": "SUPPORTED_FOR_FOCUSED_TARGET"
+      }
+    ]
+  },
+  {
+    "parent_id": "FSV-B13__four_case_v2",
+    "packet_path": "/mnt/d/lunwen/EC-CSI投稿/working/exploration/20261014_matched_evidence_labor/judge_control/generation_inputs/FSV-B13/packet.json",
+    "packet_sha256": "0b07fe5eb4c156c96759cb0ff7e45d58523efd87549f88932ef029003a4ecb9b",
+    "objective": {
+      "constraint_object": "Quantity on a Purchase Receipt represented by request.body.qty, supplied quantity limit and authenticated role context",
+      "constraint_kind": "Receipt quantity allowance and the documented authorized-role exception",
+      "scope": "Implement the supplied Stock Settings quantity policy for this target; upstream supplies trusted derivedMaximumQty and authorizedRole. Do not add unrelated field, item, range or full-document validation."
+    },
+    "source_excerpts": [
+      {
+        "evidence_id": "VIS-FSV-B13-01",
+        "source_id": "erpnext-stock-settings.html",
+        "locator": "extracted/erpnext-stock-settings.md:article",
+        "source_sha256": "F866B7A7F90AEFCB06DA623C3F9EF25F5524D4261887FC80FFDE3AAA76A530EA",
+        "snapshot_content_lines": [
+          {
+            "line": 30,
+            "text": ""
+          },
+          {
+            "line": 31,
+            "text": "This is the percentage you are allowed to receive or deliver more against the quantity ordered. For example: If you have ordered 100 units, Supplier sends 120 units and the percentage is set to 10% then you are allowed to receive 110 units. By default, this is set to 0."
+          },
+          {
+            "line": 32,
+            "text": ""
+          },
+          {
+            "line": 33,
+            "text": "### Role Allowed to Over Deliver/Receive"
+          }
+        ]
+      },
+      {
+        "evidence_id": "VIS-FSV-B13-01",
+        "source_id": "erpnext-stock-settings.html",
+        "locator": "extracted/erpnext-stock-settings.md:article",
+        "source_sha256": "F866B7A7F90AEFCB06DA623C3F9EF25F5524D4261887FC80FFDE3AAA76A530EA",
+        "snapshot_content_lines": [
+          {
+            "line": 34,
+            "text": ""
+          },
+          {
+            "line": 35,
+            "text": "Users with this role are allowed to over deliver/receive against orders above the allowance percentage"
+          },
+          {
+            "line": 36,
+            "text": ""
+          },
+          {
+            "line": 37,
+            "text": "### Show Barcode Field"
+          }
+        ]
+      }
+    ],
+    "author_audit": "原v1/v2都表达数量上限或角色例外；原请求对均匹配。Judge称原v1的额外qty>上限为逻辑细化，在本次已声明数值输入上可成立；未据此证明所有缺值、类型或业务分支等价。",
+    "issue_audit": []
+  },
+  {
+    "parent_id": "FSV-B13__four_case_v1",
+    "packet_path": "/mnt/d/lunwen/EC-CSI投稿/working/exploration/20261014_matched_evidence_labor/judge_control/generation_inputs/FSV-B13/packet.json",
+    "packet_sha256": "0b07fe5eb4c156c96759cb0ff7e45d58523efd87549f88932ef029003a4ecb9b",
+    "objective": {
+      "constraint_object": "Quantity on a Purchase Receipt represented by request.body.qty, supplied quantity limit and authenticated role context",
+      "constraint_kind": "Receipt quantity allowance and the documented authorized-role exception",
+      "scope": "Implement the supplied Stock Settings quantity policy for this target; upstream supplies trusted derivedMaximumQty and authorizedRole. Do not add unrelated field, item, range or full-document validation."
+    },
+    "source_excerpts": [
+      {
+        "evidence_id": "VIS-FSV-B13-01",
+        "source_id": "erpnext-stock-settings.html",
+        "locator": "extracted/erpnext-stock-settings.md:article",
+        "source_sha256": "F866B7A7F90AEFCB06DA623C3F9EF25F5524D4261887FC80FFDE3AAA76A530EA",
+        "snapshot_content_lines": [
+          {
+            "line": 30,
+            "text": ""
+          },
+          {
+            "line": 31,
+            "text": "This is the percentage you are allowed to receive or deliver more against the quantity ordered. For example: If you have ordered 100 units, Supplier sends 120 units and the percentage is set to 10% then you are allowed to receive 110 units. By default, this is set to 0."
+          },
+          {
+            "line": 32,
+            "text": ""
+          },
+          {
+            "line": 33,
+            "text": "### Role Allowed to Over Deliver/Receive"
+          }
+        ]
+      },
+      {
+        "evidence_id": "VIS-FSV-B13-01",
+        "source_id": "erpnext-stock-settings.html",
+        "locator": "extracted/erpnext-stock-settings.md:article",
+        "source_sha256": "F866B7A7F90AEFCB06DA623C3F9EF25F5524D4261887FC80FFDE3AAA76A530EA",
+        "snapshot_content_lines": [
+          {
+            "line": 34,
+            "text": ""
+          },
+          {
+            "line": 35,
+            "text": "Users with this role are allowed to over deliver/receive against orders above the allowance percentage"
+          },
+          {
+            "line": 36,
+            "text": ""
+          },
+          {
+            "line": 37,
+            "text": "### Show Barcode Field"
+          }
+        ]
+      }
+    ],
+    "author_audit": "原v1/v2都表达数量上限或角色例外；原请求对均匹配。Judge称原v1的额外qty>上限为逻辑细化，在本次已声明数值输入上可成立；未据此证明所有缺值、类型或业务分支等价。",
+    "issue_audit": []
+  },
+  {
+    "parent_id": "FSV-B17__four_case_v1",
+    "packet_path": "/mnt/d/lunwen/EC-CSI投稿/working/exploration/20261014_matched_evidence_labor/judge_control/generation_inputs/FSV-B17/packet.json",
+    "packet_sha256": "03e726de50a01e76c55ce26e0925632c218de4ab96339c3752d37e33535a6479",
+    "objective": {
+      "constraint_object": "Customer disabled status relevant to Sales Order creation",
+      "constraint_kind": "The documented disabled-customer condition for the target operation",
+      "scope": "Use the provided trusted customer state for this target only; do not add unrelated Customer or Sales Order validation."
+    },
+    "source_excerpts": [
+      {
+        "evidence_id": "VIS-FSV-B17-01",
+        "source_id": "erpnext-customer.html",
+        "locator": "extracted/erpnext-customer.md:article",
+        "source_sha256": "BA52637ECC58763F80A1AB3F94CA82F51048E19EAC94DD1D2E41E92853CE1AE9",
+        "snapshot_content_lines": [
+          {
+            "line": 24,
+            "text": ""
+          },
+          {
+            "line": 25,
+            "text": "You can disallow sales orders and sales invoices against a customer by clicking on 'Disabled'."
+          },
+          {
+            "line": 26,
+            "text": ""
+          },
+          {
+            "line": 27,
+            "text": "Advanced Tip: If the customer represents one of your own companies then check 'Is Internal Customer'. Check Inter Company Invoices for more details."
+          }
+        ]
+      }
+    ],
+    "author_audit": "原v1使用server_derived_reject，对路径存在即拒绝，不能判断布尔false；重放合法请求被拒。原v2枚举只允许false，原请求对匹配。冻结操作语义明确server_derived_reject不是布尔状态判断。",
+    "issue_audit": [
+      {
+        "category": "TARGET_NOT_IMPLEMENTED",
+        "source_audit": "SUPPORTED_BY_SOURCE_OPERATION_AND_REPLAY"
+      },
+      {
+        "category": "UNSUPPORTED_CONSTRAINT",
+        "source_audit": "SUPPORTED_BY_SOURCE_OPERATION_AND_REPLAY"
+      }
+    ]
+  },
+  {
+    "parent_id": "FSV-B17__four_case_v2",
+    "packet_path": "/mnt/d/lunwen/EC-CSI投稿/working/exploration/20261014_matched_evidence_labor/judge_control/generation_inputs/FSV-B17/packet.json",
+    "packet_sha256": "03e726de50a01e76c55ce26e0925632c218de4ab96339c3752d37e33535a6479",
+    "objective": {
+      "constraint_object": "Customer disabled status relevant to Sales Order creation",
+      "constraint_kind": "The documented disabled-customer condition for the target operation",
+      "scope": "Use the provided trusted customer state for this target only; do not add unrelated Customer or Sales Order validation."
+    },
+    "source_excerpts": [
+      {
+        "evidence_id": "VIS-FSV-B17-01",
+        "source_id": "erpnext-customer.html",
+        "locator": "extracted/erpnext-customer.md:article",
+        "source_sha256": "BA52637ECC58763F80A1AB3F94CA82F51048E19EAC94DD1D2E41E92853CE1AE9",
+        "snapshot_content_lines": [
+          {
+            "line": 24,
+            "text": ""
+          },
+          {
+            "line": 25,
+            "text": "You can disallow sales orders and sales invoices against a customer by clicking on 'Disabled'."
+          },
+          {
+            "line": 26,
+            "text": ""
+          },
+          {
+            "line": 27,
+            "text": "Advanced Tip: If the customer represents one of your own companies then check 'Is Internal Customer'. Check Inter Company Invoices for more details."
+          }
+        ]
+      }
+    ],
+    "author_audit": "原v1使用server_derived_reject，对路径存在即拒绝，不能判断布尔false；重放合法请求被拒。原v2枚举只允许false，原请求对匹配。冻结操作语义明确server_derived_reject不是布尔状态判断。",
+    "issue_audit": []
+  },
+  {
+    "parent_id": "FSV-B19__four_case_v2",
+    "packet_path": "/mnt/d/lunwen/EC-CSI投稿/working/exploration/20261014_matched_evidence_labor/judge_control/generation_inputs/FSV-B19/packet.json",
+    "packet_sha256": "10c5597e97e4190aa041c53aa3aee8b4c1c48fa77d073bfb4fb5eb5a64a346fd",
+    "objective": {
+      "constraint_object": "Supplier on-hold status and hold type relevant to Purchase Order creation",
+      "constraint_kind": "The documented supplier hold-type condition for the target operation",
+      "scope": "Implement the supplier hold policy for this Purchase Order target only; do not add restrictions for invoices, payments, other endpoints or unrelated fields."
+    },
+    "source_excerpts": [
+      {
+        "evidence_id": "VIS-FSV-B19-01",
+        "source_id": "erpnext-supplier.html",
+        "locator": "extracted/erpnext-supplier.md:article",
+        "source_sha256": "1DD2CBED3915F83CC734BA23F7A016A9C386ED6BA9E54962619F70DB706F5C6F",
+        "snapshot_content_lines": [
+          {
+            "line": 62,
+            "text": ""
+          },
+          {
+            "line": 63,
+            "text": "The hold types are as follows:"
+          },
+          {
+            "line": 64,
+            "text": "+ Invoices: ERPNext will not allow Purchase Invoices or Purchase Orders to be created for the supplier + Payments: ERPNext will not allow Payment Entries to be created for the Supplier + All: ERPNext will apply both hold types aboveIf you do not set a release date, ERPNext will hold the Supplier **indefinitely**."
+          },
+          {
+            "line": 65,
+            "text": "### 2.5 Default Payable Accounts"
+          }
+        ]
+      },
+      {
+        "evidence_id": "VIS-FSV-B19-01",
+        "source_id": "erpnext-supplier.html",
+        "locator": "extracted/erpnext-supplier.md:article",
+        "source_sha256": "1DD2CBED3915F83CC734BA23F7A016A9C386ED6BA9E54962619F70DB706F5C6F",
+        "snapshot_content_lines": [
+          {
+            "line": 63,
+            "text": "The hold types are as follows:"
+          },
+          {
+            "line": 64,
+            "text": "+ Invoices: ERPNext will not allow Purchase Invoices or Purchase Orders to be created for the supplier + Payments: ERPNext will not allow Payment Entries to be created for the Supplier + All: ERPNext will apply both hold types aboveIf you do not set a release date, ERPNext will hold the Supplier **indefinitely**."
+          },
+          {
+            "line": 65,
+            "text": "### 2.5 Default Payable Accounts"
+          },
+          {
+            "line": 66,
+            "text": ""
+          }
+        ]
+      }
+    ],
+    "author_audit": "原v1把Invoices/All与on-hold写进ALLOW分支，方向反转，原合法/违规请求均判反；原v2表达未冻结或Payments可允许，原请求对匹配。",
+    "issue_audit": []
+  },
+  {
+    "parent_id": "FSV-B19__four_case_v1",
+    "packet_path": "/mnt/d/lunwen/EC-CSI投稿/working/exploration/20261014_matched_evidence_labor/judge_control/generation_inputs/FSV-B19/packet.json",
+    "packet_sha256": "10c5597e97e4190aa041c53aa3aee8b4c1c48fa77d073bfb4fb5eb5a64a346fd",
+    "objective": {
+      "constraint_object": "Supplier on-hold status and hold type relevant to Purchase Order creation",
+      "constraint_kind": "The documented supplier hold-type condition for the target operation",
+      "scope": "Implement the supplier hold policy for this Purchase Order target only; do not add restrictions for invoices, payments, other endpoints or unrelated fields."
+    },
+    "source_excerpts": [
+      {
+        "evidence_id": "VIS-FSV-B19-01",
+        "source_id": "erpnext-supplier.html",
+        "locator": "extracted/erpnext-supplier.md:article",
+        "source_sha256": "1DD2CBED3915F83CC734BA23F7A016A9C386ED6BA9E54962619F70DB706F5C6F",
+        "snapshot_content_lines": [
+          {
+            "line": 62,
+            "text": ""
+          },
+          {
+            "line": 63,
+            "text": "The hold types are as follows:"
+          },
+          {
+            "line": 64,
+            "text": "+ Invoices: ERPNext will not allow Purchase Invoices or Purchase Orders to be created for the supplier + Payments: ERPNext will not allow Payment Entries to be created for the Supplier + All: ERPNext will apply both hold types aboveIf you do not set a release date, ERPNext will hold the Supplier **indefinitely**."
+          },
+          {
+            "line": 65,
+            "text": "### 2.5 Default Payable Accounts"
+          }
+        ]
+      },
+      {
+        "evidence_id": "VIS-FSV-B19-01",
+        "source_id": "erpnext-supplier.html",
+        "locator": "extracted/erpnext-supplier.md:article",
+        "source_sha256": "1DD2CBED3915F83CC734BA23F7A016A9C386ED6BA9E54962619F70DB706F5C6F",
+        "snapshot_content_lines": [
+          {
+            "line": 63,
+            "text": "The hold types are as follows:"
+          },
+          {
+            "line": 64,
+            "text": "+ Invoices: ERPNext will not allow Purchase Invoices or Purchase Orders to be created for the supplier + Payments: ERPNext will not allow Payment Entries to be created for the Supplier + All: ERPNext will apply both hold types aboveIf you do not set a release date, ERPNext will hold the Supplier **indefinitely**."
+          },
+          {
+            "line": 65,
+            "text": "### 2.5 Default Payable Accounts"
+          },
+          {
+            "line": 66,
+            "text": ""
+          }
+        ]
+      }
+    ],
+    "author_audit": "原v1把Invoices/All与on-hold写进ALLOW分支，方向反转，原合法/违规请求均判反；原v2表达未冻结或Payments可允许，原请求对匹配。",
+    "issue_audit": [
+      {
+        "category": "DIRECTION_MISMATCH",
+        "source_audit": "SUPPORTED_BY_SOURCE_ALLOW_SEMANTICS_AND_REPLAY"
+      },
+      {
+        "category": "MISSING_INPUT_HANDLING",
+        "source_audit": "MIXED_BEHAVIOR_OBSERVED_BUT_UNSUPPORTED_OPERATION_CLAIM",
+        "explanation": "缺trusted探针确实allow；但冻结操作文档说缺值follow on_missing，引擎明确支持skip。公开任务未规定缺值必须拒绝，因此Judge称操作不支持skip/必须拒绝的附加断言依据不足，不能计为已证实第二缺陷。"
+      }
+    ]
+  }
+]

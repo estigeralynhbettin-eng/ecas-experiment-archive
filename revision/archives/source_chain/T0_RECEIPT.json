@@ -1,0 +1,102 @@
+{
+  "status": "PASS",
+  "scope_id": "ECAS-SOURCE-RULE-CHAIN-20261015-01",
+  "run_id": "source-rule-chain-t0-v1",
+  "checks": [
+    {
+      "check": "source_empty_defaults_all_",
+      "pass": true
+    },
+    {
+      "check": "source_date_boundary_",
+      "pass": true
+    },
+    {
+      "check": "source_empty_defaults_all_2026-10-14",
+      "pass": true
+    },
+    {
+      "check": "source_date_boundary_2026-10-14",
+      "pass": true
+    },
+    {
+      "check": "source_empty_defaults_all_2026-10-15",
+      "pass": true
+    },
+    {
+      "check": "source_date_boundary_2026-10-15",
+      "pass": true
+    },
+    {
+      "check": "source_empty_defaults_all_2026-10-16",
+      "pass": true
+    },
+    {
+      "check": "source_date_boundary_2026-10-16",
+      "pass": true
+    },
+    {
+      "check": "source_unheld_clears_type_and_date",
+      "pass": true
+    },
+    {
+      "check": "original_ir_full_admitted",
+      "pass": true
+    },
+    {
+      "check": "missing_evidence_rejected",
+      "pass": true
+    },
+    {
+      "check": "ecas_execution_allow",
+      "pass": true
+    },
+    {
+      "check": "P2P_STYLE_OPA_allow",
+      "pass": true
+    },
+    {
+      "check": "AUTOPAC_STYLE_OPA_allow",
+      "pass": true
+    },
+    {
+      "check": "frozen_32_states",
+      "pass": true
+    },
+    {
+      "check": "space_at_least_1GiB",
+      "pass": true
+    },
+    {
+      "check": "no_network_library_imports",
+      "pass": true
+    },
+    {
+      "check": "process_inventory_collected",
+      "pass": true
+    }
+  ],
+  "runtime_lane": "/root/ecas_source_rule_chain_20261015",
+  "source_functions": [
+    {
+      "source": "/mnt/d/lunwen/EC-CSI投稿/working/exploration/20261015_source_rule_chain/inputs/supplier.py",
+      "class": "Supplier",
+      "function": "before_save",
+      "line_start": 88,
+      "line_end": 93,
+      "ast_sha256": "a2673197c474598058f8347421c649e15b11464b62766b3ef58908d241612c68"
+    },
+    {
+      "source": "/mnt/d/lunwen/EC-CSI投稿/working/exploration/20261015_source_rule_chain/inputs/accounts_controller.py",
+      "class": "AccountsController",
+      "function": "ensure_supplier_is_not_blocked",
+      "line_start": 157,
+      "line_end": 174,
+      "ast_sha256": "7e3140ca227ca667fb7edd1b6e588431eb7cf0ab369030b7f9052c46ecd14b17"
+    }
+  ],
+  "completed_at": "2026-10-15T04:09:16.826513+00:00",
+  "uid": 0,
+  "scientific_result": false,
+  "new_model_calls": 0
+}

@@ -1,0 +1,421 @@
+{
+  "task": "FSV-B17",
+  "method": "ECAS_MATCHED",
+  "scope_id": "ECAS-MATCHED-EVIDENCE-LABOR-20261014-01",
+  "status": "ELIGIBLE",
+  "calls": [
+    23
+  ],
+  "repaired_once": false,
+  "execution_eligible": true,
+  "first_checks": {
+    "accepted": true,
+    "compile_status": "COMPILED",
+    "admission_status": "ADMITTED",
+    "developer_results": {
+      "passed": true,
+      "rows": [
+        {
+          "id": "dev_enabled",
+          "expected": "allow",
+          "actual": {
+            "policy_id": "FSV-B17-DISABLED-CUSTOMER-SO",
+            "decision": "allow",
+            "fail_closed": true,
+            "violations": []
+          },
+          "pass": true
+        },
+        {
+          "id": "dev_disabled",
+          "expected": "deny",
+          "actual": {
+            "policy_id": "FSV-B17-DISABLED-CUSTOMER-SO",
+            "decision": "deny",
+            "fail_closed": true,
+            "violations": [
+              {
+                "rule_id": "FSV-B17-RULE-01",
+                "code": "bounded_guard_rejected",
+                "detail": "FSV-B17-RULE-01"
+              }
+            ]
+          },
+          "pass": true
+        }
+      ]
+    },
+    "policy_path": "/mnt/d/lunwen/EC-CSI投稿/working/exploration/20261014_matched_evidence_labor/matched_generation/method_runs/FSV-B17/ECAS_MATCHED/initial/admitted_policy.json"
+  },
+  "final_checks": {
+    "accepted": true,
+    "compile_status": "COMPILED",
+    "admission_status": "ADMITTED",
+    "developer_results": {
+      "passed": true,
+      "rows": [
+        {
+          "id": "dev_enabled",
+          "expected": "allow",
+          "actual": {
+            "policy_id": "FSV-B17-DISABLED-CUSTOMER-SO",
+            "decision": "allow",
+            "fail_closed": true,
+            "violations": []
+          },
+          "pass": true
+        },
+        {
+          "id": "dev_disabled",
+          "expected": "deny",
+          "actual": {
+            "policy_id": "FSV-B17-DISABLED-CUSTOMER-SO",
+            "decision": "deny",
+            "fail_closed": true,
+            "violations": [
+              {
+                "rule_id": "FSV-B17-RULE-01",
+                "code": "bounded_guard_rejected",
+                "detail": "FSV-B17-RULE-01"
+              }
+            ]
+          },
+          "pass": true
+        }
+      ]
+    },
+    "policy_path": "/mnt/d/lunwen/EC-CSI投稿/working/exploration/20261014_matched_evidence_labor/matched_generation/method_runs/FSV-B17/ECAS_MATCHED/initial/admitted_policy.json"
+  },
+  "generation_frozen_at": "2026-10-15T00:54:48.333592+00:00",
+  "final_evaluation_not_yet_read": true,
+  "first_diagnostic": {
+    "execution_status": "DIAGNOSTIC_ONLY",
+    "requests": [
+      {
+        "channel": "O-L",
+        "input": {
+          "request": {
+            "body": {
+              "customer": "CUSTOMER-SYNTH-1"
+            }
+          },
+          "trusted": {
+            "customerDisabled": false
+          }
+        },
+        "expected": "allow",
+        "actual": {
+          "policy_id": "FSV-B17-DISABLED-CUSTOMER-SO",
+          "decision": "allow",
+          "fail_closed": true,
+          "violations": []
+        },
+        "pass": true
+      },
+      {
+        "channel": "O-I",
+        "input": {
+          "request": {
+            "body": {
+              "customer": "CUSTOMER-SYNTH-1"
+            }
+          },
+          "trusted": {
+            "customerDisabled": true
+          }
+        },
+        "expected": "deny",
+        "actual": {
+          "policy_id": "FSV-B17-DISABLED-CUSTOMER-SO",
+          "decision": "deny",
+          "fail_closed": true,
+          "violations": [
+            {
+              "rule_id": "FSV-B17-RULE-01",
+              "code": "bounded_guard_rejected",
+              "detail": "FSV-B17-RULE-01"
+            }
+          ]
+        },
+        "pass": true
+      }
+    ],
+    "branches": [
+      {
+        "label": "enabled",
+        "input": {
+          "request": {
+            "body": {
+              "customer": "CUSTOMER-SYNTH-1"
+            }
+          },
+          "trusted": {
+            "customerDisabled": false
+          }
+        },
+        "expected": "allow",
+        "kind": "documented_rule",
+        "actual": {
+          "policy_id": "FSV-B17-DISABLED-CUSTOMER-SO",
+          "decision": "allow",
+          "fail_closed": true,
+          "violations": []
+        },
+        "pass": true
+      },
+      {
+        "label": "disabled",
+        "input": {
+          "request": {
+            "body": {
+              "customer": "CUSTOMER-SYNTH-1"
+            }
+          },
+          "trusted": {
+            "customerDisabled": true
+          }
+        },
+        "expected": "deny",
+        "kind": "documented_rule",
+        "actual": {
+          "policy_id": "FSV-B17-DISABLED-CUSTOMER-SO",
+          "decision": "deny",
+          "fail_closed": true,
+          "violations": [
+            {
+              "rule_id": "FSV-B17-RULE-01",
+              "code": "bounded_guard_rejected",
+              "detail": "FSV-B17-RULE-01"
+            }
+          ]
+        },
+        "pass": true
+      },
+      {
+        "label": "body-disable-spoof",
+        "input": {
+          "request": {
+            "body": {
+              "customer": "CUSTOMER-SYNTH-1",
+              "customerDisabled": false
+            }
+          },
+          "trusted": {
+            "customerDisabled": true
+          }
+        },
+        "expected": "deny",
+        "kind": "engineering_trust_control",
+        "actual": {
+          "policy_id": "FSV-B17-DISABLED-CUSTOMER-SO",
+          "decision": "deny",
+          "fail_closed": true,
+          "violations": [
+            {
+              "rule_id": "FSV-B17-RULE-01",
+              "code": "bounded_guard_rejected",
+              "detail": "FSV-B17-RULE-01"
+            }
+          ]
+        },
+        "pass": true
+      },
+      {
+        "label": "missing-trusted",
+        "input": {
+          "request": {
+            "body": {
+              "customer": "CUSTOMER-SYNTH-1"
+            }
+          },
+          "trusted": {}
+        },
+        "expected": "deny",
+        "kind": "engineering_fail_closed_control",
+        "actual": {
+          "policy_id": "FSV-B17-DISABLED-CUSTOMER-SO",
+          "decision": "deny",
+          "fail_closed": true,
+          "violations": [
+            {
+              "rule_id": "FSV-B17-RULE-01",
+              "code": "required_input_missing",
+              "detail": "FSV-B17-RULE-01"
+            }
+          ]
+        },
+        "pass": true
+      }
+    ],
+    "request_pair_correct": true,
+    "policy_sha256": "a206e1535f6402c2864e7b3265b287dc3700c39e2f7aba4103ae62f0ecedc79d",
+    "eligibility_at_generation": true,
+    "branch_classification": "HISTORICAL_POSTHOC_ENGINEERING_NOT_ACCURACY_DENOMINATOR"
+  },
+  "final_evaluation": {
+    "execution_status": "ELIGIBLE_POLICY_EXECUTED",
+    "requests": [
+      {
+        "channel": "O-L",
+        "input": {
+          "request": {
+            "body": {
+              "customer": "CUSTOMER-SYNTH-1"
+            }
+          },
+          "trusted": {
+            "customerDisabled": false
+          }
+        },
+        "expected": "allow",
+        "actual": {
+          "policy_id": "FSV-B17-DISABLED-CUSTOMER-SO",
+          "decision": "allow",
+          "fail_closed": true,
+          "violations": []
+        },
+        "pass": true
+      },
+      {
+        "channel": "O-I",
+        "input": {
+          "request": {
+            "body": {
+              "customer": "CUSTOMER-SYNTH-1"
+            }
+          },
+          "trusted": {
+            "customerDisabled": true
+          }
+        },
+        "expected": "deny",
+        "actual": {
+          "policy_id": "FSV-B17-DISABLED-CUSTOMER-SO",
+          "decision": "deny",
+          "fail_closed": true,
+          "violations": [
+            {
+              "rule_id": "FSV-B17-RULE-01",
+              "code": "bounded_guard_rejected",
+              "detail": "FSV-B17-RULE-01"
+            }
+          ]
+        },
+        "pass": true
+      }
+    ],
+    "branches": [
+      {
+        "label": "enabled",
+        "input": {
+          "request": {
+            "body": {
+              "customer": "CUSTOMER-SYNTH-1"
+            }
+          },
+          "trusted": {
+            "customerDisabled": false
+          }
+        },
+        "expected": "allow",
+        "kind": "documented_rule",
+        "actual": {
+          "policy_id": "FSV-B17-DISABLED-CUSTOMER-SO",
+          "decision": "allow",
+          "fail_closed": true,
+          "violations": []
+        },
+        "pass": true
+      },
+      {
+        "label": "disabled",
+        "input": {
+          "request": {
+            "body": {
+              "customer": "CUSTOMER-SYNTH-1"
+            }
+          },
+          "trusted": {
+            "customerDisabled": true
+          }
+        },
+        "expected": "deny",
+        "kind": "documented_rule",
+        "actual": {
+          "policy_id": "FSV-B17-DISABLED-CUSTOMER-SO",
+          "decision": "deny",
+          "fail_closed": true,
+          "violations": [
+            {
+              "rule_id": "FSV-B17-RULE-01",
+              "code": "bounded_guard_rejected",
+              "detail": "FSV-B17-RULE-01"
+            }
+          ]
+        },
+        "pass": true
+      },
+      {
+        "label": "body-disable-spoof",
+        "input": {
+          "request": {
+            "body": {
+              "customer": "CUSTOMER-SYNTH-1",
+              "customerDisabled": false
+            }
+          },
+          "trusted": {
+            "customerDisabled": true
+          }
+        },
+        "expected": "deny",
+        "kind": "engineering_trust_control",
+        "actual": {
+          "policy_id": "FSV-B17-DISABLED-CUSTOMER-SO",
+          "decision": "deny",
+          "fail_closed": true,
+          "violations": [
+            {
+              "rule_id": "FSV-B17-RULE-01",
+              "code": "bounded_guard_rejected",
+              "detail": "FSV-B17-RULE-01"
+            }
+          ]
+        },
+        "pass": true
+      },
+      {
+        "label": "missing-trusted",
+        "input": {
+          "request": {
+            "body": {
+              "customer": "CUSTOMER-SYNTH-1"
+            }
+          },
+          "trusted": {}
+        },
+        "expected": "deny",
+        "kind": "engineering_fail_closed_control",
+        "actual": {
+          "policy_id": "FSV-B17-DISABLED-CUSTOMER-SO",
+          "decision": "deny",
+          "fail_closed": true,
+          "violations": [
+            {
+              "rule_id": "FSV-B17-RULE-01",
+              "code": "required_input_missing",
+              "detail": "FSV-B17-RULE-01"
+            }
+          ]
+        },
+        "pass": true
+      }
+    ],
+    "request_pair_correct": true,
+    "policy_sha256": "a206e1535f6402c2864e7b3265b287dc3700c39e2f7aba4103ae62f0ecedc79d",
+    "eligibility_at_generation": true,
+    "branch_classification": "HISTORICAL_POSTHOC_ENGINEERING_NOT_ACCURACY_DENOMINATOR"
+  },
+  "request_pair_correct": true,
+  "evaluated_at": "2026-10-15T00:56:38.165850+00:00"
+}

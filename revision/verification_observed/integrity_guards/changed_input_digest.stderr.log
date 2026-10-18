@@ -1,0 +1,10 @@
+Traceback (most recent call last):
+  File "/root/ecas_a9_artifact_verify_v2/extracted/offline/replay.py", line 222, in <module>
+    if __name__=='__main__':main()
+  File "/root/ecas_a9_artifact_verify_v2/extracted/offline/replay.py", line 218, in main
+    if args.mode=='t0':t0(out)
+  File "/root/ecas_a9_artifact_verify_v2/extracted/offline/replay.py", line 88, in t0
+    count=manifest_check();checks.append({'check':'all_input_digests','pass':count>0,'files':count})
+  File "/root/ecas_a9_artifact_verify_v2/extracted/offline/replay.py", line 29, in manifest_check
+    if sha(p)!=e['sha256']:raise RuntimeError('Input digest mismatch: '+e['path'])
+RuntimeError: Input digest mismatch: README.md

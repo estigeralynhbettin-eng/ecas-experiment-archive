@@ -1,0 +1,56 @@
+{
+  "task": "FSV-B06",
+  "method": "ECAS_MATCHED",
+  "classification": "RETROSPECTIVE_ADAPTED_LOCAL_PILOT_NOT_NATIVE_OR_BLIND",
+  "status": "EVALUATED",
+  "requests": [
+    {
+      "channel": "O-L",
+      "input": {
+        "request": {
+          "body": {}
+        },
+        "trusted": {
+          "reAgeIsLatestTransaction": true
+        }
+      },
+      "expected": "allow",
+      "actual": {
+        "policy_id": "pol-FSV-B06-reage-undo-latest-only",
+        "decision": "allow",
+        "fail_closed": true,
+        "violations": []
+      }
+    },
+    {
+      "channel": "O-I",
+      "input": {
+        "request": {
+          "body": {}
+        },
+        "trusted": {
+          "reAgeIsLatestTransaction": false
+        }
+      },
+      "expected": "deny",
+      "actual": {
+        "policy_id": "pol-FSV-B06-reage-undo-latest-only",
+        "decision": "deny",
+        "fail_closed": true,
+        "violations": [
+          {
+            "rule_id": "rule-FSV-B06-reage-undo-latest-only",
+            "code": "bounded_guard_rejected",
+            "detail": "rule-FSV-B06-reage-undo-latest-only"
+          }
+        ]
+      }
+    }
+  ],
+  "calls": [
+    13
+  ],
+  "admission": "ADMITTED",
+  "request_pair_correct": true,
+  "completed_at": "2026-10-14T04:06:34.471786+00:00"
+}

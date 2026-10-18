@@ -1,0 +1,28 @@
+{
+  "choices": [
+    {
+      "finish_reason": "stop",
+      "index": 0,
+      "message": {
+        "content": "{\"begin\":\"BEGIN_FSV-B19_p2p_tests_MAIN\",\"stage\":\"p2p_tests\",\"output\":{\"tests\":[{\"id\":\"T1\",\"input\":{\"request\":{\"body\":{\"action\":\"POST /api/resource/Purchase Order\",\"supplier\":\"SUP-0001\"}},\"trusted\":{\"supplierOnHold\":true,\"holdType\":\"Invoices\"}},\"expected\":\"deny\",\"source_ref\":\"VIS-FSV-B19-01\"},{\"id\":\"T2\",\"input\":{\"request\":{\"body\":{\"action\":\"POST /api/resource/Purchase Order\",\"supplier\":\"SUP-0002\"}},\"trusted\":{\"supplierOnHold\":true,\"holdType\":\"All\"}},\"expected\":\"deny\",\"source_ref\":\"VIS-FSV-B19-01\"},{\"id\":\"T3\",\"input\":{\"request\":{\"body\":{\"action\":\"POST /api/resource/Purchase Order\",\"supplier\":\"SUP-0003\"}},\"trusted\":{\"supplierOnHold\":true,\"holdType\":\"Payments\"}},\"expected\":\"allow\",\"source_ref\":\"VIS-FSV-B19-01\"},{\"id\":\"T4\",\"input\":{\"request\":{\"body\":{\"action\":\"POST /api/resource/Purchase Order\",\"supplier\":\"SUP-0004\"}},\"trusted\":{\"supplierOnHold\":false,\"holdType\":\"Invoices\"}},\"expected\":\"allow\",\"source_ref\":\"VIS-FSV-B19-01\"},{\"id\":\"T5\",\"input\":{\"request\":{\"body\":{\"action\":\"POST /api/resource/Purchase Order\",\"supplier\":\"SUP-0005\"}},\"trusted\":{\"supplierOnHold\":false,\"holdType\":\"All\"}},\"expected\":\"allow\",\"source_ref\":\"VIS-FSV-B19-01\"}]},\"end\":\"END_FSV-B19_p2p_tests_MAIN\"}",
+        "role": "assistant"
+      }
+    }
+  ],
+  "created": 1791979015,
+  "id": "2026101419564442c1759552c8450a",
+  "model": "glm-5.2",
+  "object": "chat.completion",
+  "request_id": "2026101419564442c1759552c8450a",
+  "usage": {
+    "completion_tokens": 1053,
+    "completion_tokens_details": {
+      "reasoning_tokens": 489
+    },
+    "prompt_tokens": 5866,
+    "prompt_tokens_details": {
+      "cached_tokens": 0
+    },
+    "total_tokens": 6919
+  }
+}

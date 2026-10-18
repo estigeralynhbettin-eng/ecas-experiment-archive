@@ -1,0 +1,50 @@
+[
+  {
+    "id": "dev_limit",
+    "input": {
+      "request": {
+        "body": {
+          "qty": 54
+        }
+      },
+      "trusted": {
+        "derivedMaximumQty": 54,
+        "authorizedRole": false
+      }
+    },
+    "expected": "allow",
+    "source_ref": "VIS-FSV-B13-01"
+  },
+  {
+    "id": "dev_over",
+    "input": {
+      "request": {
+        "body": {
+          "qty": 55
+        }
+      },
+      "trusted": {
+        "derivedMaximumQty": 54,
+        "authorizedRole": false
+      }
+    },
+    "expected": "deny",
+    "source_ref": "VIS-FSV-B13-01"
+  },
+  {
+    "id": "dev_role_exception",
+    "input": {
+      "request": {
+        "body": {
+          "qty": 55
+        }
+      },
+      "trusted": {
+        "derivedMaximumQty": 54,
+        "authorizedRole": true
+      }
+    },
+    "expected": "allow",
+    "source_ref": "VIS-FSV-B13-01"
+  }
+]

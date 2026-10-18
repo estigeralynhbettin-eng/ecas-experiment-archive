@@ -1,0 +1,11 @@
+{
+  "model_calls": 0,
+  "changes": [
+    {
+      "path": "/mnt/d/lunwen/EC-CSI投稿/working/exploration/20261014_four_case_peer_baselines/managed_entry.py",
+      "before": "2ec76778226d93e9cc5cc881177fcdc0ad976cc4a7e67313c213c81a856734f4",
+      "after": "34dc875a105a8d64a471eca9b1846b377e56e62a77029f467775c59f7f68b14e",
+      "reason": "smoke artifact selection repair before first call"
+    }
+  ]
+}

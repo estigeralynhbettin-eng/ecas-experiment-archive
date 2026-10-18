@@ -1,0 +1,95 @@
+{
+  "parent_id": "FSV-B17__four_case_v1",
+  "case": "FSV-B17",
+  "configuration": "four_case_v1",
+  "row_id": "FSV-B17__four_case_v1__trusted_path_to_unregistered_client_path",
+  "variant": "trusted_path_to_unregistered_client_path",
+  "classification": "CONSTRUCTED_POLICY_PATH_PERTURBATION",
+  "expected_full": "reject",
+  "notes": "All trusted paths changed to client-body paths without changing inventory declarations",
+  "source_parent_candidate": "/root/ecas_evidence_ablation_20261014/inputs/FSV-B17__four_case_v1/candidate.json",
+  "source_parent_contract": "/root/ecas_evidence_ablation_20261014/inputs/FSV-B17__four_case_v1/contract.json",
+  "candidate_sha256": "e6ee49fc2ee2b6c46143bf4d904f0a58f67b03519c87013bb240a420fd0edc53",
+  "contract_sha256": "ae7c83dcf8f9ee8d8bd1a0218cf8d7d72e0f54c97771e6b49e6acf387eeab0bf",
+  "output_folder": "/root/ecas_evidence_ablation_20261014/outputs/FSV-B17__four_case_v1__trusted_path_to_unregistered_client_path",
+  "full_executed": false,
+  "shape_executed": true,
+  "ir_status": "COMPILED",
+  "contract_shape_valid": true,
+  "full_status": "ADMISSION_REJECTED",
+  "full_error": "rule FSV-B17-RULE-01 has unbound paths: ['/request/body/ecasClientClaim/customerDisabled']",
+  "shape_status": "COMPILED_NO_INVENTORY",
+  "eligible_admission_contrast": true,
+  "full_evaluations": [],
+  "shape_evaluations": [
+    {
+      "fixture_id": "FSV-B17-OL-01",
+      "fixture_class": "CONSTRUCTED_CLIENT_PATH_REPLAY",
+      "expected": null,
+      "actual": {
+        "policy_id": "FSV-B17-CUSTOMER-DISABLED-DISALLOW-SO",
+        "decision": "deny",
+        "fail_closed": true,
+        "violations": [
+          {
+            "rule_id": "FSV-B17-RULE-01",
+            "code": "client_supplied_server_value",
+            "detail": "/request/body/ecasClientClaim/customerDisabled"
+          }
+        ]
+      },
+      "correct": null
+    },
+    {
+      "fixture_id": "FSV-B17-OI-01",
+      "fixture_class": "CONSTRUCTED_CLIENT_PATH_REPLAY",
+      "expected": null,
+      "actual": {
+        "policy_id": "FSV-B17-CUSTOMER-DISABLED-DISALLOW-SO",
+        "decision": "deny",
+        "fail_closed": true,
+        "violations": [
+          {
+            "rule_id": "FSV-B17-RULE-01",
+            "code": "client_supplied_server_value",
+            "detail": "/request/body/ecasClientClaim/customerDisabled"
+          }
+        ]
+      },
+      "correct": null
+    },
+    {
+      "fixture_id": "SYNTH-CLIENT-SPOOF",
+      "fixture_class": "CONSTRUCTED_CLIENT_SPOOF_PROBE",
+      "expected": null,
+      "actual": {
+        "policy_id": "FSV-B17-CUSTOMER-DISABLED-DISALLOW-SO",
+        "decision": "deny",
+        "fail_closed": true,
+        "violations": [
+          {
+            "rule_id": "FSV-B17-RULE-01",
+            "code": "client_supplied_server_value",
+            "detail": "/request/body/ecasClientClaim/customerDisabled"
+          }
+        ]
+      },
+      "correct": null
+    },
+    {
+      "fixture_id": "SYNTH-MISSING-TRUSTED",
+      "fixture_class": "CONSTRUCTED_MISSING_CONTEXT_CONTROL",
+      "expected": null,
+      "actual": {
+        "policy_id": "FSV-B17-CUSTOMER-DISABLED-DISALLOW-SO",
+        "decision": "allow",
+        "fail_closed": true,
+        "violations": []
+      },
+      "correct": null
+    }
+  ],
+  "original_pair_correct": null,
+  "full_execution_errors": 0,
+  "shape_execution_errors": 0
+}

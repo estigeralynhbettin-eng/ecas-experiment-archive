@@ -1,0 +1,192 @@
+{
+  "status": "PASS",
+  "checked_at": "2026-10-14T04:18:41.333608+00:00",
+  "checks": [
+    {
+      "check": "call_raw_1",
+      "pass": true,
+      "path": "/mnt/d/lunwen/EC-CSI投稿/working/exploration/20261014_external_baseline_pilot/calls/01_FSV-S04_p2p_rego/response.raw.json"
+    },
+    {
+      "check": "call_raw_2",
+      "pass": true,
+      "path": "/mnt/d/lunwen/EC-CSI投稿/working/exploration/20261014_external_baseline_pilot/calls/02_FSV-S04_autopac_generate/response.raw.json"
+    },
+    {
+      "check": "call_raw_4",
+      "pass": true,
+      "path": "/mnt/d/lunwen/EC-CSI投稿/working/exploration/20261014_external_baseline_pilot/calls/04_FSV-S04_ecas_generate/response.raw.json"
+    },
+    {
+      "check": "call_raw_5",
+      "pass": true,
+      "path": "/mnt/d/lunwen/EC-CSI投稿/working/exploration/20261014_external_baseline_pilot/calls/05_FSV-B06_p2p_detect/response.raw.json"
+    },
+    {
+      "check": "call_raw_6",
+      "pass": true,
+      "path": "/mnt/d/lunwen/EC-CSI投稿/working/exploration/20261014_external_baseline_pilot/calls/06_FSV-B06_p2p_extract/response.raw.json"
+    },
+    {
+      "check": "call_recovery_6",
+      "pass": true
+    },
+    {
+      "check": "call_raw_7",
+      "pass": true,
+      "path": "/mnt/d/lunwen/EC-CSI投稿/working/exploration/20261014_external_baseline_pilot/calls/07_FSV-B06_p2p_rego/response.raw.json"
+    },
+    {
+      "check": "call_raw_8",
+      "pass": true,
+      "path": "/mnt/d/lunwen/EC-CSI投稿/working/exploration/20261014_external_baseline_pilot/calls/08_FSV-B06_p2p_tests/response.raw.json"
+    },
+    {
+      "check": "call_raw_9",
+      "pass": true,
+      "path": "/mnt/d/lunwen/EC-CSI投稿/working/exploration/20261014_external_baseline_pilot/calls/09_FSV-B06_repair/response.raw.json"
+    },
+    {
+      "check": "call_raw_10",
+      "pass": true,
+      "path": "/mnt/d/lunwen/EC-CSI投稿/working/exploration/20261014_external_baseline_pilot/calls/10_FSV-B06_autopac_generate/response.raw.json"
+    },
+    {
+      "check": "call_raw_11",
+      "pass": true,
+      "path": "/mnt/d/lunwen/EC-CSI投稿/working/exploration/20261014_external_baseline_pilot/calls/11_FSV-B06_autopac_judge/response.raw.json"
+    },
+    {
+      "check": "call_raw_12",
+      "pass": true,
+      "path": "/mnt/d/lunwen/EC-CSI投稿/working/exploration/20261014_external_baseline_pilot/calls/12_FSV-B06_repair/response.raw.json"
+    },
+    {
+      "check": "call_raw_13",
+      "pass": true,
+      "path": "/mnt/d/lunwen/EC-CSI投稿/working/exploration/20261014_external_baseline_pilot/calls/13_FSV-B06_ecas_generate/response.raw.json"
+    },
+    {
+      "check": "call_raw_14",
+      "pass": true,
+      "path": "/mnt/d/lunwen/EC-CSI投稿/working/exploration/20261014_external_baseline_pilot/calls/14_FSV-S02_p2p_detect/response.raw.json"
+    },
+    {
+      "check": "call_raw_15",
+      "pass": true,
+      "path": "/mnt/d/lunwen/EC-CSI投稿/working/exploration/20261014_external_baseline_pilot/calls/15_FSV-S02_autopac_generate/response.raw.json"
+    },
+    {
+      "check": "call_raw_16",
+      "pass": true,
+      "path": "/mnt/d/lunwen/EC-CSI投稿/working/exploration/20261014_external_baseline_pilot/calls/16_FSV-S02_autopac_judge/response.raw.json"
+    },
+    {
+      "check": "call_raw_17",
+      "pass": true,
+      "path": "/mnt/d/lunwen/EC-CSI投稿/working/exploration/20261014_external_baseline_pilot/calls/17_FSV-S02_repair/response.raw.json"
+    },
+    {
+      "check": "call_raw_18",
+      "pass": true,
+      "path": "/mnt/d/lunwen/EC-CSI投稿/working/exploration/20261014_external_baseline_pilot/calls/18_FSV-S02_ecas_generate/response.raw.json"
+    },
+    {
+      "check": "call_raw_19",
+      "pass": true,
+      "path": "/mnt/d/lunwen/EC-CSI投稿/working/exploration/20261014_external_baseline_pilot/calls/19_FSV-S04_p2p_detect/response.raw.json"
+    },
+    {
+      "check": "call_raw_20",
+      "pass": true,
+      "path": "/mnt/d/lunwen/EC-CSI投稿/working/exploration/20261014_external_baseline_pilot/calls/20_FSV-S04_p2p_extract/response.raw.json"
+    },
+    {
+      "check": "call_raw_21",
+      "pass": true,
+      "path": "/mnt/d/lunwen/EC-CSI投稿/working/exploration/20261014_external_baseline_pilot/calls/21_FSV-S04_p2p_rego/response.raw.json"
+    },
+    {
+      "check": "call_raw_22",
+      "pass": true,
+      "path": "/mnt/d/lunwen/EC-CSI投稿/working/exploration/20261014_external_baseline_pilot/calls/22_FSV-S04_p2p_tests/response.raw.json"
+    },
+    {
+      "check": "call_raw_23",
+      "pass": true,
+      "path": "/mnt/d/lunwen/EC-CSI投稿/working/exploration/20261014_external_baseline_pilot/calls/23_FSV-S04_repair/response.raw.json"
+    },
+    {
+      "check": "call_raw_24",
+      "pass": true,
+      "path": "/mnt/d/lunwen/EC-CSI投稿/working/exploration/20261014_external_baseline_pilot/calls/24_FSV-S04_autopac_generate/response.raw.json"
+    },
+    {
+      "check": "call_raw_25",
+      "pass": true,
+      "path": "/mnt/d/lunwen/EC-CSI投稿/working/exploration/20261014_external_baseline_pilot/calls/25_FSV-S04_autopac_judge/response.raw.json"
+    },
+    {
+      "check": "call_raw_26",
+      "pass": true,
+      "path": "/mnt/d/lunwen/EC-CSI投稿/working/exploration/20261014_external_baseline_pilot/calls/26_FSV-S04_repair/response.raw.json"
+    },
+    {
+      "check": "call_raw_27",
+      "pass": true,
+      "path": "/mnt/d/lunwen/EC-CSI投稿/working/exploration/20261014_external_baseline_pilot/calls/27_FSV-S04_ecas_generate/response.raw.json"
+    },
+    {
+      "check": "FSV-B06_P2P_STYLE_O-L_fixture",
+      "pass": true
+    },
+    {
+      "check": "FSV-B06_P2P_STYLE_O-I_fixture",
+      "pass": true
+    },
+    {
+      "check": "FSV-B06_P2P_STYLE_frozen_policy",
+      "pass": true
+    },
+    {
+      "check": "FSV-B06_P2P_STYLE_O-L_raw_opa",
+      "pass": true
+    },
+    {
+      "check": "FSV-B06_P2P_STYLE_O-I_raw_opa",
+      "pass": true
+    },
+    {
+      "check": "FSV-B06_ECAS_MATCHED_O-L_fixture",
+      "pass": true
+    },
+    {
+      "check": "FSV-B06_ECAS_MATCHED_O-I_fixture",
+      "pass": true
+    },
+    {
+      "check": "FSV-S02_ECAS_MATCHED_O-L_fixture",
+      "pass": true
+    },
+    {
+      "check": "FSV-S02_ECAS_MATCHED_O-I_fixture",
+      "pass": true
+    },
+    {
+      "check": "FSV-S04_ECAS_MATCHED_O-L_fixture",
+      "pass": true
+    },
+    {
+      "check": "FSV-S04_ECAS_MATCHED_O-I_fixture",
+      "pass": true
+    },
+    {
+      "check": "authorized_call_limit_and_no_retry",
+      "pass": true
+    }
+  ],
+  "frozen_input_files": 46,
+  "execution_state": "COMPLETED",
+  "scientific_clearance": false,
+  "scope": "ECAS-EXTERNAL-ADAPTATION-20261014-01"
+}

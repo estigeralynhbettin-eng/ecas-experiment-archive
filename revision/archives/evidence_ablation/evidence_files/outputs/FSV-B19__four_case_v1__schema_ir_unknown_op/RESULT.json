@@ -1,0 +1,22 @@
+{
+  "parent_id": "FSV-B19__four_case_v1",
+  "case": "FSV-B19",
+  "configuration": "four_case_v1",
+  "row_id": "FSV-B19__four_case_v1__schema_ir_unknown_op",
+  "variant": "schema_ir_unknown_op",
+  "classification": "ENGINEERING_MODEL_IR_SCHEMA_CONTROL",
+  "expected_full": "schema_fail",
+  "notes": "Unknown operation; excluded from scientific denominator",
+  "source_parent_candidate": "/root/ecas_evidence_ablation_20261014/inputs/FSV-B19__four_case_v1/candidate.json",
+  "source_parent_contract": "/root/ecas_evidence_ablation_20261014/inputs/FSV-B19__four_case_v1/contract.json",
+  "candidate_sha256": "285d9d561568521029656098efec7c7114d4b5a4a9f7ad8c80124732ac9235d4",
+  "contract_sha256": "fd0a7bbb9c3d0588d2f6e8970af7b8d9c34cf0ae82dd494bce68478c6671fd30",
+  "output_folder": "/root/ecas_evidence_ablation_20261014/outputs/FSV-B19__four_case_v1__schema_ir_unknown_op",
+  "full_executed": false,
+  "shape_executed": false,
+  "ir_status": "IR_SCHEMA_OR_TYPE_FAILURE",
+  "full_status": "NOT_ATTEMPTED",
+  "shape_status": "NOT_ATTEMPTED",
+  "error": "model IR schema rejected: /: {'ir_version': 'EC-FIELD-MODEL-IR-V3', 'candidate_id': 'FSV-B19-C01', 'decision': 'propose', 'target': {'operation': 'POST /api/resource/Purchase Order', 'system': 'ERPNext', 'version': '16.0.0'}, 'policy_id': 'FSV-B19-P01', 'evidence_refs': ['VIS-FSV-B19-01', 'VIS-FSV-B19-03', 'VIS-FSV-B19-RUNTIME-ABI'], 'rules': [{'rule_id': 'FSV-B19-R01', 'primitive_id': 'SP-BOUNDED-BUSINESS-GUARD', 'op': 'not_registered', 'evidence_refs': ['VIS-FSV-B19-01', 'VIS-FSV-B19-03', 'VIS-FSV-B19-RUNTIME-ABI'], 'params': {'alternatives': [{'clauses': [{'kind': 'scalar_compare', 'left_path': '/trusted/supplierOnHold', 'operator': 'eq', 'right_source': 'literal', 'right_path': '', 'right_value': True}, {'kind': 'scalar_compare', 'left_path': '/trusted/holdType', 'operator': 'eq', 'right_source': 'literal', 'right_path': '', 'right_value': 'Invoices'}]}, {'clauses': [{'kind': 'scalar_compare', 'left_path': '/trusted/supplierOnHold', 'operator': 'eq', 'right_source': 'literal', 'right_path': '', 'right_value': True}, {'kind': 'scalar_compare', 'left_path': '/trusted/holdType', 'operator': 'eq', 'right_source': 'literal', 'right_path': '', 'right_value': 'All'}]}], 'on_missing': 'skip'}}], 'reason_code': 'none', 'missing_evidence': []} is not valid under any of the given schemas",
+  "eligible_admission_contrast": false
+}

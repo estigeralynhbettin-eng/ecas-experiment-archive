@@ -1,0 +1,28 @@
+{
+  "choices": [
+    {
+      "finish_reason": "stop",
+      "index": 0,
+      "message": {
+        "content": "{\"begin\":\"BEGIN_FSV-B06_p2p_detect_MAIN\",\"stage\":\"p2p_detect\",\"output\":{\"status\":\"READY\",\"statements\":[{\"text\":\"Re-Age transactions can be reversed only if they are the latest transaction on the loan account.\",\"evidence_refs\":[\"VIS-FSV-B06-01\"]}],\"reason\":\"Source VIS-FSV-B06-01 contains an explicit access-control statement constraining the reversal (undo) operation on re-age transactions: reversal is permitted only when the transaction is the latest on the loan account. The runtime ABI (VIS-FSV-B06-RUNTIME-ABI) provides a corresponding trusted boolean path /trusted/reAgeIsLatestTransaction. Source VIS-FSV-B06-02 contains only input parameter and implementation details, no access policy.\"},\"end\":\"END_FSV-B06_p2p_detect_MAIN\"}",
+        "role": "assistant"
+      }
+    }
+  ],
+  "created": 1791950162,
+  "id": "20261014115552575cdd3e795d468d",
+  "model": "glm-5.2",
+  "object": "chat.completion",
+  "request_id": "20261014115552575cdd3e795d468d",
+  "usage": {
+    "completion_tokens": 596,
+    "completion_tokens_details": {
+      "reasoning_tokens": 388
+    },
+    "prompt_tokens": 1125,
+    "prompt_tokens_details": {
+      "cached_tokens": 0
+    },
+    "total_tokens": 1721
+  }
+}

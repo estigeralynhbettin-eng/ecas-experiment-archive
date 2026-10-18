@@ -1,0 +1,12 @@
+{
+  "task": "FSV-B13",
+  "method": "P2P_STYLE",
+  "classification": "RETROSPECTIVE_FOUR_CASE_ADAPTED_PEER_BASELINES_NOT_NATIVE_OR_BLIND",
+  "status": "SCHEMA_GROUNDING_REJECTED",
+  "requests": [],
+  "calls": [
+    9,
+    10
+  ],
+  "reason": "subject not in organization schema"
+}

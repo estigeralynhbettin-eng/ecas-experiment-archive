@@ -1,0 +1,28 @@
+{
+  "choices": [
+    {
+      "finish_reason": "stop",
+      "index": 0,
+      "message": {
+        "content": "{\"begin\":\"BEGIN_FSV-B19_ecas_generate_MAIN\",\"stage\":\"ecas_generate\",\"output\":{\"candidate\":{\"ir_version\":\"EC-FIELD-MODEL-IR-V3\",\"candidate_id\":\"FSV-B19-C01\",\"decision\":\"propose\",\"target\":{\"operation\":\"POST /api/resource/Purchase Order\",\"system\":\"ERPNext\",\"version\":\"16.0.0\"},\"policy_id\":\"FSV-B19-P01\",\"evidence_refs\":[\"VIS-FSV-B19-01\",\"VIS-FSV-B19-03\",\"VIS-FSV-B19-RUNTIME-ABI\"],\"rules\":[{\"rule_id\":\"FSV-B19-R01\",\"primitive_id\":\"SP-BOUNDED-BUSINESS-GUARD\",\"op\":\"bounded_guard_dnf\",\"evidence_refs\":[\"VIS-FSV-B19-01\",\"VIS-FSV-B19-03\",\"VIS-FSV-B19-RUNTIME-ABI\"],\"params\":{\"alternatives\":[{\"clauses\":[{\"kind\":\"scalar_compare\",\"left_path\":\"/trusted/supplierOnHold\",\"operator\":\"eq\",\"right_source\":\"literal\",\"right_path\":\"\",\"right_value\":true},{\"kind\":\"scalar_compare\",\"left_path\":\"/trusted/holdType\",\"operator\":\"eq\",\"right_source\":\"literal\",\"right_path\":\"\",\"right_value\":\"Invoices\"}]},{\"clauses\":[{\"kind\":\"scalar_compare\",\"left_path\":\"/trusted/supplierOnHold\",\"operator\":\"eq\",\"right_source\":\"literal\",\"right_path\":\"\",\"right_value\":true},{\"kind\":\"scalar_compare\",\"left_path\":\"/trusted/holdType\",\"operator\":\"eq\",\"right_source\":\"literal\",\"right_path\":\"\",\"right_value\":\"All\"}]}],\"on_missing\":\"skip\"}}],\"reason_code\":\"none\",\"missing_evidence\":[]}},\"end\":\"END_FSV-B19_ecas_generate_MAIN\"}",
+        "role": "assistant"
+      }
+    }
+  ],
+  "created": 1791979169,
+  "id": "202610141958497577eff6cd694549",
+  "model": "glm-5.2",
+  "object": "chat.completion",
+  "request_id": "202610141958497577eff6cd694549",
+  "usage": {
+    "completion_tokens": 2857,
+    "completion_tokens_details": {
+      "reasoning_tokens": 2501
+    },
+    "prompt_tokens": 7718,
+    "prompt_tokens_details": {
+      "cached_tokens": 0
+    },
+    "total_tokens": 10575
+  }
+}

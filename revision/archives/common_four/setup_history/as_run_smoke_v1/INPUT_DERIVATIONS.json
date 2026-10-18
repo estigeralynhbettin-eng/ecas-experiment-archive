@@ -1,0 +1,46 @@
+[
+  {
+    "task": "FSV-S03",
+    "source_path": "/mnt/d/lunwen/EC-CSI投稿/working/exploration/20261014_four_case_peer_baselines/generation_inputs/FSV-S03/packet.json",
+    "source_sha256": "3394739916d5cdeedfe7169be9ed4c48d92710c91338adcb230f593fe3aeb394",
+    "derived_path": "/mnt/d/lunwen/EC-CSI投稿/working/exploration/20261014_matched_evidence_labor/matched_generation/generation_inputs/FSV-S03/packet.json",
+    "derived_sha256": "acddb441ffde6b492d77d8964ce22ba69bf037eb164daa9f8674ca1e4a8f596a",
+    "only_added": "TARGET_OBJECTIVE",
+    "source_content_changed": false,
+    "contains_correct_predicate": false,
+    "contains_final_fixture_or_label": false
+  },
+  {
+    "task": "FSV-B13",
+    "source_path": "/mnt/d/lunwen/EC-CSI投稿/working/exploration/20261014_four_case_peer_baselines/generation_inputs/FSV-B13/packet.json",
+    "source_sha256": "ae3e50b895f4b1b1b5cc63f953cf5da2fe34ff260bbfb45e998506167a813f30",
+    "derived_path": "/mnt/d/lunwen/EC-CSI投稿/working/exploration/20261014_matched_evidence_labor/matched_generation/generation_inputs/FSV-B13/packet.json",
+    "derived_sha256": "0b07fe5eb4c156c96759cb0ff7e45d58523efd87549f88932ef029003a4ecb9b",
+    "only_added": "TARGET_OBJECTIVE",
+    "source_content_changed": false,
+    "contains_correct_predicate": false,
+    "contains_final_fixture_or_label": false
+  },
+  {
+    "task": "FSV-B17",
+    "source_path": "/mnt/d/lunwen/EC-CSI投稿/working/exploration/20261014_four_case_peer_baselines/generation_inputs/FSV-B17/packet.json",
+    "source_sha256": "6f249be13953e1a558b539376f5f63427af617fbf4bfb6de6daacf5a2c44797f",
+    "derived_path": "/mnt/d/lunwen/EC-CSI投稿/working/exploration/20261014_matched_evidence_labor/matched_generation/generation_inputs/FSV-B17/packet.json",
+    "derived_sha256": "03e726de50a01e76c55ce26e0925632c218de4ab96339c3752d37e33535a6479",
+    "only_added": "TARGET_OBJECTIVE",
+    "source_content_changed": false,
+    "contains_correct_predicate": false,
+    "contains_final_fixture_or_label": false
+  },
+  {
+    "task": "FSV-B19",
+    "source_path": "/mnt/d/lunwen/EC-CSI投稿/working/exploration/20261014_four_case_peer_baselines/generation_inputs/FSV-B19/packet.json",
+    "source_sha256": "d6357a267dfa30cf84541921db2e0b611b9ca455261ea6e6231e4be1ad68bb4e",
+    "derived_path": "/mnt/d/lunwen/EC-CSI投稿/working/exploration/20261014_matched_evidence_labor/matched_generation/generation_inputs/FSV-B19/packet.json",
+    "derived_sha256": "10c5597e97e4190aa041c53aa3aee8b4c1c48fa77d073bfb4fb5eb5a64a346fd",
+    "only_added": "TARGET_OBJECTIVE",
+    "source_content_changed": false,
+    "contains_correct_predicate": false,
+    "contains_final_fixture_or_label": false
+  }
+]

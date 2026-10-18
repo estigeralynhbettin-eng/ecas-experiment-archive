@@ -1,0 +1,75 @@
+{
+  "ir_version": "EC-FIELD-MODEL-IR-V3",
+  "candidate_id": "FSV-B19-C01",
+  "decision": "propose",
+  "target": {
+    "operation": "POST /api/resource/Purchase Order",
+    "system": "ERPNext",
+    "version": "16.0.0"
+  },
+  "policy_id": "FSV-B19-P01",
+  "evidence_refs": [
+    "VIS-FSV-B19-01",
+    "VIS-FSV-B19-03",
+    "VIS-FSV-B19-RUNTIME-ABI"
+  ],
+  "rules": [
+    {
+      "rule_id": "FSV-B19-R01",
+      "primitive_id": "SP-BOUNDED-BUSINESS-GUARD",
+      "op": "not_registered",
+      "evidence_refs": [
+        "VIS-FSV-B19-01",
+        "VIS-FSV-B19-03",
+        "VIS-FSV-B19-RUNTIME-ABI"
+      ],
+      "params": {
+        "alternatives": [
+          {
+            "clauses": [
+              {
+                "kind": "scalar_compare",
+                "left_path": "/trusted/supplierOnHold",
+                "operator": "eq",
+                "right_source": "literal",
+                "right_path": "",
+                "right_value": true
+              },
+              {
+                "kind": "scalar_compare",
+                "left_path": "/trusted/holdType",
+                "operator": "eq",
+                "right_source": "literal",
+                "right_path": "",
+                "right_value": "Invoices"
+              }
+            ]
+          },
+          {
+            "clauses": [
+              {
+                "kind": "scalar_compare",
+                "left_path": "/trusted/supplierOnHold",
+                "operator": "eq",
+                "right_source": "literal",
+                "right_path": "",
+                "right_value": true
+              },
+              {
+                "kind": "scalar_compare",
+                "left_path": "/trusted/holdType",
+                "operator": "eq",
+                "right_source": "literal",
+                "right_path": "",
+                "right_value": "All"
+              }
+            ]
+          }
+        ],
+        "on_missing": "skip"
+      }
+    }
+  ],
+  "reason_code": "none",
+  "missing_evidence": []
+}

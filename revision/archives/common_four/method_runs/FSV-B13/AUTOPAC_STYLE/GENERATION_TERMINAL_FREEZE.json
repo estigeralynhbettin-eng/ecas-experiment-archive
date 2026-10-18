@@ -1,0 +1,9 @@
+{
+  "task": "FSV-B13",
+  "method": "AUTOPAC_STYLE",
+  "status": "ELIGIBLE",
+  "execution_eligible": true,
+  "first_freeze_sha256": "32cd43da947ca667f4ca2c5faa3fddd45bfd1ed3aa92e552d0631965974c981f",
+  "frozen_at": "2026-10-15T00:52:23.748082+00:00",
+  "final_evaluation_not_yet_read": true
+}

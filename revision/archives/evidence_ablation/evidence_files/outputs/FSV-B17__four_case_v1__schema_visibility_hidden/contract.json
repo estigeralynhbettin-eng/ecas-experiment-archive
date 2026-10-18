@@ -1,0 +1,128 @@
+{
+  "catalog_id": "EC-SECURITY-PRIMITIVE-CATALOG-V2",
+  "contract_id": "ECV2-CONTRACT-FSV-B17",
+  "contract_version": "EC-EVIDENCE-CONTRACT-V3",
+  "evidence": [
+    {
+      "binding_facts": {
+        "visible_enum_values": true,
+        "visible_plain_language_invariant": true,
+        "visible_server_authority_or_workflow_contract": true
+      },
+      "bound_paths": [
+        "/request/body/customer",
+        "/trusted/customerDisabled"
+      ],
+      "evidence_id": "VIS-FSV-B17-01",
+      "locator": "extracted/erpnext-customer.md:article",
+      "operations": [
+        "POST /api/resource/Sales Order"
+      ],
+      "relation": "supports",
+      "sha256": "BA52637ECC58763F80A1AB3F94CA82F51048E19EAC94DD1D2E41E92853CE1AE9",
+      "source_kind": "business_requirement",
+      "supports_primitives": [
+        "SP-BOUNDED-BUSINESS-GUARD",
+        "SP-ENUM-ALLOWLIST",
+        "SP-SERVER-AUTHORITY-WORKFLOW"
+      ],
+      "system": "ERPNext",
+      "versions": [
+        "16.0.0"
+      ],
+      "visibility": "hidden"
+    },
+    {
+      "binding_facts": {
+        "visible_enum_values": true,
+        "visible_plain_language_invariant": true,
+        "visible_server_authority_or_workflow_contract": true
+      },
+      "bound_paths": [
+        "/request/body/customer",
+        "/trusted/customerDisabled"
+      ],
+      "evidence_id": "VIS-FSV-B17-02",
+      "locator": "extracted/frappe-rest-api.md:article",
+      "operations": [
+        "POST /api/resource/Sales Order"
+      ],
+      "relation": "supports",
+      "sha256": "87CB28850081B1F7D6702521E98E5F242498A456491EF26BDE847C20CCBFE154",
+      "source_kind": "api_documentation",
+      "supports_primitives": [
+        "SP-BOUNDED-BUSINESS-GUARD",
+        "SP-ENUM-ALLOWLIST",
+        "SP-SERVER-AUTHORITY-WORKFLOW"
+      ],
+      "system": "ERPNext",
+      "versions": [
+        "16.0.0"
+      ],
+      "visibility": "visible"
+    },
+    {
+      "binding_facts": {
+        "visible_enum_values": true,
+        "visible_plain_language_invariant": true,
+        "visible_server_authority_or_workflow_contract": true
+      },
+      "bound_paths": [
+        "/request/body/customer",
+        "/trusted/customerDisabled"
+      ],
+      "evidence_id": "VIS-FSV-B17-03",
+      "locator": "erpnext-customer-doctype.json:complete-field-catalog",
+      "operations": [
+        "POST /api/resource/Sales Order"
+      ],
+      "relation": "supports",
+      "sha256": "F86FCB293BF970C6366E6E0DD1E232A0BA8EA635C25265D426383D05B428F648",
+      "source_kind": "developer_manual",
+      "supports_primitives": [
+        "SP-BOUNDED-BUSINESS-GUARD",
+        "SP-ENUM-ALLOWLIST",
+        "SP-SERVER-AUTHORITY-WORKFLOW"
+      ],
+      "system": "ERPNext",
+      "versions": [
+        "16.0.0"
+      ],
+      "visibility": "visible"
+    },
+    {
+      "binding_facts": {
+        "trusted_runtime_context_mapping": true,
+        "visible_field_mapping": true,
+        "visible_runtime_interface": true
+      },
+      "bound_paths": [
+        "/request/body/customer",
+        "/trusted/customerDisabled"
+      ],
+      "evidence_id": "VIS-FSV-B17-RUNTIME-ABI",
+      "locator": "tasks.FSV-B17",
+      "operations": [
+        "POST /api/resource/Sales Order"
+      ],
+      "relation": "supports",
+      "sha256": "8221DA8A6720B0593A8D337F18569C9947AAB05B02E5C84FB0C50E3DE8C1ABD7",
+      "source_kind": "runtime_context_contract",
+      "supports_primitives": [
+        "SP-BOUNDED-BUSINESS-GUARD",
+        "SP-ENUM-ALLOWLIST",
+        "SP-SERVER-AUTHORITY-WORKFLOW"
+      ],
+      "system": "ERPNext",
+      "versions": [
+        "16.0.0"
+      ],
+      "visibility": "visible"
+    }
+  ],
+  "target": {
+    "operation": "POST /api/resource/Sales Order",
+    "system": "ERPNext",
+    "version": "16.0.0"
+  }
+}

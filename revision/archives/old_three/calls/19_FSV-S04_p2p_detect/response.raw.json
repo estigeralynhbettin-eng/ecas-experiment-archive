@@ -1,0 +1,28 @@
+{
+  "choices": [
+    {
+      "finish_reason": "stop",
+      "index": 0,
+      "message": {
+        "content": "{\"begin\":\"BEGIN_FSV-S04_p2p_detect_MAIN\",\"stage\":\"p2p_detect\",\"output\":{\"status\":\"READY\",\"statements\":[{\"text\":\"Every request you make with these tokens will be logged against the user you selected in Step 1. This also means that roles will be checked against this user.\",\"evidence_refs\":[\"VIS-FSV-S04-01\"]},{\"text\":\"These methods must be marked as whitelisted to make them accessible via REST.\",\"evidence_refs\":[\"VIS-FSV-S04-01\"]}],\"reason\":\"Extracted framework-level access control and authorization statements from the provided API documentation.\"},\"end\":\"END_FSV-S04_p2p_detect_MAIN\"}",
+        "role": "assistant"
+      }
+    }
+  ],
+  "created": 1791951106,
+  "id": "202610141211153b32e8ce3af84ec7",
+  "model": "glm-5.2",
+  "object": "chat.completion",
+  "request_id": "202610141211153b32e8ce3af84ec7",
+  "usage": {
+    "completion_tokens": 1852,
+    "completion_tokens_details": {
+      "reasoning_tokens": 1666
+    },
+    "prompt_tokens": 5354,
+    "prompt_tokens_details": {
+      "cached_tokens": 0
+    },
+    "total_tokens": 7206
+  }
+}

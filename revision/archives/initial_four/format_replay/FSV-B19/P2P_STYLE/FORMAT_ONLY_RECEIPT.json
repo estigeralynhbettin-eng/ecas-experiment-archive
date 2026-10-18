@@ -1,0 +1,10 @@
+{
+  "source_policy_path": "/mnt/d/lunwen/EC-CSI投稿/working/exploration/20261014_four_case_peer_baselines/effect_runs/FSV-B19/P2P_STYLE/repaired/external_pilot/policy.rego",
+  "source_policy_sha256": "0c8da3c9e61d7d94402461651cdf71a7c949e68ecbc9fe419f78202cf0fb3a0e",
+  "formatted_policy_path": "/mnt/d/lunwen/EC-CSI投稿/working/exploration/20261014_four_case_peer_baselines/format_replay/FSV-B19/P2P_STYLE/formatted/external_pilot/policy.rego",
+  "formatted_policy_sha256": "48d04681ef75eacce4917043f1f823bd6cd2f7919e6f673e271908e65ce276c0",
+  "ast_equal_without_locations": true,
+  "new_model_calls": 0,
+  "original_status": "DEVELOPMENT_REJECTED",
+  "no_final_oracle_feedback": true
+}

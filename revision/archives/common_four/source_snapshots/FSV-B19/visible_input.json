@@ -1,0 +1,1342 @@
+{
+  "selection_basis": "all_preexisting_visible_source_windows",
+  "target": {
+    "operation": "POST /api/resource/Purchase Order",
+    "system": "ERPNext",
+    "version": "16.0.0"
+  },
+  "task_window_id": "FSV-B19",
+  "track": "business_semantic",
+  "visible_sources": [
+    {
+      "content": "Suppliers are companies or individuals who provide you with products or services.\n\nTo access the Supplier list, go to: > Home > Buying > Supplier > Supplier\n\n- How to create a Supplier\n\n- Go to the Supplier list and click on New.\n\n- Enter a name for the supplier.\n\n- Select the supplier group whether Pharmaceutical, Hardware etc.\n\n- Save.\n\nThe options to Warn RFQs, POs, Prevent RFQs, POs will be available once you create a Supplier Scorecard and transactions are made.\n\n- Features\n\nFields in future transactions will be auto-populated if the 'Default' fields like Default Bank Account, Default Payment Terms Template etc., are set in Supplier.\n\n### 2.1 Tax details\n\n- Country: If the supplier is from another country, you can change it here.\n\n- Tax ID: Tax identification number of the supplier.\n\n- Tax Category: This is linked to Tax Rule. If a Tax Category is set here, when you select this supplier, the respective Purchase Tax and Charges template will be applied. This template is linked to the Tax Rule and the Tax Rule is linked with a Tax Category. Tax Category can be used to group suppliers to whom same tax will be applied. For example: Government, commercial, etc,.\n\n- Print Language: The language in which the document will be printed.\n\n- Tax Withholding Category: For India, TDS category for the Supplier. On setting a category here, it will be fetched into the Purchase Invoice. For more information, visit the Tax Withholding Category page.\n\n- Disabled: Disables the Supplier and they won't be shown in the Supplier List.\n\n- Is Transporter: If the supplier is selling your transport services, tick this box. 'GST Transporter ID' field will be visible if this field is ticked.\n\n- Internal Supplier: If the supplier is from a sister or parent/child company, tick this field and select the company which they represent.\n\nFor India:\n\n- GST Category: Select a GST Category of the supplier.\n\n- PAN: For India, PAN (Permanent Account Number) card details of the Supplier.\n\n### 2.2 Allow creation of Purchase Invoice without Purchase Order and Purchase Receipt\n\nIf the \"Purchase Order Required\" or \"Purchase Receipt Required\" option is configured as \"Yes\" in Buying Settings, it can be overridden for a particular supplier by enabling the \"Allow Purchase Invoice Creation Without Purchase Order\" or \"Allow Purchase Invoice Creation Without Purchase Receipt\" in the Supplier Master.\n\n### 2.3 Currency and Price List\n\nBilling Currency: Your supplier's currency can be different from your company currency. If you choose JPY for a supplier, then the currency will be filled as JPY and the exchange rate shown for future purchase transactions.\n\nEach Supplier can have a default Price List so that every time you buy a new item from this supplier for different prices, the price list associated with the supplier would be updated as well. Under the price list comes item price, you can see the prices in Buying > Items and Pricing > Item Price.\n\nIf you select this particular supplier, then the associated Price List will be fetched in Purchase transactions.\n\n### 2.4 Payment Terms and Block Supplier\n\n- Default Payment Terms Template: If a Payment Terms template is set here, it'll be automatically selected for future purchase transactions.\n\n- Block Supplier: You can block invoices, payments or both from a supplier till specific date. Choose 'Hold Type', if you do not select a hold type, ERPNext will set it to \"All\". When a supplier is blocked, their status will be shown as 'On Hold'.\n\nThe hold types are as follows:\n+ Invoices: ERPNext will not allow Purchase Invoices or Purchase Orders to be created for the supplier + Payments: ERPNext will not allow Payment Entries to be created for the Supplier + All: ERPNext will apply both hold types aboveIf you do not set a release date, ERPNext will hold the Supplier **indefinitely**.\n### 2.5 Default Payable Accounts\n\nAdd the default account from which invoices against this supplier will be paid. Add additional rows for more companies, you can select only one account per company.\n\nYou can integrate a supplier with an account. For all Suppliers, \"Creditor\" account is set as the default payable Account. When Purchase Invoice is created, payable towards the supplier is booked against \"Creditors\" account.\n\nIf you want to customize payable account for the Supplier, you should first add a payable Account in the Chart of Account, and then select that Payable Account in the Supplier master.\n\nIf you don't want to customize payable account, and proceed with default payable account \"Creditor\", then do not update any value in the Default Supplier Account's table.\n\nTip: Default Payable Account is set in the Company master. If you want to set another account as Account as default for payable instead of Creditors Account, go to Company master, and set that account as \"Default Payable Account\".\n\nDepending on your plan, you can add multiple companies in your ERPNext instance. One Supplier can be used across multiple companies. In this case, you should define Company-wise Payable Account for the Supplier in the \"Default Payable Accounts\" table, i.e, add multiple rows.\n\n### 2.6 More Information\n\nYou can add the supplier's website and any additional details about your supplier in this section. If you freeze a supplier with the 'Is Frozen' option, accounting entries for the supplier will be frozen. In this case the only user whose entries will surpass the 'freeze' is the role assigned in 'Role Allowed to Set Frozen Accounts & Edit Frozen Entries' in Accounting > Settings > Accounts Settings. This is useful when the supplier's name or bank details are being amended.\n\n### 2.7 Address and Contacts\n\nContacts and Addresses in ERPNext are stored separately so that you can create multiple Contacts and Addresses for one Supplier. Once Supplier is saved, you will find the option to create Contact and Address for that Supplier.\n\nTip: When you select a Supplier in any transaction, Contact for which \"Is Primary\" field id checked, it will auto-fetch with the Supplier details.\n\n### 2.8 After saving\n\nOnce all the necessary details are filled, save the document. On saving, options to create the following will be seen in the Dashboard:\n\n- Request for Quotation: An RFQ against this supplier.\n\n- Supplier Quotation: Any quotations that the supplier has sent you and you have submitted into the system.\n\n- Purchase Order: Purchase Orders you've made against this supplier.\n\n- Purchase Receipt: Purchase receipts given by this supplier that you've saved in the system.\n\n- Purchase Invoice: Purchase Invoices you've made against this supplier.\n\n- Payment Entry: Payment Entries for the Purchase Invoices against this supplier.\n\n- Pricing Rule: Any Pricing Rules linked with this supplier. See section 2.2 Currency and Price List to know how it works.\n\nBy clicking on the View button, you can view the Accounting Ledger or Accounts Payable directly for this supplier.\n\nThere's a button to 'Send GST Update Reminder' to the supplier. You need to have a default email account setup first.\n\n- Video\n\n### 4. Related Topics\n\n- Supplier Quotation\n\n- Supplier Scorecard\n\n- Maintaining Supplier's Item Code In the Item Master\n\n## Frequently Asked Questions\n\n### 1. How to add multiple supplier address?\n\nYou can link multiple addresses (such as billing, shipping, warehouse, or office locations) to a single supplier in ERPNext using the Address doctype.\n\n#### Steps\n\n- Go to Buying > Supplier and open the supplier.\n\n- In the Addresses and Contacts section, click New Address.\n\n- Fill in the address details:\n\n- Address Title (for example, ABC Suppliers – Mumbai Warehouse)\n\n- Address Line 1 & 2\n\n- City\n\n- State (if applicable)\n\n- Country\n\n- (Optional) Configure address preferences:\n\n- Enable Is Primary Address if this is the default address.\n\n- Mark it as the preferred Billing or Shipping address if required.\n\n- In the Links table, verify:\n\n- Link DocType:Supplier\n\n- Link Name: The supplier's name\n\n- Click Save.\n\nRepeat these steps to add as many addresses as needed.\n\n#### Using Supplier Addresses\n\nWhen creating documents such as a Purchase Order or Purchase Invoice, you can select the appropriate supplier address from the dropdown. ERPNext automatically uses the selected address for document printing and applies the relevant regional information, such as taxes, where applicable.\n",
+      "evidence_id": "VIS-FSV-B19-01",
+      "locator": "extracted/erpnext-supplier.md:article",
+      "source_id": "erpnext-supplier.html",
+      "source_sha256": "1DD2CBED3915F83CC734BA23F7A016A9C386ED6BA9E54962619F70DB706F5C6F"
+    },
+    {
+      "content": "Frappe framework generates REST API for all of your DocTypes out of the box. You can also run arbitrary python methods using their dotted module path.\n\n## Authentication\n\nThere are two ways to authenticate through Frappe REST API. Token based authentication and password based authentication.\n\n### 1. Token Based Authentication\n\nA token is a pair of API Key and API Secret. To generate these tokens follow these steps:\n\n- Go to User list and open a user.\n\n- Click on the \"Settings\" tab. (skip this step if you don't see tabs)\n\n- Expand the API Access section and click on Generate Keys.\n\n- You will get a popup with the API Secret. Copy this value and keep it somewhere safe (Password Manager).\n\n- You will also see another field \"API Key\" in this section.\n\nThe token is generated by concatenating api_key and api_secret with a colon :. Pass the string token api_key:api_secret to the Authorization header in the request.\nfetch('http://<base-url>/api/method/frappe.auth.get_logged_user', { headers: { 'Authorization': 'token api_key:api_secret' } }) .then(r => r.json()) .then(r => { console.log(r); }) ➜ curl http://<base-url>/api/method/frappe.auth.get_logged_user -H \"Authorization: token api_key:api_secret\"\nEvery request you make with these tokens will be logged against the user you selected in Step 1. This also means that roles will be checked against this user. You can also create a new user just for API calls.\n\n### 2. Password Based Authentication\n\nPassword based authentication relies on cookies and session data to maintain authentication in subsequent requests. In most cases, the library you are using to issue REST calls will handle session data, but if it doesn't you should use Token based authentication.\nfetch('http://<base-url>/api/method/login', { method: 'POST', headers: { 'Accept': 'application/json', 'Content-Type': 'application/json', }, body: JSON.stringify({ usr: 'username or email', pwd: 'password' }) }) .then(r => r.json()) .then(r => { console.log(r); }) ➜ curl --cookie-jar snowcookie --request POST \"http://<base-url>/api/method/login\" -H 'Content-Type: application/json' -H 'Accept: application/json' --data-raw \"{ \"usr\" : \"<username>\", \"pwd\": \"<password>\" }\" {\"message\":\"Logged In\",\"home_page\":\"/app\",\"full_name\":\"<user:full_name>\",\"dashboard_route\":\"/sites\"} ➜ curl --cookie snowcookie --request POST \"http://<base-url>/api/method/frappe.auth.get_logged_user\" -H 'Accept: application/json' {\"message\":\"<username>\"}\n### 3. Access Token\n\nRefer documentation for How to setup OAuth.\n\nUse the generated access_token in request header.\nfetch('http://<base-url>/api/method/frappe.auth.get_logged_user', { headers: { 'Authorization': 'Bearer access_token' } }) .then(r => r.json()) .then(r => { console.log(r); })\n## Listing Documents\n\nTo get a list of records of a DocType, send a GET request at /api/resource/:doctype. By default, it will return 20 records and will only fetch the name of the records. The result for the query can be found under data of the payload.\n\nWe'll be using the ToDo DocType to show example responses for the queries below.\nGET /api/resource/:doctype\nResponse\n{ \"data\":[ {\"name\":\"f765eef382\"}, {\"name\":\"2a26fa1c64\"}, {\"name\":\"f32c68060f\"}, {\"name\":\"9065fa9832\"}, {\"name\":\"419082fc38\"}, {\"name\":\"6234d15099\"}, {\"name\":\"62f2181ee0\"}, {\"name\":\"a50afbbfaa\"}, ... ] }\nYou can specify which fields to fetch in the fields param. It should be a JSON array.\nGET /api/resource/:doctype?fields=[\"field1\", \"field2\"]\nResponse\n{ \"data\":[ {\"description\":\"Business worker talk society. Each try theory prove notice middle. Crime couple trouble guy project hit.\",\"name\":\"f765eef382\"}, {\"description\":\"This reveal as look near sister. Car staff bar specific address.\",\"name\":\"2a26fa1c64\"}, {\"description\":\"Wear bag some walk. Movie partner new class tough run. Brother Democrat imagine.\",\"name\":\"f32c68060f\"}, {\"description\":\"Break laugh apply reveal new now focus heavy. Outside local staff research total. Else point try despite.\",\"name\":\"9065fa9832\"}, {\"description\":\"Truth reduce baby artist actually model. Cost phone us others himself wife almost. Language thing wonder share talk. Factor glass significant could window certain yet.\",\"name\":\"419082fc38\"}, {\"description\":\"Tv memory understand opportunity window beat physical.\",\"name\":\"6234d15099\"}, {\"description\":\"Should floor situation in response sell. Our assume company mean red majority shoulder.\",\"name\":\"62f2181ee0\"}, {\"description\":\"Performance seem sign recent. Court form me tonight simple trouble. Address job garden play teach. Happy speech amount offer change then.\",\"name\":\"a50afbbfaa\"}, ... ] }\nYou can specify which fields to expand in the expand param. It should be a JSON array.\nGET /api/resource/:doctype?expand=[\"priority\"]\nResponse\n{ \"data\":[ { \"name\":\"f765eef382\" \"priority\": { \"name\":\"a1b2c3\", \"title\": \"Medium\", \"creation\": \"2025-11-05 19:02:19.106966\", }, }, { \"name\":\"f765eef393\" \"priority\": { \"name\":\"a1b2c4\", \"title\": \"High\", \"creation\": \"2025-11-05 20:02:19.106966\", }, }, ... ] }\nYou can filter the records by passing filters param. Filters should be an array, where each filter is of the format: [field, operator, value]\nGET /api/resource/:doctype?filters=[[\"field1\", \"=\", \"value1\"], [\"field2\", \">\", \"value2\"]]\nResponse\n{ \"data\":[ {\"name\":\"f765eef382\"}, {\"name\":\"2a26fa1c64\"}, {\"name\":\"f32c68060f\"}, {\"name\":\"9065fa9832\"}, {\"name\":\"419082fc38\"}, {\"name\":\"6234d15099\"}, {\"name\":\"62f2181ee0\"}, {\"name\":\"a50afbbfaa\"}, ... ] }\nfilters parameter joins all the specified filters using AND SQL operator, if you want OR filters you can use the or_filters param. Syntax for or_filters is same as `filters.\n\nYou can also provide the sort field and order. It should be of the format fieldname asc or fieldname desc. The space should be URL encoded. In the following line, we're taking fieldname to be title.\nGET /api/resource/:doctype?order_by=title%20desc\nYou can also page the results by providing the limit_start and limit_page_length params.\nGET /api/resource/:doctype?limit_start=5&limit_page_length=10\nResponse\n{ \"data\": [ {\"name\":\"6234d15099\"}, {\"name\":\"62f2181ee0\"}, {\"name\":\"a50afbbfaa\"}, {\"name\":\"aa12a5cf71\"}, {\"name\":\"6ac9800d4e\"}, {\"name\":\"4bcf8b701c\"}, {\"name\":\"aee15f4c20\"}, {\"name\":\"6ba753afef\"}, ... ] }\nlimit is an alias for limit_page_length for accessing /api/resource in Version 13. This means the following should also return the same payload as the above query.\nGET /api/resource/:doctype?limit_start=5&limit=10\nBy default, you will receive the data as List[dict]. You can retrieve your data as List[List] by passing as_dict=False.\nGET /api/resource/:doctype?limit_start=5&limit=5&as_dict=False\nResponse\n{ \"data\": [ [\"6234d15099\"], [\"62f2181ee0\"], [\"a50afbbfaa\"], [\"aa12a5cf71\"], [\"6ac9800d4e\"] ] }\nTo debug the query built for your reqeusts, you can pass debug=True with the request. This returns the executed query and execution time under exc of the payload.\nGET /api/resource/:doctype?limit_start=10&limit=5&debug=True\nResponse\n{ \"data\": [ {\"name\":\"4bcf8b701c\"}, {\"name\":\"aee15f4c20\"}, {\"name\":\"6ba753afef\"}, {\"name\":\"f4b7e24abc\"}, {\"name\":\"bd9156096c\"} ], \"exc\": \"[\\\"select `tabToDo`.`name`\\\\n\\\\t\\\\t\\\\tfrom `tabToDo`\\\\n\\\\t\\\\t\\\\t\\\\n\\\\t\\\\t\\\\t\\\\n\\\\t\\\\t\\\\t order by `tabToDo`.`modified` DESC\\\\n\\\\t\\\\t\\\\tlimit 5 offset 10\\\", \\\"Execution time: 0.0 sec\\\"]\" }\n## CRUD Operations\n\nFrappe generates REST endpoints for CRUD operations for all DocTypes automatically. Make sure you set the following headers in your requests so that you get proper JSON responses.\n{ \"Accept\": \"application/json\", \"Content-Type\": \"application/json\", }\n### Create\n\nCreate a new document by sending a POST request to /api/resource/:doctype. Send the document as JSON in the Request Body.\nPOST /api/resource/:doctype # Body {\"description\": \"New ToDo\"}\nResponse\n{ \"data\": { \"name\": \"af2e2d0e33\", \"owner\": \"Administrator\", \"creation\": \"2019-06-03 14:19:00.281026\", \"modified\": \"2019-06-03 14:19:00.281026\", \"modified_by\": \"Administrator\", \"idx\": 0, \"docstatus\": 0, \"status\": \"Open\", \"priority\": \"Medium\", \"description\": \"New ToDo\", \"doctype\": \"ToDo\" } }\n### Read\n\nGet a document by sending a GET request to /api/resource/:doctype/:name.\nGET /api/resource/:doctype/:name\nResponse\n{ \"data\": { \"name\": \"bf2e760e13\", \"owner\": \"Administrator\", \"creation\": \"2019-06-03 14:19:00.281026\", \"modified\": \"2019-06-03 14:19:00.281026\", \"modified_by\": \"Administrator\", \"idx\": 0, \"docstatus\": 0, \"status\": \"Open\", \"priority\": \"Medium\", \"description\": \"\nTest description\n\", \"doctype\": \"ToDo\" } }\nExpand all link fields by sending a GET request to /api/resource/:doctype/:name?expand_links=True.\nGET /api/resource/:doctype/:name?expand_links=True\nResponse\n{ \"data\": { \"name\": \"bf2e760e13\", \"owner\": \"Administrator\", \"creation\": \"2019-06-03 14:19:00.281026\", \"modified\": \"2019-06-03 14:19:00.281026\", \"modified_by\": \"Administrator\", \"idx\": 0, \"docstatus\": 0, \"status\": \"Open\", \"priority\": { \"name\":\"a1b2c3\", \"title\": \"Medium\", \"creation\": \"2025-11-05 19:02:19.106966\", }, \"description\": \"\nTest description\n\", \"doctype\": \"ToDo\" } }\n### Update\n\nUpdate a document by sending a PUT request to /api/resource/:doctype/:name. You don't need to send the whole document, instead you can just send the fields that you want to update.\nPUT /api/resource/:doctype/:name # Body {\"description\": \"New description\"}\nResponse\n{ \"data\": { \"name\": \"bf2e760e13\", \"owner\": \"Administrator\", \"creation\": \"2019-06-03 14:19:00.281026\", \"modified\": \"2019-06-03 14:21:00.785117\", \"modified_by\": \"Administrator\", \"idx\": 0, \"docstatus\": 0, \"status\": \"Open\", \"priority\": \"Medium\", \"description\": \"New description\", \"doctype\": \"ToDo\" } }\n### Delete\n\nDelete a document by sending a DELETE request to /api/resource/:doctype/:name.\nDELETE /api/resource/:doctype/:name\nResponse\n{\"message\": \"ok\"}\n## Remote Method Calls\n\nFrappe allows you to trigger arbitrary python methods using the REST API for handling custom logic. These methods must be marked as whitelisted to make them accessible via REST.\n\nTo run a whitelisted python method at frappe.auth.get_logged_user, send a request to the endpoint /api/method/frappe.auth.get_logged_user.\nGET /api/method/frappe.auth.get_logged_user\nResponse\n{ \"message\": \"[email protected]\" }\n- If your method returns some values, you should send a GET request.\n\n- If your method changes the state of the database, use POST. After a successful POST request, the framework will automatically call frappe.db.commit() to commit the changes to the database.\n\n- A successful response will return a JSON object with a message key.\n\n- An errored response will return a JSON object with exc key which contains the stack trace and exc_type which contains the thrown Exception.\n\n- The return value of the method will be converted to a JSON and sent as the response.\n\n## File Uploads\n\nThere is a dedicated method /api/method/upload_file that accepts binary file data and uploads it into the system.\n\nHere is the curl command for it:\n➜ curl -X POST \\ http://<base-url>/api/method/upload_file \\ -H 'Accept: application/json' \\ -H 'Authorization: token xxxx:yyyy' \\ -F file=@/path/to/file/file.png\nIf you are using client side Javascript to upload files, you can append the uploaded files as FormData and send an XHR request. Here is the implementation code in Frappe Desk.\n",
+      "evidence_id": "VIS-FSV-B19-02",
+      "locator": "extracted/frappe-rest-api.md:article",
+      "source_id": "frappe-rest-api.html",
+      "source_sha256": "87CB28850081B1F7D6702521E98E5F242498A456491EF26BDE847C20CCBFE154"
+    },
+    {
+      "content": {
+        "doctype": "Supplier",
+        "fields": [
+          {
+            "fieldname": "naming_series",
+            "fieldtype": "Select",
+            "label": "Series",
+            "options": "SUP-.YYYY.-"
+          },
+          {
+            "fieldname": "supplier_name",
+            "fieldtype": "Data",
+            "label": "Supplier Name",
+            "reqd": 1
+          },
+          {
+            "fieldname": "country",
+            "fieldtype": "Link",
+            "label": "Country",
+            "options": "Country"
+          },
+          {
+            "fieldname": "default_bank_account",
+            "fieldtype": "Link",
+            "label": "Default Company Bank Account",
+            "options": "Bank Account"
+          },
+          {
+            "fieldname": "tax_id",
+            "fieldtype": "Data",
+            "label": "Tax ID"
+          },
+          {
+            "fieldname": "tax_category",
+            "fieldtype": "Link",
+            "label": "Tax Category",
+            "options": "Tax Category"
+          },
+          {
+            "fieldname": "tax_withholding_category",
+            "fieldtype": "Link",
+            "label": "Tax Withholding Category",
+            "options": "Tax Withholding Category"
+          },
+          {
+            "default": "0",
+            "fieldname": "is_transporter",
+            "fieldtype": "Check",
+            "label": "Is Transporter"
+          },
+          {
+            "default": "0",
+            "fieldname": "is_internal_supplier",
+            "fieldtype": "Check",
+            "label": "Is Internal Supplier"
+          },
+          {
+            "fieldname": "represents_company",
+            "fieldtype": "Link",
+            "label": "Represents Company",
+            "options": "Company"
+          },
+          {
+            "fieldname": "image",
+            "fieldtype": "Attach Image",
+            "label": "Image"
+          },
+          {
+            "fieldname": "column_break0",
+            "fieldtype": "Column Break"
+          },
+          {
+            "fieldname": "supplier_group",
+            "fieldtype": "Link",
+            "label": "Supplier Group",
+            "options": "Supplier Group"
+          },
+          {
+            "default": "Company",
+            "fieldname": "supplier_type",
+            "fieldtype": "Select",
+            "label": "Supplier Type",
+            "options": "Company\nIndividual\nPartnership",
+            "reqd": 1
+          },
+          {
+            "fieldname": "language",
+            "fieldtype": "Link",
+            "label": "Print Language",
+            "options": "Language"
+          },
+          {
+            "default": "0",
+            "fieldname": "disabled",
+            "fieldtype": "Check",
+            "label": "Disabled"
+          },
+          {
+            "default": "0",
+            "fieldname": "warn_rfqs",
+            "fieldtype": "Check",
+            "label": "Warn RFQs",
+            "read_only": 1
+          },
+          {
+            "default": "0",
+            "fieldname": "warn_pos",
+            "fieldtype": "Check",
+            "label": "Warn POs",
+            "read_only": 1
+          },
+          {
+            "default": "0",
+            "fieldname": "prevent_rfqs",
+            "fieldtype": "Check",
+            "label": "Prevent RFQs",
+            "read_only": 1
+          },
+          {
+            "default": "0",
+            "fieldname": "prevent_pos",
+            "fieldtype": "Check",
+            "label": "Prevent POs",
+            "read_only": 1
+          },
+          {
+            "fieldname": "companies",
+            "fieldtype": "Table",
+            "label": "Allowed To Transact With",
+            "options": "Allowed To Transact With"
+          },
+          {
+            "fieldname": "default_currency",
+            "fieldtype": "Link",
+            "label": "Billing Currency",
+            "options": "Currency"
+          },
+          {
+            "fieldname": "column_break_10",
+            "fieldtype": "Column Break"
+          },
+          {
+            "fieldname": "default_price_list",
+            "fieldtype": "Link",
+            "label": "Price List",
+            "options": "Price List"
+          },
+          {
+            "fieldname": "payment_terms",
+            "fieldtype": "Link",
+            "label": "Default Payment Terms Template",
+            "options": "Payment Terms Template"
+          },
+          {
+            "default": "0",
+            "fieldname": "on_hold",
+            "fieldtype": "Check",
+            "label": "Block Supplier"
+          },
+          {
+            "fieldname": "hold_type",
+            "fieldtype": "Select",
+            "label": "Hold Type",
+            "options": "\nAll\nInvoices\nPayments"
+          },
+          {
+            "fieldname": "release_date",
+            "fieldtype": "Date",
+            "label": "Release Date"
+          },
+          {
+            "fieldname": "address_contacts",
+            "fieldtype": "Section Break",
+            "label": "Address and Contacts",
+            "options": "fa fa-map-marker"
+          },
+          {
+            "fieldname": "address_html",
+            "fieldtype": "HTML",
+            "label": "Address HTML",
+            "read_only": 1
+          },
+          {
+            "fieldname": "column_break1",
+            "fieldtype": "Column Break"
+          },
+          {
+            "fieldname": "contact_html",
+            "fieldtype": "HTML",
+            "label": "Contact HTML",
+            "read_only": 1
+          },
+          {
+            "fieldname": "accounts",
+            "fieldtype": "Table",
+            "label": "Accounts",
+            "options": "Party Account"
+          },
+          {
+            "fieldname": "column_break2",
+            "fieldtype": "Section Break",
+            "label": "More Information"
+          },
+          {
+            "fieldname": "website",
+            "fieldtype": "Data",
+            "label": "Website"
+          },
+          {
+            "fieldname": "supplier_details",
+            "fieldtype": "Text",
+            "label": "Supplier Details"
+          },
+          {
+            "fieldname": "column_break_30",
+            "fieldtype": "Column Break"
+          },
+          {
+            "default": "0",
+            "fieldname": "is_frozen",
+            "fieldtype": "Check",
+            "label": "Is Frozen"
+          },
+          {
+            "default": "0",
+            "fieldname": "allow_purchase_invoice_creation_without_purchase_order",
+            "fieldtype": "Check",
+            "label": "Allow Purchase Invoice Creation Without Purchase Order"
+          },
+          {
+            "default": "0",
+            "fieldname": "allow_purchase_invoice_creation_without_purchase_receipt",
+            "fieldtype": "Check",
+            "label": "Allow Purchase Invoice Creation Without Purchase Receipt"
+          },
+          {
+            "fieldname": "primary_address_and_contact_detail_section",
+            "fieldtype": "Section Break",
+            "label": "Primary Address and Contact"
+          },
+          {
+            "fieldname": "supplier_primary_contact",
+            "fieldtype": "Link",
+            "label": "Supplier Primary Contact",
+            "options": "Contact"
+          },
+          {
+            "fieldname": "mobile_no",
+            "fieldtype": "Read Only",
+            "label": "Mobile No"
+          },
+          {
+            "fieldname": "email_id",
+            "fieldtype": "Read Only",
+            "label": "Email Id"
+          },
+          {
+            "fieldname": "column_break_44",
+            "fieldtype": "Column Break"
+          },
+          {
+            "fieldname": "primary_address",
+            "fieldtype": "Text",
+            "label": "Primary Address",
+            "read_only": 1
+          },
+          {
+            "fieldname": "supplier_primary_address",
+            "fieldtype": "Link",
+            "label": "Supplier Primary Address",
+            "options": "Address"
+          },
+          {
+            "fieldname": "dashboard_tab",
+            "fieldtype": "Tab Break",
+            "label": "Dashboard"
+          },
+          {
+            "fieldname": "settings_tab",
+            "fieldtype": "Tab Break",
+            "label": "Settings"
+          },
+          {
+            "fieldname": "contact_and_address_tab",
+            "fieldtype": "Tab Break",
+            "label": "Address & Contact"
+          },
+          {
+            "fieldname": "accounting_tab",
+            "fieldtype": "Tab Break",
+            "label": "Accounting"
+          },
+          {
+            "fieldname": "defaults_section",
+            "fieldtype": "Section Break",
+            "label": "Defaults"
+          },
+          {
+            "fieldname": "tax_tab",
+            "fieldtype": "Tab Break",
+            "label": "Tax"
+          },
+          {
+            "fieldname": "internal_supplier_section",
+            "fieldtype": "Section Break",
+            "label": "Internal Supplier"
+          },
+          {
+            "fieldname": "column_break_16",
+            "fieldtype": "Column Break"
+          },
+          {
+            "fieldname": "column_break_27",
+            "fieldtype": "Column Break"
+          },
+          {
+            "fieldname": "column_break_54",
+            "fieldtype": "Column Break"
+          },
+          {
+            "fieldname": "block_supplier_section",
+            "fieldtype": "Section Break",
+            "label": "Block Supplier"
+          },
+          {
+            "fieldname": "column_break_59",
+            "fieldtype": "Column Break"
+          },
+          {
+            "fieldname": "default_accounts_section",
+            "fieldtype": "Section Break",
+            "label": "Default Accounts"
+          },
+          {
+            "fieldname": "portal_users_tab",
+            "fieldtype": "Tab Break",
+            "label": "Portal Users"
+          },
+          {
+            "fieldname": "portal_users",
+            "fieldtype": "Table",
+            "label": "Supplier Portal Users",
+            "options": "Portal User"
+          },
+          {
+            "fieldname": "column_break_1mqv",
+            "fieldtype": "Column Break"
+          },
+          {
+            "fieldname": "column_break_mglr",
+            "fieldtype": "Column Break"
+          },
+          {
+            "fieldname": "customer_numbers",
+            "fieldtype": "Table",
+            "label": "Customer Numbers",
+            "options": "Customer Number At Supplier"
+          },
+          {
+            "fieldname": "tax_withholding_group",
+            "fieldtype": "Link",
+            "label": "Tax Withholding Group",
+            "options": "Tax Withholding Group"
+          }
+        ]
+      },
+      "evidence_id": "VIS-FSV-B19-03",
+      "locator": "erpnext-supplier-doctype.json:complete-field-catalog",
+      "source_id": "erpnext-supplier-doctype.json",
+      "source_sha256": "07347D26E75881232AC991A31F0560CE3676335C6A050E7412EF66670FD637CB"
+    },
+    {
+      "content": {
+        "doctype": "Purchase Order",
+        "fields": [
+          {
+            "fieldname": "supplier_section",
+            "fieldtype": "Section Break",
+            "options": "fa fa-user"
+          },
+          {
+            "default": "{supplier_name}",
+            "fieldname": "title",
+            "fieldtype": "Data",
+            "label": "Title",
+            "reqd": 1
+          },
+          {
+            "fieldname": "naming_series",
+            "fieldtype": "Select",
+            "label": "Series",
+            "options": "PUR-ORD-.YYYY.-",
+            "reqd": 1
+          },
+          {
+            "fieldname": "supplier",
+            "fieldtype": "Link",
+            "label": "Supplier",
+            "options": "Supplier",
+            "reqd": 1
+          },
+          {
+            "fieldname": "get_items_from_open_material_requests",
+            "fieldtype": "Button",
+            "label": "Get Items from Open Material Requests"
+          },
+          {
+            "fieldname": "supplier_name",
+            "fieldtype": "Data",
+            "label": "Supplier Name",
+            "read_only": 1
+          },
+          {
+            "fieldname": "company",
+            "fieldtype": "Link",
+            "label": "Company",
+            "options": "Company",
+            "reqd": 1
+          },
+          {
+            "fieldname": "column_break1",
+            "fieldtype": "Column Break"
+          },
+          {
+            "default": "Today",
+            "fieldname": "transaction_date",
+            "fieldtype": "Date",
+            "label": "Date",
+            "reqd": 1
+          },
+          {
+            "fieldname": "schedule_date",
+            "fieldtype": "Date",
+            "label": "Required By"
+          },
+          {
+            "fieldname": "order_confirmation_no",
+            "fieldtype": "Data",
+            "label": "Order Confirmation No"
+          },
+          {
+            "fieldname": "order_confirmation_date",
+            "fieldtype": "Date",
+            "label": "Order Confirmation Date"
+          },
+          {
+            "fieldname": "amended_from",
+            "fieldtype": "Link",
+            "label": "Amended From",
+            "options": "Purchase Order",
+            "read_only": 1
+          },
+          {
+            "fieldname": "drop_ship",
+            "fieldtype": "Tab Break",
+            "label": "Drop Ship"
+          },
+          {
+            "fieldname": "customer",
+            "fieldtype": "Link",
+            "label": "Customer",
+            "options": "Customer",
+            "read_only": 1
+          },
+          {
+            "fieldname": "customer_name",
+            "fieldtype": "Data",
+            "label": "Customer Name",
+            "read_only": 1
+          },
+          {
+            "fieldname": "column_break_19",
+            "fieldtype": "Column Break"
+          },
+          {
+            "fieldname": "customer_contact_person",
+            "fieldtype": "Link",
+            "label": "Customer Contact",
+            "options": "Contact"
+          },
+          {
+            "fieldname": "customer_contact_display",
+            "fieldtype": "Small Text",
+            "label": "Customer Contact"
+          },
+          {
+            "fieldname": "customer_contact_mobile",
+            "fieldtype": "Small Text",
+            "label": "Customer Mobile No",
+            "options": "Phone"
+          },
+          {
+            "fieldname": "customer_contact_email",
+            "fieldtype": "Code",
+            "label": "Customer Contact Email",
+            "options": "Email"
+          },
+          {
+            "fieldname": "section_addresses",
+            "fieldtype": "Section Break",
+            "label": "Supplier Address"
+          },
+          {
+            "fieldname": "supplier_address",
+            "fieldtype": "Link",
+            "label": "Supplier Address",
+            "options": "Address"
+          },
+          {
+            "fieldname": "contact_person",
+            "fieldtype": "Link",
+            "label": "Supplier Contact",
+            "options": "Contact"
+          },
+          {
+            "fieldname": "address_display",
+            "fieldtype": "Text Editor",
+            "label": "Supplier Address Details",
+            "read_only": 1
+          },
+          {
+            "fieldname": "contact_display",
+            "fieldtype": "Small Text",
+            "label": "Contact Name",
+            "read_only": 1
+          },
+          {
+            "fieldname": "contact_mobile",
+            "fieldtype": "Small Text",
+            "label": "Contact Mobile No",
+            "options": "Phone",
+            "read_only": 1
+          },
+          {
+            "fieldname": "contact_email",
+            "fieldtype": "Small Text",
+            "label": "Contact Email",
+            "options": "Email",
+            "read_only": 1
+          },
+          {
+            "fieldname": "col_break_address",
+            "fieldtype": "Column Break"
+          },
+          {
+            "fieldname": "shipping_address",
+            "fieldtype": "Link",
+            "label": "Shipping Address",
+            "options": "Address"
+          },
+          {
+            "fieldname": "shipping_address_display",
+            "fieldtype": "Text Editor",
+            "label": "Shipping Address Details",
+            "read_only": 1
+          },
+          {
+            "fieldname": "currency_and_price_list",
+            "fieldtype": "Section Break",
+            "label": "Currency and Price List",
+            "options": "fa fa-tag"
+          },
+          {
+            "fieldname": "currency",
+            "fieldtype": "Link",
+            "label": "Currency",
+            "options": "Currency",
+            "reqd": 1
+          },
+          {
+            "fieldname": "conversion_rate",
+            "fieldtype": "Float",
+            "label": "Exchange Rate",
+            "precision": "9",
+            "reqd": 1
+          },
+          {
+            "fieldname": "cb_price_list",
+            "fieldtype": "Column Break"
+          },
+          {
+            "fieldname": "buying_price_list",
+            "fieldtype": "Link",
+            "label": "Price List",
+            "options": "Price List"
+          },
+          {
+            "fieldname": "price_list_currency",
+            "fieldtype": "Link",
+            "label": "Price List Currency",
+            "options": "Currency",
+            "read_only": 1
+          },
+          {
+            "fieldname": "plc_conversion_rate",
+            "fieldtype": "Float",
+            "label": "Price List Exchange Rate",
+            "precision": "9"
+          },
+          {
+            "default": "0",
+            "fieldname": "ignore_pricing_rule",
+            "fieldtype": "Check",
+            "label": "Ignore Pricing Rule"
+          },
+          {
+            "fieldname": "set_warehouse",
+            "fieldtype": "Link",
+            "label": "Set Target Warehouse",
+            "options": "Warehouse"
+          },
+          {
+            "default": "0",
+            "fieldname": "is_subcontracted",
+            "fieldtype": "Check",
+            "label": "Is Subcontracted"
+          },
+          {
+            "fieldname": "supplier_warehouse",
+            "fieldtype": "Link",
+            "label": "Supplier Warehouse",
+            "options": "Warehouse"
+          },
+          {
+            "fieldname": "items_section",
+            "fieldtype": "Section Break",
+            "options": "fa fa-shopping-cart"
+          },
+          {
+            "fieldname": "scan_barcode",
+            "fieldtype": "Data",
+            "label": "Scan Barcode",
+            "options": "Barcode"
+          },
+          {
+            "fieldname": "items",
+            "fieldtype": "Table",
+            "label": "Items",
+            "options": "Purchase Order Item",
+            "reqd": 1
+          },
+          {
+            "fieldname": "section_break_48",
+            "fieldtype": "Section Break",
+            "label": "Pricing Rules"
+          },
+          {
+            "fieldname": "pricing_rules",
+            "fieldtype": "Table",
+            "label": "Purchase Order Pricing Rule",
+            "options": "Pricing Rule Detail",
+            "read_only": 1
+          },
+          {
+            "fieldname": "raw_material_details",
+            "fieldtype": "Section Break",
+            "label": "Raw Materials Supplied"
+          },
+          {
+            "fieldname": "supplied_items",
+            "fieldtype": "Table",
+            "label": "Supplied Items",
+            "options": "Purchase Order Item Supplied",
+            "read_only": 1
+          },
+          {
+            "fieldname": "sb_last_purchase",
+            "fieldtype": "Section Break"
+          },
+          {
+            "fieldname": "total_qty",
+            "fieldtype": "Float",
+            "label": "Total Quantity",
+            "read_only": 1
+          },
+          {
+            "fieldname": "base_total",
+            "fieldtype": "Currency",
+            "label": "Total (Company Currency)",
+            "options": "Company:company:default_currency",
+            "read_only": 1
+          },
+          {
+            "fieldname": "base_net_total",
+            "fieldtype": "Currency",
+            "label": "Net Total (Company Currency)",
+            "options": "Company:company:default_currency",
+            "read_only": 1
+          },
+          {
+            "fieldname": "column_break_26",
+            "fieldtype": "Column Break"
+          },
+          {
+            "fieldname": "total",
+            "fieldtype": "Currency",
+            "label": "Total",
+            "options": "currency",
+            "read_only": 1
+          },
+          {
+            "fieldname": "net_total",
+            "fieldtype": "Currency",
+            "label": "Net Total",
+            "options": "currency",
+            "read_only": 1
+          },
+          {
+            "fieldname": "total_net_weight",
+            "fieldtype": "Float",
+            "label": "Total Net Weight",
+            "read_only": 1
+          },
+          {
+            "fieldname": "taxes_section",
+            "fieldtype": "Section Break",
+            "label": "Taxes and Charges",
+            "options": "fa fa-money"
+          },
+          {
+            "fieldname": "taxes_and_charges",
+            "fieldtype": "Link",
+            "label": "Purchase Taxes and Charges Template",
+            "options": "Purchase Taxes and Charges Template"
+          },
+          {
+            "fieldname": "column_break_50",
+            "fieldtype": "Column Break"
+          },
+          {
+            "fieldname": "shipping_rule",
+            "fieldtype": "Link",
+            "label": "Shipping Rule",
+            "options": "Shipping Rule"
+          },
+          {
+            "fieldname": "section_break_52",
+            "fieldtype": "Section Break"
+          },
+          {
+            "fieldname": "taxes",
+            "fieldtype": "Table",
+            "label": "Purchase Taxes and Charges",
+            "options": "Purchase Taxes and Charges"
+          },
+          {
+            "fieldname": "sec_tax_breakup",
+            "fieldtype": "Section Break",
+            "label": "Tax Breakup"
+          },
+          {
+            "fieldname": "other_charges_calculation",
+            "fieldtype": "Text Editor",
+            "label": "Taxes and Charges Calculation",
+            "read_only": 1
+          },
+          {
+            "fieldname": "totals",
+            "fieldtype": "Section Break",
+            "options": "fa fa-money"
+          },
+          {
+            "fieldname": "base_taxes_and_charges_added",
+            "fieldtype": "Currency",
+            "label": "Taxes and Charges Added (Company Currency)",
+            "options": "Company:company:default_currency",
+            "read_only": 1
+          },
+          {
+            "fieldname": "base_taxes_and_charges_deducted",
+            "fieldtype": "Currency",
+            "label": "Taxes and Charges Deducted (Company Currency)",
+            "options": "Company:company:default_currency",
+            "read_only": 1
+          },
+          {
+            "fieldname": "base_total_taxes_and_charges",
+            "fieldtype": "Currency",
+            "label": "Total Taxes and Charges (Company Currency)",
+            "options": "Company:company:default_currency",
+            "read_only": 1
+          },
+          {
+            "fieldname": "column_break_39",
+            "fieldtype": "Column Break"
+          },
+          {
+            "fieldname": "taxes_and_charges_added",
+            "fieldtype": "Currency",
+            "label": "Taxes and Charges Added",
+            "options": "currency",
+            "read_only": 1
+          },
+          {
+            "fieldname": "taxes_and_charges_deducted",
+            "fieldtype": "Currency",
+            "label": "Taxes and Charges Deducted",
+            "options": "currency",
+            "read_only": 1
+          },
+          {
+            "fieldname": "total_taxes_and_charges",
+            "fieldtype": "Currency",
+            "label": "Total Taxes and Charges",
+            "options": "currency",
+            "read_only": 1
+          },
+          {
+            "fieldname": "discount_section",
+            "fieldtype": "Section Break",
+            "label": "Additional Discount"
+          },
+          {
+            "default": "Grand Total",
+            "fieldname": "apply_discount_on",
+            "fieldtype": "Select",
+            "label": "Apply Additional Discount On",
+            "options": "\nGrand Total\nNet Total"
+          },
+          {
+            "fieldname": "base_discount_amount",
+            "fieldtype": "Currency",
+            "label": "Additional Discount Amount (Company Currency)",
+            "options": "Company:company:default_currency",
+            "read_only": 1
+          },
+          {
+            "fieldname": "column_break_45",
+            "fieldtype": "Column Break"
+          },
+          {
+            "fieldname": "additional_discount_percentage",
+            "fieldtype": "Float",
+            "label": "Additional Discount Percentage"
+          },
+          {
+            "fieldname": "discount_amount",
+            "fieldtype": "Currency",
+            "label": "Additional Discount Amount",
+            "options": "currency"
+          },
+          {
+            "fieldname": "totals_section",
+            "fieldtype": "Section Break",
+            "label": "Totals"
+          },
+          {
+            "fieldname": "base_grand_total",
+            "fieldtype": "Currency",
+            "label": "Grand Total (Company Currency)",
+            "options": "Company:company:default_currency",
+            "read_only": 1
+          },
+          {
+            "fieldname": "base_rounding_adjustment",
+            "fieldtype": "Currency",
+            "label": "Rounding Adjustment (Company Currency)",
+            "options": "Company:company:default_currency",
+            "read_only": 1
+          },
+          {
+            "fieldname": "base_in_words",
+            "fieldtype": "Data",
+            "label": "In Words (Company Currency)",
+            "length": 240,
+            "read_only": 1
+          },
+          {
+            "fieldname": "base_rounded_total",
+            "fieldtype": "Currency",
+            "label": "Rounded Total (Company Currency)",
+            "options": "Company:company:default_currency",
+            "read_only": 1
+          },
+          {
+            "fieldname": "column_break4",
+            "fieldtype": "Column Break"
+          },
+          {
+            "fieldname": "grand_total",
+            "fieldtype": "Currency",
+            "label": "Grand Total",
+            "options": "currency",
+            "read_only": 1
+          },
+          {
+            "fieldname": "rounding_adjustment",
+            "fieldtype": "Currency",
+            "label": "Rounding Adjustment",
+            "options": "currency",
+            "read_only": 1
+          },
+          {
+            "fieldname": "rounded_total",
+            "fieldtype": "Currency",
+            "label": "Rounded Total",
+            "options": "currency",
+            "read_only": 1
+          },
+          {
+            "default": "0",
+            "fieldname": "disable_rounded_total",
+            "fieldtype": "Check",
+            "label": "Disable Rounded Total"
+          },
+          {
+            "fieldname": "in_words",
+            "fieldtype": "Data",
+            "label": "In Words",
+            "length": 240,
+            "read_only": 1
+          },
+          {
+            "fieldname": "advance_paid",
+            "fieldtype": "Currency",
+            "label": "Advance Paid",
+            "options": "party_account_currency",
+            "read_only": 1
+          },
+          {
+            "fieldname": "payment_schedule_section",
+            "fieldtype": "Section Break",
+            "label": "Payment Terms"
+          },
+          {
+            "fieldname": "payment_terms_template",
+            "fieldtype": "Link",
+            "label": "Payment Terms Template",
+            "options": "Payment Terms Template"
+          },
+          {
+            "fieldname": "payment_schedule",
+            "fieldtype": "Table",
+            "label": "Payment Schedule",
+            "options": "Payment Schedule"
+          },
+          {
+            "fieldname": "terms_section_break",
+            "fieldtype": "Section Break",
+            "label": "Terms & Conditions",
+            "options": "fa fa-legal"
+          },
+          {
+            "fieldname": "tc_name",
+            "fieldtype": "Link",
+            "label": "Terms",
+            "options": "Terms and Conditions"
+          },
+          {
+            "fieldname": "terms",
+            "fieldtype": "Text Editor",
+            "label": "Terms and Conditions"
+          },
+          {
+            "default": "Draft",
+            "fieldname": "status",
+            "fieldtype": "Select",
+            "label": "Status",
+            "options": "\nDraft\nOn Hold\nTo Receive and Bill\nTo Bill\nTo Receive\nCompleted\nCancelled\nClosed\nDelivered",
+            "read_only": 1,
+            "reqd": 1
+          },
+          {
+            "fieldname": "ref_sq",
+            "fieldtype": "Link",
+            "label": "Supplier Quotation",
+            "options": "Supplier Quotation",
+            "read_only": 1
+          },
+          {
+            "fieldname": "party_account_currency",
+            "fieldtype": "Link",
+            "label": "Party Account Currency",
+            "options": "Currency",
+            "read_only": 1
+          },
+          {
+            "fieldname": "inter_company_order_reference",
+            "fieldtype": "Link",
+            "label": "Inter Company Order Reference",
+            "options": "Sales Order",
+            "read_only": 1
+          },
+          {
+            "fieldname": "column_break_74",
+            "fieldtype": "Column Break"
+          },
+          {
+            "fieldname": "per_received",
+            "fieldtype": "Percent",
+            "label": "% Received",
+            "read_only": 1
+          },
+          {
+            "fieldname": "per_billed",
+            "fieldtype": "Percent",
+            "label": "% Billed",
+            "read_only": 1
+          },
+          {
+            "fieldname": "column_break5",
+            "fieldtype": "Section Break",
+            "label": "Printing Settings"
+          },
+          {
+            "fieldname": "letter_head",
+            "fieldtype": "Link",
+            "label": "Letter Head",
+            "options": "Letter Head"
+          },
+          {
+            "fieldname": "select_print_heading",
+            "fieldtype": "Link",
+            "label": "Print Heading",
+            "options": "Print Heading"
+          },
+          {
+            "fieldname": "column_break_86",
+            "fieldtype": "Column Break"
+          },
+          {
+            "default": "0",
+            "fieldname": "group_same_items",
+            "fieldtype": "Check",
+            "label": "Group same items"
+          },
+          {
+            "fieldname": "language",
+            "fieldtype": "Data",
+            "label": "Print Language"
+          },
+          {
+            "fieldname": "subscription_section",
+            "fieldtype": "Section Break",
+            "label": "Auto Repeat"
+          },
+          {
+            "fieldname": "from_date",
+            "fieldtype": "Date",
+            "label": "From Date"
+          },
+          {
+            "fieldname": "to_date",
+            "fieldtype": "Date",
+            "label": "To Date"
+          },
+          {
+            "fieldname": "column_break_97",
+            "fieldtype": "Column Break"
+          },
+          {
+            "fieldname": "auto_repeat",
+            "fieldtype": "Link",
+            "label": "Auto Repeat",
+            "options": "Auto Repeat",
+            "read_only": 1
+          },
+          {
+            "fieldname": "update_auto_repeat_reference",
+            "fieldtype": "Button",
+            "label": "Update Auto Repeat Reference"
+          },
+          {
+            "fieldname": "tax_category",
+            "fieldtype": "Link",
+            "label": "Tax Category",
+            "options": "Tax Category"
+          },
+          {
+            "fieldname": "set_reserve_warehouse",
+            "fieldtype": "Link",
+            "label": "Set Reserve Warehouse",
+            "options": "Warehouse"
+          },
+          {
+            "fieldname": "tracking_section",
+            "fieldtype": "Section Break",
+            "label": "Order Status"
+          },
+          {
+            "fieldname": "column_break_75",
+            "fieldtype": "Column Break"
+          },
+          {
+            "fieldname": "billing_address",
+            "fieldtype": "Link",
+            "label": "Company Billing Address",
+            "options": "Address"
+          },
+          {
+            "fieldname": "billing_address_display",
+            "fieldtype": "Text Editor",
+            "label": "Billing Address Details",
+            "read_only": 1
+          },
+          {
+            "fieldname": "before_items_section",
+            "fieldtype": "Section Break"
+          },
+          {
+            "fieldname": "items_col_break",
+            "fieldtype": "Column Break"
+          },
+          {
+            "default": "0",
+            "fieldname": "is_internal_supplier",
+            "fieldtype": "Check",
+            "label": "Is Internal Supplier",
+            "read_only": 1
+          },
+          {
+            "fieldname": "represents_company",
+            "fieldtype": "Link",
+            "label": "Represents Company",
+            "options": "Company",
+            "read_only": 1
+          },
+          {
+            "fieldname": "accounting_dimensions_section",
+            "fieldtype": "Section Break",
+            "label": "Accounting Dimensions "
+          },
+          {
+            "fieldname": "cost_center",
+            "fieldtype": "Link",
+            "label": "Cost Center",
+            "options": "Cost Center"
+          },
+          {
+            "fieldname": "dimension_col_break",
+            "fieldtype": "Column Break"
+          },
+          {
+            "fieldname": "project",
+            "fieldtype": "Link",
+            "label": "Project",
+            "options": "Project"
+          },
+          {
+            "default": "0",
+            "fieldname": "is_old_subcontracting_flow",
+            "fieldtype": "Check",
+            "label": "Is Old Subcontracting Flow",
+            "read_only": 1
+          },
+          {
+            "fieldname": "set_from_warehouse",
+            "fieldtype": "Link",
+            "label": "Set From Warehouse",
+            "options": "Warehouse"
+          },
+          {
+            "fieldname": "terms_tab",
+            "fieldtype": "Tab Break",
+            "label": "Terms"
+          },
+          {
+            "fieldname": "more_info_tab",
+            "fieldtype": "Tab Break",
+            "label": "More Info"
+          },
+          {
+            "fieldname": "column_break_7",
+            "fieldtype": "Column Break"
+          },
+          {
+            "fieldname": "column_break_40",
+            "fieldtype": "Column Break"
+          },
+          {
+            "fieldname": "column_break_53",
+            "fieldtype": "Column Break"
+          },
+          {
+            "fieldname": "address_and_contact_tab",
+            "fieldtype": "Tab Break",
+            "label": "Address & Contact"
+          },
+          {
+            "fieldname": "company_billing_address_section",
+            "fieldtype": "Section Break",
+            "label": "Company Billing Address"
+          },
+          {
+            "fieldname": "additional_info_section",
+            "fieldtype": "Section Break",
+            "label": "Additional Info"
+          },
+          {
+            "fieldname": "column_break_99",
+            "fieldtype": "Column Break"
+          },
+          {
+            "fieldname": "column_break_103",
+            "fieldtype": "Column Break"
+          },
+          {
+            "fieldname": "incoterm",
+            "fieldtype": "Link",
+            "label": "Incoterm",
+            "options": "Incoterm"
+          },
+          {
+            "fieldname": "named_place",
+            "fieldtype": "Data",
+            "label": "Named Place"
+          },
+          {
+            "fieldname": "shipping_address_section",
+            "fieldtype": "Section Break",
+            "label": "Shipping Address"
+          },
+          {
+            "fieldname": "connections_tab",
+            "fieldtype": "Tab Break",
+            "label": "Connections"
+          },
+          {
+            "fieldname": "advance_payment_status",
+            "fieldtype": "Select",
+            "label": "Advance Payment Status",
+            "options": "Not Initiated\nInitiated\nPartially Paid\nFully Paid"
+          },
+          {
+            "default": "0",
+            "fieldname": "has_unit_price_items",
+            "fieldtype": "Check",
+            "label": "Has Unit Price Items"
+          },
+          {
+            "fieldname": "dispatch_address",
+            "fieldtype": "Link",
+            "label": "Dispatch Address",
+            "options": "Address"
+          },
+          {
+            "fieldname": "dispatch_address_display",
+            "fieldtype": "Text Editor",
+            "label": "Dispatch Address Details",
+            "read_only": 1
+          },
+          {
+            "fieldname": "supplier_group",
+            "fieldtype": "Link",
+            "label": "Supplier Group",
+            "options": "Supplier Group"
+          },
+          {
+            "fieldname": "last_scanned_warehouse",
+            "fieldtype": "Data",
+            "label": "Last Scanned Warehouse"
+          },
+          {
+            "fieldname": "mps",
+            "fieldtype": "Link",
+            "label": "MPS",
+            "options": "Master Production Schedule",
+            "read_only": 1
+          },
+          {
+            "fieldname": "item_wise_tax_details",
+            "fieldtype": "Table",
+            "label": "Item Wise Tax Details",
+            "options": "Item Wise Tax Detail"
+          }
+        ]
+      },
+      "evidence_id": "VIS-FSV-B19-04",
+      "locator": "erpnext-purchase-order-doctype.json:complete-field-catalog",
+      "source_id": "erpnext-purchase-order-doctype.json",
+      "source_sha256": "99F835C958B3191B09EB61D232A3D6CDEF14990B666EA766979F8C7ACFEF800F"
+    },
+    {
+      "content": {
+        "available_values": [
+          {
+            "authority": "client",
+            "path": "/request/body/action",
+            "type": "string"
+          },
+          {
+            "authority": "client",
+            "path": "/request/body/supplier",
+            "type": "string"
+          },
+          {
+            "authority": "server_state",
+            "path": "/trusted/holdType",
+            "type": "string"
+          },
+          {
+            "authority": "server_state",
+            "path": "/trusted/supplierOnHold",
+            "type": "boolean"
+          }
+        ],
+        "classification": "visible_runtime_context_contract",
+        "notice": "This declares available adapter paths and types only; it supplies no expected decision or hidden test value.",
+        "proposal_focus": {
+          "instruction": "Propose the focused business guard only when the visible semantic sources support it; otherwise abstain.",
+          "paths": [
+            "/request/body/action",
+            "/request/body/supplier",
+            "/trusted/holdType",
+            "/trusted/supplierOnHold"
+          ],
+          "primitive": "SP-BOUNDED-BUSINESS-GUARD"
+        },
+        "target_operation": "POST /api/resource/Purchase Order"
+      },
+      "evidence_id": "VIS-FSV-B19-RUNTIME-ABI",
+      "locator": "tasks.FSV-B19",
+      "source_id": "EC-V2-RUNTIME-INTERFACE-CATALOG-V1",
+      "source_sha256": "8221DA8A6720B0593A8D337F18569C9947AAB05B02E5C84FB0C50E3DE8C1ABD7"
+    }
+  ]
+}

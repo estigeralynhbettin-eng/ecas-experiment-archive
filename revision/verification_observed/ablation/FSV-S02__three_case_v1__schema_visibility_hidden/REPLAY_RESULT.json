@@ -1,0 +1,62 @@
+{
+  "row_id": "FSV-S02__three_case_v1__schema_visibility_hidden",
+  "parent_id": "FSV-S02__three_case_v1",
+  "task": "FSV-S02",
+  "configuration": "three_case_v1",
+  "variant": "schema_visibility_hidden",
+  "classification": "ENGINEERING_CONTRACT_SCHEMA_CONTROL",
+  "full_executed": false,
+  "shape_executed": true,
+  "full_evaluations": [],
+  "shape_evaluations": [
+    {
+      "fixture_id": "FSV-S02-OL-01",
+      "fixture_class": "ARCHIVED_SYNTHETIC_REQUEST",
+      "expected": "allow",
+      "actual": {
+        "policy_id": "pol-FSV-S02-001",
+        "decision": "allow",
+        "fail_closed": true,
+        "violations": []
+      },
+      "correct": true
+    },
+    {
+      "fixture_id": "FSV-S02-OI-01",
+      "fixture_class": "ARCHIVED_SYNTHETIC_REQUEST",
+      "expected": "deny",
+      "actual": {
+        "policy_id": "pol-FSV-S02-001",
+        "decision": "deny",
+        "fail_closed": true,
+        "violations": [
+          {
+            "rule_id": "rule-FSV-S02-001",
+            "code": "unexpected_fields",
+            "detail": "undeclared_script"
+          }
+        ]
+      },
+      "correct": true
+    },
+    {
+      "fixture_id": "SYNTH-MISSING-TRUSTED",
+      "fixture_class": "CONSTRUCTED_MISSING_CONTEXT_CONTROL",
+      "expected": null,
+      "actual": {
+        "policy_id": "pol-FSV-S02-001",
+        "decision": "allow",
+        "fail_closed": true,
+        "violations": []
+      },
+      "correct": null
+    }
+  ],
+  "ir_status": "COMPILED",
+  "contract_shape_valid": false,
+  "full_status": "CONTRACT_SCHEMA_FAILURE",
+  "shape_status": "COMPILED_NO_INVENTORY",
+  "eligible_admission_contrast": false,
+  "archive_match": true,
+  "mismatched_fields": []
+}

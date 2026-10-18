@@ -1,0 +1,104 @@
+{
+  "checks": {
+    "compile_exit": 0,
+    "compile_error": "",
+    "policy_path": "/mnt/d/lunwen/EC-CSI投稿/working/exploration/20261014_four_case_peer_baselines/effect_runs/FSV-B19/AUTOPAC_STYLE/initial/external_pilot/policy.rego",
+    "lint_exit": null,
+    "lint_report": null,
+    "accepted": true
+  },
+  "tests": [
+    {
+      "id": "dev_not_held",
+      "input": {
+        "request": {
+          "body": {
+            "supplier": "DEV-SUPPLIER-852",
+            "action": "PURCHASE_ORDER"
+          }
+        },
+        "trusted": {
+          "supplierOnHold": false,
+          "holdType": ""
+        }
+      },
+      "expected": "allow",
+      "source_ref": "VIS-FSV-B19-01"
+    },
+    {
+      "id": "dev_invoices",
+      "input": {
+        "request": {
+          "body": {
+            "supplier": "DEV-SUPPLIER-853",
+            "action": "PURCHASE_ORDER"
+          }
+        },
+        "trusted": {
+          "supplierOnHold": true,
+          "holdType": "Invoices"
+        }
+      },
+      "expected": "deny",
+      "source_ref": "VIS-FSV-B19-01"
+    },
+    {
+      "id": "dev_payments",
+      "input": {
+        "request": {
+          "body": {
+            "supplier": "DEV-SUPPLIER-854",
+            "action": "PURCHASE_ORDER"
+          }
+        },
+        "trusted": {
+          "supplierOnHold": true,
+          "holdType": "Payments"
+        }
+      },
+      "expected": "allow",
+      "source_ref": "VIS-FSV-B19-01"
+    }
+  ],
+  "developer_results": {
+    "passed": true,
+    "rows": [
+      {
+        "id": "dev_not_held",
+        "expected": "allow",
+        "actual": {
+          "status": "EXECUTED",
+          "decision": "allow",
+          "exit_code": 0
+        },
+        "pass": true
+      },
+      {
+        "id": "dev_invoices",
+        "expected": "deny",
+        "actual": {
+          "status": "EXECUTED",
+          "decision": "deny",
+          "exit_code": 0
+        },
+        "pass": true
+      },
+      {
+        "id": "dev_payments",
+        "expected": "allow",
+        "actual": {
+          "status": "EXECUTED",
+          "decision": "allow",
+          "exit_code": 0
+        },
+        "pass": true
+      }
+    ]
+  },
+  "judge": {
+    "verdict": "REVISE",
+    "issues": [
+      "Source VIS-FSV-B19-01 section 2.4 states that if a hold type is not selected, ERPNext defaults it to 'All'. The Rego assumes holdType will strictly be 'Invoices' or 'All' when supplierOnHold is true. It fails to block the request if trusted.holdType is an empty string or missing, missing a visible requirement."
+    ]
+  }
+}

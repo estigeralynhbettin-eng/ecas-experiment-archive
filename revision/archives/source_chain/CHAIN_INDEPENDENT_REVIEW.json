@@ -1,0 +1,1740 @@
+{
+  "status": "PASS_WITH_EXPLICIT_SCOPE_LIMITS",
+  "review_scope": "Independent read-only audit of R4 integrated delivery, stage/source boundaries and numeric traceability; no new experiment or full manuscript review. This reviewer authored B06/S02 source closure, independently checked integrated claims and B19 result aggregates.",
+  "new_model_calls": 0,
+  "new_policy_executions": 0,
+  "new_source_function_executions": 0,
+  "reviewed_file_hashes": [
+    {
+      "path": "D:\\lunwen\\EC-CSI投稿\\working\\exploration\\20261015_source_rule_chain\\EXPERIMENT_SUMMARY_CN_R4.md",
+      "sha256": "684903bda2bc7d12a099361cdbcb8ec3fc704afc9309d2305c6863144ebffaf6"
+    },
+    {
+      "path": "D:\\lunwen\\EC-CSI投稿\\working\\exploration\\20261015_source_rule_chain\\SEVEN_CASE_CHAIN_CN.md",
+      "sha256": "985b2948fd9197260c8873874c4604a7f87d2af578660b0acb91ec27815ee51b"
+    },
+    {
+      "path": "D:\\lunwen\\EC-CSI投稿\\working\\exploration\\20261015_source_rule_chain\\SEVEN_CASE_CHAIN.csv",
+      "sha256": "5b94003145ce8a165a014a733d7cde0a6bff31b0bc6ce0b61fff625f4b48065d"
+    },
+    {
+      "path": "D:\\lunwen\\EC-CSI投稿\\working\\exploration\\20261015_source_rule_chain\\SEVEN_CASE_CHAIN.json",
+      "sha256": "72d7dc2df90577251fcc2f854ccc2052b6bb199cbe87e746a7a3f9c9cfaa27cc"
+    },
+    {
+      "path": "D:\\lunwen\\EC-CSI投稿\\working\\exploration\\20261015_source_rule_chain\\RUNTIME_SEMANTIC_CONTRACT_PROPOSAL_CN.md",
+      "sha256": "c9cc579fb97ebdfd5a7dbcea431977c999fb42fd596f9ed8fc3d4ceeacdefd47"
+    },
+    {
+      "path": "D:\\lunwen\\EC-CSI投稿\\working\\exploration\\20261015_source_rule_chain\\RUNTIME_SEMANTIC_CONTRACT_PROPOSAL.json",
+      "sha256": "563c9b78b3b5ad7b25c12a9d70b83ea75f61d24cc66ae02b3628a04c56e083b3"
+    },
+    {
+      "path": "D:\\lunwen\\EC-CSI投稿\\working\\exploration\\20261015_source_rule_chain\\PROBE_SUMMARY.json",
+      "sha256": "8eb8b6f8cfa24a34848ce6c7f08550265f89e1d6464ee81b1083631b1813a5cd"
+    },
+    {
+      "path": "D:\\lunwen\\EC-CSI投稿\\working\\exploration\\20261015_source_rule_chain\\RESULT_TRACEABILITY.csv",
+      "sha256": "e0e7e04741ff704aa0abb801c9609f1e5d8f720a984c9c99362bc014643cf85f"
+    },
+    {
+      "path": "D:\\lunwen\\EC-CSI投稿\\working\\exploration\\20261015_source_rule_chain\\CLAIM_EVIDENCE_MATRIX.csv",
+      "sha256": "d91b21112d04f1618422bed3147481ad13ba0d2392d8e0365675d29593374a32"
+    },
+    {
+      "path": "D:\\lunwen\\EC-CSI投稿\\working\\exploration\\20261015_source_rule_chain\\BUILD_RECONCILIATION.json",
+      "sha256": "6f616fc54832f58f6b26afdd33a52c0dc2555cd4174aa28a56f12deee76d52df"
+    },
+    {
+      "path": "D:\\lunwen\\EC-CSI投稿\\working\\exploration\\20261015_source_rule_chain\\PROBE_INDEPENDENT_AUDIT.json",
+      "sha256": "48608e9d240753fab19d2d6fc70a2ee7b9cfb61122a8e0c4a8cb92e1f84b509f"
+    }
+  ],
+  "source_file_count": 50,
+  "source_states": 32,
+  "policy_rows": 288,
+  "check_count_is_not_sample_size": true,
+  "checks": [
+    {
+      "check": "file_hash:D:\\lunwen\\EC-CSI投稿\\RESULT_TRACEABILITY.csv",
+      "pass": true
+    },
+    {
+      "check": "file_hash:D:\\lunwen\\EC-CSI投稿\\CLAIM_EVIDENCE_MATRIX.csv",
+      "pass": true
+    },
+    {
+      "check": "file_hash:D:\\lunwen\\EC-CSI投稿\\working\\exploration\\20261015_semantic_comparison\\EXPERIMENT_SUMMARY_CN_R3.md",
+      "pass": true
+    },
+    {
+      "check": "file_hash:D:\\lunwen\\EC-CSI投稿\\working\\exploration\\20261015_seven_case_mechanism\\EXPERIMENT_SUMMARY_CN_R2.md",
+      "pass": true
+    },
+    {
+      "check": "file_hash:D:\\lunwen\\EC-CSI投稿\\working\\exploration\\20261014_external_baseline_pilot\\generation_inputs\\FSV-B06\\packet.json",
+      "pass": true
+    },
+    {
+      "check": "file_hash:D:\\lunwen\\EC-CSI投稿\\working\\exploration\\20261014_external_baseline_pilot\\execution_inputs\\FSV-B06\\contract.json",
+      "pass": true
+    },
+    {
+      "check": "file_hash:D:\\lunwen\\EC-CSI投稿\\working\\exploration\\20261014_external_baseline_pilot\\effect_runs\\FSV-B06\\ECAS_MATCHED\\candidate.json",
+      "pass": true
+    },
+    {
+      "check": "file_hash:D:\\lunwen\\EC-CSI投稿\\working\\exploration\\20261014_external_baseline_pilot\\effect_runs\\FSV-B06\\ECAS_MATCHED\\admitted_policy.json",
+      "pass": true
+    },
+    {
+      "check": "file_hash:D:\\lunwen\\EC-CSI投稿\\working\\exploration\\20261014_external_baseline_pilot\\effect_runs\\FSV-B06\\ECAS_MATCHED\\RESULT.json",
+      "pass": true
+    },
+    {
+      "check": "file_hash:D:\\lunwen\\EC-CSI投稿\\working\\exploration\\20261015_semantic_comparison\\OLD_THREE_SEMANTIC_AUDIT.json",
+      "pass": true
+    },
+    {
+      "check": "file_hash:D:\\lunwen\\EC-CSI投稿\\working\\exploration\\20261014_external_baseline_pilot\\generation_inputs\\FSV-S02\\packet.json",
+      "pass": true
+    },
+    {
+      "check": "file_hash:D:\\lunwen\\EC-CSI投稿\\working\\exploration\\20261014_external_baseline_pilot\\execution_inputs\\FSV-S02\\contract.json",
+      "pass": true
+    },
+    {
+      "check": "file_hash:D:\\lunwen\\EC-CSI投稿\\working\\exploration\\20261014_external_baseline_pilot\\effect_runs\\FSV-S02\\ECAS_MATCHED\\candidate.json",
+      "pass": true
+    },
+    {
+      "check": "file_hash:D:\\lunwen\\EC-CSI投稿\\working\\exploration\\20261014_external_baseline_pilot\\effect_runs\\FSV-S02\\ECAS_MATCHED\\admitted_policy.json",
+      "pass": true
+    },
+    {
+      "check": "file_hash:D:\\lunwen\\EC-CSI投稿\\working\\exploration\\20261014_external_baseline_pilot\\effect_runs\\FSV-S02\\ECAS_MATCHED\\RESULT.json",
+      "pass": true
+    },
+    {
+      "check": "file_hash:D:\\lunwen\\EC-CSI投稿\\working\\exploration\\20261014_external_baseline_pilot\\generation_inputs\\FSV-S04\\packet.json",
+      "pass": true
+    },
+    {
+      "check": "file_hash:D:\\lunwen\\EC-CSI投稿\\working\\exploration\\20261014_external_baseline_pilot\\execution_inputs\\FSV-S04\\contract.json",
+      "pass": true
+    },
+    {
+      "check": "file_hash:D:\\lunwen\\EC-CSI投稿\\working\\exploration\\20261014_external_baseline_pilot\\effect_runs\\FSV-S04\\ECAS_MATCHED\\candidate.json",
+      "pass": true
+    },
+    {
+      "check": "file_hash:D:\\lunwen\\EC-CSI投稿\\working\\exploration\\20261014_external_baseline_pilot\\effect_runs\\FSV-S04\\ECAS_MATCHED\\admitted_policy.json",
+      "pass": true
+    },
+    {
+      "check": "file_hash:D:\\lunwen\\EC-CSI投稿\\working\\exploration\\20261014_external_baseline_pilot\\effect_runs\\FSV-S04\\ECAS_MATCHED\\RESULT.json",
+      "pass": true
+    },
+    {
+      "check": "file_hash:D:\\lunwen\\EC-CSI投稿\\working\\exploration\\20261014_matched_evidence_labor\\matched_generation\\generation_inputs\\FSV-S03\\packet.json",
+      "pass": true
+    },
+    {
+      "check": "file_hash:D:\\lunwen\\EC-CSI投稿\\working\\exploration\\20261014_matched_evidence_labor\\matched_generation\\execution_inputs\\FSV-S03\\contract.json",
+      "pass": true
+    },
+    {
+      "check": "file_hash:D:\\lunwen\\EC-CSI投稿\\working\\exploration\\20261014_matched_evidence_labor\\matched_generation\\method_runs\\FSV-S03\\ECAS_MATCHED\\first_candidate.json",
+      "pass": true
+    },
+    {
+      "check": "file_hash:D:\\lunwen\\EC-CSI投稿\\working\\exploration\\20261014_matched_evidence_labor\\matched_generation\\method_runs\\FSV-S03\\ECAS_MATCHED\\initial\\admitted_policy.json",
+      "pass": true
+    },
+    {
+      "check": "file_hash:D:\\lunwen\\EC-CSI投稿\\working\\exploration\\20261014_matched_evidence_labor\\matched_generation\\method_runs\\FSV-S03\\ECAS_MATCHED\\RESULT.json",
+      "pass": true
+    },
+    {
+      "check": "file_hash:D:\\lunwen\\EC-CSI投稿\\working\\exploration\\20261015_semantic_comparison\\NEW_FOUR_SEMANTIC_AUDIT.json",
+      "pass": true
+    },
+    {
+      "check": "file_hash:D:\\lunwen\\EC-CSI投稿\\working\\exploration\\20261014_matched_evidence_labor\\matched_generation\\generation_inputs\\FSV-B13\\packet.json",
+      "pass": true
+    },
+    {
+      "check": "file_hash:D:\\lunwen\\EC-CSI投稿\\working\\exploration\\20261014_matched_evidence_labor\\matched_generation\\execution_inputs\\FSV-B13\\contract.json",
+      "pass": true
+    },
+    {
+      "check": "file_hash:D:\\lunwen\\EC-CSI投稿\\working\\exploration\\20261014_matched_evidence_labor\\matched_generation\\method_runs\\FSV-B13\\ECAS_MATCHED\\first_candidate.json",
+      "pass": true
+    },
+    {
+      "check": "file_hash:D:\\lunwen\\EC-CSI投稿\\working\\exploration\\20261014_matched_evidence_labor\\matched_generation\\method_runs\\FSV-B13\\ECAS_MATCHED\\initial\\admitted_policy.json",
+      "pass": true
+    },
+    {
+      "check": "file_hash:D:\\lunwen\\EC-CSI投稿\\working\\exploration\\20261014_matched_evidence_labor\\matched_generation\\method_runs\\FSV-B13\\ECAS_MATCHED\\RESULT.json",
+      "pass": true
+    },
+    {
+      "check": "file_hash:D:\\lunwen\\EC-CSI投稿\\working\\exploration\\20261014_matched_evidence_labor\\matched_generation\\generation_inputs\\FSV-B17\\packet.json",
+      "pass": true
+    },
+    {
+      "check": "file_hash:D:\\lunwen\\EC-CSI投稿\\working\\exploration\\20261014_matched_evidence_labor\\matched_generation\\execution_inputs\\FSV-B17\\contract.json",
+      "pass": true
+    },
+    {
+      "check": "file_hash:D:\\lunwen\\EC-CSI投稿\\working\\exploration\\20261014_matched_evidence_labor\\matched_generation\\method_runs\\FSV-B17\\ECAS_MATCHED\\first_candidate.json",
+      "pass": true
+    },
+    {
+      "check": "file_hash:D:\\lunwen\\EC-CSI投稿\\working\\exploration\\20261014_matched_evidence_labor\\matched_generation\\method_runs\\FSV-B17\\ECAS_MATCHED\\initial\\admitted_policy.json",
+      "pass": true
+    },
+    {
+      "check": "file_hash:D:\\lunwen\\EC-CSI投稿\\working\\exploration\\20261014_matched_evidence_labor\\matched_generation\\method_runs\\FSV-B17\\ECAS_MATCHED\\RESULT.json",
+      "pass": true
+    },
+    {
+      "check": "file_hash:D:\\lunwen\\EC-CSI投稿\\working\\exploration\\20261014_matched_evidence_labor\\matched_generation\\generation_inputs\\FSV-B19\\packet.json",
+      "pass": true
+    },
+    {
+      "check": "file_hash:D:\\lunwen\\EC-CSI投稿\\working\\exploration\\20261014_matched_evidence_labor\\matched_generation\\execution_inputs\\FSV-B19\\contract.json",
+      "pass": true
+    },
+    {
+      "check": "file_hash:D:\\lunwen\\EC-CSI投稿\\working\\exploration\\20261014_matched_evidence_labor\\matched_generation\\method_runs\\FSV-B19\\ECAS_MATCHED\\first_candidate.json",
+      "pass": true
+    },
+    {
+      "check": "file_hash:D:\\lunwen\\EC-CSI投稿\\working\\exploration\\20261014_matched_evidence_labor\\matched_generation\\method_runs\\FSV-B19\\ECAS_MATCHED\\initial\\admitted_policy.json",
+      "pass": true
+    },
+    {
+      "check": "file_hash:D:\\lunwen\\EC-CSI投稿\\working\\exploration\\20261014_matched_evidence_labor\\matched_generation\\method_runs\\FSV-B19\\ECAS_MATCHED\\RESULT.json",
+      "pass": true
+    },
+    {
+      "check": "file_hash:D:\\lunwen\\EC-CSI投稿\\working\\exploration\\20261015_source_rule_chain\\SOURCE_GAP_CLOSURE.json",
+      "pass": true
+    },
+    {
+      "check": "file_hash:D:\\lunwen\\EC-CSI投稿\\working\\exploration\\20261015_source_rule_chain\\B19_SOURCE_PATH.json",
+      "pass": true
+    },
+    {
+      "check": "file_hash:D:\\lunwen\\EC-CSI投稿\\working\\exploration\\20261015_source_rule_chain\\RESULTS.json",
+      "pass": true
+    },
+    {
+      "check": "file_hash:D:\\lunwen\\EC-CSI投稿\\working\\exploration\\20261015_source_rule_chain\\T0_RECEIPT.json",
+      "pass": true
+    },
+    {
+      "check": "file_hash:D:\\lunwen\\EC-CSI投稿\\working\\exploration\\20261015_source_rule_chain\\SOURCE_MANIFEST.json",
+      "pass": true
+    },
+    {
+      "check": "file_hash:D:\\lunwen\\EC-CSI投稿\\working\\exploration\\20261015_source_rule_chain\\INPUT_MANIFEST.json",
+      "pass": true
+    },
+    {
+      "check": "file_hash:D:\\lunwen\\EC-CSI投稿\\working\\exploration\\20261015_source_rule_chain\\RUN_REQUEST.json",
+      "pass": true
+    },
+    {
+      "check": "file_hash:D:\\lunwen\\EC-CSI投稿\\working\\exploration\\20261015_source_rule_chain\\PROTOCOL_CN.md",
+      "pass": true
+    },
+    {
+      "check": "file_hash:D:\\lunwen\\EC-CSI投稿\\working\\exploration\\20261015_source_rule_chain\\TASK_CONTRACT_CN.md",
+      "pass": true
+    },
+    {
+      "check": "file_hash:D:\\lunwen\\EC-CSI投稿\\working\\exploration\\20261015_source_rule_chain\\SEVEN_CASE_CHAIN.json",
+      "pass": true
+    },
+    {
+      "check": "file_hash:D:\\lunwen\\EC-CSI投稿\\working\\exploration\\20261015_source_rule_chain\\SEVEN_CASE_CHAIN.csv",
+      "pass": true
+    },
+    {
+      "check": "file_hash:D:\\lunwen\\EC-CSI投稿\\working\\exploration\\20261015_source_rule_chain\\SEVEN_CASE_CHAIN_CN.md",
+      "pass": true
+    },
+    {
+      "check": "file_hash:D:\\lunwen\\EC-CSI投稿\\working\\exploration\\20261015_source_rule_chain\\PROBE_SUMMARY.json",
+      "pass": true
+    },
+    {
+      "check": "file_hash:D:\\lunwen\\EC-CSI投稿\\working\\exploration\\20261015_source_rule_chain\\EXPERIMENT_SUMMARY_CN_R4.md",
+      "pass": true
+    },
+    {
+      "check": "file_hash:D:\\lunwen\\EC-CSI投稿\\working\\exploration\\20261015_source_rule_chain\\RUNTIME_SEMANTIC_CONTRACT_PROPOSAL.json",
+      "pass": true
+    },
+    {
+      "check": "file_hash:D:\\lunwen\\EC-CSI投稿\\working\\exploration\\20261015_source_rule_chain\\RUNTIME_SEMANTIC_CONTRACT_PROPOSAL_CN.md",
+      "pass": true
+    },
+    {
+      "check": "protected_hash:D:\\lunwen\\EC-CSI投稿\\RESULT_TRACEABILITY.csv",
+      "pass": true
+    },
+    {
+      "check": "protected_hash:D:\\lunwen\\EC-CSI投稿\\CLAIM_EVIDENCE_MATRIX.csv",
+      "pass": true
+    },
+    {
+      "check": "protected_hash:D:\\lunwen\\EC-CSI投稿\\working\\exploration\\20261015_semantic_comparison\\EXPERIMENT_SUMMARY_CN_R3.md",
+      "pass": true
+    },
+    {
+      "check": "protected_hash:D:\\lunwen\\EC-CSI投稿\\working\\exploration\\20261015_seven_case_mechanism\\EXPERIMENT_SUMMARY_CN_R2.md",
+      "pass": true
+    },
+    {
+      "check": "R1_hash_matches_previous_independent_QA",
+      "pass": false,
+      "classification": "OLDER_HISTORICAL_BASELINE_NOT_APPLICABLE_TO_CURRENT_SCOPE_IMMUTABILITY"
+    },
+    {
+      "check": "seven_unique_chain_rows",
+      "pass": true
+    },
+    {
+      "check": "FSV-B06:csv_project_batch",
+      "pass": true
+    },
+    {
+      "check": "FSV-B06:csv_semantic_scope_fields",
+      "pass": true
+    },
+    {
+      "check": "FSV-B06:evidence_hash:D:\\lunwen\\EC-CSI投稿\\working\\exploration\\20261014_external_baseline_pilot\\generation_inputs\\FSV-B06\\packet.json",
+      "pass": true
+    },
+    {
+      "check": "FSV-B06:evidence_hash:D:\\lunwen\\EC-CSI投稿\\working\\exploration\\20261014_external_baseline_pilot\\execution_inputs\\FSV-B06\\contract.json",
+      "pass": true
+    },
+    {
+      "check": "FSV-B06:evidence_hash:D:\\lunwen\\EC-CSI投稿\\working\\exploration\\20261014_external_baseline_pilot\\effect_runs\\FSV-B06\\ECAS_MATCHED\\candidate.json",
+      "pass": true
+    },
+    {
+      "check": "FSV-B06:evidence_hash:D:\\lunwen\\EC-CSI投稿\\working\\exploration\\20261014_external_baseline_pilot\\effect_runs\\FSV-B06\\ECAS_MATCHED\\admitted_policy.json",
+      "pass": true
+    },
+    {
+      "check": "FSV-B06:evidence_hash:D:\\lunwen\\EC-CSI投稿\\working\\exploration\\20261014_external_baseline_pilot\\effect_runs\\FSV-B06\\ECAS_MATCHED\\RESULT.json",
+      "pass": true
+    },
+    {
+      "check": "FSV-B06:evidence_hash:D:\\lunwen\\EC-CSI投稿\\working\\exploration\\20261015_semantic_comparison\\OLD_THREE_SEMANTIC_AUDIT.json",
+      "pass": true
+    },
+    {
+      "check": "FSV-B06:candidate_contract_hashes",
+      "pass": true
+    },
+    {
+      "check": "FSV-B06:target_equal",
+      "pass": true
+    },
+    {
+      "check": "FSV-B06:actual_rule_equal",
+      "pass": true
+    },
+    {
+      "check": "FSV-B06:registered_evidence_exact",
+      "pass": true
+    },
+    {
+      "check": "FSV-B06:declared_scope_not_semantic_proof",
+      "pass": true
+    },
+    {
+      "check": "FSV-B06:actual_historical_admission",
+      "pass": true
+    },
+    {
+      "check": "FSV-B06:actual_historical_pair",
+      "pass": true
+    },
+    {
+      "check": "FSV-S02:csv_project_batch",
+      "pass": true
+    },
+    {
+      "check": "FSV-S02:csv_semantic_scope_fields",
+      "pass": true
+    },
+    {
+      "check": "FSV-S02:evidence_hash:D:\\lunwen\\EC-CSI投稿\\working\\exploration\\20261014_external_baseline_pilot\\generation_inputs\\FSV-S02\\packet.json",
+      "pass": true
+    },
+    {
+      "check": "FSV-S02:evidence_hash:D:\\lunwen\\EC-CSI投稿\\working\\exploration\\20261014_external_baseline_pilot\\execution_inputs\\FSV-S02\\contract.json",
+      "pass": true
+    },
+    {
+      "check": "FSV-S02:evidence_hash:D:\\lunwen\\EC-CSI投稿\\working\\exploration\\20261014_external_baseline_pilot\\effect_runs\\FSV-S02\\ECAS_MATCHED\\candidate.json",
+      "pass": true
+    },
+    {
+      "check": "FSV-S02:evidence_hash:D:\\lunwen\\EC-CSI投稿\\working\\exploration\\20261014_external_baseline_pilot\\effect_runs\\FSV-S02\\ECAS_MATCHED\\admitted_policy.json",
+      "pass": true
+    },
+    {
+      "check": "FSV-S02:evidence_hash:D:\\lunwen\\EC-CSI投稿\\working\\exploration\\20261014_external_baseline_pilot\\effect_runs\\FSV-S02\\ECAS_MATCHED\\RESULT.json",
+      "pass": true
+    },
+    {
+      "check": "FSV-S02:evidence_hash:D:\\lunwen\\EC-CSI投稿\\working\\exploration\\20261015_semantic_comparison\\OLD_THREE_SEMANTIC_AUDIT.json",
+      "pass": true
+    },
+    {
+      "check": "FSV-S02:candidate_contract_hashes",
+      "pass": true
+    },
+    {
+      "check": "FSV-S02:target_equal",
+      "pass": true
+    },
+    {
+      "check": "FSV-S02:actual_rule_equal",
+      "pass": true
+    },
+    {
+      "check": "FSV-S02:registered_evidence_exact",
+      "pass": true
+    },
+    {
+      "check": "FSV-S02:declared_scope_not_semantic_proof",
+      "pass": true
+    },
+    {
+      "check": "FSV-S02:actual_historical_admission",
+      "pass": true
+    },
+    {
+      "check": "FSV-S02:actual_historical_pair",
+      "pass": true
+    },
+    {
+      "check": "FSV-S04:csv_project_batch",
+      "pass": true
+    },
+    {
+      "check": "FSV-S04:csv_semantic_scope_fields",
+      "pass": true
+    },
+    {
+      "check": "FSV-S04:evidence_hash:D:\\lunwen\\EC-CSI投稿\\working\\exploration\\20261014_external_baseline_pilot\\generation_inputs\\FSV-S04\\packet.json",
+      "pass": true
+    },
+    {
+      "check": "FSV-S04:evidence_hash:D:\\lunwen\\EC-CSI投稿\\working\\exploration\\20261014_external_baseline_pilot\\execution_inputs\\FSV-S04\\contract.json",
+      "pass": true
+    },
+    {
+      "check": "FSV-S04:evidence_hash:D:\\lunwen\\EC-CSI投稿\\working\\exploration\\20261014_external_baseline_pilot\\effect_runs\\FSV-S04\\ECAS_MATCHED\\candidate.json",
+      "pass": true
+    },
+    {
+      "check": "FSV-S04:evidence_hash:D:\\lunwen\\EC-CSI投稿\\working\\exploration\\20261014_external_baseline_pilot\\effect_runs\\FSV-S04\\ECAS_MATCHED\\admitted_policy.json",
+      "pass": true
+    },
+    {
+      "check": "FSV-S04:evidence_hash:D:\\lunwen\\EC-CSI投稿\\working\\exploration\\20261014_external_baseline_pilot\\effect_runs\\FSV-S04\\ECAS_MATCHED\\RESULT.json",
+      "pass": true
+    },
+    {
+      "check": "FSV-S04:evidence_hash:D:\\lunwen\\EC-CSI投稿\\working\\exploration\\20261015_semantic_comparison\\OLD_THREE_SEMANTIC_AUDIT.json",
+      "pass": true
+    },
+    {
+      "check": "FSV-S04:candidate_contract_hashes",
+      "pass": true
+    },
+    {
+      "check": "FSV-S04:target_equal",
+      "pass": true
+    },
+    {
+      "check": "FSV-S04:actual_rule_equal",
+      "pass": true
+    },
+    {
+      "check": "FSV-S04:registered_evidence_exact",
+      "pass": true
+    },
+    {
+      "check": "FSV-S04:declared_scope_not_semantic_proof",
+      "pass": true
+    },
+    {
+      "check": "FSV-S04:actual_historical_admission",
+      "pass": true
+    },
+    {
+      "check": "FSV-S04:actual_historical_pair",
+      "pass": true
+    },
+    {
+      "check": "FSV-S03:csv_project_batch",
+      "pass": true
+    },
+    {
+      "check": "FSV-S03:csv_semantic_scope_fields",
+      "pass": true
+    },
+    {
+      "check": "FSV-S03:evidence_hash:D:\\lunwen\\EC-CSI投稿\\working\\exploration\\20261014_matched_evidence_labor\\matched_generation\\generation_inputs\\FSV-S03\\packet.json",
+      "pass": true
+    },
+    {
+      "check": "FSV-S03:evidence_hash:D:\\lunwen\\EC-CSI投稿\\working\\exploration\\20261014_matched_evidence_labor\\matched_generation\\execution_inputs\\FSV-S03\\contract.json",
+      "pass": true
+    },
+    {
+      "check": "FSV-S03:evidence_hash:D:\\lunwen\\EC-CSI投稿\\working\\exploration\\20261014_matched_evidence_labor\\matched_generation\\method_runs\\FSV-S03\\ECAS_MATCHED\\first_candidate.json",
+      "pass": true
+    },
+    {
+      "check": "FSV-S03:evidence_hash:D:\\lunwen\\EC-CSI投稿\\working\\exploration\\20261014_matched_evidence_labor\\matched_generation\\method_runs\\FSV-S03\\ECAS_MATCHED\\initial\\admitted_policy.json",
+      "pass": true
+    },
+    {
+      "check": "FSV-S03:evidence_hash:D:\\lunwen\\EC-CSI投稿\\working\\exploration\\20261014_matched_evidence_labor\\matched_generation\\method_runs\\FSV-S03\\ECAS_MATCHED\\RESULT.json",
+      "pass": true
+    },
+    {
+      "check": "FSV-S03:evidence_hash:D:\\lunwen\\EC-CSI投稿\\working\\exploration\\20261015_semantic_comparison\\NEW_FOUR_SEMANTIC_AUDIT.json",
+      "pass": true
+    },
+    {
+      "check": "FSV-S03:candidate_contract_hashes",
+      "pass": true
+    },
+    {
+      "check": "FSV-S03:target_equal",
+      "pass": true
+    },
+    {
+      "check": "FSV-S03:actual_rule_equal",
+      "pass": true
+    },
+    {
+      "check": "FSV-S03:registered_evidence_exact",
+      "pass": true
+    },
+    {
+      "check": "FSV-S03:declared_scope_not_semantic_proof",
+      "pass": true
+    },
+    {
+      "check": "FSV-S03:actual_historical_admission",
+      "pass": true
+    },
+    {
+      "check": "FSV-S03:actual_historical_pair",
+      "pass": true
+    },
+    {
+      "check": "FSV-B13:csv_project_batch",
+      "pass": true
+    },
+    {
+      "check": "FSV-B13:csv_semantic_scope_fields",
+      "pass": true
+    },
+    {
+      "check": "FSV-B13:evidence_hash:D:\\lunwen\\EC-CSI投稿\\working\\exploration\\20261014_matched_evidence_labor\\matched_generation\\generation_inputs\\FSV-B13\\packet.json",
+      "pass": true
+    },
+    {
+      "check": "FSV-B13:evidence_hash:D:\\lunwen\\EC-CSI投稿\\working\\exploration\\20261014_matched_evidence_labor\\matched_generation\\execution_inputs\\FSV-B13\\contract.json",
+      "pass": true
+    },
+    {
+      "check": "FSV-B13:evidence_hash:D:\\lunwen\\EC-CSI投稿\\working\\exploration\\20261014_matched_evidence_labor\\matched_generation\\method_runs\\FSV-B13\\ECAS_MATCHED\\first_candidate.json",
+      "pass": true
+    },
+    {
+      "check": "FSV-B13:evidence_hash:D:\\lunwen\\EC-CSI投稿\\working\\exploration\\20261014_matched_evidence_labor\\matched_generation\\method_runs\\FSV-B13\\ECAS_MATCHED\\initial\\admitted_policy.json",
+      "pass": true
+    },
+    {
+      "check": "FSV-B13:evidence_hash:D:\\lunwen\\EC-CSI投稿\\working\\exploration\\20261014_matched_evidence_labor\\matched_generation\\method_runs\\FSV-B13\\ECAS_MATCHED\\RESULT.json",
+      "pass": true
+    },
+    {
+      "check": "FSV-B13:evidence_hash:D:\\lunwen\\EC-CSI投稿\\working\\exploration\\20261015_semantic_comparison\\NEW_FOUR_SEMANTIC_AUDIT.json",
+      "pass": true
+    },
+    {
+      "check": "FSV-B13:candidate_contract_hashes",
+      "pass": true
+    },
+    {
+      "check": "FSV-B13:target_equal",
+      "pass": true
+    },
+    {
+      "check": "FSV-B13:actual_rule_equal",
+      "pass": true
+    },
+    {
+      "check": "FSV-B13:registered_evidence_exact",
+      "pass": true
+    },
+    {
+      "check": "FSV-B13:declared_scope_not_semantic_proof",
+      "pass": true
+    },
+    {
+      "check": "FSV-B13:actual_historical_admission",
+      "pass": true
+    },
+    {
+      "check": "FSV-B13:actual_historical_pair",
+      "pass": true
+    },
+    {
+      "check": "FSV-B17:csv_project_batch",
+      "pass": true
+    },
+    {
+      "check": "FSV-B17:csv_semantic_scope_fields",
+      "pass": true
+    },
+    {
+      "check": "FSV-B17:evidence_hash:D:\\lunwen\\EC-CSI投稿\\working\\exploration\\20261014_matched_evidence_labor\\matched_generation\\generation_inputs\\FSV-B17\\packet.json",
+      "pass": true
+    },
+    {
+      "check": "FSV-B17:evidence_hash:D:\\lunwen\\EC-CSI投稿\\working\\exploration\\20261014_matched_evidence_labor\\matched_generation\\execution_inputs\\FSV-B17\\contract.json",
+      "pass": true
+    },
+    {
+      "check": "FSV-B17:evidence_hash:D:\\lunwen\\EC-CSI投稿\\working\\exploration\\20261014_matched_evidence_labor\\matched_generation\\method_runs\\FSV-B17\\ECAS_MATCHED\\first_candidate.json",
+      "pass": true
+    },
+    {
+      "check": "FSV-B17:evidence_hash:D:\\lunwen\\EC-CSI投稿\\working\\exploration\\20261014_matched_evidence_labor\\matched_generation\\method_runs\\FSV-B17\\ECAS_MATCHED\\initial\\admitted_policy.json",
+      "pass": true
+    },
+    {
+      "check": "FSV-B17:evidence_hash:D:\\lunwen\\EC-CSI投稿\\working\\exploration\\20261014_matched_evidence_labor\\matched_generation\\method_runs\\FSV-B17\\ECAS_MATCHED\\RESULT.json",
+      "pass": true
+    },
+    {
+      "check": "FSV-B17:evidence_hash:D:\\lunwen\\EC-CSI投稿\\working\\exploration\\20261015_semantic_comparison\\NEW_FOUR_SEMANTIC_AUDIT.json",
+      "pass": true
+    },
+    {
+      "check": "FSV-B17:candidate_contract_hashes",
+      "pass": true
+    },
+    {
+      "check": "FSV-B17:target_equal",
+      "pass": true
+    },
+    {
+      "check": "FSV-B17:actual_rule_equal",
+      "pass": true
+    },
+    {
+      "check": "FSV-B17:registered_evidence_exact",
+      "pass": true
+    },
+    {
+      "check": "FSV-B17:declared_scope_not_semantic_proof",
+      "pass": true
+    },
+    {
+      "check": "FSV-B17:actual_historical_admission",
+      "pass": true
+    },
+    {
+      "check": "FSV-B17:actual_historical_pair",
+      "pass": true
+    },
+    {
+      "check": "FSV-B19:csv_project_batch",
+      "pass": true
+    },
+    {
+      "check": "FSV-B19:csv_semantic_scope_fields",
+      "pass": true
+    },
+    {
+      "check": "FSV-B19:evidence_hash:D:\\lunwen\\EC-CSI投稿\\working\\exploration\\20261014_matched_evidence_labor\\matched_generation\\generation_inputs\\FSV-B19\\packet.json",
+      "pass": true
+    },
+    {
+      "check": "FSV-B19:evidence_hash:D:\\lunwen\\EC-CSI投稿\\working\\exploration\\20261014_matched_evidence_labor\\matched_generation\\execution_inputs\\FSV-B19\\contract.json",
+      "pass": true
+    },
+    {
+      "check": "FSV-B19:evidence_hash:D:\\lunwen\\EC-CSI投稿\\working\\exploration\\20261014_matched_evidence_labor\\matched_generation\\method_runs\\FSV-B19\\ECAS_MATCHED\\first_candidate.json",
+      "pass": true
+    },
+    {
+      "check": "FSV-B19:evidence_hash:D:\\lunwen\\EC-CSI投稿\\working\\exploration\\20261014_matched_evidence_labor\\matched_generation\\method_runs\\FSV-B19\\ECAS_MATCHED\\initial\\admitted_policy.json",
+      "pass": true
+    },
+    {
+      "check": "FSV-B19:evidence_hash:D:\\lunwen\\EC-CSI投稿\\working\\exploration\\20261014_matched_evidence_labor\\matched_generation\\method_runs\\FSV-B19\\ECAS_MATCHED\\RESULT.json",
+      "pass": true
+    },
+    {
+      "check": "FSV-B19:evidence_hash:D:\\lunwen\\EC-CSI投稿\\working\\exploration\\20261015_semantic_comparison\\NEW_FOUR_SEMANTIC_AUDIT.json",
+      "pass": true
+    },
+    {
+      "check": "FSV-B19:candidate_contract_hashes",
+      "pass": true
+    },
+    {
+      "check": "FSV-B19:target_equal",
+      "pass": true
+    },
+    {
+      "check": "FSV-B19:actual_rule_equal",
+      "pass": true
+    },
+    {
+      "check": "FSV-B19:registered_evidence_exact",
+      "pass": true
+    },
+    {
+      "check": "FSV-B19:declared_scope_not_semantic_proof",
+      "pass": true
+    },
+    {
+      "check": "FSV-B19:actual_historical_admission",
+      "pass": true
+    },
+    {
+      "check": "FSV-B19:actual_historical_pair",
+      "pass": true
+    },
+    {
+      "check": "completed_32_source_288_policy",
+      "pass": true
+    },
+    {
+      "check": "no_new_model_or_case",
+      "pass": true
+    },
+    {
+      "check": "nine_arms_methods",
+      "pass": true
+    },
+    {
+      "check": "derived_summary:('effective_manual', 'AUTOPAC_STYLE')",
+      "pass": true
+    },
+    {
+      "check": "derived_summary:('effective_manual', 'ECAS_MATCHED')",
+      "pass": true
+    },
+    {
+      "check": "derived_summary:('effective_manual', 'P2P_STYLE')",
+      "pass": true
+    },
+    {
+      "check": "derived_summary:('raw', 'AUTOPAC_STYLE')",
+      "pass": true
+    },
+    {
+      "check": "derived_summary:('raw', 'ECAS_MATCHED')",
+      "pass": true
+    },
+    {
+      "check": "derived_summary:('raw', 'P2P_STYLE')",
+      "pass": true
+    },
+    {
+      "check": "derived_summary:('saved', 'AUTOPAC_STYLE')",
+      "pass": true
+    },
+    {
+      "check": "derived_summary:('saved', 'ECAS_MATCHED')",
+      "pass": true
+    },
+    {
+      "check": "derived_summary:('saved', 'P2P_STYLE')",
+      "pass": true
+    },
+    {
+      "check": "same_input_all_methods:raw:state-22",
+      "pass": true
+    },
+    {
+      "check": "manual_adapter_identity:raw:state-22",
+      "pass": true
+    },
+    {
+      "check": "same_input_all_methods:raw:state-04",
+      "pass": true
+    },
+    {
+      "check": "manual_adapter_identity:raw:state-04",
+      "pass": true
+    },
+    {
+      "check": "same_input_all_methods:raw:state-32",
+      "pass": true
+    },
+    {
+      "check": "manual_adapter_identity:raw:state-32",
+      "pass": true
+    },
+    {
+      "check": "same_input_all_methods:raw:state-12",
+      "pass": true
+    },
+    {
+      "check": "manual_adapter_identity:raw:state-12",
+      "pass": true
+    },
+    {
+      "check": "same_input_all_methods:raw:state-27",
+      "pass": true
+    },
+    {
+      "check": "manual_adapter_identity:raw:state-27",
+      "pass": true
+    },
+    {
+      "check": "same_input_all_methods:raw:state-02",
+      "pass": true
+    },
+    {
+      "check": "manual_adapter_identity:raw:state-02",
+      "pass": true
+    },
+    {
+      "check": "same_input_all_methods:raw:state-29",
+      "pass": true
+    },
+    {
+      "check": "manual_adapter_identity:raw:state-29",
+      "pass": true
+    },
+    {
+      "check": "same_input_all_methods:raw:state-07",
+      "pass": true
+    },
+    {
+      "check": "manual_adapter_identity:raw:state-07",
+      "pass": true
+    },
+    {
+      "check": "same_input_all_methods:raw:state-03",
+      "pass": true
+    },
+    {
+      "check": "manual_adapter_identity:raw:state-03",
+      "pass": true
+    },
+    {
+      "check": "same_input_all_methods:raw:state-20",
+      "pass": true
+    },
+    {
+      "check": "manual_adapter_identity:raw:state-20",
+      "pass": true
+    },
+    {
+      "check": "same_input_all_methods:raw:state-10",
+      "pass": true
+    },
+    {
+      "check": "manual_adapter_identity:raw:state-10",
+      "pass": true
+    },
+    {
+      "check": "same_input_all_methods:raw:state-15",
+      "pass": true
+    },
+    {
+      "check": "manual_adapter_identity:raw:state-15",
+      "pass": true
+    },
+    {
+      "check": "same_input_all_methods:raw:state-24",
+      "pass": true
+    },
+    {
+      "check": "manual_adapter_identity:raw:state-24",
+      "pass": true
+    },
+    {
+      "check": "same_input_all_methods:raw:state-19",
+      "pass": true
+    },
+    {
+      "check": "manual_adapter_identity:raw:state-19",
+      "pass": true
+    },
+    {
+      "check": "same_input_all_methods:raw:state-09",
+      "pass": true
+    },
+    {
+      "check": "manual_adapter_identity:raw:state-09",
+      "pass": true
+    },
+    {
+      "check": "same_input_all_methods:raw:state-14",
+      "pass": true
+    },
+    {
+      "check": "manual_adapter_identity:raw:state-14",
+      "pass": true
+    },
+    {
+      "check": "same_input_all_methods:raw:state-17",
+      "pass": true
+    },
+    {
+      "check": "manual_adapter_identity:raw:state-17",
+      "pass": true
+    },
+    {
+      "check": "same_input_all_methods:raw:state-23",
+      "pass": true
+    },
+    {
+      "check": "manual_adapter_identity:raw:state-23",
+      "pass": true
+    },
+    {
+      "check": "same_input_all_methods:raw:state-16",
+      "pass": true
+    },
+    {
+      "check": "manual_adapter_identity:raw:state-16",
+      "pass": true
+    },
+    {
+      "check": "same_input_all_methods:raw:state-31",
+      "pass": true
+    },
+    {
+      "check": "manual_adapter_identity:raw:state-31",
+      "pass": true
+    },
+    {
+      "check": "same_input_all_methods:raw:state-01",
+      "pass": true
+    },
+    {
+      "check": "manual_adapter_identity:raw:state-01",
+      "pass": true
+    },
+    {
+      "check": "same_input_all_methods:raw:state-13",
+      "pass": true
+    },
+    {
+      "check": "manual_adapter_identity:raw:state-13",
+      "pass": true
+    },
+    {
+      "check": "same_input_all_methods:raw:state-18",
+      "pass": true
+    },
+    {
+      "check": "manual_adapter_identity:raw:state-18",
+      "pass": true
+    },
+    {
+      "check": "same_input_all_methods:raw:state-21",
+      "pass": true
+    },
+    {
+      "check": "manual_adapter_identity:raw:state-21",
+      "pass": true
+    },
+    {
+      "check": "same_input_all_methods:raw:state-26",
+      "pass": true
+    },
+    {
+      "check": "manual_adapter_identity:raw:state-26",
+      "pass": true
+    },
+    {
+      "check": "same_input_all_methods:raw:state-11",
+      "pass": true
+    },
+    {
+      "check": "manual_adapter_identity:raw:state-11",
+      "pass": true
+    },
+    {
+      "check": "same_input_all_methods:raw:state-06",
+      "pass": true
+    },
+    {
+      "check": "manual_adapter_identity:raw:state-06",
+      "pass": true
+    },
+    {
+      "check": "same_input_all_methods:raw:state-30",
+      "pass": true
+    },
+    {
+      "check": "manual_adapter_identity:raw:state-30",
+      "pass": true
+    },
+    {
+      "check": "same_input_all_methods:raw:state-08",
+      "pass": true
+    },
+    {
+      "check": "manual_adapter_identity:raw:state-08",
+      "pass": true
+    },
+    {
+      "check": "same_input_all_methods:raw:state-05",
+      "pass": true
+    },
+    {
+      "check": "manual_adapter_identity:raw:state-05",
+      "pass": true
+    },
+    {
+      "check": "same_input_all_methods:raw:state-28",
+      "pass": true
+    },
+    {
+      "check": "manual_adapter_identity:raw:state-28",
+      "pass": true
+    },
+    {
+      "check": "same_input_all_methods:raw:state-25",
+      "pass": true
+    },
+    {
+      "check": "manual_adapter_identity:raw:state-25",
+      "pass": true
+    },
+    {
+      "check": "same_input_all_methods:saved:state-22",
+      "pass": true
+    },
+    {
+      "check": "manual_adapter_identity:saved:state-22",
+      "pass": true
+    },
+    {
+      "check": "same_input_all_methods:saved:state-04",
+      "pass": true
+    },
+    {
+      "check": "manual_adapter_identity:saved:state-04",
+      "pass": true
+    },
+    {
+      "check": "same_input_all_methods:saved:state-32",
+      "pass": true
+    },
+    {
+      "check": "manual_adapter_identity:saved:state-32",
+      "pass": true
+    },
+    {
+      "check": "same_input_all_methods:saved:state-12",
+      "pass": true
+    },
+    {
+      "check": "manual_adapter_identity:saved:state-12",
+      "pass": true
+    },
+    {
+      "check": "same_input_all_methods:saved:state-27",
+      "pass": true
+    },
+    {
+      "check": "manual_adapter_identity:saved:state-27",
+      "pass": true
+    },
+    {
+      "check": "same_input_all_methods:saved:state-02",
+      "pass": true
+    },
+    {
+      "check": "manual_adapter_identity:saved:state-02",
+      "pass": true
+    },
+    {
+      "check": "same_input_all_methods:saved:state-29",
+      "pass": true
+    },
+    {
+      "check": "manual_adapter_identity:saved:state-29",
+      "pass": true
+    },
+    {
+      "check": "same_input_all_methods:saved:state-07",
+      "pass": true
+    },
+    {
+      "check": "manual_adapter_identity:saved:state-07",
+      "pass": true
+    },
+    {
+      "check": "same_input_all_methods:saved:state-03",
+      "pass": true
+    },
+    {
+      "check": "manual_adapter_identity:saved:state-03",
+      "pass": true
+    },
+    {
+      "check": "same_input_all_methods:saved:state-20",
+      "pass": true
+    },
+    {
+      "check": "manual_adapter_identity:saved:state-20",
+      "pass": true
+    },
+    {
+      "check": "same_input_all_methods:saved:state-10",
+      "pass": true
+    },
+    {
+      "check": "manual_adapter_identity:saved:state-10",
+      "pass": true
+    },
+    {
+      "check": "same_input_all_methods:saved:state-15",
+      "pass": true
+    },
+    {
+      "check": "manual_adapter_identity:saved:state-15",
+      "pass": true
+    },
+    {
+      "check": "same_input_all_methods:saved:state-24",
+      "pass": true
+    },
+    {
+      "check": "manual_adapter_identity:saved:state-24",
+      "pass": true
+    },
+    {
+      "check": "same_input_all_methods:saved:state-19",
+      "pass": true
+    },
+    {
+      "check": "manual_adapter_identity:saved:state-19",
+      "pass": true
+    },
+    {
+      "check": "same_input_all_methods:saved:state-09",
+      "pass": true
+    },
+    {
+      "check": "manual_adapter_identity:saved:state-09",
+      "pass": true
+    },
+    {
+      "check": "same_input_all_methods:saved:state-14",
+      "pass": true
+    },
+    {
+      "check": "manual_adapter_identity:saved:state-14",
+      "pass": true
+    },
+    {
+      "check": "same_input_all_methods:saved:state-17",
+      "pass": true
+    },
+    {
+      "check": "manual_adapter_identity:saved:state-17",
+      "pass": true
+    },
+    {
+      "check": "same_input_all_methods:saved:state-23",
+      "pass": true
+    },
+    {
+      "check": "manual_adapter_identity:saved:state-23",
+      "pass": true
+    },
+    {
+      "check": "same_input_all_methods:saved:state-16",
+      "pass": true
+    },
+    {
+      "check": "manual_adapter_identity:saved:state-16",
+      "pass": true
+    },
+    {
+      "check": "same_input_all_methods:saved:state-31",
+      "pass": true
+    },
+    {
+      "check": "manual_adapter_identity:saved:state-31",
+      "pass": true
+    },
+    {
+      "check": "same_input_all_methods:saved:state-01",
+      "pass": true
+    },
+    {
+      "check": "manual_adapter_identity:saved:state-01",
+      "pass": true
+    },
+    {
+      "check": "same_input_all_methods:saved:state-13",
+      "pass": true
+    },
+    {
+      "check": "manual_adapter_identity:saved:state-13",
+      "pass": true
+    },
+    {
+      "check": "same_input_all_methods:saved:state-18",
+      "pass": true
+    },
+    {
+      "check": "manual_adapter_identity:saved:state-18",
+      "pass": true
+    },
+    {
+      "check": "same_input_all_methods:saved:state-21",
+      "pass": true
+    },
+    {
+      "check": "manual_adapter_identity:saved:state-21",
+      "pass": true
+    },
+    {
+      "check": "same_input_all_methods:saved:state-26",
+      "pass": true
+    },
+    {
+      "check": "manual_adapter_identity:saved:state-26",
+      "pass": true
+    },
+    {
+      "check": "same_input_all_methods:saved:state-11",
+      "pass": true
+    },
+    {
+      "check": "manual_adapter_identity:saved:state-11",
+      "pass": true
+    },
+    {
+      "check": "same_input_all_methods:saved:state-06",
+      "pass": true
+    },
+    {
+      "check": "manual_adapter_identity:saved:state-06",
+      "pass": true
+    },
+    {
+      "check": "same_input_all_methods:saved:state-30",
+      "pass": true
+    },
+    {
+      "check": "manual_adapter_identity:saved:state-30",
+      "pass": true
+    },
+    {
+      "check": "same_input_all_methods:saved:state-08",
+      "pass": true
+    },
+    {
+      "check": "manual_adapter_identity:saved:state-08",
+      "pass": true
+    },
+    {
+      "check": "same_input_all_methods:saved:state-05",
+      "pass": true
+    },
+    {
+      "check": "manual_adapter_identity:saved:state-05",
+      "pass": true
+    },
+    {
+      "check": "same_input_all_methods:saved:state-28",
+      "pass": true
+    },
+    {
+      "check": "manual_adapter_identity:saved:state-28",
+      "pass": true
+    },
+    {
+      "check": "same_input_all_methods:saved:state-25",
+      "pass": true
+    },
+    {
+      "check": "manual_adapter_identity:saved:state-25",
+      "pass": true
+    },
+    {
+      "check": "same_input_all_methods:effective_manual:state-22",
+      "pass": true
+    },
+    {
+      "check": "manual_adapter_identity:effective_manual:state-22",
+      "pass": true
+    },
+    {
+      "check": "same_input_all_methods:effective_manual:state-04",
+      "pass": true
+    },
+    {
+      "check": "manual_adapter_identity:effective_manual:state-04",
+      "pass": true
+    },
+    {
+      "check": "same_input_all_methods:effective_manual:state-32",
+      "pass": true
+    },
+    {
+      "check": "manual_adapter_identity:effective_manual:state-32",
+      "pass": true
+    },
+    {
+      "check": "same_input_all_methods:effective_manual:state-12",
+      "pass": true
+    },
+    {
+      "check": "manual_adapter_identity:effective_manual:state-12",
+      "pass": true
+    },
+    {
+      "check": "same_input_all_methods:effective_manual:state-27",
+      "pass": true
+    },
+    {
+      "check": "manual_adapter_identity:effective_manual:state-27",
+      "pass": true
+    },
+    {
+      "check": "same_input_all_methods:effective_manual:state-02",
+      "pass": true
+    },
+    {
+      "check": "manual_adapter_identity:effective_manual:state-02",
+      "pass": true
+    },
+    {
+      "check": "same_input_all_methods:effective_manual:state-29",
+      "pass": true
+    },
+    {
+      "check": "manual_adapter_identity:effective_manual:state-29",
+      "pass": true
+    },
+    {
+      "check": "same_input_all_methods:effective_manual:state-07",
+      "pass": true
+    },
+    {
+      "check": "manual_adapter_identity:effective_manual:state-07",
+      "pass": true
+    },
+    {
+      "check": "same_input_all_methods:effective_manual:state-03",
+      "pass": true
+    },
+    {
+      "check": "manual_adapter_identity:effective_manual:state-03",
+      "pass": true
+    },
+    {
+      "check": "same_input_all_methods:effective_manual:state-20",
+      "pass": true
+    },
+    {
+      "check": "manual_adapter_identity:effective_manual:state-20",
+      "pass": true
+    },
+    {
+      "check": "same_input_all_methods:effective_manual:state-10",
+      "pass": true
+    },
+    {
+      "check": "manual_adapter_identity:effective_manual:state-10",
+      "pass": true
+    },
+    {
+      "check": "same_input_all_methods:effective_manual:state-15",
+      "pass": true
+    },
+    {
+      "check": "manual_adapter_identity:effective_manual:state-15",
+      "pass": true
+    },
+    {
+      "check": "same_input_all_methods:effective_manual:state-24",
+      "pass": true
+    },
+    {
+      "check": "manual_adapter_identity:effective_manual:state-24",
+      "pass": true
+    },
+    {
+      "check": "same_input_all_methods:effective_manual:state-19",
+      "pass": true
+    },
+    {
+      "check": "manual_adapter_identity:effective_manual:state-19",
+      "pass": true
+    },
+    {
+      "check": "same_input_all_methods:effective_manual:state-09",
+      "pass": true
+    },
+    {
+      "check": "manual_adapter_identity:effective_manual:state-09",
+      "pass": true
+    },
+    {
+      "check": "same_input_all_methods:effective_manual:state-14",
+      "pass": true
+    },
+    {
+      "check": "manual_adapter_identity:effective_manual:state-14",
+      "pass": true
+    },
+    {
+      "check": "same_input_all_methods:effective_manual:state-17",
+      "pass": true
+    },
+    {
+      "check": "manual_adapter_identity:effective_manual:state-17",
+      "pass": true
+    },
+    {
+      "check": "same_input_all_methods:effective_manual:state-23",
+      "pass": true
+    },
+    {
+      "check": "manual_adapter_identity:effective_manual:state-23",
+      "pass": true
+    },
+    {
+      "check": "same_input_all_methods:effective_manual:state-16",
+      "pass": true
+    },
+    {
+      "check": "manual_adapter_identity:effective_manual:state-16",
+      "pass": true
+    },
+    {
+      "check": "same_input_all_methods:effective_manual:state-31",
+      "pass": true
+    },
+    {
+      "check": "manual_adapter_identity:effective_manual:state-31",
+      "pass": true
+    },
+    {
+      "check": "same_input_all_methods:effective_manual:state-01",
+      "pass": true
+    },
+    {
+      "check": "manual_adapter_identity:effective_manual:state-01",
+      "pass": true
+    },
+    {
+      "check": "same_input_all_methods:effective_manual:state-13",
+      "pass": true
+    },
+    {
+      "check": "manual_adapter_identity:effective_manual:state-13",
+      "pass": true
+    },
+    {
+      "check": "same_input_all_methods:effective_manual:state-18",
+      "pass": true
+    },
+    {
+      "check": "manual_adapter_identity:effective_manual:state-18",
+      "pass": true
+    },
+    {
+      "check": "same_input_all_methods:effective_manual:state-21",
+      "pass": true
+    },
+    {
+      "check": "manual_adapter_identity:effective_manual:state-21",
+      "pass": true
+    },
+    {
+      "check": "same_input_all_methods:effective_manual:state-26",
+      "pass": true
+    },
+    {
+      "check": "manual_adapter_identity:effective_manual:state-26",
+      "pass": true
+    },
+    {
+      "check": "same_input_all_methods:effective_manual:state-11",
+      "pass": true
+    },
+    {
+      "check": "manual_adapter_identity:effective_manual:state-11",
+      "pass": true
+    },
+    {
+      "check": "same_input_all_methods:effective_manual:state-06",
+      "pass": true
+    },
+    {
+      "check": "manual_adapter_identity:effective_manual:state-06",
+      "pass": true
+    },
+    {
+      "check": "same_input_all_methods:effective_manual:state-30",
+      "pass": true
+    },
+    {
+      "check": "manual_adapter_identity:effective_manual:state-30",
+      "pass": true
+    },
+    {
+      "check": "same_input_all_methods:effective_manual:state-08",
+      "pass": true
+    },
+    {
+      "check": "manual_adapter_identity:effective_manual:state-08",
+      "pass": true
+    },
+    {
+      "check": "same_input_all_methods:effective_manual:state-05",
+      "pass": true
+    },
+    {
+      "check": "manual_adapter_identity:effective_manual:state-05",
+      "pass": true
+    },
+    {
+      "check": "same_input_all_methods:effective_manual:state-28",
+      "pass": true
+    },
+    {
+      "check": "manual_adapter_identity:effective_manual:state-28",
+      "pass": true
+    },
+    {
+      "check": "same_input_all_methods:effective_manual:state-25",
+      "pass": true
+    },
+    {
+      "check": "manual_adapter_identity:effective_manual:state-25",
+      "pass": true
+    },
+    {
+      "check": "scope_ledger_unique_12_claims_unique_9",
+      "pass": true
+    },
+    {
+      "check": "ledger_hash:SOURCE-CHAIN-T0",
+      "pass": true
+    },
+    {
+      "check": "ledger_hash:SOURCE-CHAIN-SOURCE-STATES",
+      "pass": true
+    },
+    {
+      "check": "ledger_hash:SOURCE-CHAIN-POLICY-OBSERVATIONS",
+      "pass": true
+    },
+    {
+      "check": "ledger_hash:SOURCE-CHAIN-DIFF-effective_manual-AUTOPAC_STYLE",
+      "pass": true
+    },
+    {
+      "check": "ledger_hash:SOURCE-CHAIN-DIFF-effective_manual-ECAS_MATCHED",
+      "pass": true
+    },
+    {
+      "check": "ledger_hash:SOURCE-CHAIN-DIFF-effective_manual-P2P_STYLE",
+      "pass": true
+    },
+    {
+      "check": "ledger_hash:SOURCE-CHAIN-DIFF-raw-AUTOPAC_STYLE",
+      "pass": true
+    },
+    {
+      "check": "ledger_hash:SOURCE-CHAIN-DIFF-raw-ECAS_MATCHED",
+      "pass": true
+    },
+    {
+      "check": "ledger_hash:SOURCE-CHAIN-DIFF-raw-P2P_STYLE",
+      "pass": true
+    },
+    {
+      "check": "ledger_hash:SOURCE-CHAIN-DIFF-saved-AUTOPAC_STYLE",
+      "pass": true
+    },
+    {
+      "check": "ledger_hash:SOURCE-CHAIN-DIFF-saved-ECAS_MATCHED",
+      "pass": true
+    },
+    {
+      "check": "ledger_hash:SOURCE-CHAIN-DIFF-saved-P2P_STYLE",
+      "pass": true
+    },
+    {
+      "check": "claim_to_ledger:CLAIM-SOURCE-CHAIN-DIFF-effective_manual-AUTOPAC_STYLE",
+      "pass": true
+    },
+    {
+      "check": "claim_to_ledger:CLAIM-SOURCE-CHAIN-DIFF-effective_manual-ECAS_MATCHED",
+      "pass": true
+    },
+    {
+      "check": "claim_to_ledger:CLAIM-SOURCE-CHAIN-DIFF-effective_manual-P2P_STYLE",
+      "pass": true
+    },
+    {
+      "check": "claim_to_ledger:CLAIM-SOURCE-CHAIN-DIFF-raw-AUTOPAC_STYLE",
+      "pass": true
+    },
+    {
+      "check": "claim_to_ledger:CLAIM-SOURCE-CHAIN-DIFF-raw-ECAS_MATCHED",
+      "pass": true
+    },
+    {
+      "check": "claim_to_ledger:CLAIM-SOURCE-CHAIN-DIFF-raw-P2P_STYLE",
+      "pass": true
+    },
+    {
+      "check": "claim_to_ledger:CLAIM-SOURCE-CHAIN-DIFF-saved-AUTOPAC_STYLE",
+      "pass": true
+    },
+    {
+      "check": "claim_to_ledger:CLAIM-SOURCE-CHAIN-DIFF-saved-ECAS_MATCHED",
+      "pass": true
+    },
+    {
+      "check": "claim_to_ledger:CLAIM-SOURCE-CHAIN-DIFF-saved-P2P_STYLE",
+      "pass": true
+    },
+    {
+      "check": "ledger_to_recomputed_stat:SOURCE-CHAIN-DIFF-effective_manual-AUTOPAC_STYLE",
+      "pass": true
+    },
+    {
+      "check": "ledger_to_recomputed_stat:SOURCE-CHAIN-DIFF-effective_manual-ECAS_MATCHED",
+      "pass": true
+    },
+    {
+      "check": "ledger_to_recomputed_stat:SOURCE-CHAIN-DIFF-effective_manual-P2P_STYLE",
+      "pass": true
+    },
+    {
+      "check": "ledger_to_recomputed_stat:SOURCE-CHAIN-DIFF-raw-AUTOPAC_STYLE",
+      "pass": true
+    },
+    {
+      "check": "ledger_to_recomputed_stat:SOURCE-CHAIN-DIFF-raw-ECAS_MATCHED",
+      "pass": true
+    },
+    {
+      "check": "ledger_to_recomputed_stat:SOURCE-CHAIN-DIFF-raw-P2P_STYLE",
+      "pass": true
+    },
+    {
+      "check": "ledger_to_recomputed_stat:SOURCE-CHAIN-DIFF-saved-AUTOPAC_STYLE",
+      "pass": true
+    },
+    {
+      "check": "ledger_to_recomputed_stat:SOURCE-CHAIN-DIFF-saved-ECAS_MATCHED",
+      "pass": true
+    },
+    {
+      "check": "ledger_to_recomputed_stat:SOURCE-CHAIN-DIFF-saved-P2P_STYLE",
+      "pass": true
+    },
+    {
+      "check": "prior_probe_review_and_result_hash",
+      "pass": true
+    },
+    {
+      "check": "actual_managed_main_succeeded",
+      "pass": true
+    },
+    {
+      "check": "proposal_not_implemented",
+      "pass": true
+    },
+    {
+      "check": "Inventory_registration_not_source_proof",
+      "pass": true
+    },
+    {
+      "check": "source_check_not_full_PO_and_not_accuracy",
+      "pass": true
+    },
+    {
+      "check": "S04_basic_email_only",
+      "pass": true
+    },
+    {
+      "check": "B06_S02_historical_limited",
+      "pass": true
+    },
+    {
+      "check": "manual_effective_shared_not_model_advantage",
+      "pass": true
+    },
+    {
+      "check": "new_source_not_historical_model_input",
+      "pass": true
+    },
+    {
+      "check": "production_and_original_baselines_not_claimed",
+      "pass": true
+    }
+  ],
+  "failures": [],
+  "nonblocking_historical_observations": [
+    {
+      "check": "R1_hash_matches_previous_independent_QA",
+      "pass": false,
+      "classification": "OLDER_HISTORICAL_BASELINE_NOT_APPLICABLE_TO_CURRENT_SCOPE_IMMUTABILITY"
+    }
+  ],
+  "R1_prior_QA_hash": {
+    "qa_path": "D:\\lunwen\\EC-CSI投稿\\working\\exploration\\20261014_matched_evidence_labor\\SUMMARY_INDEPENDENT_QA.json",
+    "older_qa_hash": "68158891e4c7a503c6a21e1fe103b306ca851939c7865c32e8b2848cfcf1e65b",
+    "R1_path": "D:\\lunwen\\EC-CSI投稿\\working\\exploration\\20261014_matched_evidence_labor\\EXPERIMENT_SUMMARY_CN.md",
+    "current_hash": "ad3f58c25cd1273c50b3f4645882f223b0890216e69f665f7fb18efada171c8f",
+    "interpretation": "Older QA hash no longer matches. This is not a pre-scope baseline; it cannot prove or disprove writes by this scope. Current builder has no R1 write path and report only says retained."
+  },
+  "managed_status": {
+    "path": "\\\\wsl.localhost\\Ubuntu\\root\\ecas_source_rule_chain_20261015\\managed_runs\\source-rule-chain-main-v1\\status.json",
+    "sha256": "b3fcf6e53bbbf0f3a29e03655639c313f315a362bc85f9980deb40279cce6949",
+    "state": "SUCCEEDED"
+  },
+  "remaining_limits": [
+    "B06源条款与旧操作映射未闭合；S02拒绝未知键没有HTTP依据。",
+    "Inventory结构对账不是原文语义、生产状态真实性证明。",
+    "S04仅基本格式；B13/B17仍依赖公共ABI；B19仅冻结类型子规则。",
+    "32相关手工状态与288相关观察不是独立案例、模型准确率或完整PO执行。",
+    "effective_manual是三方法共享的人工适配器；新契约仍未实现。",
+    "R1旧文件保留且本scope构建器无其写入路径；较早QA哈希不匹配，仅属历史基线不适用，不能证明本scope改动。"
+  ]
+}

@@ -1,0 +1,14 @@
+{
+  "task": "FSV-S03",
+  "method": "P2P_STYLE",
+  "scope_id": "ECAS-MATCHED-EVIDENCE-LABOR-20261014-01",
+  "status": "OUT_OF_SCOPE",
+  "calls": [
+    5
+  ],
+  "repaired_once": false,
+  "execution_eligible": false,
+  "reason": "The target source contains only structural API type validation for the age field, not access control policy statements.",
+  "generation_frozen_at": "2026-10-14T15:50:50.445663+00:00",
+  "final_evaluation_not_yet_read": true
+}

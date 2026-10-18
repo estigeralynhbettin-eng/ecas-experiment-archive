@@ -1,0 +1,133 @@
+{
+  "task": "FSV-S04",
+  "method": "AUTOPAC_STYLE",
+  "initial_status": "DEVELOPMENT_REJECTED",
+  "status": "EVALUATED",
+  "classification": "POST_HOC_ENGINEERING_INTERFACE_REPAIR_NOT_FRESH_MODEL_EFFECT",
+  "requests": [
+    {
+      "channel": "O-L",
+      "input": {
+        "request": {
+          "body": {
+            "email_id": "oracle@example.invalid",
+            "first_name": "ECV2 Oracle",
+            "status": "Lead"
+          }
+        },
+        "trusted": {}
+      },
+      "mapped_input": {
+        "request": {
+          "body": {
+            "email_id": "oracle@example.invalid",
+            "first_name": "ECV2 Oracle",
+            "status": "Lead"
+          }
+        },
+        "trusted": {},
+        "subject": {
+          "role": "authenticated_api_caller"
+        },
+        "action": "POST /api/resource/Lead",
+        "resource": {
+          "id": "ERPNext:16.0.0",
+          "system": "ERPNext",
+          "version": "16.0.0"
+        },
+        "subject_role": "authenticated_api_caller",
+        "resource_system": "ERPNext",
+        "resource_version": "16.0.0"
+      },
+      "expected": "allow",
+      "actual": {
+        "status": "EXECUTED",
+        "decision": "allow",
+        "exit_code": 0
+      }
+    },
+    {
+      "channel": "O-I",
+      "input": {
+        "request": {
+          "body": {
+            "email_id": "not-an-email",
+            "first_name": "ECV2 Oracle",
+            "status": "Lead"
+          }
+        },
+        "trusted": {}
+      },
+      "mapped_input": {
+        "request": {
+          "body": {
+            "email_id": "not-an-email",
+            "first_name": "ECV2 Oracle",
+            "status": "Lead"
+          }
+        },
+        "trusted": {},
+        "subject": {
+          "role": "authenticated_api_caller"
+        },
+        "action": "POST /api/resource/Lead",
+        "resource": {
+          "id": "ERPNext:16.0.0",
+          "system": "ERPNext",
+          "version": "16.0.0"
+        },
+        "subject_role": "authenticated_api_caller",
+        "resource_system": "ERPNext",
+        "resource_version": "16.0.0"
+      },
+      "expected": "deny",
+      "actual": {
+        "status": "EXECUTED",
+        "decision": "deny",
+        "exit_code": 0
+      }
+    }
+  ],
+  "model_calls": [
+    24,
+    25,
+    26
+  ],
+  "checks": {
+    "compile_exit": 0,
+    "compile_error": "",
+    "policy_path": "/mnt/d/lunwen/EC-CSI投稿/working/exploration/20261014_external_baseline_pilot/binding_replay_resource_object/FSV-S04/AUTOPAC_STYLE/validation/external_pilot/policy.rego",
+    "lint_exit": null,
+    "lint_report": null,
+    "accepted": true
+  },
+  "format_receipt": {
+    "source_policy_sha256": "7b92667837be28890b1324ca5c852cb2b2bd38d4254e865732e560867deb0023",
+    "formatted_sha256": "ed176217afffc434f2debccb4584f41e9263a7cbef812af9db5ab991f549c0ce",
+    "ast_equal_without_locations": true,
+    "source_path": "/mnt/d/lunwen/EC-CSI投稿/working/exploration/20261014_external_baseline_pilot/effect_runs/FSV-S04/AUTOPAC_STYLE/repaired/external_pilot/policy.rego"
+  },
+  "developer_results": [
+    {
+      "id": "dev_email_positive",
+      "expected": "allow",
+      "actual": {
+        "status": "EXECUTED",
+        "decision": "allow",
+        "exit_code": 0
+      },
+      "pass": true
+    },
+    {
+      "id": "dev_email_negative",
+      "expected": "deny",
+      "actual": {
+        "status": "EXECUTED",
+        "decision": "deny",
+        "exit_code": 0
+      },
+      "pass": true
+    }
+  ],
+  "request_pair_correct": true
+}

@@ -1,0 +1,129 @@
+{
+  "status": "PASS",
+  "scope_id": "ECAS-MATCHED-EVIDENCE-LABOR-20261014-01",
+  "model_calls": 0,
+  "classification": "SYNTHETIC_OFFLINE_CONTROL_FLOW_NOT_SCIENTIFIC",
+  "production_inputs_unchanged": true,
+  "checks": [
+    {
+      "check": "ecas_repair_fail_closed",
+      "pass": true,
+      "observed_status": "DEVELOPMENT_REJECTED",
+      "execution_eligible": false,
+      "seen_stages": [
+        "ecas_generate",
+        "ecas_repair"
+      ],
+      "expected_stages": [
+        "ecas_generate",
+        "ecas_repair"
+      ],
+      "sealed_evaluation_absent": true,
+      "model_calls": 0
+    },
+    {
+      "check": "ecas_repair_valid",
+      "pass": true,
+      "observed_status": "ELIGIBLE",
+      "execution_eligible": true,
+      "seen_stages": [
+        "ecas_generate",
+        "ecas_repair"
+      ],
+      "expected_stages": [
+        "ecas_generate",
+        "ecas_repair"
+      ],
+      "sealed_evaluation_absent": true,
+      "model_calls": 0
+    },
+    {
+      "check": "ecas_first_valid_no_repair",
+      "pass": true,
+      "observed_status": "ELIGIBLE",
+      "execution_eligible": true,
+      "seen_stages": [
+        "ecas_generate"
+      ],
+      "expected_stages": [
+        "ecas_generate"
+      ],
+      "sealed_evaluation_absent": true,
+      "model_calls": 0
+    },
+    {
+      "check": "autopac_one_repair",
+      "pass": true,
+      "observed_status": "ELIGIBLE",
+      "execution_eligible": true,
+      "seen_stages": [
+        "autopac_generate",
+        "autopac_judge",
+        "repair"
+      ],
+      "expected_stages": [
+        "autopac_generate",
+        "autopac_judge",
+        "repair"
+      ],
+      "sealed_evaluation_absent": true,
+      "model_calls": 0
+    },
+    {
+      "check": "autopac_judge_abstain",
+      "pass": true,
+      "observed_status": "JUDGE_ABSTAIN",
+      "execution_eligible": false,
+      "seen_stages": [
+        "autopac_generate",
+        "autopac_judge"
+      ],
+      "expected_stages": [
+        "autopac_generate",
+        "autopac_judge"
+      ],
+      "sealed_evaluation_absent": true,
+      "model_calls": 0
+    },
+    {
+      "check": "p2p_out_of_scope",
+      "pass": true,
+      "observed_status": "OUT_OF_SCOPE",
+      "execution_eligible": false,
+      "seen_stages": [
+        "p2p_detect"
+      ],
+      "expected_stages": [
+        "p2p_detect"
+      ],
+      "sealed_evaluation_absent": true,
+      "model_calls": 0
+    },
+    {
+      "check": "p2p_one_repair",
+      "pass": true,
+      "observed_status": "ELIGIBLE",
+      "execution_eligible": true,
+      "seen_stages": [
+        "p2p_detect",
+        "p2p_extract",
+        "p2p_rego",
+        "p2p_tests",
+        "repair"
+      ],
+      "expected_stages": [
+        "p2p_detect",
+        "p2p_extract",
+        "p2p_rego",
+        "p2p_tests",
+        "repair"
+      ],
+      "sealed_evaluation_absent": true,
+      "model_calls": 0
+    }
+  ],
+  "production_manifest_sha256": "e412aac42c662c3bb80fbabb98530ac3a97cc72cc0f8519c7d4612e80e51d469",
+  "test_script_sha256": "53c3e1b5d421b76a854bee8c1dd0c878088dbf2033ffbfd03df6370e26b71297",
+  "all_deny_common_developer_fail_not_eligible": true,
+  "final_fixtures_not_read_in_generation": true
+}

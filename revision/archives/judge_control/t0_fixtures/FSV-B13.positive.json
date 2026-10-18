@@ -1,0 +1,30 @@
+{
+  "begin": "BEGIN_TYPED_IR_JUDGE_FSV_B13_20261014",
+  "stage": "typed_ir_semantic_judge_control",
+  "end": "END_TYPED_IR_JUDGE_FSV_B13_20261014",
+  "output": {
+    "task_id": "FSV-B13",
+    "reviews": [
+      {
+        "candidate_slot": "A",
+        "candidate_id": "FSV-B13-CAND-001",
+        "verdict": "ABSTAIN",
+        "target_implementation": "UNCLEAR",
+        "semantic_direction": "UNCLEAR",
+        "unsupported_extra_constraints": "UNCLEAR",
+        "issues": [],
+        "reason": "synthetic schema engineering fixture; no semantic verdict"
+      },
+      {
+        "candidate_slot": "B",
+        "candidate_id": "FSV-B13-ECAS-PurchaseReceipt-OverReceiveQtyGuard",
+        "verdict": "ABSTAIN",
+        "target_implementation": "UNCLEAR",
+        "semantic_direction": "UNCLEAR",
+        "unsupported_extra_constraints": "UNCLEAR",
+        "issues": [],
+        "reason": "synthetic schema engineering fixture; no semantic verdict"
+      }
+    ]
+  }
+}

@@ -1,0 +1,9 @@
+{
+  "status": "PASS",
+  "scope_id": "ECAS-MATCHED-EVIDENCE-LABOR-20261014-01",
+  "run_id": "matched-generation-t0-v1",
+  "runtime_lane": "/root/ecas_matched_generation_20261014",
+  "receipt_path": "T0_RECEIPT.json",
+  "receipt_sha256": "9db949d1f992d3c2192745ad52586b9fe0521bea510adfc406d899d88a92fdca",
+  "completed_at": "2026-10-14T15:37:12.481933+00:00"
+}

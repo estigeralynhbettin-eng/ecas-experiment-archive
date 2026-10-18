@@ -1,0 +1,401 @@
+{
+  "classification": "POSTHOC_ENGINEERING_ONLY",
+  "arm": "gpt-5.6-sol-high",
+  "vectors": {
+    "FSV-S03": [
+      [
+        "age-integer",
+        {
+          "request": {
+            "body": {
+              "age": 31
+            }
+          },
+          "trusted": {}
+        },
+        "allow",
+        "documented_type"
+      ],
+      [
+        "age-string",
+        {
+          "request": {
+            "body": {
+              "age": "31"
+            }
+          },
+          "trusted": {}
+        },
+        "deny",
+        "documented_type"
+      ],
+      [
+        "age-boolean",
+        {
+          "request": {
+            "body": {
+              "age": true
+            }
+          },
+          "trusted": {}
+        },
+        "deny",
+        "documented_type"
+      ],
+      [
+        "age-fraction",
+        {
+          "request": {
+            "body": {
+              "age": 31.5
+            }
+          },
+          "trusted": {}
+        },
+        "deny",
+        "documented_type"
+      ]
+    ],
+    "FSV-B13": [
+      [
+        "below-limit",
+        {
+          "request": {
+            "body": {
+              "qty": 109
+            }
+          },
+          "trusted": {
+            "orderedQty": 100,
+            "allowancePercent": 10,
+            "derivedMaximumQty": 110,
+            "authorizedRole": false
+          }
+        },
+        "allow",
+        "documented_rule"
+      ],
+      [
+        "at-limit",
+        {
+          "request": {
+            "body": {
+              "qty": 110
+            }
+          },
+          "trusted": {
+            "orderedQty": 100,
+            "allowancePercent": 10,
+            "derivedMaximumQty": 110,
+            "authorizedRole": false
+          }
+        },
+        "allow",
+        "documented_rule"
+      ],
+      [
+        "above-limit",
+        {
+          "request": {
+            "body": {
+              "qty": 111
+            }
+          },
+          "trusted": {
+            "orderedQty": 100,
+            "allowancePercent": 10,
+            "derivedMaximumQty": 110,
+            "authorizedRole": false
+          }
+        },
+        "deny",
+        "documented_rule"
+      ],
+      [
+        "authorized-exception",
+        {
+          "request": {
+            "body": {
+              "qty": 111
+            }
+          },
+          "trusted": {
+            "orderedQty": 100,
+            "allowancePercent": 10,
+            "derivedMaximumQty": 110,
+            "authorizedRole": true
+          }
+        },
+        "allow",
+        "documented_rule"
+      ],
+      [
+        "authorized-large-exception",
+        {
+          "request": {
+            "body": {
+              "qty": 1000
+            }
+          },
+          "trusted": {
+            "orderedQty": 100,
+            "allowancePercent": 10,
+            "derivedMaximumQty": 110,
+            "authorizedRole": true
+          }
+        },
+        "allow",
+        "focused_rule_only"
+      ],
+      [
+        "body-role-spoof",
+        {
+          "request": {
+            "body": {
+              "qty": 111,
+              "authorizedRole": true
+            }
+          },
+          "trusted": {
+            "orderedQty": 100,
+            "allowancePercent": 10,
+            "derivedMaximumQty": 110,
+            "authorizedRole": false
+          }
+        },
+        "deny",
+        "engineering_trust_control"
+      ],
+      [
+        "body-limit-spoof",
+        {
+          "request": {
+            "body": {
+              "qty": 111,
+              "derivedMaximumQty": 1000
+            }
+          },
+          "trusted": {
+            "orderedQty": 100,
+            "allowancePercent": 10,
+            "derivedMaximumQty": 110,
+            "authorizedRole": false
+          }
+        },
+        "deny",
+        "engineering_trust_control"
+      ],
+      [
+        "missing-trusted",
+        {
+          "request": {
+            "body": {
+              "qty": 111
+            }
+          },
+          "trusted": {}
+        },
+        "deny",
+        "engineering_fail_closed_control"
+      ]
+    ],
+    "FSV-B17": [
+      [
+        "enabled",
+        {
+          "request": {
+            "body": {
+              "customer": "CUSTOMER-SYNTH-1"
+            }
+          },
+          "trusted": {
+            "customerDisabled": false
+          }
+        },
+        "allow",
+        "documented_rule"
+      ],
+      [
+        "disabled",
+        {
+          "request": {
+            "body": {
+              "customer": "CUSTOMER-SYNTH-1"
+            }
+          },
+          "trusted": {
+            "customerDisabled": true
+          }
+        },
+        "deny",
+        "documented_rule"
+      ],
+      [
+        "body-disable-spoof",
+        {
+          "request": {
+            "body": {
+              "customer": "CUSTOMER-SYNTH-1",
+              "customerDisabled": false
+            }
+          },
+          "trusted": {
+            "customerDisabled": true
+          }
+        },
+        "deny",
+        "engineering_trust_control"
+      ],
+      [
+        "missing-trusted",
+        {
+          "request": {
+            "body": {
+              "customer": "CUSTOMER-SYNTH-1"
+            }
+          },
+          "trusted": {}
+        },
+        "deny",
+        "engineering_fail_closed_control"
+      ]
+    ],
+    "FSV-B19": [
+      [
+        "not-held",
+        {
+          "request": {
+            "body": {
+              "action": "PURCHASE_ORDER",
+              "supplier": "SUPPLIER-SYNTH-1"
+            }
+          },
+          "trusted": {
+            "supplierOnHold": false,
+            "holdType": ""
+          }
+        },
+        "allow",
+        "documented_rule"
+      ],
+      [
+        "held-all",
+        {
+          "request": {
+            "body": {
+              "action": "PURCHASE_ORDER",
+              "supplier": "SUPPLIER-SYNTH-1"
+            }
+          },
+          "trusted": {
+            "supplierOnHold": true,
+            "holdType": "All"
+          }
+        },
+        "deny",
+        "documented_rule"
+      ],
+      [
+        "held-invoices",
+        {
+          "request": {
+            "body": {
+              "action": "PURCHASE_ORDER",
+              "supplier": "SUPPLIER-SYNTH-1"
+            }
+          },
+          "trusted": {
+            "supplierOnHold": true,
+            "holdType": "Invoices"
+          }
+        },
+        "deny",
+        "documented_rule"
+      ],
+      [
+        "held-payments",
+        {
+          "request": {
+            "body": {
+              "action": "PURCHASE_ORDER",
+              "supplier": "SUPPLIER-SYNTH-1"
+            }
+          },
+          "trusted": {
+            "supplierOnHold": true,
+            "holdType": "Payments"
+          }
+        },
+        "allow",
+        "documented_rule"
+      ],
+      [
+        "held-empty-type",
+        {
+          "request": {
+            "body": {
+              "action": "PURCHASE_ORDER",
+              "supplier": "SUPPLIER-SYNTH-1"
+            }
+          },
+          "trusted": {
+            "supplierOnHold": true,
+            "holdType": ""
+          }
+        },
+        "deny",
+        "conservative_empty_type_control"
+      ],
+      [
+        "held-unknown-type",
+        {
+          "request": {
+            "body": {
+              "action": "PURCHASE_ORDER",
+              "supplier": "SUPPLIER-SYNTH-1"
+            }
+          },
+          "trusted": {
+            "supplierOnHold": true,
+            "holdType": "Unknown"
+          }
+        },
+        "deny",
+        "engineering_unknown_type_control"
+      ],
+      [
+        "body-type-spoof",
+        {
+          "request": {
+            "body": {
+              "action": "PURCHASE_ORDER",
+              "supplier": "SUPPLIER-SYNTH-1",
+              "holdType": "Payments"
+            }
+          },
+          "trusted": {
+            "supplierOnHold": true,
+            "holdType": "All"
+          }
+        },
+        "deny",
+        "engineering_trust_control"
+      ],
+      [
+        "missing-trusted",
+        {
+          "request": {
+            "body": {
+              "action": "PURCHASE_ORDER",
+              "supplier": "SUPPLIER-SYNTH-1"
+            }
+          },
+          "trusted": {}
+        },
+        "deny",
+        "engineering_fail_closed_control"
+      ]
+    ]
+  },
+  "script_sha256": "8DBD1527574D93F717F9BAF87CF9E390873F8A93E37E9F9F119F324617D700FD"
+}

@@ -1,0 +1,28 @@
+{
+  "choices": [
+    {
+      "finish_reason": "stop",
+      "index": 0,
+      "message": {
+        "content": "{\"begin\":\"BEGIN_FSV-S03_autopac_generate_MAIN\",\"stage\":\"autopac_generate\",\"output\":{\"status\":\"READY\",\"rego\":\"package external_pilot\\n\\nimport rego.v1\\n\\ndefault allow := false\\n\\nallow if {\\n\\tinput.subject.role == \\\"authenticated_api_caller\\\"\\n\\tinput.action == \\\"POST /v1/clients/{clientId}/familymembers\\\"\\n\\tinput.resource.id == \\\"Fineract:1.14.0\\\"\\n\\tis_object(input.request.body)\\n\\tis_integer(input.request.body.age)\\n}\",\"reason\":\"Allows the declared Fineract 1.14.0 family-member creation operation for the neutral authenticated_api_caller role when request.body is an object and request.body.age is an integer, using only declared request paths.\"},\"end\":\"END_FSV-S03_autopac_generate_MAIN\"}",
+        "role": "assistant"
+      }
+    }
+  ],
+  "created": 1791978334,
+  "id": "202610141944385de444c5380a415d",
+  "model": "glm-5.2",
+  "object": "chat.completion",
+  "request_id": "202610141944385de444c5380a415d",
+  "usage": {
+    "completion_tokens": 4244,
+    "completion_tokens_details": {
+      "reasoning_tokens": 4040
+    },
+    "prompt_tokens": 1131,
+    "prompt_tokens_details": {
+      "cached_tokens": 192
+    },
+    "total_tokens": 5375
+  }
+}

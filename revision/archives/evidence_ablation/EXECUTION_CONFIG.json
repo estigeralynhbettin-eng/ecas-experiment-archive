@@ -1,0 +1,12 @@
+{
+  "scope_id": "ECAS-SAME-CANDIDATE-EVIDENCE-ABLATION-20261014-01",
+  "lane": "/root/ecas_evidence_ablation_20261014",
+  "model_calls": 0,
+  "case_count": 7,
+  "parent_candidate_count": 11,
+  "variants_are_not_independent_cases": true,
+  "classification": "RETROSPECTIVE_LOCAL_ADMISSION_MECHANISM_ABLATION",
+  "generation_evidence_ablated": false,
+  "source_truth_validated_by_admission": false,
+  "external_state": false
+}

@@ -1,0 +1,69 @@
+{
+  "ir_version": "EC-FIELD-MODEL-IR-V3",
+  "candidate_id": "FSV-B13-ECAS-PurchaseReceipt-OverReceiveQtyGuard",
+  "decision": "propose",
+  "target": {
+    "operation": "POST /api/resource/Purchase Receipt",
+    "system": "ERPNext",
+    "version": "16.0.0"
+  },
+  "policy_id": "FSV-B13-PurchaseReceipt-OverReceiveQtyGuard",
+  "evidence_refs": [
+    "VIS-FSV-B13-01",
+    "VIS-FSV-B13-02",
+    "VIS-FSV-B13-03",
+    "VIS-FSV-B13-RUNTIME-ABI"
+  ],
+  "rules": [
+    {
+      "rule_id": "FSV-B13-R1-OverReceiveQtyGuard",
+      "primitive_id": "SP-BOUNDED-BUSINESS-GUARD",
+      "op": "bounded_guard_dnf",
+      "evidence_refs": [
+        "VIS-FSV-B13-01",
+        "VIS-FSV-B13-02",
+        "VIS-FSV-B13-03",
+        "VIS-FSV-B13-RUNTIME-ABI"
+      ],
+      "params": {
+        "alternatives": [
+          {
+            "clauses": [
+              {
+                "kind": "scalar_compare",
+                "left_path": "/request/body/qty",
+                "operator": "lte",
+                "right_source": "path",
+                "right_path": "/request/body/ecasClientClaim/derivedMaximumQty",
+                "right_value": null
+              }
+            ]
+          },
+          {
+            "clauses": [
+              {
+                "kind": "scalar_compare",
+                "left_path": "/request/body/qty",
+                "operator": "gt",
+                "right_source": "path",
+                "right_path": "/request/body/ecasClientClaim/derivedMaximumQty",
+                "right_value": null
+              },
+              {
+                "kind": "scalar_compare",
+                "left_path": "/request/body/ecasClientClaim/authorizedRole",
+                "operator": "eq",
+                "right_source": "literal",
+                "right_path": "",
+                "right_value": true
+              }
+            ]
+          }
+        ],
+        "on_missing": "deny"
+      }
+    }
+  ],
+  "reason_code": "none",
+  "missing_evidence": []
+}

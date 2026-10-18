@@ -1,0 +1,30 @@
+[
+  {
+    "case_id": "FSV-B19_p2p_all",
+    "coverage": "p2p_all",
+    "dataset": "ERPNext",
+    "max_output_tokens": 16384,
+    "actual_output_tokens": 1631,
+    "prompt_tokens": 6532,
+    "finish_reason": "stop",
+    "parse_status": "PASS",
+    "content_empty": false,
+    "retry_count": 0,
+    "truncated": false,
+    "call_index": 1
+  },
+  {
+    "case_id": "FSV-B19_autopac_all",
+    "coverage": "autopac_all",
+    "dataset": "ERPNext",
+    "max_output_tokens": 16384,
+    "actual_output_tokens": 1061,
+    "prompt_tokens": 6454,
+    "finish_reason": "stop",
+    "parse_status": "PASS",
+    "content_empty": false,
+    "retry_count": 0,
+    "truncated": false,
+    "call_index": 2
+  }
+]

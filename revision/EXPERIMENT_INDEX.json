@@ -1,0 +1,71 @@
+{
+  "scopes": [
+    {
+      "id": "E12",
+      "folder": "archives/old_three",
+      "identity": "A: archived three-case adapted-peer workflow, with post-hoc OPA formatting and interface replay",
+      "execution": "final selected policies and original request pairs replayed; original failures retained",
+      "tasks": [
+        "FSV-B06",
+        "FSV-S02",
+        "FSV-S04"
+      ]
+    },
+    {
+      "id": "E15",
+      "folder": "archives/common_four",
+      "identity": "B: separately frozen common-target four-case adapted-peer workflow",
+      "execution": "final eligible policies and original request pairs replayed; out-of-scope/compile-failed traces remain unexecuted",
+      "tasks": [
+        "FSV-S03",
+        "FSV-B13",
+        "FSV-B17",
+        "FSV-B19"
+      ]
+    },
+    {
+      "id": "E14",
+      "folder": "archives/initial_four",
+      "identity": "Earlier four-case v1/v2 workflow; provides eight of the 11 E16 parent candidates; separate from E15 common-target results",
+      "execution": "archive/provenance verification plus E16 replay of the exact retained parents; original errors retained"
+    },
+    {
+      "id": "E16",
+      "folder": "archives/evidence_ablation",
+      "identity": "11 archived parent candidates, 95 related controls; 51 evidence/path failure variants",
+      "execution": "all 95 IR/admission/shape qualifications and available archived execution fixtures replayed"
+    },
+    {
+      "id": "E17",
+      "folder": "archives/judge_control",
+      "identity": "archived same-IR source-based model Judge, not an original exclusive ECAS module",
+      "execution": "archive/provenance verification only; model Judge not rerun"
+    },
+    {
+      "id": "E18",
+      "folder": "archives/semantic_review",
+      "identity": "post-hoc source reading of seven exposed cases / 21 method traces",
+      "execution": "archive/provenance verification only; qualitative assessment retained"
+    },
+    {
+      "id": "E19",
+      "folder": "archives/missing_state",
+      "identity": "18 inputs x 8 arms = 144 related missing-state observations, two existing tasks",
+      "execution": "archive/provenance verification only; not a fresh independent sample"
+    },
+    {
+      "id": "E20-E21",
+      "folder": "archives/source_chain",
+      "identity": "fixed-source reconciliation and B19 32-state x 3-interface x 3-method source-function probe",
+      "execution": "archive/provenance verification only; B06/S02 source gaps and manual-adapter identity retained"
+    }
+  ],
+  "independent_task_count": 7,
+  "method_trace_count": 21,
+  "parent_candidate_count": 11,
+  "ablation_record_count": 95,
+  "invalid_evidence_or_path_variants": 51,
+  "pooled_accuracy_allowed": false,
+  "new_model_calls": 0,
+  "new_candidate_generation": 0
+}

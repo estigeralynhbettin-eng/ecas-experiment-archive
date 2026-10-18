@@ -1,0 +1,18 @@
+{
+  "policy_path": "/mnt/d/lunwen/EC-CSI投稿/working/exploration/20261014_matched_evidence_labor/matched_generation/method_runs/FSV-S03/AUTOPAC_STYLE/repaired/external_pilot/policy.rego",
+  "original_path": "/mnt/d/lunwen/EC-CSI投稿/working/exploration/20261014_matched_evidence_labor/matched_generation/method_runs/FSV-S03/AUTOPAC_STYLE/repaired/original.rego",
+  "compile_exit": 1,
+  "compile_error": "1 error occurred: /mnt/d/lunwen/EC-CSI投稿/working/exploration/20261014_matched_evidence_labor/matched_generation/method_runs/FSV-S03/AUTOPAC_STYLE/repaired/external_pilot/policy.rego:8: rego_type_error: undefined function typeof\n",
+  "format_receipt": {
+    "original_sha256": "ef5d878b84c37ed3c9ccdaf5c272c903d7db6dca0e386da90324622845d2131b",
+    "formatted_sha256": "c4b87aa50a5e98d75eecfb98590f861083d123b56bfe0f923861bd6e328bba94",
+    "parse_before_exit": 0,
+    "format_exit": 0,
+    "parse_after_exit": 0,
+    "ast_semantics_equal_without_location": true,
+    "classification": "DETERMINISTIC_FORMAT_ONLY_NOT_MODEL_REPAIR"
+  },
+  "lint_exit": null,
+  "lint_report": null,
+  "accepted": false
+}

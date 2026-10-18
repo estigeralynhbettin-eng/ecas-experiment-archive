@@ -1,0 +1,5 @@
+{
+  "status": "READY",
+  "rego": "package external_pilot\n\nimport rego.v1\n\ndefault allow := false\n\nallow if {\n    not blocked_from_purchase_order\n}\n\nblocked_from_purchase_order if {\n    input.trusted.supplierOnHold == true\n    input.trusted.holdType in {\"Invoices\", \"All\"}\n}",
+  "reason": "Source VIS-FSV-B19-01 section 2.4 states that when a supplier is blocked with hold type 'Invoices', ERPNext will not allow Purchase Orders to be created for the supplier, and hold type 'All' applies both 'Invoices' and 'Payments' restrictions. Therefore, a Purchase Order creation request must be denied when trusted.supplierOnHold is true and trusted.holdType is 'Invoices' or 'All'. No other constraints are derivable from visible sources."
+}

@@ -1,0 +1,70 @@
+{
+  "policy_path": "/mnt/d/lunwen/EC-CSI投稿/working/exploration/20261014_matched_evidence_labor/matched_generation/method_runs/FSV-B17/P2P_STYLE/initial/external_pilot/policy.rego",
+  "original_path": "/mnt/d/lunwen/EC-CSI投稿/working/exploration/20261014_matched_evidence_labor/matched_generation/method_runs/FSV-B17/P2P_STYLE/initial/original.rego",
+  "compile_exit": 0,
+  "compile_error": "",
+  "format_receipt": {
+    "original_sha256": "6870e87318fd3debd77aa853708c82dfdce3130277c2c3ccae62e1fe7a2b85a3",
+    "formatted_sha256": "83fb3cf00dcea3c7446241ce57acc9288c8efe758decac4bbb73720c1b0f3350",
+    "parse_before_exit": 0,
+    "format_exit": 0,
+    "parse_after_exit": 0,
+    "ast_semantics_equal_without_location": true,
+    "classification": "DETERMINISTIC_FORMAT_ONLY_NOT_MODEL_REPAIR"
+  },
+  "lint_exit": 0,
+  "lint_report": {
+    "violations": [],
+    "notices": [
+      {
+        "title": "deprecated-builtin",
+        "description": "Since OPA 1.0, deprecated-builtin enabled only when provided a v0 policy,\nBUT please note that this may change in the future if new built-in functions\nare deprecated.\n",
+        "category": "bugs",
+        "level": "notice",
+        "severity": "none"
+      },
+      {
+        "title": "import-shadows-import",
+        "description": "Since OPA 1.0, import-shadows-import enabled only when provided a v0 policy,",
+        "category": "imports",
+        "level": "notice",
+        "severity": "none"
+      },
+      {
+        "title": "rule-named-if",
+        "description": "Since OPA 1.0, rule-named-if enabled only when provided a v0 policy",
+        "category": "bugs",
+        "level": "notice",
+        "severity": "none"
+      },
+      {
+        "title": "use-contains",
+        "description": "Since OPA 1.0, use-contains enabled only when provided a v0 policy",
+        "category": "idiomatic",
+        "level": "notice",
+        "severity": "none"
+      },
+      {
+        "title": "use-if",
+        "description": "Since OPA 1.0, use-if enabled only when provided a v0 policy",
+        "category": "idiomatic",
+        "level": "notice",
+        "severity": "none"
+      },
+      {
+        "title": "use-rego-v1",
+        "description": "Since OPA 1.0, use-rego-v1 enabled only when provided a v0 policy",
+        "category": "imports",
+        "level": "notice",
+        "severity": "none"
+      }
+    ],
+    "summary": {
+      "files_scanned": 1,
+      "files_failed": 0,
+      "rules_skipped": 0,
+      "num_violations": 0
+    }
+  },
+  "accepted": true
+}

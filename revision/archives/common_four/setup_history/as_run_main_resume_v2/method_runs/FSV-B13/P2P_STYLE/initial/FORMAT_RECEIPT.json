@@ -1,0 +1,9 @@
+{
+  "original_sha256": "c22d07f3085d8557e76223a8983e6a6541aaa94ea1134736e9251fc6b0b87a3d",
+  "formatted_sha256": "a211c57e2bf6bd8f0cbae478273b65fc6e26dbd1c1e855cfa4cbda0015978bb7",
+  "parse_before_exit": 0,
+  "format_exit": 0,
+  "parse_after_exit": 0,
+  "ast_semantics_equal_without_location": true,
+  "classification": "DETERMINISTIC_FORMAT_ONLY_NOT_MODEL_REPAIR"
+}

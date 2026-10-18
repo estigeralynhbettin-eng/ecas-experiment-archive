@@ -1,0 +1,7 @@
+2 errors occurred during loading:
+\lunwen\EC-CSI投稿\working\exploration\20261014_external_baseline_pilot\local_opa_conformance\synthetic_malformed.rego:3: rego_parse_error: unexpected eof token
+	allow :=
+	       ^
+\lunwen\EC-CSI投稿\working\exploration\20261014_external_baseline_pilot\local_opa_conformance\synthetic_malformed.rego:3: rego_parse_error: unexpected eof token: expected rule value term (e.g., allow := <VALUE> { ... })
+	allow :=
+	       ^

@@ -1,0 +1,42 @@
+[
+  {
+    "source": "/mnt/d/lunwen/ec/runtime/erpnext_qualification/erpnext-v16.0.0/erpnext-16.0.0/erpnext/buying/doctype/supplier/supplier.py",
+    "snapshot": "/mnt/d/lunwen/EC-CSI投稿/working/exploration/20261015_source_rule_chain/inputs/supplier.py",
+    "sha256": "4b2246f9ec73ab5add741b5594db5a0cf401b651d21a47bc0ccfcff3ca5b56d7"
+  },
+  {
+    "source": "/mnt/d/lunwen/ec/runtime/erpnext_qualification/erpnext-v16.0.0/erpnext-16.0.0/erpnext/controllers/accounts_controller.py",
+    "snapshot": "/mnt/d/lunwen/EC-CSI投稿/working/exploration/20261015_source_rule_chain/inputs/accounts_controller.py",
+    "sha256": "5a0c66476cb87853b500dc666b8d09b7f6d18dfb93af7f7538bb2e4b4d645e94"
+  },
+  {
+    "source": "/mnt/d/lunwen/EC-CSI投稿/working/exploration/20261014_matched_evidence_labor/matched_generation/generation_inputs/FSV-B19/packet.json",
+    "snapshot": "/mnt/d/lunwen/EC-CSI投稿/working/exploration/20261015_source_rule_chain/inputs/packet.json",
+    "sha256": "10c5597e97e4190aa041c53aa3aee8b4c1c48fa77d073bfb4fb5eb5a64a346fd"
+  },
+  {
+    "source": "/mnt/d/lunwen/EC-CSI投稿/working/exploration/20261014_matched_evidence_labor/matched_generation/execution_inputs/FSV-B19/contract.json",
+    "snapshot": "/mnt/d/lunwen/EC-CSI投稿/working/exploration/20261015_source_rule_chain/inputs/contract.json",
+    "sha256": "fd0a7bbb9c3d0588d2f6e8970af7b8d9c34cf0ae82dd494bce68478c6671fd30"
+  },
+  {
+    "source": "/mnt/d/lunwen/EC-CSI投稿/working/exploration/20261014_matched_evidence_labor/matched_generation/method_runs/FSV-B19/ECAS_MATCHED/first_candidate.json",
+    "snapshot": "/mnt/d/lunwen/EC-CSI投稿/working/exploration/20261015_source_rule_chain/inputs/candidate.json",
+    "sha256": "2d09501af519f2aa3a459adc4e9df36db1fa0b76332bd72c73189b019e369e90"
+  },
+  {
+    "source": "/mnt/d/lunwen/EC-CSI投稿/working/exploration/20261014_matched_evidence_labor/matched_generation/method_runs/FSV-B19/P2P_STYLE/initial/external_pilot/policy.rego",
+    "snapshot": "/mnt/d/lunwen/EC-CSI投稿/working/exploration/20261015_source_rule_chain/inputs/P2P_STYLE.rego",
+    "sha256": "0998766d0206e565cafe9067f4408622cf1a3c89b2aaf44993ab8c46a4be9c88"
+  },
+  {
+    "source": "/mnt/d/lunwen/EC-CSI投稿/working/exploration/20261014_matched_evidence_labor/matched_generation/method_runs/FSV-B19/AUTOPAC_STYLE/initial/external_pilot/policy.rego",
+    "snapshot": "/mnt/d/lunwen/EC-CSI投稿/working/exploration/20261015_source_rule_chain/inputs/AUTOPAC_STYLE.rego",
+    "sha256": "8b47a1ae6ba65a6de6839f749dd2d0f5221288ced65ff3e4ead59b1e28dc9ced"
+  },
+  {
+    "source": "/root/ecas_matched_generation_20261014/outputs/t0/restricted_capabilities.json",
+    "snapshot": "/mnt/d/lunwen/EC-CSI投稿/working/exploration/20261015_source_rule_chain/inputs/restricted_capabilities.json",
+    "sha256": "0dd3e43c584c73c23576f977ba3d7463746ef5d4c2fd989e04c46c07beb5a3aa"
+  }
+]

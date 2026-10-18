@@ -1,0 +1,71 @@
+{
+  "parent_id": "FSV-S02__three_case_v1",
+  "case": "FSV-S02",
+  "configuration": "three_case_v1",
+  "row_id": "FSV-S02__three_case_v1__schema_visibility_hidden",
+  "variant": "schema_visibility_hidden",
+  "classification": "ENGINEERING_CONTRACT_SCHEMA_CONTROL",
+  "expected_full": "schema_fail",
+  "notes": "Visibility is const visible; excluded from admission-mechanism denominator",
+  "source_parent_candidate": "/root/ecas_evidence_ablation_20261014/inputs/FSV-S02__three_case_v1/candidate.json",
+  "source_parent_contract": "/root/ecas_evidence_ablation_20261014/inputs/FSV-S02__three_case_v1/contract.json",
+  "candidate_sha256": "e6f5a2af7dee84e067b1a81f4b3dd56483b2ba306983039d0112c28efbf49fe6",
+  "contract_sha256": "3c2be0c42a8d746273a60aca239fd38f50f12bb7ecb3c5895f777dad2888e5de",
+  "output_folder": "/root/ecas_evidence_ablation_20261014/outputs/FSV-S02__three_case_v1__schema_visibility_hidden",
+  "full_executed": false,
+  "shape_executed": true,
+  "ir_status": "COMPILED",
+  "contract_shape_valid": false,
+  "full_status": "CONTRACT_SCHEMA_FAILURE",
+  "full_error": "evidence contract schema rejected: /evidence/0/visibility: 'visible' was expected",
+  "shape_status": "COMPILED_NO_INVENTORY",
+  "eligible_admission_contrast": false,
+  "full_evaluations": [],
+  "shape_evaluations": [
+    {
+      "fixture_id": "FSV-S02-OL-01",
+      "fixture_class": "ARCHIVED_SYNTHETIC_REQUEST",
+      "expected": "allow",
+      "actual": {
+        "policy_id": "pol-FSV-S02-001",
+        "decision": "allow",
+        "fail_closed": true,
+        "violations": []
+      },
+      "correct": true
+    },
+    {
+      "fixture_id": "FSV-S02-OI-01",
+      "fixture_class": "ARCHIVED_SYNTHETIC_REQUEST",
+      "expected": "deny",
+      "actual": {
+        "policy_id": "pol-FSV-S02-001",
+        "decision": "deny",
+        "fail_closed": true,
+        "violations": [
+          {
+            "rule_id": "rule-FSV-S02-001",
+            "code": "unexpected_fields",
+            "detail": "undeclared_script"
+          }
+        ]
+      },
+      "correct": true
+    },
+    {
+      "fixture_id": "SYNTH-MISSING-TRUSTED",
+      "fixture_class": "CONSTRUCTED_MISSING_CONTEXT_CONTROL",
+      "expected": null,
+      "actual": {
+        "policy_id": "pol-FSV-S02-001",
+        "decision": "allow",
+        "fail_closed": true,
+        "violations": []
+      },
+      "correct": null
+    }
+  ],
+  "original_pair_correct": null,
+  "full_execution_errors": 0,
+  "shape_execution_errors": 0
+}

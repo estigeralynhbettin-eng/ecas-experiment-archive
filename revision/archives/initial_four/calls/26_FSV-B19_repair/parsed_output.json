@@ -1,0 +1,5 @@
+{
+  "status": "READY",
+  "rego": "package external_pilot\n\nimport rego.v1\n\ndefault allow := false\n\nallow if {\n    not blocked_supplier\n}\n\nblocked_supplier if {\n    input.trusted.supplierOnHold == true\n    input.trusted.holdType in {\"Invoices\", \"All\"}\n}\n",
+  "reason": "Fixed opa-fmt formatting and removed upstream authentication/action/resource checks. Policy now only enforces the focused VIS-FSV-B19-01 constraint: deny Purchase Order creation when trusted supplierOnHold is true and holdType is Invoices or All; otherwise allow."
+}

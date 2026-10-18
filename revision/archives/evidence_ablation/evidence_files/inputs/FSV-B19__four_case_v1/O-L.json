@@ -1,0 +1,1 @@
+{"oracle_channel":"O-L","task_window_id":"FSV-B19","vectors":[{"envelope":{"request":{"body":{"action":"PURCHASE_ORDER","supplier":"SUPPLIER-SYNTH-1"}},"trusted":{"holdType":"","supplierOnHold":false}},"expected_class":"allow","reason":"supplier is not on hold","synthetic_data_only":true,"vector_id":"FSV-B19-OL-01","vector_suffix":"OL-01"}]}

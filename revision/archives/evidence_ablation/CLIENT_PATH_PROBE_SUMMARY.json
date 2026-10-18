@@ -1,0 +1,51 @@
+[
+  {
+    "parent_id": "FSV-B06__three_case_v1",
+    "full": "NOT_EXECUTED",
+    "shape": "allow",
+    "classification": "SYNTHETIC_PATH_TRUST_CHALLENGE_NOT_REAL_ATTACK",
+    "engine_error": null
+  },
+  {
+    "parent_id": "FSV-B13__four_case_v1",
+    "full": "NOT_EXECUTED",
+    "shape": "deny",
+    "classification": "SYNTHETIC_PATH_TRUST_CHALLENGE_NOT_REAL_ATTACK",
+    "engine_error": null
+  },
+  {
+    "parent_id": "FSV-B13__four_case_v2",
+    "full": "NOT_EXECUTED",
+    "shape": "deny",
+    "classification": "SYNTHETIC_PATH_TRUST_CHALLENGE_NOT_REAL_ATTACK",
+    "engine_error": null
+  },
+  {
+    "parent_id": "FSV-B17__four_case_v1",
+    "full": "NOT_EXECUTED",
+    "shape": "deny",
+    "classification": "SYNTHETIC_PATH_TRUST_CHALLENGE_NOT_REAL_ATTACK",
+    "engine_error": null
+  },
+  {
+    "parent_id": "FSV-B17__four_case_v2",
+    "full": "NOT_EXECUTED",
+    "shape": "allow",
+    "classification": "SYNTHETIC_PATH_TRUST_CHALLENGE_NOT_REAL_ATTACK",
+    "engine_error": null
+  },
+  {
+    "parent_id": "FSV-B19__four_case_v1",
+    "full": "NOT_EXECUTED",
+    "shape": "deny",
+    "classification": "SYNTHETIC_PATH_TRUST_CHALLENGE_NOT_REAL_ATTACK",
+    "engine_error": null
+  },
+  {
+    "parent_id": "FSV-B19__four_case_v2",
+    "full": "NOT_EXECUTED",
+    "shape": "allow",
+    "classification": "SYNTHETIC_PATH_TRUST_CHALLENGE_NOT_REAL_ATTACK",
+    "engine_error": null
+  }
+]

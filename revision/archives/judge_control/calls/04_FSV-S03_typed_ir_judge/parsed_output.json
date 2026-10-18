@@ -1,0 +1,42 @@
+{
+  "task_id": "FSV-S03",
+  "reviews": [
+    {
+      "candidate_slot": "A",
+      "candidate_id": "FSV-S03-CAND-01",
+      "verdict": "ACCEPT",
+      "target_implementation": "IMPLEMENTED",
+      "semantic_direction": "CONSISTENT",
+      "unsupported_extra_constraints": "NONE_IDENTIFIED",
+      "issues": [],
+      "reason": "The candidate correctly implements the target objective by applying the strict_type operation to /request/body/age with expected_type integer, matching the OpenAPI and runtime ABI sources. No unsupported constraints are added."
+    },
+    {
+      "candidate_slot": "B",
+      "candidate_id": "FSV-S03-C01",
+      "verdict": "REVISE",
+      "target_implementation": "NOT_IMPLEMENTED",
+      "semantic_direction": "NOT_APPLICABLE",
+      "unsupported_extra_constraints": "IDENTIFIED",
+      "issues": [
+        {
+          "category": "TARGET_NOT_IMPLEMENTED",
+          "rule_id": "FSV-S03-R01",
+          "evidence_refs": [
+            "VIS-FSV-S03-01"
+          ],
+          "detail": "The target objective requires implementing the published API type requirement for the age field, but this candidate only applies an allowed_fields constraint to the entire request body and does not enforce any type constraint on the age field."
+        },
+        {
+          "category": "UNSUPPORTED_CONSTRAINT",
+          "rule_id": "FSV-S03-R01",
+          "evidence_refs": [
+            "VIS-FSV-S03-01"
+          ],
+          "detail": "The scope explicitly limits the task to the age type requirement, stating other fields are outside this task. Applying an allowed_fields constraint over all body properties is an unsupported extra constraint."
+        }
+      ],
+      "reason": "Candidate B fails to implement the age type requirement and instead applies an out-of-scope allowed_fields constraint to the entire request body."
+    }
+  ]
+}

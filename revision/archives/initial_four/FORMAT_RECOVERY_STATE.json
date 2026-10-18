@@ -1,0 +1,275 @@
+{
+  "status": "COMPLETED",
+  "rows": [
+    {
+      "task": "FSV-B13",
+      "method": "P2P_STYLE",
+      "classification": "RETROSPECTIVE_FOUR_CASE_ADAPTED_PEER_BASELINES_NOT_NATIVE_OR_BLIND",
+      "status": "EVALUATED",
+      "requests": [
+        {
+          "channel": "O-L",
+          "input": {
+            "request": {
+              "body": {
+                "qty": 110
+              }
+            },
+            "trusted": {
+              "allowancePercent": 10,
+              "authorizedRole": false,
+              "derivedMaximumQty": 110,
+              "orderedQty": 100
+            }
+          },
+          "expected": "allow",
+          "actual": {
+            "status": "EXECUTED",
+            "decision": "allow",
+            "exit_code": 0
+          }
+        },
+        {
+          "channel": "O-I",
+          "input": {
+            "request": {
+              "body": {
+                "qty": 111
+              }
+            },
+            "trusted": {
+              "allowancePercent": 10,
+              "authorizedRole": false,
+              "derivedMaximumQty": 110,
+              "orderedQty": 100
+            }
+          },
+          "expected": "deny",
+          "actual": {
+            "status": "EXECUTED",
+            "decision": "deny",
+            "exit_code": 0
+          }
+        }
+      ],
+      "calls": [
+        9,
+        10,
+        31,
+        32,
+        33
+      ],
+      "original_interface_status": "SCHEMA_GROUNDING_REJECTED",
+      "format_recovery": true,
+      "repaired_once": true,
+      "developer_checks": {
+        "compile_exit": 0,
+        "compile_error": "",
+        "policy_path": "/mnt/d/lunwen/EC-CSI投稿/working/exploration/20261014_four_case_peer_baselines/format_recovery/FSV-B13/P2P_STYLE/repaired/external_pilot/policy.rego",
+        "lint_exit": 0,
+        "lint_report": {
+          "violations": [],
+          "notices": [
+            {
+              "title": "deprecated-builtin",
+              "description": "Since OPA 1.0, deprecated-builtin enabled only when provided a v0 policy,\nBUT please note that this may change in the future if new built-in functions\nare deprecated.\n",
+              "category": "bugs",
+              "level": "notice",
+              "severity": "none"
+            },
+            {
+              "title": "import-shadows-import",
+              "description": "Since OPA 1.0, import-shadows-import enabled only when provided a v0 policy,",
+              "category": "imports",
+              "level": "notice",
+              "severity": "none"
+            },
+            {
+              "title": "rule-named-if",
+              "description": "Since OPA 1.0, rule-named-if enabled only when provided a v0 policy",
+              "category": "bugs",
+              "level": "notice",
+              "severity": "none"
+            },
+            {
+              "title": "use-contains",
+              "description": "Since OPA 1.0, use-contains enabled only when provided a v0 policy",
+              "category": "idiomatic",
+              "level": "notice",
+              "severity": "none"
+            },
+            {
+              "title": "use-if",
+              "description": "Since OPA 1.0, use-if enabled only when provided a v0 policy",
+              "category": "idiomatic",
+              "level": "notice",
+              "severity": "none"
+            },
+            {
+              "title": "use-rego-v1",
+              "description": "Since OPA 1.0, use-rego-v1 enabled only when provided a v0 policy",
+              "category": "imports",
+              "level": "notice",
+              "severity": "none"
+            }
+          ],
+          "summary": {
+            "files_scanned": 1,
+            "files_failed": 0,
+            "rules_skipped": 0,
+            "num_violations": 0
+          }
+        },
+        "accepted": true
+      },
+      "developer_results": {
+        "passed": true,
+        "rows": [
+          {
+            "id": "T1_qty_within_limit_no_role",
+            "expected": "allow",
+            "actual": {
+              "status": "EXECUTED",
+              "decision": "allow",
+              "exit_code": 0
+            },
+            "pass": true
+          },
+          {
+            "id": "T2_qty_within_limit_with_role",
+            "expected": "allow",
+            "actual": {
+              "status": "EXECUTED",
+              "decision": "allow",
+              "exit_code": 0
+            },
+            "pass": true
+          },
+          {
+            "id": "T3_qty_at_boundary_no_role",
+            "expected": "allow",
+            "actual": {
+              "status": "EXECUTED",
+              "decision": "allow",
+              "exit_code": 0
+            },
+            "pass": true
+          },
+          {
+            "id": "T4_qty_at_boundary_with_role",
+            "expected": "allow",
+            "actual": {
+              "status": "EXECUTED",
+              "decision": "allow",
+              "exit_code": 0
+            },
+            "pass": true
+          },
+          {
+            "id": "T5_qty_over_limit_with_role",
+            "expected": "allow",
+            "actual": {
+              "status": "EXECUTED",
+              "decision": "allow",
+              "exit_code": 0
+            },
+            "pass": true
+          },
+          {
+            "id": "T6_qty_over_limit_no_role",
+            "expected": "deny",
+            "actual": {
+              "status": "EXECUTED",
+              "decision": "deny",
+              "exit_code": 0
+            },
+            "pass": true
+          },
+          {
+            "id": "T7_qty_slightly_over_limit_no_role",
+            "expected": "deny",
+            "actual": {
+              "status": "EXECUTED",
+              "decision": "deny",
+              "exit_code": 0
+            },
+            "pass": true
+          },
+          {
+            "id": "T8_qty_slightly_over_limit_with_role",
+            "expected": "allow",
+            "actual": {
+              "status": "EXECUTED",
+              "decision": "allow",
+              "exit_code": 0
+            },
+            "pass": true
+          },
+          {
+            "id": "T9_qty_zero_within_limit_no_role",
+            "expected": "allow",
+            "actual": {
+              "status": "EXECUTED",
+              "decision": "allow",
+              "exit_code": 0
+            },
+            "pass": true
+          },
+          {
+            "id": "T10_qty_far_over_limit_with_role",
+            "expected": "allow",
+            "actual": {
+              "status": "EXECUTED",
+              "decision": "allow",
+              "exit_code": 0
+            },
+            "pass": true
+          },
+          {
+            "id": "T11_qty_far_over_limit_no_role",
+            "expected": "deny",
+            "actual": {
+              "status": "EXECUTED",
+              "decision": "deny",
+              "exit_code": 0
+            },
+            "pass": true
+          },
+          {
+            "id": "dev_limit",
+            "expected": "allow",
+            "actual": {
+              "status": "EXECUTED",
+              "decision": "allow",
+              "exit_code": 0
+            },
+            "pass": true
+          },
+          {
+            "id": "dev_over",
+            "expected": "deny",
+            "actual": {
+              "status": "EXECUTED",
+              "decision": "deny",
+              "exit_code": 0
+            },
+            "pass": true
+          },
+          {
+            "id": "dev_role_exception",
+            "expected": "allow",
+            "actual": {
+              "status": "EXECUTED",
+              "decision": "allow",
+              "exit_code": 0
+            },
+            "pass": true
+          }
+        ]
+      },
+      "request_pair_correct": true,
+      "completed_at": "2026-10-14T12:05:32.231901+00:00"
+    }
+  ],
+  "not_eligible": []
+}

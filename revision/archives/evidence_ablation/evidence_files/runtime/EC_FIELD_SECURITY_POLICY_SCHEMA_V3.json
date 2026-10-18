@@ -1,0 +1,591 @@
+{
+  "$defs": {
+    "commonRule": {
+      "properties": {
+        "evidence_refs": {
+          "$ref": "#/$defs/evidenceRefs"
+        },
+        "on_missing": {
+          "enum": [
+            "deny",
+            "skip"
+          ]
+        },
+        "op": {
+          "type": "string"
+        },
+        "primitive_id": {
+          "$ref": "#/$defs/id"
+        },
+        "rule_id": {
+          "$ref": "#/$defs/id"
+        }
+      },
+      "type": "object"
+    },
+    "evidenceRefs": {
+      "items": {
+        "$ref": "#/$defs/id"
+      },
+      "maxItems": 64,
+      "minItems": 1,
+      "type": "array",
+      "uniqueItems": true
+    },
+    "id": {
+      "pattern": "^[A-Za-z0-9][A-Za-z0-9._:-]{0,127}$",
+      "type": "string"
+    },
+    "pointer": {
+      "maxLength": 512,
+      "pattern": "^/(request|trusted)(/([^~/]|~0|~1)+|/\\*)*$",
+      "type": "string"
+    },
+    "rule": {
+      "allOf": [
+        {
+          "$ref": "#/$defs/commonRule"
+        },
+        {
+          "oneOf": [
+            {
+              "properties": {
+                "media_types": {
+                  "items": {
+                    "pattern": "^[A-Za-z0-9!#$&^_.+-]+/[A-Za-z0-9!#$&^_.+-]+$",
+                    "type": "string"
+                  },
+                  "maxItems": 16,
+                  "minItems": 1,
+                  "type": "array",
+                  "uniqueItems": true
+                },
+                "op": {
+                  "const": "content_type_allowlist"
+                },
+                "path": {
+                  "$ref": "#/$defs/pointer"
+                }
+              },
+              "required": [
+                "path",
+                "media_types",
+                "on_missing"
+              ]
+            },
+            {
+              "properties": {
+                "max_bytes": {
+                  "maximum": 1073741824,
+                  "minimum": 0,
+                  "type": "integer"
+                },
+                "op": {
+                  "const": "request_size_limit"
+                },
+                "path": {
+                  "$ref": "#/$defs/pointer"
+                }
+              },
+              "required": [
+                "path",
+                "max_bytes",
+                "on_missing"
+              ]
+            },
+            {
+              "properties": {
+                "fields": {
+                  "items": {
+                    "maxLength": 256,
+                    "minLength": 1,
+                    "type": "string"
+                  },
+                  "maxItems": 512,
+                  "minItems": 1,
+                  "type": "array",
+                  "uniqueItems": true
+                },
+                "op": {
+                  "const": "allowed_fields"
+                },
+                "path": {
+                  "$ref": "#/$defs/pointer"
+                }
+              },
+              "required": [
+                "path",
+                "fields",
+                "on_missing"
+              ]
+            },
+            {
+              "not": {
+                "required": [
+                  "on_missing"
+                ]
+              },
+              "properties": {
+                "allow_null": {
+                  "type": "boolean"
+                },
+                "op": {
+                  "const": "required"
+                },
+                "path": {
+                  "$ref": "#/$defs/pointer"
+                }
+              },
+              "required": [
+                "path",
+                "allow_null"
+              ]
+            },
+            {
+              "properties": {
+                "expected_type": {
+                  "enum": [
+                    "object",
+                    "array",
+                    "string",
+                    "boolean",
+                    "integer",
+                    "number",
+                    "null"
+                  ]
+                },
+                "op": {
+                  "const": "strict_type"
+                },
+                "path": {
+                  "$ref": "#/$defs/pointer"
+                }
+              },
+              "required": [
+                "path",
+                "expected_type",
+                "on_missing"
+              ]
+            },
+            {
+              "properties": {
+                "max": {
+                  "minimum": 0,
+                  "type": "integer"
+                },
+                "min": {
+                  "minimum": 0,
+                  "type": "integer"
+                },
+                "op": {
+                  "const": "length_cardinality"
+                },
+                "path": {
+                  "$ref": "#/$defs/pointer"
+                }
+              },
+              "required": [
+                "path",
+                "min",
+                "max",
+                "on_missing"
+              ]
+            },
+            {
+              "anyOf": [
+                {
+                  "required": [
+                    "min"
+                  ]
+                },
+                {
+                  "required": [
+                    "max"
+                  ]
+                },
+                {
+                  "required": [
+                    "max_scale"
+                  ]
+                }
+              ],
+              "properties": {
+                "max": {
+                  "type": "number"
+                },
+                "max_scale": {
+                  "maximum": 18,
+                  "minimum": 0,
+                  "type": "integer"
+                },
+                "min": {
+                  "type": "number"
+                },
+                "op": {
+                  "const": "number_range_precision"
+                },
+                "path": {
+                  "$ref": "#/$defs/pointer"
+                }
+              },
+              "required": [
+                "path",
+                "on_missing"
+              ]
+            },
+            {
+              "properties": {
+                "op": {
+                  "const": "enum_allowlist"
+                },
+                "path": {
+                  "$ref": "#/$defs/pointer"
+                },
+                "values": {
+                  "items": {
+                    "type": [
+                      "string",
+                      "number",
+                      "integer",
+                      "boolean",
+                      "null"
+                    ]
+                  },
+                  "maxItems": 256,
+                  "minItems": 1,
+                  "type": "array",
+                  "uniqueItems": true
+                }
+              },
+              "required": [
+                "path",
+                "values",
+                "on_missing"
+              ]
+            },
+            {
+              "properties": {
+                "op": {
+                  "const": "named_validator"
+                },
+                "path": {
+                  "$ref": "#/$defs/pointer"
+                },
+                "validator_id": {
+                  "enum": [
+                    "email_basic_v1",
+                    "e164_phone_v1",
+                    "cn_resident_id_v1",
+                    "iso_date_v1"
+                  ]
+                }
+              },
+              "required": [
+                "path",
+                "validator_id",
+                "on_missing"
+              ]
+            },
+            {
+              "properties": {
+                "op": {
+                  "const": "canonical_form"
+                },
+                "path": {
+                  "$ref": "#/$defs/pointer"
+                },
+                "reject_if_changed": {
+                  "const": true
+                },
+                "strip_whitespace": {
+                  "type": "boolean"
+                },
+                "unicode_form": {
+                  "enum": [
+                    "NFC",
+                    "NFKC"
+                  ]
+                }
+              },
+              "required": [
+                "path",
+                "unicode_form",
+                "strip_whitespace",
+                "reject_if_changed",
+                "on_missing"
+              ]
+            },
+            {
+              "properties": {
+                "allow_equal": {
+                  "type": "boolean"
+                },
+                "earlier_path": {
+                  "$ref": "#/$defs/pointer"
+                },
+                "later_path": {
+                  "$ref": "#/$defs/pointer"
+                },
+                "op": {
+                  "const": "date_order"
+                }
+              },
+              "required": [
+                "earlier_path",
+                "later_path",
+                "allow_equal",
+                "on_missing"
+              ]
+            },
+            {
+              "properties": {
+                "age_path": {
+                  "$ref": "#/$defs/pointer"
+                },
+                "as_of_path": {
+                  "$ref": "#/$defs/pointer"
+                },
+                "dob_path": {
+                  "$ref": "#/$defs/pointer"
+                },
+                "op": {
+                  "const": "age_matches_dob"
+                },
+                "tolerance_years": {
+                  "maximum": 2,
+                  "minimum": 0,
+                  "type": "integer"
+                }
+              },
+              "required": [
+                "age_path",
+                "dob_path",
+                "as_of_path",
+                "tolerance_years",
+                "on_missing"
+              ]
+            },
+            {
+              "properties": {
+                "current_state_path": {
+                  "$ref": "#/$defs/pointer"
+                },
+                "op": {
+                  "const": "state_transition"
+                },
+                "requested_state_path": {
+                  "$ref": "#/$defs/pointer"
+                },
+                "transitions": {
+                  "items": {
+                    "additionalProperties": false,
+                    "properties": {
+                      "from": {
+                        "minLength": 1,
+                        "type": "string"
+                      },
+                      "to": {
+                        "minLength": 1,
+                        "type": "string"
+                      }
+                    },
+                    "required": [
+                      "from",
+                      "to"
+                    ],
+                    "type": "object"
+                  },
+                  "maxItems": 128,
+                  "minItems": 1,
+                  "type": "array",
+                  "uniqueItems": true
+                }
+              },
+              "required": [
+                "current_state_path",
+                "requested_state_path",
+                "transitions",
+                "on_missing"
+              ]
+            },
+            {
+              "not": {
+                "required": [
+                  "on_missing"
+                ]
+              },
+              "properties": {
+                "op": {
+                  "const": "server_derived_reject"
+                },
+                "path": {
+                  "$ref": "#/$defs/pointer"
+                }
+              },
+              "required": [
+                "path"
+              ]
+            },
+            {
+              "properties": {
+                "alternatives": {
+                  "items": {
+                    "additionalProperties": false,
+                    "properties": {
+                      "clauses": {
+                        "items": {
+                          "additionalProperties": false,
+                          "properties": {
+                            "kind": {
+                              "enum": [
+                                "scalar_compare",
+                                "date_compare",
+                                "cardinality_compare"
+                              ]
+                            },
+                            "left_path": {
+                              "maxLength": 512,
+                              "pattern": "^/(request|trusted)(/([^~/]|~0|~1)+|/\\*)*$",
+                              "type": "string"
+                            },
+                            "operator": {
+                              "enum": [
+                                "eq",
+                                "ne",
+                                "lt",
+                                "lte",
+                                "gt",
+                                "gte"
+                              ]
+                            },
+                            "right_path": {
+                              "maxLength": 512,
+                              "type": "string"
+                            },
+                            "right_source": {
+                              "enum": [
+                                "path",
+                                "literal"
+                              ]
+                            },
+                            "right_value": {
+                              "type": [
+                                "string",
+                                "number",
+                                "integer",
+                                "boolean",
+                                "null"
+                              ]
+                            }
+                          },
+                          "required": [
+                            "kind",
+                            "left_path",
+                            "operator",
+                            "right_source",
+                            "right_path",
+                            "right_value"
+                          ],
+                          "type": "object"
+                        },
+                        "maxItems": 4,
+                        "minItems": 1,
+                        "type": "array"
+                      }
+                    },
+                    "required": [
+                      "clauses"
+                    ],
+                    "type": "object"
+                  },
+                  "maxItems": 4,
+                  "minItems": 1,
+                  "type": "array"
+                },
+                "on_missing": {
+                  "enum": [
+                    "deny",
+                    "skip"
+                  ]
+                },
+                "op": {
+                  "const": "bounded_guard_dnf"
+                }
+              },
+              "required": [
+                "alternatives",
+                "on_missing"
+              ]
+            }
+          ]
+        }
+      ],
+      "required": [
+        "rule_id",
+        "primitive_id",
+        "evidence_refs",
+        "op"
+      ],
+      "type": "object",
+      "unevaluatedProperties": false
+    },
+    "target": {
+      "additionalProperties": false,
+      "properties": {
+        "operation": {
+          "maxLength": 256,
+          "minLength": 1,
+          "type": "string"
+        },
+        "system": {
+          "$ref": "#/$defs/id"
+        },
+        "version": {
+          "maxLength": 64,
+          "minLength": 1,
+          "type": "string"
+        }
+      },
+      "required": [
+        "system",
+        "version",
+        "operation"
+      ],
+      "type": "object"
+    }
+  },
+  "$id": "https://example.invalid/ec/field-security-policy-v3.schema.json",
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "additionalProperties": false,
+  "properties": {
+    "evidence_refs": {
+      "$ref": "#/$defs/evidenceRefs"
+    },
+    "policy_id": {
+      "$ref": "#/$defs/id"
+    },
+    "policy_version": {
+      "const": "EC-FIELD-SECURITY-V3"
+    },
+    "rules": {
+      "items": {
+        "$ref": "#/$defs/rule"
+      },
+      "maxItems": 16,
+      "minItems": 1,
+      "type": "array"
+    },
+    "target": {
+      "$ref": "#/$defs/target"
+    }
+  },
+  "required": [
+    "policy_version",
+    "policy_id",
+    "target",
+    "evidence_refs",
+    "rules"
+  ],
+  "title": "EC Field Security Policy V3",
+  "type": "object"
+}

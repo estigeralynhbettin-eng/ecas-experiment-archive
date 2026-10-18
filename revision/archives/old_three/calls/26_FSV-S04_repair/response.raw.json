@@ -1,0 +1,28 @@
+{
+  "choices": [
+    {
+      "finish_reason": "stop",
+      "index": 0,
+      "message": {
+        "content": "{\"begin\":\"BEGIN_FSV-S04_repair_MAIN\",\"stage\":\"repair\",\"output\":{\"status\":\"READY\",\"rego\":\"package external_pilot\\n\\nimport rego.v1\\n\\ndefault allow := false\\n\\nallow if {\\n    input.subject.role == \\\"authenticated_api_caller\\\"\\n    input.action == \\\"POST /api/resource/Lead\\\"\\n    input.resource.system == \\\"ERPNext\\\"\\n    input.resource.version == \\\"16.0.0\\\"\\n    regex.match(\\\"^[^@]+@[^@]+\\\\\\\\.[^@]+$\\\", input.request.body.email_id)\\n}\",\"reason\":\"Prior policy allowed all authenticated callers without validating request body fields. Developer tests reveal that email_id must be a valid email (Lead doctype field has options='Email'). Positive test expects allow for a properly formatted email; negative test expects deny for an invalid email. Added regex.match on /request/body/email_id to enforce email format, preserving default-deny and all existing role/action/resource checks.\"},\"end\":\"END_FSV-S04_repair_MAIN\"}",
+        "role": "assistant"
+      }
+    }
+  ],
+  "created": 1791951358,
+  "id": "202610141215497b25950891e94b9e",
+  "model": "glm-5.2",
+  "object": "chat.completion",
+  "request_id": "202610141215497b25950891e94b9e",
+  "usage": {
+    "completion_tokens": 687,
+    "completion_tokens_details": {
+      "reasoning_tokens": 468
+    },
+    "prompt_tokens": 5765,
+    "prompt_tokens_details": {
+      "cached_tokens": 5376
+    },
+    "total_tokens": 6452
+  }
+}

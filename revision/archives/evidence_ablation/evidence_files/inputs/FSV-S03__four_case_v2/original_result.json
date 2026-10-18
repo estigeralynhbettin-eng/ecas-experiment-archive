@@ -1,0 +1,83 @@
+{
+  "task": "FSV-S03",
+  "method": "ECAS_MATCHED",
+  "status": "EVALUATED",
+  "requests": [
+    {
+      "channel": "O-L",
+      "input": {
+        "request": {
+          "body": {
+            "age": 30,
+            "firstName": "Synthetic",
+            "isDependent": false,
+            "relationshipId": 1
+          }
+        },
+        "trusted": {}
+      },
+      "expected": "allow",
+      "actual": {
+        "policy_id": "FSV-S03-P01",
+        "decision": "allow",
+        "fail_closed": true,
+        "violations": []
+      }
+    },
+    {
+      "channel": "O-I",
+      "input": {
+        "request": {
+          "body": {
+            "age": "30",
+            "firstName": "Synthetic",
+            "isDependent": false,
+            "relationshipId": 1
+          }
+        },
+        "trusted": {}
+      },
+      "expected": "deny",
+      "actual": {
+        "policy_id": "FSV-S03-P01",
+        "decision": "allow",
+        "fail_closed": true,
+        "violations": []
+      }
+    }
+  ],
+  "calls": [
+    35
+  ],
+  "documentation_revision": true,
+  "configuration": "DOCUMENTED_PRIMITIVES_V2",
+  "admission": "ADMITTED",
+  "common_developer_results": {
+    "passed": false,
+    "rows": [
+      {
+        "id": "dev_integer",
+        "expected": "allow",
+        "actual": {
+          "policy_id": "FSV-S03-P01",
+          "decision": "allow",
+          "fail_closed": true,
+          "violations": []
+        },
+        "pass": true
+      },
+      {
+        "id": "dev_integer_string",
+        "expected": "deny",
+        "actual": {
+          "policy_id": "FSV-S03-P01",
+          "decision": "allow",
+          "fail_closed": true,
+          "violations": []
+        },
+        "pass": false
+      }
+    ]
+  },
+  "request_pair_correct": false
+}

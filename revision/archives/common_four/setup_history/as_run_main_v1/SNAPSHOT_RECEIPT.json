@@ -1,0 +1,1034 @@
+{
+  "classification": "AS_RUN_MAIN_V1_PRE_SOURCE_REFERENCE_INTERFACE_FIX",
+  "files": [
+    {
+      "original_path": "/mnt/d/lunwen/EC-CSI\u6295\u7a3f/working/exploration/20261014_matched_evidence_labor/matched_generation/AUTHORIZATION_CN.md",
+      "snapshot_path": "/mnt/d/lunwen/EC-CSI\u6295\u7a3f/working/exploration/20261014_matched_evidence_labor/matched_generation/setup_history/as_run_main_v1/AUTHORIZATION_CN.md",
+      "sha256": "dfdba403acd6cff61c451fb0e038f9a3647c3f80cf54e0f3b7796a9160acb1ab"
+    },
+    {
+      "original_path": "/mnt/d/lunwen/EC-CSI\u6295\u7a3f/working/exploration/20261014_matched_evidence_labor/matched_generation/DOCUMENTED_OPERATOR_SEMANTICS.json",
+      "snapshot_path": "/mnt/d/lunwen/EC-CSI\u6295\u7a3f/working/exploration/20261014_matched_evidence_labor/matched_generation/setup_history/as_run_main_v1/DOCUMENTED_OPERATOR_SEMANTICS.json",
+      "sha256": "8d110d5c5fb1b5963add2be151d1481eff4aa6c09cf4037f681ef96ba4b868ff"
+    },
+    {
+      "original_path": "/mnt/d/lunwen/EC-CSI\u6295\u7a3f/working/exploration/20261014_matched_evidence_labor/matched_generation/EXECUTION_CONFIG.json",
+      "snapshot_path": "/mnt/d/lunwen/EC-CSI\u6295\u7a3f/working/exploration/20261014_matched_evidence_labor/matched_generation/setup_history/as_run_main_v1/EXECUTION_CONFIG.json",
+      "sha256": "82aeefed17a01f37fe5a3c9bd4c2d8297ee13454c60411b3f17f0adfcbb4c964"
+    },
+    {
+      "original_path": "/mnt/d/lunwen/EC-CSI\u6295\u7a3f/working/exploration/20261014_matched_evidence_labor/matched_generation/EXPERIMENT_SCOPE.json",
+      "snapshot_path": "/mnt/d/lunwen/EC-CSI\u6295\u7a3f/working/exploration/20261014_matched_evidence_labor/matched_generation/setup_history/as_run_main_v1/EXPERIMENT_SCOPE.json",
+      "sha256": "010a03c984ee20219500568ed9de2a8b119b1e0547bbc62c424ad09a4d0ac2be"
+    },
+    {
+      "original_path": "/mnt/d/lunwen/EC-CSI\u6295\u7a3f/working/exploration/20261014_matched_evidence_labor/matched_generation/FROZEN_PROTOCOL_CN.md",
+      "snapshot_path": "/mnt/d/lunwen/EC-CSI\u6295\u7a3f/working/exploration/20261014_matched_evidence_labor/matched_generation/setup_history/as_run_main_v1/FROZEN_PROTOCOL_CN.md",
+      "sha256": "29f3e07fa5fdc411ae23f7cf31cd7f221a73b4667a51894542380580490b2619"
+    },
+    {
+      "original_path": "/mnt/d/lunwen/EC-CSI\u6295\u7a3f/working/exploration/20261014_matched_evidence_labor/matched_generation/INPUT_DERIVATIONS.json",
+      "snapshot_path": "/mnt/d/lunwen/EC-CSI\u6295\u7a3f/working/exploration/20261014_matched_evidence_labor/matched_generation/setup_history/as_run_main_v1/INPUT_DERIVATIONS.json",
+      "sha256": "09f82ac0fb9249e5193c7ec5568b47fcb2f045d322cf934c8ddae4d5472a7ade"
+    },
+    {
+      "original_path": "/mnt/d/lunwen/EC-CSI\u6295\u7a3f/working/exploration/20261014_matched_evidence_labor/matched_generation/PROMPT_TEMPLATES.json",
+      "snapshot_path": "/mnt/d/lunwen/EC-CSI\u6295\u7a3f/working/exploration/20261014_matched_evidence_labor/matched_generation/setup_history/as_run_main_v1/PROMPT_TEMPLATES.json",
+      "sha256": "990e6bc45c495b404b2b19bdbce05105906675689429d54827e20658a5294663"
+    },
+    {
+      "original_path": "/mnt/d/lunwen/EC-CSI\u6295\u7a3f/working/exploration/20261014_matched_evidence_labor/matched_generation/SCHEMA_FACTORIZATION_QA.json",
+      "snapshot_path": "/mnt/d/lunwen/EC-CSI\u6295\u7a3f/working/exploration/20261014_matched_evidence_labor/matched_generation/setup_history/as_run_main_v1/SCHEMA_FACTORIZATION_QA.json",
+      "sha256": "8b7cc74c210d93b286e8307eecdfffd1a3efba027e72ec9fa89b7f4b8cd7d960"
+    },
+    {
+      "original_path": "/mnt/d/lunwen/EC-CSI\u6295\u7a3f/working/exploration/20261014_matched_evidence_labor/matched_generation/SOURCE_COPY_RECEIPT.json",
+      "snapshot_path": "/mnt/d/lunwen/EC-CSI\u6295\u7a3f/working/exploration/20261014_matched_evidence_labor/matched_generation/setup_history/as_run_main_v1/SOURCE_COPY_RECEIPT.json",
+      "sha256": "e20f8ef4629ef484541799ec0d94b285e7e6a06f536f6b02e513cd71f7073773"
+    },
+    {
+      "original_path": "/mnt/d/lunwen/EC-CSI\u6295\u7a3f/working/exploration/20261014_matched_evidence_labor/matched_generation/TASK_CONTRACT.md",
+      "snapshot_path": "/mnt/d/lunwen/EC-CSI\u6295\u7a3f/working/exploration/20261014_matched_evidence_labor/matched_generation/setup_history/as_run_main_v1/TASK_CONTRACT.md",
+      "sha256": "69d72b2c7aa76061de5e5725bd185fc66d72392a4019236d3a17ec905c2c9dbf"
+    },
+    {
+      "original_path": "/mnt/d/lunwen/EC-CSI\u6295\u7a3f/working/exploration/20261014_matched_evidence_labor/matched_generation/TOKEN_ESTIMATOR_CALIBRATION.json",
+      "snapshot_path": "/mnt/d/lunwen/EC-CSI\u6295\u7a3f/working/exploration/20261014_matched_evidence_labor/matched_generation/setup_history/as_run_main_v1/TOKEN_ESTIMATOR_CALIBRATION.json",
+      "sha256": "70503e4914c2217465ed64e12960c2dae89e3280e9e6c8ef9c851bc8b3650f73"
+    },
+    {
+      "original_path": "/mnt/d/lunwen/EC-CSI\u6295\u7a3f/working/exploration/20261014_matched_evidence_labor/matched_generation/USER_PROTOCOL_CN.md",
+      "snapshot_path": "/mnt/d/lunwen/EC-CSI\u6295\u7a3f/working/exploration/20261014_matched_evidence_labor/matched_generation/setup_history/as_run_main_v1/USER_PROTOCOL_CN.md",
+      "sha256": "50d19bca8a206228939081564a72a378ed3116e072d09b88f5fee179cee3ac22"
+    },
+    {
+      "original_path": "/mnt/d/lunwen/EC-CSI\u6295\u7a3f/working/exploration/20261014_matched_evidence_labor/matched_generation/execution_inputs/FSV-B13/contract.json",
+      "snapshot_path": "/mnt/d/lunwen/EC-CSI\u6295\u7a3f/working/exploration/20261014_matched_evidence_labor/matched_generation/setup_history/as_run_main_v1/execution_inputs/FSV-B13/contract.json",
+      "sha256": "32e35f1485dc02131938191da1ef90600de1c272bd4ffa7f3f00aa3428982a84"
+    },
+    {
+      "original_path": "/mnt/d/lunwen/EC-CSI\u6295\u7a3f/working/exploration/20261014_matched_evidence_labor/matched_generation/execution_inputs/FSV-B17/contract.json",
+      "snapshot_path": "/mnt/d/lunwen/EC-CSI\u6295\u7a3f/working/exploration/20261014_matched_evidence_labor/matched_generation/setup_history/as_run_main_v1/execution_inputs/FSV-B17/contract.json",
+      "sha256": "ae7c83dcf8f9ee8d8bd1a0218cf8d7d72e0f54c97771e6b49e6acf387eeab0bf"
+    },
+    {
+      "original_path": "/mnt/d/lunwen/EC-CSI\u6295\u7a3f/working/exploration/20261014_matched_evidence_labor/matched_generation/execution_inputs/FSV-B19/contract.json",
+      "snapshot_path": "/mnt/d/lunwen/EC-CSI\u6295\u7a3f/working/exploration/20261014_matched_evidence_labor/matched_generation/setup_history/as_run_main_v1/execution_inputs/FSV-B19/contract.json",
+      "sha256": "fd0a7bbb9c3d0588d2f6e8970af7b8d9c34cf0ae82dd494bce68478c6671fd30"
+    },
+    {
+      "original_path": "/mnt/d/lunwen/EC-CSI\u6295\u7a3f/working/exploration/20261014_matched_evidence_labor/matched_generation/execution_inputs/FSV-S03/contract.json",
+      "snapshot_path": "/mnt/d/lunwen/EC-CSI\u6295\u7a3f/working/exploration/20261014_matched_evidence_labor/matched_generation/setup_history/as_run_main_v1/execution_inputs/FSV-S03/contract.json",
+      "sha256": "21d2d1611b1cde80efd859d93220ed39e3852a70a3e2115a0411d8b131e76da3"
+    },
+    {
+      "original_path": "/mnt/d/lunwen/EC-CSI\u6295\u7a3f/working/exploration/20261014_matched_evidence_labor/matched_generation/execution_inputs/ecas_output_schema.json",
+      "snapshot_path": "/mnt/d/lunwen/EC-CSI\u6295\u7a3f/working/exploration/20261014_matched_evidence_labor/matched_generation/setup_history/as_run_main_v1/execution_inputs/ecas_output_schema.json",
+      "sha256": "d9168bf982cc37e44d994268fba54bbd0ed0640afd41e3ceea2a6eaa2eebdac6"
+    },
+    {
+      "original_path": "/mnt/d/lunwen/EC-CSI\u6295\u7a3f/working/exploration/20261014_matched_evidence_labor/matched_generation/execution_inputs/ecas_prompt_schema.json",
+      "snapshot_path": "/mnt/d/lunwen/EC-CSI\u6295\u7a3f/working/exploration/20261014_matched_evidence_labor/matched_generation/setup_history/as_run_main_v1/execution_inputs/ecas_prompt_schema.json",
+      "sha256": "83ab1a791b341b704c9db09bbeaf0c5050de5f639a40dee4cfe668f723d0737e"
+    },
+    {
+      "original_path": "/mnt/d/lunwen/EC-CSI\u6295\u7a3f/working/exploration/20261014_matched_evidence_labor/matched_generation/execution_inputs/operator_developer_tests.json",
+      "snapshot_path": "/mnt/d/lunwen/EC-CSI\u6295\u7a3f/working/exploration/20261014_matched_evidence_labor/matched_generation/setup_history/as_run_main_v1/execution_inputs/operator_developer_tests.json",
+      "sha256": "466540587a70df8430398a72c3e4e83481aa109e45784eac9ed0ba96560b2344"
+    },
+    {
+      "original_path": "/mnt/d/lunwen/EC-CSI\u6295\u7a3f/working/exploration/20261014_matched_evidence_labor/matched_generation/freeze.py",
+      "snapshot_path": "/mnt/d/lunwen/EC-CSI\u6295\u7a3f/working/exploration/20261014_matched_evidence_labor/matched_generation/setup_history/as_run_main_v1/freeze.py",
+      "sha256": "a6c727c487349ccbe4475b4499a28cde0dbebbdcda60b81e00c7aab5874d5f05"
+    },
+    {
+      "original_path": "/mnt/d/lunwen/EC-CSI\u6295\u7a3f/working/exploration/20261014_matched_evidence_labor/matched_generation/generation_inputs/FSV-B13/organization_schema.json",
+      "snapshot_path": "/mnt/d/lunwen/EC-CSI\u6295\u7a3f/working/exploration/20261014_matched_evidence_labor/matched_generation/setup_history/as_run_main_v1/generation_inputs/FSV-B13/organization_schema.json",
+      "sha256": "60d081ff93569f0e571dd37031c547282ceccd54b24988b8b546d5c2962a0488"
+    },
+    {
+      "original_path": "/mnt/d/lunwen/EC-CSI\u6295\u7a3f/working/exploration/20261014_matched_evidence_labor/matched_generation/generation_inputs/FSV-B13/packet.json",
+      "snapshot_path": "/mnt/d/lunwen/EC-CSI\u6295\u7a3f/working/exploration/20261014_matched_evidence_labor/matched_generation/setup_history/as_run_main_v1/generation_inputs/FSV-B13/packet.json",
+      "sha256": "0b07fe5eb4c156c96759cb0ff7e45d58523efd87549f88932ef029003a4ecb9b"
+    },
+    {
+      "original_path": "/mnt/d/lunwen/EC-CSI\u6295\u7a3f/working/exploration/20261014_matched_evidence_labor/matched_generation/generation_inputs/FSV-B17/organization_schema.json",
+      "snapshot_path": "/mnt/d/lunwen/EC-CSI\u6295\u7a3f/working/exploration/20261014_matched_evidence_labor/matched_generation/setup_history/as_run_main_v1/generation_inputs/FSV-B17/organization_schema.json",
+      "sha256": "7343f9bafd0a3aac861b0114e1427bb640b2851004a7f65aa68413cdf4683882"
+    },
+    {
+      "original_path": "/mnt/d/lunwen/EC-CSI\u6295\u7a3f/working/exploration/20261014_matched_evidence_labor/matched_generation/generation_inputs/FSV-B17/packet.json",
+      "snapshot_path": "/mnt/d/lunwen/EC-CSI\u6295\u7a3f/working/exploration/20261014_matched_evidence_labor/matched_generation/setup_history/as_run_main_v1/generation_inputs/FSV-B17/packet.json",
+      "sha256": "03e726de50a01e76c55ce26e0925632c218de4ab96339c3752d37e33535a6479"
+    },
+    {
+      "original_path": "/mnt/d/lunwen/EC-CSI\u6295\u7a3f/working/exploration/20261014_matched_evidence_labor/matched_generation/generation_inputs/FSV-B19/organization_schema.json",
+      "snapshot_path": "/mnt/d/lunwen/EC-CSI\u6295\u7a3f/working/exploration/20261014_matched_evidence_labor/matched_generation/setup_history/as_run_main_v1/generation_inputs/FSV-B19/organization_schema.json",
+      "sha256": "a89677a956c0362060f9b47ad12e3bdb6ba0654f79bc3d94d527067b212d35dc"
+    },
+    {
+      "original_path": "/mnt/d/lunwen/EC-CSI\u6295\u7a3f/working/exploration/20261014_matched_evidence_labor/matched_generation/generation_inputs/FSV-B19/packet.json",
+      "snapshot_path": "/mnt/d/lunwen/EC-CSI\u6295\u7a3f/working/exploration/20261014_matched_evidence_labor/matched_generation/setup_history/as_run_main_v1/generation_inputs/FSV-B19/packet.json",
+      "sha256": "10c5597e97e4190aa041c53aa3aee8b4c1c48fa77d073bfb4fb5eb5a64a346fd"
+    },
+    {
+      "original_path": "/mnt/d/lunwen/EC-CSI\u6295\u7a3f/working/exploration/20261014_matched_evidence_labor/matched_generation/generation_inputs/FSV-S03/organization_schema.json",
+      "snapshot_path": "/mnt/d/lunwen/EC-CSI\u6295\u7a3f/working/exploration/20261014_matched_evidence_labor/matched_generation/setup_history/as_run_main_v1/generation_inputs/FSV-S03/organization_schema.json",
+      "sha256": "8267d851fb0830f0e3f70c776d115ca7e447221764b62e38ee90571cf79a4eae"
+    },
+    {
+      "original_path": "/mnt/d/lunwen/EC-CSI\u6295\u7a3f/working/exploration/20261014_matched_evidence_labor/matched_generation/generation_inputs/FSV-S03/packet.json",
+      "snapshot_path": "/mnt/d/lunwen/EC-CSI\u6295\u7a3f/working/exploration/20261014_matched_evidence_labor/matched_generation/setup_history/as_run_main_v1/generation_inputs/FSV-S03/packet.json",
+      "sha256": "acddb441ffde6b492d77d8964ce22ba69bf037eb164daa9f8674ca1e4a8f596a"
+    },
+    {
+      "original_path": "/mnt/d/lunwen/EC-CSI\u6295\u7a3f/working/exploration/20261014_matched_evidence_labor/matched_generation/managed_entry.py",
+      "snapshot_path": "/mnt/d/lunwen/EC-CSI\u6295\u7a3f/working/exploration/20261014_matched_evidence_labor/matched_generation/setup_history/as_run_main_v1/managed_entry.py",
+      "sha256": "82ddeff647085f5c89390f503b0ebec5847bebeb37f94c6e30bb64f7436dccc4"
+    },
+    {
+      "original_path": "/mnt/d/lunwen/EC-CSI\u6295\u7a3f/working/exploration/20261014_matched_evidence_labor/matched_generation/pilot_lib.py",
+      "snapshot_path": "/mnt/d/lunwen/EC-CSI\u6295\u7a3f/working/exploration/20261014_matched_evidence_labor/matched_generation/setup_history/as_run_main_v1/pilot_lib.py",
+      "sha256": "fa606f70be1b1f6bb4a2e9d11793e9b2eb27a2a9e9ec2e65dfa73459f2965a34"
+    },
+    {
+      "original_path": "/mnt/d/lunwen/EC-CSI\u6295\u7a3f/working/exploration/20261014_matched_evidence_labor/matched_generation/prepare.py",
+      "snapshot_path": "/mnt/d/lunwen/EC-CSI\u6295\u7a3f/working/exploration/20261014_matched_evidence_labor/matched_generation/setup_history/as_run_main_v1/prepare.py",
+      "sha256": "b4af80b21b2dccdc40412321915abeaa486306f47f11d4347236f2228276c0b3"
+    },
+    {
+      "original_path": "/mnt/d/lunwen/EC-CSI\u6295\u7a3f/working/exploration/20261014_matched_evidence_labor/matched_generation/recover_wrapper_v2.py",
+      "snapshot_path": "/mnt/d/lunwen/EC-CSI\u6295\u7a3f/working/exploration/20261014_matched_evidence_labor/matched_generation/setup_history/as_run_main_v1/recover_wrapper_v2.py",
+      "sha256": "2dd02641ae53ef5f5283de34e3981f39225f3faa4c8ddd6477e7d0628fcba3dd"
+    },
+    {
+      "original_path": "/mnt/d/lunwen/EC-CSI\u6295\u7a3f/working/exploration/20261014_matched_evidence_labor/matched_generation/run_matched.py",
+      "snapshot_path": "/mnt/d/lunwen/EC-CSI\u6295\u7a3f/working/exploration/20261014_matched_evidence_labor/matched_generation/setup_history/as_run_main_v1/run_matched.py",
+      "sha256": "3b1e7963f8305a92768b46cd9ab286b9d515d7016c1eb8a029bbd2d40723a9bf"
+    },
+    {
+      "original_path": "/mnt/d/lunwen/EC-CSI\u6295\u7a3f/working/exploration/20261014_matched_evidence_labor/matched_generation/run_t0.py",
+      "snapshot_path": "/mnt/d/lunwen/EC-CSI\u6295\u7a3f/working/exploration/20261014_matched_evidence_labor/matched_generation/setup_history/as_run_main_v1/run_t0.py",
+      "sha256": "8dc7f435c1d341a8e128b445df00c52d6bf82e94008e1be2f839e0d585e7b64f"
+    },
+    {
+      "original_path": "/mnt/d/lunwen/EC-CSI\u6295\u7a3f/working/exploration/20261014_matched_evidence_labor/matched_generation/sealed_evaluation/FSV-B13/O-I.json",
+      "snapshot_path": "/mnt/d/lunwen/EC-CSI\u6295\u7a3f/working/exploration/20261014_matched_evidence_labor/matched_generation/setup_history/as_run_main_v1/sealed_evaluation/FSV-B13/O-I.json",
+      "sha256": "cc48bf54560691368e418bfdfa437ac1eacdea343e1027538069e569fd79f9cd"
+    },
+    {
+      "original_path": "/mnt/d/lunwen/EC-CSI\u6295\u7a3f/working/exploration/20261014_matched_evidence_labor/matched_generation/sealed_evaluation/FSV-B13/O-L.json",
+      "snapshot_path": "/mnt/d/lunwen/EC-CSI\u6295\u7a3f/working/exploration/20261014_matched_evidence_labor/matched_generation/setup_history/as_run_main_v1/sealed_evaluation/FSV-B13/O-L.json",
+      "sha256": "f42e16a4373f495013f8cfd865e4bf2f5282024f5010b513352cda2a87601e1f"
+    },
+    {
+      "original_path": "/mnt/d/lunwen/EC-CSI\u6295\u7a3f/working/exploration/20261014_matched_evidence_labor/matched_generation/sealed_evaluation/FSV-B17/O-I.json",
+      "snapshot_path": "/mnt/d/lunwen/EC-CSI\u6295\u7a3f/working/exploration/20261014_matched_evidence_labor/matched_generation/setup_history/as_run_main_v1/sealed_evaluation/FSV-B17/O-I.json",
+      "sha256": "1e4f014ba1a820cfd9a367a7053ed11038111af29c420cb341f4483a012f6009"
+    },
+    {
+      "original_path": "/mnt/d/lunwen/EC-CSI\u6295\u7a3f/working/exploration/20261014_matched_evidence_labor/matched_generation/sealed_evaluation/FSV-B17/O-L.json",
+      "snapshot_path": "/mnt/d/lunwen/EC-CSI\u6295\u7a3f/working/exploration/20261014_matched_evidence_labor/matched_generation/setup_history/as_run_main_v1/sealed_evaluation/FSV-B17/O-L.json",
+      "sha256": "7b3e59768aeef9b06d5181e2bf0d8511c6d6564eacbd76a0b14eaf42fcdfa6fd"
+    },
+    {
+      "original_path": "/mnt/d/lunwen/EC-CSI\u6295\u7a3f/working/exploration/20261014_matched_evidence_labor/matched_generation/sealed_evaluation/FSV-B19/O-I.json",
+      "snapshot_path": "/mnt/d/lunwen/EC-CSI\u6295\u7a3f/working/exploration/20261014_matched_evidence_labor/matched_generation/setup_history/as_run_main_v1/sealed_evaluation/FSV-B19/O-I.json",
+      "sha256": "ae1d51bf1a028081ed84b19c6b7f5c58ef48ab6a156838976db2ce5ec2257426"
+    },
+    {
+      "original_path": "/mnt/d/lunwen/EC-CSI\u6295\u7a3f/working/exploration/20261014_matched_evidence_labor/matched_generation/sealed_evaluation/FSV-B19/O-L.json",
+      "snapshot_path": "/mnt/d/lunwen/EC-CSI\u6295\u7a3f/working/exploration/20261014_matched_evidence_labor/matched_generation/setup_history/as_run_main_v1/sealed_evaluation/FSV-B19/O-L.json",
+      "sha256": "a93d62a64f0152442a0d4d33fd1378ab05f0b6f41b707359a3588cfc04f8d7f3"
+    },
+    {
+      "original_path": "/mnt/d/lunwen/EC-CSI\u6295\u7a3f/working/exploration/20261014_matched_evidence_labor/matched_generation/sealed_evaluation/FSV-S03/O-I.json",
+      "snapshot_path": "/mnt/d/lunwen/EC-CSI\u6295\u7a3f/working/exploration/20261014_matched_evidence_labor/matched_generation/setup_history/as_run_main_v1/sealed_evaluation/FSV-S03/O-I.json",
+      "sha256": "b19aaea5476ce507a73c43325d53b15bae0f5ea676c6d9cff5219b1f15c24888"
+    },
+    {
+      "original_path": "/mnt/d/lunwen/EC-CSI\u6295\u7a3f/working/exploration/20261014_matched_evidence_labor/matched_generation/sealed_evaluation/FSV-S03/O-L.json",
+      "snapshot_path": "/mnt/d/lunwen/EC-CSI\u6295\u7a3f/working/exploration/20261014_matched_evidence_labor/matched_generation/setup_history/as_run_main_v1/sealed_evaluation/FSV-S03/O-L.json",
+      "sha256": "7a4baf937960343565985be5dacc8ae4fd71819f21929568756e4e4bedd39366"
+    },
+    {
+      "original_path": "/mnt/d/lunwen/EC-CSI\u6295\u7a3f/working/exploration/20261014_matched_evidence_labor/matched_generation/sealed_evaluation/branch_protocol.json",
+      "snapshot_path": "/mnt/d/lunwen/EC-CSI\u6295\u7a3f/working/exploration/20261014_matched_evidence_labor/matched_generation/setup_history/as_run_main_v1/sealed_evaluation/branch_protocol.json",
+      "sha256": "11528a8fa0954a9523fe52d2adf52c3dfc9090b98f0eedf83123c2f7f6c30312"
+    },
+    {
+      "original_path": "/mnt/d/lunwen/EC-CSI\u6295\u7a3f/working/exploration/20261014_matched_evidence_labor/matched_generation/source_snapshots/FSV-B13/visible_input.json",
+      "snapshot_path": "/mnt/d/lunwen/EC-CSI\u6295\u7a3f/working/exploration/20261014_matched_evidence_labor/matched_generation/setup_history/as_run_main_v1/source_snapshots/FSV-B13/visible_input.json",
+      "sha256": "59656473d4901528724f2aeeac13914aafd823cb8c94afa303074667cc1d3a60"
+    },
+    {
+      "original_path": "/mnt/d/lunwen/EC-CSI\u6295\u7a3f/working/exploration/20261014_matched_evidence_labor/matched_generation/source_snapshots/FSV-B17/visible_input.json",
+      "snapshot_path": "/mnt/d/lunwen/EC-CSI\u6295\u7a3f/working/exploration/20261014_matched_evidence_labor/matched_generation/setup_history/as_run_main_v1/source_snapshots/FSV-B17/visible_input.json",
+      "sha256": "172d7713684a53321d1adc88fa22d4fa19eef73655e2ec93dbc76e0a41fc553d"
+    },
+    {
+      "original_path": "/mnt/d/lunwen/EC-CSI\u6295\u7a3f/working/exploration/20261014_matched_evidence_labor/matched_generation/source_snapshots/FSV-B19/visible_input.json",
+      "snapshot_path": "/mnt/d/lunwen/EC-CSI\u6295\u7a3f/working/exploration/20261014_matched_evidence_labor/matched_generation/setup_history/as_run_main_v1/source_snapshots/FSV-B19/visible_input.json",
+      "sha256": "0d2f92d99e585945e4923e8195d7fae4b387dd36a42b2653b2c70824b3c62369"
+    },
+    {
+      "original_path": "/mnt/d/lunwen/EC-CSI\u6295\u7a3f/working/exploration/20261014_matched_evidence_labor/matched_generation/source_snapshots/FSV-S03/visible_input.json",
+      "snapshot_path": "/mnt/d/lunwen/EC-CSI\u6295\u7a3f/working/exploration/20261014_matched_evidence_labor/matched_generation/setup_history/as_run_main_v1/source_snapshots/FSV-S03/visible_input.json",
+      "sha256": "80046646d6cd56df589905eae0fc105406de7c68a6ac47241dd51467352917a5"
+    },
+    {
+      "original_path": "/mnt/d/lunwen/EC-CSI\u6295\u7a3f/working/exploration/20261014_matched_evidence_labor/matched_generation/t0_fixtures/known_s03_candidate.json",
+      "snapshot_path": "/mnt/d/lunwen/EC-CSI\u6295\u7a3f/working/exploration/20261014_matched_evidence_labor/matched_generation/setup_history/as_run_main_v1/t0_fixtures/known_s03_candidate.json",
+      "sha256": "4ea0d92c8a503671e937eca9e6510bbfbc442082f13238027dd801dec918606a"
+    },
+    {
+      "original_path": "/mnt/d/lunwen/EC-CSI\u6295\u7a3f/working/exploration/20261014_matched_evidence_labor/matched_generation/calls/01_FSV-B19_p2p_rego/content.json",
+      "snapshot_path": "/mnt/d/lunwen/EC-CSI\u6295\u7a3f/working/exploration/20261014_matched_evidence_labor/matched_generation/setup_history/as_run_main_v1/calls/01_FSV-B19_p2p_rego/content.json",
+      "sha256": "960d057e8f3f3fdcdb8067ee83d7c5e8a93ce3d790c589447ead7a65ed030589"
+    },
+    {
+      "original_path": "/mnt/d/lunwen/EC-CSI\u6295\u7a3f/working/exploration/20261014_matched_evidence_labor/matched_generation/calls/01_FSV-B19_p2p_rego/parsed_output.json",
+      "snapshot_path": "/mnt/d/lunwen/EC-CSI\u6295\u7a3f/working/exploration/20261014_matched_evidence_labor/matched_generation/setup_history/as_run_main_v1/calls/01_FSV-B19_p2p_rego/parsed_output.json",
+      "sha256": "3f2395f451ed97a33cf65bc1beab0c15b11a50374eb4f0ccbcf0254b95bff5d6"
+    },
+    {
+      "original_path": "/mnt/d/lunwen/EC-CSI\u6295\u7a3f/working/exploration/20261014_matched_evidence_labor/matched_generation/calls/01_FSV-B19_p2p_rego/prompt.txt",
+      "snapshot_path": "/mnt/d/lunwen/EC-CSI\u6295\u7a3f/working/exploration/20261014_matched_evidence_labor/matched_generation/setup_history/as_run_main_v1/calls/01_FSV-B19_p2p_rego/prompt.txt",
+      "sha256": "9e987f036ec768ad0e0d3e89ce21e7359c37d9fd55da632d37190369d74e58bc"
+    },
+    {
+      "original_path": "/mnt/d/lunwen/EC-CSI\u6295\u7a3f/working/exploration/20261014_matched_evidence_labor/matched_generation/calls/01_FSV-B19_p2p_rego/response.raw.json",
+      "snapshot_path": "/mnt/d/lunwen/EC-CSI\u6295\u7a3f/working/exploration/20261014_matched_evidence_labor/matched_generation/setup_history/as_run_main_v1/calls/01_FSV-B19_p2p_rego/response.raw.json",
+      "sha256": "8b501817c9bd12df097edb85462ead3d000d2cab49bdf0cf6401893a1305f273"
+    },
+    {
+      "original_path": "/mnt/d/lunwen/EC-CSI\u6295\u7a3f/working/exploration/20261014_matched_evidence_labor/matched_generation/calls/01_FSV-B19_p2p_rego/wrapper.stderr.txt",
+      "snapshot_path": "/mnt/d/lunwen/EC-CSI\u6295\u7a3f/working/exploration/20261014_matched_evidence_labor/matched_generation/setup_history/as_run_main_v1/calls/01_FSV-B19_p2p_rego/wrapper.stderr.txt",
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    {
+      "original_path": "/mnt/d/lunwen/EC-CSI\u6295\u7a3f/working/exploration/20261014_matched_evidence_labor/matched_generation/calls/01_FSV-B19_p2p_rego/wrapper.stdout.txt",
+      "snapshot_path": "/mnt/d/lunwen/EC-CSI\u6295\u7a3f/working/exploration/20261014_matched_evidence_labor/matched_generation/setup_history/as_run_main_v1/calls/01_FSV-B19_p2p_rego/wrapper.stdout.txt",
+      "sha256": "60ee16f26cbc2abdc4d16586db2a1cbc447dc44cedd7f2366ed3317fa55c4ee4"
+    },
+    {
+      "original_path": "/mnt/d/lunwen/EC-CSI\u6295\u7a3f/working/exploration/20261014_matched_evidence_labor/matched_generation/calls/01_FSV-B19_p2p_rego/wrapper_summary.json",
+      "snapshot_path": "/mnt/d/lunwen/EC-CSI\u6295\u7a3f/working/exploration/20261014_matched_evidence_labor/matched_generation/setup_history/as_run_main_v1/calls/01_FSV-B19_p2p_rego/wrapper_summary.json",
+      "sha256": "22aea92c18b861c9f0898ea1056322f5db9de73376f8cdcd35e3e1ffd361fdeb"
+    },
+    {
+      "original_path": "/mnt/d/lunwen/EC-CSI\u6295\u7a3f/working/exploration/20261014_matched_evidence_labor/matched_generation/calls/02_FSV-B19_autopac_generate/content.json",
+      "snapshot_path": "/mnt/d/lunwen/EC-CSI\u6295\u7a3f/working/exploration/20261014_matched_evidence_labor/matched_generation/setup_history/as_run_main_v1/calls/02_FSV-B19_autopac_generate/content.json",
+      "sha256": "87c337f53284772a46fba3c0a75218f2d2aca5788aa9c6b0fa311a5ce8d28d6e"
+    },
+    {
+      "original_path": "/mnt/d/lunwen/EC-CSI\u6295\u7a3f/working/exploration/20261014_matched_evidence_labor/matched_generation/calls/02_FSV-B19_autopac_generate/parsed_output.json",
+      "snapshot_path": "/mnt/d/lunwen/EC-CSI\u6295\u7a3f/working/exploration/20261014_matched_evidence_labor/matched_generation/setup_history/as_run_main_v1/calls/02_FSV-B19_autopac_generate/parsed_output.json",
+      "sha256": "08edec27e09514a2e2b4c2849fb04c05258000863fa1a4e4e51decac0f9e0cb2"
+    },
+    {
+      "original_path": "/mnt/d/lunwen/EC-CSI\u6295\u7a3f/working/exploration/20261014_matched_evidence_labor/matched_generation/calls/02_FSV-B19_autopac_generate/prompt.txt",
+      "snapshot_path": "/mnt/d/lunwen/EC-CSI\u6295\u7a3f/working/exploration/20261014_matched_evidence_labor/matched_generation/setup_history/as_run_main_v1/calls/02_FSV-B19_autopac_generate/prompt.txt",
+      "sha256": "08a835759b7f1e05d7e9a621e3e5f48b141bf33bb5659ee7befdcf808f6a7ec2"
+    },
+    {
+      "original_path": "/mnt/d/lunwen/EC-CSI\u6295\u7a3f/working/exploration/20261014_matched_evidence_labor/matched_generation/calls/02_FSV-B19_autopac_generate/response.raw.json",
+      "snapshot_path": "/mnt/d/lunwen/EC-CSI\u6295\u7a3f/working/exploration/20261014_matched_evidence_labor/matched_generation/setup_history/as_run_main_v1/calls/02_FSV-B19_autopac_generate/response.raw.json",
+      "sha256": "fe8059451e7db3a186edbf23c8883733501f2fcee88ed6a1e85c16a4f096c74e"
+    },
+    {
+      "original_path": "/mnt/d/lunwen/EC-CSI\u6295\u7a3f/working/exploration/20261014_matched_evidence_labor/matched_generation/calls/02_FSV-B19_autopac_generate/wrapper.stderr.txt",
+      "snapshot_path": "/mnt/d/lunwen/EC-CSI\u6295\u7a3f/working/exploration/20261014_matched_evidence_labor/matched_generation/setup_history/as_run_main_v1/calls/02_FSV-B19_autopac_generate/wrapper.stderr.txt",
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    {
+      "original_path": "/mnt/d/lunwen/EC-CSI\u6295\u7a3f/working/exploration/20261014_matched_evidence_labor/matched_generation/calls/02_FSV-B19_autopac_generate/wrapper.stdout.txt",
+      "snapshot_path": "/mnt/d/lunwen/EC-CSI\u6295\u7a3f/working/exploration/20261014_matched_evidence_labor/matched_generation/setup_history/as_run_main_v1/calls/02_FSV-B19_autopac_generate/wrapper.stdout.txt",
+      "sha256": "802f2855a64c9259244b64848d5370767a0a0eeb06636847ac6d16d49791e957"
+    },
+    {
+      "original_path": "/mnt/d/lunwen/EC-CSI\u6295\u7a3f/working/exploration/20261014_matched_evidence_labor/matched_generation/calls/02_FSV-B19_autopac_generate/wrapper_summary.json",
+      "snapshot_path": "/mnt/d/lunwen/EC-CSI\u6295\u7a3f/working/exploration/20261014_matched_evidence_labor/matched_generation/setup_history/as_run_main_v1/calls/02_FSV-B19_autopac_generate/wrapper_summary.json",
+      "sha256": "cfb1c24cca8beb788f94b9e78a10f59de19ce14cdc572c63826d27cdf2ee9af3"
+    },
+    {
+      "original_path": "/mnt/d/lunwen/EC-CSI\u6295\u7a3f/working/exploration/20261014_matched_evidence_labor/matched_generation/calls/03_FSV-B19_ecas_generate/content.json",
+      "snapshot_path": "/mnt/d/lunwen/EC-CSI\u6295\u7a3f/working/exploration/20261014_matched_evidence_labor/matched_generation/setup_history/as_run_main_v1/calls/03_FSV-B19_ecas_generate/content.json",
+      "sha256": "362a513801d3afd745d42e8f7cc433305d13398fbb31229f2a6e2f81b9692ce2"
+    },
+    {
+      "original_path": "/mnt/d/lunwen/EC-CSI\u6295\u7a3f/working/exploration/20261014_matched_evidence_labor/matched_generation/calls/03_FSV-B19_ecas_generate/locally_recovered_output_v2.json",
+      "snapshot_path": "/mnt/d/lunwen/EC-CSI\u6295\u7a3f/working/exploration/20261014_matched_evidence_labor/matched_generation/setup_history/as_run_main_v1/calls/03_FSV-B19_ecas_generate/locally_recovered_output_v2.json",
+      "sha256": "37932aa9cdac1f62cad08b1024cca11469cc878bda2273e1d9e743479e672780"
+    },
+    {
+      "original_path": "/mnt/d/lunwen/EC-CSI\u6295\u7a3f/working/exploration/20261014_matched_evidence_labor/matched_generation/calls/03_FSV-B19_ecas_generate/LOCAL_WRAPPER_RECOVERY_RECEIPT_V2.json",
+      "snapshot_path": "/mnt/d/lunwen/EC-CSI\u6295\u7a3f/working/exploration/20261014_matched_evidence_labor/matched_generation/setup_history/as_run_main_v1/calls/03_FSV-B19_ecas_generate/LOCAL_WRAPPER_RECOVERY_RECEIPT_V2.json",
+      "sha256": "545e9469e044e486c00cc5ce8494f9607bd893667a6f3ffb1c01ef95d76eff0e"
+    },
+    {
+      "original_path": "/mnt/d/lunwen/EC-CSI\u6295\u7a3f/working/exploration/20261014_matched_evidence_labor/matched_generation/calls/03_FSV-B19_ecas_generate/prompt.txt",
+      "snapshot_path": "/mnt/d/lunwen/EC-CSI\u6295\u7a3f/working/exploration/20261014_matched_evidence_labor/matched_generation/setup_history/as_run_main_v1/calls/03_FSV-B19_ecas_generate/prompt.txt",
+      "sha256": "6abd784497ebc0f3184357356ad4315fcbee780162e3ce7d54e8bc788cc152a7"
+    },
+    {
+      "original_path": "/mnt/d/lunwen/EC-CSI\u6295\u7a3f/working/exploration/20261014_matched_evidence_labor/matched_generation/calls/03_FSV-B19_ecas_generate/response.raw.json",
+      "snapshot_path": "/mnt/d/lunwen/EC-CSI\u6295\u7a3f/working/exploration/20261014_matched_evidence_labor/matched_generation/setup_history/as_run_main_v1/calls/03_FSV-B19_ecas_generate/response.raw.json",
+      "sha256": "5fa3595aff72e11800f8cf69e9aa8575d05bf2d8cddf040f0ccf696de8a1351a"
+    },
+    {
+      "original_path": "/mnt/d/lunwen/EC-CSI\u6295\u7a3f/working/exploration/20261014_matched_evidence_labor/matched_generation/calls/03_FSV-B19_ecas_generate/wrapper.stderr.txt",
+      "snapshot_path": "/mnt/d/lunwen/EC-CSI\u6295\u7a3f/working/exploration/20261014_matched_evidence_labor/matched_generation/setup_history/as_run_main_v1/calls/03_FSV-B19_ecas_generate/wrapper.stderr.txt",
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    {
+      "original_path": "/mnt/d/lunwen/EC-CSI\u6295\u7a3f/working/exploration/20261014_matched_evidence_labor/matched_generation/calls/03_FSV-B19_ecas_generate/wrapper.stdout.txt",
+      "snapshot_path": "/mnt/d/lunwen/EC-CSI\u6295\u7a3f/working/exploration/20261014_matched_evidence_labor/matched_generation/setup_history/as_run_main_v1/calls/03_FSV-B19_ecas_generate/wrapper.stdout.txt",
+      "sha256": "9f226940a76e6c8b357720b7fc0d587392fcc248cb3f04d9b33e465c213620bf"
+    },
+    {
+      "original_path": "/mnt/d/lunwen/EC-CSI\u6295\u7a3f/working/exploration/20261014_matched_evidence_labor/matched_generation/calls/03_FSV-B19_ecas_generate/wrapper_summary.json",
+      "snapshot_path": "/mnt/d/lunwen/EC-CSI\u6295\u7a3f/working/exploration/20261014_matched_evidence_labor/matched_generation/setup_history/as_run_main_v1/calls/03_FSV-B19_ecas_generate/wrapper_summary.json",
+      "sha256": "80141804e9fd55eb711bc2428bbaf09ba2232bddb582f78d398a0c0734b341d1"
+    },
+    {
+      "original_path": "/mnt/d/lunwen/EC-CSI\u6295\u7a3f/working/exploration/20261014_matched_evidence_labor/matched_generation/calls/04_FSV-S03_ecas_generate/content.json",
+      "snapshot_path": "/mnt/d/lunwen/EC-CSI\u6295\u7a3f/working/exploration/20261014_matched_evidence_labor/matched_generation/setup_history/as_run_main_v1/calls/04_FSV-S03_ecas_generate/content.json",
+      "sha256": "7ec19da845f3fd2559bc321b968ad27b1112f28d680748d3520daf453a071147"
+    },
+    {
+      "original_path": "/mnt/d/lunwen/EC-CSI\u6295\u7a3f/working/exploration/20261014_matched_evidence_labor/matched_generation/calls/04_FSV-S03_ecas_generate/parsed_output.json",
+      "snapshot_path": "/mnt/d/lunwen/EC-CSI\u6295\u7a3f/working/exploration/20261014_matched_evidence_labor/matched_generation/setup_history/as_run_main_v1/calls/04_FSV-S03_ecas_generate/parsed_output.json",
+      "sha256": "6992c0105b2d90da881f5dbb96cfe54c972300653080329f2bee17b23a8abd40"
+    },
+    {
+      "original_path": "/mnt/d/lunwen/EC-CSI\u6295\u7a3f/working/exploration/20261014_matched_evidence_labor/matched_generation/calls/04_FSV-S03_ecas_generate/prompt.txt",
+      "snapshot_path": "/mnt/d/lunwen/EC-CSI\u6295\u7a3f/working/exploration/20261014_matched_evidence_labor/matched_generation/setup_history/as_run_main_v1/calls/04_FSV-S03_ecas_generate/prompt.txt",
+      "sha256": "e94f301514dbb2e325f5fa6b75d4221fc277ea41d8a5c6b40cb28d674a593639"
+    },
+    {
+      "original_path": "/mnt/d/lunwen/EC-CSI\u6295\u7a3f/working/exploration/20261014_matched_evidence_labor/matched_generation/calls/04_FSV-S03_ecas_generate/response.raw.json",
+      "snapshot_path": "/mnt/d/lunwen/EC-CSI\u6295\u7a3f/working/exploration/20261014_matched_evidence_labor/matched_generation/setup_history/as_run_main_v1/calls/04_FSV-S03_ecas_generate/response.raw.json",
+      "sha256": "6df013b8757abb9f409495ad79a6a80c2cb512dc50c648a3a866d823106a5b43"
+    },
+    {
+      "original_path": "/mnt/d/lunwen/EC-CSI\u6295\u7a3f/working/exploration/20261014_matched_evidence_labor/matched_generation/calls/04_FSV-S03_ecas_generate/wrapper.stderr.txt",
+      "snapshot_path": "/mnt/d/lunwen/EC-CSI\u6295\u7a3f/working/exploration/20261014_matched_evidence_labor/matched_generation/setup_history/as_run_main_v1/calls/04_FSV-S03_ecas_generate/wrapper.stderr.txt",
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    {
+      "original_path": "/mnt/d/lunwen/EC-CSI\u6295\u7a3f/working/exploration/20261014_matched_evidence_labor/matched_generation/calls/04_FSV-S03_ecas_generate/wrapper.stdout.txt",
+      "snapshot_path": "/mnt/d/lunwen/EC-CSI\u6295\u7a3f/working/exploration/20261014_matched_evidence_labor/matched_generation/setup_history/as_run_main_v1/calls/04_FSV-S03_ecas_generate/wrapper.stdout.txt",
+      "sha256": "36f2076d757d2721e16db11c43676022ced728cd6523746bacfe938f23e3434f"
+    },
+    {
+      "original_path": "/mnt/d/lunwen/EC-CSI\u6295\u7a3f/working/exploration/20261014_matched_evidence_labor/matched_generation/calls/04_FSV-S03_ecas_generate/wrapper_summary.json",
+      "snapshot_path": "/mnt/d/lunwen/EC-CSI\u6295\u7a3f/working/exploration/20261014_matched_evidence_labor/matched_generation/setup_history/as_run_main_v1/calls/04_FSV-S03_ecas_generate/wrapper_summary.json",
+      "sha256": "fef7a523f16dc9ea3bc77a0eea79357ed1e4d67341c0ec029af70817476257f8"
+    },
+    {
+      "original_path": "/mnt/d/lunwen/EC-CSI\u6295\u7a3f/working/exploration/20261014_matched_evidence_labor/matched_generation/calls/05_FSV-S03_p2p_detect/content.json",
+      "snapshot_path": "/mnt/d/lunwen/EC-CSI\u6295\u7a3f/working/exploration/20261014_matched_evidence_labor/matched_generation/setup_history/as_run_main_v1/calls/05_FSV-S03_p2p_detect/content.json",
+      "sha256": "dfc6a06a1b3e193099f105feeb41371393b103694fb6582104302c499255bd05"
+    },
+    {
+      "original_path": "/mnt/d/lunwen/EC-CSI\u6295\u7a3f/working/exploration/20261014_matched_evidence_labor/matched_generation/calls/05_FSV-S03_p2p_detect/parsed_output.json",
+      "snapshot_path": "/mnt/d/lunwen/EC-CSI\u6295\u7a3f/working/exploration/20261014_matched_evidence_labor/matched_generation/setup_history/as_run_main_v1/calls/05_FSV-S03_p2p_detect/parsed_output.json",
+      "sha256": "9466c5a07f00a39cb5956afce3112d58331974814f8e49cc7b6a0fc42e84d46e"
+    },
+    {
+      "original_path": "/mnt/d/lunwen/EC-CSI\u6295\u7a3f/working/exploration/20261014_matched_evidence_labor/matched_generation/calls/05_FSV-S03_p2p_detect/prompt.txt",
+      "snapshot_path": "/mnt/d/lunwen/EC-CSI\u6295\u7a3f/working/exploration/20261014_matched_evidence_labor/matched_generation/setup_history/as_run_main_v1/calls/05_FSV-S03_p2p_detect/prompt.txt",
+      "sha256": "89c115b6eb85f2056259933b110d080107c9c62e9968c9c12b258e8aed7bdb56"
+    },
+    {
+      "original_path": "/mnt/d/lunwen/EC-CSI\u6295\u7a3f/working/exploration/20261014_matched_evidence_labor/matched_generation/calls/05_FSV-S03_p2p_detect/response.raw.json",
+      "snapshot_path": "/mnt/d/lunwen/EC-CSI\u6295\u7a3f/working/exploration/20261014_matched_evidence_labor/matched_generation/setup_history/as_run_main_v1/calls/05_FSV-S03_p2p_detect/response.raw.json",
+      "sha256": "6f2e57c02f0810cb114a3f6e2e4f291622c8c6125437bde1355e9de7320cd800"
+    },
+    {
+      "original_path": "/mnt/d/lunwen/EC-CSI\u6295\u7a3f/working/exploration/20261014_matched_evidence_labor/matched_generation/calls/05_FSV-S03_p2p_detect/wrapper.stderr.txt",
+      "snapshot_path": "/mnt/d/lunwen/EC-CSI\u6295\u7a3f/working/exploration/20261014_matched_evidence_labor/matched_generation/setup_history/as_run_main_v1/calls/05_FSV-S03_p2p_detect/wrapper.stderr.txt",
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    {
+      "original_path": "/mnt/d/lunwen/EC-CSI\u6295\u7a3f/working/exploration/20261014_matched_evidence_labor/matched_generation/calls/05_FSV-S03_p2p_detect/wrapper.stdout.txt",
+      "snapshot_path": "/mnt/d/lunwen/EC-CSI\u6295\u7a3f/working/exploration/20261014_matched_evidence_labor/matched_generation/setup_history/as_run_main_v1/calls/05_FSV-S03_p2p_detect/wrapper.stdout.txt",
+      "sha256": "35d392e20d98bd435732ab97d250119eaa2337fec8a46e7b95a25ddcf6b4111e"
+    },
+    {
+      "original_path": "/mnt/d/lunwen/EC-CSI\u6295\u7a3f/working/exploration/20261014_matched_evidence_labor/matched_generation/calls/05_FSV-S03_p2p_detect/wrapper_summary.json",
+      "snapshot_path": "/mnt/d/lunwen/EC-CSI\u6295\u7a3f/working/exploration/20261014_matched_evidence_labor/matched_generation/setup_history/as_run_main_v1/calls/05_FSV-S03_p2p_detect/wrapper_summary.json",
+      "sha256": "99b576e3fc348d7c45ad1e5792a90ea6edc96e43a29497af6fc92ef09f126f47"
+    },
+    {
+      "original_path": "/mnt/d/lunwen/EC-CSI\u6295\u7a3f/working/exploration/20261014_matched_evidence_labor/matched_generation/calls/06_FSV-S03_autopac_generate/content.json",
+      "snapshot_path": "/mnt/d/lunwen/EC-CSI\u6295\u7a3f/working/exploration/20261014_matched_evidence_labor/matched_generation/setup_history/as_run_main_v1/calls/06_FSV-S03_autopac_generate/content.json",
+      "sha256": "bd8dfc14ba2e0751262a0429705c91860855aec05cb46b9b127990acbc89903d"
+    },
+    {
+      "original_path": "/mnt/d/lunwen/EC-CSI\u6295\u7a3f/working/exploration/20261014_matched_evidence_labor/matched_generation/calls/06_FSV-S03_autopac_generate/parsed_output.json",
+      "snapshot_path": "/mnt/d/lunwen/EC-CSI\u6295\u7a3f/working/exploration/20261014_matched_evidence_labor/matched_generation/setup_history/as_run_main_v1/calls/06_FSV-S03_autopac_generate/parsed_output.json",
+      "sha256": "49416e3a7f0eeb853daa473c63dc6c71aaae1c7b2fbc0fdfb39d5a54018e379d"
+    },
+    {
+      "original_path": "/mnt/d/lunwen/EC-CSI\u6295\u7a3f/working/exploration/20261014_matched_evidence_labor/matched_generation/calls/06_FSV-S03_autopac_generate/prompt.txt",
+      "snapshot_path": "/mnt/d/lunwen/EC-CSI\u6295\u7a3f/working/exploration/20261014_matched_evidence_labor/matched_generation/setup_history/as_run_main_v1/calls/06_FSV-S03_autopac_generate/prompt.txt",
+      "sha256": "adc8510dde15a7a5a72168d6e8c96385ebcd635d4c437b7af3c7474ce09d8a02"
+    },
+    {
+      "original_path": "/mnt/d/lunwen/EC-CSI\u6295\u7a3f/working/exploration/20261014_matched_evidence_labor/matched_generation/calls/06_FSV-S03_autopac_generate/response.raw.json",
+      "snapshot_path": "/mnt/d/lunwen/EC-CSI\u6295\u7a3f/working/exploration/20261014_matched_evidence_labor/matched_generation/setup_history/as_run_main_v1/calls/06_FSV-S03_autopac_generate/response.raw.json",
+      "sha256": "1799f8c83755f79b129b7be8f44326ab25ee1fae39208eae59fe4a51de539798"
+    },
+    {
+      "original_path": "/mnt/d/lunwen/EC-CSI\u6295\u7a3f/working/exploration/20261014_matched_evidence_labor/matched_generation/calls/06_FSV-S03_autopac_generate/wrapper.stderr.txt",
+      "snapshot_path": "/mnt/d/lunwen/EC-CSI\u6295\u7a3f/working/exploration/20261014_matched_evidence_labor/matched_generation/setup_history/as_run_main_v1/calls/06_FSV-S03_autopac_generate/wrapper.stderr.txt",
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    {
+      "original_path": "/mnt/d/lunwen/EC-CSI\u6295\u7a3f/working/exploration/20261014_matched_evidence_labor/matched_generation/calls/06_FSV-S03_autopac_generate/wrapper.stdout.txt",
+      "snapshot_path": "/mnt/d/lunwen/EC-CSI\u6295\u7a3f/working/exploration/20261014_matched_evidence_labor/matched_generation/setup_history/as_run_main_v1/calls/06_FSV-S03_autopac_generate/wrapper.stdout.txt",
+      "sha256": "5b6eac53f21647706e73651abdd686444d107dc4bebd91906c1760b9874cbfc2"
+    },
+    {
+      "original_path": "/mnt/d/lunwen/EC-CSI\u6295\u7a3f/working/exploration/20261014_matched_evidence_labor/matched_generation/calls/06_FSV-S03_autopac_generate/wrapper_summary.json",
+      "snapshot_path": "/mnt/d/lunwen/EC-CSI\u6295\u7a3f/working/exploration/20261014_matched_evidence_labor/matched_generation/setup_history/as_run_main_v1/calls/06_FSV-S03_autopac_generate/wrapper_summary.json",
+      "sha256": "fdfa299170671e67cc8f996e90ad92a7e6ae9494191a7edd1b2e61bc0a770175"
+    },
+    {
+      "original_path": "/mnt/d/lunwen/EC-CSI\u6295\u7a3f/working/exploration/20261014_matched_evidence_labor/matched_generation/calls/07_FSV-S03_autopac_judge/content.json",
+      "snapshot_path": "/mnt/d/lunwen/EC-CSI\u6295\u7a3f/working/exploration/20261014_matched_evidence_labor/matched_generation/setup_history/as_run_main_v1/calls/07_FSV-S03_autopac_judge/content.json",
+      "sha256": "9fb4c30b4176d6375c5401748437e5193906e2b43c18ccab304e1aa4faca26a3"
+    },
+    {
+      "original_path": "/mnt/d/lunwen/EC-CSI\u6295\u7a3f/working/exploration/20261014_matched_evidence_labor/matched_generation/calls/07_FSV-S03_autopac_judge/parsed_output.json",
+      "snapshot_path": "/mnt/d/lunwen/EC-CSI\u6295\u7a3f/working/exploration/20261014_matched_evidence_labor/matched_generation/setup_history/as_run_main_v1/calls/07_FSV-S03_autopac_judge/parsed_output.json",
+      "sha256": "2f2f4fa27ccd9c8d6477c226a6f9547975256455962da20867bed3f93f113092"
+    },
+    {
+      "original_path": "/mnt/d/lunwen/EC-CSI\u6295\u7a3f/working/exploration/20261014_matched_evidence_labor/matched_generation/calls/07_FSV-S03_autopac_judge/prompt.txt",
+      "snapshot_path": "/mnt/d/lunwen/EC-CSI\u6295\u7a3f/working/exploration/20261014_matched_evidence_labor/matched_generation/setup_history/as_run_main_v1/calls/07_FSV-S03_autopac_judge/prompt.txt",
+      "sha256": "da8bd9a95fd822fa1ccf9ccc4a44e13148643cef6db320f267b0ae4446ca52ee"
+    },
+    {
+      "original_path": "/mnt/d/lunwen/EC-CSI\u6295\u7a3f/working/exploration/20261014_matched_evidence_labor/matched_generation/calls/07_FSV-S03_autopac_judge/response.raw.json",
+      "snapshot_path": "/mnt/d/lunwen/EC-CSI\u6295\u7a3f/working/exploration/20261014_matched_evidence_labor/matched_generation/setup_history/as_run_main_v1/calls/07_FSV-S03_autopac_judge/response.raw.json",
+      "sha256": "69a83576cf7582b00c54c16d0f3dd42a331a146ad6b662fb7532b5ddefa07fe5"
+    },
+    {
+      "original_path": "/mnt/d/lunwen/EC-CSI\u6295\u7a3f/working/exploration/20261014_matched_evidence_labor/matched_generation/calls/07_FSV-S03_autopac_judge/wrapper.stderr.txt",
+      "snapshot_path": "/mnt/d/lunwen/EC-CSI\u6295\u7a3f/working/exploration/20261014_matched_evidence_labor/matched_generation/setup_history/as_run_main_v1/calls/07_FSV-S03_autopac_judge/wrapper.stderr.txt",
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    {
+      "original_path": "/mnt/d/lunwen/EC-CSI\u6295\u7a3f/working/exploration/20261014_matched_evidence_labor/matched_generation/calls/07_FSV-S03_autopac_judge/wrapper.stdout.txt",
+      "snapshot_path": "/mnt/d/lunwen/EC-CSI\u6295\u7a3f/working/exploration/20261014_matched_evidence_labor/matched_generation/setup_history/as_run_main_v1/calls/07_FSV-S03_autopac_judge/wrapper.stdout.txt",
+      "sha256": "eff438c7399d74d9d7be97d660e60f893f4c5622c066184615749b8df11942a6"
+    },
+    {
+      "original_path": "/mnt/d/lunwen/EC-CSI\u6295\u7a3f/working/exploration/20261014_matched_evidence_labor/matched_generation/calls/07_FSV-S03_autopac_judge/wrapper_summary.json",
+      "snapshot_path": "/mnt/d/lunwen/EC-CSI\u6295\u7a3f/working/exploration/20261014_matched_evidence_labor/matched_generation/setup_history/as_run_main_v1/calls/07_FSV-S03_autopac_judge/wrapper_summary.json",
+      "sha256": "b4382a3081c0ce5e7217ed69dd14b2449b12d0e77bd383ff108643ada1f6f01b"
+    },
+    {
+      "original_path": "/mnt/d/lunwen/EC-CSI\u6295\u7a3f/working/exploration/20261014_matched_evidence_labor/matched_generation/calls/08_FSV-S03_repair/content.json",
+      "snapshot_path": "/mnt/d/lunwen/EC-CSI\u6295\u7a3f/working/exploration/20261014_matched_evidence_labor/matched_generation/setup_history/as_run_main_v1/calls/08_FSV-S03_repair/content.json",
+      "sha256": "dc2c9ffc00fb49b2fa1df5884a84fd7a37268fe9b3524437c1eed450bf35a9c7"
+    },
+    {
+      "original_path": "/mnt/d/lunwen/EC-CSI\u6295\u7a3f/working/exploration/20261014_matched_evidence_labor/matched_generation/calls/08_FSV-S03_repair/parsed_output.json",
+      "snapshot_path": "/mnt/d/lunwen/EC-CSI\u6295\u7a3f/working/exploration/20261014_matched_evidence_labor/matched_generation/setup_history/as_run_main_v1/calls/08_FSV-S03_repair/parsed_output.json",
+      "sha256": "b9f40ec0986a70ef47902a3edbb199f6d34f7aed23e4c589330ed3b53f49f68b"
+    },
+    {
+      "original_path": "/mnt/d/lunwen/EC-CSI\u6295\u7a3f/working/exploration/20261014_matched_evidence_labor/matched_generation/calls/08_FSV-S03_repair/prompt.txt",
+      "snapshot_path": "/mnt/d/lunwen/EC-CSI\u6295\u7a3f/working/exploration/20261014_matched_evidence_labor/matched_generation/setup_history/as_run_main_v1/calls/08_FSV-S03_repair/prompt.txt",
+      "sha256": "3bb1d33179e136c6375e00460f4256b9c271f18c512faf83f1c55fd87033aab0"
+    },
+    {
+      "original_path": "/mnt/d/lunwen/EC-CSI\u6295\u7a3f/working/exploration/20261014_matched_evidence_labor/matched_generation/calls/08_FSV-S03_repair/response.raw.json",
+      "snapshot_path": "/mnt/d/lunwen/EC-CSI\u6295\u7a3f/working/exploration/20261014_matched_evidence_labor/matched_generation/setup_history/as_run_main_v1/calls/08_FSV-S03_repair/response.raw.json",
+      "sha256": "3a0f7f658adfc5733cf505e499d07732505c187b288e3725d83fed10f7ec855a"
+    },
+    {
+      "original_path": "/mnt/d/lunwen/EC-CSI\u6295\u7a3f/working/exploration/20261014_matched_evidence_labor/matched_generation/calls/08_FSV-S03_repair/wrapper.stderr.txt",
+      "snapshot_path": "/mnt/d/lunwen/EC-CSI\u6295\u7a3f/working/exploration/20261014_matched_evidence_labor/matched_generation/setup_history/as_run_main_v1/calls/08_FSV-S03_repair/wrapper.stderr.txt",
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    {
+      "original_path": "/mnt/d/lunwen/EC-CSI\u6295\u7a3f/working/exploration/20261014_matched_evidence_labor/matched_generation/calls/08_FSV-S03_repair/wrapper.stdout.txt",
+      "snapshot_path": "/mnt/d/lunwen/EC-CSI\u6295\u7a3f/working/exploration/20261014_matched_evidence_labor/matched_generation/setup_history/as_run_main_v1/calls/08_FSV-S03_repair/wrapper.stdout.txt",
+      "sha256": "4288b7bc0cb9b6b2caa5f9c6423d0597ff41051bbbb7b793b42f52daa1ac1eab"
+    },
+    {
+      "original_path": "/mnt/d/lunwen/EC-CSI\u6295\u7a3f/working/exploration/20261014_matched_evidence_labor/matched_generation/calls/08_FSV-S03_repair/wrapper_summary.json",
+      "snapshot_path": "/mnt/d/lunwen/EC-CSI\u6295\u7a3f/working/exploration/20261014_matched_evidence_labor/matched_generation/setup_history/as_run_main_v1/calls/08_FSV-S03_repair/wrapper_summary.json",
+      "sha256": "6737d20c4adaeb31503e7389ca3d870d3ac4a7facad031a4aed2dd9fa49167b7"
+    },
+    {
+      "original_path": "/mnt/d/lunwen/EC-CSI\u6295\u7a3f/working/exploration/20261014_matched_evidence_labor/matched_generation/calls/09_FSV-S03_ecas_generate/content.json",
+      "snapshot_path": "/mnt/d/lunwen/EC-CSI\u6295\u7a3f/working/exploration/20261014_matched_evidence_labor/matched_generation/setup_history/as_run_main_v1/calls/09_FSV-S03_ecas_generate/content.json",
+      "sha256": "d4767e7315f242ffa95451e39f8e6867341aa0b88ec7cc8487f40542069578ef"
+    },
+    {
+      "original_path": "/mnt/d/lunwen/EC-CSI\u6295\u7a3f/working/exploration/20261014_matched_evidence_labor/matched_generation/calls/09_FSV-S03_ecas_generate/parsed_output.json",
+      "snapshot_path": "/mnt/d/lunwen/EC-CSI\u6295\u7a3f/working/exploration/20261014_matched_evidence_labor/matched_generation/setup_history/as_run_main_v1/calls/09_FSV-S03_ecas_generate/parsed_output.json",
+      "sha256": "5dffa34bda70cb5431d5947735549c906b2bc9b3a7c937ccdf2a5bb848d684d5"
+    },
+    {
+      "original_path": "/mnt/d/lunwen/EC-CSI\u6295\u7a3f/working/exploration/20261014_matched_evidence_labor/matched_generation/calls/09_FSV-S03_ecas_generate/prompt.txt",
+      "snapshot_path": "/mnt/d/lunwen/EC-CSI\u6295\u7a3f/working/exploration/20261014_matched_evidence_labor/matched_generation/setup_history/as_run_main_v1/calls/09_FSV-S03_ecas_generate/prompt.txt",
+      "sha256": "c20e3fce37da27c05c40e30d0b49abba31103c34562c9a5316849262ac9e8dc4"
+    },
+    {
+      "original_path": "/mnt/d/lunwen/EC-CSI\u6295\u7a3f/working/exploration/20261014_matched_evidence_labor/matched_generation/calls/09_FSV-S03_ecas_generate/response.raw.json",
+      "snapshot_path": "/mnt/d/lunwen/EC-CSI\u6295\u7a3f/working/exploration/20261014_matched_evidence_labor/matched_generation/setup_history/as_run_main_v1/calls/09_FSV-S03_ecas_generate/response.raw.json",
+      "sha256": "17d652f5862a53b75567063e9773b5ce0c37ad5ed3b5ecdfbb2b528267411e4d"
+    },
+    {
+      "original_path": "/mnt/d/lunwen/EC-CSI\u6295\u7a3f/working/exploration/20261014_matched_evidence_labor/matched_generation/calls/09_FSV-S03_ecas_generate/wrapper.stderr.txt",
+      "snapshot_path": "/mnt/d/lunwen/EC-CSI\u6295\u7a3f/working/exploration/20261014_matched_evidence_labor/matched_generation/setup_history/as_run_main_v1/calls/09_FSV-S03_ecas_generate/wrapper.stderr.txt",
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    {
+      "original_path": "/mnt/d/lunwen/EC-CSI\u6295\u7a3f/working/exploration/20261014_matched_evidence_labor/matched_generation/calls/09_FSV-S03_ecas_generate/wrapper.stdout.txt",
+      "snapshot_path": "/mnt/d/lunwen/EC-CSI\u6295\u7a3f/working/exploration/20261014_matched_evidence_labor/matched_generation/setup_history/as_run_main_v1/calls/09_FSV-S03_ecas_generate/wrapper.stdout.txt",
+      "sha256": "b690c0b53e5cc90676fd89a79ce86801502bc799d5f4bfa63f3d4f1137c87e2c"
+    },
+    {
+      "original_path": "/mnt/d/lunwen/EC-CSI\u6295\u7a3f/working/exploration/20261014_matched_evidence_labor/matched_generation/calls/09_FSV-S03_ecas_generate/wrapper_summary.json",
+      "snapshot_path": "/mnt/d/lunwen/EC-CSI\u6295\u7a3f/working/exploration/20261014_matched_evidence_labor/matched_generation/setup_history/as_run_main_v1/calls/09_FSV-S03_ecas_generate/wrapper_summary.json",
+      "sha256": "73344f2befda7e3f0408786f8e97d73f168f63f25c490b73238615a859ac1914"
+    },
+    {
+      "original_path": "/mnt/d/lunwen/EC-CSI\u6295\u7a3f/working/exploration/20261014_matched_evidence_labor/matched_generation/calls/10_FSV-B13_p2p_detect/content.json",
+      "snapshot_path": "/mnt/d/lunwen/EC-CSI\u6295\u7a3f/working/exploration/20261014_matched_evidence_labor/matched_generation/setup_history/as_run_main_v1/calls/10_FSV-B13_p2p_detect/content.json",
+      "sha256": "ddd7360ebe0c3690c0b4b7e1eb9bf5a17049d61949e8391d0789f203bee63053"
+    },
+    {
+      "original_path": "/mnt/d/lunwen/EC-CSI\u6295\u7a3f/working/exploration/20261014_matched_evidence_labor/matched_generation/calls/10_FSV-B13_p2p_detect/parsed_output.json",
+      "snapshot_path": "/mnt/d/lunwen/EC-CSI\u6295\u7a3f/working/exploration/20261014_matched_evidence_labor/matched_generation/setup_history/as_run_main_v1/calls/10_FSV-B13_p2p_detect/parsed_output.json",
+      "sha256": "8313eed205bff3da6fd8f15cb83b08e613adf109a991b769af1adcf803210186"
+    },
+    {
+      "original_path": "/mnt/d/lunwen/EC-CSI\u6295\u7a3f/working/exploration/20261014_matched_evidence_labor/matched_generation/calls/10_FSV-B13_p2p_detect/prompt.txt",
+      "snapshot_path": "/mnt/d/lunwen/EC-CSI\u6295\u7a3f/working/exploration/20261014_matched_evidence_labor/matched_generation/setup_history/as_run_main_v1/calls/10_FSV-B13_p2p_detect/prompt.txt",
+      "sha256": "9d2a35c224b30b8044386f49066dcb8532545133b40892f046f44a80a054707f"
+    },
+    {
+      "original_path": "/mnt/d/lunwen/EC-CSI\u6295\u7a3f/working/exploration/20261014_matched_evidence_labor/matched_generation/calls/10_FSV-B13_p2p_detect/response.raw.json",
+      "snapshot_path": "/mnt/d/lunwen/EC-CSI\u6295\u7a3f/working/exploration/20261014_matched_evidence_labor/matched_generation/setup_history/as_run_main_v1/calls/10_FSV-B13_p2p_detect/response.raw.json",
+      "sha256": "b26d4922f1877c5c677f3096d0b93b2fb0d4eab2c95a6a1eb4c29c029f71967c"
+    },
+    {
+      "original_path": "/mnt/d/lunwen/EC-CSI\u6295\u7a3f/working/exploration/20261014_matched_evidence_labor/matched_generation/calls/10_FSV-B13_p2p_detect/wrapper.stderr.txt",
+      "snapshot_path": "/mnt/d/lunwen/EC-CSI\u6295\u7a3f/working/exploration/20261014_matched_evidence_labor/matched_generation/setup_history/as_run_main_v1/calls/10_FSV-B13_p2p_detect/wrapper.stderr.txt",
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    {
+      "original_path": "/mnt/d/lunwen/EC-CSI\u6295\u7a3f/working/exploration/20261014_matched_evidence_labor/matched_generation/calls/10_FSV-B13_p2p_detect/wrapper.stdout.txt",
+      "snapshot_path": "/mnt/d/lunwen/EC-CSI\u6295\u7a3f/working/exploration/20261014_matched_evidence_labor/matched_generation/setup_history/as_run_main_v1/calls/10_FSV-B13_p2p_detect/wrapper.stdout.txt",
+      "sha256": "2dc15b4059e622df1908e81db9f9e326f032d8139ee25e6c97f97d51352ea129"
+    },
+    {
+      "original_path": "/mnt/d/lunwen/EC-CSI\u6295\u7a3f/working/exploration/20261014_matched_evidence_labor/matched_generation/calls/10_FSV-B13_p2p_detect/wrapper_summary.json",
+      "snapshot_path": "/mnt/d/lunwen/EC-CSI\u6295\u7a3f/working/exploration/20261014_matched_evidence_labor/matched_generation/setup_history/as_run_main_v1/calls/10_FSV-B13_p2p_detect/wrapper_summary.json",
+      "sha256": "28b8b5cc9b6108c5544f340de22ebb66cf0161c0b86e688f011c65f188723ed7"
+    },
+    {
+      "original_path": "/mnt/d/lunwen/EC-CSI\u6295\u7a3f/working/exploration/20261014_matched_evidence_labor/matched_generation/calls/11_FSV-B13_p2p_extract/content.json",
+      "snapshot_path": "/mnt/d/lunwen/EC-CSI\u6295\u7a3f/working/exploration/20261014_matched_evidence_labor/matched_generation/setup_history/as_run_main_v1/calls/11_FSV-B13_p2p_extract/content.json",
+      "sha256": "bc093ed0493a234127150c34805709437e14ced2489e239dd1d74e218fa0408c"
+    },
+    {
+      "original_path": "/mnt/d/lunwen/EC-CSI\u6295\u7a3f/working/exploration/20261014_matched_evidence_labor/matched_generation/calls/11_FSV-B13_p2p_extract/parsed_output.json",
+      "snapshot_path": "/mnt/d/lunwen/EC-CSI\u6295\u7a3f/working/exploration/20261014_matched_evidence_labor/matched_generation/setup_history/as_run_main_v1/calls/11_FSV-B13_p2p_extract/parsed_output.json",
+      "sha256": "3eb7be503dc75baaab6df0d0b9aab11796692bdcab81584fa040fcaff79bb2e7"
+    },
+    {
+      "original_path": "/mnt/d/lunwen/EC-CSI\u6295\u7a3f/working/exploration/20261014_matched_evidence_labor/matched_generation/calls/11_FSV-B13_p2p_extract/prompt.txt",
+      "snapshot_path": "/mnt/d/lunwen/EC-CSI\u6295\u7a3f/working/exploration/20261014_matched_evidence_labor/matched_generation/setup_history/as_run_main_v1/calls/11_FSV-B13_p2p_extract/prompt.txt",
+      "sha256": "b3ee5bb4ac013b6526103c25219b8de7a2ce99684fe5ee8129c2df5fc7f408c7"
+    },
+    {
+      "original_path": "/mnt/d/lunwen/EC-CSI\u6295\u7a3f/working/exploration/20261014_matched_evidence_labor/matched_generation/calls/11_FSV-B13_p2p_extract/response.raw.json",
+      "snapshot_path": "/mnt/d/lunwen/EC-CSI\u6295\u7a3f/working/exploration/20261014_matched_evidence_labor/matched_generation/setup_history/as_run_main_v1/calls/11_FSV-B13_p2p_extract/response.raw.json",
+      "sha256": "5753dd4e0244e7a3eb0403c130b0d2fdee533cae0084460eed073064ed9cf34d"
+    },
+    {
+      "original_path": "/mnt/d/lunwen/EC-CSI\u6295\u7a3f/working/exploration/20261014_matched_evidence_labor/matched_generation/calls/11_FSV-B13_p2p_extract/wrapper.stderr.txt",
+      "snapshot_path": "/mnt/d/lunwen/EC-CSI\u6295\u7a3f/working/exploration/20261014_matched_evidence_labor/matched_generation/setup_history/as_run_main_v1/calls/11_FSV-B13_p2p_extract/wrapper.stderr.txt",
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    {
+      "original_path": "/mnt/d/lunwen/EC-CSI\u6295\u7a3f/working/exploration/20261014_matched_evidence_labor/matched_generation/calls/11_FSV-B13_p2p_extract/wrapper.stdout.txt",
+      "snapshot_path": "/mnt/d/lunwen/EC-CSI\u6295\u7a3f/working/exploration/20261014_matched_evidence_labor/matched_generation/setup_history/as_run_main_v1/calls/11_FSV-B13_p2p_extract/wrapper.stdout.txt",
+      "sha256": "3d4dec54ef1760309ecf7dc3f3b6c8aaf064ba75b47233ebd16d1971b7c4acea"
+    },
+    {
+      "original_path": "/mnt/d/lunwen/EC-CSI\u6295\u7a3f/working/exploration/20261014_matched_evidence_labor/matched_generation/calls/11_FSV-B13_p2p_extract/wrapper_summary.json",
+      "snapshot_path": "/mnt/d/lunwen/EC-CSI\u6295\u7a3f/working/exploration/20261014_matched_evidence_labor/matched_generation/setup_history/as_run_main_v1/calls/11_FSV-B13_p2p_extract/wrapper_summary.json",
+      "sha256": "5e20c1be06523302d9e0a7ddc2b0d553b78cc20bc18c47f8de5612a1e7b45f6e"
+    },
+    {
+      "original_path": "/mnt/d/lunwen/EC-CSI\u6295\u7a3f/working/exploration/20261014_matched_evidence_labor/matched_generation/calls/12_FSV-B13_p2p_rego/content.json",
+      "snapshot_path": "/mnt/d/lunwen/EC-CSI\u6295\u7a3f/working/exploration/20261014_matched_evidence_labor/matched_generation/setup_history/as_run_main_v1/calls/12_FSV-B13_p2p_rego/content.json",
+      "sha256": "6e8323313a4baced52775e4cb510652adc756a05569fb1ea3c744cdf12f9eaa0"
+    },
+    {
+      "original_path": "/mnt/d/lunwen/EC-CSI\u6295\u7a3f/working/exploration/20261014_matched_evidence_labor/matched_generation/calls/12_FSV-B13_p2p_rego/parsed_output.json",
+      "snapshot_path": "/mnt/d/lunwen/EC-CSI\u6295\u7a3f/working/exploration/20261014_matched_evidence_labor/matched_generation/setup_history/as_run_main_v1/calls/12_FSV-B13_p2p_rego/parsed_output.json",
+      "sha256": "38ed83a1fb0755c39acdbc5148c5892df2238dd7606e5f1fd2d08ccaae04eec0"
+    },
+    {
+      "original_path": "/mnt/d/lunwen/EC-CSI\u6295\u7a3f/working/exploration/20261014_matched_evidence_labor/matched_generation/calls/12_FSV-B13_p2p_rego/prompt.txt",
+      "snapshot_path": "/mnt/d/lunwen/EC-CSI\u6295\u7a3f/working/exploration/20261014_matched_evidence_labor/matched_generation/setup_history/as_run_main_v1/calls/12_FSV-B13_p2p_rego/prompt.txt",
+      "sha256": "486283fb8c3ad25fb63eed498b107cf3704b46868be79ebe3dca1a96984f1d0d"
+    },
+    {
+      "original_path": "/mnt/d/lunwen/EC-CSI\u6295\u7a3f/working/exploration/20261014_matched_evidence_labor/matched_generation/calls/12_FSV-B13_p2p_rego/response.raw.json",
+      "snapshot_path": "/mnt/d/lunwen/EC-CSI\u6295\u7a3f/working/exploration/20261014_matched_evidence_labor/matched_generation/setup_history/as_run_main_v1/calls/12_FSV-B13_p2p_rego/response.raw.json",
+      "sha256": "b2b18430ead5703bfce94142557c760db5c861f4cbbb8531027ed375125258bb"
+    },
+    {
+      "original_path": "/mnt/d/lunwen/EC-CSI\u6295\u7a3f/working/exploration/20261014_matched_evidence_labor/matched_generation/calls/12_FSV-B13_p2p_rego/wrapper.stderr.txt",
+      "snapshot_path": "/mnt/d/lunwen/EC-CSI\u6295\u7a3f/working/exploration/20261014_matched_evidence_labor/matched_generation/setup_history/as_run_main_v1/calls/12_FSV-B13_p2p_rego/wrapper.stderr.txt",
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    {
+      "original_path": "/mnt/d/lunwen/EC-CSI\u6295\u7a3f/working/exploration/20261014_matched_evidence_labor/matched_generation/calls/12_FSV-B13_p2p_rego/wrapper.stdout.txt",
+      "snapshot_path": "/mnt/d/lunwen/EC-CSI\u6295\u7a3f/working/exploration/20261014_matched_evidence_labor/matched_generation/setup_history/as_run_main_v1/calls/12_FSV-B13_p2p_rego/wrapper.stdout.txt",
+      "sha256": "96d52bd53de35470ff9ccd551a3acddd67cb3a3a3b2c432e1c9fdabad313043a"
+    },
+    {
+      "original_path": "/mnt/d/lunwen/EC-CSI\u6295\u7a3f/working/exploration/20261014_matched_evidence_labor/matched_generation/calls/12_FSV-B13_p2p_rego/wrapper_summary.json",
+      "snapshot_path": "/mnt/d/lunwen/EC-CSI\u6295\u7a3f/working/exploration/20261014_matched_evidence_labor/matched_generation/setup_history/as_run_main_v1/calls/12_FSV-B13_p2p_rego/wrapper_summary.json",
+      "sha256": "8358c8e93ba01523d619190eb5f467dda5549c5fc56cd125374cffe0a28ec500"
+    },
+    {
+      "original_path": "/mnt/d/lunwen/EC-CSI\u6295\u7a3f/working/exploration/20261014_matched_evidence_labor/matched_generation/calls/13_FSV-B13_p2p_tests/content.json",
+      "snapshot_path": "/mnt/d/lunwen/EC-CSI\u6295\u7a3f/working/exploration/20261014_matched_evidence_labor/matched_generation/setup_history/as_run_main_v1/calls/13_FSV-B13_p2p_tests/content.json",
+      "sha256": "1960f0388a607cb121b8d9cf90a602fb3a41056ad2071c9ab73c8b0a6b0372dc"
+    },
+    {
+      "original_path": "/mnt/d/lunwen/EC-CSI\u6295\u7a3f/working/exploration/20261014_matched_evidence_labor/matched_generation/calls/13_FSV-B13_p2p_tests/parsed_output.json",
+      "snapshot_path": "/mnt/d/lunwen/EC-CSI\u6295\u7a3f/working/exploration/20261014_matched_evidence_labor/matched_generation/setup_history/as_run_main_v1/calls/13_FSV-B13_p2p_tests/parsed_output.json",
+      "sha256": "66d423db3326d6516975809ddcbb162be2516ed3b47f9e4ddf9d1a4f1cb864da"
+    },
+    {
+      "original_path": "/mnt/d/lunwen/EC-CSI\u6295\u7a3f/working/exploration/20261014_matched_evidence_labor/matched_generation/calls/13_FSV-B13_p2p_tests/prompt.txt",
+      "snapshot_path": "/mnt/d/lunwen/EC-CSI\u6295\u7a3f/working/exploration/20261014_matched_evidence_labor/matched_generation/setup_history/as_run_main_v1/calls/13_FSV-B13_p2p_tests/prompt.txt",
+      "sha256": "826863492c97a63430bd0c68d549fd0777b16fe8634d0cdf95414b082dc2986e"
+    },
+    {
+      "original_path": "/mnt/d/lunwen/EC-CSI\u6295\u7a3f/working/exploration/20261014_matched_evidence_labor/matched_generation/calls/13_FSV-B13_p2p_tests/response.raw.json",
+      "snapshot_path": "/mnt/d/lunwen/EC-CSI\u6295\u7a3f/working/exploration/20261014_matched_evidence_labor/matched_generation/setup_history/as_run_main_v1/calls/13_FSV-B13_p2p_tests/response.raw.json",
+      "sha256": "d3c3e412823c48fbda4020b8cce70770793a1d21154b66af158bc554edb38c5e"
+    },
+    {
+      "original_path": "/mnt/d/lunwen/EC-CSI\u6295\u7a3f/working/exploration/20261014_matched_evidence_labor/matched_generation/calls/13_FSV-B13_p2p_tests/wrapper.stderr.txt",
+      "snapshot_path": "/mnt/d/lunwen/EC-CSI\u6295\u7a3f/working/exploration/20261014_matched_evidence_labor/matched_generation/setup_history/as_run_main_v1/calls/13_FSV-B13_p2p_tests/wrapper.stderr.txt",
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    {
+      "original_path": "/mnt/d/lunwen/EC-CSI\u6295\u7a3f/working/exploration/20261014_matched_evidence_labor/matched_generation/calls/13_FSV-B13_p2p_tests/wrapper.stdout.txt",
+      "snapshot_path": "/mnt/d/lunwen/EC-CSI\u6295\u7a3f/working/exploration/20261014_matched_evidence_labor/matched_generation/setup_history/as_run_main_v1/calls/13_FSV-B13_p2p_tests/wrapper.stdout.txt",
+      "sha256": "87c7120e5da8ec74b996f145754654ddf18df22637776da6f0bedddfb616560d"
+    },
+    {
+      "original_path": "/mnt/d/lunwen/EC-CSI\u6295\u7a3f/working/exploration/20261014_matched_evidence_labor/matched_generation/calls/13_FSV-B13_p2p_tests/wrapper_summary.json",
+      "snapshot_path": "/mnt/d/lunwen/EC-CSI\u6295\u7a3f/working/exploration/20261014_matched_evidence_labor/matched_generation/setup_history/as_run_main_v1/calls/13_FSV-B13_p2p_tests/wrapper_summary.json",
+      "sha256": "e4964c93741a69bc7c4ec92d2d905a863187e71af0f91ada83b5c5cacf79da6d"
+    },
+    {
+      "original_path": "/mnt/d/lunwen/EC-CSI\u6295\u7a3f/working/exploration/20261014_matched_evidence_labor/matched_generation/method_runs/FSV-B13/P2P_STYLE/FIRST_CANDIDATE_FREEZE.json",
+      "snapshot_path": "/mnt/d/lunwen/EC-CSI\u6295\u7a3f/working/exploration/20261014_matched_evidence_labor/matched_generation/setup_history/as_run_main_v1/method_runs/FSV-B13/P2P_STYLE/FIRST_CANDIDATE_FREEZE.json",
+      "sha256": "847a4c97f634db724f66fa92340b44d2528aa9adcda82fbbe24a3cb63c0dc9d0"
+    },
+    {
+      "original_path": "/mnt/d/lunwen/EC-CSI\u6295\u7a3f/working/exploration/20261014_matched_evidence_labor/matched_generation/method_runs/FSV-B13/P2P_STYLE/first_generation.json",
+      "snapshot_path": "/mnt/d/lunwen/EC-CSI\u6295\u7a3f/working/exploration/20261014_matched_evidence_labor/matched_generation/setup_history/as_run_main_v1/method_runs/FSV-B13/P2P_STYLE/first_generation.json",
+      "sha256": "38ed83a1fb0755c39acdbc5148c5892df2238dd7606e5f1fd2d08ccaae04eec0"
+    },
+    {
+      "original_path": "/mnt/d/lunwen/EC-CSI\u6295\u7a3f/working/exploration/20261014_matched_evidence_labor/matched_generation/method_runs/FSV-B13/P2P_STYLE/GROUNDED_EXTRACTION.json",
+      "snapshot_path": "/mnt/d/lunwen/EC-CSI\u6295\u7a3f/working/exploration/20261014_matched_evidence_labor/matched_generation/setup_history/as_run_main_v1/method_runs/FSV-B13/P2P_STYLE/GROUNDED_EXTRACTION.json",
+      "sha256": "3eb7be503dc75baaab6df0d0b9aab11796692bdcab81584fa040fcaff79bb2e7"
+    },
+    {
+      "original_path": "/mnt/d/lunwen/EC-CSI\u6295\u7a3f/working/exploration/20261014_matched_evidence_labor/matched_generation/method_runs/FSV-B13/P2P_STYLE/GROUNDING_RECEIPT.json",
+      "snapshot_path": "/mnt/d/lunwen/EC-CSI\u6295\u7a3f/working/exploration/20261014_matched_evidence_labor/matched_generation/setup_history/as_run_main_v1/method_runs/FSV-B13/P2P_STYLE/GROUNDING_RECEIPT.json",
+      "sha256": "126b4950b8e40a55ab54fce2fc6ca69bbadae004aa93208c95489775093b8391"
+    },
+    {
+      "original_path": "/mnt/d/lunwen/EC-CSI\u6295\u7a3f/working/exploration/20261014_matched_evidence_labor/matched_generation/method_runs/FSV-B13/P2P_STYLE/p2p_detect.json",
+      "snapshot_path": "/mnt/d/lunwen/EC-CSI\u6295\u7a3f/working/exploration/20261014_matched_evidence_labor/matched_generation/setup_history/as_run_main_v1/method_runs/FSV-B13/P2P_STYLE/p2p_detect.json",
+      "sha256": "8313eed205bff3da6fd8f15cb83b08e613adf109a991b769af1adcf803210186"
+    },
+    {
+      "original_path": "/mnt/d/lunwen/EC-CSI\u6295\u7a3f/working/exploration/20261014_matched_evidence_labor/matched_generation/method_runs/FSV-B13/P2P_STYLE/p2p_extract.json",
+      "snapshot_path": "/mnt/d/lunwen/EC-CSI\u6295\u7a3f/working/exploration/20261014_matched_evidence_labor/matched_generation/setup_history/as_run_main_v1/method_runs/FSV-B13/P2P_STYLE/p2p_extract.json",
+      "sha256": "3eb7be503dc75baaab6df0d0b9aab11796692bdcab81584fa040fcaff79bb2e7"
+    },
+    {
+      "original_path": "/mnt/d/lunwen/EC-CSI\u6295\u7a3f/working/exploration/20261014_matched_evidence_labor/matched_generation/method_runs/FSV-B13/P2P_STYLE/p2p_rego.json",
+      "snapshot_path": "/mnt/d/lunwen/EC-CSI\u6295\u7a3f/working/exploration/20261014_matched_evidence_labor/matched_generation/setup_history/as_run_main_v1/method_runs/FSV-B13/P2P_STYLE/p2p_rego.json",
+      "sha256": "38ed83a1fb0755c39acdbc5148c5892df2238dd7606e5f1fd2d08ccaae04eec0"
+    },
+    {
+      "original_path": "/mnt/d/lunwen/EC-CSI\u6295\u7a3f/working/exploration/20261014_matched_evidence_labor/matched_generation/method_runs/FSV-B13/P2P_STYLE/p2p_tests.json",
+      "snapshot_path": "/mnt/d/lunwen/EC-CSI\u6295\u7a3f/working/exploration/20261014_matched_evidence_labor/matched_generation/setup_history/as_run_main_v1/method_runs/FSV-B13/P2P_STYLE/p2p_tests.json",
+      "sha256": "66d423db3326d6516975809ddcbb162be2516ed3b47f9e4ddf9d1a4f1cb864da"
+    },
+    {
+      "original_path": "/mnt/d/lunwen/EC-CSI\u6295\u7a3f/working/exploration/20261014_matched_evidence_labor/matched_generation/method_runs/FSV-B13/P2P_STYLE/RESULT.json",
+      "snapshot_path": "/mnt/d/lunwen/EC-CSI\u6295\u7a3f/working/exploration/20261014_matched_evidence_labor/matched_generation/setup_history/as_run_main_v1/method_runs/FSV-B13/P2P_STYLE/RESULT.json",
+      "sha256": "9c9286aceb0897588e7014154149849362642206e59e4b9778e794b05e0172f5"
+    },
+    {
+      "original_path": "/mnt/d/lunwen/EC-CSI\u6295\u7a3f/working/exploration/20261014_matched_evidence_labor/matched_generation/method_runs/FSV-S03/AUTOPAC_STYLE/autopac_generate.json",
+      "snapshot_path": "/mnt/d/lunwen/EC-CSI\u6295\u7a3f/working/exploration/20261014_matched_evidence_labor/matched_generation/setup_history/as_run_main_v1/method_runs/FSV-S03/AUTOPAC_STYLE/autopac_generate.json",
+      "sha256": "49416e3a7f0eeb853daa473c63dc6c71aaae1c7b2fbc0fdfb39d5a54018e379d"
+    },
+    {
+      "original_path": "/mnt/d/lunwen/EC-CSI\u6295\u7a3f/working/exploration/20261014_matched_evidence_labor/matched_generation/method_runs/FSV-S03/AUTOPAC_STYLE/autopac_judge.json",
+      "snapshot_path": "/mnt/d/lunwen/EC-CSI\u6295\u7a3f/working/exploration/20261014_matched_evidence_labor/matched_generation/setup_history/as_run_main_v1/method_runs/FSV-S03/AUTOPAC_STYLE/autopac_judge.json",
+      "sha256": "2f2f4fa27ccd9c8d6477c226a6f9547975256455962da20867bed3f93f113092"
+    },
+    {
+      "original_path": "/mnt/d/lunwen/EC-CSI\u6295\u7a3f/working/exploration/20261014_matched_evidence_labor/matched_generation/method_runs/FSV-S03/AUTOPAC_STYLE/DEVELOPER_TESTS.json",
+      "snapshot_path": "/mnt/d/lunwen/EC-CSI\u6295\u7a3f/working/exploration/20261014_matched_evidence_labor/matched_generation/setup_history/as_run_main_v1/method_runs/FSV-S03/AUTOPAC_STYLE/DEVELOPER_TESTS.json",
+      "sha256": "cf2b2d8262fd223c27ce5c0b673c049723199858bf6aed6b2eed95cc03442450"
+    },
+    {
+      "original_path": "/mnt/d/lunwen/EC-CSI\u6295\u7a3f/working/exploration/20261014_matched_evidence_labor/matched_generation/method_runs/FSV-S03/AUTOPAC_STYLE/FINAL_POLICY_FREEZE.json",
+      "snapshot_path": "/mnt/d/lunwen/EC-CSI\u6295\u7a3f/working/exploration/20261014_matched_evidence_labor/matched_generation/setup_history/as_run_main_v1/method_runs/FSV-S03/AUTOPAC_STYLE/FINAL_POLICY_FREEZE.json",
+      "sha256": "5869d9b556c8c6418ca9d74417a9cf1e16f26a2016b2123c379828018ff0e772"
+    },
+    {
+      "original_path": "/mnt/d/lunwen/EC-CSI\u6295\u7a3f/working/exploration/20261014_matched_evidence_labor/matched_generation/method_runs/FSV-S03/AUTOPAC_STYLE/FIRST_CANDIDATE_FREEZE.json",
+      "snapshot_path": "/mnt/d/lunwen/EC-CSI\u6295\u7a3f/working/exploration/20261014_matched_evidence_labor/matched_generation/setup_history/as_run_main_v1/method_runs/FSV-S03/AUTOPAC_STYLE/FIRST_CANDIDATE_FREEZE.json",
+      "sha256": "06c66d6ba62d2e5ddb7069e98637a37f261424e6ce39f4461c958890f4b69199"
+    },
+    {
+      "original_path": "/mnt/d/lunwen/EC-CSI\u6295\u7a3f/working/exploration/20261014_matched_evidence_labor/matched_generation/method_runs/FSV-S03/AUTOPAC_STYLE/first_generation.json",
+      "snapshot_path": "/mnt/d/lunwen/EC-CSI\u6295\u7a3f/working/exploration/20261014_matched_evidence_labor/matched_generation/setup_history/as_run_main_v1/method_runs/FSV-S03/AUTOPAC_STYLE/first_generation.json",
+      "sha256": "49416e3a7f0eeb853daa473c63dc6c71aaae1c7b2fbc0fdfb39d5a54018e379d"
+    },
+    {
+      "original_path": "/mnt/d/lunwen/EC-CSI\u6295\u7a3f/working/exploration/20261014_matched_evidence_labor/matched_generation/method_runs/FSV-S03/AUTOPAC_STYLE/GENERATION_TERMINAL_FREEZE.json",
+      "snapshot_path": "/mnt/d/lunwen/EC-CSI\u6295\u7a3f/working/exploration/20261014_matched_evidence_labor/matched_generation/setup_history/as_run_main_v1/method_runs/FSV-S03/AUTOPAC_STYLE/GENERATION_TERMINAL_FREEZE.json",
+      "sha256": "ff1d0a2fc36d56d7fb4bdc0addca3738d4a74a4d2ac7f2d9f1c958cba77afccc"
+    },
+    {
+      "original_path": "/mnt/d/lunwen/EC-CSI\u6295\u7a3f/working/exploration/20261014_matched_evidence_labor/matched_generation/method_runs/FSV-S03/AUTOPAC_STYLE/INITIAL_DEVELOPMENT.json",
+      "snapshot_path": "/mnt/d/lunwen/EC-CSI\u6295\u7a3f/working/exploration/20261014_matched_evidence_labor/matched_generation/setup_history/as_run_main_v1/method_runs/FSV-S03/AUTOPAC_STYLE/INITIAL_DEVELOPMENT.json",
+      "sha256": "4b920aad46c85bf7900aae24d63f5c85af66b9f661959f783a83c1c305434014"
+    },
+    {
+      "original_path": "/mnt/d/lunwen/EC-CSI\u6295\u7a3f/working/exploration/20261014_matched_evidence_labor/matched_generation/method_runs/FSV-S03/AUTOPAC_STYLE/repair.json",
+      "snapshot_path": "/mnt/d/lunwen/EC-CSI\u6295\u7a3f/working/exploration/20261014_matched_evidence_labor/matched_generation/setup_history/as_run_main_v1/method_runs/FSV-S03/AUTOPAC_STYLE/repair.json",
+      "sha256": "b9f40ec0986a70ef47902a3edbb199f6d34f7aed23e4c589330ed3b53f49f68b"
+    },
+    {
+      "original_path": "/mnt/d/lunwen/EC-CSI\u6295\u7a3f/working/exploration/20261014_matched_evidence_labor/matched_generation/method_runs/FSV-S03/AUTOPAC_STYLE/RESULT.json",
+      "snapshot_path": "/mnt/d/lunwen/EC-CSI\u6295\u7a3f/working/exploration/20261014_matched_evidence_labor/matched_generation/setup_history/as_run_main_v1/method_runs/FSV-S03/AUTOPAC_STYLE/RESULT.json",
+      "sha256": "bfcf3bf769cfc98f5227380f017c516ccc33f8e45927451347c9921e21c343bd"
+    },
+    {
+      "original_path": "/mnt/d/lunwen/EC-CSI\u6295\u7a3f/working/exploration/20261014_matched_evidence_labor/matched_generation/method_runs/FSV-S03/AUTOPAC_STYLE/initial/ast_after.stderr.txt",
+      "snapshot_path": "/mnt/d/lunwen/EC-CSI\u6295\u7a3f/working/exploration/20261014_matched_evidence_labor/matched_generation/setup_history/as_run_main_v1/method_runs/FSV-S03/AUTOPAC_STYLE/initial/ast_after.stderr.txt",
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    {
+      "original_path": "/mnt/d/lunwen/EC-CSI\u6295\u7a3f/working/exploration/20261014_matched_evidence_labor/matched_generation/method_runs/FSV-S03/AUTOPAC_STYLE/initial/ast_after.stdout.txt",
+      "snapshot_path": "/mnt/d/lunwen/EC-CSI\u6295\u7a3f/working/exploration/20261014_matched_evidence_labor/matched_generation/setup_history/as_run_main_v1/method_runs/FSV-S03/AUTOPAC_STYLE/initial/ast_after.stdout.txt",
+      "sha256": "8dc726fc9841ba82d50a49538d9d62a2ff11eac5a2b3776eb9cb802687cb7732"
+    },
+    {
+      "original_path": "/mnt/d/lunwen/EC-CSI\u6295\u7a3f/working/exploration/20261014_matched_evidence_labor/matched_generation/method_runs/FSV-S03/AUTOPAC_STYLE/initial/ast_before.stderr.txt",
+      "snapshot_path": "/mnt/d/lunwen/EC-CSI\u6295\u7a3f/working/exploration/20261014_matched_evidence_labor/matched_generation/setup_history/as_run_main_v1/method_runs/FSV-S03/AUTOPAC_STYLE/initial/ast_before.stderr.txt",
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    {
+      "original_path": "/mnt/d/lunwen/EC-CSI\u6295\u7a3f/working/exploration/20261014_matched_evidence_labor/matched_generation/method_runs/FSV-S03/AUTOPAC_STYLE/initial/ast_before.stdout.txt",
+      "snapshot_path": "/mnt/d/lunwen/EC-CSI\u6295\u7a3f/working/exploration/20261014_matched_evidence_labor/matched_generation/setup_history/as_run_main_v1/method_runs/FSV-S03/AUTOPAC_STYLE/initial/ast_before.stdout.txt",
+      "sha256": "8dc726fc9841ba82d50a49538d9d62a2ff11eac5a2b3776eb9cb802687cb7732"
+    },
+    {
+      "original_path": "/mnt/d/lunwen/EC-CSI\u6295\u7a3f/working/exploration/20261014_matched_evidence_labor/matched_generation/method_runs/FSV-S03/AUTOPAC_STYLE/initial/CHECKS.json",
+      "snapshot_path": "/mnt/d/lunwen/EC-CSI\u6295\u7a3f/working/exploration/20261014_matched_evidence_labor/matched_generation/setup_history/as_run_main_v1/method_runs/FSV-S03/AUTOPAC_STYLE/initial/CHECKS.json",
+      "sha256": "424e7b23ee91e1690a3dbd6ccd24f175eaea4d28081bc12b84ce3e2e807b3cfe"
+    },
+    {
+      "original_path": "/mnt/d/lunwen/EC-CSI\u6295\u7a3f/working/exploration/20261014_matched_evidence_labor/matched_generation/method_runs/FSV-S03/AUTOPAC_STYLE/initial/compile.stderr.txt",
+      "snapshot_path": "/mnt/d/lunwen/EC-CSI\u6295\u7a3f/working/exploration/20261014_matched_evidence_labor/matched_generation/setup_history/as_run_main_v1/method_runs/FSV-S03/AUTOPAC_STYLE/initial/compile.stderr.txt",
+      "sha256": "41ed296429e2d736390474a6132bb7d359e63b5951ce76aa593f77eb0c6aa6c9"
+    },
+    {
+      "original_path": "/mnt/d/lunwen/EC-CSI\u6295\u7a3f/working/exploration/20261014_matched_evidence_labor/matched_generation/method_runs/FSV-S03/AUTOPAC_STYLE/initial/compile.stdout.txt",
+      "snapshot_path": "/mnt/d/lunwen/EC-CSI\u6295\u7a3f/working/exploration/20261014_matched_evidence_labor/matched_generation/setup_history/as_run_main_v1/method_runs/FSV-S03/AUTOPAC_STYLE/initial/compile.stdout.txt",
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    {
+      "original_path": "/mnt/d/lunwen/EC-CSI\u6295\u7a3f/working/exploration/20261014_matched_evidence_labor/matched_generation/method_runs/FSV-S03/AUTOPAC_STYLE/initial/format.stderr.txt",
+      "snapshot_path": "/mnt/d/lunwen/EC-CSI\u6295\u7a3f/working/exploration/20261014_matched_evidence_labor/matched_generation/setup_history/as_run_main_v1/method_runs/FSV-S03/AUTOPAC_STYLE/initial/format.stderr.txt",
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    {
+      "original_path": "/mnt/d/lunwen/EC-CSI\u6295\u7a3f/working/exploration/20261014_matched_evidence_labor/matched_generation/method_runs/FSV-S03/AUTOPAC_STYLE/initial/format.stdout.txt",
+      "snapshot_path": "/mnt/d/lunwen/EC-CSI\u6295\u7a3f/working/exploration/20261014_matched_evidence_labor/matched_generation/setup_history/as_run_main_v1/method_runs/FSV-S03/AUTOPAC_STYLE/initial/format.stdout.txt",
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    {
+      "original_path": "/mnt/d/lunwen/EC-CSI\u6295\u7a3f/working/exploration/20261014_matched_evidence_labor/matched_generation/method_runs/FSV-S03/AUTOPAC_STYLE/initial/FORMAT_RECEIPT.json",
+      "snapshot_path": "/mnt/d/lunwen/EC-CSI\u6295\u7a3f/working/exploration/20261014_matched_evidence_labor/matched_generation/setup_history/as_run_main_v1/method_runs/FSV-S03/AUTOPAC_STYLE/initial/FORMAT_RECEIPT.json",
+      "sha256": "432dc2a9d3ca147eb6f2a2c6c8948f363430c83d96d423ce19d81f091ddc022e"
+    },
+    {
+      "original_path": "/mnt/d/lunwen/EC-CSI\u6295\u7a3f/working/exploration/20261014_matched_evidence_labor/matched_generation/method_runs/FSV-S03/AUTOPAC_STYLE/initial/original.rego",
+      "snapshot_path": "/mnt/d/lunwen/EC-CSI\u6295\u7a3f/working/exploration/20261014_matched_evidence_labor/matched_generation/setup_history/as_run_main_v1/method_runs/FSV-S03/AUTOPAC_STYLE/initial/original.rego",
+      "sha256": "979a29451355e29190d1d00cd5eeee1dc48643165305acaf454d8cc4ebe1584a"
+    },
+    {
+      "original_path": "/mnt/d/lunwen/EC-CSI\u6295\u7a3f/working/exploration/20261014_matched_evidence_labor/matched_generation/method_runs/FSV-S03/AUTOPAC_STYLE/initial/external_pilot/policy.rego",
+      "snapshot_path": "/mnt/d/lunwen/EC-CSI\u6295\u7a3f/working/exploration/20261014_matched_evidence_labor/matched_generation/setup_history/as_run_main_v1/method_runs/FSV-S03/AUTOPAC_STYLE/initial/external_pilot/policy.rego",
+      "sha256": "f9d8bc50071d052c2eae80fd0dce85babdba44830d8529034d402e2cc01b31e2"
+    },
+    {
+      "original_path": "/mnt/d/lunwen/EC-CSI\u6295\u7a3f/working/exploration/20261014_matched_evidence_labor/matched_generation/method_runs/FSV-S03/AUTOPAC_STYLE/repaired/ast_after.stderr.txt",
+      "snapshot_path": "/mnt/d/lunwen/EC-CSI\u6295\u7a3f/working/exploration/20261014_matched_evidence_labor/matched_generation/setup_history/as_run_main_v1/method_runs/FSV-S03/AUTOPAC_STYLE/repaired/ast_after.stderr.txt",
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    {
+      "original_path": "/mnt/d/lunwen/EC-CSI\u6295\u7a3f/working/exploration/20261014_matched_evidence_labor/matched_generation/method_runs/FSV-S03/AUTOPAC_STYLE/repaired/ast_after.stdout.txt",
+      "snapshot_path": "/mnt/d/lunwen/EC-CSI\u6295\u7a3f/working/exploration/20261014_matched_evidence_labor/matched_generation/setup_history/as_run_main_v1/method_runs/FSV-S03/AUTOPAC_STYLE/repaired/ast_after.stdout.txt",
+      "sha256": "01a6fd92e2e5e0abc3614dc4aa5761d4eefdc38242141ff2ea2a7ff7bf25ad86"
+    },
+    {
+      "original_path": "/mnt/d/lunwen/EC-CSI\u6295\u7a3f/working/exploration/20261014_matched_evidence_labor/matched_generation/method_runs/FSV-S03/AUTOPAC_STYLE/repaired/ast_before.stderr.txt",
+      "snapshot_path": "/mnt/d/lunwen/EC-CSI\u6295\u7a3f/working/exploration/20261014_matched_evidence_labor/matched_generation/setup_history/as_run_main_v1/method_runs/FSV-S03/AUTOPAC_STYLE/repaired/ast_before.stderr.txt",
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    {
+      "original_path": "/mnt/d/lunwen/EC-CSI\u6295\u7a3f/working/exploration/20261014_matched_evidence_labor/matched_generation/method_runs/FSV-S03/AUTOPAC_STYLE/repaired/ast_before.stdout.txt",
+      "snapshot_path": "/mnt/d/lunwen/EC-CSI\u6295\u7a3f/working/exploration/20261014_matched_evidence_labor/matched_generation/setup_history/as_run_main_v1/method_runs/FSV-S03/AUTOPAC_STYLE/repaired/ast_before.stdout.txt",
+      "sha256": "01a6fd92e2e5e0abc3614dc4aa5761d4eefdc38242141ff2ea2a7ff7bf25ad86"
+    },
+    {
+      "original_path": "/mnt/d/lunwen/EC-CSI\u6295\u7a3f/working/exploration/20261014_matched_evidence_labor/matched_generation/method_runs/FSV-S03/AUTOPAC_STYLE/repaired/CHECKS.json",
+      "snapshot_path": "/mnt/d/lunwen/EC-CSI\u6295\u7a3f/working/exploration/20261014_matched_evidence_labor/matched_generation/setup_history/as_run_main_v1/method_runs/FSV-S03/AUTOPAC_STYLE/repaired/CHECKS.json",
+      "sha256": "4a4b3bfa49c37e9d448729fdfa0423c06a3f7ad30b60f813dd778db8bc1b6dff"
+    },
+    {
+      "original_path": "/mnt/d/lunwen/EC-CSI\u6295\u7a3f/working/exploration/20261014_matched_evidence_labor/matched_generation/method_runs/FSV-S03/AUTOPAC_STYLE/repaired/compile.stderr.txt",
+      "snapshot_path": "/mnt/d/lunwen/EC-CSI\u6295\u7a3f/working/exploration/20261014_matched_evidence_labor/matched_generation/setup_history/as_run_main_v1/method_runs/FSV-S03/AUTOPAC_STYLE/repaired/compile.stderr.txt",
+      "sha256": "9e417ee71271d912763840f14645a529ec6249a226e0f876df8eaa5882bf38a6"
+    },
+    {
+      "original_path": "/mnt/d/lunwen/EC-CSI\u6295\u7a3f/working/exploration/20261014_matched_evidence_labor/matched_generation/method_runs/FSV-S03/AUTOPAC_STYLE/repaired/compile.stdout.txt",
+      "snapshot_path": "/mnt/d/lunwen/EC-CSI\u6295\u7a3f/working/exploration/20261014_matched_evidence_labor/matched_generation/setup_history/as_run_main_v1/method_runs/FSV-S03/AUTOPAC_STYLE/repaired/compile.stdout.txt",
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    {
+      "original_path": "/mnt/d/lunwen/EC-CSI\u6295\u7a3f/working/exploration/20261014_matched_evidence_labor/matched_generation/method_runs/FSV-S03/AUTOPAC_STYLE/repaired/format.stderr.txt",
+      "snapshot_path": "/mnt/d/lunwen/EC-CSI\u6295\u7a3f/working/exploration/20261014_matched_evidence_labor/matched_generation/setup_history/as_run_main_v1/method_runs/FSV-S03/AUTOPAC_STYLE/repaired/format.stderr.txt",
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    {
+      "original_path": "/mnt/d/lunwen/EC-CSI\u6295\u7a3f/working/exploration/20261014_matched_evidence_labor/matched_generation/method_runs/FSV-S03/AUTOPAC_STYLE/repaired/format.stdout.txt",
+      "snapshot_path": "/mnt/d/lunwen/EC-CSI\u6295\u7a3f/working/exploration/20261014_matched_evidence_labor/matched_generation/setup_history/as_run_main_v1/method_runs/FSV-S03/AUTOPAC_STYLE/repaired/format.stdout.txt",
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    {
+      "original_path": "/mnt/d/lunwen/EC-CSI\u6295\u7a3f/working/exploration/20261014_matched_evidence_labor/matched_generation/method_runs/FSV-S03/AUTOPAC_STYLE/repaired/FORMAT_RECEIPT.json",
+      "snapshot_path": "/mnt/d/lunwen/EC-CSI\u6295\u7a3f/working/exploration/20261014_matched_evidence_labor/matched_generation/setup_history/as_run_main_v1/method_runs/FSV-S03/AUTOPAC_STYLE/repaired/FORMAT_RECEIPT.json",
+      "sha256": "0e30b519222b4af9ce1c851d1f114742a80a7936ae7591b572f5a7d548e5e97f"
+    },
+    {
+      "original_path": "/mnt/d/lunwen/EC-CSI\u6295\u7a3f/working/exploration/20261014_matched_evidence_labor/matched_generation/method_runs/FSV-S03/AUTOPAC_STYLE/repaired/original.rego",
+      "snapshot_path": "/mnt/d/lunwen/EC-CSI\u6295\u7a3f/working/exploration/20261014_matched_evidence_labor/matched_generation/setup_history/as_run_main_v1/method_runs/FSV-S03/AUTOPAC_STYLE/repaired/original.rego",
+      "sha256": "ef5d878b84c37ed3c9ccdaf5c272c903d7db6dca0e386da90324622845d2131b"
+    },
+    {
+      "original_path": "/mnt/d/lunwen/EC-CSI\u6295\u7a3f/working/exploration/20261014_matched_evidence_labor/matched_generation/method_runs/FSV-S03/AUTOPAC_STYLE/repaired/external_pilot/policy.rego",
+      "snapshot_path": "/mnt/d/lunwen/EC-CSI\u6295\u7a3f/working/exploration/20261014_matched_evidence_labor/matched_generation/setup_history/as_run_main_v1/method_runs/FSV-S03/AUTOPAC_STYLE/repaired/external_pilot/policy.rego",
+      "sha256": "c4b87aa50a5e98d75eecfb98590f861083d123b56bfe0f923861bd6e328bba94"
+    },
+    {
+      "original_path": "/mnt/d/lunwen/EC-CSI\u6295\u7a3f/working/exploration/20261014_matched_evidence_labor/matched_generation/method_runs/FSV-S03/ECAS_MATCHED/ecas_generate.json",
+      "snapshot_path": "/mnt/d/lunwen/EC-CSI\u6295\u7a3f/working/exploration/20261014_matched_evidence_labor/matched_generation/setup_history/as_run_main_v1/method_runs/FSV-S03/ECAS_MATCHED/ecas_generate.json",
+      "sha256": "5dffa34bda70cb5431d5947735549c906b2bc9b3a7c937ccdf2a5bb848d684d5"
+    },
+    {
+      "original_path": "/mnt/d/lunwen/EC-CSI\u6295\u7a3f/working/exploration/20261014_matched_evidence_labor/matched_generation/method_runs/FSV-S03/ECAS_MATCHED/FINAL_POLICY_FREEZE.json",
+      "snapshot_path": "/mnt/d/lunwen/EC-CSI\u6295\u7a3f/working/exploration/20261014_matched_evidence_labor/matched_generation/setup_history/as_run_main_v1/method_runs/FSV-S03/ECAS_MATCHED/FINAL_POLICY_FREEZE.json",
+      "sha256": "0de1d3c6fc70d48d70ffd713a4b742b3617424da39fad6d1141af6f66489db21"
+    },
+    {
+      "original_path": "/mnt/d/lunwen/EC-CSI\u6295\u7a3f/working/exploration/20261014_matched_evidence_labor/matched_generation/method_runs/FSV-S03/ECAS_MATCHED/first_candidate.json",
+      "snapshot_path": "/mnt/d/lunwen/EC-CSI\u6295\u7a3f/working/exploration/20261014_matched_evidence_labor/matched_generation/setup_history/as_run_main_v1/method_runs/FSV-S03/ECAS_MATCHED/first_candidate.json",
+      "sha256": "12ea58385028e162ad95d0661f77b6468c329462dd3900b963f82b5117ab4890"
+    },
+    {
+      "original_path": "/mnt/d/lunwen/EC-CSI\u6295\u7a3f/working/exploration/20261014_matched_evidence_labor/matched_generation/method_runs/FSV-S03/ECAS_MATCHED/FIRST_CANDIDATE_FREEZE.json",
+      "snapshot_path": "/mnt/d/lunwen/EC-CSI\u6295\u7a3f/working/exploration/20261014_matched_evidence_labor/matched_generation/setup_history/as_run_main_v1/method_runs/FSV-S03/ECAS_MATCHED/FIRST_CANDIDATE_FREEZE.json",
+      "sha256": "3189042154b9d10761a6c73c1a78aa7b7b37bf684840a56c7ffeb13e7e7131b0"
+    },
+    {
+      "original_path": "/mnt/d/lunwen/EC-CSI\u6295\u7a3f/working/exploration/20261014_matched_evidence_labor/matched_generation/method_runs/FSV-S03/ECAS_MATCHED/GENERATION_TERMINAL_FREEZE.json",
+      "snapshot_path": "/mnt/d/lunwen/EC-CSI\u6295\u7a3f/working/exploration/20261014_matched_evidence_labor/matched_generation/setup_history/as_run_main_v1/method_runs/FSV-S03/ECAS_MATCHED/GENERATION_TERMINAL_FREEZE.json",
+      "sha256": "dbfe5efa93e9a6d4efa266415ccdc585161ff9e96271887e02f64d1f368eb1eb"
+    },
+    {
+      "original_path": "/mnt/d/lunwen/EC-CSI\u6295\u7a3f/working/exploration/20261014_matched_evidence_labor/matched_generation/method_runs/FSV-S03/ECAS_MATCHED/RESULT.json",
+      "snapshot_path": "/mnt/d/lunwen/EC-CSI\u6295\u7a3f/working/exploration/20261014_matched_evidence_labor/matched_generation/setup_history/as_run_main_v1/method_runs/FSV-S03/ECAS_MATCHED/RESULT.json",
+      "sha256": "3fa01e59be6755ebc3296fc6687306a4eff36c7c0da1f018dcde3743c07d6778"
+    },
+    {
+      "original_path": "/mnt/d/lunwen/EC-CSI\u6295\u7a3f/working/exploration/20261014_matched_evidence_labor/matched_generation/method_runs/FSV-S03/ECAS_MATCHED/initial/admitted_policy.json",
+      "snapshot_path": "/mnt/d/lunwen/EC-CSI\u6295\u7a3f/working/exploration/20261014_matched_evidence_labor/matched_generation/setup_history/as_run_main_v1/method_runs/FSV-S03/ECAS_MATCHED/initial/admitted_policy.json",
+      "sha256": "5f370d900883fad34ac8eb547f3f0c18fcb4034f387204f52afeba654320f57f"
+    },
+    {
+      "original_path": "/mnt/d/lunwen/EC-CSI\u6295\u7a3f/working/exploration/20261014_matched_evidence_labor/matched_generation/method_runs/FSV-S03/ECAS_MATCHED/initial/candidate.json",
+      "snapshot_path": "/mnt/d/lunwen/EC-CSI\u6295\u7a3f/working/exploration/20261014_matched_evidence_labor/matched_generation/setup_history/as_run_main_v1/method_runs/FSV-S03/ECAS_MATCHED/initial/candidate.json",
+      "sha256": "12ea58385028e162ad95d0661f77b6468c329462dd3900b963f82b5117ab4890"
+    },
+    {
+      "original_path": "/mnt/d/lunwen/EC-CSI\u6295\u7a3f/working/exploration/20261014_matched_evidence_labor/matched_generation/method_runs/FSV-S03/ECAS_MATCHED/initial/CHECKS.json",
+      "snapshot_path": "/mnt/d/lunwen/EC-CSI\u6295\u7a3f/working/exploration/20261014_matched_evidence_labor/matched_generation/setup_history/as_run_main_v1/method_runs/FSV-S03/ECAS_MATCHED/initial/CHECKS.json",
+      "sha256": "ad53ef49d3aad67159374b23536a95d679d6898ee1c9e41ef9c1b2222a5a718e"
+    },
+    {
+      "original_path": "/mnt/d/lunwen/EC-CSI\u6295\u7a3f/working/exploration/20261014_matched_evidence_labor/matched_generation/method_runs/FSV-S03/ECAS_MATCHED/initial/compiled_proposal.json",
+      "snapshot_path": "/mnt/d/lunwen/EC-CSI\u6295\u7a3f/working/exploration/20261014_matched_evidence_labor/matched_generation/setup_history/as_run_main_v1/method_runs/FSV-S03/ECAS_MATCHED/initial/compiled_proposal.json",
+      "sha256": "8d29daf4e5d324a199cc985ece38ecb629bdd6ad2cfa9d21fc5296563f1e8e85"
+    },
+    {
+      "original_path": "/mnt/d/lunwen/EC-CSI\u6295\u7a3f/working/exploration/20261014_matched_evidence_labor/matched_generation/method_runs/FSV-S03/P2P_STYLE/GENERATION_TERMINAL_FREEZE.json",
+      "snapshot_path": "/mnt/d/lunwen/EC-CSI\u6295\u7a3f/working/exploration/20261014_matched_evidence_labor/matched_generation/setup_history/as_run_main_v1/method_runs/FSV-S03/P2P_STYLE/GENERATION_TERMINAL_FREEZE.json",
+      "sha256": "6ba99e393e2d7a85f0d46d5bf8a522c2ae18fca1bde0fabe32025b50081954e7"
+    },
+    {
+      "original_path": "/mnt/d/lunwen/EC-CSI\u6295\u7a3f/working/exploration/20261014_matched_evidence_labor/matched_generation/method_runs/FSV-S03/P2P_STYLE/p2p_detect.json",
+      "snapshot_path": "/mnt/d/lunwen/EC-CSI\u6295\u7a3f/working/exploration/20261014_matched_evidence_labor/matched_generation/setup_history/as_run_main_v1/method_runs/FSV-S03/P2P_STYLE/p2p_detect.json",
+      "sha256": "9466c5a07f00a39cb5956afce3112d58331974814f8e49cc7b6a0fc42e84d46e"
+    },
+    {
+      "original_path": "/mnt/d/lunwen/EC-CSI\u6295\u7a3f/working/exploration/20261014_matched_evidence_labor/matched_generation/method_runs/FSV-S03/P2P_STYLE/RESULT.json",
+      "snapshot_path": "/mnt/d/lunwen/EC-CSI\u6295\u7a3f/working/exploration/20261014_matched_evidence_labor/matched_generation/setup_history/as_run_main_v1/method_runs/FSV-S03/P2P_STYLE/RESULT.json",
+      "sha256": "4ee58a7e355670a71d8a3d2f2db77747191b817a52fa54215b28c9a81b7bdee2"
+    },
+    {
+      "original_path": "/mnt/d/lunwen/EC-CSI\u6295\u7a3f/working/exploration/20261014_matched_evidence_labor/matched_generation/EXECUTION_INPUT_MANIFEST.json",
+      "snapshot_path": "/mnt/d/lunwen/EC-CSI\u6295\u7a3f/working/exploration/20261014_matched_evidence_labor/matched_generation/setup_history/as_run_main_v1/EXECUTION_INPUT_MANIFEST.json",
+      "sha256": "99d045785317201c9cda80c5db244d44a9ecf2a35276458f24b642dfa8420c1c"
+    },
+    {
+      "original_path": "/mnt/d/lunwen/EC-CSI\u6295\u7a3f/working/exploration/20261014_matched_evidence_labor/matched_generation/EXECUTION_STATE.json",
+      "snapshot_path": "/mnt/d/lunwen/EC-CSI\u6295\u7a3f/working/exploration/20261014_matched_evidence_labor/matched_generation/setup_history/as_run_main_v1/EXECUTION_STATE.json",
+      "sha256": "53f76295bf2b302ac6fb26661a470f945ac272889dda197f40100f35f8c21aed"
+    },
+    {
+      "original_path": "/mnt/d/lunwen/EC-CSI\u6295\u7a3f/working/exploration/20261014_matched_evidence_labor/matched_generation/CALL_LEDGER.json",
+      "snapshot_path": "/mnt/d/lunwen/EC-CSI\u6295\u7a3f/working/exploration/20261014_matched_evidence_labor/matched_generation/setup_history/as_run_main_v1/CALL_LEDGER.json",
+      "sha256": "4c11838bcd7dabb8a3934ccbbde9802179fc84734b0c22d14d7fe9faa3b6c62e"
+    },
+    {
+      "original_path": "/mnt/d/lunwen/EC-CSI\u6295\u7a3f/working/exploration/20261014_matched_evidence_labor/matched_generation/T0_RECEIPT.json",
+      "snapshot_path": "/mnt/d/lunwen/EC-CSI\u6295\u7a3f/working/exploration/20261014_matched_evidence_labor/matched_generation/setup_history/as_run_main_v1/T0_RECEIPT.json",
+      "sha256": "9db949d1f992d3c2192745ad52586b9fe0521bea510adfc406d899d88a92fdca"
+    },
+    {
+      "original_path": "/mnt/d/lunwen/EC-CSI\u6295\u7a3f/working/exploration/20261014_matched_evidence_labor/matched_generation/T0_EVIDENCE.json",
+      "snapshot_path": "/mnt/d/lunwen/EC-CSI\u6295\u7a3f/working/exploration/20261014_matched_evidence_labor/matched_generation/setup_history/as_run_main_v1/T0_EVIDENCE.json",
+      "sha256": "a614f0a01a11129142b41b186cd60aa529689543cf69b4de405200df9ef55e28"
+    },
+    {
+      "original_path": "/mnt/d/lunwen/EC-CSI\u6295\u7a3f/working/exploration/20261014_matched_evidence_labor/matched_generation/SCOPED_GATE_READY.json",
+      "snapshot_path": "/mnt/d/lunwen/EC-CSI\u6295\u7a3f/working/exploration/20261014_matched_evidence_labor/matched_generation/setup_history/as_run_main_v1/SCOPED_GATE_READY.json",
+      "sha256": "a496af5ae131243da32ff283ba6184d81853a8b40399a59e8254025995dde2f5"
+    },
+    {
+      "original_path": "/mnt/d/lunwen/EC-CSI\u6295\u7a3f/working/exploration/20261014_matched_evidence_labor/matched_generation/DISPATCH_AUTHORIZATION.json",
+      "snapshot_path": "/mnt/d/lunwen/EC-CSI\u6295\u7a3f/working/exploration/20261014_matched_evidence_labor/matched_generation/setup_history/as_run_main_v1/DISPATCH_AUTHORIZATION.json",
+      "sha256": "165930ed5478cddbcaf3b5895e903d840e346c71dde7f9e922d259f361c81f80"
+    },
+    {
+      "original_path": "/mnt/d/lunwen/EC-CSI\u6295\u7a3f/working/exploration/20261014_matched_evidence_labor/matched_generation/TOKEN_GATE_READY.json",
+      "snapshot_path": "/mnt/d/lunwen/EC-CSI\u6295\u7a3f/working/exploration/20261014_matched_evidence_labor/matched_generation/setup_history/as_run_main_v1/TOKEN_GATE_READY.json",
+      "sha256": "105f3338d2eb08c22970286743c29701c9eb151b26260527baea4e1f4f7aab6a"
+    },
+    {
+      "original_path": "/mnt/d/lunwen/EC-CSI\u6295\u7a3f/working/exploration/20261014_matched_evidence_labor/matched_generation/matched-generation-run-v1.request.json",
+      "snapshot_path": "/mnt/d/lunwen/EC-CSI\u6295\u7a3f/working/exploration/20261014_matched_evidence_labor/matched_generation/setup_history/as_run_main_v1/matched-generation-run-v1.request.json",
+      "sha256": "735a8525237e694bce78d9bafe0c95beb77c08fe914b42d5a655dc41b0fa6cc6"
+    }
+  ],
+  "actual_paid_attempts": 13,
+  "failed_method_branch": "FSV-B13/P2P_STYLE",
+  "new_API_calls": 0,
+  "final_evaluation_read": false
+}

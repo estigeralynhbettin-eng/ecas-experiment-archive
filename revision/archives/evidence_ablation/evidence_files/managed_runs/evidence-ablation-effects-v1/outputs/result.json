@@ -1,0 +1,101 @@
+{
+  "status": "COMPLETED",
+  "rows": 95,
+  "summary": {
+    "unique_cases": 7,
+    "parent_candidates": 11,
+    "variant_rows": 95,
+    "model_calls": 0,
+    "original_full_admitted": 11,
+    "original_request_pair_correct": 8,
+    "original_request_pair_wrong_or_partial": 3,
+    "per_variant": {
+      "evidence_insufficient": {
+        "parents": 11,
+        "eligible_contrasts": 11,
+        "full_admitted": 0,
+        "full_admission_rejected": 11,
+        "contract_schema_failures": 0,
+        "ir_schema_or_type_failures": 0,
+        "shape_compiled": 11
+      },
+      "evidence_refs_absent": {
+        "parents": 11,
+        "eligible_contrasts": 11,
+        "full_admitted": 0,
+        "full_admission_rejected": 11,
+        "contract_schema_failures": 0,
+        "ir_schema_or_type_failures": 0,
+        "shape_compiled": 11
+      },
+      "evidence_version_mismatch": {
+        "parents": 11,
+        "eligible_contrasts": 11,
+        "full_admitted": 0,
+        "full_admission_rejected": 11,
+        "contract_schema_failures": 0,
+        "ir_schema_or_type_failures": 0,
+        "shape_compiled": 11
+      },
+      "original": {
+        "parents": 11,
+        "eligible_contrasts": 11,
+        "full_admitted": 11,
+        "full_admission_rejected": 0,
+        "contract_schema_failures": 0,
+        "ir_schema_or_type_failures": 0,
+        "shape_compiled": 11
+      },
+      "required_binding_facts_absent": {
+        "parents": 11,
+        "eligible_contrasts": 11,
+        "full_admitted": 0,
+        "full_admission_rejected": 11,
+        "contract_schema_failures": 0,
+        "ir_schema_or_type_failures": 0,
+        "shape_compiled": 11
+      },
+      "schema_ir_unknown_op": {
+        "parents": 11,
+        "eligible_contrasts": 0,
+        "full_admitted": 0,
+        "full_admission_rejected": 0,
+        "contract_schema_failures": 0,
+        "ir_schema_or_type_failures": 11,
+        "shape_compiled": 0
+      },
+      "schema_visibility_hidden": {
+        "parents": 11,
+        "eligible_contrasts": 0,
+        "full_admitted": 0,
+        "full_admission_rejected": 0,
+        "contract_schema_failures": 11,
+        "ir_schema_or_type_failures": 0,
+        "shape_compiled": 11
+      },
+      "source_locator_hash_unresolvable": {
+        "parents": 11,
+        "eligible_contrasts": 11,
+        "full_admitted": 11,
+        "full_admission_rejected": 0,
+        "contract_schema_failures": 0,
+        "ir_schema_or_type_failures": 0,
+        "shape_compiled": 11
+      },
+      "trusted_path_to_unregistered_client_path": {
+        "parents": 7,
+        "eligible_contrasts": 7,
+        "full_admitted": 0,
+        "full_admission_rejected": 7,
+        "contract_schema_failures": 0,
+        "ir_schema_or_type_failures": 0,
+        "shape_compiled": 7
+      }
+    },
+    "full_rejected_rows_executed": 0,
+    "execution_errors": 0,
+    "variants_are_independent_cases": false,
+    "generation_without_evidence_tested": false,
+    "autopac_judge_tested_here": false
+  }
+}

@@ -1,0 +1,71 @@
+{
+  "parent_id": "FSV-S04__three_case_v1",
+  "case": "FSV-S04",
+  "configuration": "three_case_v1",
+  "row_id": "FSV-S04__three_case_v1__evidence_refs_absent",
+  "variant": "evidence_refs_absent",
+  "classification": "CONSTRUCTED_INVENTORY_PERTURBATION",
+  "expected_full": "reject",
+  "notes": "All referenced records absent; schema remains valid",
+  "source_parent_candidate": "/root/ecas_evidence_ablation_20261014/inputs/FSV-S04__three_case_v1/candidate.json",
+  "source_parent_contract": "/root/ecas_evidence_ablation_20261014/inputs/FSV-S04__three_case_v1/contract.json",
+  "candidate_sha256": "61100a221ee3fd6dca2ea31994cae0f377dbcf98e49c1c9963470917476dcf8d",
+  "contract_sha256": "4ddd2ed42e8aeb4f26cf18f2757c0a2b5299381370fe5b712038113f5edd9414",
+  "output_folder": "/root/ecas_evidence_ablation_20261014/outputs/FSV-S04__three_case_v1__evidence_refs_absent",
+  "full_executed": false,
+  "shape_executed": true,
+  "ir_status": "COMPILED",
+  "contract_shape_valid": true,
+  "full_status": "ADMISSION_REJECTED",
+  "full_error": "policy references evidence absent from the contract",
+  "shape_status": "COMPILED_NO_INVENTORY",
+  "eligible_admission_contrast": true,
+  "full_evaluations": [],
+  "shape_evaluations": [
+    {
+      "fixture_id": "FSV-S04-OL-01",
+      "fixture_class": "ARCHIVED_SYNTHETIC_REQUEST",
+      "expected": "allow",
+      "actual": {
+        "policy_id": "POL-FSV-S04-LEAD-EMAIL-FMT",
+        "decision": "allow",
+        "fail_closed": true,
+        "violations": []
+      },
+      "correct": true
+    },
+    {
+      "fixture_id": "FSV-S04-OI-01",
+      "fixture_class": "ARCHIVED_SYNTHETIC_REQUEST",
+      "expected": "deny",
+      "actual": {
+        "policy_id": "POL-FSV-S04-LEAD-EMAIL-FMT",
+        "decision": "deny",
+        "fail_closed": true,
+        "violations": [
+          {
+            "rule_id": "RULE-LEAD-EMAIL-FMT",
+            "code": "validator_rejected",
+            "detail": "email_basic_v1"
+          }
+        ]
+      },
+      "correct": true
+    },
+    {
+      "fixture_id": "SYNTH-MISSING-TRUSTED",
+      "fixture_class": "CONSTRUCTED_MISSING_CONTEXT_CONTROL",
+      "expected": null,
+      "actual": {
+        "policy_id": "POL-FSV-S04-LEAD-EMAIL-FMT",
+        "decision": "allow",
+        "fail_closed": true,
+        "violations": []
+      },
+      "correct": null
+    }
+  ],
+  "original_pair_correct": null,
+  "full_execution_errors": 0,
+  "shape_execution_errors": 0
+}

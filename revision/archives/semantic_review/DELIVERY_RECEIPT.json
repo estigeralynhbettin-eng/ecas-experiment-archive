@@ -1,0 +1,53 @@
+{
+  "status": "COMPLETED_SOURCE_RECONCILED_SCOPED_REVIEW_PASSED",
+  "date": "2026-10-15",
+  "new_model_calls": 0,
+  "new_policy_executions": 0,
+  "method_case_rows": 21,
+  "source_files": 162,
+  "independent_review_status": "PASS_SCOPED_STAGE_CONTENT_AND_TRACEABILITY",
+  "closeout_status": "pass",
+  "protected_files_unchanged": true,
+  "outputs": [
+    {
+      "path": "D:\\lunwen\\EC-CSI投稿\\working\\exploration\\20261015_semantic_comparison\\SEMANTIC_COMPARISON.csv",
+      "sha256": "1c6aec2cf83b3be15712d57e5e03025829d45f5aa43fa0101f0e7b312a4565fb"
+    },
+    {
+      "path": "D:\\lunwen\\EC-CSI投稿\\working\\exploration\\20261015_semantic_comparison\\SEMANTIC_EVIDENCE_INDEX.json",
+      "sha256": "27752cc24f75192516a231055681f823b72701da77d6d06f8a7483ba54fa5b05"
+    },
+    {
+      "path": "D:\\lunwen\\EC-CSI投稿\\working\\exploration\\20261015_semantic_comparison\\SEMANTIC_COMPARISON_CN.md",
+      "sha256": "9bc9c05a640b73fb777705ff8e09281b559ba4327697730b5a8cd59c5ce02987"
+    },
+    {
+      "path": "D:\\lunwen\\EC-CSI投稿\\working\\exploration\\20261015_semantic_comparison\\EXPERIMENT_SUMMARY_CN_R3.md",
+      "sha256": "e7f781c3573fe6a45c29728d75567f82276e62bd898fc58d99f96ef149d6f5e8"
+    }
+  ],
+  "independent_review_sha256": "c7f65d0d8da750718d0347eecdc19d57735491f6d3b2ca33650fae5fef3deb47",
+  "authority_documents": [
+    {
+      "name": "LATEST_OUTPUTS.md",
+      "backup_sha256": "7e2ebbdfeff09922fbad9c7628b66743e1ad3743d369f2ef82cd6dc33e9f0413",
+      "current_sha256": "fb559259200e178087cb56310917aca486f926fff11527120861066775c0b869"
+    },
+    {
+      "name": "HANDOFF.md",
+      "backup_sha256": "f040376dff1284df75d3453dfa0a44ee6e1637c9296ee026ce641e448dd159c1",
+      "current_sha256": "620e3d42adf5c74a108336ee27d5bec2a87c48a0617e0c3a2d1427d97ed42303"
+    },
+    {
+      "name": "RESEARCH_DECISIONS.md",
+      "backup_sha256": "147607a687422284b814b8acde4332e22be104475b5b47b0468cc0cc1c98cdea",
+      "current_sha256": "a5525166bcbe479666e19a513d02f960dc55cdc007292ae244b613ee01327b6b"
+    },
+    {
+      "name": "EXPERIMENT_RESULTS.md",
+      "backup_sha256": "0b61effa341d5daa51723f39bae6e0eec565072490b533539bfdf6ad6910744d",
+      "current_sha256": "01b24da5f0f3b4949b207f488bd0c5ddfdc25e2557f567cf4c2ead43ced5f393"
+    }
+  ],
+  "limit": "Posthoc qualitative stage interpretation. No independent semantic benchmark, manuscript freeze, new model or policy run."
+}

@@ -1,0 +1,104 @@
+{
+  "status": "PASS",
+  "checks": [
+    {
+      "check": "all_15_public_operations",
+      "pass": true
+    },
+    {
+      "check": "same_archived_ir_shape_and_original_gate_FSV-S03__four_case_v1",
+      "pass": true,
+      "scientific_semantic_claim": false,
+      "gate_outcome_sent_to_judge": false
+    },
+    {
+      "check": "same_archived_ir_shape_and_original_gate_FSV-S03__four_case_v2",
+      "pass": true,
+      "scientific_semantic_claim": false,
+      "gate_outcome_sent_to_judge": false
+    },
+    {
+      "check": "same_archived_ir_shape_and_original_gate_FSV-B13__four_case_v2",
+      "pass": true,
+      "scientific_semantic_claim": false,
+      "gate_outcome_sent_to_judge": false
+    },
+    {
+      "check": "same_archived_ir_shape_and_original_gate_FSV-B13__four_case_v1",
+      "pass": true,
+      "scientific_semantic_claim": false,
+      "gate_outcome_sent_to_judge": false
+    },
+    {
+      "check": "same_archived_ir_shape_and_original_gate_FSV-B17__four_case_v1",
+      "pass": true,
+      "scientific_semantic_claim": false,
+      "gate_outcome_sent_to_judge": false
+    },
+    {
+      "check": "same_archived_ir_shape_and_original_gate_FSV-B17__four_case_v2",
+      "pass": true,
+      "scientific_semantic_claim": false,
+      "gate_outcome_sent_to_judge": false
+    },
+    {
+      "check": "same_archived_ir_shape_and_original_gate_FSV-B19__four_case_v2",
+      "pass": true,
+      "scientific_semantic_claim": false,
+      "gate_outcome_sent_to_judge": false
+    },
+    {
+      "check": "same_archived_ir_shape_and_original_gate_FSV-B19__four_case_v1",
+      "pass": true,
+      "scientific_semantic_claim": false,
+      "gate_outcome_sent_to_judge": false
+    },
+    {
+      "check": "response_schema_positive_negative_FSV-B19",
+      "pass": true,
+      "scientific_result": false
+    },
+    {
+      "check": "public_packet_no_hidden_or_developer_fields_FSV-B19",
+      "pass": true
+    },
+    {
+      "check": "response_schema_positive_negative_FSV-B13",
+      "pass": true,
+      "scientific_result": false
+    },
+    {
+      "check": "public_packet_no_hidden_or_developer_fields_FSV-B13",
+      "pass": true
+    },
+    {
+      "check": "response_schema_positive_negative_FSV-B17",
+      "pass": true,
+      "scientific_result": false
+    },
+    {
+      "check": "public_packet_no_hidden_or_developer_fields_FSV-B17",
+      "pass": true
+    },
+    {
+      "check": "response_schema_positive_negative_FSV-S03",
+      "pass": true,
+      "scientific_result": false
+    },
+    {
+      "check": "public_packet_no_hidden_or_developer_fields_FSV-S03",
+      "pass": true
+    },
+    {
+      "check": "independent_lane_free_space",
+      "pass": true
+    }
+  ],
+  "scope_id": "ECAS-TYPED-IR-SEMANTIC-JUDGE-CONTROL-20261014-01",
+  "model_calls": 0,
+  "scientific_result": false,
+  "python": "3.10.12",
+  "jsonschema": "4.26.0",
+  "shared_resources_used": [],
+  "completed_at": "2026-10-14T16:05:41.010281+00:00"
+}

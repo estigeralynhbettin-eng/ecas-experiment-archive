@@ -1,0 +1,65 @@
+{
+  "parent_id": "FSV-S03__four_case_v2",
+  "case": "FSV-S03",
+  "configuration": "four_case_v2",
+  "row_id": "FSV-S03__four_case_v2__required_binding_facts_absent",
+  "variant": "required_binding_facts_absent",
+  "classification": "CONSTRUCTED_INVENTORY_PERTURBATION",
+  "expected_full": "reject",
+  "notes": "Valid inventory drops required primitive binding facts",
+  "source_parent_candidate": "/root/ecas_evidence_ablation_20261014/inputs/FSV-S03__four_case_v2/candidate.json",
+  "source_parent_contract": "/root/ecas_evidence_ablation_20261014/inputs/FSV-S03__four_case_v2/contract.json",
+  "candidate_sha256": "5858008d4ca9d1aba9e7dcfc5209d4d880f77b09258e38524524f93870e591c8",
+  "contract_sha256": "402c386575bcc700380a825ddd15302aa95805e398dbbfad42d2d64658692c51",
+  "output_folder": "/root/ecas_evidence_ablation_20261014/outputs/FSV-S03__four_case_v2__required_binding_facts_absent",
+  "full_executed": false,
+  "shape_executed": true,
+  "ir_status": "COMPILED",
+  "contract_shape_valid": true,
+  "full_status": "ADMISSION_REJECTED",
+  "full_error": "rule FSV-S03-R01 lacks binding facts: ['visible_request_schema_or_parameter_list']",
+  "shape_status": "COMPILED_NO_INVENTORY",
+  "eligible_admission_contrast": true,
+  "full_evaluations": [],
+  "shape_evaluations": [
+    {
+      "fixture_id": "FSV-S03-OL-01",
+      "fixture_class": "ARCHIVED_SYNTHETIC_REQUEST",
+      "expected": "allow",
+      "actual": {
+        "policy_id": "FSV-S03-P01",
+        "decision": "allow",
+        "fail_closed": true,
+        "violations": []
+      },
+      "correct": true
+    },
+    {
+      "fixture_id": "FSV-S03-OI-01",
+      "fixture_class": "ARCHIVED_SYNTHETIC_REQUEST",
+      "expected": "deny",
+      "actual": {
+        "policy_id": "FSV-S03-P01",
+        "decision": "allow",
+        "fail_closed": true,
+        "violations": []
+      },
+      "correct": false
+    },
+    {
+      "fixture_id": "SYNTH-MISSING-TRUSTED",
+      "fixture_class": "CONSTRUCTED_MISSING_CONTEXT_CONTROL",
+      "expected": null,
+      "actual": {
+        "policy_id": "FSV-S03-P01",
+        "decision": "allow",
+        "fail_closed": true,
+        "violations": []
+      },
+      "correct": null
+    }
+  ],
+  "original_pair_correct": null,
+  "full_execution_errors": 0,
+  "shape_execution_errors": 0
+}

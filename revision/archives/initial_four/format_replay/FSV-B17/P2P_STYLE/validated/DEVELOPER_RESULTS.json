@@ -1,0 +1,62 @@
+[
+  {
+    "id": "T1",
+    "expected": "allow",
+    "actual": {
+      "status": "EXECUTED",
+      "decision": "allow",
+      "exit_code": 0
+    },
+    "pass": true
+  },
+  {
+    "id": "T2",
+    "expected": "deny",
+    "actual": {
+      "status": "EXECUTED",
+      "decision": "deny",
+      "exit_code": 0
+    },
+    "pass": true
+  },
+  {
+    "id": "T3",
+    "expected": "allow",
+    "actual": {
+      "status": "EXECUTED",
+      "decision": "allow",
+      "exit_code": 0
+    },
+    "pass": true
+  },
+  {
+    "id": "T4",
+    "expected": "deny",
+    "actual": {
+      "status": "EXECUTED",
+      "decision": "deny",
+      "exit_code": 0
+    },
+    "pass": true
+  },
+  {
+    "id": "dev_enabled",
+    "expected": "allow",
+    "actual": {
+      "status": "EXECUTED",
+      "decision": "allow",
+      "exit_code": 0
+    },
+    "pass": true
+  },
+  {
+    "id": "dev_disabled",
+    "expected": "deny",
+    "actual": {
+      "status": "EXECUTED",
+      "decision": "deny",
+      "exit_code": 0
+    },
+    "pass": true
+  }
+]

@@ -1,0 +1,1 @@
+{"oracle_channel":"O-I","task_window_id":"FSV-B17","vectors":[{"envelope":{"request":{"body":{"customer":"CUSTOMER-SYNTH-1"}},"trusted":{"customerDisabled":true}},"expected_class":"deny","reason":"official test rejects disabled customer","synthetic_data_only":true,"vector_id":"FSV-B17-OI-01","vector_suffix":"OI-01"}]}

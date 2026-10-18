@@ -1,0 +1,68 @@
+{
+  "scope_id": "ECAS-MATCHED-EVIDENCE-LABOR-20261014-01",
+  "frozen_at": "2026-10-15T00:56:32.105514+00:00",
+  "count": 12,
+  "rows": [
+    {
+      "task": "FSV-S03",
+      "method": "P2P_STYLE",
+      "terminal_sha256": "6ba99e393e2d7a85f0d46d5bf8a522c2ae18fca1bde0fabe32025b50081954e7"
+    },
+    {
+      "task": "FSV-S03",
+      "method": "AUTOPAC_STYLE",
+      "terminal_sha256": "ff1d0a2fc36d56d7fb4bdc0addca3738d4a74a4d2ac7f2d9f1c958cba77afccc"
+    },
+    {
+      "task": "FSV-S03",
+      "method": "ECAS_MATCHED",
+      "terminal_sha256": "dbfe5efa93e9a6d4efa266415ccdc585161ff9e96271887e02f64d1f368eb1eb"
+    },
+    {
+      "task": "FSV-B13",
+      "method": "P2P_STYLE",
+      "terminal_sha256": "636a6b59ab0bc7ad9d368ceac2709b270cc09fa581e3ba1d6faf9ef6792ecf7a"
+    },
+    {
+      "task": "FSV-B13",
+      "method": "AUTOPAC_STYLE",
+      "terminal_sha256": "8990c4e13e3fb4a95118153c24901b349a47a90486ab509e6bf26478e93b2157"
+    },
+    {
+      "task": "FSV-B13",
+      "method": "ECAS_MATCHED",
+      "terminal_sha256": "44fbfa777b4e31dfaaa2bb5e6cb3c88bc53db06ca21198e21bde584adb1c1881"
+    },
+    {
+      "task": "FSV-B17",
+      "method": "P2P_STYLE",
+      "terminal_sha256": "4abdee8b6609794b5e448b12d011229442b2662bb6942b55592f82669de5b68b"
+    },
+    {
+      "task": "FSV-B17",
+      "method": "AUTOPAC_STYLE",
+      "terminal_sha256": "490bebdba3763a2e103c21583e0cecf04fa9c8ea07b937d9246b3c1c736ed0bb"
+    },
+    {
+      "task": "FSV-B17",
+      "method": "ECAS_MATCHED",
+      "terminal_sha256": "e1cb6f77a9b4c3246d4c5049600c91e7a326299cef5b06699d500d3abb3a4ba5"
+    },
+    {
+      "task": "FSV-B19",
+      "method": "P2P_STYLE",
+      "terminal_sha256": "fb4a587f2ebcf15d2568042210a9f409d46ec0f20596591adc3c6fee378b2726"
+    },
+    {
+      "task": "FSV-B19",
+      "method": "AUTOPAC_STYLE",
+      "terminal_sha256": "ffdd98a5ffa09115f10a25d9da2bb20d8016537aea8c21b0f21f0cf2a6073f28"
+    },
+    {
+      "task": "FSV-B19",
+      "method": "ECAS_MATCHED",
+      "terminal_sha256": "83e7698ffa8b0b063797a20d2ff0f83a4314ed8efb6313c0567b3114ad0ceb3b"
+    }
+  ],
+  "final_evaluation_not_yet_read": true
+}

@@ -1,0 +1,9 @@
+{
+  "source_sha256": "b0bcbf3b836c93328ddd0c67d2d5ac4060b7be5d573bc75983699125a5768a47",
+  "formatted_sha256": "59781917a104645d79ab7f64ee6abc4ae3361b7865c48ea687fa71c04fd4b9c5",
+  "ast_equal_without_locations": true,
+  "opa_fmt_exit": 0,
+  "new_model_calls": 0,
+  "no_oracle_feedback_used": true,
+  "checked_at": "2026-10-14T04:18:30.808693+00:00"
+}

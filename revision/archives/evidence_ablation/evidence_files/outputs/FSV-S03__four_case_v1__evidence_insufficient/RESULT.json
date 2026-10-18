@@ -1,0 +1,71 @@
+{
+  "parent_id": "FSV-S03__four_case_v1",
+  "case": "FSV-S03",
+  "configuration": "four_case_v1",
+  "row_id": "FSV-S03__four_case_v1__evidence_insufficient",
+  "variant": "evidence_insufficient",
+  "classification": "CONSTRUCTED_INVENTORY_PERTURBATION",
+  "expected_full": "reject",
+  "notes": "Valid inventory marks all bindings insufficient",
+  "source_parent_candidate": "/root/ecas_evidence_ablation_20261014/inputs/FSV-S03__four_case_v1/candidate.json",
+  "source_parent_contract": "/root/ecas_evidence_ablation_20261014/inputs/FSV-S03__four_case_v1/contract.json",
+  "candidate_sha256": "be891b5d2f4a956bc425c2187d88529ae5e13a21c4055819dfb1dfe3d11bc59b",
+  "contract_sha256": "54f6eeec2ff32f481ff0ec153f1e81df157d343a8556fa68b9122a74052ba558",
+  "output_folder": "/root/ecas_evidence_ablation_20261014/outputs/FSV-S03__four_case_v1__evidence_insufficient",
+  "full_executed": false,
+  "shape_executed": true,
+  "ir_status": "COMPILED",
+  "contract_shape_valid": true,
+  "full_status": "ADMISSION_REJECTED",
+  "full_error": "rule FSV-S03-R01 has contradictory or insufficient evidence",
+  "shape_status": "COMPILED_NO_INVENTORY",
+  "eligible_admission_contrast": true,
+  "full_evaluations": [],
+  "shape_evaluations": [
+    {
+      "fixture_id": "FSV-S03-OL-01",
+      "fixture_class": "ARCHIVED_SYNTHETIC_REQUEST",
+      "expected": "allow",
+      "actual": {
+        "policy_id": "FSV-S03-POL-01",
+        "decision": "allow",
+        "fail_closed": true,
+        "violations": []
+      },
+      "correct": true
+    },
+    {
+      "fixture_id": "FSV-S03-OI-01",
+      "fixture_class": "ARCHIVED_SYNTHETIC_REQUEST",
+      "expected": "deny",
+      "actual": {
+        "policy_id": "FSV-S03-POL-01",
+        "decision": "deny",
+        "fail_closed": true,
+        "violations": [
+          {
+            "rule_id": "FSV-S03-R01",
+            "code": "type_mismatch",
+            "detail": "/request/body/age"
+          }
+        ]
+      },
+      "correct": true
+    },
+    {
+      "fixture_id": "SYNTH-MISSING-TRUSTED",
+      "fixture_class": "CONSTRUCTED_MISSING_CONTEXT_CONTROL",
+      "expected": null,
+      "actual": {
+        "policy_id": "FSV-S03-POL-01",
+        "decision": "allow",
+        "fail_closed": true,
+        "violations": []
+      },
+      "correct": null
+    }
+  ],
+  "original_pair_correct": null,
+  "full_execution_errors": 0,
+  "shape_execution_errors": 0
+}

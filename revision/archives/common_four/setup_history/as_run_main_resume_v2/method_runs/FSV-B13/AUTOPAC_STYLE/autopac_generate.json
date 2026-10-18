@@ -1,0 +1,5 @@
+{
+  "status": "READY",
+  "rego": "package external_pilot\n\nimport rego.v1\n\ndefault allow := false\n\n# Role Allowed to Over Deliver/Receive: users with this role may exceed the allowance percentage.\nallow if {\n    input.trusted.authorizedRole\n}\n\n# Otherwise, the receipt quantity must not exceed the derived maximum (limit-percent inclusive).\nallow if {\n    input.request.body.qty <= input.trusted.derivedMaximumQty\n}\n",
+  "reason": "Stock Settings documents a Limit Percent for over-delivery/receipt and a 'Role Allowed to Over Deliver/Receive' exception. The adapter supplies trusted.derivedMaximumQty (the computed allowance ceiling) and trusted.authorizedRole (whether the caller holds the over-deliver/receive role). The policy permits the request when the authorized role is present, or when the requested qty is within the derived maximum. No unrelated validation is added."
+}

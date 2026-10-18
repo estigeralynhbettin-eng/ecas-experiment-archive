@@ -1,0 +1,11 @@
+{
+  "task": "FSV-S02",
+  "method": "P2P_STYLE",
+  "classification": "RETROSPECTIVE_ADAPTED_LOCAL_PILOT_NOT_NATIVE_OR_BLIND",
+  "status": "OUT_OF_SCOPE",
+  "requests": [],
+  "calls": [
+    14
+  ],
+  "reason": "The visible sources contain only API schema definitions (mandatory fields, request body structure) and adapter metadata. There are no explicit access control or policy statements present."
+}

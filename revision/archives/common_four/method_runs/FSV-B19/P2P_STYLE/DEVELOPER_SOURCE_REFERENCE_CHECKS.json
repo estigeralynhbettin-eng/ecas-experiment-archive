@@ -1,0 +1,49 @@
+{
+  "classification": "SOURCE_LOCATOR_BINDING_NOT_TEST_ORACLE_CORRECTION",
+  "tests_path": "/mnt/d/lunwen/EC-CSI投稿/working/exploration/20261014_matched_evidence_labor/matched_generation/method_runs/FSV-B19/P2P_STYLE/p2p_tests.json",
+  "tests_sha256": "5d8fde4e6cef234a1814f9fcb0926147ece800b494553ea6095f4234a7f47ac6",
+  "references": [
+    {
+      "original_reference": "VIS-FSV-B19-01",
+      "accepted": true,
+      "binding_kind": "VISIBLE_BASE_ID",
+      "base_evidence_id": "VIS-FSV-B19-01",
+      "original_fragment": null,
+      "source_id": "erpnext-supplier.html",
+      "source_metadata_sha256": "1DD2CBED3915F83CC734BA23F7A016A9C386ED6BA9E54962619F70DB706F5C6F",
+      "developer_test_id": "test_deny_on_hold_invoices"
+    },
+    {
+      "original_reference": "VIS-FSV-B19-01",
+      "accepted": true,
+      "binding_kind": "VISIBLE_BASE_ID",
+      "base_evidence_id": "VIS-FSV-B19-01",
+      "original_fragment": null,
+      "source_id": "erpnext-supplier.html",
+      "source_metadata_sha256": "1DD2CBED3915F83CC734BA23F7A016A9C386ED6BA9E54962619F70DB706F5C6F",
+      "developer_test_id": "test_deny_on_hold_all"
+    },
+    {
+      "original_reference": "VIS-FSV-B19-01",
+      "accepted": true,
+      "binding_kind": "VISIBLE_BASE_ID",
+      "base_evidence_id": "VIS-FSV-B19-01",
+      "original_fragment": null,
+      "source_id": "erpnext-supplier.html",
+      "source_metadata_sha256": "1DD2CBED3915F83CC734BA23F7A016A9C386ED6BA9E54962619F70DB706F5C6F",
+      "developer_test_id": "test_allow_on_hold_payments"
+    },
+    {
+      "original_reference": "VIS-FSV-B19-01",
+      "accepted": true,
+      "binding_kind": "VISIBLE_BASE_ID",
+      "base_evidence_id": "VIS-FSV-B19-01",
+      "original_fragment": null,
+      "source_id": "erpnext-supplier.html",
+      "source_metadata_sha256": "1DD2CBED3915F83CC734BA23F7A016A9C386ED6BA9E54962619F70DB706F5C6F",
+      "developer_test_id": "test_allow_not_on_hold"
+    }
+  ],
+  "all_accepted": true,
+  "original_inputs_expected_and_references_changed": false
+}

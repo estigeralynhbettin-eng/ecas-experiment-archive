@@ -1,0 +1,14 @@
+{
+  "kind": "new-experiment-block",
+  "status": "FROZEN",
+  "protocol_path": "PROTOCOL_CN.md",
+  "protocol_sha256": "e2737713dadc9e20fd254778ea49c42798bd84f708b1daa605f3a7a1195a6eca",
+  "scope_id": "ECAS-SOURCE-RULE-CHAIN-20261015-01",
+  "project_id": "EC-CSI",
+  "experiment_id": "source-rule-chain",
+  "runtime_lane": "/root/ecas_source_rule_chain_20261015",
+  "classification": "SOURCE_FUNCTION_WITH_STUBS_AND_MANUAL_ADAPTER_NOT_PRODUCTION",
+  "new_model_calls": 0,
+  "new_cases": 0,
+  "new_systems": 0
+}

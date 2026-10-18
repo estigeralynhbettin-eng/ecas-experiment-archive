@@ -1,0 +1,28 @@
+{
+  "choices": [
+    {
+      "finish_reason": "stop",
+      "index": 0,
+      "message": {
+        "content": "{\"begin\":\"BEGIN_FSV-S02_repair_MAIN\",\"stage\":\"repair\",\"output\":{\"status\":\"READY\",\"rego\":\"package external_pilot\\n\\nimport rego.v1\\n\\ndefault allow := false\\n\\nallow if {\\n    input.subject_role == \\\"authenticated_api_caller\\\"\\n    input.action == \\\"POST /v1/clients/{clientId}/identifiers\\\"\\n    input.resource_system == \\\"Fineract\\\"\\n    input.resource_version == \\\"1.14.0\\\"\\n    valid_body(input.request.body)\\n}\\n\\nallowed_keys := {\\\"documentKey\\\", \\\"documentTypeId\\\", \\\"description\\\", \\\"status\\\"}\\n\\nvalid_body(body) if {\\n    is_object(body)\\n    keys := object.keys(body)\\n    every k in keys {\\n        k in allowed_keys\\n        valid_field(k, body[k])\\n    }\\n    is_string(body.documentKey)\\n    is_integer(body.documentTypeId)\\n}\\n\\nvalid_field(k, v) if {\\n    k == \\\"documentKey\\\"\\n    is_string(v)\\n}\\n\\nvalid_field(k, v) if {\\n    k == \\\"documentTypeId\\\"\\n    is_integer(v)\\n}\\n\\nvalid_field(k, v) if {\\n    k == \\\"description\\\"\\n    is_string(v)\\n}\\n\\nvalid_field(k, v) if {\\n    k == \\\"status\\\"\\n    is_string(v)\\n}\",\"reason\":\"Repaired adapter constant paths to visible common_adapter fields and enforced mandatory documentKey/documentTypeId presence with OpenAPI schema key/type validation; unknown request-body keys are denied.\"},\"end\":\"END_FSV-S02_repair_MAIN\"}",
+        "role": "assistant"
+      }
+    }
+  ],
+  "created": 1791951060,
+  "id": "20261014120721499839e8fdc94ed2",
+  "model": "glm-5.2",
+  "object": "chat.completion",
+  "request_id": "20261014120721499839e8fdc94ed2",
+  "usage": {
+    "completion_tokens": 15268,
+    "completion_tokens_details": {
+      "reasoning_tokens": 14916
+    },
+    "prompt_tokens": 1313,
+    "prompt_tokens_details": {
+      "cached_tokens": 0
+    },
+    "total_tokens": 16581
+  }
+}

@@ -1,0 +1,178 @@
+[
+  {
+    "parent_id": "FSV-B06__three_case_v1",
+    "case": "FSV-B06",
+    "configuration": "three_case_v1",
+    "candidate": "/root/ecas_evidence_ablation_20261014/inputs/FSV-B06__three_case_v1/candidate.json",
+    "contract": "/root/ecas_evidence_ablation_20261014/inputs/FSV-B06__three_case_v1/contract.json",
+    "original_result": "/root/ecas_evidence_ablation_20261014/inputs/FSV-B06__three_case_v1/original_result.json",
+    "fixtures": [
+      "/root/ecas_evidence_ablation_20261014/inputs/FSV-B06__three_case_v1/O-L.json",
+      "/root/ecas_evidence_ablation_20261014/inputs/FSV-B06__three_case_v1/O-I.json"
+    ],
+    "raw_response": "/root/ecas_evidence_ablation_20261014/inputs/FSV-B06__three_case_v1/response.raw.json",
+    "parsed_response": "/root/ecas_evidence_ablation_20261014/inputs/FSV-B06__three_case_v1/parsed_output.json",
+    "original_source_folder": "/mnt/d/lunwen/EC-CSI投稿/working/exploration/20261014_external_baseline_pilot/effect_runs/FSV-B06/ECAS_MATCHED",
+    "raw_candidate_exact_match": true
+  },
+  {
+    "parent_id": "FSV-S02__three_case_v1",
+    "case": "FSV-S02",
+    "configuration": "three_case_v1",
+    "candidate": "/root/ecas_evidence_ablation_20261014/inputs/FSV-S02__three_case_v1/candidate.json",
+    "contract": "/root/ecas_evidence_ablation_20261014/inputs/FSV-S02__three_case_v1/contract.json",
+    "original_result": "/root/ecas_evidence_ablation_20261014/inputs/FSV-S02__three_case_v1/original_result.json",
+    "fixtures": [
+      "/root/ecas_evidence_ablation_20261014/inputs/FSV-S02__three_case_v1/O-L.json",
+      "/root/ecas_evidence_ablation_20261014/inputs/FSV-S02__three_case_v1/O-I.json"
+    ],
+    "raw_response": "/root/ecas_evidence_ablation_20261014/inputs/FSV-S02__three_case_v1/response.raw.json",
+    "parsed_response": "/root/ecas_evidence_ablation_20261014/inputs/FSV-S02__three_case_v1/parsed_output.json",
+    "original_source_folder": "/mnt/d/lunwen/EC-CSI投稿/working/exploration/20261014_external_baseline_pilot/effect_runs/FSV-S02/ECAS_MATCHED",
+    "raw_candidate_exact_match": true
+  },
+  {
+    "parent_id": "FSV-S04__three_case_v1",
+    "case": "FSV-S04",
+    "configuration": "three_case_v1",
+    "candidate": "/root/ecas_evidence_ablation_20261014/inputs/FSV-S04__three_case_v1/candidate.json",
+    "contract": "/root/ecas_evidence_ablation_20261014/inputs/FSV-S04__three_case_v1/contract.json",
+    "original_result": "/root/ecas_evidence_ablation_20261014/inputs/FSV-S04__three_case_v1/original_result.json",
+    "fixtures": [
+      "/root/ecas_evidence_ablation_20261014/inputs/FSV-S04__three_case_v1/O-L.json",
+      "/root/ecas_evidence_ablation_20261014/inputs/FSV-S04__three_case_v1/O-I.json"
+    ],
+    "raw_response": "/root/ecas_evidence_ablation_20261014/inputs/FSV-S04__three_case_v1/response.raw.json",
+    "parsed_response": "/root/ecas_evidence_ablation_20261014/inputs/FSV-S04__three_case_v1/parsed_output.json",
+    "original_source_folder": "/mnt/d/lunwen/EC-CSI投稿/working/exploration/20261014_external_baseline_pilot/effect_runs/FSV-S04/ECAS_MATCHED",
+    "raw_candidate_exact_match": true
+  },
+  {
+    "parent_id": "FSV-S03__four_case_v1",
+    "case": "FSV-S03",
+    "configuration": "four_case_v1",
+    "candidate": "/root/ecas_evidence_ablation_20261014/inputs/FSV-S03__four_case_v1/candidate.json",
+    "contract": "/root/ecas_evidence_ablation_20261014/inputs/FSV-S03__four_case_v1/contract.json",
+    "original_result": "/root/ecas_evidence_ablation_20261014/inputs/FSV-S03__four_case_v1/original_result.json",
+    "fixtures": [
+      "/root/ecas_evidence_ablation_20261014/inputs/FSV-S03__four_case_v1/O-L.json",
+      "/root/ecas_evidence_ablation_20261014/inputs/FSV-S03__four_case_v1/O-I.json"
+    ],
+    "raw_response": "/root/ecas_evidence_ablation_20261014/inputs/FSV-S03__four_case_v1/response.raw.json",
+    "parsed_response": "/root/ecas_evidence_ablation_20261014/inputs/FSV-S03__four_case_v1/parsed_output.json",
+    "original_source_folder": "/mnt/d/lunwen/EC-CSI投稿/working/exploration/20261014_four_case_peer_baselines/effect_runs/FSV-S03/ECAS_MATCHED",
+    "raw_candidate_exact_match": true
+  },
+  {
+    "parent_id": "FSV-S03__four_case_v2",
+    "case": "FSV-S03",
+    "configuration": "four_case_v2",
+    "candidate": "/root/ecas_evidence_ablation_20261014/inputs/FSV-S03__four_case_v2/candidate.json",
+    "contract": "/root/ecas_evidence_ablation_20261014/inputs/FSV-S03__four_case_v2/contract.json",
+    "original_result": "/root/ecas_evidence_ablation_20261014/inputs/FSV-S03__four_case_v2/original_result.json",
+    "fixtures": [
+      "/root/ecas_evidence_ablation_20261014/inputs/FSV-S03__four_case_v2/O-L.json",
+      "/root/ecas_evidence_ablation_20261014/inputs/FSV-S03__four_case_v2/O-I.json"
+    ],
+    "raw_response": "/root/ecas_evidence_ablation_20261014/inputs/FSV-S03__four_case_v2/response.raw.json",
+    "parsed_response": "/root/ecas_evidence_ablation_20261014/inputs/FSV-S03__four_case_v2/parsed_output.json",
+    "original_source_folder": "/mnt/d/lunwen/EC-CSI投稿/working/exploration/20261014_four_case_peer_baselines/documented_ecas/FSV-S03/ECAS_MATCHED",
+    "raw_candidate_exact_match": true
+  },
+  {
+    "parent_id": "FSV-B13__four_case_v1",
+    "case": "FSV-B13",
+    "configuration": "four_case_v1",
+    "candidate": "/root/ecas_evidence_ablation_20261014/inputs/FSV-B13__four_case_v1/candidate.json",
+    "contract": "/root/ecas_evidence_ablation_20261014/inputs/FSV-B13__four_case_v1/contract.json",
+    "original_result": "/root/ecas_evidence_ablation_20261014/inputs/FSV-B13__four_case_v1/original_result.json",
+    "fixtures": [
+      "/root/ecas_evidence_ablation_20261014/inputs/FSV-B13__four_case_v1/O-L.json",
+      "/root/ecas_evidence_ablation_20261014/inputs/FSV-B13__four_case_v1/O-I.json"
+    ],
+    "raw_response": "/root/ecas_evidence_ablation_20261014/inputs/FSV-B13__four_case_v1/response.raw.json",
+    "parsed_response": "/root/ecas_evidence_ablation_20261014/inputs/FSV-B13__four_case_v1/parsed_output.json",
+    "original_source_folder": "/mnt/d/lunwen/EC-CSI投稿/working/exploration/20261014_four_case_peer_baselines/effect_runs/FSV-B13/ECAS_MATCHED",
+    "raw_candidate_exact_match": true
+  },
+  {
+    "parent_id": "FSV-B13__four_case_v2",
+    "case": "FSV-B13",
+    "configuration": "four_case_v2",
+    "candidate": "/root/ecas_evidence_ablation_20261014/inputs/FSV-B13__four_case_v2/candidate.json",
+    "contract": "/root/ecas_evidence_ablation_20261014/inputs/FSV-B13__four_case_v2/contract.json",
+    "original_result": "/root/ecas_evidence_ablation_20261014/inputs/FSV-B13__four_case_v2/original_result.json",
+    "fixtures": [
+      "/root/ecas_evidence_ablation_20261014/inputs/FSV-B13__four_case_v2/O-L.json",
+      "/root/ecas_evidence_ablation_20261014/inputs/FSV-B13__four_case_v2/O-I.json"
+    ],
+    "raw_response": "/root/ecas_evidence_ablation_20261014/inputs/FSV-B13__four_case_v2/response.raw.json",
+    "parsed_response": "/root/ecas_evidence_ablation_20261014/inputs/FSV-B13__four_case_v2/parsed_output.json",
+    "original_source_folder": "/mnt/d/lunwen/EC-CSI投稿/working/exploration/20261014_four_case_peer_baselines/documented_ecas/FSV-B13/ECAS_MATCHED",
+    "raw_candidate_exact_match": true
+  },
+  {
+    "parent_id": "FSV-B17__four_case_v1",
+    "case": "FSV-B17",
+    "configuration": "four_case_v1",
+    "candidate": "/root/ecas_evidence_ablation_20261014/inputs/FSV-B17__four_case_v1/candidate.json",
+    "contract": "/root/ecas_evidence_ablation_20261014/inputs/FSV-B17__four_case_v1/contract.json",
+    "original_result": "/root/ecas_evidence_ablation_20261014/inputs/FSV-B17__four_case_v1/original_result.json",
+    "fixtures": [
+      "/root/ecas_evidence_ablation_20261014/inputs/FSV-B17__four_case_v1/O-L.json",
+      "/root/ecas_evidence_ablation_20261014/inputs/FSV-B17__four_case_v1/O-I.json"
+    ],
+    "raw_response": "/root/ecas_evidence_ablation_20261014/inputs/FSV-B17__four_case_v1/response.raw.json",
+    "parsed_response": "/root/ecas_evidence_ablation_20261014/inputs/FSV-B17__four_case_v1/parsed_output.json",
+    "original_source_folder": "/mnt/d/lunwen/EC-CSI投稿/working/exploration/20261014_four_case_peer_baselines/effect_runs/FSV-B17/ECAS_MATCHED",
+    "raw_candidate_exact_match": true
+  },
+  {
+    "parent_id": "FSV-B17__four_case_v2",
+    "case": "FSV-B17",
+    "configuration": "four_case_v2",
+    "candidate": "/root/ecas_evidence_ablation_20261014/inputs/FSV-B17__four_case_v2/candidate.json",
+    "contract": "/root/ecas_evidence_ablation_20261014/inputs/FSV-B17__four_case_v2/contract.json",
+    "original_result": "/root/ecas_evidence_ablation_20261014/inputs/FSV-B17__four_case_v2/original_result.json",
+    "fixtures": [
+      "/root/ecas_evidence_ablation_20261014/inputs/FSV-B17__four_case_v2/O-L.json",
+      "/root/ecas_evidence_ablation_20261014/inputs/FSV-B17__four_case_v2/O-I.json"
+    ],
+    "raw_response": "/root/ecas_evidence_ablation_20261014/inputs/FSV-B17__four_case_v2/response.raw.json",
+    "parsed_response": "/root/ecas_evidence_ablation_20261014/inputs/FSV-B17__four_case_v2/parsed_output.json",
+    "original_source_folder": "/mnt/d/lunwen/EC-CSI投稿/working/exploration/20261014_four_case_peer_baselines/documented_ecas/FSV-B17/ECAS_MATCHED",
+    "raw_candidate_exact_match": true
+  },
+  {
+    "parent_id": "FSV-B19__four_case_v1",
+    "case": "FSV-B19",
+    "configuration": "four_case_v1",
+    "candidate": "/root/ecas_evidence_ablation_20261014/inputs/FSV-B19__four_case_v1/candidate.json",
+    "contract": "/root/ecas_evidence_ablation_20261014/inputs/FSV-B19__four_case_v1/contract.json",
+    "original_result": "/root/ecas_evidence_ablation_20261014/inputs/FSV-B19__four_case_v1/original_result.json",
+    "fixtures": [
+      "/root/ecas_evidence_ablation_20261014/inputs/FSV-B19__four_case_v1/O-L.json",
+      "/root/ecas_evidence_ablation_20261014/inputs/FSV-B19__four_case_v1/O-I.json"
+    ],
+    "raw_response": "/root/ecas_evidence_ablation_20261014/inputs/FSV-B19__four_case_v1/response.raw.json",
+    "parsed_response": "/root/ecas_evidence_ablation_20261014/inputs/FSV-B19__four_case_v1/parsed_output.json",
+    "original_source_folder": "/mnt/d/lunwen/EC-CSI投稿/working/exploration/20261014_four_case_peer_baselines/effect_runs/FSV-B19/ECAS_MATCHED",
+    "raw_candidate_exact_match": true
+  },
+  {
+    "parent_id": "FSV-B19__four_case_v2",
+    "case": "FSV-B19",
+    "configuration": "four_case_v2",
+    "candidate": "/root/ecas_evidence_ablation_20261014/inputs/FSV-B19__four_case_v2/candidate.json",
+    "contract": "/root/ecas_evidence_ablation_20261014/inputs/FSV-B19__four_case_v2/contract.json",
+    "original_result": "/root/ecas_evidence_ablation_20261014/inputs/FSV-B19__four_case_v2/original_result.json",
+    "fixtures": [
+      "/root/ecas_evidence_ablation_20261014/inputs/FSV-B19__four_case_v2/O-L.json",
+      "/root/ecas_evidence_ablation_20261014/inputs/FSV-B19__four_case_v2/O-I.json"
+    ],
+    "raw_response": "/root/ecas_evidence_ablation_20261014/inputs/FSV-B19__four_case_v2/response.raw.json",
+    "parsed_response": "/root/ecas_evidence_ablation_20261014/inputs/FSV-B19__four_case_v2/parsed_output.json",
+    "original_source_folder": "/mnt/d/lunwen/EC-CSI投稿/working/exploration/20261014_four_case_peer_baselines/documented_ecas/FSV-B19/ECAS_MATCHED",
+    "raw_candidate_exact_match": true
+  }
+]

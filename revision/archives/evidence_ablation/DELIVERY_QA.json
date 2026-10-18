@@ -1,0 +1,1191 @@
+{
+  "status": "PASS",
+  "completed_at": "2026-10-14T15:08:02.468396+00:00",
+  "check_count": 295,
+  "checks": [
+    {
+      "check": "raw_and_parsed_exact_candidate_FSV-B06__three_case_v1",
+      "pass": true
+    },
+    {
+      "check": "raw_and_parsed_exact_candidate_FSV-S02__three_case_v1",
+      "pass": true
+    },
+    {
+      "check": "raw_and_parsed_exact_candidate_FSV-S04__three_case_v1",
+      "pass": true
+    },
+    {
+      "check": "raw_and_parsed_exact_candidate_FSV-S03__four_case_v1",
+      "pass": true
+    },
+    {
+      "check": "raw_and_parsed_exact_candidate_FSV-S03__four_case_v2",
+      "pass": true
+    },
+    {
+      "check": "raw_and_parsed_exact_candidate_FSV-B13__four_case_v1",
+      "pass": true
+    },
+    {
+      "check": "raw_and_parsed_exact_candidate_FSV-B13__four_case_v2",
+      "pass": true
+    },
+    {
+      "check": "raw_and_parsed_exact_candidate_FSV-B17__four_case_v1",
+      "pass": true
+    },
+    {
+      "check": "raw_and_parsed_exact_candidate_FSV-B17__four_case_v2",
+      "pass": true
+    },
+    {
+      "check": "raw_and_parsed_exact_candidate_FSV-B19__four_case_v1",
+      "pass": true
+    },
+    {
+      "check": "raw_and_parsed_exact_candidate_FSV-B19__four_case_v2",
+      "pass": true
+    },
+    {
+      "check": "same_compiled_policy_FSV-B06__three_case_v1__original",
+      "pass": true
+    },
+    {
+      "check": "same_shape_execution_for_contract_only_FSV-B06__three_case_v1__original",
+      "pass": true
+    },
+    {
+      "check": "valid_schema_for_admission_contrast_FSV-B06__three_case_v1__original",
+      "pass": true
+    },
+    {
+      "check": "same_compiled_policy_FSV-B06__three_case_v1__evidence_refs_absent",
+      "pass": true
+    },
+    {
+      "check": "same_shape_execution_for_contract_only_FSV-B06__three_case_v1__evidence_refs_absent",
+      "pass": true
+    },
+    {
+      "check": "ineligible_full_never_executes_FSV-B06__three_case_v1__evidence_refs_absent",
+      "pass": true
+    },
+    {
+      "check": "valid_schema_for_admission_contrast_FSV-B06__three_case_v1__evidence_refs_absent",
+      "pass": true
+    },
+    {
+      "check": "same_compiled_policy_FSV-B06__three_case_v1__evidence_version_mismatch",
+      "pass": true
+    },
+    {
+      "check": "same_shape_execution_for_contract_only_FSV-B06__three_case_v1__evidence_version_mismatch",
+      "pass": true
+    },
+    {
+      "check": "ineligible_full_never_executes_FSV-B06__three_case_v1__evidence_version_mismatch",
+      "pass": true
+    },
+    {
+      "check": "valid_schema_for_admission_contrast_FSV-B06__three_case_v1__evidence_version_mismatch",
+      "pass": true
+    },
+    {
+      "check": "same_compiled_policy_FSV-B06__three_case_v1__evidence_insufficient",
+      "pass": true
+    },
+    {
+      "check": "same_shape_execution_for_contract_only_FSV-B06__three_case_v1__evidence_insufficient",
+      "pass": true
+    },
+    {
+      "check": "ineligible_full_never_executes_FSV-B06__three_case_v1__evidence_insufficient",
+      "pass": true
+    },
+    {
+      "check": "valid_schema_for_admission_contrast_FSV-B06__three_case_v1__evidence_insufficient",
+      "pass": true
+    },
+    {
+      "check": "same_compiled_policy_FSV-B06__three_case_v1__required_binding_facts_absent",
+      "pass": true
+    },
+    {
+      "check": "same_shape_execution_for_contract_only_FSV-B06__three_case_v1__required_binding_facts_absent",
+      "pass": true
+    },
+    {
+      "check": "ineligible_full_never_executes_FSV-B06__three_case_v1__required_binding_facts_absent",
+      "pass": true
+    },
+    {
+      "check": "valid_schema_for_admission_contrast_FSV-B06__three_case_v1__required_binding_facts_absent",
+      "pass": true
+    },
+    {
+      "check": "same_compiled_policy_FSV-B06__three_case_v1__source_locator_hash_unresolvable",
+      "pass": true
+    },
+    {
+      "check": "same_shape_execution_for_contract_only_FSV-B06__three_case_v1__source_locator_hash_unresolvable",
+      "pass": true
+    },
+    {
+      "check": "valid_schema_for_admission_contrast_FSV-B06__three_case_v1__source_locator_hash_unresolvable",
+      "pass": true
+    },
+    {
+      "check": "ineligible_full_never_executes_FSV-B06__three_case_v1__trusted_path_to_unregistered_client_path",
+      "pass": true
+    },
+    {
+      "check": "valid_schema_for_admission_contrast_FSV-B06__three_case_v1__trusted_path_to_unregistered_client_path",
+      "pass": true
+    },
+    {
+      "check": "ineligible_full_never_executes_FSV-B06__three_case_v1__schema_visibility_hidden",
+      "pass": true
+    },
+    {
+      "check": "ineligible_full_never_executes_FSV-B06__three_case_v1__schema_ir_unknown_op",
+      "pass": true
+    },
+    {
+      "check": "same_compiled_policy_FSV-S02__three_case_v1__original",
+      "pass": true
+    },
+    {
+      "check": "same_shape_execution_for_contract_only_FSV-S02__three_case_v1__original",
+      "pass": true
+    },
+    {
+      "check": "valid_schema_for_admission_contrast_FSV-S02__three_case_v1__original",
+      "pass": true
+    },
+    {
+      "check": "same_compiled_policy_FSV-S02__three_case_v1__evidence_refs_absent",
+      "pass": true
+    },
+    {
+      "check": "same_shape_execution_for_contract_only_FSV-S02__three_case_v1__evidence_refs_absent",
+      "pass": true
+    },
+    {
+      "check": "ineligible_full_never_executes_FSV-S02__three_case_v1__evidence_refs_absent",
+      "pass": true
+    },
+    {
+      "check": "valid_schema_for_admission_contrast_FSV-S02__three_case_v1__evidence_refs_absent",
+      "pass": true
+    },
+    {
+      "check": "same_compiled_policy_FSV-S02__three_case_v1__evidence_version_mismatch",
+      "pass": true
+    },
+    {
+      "check": "same_shape_execution_for_contract_only_FSV-S02__three_case_v1__evidence_version_mismatch",
+      "pass": true
+    },
+    {
+      "check": "ineligible_full_never_executes_FSV-S02__three_case_v1__evidence_version_mismatch",
+      "pass": true
+    },
+    {
+      "check": "valid_schema_for_admission_contrast_FSV-S02__three_case_v1__evidence_version_mismatch",
+      "pass": true
+    },
+    {
+      "check": "same_compiled_policy_FSV-S02__three_case_v1__evidence_insufficient",
+      "pass": true
+    },
+    {
+      "check": "same_shape_execution_for_contract_only_FSV-S02__three_case_v1__evidence_insufficient",
+      "pass": true
+    },
+    {
+      "check": "ineligible_full_never_executes_FSV-S02__three_case_v1__evidence_insufficient",
+      "pass": true
+    },
+    {
+      "check": "valid_schema_for_admission_contrast_FSV-S02__three_case_v1__evidence_insufficient",
+      "pass": true
+    },
+    {
+      "check": "same_compiled_policy_FSV-S02__three_case_v1__required_binding_facts_absent",
+      "pass": true
+    },
+    {
+      "check": "same_shape_execution_for_contract_only_FSV-S02__three_case_v1__required_binding_facts_absent",
+      "pass": true
+    },
+    {
+      "check": "ineligible_full_never_executes_FSV-S02__three_case_v1__required_binding_facts_absent",
+      "pass": true
+    },
+    {
+      "check": "valid_schema_for_admission_contrast_FSV-S02__three_case_v1__required_binding_facts_absent",
+      "pass": true
+    },
+    {
+      "check": "same_compiled_policy_FSV-S02__three_case_v1__source_locator_hash_unresolvable",
+      "pass": true
+    },
+    {
+      "check": "same_shape_execution_for_contract_only_FSV-S02__three_case_v1__source_locator_hash_unresolvable",
+      "pass": true
+    },
+    {
+      "check": "valid_schema_for_admission_contrast_FSV-S02__three_case_v1__source_locator_hash_unresolvable",
+      "pass": true
+    },
+    {
+      "check": "ineligible_full_never_executes_FSV-S02__three_case_v1__schema_visibility_hidden",
+      "pass": true
+    },
+    {
+      "check": "ineligible_full_never_executes_FSV-S02__three_case_v1__schema_ir_unknown_op",
+      "pass": true
+    },
+    {
+      "check": "same_compiled_policy_FSV-S04__three_case_v1__original",
+      "pass": true
+    },
+    {
+      "check": "same_shape_execution_for_contract_only_FSV-S04__three_case_v1__original",
+      "pass": true
+    },
+    {
+      "check": "valid_schema_for_admission_contrast_FSV-S04__three_case_v1__original",
+      "pass": true
+    },
+    {
+      "check": "same_compiled_policy_FSV-S04__three_case_v1__evidence_refs_absent",
+      "pass": true
+    },
+    {
+      "check": "same_shape_execution_for_contract_only_FSV-S04__three_case_v1__evidence_refs_absent",
+      "pass": true
+    },
+    {
+      "check": "ineligible_full_never_executes_FSV-S04__three_case_v1__evidence_refs_absent",
+      "pass": true
+    },
+    {
+      "check": "valid_schema_for_admission_contrast_FSV-S04__three_case_v1__evidence_refs_absent",
+      "pass": true
+    },
+    {
+      "check": "same_compiled_policy_FSV-S04__three_case_v1__evidence_version_mismatch",
+      "pass": true
+    },
+    {
+      "check": "same_shape_execution_for_contract_only_FSV-S04__three_case_v1__evidence_version_mismatch",
+      "pass": true
+    },
+    {
+      "check": "ineligible_full_never_executes_FSV-S04__three_case_v1__evidence_version_mismatch",
+      "pass": true
+    },
+    {
+      "check": "valid_schema_for_admission_contrast_FSV-S04__three_case_v1__evidence_version_mismatch",
+      "pass": true
+    },
+    {
+      "check": "same_compiled_policy_FSV-S04__three_case_v1__evidence_insufficient",
+      "pass": true
+    },
+    {
+      "check": "same_shape_execution_for_contract_only_FSV-S04__three_case_v1__evidence_insufficient",
+      "pass": true
+    },
+    {
+      "check": "ineligible_full_never_executes_FSV-S04__three_case_v1__evidence_insufficient",
+      "pass": true
+    },
+    {
+      "check": "valid_schema_for_admission_contrast_FSV-S04__three_case_v1__evidence_insufficient",
+      "pass": true
+    },
+    {
+      "check": "same_compiled_policy_FSV-S04__three_case_v1__required_binding_facts_absent",
+      "pass": true
+    },
+    {
+      "check": "same_shape_execution_for_contract_only_FSV-S04__three_case_v1__required_binding_facts_absent",
+      "pass": true
+    },
+    {
+      "check": "ineligible_full_never_executes_FSV-S04__three_case_v1__required_binding_facts_absent",
+      "pass": true
+    },
+    {
+      "check": "valid_schema_for_admission_contrast_FSV-S04__three_case_v1__required_binding_facts_absent",
+      "pass": true
+    },
+    {
+      "check": "same_compiled_policy_FSV-S04__three_case_v1__source_locator_hash_unresolvable",
+      "pass": true
+    },
+    {
+      "check": "same_shape_execution_for_contract_only_FSV-S04__three_case_v1__source_locator_hash_unresolvable",
+      "pass": true
+    },
+    {
+      "check": "valid_schema_for_admission_contrast_FSV-S04__three_case_v1__source_locator_hash_unresolvable",
+      "pass": true
+    },
+    {
+      "check": "ineligible_full_never_executes_FSV-S04__three_case_v1__schema_visibility_hidden",
+      "pass": true
+    },
+    {
+      "check": "ineligible_full_never_executes_FSV-S04__three_case_v1__schema_ir_unknown_op",
+      "pass": true
+    },
+    {
+      "check": "same_compiled_policy_FSV-S03__four_case_v1__original",
+      "pass": true
+    },
+    {
+      "check": "same_shape_execution_for_contract_only_FSV-S03__four_case_v1__original",
+      "pass": true
+    },
+    {
+      "check": "valid_schema_for_admission_contrast_FSV-S03__four_case_v1__original",
+      "pass": true
+    },
+    {
+      "check": "same_compiled_policy_FSV-S03__four_case_v1__evidence_refs_absent",
+      "pass": true
+    },
+    {
+      "check": "same_shape_execution_for_contract_only_FSV-S03__four_case_v1__evidence_refs_absent",
+      "pass": true
+    },
+    {
+      "check": "ineligible_full_never_executes_FSV-S03__four_case_v1__evidence_refs_absent",
+      "pass": true
+    },
+    {
+      "check": "valid_schema_for_admission_contrast_FSV-S03__four_case_v1__evidence_refs_absent",
+      "pass": true
+    },
+    {
+      "check": "same_compiled_policy_FSV-S03__four_case_v1__evidence_version_mismatch",
+      "pass": true
+    },
+    {
+      "check": "same_shape_execution_for_contract_only_FSV-S03__four_case_v1__evidence_version_mismatch",
+      "pass": true
+    },
+    {
+      "check": "ineligible_full_never_executes_FSV-S03__four_case_v1__evidence_version_mismatch",
+      "pass": true
+    },
+    {
+      "check": "valid_schema_for_admission_contrast_FSV-S03__four_case_v1__evidence_version_mismatch",
+      "pass": true
+    },
+    {
+      "check": "same_compiled_policy_FSV-S03__four_case_v1__evidence_insufficient",
+      "pass": true
+    },
+    {
+      "check": "same_shape_execution_for_contract_only_FSV-S03__four_case_v1__evidence_insufficient",
+      "pass": true
+    },
+    {
+      "check": "ineligible_full_never_executes_FSV-S03__four_case_v1__evidence_insufficient",
+      "pass": true
+    },
+    {
+      "check": "valid_schema_for_admission_contrast_FSV-S03__four_case_v1__evidence_insufficient",
+      "pass": true
+    },
+    {
+      "check": "same_compiled_policy_FSV-S03__four_case_v1__required_binding_facts_absent",
+      "pass": true
+    },
+    {
+      "check": "same_shape_execution_for_contract_only_FSV-S03__four_case_v1__required_binding_facts_absent",
+      "pass": true
+    },
+    {
+      "check": "ineligible_full_never_executes_FSV-S03__four_case_v1__required_binding_facts_absent",
+      "pass": true
+    },
+    {
+      "check": "valid_schema_for_admission_contrast_FSV-S03__four_case_v1__required_binding_facts_absent",
+      "pass": true
+    },
+    {
+      "check": "same_compiled_policy_FSV-S03__four_case_v1__source_locator_hash_unresolvable",
+      "pass": true
+    },
+    {
+      "check": "same_shape_execution_for_contract_only_FSV-S03__four_case_v1__source_locator_hash_unresolvable",
+      "pass": true
+    },
+    {
+      "check": "valid_schema_for_admission_contrast_FSV-S03__four_case_v1__source_locator_hash_unresolvable",
+      "pass": true
+    },
+    {
+      "check": "ineligible_full_never_executes_FSV-S03__four_case_v1__schema_visibility_hidden",
+      "pass": true
+    },
+    {
+      "check": "ineligible_full_never_executes_FSV-S03__four_case_v1__schema_ir_unknown_op",
+      "pass": true
+    },
+    {
+      "check": "same_compiled_policy_FSV-S03__four_case_v2__original",
+      "pass": true
+    },
+    {
+      "check": "same_shape_execution_for_contract_only_FSV-S03__four_case_v2__original",
+      "pass": true
+    },
+    {
+      "check": "valid_schema_for_admission_contrast_FSV-S03__four_case_v2__original",
+      "pass": true
+    },
+    {
+      "check": "same_compiled_policy_FSV-S03__four_case_v2__evidence_refs_absent",
+      "pass": true
+    },
+    {
+      "check": "same_shape_execution_for_contract_only_FSV-S03__four_case_v2__evidence_refs_absent",
+      "pass": true
+    },
+    {
+      "check": "ineligible_full_never_executes_FSV-S03__four_case_v2__evidence_refs_absent",
+      "pass": true
+    },
+    {
+      "check": "valid_schema_for_admission_contrast_FSV-S03__four_case_v2__evidence_refs_absent",
+      "pass": true
+    },
+    {
+      "check": "same_compiled_policy_FSV-S03__four_case_v2__evidence_version_mismatch",
+      "pass": true
+    },
+    {
+      "check": "same_shape_execution_for_contract_only_FSV-S03__four_case_v2__evidence_version_mismatch",
+      "pass": true
+    },
+    {
+      "check": "ineligible_full_never_executes_FSV-S03__four_case_v2__evidence_version_mismatch",
+      "pass": true
+    },
+    {
+      "check": "valid_schema_for_admission_contrast_FSV-S03__four_case_v2__evidence_version_mismatch",
+      "pass": true
+    },
+    {
+      "check": "same_compiled_policy_FSV-S03__four_case_v2__evidence_insufficient",
+      "pass": true
+    },
+    {
+      "check": "same_shape_execution_for_contract_only_FSV-S03__four_case_v2__evidence_insufficient",
+      "pass": true
+    },
+    {
+      "check": "ineligible_full_never_executes_FSV-S03__four_case_v2__evidence_insufficient",
+      "pass": true
+    },
+    {
+      "check": "valid_schema_for_admission_contrast_FSV-S03__four_case_v2__evidence_insufficient",
+      "pass": true
+    },
+    {
+      "check": "same_compiled_policy_FSV-S03__four_case_v2__required_binding_facts_absent",
+      "pass": true
+    },
+    {
+      "check": "same_shape_execution_for_contract_only_FSV-S03__four_case_v2__required_binding_facts_absent",
+      "pass": true
+    },
+    {
+      "check": "ineligible_full_never_executes_FSV-S03__four_case_v2__required_binding_facts_absent",
+      "pass": true
+    },
+    {
+      "check": "valid_schema_for_admission_contrast_FSV-S03__four_case_v2__required_binding_facts_absent",
+      "pass": true
+    },
+    {
+      "check": "same_compiled_policy_FSV-S03__four_case_v2__source_locator_hash_unresolvable",
+      "pass": true
+    },
+    {
+      "check": "same_shape_execution_for_contract_only_FSV-S03__four_case_v2__source_locator_hash_unresolvable",
+      "pass": true
+    },
+    {
+      "check": "valid_schema_for_admission_contrast_FSV-S03__four_case_v2__source_locator_hash_unresolvable",
+      "pass": true
+    },
+    {
+      "check": "ineligible_full_never_executes_FSV-S03__four_case_v2__schema_visibility_hidden",
+      "pass": true
+    },
+    {
+      "check": "ineligible_full_never_executes_FSV-S03__four_case_v2__schema_ir_unknown_op",
+      "pass": true
+    },
+    {
+      "check": "same_compiled_policy_FSV-B13__four_case_v1__original",
+      "pass": true
+    },
+    {
+      "check": "same_shape_execution_for_contract_only_FSV-B13__four_case_v1__original",
+      "pass": true
+    },
+    {
+      "check": "valid_schema_for_admission_contrast_FSV-B13__four_case_v1__original",
+      "pass": true
+    },
+    {
+      "check": "same_compiled_policy_FSV-B13__four_case_v1__evidence_refs_absent",
+      "pass": true
+    },
+    {
+      "check": "same_shape_execution_for_contract_only_FSV-B13__four_case_v1__evidence_refs_absent",
+      "pass": true
+    },
+    {
+      "check": "ineligible_full_never_executes_FSV-B13__four_case_v1__evidence_refs_absent",
+      "pass": true
+    },
+    {
+      "check": "valid_schema_for_admission_contrast_FSV-B13__four_case_v1__evidence_refs_absent",
+      "pass": true
+    },
+    {
+      "check": "same_compiled_policy_FSV-B13__four_case_v1__evidence_version_mismatch",
+      "pass": true
+    },
+    {
+      "check": "same_shape_execution_for_contract_only_FSV-B13__four_case_v1__evidence_version_mismatch",
+      "pass": true
+    },
+    {
+      "check": "ineligible_full_never_executes_FSV-B13__four_case_v1__evidence_version_mismatch",
+      "pass": true
+    },
+    {
+      "check": "valid_schema_for_admission_contrast_FSV-B13__four_case_v1__evidence_version_mismatch",
+      "pass": true
+    },
+    {
+      "check": "same_compiled_policy_FSV-B13__four_case_v1__evidence_insufficient",
+      "pass": true
+    },
+    {
+      "check": "same_shape_execution_for_contract_only_FSV-B13__four_case_v1__evidence_insufficient",
+      "pass": true
+    },
+    {
+      "check": "ineligible_full_never_executes_FSV-B13__four_case_v1__evidence_insufficient",
+      "pass": true
+    },
+    {
+      "check": "valid_schema_for_admission_contrast_FSV-B13__four_case_v1__evidence_insufficient",
+      "pass": true
+    },
+    {
+      "check": "same_compiled_policy_FSV-B13__four_case_v1__required_binding_facts_absent",
+      "pass": true
+    },
+    {
+      "check": "same_shape_execution_for_contract_only_FSV-B13__four_case_v1__required_binding_facts_absent",
+      "pass": true
+    },
+    {
+      "check": "ineligible_full_never_executes_FSV-B13__four_case_v1__required_binding_facts_absent",
+      "pass": true
+    },
+    {
+      "check": "valid_schema_for_admission_contrast_FSV-B13__four_case_v1__required_binding_facts_absent",
+      "pass": true
+    },
+    {
+      "check": "same_compiled_policy_FSV-B13__four_case_v1__source_locator_hash_unresolvable",
+      "pass": true
+    },
+    {
+      "check": "same_shape_execution_for_contract_only_FSV-B13__four_case_v1__source_locator_hash_unresolvable",
+      "pass": true
+    },
+    {
+      "check": "valid_schema_for_admission_contrast_FSV-B13__four_case_v1__source_locator_hash_unresolvable",
+      "pass": true
+    },
+    {
+      "check": "ineligible_full_never_executes_FSV-B13__four_case_v1__trusted_path_to_unregistered_client_path",
+      "pass": true
+    },
+    {
+      "check": "valid_schema_for_admission_contrast_FSV-B13__four_case_v1__trusted_path_to_unregistered_client_path",
+      "pass": true
+    },
+    {
+      "check": "ineligible_full_never_executes_FSV-B13__four_case_v1__schema_visibility_hidden",
+      "pass": true
+    },
+    {
+      "check": "ineligible_full_never_executes_FSV-B13__four_case_v1__schema_ir_unknown_op",
+      "pass": true
+    },
+    {
+      "check": "same_compiled_policy_FSV-B13__four_case_v2__original",
+      "pass": true
+    },
+    {
+      "check": "same_shape_execution_for_contract_only_FSV-B13__four_case_v2__original",
+      "pass": true
+    },
+    {
+      "check": "valid_schema_for_admission_contrast_FSV-B13__four_case_v2__original",
+      "pass": true
+    },
+    {
+      "check": "same_compiled_policy_FSV-B13__four_case_v2__evidence_refs_absent",
+      "pass": true
+    },
+    {
+      "check": "same_shape_execution_for_contract_only_FSV-B13__four_case_v2__evidence_refs_absent",
+      "pass": true
+    },
+    {
+      "check": "ineligible_full_never_executes_FSV-B13__four_case_v2__evidence_refs_absent",
+      "pass": true
+    },
+    {
+      "check": "valid_schema_for_admission_contrast_FSV-B13__four_case_v2__evidence_refs_absent",
+      "pass": true
+    },
+    {
+      "check": "same_compiled_policy_FSV-B13__four_case_v2__evidence_version_mismatch",
+      "pass": true
+    },
+    {
+      "check": "same_shape_execution_for_contract_only_FSV-B13__four_case_v2__evidence_version_mismatch",
+      "pass": true
+    },
+    {
+      "check": "ineligible_full_never_executes_FSV-B13__four_case_v2__evidence_version_mismatch",
+      "pass": true
+    },
+    {
+      "check": "valid_schema_for_admission_contrast_FSV-B13__four_case_v2__evidence_version_mismatch",
+      "pass": true
+    },
+    {
+      "check": "same_compiled_policy_FSV-B13__four_case_v2__evidence_insufficient",
+      "pass": true
+    },
+    {
+      "check": "same_shape_execution_for_contract_only_FSV-B13__four_case_v2__evidence_insufficient",
+      "pass": true
+    },
+    {
+      "check": "ineligible_full_never_executes_FSV-B13__four_case_v2__evidence_insufficient",
+      "pass": true
+    },
+    {
+      "check": "valid_schema_for_admission_contrast_FSV-B13__four_case_v2__evidence_insufficient",
+      "pass": true
+    },
+    {
+      "check": "same_compiled_policy_FSV-B13__four_case_v2__required_binding_facts_absent",
+      "pass": true
+    },
+    {
+      "check": "same_shape_execution_for_contract_only_FSV-B13__four_case_v2__required_binding_facts_absent",
+      "pass": true
+    },
+    {
+      "check": "ineligible_full_never_executes_FSV-B13__four_case_v2__required_binding_facts_absent",
+      "pass": true
+    },
+    {
+      "check": "valid_schema_for_admission_contrast_FSV-B13__four_case_v2__required_binding_facts_absent",
+      "pass": true
+    },
+    {
+      "check": "same_compiled_policy_FSV-B13__four_case_v2__source_locator_hash_unresolvable",
+      "pass": true
+    },
+    {
+      "check": "same_shape_execution_for_contract_only_FSV-B13__four_case_v2__source_locator_hash_unresolvable",
+      "pass": true
+    },
+    {
+      "check": "valid_schema_for_admission_contrast_FSV-B13__four_case_v2__source_locator_hash_unresolvable",
+      "pass": true
+    },
+    {
+      "check": "ineligible_full_never_executes_FSV-B13__four_case_v2__trusted_path_to_unregistered_client_path",
+      "pass": true
+    },
+    {
+      "check": "valid_schema_for_admission_contrast_FSV-B13__four_case_v2__trusted_path_to_unregistered_client_path",
+      "pass": true
+    },
+    {
+      "check": "ineligible_full_never_executes_FSV-B13__four_case_v2__schema_visibility_hidden",
+      "pass": true
+    },
+    {
+      "check": "ineligible_full_never_executes_FSV-B13__four_case_v2__schema_ir_unknown_op",
+      "pass": true
+    },
+    {
+      "check": "same_compiled_policy_FSV-B17__four_case_v1__original",
+      "pass": true
+    },
+    {
+      "check": "same_shape_execution_for_contract_only_FSV-B17__four_case_v1__original",
+      "pass": true
+    },
+    {
+      "check": "valid_schema_for_admission_contrast_FSV-B17__four_case_v1__original",
+      "pass": true
+    },
+    {
+      "check": "same_compiled_policy_FSV-B17__four_case_v1__evidence_refs_absent",
+      "pass": true
+    },
+    {
+      "check": "same_shape_execution_for_contract_only_FSV-B17__four_case_v1__evidence_refs_absent",
+      "pass": true
+    },
+    {
+      "check": "ineligible_full_never_executes_FSV-B17__four_case_v1__evidence_refs_absent",
+      "pass": true
+    },
+    {
+      "check": "valid_schema_for_admission_contrast_FSV-B17__four_case_v1__evidence_refs_absent",
+      "pass": true
+    },
+    {
+      "check": "same_compiled_policy_FSV-B17__four_case_v1__evidence_version_mismatch",
+      "pass": true
+    },
+    {
+      "check": "same_shape_execution_for_contract_only_FSV-B17__four_case_v1__evidence_version_mismatch",
+      "pass": true
+    },
+    {
+      "check": "ineligible_full_never_executes_FSV-B17__four_case_v1__evidence_version_mismatch",
+      "pass": true
+    },
+    {
+      "check": "valid_schema_for_admission_contrast_FSV-B17__four_case_v1__evidence_version_mismatch",
+      "pass": true
+    },
+    {
+      "check": "same_compiled_policy_FSV-B17__four_case_v1__evidence_insufficient",
+      "pass": true
+    },
+    {
+      "check": "same_shape_execution_for_contract_only_FSV-B17__four_case_v1__evidence_insufficient",
+      "pass": true
+    },
+    {
+      "check": "ineligible_full_never_executes_FSV-B17__four_case_v1__evidence_insufficient",
+      "pass": true
+    },
+    {
+      "check": "valid_schema_for_admission_contrast_FSV-B17__four_case_v1__evidence_insufficient",
+      "pass": true
+    },
+    {
+      "check": "same_compiled_policy_FSV-B17__four_case_v1__required_binding_facts_absent",
+      "pass": true
+    },
+    {
+      "check": "same_shape_execution_for_contract_only_FSV-B17__four_case_v1__required_binding_facts_absent",
+      "pass": true
+    },
+    {
+      "check": "ineligible_full_never_executes_FSV-B17__four_case_v1__required_binding_facts_absent",
+      "pass": true
+    },
+    {
+      "check": "valid_schema_for_admission_contrast_FSV-B17__four_case_v1__required_binding_facts_absent",
+      "pass": true
+    },
+    {
+      "check": "same_compiled_policy_FSV-B17__four_case_v1__source_locator_hash_unresolvable",
+      "pass": true
+    },
+    {
+      "check": "same_shape_execution_for_contract_only_FSV-B17__four_case_v1__source_locator_hash_unresolvable",
+      "pass": true
+    },
+    {
+      "check": "valid_schema_for_admission_contrast_FSV-B17__four_case_v1__source_locator_hash_unresolvable",
+      "pass": true
+    },
+    {
+      "check": "ineligible_full_never_executes_FSV-B17__four_case_v1__trusted_path_to_unregistered_client_path",
+      "pass": true
+    },
+    {
+      "check": "valid_schema_for_admission_contrast_FSV-B17__four_case_v1__trusted_path_to_unregistered_client_path",
+      "pass": true
+    },
+    {
+      "check": "ineligible_full_never_executes_FSV-B17__four_case_v1__schema_visibility_hidden",
+      "pass": true
+    },
+    {
+      "check": "ineligible_full_never_executes_FSV-B17__four_case_v1__schema_ir_unknown_op",
+      "pass": true
+    },
+    {
+      "check": "same_compiled_policy_FSV-B17__four_case_v2__original",
+      "pass": true
+    },
+    {
+      "check": "same_shape_execution_for_contract_only_FSV-B17__four_case_v2__original",
+      "pass": true
+    },
+    {
+      "check": "valid_schema_for_admission_contrast_FSV-B17__four_case_v2__original",
+      "pass": true
+    },
+    {
+      "check": "same_compiled_policy_FSV-B17__four_case_v2__evidence_refs_absent",
+      "pass": true
+    },
+    {
+      "check": "same_shape_execution_for_contract_only_FSV-B17__four_case_v2__evidence_refs_absent",
+      "pass": true
+    },
+    {
+      "check": "ineligible_full_never_executes_FSV-B17__four_case_v2__evidence_refs_absent",
+      "pass": true
+    },
+    {
+      "check": "valid_schema_for_admission_contrast_FSV-B17__four_case_v2__evidence_refs_absent",
+      "pass": true
+    },
+    {
+      "check": "same_compiled_policy_FSV-B17__four_case_v2__evidence_version_mismatch",
+      "pass": true
+    },
+    {
+      "check": "same_shape_execution_for_contract_only_FSV-B17__four_case_v2__evidence_version_mismatch",
+      "pass": true
+    },
+    {
+      "check": "ineligible_full_never_executes_FSV-B17__four_case_v2__evidence_version_mismatch",
+      "pass": true
+    },
+    {
+      "check": "valid_schema_for_admission_contrast_FSV-B17__four_case_v2__evidence_version_mismatch",
+      "pass": true
+    },
+    {
+      "check": "same_compiled_policy_FSV-B17__four_case_v2__evidence_insufficient",
+      "pass": true
+    },
+    {
+      "check": "same_shape_execution_for_contract_only_FSV-B17__four_case_v2__evidence_insufficient",
+      "pass": true
+    },
+    {
+      "check": "ineligible_full_never_executes_FSV-B17__four_case_v2__evidence_insufficient",
+      "pass": true
+    },
+    {
+      "check": "valid_schema_for_admission_contrast_FSV-B17__four_case_v2__evidence_insufficient",
+      "pass": true
+    },
+    {
+      "check": "same_compiled_policy_FSV-B17__four_case_v2__required_binding_facts_absent",
+      "pass": true
+    },
+    {
+      "check": "same_shape_execution_for_contract_only_FSV-B17__four_case_v2__required_binding_facts_absent",
+      "pass": true
+    },
+    {
+      "check": "ineligible_full_never_executes_FSV-B17__four_case_v2__required_binding_facts_absent",
+      "pass": true
+    },
+    {
+      "check": "valid_schema_for_admission_contrast_FSV-B17__four_case_v2__required_binding_facts_absent",
+      "pass": true
+    },
+    {
+      "check": "same_compiled_policy_FSV-B17__four_case_v2__source_locator_hash_unresolvable",
+      "pass": true
+    },
+    {
+      "check": "same_shape_execution_for_contract_only_FSV-B17__four_case_v2__source_locator_hash_unresolvable",
+      "pass": true
+    },
+    {
+      "check": "valid_schema_for_admission_contrast_FSV-B17__four_case_v2__source_locator_hash_unresolvable",
+      "pass": true
+    },
+    {
+      "check": "ineligible_full_never_executes_FSV-B17__four_case_v2__trusted_path_to_unregistered_client_path",
+      "pass": true
+    },
+    {
+      "check": "valid_schema_for_admission_contrast_FSV-B17__four_case_v2__trusted_path_to_unregistered_client_path",
+      "pass": true
+    },
+    {
+      "check": "ineligible_full_never_executes_FSV-B17__four_case_v2__schema_visibility_hidden",
+      "pass": true
+    },
+    {
+      "check": "ineligible_full_never_executes_FSV-B17__four_case_v2__schema_ir_unknown_op",
+      "pass": true
+    },
+    {
+      "check": "same_compiled_policy_FSV-B19__four_case_v1__original",
+      "pass": true
+    },
+    {
+      "check": "same_shape_execution_for_contract_only_FSV-B19__four_case_v1__original",
+      "pass": true
+    },
+    {
+      "check": "valid_schema_for_admission_contrast_FSV-B19__four_case_v1__original",
+      "pass": true
+    },
+    {
+      "check": "same_compiled_policy_FSV-B19__four_case_v1__evidence_refs_absent",
+      "pass": true
+    },
+    {
+      "check": "same_shape_execution_for_contract_only_FSV-B19__four_case_v1__evidence_refs_absent",
+      "pass": true
+    },
+    {
+      "check": "ineligible_full_never_executes_FSV-B19__four_case_v1__evidence_refs_absent",
+      "pass": true
+    },
+    {
+      "check": "valid_schema_for_admission_contrast_FSV-B19__four_case_v1__evidence_refs_absent",
+      "pass": true
+    },
+    {
+      "check": "same_compiled_policy_FSV-B19__four_case_v1__evidence_version_mismatch",
+      "pass": true
+    },
+    {
+      "check": "same_shape_execution_for_contract_only_FSV-B19__four_case_v1__evidence_version_mismatch",
+      "pass": true
+    },
+    {
+      "check": "ineligible_full_never_executes_FSV-B19__four_case_v1__evidence_version_mismatch",
+      "pass": true
+    },
+    {
+      "check": "valid_schema_for_admission_contrast_FSV-B19__four_case_v1__evidence_version_mismatch",
+      "pass": true
+    },
+    {
+      "check": "same_compiled_policy_FSV-B19__four_case_v1__evidence_insufficient",
+      "pass": true
+    },
+    {
+      "check": "same_shape_execution_for_contract_only_FSV-B19__four_case_v1__evidence_insufficient",
+      "pass": true
+    },
+    {
+      "check": "ineligible_full_never_executes_FSV-B19__four_case_v1__evidence_insufficient",
+      "pass": true
+    },
+    {
+      "check": "valid_schema_for_admission_contrast_FSV-B19__four_case_v1__evidence_insufficient",
+      "pass": true
+    },
+    {
+      "check": "same_compiled_policy_FSV-B19__four_case_v1__required_binding_facts_absent",
+      "pass": true
+    },
+    {
+      "check": "same_shape_execution_for_contract_only_FSV-B19__four_case_v1__required_binding_facts_absent",
+      "pass": true
+    },
+    {
+      "check": "ineligible_full_never_executes_FSV-B19__four_case_v1__required_binding_facts_absent",
+      "pass": true
+    },
+    {
+      "check": "valid_schema_for_admission_contrast_FSV-B19__four_case_v1__required_binding_facts_absent",
+      "pass": true
+    },
+    {
+      "check": "same_compiled_policy_FSV-B19__four_case_v1__source_locator_hash_unresolvable",
+      "pass": true
+    },
+    {
+      "check": "same_shape_execution_for_contract_only_FSV-B19__four_case_v1__source_locator_hash_unresolvable",
+      "pass": true
+    },
+    {
+      "check": "valid_schema_for_admission_contrast_FSV-B19__four_case_v1__source_locator_hash_unresolvable",
+      "pass": true
+    },
+    {
+      "check": "ineligible_full_never_executes_FSV-B19__four_case_v1__trusted_path_to_unregistered_client_path",
+      "pass": true
+    },
+    {
+      "check": "valid_schema_for_admission_contrast_FSV-B19__four_case_v1__trusted_path_to_unregistered_client_path",
+      "pass": true
+    },
+    {
+      "check": "ineligible_full_never_executes_FSV-B19__four_case_v1__schema_visibility_hidden",
+      "pass": true
+    },
+    {
+      "check": "ineligible_full_never_executes_FSV-B19__four_case_v1__schema_ir_unknown_op",
+      "pass": true
+    },
+    {
+      "check": "same_compiled_policy_FSV-B19__four_case_v2__original",
+      "pass": true
+    },
+    {
+      "check": "same_shape_execution_for_contract_only_FSV-B19__four_case_v2__original",
+      "pass": true
+    },
+    {
+      "check": "valid_schema_for_admission_contrast_FSV-B19__four_case_v2__original",
+      "pass": true
+    },
+    {
+      "check": "same_compiled_policy_FSV-B19__four_case_v2__evidence_refs_absent",
+      "pass": true
+    },
+    {
+      "check": "same_shape_execution_for_contract_only_FSV-B19__four_case_v2__evidence_refs_absent",
+      "pass": true
+    },
+    {
+      "check": "ineligible_full_never_executes_FSV-B19__four_case_v2__evidence_refs_absent",
+      "pass": true
+    },
+    {
+      "check": "valid_schema_for_admission_contrast_FSV-B19__four_case_v2__evidence_refs_absent",
+      "pass": true
+    },
+    {
+      "check": "same_compiled_policy_FSV-B19__four_case_v2__evidence_version_mismatch",
+      "pass": true
+    },
+    {
+      "check": "same_shape_execution_for_contract_only_FSV-B19__four_case_v2__evidence_version_mismatch",
+      "pass": true
+    },
+    {
+      "check": "ineligible_full_never_executes_FSV-B19__four_case_v2__evidence_version_mismatch",
+      "pass": true
+    },
+    {
+      "check": "valid_schema_for_admission_contrast_FSV-B19__four_case_v2__evidence_version_mismatch",
+      "pass": true
+    },
+    {
+      "check": "same_compiled_policy_FSV-B19__four_case_v2__evidence_insufficient",
+      "pass": true
+    },
+    {
+      "check": "same_shape_execution_for_contract_only_FSV-B19__four_case_v2__evidence_insufficient",
+      "pass": true
+    },
+    {
+      "check": "ineligible_full_never_executes_FSV-B19__four_case_v2__evidence_insufficient",
+      "pass": true
+    },
+    {
+      "check": "valid_schema_for_admission_contrast_FSV-B19__four_case_v2__evidence_insufficient",
+      "pass": true
+    },
+    {
+      "check": "same_compiled_policy_FSV-B19__four_case_v2__required_binding_facts_absent",
+      "pass": true
+    },
+    {
+      "check": "same_shape_execution_for_contract_only_FSV-B19__four_case_v2__required_binding_facts_absent",
+      "pass": true
+    },
+    {
+      "check": "ineligible_full_never_executes_FSV-B19__four_case_v2__required_binding_facts_absent",
+      "pass": true
+    },
+    {
+      "check": "valid_schema_for_admission_contrast_FSV-B19__four_case_v2__required_binding_facts_absent",
+      "pass": true
+    },
+    {
+      "check": "same_compiled_policy_FSV-B19__four_case_v2__source_locator_hash_unresolvable",
+      "pass": true
+    },
+    {
+      "check": "same_shape_execution_for_contract_only_FSV-B19__four_case_v2__source_locator_hash_unresolvable",
+      "pass": true
+    },
+    {
+      "check": "valid_schema_for_admission_contrast_FSV-B19__four_case_v2__source_locator_hash_unresolvable",
+      "pass": true
+    },
+    {
+      "check": "ineligible_full_never_executes_FSV-B19__four_case_v2__trusted_path_to_unregistered_client_path",
+      "pass": true
+    },
+    {
+      "check": "valid_schema_for_admission_contrast_FSV-B19__four_case_v2__trusted_path_to_unregistered_client_path",
+      "pass": true
+    },
+    {
+      "check": "ineligible_full_never_executes_FSV-B19__four_case_v2__schema_visibility_hidden",
+      "pass": true
+    },
+    {
+      "check": "ineligible_full_never_executes_FSV-B19__four_case_v2__schema_ir_unknown_op",
+      "pass": true
+    },
+    {
+      "check": "exact_7_cases_11_parents_95_variant_rows",
+      "pass": true
+    },
+    {
+      "check": "original_reconciliation_pass",
+      "pass": true
+    },
+    {
+      "check": "managed_t0_and_effects_success",
+      "pass": true
+    },
+    {
+      "check": "copied_evidence_byte_equal",
+      "pass": true
+    },
+    {
+      "check": "zero_runtime_errors",
+      "pass": true
+    },
+    {
+      "check": "no_schema_control_enters_contrast_denominator",
+      "pass": true
+    }
+  ],
+  "delivered_files": 564,
+  "effect_rows": 95,
+  "model_calls": 0,
+  "scientific_generalization_validated": false
+}

@@ -1,0 +1,1 @@
+{"oracle_channel":"O-I","task_window_id":"FSV-B13","vectors":[{"envelope":{"request":{"body":{"qty":111}},"trusted":{"allowancePercent":10,"authorizedRole":false,"derivedMaximumQty":110,"orderedQty":100}},"expected_class":"deny","reason":"quantity exceeds configured allowance","synthetic_data_only":true,"vector_id":"FSV-B13-OI-01","vector_suffix":"OI-01"}]}

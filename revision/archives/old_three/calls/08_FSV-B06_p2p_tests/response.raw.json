@@ -1,0 +1,28 @@
+{
+  "choices": [
+    {
+      "finish_reason": "stop",
+      "index": 0,
+      "message": {
+        "content": "{\"begin\":\"BEGIN_FSV-B06_p2p_tests_MAIN\",\"stage\":\"p2p_tests\",\"output\":{\"tests\":[{\"id\":\"p2p_test_reversal_latest_true\",\"input\":{\"request\":{\"body\":{}},\"trusted\":{\"reAgeIsLatestTransaction\":true}},\"expected\":\"allow\",\"source_ref\":\"VIS-FSV-B06-01\"},{\"id\":\"p2p_test_reversal_latest_false\",\"input\":{\"request\":{\"body\":{}},\"trusted\":{\"reAgeIsLatestTransaction\":false}},\"expected\":\"deny\",\"source_ref\":\"VIS-FSV-B06-01\"},{\"id\":\"p2p_test_reversal_latest_missing\",\"input\":{\"request\":{\"body\":{}},\"trusted\":{}},\"expected\":\"deny\",\"source_ref\":\"VIS-FSV-B06-01\"}]},\"end\":\"END_FSV-B06_p2p_tests_MAIN\"}",
+        "role": "assistant"
+      }
+    }
+  ],
+  "created": 1791950547,
+  "id": "202610141202173d9a48fe1b174603",
+  "model": "glm-5.2",
+  "object": "chat.completion",
+  "request_id": "202610141202173d9a48fe1b174603",
+  "usage": {
+    "completion_tokens": 763,
+    "completion_tokens_details": {
+      "reasoning_tokens": 484
+    },
+    "prompt_tokens": 1453,
+    "prompt_tokens_details": {
+      "cached_tokens": 0
+    },
+    "total_tokens": 2216
+  }
+}

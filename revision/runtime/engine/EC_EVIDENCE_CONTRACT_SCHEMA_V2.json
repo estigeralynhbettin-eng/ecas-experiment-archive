@@ -1,0 +1,62 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "https://example.invalid/ec/evidence-contract-v2.schema.json",
+  "title": "EC Evidence Contract V2",
+  "type": "object",
+  "additionalProperties": false,
+  "required": ["contract_version", "contract_id", "catalog_id", "target", "evidence"],
+  "properties": {
+    "contract_version": {"const": "EC-EVIDENCE-CONTRACT-V2"},
+    "contract_id": {"$ref": "#/$defs/id"},
+    "catalog_id": {"const": "EC-SECURITY-PRIMITIVE-CATALOG-V1"},
+    "target": {"$ref": "#/$defs/target"},
+    "evidence": {
+      "type": "array", "minItems": 1, "maxItems": 256,
+      "items": {"$ref": "#/$defs/evidenceItem"}
+    }
+  },
+  "$defs": {
+    "id": {"type": "string", "pattern": "^[A-Za-z0-9][A-Za-z0-9._:-]{0,127}$"},
+    "pointer": {"type": "string", "pattern": "^/(request|trusted)(/([^~/]|~0|~1)+|/\\*)*$", "maxLength": 512},
+    "target": {
+      "type": "object", "additionalProperties": false,
+      "required": ["system", "version", "operation"],
+      "properties": {
+        "system": {"$ref": "#/$defs/id"},
+        "version": {"type": "string", "minLength": 1, "maxLength": 64},
+        "operation": {"type": "string", "minLength": 1, "maxLength": 256}
+      }
+    },
+    "factValue": {
+      "anyOf": [
+        {"type": "string", "minLength": 1, "maxLength": 512},
+        {"type": "number"},
+        {"type": "integer"},
+        {"type": "boolean"},
+        {"type": "array", "minItems": 1, "maxItems": 512, "uniqueItems": true, "items": {"type": ["string", "number", "integer", "boolean"]}}
+      ]
+    },
+    "evidenceItem": {
+      "type": "object", "additionalProperties": false,
+      "required": ["evidence_id", "visibility", "source_kind", "sha256", "locator", "system", "versions", "operations", "relation", "supports_primitives", "bound_paths", "binding_facts"],
+      "properties": {
+        "evidence_id": {"$ref": "#/$defs/id"},
+        "visibility": {"const": "visible"},
+        "source_kind": {"enum": ["business_requirement", "api_documentation", "developer_manual", "security_catalog", "runtime_context_contract"]},
+        "sha256": {"type": "string", "pattern": "^[A-Fa-f0-9]{64}$"},
+        "locator": {"type": "string", "minLength": 1, "maxLength": 1024},
+        "system": {"type": "string", "minLength": 1, "maxLength": 128},
+        "versions": {"type": "array", "minItems": 1, "maxItems": 32, "uniqueItems": true, "items": {"type": "string", "minLength": 1, "maxLength": 64}},
+        "operations": {"type": "array", "minItems": 1, "maxItems": 64, "uniqueItems": true, "items": {"type": "string", "minLength": 1, "maxLength": 256}},
+        "relation": {"enum": ["supports", "contradicts", "insufficient"]},
+        "supports_primitives": {"type": "array", "minItems": 1, "maxItems": 32, "uniqueItems": true, "items": {"$ref": "#/$defs/id"}},
+        "bound_paths": {"type": "array", "minItems": 1, "maxItems": 128, "uniqueItems": true, "items": {"$ref": "#/$defs/pointer"}},
+        "binding_facts": {
+          "type": "object", "minProperties": 1, "maxProperties": 64,
+          "propertyNames": {"pattern": "^[A-Za-z][A-Za-z0-9_]{0,63}$"},
+          "additionalProperties": {"$ref": "#/$defs/factValue"}
+        }
+      }
+    }
+  }
+}

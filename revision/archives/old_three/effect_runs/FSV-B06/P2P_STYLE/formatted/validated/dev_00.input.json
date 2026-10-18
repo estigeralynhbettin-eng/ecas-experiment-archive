@@ -1,0 +1,13 @@
+{
+  "request": {
+    "body": {}
+  },
+  "trusted": {
+    "reAgeIsLatestTransaction": true
+  },
+  "subject": {
+    "role": "authenticated_api_caller"
+  },
+  "action": "POST /v1/loans/{loanId}/transactions/{transactionId}?command=undo",
+  "resource": "Fineract:1.14.0"
+}

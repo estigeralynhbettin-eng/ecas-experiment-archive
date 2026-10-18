@@ -1,0 +1,529 @@
+{
+  "status": "PASS",
+  "prepared_at": "2026-10-15T00:50:08.085204+00:00",
+  "state": "PREPARED_NOT_DISPATCHED",
+  "model_calls": 0,
+  "checks": [
+    {
+      "check": "original_and_snapshot_unchanged",
+      "source": "/root/ecas_evidence_ablation_20261014/runtime/EC_EVIDENCE_CONTRACT_SCHEMA_V2.json",
+      "pass": true
+    },
+    {
+      "check": "original_and_snapshot_unchanged",
+      "source": "/root/ecas_evidence_ablation_20261014/runtime/EC_EVIDENCE_CONTRACT_SCHEMA_V3.json",
+      "pass": true
+    },
+    {
+      "check": "original_and_snapshot_unchanged",
+      "source": "/root/ecas_evidence_ablation_20261014/runtime/EC_FIELD_SECURITY_MODEL_IR_SCHEMA_V2.json",
+      "pass": true
+    },
+    {
+      "check": "original_and_snapshot_unchanged",
+      "source": "/root/ecas_evidence_ablation_20261014/runtime/EC_FIELD_SECURITY_MODEL_IR_SCHEMA_V3.json",
+      "pass": true
+    },
+    {
+      "check": "original_and_snapshot_unchanged",
+      "source": "/root/ecas_evidence_ablation_20261014/runtime/EC_FIELD_SECURITY_POLICY_SCHEMA_V2.json",
+      "pass": true
+    },
+    {
+      "check": "original_and_snapshot_unchanged",
+      "source": "/root/ecas_evidence_ablation_20261014/runtime/EC_FIELD_SECURITY_POLICY_SCHEMA_V3.json",
+      "pass": true
+    },
+    {
+      "check": "original_and_snapshot_unchanged",
+      "source": "/root/ecas_evidence_ablation_20261014/runtime/EC_FIELD_SECURITY_PROPOSAL_SCHEMA_V2.json",
+      "pass": true
+    },
+    {
+      "check": "original_and_snapshot_unchanged",
+      "source": "/root/ecas_evidence_ablation_20261014/runtime/EC_FIELD_SECURITY_PROPOSAL_SCHEMA_V3.json",
+      "pass": true
+    },
+    {
+      "check": "original_and_snapshot_unchanged",
+      "source": "/root/ecas_evidence_ablation_20261014/runtime/scripts/ec_field_security_engine_v2.py",
+      "pass": true
+    },
+    {
+      "check": "original_and_snapshot_unchanged",
+      "source": "/root/ecas_evidence_ablation_20261014/runtime/scripts/ec_field_security_engine_v3.py",
+      "pass": true
+    },
+    {
+      "check": "original_and_snapshot_unchanged",
+      "source": "/root/ecas_evidence_ablation_20261014/runtime/security_knowledge/SECURITY_PRIMITIVE_CATALOG_V1.json",
+      "pass": true
+    },
+    {
+      "check": "original_and_snapshot_unchanged",
+      "source": "/root/ecas_evidence_ablation_20261014/runtime/security_knowledge/SECURITY_PRIMITIVE_CATALOG_V2.json",
+      "pass": true
+    },
+    {
+      "check": "original_and_snapshot_unchanged",
+      "source": "/mnt/d/lunwen/EC-CSI投稿/working/exploration/20261014_matched_evidence_labor/matched_generation/DOCUMENTED_OPERATOR_SEMANTICS.json",
+      "pass": true
+    },
+    {
+      "check": "original_and_snapshot_unchanged",
+      "source": "/mnt/d/lunwen/EC-CSI投稿/working/exploration/20261014_matched_evidence_labor/matched_generation/generation_inputs/FSV-S03/packet.json",
+      "pass": true
+    },
+    {
+      "check": "original_and_snapshot_unchanged",
+      "source": "/root/ecas_evidence_ablation_20261014/inputs/FSV-S03__four_case_v1/candidate.json",
+      "pass": true
+    },
+    {
+      "check": "original_and_snapshot_unchanged",
+      "source": "/root/ecas_evidence_ablation_20261014/inputs/FSV-S03__four_case_v1/contract.json",
+      "pass": true
+    },
+    {
+      "check": "original_and_snapshot_unchanged",
+      "source": "/root/ecas_evidence_ablation_20261014/inputs/FSV-S03__four_case_v2/candidate.json",
+      "pass": true
+    },
+    {
+      "check": "original_and_snapshot_unchanged",
+      "source": "/root/ecas_evidence_ablation_20261014/inputs/FSV-S03__four_case_v2/contract.json",
+      "pass": true
+    },
+    {
+      "check": "original_and_snapshot_unchanged",
+      "source": "/mnt/d/lunwen/EC-CSI投稿/working/exploration/20261014_matched_evidence_labor/matched_generation/generation_inputs/FSV-B13/packet.json",
+      "pass": true
+    },
+    {
+      "check": "original_and_snapshot_unchanged",
+      "source": "/root/ecas_evidence_ablation_20261014/inputs/FSV-B13__four_case_v2/candidate.json",
+      "pass": true
+    },
+    {
+      "check": "original_and_snapshot_unchanged",
+      "source": "/root/ecas_evidence_ablation_20261014/inputs/FSV-B13__four_case_v2/contract.json",
+      "pass": true
+    },
+    {
+      "check": "original_and_snapshot_unchanged",
+      "source": "/root/ecas_evidence_ablation_20261014/inputs/FSV-B13__four_case_v1/candidate.json",
+      "pass": true
+    },
+    {
+      "check": "original_and_snapshot_unchanged",
+      "source": "/root/ecas_evidence_ablation_20261014/inputs/FSV-B13__four_case_v1/contract.json",
+      "pass": true
+    },
+    {
+      "check": "original_and_snapshot_unchanged",
+      "source": "/mnt/d/lunwen/EC-CSI投稿/working/exploration/20261014_matched_evidence_labor/matched_generation/generation_inputs/FSV-B17/packet.json",
+      "pass": true
+    },
+    {
+      "check": "original_and_snapshot_unchanged",
+      "source": "/root/ecas_evidence_ablation_20261014/inputs/FSV-B17__four_case_v1/candidate.json",
+      "pass": true
+    },
+    {
+      "check": "original_and_snapshot_unchanged",
+      "source": "/root/ecas_evidence_ablation_20261014/inputs/FSV-B17__four_case_v1/contract.json",
+      "pass": true
+    },
+    {
+      "check": "original_and_snapshot_unchanged",
+      "source": "/root/ecas_evidence_ablation_20261014/inputs/FSV-B17__four_case_v2/candidate.json",
+      "pass": true
+    },
+    {
+      "check": "original_and_snapshot_unchanged",
+      "source": "/root/ecas_evidence_ablation_20261014/inputs/FSV-B17__four_case_v2/contract.json",
+      "pass": true
+    },
+    {
+      "check": "original_and_snapshot_unchanged",
+      "source": "/mnt/d/lunwen/EC-CSI投稿/working/exploration/20261014_matched_evidence_labor/matched_generation/generation_inputs/FSV-B19/packet.json",
+      "pass": true
+    },
+    {
+      "check": "original_and_snapshot_unchanged",
+      "source": "/root/ecas_evidence_ablation_20261014/inputs/FSV-B19__four_case_v2/candidate.json",
+      "pass": true
+    },
+    {
+      "check": "original_and_snapshot_unchanged",
+      "source": "/root/ecas_evidence_ablation_20261014/inputs/FSV-B19__four_case_v2/contract.json",
+      "pass": true
+    },
+    {
+      "check": "original_and_snapshot_unchanged",
+      "source": "/root/ecas_evidence_ablation_20261014/inputs/FSV-B19__four_case_v1/candidate.json",
+      "pass": true
+    },
+    {
+      "check": "original_and_snapshot_unchanged",
+      "source": "/root/ecas_evidence_ablation_20261014/inputs/FSV-B19__four_case_v1/contract.json",
+      "pass": true
+    },
+    {
+      "check": "frozen_input_unchanged",
+      "path": "/mnt/d/lunwen/EC-CSI投稿/working/exploration/20261014_matched_evidence_labor/judge_control/CALL_PLAN.json",
+      "pass": true
+    },
+    {
+      "check": "frozen_input_unchanged",
+      "path": "/mnt/d/lunwen/EC-CSI投稿/working/exploration/20261014_matched_evidence_labor/judge_control/CANDIDATE_MAPPING.json",
+      "pass": true
+    },
+    {
+      "check": "frozen_input_unchanged",
+      "path": "/mnt/d/lunwen/EC-CSI投稿/working/exploration/20261014_matched_evidence_labor/judge_control/EXECUTION_CONFIG.json",
+      "pass": true
+    },
+    {
+      "check": "frozen_input_unchanged",
+      "path": "/mnt/d/lunwen/EC-CSI投稿/working/exploration/20261014_matched_evidence_labor/judge_control/PROTOCOL_CN.md",
+      "pass": true
+    },
+    {
+      "check": "frozen_input_unchanged",
+      "path": "/mnt/d/lunwen/EC-CSI投稿/working/exploration/20261014_matched_evidence_labor/judge_control/ROOT_DISPATCH_APPROVAL_TEMPLATE.json",
+      "pass": true
+    },
+    {
+      "check": "frozen_input_unchanged",
+      "path": "/mnt/d/lunwen/EC-CSI投稿/working/exploration/20261014_matched_evidence_labor/judge_control/SOURCE_MANIFEST.json",
+      "pass": true
+    },
+    {
+      "check": "frozen_input_unchanged",
+      "path": "/mnt/d/lunwen/EC-CSI投稿/working/exploration/20261014_matched_evidence_labor/judge_control/candidate_inputs/FSV-B13/A.json",
+      "pass": true
+    },
+    {
+      "check": "frozen_input_unchanged",
+      "path": "/mnt/d/lunwen/EC-CSI投稿/working/exploration/20261014_matched_evidence_labor/judge_control/candidate_inputs/FSV-B13/B.json",
+      "pass": true
+    },
+    {
+      "check": "frozen_input_unchanged",
+      "path": "/mnt/d/lunwen/EC-CSI投稿/working/exploration/20261014_matched_evidence_labor/judge_control/candidate_inputs/FSV-B17/A.json",
+      "pass": true
+    },
+    {
+      "check": "frozen_input_unchanged",
+      "path": "/mnt/d/lunwen/EC-CSI投稿/working/exploration/20261014_matched_evidence_labor/judge_control/candidate_inputs/FSV-B17/B.json",
+      "pass": true
+    },
+    {
+      "check": "frozen_input_unchanged",
+      "path": "/mnt/d/lunwen/EC-CSI投稿/working/exploration/20261014_matched_evidence_labor/judge_control/candidate_inputs/FSV-B19/A.json",
+      "pass": true
+    },
+    {
+      "check": "frozen_input_unchanged",
+      "path": "/mnt/d/lunwen/EC-CSI投稿/working/exploration/20261014_matched_evidence_labor/judge_control/candidate_inputs/FSV-B19/B.json",
+      "pass": true
+    },
+    {
+      "check": "frozen_input_unchanged",
+      "path": "/mnt/d/lunwen/EC-CSI投稿/working/exploration/20261014_matched_evidence_labor/judge_control/candidate_inputs/FSV-S03/A.json",
+      "pass": true
+    },
+    {
+      "check": "frozen_input_unchanged",
+      "path": "/mnt/d/lunwen/EC-CSI投稿/working/exploration/20261014_matched_evidence_labor/judge_control/candidate_inputs/FSV-S03/B.json",
+      "pass": true
+    },
+    {
+      "check": "frozen_input_unchanged",
+      "path": "/mnt/d/lunwen/EC-CSI投稿/working/exploration/20261014_matched_evidence_labor/judge_control/generation_inputs/DOCUMENTED_OPERATOR_SEMANTICS.json",
+      "pass": true
+    },
+    {
+      "check": "frozen_input_unchanged",
+      "path": "/mnt/d/lunwen/EC-CSI投稿/working/exploration/20261014_matched_evidence_labor/judge_control/generation_inputs/FSV-B13/packet.json",
+      "pass": true
+    },
+    {
+      "check": "frozen_input_unchanged",
+      "path": "/mnt/d/lunwen/EC-CSI投稿/working/exploration/20261014_matched_evidence_labor/judge_control/generation_inputs/FSV-B17/packet.json",
+      "pass": true
+    },
+    {
+      "check": "frozen_input_unchanged",
+      "path": "/mnt/d/lunwen/EC-CSI投稿/working/exploration/20261014_matched_evidence_labor/judge_control/generation_inputs/FSV-B19/packet.json",
+      "pass": true
+    },
+    {
+      "check": "frozen_input_unchanged",
+      "path": "/mnt/d/lunwen/EC-CSI投稿/working/exploration/20261014_matched_evidence_labor/judge_control/generation_inputs/FSV-S03/packet.json",
+      "pass": true
+    },
+    {
+      "check": "frozen_input_unchanged",
+      "path": "/mnt/d/lunwen/EC-CSI投稿/working/exploration/20261014_matched_evidence_labor/judge_control/judge_control.py",
+      "pass": true
+    },
+    {
+      "check": "frozen_input_unchanged",
+      "path": "/mnt/d/lunwen/EC-CSI投稿/working/exploration/20261014_matched_evidence_labor/judge_control/prompts/FSV-B13.txt",
+      "pass": true
+    },
+    {
+      "check": "frozen_input_unchanged",
+      "path": "/mnt/d/lunwen/EC-CSI投稿/working/exploration/20261014_matched_evidence_labor/judge_control/prompts/FSV-B17.txt",
+      "pass": true
+    },
+    {
+      "check": "frozen_input_unchanged",
+      "path": "/mnt/d/lunwen/EC-CSI投稿/working/exploration/20261014_matched_evidence_labor/judge_control/prompts/FSV-B19.txt",
+      "pass": true
+    },
+    {
+      "check": "frozen_input_unchanged",
+      "path": "/mnt/d/lunwen/EC-CSI投稿/working/exploration/20261014_matched_evidence_labor/judge_control/prompts/FSV-S03.txt",
+      "pass": true
+    },
+    {
+      "check": "frozen_input_unchanged",
+      "path": "/mnt/d/lunwen/EC-CSI投稿/working/exploration/20261014_matched_evidence_labor/judge_control/refreeze_preparation_v2.py",
+      "pass": true
+    },
+    {
+      "check": "frozen_input_unchanged",
+      "path": "/mnt/d/lunwen/EC-CSI投稿/working/exploration/20261014_matched_evidence_labor/judge_control/schemas/FSV-B13.json",
+      "pass": true
+    },
+    {
+      "check": "frozen_input_unchanged",
+      "path": "/mnt/d/lunwen/EC-CSI投稿/working/exploration/20261014_matched_evidence_labor/judge_control/schemas/FSV-B17.json",
+      "pass": true
+    },
+    {
+      "check": "frozen_input_unchanged",
+      "path": "/mnt/d/lunwen/EC-CSI投稿/working/exploration/20261014_matched_evidence_labor/judge_control/schemas/FSV-B19.json",
+      "pass": true
+    },
+    {
+      "check": "frozen_input_unchanged",
+      "path": "/mnt/d/lunwen/EC-CSI投稿/working/exploration/20261014_matched_evidence_labor/judge_control/schemas/FSV-S03.json",
+      "pass": true
+    },
+    {
+      "check": "frozen_input_unchanged",
+      "path": "/mnt/d/lunwen/EC-CSI投稿/working/exploration/20261014_matched_evidence_labor/judge_control/tool_only_contracts/FSV-B13/A.json",
+      "pass": true
+    },
+    {
+      "check": "frozen_input_unchanged",
+      "path": "/mnt/d/lunwen/EC-CSI投稿/working/exploration/20261014_matched_evidence_labor/judge_control/tool_only_contracts/FSV-B13/B.json",
+      "pass": true
+    },
+    {
+      "check": "frozen_input_unchanged",
+      "path": "/mnt/d/lunwen/EC-CSI投稿/working/exploration/20261014_matched_evidence_labor/judge_control/tool_only_contracts/FSV-B17/A.json",
+      "pass": true
+    },
+    {
+      "check": "frozen_input_unchanged",
+      "path": "/mnt/d/lunwen/EC-CSI投稿/working/exploration/20261014_matched_evidence_labor/judge_control/tool_only_contracts/FSV-B17/B.json",
+      "pass": true
+    },
+    {
+      "check": "frozen_input_unchanged",
+      "path": "/mnt/d/lunwen/EC-CSI投稿/working/exploration/20261014_matched_evidence_labor/judge_control/tool_only_contracts/FSV-B19/A.json",
+      "pass": true
+    },
+    {
+      "check": "frozen_input_unchanged",
+      "path": "/mnt/d/lunwen/EC-CSI投稿/working/exploration/20261014_matched_evidence_labor/judge_control/tool_only_contracts/FSV-B19/B.json",
+      "pass": true
+    },
+    {
+      "check": "frozen_input_unchanged",
+      "path": "/mnt/d/lunwen/EC-CSI投稿/working/exploration/20261014_matched_evidence_labor/judge_control/tool_only_contracts/FSV-S03/A.json",
+      "pass": true
+    },
+    {
+      "check": "frozen_input_unchanged",
+      "path": "/mnt/d/lunwen/EC-CSI投稿/working/exploration/20261014_matched_evidence_labor/judge_control/tool_only_contracts/FSV-S03/B.json",
+      "pass": true
+    },
+    {
+      "check": "frozen_input_unchanged",
+      "path": "/mnt/d/lunwen/EC-CSI投稿/working/exploration/20261014_matched_evidence_labor/judge_control/verify_preparation.py",
+      "pass": true
+    },
+    {
+      "check": "frozen_input_unchanged",
+      "path": "/mnt/d/lunwen/tools/llm/invoke_glm_api.ps1",
+      "pass": true
+    },
+    {
+      "check": "frozen_input_unchanged",
+      "path": "/root/ecas_semantic_judge_control_20261014/runtime/EC_EVIDENCE_CONTRACT_SCHEMA_V2.json",
+      "pass": true
+    },
+    {
+      "check": "frozen_input_unchanged",
+      "path": "/root/ecas_semantic_judge_control_20261014/runtime/EC_EVIDENCE_CONTRACT_SCHEMA_V3.json",
+      "pass": true
+    },
+    {
+      "check": "frozen_input_unchanged",
+      "path": "/root/ecas_semantic_judge_control_20261014/runtime/EC_FIELD_SECURITY_MODEL_IR_SCHEMA_V2.json",
+      "pass": true
+    },
+    {
+      "check": "frozen_input_unchanged",
+      "path": "/root/ecas_semantic_judge_control_20261014/runtime/EC_FIELD_SECURITY_MODEL_IR_SCHEMA_V3.json",
+      "pass": true
+    },
+    {
+      "check": "frozen_input_unchanged",
+      "path": "/root/ecas_semantic_judge_control_20261014/runtime/EC_FIELD_SECURITY_POLICY_SCHEMA_V2.json",
+      "pass": true
+    },
+    {
+      "check": "frozen_input_unchanged",
+      "path": "/root/ecas_semantic_judge_control_20261014/runtime/EC_FIELD_SECURITY_POLICY_SCHEMA_V3.json",
+      "pass": true
+    },
+    {
+      "check": "frozen_input_unchanged",
+      "path": "/root/ecas_semantic_judge_control_20261014/runtime/EC_FIELD_SECURITY_PROPOSAL_SCHEMA_V2.json",
+      "pass": true
+    },
+    {
+      "check": "frozen_input_unchanged",
+      "path": "/root/ecas_semantic_judge_control_20261014/runtime/EC_FIELD_SECURITY_PROPOSAL_SCHEMA_V3.json",
+      "pass": true
+    },
+    {
+      "check": "frozen_input_unchanged",
+      "path": "/root/ecas_semantic_judge_control_20261014/runtime/scripts/ec_field_security_engine_v2.py",
+      "pass": true
+    },
+    {
+      "check": "frozen_input_unchanged",
+      "path": "/root/ecas_semantic_judge_control_20261014/runtime/scripts/ec_field_security_engine_v3.py",
+      "pass": true
+    },
+    {
+      "check": "frozen_input_unchanged",
+      "path": "/root/ecas_semantic_judge_control_20261014/runtime/security_knowledge/SECURITY_PRIMITIVE_CATALOG_V1.json",
+      "pass": true
+    },
+    {
+      "check": "frozen_input_unchanged",
+      "path": "/root/ecas_semantic_judge_control_20261014/runtime/security_knowledge/SECURITY_PRIMITIVE_CATALOG_V2.json",
+      "pass": true
+    },
+    {
+      "check": "four_tasks_eight_unchanged_parent_candidates",
+      "pass": true
+    },
+    {
+      "check": "configuration_mapping_excluded_from_prompts",
+      "pass": true
+    },
+    {
+      "check": "no_model_attempts_during_preparation",
+      "pass": true
+    },
+    {
+      "check": "root_approval_not_written_by_preparer",
+      "pass": true
+    },
+    {
+      "check": "offline_t0_pass_and_managed_success",
+      "pass": true
+    },
+    {
+      "check": "managed_t0_receipts_copied_exactly",
+      "pass": true
+    }
+  ],
+  "check_count": 90,
+  "t0_receipt_copies": [
+    {
+      "source": "/root/ecas_semantic_judge_control_20261014/managed_runs/typed-ir-judge-t0-v2/binding.json",
+      "delivered": "/mnt/d/lunwen/EC-CSI投稿/working/exploration/20261014_matched_evidence_labor/judge_control/t0_run_receipts_v2/binding.json",
+      "sha256": "edd652df3137e345b56a71ffa682417753281e56dc44980a7e547c6aa6ca364f",
+      "pass": true
+    },
+    {
+      "source": "/root/ecas_semantic_judge_control_20261014/managed_runs/typed-ir-judge-t0-v2/inputs.after.json",
+      "delivered": "/mnt/d/lunwen/EC-CSI投稿/working/exploration/20261014_matched_evidence_labor/judge_control/t0_run_receipts_v2/inputs.after.json",
+      "sha256": "1fd8bbdfb61c6a3b4cfe3092a021272d0416ccca54cbc31213a6a7f1691b0d20",
+      "pass": true
+    },
+    {
+      "source": "/root/ecas_semantic_judge_control_20261014/managed_runs/typed-ir-judge-t0-v2/inputs.before.json",
+      "delivered": "/mnt/d/lunwen/EC-CSI投稿/working/exploration/20261014_matched_evidence_labor/judge_control/t0_run_receipts_v2/inputs.before.json",
+      "sha256": "1fd8bbdfb61c6a3b4cfe3092a021272d0416ccca54cbc31213a6a7f1691b0d20",
+      "pass": true
+    },
+    {
+      "source": "/root/ecas_semantic_judge_control_20261014/managed_runs/typed-ir-judge-t0-v2/outputs/result.json",
+      "delivered": "/mnt/d/lunwen/EC-CSI投稿/working/exploration/20261014_matched_evidence_labor/judge_control/t0_run_receipts_v2/outputs/result.json",
+      "sha256": "ec2e4fdfdde39610554eb45f7e5a388d6aa44b4947e235ad5c437b9682b5d598",
+      "pass": true
+    },
+    {
+      "source": "/root/ecas_semantic_judge_control_20261014/managed_runs/typed-ir-judge-t0-v2/receipt.json",
+      "delivered": "/mnt/d/lunwen/EC-CSI投稿/working/exploration/20261014_matched_evidence_labor/judge_control/t0_run_receipts_v2/receipt.json",
+      "sha256": "4844df5c5e32ced3569a2a6d67d545cd5bd706a663bdcf29ca84f37424b40986",
+      "pass": true
+    },
+    {
+      "source": "/root/ecas_semantic_judge_control_20261014/managed_runs/typed-ir-judge-t0-v2/request.json",
+      "delivered": "/mnt/d/lunwen/EC-CSI投稿/working/exploration/20261014_matched_evidence_labor/judge_control/t0_run_receipts_v2/request.json",
+      "sha256": "84abc1234567017a07c00d685fc9724fb0f6dc3444877961383e8dfa395bfc0d",
+      "pass": true
+    },
+    {
+      "source": "/root/ecas_semantic_judge_control_20261014/managed_runs/typed-ir-judge-t0-v2/status.json",
+      "delivered": "/mnt/d/lunwen/EC-CSI投稿/working/exploration/20261014_matched_evidence_labor/judge_control/t0_run_receipts_v2/status.json",
+      "sha256": "9cdf083d918abdb14ec00914a1a89186920f4276e977086c5742fcb707287f58",
+      "pass": true
+    },
+    {
+      "source": "/root/ecas_semantic_judge_control_20261014/managed_runs/typed-ir-judge-t0-v2/stderr.log",
+      "delivered": "/mnt/d/lunwen/EC-CSI投稿/working/exploration/20261014_matched_evidence_labor/judge_control/t0_run_receipts_v2/stderr.log",
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "pass": true
+    },
+    {
+      "source": "/root/ecas_semantic_judge_control_20261014/managed_runs/typed-ir-judge-t0-v2/stdout.log",
+      "delivered": "/mnt/d/lunwen/EC-CSI投稿/working/exploration/20261014_matched_evidence_labor/judge_control/t0_run_receipts_v2/stdout.log",
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "pass": true
+    },
+    {
+      "source": "/root/ecas_semantic_judge_control_20261014/managed_runs/typed-ir-judge-t0-v2/supervisor.log",
+      "delivered": "/mnt/d/lunwen/EC-CSI投稿/working/exploration/20261014_matched_evidence_labor/judge_control/t0_run_receipts_v2/supervisor.log",
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "pass": true
+    },
+    {
+      "source": "/root/ecas_semantic_judge_control_20261014/managed_runs/typed-ir-judge-t0-v2/worker.lock",
+      "delivered": "/mnt/d/lunwen/EC-CSI投稿/working/exploration/20261014_matched_evidence_labor/judge_control/t0_run_receipts_v2/worker.lock",
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "pass": true
+    }
+  ],
+  "input_tokens_estimate_max": 10222,
+  "estimate_not_hard_bound": true,
+  "planned_judge_calls": 4,
+  "shared_main_judge_cap": 44,
+  "future_dispatch_owner": "root",
+  "t0_run_id": "typed-ir-judge-t0-v2",
+  "t0_check_count": 28,
+  "main_success_identity": "root approval binds actual request/run/status/receipt/state/ledger; no hardcoded failed-v1 success requirement"
+}

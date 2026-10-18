@@ -1,0 +1,12 @@
+{
+  "status": "PASS",
+  "model_calls": 0,
+  "all_original_model_inputs_unchanged": true,
+  "same_response_schema_structure_except_literal_ids": true,
+  "protected_input_count": 21,
+  "source_plan_sha256": "b0dc243ad3a39c730e4e6027696d2a89e1f76c37b4fb1f0ff0e964153a6d0d34",
+  "one_observation_for_one_call": true,
+  "required_coverage": [
+    "longest_typed_ir_judge_input"
+  ]
+}

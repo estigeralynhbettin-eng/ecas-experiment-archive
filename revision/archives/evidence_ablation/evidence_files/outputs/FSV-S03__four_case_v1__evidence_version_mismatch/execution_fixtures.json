@@ -1,0 +1,53 @@
+[
+  {
+    "id": "FSV-S03-OL-01",
+    "input": {
+      "request": {
+        "body": {
+          "age": 30,
+          "firstName": "Synthetic",
+          "isDependent": false,
+          "relationshipId": 1
+        }
+      },
+      "trusted": {}
+    },
+    "expected": "allow",
+    "source": "/root/ecas_evidence_ablation_20261014/inputs/FSV-S03__four_case_v1/O-L.json",
+    "class": "ARCHIVED_SYNTHETIC_REQUEST"
+  },
+  {
+    "id": "FSV-S03-OI-01",
+    "input": {
+      "request": {
+        "body": {
+          "age": "30",
+          "firstName": "Synthetic",
+          "isDependent": false,
+          "relationshipId": 1
+        }
+      },
+      "trusted": {}
+    },
+    "expected": "deny",
+    "source": "/root/ecas_evidence_ablation_20261014/inputs/FSV-S03__four_case_v1/O-I.json",
+    "class": "ARCHIVED_SYNTHETIC_REQUEST"
+  },
+  {
+    "id": "SYNTH-MISSING-TRUSTED",
+    "input": {
+      "request": {
+        "body": {
+          "age": 30,
+          "firstName": "Synthetic",
+          "isDependent": false,
+          "relationshipId": 1
+        }
+      },
+      "trusted": {}
+    },
+    "expected": null,
+    "source": "archived legal request with trusted object emptied",
+    "class": "CONSTRUCTED_MISSING_CONTEXT_CONTROL"
+  }
+]

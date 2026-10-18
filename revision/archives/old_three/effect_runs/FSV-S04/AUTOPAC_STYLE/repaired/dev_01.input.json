@@ -1,0 +1,14 @@
+{
+  "request": {
+    "body": {
+      "first_name": "DevProbeB",
+      "email_id": "developer_73002_at_example_net"
+    }
+  },
+  "trusted": {},
+  "subject": {
+    "role": "authenticated_api_caller"
+  },
+  "action": "POST /api/resource/Lead",
+  "resource": "ERPNext:16.0.0"
+}

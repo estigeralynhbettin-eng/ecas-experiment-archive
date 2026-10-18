@@ -1,0 +1,1 @@
+{"oracle_channel":"O-L","task_window_id":"FSV-S03","vectors":[{"envelope":{"request":{"body":{"age":30,"firstName":"Synthetic","isDependent":false,"relationshipId":1}},"trusted":{}},"expected_class":"allow","reason":"declared JSON integer age","synthetic_data_only":true,"vector_id":"FSV-S03-OL-01","vector_suffix":"OL-01"}]}

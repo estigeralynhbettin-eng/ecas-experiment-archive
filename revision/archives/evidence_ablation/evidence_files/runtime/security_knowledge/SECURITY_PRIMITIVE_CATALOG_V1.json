@@ -1,0 +1,124 @@
+{
+  "catalog_id": "EC-SECURITY-PRIMITIVE-CATALOG-V1",
+  "source_manifest": "security_knowledge/OWASP_SOURCE_MANIFEST_V1.json",
+  "purpose": "A finite, versioned vocabulary of API request-validation primitives. It does not supply system-specific field meanings or values.",
+  "prompt_visibility": "visible_and_byte_identical_for_all_generation_methods",
+  "closed_world": true,
+  "global_forbidden_inferences": [
+    "Do not infer a country, jurisdiction, identifier algorithm, phone plan, currency, unit, range, enum, workflow state, ownership rule, or field sensitivity from a field name alone.",
+    "Do not convert examples in OWASP material into system-specific facts without visible business or API evidence.",
+    "Do not invent regexes, executable code, database queries, hidden implementation facts, or external lookups.",
+    "If required binding evidence is absent, emit abstain rather than a permissive or guessed rule."
+  ],
+  "primitives": [
+    {
+      "primitive_id": "SP-CONTENT-TYPE-ALLOWLIST",
+      "layer": "protocol",
+      "description": "Allow only explicitly documented request media types.",
+      "source_refs": ["OWASP-RESTSCS:Validate content types"],
+      "required_binding_evidence": ["visible_api_contract_supported_media_types"],
+      "runtime_operation": "content_type_allowlist",
+      "oracle_kind": "protocol_negative_and_legitimate_replay"
+    },
+    {
+      "primitive_id": "SP-REQUEST-SIZE-LIMIT",
+      "layer": "protocol",
+      "description": "Reject request bodies whose byte size exceeds an explicitly evidenced limit.",
+      "source_refs": ["OWASP-RESTSCS:Input validation"],
+      "required_binding_evidence": ["visible_api_or_business_size_limit"],
+      "runtime_operation": "request_size_limit",
+      "oracle_kind": "boundary_vectors"
+    },
+    {
+      "primitive_id": "SP-OBJECT-PROPERTY-ALLOWLIST",
+      "layer": "structural",
+      "description": "Reject unexpected client-controlled properties for a request object.",
+      "source_refs": ["OWASP-RESTSCS:Input validation", "OWASP-IVCS:Allowlist vs Denylist"],
+      "required_binding_evidence": ["visible_request_schema_or_parameter_list"],
+      "runtime_operation": "allowed_fields",
+      "oracle_kind": "schema_mutation_vectors"
+    },
+    {
+      "primitive_id": "SP-PRESENCE-NULLABILITY",
+      "layer": "structural",
+      "description": "Enforce evidenced required, optional, and nullable field semantics.",
+      "source_refs": ["OWASP-IVCS:Implementing Input Validation"],
+      "required_binding_evidence": ["visible_requiredness_or_nullability"],
+      "runtime_operation": "presence_nullability",
+      "oracle_kind": "missing_null_boundary_vectors"
+    },
+    {
+      "primitive_id": "SP-STRICT-TYPE",
+      "layer": "structural",
+      "description": "Enforce the documented scalar or container type without coercion.",
+      "source_refs": ["OWASP-RESTSCS:Input validation", "OWASP-IVCS:Implementing Input Validation"],
+      "required_binding_evidence": ["visible_type_declaration"],
+      "runtime_operation": "strict_type",
+      "oracle_kind": "type_confusion_vectors"
+    },
+    {
+      "primitive_id": "SP-LENGTH-CARDINALITY-BOUNDS",
+      "layer": "structural",
+      "description": "Enforce evidenced string length or collection cardinality bounds.",
+      "source_refs": ["OWASP-IVCS:Implementing Input Validation", "OWASP-RESTSCS:Input validation"],
+      "required_binding_evidence": ["visible_min_or_max_bound"],
+      "runtime_operation": "length_cardinality",
+      "oracle_kind": "boundary_vectors"
+    },
+    {
+      "primitive_id": "SP-NUMERIC-RANGE-PRECISION",
+      "layer": "semantic",
+      "description": "Enforce evidenced numeric ranges and decimal precision without accepting non-finite numbers.",
+      "source_refs": ["OWASP-IVCS:Implementing Input Validation", "OWASP-BLSCS:Validate Ranges"],
+      "required_binding_evidence": ["visible_business_or_api_numeric_constraint"],
+      "runtime_operation": "number_range_precision",
+      "oracle_kind": "boundary_and_nonfinite_vectors"
+    },
+    {
+      "primitive_id": "SP-ENUM-ALLOWLIST",
+      "layer": "structural",
+      "description": "Allow only explicitly enumerated values.",
+      "source_refs": ["OWASP-IVCS:Allowlist vs Denylist", "OWASP-RESTSCS:Input validation"],
+      "required_binding_evidence": ["visible_enum_values"],
+      "runtime_operation": "enum_allowlist",
+      "oracle_kind": "enum_mutation_vectors"
+    },
+    {
+      "primitive_id": "SP-STRUCTURED-FORMAT",
+      "layer": "syntactic",
+      "description": "Apply a named, pre-registered validator only when the visible materials identify the applicable format and context.",
+      "source_refs": ["OWASP-IVCS:Goals of Input Validation", "OWASP-IVCS:Implementing Input Validation"],
+      "required_binding_evidence": ["visible_format_identity", "visible_context_required_by_validator"],
+      "runtime_operation": "named_validator",
+      "oracle_kind": "authoritative_standard_vectors",
+      "forbidden_inferences": ["country_or_jurisdiction_from_field_name", "custom_model_generated_regex_or_code"]
+    },
+    {
+      "primitive_id": "SP-CANONICAL-FORM",
+      "layer": "syntactic",
+      "description": "Require an explicitly evidenced canonical representation before downstream processing.",
+      "source_refs": ["OWASP-IVCS:Input Validation Strategies", "OWASP-IVCS:Validating Free-form Unicode Text"],
+      "required_binding_evidence": ["visible_canonicalization_requirement"],
+      "runtime_operation": "canonical_form",
+      "oracle_kind": "equivalence_and_confusable_vectors"
+    },
+    {
+      "primitive_id": "SP-CROSS-FIELD-INVARIANT",
+      "layer": "business_semantic",
+      "description": "Enforce a visible business invariant involving two or more request or trusted-context values.",
+      "source_refs": ["OWASP-IVCS:Goals of Input Validation", "OWASP-BLSCS:Validate Combinations", "OWASP-BLSCS:Write Down the Invariants"],
+      "required_binding_evidence": ["visible_plain_language_invariant", "visible_field_mapping"],
+      "runtime_operation": "cross_field_invariant",
+      "oracle_kind": "business_invalid_and_legitimate_pairs"
+    },
+    {
+      "primitive_id": "SP-SERVER-AUTHORITY-WORKFLOW",
+      "layer": "business_semantic",
+      "description": "Reject client authority over server-derived values and enforce explicitly evidenced workflow transitions.",
+      "source_refs": ["OWASP-BLSCS:Always Re-derive Security-relevant Values Server-side", "OWASP-BLSCS:Enforce Workflows as Explicit State Machines", "OWASP-RESTSCS:Preventing Out-of-Order API Execution"],
+      "required_binding_evidence": ["visible_server_authority_or_workflow_contract", "trusted_runtime_context_mapping"],
+      "runtime_operation": "server_authority_or_state_transition",
+      "oracle_kind": "stateful_negative_and_legitimate_replay"
+    }
+  ]
+}

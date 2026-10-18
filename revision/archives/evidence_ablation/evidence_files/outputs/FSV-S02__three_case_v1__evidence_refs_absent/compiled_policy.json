@@ -1,0 +1,30 @@
+{
+  "policy_version": "EC-FIELD-SECURITY-V3",
+  "policy_id": "pol-FSV-S02-001",
+  "target": {
+    "operation": "POST /v1/clients/{clientId}/identifiers",
+    "system": "Fineract",
+    "version": "1.14.0"
+  },
+  "evidence_refs": [
+    "VIS-FSV-S02-01"
+  ],
+  "rules": [
+    {
+      "rule_id": "rule-FSV-S02-001",
+      "primitive_id": "SP-OBJECT-PROPERTY-ALLOWLIST",
+      "evidence_refs": [
+        "VIS-FSV-S02-01"
+      ],
+      "op": "allowed_fields",
+      "fields": [
+        "description",
+        "documentKey",
+        "documentTypeId",
+        "status"
+      ],
+      "path": "/request/body",
+      "on_missing": "deny"
+    }
+  ]
+}

@@ -1,0 +1,60 @@
+{
+  "model_calls": 0,
+  "changes": [
+    {
+      "task": "FSV-B13",
+      "source": "frappe-rest-api.html",
+      "derivation": "target POST create only; same excerpt rule across all ERPNext cases",
+      "start": 7571,
+      "end": 8068
+    },
+    {
+      "task": "FSV-B13",
+      "source": "erpnext-stock-settings-doctype.json",
+      "field_count": 79,
+      "derivation": "lossless tuple representation of every retained field"
+    },
+    {
+      "task": "FSV-B17",
+      "source": "frappe-rest-api.html",
+      "derivation": "target POST create only; same excerpt rule across all ERPNext cases",
+      "start": 7571,
+      "end": 8068
+    },
+    {
+      "task": "FSV-B17",
+      "source": "erpnext-customer-doctype.json",
+      "field_count": 80,
+      "derivation": "lossless tuple representation of every retained field"
+    },
+    {
+      "task": "FSV-B19",
+      "source": "frappe-rest-api.html",
+      "derivation": "target POST create only; same excerpt rule across all ERPNext cases",
+      "start": 7571,
+      "end": 8068
+    },
+    {
+      "task": "FSV-B19",
+      "source": "erpnext-supplier-doctype.json",
+      "field_count": 66,
+      "derivation": "lossless tuple representation of every retained field"
+    },
+    {
+      "task": "FSV-B19",
+      "source": "erpnext-purchase-order-doctype.json",
+      "field_count": 154,
+      "derivation": "lossless tuple representation of every retained field"
+    }
+  ],
+  "all_rule_variants": 15,
+  "all_variants_retained": true,
+  "packet_bytes": {
+    "FSV-B13": 14569,
+    "FSV-B17": 12474,
+    "FSV-B19": 23893,
+    "FSV-S03": 2795
+  },
+  "prompt_schema_bytes": 8124,
+  "full_schema_sha256": "d9168bf982cc37e44d994268fba54bbd0ed0640afd41e3ceea2a6eaa2eebdac6"
+}

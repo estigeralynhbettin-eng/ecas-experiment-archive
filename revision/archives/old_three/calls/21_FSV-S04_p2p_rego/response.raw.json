@@ -1,0 +1,28 @@
+{
+  "choices": [
+    {
+      "finish_reason": "stop",
+      "index": 0,
+      "message": {
+        "content": "{\"begin\":\"BEGIN_FSV-S04_p2p_rego_MAIN\",\"stage\":\"p2p_rego\",\"output\":{\"status\":\"READY\",\"rego\":\"package external_pilot\\n\\nimport rego.v1\\n\\ndefault allow := false\\n\\nallow if {\\n    input.subject_role == \\\"authenticated_api_caller\\\"\\n    input.action == \\\"POST /api/resource/Lead\\\"\\n    input.resource_system == \\\"ERPNext\\\"\\n    input.resource_version == \\\"16.0.0\\\"\\n}\",\"reason\":\"Permit authenticated API callers to POST Lead in ERPNext 16.0.0; no additional restrictions inventable from visible sources.\"},\"end\":\"END_FSV-S04_p2p_rego_MAIN\"}",
+        "role": "assistant"
+      }
+    }
+  ],
+  "created": 1791951136,
+  "id": "20261014121157c56eb1abbfa84a96",
+  "model": "glm-5.2",
+  "object": "chat.completion",
+  "request_id": "20261014121157c56eb1abbfa84a96",
+  "usage": {
+    "completion_tokens": 1904,
+    "completion_tokens_details": {
+      "reasoning_tokens": 1729
+    },
+    "prompt_tokens": 5577,
+    "prompt_tokens_details": {
+      "cached_tokens": 0
+    },
+    "total_tokens": 7481
+  }
+}

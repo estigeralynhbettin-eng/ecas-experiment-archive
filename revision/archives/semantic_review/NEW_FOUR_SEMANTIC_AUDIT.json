@@ -1,0 +1,818 @@
+{
+  "audit_id": "ECAS-NEW-FOUR-SEMANTIC-AUDIT-20261015-01",
+  "date": "2026-10-15",
+  "status": "DERIVED_READ_ONLY_AUDIT_FOR_ROOT_INDEPENDENT_CHECK",
+  "new_model_calls": 0,
+  "new_policy_executions": 0,
+  "procedure": "Read frozen visible packets, P2P detection and extraction, generated policies, AutoPAC Judge, repair and existing result records; compare source-policy semantics statically; do not infer full understanding from request pair success.",
+  "sources": [
+    {
+      "case": "FSV-S03",
+      "packet": {
+        "path": "D:\\lunwen\\EC-CSI投稿\\working\\exploration\\20261014_matched_evidence_labor\\matched_generation\\generation_inputs\\FSV-S03\\packet.json",
+        "sha256": "acddb441ffde6b492d77d8964ce22ba69bf037eb164daa9f8674ca1e4a8f596a"
+      },
+      "target": {
+        "operation": "POST /v1/clients/{clientId}/familymembers",
+        "system": "Fineract",
+        "version": "1.14.0"
+      },
+      "objective": {
+        "constraint_object": "The age field of a family-member creation request",
+        "constraint_kind": "The published API type requirement for age",
+        "scope": "Only the age type requirement in the supplied OpenAPI. Other fields, identity/authentication, age range and presence are outside this task unless the target source requires them for this type constraint."
+      },
+      "visible_sources": [
+        {
+          "evidence_id": "VIS-FSV-S03-01",
+          "source_id": "fineract-openapi-1.14.0.json",
+          "source_sha256": "A44D6FA247D495A4FB147CC8C5EA1A364D8F05A40762B31A055681373E455A48",
+          "locator": "paths./v1/clients/{clientId}/familymembers.post"
+        },
+        {
+          "evidence_id": "VIS-FSV-S03-RUNTIME-ABI",
+          "source_id": "EC-V2-RUNTIME-INTERFACE-CATALOG-V1",
+          "source_sha256": "8221DA8A6720B0593A8D337F18569C9947AAB05B02E5C84FB0C50E3DE8C1ABD7",
+          "locator": "tasks.FSV-S03"
+        }
+      ]
+    },
+    {
+      "case": "FSV-B13",
+      "packet": {
+        "path": "D:\\lunwen\\EC-CSI投稿\\working\\exploration\\20261014_matched_evidence_labor\\matched_generation\\generation_inputs\\FSV-B13\\packet.json",
+        "sha256": "0b07fe5eb4c156c96759cb0ff7e45d58523efd87549f88932ef029003a4ecb9b"
+      },
+      "target": {
+        "operation": "POST /api/resource/Purchase Receipt",
+        "system": "ERPNext",
+        "version": "16.0.0"
+      },
+      "objective": {
+        "constraint_object": "Quantity on a Purchase Receipt represented by request.body.qty, supplied quantity limit and authenticated role context",
+        "constraint_kind": "Receipt quantity allowance and the documented authorized-role exception",
+        "scope": "Implement the supplied Stock Settings quantity policy for this target; upstream supplies trusted derivedMaximumQty and authorizedRole. Do not add unrelated field, item, range or full-document validation."
+      },
+      "visible_sources": [
+        {
+          "evidence_id": "VIS-FSV-B13-01",
+          "source_id": "erpnext-stock-settings.html",
+          "source_sha256": "F866B7A7F90AEFCB06DA623C3F9EF25F5524D4261887FC80FFDE3AAA76A530EA",
+          "locator": "extracted/erpnext-stock-settings.md:article"
+        },
+        {
+          "evidence_id": "VIS-FSV-B13-02",
+          "source_id": "frappe-rest-api.html",
+          "source_sha256": "87CB28850081B1F7D6702521E98E5F242498A456491EF26BDE847C20CCBFE154",
+          "locator": "extracted/frappe-rest-api.md:article;operation-matched introduction and complete Create subsection"
+        },
+        {
+          "evidence_id": "VIS-FSV-B13-03",
+          "source_id": "erpnext-stock-settings-doctype.json",
+          "source_sha256": "68834EFE08CF24EA22F82D0393886526FF892A920389FAC4FE73CAA6EB5A7D91",
+          "locator": "erpnext-stock-settings-doctype.json:complete-field-catalog"
+        },
+        {
+          "evidence_id": "VIS-FSV-B13-RUNTIME-ABI",
+          "source_id": "EC-V2-RUNTIME-INTERFACE-CATALOG-V1",
+          "source_sha256": "8221DA8A6720B0593A8D337F18569C9947AAB05B02E5C84FB0C50E3DE8C1ABD7",
+          "locator": "tasks.FSV-B13"
+        }
+      ]
+    },
+    {
+      "case": "FSV-B17",
+      "packet": {
+        "path": "D:\\lunwen\\EC-CSI投稿\\working\\exploration\\20261014_matched_evidence_labor\\matched_generation\\generation_inputs\\FSV-B17\\packet.json",
+        "sha256": "03e726de50a01e76c55ce26e0925632c218de4ab96339c3752d37e33535a6479"
+      },
+      "target": {
+        "operation": "POST /api/resource/Sales Order",
+        "system": "ERPNext",
+        "version": "16.0.0"
+      },
+      "objective": {
+        "constraint_object": "Customer disabled status relevant to Sales Order creation",
+        "constraint_kind": "The documented disabled-customer condition for the target operation",
+        "scope": "Use the provided trusted customer state for this target only; do not add unrelated Customer or Sales Order validation."
+      },
+      "visible_sources": [
+        {
+          "evidence_id": "VIS-FSV-B17-01",
+          "source_id": "erpnext-customer.html",
+          "source_sha256": "BA52637ECC58763F80A1AB3F94CA82F51048E19EAC94DD1D2E41E92853CE1AE9",
+          "locator": "extracted/erpnext-customer.md:article"
+        },
+        {
+          "evidence_id": "VIS-FSV-B17-02",
+          "source_id": "frappe-rest-api.html",
+          "source_sha256": "87CB28850081B1F7D6702521E98E5F242498A456491EF26BDE847C20CCBFE154",
+          "locator": "extracted/frappe-rest-api.md:article;operation-matched introduction and complete Create subsection"
+        },
+        {
+          "evidence_id": "VIS-FSV-B17-03",
+          "source_id": "erpnext-customer-doctype.json",
+          "source_sha256": "F86FCB293BF970C6366E6E0DD1E232A0BA8EA635C25265D426383D05B428F648",
+          "locator": "erpnext-customer-doctype.json:complete-field-catalog"
+        },
+        {
+          "evidence_id": "VIS-FSV-B17-RUNTIME-ABI",
+          "source_id": "EC-V2-RUNTIME-INTERFACE-CATALOG-V1",
+          "source_sha256": "8221DA8A6720B0593A8D337F18569C9947AAB05B02E5C84FB0C50E3DE8C1ABD7",
+          "locator": "tasks.FSV-B17"
+        }
+      ]
+    },
+    {
+      "case": "FSV-B19",
+      "packet": {
+        "path": "D:\\lunwen\\EC-CSI投稿\\working\\exploration\\20261014_matched_evidence_labor\\matched_generation\\generation_inputs\\FSV-B19\\packet.json",
+        "sha256": "10c5597e97e4190aa041c53aa3aee8b4c1c48fa77d073bfb4fb5eb5a64a346fd"
+      },
+      "target": {
+        "operation": "POST /api/resource/Purchase Order",
+        "system": "ERPNext",
+        "version": "16.0.0"
+      },
+      "objective": {
+        "constraint_object": "Supplier on-hold status and hold type relevant to Purchase Order creation",
+        "constraint_kind": "The documented supplier hold-type condition for the target operation",
+        "scope": "Implement the supplier hold policy for this Purchase Order target only; do not add restrictions for invoices, payments, other endpoints or unrelated fields."
+      },
+      "visible_sources": [
+        {
+          "evidence_id": "VIS-FSV-B19-01",
+          "source_id": "erpnext-supplier.html",
+          "source_sha256": "1DD2CBED3915F83CC734BA23F7A016A9C386ED6BA9E54962619F70DB706F5C6F",
+          "locator": "extracted/erpnext-supplier.md:article"
+        },
+        {
+          "evidence_id": "VIS-FSV-B19-02",
+          "source_id": "frappe-rest-api.html",
+          "source_sha256": "87CB28850081B1F7D6702521E98E5F242498A456491EF26BDE847C20CCBFE154",
+          "locator": "extracted/frappe-rest-api.md:article;operation-matched introduction and complete Create subsection"
+        },
+        {
+          "evidence_id": "VIS-FSV-B19-03",
+          "source_id": "erpnext-supplier-doctype.json",
+          "source_sha256": "07347D26E75881232AC991A31F0560CE3676335C6A050E7412EF66670FD637CB",
+          "locator": "erpnext-supplier-doctype.json:complete-field-catalog"
+        },
+        {
+          "evidence_id": "VIS-FSV-B19-04",
+          "source_id": "erpnext-purchase-order-doctype.json",
+          "source_sha256": "99F835C958B3191B09EB61D232A3D6CDEF14990B666EA766979F8C7ACFEF800F",
+          "locator": "erpnext-purchase-order-doctype.json:complete-field-catalog"
+        },
+        {
+          "evidence_id": "VIS-FSV-B19-RUNTIME-ABI",
+          "source_id": "EC-V2-RUNTIME-INTERFACE-CATALOG-V1",
+          "source_sha256": "8221DA8A6720B0593A8D337F18569C9947AAB05B02E5C84FB0C50E3DE8C1ABD7",
+          "locator": "tasks.FSV-B19"
+        }
+      ]
+    }
+  ],
+  "rows": [
+    {
+      "case": "FSV-S03",
+      "method": "P2P_STYLE",
+      "main_constraint_mapping": "OUT_OF_SCOPE_TYPE_VALIDATION_RECOGNIZED_NO_POLICY_GENERATED",
+      "decision_direction": "NO_POLICY_TO_ASSESS",
+      "compound_or_exception": "NOT_APPLICABLE",
+      "optional_presence": "NO_POLICY_TO_ASSESS",
+      "source_default": "NO_SOURCE_DEFAULT_REQUIREMENT_IDENTIFIED_FOR_THIS_FOCUSED_TARGET",
+      "first_development_accepted": null,
+      "final_status": "OUT_OF_SCOPE",
+      "repaired_once": false,
+      "repair_semantic_observation": "NOT_RUN",
+      "auto_judge": null,
+      "archived_branch_observations": [],
+      "evidence_files": [
+        {
+          "path": "D:\\lunwen\\EC-CSI投稿\\working\\exploration\\20261014_matched_evidence_labor\\matched_generation\\method_runs\\FSV-S03\\P2P_STYLE\\p2p_detect.json",
+          "sha256": "9466c5a07f00a39cb5956afce3112d58331974814f8e49cc7b6a0fc42e84d46e"
+        },
+        {
+          "path": "D:\\lunwen\\EC-CSI投稿\\working\\exploration\\20261014_matched_evidence_labor\\matched_generation\\method_runs\\FSV-S03\\P2P_STYLE\\RESULT.json",
+          "sha256": "0debecc0820f78bdfab4d38a2995d66e4f1957ad231e9ee436657eb8d9c758ef"
+        }
+      ]
+    },
+    {
+      "case": "FSV-S03",
+      "method": "AUTOPAC_STYLE",
+      "main_constraint_mapping": "INTEGER_TYPE_INTENT_IDENTIFIED_BUT_NONEXECUTABLE_CODE",
+      "decision_direction": "INTEGER_INTENT_CORRECT_NOT_VALIDATED_AS_EXECUTABLE_POLICY",
+      "compound_or_exception": "NOT_APPLICABLE",
+      "optional_presence": "STATIC_PRESENCE_OVERCONSTRAINT_RISK_DEFAULT_FALSE_NO_MISSING_ALLOW_BRANCH",
+      "source_default": "NO_SOURCE_DEFAULT_REQUIREMENT_IDENTIFIED_FOR_THIS_FOCUSED_TARGET",
+      "first_development_accepted": false,
+      "final_status": "DEVELOPMENT_REJECTED",
+      "repaired_once": true,
+      "repair_semantic_observation": "INTEGER_INTENT_RETAINED_UNDEFINED_TYPEOF_STILL_NONEXECUTABLE",
+      "auto_judge": {
+        "verdict": "ACCEPT",
+        "issues": []
+      },
+      "archived_branch_observations": [],
+      "evidence_files": [
+        {
+          "path": "D:\\lunwen\\EC-CSI投稿\\working\\exploration\\20261014_matched_evidence_labor\\matched_generation\\method_runs\\FSV-S03\\AUTOPAC_STYLE\\autopac_generate.json",
+          "sha256": "49416e3a7f0eeb853daa473c63dc6c71aaae1c7b2fbc0fdfb39d5a54018e379d"
+        },
+        {
+          "path": "D:\\lunwen\\EC-CSI投稿\\working\\exploration\\20261014_matched_evidence_labor\\matched_generation\\method_runs\\FSV-S03\\AUTOPAC_STYLE\\autopac_judge.json",
+          "sha256": "2f2f4fa27ccd9c8d6477c226a6f9547975256455962da20867bed3f93f113092"
+        },
+        {
+          "path": "D:\\lunwen\\EC-CSI投稿\\working\\exploration\\20261014_matched_evidence_labor\\matched_generation\\method_runs\\FSV-S03\\AUTOPAC_STYLE\\initial\\original.rego",
+          "sha256": "979a29451355e29190d1d00cd5eeee1dc48643165305acaf454d8cc4ebe1584a"
+        },
+        {
+          "path": "D:\\lunwen\\EC-CSI投稿\\working\\exploration\\20261014_matched_evidence_labor\\matched_generation\\method_runs\\FSV-S03\\AUTOPAC_STYLE\\initial\\CHECKS.json",
+          "sha256": "424e7b23ee91e1690a3dbd6ccd24f175eaea4d28081bc12b84ce3e2e807b3cfe"
+        },
+        {
+          "path": "D:\\lunwen\\EC-CSI投稿\\working\\exploration\\20261014_matched_evidence_labor\\matched_generation\\method_runs\\FSV-S03\\AUTOPAC_STYLE\\repair.json",
+          "sha256": "b9f40ec0986a70ef47902a3edbb199f6d34f7aed23e4c589330ed3b53f49f68b"
+        },
+        {
+          "path": "D:\\lunwen\\EC-CSI投稿\\working\\exploration\\20261014_matched_evidence_labor\\matched_generation\\method_runs\\FSV-S03\\AUTOPAC_STYLE\\repaired\\original.rego",
+          "sha256": "ef5d878b84c37ed3c9ccdaf5c272c903d7db6dca0e386da90324622845d2131b"
+        },
+        {
+          "path": "D:\\lunwen\\EC-CSI投稿\\working\\exploration\\20261014_matched_evidence_labor\\matched_generation\\method_runs\\FSV-S03\\AUTOPAC_STYLE\\repaired\\CHECKS.json",
+          "sha256": "4a4b3bfa49c37e9d448729fdfa0423c06a3f7ad30b60f813dd778db8bc1b6dff"
+        },
+        {
+          "path": "D:\\lunwen\\EC-CSI投稿\\working\\exploration\\20261014_matched_evidence_labor\\matched_generation\\method_runs\\FSV-S03\\AUTOPAC_STYLE\\RESULT.json",
+          "sha256": "58c0b95241e28fcef14116667dcc1c75ca176c8f0ea0871cb5a2baa696d9c5e3"
+        }
+      ]
+    },
+    {
+      "case": "FSV-S03",
+      "method": "ECAS_MATCHED",
+      "main_constraint_mapping": "MAIN_CONSTRAINT_CORRECT_STATIC_SOURCE_POLICY_MAPPING",
+      "decision_direction": "INTEGER_REQUIRED_IF_PRESENT",
+      "compound_or_exception": "NOT_APPLICABLE",
+      "optional_presence": "PRESERVED_BY_ON_MISSING_SKIP",
+      "source_default": "NO_SOURCE_DEFAULT_REQUIREMENT_IDENTIFIED_FOR_THIS_FOCUSED_TARGET",
+      "first_development_accepted": true,
+      "final_status": "ELIGIBLE",
+      "repaired_once": false,
+      "repair_semantic_observation": "NOT_RUN",
+      "auto_judge": null,
+      "archived_branch_observations": [],
+      "evidence_files": [
+        {
+          "path": "D:\\lunwen\\EC-CSI投稿\\working\\exploration\\20261014_matched_evidence_labor\\matched_generation\\method_runs\\FSV-S03\\ECAS_MATCHED\\first_candidate.json",
+          "sha256": "12ea58385028e162ad95d0661f77b6468c329462dd3900b963f82b5117ab4890"
+        },
+        {
+          "path": "D:\\lunwen\\EC-CSI投稿\\working\\exploration\\20261014_matched_evidence_labor\\matched_generation\\method_runs\\FSV-S03\\ECAS_MATCHED\\initial\\admitted_policy.json",
+          "sha256": "5f370d900883fad34ac8eb547f3f0c18fcb4034f387204f52afeba654320f57f"
+        },
+        {
+          "path": "D:\\lunwen\\EC-CSI投稿\\working\\exploration\\20261014_matched_evidence_labor\\matched_generation\\method_runs\\FSV-S03\\ECAS_MATCHED\\initial\\CHECKS.json",
+          "sha256": "ad53ef49d3aad67159374b23536a95d679d6898ee1c9e41ef9c1b2222a5a718e"
+        },
+        {
+          "path": "D:\\lunwen\\EC-CSI投稿\\working\\exploration\\20261014_matched_evidence_labor\\matched_generation\\method_runs\\FSV-S03\\ECAS_MATCHED\\RESULT.json",
+          "sha256": "29bbc1502b3919ddc92e2517729efe173a04df7bf4adc79b92ea86f977cb6957"
+        }
+      ]
+    },
+    {
+      "case": "FSV-B13",
+      "method": "P2P_STYLE",
+      "main_constraint_mapping": "MAIN_CONSTRAINT_CORRECT_STATIC_SOURCE_POLICY_MAPPING",
+      "decision_direction": "CORRECT_WITHIN_DOCUMENTED_KNOWN_STATE_DOMAIN",
+      "compound_or_exception": "WITHIN_MAXIMUM_OR_AUTHORIZED_EXCEPTION_CORRECT",
+      "optional_presence": "NOT_APPLICABLE",
+      "source_default": "NO_SOURCE_DEFAULT_REQUIREMENT_IDENTIFIED_FOR_THIS_FOCUSED_TARGET",
+      "first_development_accepted": true,
+      "final_status": "ELIGIBLE",
+      "repaired_once": false,
+      "repair_semantic_observation": "NOT_RUN",
+      "auto_judge": null,
+      "archived_branch_observations": [
+        {
+          "label": "missing-trusted",
+          "archived_kind": "engineering_fail_closed_control",
+          "expected": "deny",
+          "actual": "deny"
+        }
+      ],
+      "evidence_files": [
+        {
+          "path": "D:\\lunwen\\EC-CSI投稿\\working\\exploration\\20261014_matched_evidence_labor\\matched_generation\\method_runs\\FSV-B13\\P2P_STYLE\\p2p_detect.json",
+          "sha256": "8313eed205bff3da6fd8f15cb83b08e613adf109a991b769af1adcf803210186"
+        },
+        {
+          "path": "D:\\lunwen\\EC-CSI投稿\\working\\exploration\\20261014_matched_evidence_labor\\matched_generation\\method_runs\\FSV-B13\\P2P_STYLE\\p2p_extract.json",
+          "sha256": "3eb7be503dc75baaab6df0d0b9aab11796692bdcab81584fa040fcaff79bb2e7"
+        },
+        {
+          "path": "D:\\lunwen\\EC-CSI投稿\\working\\exploration\\20261014_matched_evidence_labor\\matched_generation\\method_runs\\FSV-B13\\P2P_STYLE\\p2p_rego.json",
+          "sha256": "38ed83a1fb0755c39acdbc5148c5892df2238dd7606e5f1fd2d08ccaae04eec0"
+        },
+        {
+          "path": "D:\\lunwen\\EC-CSI投稿\\working\\exploration\\20261014_matched_evidence_labor\\matched_generation\\method_runs\\FSV-B13\\P2P_STYLE\\initial\\original.rego",
+          "sha256": "c22d07f3085d8557e76223a8983e6a6541aaa94ea1134736e9251fc6b0b87a3d"
+        },
+        {
+          "path": "D:\\lunwen\\EC-CSI投稿\\working\\exploration\\20261014_matched_evidence_labor\\matched_generation\\method_runs\\FSV-B13\\P2P_STYLE\\initial\\CHECKS.json",
+          "sha256": "8c2f0cdfa499569d61abd873cda7d524fc37dcb37fed45c4e69afc9d1bfe769d"
+        },
+        {
+          "path": "D:\\lunwen\\EC-CSI投稿\\working\\exploration\\20261014_matched_evidence_labor\\matched_generation\\method_runs\\FSV-B13\\P2P_STYLE\\RESULT.json",
+          "sha256": "6e61dc2d2e2ae9f23f4ff98b8a90830fe3bcc1f4cc76cec0ad44953f9eeb7b30"
+        }
+      ]
+    },
+    {
+      "case": "FSV-B13",
+      "method": "AUTOPAC_STYLE",
+      "main_constraint_mapping": "MAIN_CONSTRAINT_CORRECT_STATIC_SOURCE_POLICY_MAPPING",
+      "decision_direction": "CORRECT_WITHIN_DOCUMENTED_KNOWN_STATE_DOMAIN",
+      "compound_or_exception": "WITHIN_MAXIMUM_OR_AUTHORIZED_EXCEPTION_CORRECT",
+      "optional_presence": "NOT_APPLICABLE",
+      "source_default": "NO_SOURCE_DEFAULT_REQUIREMENT_IDENTIFIED_FOR_THIS_FOCUSED_TARGET",
+      "first_development_accepted": true,
+      "final_status": "ELIGIBLE",
+      "repaired_once": false,
+      "repair_semantic_observation": "NOT_RUN",
+      "auto_judge": {
+        "verdict": "ACCEPT",
+        "issues": []
+      },
+      "archived_branch_observations": [
+        {
+          "label": "missing-trusted",
+          "archived_kind": "engineering_fail_closed_control",
+          "expected": "deny",
+          "actual": "deny"
+        }
+      ],
+      "evidence_files": [
+        {
+          "path": "D:\\lunwen\\EC-CSI投稿\\working\\exploration\\20261014_matched_evidence_labor\\matched_generation\\method_runs\\FSV-B13\\AUTOPAC_STYLE\\autopac_generate.json",
+          "sha256": "54a1cb563ba0c1952c9ad6156cc24fe84e7756d8a62c1a8a39afe90210f93cdd"
+        },
+        {
+          "path": "D:\\lunwen\\EC-CSI投稿\\working\\exploration\\20261014_matched_evidence_labor\\matched_generation\\method_runs\\FSV-B13\\AUTOPAC_STYLE\\autopac_judge.json",
+          "sha256": "2f2f4fa27ccd9c8d6477c226a6f9547975256455962da20867bed3f93f113092"
+        },
+        {
+          "path": "D:\\lunwen\\EC-CSI投稿\\working\\exploration\\20261014_matched_evidence_labor\\matched_generation\\method_runs\\FSV-B13\\AUTOPAC_STYLE\\initial\\original.rego",
+          "sha256": "e959aafb99a485fcff7e558c089df21f1ae37a49f921aa2d518c5b16c82d728b"
+        },
+        {
+          "path": "D:\\lunwen\\EC-CSI投稿\\working\\exploration\\20261014_matched_evidence_labor\\matched_generation\\method_runs\\FSV-B13\\AUTOPAC_STYLE\\initial\\CHECKS.json",
+          "sha256": "037255109111fee1ba846aeb31325f923d79e17fca0db775bf1f45d12c6e5cc4"
+        },
+        {
+          "path": "D:\\lunwen\\EC-CSI投稿\\working\\exploration\\20261014_matched_evidence_labor\\matched_generation\\method_runs\\FSV-B13\\AUTOPAC_STYLE\\RESULT.json",
+          "sha256": "c160399026eeaea95a7edf9a7ea37dd3727f06f50ad103a792834738f242010f"
+        }
+      ]
+    },
+    {
+      "case": "FSV-B13",
+      "method": "ECAS_MATCHED",
+      "main_constraint_mapping": "MAIN_CONSTRAINT_CORRECT_STATIC_SOURCE_POLICY_MAPPING",
+      "decision_direction": "CORRECT_WITHIN_DOCUMENTED_KNOWN_STATE_DOMAIN",
+      "compound_or_exception": "WITHIN_MAXIMUM_OR_AUTHORIZED_EXCEPTION_CORRECT",
+      "optional_presence": "NOT_APPLICABLE",
+      "source_default": "NO_SOURCE_DEFAULT_REQUIREMENT_IDENTIFIED_FOR_THIS_FOCUSED_TARGET",
+      "first_development_accepted": true,
+      "final_status": "ELIGIBLE",
+      "repaired_once": false,
+      "repair_semantic_observation": "NOT_RUN",
+      "auto_judge": null,
+      "archived_branch_observations": [
+        {
+          "label": "missing-trusted",
+          "archived_kind": "engineering_fail_closed_control",
+          "expected": "deny",
+          "actual": "deny"
+        }
+      ],
+      "evidence_files": [
+        {
+          "path": "D:\\lunwen\\EC-CSI投稿\\working\\exploration\\20261014_matched_evidence_labor\\matched_generation\\method_runs\\FSV-B13\\ECAS_MATCHED\\first_candidate.json",
+          "sha256": "6632f38661f5c043e7742cc0a658260c191b08dd4ae53d5730d6caf8d10a5c3d"
+        },
+        {
+          "path": "D:\\lunwen\\EC-CSI投稿\\working\\exploration\\20261014_matched_evidence_labor\\matched_generation\\method_runs\\FSV-B13\\ECAS_MATCHED\\initial\\admitted_policy.json",
+          "sha256": "2c0c40bddf86afebb6ec9a483e9df0bfff922f7b116d3e180846cfe7232fbb00"
+        },
+        {
+          "path": "D:\\lunwen\\EC-CSI投稿\\working\\exploration\\20261014_matched_evidence_labor\\matched_generation\\method_runs\\FSV-B13\\ECAS_MATCHED\\initial\\CHECKS.json",
+          "sha256": "3ccf677f7293e55b7e29ab3010b32afc77c12917c323d248358ebdfbd341af31"
+        },
+        {
+          "path": "D:\\lunwen\\EC-CSI投稿\\working\\exploration\\20261014_matched_evidence_labor\\matched_generation\\method_runs\\FSV-B13\\ECAS_MATCHED\\RESULT.json",
+          "sha256": "b5f736c8180cc3a16611ffbe471cfde9588d27c1af8fad54a2a083eff489f744"
+        }
+      ]
+    },
+    {
+      "case": "FSV-B17",
+      "method": "P2P_STYLE",
+      "main_constraint_mapping": "MAIN_CONSTRAINT_CORRECT_STATIC_SOURCE_POLICY_MAPPING",
+      "decision_direction": "CORRECT_WITHIN_DOCUMENTED_KNOWN_STATE_DOMAIN",
+      "compound_or_exception": "NOT_APPLICABLE",
+      "optional_presence": "NOT_APPLICABLE",
+      "source_default": "NO_SOURCE_DEFAULT_REQUIREMENT_IDENTIFIED_FOR_THIS_FOCUSED_TARGET",
+      "first_development_accepted": true,
+      "final_status": "ELIGIBLE",
+      "repaired_once": false,
+      "repair_semantic_observation": "NOT_RUN",
+      "auto_judge": null,
+      "archived_branch_observations": [
+        {
+          "label": "missing-trusted",
+          "archived_kind": "engineering_fail_closed_control",
+          "expected": "deny",
+          "actual": "allow"
+        }
+      ],
+      "evidence_files": [
+        {
+          "path": "D:\\lunwen\\EC-CSI投稿\\working\\exploration\\20261014_matched_evidence_labor\\matched_generation\\method_runs\\FSV-B17\\P2P_STYLE\\p2p_detect.json",
+          "sha256": "634c88f1e2a85c3ee8a27c9bf4ffcaf98628755761e699dcf5d940136a67563e"
+        },
+        {
+          "path": "D:\\lunwen\\EC-CSI投稿\\working\\exploration\\20261014_matched_evidence_labor\\matched_generation\\method_runs\\FSV-B17\\P2P_STYLE\\p2p_extract.json",
+          "sha256": "72b78a63392c15a92af62acd7c5a660fc95f775e4445c59e504e15b7aeb3912c"
+        },
+        {
+          "path": "D:\\lunwen\\EC-CSI投稿\\working\\exploration\\20261014_matched_evidence_labor\\matched_generation\\method_runs\\FSV-B17\\P2P_STYLE\\p2p_rego.json",
+          "sha256": "1fa942b8c57d5150085658421cceb991d54fb89d5b2a4e875ad6af4aedf7fd92"
+        },
+        {
+          "path": "D:\\lunwen\\EC-CSI投稿\\working\\exploration\\20261014_matched_evidence_labor\\matched_generation\\method_runs\\FSV-B17\\P2P_STYLE\\initial\\original.rego",
+          "sha256": "6870e87318fd3debd77aa853708c82dfdce3130277c2c3ccae62e1fe7a2b85a3"
+        },
+        {
+          "path": "D:\\lunwen\\EC-CSI投稿\\working\\exploration\\20261014_matched_evidence_labor\\matched_generation\\method_runs\\FSV-B17\\P2P_STYLE\\initial\\CHECKS.json",
+          "sha256": "b421edb35d21034c54ddf52f0d6ff27cbb9b3155c8e3778ddecec1314ffa3bad"
+        },
+        {
+          "path": "D:\\lunwen\\EC-CSI投稿\\working\\exploration\\20261014_matched_evidence_labor\\matched_generation\\method_runs\\FSV-B17\\P2P_STYLE\\RESULT.json",
+          "sha256": "51df3b6b338f71ae4c94f8a9ed25b2475b492f30a89000bd35550febf3f90a2d"
+        }
+      ]
+    },
+    {
+      "case": "FSV-B17",
+      "method": "AUTOPAC_STYLE",
+      "main_constraint_mapping": "MAIN_CONSTRAINT_CORRECT_STATIC_SOURCE_POLICY_MAPPING",
+      "decision_direction": "CORRECT_WITHIN_DOCUMENTED_KNOWN_STATE_DOMAIN",
+      "compound_or_exception": "NOT_APPLICABLE",
+      "optional_presence": "NOT_APPLICABLE",
+      "source_default": "NO_SOURCE_DEFAULT_REQUIREMENT_IDENTIFIED_FOR_THIS_FOCUSED_TARGET",
+      "first_development_accepted": true,
+      "final_status": "ELIGIBLE",
+      "repaired_once": false,
+      "repair_semantic_observation": "NOT_RUN",
+      "auto_judge": {
+        "verdict": "ACCEPT",
+        "issues": []
+      },
+      "archived_branch_observations": [
+        {
+          "label": "missing-trusted",
+          "archived_kind": "engineering_fail_closed_control",
+          "expected": "deny",
+          "actual": "allow"
+        }
+      ],
+      "evidence_files": [
+        {
+          "path": "D:\\lunwen\\EC-CSI投稿\\working\\exploration\\20261014_matched_evidence_labor\\matched_generation\\method_runs\\FSV-B17\\AUTOPAC_STYLE\\autopac_generate.json",
+          "sha256": "533267c429bd5688d0710a3db3a351b2948e581d2e9fffff8d5ab9d667f46989"
+        },
+        {
+          "path": "D:\\lunwen\\EC-CSI投稿\\working\\exploration\\20261014_matched_evidence_labor\\matched_generation\\method_runs\\FSV-B17\\AUTOPAC_STYLE\\autopac_judge.json",
+          "sha256": "2f2f4fa27ccd9c8d6477c226a6f9547975256455962da20867bed3f93f113092"
+        },
+        {
+          "path": "D:\\lunwen\\EC-CSI投稿\\working\\exploration\\20261014_matched_evidence_labor\\matched_generation\\method_runs\\FSV-B17\\AUTOPAC_STYLE\\initial\\original.rego",
+          "sha256": "b984020ca487ffa8468e4ed38ad72d447f17061743b5b534109ef7edd1214e41"
+        },
+        {
+          "path": "D:\\lunwen\\EC-CSI投稿\\working\\exploration\\20261014_matched_evidence_labor\\matched_generation\\method_runs\\FSV-B17\\AUTOPAC_STYLE\\initial\\CHECKS.json",
+          "sha256": "84be5a0d02cf7ce07a7c2bc81cf4ebb7c2d997b5ca99e1330013998baa2e3a3f"
+        },
+        {
+          "path": "D:\\lunwen\\EC-CSI投稿\\working\\exploration\\20261014_matched_evidence_labor\\matched_generation\\method_runs\\FSV-B17\\AUTOPAC_STYLE\\RESULT.json",
+          "sha256": "972078202a8c6e1da3241323c36fcab249d8cc46c57f47584db78b8461cd8723"
+        }
+      ]
+    },
+    {
+      "case": "FSV-B17",
+      "method": "ECAS_MATCHED",
+      "main_constraint_mapping": "MAIN_CONSTRAINT_CORRECT_STATIC_SOURCE_POLICY_MAPPING",
+      "decision_direction": "CORRECT_WITHIN_DOCUMENTED_KNOWN_STATE_DOMAIN",
+      "compound_or_exception": "NOT_APPLICABLE",
+      "optional_presence": "NOT_APPLICABLE",
+      "source_default": "NO_SOURCE_DEFAULT_REQUIREMENT_IDENTIFIED_FOR_THIS_FOCUSED_TARGET",
+      "first_development_accepted": true,
+      "final_status": "ELIGIBLE",
+      "repaired_once": false,
+      "repair_semantic_observation": "NOT_RUN",
+      "auto_judge": null,
+      "archived_branch_observations": [
+        {
+          "label": "missing-trusted",
+          "archived_kind": "engineering_fail_closed_control",
+          "expected": "deny",
+          "actual": "deny"
+        }
+      ],
+      "evidence_files": [
+        {
+          "path": "D:\\lunwen\\EC-CSI投稿\\working\\exploration\\20261014_matched_evidence_labor\\matched_generation\\method_runs\\FSV-B17\\ECAS_MATCHED\\first_candidate.json",
+          "sha256": "35603ce747a8a9003d8d8b4af95a29826669d07fb721524bb700f9ddbe355b39"
+        },
+        {
+          "path": "D:\\lunwen\\EC-CSI投稿\\working\\exploration\\20261014_matched_evidence_labor\\matched_generation\\method_runs\\FSV-B17\\ECAS_MATCHED\\initial\\admitted_policy.json",
+          "sha256": "a206e1535f6402c2864e7b3265b287dc3700c39e2f7aba4103ae62f0ecedc79d"
+        },
+        {
+          "path": "D:\\lunwen\\EC-CSI投稿\\working\\exploration\\20261014_matched_evidence_labor\\matched_generation\\method_runs\\FSV-B17\\ECAS_MATCHED\\initial\\CHECKS.json",
+          "sha256": "f0f7bd3b5d6b721a55fffe23c368dbb2061a56e909e54cf4f4165e77f32afeaa"
+        },
+        {
+          "path": "D:\\lunwen\\EC-CSI投稿\\working\\exploration\\20261014_matched_evidence_labor\\matched_generation\\method_runs\\FSV-B17\\ECAS_MATCHED\\RESULT.json",
+          "sha256": "1a4feb547d5ae6475d99d396a8644c24ffd1e627e43921dc4be64fef0e09f8e3"
+        }
+      ]
+    },
+    {
+      "case": "FSV-B19",
+      "method": "P2P_STYLE",
+      "main_constraint_mapping": "MAIN_CONSTRAINT_CORRECT_STATIC_SOURCE_POLICY_MAPPING",
+      "decision_direction": "CORRECT_WITHIN_DOCUMENTED_KNOWN_STATE_DOMAIN",
+      "compound_or_exception": "ON_HOLD_AND_INVOICES_OR_ALL_BLOCKS_PURCHASE_ORDER_KNOWN_ENUMS_CORRECT",
+      "optional_presence": "NOT_APPLICABLE",
+      "source_default": "EMPTY_HELD_TYPE_ALLOWED_DOCUMENT_DEFAULT_ALL_NOT_MAPPED_IF_RAW_EMPTY_REACHES_GATEWAY",
+      "first_development_accepted": true,
+      "final_status": "ELIGIBLE",
+      "repaired_once": false,
+      "repair_semantic_observation": "NOT_RUN",
+      "auto_judge": null,
+      "archived_branch_observations": [
+        {
+          "label": "held-empty-type",
+          "archived_kind": "conservative_empty_type_control",
+          "expected": "deny",
+          "actual": "allow"
+        },
+        {
+          "label": "held-unknown-type",
+          "archived_kind": "engineering_unknown_type_control",
+          "expected": "deny",
+          "actual": "allow"
+        },
+        {
+          "label": "missing-trusted",
+          "archived_kind": "engineering_fail_closed_control",
+          "expected": "deny",
+          "actual": "allow"
+        }
+      ],
+      "evidence_files": [
+        {
+          "path": "D:\\lunwen\\EC-CSI投稿\\working\\exploration\\20261014_matched_evidence_labor\\matched_generation\\method_runs\\FSV-B19\\P2P_STYLE\\p2p_detect.json",
+          "sha256": "9b48aa9e72484810e18fe0428cf559ae51cafd65d55608da3cb1e20270969d72"
+        },
+        {
+          "path": "D:\\lunwen\\EC-CSI投稿\\working\\exploration\\20261014_matched_evidence_labor\\matched_generation\\method_runs\\FSV-B19\\P2P_STYLE\\p2p_extract.json",
+          "sha256": "0101147306293a7b32766a86458a4ce7a90e4599ef13ecc1e1a71dddfc0331d1"
+        },
+        {
+          "path": "D:\\lunwen\\EC-CSI投稿\\working\\exploration\\20261014_matched_evidence_labor\\matched_generation\\method_runs\\FSV-B19\\P2P_STYLE\\p2p_rego.json",
+          "sha256": "96bec1ff70c792563ffdbf2c1e28e6ccb01d43db3ed58eebfba36201a3162c6e"
+        },
+        {
+          "path": "D:\\lunwen\\EC-CSI投稿\\working\\exploration\\20261014_matched_evidence_labor\\matched_generation\\method_runs\\FSV-B19\\P2P_STYLE\\initial\\original.rego",
+          "sha256": "bd9dee0463bd7c56b64639c048595efa412fa3c5f169d5a095135c7f8057e108"
+        },
+        {
+          "path": "D:\\lunwen\\EC-CSI投稿\\working\\exploration\\20261014_matched_evidence_labor\\matched_generation\\method_runs\\FSV-B19\\P2P_STYLE\\initial\\CHECKS.json",
+          "sha256": "5f6c53c64ac638683b9d961d90ec9e6004e8e72aec45497287b75919f6f85d2c"
+        },
+        {
+          "path": "D:\\lunwen\\EC-CSI投稿\\working\\exploration\\20261014_matched_evidence_labor\\matched_generation\\method_runs\\FSV-B19\\P2P_STYLE\\RESULT.json",
+          "sha256": "9dc5b63621f6c2177d54e7cb079e05306b8b0bc8b4fd846870dc6ca3acc78aa5"
+        }
+      ]
+    },
+    {
+      "case": "FSV-B19",
+      "method": "AUTOPAC_STYLE",
+      "main_constraint_mapping": "MAIN_CONSTRAINT_CORRECT_STATIC_SOURCE_POLICY_MAPPING",
+      "decision_direction": "CORRECT_WITHIN_DOCUMENTED_KNOWN_STATE_DOMAIN",
+      "compound_or_exception": "ON_HOLD_AND_INVOICES_OR_ALL_BLOCKS_PURCHASE_ORDER_KNOWN_ENUMS_CORRECT",
+      "optional_presence": "NOT_APPLICABLE",
+      "source_default": "EMPTY_HELD_TYPE_ALLOWED_DOCUMENT_DEFAULT_ALL_NOT_MAPPED_IF_RAW_EMPTY_REACHES_GATEWAY",
+      "first_development_accepted": true,
+      "final_status": "ELIGIBLE",
+      "repaired_once": false,
+      "repair_semantic_observation": "NOT_RUN",
+      "auto_judge": {
+        "verdict": "ACCEPT",
+        "issues": []
+      },
+      "archived_branch_observations": [
+        {
+          "label": "held-empty-type",
+          "archived_kind": "conservative_empty_type_control",
+          "expected": "deny",
+          "actual": "allow"
+        },
+        {
+          "label": "held-unknown-type",
+          "archived_kind": "engineering_unknown_type_control",
+          "expected": "deny",
+          "actual": "allow"
+        },
+        {
+          "label": "missing-trusted",
+          "archived_kind": "engineering_fail_closed_control",
+          "expected": "deny",
+          "actual": "allow"
+        }
+      ],
+      "evidence_files": [
+        {
+          "path": "D:\\lunwen\\EC-CSI投稿\\working\\exploration\\20261014_matched_evidence_labor\\matched_generation\\method_runs\\FSV-B19\\AUTOPAC_STYLE\\autopac_generate.json",
+          "sha256": "92bb11ed814fafc93fc74ae4736019898ac6cd257963e728a0c8487dbcd9de29"
+        },
+        {
+          "path": "D:\\lunwen\\EC-CSI投稿\\working\\exploration\\20261014_matched_evidence_labor\\matched_generation\\method_runs\\FSV-B19\\AUTOPAC_STYLE\\autopac_judge.json",
+          "sha256": "2f2f4fa27ccd9c8d6477c226a6f9547975256455962da20867bed3f93f113092"
+        },
+        {
+          "path": "D:\\lunwen\\EC-CSI投稿\\working\\exploration\\20261014_matched_evidence_labor\\matched_generation\\method_runs\\FSV-B19\\AUTOPAC_STYLE\\initial\\original.rego",
+          "sha256": "0ce13fdc20750fcc8d77f47a8abc66e0e29de746a752f3cf52d56a764e8ba083"
+        },
+        {
+          "path": "D:\\lunwen\\EC-CSI投稿\\working\\exploration\\20261014_matched_evidence_labor\\matched_generation\\method_runs\\FSV-B19\\AUTOPAC_STYLE\\initial\\CHECKS.json",
+          "sha256": "487ee45dcc85d811e06fe0f72986414de6170fb69b2a607905c94243e5dc86a8"
+        },
+        {
+          "path": "D:\\lunwen\\EC-CSI投稿\\working\\exploration\\20261014_matched_evidence_labor\\matched_generation\\method_runs\\FSV-B19\\AUTOPAC_STYLE\\RESULT.json",
+          "sha256": "a6b596082892264a7f63985070de49e265af76507c83e80100499fc1b69691ba"
+        }
+      ]
+    },
+    {
+      "case": "FSV-B19",
+      "method": "ECAS_MATCHED",
+      "main_constraint_mapping": "MAIN_CONSTRAINT_CORRECT_STATIC_SOURCE_POLICY_MAPPING",
+      "decision_direction": "CORRECT_WITHIN_DOCUMENTED_KNOWN_STATE_DOMAIN",
+      "compound_or_exception": "ON_HOLD_AND_INVOICES_OR_ALL_BLOCKS_PURCHASE_ORDER_KNOWN_ENUMS_CORRECT",
+      "optional_presence": "NOT_APPLICABLE",
+      "source_default": "EMPTY_HELD_TYPE_DENIED_CONSISTENT_WITH_DOCUMENTED_DEFAULT_ALL_IF_RAW_EMPTY_REACHES_GATEWAY",
+      "first_development_accepted": true,
+      "final_status": "ELIGIBLE",
+      "repaired_once": false,
+      "repair_semantic_observation": "NOT_RUN",
+      "auto_judge": null,
+      "archived_branch_observations": [
+        {
+          "label": "held-empty-type",
+          "archived_kind": "conservative_empty_type_control",
+          "expected": "deny",
+          "actual": "deny"
+        },
+        {
+          "label": "held-unknown-type",
+          "archived_kind": "engineering_unknown_type_control",
+          "expected": "deny",
+          "actual": "deny"
+        },
+        {
+          "label": "missing-trusted",
+          "archived_kind": "engineering_fail_closed_control",
+          "expected": "deny",
+          "actual": "deny"
+        }
+      ],
+      "evidence_files": [
+        {
+          "path": "D:\\lunwen\\EC-CSI投稿\\working\\exploration\\20261014_matched_evidence_labor\\matched_generation\\method_runs\\FSV-B19\\ECAS_MATCHED\\first_candidate.json",
+          "sha256": "2d09501af519f2aa3a459adc4e9df36db1fa0b76332bd72c73189b019e369e90"
+        },
+        {
+          "path": "D:\\lunwen\\EC-CSI投稿\\working\\exploration\\20261014_matched_evidence_labor\\matched_generation\\method_runs\\FSV-B19\\ECAS_MATCHED\\initial\\admitted_policy.json",
+          "sha256": "ac7c5bbf8bbdf0ee773ce0b06a357a9b0d48e3bfa11b21bd229cfe22cf16d98d"
+        },
+        {
+          "path": "D:\\lunwen\\EC-CSI投稿\\working\\exploration\\20261014_matched_evidence_labor\\matched_generation\\method_runs\\FSV-B19\\ECAS_MATCHED\\initial\\CHECKS.json",
+          "sha256": "06b9cc9fe4efb660d60256b67981b1680e72edeb04a9d3a99fe6d0bc8a6a4022"
+        },
+        {
+          "path": "D:\\lunwen\\EC-CSI投稿\\working\\exploration\\20261014_matched_evidence_labor\\matched_generation\\method_runs\\FSV-B19\\ECAS_MATCHED\\RESULT.json",
+          "sha256": "8a781167ffc84f72d91d3599c92011af4324381dcd47b13ca38e25944fe5e3b7"
+        }
+      ]
+    }
+  ],
+  "b19_default_value_posthoc_clue": {
+    "classification": "POSTHOC_SOURCE_DEFAULT_CLUE_NOT_PREREGISTERED_SEMANTIC_PROBE",
+    "source_packet": {
+      "path": "D:\\lunwen\\EC-CSI投稿\\working\\exploration\\20261014_matched_evidence_labor\\matched_generation\\generation_inputs\\FSV-B19\\packet.json",
+      "sha256": "10c5597e97e4190aa041c53aa3aee8b4c1c48fa77d073bfb4fb5eb5a64a346fd"
+    },
+    "source_evidence_id": "VIS-FSV-B19-01",
+    "full_source_subsection": "### 2.4 Payment Terms and Block Supplier\n\n- Default Payment Terms Template: If a Payment Terms template is set here, it'll be automatically selected for future purchase transactions.\n\n- Block Supplier: You can block invoices, payments or both from a supplier till specific date. Choose 'Hold Type', if you do not select a hold type, ERPNext will set it to \"All\". When a supplier is blocked, their status will be shown as 'On Hold'.\n\nThe hold types are as follows:\n+ Invoices: ERPNext will not allow Purchase Invoices or Purchase Orders to be created for the supplier + Payments: ERPNext will not allow Payment Entries to be created for the Supplier + All: ERPNext will apply both hold types aboveIf you do not set a release date, ERPNext will hold the Supplier **indefinitely**.\n",
+    "supplier_doctype_fields": [
+      [
+        "on_hold",
+        "Check",
+        {
+          "default": "0"
+        }
+      ],
+      [
+        "hold_type",
+        "Select",
+        {
+          "options": "\nAll\nInvoices\nPayments"
+        }
+      ]
+    ],
+    "abi_evidence_id": "VIS-FSV-B19-RUNTIME-ABI",
+    "abi_hold_path": {
+      "authority": "server_state",
+      "path": "/trusted/holdType",
+      "type": "string"
+    },
+    "common_adapter": {
+      "subject_role": "authenticated_api_caller",
+      "subject_id": "authenticated_api_caller",
+      "action": "POST /api/resource/Purchase Order",
+      "resource_id": "ERPNext:16.0.0",
+      "resource_system": "ERPNext",
+      "resource_version": "16.0.0",
+      "request_and_trusted_paths": [
+        {
+          "authority": "client",
+          "path": "/request/body/action",
+          "type": "string"
+        },
+        {
+          "authority": "client",
+          "path": "/request/body/supplier",
+          "type": "string"
+        },
+        {
+          "authority": "server_state",
+          "path": "/trusted/holdType",
+          "type": "string"
+        },
+        {
+          "authority": "server_state",
+          "path": "/trusted/supplierOnHold",
+          "type": "boolean"
+        }
+      ],
+      "envelope_representation": {
+        "subject": {
+          "id": "authenticated_api_caller",
+          "role": "authenticated_api_caller"
+        },
+        "action": "POST /api/resource/Purchase Order",
+        "resource": {
+          "id": "ERPNext:16.0.0",
+          "system": "ERPNext",
+          "version": "16.0.0"
+        },
+        "request": "original request unchanged",
+        "trusted": "original trusted unchanged"
+      },
+      "notice": "resource is an object; compare resource.id to organization schema resource strings. Subject id/role are neutral aliases, not an added permission rule. Source evidence and runtime path declarations contain no evaluation label."
+    },
+    "source_layer": "Documentation says omitted hold type defaults to All; complete section includes the hold types and their affected operations.",
+    "abi_layer": "ABI declares string path only, without enum or normalization guarantee; common adapter says original trusted unchanged. Select catalog contains an empty leading option plus All, Invoices, Payments, but it is not proof of saved empty production state.",
+    "production_layer": "UNKNOWN whether production backend normalizes before adapter, whether empty held state is reachable, and whether adapter authenticates/freshens the state. No production vulnerability conclusion.",
+    "candidate_causality": "ECAS has no explicit empty-to-All normalization rule. Its restrictive allow list yields the same observed denial as the source default. This is outcome consistency, not direct proof that the model extracted default-All semantics.",
+    "archived_classification_preserved": "held-empty-type remains conservative_empty_type_control; no original result or branch classification modified."
+  },
+  "limits": [
+    "Four historical tasks from two existing systems; posthoc explanatory audit, not blind or independent evaluation.",
+    "All three are GLM adaptations; no original P2P implementation or AutoPAC fine-tuned CodeT5 checkpoint run.",
+    "Main constraint mapping is separate from source optionality/defaults, executable code, Inventory admission and gateway fail-closed controls.",
+    "B19 normal source-enumerated state domain is equivalent across permit and deny formulations; missing or unknown state does not prove better business-semantic understanding.",
+    "B19 empty hold type has explicit default-All source evidence but only applies to the gateway if the adapter exposes raw empty state rather than server-normalized All; no production observation proves that path.",
+    "S03 optional-presence issue in invalid AutoPAC code is a static risk, not a new runtime observation."
+  ]
+}

@@ -1,0 +1,1719 @@
+{
+  "sha": "e31641a64d91d18574e338b8a38409d3f94391d7",
+  "url": "https://api.github.com/repos/NehaChowdhary/AutoPAC/git/trees/e31641a64d91d18574e338b8a38409d3f94391d7",
+  "tree": [
+    {
+      "path": "DatasetOpaRules",
+      "mode": "040000",
+      "type": "tree",
+      "sha": "336d17fac80a5b5814ada811fd6637659d4b2e4f",
+      "url": "https://api.github.com/repos/NehaChowdhary/AutoPAC/git/trees/336d17fac80a5b5814ada811fd6637659d4b2e4f"
+    },
+    {
+      "path": "DatasetOpaRules/18F",
+      "mode": "040000",
+      "type": "tree",
+      "sha": "dfcd808227d23ac1485a894d6bfbc35fbe9be955",
+      "url": "https://api.github.com/repos/NehaChowdhary/AutoPAC/git/trees/dfcd808227d23ac1485a894d6bfbc35fbe9be955"
+    },
+    {
+      "path": "DatasetOpaRules/18F/18F.rego",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "889319bdda1ade458d2fe6b666592952ee05a164",
+      "size": 10992,
+      "url": "https://api.github.com/repos/NehaChowdhary/AutoPAC/git/blobs/889319bdda1ade458d2fe6b666592952ee05a164"
+    },
+    {
+      "path": "DatasetOpaRules/18F/18Foutput.csv",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "c397827321d69e44852f4eb0bc9470cba5d24453",
+      "size": 9123,
+      "url": "https://api.github.com/repos/NehaChowdhary/AutoPAC/git/blobs/c397827321d69e44852f4eb0bc9470cba5d24453"
+    },
+    {
+      "path": "DatasetOpaRules/18F/18Foutput_test.csv",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "fc3106191d8765c64714a01572fed3fe9075b7e4",
+      "size": 1163,
+      "url": "https://api.github.com/repos/NehaChowdhary/AutoPAC/git/blobs/fc3106191d8765c64714a01572fed3fe9075b7e4"
+    },
+    {
+      "path": "DatasetOpaRules/18F/18Foutput_train.csv",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "97a2e3d0dc6cf1808e8d187ca4cf495fc6484d7d",
+      "size": 6560,
+      "url": "https://api.github.com/repos/NehaChowdhary/AutoPAC/git/blobs/97a2e3d0dc6cf1808e8d187ca4cf495fc6484d7d"
+    },
+    {
+      "path": "DatasetOpaRules/18F/18Foutput_val.csv",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "57aa39ece7063bd535cd8505c4f4290efef473db",
+      "size": 1432,
+      "url": "https://api.github.com/repos/NehaChowdhary/AutoPAC/git/blobs/57aa39ece7063bd535cd8505c4f4290efef473db"
+    },
+    {
+      "path": "DatasetOpaRules/18F/18foutputrandom.csv",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "e056ca825a20350de007b0815f96f403f01cdd8d",
+      "size": 11350173,
+      "url": "https://api.github.com/repos/NehaChowdhary/AutoPAC/git/blobs/e056ca825a20350de007b0815f96f403f01cdd8d"
+    },
+    {
+      "path": "DatasetOpaRules/18F/18foutputrandom_test.csv",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "a298d3f2c9641fc599838698710517af31a975b0",
+      "size": 1134523,
+      "url": "https://api.github.com/repos/NehaChowdhary/AutoPAC/git/blobs/a298d3f2c9641fc599838698710517af31a975b0"
+    },
+    {
+      "path": "DatasetOpaRules/18F/18foutputrandom_train.csv",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "7acfcf25b57afdce48e6f48b796a960cf9e110db",
+      "size": 8173523,
+      "url": "https://api.github.com/repos/NehaChowdhary/AutoPAC/git/blobs/7acfcf25b57afdce48e6f48b796a960cf9e110db"
+    },
+    {
+      "path": "DatasetOpaRules/18F/18foutputrandom_val.csv",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "c6d819aa2c79cdbdd4280ca426e27e5f94e7ec84",
+      "size": 2042163,
+      "url": "https://api.github.com/repos/NehaChowdhary/AutoPAC/git/blobs/c6d819aa2c79cdbdd4280ca426e27e5f94e7ec84"
+    },
+    {
+      "path": "DatasetOpaRules/18F/readme.md",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "58c8f42e76f54af24e09aad43b618694a7aa1ff3",
+      "size": 202,
+      "url": "https://api.github.com/repos/NehaChowdhary/AutoPAC/git/blobs/58c8f42e76f54af24e09aad43b618694a7aa1ff3"
+    },
+    {
+      "path": "DatasetOpaRules/CptOfEvilMinions",
+      "mode": "040000",
+      "type": "tree",
+      "sha": "d9cf8fd5342df5a662573a31dab030035933aab6",
+      "url": "https://api.github.com/repos/NehaChowdhary/AutoPAC/git/trees/d9cf8fd5342df5a662573a31dab030035933aab6"
+    },
+    {
+      "path": "DatasetOpaRules/CptOfEvilMinions/CptOfEvilMinions.rego",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "1c280a62a1437b63898da6799fd52ed054248085",
+      "size": 6053,
+      "url": "https://api.github.com/repos/NehaChowdhary/AutoPAC/git/blobs/1c280a62a1437b63898da6799fd52ed054248085"
+    },
+    {
+      "path": "DatasetOpaRules/CptOfEvilMinions/CptOfEvilMinionsoutput.csv",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "1beb9f9e5c86821f1d28e23aafd27918eeb8921d",
+      "size": 4876,
+      "url": "https://api.github.com/repos/NehaChowdhary/AutoPAC/git/blobs/1beb9f9e5c86821f1d28e23aafd27918eeb8921d"
+    },
+    {
+      "path": "DatasetOpaRules/CptOfEvilMinions/CptOfEvilMinionsoutput_test.csv",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "23cd378c493b1bd62fb921e738e19ccd20177ce5",
+      "size": 524,
+      "url": "https://api.github.com/repos/NehaChowdhary/AutoPAC/git/blobs/23cd378c493b1bd62fb921e738e19ccd20177ce5"
+    },
+    {
+      "path": "DatasetOpaRules/CptOfEvilMinions/CptOfEvilMinionsoutput_train.csv",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "5605183b7bede71e1e5edb572c9ecc7d4ed0827f",
+      "size": 3579,
+      "url": "https://api.github.com/repos/NehaChowdhary/AutoPAC/git/blobs/5605183b7bede71e1e5edb572c9ecc7d4ed0827f"
+    },
+    {
+      "path": "DatasetOpaRules/CptOfEvilMinions/CptOfEvilMinionsoutput_val.csv",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "29af441d4f20200439224607dcce261ef7ae24f1",
+      "size": 805,
+      "url": "https://api.github.com/repos/NehaChowdhary/AutoPAC/git/blobs/29af441d4f20200439224607dcce261ef7ae24f1"
+    },
+    {
+      "path": "DatasetOpaRules/CptOfEvilMinions/readme.md",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "cea55c7913967b026504af0c3e9738de55eabac1",
+      "size": 115,
+      "url": "https://api.github.com/repos/NehaChowdhary/AutoPAC/git/blobs/cea55c7913967b026504af0c3e9738de55eabac1"
+    },
+    {
+      "path": "DatasetOpaRules/DominusKelvin",
+      "mode": "040000",
+      "type": "tree",
+      "sha": "41ed6549d320b5a85d8f4a7c39857c18ead65cc4",
+      "url": "https://api.github.com/repos/NehaChowdhary/AutoPAC/git/trees/41ed6549d320b5a85d8f4a7c39857c18ead65cc4"
+    },
+    {
+      "path": "DatasetOpaRules/DominusKelvin/DominusKelvin.rego",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "a18d055632bce3abad6fa550b706b6b9dfb7f974",
+      "size": 8363,
+      "url": "https://api.github.com/repos/NehaChowdhary/AutoPAC/git/blobs/a18d055632bce3abad6fa550b706b6b9dfb7f974"
+    },
+    {
+      "path": "DatasetOpaRules/DominusKelvin/DominusKelvinoutput.csv",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "fe961f747a346e3436c90f7511acc446e647505d",
+      "size": 6833,
+      "url": "https://api.github.com/repos/NehaChowdhary/AutoPAC/git/blobs/fe961f747a346e3436c90f7511acc446e647505d"
+    },
+    {
+      "path": "DatasetOpaRules/DominusKelvin/DominusKelvinoutput_test.csv",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "c3b0fa5e09faa3199295c70a30597288ab346962",
+      "size": 721,
+      "url": "https://api.github.com/repos/NehaChowdhary/AutoPAC/git/blobs/c3b0fa5e09faa3199295c70a30597288ab346962"
+    },
+    {
+      "path": "DatasetOpaRules/DominusKelvin/DominusKelvinoutput_train.csv",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "cdeb1a88c7378db27dd40b972213bccad6a658e9",
+      "size": 4369,
+      "url": "https://api.github.com/repos/NehaChowdhary/AutoPAC/git/blobs/cdeb1a88c7378db27dd40b972213bccad6a658e9"
+    },
+    {
+      "path": "DatasetOpaRules/DominusKelvin/DominusKelvinoutput_val.csv",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "bcf67fe44de8a547985598cb5d779514f69abfef",
+      "size": 1775,
+      "url": "https://api.github.com/repos/NehaChowdhary/AutoPAC/git/blobs/bcf67fe44de8a547985598cb5d779514f69abfef"
+    },
+    {
+      "path": "DatasetOpaRules/DominusKelvin/readme.md",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "b13c5e2222f5720422f905b2534ec2d419f603da",
+      "size": 112,
+      "url": "https://api.github.com/repos/NehaChowdhary/AutoPAC/git/blobs/b13c5e2222f5720422f905b2534ec2d419f603da"
+    },
+    {
+      "path": "DatasetOpaRules/KarlatIwoca",
+      "mode": "040000",
+      "type": "tree",
+      "sha": "6575365b8871867586b7cdd279a5d030532c057b",
+      "url": "https://api.github.com/repos/NehaChowdhary/AutoPAC/git/trees/6575365b8871867586b7cdd279a5d030532c057b"
+    },
+    {
+      "path": "DatasetOpaRules/KarlatIwoca/KarlatIwoca.rego",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "271572dbf9db586f0bc5b3dc06483286f95196d2",
+      "size": 24036,
+      "url": "https://api.github.com/repos/NehaChowdhary/AutoPAC/git/blobs/271572dbf9db586f0bc5b3dc06483286f95196d2"
+    },
+    {
+      "path": "DatasetOpaRules/KarlatIwoca/KarlatIwocaoutput.csv",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "af10f5d8086842b072acd49e760314f3e852d27a",
+      "size": 19380,
+      "url": "https://api.github.com/repos/NehaChowdhary/AutoPAC/git/blobs/af10f5d8086842b072acd49e760314f3e852d27a"
+    },
+    {
+      "path": "DatasetOpaRules/KarlatIwoca/KarlatIwocaoutput_test.csv",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "8215bff6a946e962c47541552ad0397b7366db53",
+      "size": 2487,
+      "url": "https://api.github.com/repos/NehaChowdhary/AutoPAC/git/blobs/8215bff6a946e962c47541552ad0397b7366db53"
+    },
+    {
+      "path": "DatasetOpaRules/KarlatIwoca/KarlatIwocaoutput_train.csv",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "f1f14b863f4d10b1fb4571218859b9b351118659",
+      "size": 13346,
+      "url": "https://api.github.com/repos/NehaChowdhary/AutoPAC/git/blobs/f1f14b863f4d10b1fb4571218859b9b351118659"
+    },
+    {
+      "path": "DatasetOpaRules/KarlatIwoca/KarlatIwocaoutput_val.csv",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "2bfb23e37226743eb17bd6c463fd59968ce27bcc",
+      "size": 3579,
+      "url": "https://api.github.com/repos/NehaChowdhary/AutoPAC/git/blobs/2bfb23e37226743eb17bd6c463fd59968ce27bcc"
+    },
+    {
+      "path": "DatasetOpaRules/KarlatIwoca/readme.md",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "4d00cf57ea359ae097f9a7c3f02ceda5000f22f9",
+      "size": 110,
+      "url": "https://api.github.com/repos/NehaChowdhary/AutoPAC/git/blobs/4d00cf57ea359ae097f9a7c3f02ceda5000f22f9"
+    },
+    {
+      "path": "DatasetOpaRules/README.md",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "e96185147490d57f06e37e78ec318fe3bcb3c2b3",
+      "size": 305,
+      "url": "https://api.github.com/repos/NehaChowdhary/AutoPAC/git/blobs/e96185147490d57f06e37e78ec318fe3bcb3c2b3"
+    },
+    {
+      "path": "DatasetOpaRules/TheDyingYAK",
+      "mode": "040000",
+      "type": "tree",
+      "sha": "ce7a02110f671e9de026b8497421bd5c1fa04e6b",
+      "url": "https://api.github.com/repos/NehaChowdhary/AutoPAC/git/trees/ce7a02110f671e9de026b8497421bd5c1fa04e6b"
+    },
+    {
+      "path": "DatasetOpaRules/TheDyingYAK/TheDyingYAK.rego",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "3823aad3c3b6d28096f6c366528eee4763031248",
+      "size": 12013,
+      "url": "https://api.github.com/repos/NehaChowdhary/AutoPAC/git/blobs/3823aad3c3b6d28096f6c366528eee4763031248"
+    },
+    {
+      "path": "DatasetOpaRules/TheDyingYAK/TheDyingYAKoutput.csv",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "98837147199b7418b481f334653ddd14a0976a30",
+      "size": 10131,
+      "url": "https://api.github.com/repos/NehaChowdhary/AutoPAC/git/blobs/98837147199b7418b481f334653ddd14a0976a30"
+    },
+    {
+      "path": "DatasetOpaRules/TheDyingYAK/TheDyingYAKoutput_test.csv",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "d201951570cb9f6a1512f8523c0faecc0bc52b6b",
+      "size": 898,
+      "url": "https://api.github.com/repos/NehaChowdhary/AutoPAC/git/blobs/d201951570cb9f6a1512f8523c0faecc0bc52b6b"
+    },
+    {
+      "path": "DatasetOpaRules/TheDyingYAK/TheDyingYAKoutput_train.csv",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "94650752781ba254827c8d8f98ecc976195fff66",
+      "size": 6790,
+      "url": "https://api.github.com/repos/NehaChowdhary/AutoPAC/git/blobs/94650752781ba254827c8d8f98ecc976195fff66"
+    },
+    {
+      "path": "DatasetOpaRules/TheDyingYAK/TheDyingYAKoutput_val.csv",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "46e4afce468db66bedfb55128e03954e4f27687b",
+      "size": 2475,
+      "url": "https://api.github.com/repos/NehaChowdhary/AutoPAC/git/blobs/46e4afce468db66bedfb55128e03954e4f27687b"
+    },
+    {
+      "path": "DatasetOpaRules/TheDyingYAK/readme.md",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "8b292301b95299debc70abc459edf172cbcfc49f",
+      "size": 122,
+      "url": "https://api.github.com/repos/NehaChowdhary/AutoPAC/git/blobs/8b292301b95299debc70abc459edf172cbcfc49f"
+    },
+    {
+      "path": "DatasetOpaRules/blazman",
+      "mode": "040000",
+      "type": "tree",
+      "sha": "158193c1caddf03a3ceee82fc3176659592f17d6",
+      "url": "https://api.github.com/repos/NehaChowdhary/AutoPAC/git/trees/158193c1caddf03a3ceee82fc3176659592f17d6"
+    },
+    {
+      "path": "DatasetOpaRules/blazman/blazman.rego",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "941b59b4b87bf3d337223a359927fbc1c3669c76",
+      "size": 23952,
+      "url": "https://api.github.com/repos/NehaChowdhary/AutoPAC/git/blobs/941b59b4b87bf3d337223a359927fbc1c3669c76"
+    },
+    {
+      "path": "DatasetOpaRules/blazman/blazmanoutput.csv",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "daf8ed17fc700a4a0ab7fb98e08b7750968303a2",
+      "size": 19284,
+      "url": "https://api.github.com/repos/NehaChowdhary/AutoPAC/git/blobs/daf8ed17fc700a4a0ab7fb98e08b7750968303a2"
+    },
+    {
+      "path": "DatasetOpaRules/blazman/blazmanoutput_test.csv",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "fa30d7b099ec48fc3abf1ed45cd7f37dcf453049",
+      "size": 2484,
+      "url": "https://api.github.com/repos/NehaChowdhary/AutoPAC/git/blobs/fa30d7b099ec48fc3abf1ed45cd7f37dcf453049"
+    },
+    {
+      "path": "DatasetOpaRules/blazman/blazmanoutput_train.csv",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "25399b6c4da18ef255316a8b78b556de1c0b0385",
+      "size": 13278,
+      "url": "https://api.github.com/repos/NehaChowdhary/AutoPAC/git/blobs/25399b6c4da18ef255316a8b78b556de1c0b0385"
+    },
+    {
+      "path": "DatasetOpaRules/blazman/blazmanoutput_val.csv",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "f8677b2e3b01f6ca1b6d9f2e65ac714b0471b86d",
+      "size": 3554,
+      "url": "https://api.github.com/repos/NehaChowdhary/AutoPAC/git/blobs/f8677b2e3b01f6ca1b6d9f2e65ac714b0471b86d"
+    },
+    {
+      "path": "DatasetOpaRules/blazman/readme.md",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "babb941fe2a22e35001a318feb1966174893e6ac",
+      "size": 106,
+      "url": "https://api.github.com/repos/NehaChowdhary/AutoPAC/git/blobs/babb941fe2a22e35001a318feb1966174893e6ac"
+    },
+    {
+      "path": "DatasetOpaRules/empayre",
+      "mode": "040000",
+      "type": "tree",
+      "sha": "4bf98cebe6a9900aa2945b92988037757106e8b9",
+      "url": "https://api.github.com/repos/NehaChowdhary/AutoPAC/git/trees/4bf98cebe6a9900aa2945b92988037757106e8b9"
+    },
+    {
+      "path": "DatasetOpaRules/empayre/empayre.rego",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "825f73ef462a8adbb00d38c786c7fe65f3a901bd",
+      "size": 20343,
+      "url": "https://api.github.com/repos/NehaChowdhary/AutoPAC/git/blobs/825f73ef462a8adbb00d38c786c7fe65f3a901bd"
+    },
+    {
+      "path": "DatasetOpaRules/empayre/empayreoutput.csv",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "8ec3dfe483c1150337780708ed5a58664dd448dc",
+      "size": 17411,
+      "url": "https://api.github.com/repos/NehaChowdhary/AutoPAC/git/blobs/8ec3dfe483c1150337780708ed5a58664dd448dc"
+    },
+    {
+      "path": "DatasetOpaRules/empayre/empayreoutput_test.csv",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "02364ec729b2816ec62f250cd5a63a5abcd6a354",
+      "size": 1928,
+      "url": "https://api.github.com/repos/NehaChowdhary/AutoPAC/git/blobs/02364ec729b2816ec62f250cd5a63a5abcd6a354"
+    },
+    {
+      "path": "DatasetOpaRules/empayre/empayreoutput_train.csv",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "399ebcb4e2ce35d538e0d75fa2894238c88642da",
+      "size": 12427,
+      "url": "https://api.github.com/repos/NehaChowdhary/AutoPAC/git/blobs/399ebcb4e2ce35d538e0d75fa2894238c88642da"
+    },
+    {
+      "path": "DatasetOpaRules/empayre/empayreoutput_val.csv",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "cfeb0c26a75281734579aa674d7b5e3c809af4b9",
+      "size": 3088,
+      "url": "https://api.github.com/repos/NehaChowdhary/AutoPAC/git/blobs/cfeb0c26a75281734579aa674d7b5e3c809af4b9"
+    },
+    {
+      "path": "DatasetOpaRules/empayre/readme.md",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "499179b04ceeed186fb12b8a93a95394724967af",
+      "size": 106,
+      "url": "https://api.github.com/repos/NehaChowdhary/AutoPAC/git/blobs/499179b04ceeed186fb12b8a93a95394724967af"
+    },
+    {
+      "path": "DatasetOpaRules/erikng",
+      "mode": "040000",
+      "type": "tree",
+      "sha": "f2b12716ff4cb6dd2d4911db19acda0c830e25ba",
+      "url": "https://api.github.com/repos/NehaChowdhary/AutoPAC/git/trees/f2b12716ff4cb6dd2d4911db19acda0c830e25ba"
+    },
+    {
+      "path": "DatasetOpaRules/erikng/erikng.rego",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "0061d614907bc66a442dc90807d69b3611a7c2b6",
+      "size": 19955,
+      "url": "https://api.github.com/repos/NehaChowdhary/AutoPAC/git/blobs/0061d614907bc66a442dc90807d69b3611a7c2b6"
+    },
+    {
+      "path": "DatasetOpaRules/erikng/erikngoutput.csv",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "339dc64414ca804d51fa402aafac1f27f916d99e",
+      "size": 17023,
+      "url": "https://api.github.com/repos/NehaChowdhary/AutoPAC/git/blobs/339dc64414ca804d51fa402aafac1f27f916d99e"
+    },
+    {
+      "path": "DatasetOpaRules/erikng/erikngoutput_test.csv",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "c5d3df3024b591ed4da24d8e6aa243f0bc710eed",
+      "size": 1613,
+      "url": "https://api.github.com/repos/NehaChowdhary/AutoPAC/git/blobs/c5d3df3024b591ed4da24d8e6aa243f0bc710eed"
+    },
+    {
+      "path": "DatasetOpaRules/erikng/erikngoutput_train.csv",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "b976288eb493b3190a246cc3931733f82f2785e5",
+      "size": 12793,
+      "url": "https://api.github.com/repos/NehaChowdhary/AutoPAC/git/blobs/b976288eb493b3190a246cc3931733f82f2785e5"
+    },
+    {
+      "path": "DatasetOpaRules/erikng/erikngoutput_val.csv",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "88d4bf6805f3a44f690dab3d3409246e7d6d1ce1",
+      "size": 2649,
+      "url": "https://api.github.com/repos/NehaChowdhary/AutoPAC/git/blobs/88d4bf6805f3a44f690dab3d3409246e7d6d1ce1"
+    },
+    {
+      "path": "DatasetOpaRules/erikng/readme.md",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "dc1ed1970e2ab57fa4a5f62c0c9729042b0351b9",
+      "size": 105,
+      "url": "https://api.github.com/repos/NehaChowdhary/AutoPAC/git/blobs/dc1ed1970e2ab57fa4a5f62c0c9729042b0351b9"
+    },
+    {
+      "path": "DatasetOpaRules/fleetdm",
+      "mode": "040000",
+      "type": "tree",
+      "sha": "63e34fea470f4a69e053b2d412aae92517ae83da",
+      "url": "https://api.github.com/repos/NehaChowdhary/AutoPAC/git/trees/63e34fea470f4a69e053b2d412aae92517ae83da"
+    },
+    {
+      "path": "DatasetOpaRules/fleetdm/fleetdm.rego",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "a7400976423bab2fb4ef9e219c07ffec612f53b4",
+      "size": 25400,
+      "url": "https://api.github.com/repos/NehaChowdhary/AutoPAC/git/blobs/a7400976423bab2fb4ef9e219c07ffec612f53b4"
+    },
+    {
+      "path": "DatasetOpaRules/fleetdm/fleetdmoutput.csv",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "9242a3c26b65cd032f8baa4f768da807131684e7",
+      "size": 20671,
+      "url": "https://api.github.com/repos/NehaChowdhary/AutoPAC/git/blobs/9242a3c26b65cd032f8baa4f768da807131684e7"
+    },
+    {
+      "path": "DatasetOpaRules/fleetdm/fleetdmoutput_test.csv",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "8c128f6b9dbbda9b89df1e6d192bb04f9395996c",
+      "size": 2241,
+      "url": "https://api.github.com/repos/NehaChowdhary/AutoPAC/git/blobs/8c128f6b9dbbda9b89df1e6d192bb04f9395996c"
+    },
+    {
+      "path": "DatasetOpaRules/fleetdm/fleetdmoutput_train.csv",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "35ed9b4606739ff69f58ed8572ae41991b87aaa6",
+      "size": 15095,
+      "url": "https://api.github.com/repos/NehaChowdhary/AutoPAC/git/blobs/35ed9b4606739ff69f58ed8572ae41991b87aaa6"
+    },
+    {
+      "path": "DatasetOpaRules/fleetdm/fleetdmoutput_val.csv",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "f2fa5e5f2269f24c2e9a66a98675308491d70eea",
+      "size": 3367,
+      "url": "https://api.github.com/repos/NehaChowdhary/AutoPAC/git/blobs/f2fa5e5f2269f24c2e9a66a98675308491d70eea"
+    },
+    {
+      "path": "DatasetOpaRules/fleetdm/readme.md",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "119bc92b23951dfba334d9786402094fe49f77cb",
+      "size": 106,
+      "url": "https://api.github.com/repos/NehaChowdhary/AutoPAC/git/blobs/119bc92b23951dfba334d9786402094fe49f77cb"
+    },
+    {
+      "path": "DatasetOpaRules/groob",
+      "mode": "040000",
+      "type": "tree",
+      "sha": "33c8b0f16c41091015571ec039d6c1daad4c46c3",
+      "url": "https://api.github.com/repos/NehaChowdhary/AutoPAC/git/trees/33c8b0f16c41091015571ec039d6c1daad4c46c3"
+    },
+    {
+      "path": "DatasetOpaRules/groob/groob.rego",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "64ccb76a09086b5ca1e08d0994833db2a39d9dec",
+      "size": 6911,
+      "url": "https://api.github.com/repos/NehaChowdhary/AutoPAC/git/blobs/64ccb76a09086b5ca1e08d0994833db2a39d9dec"
+    },
+    {
+      "path": "DatasetOpaRules/groob/grooboutput.csv",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "275100eeee2e73e593df92fbd871bbc1acceddde",
+      "size": 5471,
+      "url": "https://api.github.com/repos/NehaChowdhary/AutoPAC/git/blobs/275100eeee2e73e593df92fbd871bbc1acceddde"
+    },
+    {
+      "path": "DatasetOpaRules/groob/grooboutput_test.csv",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "8ad44a694ab59769641eae8b9080857b585b0c51",
+      "size": 735,
+      "url": "https://api.github.com/repos/NehaChowdhary/AutoPAC/git/blobs/8ad44a694ab59769641eae8b9080857b585b0c51"
+    },
+    {
+      "path": "DatasetOpaRules/groob/grooboutput_train.csv",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "0f77889bbf25e588f918a061862d451985c8a61f",
+      "size": 3869,
+      "url": "https://api.github.com/repos/NehaChowdhary/AutoPAC/git/blobs/0f77889bbf25e588f918a061862d451985c8a61f"
+    },
+    {
+      "path": "DatasetOpaRules/groob/grooboutput_val.csv",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "834e03263a9b1f0eca29e2af87af57f95ba2b219",
+      "size": 899,
+      "url": "https://api.github.com/repos/NehaChowdhary/AutoPAC/git/blobs/834e03263a9b1f0eca29e2af87af57f95ba2b219"
+    },
+    {
+      "path": "DatasetOpaRules/groob/readme.md",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "3c54d64428d875a9b3fced70b9a4e6bd0860930e",
+      "size": 112,
+      "url": "https://api.github.com/repos/NehaChowdhary/AutoPAC/git/blobs/3c54d64428d875a9b3fced70b9a4e6bd0860930e"
+    },
+    {
+      "path": "DatasetOpaRules/headmin",
+      "mode": "040000",
+      "type": "tree",
+      "sha": "44910fe36d6c09d03dc16542f73a5b79131089d4",
+      "url": "https://api.github.com/repos/NehaChowdhary/AutoPAC/git/trees/44910fe36d6c09d03dc16542f73a5b79131089d4"
+    },
+    {
+      "path": "DatasetOpaRules/headmin/headmin.rego",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "f762ead991ddb7bd85732389436092c16a2c4762",
+      "size": 13301,
+      "url": "https://api.github.com/repos/NehaChowdhary/AutoPAC/git/blobs/f762ead991ddb7bd85732389436092c16a2c4762"
+    },
+    {
+      "path": "DatasetOpaRules/headmin/headminoutput.csv",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "4d5372495ec693ace22876c79995a9566b2a6f93",
+      "size": 11425,
+      "url": "https://api.github.com/repos/NehaChowdhary/AutoPAC/git/blobs/4d5372495ec693ace22876c79995a9566b2a6f93"
+    },
+    {
+      "path": "DatasetOpaRules/headmin/headminoutput_test.csv",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "c9d0ec5132801be0a81a7fd26ff6f80ef5ea1380",
+      "size": 1431,
+      "url": "https://api.github.com/repos/NehaChowdhary/AutoPAC/git/blobs/c9d0ec5132801be0a81a7fd26ff6f80ef5ea1380"
+    },
+    {
+      "path": "DatasetOpaRules/headmin/headminoutput_train.csv",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "1b3c3ff08cbc5d2396d4bc91f4dee8093ea829e4",
+      "size": 7974,
+      "url": "https://api.github.com/repos/NehaChowdhary/AutoPAC/git/blobs/1b3c3ff08cbc5d2396d4bc91f4dee8093ea829e4"
+    },
+    {
+      "path": "DatasetOpaRules/headmin/headminoutput_val.csv",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "528e238517425a22c9d3b9ea2923ca75a1a3bcea",
+      "size": 2052,
+      "url": "https://api.github.com/repos/NehaChowdhary/AutoPAC/git/blobs/528e238517425a22c9d3b9ea2923ca75a1a3bcea"
+    },
+    {
+      "path": "DatasetOpaRules/headmin/readme.md",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "e69de29bb2d1d6434b8b29ae775ad8c2e48c5391",
+      "size": 0,
+      "url": "https://api.github.com/repos/NehaChowdhary/AutoPAC/git/blobs/e69de29bb2d1d6434b8b29ae775ad8c2e48c5391"
+    },
+    {
+      "path": "DatasetOpaRules/kapawit",
+      "mode": "040000",
+      "type": "tree",
+      "sha": "ae2b3781cafe016e72eb77f598d9d41ea7adee9c",
+      "url": "https://api.github.com/repos/NehaChowdhary/AutoPAC/git/trees/ae2b3781cafe016e72eb77f598d9d41ea7adee9c"
+    },
+    {
+      "path": "DatasetOpaRules/kapawit/kapawit.rego",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "d5ff3c47f52adb9a19e9e53e8694caab6a03e876",
+      "size": 24324,
+      "url": "https://api.github.com/repos/NehaChowdhary/AutoPAC/git/blobs/d5ff3c47f52adb9a19e9e53e8694caab6a03e876"
+    },
+    {
+      "path": "DatasetOpaRules/kapawit/kapawitoutput.csv",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "a9df910ed010328b9f6f3f12ef266c1c56a3b770",
+      "size": 19676,
+      "url": "https://api.github.com/repos/NehaChowdhary/AutoPAC/git/blobs/a9df910ed010328b9f6f3f12ef266c1c56a3b770"
+    },
+    {
+      "path": "DatasetOpaRules/kapawit/kapawitoutput_test.csv",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "5f56367592da9a86584c9774992a7495d6e9856e",
+      "size": 2503,
+      "url": "https://api.github.com/repos/NehaChowdhary/AutoPAC/git/blobs/5f56367592da9a86584c9774992a7495d6e9856e"
+    },
+    {
+      "path": "DatasetOpaRules/kapawit/kapawitoutput_train.csv",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "e7097ec3c9b2c07c0c8304b7cfcbb14030674afe",
+      "size": 13946,
+      "url": "https://api.github.com/repos/NehaChowdhary/AutoPAC/git/blobs/e7097ec3c9b2c07c0c8304b7cfcbb14030674afe"
+    },
+    {
+      "path": "DatasetOpaRules/kapawit/kapawitoutput_val.csv",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "e3085d14408692147d96863c32bbc11da8267dfa",
+      "size": 3259,
+      "url": "https://api.github.com/repos/NehaChowdhary/AutoPAC/git/blobs/e3085d14408692147d96863c32bbc11da8267dfa"
+    },
+    {
+      "path": "DatasetOpaRules/kapawit/readme.md",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "6201038ba26213284df559b9af327468cf40b4f4",
+      "size": 106,
+      "url": "https://api.github.com/repos/NehaChowdhary/AutoPAC/git/blobs/6201038ba26213284df559b9af327468cf40b4f4"
+    },
+    {
+      "path": "DatasetOpaRules/kolbeface",
+      "mode": "040000",
+      "type": "tree",
+      "sha": "8c5219c8d21621a88288e2e9e96efeac10bbc54a",
+      "url": "https://api.github.com/repos/NehaChowdhary/AutoPAC/git/trees/8c5219c8d21621a88288e2e9e96efeac10bbc54a"
+    },
+    {
+      "path": "DatasetOpaRules/kolbeface/kolbeface.rego",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "3823aad3c3b6d28096f6c366528eee4763031248",
+      "size": 12013,
+      "url": "https://api.github.com/repos/NehaChowdhary/AutoPAC/git/blobs/3823aad3c3b6d28096f6c366528eee4763031248"
+    },
+    {
+      "path": "DatasetOpaRules/kolbeface/kolbefaceoutput.csv",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "98837147199b7418b481f334653ddd14a0976a30",
+      "size": 10131,
+      "url": "https://api.github.com/repos/NehaChowdhary/AutoPAC/git/blobs/98837147199b7418b481f334653ddd14a0976a30"
+    },
+    {
+      "path": "DatasetOpaRules/kolbeface/kolbefaceoutput_test.csv",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "d201951570cb9f6a1512f8523c0faecc0bc52b6b",
+      "size": 898,
+      "url": "https://api.github.com/repos/NehaChowdhary/AutoPAC/git/blobs/d201951570cb9f6a1512f8523c0faecc0bc52b6b"
+    },
+    {
+      "path": "DatasetOpaRules/kolbeface/kolbefaceoutput_train.csv",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "94650752781ba254827c8d8f98ecc976195fff66",
+      "size": 6790,
+      "url": "https://api.github.com/repos/NehaChowdhary/AutoPAC/git/blobs/94650752781ba254827c8d8f98ecc976195fff66"
+    },
+    {
+      "path": "DatasetOpaRules/kolbeface/kolbefaceoutput_val.csv",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "46e4afce468db66bedfb55128e03954e4f27687b",
+      "size": 2475,
+      "url": "https://api.github.com/repos/NehaChowdhary/AutoPAC/git/blobs/46e4afce468db66bedfb55128e03954e4f27687b"
+    },
+    {
+      "path": "DatasetOpaRules/kolbeface/readme.md",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "1d12a782610df3ec2bbcc5d738741584024aa362",
+      "size": 108,
+      "url": "https://api.github.com/repos/NehaChowdhary/AutoPAC/git/blobs/1d12a782610df3ec2bbcc5d738741584024aa362"
+    },
+    {
+      "path": "DatasetOpaRules/kyle-humane",
+      "mode": "040000",
+      "type": "tree",
+      "sha": "2c7883d6e03e685839a6737838b8f80234f3bfa9",
+      "url": "https://api.github.com/repos/NehaChowdhary/AutoPAC/git/trees/2c7883d6e03e685839a6737838b8f80234f3bfa9"
+    },
+    {
+      "path": "DatasetOpaRules/kyle-humane/kyle-humane.rego",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "d61bf728f58548ff9fbe2db832b557aa592975d3",
+      "size": 9160,
+      "url": "https://api.github.com/repos/NehaChowdhary/AutoPAC/git/blobs/d61bf728f58548ff9fbe2db832b557aa592975d3"
+    },
+    {
+      "path": "DatasetOpaRules/kyle-humane/kyle-humaneoutput.csv",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "fd6914277eb269bbcf519df908b2857b914d4402",
+      "size": 8022,
+      "url": "https://api.github.com/repos/NehaChowdhary/AutoPAC/git/blobs/fd6914277eb269bbcf519df908b2857b914d4402"
+    },
+    {
+      "path": "DatasetOpaRules/kyle-humane/kyle-humaneoutput_test.csv",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "cd167a24ba552b7c3c5f98b273ceeac9380daedc",
+      "size": 701,
+      "url": "https://api.github.com/repos/NehaChowdhary/AutoPAC/git/blobs/cd167a24ba552b7c3c5f98b273ceeac9380daedc"
+    },
+    {
+      "path": "DatasetOpaRules/kyle-humane/kyle-humaneoutput_train.csv",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "3f0421b4190eaac928f74f9b4762c008c3323d1d",
+      "size": 6070,
+      "url": "https://api.github.com/repos/NehaChowdhary/AutoPAC/git/blobs/3f0421b4190eaac928f74f9b4762c008c3323d1d"
+    },
+    {
+      "path": "DatasetOpaRules/kyle-humane/kyle-humaneoutput_val.csv",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "b4c75a5a83eb0d9a76d469c06810efadfe220778",
+      "size": 1283,
+      "url": "https://api.github.com/repos/NehaChowdhary/AutoPAC/git/blobs/b4c75a5a83eb0d9a76d469c06810efadfe220778"
+    },
+    {
+      "path": "DatasetOpaRules/kyle-humane/readme.md",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "378d695a264046b7ee3961e80c27ef4f9c6a2e53",
+      "size": 110,
+      "url": "https://api.github.com/repos/NehaChowdhary/AutoPAC/git/blobs/378d695a264046b7ee3961e80c27ef4f9c6a2e53"
+    },
+    {
+      "path": "DatasetOpaRules/lizthegrey",
+      "mode": "040000",
+      "type": "tree",
+      "sha": "b49bf69348a445fe8b15d34bd2abfbe66fc10ccc",
+      "url": "https://api.github.com/repos/NehaChowdhary/AutoPAC/git/trees/b49bf69348a445fe8b15d34bd2abfbe66fc10ccc"
+    },
+    {
+      "path": "DatasetOpaRules/lizthegrey/lizthegrey.rego",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "27bd71fac60c34ecbf16a379cde7cb6dd8d19d2e",
+      "size": 13753,
+      "url": "https://api.github.com/repos/NehaChowdhary/AutoPAC/git/blobs/27bd71fac60c34ecbf16a379cde7cb6dd8d19d2e"
+    },
+    {
+      "path": "DatasetOpaRules/lizthegrey/lizthegreyoutput.csv",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "90d1d272087e95d6c541adb8a2e05dfb9e5e6537",
+      "size": 11878,
+      "url": "https://api.github.com/repos/NehaChowdhary/AutoPAC/git/blobs/90d1d272087e95d6c541adb8a2e05dfb9e5e6537"
+    },
+    {
+      "path": "DatasetOpaRules/lizthegrey/lizthegreyoutput_test.csv",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "6adad8846005f88574c88b62a4ff5ab7e25adb81",
+      "size": 1136,
+      "url": "https://api.github.com/repos/NehaChowdhary/AutoPAC/git/blobs/6adad8846005f88574c88b62a4ff5ab7e25adb81"
+    },
+    {
+      "path": "DatasetOpaRules/lizthegrey/lizthegreyoutput_train.csv",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "bc508ad34e15981ce197fc397b309ce4e67ccf39",
+      "size": 8575,
+      "url": "https://api.github.com/repos/NehaChowdhary/AutoPAC/git/blobs/bc508ad34e15981ce197fc397b309ce4e67ccf39"
+    },
+    {
+      "path": "DatasetOpaRules/lizthegrey/lizthegreyoutput_val.csv",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "20a2bd2138032f3a37b47b2cc1f2bd8071ca6b70",
+      "size": 2199,
+      "url": "https://api.github.com/repos/NehaChowdhary/AutoPAC/git/blobs/20a2bd2138032f3a37b47b2cc1f2bd8071ca6b70"
+    },
+    {
+      "path": "DatasetOpaRules/lizthegrey/readme.md",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "86c9b25d16899bec072b6ecd6fc7d5f2c94c21ea",
+      "size": 109,
+      "url": "https://api.github.com/repos/NehaChowdhary/AutoPAC/git/blobs/86c9b25d16899bec072b6ecd6fc7d5f2c94c21ea"
+    },
+    {
+      "path": "DatasetOpaRules/main.py",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "f2c0d3f494d74de4ef4f31678268d76bc9441c28",
+      "size": 2264,
+      "url": "https://api.github.com/repos/NehaChowdhary/AutoPAC/git/blobs/f2c0d3f494d74de4ef4f31678268d76bc9441c28"
+    },
+    {
+      "path": "DatasetOpaRules/noahtalerman",
+      "mode": "040000",
+      "type": "tree",
+      "sha": "14c6dbc90bf62341f353ef56f86987d7d4b7de08",
+      "url": "https://api.github.com/repos/NehaChowdhary/AutoPAC/git/trees/14c6dbc90bf62341f353ef56f86987d7d4b7de08"
+    },
+    {
+      "path": "DatasetOpaRules/noahtalerman/noahtalerman.rego",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "2c93c1d71f6b9dc956f7dcfa9bba6706965fd4cd",
+      "size": 12342,
+      "url": "https://api.github.com/repos/NehaChowdhary/AutoPAC/git/blobs/2c93c1d71f6b9dc956f7dcfa9bba6706965fd4cd"
+    },
+    {
+      "path": "DatasetOpaRules/noahtalerman/noahtalermanoutput.csv",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "d754e7f0b16fd249c3c8e379a9c7881ce4b07ce8",
+      "size": 10462,
+      "url": "https://api.github.com/repos/NehaChowdhary/AutoPAC/git/blobs/d754e7f0b16fd249c3c8e379a9c7881ce4b07ce8"
+    },
+    {
+      "path": "DatasetOpaRules/noahtalerman/noahtalermanoutput_test.csv",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "2e5254b529900e6eb031fb2bf3c7d059f4ba00a5",
+      "size": 1102,
+      "url": "https://api.github.com/repos/NehaChowdhary/AutoPAC/git/blobs/2e5254b529900e6eb031fb2bf3c7d059f4ba00a5"
+    },
+    {
+      "path": "DatasetOpaRules/noahtalerman/noahtalermanoutput_train.csv",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "4281cbcf1a8b778dfd57e7dd8ab64a648c3eb16b",
+      "size": 7680,
+      "url": "https://api.github.com/repos/NehaChowdhary/AutoPAC/git/blobs/4281cbcf1a8b778dfd57e7dd8ab64a648c3eb16b"
+    },
+    {
+      "path": "DatasetOpaRules/noahtalerman/noahtalermanoutput_val.csv",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "078c44433fa3d7e5595800b0651a60eeb7b8b30a",
+      "size": 1712,
+      "url": "https://api.github.com/repos/NehaChowdhary/AutoPAC/git/blobs/078c44433fa3d7e5595800b0651a60eeb7b8b30a"
+    },
+    {
+      "path": "DatasetOpaRules/noahtalerman/readme.md",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "870e06174c04c8a4b2c456a07a8f4c0013c69462",
+      "size": 113,
+      "url": "https://api.github.com/repos/NehaChowdhary/AutoPAC/git/blobs/870e06174c04c8a4b2c456a07a8f4c0013c69462"
+    },
+    {
+      "path": "DatasetOpaRules/randomfunction",
+      "mode": "040000",
+      "type": "tree",
+      "sha": "6f170bdeb9227cc5ac593e146a245fdb5a68122b",
+      "url": "https://api.github.com/repos/NehaChowdhary/AutoPAC/git/trees/6f170bdeb9227cc5ac593e146a245fdb5a68122b"
+    },
+    {
+      "path": "DatasetOpaRules/randomfunction/readme.md",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "f6c3e5db89350ec25d7cc2d801050f0d570563e6",
+      "size": 497,
+      "url": "https://api.github.com/repos/NehaChowdhary/AutoPAC/git/blobs/f6c3e5db89350ec25d7cc2d801050f0d570563e6"
+    },
+    {
+      "path": "DatasetOpaRules/randomfunction/rndum.py",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "bbfec5274886216f6390456e53e1f8deb51512d0",
+      "size": 13631,
+      "url": "https://api.github.com/repos/NehaChowdhary/AutoPAC/git/blobs/bbfec5274886216f6390456e53e1f8deb51512d0"
+    },
+    {
+      "path": "DatasetOpaRules/randomfunction/template.py",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "c4b23f777cb4b8f12702cf16d37b70770b9d1647",
+      "size": 4541,
+      "url": "https://api.github.com/repos/NehaChowdhary/AutoPAC/git/blobs/c4b23f777cb4b8f12702cf16d37b70770b9d1647"
+    },
+    {
+      "path": "DatasetOpaRules/stephanmiehe",
+      "mode": "040000",
+      "type": "tree",
+      "sha": "48d9b431290cf43300b39d0fc19624befac190b8",
+      "url": "https://api.github.com/repos/NehaChowdhary/AutoPAC/git/trees/48d9b431290cf43300b39d0fc19624befac190b8"
+    },
+    {
+      "path": "DatasetOpaRules/stephanmiehe/readme.md",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "a066c06cb23ec69df2958a46f8904b53f01fd413",
+      "size": 113,
+      "url": "https://api.github.com/repos/NehaChowdhary/AutoPAC/git/blobs/a066c06cb23ec69df2958a46f8904b53f01fd413"
+    },
+    {
+      "path": "DatasetOpaRules/stephanmiehe/stephanmiehe.rego",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "843f43740c2e13062030c66d349b791046288a78",
+      "size": 10073,
+      "url": "https://api.github.com/repos/NehaChowdhary/AutoPAC/git/blobs/843f43740c2e13062030c66d349b791046288a78"
+    },
+    {
+      "path": "DatasetOpaRules/stephanmiehe/stephanmieheoutput.csv",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "4c8ddbcefcd54867958f2bd2174f9e8de34ec71d",
+      "size": 8540,
+      "url": "https://api.github.com/repos/NehaChowdhary/AutoPAC/git/blobs/4c8ddbcefcd54867958f2bd2174f9e8de34ec71d"
+    },
+    {
+      "path": "DatasetOpaRules/stephanmiehe/stephanmieheoutput_test.csv",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "3c3c05cbe8303fb55bc2bd530f96f311b4228905",
+      "size": 1057,
+      "url": "https://api.github.com/repos/NehaChowdhary/AutoPAC/git/blobs/3c3c05cbe8303fb55bc2bd530f96f311b4228905"
+    },
+    {
+      "path": "DatasetOpaRules/stephanmiehe/stephanmieheoutput_train.csv",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "3aea4ac43e5b86af011b84d010de81c973b986f9",
+      "size": 6002,
+      "url": "https://api.github.com/repos/NehaChowdhary/AutoPAC/git/blobs/3aea4ac43e5b86af011b84d010de81c973b986f9"
+    },
+    {
+      "path": "DatasetOpaRules/stephanmiehe/stephanmieheoutput_val.csv",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "81c3b71d9968262545f728439711c66ef2d99b45",
+      "size": 1513,
+      "url": "https://api.github.com/repos/NehaChowdhary/AutoPAC/git/blobs/81c3b71d9968262545f728439711c66ef2d99b45"
+    },
+    {
+      "path": "DatasetOpaRules/weswhet",
+      "mode": "040000",
+      "type": "tree",
+      "sha": "f2075f15f9e507a8ac06e0505967102340d4089e",
+      "url": "https://api.github.com/repos/NehaChowdhary/AutoPAC/git/trees/f2075f15f9e507a8ac06e0505967102340d4089e"
+    },
+    {
+      "path": "DatasetOpaRules/weswhet/readme.md",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "f13217036f8155d55e4e3f32cf588067b65b8c27",
+      "size": 106,
+      "url": "https://api.github.com/repos/NehaChowdhary/AutoPAC/git/blobs/f13217036f8155d55e4e3f32cf588067b65b8c27"
+    },
+    {
+      "path": "DatasetOpaRules/weswhet/weswhet.rego",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "ca26a4ee57ad8c7f8b20a865d5d90bf602f7760d",
+      "size": 8568,
+      "url": "https://api.github.com/repos/NehaChowdhary/AutoPAC/git/blobs/ca26a4ee57ad8c7f8b20a865d5d90bf602f7760d"
+    },
+    {
+      "path": "DatasetOpaRules/weswhet/weswhetoutput.csv",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "2b1b28f73e254faba8621df97cb3508b0b288440",
+      "size": 7135,
+      "url": "https://api.github.com/repos/NehaChowdhary/AutoPAC/git/blobs/2b1b28f73e254faba8621df97cb3508b0b288440"
+    },
+    {
+      "path": "DatasetOpaRules/weswhet/weswhetoutput_test.csv",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "6f2b6b02a3f8536b1b329b60e60c5a678d6de306",
+      "size": 931,
+      "url": "https://api.github.com/repos/NehaChowdhary/AutoPAC/git/blobs/6f2b6b02a3f8536b1b329b60e60c5a678d6de306"
+    },
+    {
+      "path": "DatasetOpaRules/weswhet/weswhetoutput_train.csv",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "4e5a2e21048ef0842cd9ed6fda81d0973aa97344",
+      "size": 5144,
+      "url": "https://api.github.com/repos/NehaChowdhary/AutoPAC/git/blobs/4e5a2e21048ef0842cd9ed6fda81d0973aa97344"
+    },
+    {
+      "path": "DatasetOpaRules/weswhet/weswhetoutput_val.csv",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "7c751d2e182eaadfbbaedc7e5bfdc7106f61d70c",
+      "size": 1092,
+      "url": "https://api.github.com/repos/NehaChowdhary/AutoPAC/git/blobs/7c751d2e182eaadfbbaedc7e5bfdc7106f61d70c"
+    },
+    {
+      "path": "DatasetOpaRules/y0zg",
+      "mode": "040000",
+      "type": "tree",
+      "sha": "40d25cf6f5e0351103403247cfe702cb7c977132",
+      "url": "https://api.github.com/repos/NehaChowdhary/AutoPAC/git/trees/40d25cf6f5e0351103403247cfe702cb7c977132"
+    },
+    {
+      "path": "DatasetOpaRules/y0zg/readme.md",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "411a83d6f718d7e5078968aab76e961a09b46234",
+      "size": 103,
+      "url": "https://api.github.com/repos/NehaChowdhary/AutoPAC/git/blobs/411a83d6f718d7e5078968aab76e961a09b46234"
+    },
+    {
+      "path": "DatasetOpaRules/y0zg/y0zg.rego",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "ca26a4ee57ad8c7f8b20a865d5d90bf602f7760d",
+      "size": 8568,
+      "url": "https://api.github.com/repos/NehaChowdhary/AutoPAC/git/blobs/ca26a4ee57ad8c7f8b20a865d5d90bf602f7760d"
+    },
+    {
+      "path": "DatasetOpaRules/y0zg/y0zgoutput.csv",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "2b1b28f73e254faba8621df97cb3508b0b288440",
+      "size": 7135,
+      "url": "https://api.github.com/repos/NehaChowdhary/AutoPAC/git/blobs/2b1b28f73e254faba8621df97cb3508b0b288440"
+    },
+    {
+      "path": "DatasetOpaRules/y0zg/y0zgoutput_test.csv",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "6f2b6b02a3f8536b1b329b60e60c5a678d6de306",
+      "size": 931,
+      "url": "https://api.github.com/repos/NehaChowdhary/AutoPAC/git/blobs/6f2b6b02a3f8536b1b329b60e60c5a678d6de306"
+    },
+    {
+      "path": "DatasetOpaRules/y0zg/y0zgoutput_train.csv",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "4e5a2e21048ef0842cd9ed6fda81d0973aa97344",
+      "size": 5144,
+      "url": "https://api.github.com/repos/NehaChowdhary/AutoPAC/git/blobs/4e5a2e21048ef0842cd9ed6fda81d0973aa97344"
+    },
+    {
+      "path": "DatasetOpaRules/y0zg/y0zgoutput_val.csv",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "7c751d2e182eaadfbbaedc7e5bfdc7106f61d70c",
+      "size": 1092,
+      "url": "https://api.github.com/repos/NehaChowdhary/AutoPAC/git/blobs/7c751d2e182eaadfbbaedc7e5bfdc7106f61d70c"
+    },
+    {
+      "path": "DatasetOpaRules/yonnym",
+      "mode": "040000",
+      "type": "tree",
+      "sha": "edc16a5591fcf3799e428568a9c432ac5711b36e",
+      "url": "https://api.github.com/repos/NehaChowdhary/AutoPAC/git/trees/edc16a5591fcf3799e428568a9c432ac5711b36e"
+    },
+    {
+      "path": "DatasetOpaRules/yonnym/readme.md",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "29e6fd8c3e4bc97a67317dee3e438f17a476deef",
+      "size": 105,
+      "url": "https://api.github.com/repos/NehaChowdhary/AutoPAC/git/blobs/29e6fd8c3e4bc97a67317dee3e438f17a476deef"
+    },
+    {
+      "path": "DatasetOpaRules/yonnym/yonnym.rego",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "b20d344f8d516b7aeb185158450100758dd4e9e5",
+      "size": 9913,
+      "url": "https://api.github.com/repos/NehaChowdhary/AutoPAC/git/blobs/b20d344f8d516b7aeb185158450100758dd4e9e5"
+    },
+    {
+      "path": "DatasetOpaRules/yonnym/yonnymoutput.csv",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "96817572fbfa55776f3aec9354332870c85a875d",
+      "size": 8415,
+      "url": "https://api.github.com/repos/NehaChowdhary/AutoPAC/git/blobs/96817572fbfa55776f3aec9354332870c85a875d"
+    },
+    {
+      "path": "DatasetOpaRules/yonnym/yonnymoutput_test.csv",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "07d4ab92c0f40fc9701c1e8f06431f78d4d994a9",
+      "size": 1056,
+      "url": "https://api.github.com/repos/NehaChowdhary/AutoPAC/git/blobs/07d4ab92c0f40fc9701c1e8f06431f78d4d994a9"
+    },
+    {
+      "path": "DatasetOpaRules/yonnym/yonnymoutput_train.csv",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "60ade4651392443c5fc5ad915994f819fad5b0fb",
+      "size": 5878,
+      "url": "https://api.github.com/repos/NehaChowdhary/AutoPAC/git/blobs/60ade4651392443c5fc5ad915994f819fad5b0fb"
+    },
+    {
+      "path": "DatasetOpaRules/yonnym/yonnymoutput_val.csv",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "81c3b71d9968262545f728439711c66ef2d99b45",
+      "size": 1513,
+      "url": "https://api.github.com/repos/NehaChowdhary/AutoPAC/git/blobs/81c3b71d9968262545f728439711c66ef2d99b45"
+    },
+    {
+      "path": "PrivateGPT",
+      "mode": "040000",
+      "type": "tree",
+      "sha": "3f037672b7672e02882633f971d4d6df57e07c8d",
+      "url": "https://api.github.com/repos/NehaChowdhary/AutoPAC/git/trees/3f037672b7672e02882633f971d4d6df57e07c8d"
+    },
+    {
+      "path": "PrivateGPT/README.md",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "010b30cdf34edfd21dfa7f09f9de30e10162bcfe",
+      "size": 694,
+      "url": "https://api.github.com/repos/NehaChowdhary/AutoPAC/git/blobs/010b30cdf34edfd21dfa7f09f9de30e10162bcfe"
+    },
+    {
+      "path": "PrivateGPT/Translator",
+      "mode": "040000",
+      "type": "tree",
+      "sha": "91e732750c29619ccc5690a71b2a9c0d59c798b7",
+      "url": "https://api.github.com/repos/NehaChowdhary/AutoPAC/git/trees/91e732750c29619ccc5690a71b2a9c0d59c798b7"
+    },
+    {
+      "path": "PrivateGPT/Translator/Code_t5_training.ipynb",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "6c20ebe75dc23027166232feb3980260ab8da3da",
+      "size": 81175,
+      "url": "https://api.github.com/repos/NehaChowdhary/AutoPAC/git/blobs/6c20ebe75dc23027166232feb3980260ab8da3da"
+    },
+    {
+      "path": "PrivateGPT/Translator/Dockerfile",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "35291491e963baa99689360bbbf9ad37804f7e1d",
+      "size": 796,
+      "url": "https://api.github.com/repos/NehaChowdhary/AutoPAC/git/blobs/35291491e963baa99689360bbbf9ad37804f7e1d"
+    },
+    {
+      "path": "PrivateGPT/Translator/README.md",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "fc7e50f2454e17a6a7fa2801933f4bd4d25cf740",
+      "size": 1360,
+      "url": "https://api.github.com/repos/NehaChowdhary/AutoPAC/git/blobs/fc7e50f2454e17a6a7fa2801933f4bd4d25cf740"
+    },
+    {
+      "path": "PrivateGPT/Translator/entrypoint.sh",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "0b38f2678c1cdf9bfc0199a617ef2775d267cba5",
+      "size": 114,
+      "url": "https://api.github.com/repos/NehaChowdhary/AutoPAC/git/blobs/0b38f2678c1cdf9bfc0199a617ef2775d267cba5"
+    },
+    {
+      "path": "PrivateGPT/Translator/environment.yaml",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "c662192601525772cca642c5417354d279ef64d6",
+      "size": 7883,
+      "url": "https://api.github.com/repos/NehaChowdhary/AutoPAC/git/blobs/c662192601525772cca642c5417354d279ef64d6"
+    },
+    {
+      "path": "PrivateGPT/Translator/model_run_test.ipynb",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "38e4b838e7f8b507f74c37161fbb6e714ae7d840",
+      "size": 24433,
+      "url": "https://api.github.com/repos/NehaChowdhary/AutoPAC/git/blobs/38e4b838e7f8b507f74c37161fbb6e714ae7d840"
+    },
+    {
+      "path": "PrivateGPT/Translator/privateGPT_server.py",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "d0ad2a271949d1569c3b3cc8156042c7e2c6704a",
+      "size": 2653,
+      "url": "https://api.github.com/repos/NehaChowdhary/AutoPAC/git/blobs/d0ad2a271949d1569c3b3cc8156042c7e2c6704a"
+    },
+    {
+      "path": "PrivateGPT/Translator/requirements.txt",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "a7689950f7bf3e5605f4ce5f9231ed01320ac01d",
+      "size": 237,
+      "url": "https://api.github.com/repos/NehaChowdhary/AutoPAC/git/blobs/a7689950f7bf3e5605f4ce5f9231ed01320ac01d"
+    },
+    {
+      "path": "PrivateGPT/Translator/setup.py",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "c1e58120d792a650398af19cc82e1d920467b9ad",
+      "size": 618,
+      "url": "https://api.github.com/repos/NehaChowdhary/AutoPAC/git/blobs/c1e58120d792a650398af19cc82e1d920467b9ad"
+    },
+    {
+      "path": "PrivateGPT/Translator/t5dataset.py",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "e69455566536f2e1f7599a00868b680e99f4799f",
+      "size": 2801,
+      "url": "https://api.github.com/repos/NehaChowdhary/AutoPAC/git/blobs/e69455566536f2e1f7599a00868b680e99f4799f"
+    },
+    {
+      "path": "PrivateGPT/Translator/t5model.py",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "ef9e3010a5038d3893ad5978492459916a87e9a8",
+      "size": 1386,
+      "url": "https://api.github.com/repos/NehaChowdhary/AutoPAC/git/blobs/ef9e3010a5038d3893ad5978492459916a87e9a8"
+    },
+    {
+      "path": "PrivateGPT/Web Engine",
+      "mode": "040000",
+      "type": "tree",
+      "sha": "b0cd38500e0824cbf862ccaa61d47f192c305116",
+      "url": "https://api.github.com/repos/NehaChowdhary/AutoPAC/git/trees/b0cd38500e0824cbf862ccaa61d47f192c305116"
+    },
+    {
+      "path": "PrivateGPT/Web Engine/README.md",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "010b30cdf34edfd21dfa7f09f9de30e10162bcfe",
+      "size": 694,
+      "url": "https://api.github.com/repos/NehaChowdhary/AutoPAC/git/blobs/010b30cdf34edfd21dfa7f09f9de30e10162bcfe"
+    },
+    {
+      "path": "PrivateGPT/Web Engine/Readme",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "c50bec040a92e6c1b3bfa36c7d68294fd6352088",
+      "size": 5,
+      "url": "https://api.github.com/repos/NehaChowdhary/AutoPAC/git/blobs/c50bec040a92e6c1b3bfa36c7d68294fd6352088"
+    },
+    {
+      "path": "PrivateGPT/Web Engine/conda-env.yml",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "738dd79b5f663ff760ad91d5ba05cfbb9f9a7a89",
+      "size": 437,
+      "url": "https://api.github.com/repos/NehaChowdhary/AutoPAC/git/blobs/738dd79b5f663ff760ad91d5ba05cfbb9f9a7a89"
+    },
+    {
+      "path": "PrivateGPT/Web Engine/docker-compose.yml",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "28dc39ec02c18e6952f010a1b01449bfa3c5dac1",
+      "size": 1501,
+      "url": "https://api.github.com/repos/NehaChowdhary/AutoPAC/git/blobs/28dc39ec02c18e6952f010a1b01449bfa3c5dac1"
+    },
+    {
+      "path": "PrivateGPT/Web Engine/public",
+      "mode": "040000",
+      "type": "tree",
+      "sha": "d84e43a142b22f01d38dca3520e9a07983c79533",
+      "url": "https://api.github.com/repos/NehaChowdhary/AutoPAC/git/trees/d84e43a142b22f01d38dca3520e9a07983c79533"
+    },
+    {
+      "path": "PrivateGPT/Web Engine/public/bot_logo.png",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "119726346088d384a9a3d18f8f229f94919ce290",
+      "size": 36967,
+      "url": "https://api.github.com/repos/NehaChowdhary/AutoPAC/git/blobs/119726346088d384a9a3d18f8f229f94919ce290"
+    },
+    {
+      "path": "PrivateGPT/Web Engine/public/index.html",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "253f6e0a20050fa32585d6bf4bfcf5cd5b826c4a",
+      "size": 1541,
+      "url": "https://api.github.com/repos/NehaChowdhary/AutoPAC/git/blobs/253f6e0a20050fa32585d6bf4bfcf5cd5b826c4a"
+    },
+    {
+      "path": "PrivateGPT/Web Engine/src",
+      "mode": "040000",
+      "type": "tree",
+      "sha": "22b3ba74ceb32cb8d9d2d48e4c6d6f0f8a9998f6",
+      "url": "https://api.github.com/repos/NehaChowdhary/AutoPAC/git/trees/22b3ba74ceb32cb8d9d2d48e4c6d6f0f8a9998f6"
+    },
+    {
+      "path": "PrivateGPT/Web Engine/src/App.css",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "d3499b68b001d439eef464d54850d7b6f9b490e9",
+      "size": 476,
+      "url": "https://api.github.com/repos/NehaChowdhary/AutoPAC/git/blobs/d3499b68b001d439eef464d54850d7b6f9b490e9"
+    },
+    {
+      "path": "PrivateGPT/Web Engine/src/App.js",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "bc25eb0e118dc13e264c4d1f67bf83a4aab9daf4",
+      "size": 3335,
+      "url": "https://api.github.com/repos/NehaChowdhary/AutoPAC/git/blobs/bc25eb0e118dc13e264c4d1f67bf83a4aab9daf4"
+    },
+    {
+      "path": "PrivateGPT/Web Engine/src/components",
+      "mode": "040000",
+      "type": "tree",
+      "sha": "5187146a05a82f6ebc5b93383c7649d16c87a792",
+      "url": "https://api.github.com/repos/NehaChowdhary/AutoPAC/git/trees/5187146a05a82f6ebc5b93383c7649d16c87a792"
+    },
+    {
+      "path": "PrivateGPT/Web Engine/src/components/Clear.js",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "501c83b27a747d093d7cf01c3a5d9f7da1852bd1",
+      "size": 198,
+      "url": "https://api.github.com/repos/NehaChowdhary/AutoPAC/git/blobs/501c83b27a747d093d7cf01c3a5d9f7da1852bd1"
+    },
+    {
+      "path": "PrivateGPT/Web Engine/src/components/Clear.module.css",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "64956913ddabe1d5731ba94029455e6a3ebaf459",
+      "size": 234,
+      "url": "https://api.github.com/repos/NehaChowdhary/AutoPAC/git/blobs/64956913ddabe1d5731ba94029455e6a3ebaf459"
+    },
+    {
+      "path": "PrivateGPT/Web Engine/src/components/History.js",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "0252118e0f34a09dbbb427cf3f7e47f3305346d2",
+      "size": 238,
+      "url": "https://api.github.com/repos/NehaChowdhary/AutoPAC/git/blobs/0252118e0f34a09dbbb427cf3f7e47f3305346d2"
+    },
+    {
+      "path": "PrivateGPT/Web Engine/src/components/History.module.css",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "d598475974ff3f6eed350ed191b83866841113e3",
+      "size": 184,
+      "url": "https://api.github.com/repos/NehaChowdhary/AutoPAC/git/blobs/d598475974ff3f6eed350ed191b83866841113e3"
+    },
+    {
+      "path": "PrivateGPT/Web Engine/src/components/Input.js",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "24379601f3c3661aef70e4eadb3b28205abc0051",
+      "size": 416,
+      "url": "https://api.github.com/repos/NehaChowdhary/AutoPAC/git/blobs/24379601f3c3661aef70e4eadb3b28205abc0051"
+    },
+    {
+      "path": "PrivateGPT/Web Engine/src/components/Input.module.css",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "5dbbba006b644a823587f9afc286129290fb059a",
+      "size": 493,
+      "url": "https://api.github.com/repos/NehaChowdhary/AutoPAC/git/blobs/5dbbba006b644a823587f9afc286129290fb059a"
+    },
+    {
+      "path": "PrivateGPT/Web Engine/src/components/Message.js",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "1d22accfa870fd501306f644cb1ca5e3c0d5528b",
+      "size": 475,
+      "url": "https://api.github.com/repos/NehaChowdhary/AutoPAC/git/blobs/1d22accfa870fd501306f644cb1ca5e3c0d5528b"
+    },
+    {
+      "path": "PrivateGPT/Web Engine/src/components/Message.module.css",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "d2e1be8b3febe5db9a1326866b4f76a6761d5cf2",
+      "size": 236,
+      "url": "https://api.github.com/repos/NehaChowdhary/AutoPAC/git/blobs/d2e1be8b3febe5db9a1326866b4f76a6761d5cf2"
+    },
+    {
+      "path": "PrivateGPT/Web Engine/src/icons",
+      "mode": "040000",
+      "type": "tree",
+      "sha": "dca90314bd2d2ca22f7270587bf82216fe2ed32c",
+      "url": "https://api.github.com/repos/NehaChowdhary/AutoPAC/git/trees/dca90314bd2d2ca22f7270587bf82216fe2ed32c"
+    },
+    {
+      "path": "PrivateGPT/Web Engine/src/icons/bot.png",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "2fc4ff30c5f4dc1dbeb3dd807d899c7b7d0da714",
+      "size": 42084,
+      "url": "https://api.github.com/repos/NehaChowdhary/AutoPAC/git/blobs/2fc4ff30c5f4dc1dbeb3dd807d899c7b7d0da714"
+    },
+    {
+      "path": "PrivateGPT/Web Engine/src/icons/user.png",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "030374a848d20bcf8f8a92f3162d74746adc6bc2",
+      "size": 9929,
+      "url": "https://api.github.com/repos/NehaChowdhary/AutoPAC/git/blobs/030374a848d20bcf8f8a92f3162d74746adc6bc2"
+    },
+    {
+      "path": "PrivateGPT/Web Engine/src/index.css",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "f206a5125f22e4e2c53019e97cc692bd5c6c286c",
+      "size": 225,
+      "url": "https://api.github.com/repos/NehaChowdhary/AutoPAC/git/blobs/f206a5125f22e4e2c53019e97cc692bd5c6c286c"
+    },
+    {
+      "path": "PrivateGPT/Web Engine/src/index.js",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "8e23ce0720908ba2002d37127315e6ec06bfb726",
+      "size": 283,
+      "url": "https://api.github.com/repos/NehaChowdhary/AutoPAC/git/blobs/8e23ce0720908ba2002d37127315e6ec06bfb726"
+    },
+    {
+      "path": "PrivateGPT/conda-env.yml",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "738dd79b5f663ff760ad91d5ba05cfbb9f9a7a89",
+      "size": 437,
+      "url": "https://api.github.com/repos/NehaChowdhary/AutoPAC/git/blobs/738dd79b5f663ff760ad91d5ba05cfbb9f9a7a89"
+    },
+    {
+      "path": "PrivateGPT/docker-compose.yml",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "28dc39ec02c18e6952f010a1b01449bfa3c5dac1",
+      "size": 1501,
+      "url": "https://api.github.com/repos/NehaChowdhary/AutoPAC/git/blobs/28dc39ec02c18e6952f010a1b01449bfa3c5dac1"
+    },
+    {
+      "path": "README.md",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "93d6817883cae686822394512bf0949148580ad9",
+      "size": 3154,
+      "url": "https://api.github.com/repos/NehaChowdhary/AutoPAC/git/blobs/93d6817883cae686822394512bf0949148580ad9"
+    },
+    {
+      "path": "Test Setup",
+      "mode": "040000",
+      "type": "tree",
+      "sha": "2cb6c95228643c6888416bf9afee9f4aa861bfdd",
+      "url": "https://api.github.com/repos/NehaChowdhary/AutoPAC/git/trees/2cb6c95228643c6888416bf9afee9f4aa861bfdd"
+    },
+    {
+      "path": "Test Setup/CPU_Memory_Usage.ipynb",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "e137cf0f9822b244ec38542b5f00195be2d2b44d",
+      "size": 160257,
+      "url": "https://api.github.com/repos/NehaChowdhary/AutoPAC/git/blobs/e137cf0f9822b244ec38542b5f00195be2d2b44d"
+    },
+    {
+      "path": "Test Setup/CPU_RAM_Metric.csv",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "6590a86da5cbbfb4404b204ea1614c70fb98ba20",
+      "size": 18793,
+      "url": "https://api.github.com/repos/NehaChowdhary/AutoPAC/git/blobs/6590a86da5cbbfb4404b204ea1614c70fb98ba20"
+    },
+    {
+      "path": "Test Setup/CPU_RAM_Metric.py",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "4e73385d43363f6b223fd4cc2e544f5b89b8a1f3",
+      "size": 4638,
+      "url": "https://api.github.com/repos/NehaChowdhary/AutoPAC/git/blobs/4e73385d43363f6b223fd4cc2e544f5b89b8a1f3"
+    },
+    {
+      "path": "Test Setup/ChatGPT_Validation.ipynb",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "19be698879a253d7444a35f9e44b5a82592b9627",
+      "size": 12595,
+      "url": "https://api.github.com/repos/NehaChowdhary/AutoPAC/git/blobs/19be698879a253d7444a35f9e44b5a82592b9627"
+    },
+    {
+      "path": "Test Setup/Lint_Opa.ipynb",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "cb0ef1e5123c328229f2f159b5dd992a403c7067",
+      "size": 6193,
+      "url": "https://api.github.com/repos/NehaChowdhary/AutoPAC/git/blobs/cb0ef1e5123c328229f2f159b5dd992a403c7067"
+    },
+    {
+      "path": "Test Setup/OPA_Test_Cases",
+      "mode": "040000",
+      "type": "tree",
+      "sha": "8b4ef9e2601a164d794a08bfdb00fc5095c05d87",
+      "url": "https://api.github.com/repos/NehaChowdhary/AutoPAC/git/trees/8b4ef9e2601a164d794a08bfdb00fc5095c05d87"
+    },
+    {
+      "path": "Test Setup/OPA_Test_Cases/ChatGPT_Validated",
+      "mode": "040000",
+      "type": "tree",
+      "sha": "f92eb6b327fa13862ef954d438820d248605e745",
+      "url": "https://api.github.com/repos/NehaChowdhary/AutoPAC/git/trees/f92eb6b327fa13862ef954d438820d248605e745"
+    },
+    {
+      "path": "Test Setup/OPA_Test_Cases/ChatGPT_Validated/chatgpt_invalid_similarity_scores.csv",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "90ab8c04164259b5c7a9d5cde2449d5cd40898d3",
+      "size": 2153,
+      "url": "https://api.github.com/repos/NehaChowdhary/AutoPAC/git/blobs/90ab8c04164259b5c7a9d5cde2449d5cd40898d3"
+    },
+    {
+      "path": "Test Setup/OPA_Test_Cases/ChatGPT_Validated/chatgpt_validated_correct.csv",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "6f234dfa31b9e3668ad3cee007fe89d2f4368571",
+      "size": 17461,
+      "url": "https://api.github.com/repos/NehaChowdhary/AutoPAC/git/blobs/6f234dfa31b9e3668ad3cee007fe89d2f4368571"
+    },
+    {
+      "path": "Test Setup/OPA_Test_Cases/ChatGPT_Validated/chatgpt_validated_similarity_scores.csv",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "7cc2b4f5b6d9cab938ac9b4e0111e26464275a56",
+      "size": 946,
+      "url": "https://api.github.com/repos/NehaChowdhary/AutoPAC/git/blobs/7cc2b4f5b6d9cab938ac9b4e0111e26464275a56"
+    },
+    {
+      "path": "Test Setup/OPA_Test_Cases/Local_Verifier_Analysis.ipynb",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "6a5c936798a0e4630c2a46ee771bee7c6d7288cd",
+      "size": 930,
+      "url": "https://api.github.com/repos/NehaChowdhary/AutoPAC/git/blobs/6a5c936798a0e4630c2a46ee771bee7c6d7288cd"
+    },
+    {
+      "path": "Test Setup/OPA_Test_Cases/Local_Verifier_Unit_Tests.csv",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "d8006d5eb9b843a6b8464d4ed473f816656541e5",
+      "size": 8487,
+      "url": "https://api.github.com/repos/NehaChowdhary/AutoPAC/git/blobs/d8006d5eb9b843a6b8464d4ed473f816656541e5"
+    },
+    {
+      "path": "Test Setup/OPA_Test_Cases/README.md",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "84ef8c8017de4edb195362464b22c72179ce6c8f",
+      "size": 150,
+      "url": "https://api.github.com/repos/NehaChowdhary/AutoPAC/git/blobs/84ef8c8017de4edb195362464b22c72179ce6c8f"
+    },
+    {
+      "path": "Test Setup/OpenAI_Judge.py",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "29b08cbc1c246cc8347e846e8f5668ceedce8587",
+      "size": 11243,
+      "url": "https://api.github.com/repos/NehaChowdhary/AutoPAC/git/blobs/29b08cbc1c246cc8347e846e8f5668ceedce8587"
+    },
+    {
+      "path": "Test Setup/README.md",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "f7440059d9ffe1748ad2a7abefb2b3f67c81e9f9",
+      "size": 2041,
+      "url": "https://api.github.com/repos/NehaChowdhary/AutoPAC/git/blobs/f7440059d9ffe1748ad2a7abefb2b3f67c81e9f9"
+    },
+    {
+      "path": "Test Setup/Time_Checking.py",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "b13e12589b45cfab1b6a5a5539a323c294349480",
+      "size": 3785,
+      "url": "https://api.github.com/repos/NehaChowdhary/AutoPAC/git/blobs/b13e12589b45cfab1b6a5a5539a323c294349480"
+    },
+    {
+      "path": "Test Setup/Time_Metric.csv",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "934ab99991b78a220a4a74785528054135b68771",
+      "size": 26692,
+      "url": "https://api.github.com/repos/NehaChowdhary/AutoPAC/git/blobs/934ab99991b78a220a4a74785528054135b68771"
+    },
+    {
+      "path": "Test Setup/Training_Loss.csv",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "22e235200f80230b8a81ac7e6b54a2d4278f2ac8",
+      "size": 1226,
+      "url": "https://api.github.com/repos/NehaChowdhary/AutoPAC/git/blobs/22e235200f80230b8a81ac7e6b54a2d4278f2ac8"
+    },
+    {
+      "path": "Test Setup/Validation_Loss.csv",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "a1d1f300367f8e969491b8f1e8bd47899b565fd7",
+      "size": 800,
+      "url": "https://api.github.com/repos/NehaChowdhary/AutoPAC/git/blobs/a1d1f300367f8e969491b8f1e8bd47899b565fd7"
+    },
+    {
+      "path": "Test Setup/lint_opa.py",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "277f9720df0c522605b5ff56ca7f3e91e6842c85",
+      "size": 4412,
+      "url": "https://api.github.com/repos/NehaChowdhary/AutoPAC/git/blobs/277f9720df0c522605b5ff56ca7f3e91e6842c85"
+    },
+    {
+      "path": "Test Setup/privategpt_logger.sh",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "bb8f5d3907c67f6328c91b84013091d3c9711a12",
+      "size": 835,
+      "url": "https://api.github.com/repos/NehaChowdhary/AutoPAC/git/blobs/bb8f5d3907c67f6328c91b84013091d3c9711a12"
+    },
+    {
+      "path": "Test Setup/queries.csv",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "576e4ea0ab864bb8f4f53a1cdabe63da55828769",
+      "size": 6651742,
+      "url": "https://api.github.com/repos/NehaChowdhary/AutoPAC/git/blobs/576e4ea0ab864bb8f4f53a1cdabe63da55828769"
+    },
+    {
+      "path": "Test Setup/resource_usage_logger.py",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "7b3829f046016ee76456b4821c91716fbaa019a0",
+      "size": 1658,
+      "url": "https://api.github.com/repos/NehaChowdhary/AutoPAC/git/blobs/7b3829f046016ee76456b4821c91716fbaa019a0"
+    },
+    {
+      "path": "Test Setup/test_bats.sh",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "831c145d3e98fba704e52809bc41aa3c8264d100",
+      "size": 735,
+      "url": "https://api.github.com/repos/NehaChowdhary/AutoPAC/git/blobs/831c145d3e98fba704e52809bc41aa3c8264d100"
+    }
+  ],
+  "truncated": false
+}

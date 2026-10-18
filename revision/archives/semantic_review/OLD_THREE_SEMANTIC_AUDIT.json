@@ -1,0 +1,849 @@
+{
+  "classification": "READ_ONLY_POST_HOC_STAGE_CONTENT_AUDIT_NOT_NEW_MODEL_EXPERIMENT_OR_INDEPENDENT_GOLD_REVIEW",
+  "new_model_calls": 0,
+  "new_policy_executions": 0,
+  "rows": [
+    {
+      "case": "FSV-B06",
+      "project": "Apache Fineract",
+      "method": "P2P_STYLE",
+      "first_generated_policy_semantic_observation": "首次Rego已有latest == true；DSARCP已抽取该条件。",
+      "later_stage_observation": "修复仅改缩进；不改变主约束。",
+      "evidence": [
+        {
+          "path": "D:\\lunwen\\EC-CSI投稿\\working\\exploration\\20261014_external_baseline_pilot\\effect_runs\\FSV-B06\\P2P_STYLE\\extraction.json",
+          "sha256": "8a9358ac601dd933f29173680be40e2a825a3c1f608585572a9e926212c4f08c",
+          "json_pointer": "/components/0/condition"
+        },
+        {
+          "path": "D:\\lunwen\\EC-CSI投稿\\working\\exploration\\20261014_external_baseline_pilot\\effect_runs\\FSV-B06\\P2P_STYLE\\generation.json",
+          "sha256": "a6fdb67e256fbbaa1f4f6bc2813f15894b879de6ad539e56cc5f0985a10675cf",
+          "json_pointer": "/rego"
+        },
+        {
+          "path": "D:\\lunwen\\EC-CSI投稿\\working\\exploration\\20261014_external_baseline_pilot\\effect_runs\\FSV-B06\\P2P_STYLE\\repair.json",
+          "sha256": "71eb9c9dff1958d8b95f6f4b8ce8b9c09e486c82315ecb000cad9c218617fd97",
+          "json_pointer": "/rego"
+        }
+      ]
+    },
+    {
+      "case": "FSV-B06",
+      "project": "Apache Fineract",
+      "method": "AUTOPAC_STYLE",
+      "first_generated_policy_semantic_observation": "首次Rego已有latest == true。",
+      "later_stage_observation": "Judge指出仅适用于Re-Age；修复改为false时禁止，缺标志允许，未真正增加交易类型区分。",
+      "evidence": [
+        {
+          "path": "D:\\lunwen\\EC-CSI投稿\\working\\exploration\\20261014_external_baseline_pilot\\effect_runs\\FSV-B06\\AUTOPAC_STYLE\\generation.json",
+          "sha256": "7839f317484c6e97a3bf4b81bf1ae8545378cee143075ef1087bb06d12a9585f",
+          "json_pointer": "/rego"
+        },
+        {
+          "path": "D:\\lunwen\\EC-CSI投稿\\working\\exploration\\20261014_external_baseline_pilot\\effect_runs\\FSV-B06\\AUTOPAC_STYLE\\judge.json",
+          "sha256": "04f209999292dd80e6379b4046fda98b58a6e1da190e56ce866de1ac2747159b",
+          "json_pointer": "/issues/0"
+        },
+        {
+          "path": "D:\\lunwen\\EC-CSI投稿\\working\\exploration\\20261014_external_baseline_pilot\\effect_runs\\FSV-B06\\AUTOPAC_STYLE\\repair.json",
+          "sha256": "f6fe3771a552f22547be4de54648f2aa05eb655adff78193caea3a951221ed52",
+          "json_pointer": "/rego"
+        }
+      ]
+    },
+    {
+      "case": "FSV-B06",
+      "project": "Apache Fineract",
+      "method": "ECAS_MATCHED",
+      "first_generated_policy_semantic_observation": "首次IR已有可信latest标志等于true；缺值deny。",
+      "later_stage_observation": "已归档编译/准入与请求结果另列；此观察不等于通用undo完整语义正确。",
+      "evidence": [
+        {
+          "path": "D:\\lunwen\\EC-CSI投稿\\working\\exploration\\20261014_external_baseline_pilot\\effect_runs\\FSV-B06\\ECAS_MATCHED\\candidate.json",
+          "sha256": "ca4a80a844a1a50519a3c958b18d3530b5799e97c3147bf19aba2573dd7a95ff",
+          "json_pointer": "/rules/0/params"
+        },
+        {
+          "path": "D:\\lunwen\\EC-CSI投稿\\working\\exploration\\20261014_external_baseline_pilot\\effect_runs\\FSV-B06\\ECAS_MATCHED\\RESULT.json",
+          "sha256": "7ce11d95dd90462618b63c697e2978132ad4250cd5d7831399272c6c6607cdb3",
+          "json_pointer": ""
+        }
+      ]
+    },
+    {
+      "case": "FSV-S02",
+      "project": "Apache Fineract",
+      "method": "P2P_STYLE",
+      "first_generated_policy_semantic_observation": "入口OUT_OF_SCOPE；没有首次政策，不评语义错误。",
+      "later_stage_observation": "提示限定显式访问政策，不强制把结构校验作为访问控制。",
+      "evidence": [
+        {
+          "path": "D:\\lunwen\\EC-CSI投稿\\working\\exploration\\20261014_external_baseline_pilot\\effect_runs\\FSV-S02\\P2P_STYLE\\detection.json",
+          "sha256": "d17c721cf1770dd1a29cc9bd28fc497c0135ef69f57e1dd99f5481295ea19b8e",
+          "json_pointer": ""
+        },
+        {
+          "path": "D:\\lunwen\\EC-CSI投稿\\working\\exploration\\20261014_external_baseline_pilot\\calls\\14_FSV-S02_p2p_detect\\prompt.txt",
+          "sha256": "b27eea78185e7b7ff962a2f32455a864aa494a9bfd55fecf3f25f0af2e9f922b",
+          "json_pointer": ""
+        }
+      ]
+    },
+    {
+      "case": "FSV-S02",
+      "project": "Apache Fineract",
+      "method": "AUTOPAC_STYLE",
+      "first_generated_policy_semantic_observation": "首次Rego只有documentKey/documentTypeId存在性；无白名单。",
+      "later_stage_observation": "Judge ACCEPT；操作者未知键deny测试反馈后修复有allowed_keys和逐键成员检查，但is_integer导致编译失败。",
+      "evidence": [
+        {
+          "path": "D:\\lunwen\\EC-CSI投稿\\working\\exploration\\20261014_external_baseline_pilot\\effect_runs\\FSV-S02\\AUTOPAC_STYLE\\generation.json",
+          "sha256": "9bfa733511ea5a68a928770d207263748cf3da678c1bbaccf6b506ea8398b47e",
+          "json_pointer": "/rego"
+        },
+        {
+          "path": "D:\\lunwen\\EC-CSI投稿\\working\\exploration\\20261014_external_baseline_pilot\\effect_runs\\FSV-S02\\AUTOPAC_STYLE\\judge.json",
+          "sha256": "eddab795ac57a0be086f476d9d99cc9f07088806c604cbb29cdece4a23f54d5a",
+          "json_pointer": ""
+        },
+        {
+          "path": "D:\\lunwen\\EC-CSI投稿\\working\\exploration\\20261014_external_baseline_pilot\\calls\\17_FSV-S02_repair\\prompt.txt",
+          "sha256": "8177f56e8f44089f5b4ef7866eadbd47059331ef1ac7dddbc59f9bb44ff1fcd0",
+          "json_pointer": ""
+        },
+        {
+          "path": "D:\\lunwen\\EC-CSI投稿\\working\\exploration\\20261014_external_baseline_pilot\\effect_runs\\FSV-S02\\AUTOPAC_STYLE\\repair.json",
+          "sha256": "00fa3e18e6b0b72e8a553e5831bee753294f3cd793602a069574f5e057ed6753",
+          "json_pointer": "/rego"
+        },
+        {
+          "path": "D:\\lunwen\\EC-CSI投稿\\working\\exploration\\20261014_external_baseline_pilot\\effect_runs\\FSV-S02\\AUTOPAC_STYLE\\repaired\\compile.stderr.txt",
+          "sha256": "326b670fd453317fffa3a55e9b23aeb9d22af7e4c3d1d242fe392e8ac052a68f",
+          "json_pointer": ""
+        }
+      ]
+    },
+    {
+      "case": "FSV-S02",
+      "project": "Apache Fineract",
+      "method": "ECAS_MATCHED",
+      "first_generated_policy_semantic_observation": "首次IR已有allowed_fields及四字段清单。",
+      "later_stage_observation": "来源仅列properties，没有additionalProperties=false；“闭集拒绝”只能归于既有任务约定，不能直接算原文唯一正确含义。",
+      "evidence": [
+        {
+          "path": "D:\\lunwen\\EC-CSI投稿\\working\\exploration\\20261014_external_baseline_pilot\\effect_runs\\FSV-S02\\ECAS_MATCHED\\candidate.json",
+          "sha256": "e6f5a2af7dee84e067b1a81f4b3dd56483b2ba306983039d0112c28efbf49fe6",
+          "json_pointer": "/rules/0"
+        },
+        {
+          "path": "D:\\lunwen\\EC-CSI投稿\\working\\exploration\\20261014_external_baseline_pilot\\generation_inputs\\FSV-S02\\packet.json",
+          "sha256": "5c8de100a097aa1cae1c236a1d9d7771e8c1e175d9c8601abc9d319dafca9611",
+          "json_pointer": "/visible_sources/0/content/requestBody/content/application~1json/schema"
+        }
+      ]
+    },
+    {
+      "case": "FSV-S04",
+      "project": "ERPNext",
+      "method": "P2P_STYLE",
+      "first_generated_policy_semantic_observation": "首次Rego只有身份/操作/资源，无邮箱格式条件。",
+      "later_stage_observation": "DSARCP只提角色权限；开发修复加入is_string，没有邮箱格式校验。",
+      "evidence": [
+        {
+          "path": "D:\\lunwen\\EC-CSI投稿\\working\\exploration\\20261014_external_baseline_pilot\\effect_runs\\FSV-S04\\P2P_STYLE\\extraction.json",
+          "sha256": "b6d2299ff2b3cb767bf5e6d5911f5e548e79ffeab83ee0e496a492dcb440dcc6",
+          "json_pointer": "/components"
+        },
+        {
+          "path": "D:\\lunwen\\EC-CSI投稿\\working\\exploration\\20261014_external_baseline_pilot\\effect_runs\\FSV-S04\\P2P_STYLE\\generation.json",
+          "sha256": "06f7d66130515cacb25ee7b17461dd02c4cc7240ca16916bff29626ea878f102",
+          "json_pointer": "/rego"
+        },
+        {
+          "path": "D:\\lunwen\\EC-CSI投稿\\working\\exploration\\20261014_external_baseline_pilot\\effect_runs\\FSV-S04\\P2P_STYLE\\repair.json",
+          "sha256": "b60a7ed9458fc0a4f326541aba36cb26d0e7eace7167d871016bee4aeab9e749",
+          "json_pointer": "/rego"
+        }
+      ]
+    },
+    {
+      "case": "FSV-S04",
+      "project": "ERPNext",
+      "method": "AUTOPAC_STYLE",
+      "first_generated_policy_semantic_observation": "首次Rego只有身份/操作/资源，无邮箱格式条件。",
+      "later_stage_observation": "Judge ACCEPT且issues为空；操作者正负邮箱测试反馈后出现regex。原接口错误与事后统一接口复演须另列。",
+      "evidence": [
+        {
+          "path": "D:\\lunwen\\EC-CSI投稿\\working\\exploration\\20261014_external_baseline_pilot\\effect_runs\\FSV-S04\\AUTOPAC_STYLE\\generation.json",
+          "sha256": "1bd409eb8ba263dea5c99b5248745d11cc0cd13e2429aa0e827fa6f620e08649",
+          "json_pointer": "/rego"
+        },
+        {
+          "path": "D:\\lunwen\\EC-CSI投稿\\working\\exploration\\20261014_external_baseline_pilot\\effect_runs\\FSV-S04\\AUTOPAC_STYLE\\judge.json",
+          "sha256": "2f2f4fa27ccd9c8d6477c226a6f9547975256455962da20867bed3f93f113092",
+          "json_pointer": ""
+        },
+        {
+          "path": "D:\\lunwen\\EC-CSI投稿\\working\\exploration\\20261014_external_baseline_pilot\\calls\\26_FSV-S04_repair\\prompt.txt",
+          "sha256": "68790ca8bfdfb3353093adfd63037a0abdd9344b8cb7e7e81ebc302f916a28ca",
+          "json_pointer": ""
+        },
+        {
+          "path": "D:\\lunwen\\EC-CSI投稿\\working\\exploration\\20261014_external_baseline_pilot\\effect_runs\\FSV-S04\\AUTOPAC_STYLE\\repair.json",
+          "sha256": "a03ee4c2a6de6c07f6a1a870110cbc91490e6cb66abfa5195718b9ff7c1f12f7",
+          "json_pointer": "/rego"
+        },
+        {
+          "path": "D:\\lunwen\\EC-CSI投稿\\working\\exploration\\20261014_external_baseline_pilot\\binding_replay_resource_object\\SUMMARY.json",
+          "sha256": "5345278278ae46c7054bbc6c023ff46505c866ac0872f115605aefe222e5dba3",
+          "json_pointer": ""
+        }
+      ]
+    },
+    {
+      "case": "FSV-S04",
+      "project": "ERPNext",
+      "method": "ECAS_MATCHED",
+      "first_generated_policy_semantic_observation": "首次IR已有named_validator/email_basic_v1绑定email_id。",
+      "later_stage_observation": "源字段options=Email；validator注册语义属于提供给模型的工具支持；不等于模型独立发明完整邮箱标准。",
+      "evidence": [
+        {
+          "path": "D:\\lunwen\\EC-CSI投稿\\working\\exploration\\20261014_external_baseline_pilot\\effect_runs\\FSV-S04\\ECAS_MATCHED\\candidate.json",
+          "sha256": "61100a221ee3fd6dca2ea31994cae0f377dbcf98e49c1c9963470917476dcf8d",
+          "json_pointer": "/rules/0"
+        },
+        {
+          "path": "D:\\lunwen\\EC-CSI投稿\\working\\exploration\\20261014_external_baseline_pilot\\generation_inputs\\FSV-S04\\packet.json",
+          "sha256": "d37c94ec03d4901259ee058bd728fd0bc7736a3033a7b3347881626233bf5d49",
+          "json_pointer": "/visible_sources/1/content/fields/3"
+        }
+      ]
+    }
+  ],
+  "source_observations": [
+    {
+      "case": "FSV-B06",
+      "packet_path": "D:\\lunwen\\EC-CSI投稿\\working\\exploration\\20261014_external_baseline_pilot\\generation_inputs\\FSV-B06\\packet.json",
+      "packet_sha256": "01ac46f8ed8d0b75d23a4adb7a16fafe35316f1e75fbe52d767540c39fe2f16f",
+      "json_pointer": "/visible_sources/0",
+      "evidence_id": "VIS-FSV-B06-01",
+      "source_id": "fineract-re-ageing.adoc",
+      "source_sha256_as_recorded_in_packet": "95D99F4BEE0B70B23487CBEE14CC1C767AB4667240F297B6ECE0DE3545BE5F16",
+      "locator": "re-ageing.adoc:85-92;"
+    },
+    {
+      "case": "FSV-B06",
+      "packet_path": "D:\\lunwen\\EC-CSI投稿\\working\\exploration\\20261014_external_baseline_pilot\\generation_inputs\\FSV-B06\\packet.json",
+      "packet_sha256": "01ac46f8ed8d0b75d23a4adb7a16fafe35316f1e75fbe52d767540c39fe2f16f",
+      "json_pointer": "/visible_sources/1",
+      "evidence_id": "VIS-FSV-B06-02",
+      "source_id": "fineract-re-ageing.adoc",
+      "source_sha256_as_recorded_in_packet": "95D99F4BEE0B70B23487CBEE14CC1C767AB4667240F297B6ECE0DE3545BE5F16",
+      "locator": "re-ageing.adoc:95-110"
+    },
+    {
+      "case": "FSV-B06",
+      "packet_path": "D:\\lunwen\\EC-CSI投稿\\working\\exploration\\20261014_external_baseline_pilot\\generation_inputs\\FSV-B06\\packet.json",
+      "packet_sha256": "01ac46f8ed8d0b75d23a4adb7a16fafe35316f1e75fbe52d767540c39fe2f16f",
+      "json_pointer": "/visible_sources/2",
+      "evidence_id": "VIS-FSV-B06-RUNTIME-ABI",
+      "source_id": "EC-V2-RUNTIME-INTERFACE-CATALOG-V1",
+      "source_sha256_as_recorded_in_packet": "8221DA8A6720B0593A8D337F18569C9947AAB05B02E5C84FB0C50E3DE8C1ABD7",
+      "locator": "tasks.FSV-B06"
+    },
+    {
+      "case": "FSV-S02",
+      "packet_path": "D:\\lunwen\\EC-CSI投稿\\working\\exploration\\20261014_external_baseline_pilot\\generation_inputs\\FSV-S02\\packet.json",
+      "packet_sha256": "5c8de100a097aa1cae1c236a1d9d7771e8c1e175d9c8601abc9d319dafca9611",
+      "json_pointer": "/visible_sources/0",
+      "evidence_id": "VIS-FSV-S02-01",
+      "source_id": "fineract-openapi-1.14.0.json",
+      "source_sha256_as_recorded_in_packet": "A44D6FA247D495A4FB147CC8C5EA1A364D8F05A40762B31A055681373E455A48",
+      "locator": "paths./v1/clients/{clientId}/identifiers.post"
+    },
+    {
+      "case": "FSV-S02",
+      "packet_path": "D:\\lunwen\\EC-CSI投稿\\working\\exploration\\20261014_external_baseline_pilot\\generation_inputs\\FSV-S02\\packet.json",
+      "packet_sha256": "5c8de100a097aa1cae1c236a1d9d7771e8c1e175d9c8601abc9d319dafca9611",
+      "json_pointer": "/visible_sources/1",
+      "evidence_id": "VIS-FSV-S02-RUNTIME-ABI",
+      "source_id": "EC-V2-RUNTIME-INTERFACE-CATALOG-V1",
+      "source_sha256_as_recorded_in_packet": "8221DA8A6720B0593A8D337F18569C9947AAB05B02E5C84FB0C50E3DE8C1ABD7",
+      "locator": "tasks.FSV-S02"
+    },
+    {
+      "case": "FSV-S04",
+      "packet_path": "D:\\lunwen\\EC-CSI投稿\\working\\exploration\\20261014_external_baseline_pilot\\generation_inputs\\FSV-S04\\packet.json",
+      "packet_sha256": "d37c94ec03d4901259ee058bd728fd0bc7736a3033a7b3347881626233bf5d49",
+      "json_pointer": "/visible_sources/0",
+      "evidence_id": "VIS-FSV-S04-01",
+      "source_id": "frappe-rest-api.html",
+      "source_sha256_as_recorded_in_packet": "87CB28850081B1F7D6702521E98E5F242498A456491EF26BDE847C20CCBFE154",
+      "locator": "extracted/frappe-rest-api.md:article"
+    },
+    {
+      "case": "FSV-S04",
+      "packet_path": "D:\\lunwen\\EC-CSI投稿\\working\\exploration\\20261014_external_baseline_pilot\\generation_inputs\\FSV-S04\\packet.json",
+      "packet_sha256": "d37c94ec03d4901259ee058bd728fd0bc7736a3033a7b3347881626233bf5d49",
+      "json_pointer": "/visible_sources/1",
+      "evidence_id": "VIS-FSV-S04-02",
+      "source_id": "erpnext-lead-doctype.json",
+      "source_sha256_as_recorded_in_packet": "D381706B9196BA6FDF43945415288FD56BB671DA722B0EF4D17BD9B65CFBAF0B",
+      "locator": "erpnext-lead-doctype.json:complete-field-catalog"
+    },
+    {
+      "case": "FSV-S04",
+      "packet_path": "D:\\lunwen\\EC-CSI投稿\\working\\exploration\\20261014_external_baseline_pilot\\generation_inputs\\FSV-S04\\packet.json",
+      "packet_sha256": "d37c94ec03d4901259ee058bd728fd0bc7736a3033a7b3347881626233bf5d49",
+      "json_pointer": "/visible_sources/2",
+      "evidence_id": "VIS-FSV-S04-RUNTIME-ABI",
+      "source_id": "EC-V2-RUNTIME-INTERFACE-CATALOG-V1",
+      "source_sha256_as_recorded_in_packet": "8221DA8A6720B0593A8D337F18569C9947AAB05B02E5C84FB0C50E3DE8C1ABD7",
+      "locator": "tasks.FSV-S04"
+    }
+  ],
+  "source_files": [
+    {
+      "path": "D:\\lunwen\\EC-CSI投稿\\working\\exploration\\20261014_external_baseline_pilot\\calls\\05_FSV-B06_p2p_detect\\response.raw.json",
+      "sha256": "742bdcc0a9a7d3444e511bb6ddf10868865c065bc46451c33596a3b28c5358a4"
+    },
+    {
+      "path": "D:\\lunwen\\EC-CSI投稿\\working\\exploration\\20261014_external_baseline_pilot\\calls\\05_FSV-B06_p2p_detect\\content.json",
+      "sha256": "56ab8d4b7ba2564664a0672c87945449c6913b2338ef93f6718d67b04375c68b"
+    },
+    {
+      "path": "D:\\lunwen\\EC-CSI投稿\\working\\exploration\\20261014_external_baseline_pilot\\calls\\05_FSV-B06_p2p_detect\\prompt.txt",
+      "sha256": "3248899b3e881f268e76bac2fd92ab4d516d0b0e8086e85d48a8b32a8d64bc2b"
+    },
+    {
+      "path": "D:\\lunwen\\EC-CSI投稿\\working\\exploration\\20261014_external_baseline_pilot\\calls\\06_FSV-B06_p2p_extract\\response.raw.json",
+      "sha256": "05f7d4b6f347c8856774608bebe486f3e9cb98bf6c20cfac257dcfbeb9d50928"
+    },
+    {
+      "path": "D:\\lunwen\\EC-CSI投稿\\working\\exploration\\20261014_external_baseline_pilot\\calls\\06_FSV-B06_p2p_extract\\content.json",
+      "sha256": "42d17fa5fda68a75086b4efddd896a426883f6dc8be127023c565a8e3903f7f3"
+    },
+    {
+      "path": "D:\\lunwen\\EC-CSI投稿\\working\\exploration\\20261014_external_baseline_pilot\\calls\\06_FSV-B06_p2p_extract\\prompt.txt",
+      "sha256": "3af9be90ecd01b99f4e525bd6d68cbe1cdba0eca810f1e676d8c3dde59a9d2db"
+    },
+    {
+      "path": "D:\\lunwen\\EC-CSI投稿\\working\\exploration\\20261014_external_baseline_pilot\\calls\\07_FSV-B06_p2p_rego\\response.raw.json",
+      "sha256": "9bec9293ccc771fc44e23f31edc16b81855531d6225c8e4e0e99b3a621c8a44b"
+    },
+    {
+      "path": "D:\\lunwen\\EC-CSI投稿\\working\\exploration\\20261014_external_baseline_pilot\\calls\\07_FSV-B06_p2p_rego\\content.json",
+      "sha256": "bd683d56226f37b6d47c4cecc2139133c87ba543350604fc2dee6b114b22fa94"
+    },
+    {
+      "path": "D:\\lunwen\\EC-CSI投稿\\working\\exploration\\20261014_external_baseline_pilot\\calls\\07_FSV-B06_p2p_rego\\prompt.txt",
+      "sha256": "7914d4f2fe68ba970f5c9d95671c55388a20128eaf6059c5237252bd488fe0ee"
+    },
+    {
+      "path": "D:\\lunwen\\EC-CSI投稿\\working\\exploration\\20261014_external_baseline_pilot\\calls\\09_FSV-B06_repair\\response.raw.json",
+      "sha256": "d57e85261b5c098cfb6a7476bb2ccc4944c5ae0ef36866e02f4e248c4eb56240"
+    },
+    {
+      "path": "D:\\lunwen\\EC-CSI投稿\\working\\exploration\\20261014_external_baseline_pilot\\calls\\09_FSV-B06_repair\\content.json",
+      "sha256": "ee76264011310a8e37462e45a1d48bf169a6ba21b9e201f0f2fd38d93271b188"
+    },
+    {
+      "path": "D:\\lunwen\\EC-CSI投稿\\working\\exploration\\20261014_external_baseline_pilot\\calls\\09_FSV-B06_repair\\prompt.txt",
+      "sha256": "dbbc55ef8489db8efe23c63556a471e8fe7dc30517774f1e939b2b1ff047d9e7"
+    },
+    {
+      "path": "D:\\lunwen\\EC-CSI投稿\\working\\exploration\\20261014_external_baseline_pilot\\calls\\10_FSV-B06_autopac_generate\\response.raw.json",
+      "sha256": "c82ff3b4cb16c79036b4c4d8a2afd40ba84576101ca8f4f07b0d2064eacc223d"
+    },
+    {
+      "path": "D:\\lunwen\\EC-CSI投稿\\working\\exploration\\20261014_external_baseline_pilot\\calls\\10_FSV-B06_autopac_generate\\content.json",
+      "sha256": "bc974797022d424758932829d5644ea190498241baca90709b837638ddc07323"
+    },
+    {
+      "path": "D:\\lunwen\\EC-CSI投稿\\working\\exploration\\20261014_external_baseline_pilot\\calls\\10_FSV-B06_autopac_generate\\prompt.txt",
+      "sha256": "2e431d0ad51ddb495b243d41e88998f4ad5190866a3a2d8b378e05b5e86fcf3d"
+    },
+    {
+      "path": "D:\\lunwen\\EC-CSI投稿\\working\\exploration\\20261014_external_baseline_pilot\\calls\\11_FSV-B06_autopac_judge\\response.raw.json",
+      "sha256": "e6f7fba2d0d0bda094a47ab87b3af75ef11a182bec5add5447710144e9e0c5c7"
+    },
+    {
+      "path": "D:\\lunwen\\EC-CSI投稿\\working\\exploration\\20261014_external_baseline_pilot\\calls\\11_FSV-B06_autopac_judge\\content.json",
+      "sha256": "4c11a3c38e5fd02e050dc6048f2960939c1e43fc359f1b77ffd272b90578e7d9"
+    },
+    {
+      "path": "D:\\lunwen\\EC-CSI投稿\\working\\exploration\\20261014_external_baseline_pilot\\calls\\11_FSV-B06_autopac_judge\\prompt.txt",
+      "sha256": "a2fdf12d2f353193dc806a288a7a17e1b6ae81cd8735363a45139f788366abe2"
+    },
+    {
+      "path": "D:\\lunwen\\EC-CSI投稿\\working\\exploration\\20261014_external_baseline_pilot\\calls\\12_FSV-B06_repair\\response.raw.json",
+      "sha256": "e493a200e628a0c00a5924514cfbd302b9b4c285d4cee162b35fbdeb3eec3011"
+    },
+    {
+      "path": "D:\\lunwen\\EC-CSI投稿\\working\\exploration\\20261014_external_baseline_pilot\\calls\\12_FSV-B06_repair\\content.json",
+      "sha256": "a532280a5b256e6e39fe9be541d8c125d81a8b56b89401808da8fdbb01ca76c3"
+    },
+    {
+      "path": "D:\\lunwen\\EC-CSI投稿\\working\\exploration\\20261014_external_baseline_pilot\\calls\\12_FSV-B06_repair\\prompt.txt",
+      "sha256": "c4df70b0d5ed7ae9759a8b4759066606a40bd40af0599573001f3f7d8da1ecdf"
+    },
+    {
+      "path": "D:\\lunwen\\EC-CSI投稿\\working\\exploration\\20261014_external_baseline_pilot\\calls\\13_FSV-B06_ecas_generate\\response.raw.json",
+      "sha256": "ea75f6f68d9ba16ef472bc27f6ee0f2b734a424e1bd970fd97790f0ff7c35ae8"
+    },
+    {
+      "path": "D:\\lunwen\\EC-CSI投稿\\working\\exploration\\20261014_external_baseline_pilot\\calls\\13_FSV-B06_ecas_generate\\content.json",
+      "sha256": "42ff50c32cb31517a85a8bb0cd8b3f8d2782f4e448b3b60b59e7e2c5ab20421e"
+    },
+    {
+      "path": "D:\\lunwen\\EC-CSI投稿\\working\\exploration\\20261014_external_baseline_pilot\\calls\\13_FSV-B06_ecas_generate\\prompt.txt",
+      "sha256": "0e330e748141a712a1e0d7f7b8d30a8800004b51fb25809357523f62e7345313"
+    },
+    {
+      "path": "D:\\lunwen\\EC-CSI投稿\\working\\exploration\\20261014_external_baseline_pilot\\calls\\14_FSV-S02_p2p_detect\\response.raw.json",
+      "sha256": "3a4d918539db6515bdc003f909cf0645526ef6a7e319748dc28e84122e713974"
+    },
+    {
+      "path": "D:\\lunwen\\EC-CSI投稿\\working\\exploration\\20261014_external_baseline_pilot\\calls\\14_FSV-S02_p2p_detect\\content.json",
+      "sha256": "145504965974d46f3c77dc2a9ed937a2c3a99b2444631862aa58901b8cd4f8e7"
+    },
+    {
+      "path": "D:\\lunwen\\EC-CSI投稿\\working\\exploration\\20261014_external_baseline_pilot\\calls\\14_FSV-S02_p2p_detect\\prompt.txt",
+      "sha256": "b27eea78185e7b7ff962a2f32455a864aa494a9bfd55fecf3f25f0af2e9f922b"
+    },
+    {
+      "path": "D:\\lunwen\\EC-CSI投稿\\working\\exploration\\20261014_external_baseline_pilot\\calls\\15_FSV-S02_autopac_generate\\response.raw.json",
+      "sha256": "6cbe5572e7fd4f6b3bbaf1687a3427646b607fa259057a5b90d46ed2d17b4fdc"
+    },
+    {
+      "path": "D:\\lunwen\\EC-CSI投稿\\working\\exploration\\20261014_external_baseline_pilot\\calls\\15_FSV-S02_autopac_generate\\content.json",
+      "sha256": "92970779e876b8d2b70450efa54405a4d7e53c1056b3ea7a72fb69f60e3740b7"
+    },
+    {
+      "path": "D:\\lunwen\\EC-CSI投稿\\working\\exploration\\20261014_external_baseline_pilot\\calls\\15_FSV-S02_autopac_generate\\prompt.txt",
+      "sha256": "2310fcdce7f7cb9f2597db38558d026db208ff2bdfc2c3889c340e27f666b1cc"
+    },
+    {
+      "path": "D:\\lunwen\\EC-CSI投稿\\working\\exploration\\20261014_external_baseline_pilot\\calls\\16_FSV-S02_autopac_judge\\response.raw.json",
+      "sha256": "acd94d82c97664d09f74ee572f787a35341d74a5e991613baf052cb466ca61d5"
+    },
+    {
+      "path": "D:\\lunwen\\EC-CSI投稿\\working\\exploration\\20261014_external_baseline_pilot\\calls\\16_FSV-S02_autopac_judge\\content.json",
+      "sha256": "eb79b5fa5f6ff0da64514e9d9facabc0f1c8ec621504139d11a00bdd8f8fa39a"
+    },
+    {
+      "path": "D:\\lunwen\\EC-CSI投稿\\working\\exploration\\20261014_external_baseline_pilot\\calls\\16_FSV-S02_autopac_judge\\prompt.txt",
+      "sha256": "5fa5f8cf96134a383343cec6c722fd8d48ec47ea519af1fd0844362b059e6cf4"
+    },
+    {
+      "path": "D:\\lunwen\\EC-CSI投稿\\working\\exploration\\20261014_external_baseline_pilot\\calls\\17_FSV-S02_repair\\response.raw.json",
+      "sha256": "d38dfb77b9284c1d09ab51821e42f5404835bf627fff29d22aa898910e087b9c"
+    },
+    {
+      "path": "D:\\lunwen\\EC-CSI投稿\\working\\exploration\\20261014_external_baseline_pilot\\calls\\17_FSV-S02_repair\\content.json",
+      "sha256": "fd5fbe23c8e26df9de25feb1b1e41a4e825f824e467563c534471cd9c5f5b8f3"
+    },
+    {
+      "path": "D:\\lunwen\\EC-CSI投稿\\working\\exploration\\20261014_external_baseline_pilot\\calls\\17_FSV-S02_repair\\prompt.txt",
+      "sha256": "8177f56e8f44089f5b4ef7866eadbd47059331ef1ac7dddbc59f9bb44ff1fcd0"
+    },
+    {
+      "path": "D:\\lunwen\\EC-CSI投稿\\working\\exploration\\20261014_external_baseline_pilot\\calls\\18_FSV-S02_ecas_generate\\response.raw.json",
+      "sha256": "b083f036f9f7399ff0f66cca517a1404a7eaf7f65770eace36e88c97e40e5483"
+    },
+    {
+      "path": "D:\\lunwen\\EC-CSI投稿\\working\\exploration\\20261014_external_baseline_pilot\\calls\\18_FSV-S02_ecas_generate\\content.json",
+      "sha256": "623183c481381a2ab4c4206bbe3ed3e403837ffe1cb54cc8bcb1d1bbea330c6c"
+    },
+    {
+      "path": "D:\\lunwen\\EC-CSI投稿\\working\\exploration\\20261014_external_baseline_pilot\\calls\\18_FSV-S02_ecas_generate\\prompt.txt",
+      "sha256": "b4222cca4ec0eb17173806ec519adfaff586e6fb2da98de35bfc39c71e42a9d7"
+    },
+    {
+      "path": "D:\\lunwen\\EC-CSI投稿\\working\\exploration\\20261014_external_baseline_pilot\\calls\\19_FSV-S04_p2p_detect\\response.raw.json",
+      "sha256": "0619de7d33e27b992fb1536776631447ce87410c8a207582eca4c458529881b3"
+    },
+    {
+      "path": "D:\\lunwen\\EC-CSI投稿\\working\\exploration\\20261014_external_baseline_pilot\\calls\\19_FSV-S04_p2p_detect\\content.json",
+      "sha256": "b51531806f8bdcf0d6437473b87bab1fc24547199a735cd009f732297b220a4a"
+    },
+    {
+      "path": "D:\\lunwen\\EC-CSI投稿\\working\\exploration\\20261014_external_baseline_pilot\\calls\\19_FSV-S04_p2p_detect\\prompt.txt",
+      "sha256": "62c99a2eb27833b62e2e0baa2f239d2059f6519d354958cbc8a9108c37ae89a5"
+    },
+    {
+      "path": "D:\\lunwen\\EC-CSI投稿\\working\\exploration\\20261014_external_baseline_pilot\\calls\\20_FSV-S04_p2p_extract\\response.raw.json",
+      "sha256": "e617412dd14a9ba81e2783f1848a47ab5a6358c2b6e075f758f54378c8178011"
+    },
+    {
+      "path": "D:\\lunwen\\EC-CSI投稿\\working\\exploration\\20261014_external_baseline_pilot\\calls\\20_FSV-S04_p2p_extract\\content.json",
+      "sha256": "4d33c18cb842b3ebb1a3864f7cede827afa1e2c2ddeea16ef35d08715895690d"
+    },
+    {
+      "path": "D:\\lunwen\\EC-CSI投稿\\working\\exploration\\20261014_external_baseline_pilot\\calls\\20_FSV-S04_p2p_extract\\prompt.txt",
+      "sha256": "eed013fb19d345c7ed4f49b0b058b320caf7c893d9a8e255fa837ecdc470ce86"
+    },
+    {
+      "path": "D:\\lunwen\\EC-CSI投稿\\working\\exploration\\20261014_external_baseline_pilot\\calls\\21_FSV-S04_p2p_rego\\response.raw.json",
+      "sha256": "922b5e55fe9246bc8f01150b40fd33dc7364952a84b3272fcedfe5a47bf3d91e"
+    },
+    {
+      "path": "D:\\lunwen\\EC-CSI投稿\\working\\exploration\\20261014_external_baseline_pilot\\calls\\21_FSV-S04_p2p_rego\\content.json",
+      "sha256": "d0162fcf54aa496d160ef96b6d5b4a9bff809479bee7e27dca9a8fc6d6ea15d6"
+    },
+    {
+      "path": "D:\\lunwen\\EC-CSI投稿\\working\\exploration\\20261014_external_baseline_pilot\\calls\\21_FSV-S04_p2p_rego\\prompt.txt",
+      "sha256": "8c6dd58f836f3028b0b2795c144d92ce9ee9cfba85c550a9cc2770b5936e494e"
+    },
+    {
+      "path": "D:\\lunwen\\EC-CSI投稿\\working\\exploration\\20261014_external_baseline_pilot\\calls\\23_FSV-S04_repair\\response.raw.json",
+      "sha256": "2c285abe05aa04508aad596d98a4143b91669084f95a32e3dc73f232d1cd9b39"
+    },
+    {
+      "path": "D:\\lunwen\\EC-CSI投稿\\working\\exploration\\20261014_external_baseline_pilot\\calls\\23_FSV-S04_repair\\content.json",
+      "sha256": "ca51479ff81c85ef97c49fdc55feee41ab192c311e70c7a147221f7adcb943f8"
+    },
+    {
+      "path": "D:\\lunwen\\EC-CSI投稿\\working\\exploration\\20261014_external_baseline_pilot\\calls\\23_FSV-S04_repair\\prompt.txt",
+      "sha256": "03ff8b04c5029483daeb4eefb9893a652c69c88dc62a414e449f898aba150763"
+    },
+    {
+      "path": "D:\\lunwen\\EC-CSI投稿\\working\\exploration\\20261014_external_baseline_pilot\\calls\\24_FSV-S04_autopac_generate\\response.raw.json",
+      "sha256": "bfb3bfca2c9ab2c93754a1cafa52b71e5bf0d7f3ecc12274bbb9004f8eb87273"
+    },
+    {
+      "path": "D:\\lunwen\\EC-CSI投稿\\working\\exploration\\20261014_external_baseline_pilot\\calls\\24_FSV-S04_autopac_generate\\content.json",
+      "sha256": "65a12af48f8e538fe107159eec77fc9a39138e3989141cf07949adcb9351ecf0"
+    },
+    {
+      "path": "D:\\lunwen\\EC-CSI投稿\\working\\exploration\\20261014_external_baseline_pilot\\calls\\24_FSV-S04_autopac_generate\\prompt.txt",
+      "sha256": "033ce3e790fbf452c79d3ba335e9e5f596f0a7e57ab054d6be263424d6ac3fbe"
+    },
+    {
+      "path": "D:\\lunwen\\EC-CSI投稿\\working\\exploration\\20261014_external_baseline_pilot\\calls\\25_FSV-S04_autopac_judge\\response.raw.json",
+      "sha256": "734a2640ce3fdf86fbf149df678718ec9b97faebf0d529e4506e29122cc7b023"
+    },
+    {
+      "path": "D:\\lunwen\\EC-CSI投稿\\working\\exploration\\20261014_external_baseline_pilot\\calls\\25_FSV-S04_autopac_judge\\content.json",
+      "sha256": "4fa5b76b7a68fb2e2a1067b657439e826619f268f632f559ba11101cf100fcb1"
+    },
+    {
+      "path": "D:\\lunwen\\EC-CSI投稿\\working\\exploration\\20261014_external_baseline_pilot\\calls\\25_FSV-S04_autopac_judge\\prompt.txt",
+      "sha256": "38b1a2a38760d7cf193087fad7d537f6b07c432505abf8b2b420ffaf4e5ddedc"
+    },
+    {
+      "path": "D:\\lunwen\\EC-CSI投稿\\working\\exploration\\20261014_external_baseline_pilot\\calls\\26_FSV-S04_repair\\response.raw.json",
+      "sha256": "f73de23da6bc724d2c94a01f8826cfb0e395f5aafbfa05a2cf07338282ca1a45"
+    },
+    {
+      "path": "D:\\lunwen\\EC-CSI投稿\\working\\exploration\\20261014_external_baseline_pilot\\calls\\26_FSV-S04_repair\\content.json",
+      "sha256": "a35f946f73b5584d5a741e13b7ad652aa8cb7d199dc3b3426e3df5164b1d45a1"
+    },
+    {
+      "path": "D:\\lunwen\\EC-CSI投稿\\working\\exploration\\20261014_external_baseline_pilot\\calls\\26_FSV-S04_repair\\prompt.txt",
+      "sha256": "68790ca8bfdfb3353093adfd63037a0abdd9344b8cb7e7e81ebc302f916a28ca"
+    },
+    {
+      "path": "D:\\lunwen\\EC-CSI投稿\\working\\exploration\\20261014_external_baseline_pilot\\calls\\27_FSV-S04_ecas_generate\\response.raw.json",
+      "sha256": "384c79f817e594450b5de5201a073fd2e26b7b6096c95772b5657144d1227515"
+    },
+    {
+      "path": "D:\\lunwen\\EC-CSI投稿\\working\\exploration\\20261014_external_baseline_pilot\\calls\\27_FSV-S04_ecas_generate\\content.json",
+      "sha256": "11fec0dd96b709b627d322a25ad524668bd0015546bc1ccf32828fcaf2f331e7"
+    },
+    {
+      "path": "D:\\lunwen\\EC-CSI投稿\\working\\exploration\\20261014_external_baseline_pilot\\calls\\27_FSV-S04_ecas_generate\\prompt.txt",
+      "sha256": "7b81172fa31b9c4a26c0d86214a158edd5f0ce3cd6fcf6f787a935cf159f7746"
+    },
+    {
+      "path": "D:\\lunwen\\EC-CSI投稿\\working\\exploration\\20261014_external_baseline_pilot\\run_pilot.py",
+      "sha256": "a455476b72c23faed8a05b23b9abcb97578fbd04b514958c998eeab6ac8d925b"
+    },
+    {
+      "path": "D:\\lunwen\\EC-CSI投稿\\working\\exploration\\20261014_external_baseline_pilot\\calls\\06_FSV-B06_p2p_extract\\LOCAL_RECOVERY_RECEIPT.json",
+      "sha256": "cffa820c8e59e26986985f75b0570d32f039215c28e8edbf1f8e0b27ee6e1170"
+    },
+    {
+      "path": "D:\\lunwen\\EC-CSI投稿\\working\\exploration\\20261014_external_baseline_pilot\\effect_runs\\FSV-B06\\P2P_STYLE\\extraction.json",
+      "sha256": "8a9358ac601dd933f29173680be40e2a825a3c1f608585572a9e926212c4f08c"
+    },
+    {
+      "path": "D:\\lunwen\\EC-CSI投稿\\working\\exploration\\20261014_external_baseline_pilot\\effect_runs\\FSV-B06\\P2P_STYLE\\generation.json",
+      "sha256": "a6fdb67e256fbbaa1f4f6bc2813f15894b879de6ad539e56cc5f0985a10675cf"
+    },
+    {
+      "path": "D:\\lunwen\\EC-CSI投稿\\working\\exploration\\20261014_external_baseline_pilot\\effect_runs\\FSV-B06\\P2P_STYLE\\repair.json",
+      "sha256": "71eb9c9dff1958d8b95f6f4b8ce8b9c09e486c82315ecb000cad9c218617fd97"
+    },
+    {
+      "path": "D:\\lunwen\\EC-CSI投稿\\working\\exploration\\20261014_external_baseline_pilot\\effect_runs\\FSV-B06\\AUTOPAC_STYLE\\generation.json",
+      "sha256": "7839f317484c6e97a3bf4b81bf1ae8545378cee143075ef1087bb06d12a9585f"
+    },
+    {
+      "path": "D:\\lunwen\\EC-CSI投稿\\working\\exploration\\20261014_external_baseline_pilot\\effect_runs\\FSV-B06\\AUTOPAC_STYLE\\judge.json",
+      "sha256": "04f209999292dd80e6379b4046fda98b58a6e1da190e56ce866de1ac2747159b"
+    },
+    {
+      "path": "D:\\lunwen\\EC-CSI投稿\\working\\exploration\\20261014_external_baseline_pilot\\effect_runs\\FSV-B06\\AUTOPAC_STYLE\\repair.json",
+      "sha256": "f6fe3771a552f22547be4de54648f2aa05eb655adff78193caea3a951221ed52"
+    },
+    {
+      "path": "D:\\lunwen\\EC-CSI投稿\\working\\exploration\\20261014_external_baseline_pilot\\effect_runs\\FSV-B06\\ECAS_MATCHED\\candidate.json",
+      "sha256": "ca4a80a844a1a50519a3c958b18d3530b5799e97c3147bf19aba2573dd7a95ff"
+    },
+    {
+      "path": "D:\\lunwen\\EC-CSI投稿\\working\\exploration\\20261014_external_baseline_pilot\\effect_runs\\FSV-B06\\ECAS_MATCHED\\RESULT.json",
+      "sha256": "7ce11d95dd90462618b63c697e2978132ad4250cd5d7831399272c6c6607cdb3"
+    },
+    {
+      "path": "D:\\lunwen\\EC-CSI投稿\\working\\exploration\\20261014_external_baseline_pilot\\effect_runs\\FSV-S02\\P2P_STYLE\\detection.json",
+      "sha256": "d17c721cf1770dd1a29cc9bd28fc497c0135ef69f57e1dd99f5481295ea19b8e"
+    },
+    {
+      "path": "D:\\lunwen\\EC-CSI投稿\\working\\exploration\\20261014_external_baseline_pilot\\effect_runs\\FSV-S02\\AUTOPAC_STYLE\\generation.json",
+      "sha256": "9bfa733511ea5a68a928770d207263748cf3da678c1bbaccf6b506ea8398b47e"
+    },
+    {
+      "path": "D:\\lunwen\\EC-CSI投稿\\working\\exploration\\20261014_external_baseline_pilot\\effect_runs\\FSV-S02\\AUTOPAC_STYLE\\judge.json",
+      "sha256": "eddab795ac57a0be086f476d9d99cc9f07088806c604cbb29cdece4a23f54d5a"
+    },
+    {
+      "path": "D:\\lunwen\\EC-CSI投稿\\working\\exploration\\20261014_external_baseline_pilot\\effect_runs\\FSV-S02\\AUTOPAC_STYLE\\repair.json",
+      "sha256": "00fa3e18e6b0b72e8a553e5831bee753294f3cd793602a069574f5e057ed6753"
+    },
+    {
+      "path": "D:\\lunwen\\EC-CSI投稿\\working\\exploration\\20261014_external_baseline_pilot\\effect_runs\\FSV-S02\\AUTOPAC_STYLE\\repaired\\compile.stderr.txt",
+      "sha256": "326b670fd453317fffa3a55e9b23aeb9d22af7e4c3d1d242fe392e8ac052a68f"
+    },
+    {
+      "path": "D:\\lunwen\\EC-CSI投稿\\working\\exploration\\20261014_external_baseline_pilot\\effect_runs\\FSV-S02\\ECAS_MATCHED\\candidate.json",
+      "sha256": "e6f5a2af7dee84e067b1a81f4b3dd56483b2ba306983039d0112c28efbf49fe6"
+    },
+    {
+      "path": "D:\\lunwen\\EC-CSI投稿\\working\\exploration\\20261014_external_baseline_pilot\\generation_inputs\\FSV-S02\\packet.json",
+      "sha256": "5c8de100a097aa1cae1c236a1d9d7771e8c1e175d9c8601abc9d319dafca9611"
+    },
+    {
+      "path": "D:\\lunwen\\EC-CSI投稿\\working\\exploration\\20261014_external_baseline_pilot\\effect_runs\\FSV-S04\\P2P_STYLE\\extraction.json",
+      "sha256": "b6d2299ff2b3cb767bf5e6d5911f5e548e79ffeab83ee0e496a492dcb440dcc6"
+    },
+    {
+      "path": "D:\\lunwen\\EC-CSI投稿\\working\\exploration\\20261014_external_baseline_pilot\\effect_runs\\FSV-S04\\P2P_STYLE\\generation.json",
+      "sha256": "06f7d66130515cacb25ee7b17461dd02c4cc7240ca16916bff29626ea878f102"
+    },
+    {
+      "path": "D:\\lunwen\\EC-CSI投稿\\working\\exploration\\20261014_external_baseline_pilot\\effect_runs\\FSV-S04\\P2P_STYLE\\repair.json",
+      "sha256": "b60a7ed9458fc0a4f326541aba36cb26d0e7eace7167d871016bee4aeab9e749"
+    },
+    {
+      "path": "D:\\lunwen\\EC-CSI投稿\\working\\exploration\\20261014_external_baseline_pilot\\effect_runs\\FSV-S04\\AUTOPAC_STYLE\\generation.json",
+      "sha256": "1bd409eb8ba263dea5c99b5248745d11cc0cd13e2429aa0e827fa6f620e08649"
+    },
+    {
+      "path": "D:\\lunwen\\EC-CSI投稿\\working\\exploration\\20261014_external_baseline_pilot\\effect_runs\\FSV-S04\\AUTOPAC_STYLE\\judge.json",
+      "sha256": "2f2f4fa27ccd9c8d6477c226a6f9547975256455962da20867bed3f93f113092"
+    },
+    {
+      "path": "D:\\lunwen\\EC-CSI投稿\\working\\exploration\\20261014_external_baseline_pilot\\effect_runs\\FSV-S04\\AUTOPAC_STYLE\\repair.json",
+      "sha256": "a03ee4c2a6de6c07f6a1a870110cbc91490e6cb66abfa5195718b9ff7c1f12f7"
+    },
+    {
+      "path": "D:\\lunwen\\EC-CSI投稿\\working\\exploration\\20261014_external_baseline_pilot\\binding_replay_resource_object\\SUMMARY.json",
+      "sha256": "5345278278ae46c7054bbc6c023ff46505c866ac0872f115605aefe222e5dba3"
+    },
+    {
+      "path": "D:\\lunwen\\EC-CSI投稿\\working\\exploration\\20261014_external_baseline_pilot\\effect_runs\\FSV-S04\\ECAS_MATCHED\\candidate.json",
+      "sha256": "61100a221ee3fd6dca2ea31994cae0f377dbcf98e49c1c9963470917476dcf8d"
+    },
+    {
+      "path": "D:\\lunwen\\EC-CSI投稿\\working\\exploration\\20261014_external_baseline_pilot\\generation_inputs\\FSV-S04\\packet.json",
+      "sha256": "d37c94ec03d4901259ee058bd728fd0bc7736a3033a7b3347881626233bf5d49"
+    },
+    {
+      "path": "D:\\lunwen\\EC-CSI投稿\\working\\exploration\\20261014_external_baseline_pilot\\generation_inputs\\FSV-B06\\packet.json",
+      "sha256": "01ac46f8ed8d0b75d23a4adb7a16fafe35316f1e75fbe52d767540c39fe2f16f"
+    }
+  ],
+  "checks": [
+    {
+      "check": "05_FSV-B06_p2p_detect:raw_content_equal",
+      "pass": true
+    },
+    {
+      "check": "05_FSV-B06_p2p_detect:effect_equal",
+      "pass": true
+    },
+    {
+      "check": "06_FSV-B06_p2p_extract:raw_content_equal",
+      "pass": true
+    },
+    {
+      "check": "06_FSV-B06_p2p_extract:effect_equal",
+      "pass": true
+    },
+    {
+      "check": "07_FSV-B06_p2p_rego:raw_content_equal",
+      "pass": true
+    },
+    {
+      "check": "07_FSV-B06_p2p_rego:effect_equal",
+      "pass": true
+    },
+    {
+      "check": "09_FSV-B06_repair:raw_content_equal",
+      "pass": true
+    },
+    {
+      "check": "09_FSV-B06_repair:effect_equal",
+      "pass": true
+    },
+    {
+      "check": "10_FSV-B06_autopac_generate:raw_content_equal",
+      "pass": true
+    },
+    {
+      "check": "10_FSV-B06_autopac_generate:effect_equal",
+      "pass": true
+    },
+    {
+      "check": "11_FSV-B06_autopac_judge:raw_content_equal",
+      "pass": true
+    },
+    {
+      "check": "11_FSV-B06_autopac_judge:effect_equal",
+      "pass": true
+    },
+    {
+      "check": "12_FSV-B06_repair:raw_content_equal",
+      "pass": true
+    },
+    {
+      "check": "12_FSV-B06_repair:effect_equal",
+      "pass": true
+    },
+    {
+      "check": "13_FSV-B06_ecas_generate:raw_content_equal",
+      "pass": true
+    },
+    {
+      "check": "13_FSV-B06_ecas_generate:effect_equal",
+      "pass": true
+    },
+    {
+      "check": "14_FSV-S02_p2p_detect:raw_content_equal",
+      "pass": true
+    },
+    {
+      "check": "14_FSV-S02_p2p_detect:effect_equal",
+      "pass": true
+    },
+    {
+      "check": "15_FSV-S02_autopac_generate:raw_content_equal",
+      "pass": true
+    },
+    {
+      "check": "15_FSV-S02_autopac_generate:effect_equal",
+      "pass": true
+    },
+    {
+      "check": "16_FSV-S02_autopac_judge:raw_content_equal",
+      "pass": true
+    },
+    {
+      "check": "16_FSV-S02_autopac_judge:effect_equal",
+      "pass": true
+    },
+    {
+      "check": "17_FSV-S02_repair:raw_content_equal",
+      "pass": true
+    },
+    {
+      "check": "17_FSV-S02_repair:effect_equal",
+      "pass": true
+    },
+    {
+      "check": "18_FSV-S02_ecas_generate:raw_content_equal",
+      "pass": true
+    },
+    {
+      "check": "18_FSV-S02_ecas_generate:effect_equal",
+      "pass": true
+    },
+    {
+      "check": "19_FSV-S04_p2p_detect:raw_content_equal",
+      "pass": true
+    },
+    {
+      "check": "19_FSV-S04_p2p_detect:effect_equal",
+      "pass": true
+    },
+    {
+      "check": "20_FSV-S04_p2p_extract:raw_content_equal",
+      "pass": true
+    },
+    {
+      "check": "20_FSV-S04_p2p_extract:effect_equal",
+      "pass": true
+    },
+    {
+      "check": "21_FSV-S04_p2p_rego:raw_content_equal",
+      "pass": true
+    },
+    {
+      "check": "21_FSV-S04_p2p_rego:effect_equal",
+      "pass": true
+    },
+    {
+      "check": "23_FSV-S04_repair:raw_content_equal",
+      "pass": true
+    },
+    {
+      "check": "23_FSV-S04_repair:effect_equal",
+      "pass": true
+    },
+    {
+      "check": "24_FSV-S04_autopac_generate:raw_content_equal",
+      "pass": true
+    },
+    {
+      "check": "24_FSV-S04_autopac_generate:effect_equal",
+      "pass": true
+    },
+    {
+      "check": "25_FSV-S04_autopac_judge:raw_content_equal",
+      "pass": true
+    },
+    {
+      "check": "25_FSV-S04_autopac_judge:effect_equal",
+      "pass": true
+    },
+    {
+      "check": "26_FSV-S04_repair:raw_content_equal",
+      "pass": true
+    },
+    {
+      "check": "26_FSV-S04_repair:effect_equal",
+      "pass": true
+    },
+    {
+      "check": "27_FSV-S04_ecas_generate:raw_content_equal",
+      "pass": true
+    },
+    {
+      "check": "27_FSV-S04_ecas_generate:effect_equal",
+      "pass": true
+    },
+    {
+      "check": "S02_openapi_additionalProperties_absent",
+      "pass": true
+    }
+  ],
+  "all_checks_pass": true,
+  "boundaries": [
+    "P2P与AutoPAC同样做自然语言到政策；语义理解不是ECAS独有。",
+    "只核目标条件何时出现在实际政策，不用reason自述替代政策内容。",
+    "B06三方目标条件已出现，但Re-Age与通用undo适用范围未闭合。",
+    "S02封闭白名单约定未见于可见OpenAPI；不得直接当作理解正确性gold。",
+    "已有操作者反馈、原语目录、适用范围与编译错误均分列；不聚合语义准确率。"
+  ]
+}

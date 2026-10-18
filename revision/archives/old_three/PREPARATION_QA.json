@@ -1,0 +1,83 @@
+{
+  "checked_date": "2026-10-14",
+  "input_files": 12,
+  "input_matches": 12,
+  "checks": [
+    {
+      "path": "generation_inputs/FSV-B06/packet.json",
+      "expected": "01AC46F8ED8D0B75D23A4ADB7A16FAFE35316F1E75FBE52D767540C39FE2F16F",
+      "actual": "01AC46F8ED8D0B75D23A4ADB7A16FAFE35316F1E75FBE52D767540C39FE2F16F",
+      "pass": true
+    },
+    {
+      "path": "generation_inputs/FSV-B06/organization_schema.json",
+      "expected": "59AD23D490E5C6B488BE144AE05370A054F453E8578E893C67281FAACDD1A42B",
+      "actual": "59AD23D490E5C6B488BE144AE05370A054F453E8578E893C67281FAACDD1A42B",
+      "pass": true
+    },
+    {
+      "path": "sealed_evaluation/FSV-B06/O-L.json",
+      "expected": "D91D2DAD0E84A8E88A7A8B5253B70042CA326787F0C4D2A0E1282A4C24AE9C7D",
+      "actual": "D91D2DAD0E84A8E88A7A8B5253B70042CA326787F0C4D2A0E1282A4C24AE9C7D",
+      "pass": true
+    },
+    {
+      "path": "sealed_evaluation/FSV-B06/O-I.json",
+      "expected": "BBB69CB133B42FFB40C119B23449E38C51E0D18D4800D339B869E314C4BDA816",
+      "actual": "BBB69CB133B42FFB40C119B23449E38C51E0D18D4800D339B869E314C4BDA816",
+      "pass": true
+    },
+    {
+      "path": "generation_inputs/FSV-S02/packet.json",
+      "expected": "5C8DE100A097AA1CAE1C236A1D9D7771E8C1E175D9C8601ABC9D319DAFCA9611",
+      "actual": "5C8DE100A097AA1CAE1C236A1D9D7771E8C1E175D9C8601ABC9D319DAFCA9611",
+      "pass": true
+    },
+    {
+      "path": "generation_inputs/FSV-S02/organization_schema.json",
+      "expected": "33A4F29BDD5573FDB958FCBB39FB73F66A6E4EEC48B0C114DD03A83CE476B584",
+      "actual": "33A4F29BDD5573FDB958FCBB39FB73F66A6E4EEC48B0C114DD03A83CE476B584",
+      "pass": true
+    },
+    {
+      "path": "sealed_evaluation/FSV-S02/O-L.json",
+      "expected": "0A3FA3A8AED810DE7C3F410BDA9B1A5723ECDE0E81A76F9F1137D7AC038572E0",
+      "actual": "0A3FA3A8AED810DE7C3F410BDA9B1A5723ECDE0E81A76F9F1137D7AC038572E0",
+      "pass": true
+    },
+    {
+      "path": "sealed_evaluation/FSV-S02/O-I.json",
+      "expected": "B0C5E8C64CBEA3775F531C57BA1D3A8ADF648A47C862C87FFD326147A93D7B50",
+      "actual": "B0C5E8C64CBEA3775F531C57BA1D3A8ADF648A47C862C87FFD326147A93D7B50",
+      "pass": true
+    },
+    {
+      "path": "generation_inputs/FSV-S04/packet.json",
+      "expected": "D37C94EC03D4901259EE058BD728FD0BC7736A3033A7B3347881626233BF5D49",
+      "actual": "D37C94EC03D4901259EE058BD728FD0BC7736A3033A7B3347881626233BF5D49",
+      "pass": true
+    },
+    {
+      "path": "generation_inputs/FSV-S04/organization_schema.json",
+      "expected": "A2C727F7F2644FD04384F076D0FF3CBCEF2979BE0DB90C7E6E42D8769A544F06",
+      "actual": "A2C727F7F2644FD04384F076D0FF3CBCEF2979BE0DB90C7E6E42D8769A544F06",
+      "pass": true
+    },
+    {
+      "path": "sealed_evaluation/FSV-S04/O-L.json",
+      "expected": "DD177326772F0915F58692F07E143200F158FAE22DA8AEFFC262E5A47AE111F1",
+      "actual": "DD177326772F0915F58692F07E143200F158FAE22DA8AEFFC262E5A47AE111F1",
+      "pass": true
+    },
+    {
+      "path": "sealed_evaluation/FSV-S04/O-I.json",
+      "expected": "2186EB0967D9E7254C1F469862B3BB061C5D7996116E04CF3C067D2FC23F109C",
+      "actual": "2186EB0967D9E7254C1F469862B3BB061C5D7996116E04CF3C067D2FC23F109C",
+      "pass": true
+    }
+  ],
+  "model_calls": 0,
+  "all_rows_not_run": true,
+  "all_decisions_null": true,
+  "status": "PREPARATION_VERIFIED_NOT_EFFECT_TESTED"
+}

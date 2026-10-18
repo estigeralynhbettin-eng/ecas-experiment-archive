@@ -1,0 +1,22 @@
+{
+  "request": {
+    "body": {
+      "documentKey": "SYNTHETIC-DOCUMENT-KEY",
+      "documentTypeId": 1,
+      "undeclared_script": "<script>alert(1)</script>"
+    }
+  },
+  "trusted": {},
+  "subject": {
+    "role": "authenticated_api_caller"
+  },
+  "action": "POST /v1/clients/{clientId}/identifiers",
+  "resource": {
+    "id": "Fineract:1.14.0",
+    "system": "Fineract",
+    "version": "1.14.0"
+  },
+  "subject_role": "authenticated_api_caller",
+  "resource_system": "Fineract",
+  "resource_version": "1.14.0"
+}

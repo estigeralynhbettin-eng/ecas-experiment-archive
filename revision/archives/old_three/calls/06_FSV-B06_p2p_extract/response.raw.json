@@ -1,0 +1,28 @@
+{
+  "choices": [
+    {
+      "finish_reason": "stop",
+      "index": 0,
+      "message": {
+        "content": "{\"begin\":\"BEGIN_FSV-B06_p2p_extract_MAIN\",\"stage\":\"p2p_extract\",\"output\":{\"status\":\"EXTRACTED\",\"components\":[{\"decision\":\"PERMIT\",\"subject\":\"authenticated_api_caller\",\"action\":\"POST /v1/loans/{loanId}/transactions/{transactionId}?command=undo\",\"resource\":\"Fineract:1.14.0\",\"condition\":\"/trusted/reAgeIsLatestTransaction == true\",\"purpose\":\"unspecified\",\"evidence_refs\":[\"VIS-FSV-B06-01\",\"VIS-FSV-B06-RUNTIME-ABI\"]}],\"reason\":\"Source VIS-FSV-B06-01 explicitly states that Re-Age transactions can be reversed only if they are the latest transaction on the loan account. The runtime ABI (VIS-FSV-B06-RUNTIME-ABI) provides the trusted boolean path /trusted/reAgeIsLatestTransaction to evaluate this condition. Subject, action, and resource are derived from the adapter constants.\"},\"end\":\"END_FSV-B06_p2p_extract_MAIN\"}",
+        "role": "assistant"
+      }
+    }
+  ],
+  "created": 1791950170,
+  "id": "20261014115603416a7e811caf4802",
+  "model": "glm-5.2",
+  "object": "chat.completion",
+  "request_id": "20261014115603416a7e811caf4802",
+  "usage": {
+    "completion_tokens": 537,
+    "completion_tokens_details": {
+      "reasoning_tokens": 270
+    },
+    "prompt_tokens": 1268,
+    "prompt_tokens_details": {
+      "cached_tokens": 0
+    },
+    "total_tokens": 1805
+  }
+}

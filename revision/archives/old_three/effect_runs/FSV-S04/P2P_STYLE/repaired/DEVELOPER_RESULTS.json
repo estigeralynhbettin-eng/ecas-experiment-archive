@@ -1,0 +1,32 @@
+[
+  {
+    "id": "test_pos_1",
+    "expected": "allow",
+    "actual": {
+      "status": "EXECUTED",
+      "decision": "deny",
+      "exit_code": 0
+    },
+    "pass": false
+  },
+  {
+    "id": "test_pos_2",
+    "expected": "allow",
+    "actual": {
+      "status": "EXECUTED",
+      "decision": "deny",
+      "exit_code": 0
+    },
+    "pass": false
+  },
+  {
+    "id": "test_neg_1",
+    "expected": "deny",
+    "actual": {
+      "status": "EXECUTED",
+      "decision": "deny",
+      "exit_code": 0
+    },
+    "pass": true
+  }
+]

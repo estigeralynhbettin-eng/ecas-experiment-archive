@@ -1,0 +1,86 @@
+[
+  {
+    "path": "/mnt/d/lunwen/EC-CSI投稿/working/exploration/20261014_four_case_peer_baselines/generation_inputs/FSV-S03/packet.json",
+    "source_path": "/mnt/d/lunwen/EC-CSI投稿/working/exploration/20261014_multi_case_extension_screen/cases/FSV-S03/visible_input.json",
+    "source_sha256": "80046646d6cd56df589905eae0fc105406de7c68a6ac47241dd51467352917a5",
+    "derived_sha256": "3394739916d5cdeedfe7169be9ed4c48d92710c91338adcb230f593fe3aeb394",
+    "derivation": "remove primitive focus; compact all field metadata by fixed allowlist; complete resource object ABI"
+  },
+  {
+    "path": "/mnt/d/lunwen/EC-CSI投稿/working/exploration/20261014_four_case_peer_baselines/sealed_evaluation/FSV-S03/O-L.json",
+    "source_path": "/mnt/d/lunwen/EC-CSI投稿/working/exploration/20261014_multi_case_extension_screen/cases/FSV-S03/O-L.json",
+    "source_sha256": "7a4baf937960343565985be5dacc8ae4fd71819f21929568756e4e4bedd39366",
+    "derived_sha256": "7a4baf937960343565985be5dacc8ae4fd71819f21929568756e4e4bedd39366",
+    "derivation": "byte-identical archived request; no model access"
+  },
+  {
+    "path": "/mnt/d/lunwen/EC-CSI投稿/working/exploration/20261014_four_case_peer_baselines/sealed_evaluation/FSV-S03/O-I.json",
+    "source_path": "/mnt/d/lunwen/EC-CSI投稿/working/exploration/20261014_multi_case_extension_screen/cases/FSV-S03/O-I.json",
+    "source_sha256": "b19aaea5476ce507a73c43325d53b15bae0f5ea676c6d9cff5219b1f15c24888",
+    "derived_sha256": "b19aaea5476ce507a73c43325d53b15bae0f5ea676c6d9cff5219b1f15c24888",
+    "derivation": "byte-identical archived request; no model access"
+  },
+  {
+    "path": "/mnt/d/lunwen/EC-CSI投稿/working/exploration/20261014_four_case_peer_baselines/generation_inputs/FSV-B13/packet.json",
+    "source_path": "/mnt/d/lunwen/EC-CSI投稿/working/exploration/20261014_multi_case_extension_screen/cases/FSV-B13/visible_input.json",
+    "source_sha256": "59656473d4901528724f2aeeac13914aafd823cb8c94afa303074667cc1d3a60",
+    "derived_sha256": "b460dc1074d9b9d37e1d838813606b4c19ac88c13d3afb0449bee38c488e7037",
+    "derivation": "remove primitive focus; compact all field metadata by fixed allowlist; complete resource object ABI"
+  },
+  {
+    "path": "/mnt/d/lunwen/EC-CSI投稿/working/exploration/20261014_four_case_peer_baselines/sealed_evaluation/FSV-B13/O-L.json",
+    "source_path": "/mnt/d/lunwen/EC-CSI投稿/working/exploration/20261014_multi_case_extension_screen/cases/FSV-B13/O-L.json",
+    "source_sha256": "f42e16a4373f495013f8cfd865e4bf2f5282024f5010b513352cda2a87601e1f",
+    "derived_sha256": "f42e16a4373f495013f8cfd865e4bf2f5282024f5010b513352cda2a87601e1f",
+    "derivation": "byte-identical archived request; no model access"
+  },
+  {
+    "path": "/mnt/d/lunwen/EC-CSI投稿/working/exploration/20261014_four_case_peer_baselines/sealed_evaluation/FSV-B13/O-I.json",
+    "source_path": "/mnt/d/lunwen/EC-CSI投稿/working/exploration/20261014_multi_case_extension_screen/cases/FSV-B13/O-I.json",
+    "source_sha256": "cc48bf54560691368e418bfdfa437ac1eacdea343e1027538069e569fd79f9cd",
+    "derived_sha256": "cc48bf54560691368e418bfdfa437ac1eacdea343e1027538069e569fd79f9cd",
+    "derivation": "byte-identical archived request; no model access"
+  },
+  {
+    "path": "/mnt/d/lunwen/EC-CSI投稿/working/exploration/20261014_four_case_peer_baselines/generation_inputs/FSV-B17/packet.json",
+    "source_path": "/mnt/d/lunwen/EC-CSI投稿/working/exploration/20261014_multi_case_extension_screen/cases/FSV-B17/visible_input.json",
+    "source_sha256": "172d7713684a53321d1adc88fa22d4fa19eef73655e2ec93dbc76e0a41fc553d",
+    "derived_sha256": "2641ff7363c34d0c34665c0310e121859f7d79f5f4e718a2de4b5fe12fdb6ecf",
+    "derivation": "remove primitive focus; compact all field metadata by fixed allowlist; complete resource object ABI"
+  },
+  {
+    "path": "/mnt/d/lunwen/EC-CSI投稿/working/exploration/20261014_four_case_peer_baselines/sealed_evaluation/FSV-B17/O-L.json",
+    "source_path": "/mnt/d/lunwen/EC-CSI投稿/working/exploration/20261014_multi_case_extension_screen/cases/FSV-B17/O-L.json",
+    "source_sha256": "7b3e59768aeef9b06d5181e2bf0d8511c6d6564eacbd76a0b14eaf42fcdfa6fd",
+    "derived_sha256": "7b3e59768aeef9b06d5181e2bf0d8511c6d6564eacbd76a0b14eaf42fcdfa6fd",
+    "derivation": "byte-identical archived request; no model access"
+  },
+  {
+    "path": "/mnt/d/lunwen/EC-CSI投稿/working/exploration/20261014_four_case_peer_baselines/sealed_evaluation/FSV-B17/O-I.json",
+    "source_path": "/mnt/d/lunwen/EC-CSI投稿/working/exploration/20261014_multi_case_extension_screen/cases/FSV-B17/O-I.json",
+    "source_sha256": "1e4f014ba1a820cfd9a367a7053ed11038111af29c420cb341f4483a012f6009",
+    "derived_sha256": "1e4f014ba1a820cfd9a367a7053ed11038111af29c420cb341f4483a012f6009",
+    "derivation": "byte-identical archived request; no model access"
+  },
+  {
+    "path": "/mnt/d/lunwen/EC-CSI投稿/working/exploration/20261014_four_case_peer_baselines/generation_inputs/FSV-B19/packet.json",
+    "source_path": "/mnt/d/lunwen/EC-CSI投稿/working/exploration/20261014_multi_case_extension_screen/cases/FSV-B19/visible_input.json",
+    "source_sha256": "0d2f92d99e585945e4923e8195d7fae4b387dd36a42b2653b2c70824b3c62369",
+    "derived_sha256": "2618b0602ada78dc52e29081f411a203cea6304109a91ef4012f384d7319cb81",
+    "derivation": "remove primitive focus; compact all field metadata by fixed allowlist; complete resource object ABI"
+  },
+  {
+    "path": "/mnt/d/lunwen/EC-CSI投稿/working/exploration/20261014_four_case_peer_baselines/sealed_evaluation/FSV-B19/O-L.json",
+    "source_path": "/mnt/d/lunwen/EC-CSI投稿/working/exploration/20261014_multi_case_extension_screen/cases/FSV-B19/O-L.json",
+    "source_sha256": "a93d62a64f0152442a0d4d33fd1378ab05f0b6f41b707359a3588cfc04f8d7f3",
+    "derived_sha256": "a93d62a64f0152442a0d4d33fd1378ab05f0b6f41b707359a3588cfc04f8d7f3",
+    "derivation": "byte-identical archived request; no model access"
+  },
+  {
+    "path": "/mnt/d/lunwen/EC-CSI投稿/working/exploration/20261014_four_case_peer_baselines/sealed_evaluation/FSV-B19/O-I.json",
+    "source_path": "/mnt/d/lunwen/EC-CSI投稿/working/exploration/20261014_multi_case_extension_screen/cases/FSV-B19/O-I.json",
+    "source_sha256": "ae1d51bf1a028081ed84b19c6b7f5c58ef48ab6a156838976db2ce5ec2257426",
+    "derived_sha256": "ae1d51bf1a028081ed84b19c6b7f5c58ef48ab6a156838976db2ce5ec2257426",
+    "derivation": "byte-identical archived request; no model access"
+  }
+]

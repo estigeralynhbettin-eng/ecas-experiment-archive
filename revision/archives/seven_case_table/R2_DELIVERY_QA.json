@@ -1,0 +1,570 @@
+{
+  "status": "PASS",
+  "date": "2026-10-15",
+  "review_type": "READ_ONLY_DELIVERY_AND_CLAIM_QA_NO_POLICY_REEXECUTION",
+  "object": "D:\\lunwen\\EC-CSI投稿\\working\\exploration\\20261015_seven_case_mechanism\\EXPERIMENT_SUMMARY_CN_R2.md",
+  "object_sha256": "e4222319e3cfc2fd5945be6cdf419717952665970699c24a87dce8bed5e301e4",
+  "new_model_calls": 0,
+  "new_policy_executions": 0,
+  "check_count": 135,
+  "checks": [
+    {
+      "check": "21_unique_method_rows",
+      "pass": true
+    },
+    {
+      "check": "R2_table_B06",
+      "pass": true
+    },
+    {
+      "check": "row_symbol_B06_ECAS_MATCHED",
+      "pass": true
+    },
+    {
+      "check": "row_symbol_B06_P2P_STYLE",
+      "pass": true
+    },
+    {
+      "check": "row_symbol_B06_AUTOPAC_STYLE",
+      "pass": true
+    },
+    {
+      "check": "R2_table_S02",
+      "pass": true
+    },
+    {
+      "check": "row_symbol_S02_ECAS_MATCHED",
+      "pass": true
+    },
+    {
+      "check": "row_symbol_S02_P2P_STYLE",
+      "pass": true
+    },
+    {
+      "check": "row_symbol_S02_AUTOPAC_STYLE",
+      "pass": true
+    },
+    {
+      "check": "R2_table_S04",
+      "pass": true
+    },
+    {
+      "check": "row_symbol_S04_ECAS_MATCHED",
+      "pass": true
+    },
+    {
+      "check": "row_symbol_S04_P2P_STYLE",
+      "pass": true
+    },
+    {
+      "check": "row_symbol_S04_AUTOPAC_STYLE",
+      "pass": true
+    },
+    {
+      "check": "R2_table_S03",
+      "pass": true
+    },
+    {
+      "check": "row_symbol_S03_ECAS_MATCHED",
+      "pass": true
+    },
+    {
+      "check": "row_symbol_S03_P2P_STYLE",
+      "pass": true
+    },
+    {
+      "check": "row_symbol_S03_AUTOPAC_STYLE",
+      "pass": true
+    },
+    {
+      "check": "R2_table_B13",
+      "pass": true
+    },
+    {
+      "check": "row_symbol_B13_ECAS_MATCHED",
+      "pass": true
+    },
+    {
+      "check": "row_symbol_B13_P2P_STYLE",
+      "pass": true
+    },
+    {
+      "check": "row_symbol_B13_AUTOPAC_STYLE",
+      "pass": true
+    },
+    {
+      "check": "R2_table_B17",
+      "pass": true
+    },
+    {
+      "check": "row_symbol_B17_ECAS_MATCHED",
+      "pass": true
+    },
+    {
+      "check": "row_symbol_B17_P2P_STYLE",
+      "pass": true
+    },
+    {
+      "check": "row_symbol_B17_AUTOPAC_STYLE",
+      "pass": true
+    },
+    {
+      "check": "R2_table_B19",
+      "pass": true
+    },
+    {
+      "check": "row_symbol_B19_ECAS_MATCHED",
+      "pass": true
+    },
+    {
+      "check": "row_symbol_B19_P2P_STYLE",
+      "pass": true
+    },
+    {
+      "check": "row_symbol_B19_AUTOPAC_STYLE",
+      "pass": true
+    },
+    {
+      "check": "batch_boundary_not_pooled",
+      "pass": true
+    },
+    {
+      "check": "original_development_status_retained",
+      "pass": true
+    },
+    {
+      "check": "B06_S02_source_boundaries",
+      "pass": true
+    },
+    {
+      "check": "native_baselines_not_claimed",
+      "pass": true
+    },
+    {
+      "check": "absolute_link_七案例详细表",
+      "pass": true
+    },
+    {
+      "check": "absolute_link_本地机制对照",
+      "pass": true
+    },
+    {
+      "check": "links_present",
+      "pass": true
+    },
+    {
+      "check": "144_related_observations",
+      "pass": true
+    },
+    {
+      "check": "18_task_inputs_8_arms",
+      "pass": true
+    },
+    {
+      "check": "zero_new_model_calls",
+      "pass": true
+    },
+    {
+      "check": "full_shape_FSV-B17_original_FSV-B17-OL-01",
+      "pass": true
+    },
+    {
+      "check": "full_shape_FSV-B17_original_FSV-B17-OI-01",
+      "pass": true
+    },
+    {
+      "check": "full_shape_FSV-B17_original_enabled",
+      "pass": true
+    },
+    {
+      "check": "full_shape_FSV-B17_original_disabled",
+      "pass": true
+    },
+    {
+      "check": "full_shape_FSV-B17_original_body-disable-spoof",
+      "pass": true
+    },
+    {
+      "check": "full_shape_FSV-B17_original_missing-trusted",
+      "pass": true
+    },
+    {
+      "check": "full_shape_FSV-B17_missing_skip_FSV-B17-OL-01",
+      "pass": true
+    },
+    {
+      "check": "full_shape_FSV-B17_missing_skip_FSV-B17-OI-01",
+      "pass": true
+    },
+    {
+      "check": "full_shape_FSV-B17_missing_skip_enabled",
+      "pass": true
+    },
+    {
+      "check": "full_shape_FSV-B17_missing_skip_disabled",
+      "pass": true
+    },
+    {
+      "check": "full_shape_FSV-B17_missing_skip_body-disable-spoof",
+      "pass": true
+    },
+    {
+      "check": "full_shape_FSV-B17_missing_skip_missing-trusted",
+      "pass": true
+    },
+    {
+      "check": "on_missing_switch_FSV-B17",
+      "pass": true
+    },
+    {
+      "check": "skip_admitted_FSV-B17",
+      "pass": true
+    },
+    {
+      "check": "manual_guard_missing_FSV-B17_P2P_STYLE",
+      "pass": true
+    },
+    {
+      "check": "manual_guard_missing_FSV-B17_AUTOPAC_STYLE",
+      "pass": true
+    },
+    {
+      "check": "full_shape_FSV-B19_original_FSV-B19-OL-01",
+      "pass": true
+    },
+    {
+      "check": "full_shape_FSV-B19_original_FSV-B19-OI-01",
+      "pass": true
+    },
+    {
+      "check": "full_shape_FSV-B19_original_not-held",
+      "pass": true
+    },
+    {
+      "check": "full_shape_FSV-B19_original_held-all",
+      "pass": true
+    },
+    {
+      "check": "full_shape_FSV-B19_original_held-invoices",
+      "pass": true
+    },
+    {
+      "check": "full_shape_FSV-B19_original_held-payments",
+      "pass": true
+    },
+    {
+      "check": "full_shape_FSV-B19_original_held-empty-type",
+      "pass": true
+    },
+    {
+      "check": "full_shape_FSV-B19_original_held-unknown-type",
+      "pass": true
+    },
+    {
+      "check": "full_shape_FSV-B19_original_body-type-spoof",
+      "pass": true
+    },
+    {
+      "check": "full_shape_FSV-B19_original_missing-trusted",
+      "pass": true
+    },
+    {
+      "check": "full_shape_FSV-B19_original_partial-status-false-only",
+      "pass": true
+    },
+    {
+      "check": "full_shape_FSV-B19_original_partial-payments-only",
+      "pass": true
+    },
+    {
+      "check": "full_shape_FSV-B19_missing_skip_FSV-B19-OL-01",
+      "pass": true
+    },
+    {
+      "check": "full_shape_FSV-B19_missing_skip_FSV-B19-OI-01",
+      "pass": true
+    },
+    {
+      "check": "full_shape_FSV-B19_missing_skip_not-held",
+      "pass": true
+    },
+    {
+      "check": "full_shape_FSV-B19_missing_skip_held-all",
+      "pass": true
+    },
+    {
+      "check": "full_shape_FSV-B19_missing_skip_held-invoices",
+      "pass": true
+    },
+    {
+      "check": "full_shape_FSV-B19_missing_skip_held-payments",
+      "pass": true
+    },
+    {
+      "check": "full_shape_FSV-B19_missing_skip_held-empty-type",
+      "pass": true
+    },
+    {
+      "check": "full_shape_FSV-B19_missing_skip_held-unknown-type",
+      "pass": true
+    },
+    {
+      "check": "full_shape_FSV-B19_missing_skip_body-type-spoof",
+      "pass": true
+    },
+    {
+      "check": "full_shape_FSV-B19_missing_skip_missing-trusted",
+      "pass": true
+    },
+    {
+      "check": "full_shape_FSV-B19_missing_skip_partial-status-false-only",
+      "pass": true
+    },
+    {
+      "check": "full_shape_FSV-B19_missing_skip_partial-payments-only",
+      "pass": true
+    },
+    {
+      "check": "on_missing_switch_FSV-B19",
+      "pass": true
+    },
+    {
+      "check": "skip_admitted_FSV-B19",
+      "pass": true
+    },
+    {
+      "check": "manual_guard_missing_FSV-B19_P2P_STYLE",
+      "pass": true
+    },
+    {
+      "check": "manual_guard_missing_FSV-B19_AUTOPAC_STYLE",
+      "pass": true
+    },
+    {
+      "check": "manual_guard_held-empty-type_P2P_STYLE",
+      "pass": true
+    },
+    {
+      "check": "manual_guard_held-empty-type_AUTOPAC_STYLE",
+      "pass": true
+    },
+    {
+      "check": "ECAS_allow_condition_held-empty-type",
+      "pass": true
+    },
+    {
+      "check": "manual_guard_held-unknown-type_P2P_STYLE",
+      "pass": true
+    },
+    {
+      "check": "manual_guard_held-unknown-type_AUTOPAC_STYLE",
+      "pass": true
+    },
+    {
+      "check": "ECAS_allow_condition_held-unknown-type",
+      "pass": true
+    },
+    {
+      "check": "original_pair_FSV-B17_ECAS_original_full_FSV-B17-OL-01",
+      "pass": true
+    },
+    {
+      "check": "original_pair_FSV-B17_ECAS_original_full_FSV-B17-OI-01",
+      "pass": true
+    },
+    {
+      "check": "original_pair_FSV-B17_ECAS_original_shape_FSV-B17-OL-01",
+      "pass": true
+    },
+    {
+      "check": "original_pair_FSV-B17_ECAS_original_shape_FSV-B17-OI-01",
+      "pass": true
+    },
+    {
+      "check": "original_pair_FSV-B17_ECAS_missing_skip_full_FSV-B17-OL-01",
+      "pass": true
+    },
+    {
+      "check": "original_pair_FSV-B17_ECAS_missing_skip_full_FSV-B17-OI-01",
+      "pass": true
+    },
+    {
+      "check": "original_pair_FSV-B17_ECAS_missing_skip_shape_FSV-B17-OL-01",
+      "pass": true
+    },
+    {
+      "check": "original_pair_FSV-B17_ECAS_missing_skip_shape_FSV-B17-OI-01",
+      "pass": true
+    },
+    {
+      "check": "original_pair_FSV-B17_P2P_STYLE_original_FSV-B17-OL-01",
+      "pass": true
+    },
+    {
+      "check": "original_pair_FSV-B17_P2P_STYLE_original_FSV-B17-OI-01",
+      "pass": true
+    },
+    {
+      "check": "original_pair_FSV-B17_P2P_STYLE_manual_guard_FSV-B17-OL-01",
+      "pass": true
+    },
+    {
+      "check": "original_pair_FSV-B17_P2P_STYLE_manual_guard_FSV-B17-OI-01",
+      "pass": true
+    },
+    {
+      "check": "original_pair_FSV-B17_AUTOPAC_STYLE_original_FSV-B17-OL-01",
+      "pass": true
+    },
+    {
+      "check": "original_pair_FSV-B17_AUTOPAC_STYLE_original_FSV-B17-OI-01",
+      "pass": true
+    },
+    {
+      "check": "original_pair_FSV-B17_AUTOPAC_STYLE_manual_guard_FSV-B17-OL-01",
+      "pass": true
+    },
+    {
+      "check": "original_pair_FSV-B17_AUTOPAC_STYLE_manual_guard_FSV-B17-OI-01",
+      "pass": true
+    },
+    {
+      "check": "original_pair_FSV-B19_ECAS_original_full_FSV-B19-OL-01",
+      "pass": true
+    },
+    {
+      "check": "original_pair_FSV-B19_ECAS_original_full_FSV-B19-OI-01",
+      "pass": true
+    },
+    {
+      "check": "original_pair_FSV-B19_ECAS_original_shape_FSV-B19-OL-01",
+      "pass": true
+    },
+    {
+      "check": "original_pair_FSV-B19_ECAS_original_shape_FSV-B19-OI-01",
+      "pass": true
+    },
+    {
+      "check": "original_pair_FSV-B19_ECAS_missing_skip_full_FSV-B19-OL-01",
+      "pass": true
+    },
+    {
+      "check": "original_pair_FSV-B19_ECAS_missing_skip_full_FSV-B19-OI-01",
+      "pass": true
+    },
+    {
+      "check": "original_pair_FSV-B19_ECAS_missing_skip_shape_FSV-B19-OL-01",
+      "pass": true
+    },
+    {
+      "check": "original_pair_FSV-B19_ECAS_missing_skip_shape_FSV-B19-OI-01",
+      "pass": true
+    },
+    {
+      "check": "original_pair_FSV-B19_P2P_STYLE_original_FSV-B19-OL-01",
+      "pass": true
+    },
+    {
+      "check": "original_pair_FSV-B19_P2P_STYLE_original_FSV-B19-OI-01",
+      "pass": true
+    },
+    {
+      "check": "original_pair_FSV-B19_P2P_STYLE_manual_guard_FSV-B19-OL-01",
+      "pass": true
+    },
+    {
+      "check": "original_pair_FSV-B19_P2P_STYLE_manual_guard_FSV-B19-OI-01",
+      "pass": true
+    },
+    {
+      "check": "original_pair_FSV-B19_AUTOPAC_STYLE_original_FSV-B19-OL-01",
+      "pass": true
+    },
+    {
+      "check": "original_pair_FSV-B19_AUTOPAC_STYLE_original_FSV-B19-OI-01",
+      "pass": true
+    },
+    {
+      "check": "original_pair_FSV-B19_AUTOPAC_STYLE_manual_guard_FSV-B19-OL-01",
+      "pass": true
+    },
+    {
+      "check": "original_pair_FSV-B19_AUTOPAC_STYLE_manual_guard_FSV-B19-OI-01",
+      "pass": true
+    },
+    {
+      "check": "two_partial_observations_no_business_gold",
+      "pass": true
+    },
+    {
+      "check": "partial_results_not_called_vulnerability",
+      "pass": true
+    },
+    {
+      "check": "manual_guard_labelled_control",
+      "pass": true
+    },
+    {
+      "check": "no_admission_causal_overclaim",
+      "pass": true
+    },
+    {
+      "check": "judge_not_exclusive_or_native",
+      "pass": true
+    },
+    {
+      "check": "runtime_vs_inventory_separated",
+      "pass": true
+    },
+    {
+      "check": "engineering_vs_business_boundary",
+      "pass": true
+    },
+    {
+      "check": "historical_costs_separate",
+      "pass": true
+    },
+    {
+      "check": "A_27_actual_calls",
+      "pass": true
+    },
+    {
+      "check": "B_30_actual_calls",
+      "pass": true
+    },
+    {
+      "check": "Judge_4_actual_calls",
+      "pass": true
+    },
+    {
+      "check": "TABLE_INDEPENDENT_AUDIT.json",
+      "pass": true
+    },
+    {
+      "check": "MECHANISM_INDEPENDENT_AUDIT.json",
+      "pass": true
+    },
+    {
+      "check": "160_primary_reconciliations",
+      "pass": true
+    }
+  ],
+  "failures": [],
+  "blocking_findings": [],
+  "required_fixes": [],
+  "links": [
+    {
+      "label": "七案例详细表",
+      "target": "D:/lunwen/EC-CSI投稿/working/exploration/20261015_seven_case_mechanism/SEVEN_CASE_TABLE_CN.md",
+      "exists": true,
+      "sha256": "249fdb1718cc32f2956801e3bb058f272266e13ee238abd3dd970368a3becc2d"
+    },
+    {
+      "label": "本地机制对照",
+      "target": "D:/lunwen/EC-CSI投稿/working/exploration/20261015_seven_case_mechanism/mechanism_control/RESULTS_CN.md",
+      "exists": true,
+      "sha256": "a9ba2ba4df8ca0d142d7befef6e635926b4a1f50f0217079c6466df2b432fc91"
+    }
+  ],
+  "scope_note": "Two historical batches displayed together; runtime fail-closed controls do not prove business violations, production vulnerabilities, exclusive capability, or pooled accuracy."
+}

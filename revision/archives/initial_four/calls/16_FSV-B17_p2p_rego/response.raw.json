@@ -1,0 +1,28 @@
+{
+  "choices": [
+    {
+      "finish_reason": "stop",
+      "index": 0,
+      "message": {
+        "content": "{\"begin\":\"BEGIN_FSV-B17_p2p_rego_MAIN\",\"stage\":\"p2p_rego\",\"output\":{\"status\":\"READY\",\"rego\":\"package external_pilot\\n\\nimport rego.v1\\n\\ndefault allow := false\\n\\nallow if {\\n    input.trusted.customerDisabled == false\\n}\",\"reason\":\"Source VIS-FSV-B17-01 states that sales orders can be disallowed against a customer when 'Disabled' is enabled. With default allow=false, the allow rule permits the operation only when the trusted customerDisabled flag is false, denying when true.\"},\"end\":\"END_FSV-B17_p2p_rego_MAIN\"}",
+        "role": "assistant"
+      }
+    }
+  ],
+  "created": 1791978767,
+  "id": "2026101419521946077de7761347ef",
+  "model": "glm-5.2",
+  "object": "chat.completion",
+  "request_id": "2026101419521946077de7761347ef",
+  "usage": {
+    "completion_tokens": 481,
+    "completion_tokens_details": {
+      "reasoning_tokens": 343
+    },
+    "prompt_tokens": 3327,
+    "prompt_tokens_details": {
+      "cached_tokens": 0
+    },
+    "total_tokens": 3808
+  }
+}

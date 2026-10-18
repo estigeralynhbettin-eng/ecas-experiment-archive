@@ -1,0 +1,60 @@
+{
+  "task": "FSV-S02",
+  "method": "ECAS_MATCHED",
+  "classification": "RETROSPECTIVE_ADAPTED_LOCAL_PILOT_NOT_NATIVE_OR_BLIND",
+  "status": "EVALUATED",
+  "requests": [
+    {
+      "channel": "O-L",
+      "input": {
+        "request": {
+          "body": {
+            "documentKey": "SYNTHETIC-DOCUMENT-KEY",
+            "documentTypeId": 1,
+            "status": "Active"
+          }
+        },
+        "trusted": {}
+      },
+      "expected": "allow",
+      "actual": {
+        "policy_id": "pol-FSV-S02-001",
+        "decision": "allow",
+        "fail_closed": true,
+        "violations": []
+      }
+    },
+    {
+      "channel": "O-I",
+      "input": {
+        "request": {
+          "body": {
+            "documentKey": "SYNTHETIC-DOCUMENT-KEY",
+            "documentTypeId": 1,
+            "undeclared_script": "<script>alert(1)</script>"
+          }
+        },
+        "trusted": {}
+      },
+      "expected": "deny",
+      "actual": {
+        "policy_id": "pol-FSV-S02-001",
+        "decision": "deny",
+        "fail_closed": true,
+        "violations": [
+          {
+            "rule_id": "rule-FSV-S02-001",
+            "code": "unexpected_fields",
+            "detail": "undeclared_script"
+          }
+        ]
+      }
+    }
+  ],
+  "calls": [
+    18
+  ],
+  "admission": "ADMITTED",
+  "request_pair_correct": true,
+  "completed_at": "2026-10-14T04:11:12.911586+00:00"
+}

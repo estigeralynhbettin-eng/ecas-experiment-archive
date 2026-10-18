@@ -1,0 +1,33 @@
+{
+  "schema_version": 1,
+  "state": "SUCCEEDED",
+  "run_id": "evidence-ablation-effects-v1",
+  "run_dir": "/root/ecas_evidence_ablation_20261014/managed_runs/evidence-ablation-effects-v1",
+  "fingerprint": "a0851f425077f4c65d0f987209ad1452c9171c7359db4609c1e016c212029435",
+  "created_at": 1791989939.416376,
+  "exit_code": 0,
+  "worker": {
+    "pid": 946,
+    "start_ticks": "7361",
+    "boot_id": "80a51f57-9957-4963-bb20-e754e7c936b6"
+  },
+  "started_at": 1791989939.5641522,
+  "child": {
+    "pid": 947,
+    "start_ticks": "7429",
+    "boot_id": "80a51f57-9957-4963-bb20-e754e7c936b6"
+  },
+  "reason": "",
+  "finished_at": 1791989943.527923,
+  "outputs": [
+    {
+      "path": "outputs/result.json",
+      "bytes": 3006,
+      "sha256": "111fe7f2edc49b9df7da84d763f74b45fe41ce4354e227d73e86982866ef77d6",
+      "kind": "json"
+    }
+  ],
+  "stdout": "/root/ecas_evidence_ablation_20261014/managed_runs/evidence-ablation-effects-v1/stdout.log",
+  "stderr": "/root/ecas_evidence_ablation_20261014/managed_runs/evidence-ablation-effects-v1/stderr.log",
+  "scientific_validation": false
+}

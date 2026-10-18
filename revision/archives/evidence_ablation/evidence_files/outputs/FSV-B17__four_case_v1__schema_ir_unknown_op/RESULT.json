@@ -1,0 +1,22 @@
+{
+  "parent_id": "FSV-B17__four_case_v1",
+  "case": "FSV-B17",
+  "configuration": "four_case_v1",
+  "row_id": "FSV-B17__four_case_v1__schema_ir_unknown_op",
+  "variant": "schema_ir_unknown_op",
+  "classification": "ENGINEERING_MODEL_IR_SCHEMA_CONTROL",
+  "expected_full": "schema_fail",
+  "notes": "Unknown operation; excluded from scientific denominator",
+  "source_parent_candidate": "/root/ecas_evidence_ablation_20261014/inputs/FSV-B17__four_case_v1/candidate.json",
+  "source_parent_contract": "/root/ecas_evidence_ablation_20261014/inputs/FSV-B17__four_case_v1/contract.json",
+  "candidate_sha256": "c1c0814f7942d87657264eb17fef9e6a4aa5d3f0493bc5b18e1208b0f23bdde1",
+  "contract_sha256": "ae7c83dcf8f9ee8d8bd1a0218cf8d7d72e0f54c97771e6b49e6acf387eeab0bf",
+  "output_folder": "/root/ecas_evidence_ablation_20261014/outputs/FSV-B17__four_case_v1__schema_ir_unknown_op",
+  "full_executed": false,
+  "shape_executed": false,
+  "ir_status": "IR_SCHEMA_OR_TYPE_FAILURE",
+  "full_status": "NOT_ATTEMPTED",
+  "shape_status": "NOT_ATTEMPTED",
+  "error": "model IR schema rejected: /: {'ir_version': 'EC-FIELD-MODEL-IR-V3', 'candidate_id': 'FSV-B17-CAND-01', 'decision': 'propose', 'target': {'operation': 'POST /api/resource/Sales Order', 'system': 'ERPNext', 'version': '16.0.0'}, 'policy_id': 'FSV-B17-CUSTOMER-DISABLED-DISALLOW-SO', 'evidence_refs': ['VIS-FSV-B17-01', 'VIS-FSV-B17-02', 'VIS-FSV-B17-RUNTIME-ABI'], 'rules': [{'rule_id': 'FSV-B17-RULE-01', 'primitive_id': 'SP-SERVER-AUTHORITY-WORKFLOW', 'op': 'not_registered', 'evidence_refs': ['VIS-FSV-B17-01', 'VIS-FSV-B17-RUNTIME-ABI'], 'params': {'path': '/trusted/customerDisabled'}}], 'reason_code': 'none', 'missing_evidence': []} is not valid under any of the given schemas",
+  "eligible_admission_contrast": false
+}

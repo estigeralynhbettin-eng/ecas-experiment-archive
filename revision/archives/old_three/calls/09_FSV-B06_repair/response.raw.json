@@ -1,0 +1,28 @@
+{
+  "choices": [
+    {
+      "finish_reason": "stop",
+      "index": 0,
+      "message": {
+        "content": "{\"begin\":\"BEGIN_FSV-B06_repair_MAIN\",\"stage\":\"repair\",\"output\":{\"status\":\"READY\",\"rego\":\"package external_pilot\\n\\nimport rego.v1\\n\\ndefault allow := false\\n\\nallow if {\\n\\tinput.trusted.reAgeIsLatestTransaction == true\\n}\",\"reason\":\"Repaired prior policy to satisfy opa-fmt by using canonical OPA formatting with tab indentation. Policy logic is unchanged: default-deny remains false, and allow is true only when /trusted/reAgeIsLatestTransaction is true, per VIS-FSV-B06-01 and the runtime ABI.\"},\"end\":\"END_FSV-B06_repair_MAIN\"}",
+        "role": "assistant"
+      }
+    }
+  ],
+  "created": 1791950558,
+  "id": "2026101412022991d35e77f68c44ca",
+  "model": "glm-5.2",
+  "object": "chat.completion",
+  "request_id": "2026101412022991d35e77f68c44ca",
+  "usage": {
+    "completion_tokens": 574,
+    "completion_tokens_details": {
+      "reasoning_tokens": 412
+    },
+    "prompt_tokens": 2197,
+    "prompt_tokens_details": {
+      "cached_tokens": 0
+    },
+    "total_tokens": 2771
+  }
+}

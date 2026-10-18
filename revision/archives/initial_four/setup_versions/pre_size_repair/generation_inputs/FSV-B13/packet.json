@@ -1,0 +1,465 @@
+{
+  "task_window_id": "FSV-B13",
+  "target": {
+    "operation": "POST /api/resource/Purchase Receipt",
+    "system": "ERPNext",
+    "version": "16.0.0"
+  },
+  "visible_sources": [
+    {
+      "content": "You can set default settings for your stock-related transactions from the Stock Settings page...\n\n### Item Naming By\n\nBy default, the Item Name is set as per the Item Code entered. If you want Items to be named by a set Naming Series, choose the 'Naming Series' option.\n\n## Defaults\n\n### Default Item Group\n\nThis will be the default item group allocated to a newly created item. Item groups are useful for classification and setting properties for the whole group. To know more visit the Item Group page.\n\n### Default Stock UOM\n\nThe default unit of measure for stock is set as numbers (Nos), it can be changed from here.\n\n### Default Warehouse\n\nSet the default Warehouse from which the stock transactions are done. This will be fetched into the Default Warehouse in the Item master:\n\n### Sample Retention Warehouse\n\nThis is the Warehouse where sample retentions are stored. To know more, visit this page.\n\n### Default Valuation method\n\nYou can choose between FIFO (first in first out), LIFO (last in first out) or moving average valuation for your items. The default method is FIFO. If you select Moving Average or LIFO, new Items will be valuated on new method. You can change this when creating new Items in the Item form. Once the Item is saved, the Valuation Method cannot be changed. Read more here.\n\n### Limit Percent\n\nThis is the percentage you are allowed to receive or deliver more against the quantity ordered. For example: If you have ordered 100 units, Supplier sends 120 units and the percentage is set to 10% then you are allowed to receive 110 units. By default, this is set to 0.\n\n### Role Allowed to Over Deliver/Receive\n\nUsers with this role are allowed to over deliver/receive against orders above the allowance percentage\n\n### Show Barcode Field\n\nA field to enter Barcode details for an item. If unticked, the field won't be visible in the Item form.\n\n### Convert Item Description to Clean HTML\n\nUsually, descriptions are copy-pasted from a website or Word/PDF file and they contain a lot of embedded styles. This messes up the Print view of your invoices or quotes.\n\nTo fix this, you can check \"Convert Item Description to Clean HTML\" in Stock Settings. This will ensure that when you save the Items, their descriptions will be cleaned up.\n\nIf you want to control your description, views, and allow any HTML to be embedded, you can uncheck this property.\n\n### Auto insert\n\n### Auto insert Price List rate if missing\n\nEnabling this will insert an Item Price to the Price List of an Item automatically when using the Item in its first transaction. This price is fetched from the 'Rate' set in the first transaction with the Item. The Price List depends on whether you're using a Purchase or Sales transaction.\n\nNote that, the Item Price will be automatically inserted only in the first transaction if not already present.\n\nIf this is unticked, the 'Standard Selling Rate' set in the Item when creating the Item will be added as Item Price.\n\n### Automatically Set Serial Nos based on FIFO\n\nSerial numbers for stock will be set automatically based on the Items entered based on first in first out. The Serial Numbers will be set automatically in transactions like Purchase/Sales Invoices, Delivery Notes, etc.\n\n## Allow Negative Stock\n\nThis will allow stock items to be displayed in negative values. Using this option depends on your use case. For example, the stock transaction entries are entered at the weekend or month-end. In this case, negative stock needs to be enabled so that you can continue with your purchase/sales transaction entries.\n\nInstead of enabling negative stock globally you can also enable it for specific items.\n\nAllow Negative Stock has removed for Serial / Batch Items from version 15. So from version 15, users won't be able to make negative stock transactions for serial /batch items even though Allow Negative Stock has enabled in the Stock Settings.\n\n## Set Qty in Transactions based on Serial No Input\n\nThe quantity of items will be set according to the serial numbers. For example, if the user has added serial nos like A001, A002, and A003 then the system will set the quantity as 3 in the transaction.\n\n## Automatic Material Request\n\n### Raise Material Request when the stock reaches re-order level\n\nThis option is useful if you want to ensure a constant supply of raw materials/products and avoid shortage. A Material Request will be raised automatically when stock reached the re-order level defined in the Item form.\n\n### Notify by Email on the creation of automatic Material Request\n\nAn email will be sent to notify the User with the role 'Purchase Manager' when an automatic Material Request is created.\n\n## Inter Warehouse Transfer Settings\n\n### Enable customer warehouse for material transfer from Delivery Note and Sales Invoice\n\nThis option is useful when material transfer needs to be presented as a Delivery Note. For example, if there are statutory requirements where taxes are to be applied on each transfer of Material. It is easier to manage in a transaction like Delivery Note, than in the Stock Entry\n\n### Enable supplier warehouse for material transfer from Purchase Receipt and Purchase Invoice\n\nSimilar to above option this option is useful when material transfer needs to be presented as Purchase Receipt.\n\nTo know more about inter warehouse material transfer via Delivery Note and Purchase Invoice please refer this article Material Transfer From Delivery Note\n\n## Freeze Stock Entries\n\nThe User will not be allowed to make stock postings beyond this date.\n\n- Stock Frozen Upto: A threshold date till which stocks will be frozen.\n\n- Freeze Stocks Older Than [Days]: Stocks older than x days will be frozen. This is calculated based on the creation date of the item.\n\n- Role Allowed to edit frozen stock: The role you choose here will be allowed to edit frozen stock.\n\n### Batch identification\n\nGlobal setting for batches of stocks to be identified by a Naming Series. You can override this in the Item DocType.\n\n## Allow to Edit Stock Quantity\n\nEnable \"Allow to Edit Stock UOM Qty for Sales Documents / Allow to Edit Stock UOM Qty for Purchase Documents\" in the stock settings.\n\n## Allow to Edit Qty as per Stock UOM in Stock Entry\n\n### Why to Edit Stock Qty / Qty as Per Stock UOM\n\nIf you're using multi-uom and your stock uom is a whole number, then you might face the issue that the Stock UOM should be non-decimal. Users experience this problem when they are unable to set an accurate conversion factor..\n\nSolution\n\nUser will set the Stock Quantity and system will calculate the conversion factor\n\n### Allow UOM with Conversion Rate Defined in Item\n\nIf enabled, the system will allow selecting UOMs in sales and purchase transactions only if the conversion rate is set in the item master.\n",
+      "evidence_id": "VIS-FSV-B13-01",
+      "locator": "extracted/erpnext-stock-settings.md:article",
+      "source_id": "erpnext-stock-settings.html",
+      "source_sha256": "F866B7A7F90AEFCB06DA623C3F9EF25F5524D4261887FC80FFDE3AAA76A530EA"
+    },
+    {
+      "content": "Frappe framework generates REST API for all of your DocTypes out of the box. You can also run arbitrary python methods using their dotted module path.\n\n## Authentication\n\nThere are two ways to authenticate through Frappe REST API. Token based authentication and password based authentication.\n\n### 1. Token Based Authentication\n\nA token is a pair of API Key and API Secret. To generate these tokens follow these steps:\n\n- Go to User list and open a user.\n\n- Click on the \"Settings\" tab. (skip this step if you don't see tabs)\n\n- Expand the API Access section and click on Generate Keys.\n\n- You will get a popup with the API Secret. Copy this value and keep it somewhere safe (Password Manager).\n\n- You will also see another field \"API Key\" in this section.\n\nThe token is generated by concatenating api_key and api_secret with a colon :. Pass the string token api_key:api_secret to the Authorization header in the request.\nfetch('http://<base-url>/api/method/frappe.auth.get_logged_user', { headers: { 'Authorization': 'token api_key:api_secret' } }) .then(r => r.json()) .then(r => { console.log(r); }) ➜ curl http://<base-url>/api/method/frappe.auth.get_logged_user -H \"Authorization: token api_key:api_secret\"\nEvery request you make with these tokens will be logged against the user you selected in Step 1. This also means that roles will be checked against this user. You can also create a new user just for API calls.\n\n### 2. Password Based Authentication\n\nPassword based authentication relies on cookies and session data to maintain authentication in subsequent requests. In most cases, the library you are using to issue REST calls will handle session data, but if it doesn't you should use Token based authentication.\nfetch('http://<base-url>/api/method/login', { method: 'POST', headers: { 'Accept': 'application/json', 'Content-Type': 'application/json', }, body: JSON.stringify({ usr: 'username or email', pwd: 'password' }) }) .then(r => r.json()) .then(r => { console.log(r); }) ➜ curl --cookie-jar snowcookie --request POST \"http://<base-url>/api/method/login\" -H 'Content-Type: application/json' -H 'Accept: application/json' --data-raw \"{ \"usr\" : \"<username>\", \"pwd\": \"<password>\" }\" {\"message\":\"Logged In\",\"home_page\":\"/app\",\"full_name\":\"<user:full_name>\",\"dashboard_route\":\"/sites\"} ➜ curl --cookie snowcookie --request POST \"http://<base-url>/api/method/frappe.auth.get_logged_user\" -H 'Accept: application/json' {\"message\":\"<username>\"}\n### 3. Access Token\n\nRefer documentation for How to setup OAuth.\n\nUse the generated access_token in request header.\nfetch('http://<base-url>/api/method/frappe.auth.get_logged_user', { headers: { 'Authorization': 'Bearer access_token' } }) .then(r => r.json()) .then(r => { console.log(r); })\n## Listing Documents\n\nTo get a list of records of a DocType, send a GET request at /api/resource/:doctype. By default, it will return 20 records and will only fetch the name of the records. The result for the query can be found under data of the payload.\n\nWe'll be using the ToDo DocType to show example responses for the queries below.\nGET /api/resource/:doctype\nResponse\n{ \"data\":[ {\"name\":\"f765eef382\"}, {\"name\":\"2a26fa1c64\"}, {\"name\":\"f32c68060f\"}, {\"name\":\"9065fa9832\"}, {\"name\":\"419082fc38\"}, {\"name\":\"6234d15099\"}, {\"name\":\"62f2181ee0\"}, {\"name\":\"a50afbbfaa\"}, ... ] }\nYou can specify which fields to fetch in the fields param. It should be a JSON array.\nGET /api/resource/:doctype?fields=[\"field1\", \"field2\"]\nResponse\n{ \"data\":[ {\"description\":\"Business worker talk society. Each try theory prove notice middle. Crime couple trouble guy project hit.\",\"name\":\"f765eef382\"}, {\"description\":\"This reveal as look near sister. Car staff bar specific address.\",\"name\":\"2a26fa1c64\"}, {\"description\":\"Wear bag some walk. Movie partner new class tough run. Brother Democrat imagine.\",\"name\":\"f32c68060f\"}, {\"description\":\"Break laugh apply reveal new now focus heavy. Outside local staff research total. Else point try despite.\",\"name\":\"9065fa9832\"}, {\"description\":\"Truth reduce baby artist actually model. Cost phone us others himself wife almost. Language thing wonder share talk. Factor glass significant could window certain yet.\",\"name\":\"419082fc38\"}, {\"description\":\"Tv memory understand opportunity window beat physical.\",\"name\":\"6234d15099\"}, {\"description\":\"Should floor situation in response sell. Our assume company mean red majority shoulder.\",\"name\":\"62f2181ee0\"}, {\"description\":\"Performance seem sign recent. Court form me tonight simple trouble. Address job garden play teach. Happy speech amount offer change then.\",\"name\":\"a50afbbfaa\"}, ... ] }\nYou can specify which fields to expand in the expand param. It should be a JSON array.\nGET /api/resource/:doctype?expand=[\"priority\"]\nResponse\n{ \"data\":[ { \"name\":\"f765eef382\" \"priority\": { \"name\":\"a1b2c3\", \"title\": \"Medium\", \"creation\": \"2025-11-05 19:02:19.106966\", }, }, { \"name\":\"f765eef393\" \"priority\": { \"name\":\"a1b2c4\", \"title\": \"High\", \"creation\": \"2025-11-05 20:02:19.106966\", }, }, ... ] }\nYou can filter the records by passing filters param. Filters should be an array, where each filter is of the format: [field, operator, value]\nGET /api/resource/:doctype?filters=[[\"field1\", \"=\", \"value1\"], [\"field2\", \">\", \"value2\"]]\nResponse\n{ \"data\":[ {\"name\":\"f765eef382\"}, {\"name\":\"2a26fa1c64\"}, {\"name\":\"f32c68060f\"}, {\"name\":\"9065fa9832\"}, {\"name\":\"419082fc38\"}, {\"name\":\"6234d15099\"}, {\"name\":\"62f2181ee0\"}, {\"name\":\"a50afbbfaa\"}, ... ] }\nfilters parameter joins all the specified filters using AND SQL operator, if you want OR filters you can use the or_filters param. Syntax for or_filters is same as `filters.\n\nYou can also provide the sort field and order. It should be of the format fieldname asc or fieldname desc. The space should be URL encoded. In the following line, we're taking fieldname to be title.\nGET /api/resource/:doctype?order_by=title%20desc\nYou can also page the results by providing the limit_start and limit_page_length params.\nGET /api/resource/:doctype?limit_start=5&limit_page_length=10\nResponse\n{ \"data\": [ {\"name\":\"6234d15099\"}, {\"name\":\"62f2181ee0\"}, {\"name\":\"a50afbbfaa\"}, {\"name\":\"aa12a5cf71\"}, {\"name\":\"6ac9800d4e\"}, {\"name\":\"4bcf8b701c\"}, {\"name\":\"aee15f4c20\"}, {\"name\":\"6ba753afef\"}, ... ] }\nlimit is an alias for limit_page_length for accessing /api/resource in Version 13. This means the following should also return the same payload as the above query.\nGET /api/resource/:doctype?limit_start=5&limit=10\nBy default, you will receive the data as List[dict]. You can retrieve your data as List[List] by passing as_dict=False.\nGET /api/resource/:doctype?limit_start=5&limit=5&as_dict=False\nResponse\n{ \"data\": [ [\"6234d15099\"], [\"62f2181ee0\"], [\"a50afbbfaa\"], [\"aa12a5cf71\"], [\"6ac9800d4e\"] ] }\nTo debug the query built for your reqeusts, you can pass debug=True with the request. This returns the executed query and execution time under exc of the payload.\nGET /api/resource/:doctype?limit_start=10&limit=5&debug=True\nResponse\n{ \"data\": [ {\"name\":\"4bcf8b701c\"}, {\"name\":\"aee15f4c20\"}, {\"name\":\"6ba753afef\"}, {\"name\":\"f4b7e24abc\"}, {\"name\":\"bd9156096c\"} ], \"exc\": \"[\\\"select `tabToDo`.`name`\\\\n\\\\t\\\\t\\\\tfrom `tabToDo`\\\\n\\\\t\\\\t\\\\t\\\\n\\\\t\\\\t\\\\t\\\\n\\\\t\\\\t\\\\t order by `tabToDo`.`modified` DESC\\\\n\\\\t\\\\t\\\\tlimit 5 offset 10\\\", \\\"Execution time: 0.0 sec\\\"]\" }\n## CRUD Operations\n\nFrappe generates REST endpoints for CRUD operations for all DocTypes automatically. Make sure you set the following headers in your requests so that you get proper JSON responses.\n{ \"Accept\": \"application/json\", \"Content-Type\": \"application/json\", }\n### Create\n\nCreate a new document by sending a POST request to /api/resource/:doctype. Send the document as JSON in the Request Body.\nPOST /api/resource/:doctype # Body {\"description\": \"New ToDo\"}\nResponse\n{ \"data\": { \"name\": \"af2e2d0e33\", \"owner\": \"Administrator\", \"creation\": \"2019-06-03 14:19:00.281026\", \"modified\": \"2019-06-03 14:19:00.281026\", \"modified_by\": \"Administrator\", \"idx\": 0, \"docstatus\": 0, \"status\": \"Open\", \"priority\": \"Medium\", \"description\": \"New ToDo\", \"doctype\": \"ToDo\" } }\n### Read\n\nGet a document by sending a GET request to /api/resource/:doctype/:name.\nGET /api/resource/:doctype/:name\nResponse\n{ \"data\": { \"name\": \"bf2e760e13\", \"owner\": \"Administrator\", \"creation\": \"2019-06-03 14:19:00.281026\", \"modified\": \"2019-06-03 14:19:00.281026\", \"modified_by\": \"Administrator\", \"idx\": 0, \"docstatus\": 0, \"status\": \"Open\", \"priority\": \"Medium\", \"description\": \"\nTest description\n\", \"doctype\": \"ToDo\" } }\nExpand all link fields by sending a GET request to /api/resource/:doctype/:name?expand_links=True.\nGET /api/resource/:doctype/:name?expand_links=True\nResponse\n{ \"data\": { \"name\": \"bf2e760e13\", \"owner\": \"Administrator\", \"creation\": \"2019-06-03 14:19:00.281026\", \"modified\": \"2019-06-03 14:19:00.281026\", \"modified_by\": \"Administrator\", \"idx\": 0, \"docstatus\": 0, \"status\": \"Open\", \"priority\": { \"name\":\"a1b2c3\", \"title\": \"Medium\", \"creation\": \"2025-11-05 19:02:19.106966\", }, \"description\": \"\nTest description\n\", \"doctype\": \"ToDo\" } }\n### Update\n\nUpdate a document by sending a PUT request to /api/resource/:doctype/:name. You don't need to send the whole document, instead you can just send the fields that you want to update.\nPUT /api/resource/:doctype/:name # Body {\"description\": \"New description\"}\nResponse\n{ \"data\": { \"name\": \"bf2e760e13\", \"owner\": \"Administrator\", \"creation\": \"2019-06-03 14:19:00.281026\", \"modified\": \"2019-06-03 14:21:00.785117\", \"modified_by\": \"Administrator\", \"idx\": 0, \"docstatus\": 0, \"status\": \"Open\", \"priority\": \"Medium\", \"description\": \"New description\", \"doctype\": \"ToDo\" } }\n### Delete\n\nDelete a document by sending a DELETE request to /api/resource/:doctype/:name.\nDELETE /api/resource/:doctype/:name\nResponse\n{\"message\": \"ok\"}\n## Remote Method Calls\n\nFrappe allows you to trigger arbitrary python methods using the REST API for handling custom logic. These methods must be marked as whitelisted to make them accessible via REST.\n\nTo run a whitelisted python method at frappe.auth.get_logged_user, send a request to the endpoint /api/method/frappe.auth.get_logged_user.\nGET /api/method/frappe.auth.get_logged_user\nResponse\n{ \"message\": \"[email protected]\" }\n- If your method returns some values, you should send a GET request.\n\n- If your method changes the state of the database, use POST. After a successful POST request, the framework will automatically call frappe.db.commit() to commit the changes to the database.\n\n- A successful response will return a JSON object with a message key.\n\n- An errored response will return a JSON object with exc key which contains the stack trace and exc_type which contains the thrown Exception.\n\n- The return value of the method will be converted to a JSON and sent as the response.\n\n## File Uploads\n\nThere is a dedicated method /api/method/upload_file that accepts binary file data and uploads it into the system.\n\nHere is the curl command for it:\n➜ curl -X POST \\ http://<base-url>/api/method/upload_file \\ -H 'Accept: application/json' \\ -H 'Authorization: token xxxx:yyyy' \\ -F file=@/path/to/file/file.png\nIf you are using client side Javascript to upload files, you can append the uploaded files as FormData and send an XHR request. Here is the implementation code in Frappe Desk.\n",
+      "evidence_id": "VIS-FSV-B13-02",
+      "locator": "extracted/frappe-rest-api.md:article",
+      "source_id": "frappe-rest-api.html",
+      "source_sha256": "87CB28850081B1F7D6702521E98E5F242498A456491EF26BDE847C20CCBFE154"
+    },
+    {
+      "content": {
+        "doctype": "Stock Settings",
+        "fields": [
+          {
+            "default": "Item Code",
+            "fieldname": "item_naming_by",
+            "fieldtype": "Select",
+            "options": "Item Code\nNaming Series"
+          },
+          {
+            "fieldname": "item_group",
+            "fieldtype": "Link",
+            "options": "Item Group"
+          },
+          {
+            "fieldname": "stock_uom",
+            "fieldtype": "Link",
+            "options": "UOM"
+          },
+          {
+            "fieldname": "default_warehouse",
+            "fieldtype": "Link",
+            "options": "Warehouse"
+          },
+          {
+            "fieldname": "sample_retention_warehouse",
+            "fieldtype": "Link",
+            "options": "Warehouse"
+          },
+          {
+            "fieldname": "column_break_4",
+            "fieldtype": "Column Break"
+          },
+          {
+            "fieldname": "valuation_method",
+            "fieldtype": "Select",
+            "options": "FIFO\nMoving Average\nLIFO"
+          },
+          {
+            "fieldname": "over_delivery_receipt_allowance",
+            "fieldtype": "Float"
+          },
+          {
+            "default": "Stop",
+            "fieldname": "action_if_quality_inspection_is_not_submitted",
+            "fieldtype": "Select",
+            "options": "Stop\nWarn"
+          },
+          {
+            "default": "1",
+            "fieldname": "show_barcode_field",
+            "fieldtype": "Check"
+          },
+          {
+            "default": "1",
+            "fieldname": "clean_description_html",
+            "fieldtype": "Check"
+          },
+          {
+            "fieldname": "section_break_7",
+            "fieldtype": "Section Break"
+          },
+          {
+            "default": "0",
+            "fieldname": "auto_insert_price_list_rate_if_missing",
+            "fieldtype": "Check"
+          },
+          {
+            "default": "0",
+            "fieldname": "allow_negative_stock",
+            "fieldtype": "Check"
+          },
+          {
+            "fieldname": "auto_material_request",
+            "fieldtype": "Section Break"
+          },
+          {
+            "default": "0",
+            "fieldname": "auto_indent",
+            "fieldtype": "Check"
+          },
+          {
+            "default": "0",
+            "fieldname": "reorder_email_notify",
+            "fieldtype": "Check"
+          },
+          {
+            "fieldname": "stock_frozen_upto",
+            "fieldtype": "Date"
+          },
+          {
+            "fieldname": "stock_frozen_upto_days",
+            "fieldtype": "Int"
+          },
+          {
+            "fieldname": "stock_auth_role",
+            "fieldtype": "Link",
+            "options": "Role"
+          },
+          {
+            "default": "0",
+            "fieldname": "use_naming_series",
+            "fieldtype": "Check"
+          },
+          {
+            "default": "BATCH-",
+            "fieldname": "naming_series_prefix",
+            "fieldtype": "Data"
+          },
+          {
+            "fieldname": "inter_warehouse_transfer_settings_section",
+            "fieldtype": "Section Break"
+          },
+          {
+            "default": "0",
+            "fieldname": "allow_from_dn",
+            "fieldtype": "Check"
+          },
+          {
+            "default": "0",
+            "fieldname": "allow_from_pr",
+            "fieldtype": "Check"
+          },
+          {
+            "fieldname": "role_allowed_to_create_edit_back_dated_transactions",
+            "fieldtype": "Link",
+            "options": "Role"
+          },
+          {
+            "fieldname": "column_break_26",
+            "fieldtype": "Column Break"
+          },
+          {
+            "fieldname": "control_historical_stock_transactions_section",
+            "fieldtype": "Section Break"
+          },
+          {
+            "default": "0",
+            "fieldname": "disable_serial_no_and_batch_selector",
+            "fieldtype": "Check"
+          },
+          {
+            "fieldname": "role_allowed_to_over_deliver_receive",
+            "fieldtype": "Link",
+            "options": "Role"
+          },
+          {
+            "fieldname": "item_defaults_section",
+            "fieldtype": "Section Break"
+          },
+          {
+            "fieldname": "section_break_9",
+            "fieldtype": "Section Break"
+          },
+          {
+            "fieldname": "column_break_12",
+            "fieldtype": "Column Break"
+          },
+          {
+            "fieldname": "column_break_27",
+            "fieldtype": "Column Break"
+          },
+          {
+            "fieldname": "column_break_31",
+            "fieldtype": "Column Break"
+          },
+          {
+            "fieldname": "quality_inspection_settings_section",
+            "fieldtype": "Section Break"
+          },
+          {
+            "default": "Stop",
+            "fieldname": "action_if_quality_inspection_is_rejected",
+            "fieldtype": "Select",
+            "options": "Stop\nWarn"
+          },
+          {
+            "fieldname": "mr_qty_allowance",
+            "fieldtype": "Float"
+          },
+          {
+            "default": "0",
+            "fieldname": "update_existing_price_list_rate",
+            "fieldtype": "Check"
+          },
+          {
+            "fieldname": "defaults_tab",
+            "fieldtype": "Tab Break"
+          },
+          {
+            "fieldname": "stock_validations_tab",
+            "fieldtype": "Tab Break"
+          },
+          {
+            "fieldname": "stock_planning_tab",
+            "fieldtype": "Tab Break"
+          },
+          {
+            "fieldname": "stock_closing_tab",
+            "fieldtype": "Tab Break"
+          },
+          {
+            "fieldname": "serial_and_batch_item_settings_tab",
+            "fieldtype": "Tab Break"
+          },
+          {
+            "fieldname": "column_break_23",
+            "fieldtype": "Column Break"
+          },
+          {
+            "fieldname": "price_list_defaults_section",
+            "fieldtype": "Section Break"
+          },
+          {
+            "fieldname": "column_break_121",
+            "fieldtype": "Column Break"
+          },
+          {
+            "fieldname": "stock_reservation_tab",
+            "fieldtype": "Tab Break"
+          },
+          {
+            "default": "0",
+            "fieldname": "enable_stock_reservation",
+            "fieldtype": "Check"
+          },
+          {
+            "fieldname": "column_break_rx3e",
+            "fieldtype": "Column Break"
+          },
+          {
+            "default": "1",
+            "fieldname": "allow_partial_reservation",
+            "fieldtype": "Check"
+          },
+          {
+            "fieldname": "column_break_mhzc",
+            "fieldtype": "Column Break"
+          },
+          {
+            "default": "FIFO",
+            "fieldname": "pick_serial_and_batch_based_on",
+            "fieldtype": "Select",
+            "options": "FIFO\nLIFO\nExpiry"
+          },
+          {
+            "default": "1",
+            "fieldname": "auto_create_serial_and_batch_bundle_for_outward",
+            "fieldtype": "Check"
+          },
+          {
+            "default": "1",
+            "fieldname": "auto_reserve_serial_and_batch",
+            "fieldtype": "Check"
+          },
+          {
+            "fieldname": "serial_and_batch_reservation_section",
+            "fieldtype": "Section Break"
+          },
+          {
+            "fieldname": "conversion_factor_section",
+            "fieldtype": "Section Break"
+          },
+          {
+            "fieldname": "column_break_lznj",
+            "fieldtype": "Column Break"
+          },
+          {
+            "default": "0",
+            "fieldname": "allow_to_edit_stock_uom_qty_for_sales",
+            "fieldtype": "Check"
+          },
+          {
+            "default": "0",
+            "fieldname": "allow_to_edit_stock_uom_qty_for_purchase",
+            "fieldtype": "Check"
+          },
+          {
+            "default": "0",
+            "fieldname": "auto_reserve_stock_for_sales_order_on_purchase",
+            "fieldtype": "Check"
+          },
+          {
+            "default": "1",
+            "fieldname": "use_serial_batch_fields",
+            "fieldtype": "Check"
+          },
+          {
+            "default": "1",
+            "fieldname": "do_not_update_serial_batch_on_creation_of_auto_bundle",
+            "fieldtype": "Check"
+          },
+          {
+            "default": "0",
+            "fieldname": "allow_internal_transfer_at_arms_length_price",
+            "fieldtype": "Check"
+          },
+          {
+            "default": "0",
+            "fieldname": "do_not_use_batchwise_valuation",
+            "fieldtype": "Check"
+          },
+          {
+            "fieldname": "over_picking_allowance",
+            "fieldtype": "Percent"
+          },
+          {
+            "default": "1",
+            "fieldname": "allow_existing_serial_no",
+            "fieldtype": "Check"
+          },
+          {
+            "default": "0",
+            "fieldname": "auto_reserve_stock",
+            "fieldtype": "Check"
+          },
+          {
+            "fieldname": "serial_and_batch_bundle_section",
+            "fieldtype": "Section Break"
+          },
+          {
+            "default": "0",
+            "fieldname": "set_serial_and_batch_bundle_naming_based_on_naming_series",
+            "fieldtype": "Check"
+          },
+          {
+            "fieldname": "section_break_gnhq",
+            "fieldtype": "Section Break"
+          },
+          {
+            "fieldname": "column_break_wslv",
+            "fieldtype": "Column Break"
+          },
+          {
+            "fieldname": "section_break_ylhd",
+            "fieldtype": "Section Break"
+          },
+          {
+            "default": "0",
+            "fieldname": "allow_uom_with_conversion_rate_defined_in_item",
+            "fieldtype": "Check"
+          },
+          {
+            "fieldname": "quality_tab",
+            "fieldtype": "Tab Break"
+          },
+          {
+            "fieldname": "section_break_uiau",
+            "fieldtype": "Section Break"
+          },
+          {
+            "default": "0",
+            "fieldname": "allow_to_make_quality_inspection_after_purchase_or_delivery",
+            "fieldtype": "Check"
+          },
+          {
+            "default": "Rate",
+            "fieldname": "update_price_list_based_on",
+            "fieldtype": "Select",
+            "options": "Rate\nPrice List Rate"
+          },
+          {
+            "default": "0",
+            "fieldname": "validate_material_transfer_warehouses",
+            "fieldtype": "Check"
+          }
+        ]
+      },
+      "evidence_id": "VIS-FSV-B13-03",
+      "locator": "erpnext-stock-settings-doctype.json:complete-field-catalog",
+      "source_id": "erpnext-stock-settings-doctype.json",
+      "source_sha256": "68834EFE08CF24EA22F82D0393886526FF892A920389FAC4FE73CAA6EB5A7D91"
+    },
+    {
+      "content": {
+        "available_values": [
+          {
+            "authority": "client",
+            "path": "/request/body/qty",
+            "type": "number"
+          },
+          {
+            "authority": "server_derived",
+            "path": "/trusted/derivedMaximumQty",
+            "type": "number"
+          },
+          {
+            "authority": "server_identity",
+            "path": "/trusted/authorizedRole",
+            "type": "boolean"
+          }
+        ],
+        "target_operation": "POST /api/resource/Purchase Receipt",
+        "notice": "This declares available adapter paths and types only; it supplies no expected decision or hidden test value."
+      },
+      "evidence_id": "VIS-FSV-B13-RUNTIME-ABI",
+      "locator": "tasks.FSV-B13",
+      "source_id": "EC-V2-RUNTIME-INTERFACE-CATALOG-V1",
+      "source_sha256": "8221DA8A6720B0593A8D337F18569C9947AAB05B02E5C84FB0C50E3DE8C1ABD7"
+    }
+  ],
+  "common_adapter": {
+    "subject_role": "authenticated_api_caller",
+    "subject_id": "authenticated_api_caller",
+    "action": "POST /api/resource/Purchase Receipt",
+    "resource_id": "ERPNext:16.0.0",
+    "resource_system": "ERPNext",
+    "resource_version": "16.0.0",
+    "request_and_trusted_paths": [
+      {
+        "authority": "client",
+        "path": "/request/body/qty",
+        "type": "number"
+      },
+      {
+        "authority": "server_derived",
+        "path": "/trusted/derivedMaximumQty",
+        "type": "number"
+      },
+      {
+        "authority": "server_identity",
+        "path": "/trusted/authorizedRole",
+        "type": "boolean"
+      }
+    ],
+    "envelope_representation": {
+      "subject": {
+        "id": "authenticated_api_caller",
+        "role": "authenticated_api_caller"
+      },
+      "action": "POST /api/resource/Purchase Receipt",
+      "resource": {
+        "id": "ERPNext:16.0.0",
+        "system": "ERPNext",
+        "version": "16.0.0"
+      },
+      "request": "original request unchanged",
+      "trusted": "original trusted unchanged"
+    },
+    "notice": "resource is an object; compare resource.id to organization schema resource strings. Subject id/role are neutral aliases, not an added permission rule. Source evidence and runtime path declarations contain no evaluation label."
+  }
+}

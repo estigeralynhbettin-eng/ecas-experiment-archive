@@ -1,0 +1,8 @@
+{
+  "kind": "new-experiment-block",
+  "status": "FROZEN",
+  "scope_id": "ECAS-EXTERNAL-ADAPTATION-20261014-01",
+  "protocol_path": "FROZEN_PROTOCOL_CN.md",
+  "protocol_sha256": "e29ef82edc7b4021a785cc5e57c5862488f312c185ba017456d8b9aac202ba5e",
+  "execution_revision": "v2-output-shape-constraint-restoration"
+}

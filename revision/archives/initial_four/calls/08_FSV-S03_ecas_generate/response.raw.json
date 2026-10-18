@@ -1,0 +1,28 @@
+{
+  "choices": [
+    {
+      "finish_reason": "stop",
+      "index": 0,
+      "message": {
+        "content": "{\"begin\":\"BEGIN_FSV-S03_ecas_generate_MAIN\",\"stage\":\"ecas_generate\",\"output\":{\"candidate\":{\"ir_version\":\"EC-FIELD-MODEL-IR-V3\",\"candidate_id\":\"FSV-S03-CAND-01\",\"decision\":\"propose\",\"target\":{\"operation\":\"POST /v1/clients/{clientId}/familymembers\",\"system\":\"Fineract\",\"version\":\"1.14.0\"},\"policy_id\":\"FSV-S03-POL-01\",\"evidence_refs\":[\"VIS-FSV-S03-01\",\"VIS-FSV-S03-RUNTIME-ABI\"],\"rules\":[{\"rule_id\":\"FSV-S03-R01\",\"primitive_id\":\"SP-STRICT-TYPE\",\"op\":\"strict_type\",\"evidence_refs\":[\"VIS-FSV-S03-01\",\"VIS-FSV-S03-RUNTIME-ABI\"],\"params\":{\"path\":\"/request/body/age\",\"expected_type\":\"integer\",\"on_missing\":\"skip\"}}],\"reason_code\":\"none\",\"missing_evidence\":[]}},\"end\":\"END_FSV-S03_ecas_generate_MAIN\"}",
+        "role": "assistant"
+      }
+    }
+  ],
+  "created": 1791978380,
+  "id": "20261014194558fb09c27e85d149cc",
+  "model": "glm-5.2",
+  "object": "chat.completion",
+  "request_id": "20261014194558fb09c27e85d149cc",
+  "usage": {
+    "completion_tokens": 2006,
+    "completion_tokens_details": {
+      "reasoning_tokens": 1692
+    },
+    "prompt_tokens": 3236,
+    "prompt_tokens_details": {
+      "cached_tokens": 0
+    },
+    "total_tokens": 5242
+  }
+}

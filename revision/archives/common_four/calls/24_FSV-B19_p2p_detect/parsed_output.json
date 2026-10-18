@@ -1,0 +1,12 @@
+{
+  "status": "READY",
+  "statements": [
+    {
+      "text": "If a supplier is on hold with hold type 'Invoices' or 'All', ERPNext will not allow Purchase Orders to be created for the supplier.",
+      "evidence_refs": [
+        "VIS-FSV-B19-01"
+      ]
+    }
+  ],
+  "reason": "The visible source explicitly documents that Purchase Order creation is blocked when the supplier is on hold with specific hold types."
+}

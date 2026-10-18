@@ -1,0 +1,48 @@
+{
+  "task": "FSV-S04",
+  "method": "AUTOPAC_STYLE",
+  "classification": "RETROSPECTIVE_ADAPTED_LOCAL_PILOT_NOT_NATIVE_OR_BLIND",
+  "status": "DEVELOPMENT_REJECTED",
+  "requests": [],
+  "calls": [
+    24,
+    25,
+    26
+  ],
+  "repaired_once": true,
+  "developer_checks": {
+    "compile_exit": 0,
+    "compile_error": "",
+    "policy_path": "/mnt/d/lunwen/EC-CSI投稿/working/exploration/20261014_external_baseline_pilot/effect_runs/FSV-S04/AUTOPAC_STYLE/repaired/external_pilot/policy.rego",
+    "lint_exit": null,
+    "lint_report": null,
+    "accepted": true
+  },
+  "developer_results": {
+    "passed": false,
+    "rows": [
+      {
+        "id": "dev_email_positive",
+        "expected": "allow",
+        "actual": {
+          "status": "EXECUTED",
+          "decision": "deny",
+          "exit_code": 0
+        },
+        "pass": false
+      },
+      {
+        "id": "dev_email_negative",
+        "expected": "deny",
+        "actual": {
+          "status": "EXECUTED",
+          "decision": "deny",
+          "exit_code": 0
+        },
+        "pass": true
+      }
+    ]
+  },
+  "request_pair_correct": false,
+  "completed_at": "2026-10-14T04:15:59.626303+00:00"
+}

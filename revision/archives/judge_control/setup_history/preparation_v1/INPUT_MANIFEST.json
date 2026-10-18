@@ -1,0 +1,190 @@
+[
+  {
+    "path": "/mnt/d/lunwen/EC-CSI投稿/working/exploration/20261014_matched_evidence_labor/judge_control/CALL_PLAN.json",
+    "sha256": "466a62d6cf4bb9706895cb4f05906b8a47e03819283f3e1a22ba9e9b8f9d31cd"
+  },
+  {
+    "path": "/mnt/d/lunwen/EC-CSI投稿/working/exploration/20261014_matched_evidence_labor/judge_control/CANDIDATE_MAPPING.json",
+    "sha256": "ce137c92421ae522e3ec1fe2901cbf46033621d850ae9aa2d566494c5d2aebbe"
+  },
+  {
+    "path": "/mnt/d/lunwen/EC-CSI投稿/working/exploration/20261014_matched_evidence_labor/judge_control/EXECUTION_CONFIG.json",
+    "sha256": "c9892e12c7de9835610b92e62a066692806b5c313963f56a0c1544a8eaf0f6de"
+  },
+  {
+    "path": "/mnt/d/lunwen/EC-CSI投稿/working/exploration/20261014_matched_evidence_labor/judge_control/SOURCE_MANIFEST.json",
+    "sha256": "5c8c11a564f81f0488aca39c464a7297b83388c595576758b888796912044477"
+  },
+  {
+    "path": "/mnt/d/lunwen/EC-CSI投稿/working/exploration/20261014_matched_evidence_labor/judge_control/candidate_inputs/FSV-B13/A.json",
+    "sha256": "9c0a436179130de1bd8bd5bcc153ff8136e492608706c067e389b7badda19791"
+  },
+  {
+    "path": "/mnt/d/lunwen/EC-CSI投稿/working/exploration/20261014_matched_evidence_labor/judge_control/candidate_inputs/FSV-B13/B.json",
+    "sha256": "cab4a1c4226940ab2ff36694167d50c8a8a529f60e628b19dac2a4f4c75c2723"
+  },
+  {
+    "path": "/mnt/d/lunwen/EC-CSI投稿/working/exploration/20261014_matched_evidence_labor/judge_control/candidate_inputs/FSV-B17/A.json",
+    "sha256": "48c2e11033971940257cb805e2361f48537c548b3acb66aad8736728ff311c4e"
+  },
+  {
+    "path": "/mnt/d/lunwen/EC-CSI投稿/working/exploration/20261014_matched_evidence_labor/judge_control/candidate_inputs/FSV-B17/B.json",
+    "sha256": "91f08e6bec9567466f878dcdbed19506c631e8df9117c86e2a8b28829605a9cb"
+  },
+  {
+    "path": "/mnt/d/lunwen/EC-CSI投稿/working/exploration/20261014_matched_evidence_labor/judge_control/candidate_inputs/FSV-B19/A.json",
+    "sha256": "e50064ef266b67f38bf736238a32946ae7c88a8b6315a97519a5c17b71ab3712"
+  },
+  {
+    "path": "/mnt/d/lunwen/EC-CSI投稿/working/exploration/20261014_matched_evidence_labor/judge_control/candidate_inputs/FSV-B19/B.json",
+    "sha256": "cda6e9580ee5a94cb63b8afdb012c850b06638587ff21fbb979cc35bf185cd71"
+  },
+  {
+    "path": "/mnt/d/lunwen/EC-CSI投稿/working/exploration/20261014_matched_evidence_labor/judge_control/candidate_inputs/FSV-S03/A.json",
+    "sha256": "be891b5d2f4a956bc425c2187d88529ae5e13a21c4055819dfb1dfe3d11bc59b"
+  },
+  {
+    "path": "/mnt/d/lunwen/EC-CSI投稿/working/exploration/20261014_matched_evidence_labor/judge_control/candidate_inputs/FSV-S03/B.json",
+    "sha256": "5858008d4ca9d1aba9e7dcfc5209d4d880f77b09258e38524524f93870e591c8"
+  },
+  {
+    "path": "/mnt/d/lunwen/EC-CSI投稿/working/exploration/20261014_matched_evidence_labor/judge_control/generation_inputs/DOCUMENTED_OPERATOR_SEMANTICS.json",
+    "sha256": "8d110d5c5fb1b5963add2be151d1481eff4aa6c09cf4037f681ef96ba4b868ff"
+  },
+  {
+    "path": "/mnt/d/lunwen/EC-CSI投稿/working/exploration/20261014_matched_evidence_labor/judge_control/generation_inputs/FSV-B13/packet.json",
+    "sha256": "0b07fe5eb4c156c96759cb0ff7e45d58523efd87549f88932ef029003a4ecb9b"
+  },
+  {
+    "path": "/mnt/d/lunwen/EC-CSI投稿/working/exploration/20261014_matched_evidence_labor/judge_control/generation_inputs/FSV-B17/packet.json",
+    "sha256": "03e726de50a01e76c55ce26e0925632c218de4ab96339c3752d37e33535a6479"
+  },
+  {
+    "path": "/mnt/d/lunwen/EC-CSI投稿/working/exploration/20261014_matched_evidence_labor/judge_control/generation_inputs/FSV-B19/packet.json",
+    "sha256": "10c5597e97e4190aa041c53aa3aee8b4c1c48fa77d073bfb4fb5eb5a64a346fd"
+  },
+  {
+    "path": "/mnt/d/lunwen/EC-CSI投稿/working/exploration/20261014_matched_evidence_labor/judge_control/generation_inputs/FSV-S03/packet.json",
+    "sha256": "acddb441ffde6b492d77d8964ce22ba69bf037eb164daa9f8674ca1e4a8f596a"
+  },
+  {
+    "path": "/mnt/d/lunwen/EC-CSI投稿/working/exploration/20261014_matched_evidence_labor/judge_control/judge_control.py",
+    "sha256": "75097579a36de27a275c88154c6c0360c43be70ab36f71903176bc8382728981"
+  },
+  {
+    "path": "/mnt/d/lunwen/EC-CSI投稿/working/exploration/20261014_matched_evidence_labor/judge_control/prompts/FSV-B13.txt",
+    "sha256": "648ad663d617a34b26ed9b25abfeceaca7b3e4855fdfbdcc7025404a875a5825"
+  },
+  {
+    "path": "/mnt/d/lunwen/EC-CSI投稿/working/exploration/20261014_matched_evidence_labor/judge_control/prompts/FSV-B17.txt",
+    "sha256": "539fae9ab00858b2682721de9ec136db94be5e3142e35d3c495933a317cfc04e"
+  },
+  {
+    "path": "/mnt/d/lunwen/EC-CSI投稿/working/exploration/20261014_matched_evidence_labor/judge_control/prompts/FSV-B19.txt",
+    "sha256": "69e887e58dc0fadfff3ccb28afa6a23d9603f15b5fdd45c67a367d9018b022f1"
+  },
+  {
+    "path": "/mnt/d/lunwen/EC-CSI投稿/working/exploration/20261014_matched_evidence_labor/judge_control/prompts/FSV-S03.txt",
+    "sha256": "0a95f4ed7f66e8f50b423570c6cb5d9911e837858f0c6d24c755fd0e606f76e9"
+  },
+  {
+    "path": "/mnt/d/lunwen/EC-CSI投稿/working/exploration/20261014_matched_evidence_labor/judge_control/schemas/FSV-B13.json",
+    "sha256": "1157b19c0560a3421f81159234dcb43c6ab0490ffd46e11999346f9520018059"
+  },
+  {
+    "path": "/mnt/d/lunwen/EC-CSI投稿/working/exploration/20261014_matched_evidence_labor/judge_control/schemas/FSV-B17.json",
+    "sha256": "3d40ecfce71f162ee25450938aa221a722bd37d2ee98961ad3a8f271ab5e2c75"
+  },
+  {
+    "path": "/mnt/d/lunwen/EC-CSI投稿/working/exploration/20261014_matched_evidence_labor/judge_control/schemas/FSV-B19.json",
+    "sha256": "dcae180f1881edc59cf87052e5c52e01d83142c63841ea7e41bd5325a041f248"
+  },
+  {
+    "path": "/mnt/d/lunwen/EC-CSI投稿/working/exploration/20261014_matched_evidence_labor/judge_control/schemas/FSV-S03.json",
+    "sha256": "d9fe7af610bd6888072bbea0bfe9f3fbab0dfda2ded8602e09ddc44984c4f8bb"
+  },
+  {
+    "path": "/mnt/d/lunwen/EC-CSI投稿/working/exploration/20261014_matched_evidence_labor/judge_control/tool_only_contracts/FSV-B13/A.json",
+    "sha256": "32e35f1485dc02131938191da1ef90600de1c272bd4ffa7f3f00aa3428982a84"
+  },
+  {
+    "path": "/mnt/d/lunwen/EC-CSI投稿/working/exploration/20261014_matched_evidence_labor/judge_control/tool_only_contracts/FSV-B13/B.json",
+    "sha256": "32e35f1485dc02131938191da1ef90600de1c272bd4ffa7f3f00aa3428982a84"
+  },
+  {
+    "path": "/mnt/d/lunwen/EC-CSI投稿/working/exploration/20261014_matched_evidence_labor/judge_control/tool_only_contracts/FSV-B17/A.json",
+    "sha256": "ae7c83dcf8f9ee8d8bd1a0218cf8d7d72e0f54c97771e6b49e6acf387eeab0bf"
+  },
+  {
+    "path": "/mnt/d/lunwen/EC-CSI投稿/working/exploration/20261014_matched_evidence_labor/judge_control/tool_only_contracts/FSV-B17/B.json",
+    "sha256": "ae7c83dcf8f9ee8d8bd1a0218cf8d7d72e0f54c97771e6b49e6acf387eeab0bf"
+  },
+  {
+    "path": "/mnt/d/lunwen/EC-CSI投稿/working/exploration/20261014_matched_evidence_labor/judge_control/tool_only_contracts/FSV-B19/A.json",
+    "sha256": "fd0a7bbb9c3d0588d2f6e8970af7b8d9c34cf0ae82dd494bce68478c6671fd30"
+  },
+  {
+    "path": "/mnt/d/lunwen/EC-CSI投稿/working/exploration/20261014_matched_evidence_labor/judge_control/tool_only_contracts/FSV-B19/B.json",
+    "sha256": "fd0a7bbb9c3d0588d2f6e8970af7b8d9c34cf0ae82dd494bce68478c6671fd30"
+  },
+  {
+    "path": "/mnt/d/lunwen/EC-CSI投稿/working/exploration/20261014_matched_evidence_labor/judge_control/tool_only_contracts/FSV-S03/A.json",
+    "sha256": "21d2d1611b1cde80efd859d93220ed39e3852a70a3e2115a0411d8b131e76da3"
+  },
+  {
+    "path": "/mnt/d/lunwen/EC-CSI投稿/working/exploration/20261014_matched_evidence_labor/judge_control/tool_only_contracts/FSV-S03/B.json",
+    "sha256": "21d2d1611b1cde80efd859d93220ed39e3852a70a3e2115a0411d8b131e76da3"
+  },
+  {
+    "path": "/mnt/d/lunwen/tools/llm/invoke_glm_api.ps1",
+    "sha256": "5998574e3b40a4f6916531fe4b4f6b98ed372bc857412e70a1f799a0d5b445d2"
+  },
+  {
+    "path": "/root/ecas_semantic_judge_control_20261014/runtime/EC_EVIDENCE_CONTRACT_SCHEMA_V2.json",
+    "sha256": "4b8e947bfffd9b95094358f07bcc4cfcffc44239e260cd12394f57c8fbb6e765"
+  },
+  {
+    "path": "/root/ecas_semantic_judge_control_20261014/runtime/EC_EVIDENCE_CONTRACT_SCHEMA_V3.json",
+    "sha256": "733b1f5257239129040feaa9c4627b196f557d3d58208e28cda5e1deda0340dd"
+  },
+  {
+    "path": "/root/ecas_semantic_judge_control_20261014/runtime/EC_FIELD_SECURITY_MODEL_IR_SCHEMA_V2.json",
+    "sha256": "055fcfc78027e73cf6d8c71544ca33e63d4d4354f97dcae29c6f44c12f9c4053"
+  },
+  {
+    "path": "/root/ecas_semantic_judge_control_20261014/runtime/EC_FIELD_SECURITY_MODEL_IR_SCHEMA_V3.json",
+    "sha256": "d9168bf982cc37e44d994268fba54bbd0ed0640afd41e3ceea2a6eaa2eebdac6"
+  },
+  {
+    "path": "/root/ecas_semantic_judge_control_20261014/runtime/EC_FIELD_SECURITY_POLICY_SCHEMA_V2.json",
+    "sha256": "077d7bfa1f251b072cc973490c7e600f566b690bf1f155d161d1e33071765b67"
+  },
+  {
+    "path": "/root/ecas_semantic_judge_control_20261014/runtime/EC_FIELD_SECURITY_POLICY_SCHEMA_V3.json",
+    "sha256": "10073d09cfa0dcc597fe196da1169b27805ec76349671ce12f725dc3912d2cce"
+  },
+  {
+    "path": "/root/ecas_semantic_judge_control_20261014/runtime/EC_FIELD_SECURITY_PROPOSAL_SCHEMA_V2.json",
+    "sha256": "d22a110c34a2a8ecde5056cd71585ebe6694724b6e331beb2ce16b0608046cb4"
+  },
+  {
+    "path": "/root/ecas_semantic_judge_control_20261014/runtime/EC_FIELD_SECURITY_PROPOSAL_SCHEMA_V3.json",
+    "sha256": "2bd10ce48e8ef77be882b875a3ee42dfe63feaa4c686a30be50f62a09abc9b44"
+  },
+  {
+    "path": "/root/ecas_semantic_judge_control_20261014/runtime/scripts/ec_field_security_engine_v2.py",
+    "sha256": "21f65c64ea26897f62571ac147b48bc6a20c7426a48084f9cda8d0218e42d970"
+  },
+  {
+    "path": "/root/ecas_semantic_judge_control_20261014/runtime/scripts/ec_field_security_engine_v3.py",
+    "sha256": "bd509670538cb31f7a271b4d6b353a862157fe968c240218db33065c36b980e3"
+  },
+  {
+    "path": "/root/ecas_semantic_judge_control_20261014/runtime/security_knowledge/SECURITY_PRIMITIVE_CATALOG_V1.json",
+    "sha256": "89fc9b59f35ab8f491f37c718647a86fc7f557e7f6666bc526046a8210cedf5d"
+  },
+  {
+    "path": "/root/ecas_semantic_judge_control_20261014/runtime/security_knowledge/SECURITY_PRIMITIVE_CATALOG_V2.json",
+    "sha256": "d545c37fb4adda0b4428bcf5eedd379d69b51a8a70503668b611f5d89ae47b00"
+  }
+]

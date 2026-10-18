@@ -1,0 +1,33 @@
+{
+  "candidate_id": "CAND-FSV-S03",
+  "decision": "propose",
+  "evidence_refs": [
+    "VIS-FSV-S03-01",
+    "VIS-FSV-S03-RUNTIME-ABI"
+  ],
+  "ir_version": "EC-FIELD-MODEL-IR-V3",
+  "missing_evidence": [],
+  "policy_id": "POL-FSV-S03-AGE-STRICT-TYPE",
+  "reason_code": "none",
+  "rules": [
+    {
+      "evidence_refs": [
+        "VIS-FSV-S03-01",
+        "VIS-FSV-S03-RUNTIME-ABI"
+      ],
+      "op": "strict_type",
+      "params": {
+        "expected_type": "integer",
+        "on_missing": "skip",
+        "path": "/request/body/age"
+      },
+      "primitive_id": "SP-STRICT-TYPE",
+      "rule_id": "RULE-FSV-S03-AGE-STRICT-TYPE"
+    }
+  ],
+  "target": {
+    "operation": "POST /v1/clients/{clientId}/familymembers",
+    "system": "Fineract",
+    "version": "1.14.0"
+  }
+}

@@ -1,0 +1,1 @@
+{"oracle_channel":"O-I","task_window_id":"FSV-S02","vectors":[{"envelope":{"request":{"body":{"documentKey":"SYNTHETIC-DOCUMENT-KEY","documentTypeId":1,"undeclared_script":"<script>alert(1)</script>"}},"trusted":{}},"expected_class":"deny","reason":"undeclared property violates field catalog","synthetic_data_only":true,"vector_id":"FSV-S02-OI-01","vector_suffix":"OI-01"}]}

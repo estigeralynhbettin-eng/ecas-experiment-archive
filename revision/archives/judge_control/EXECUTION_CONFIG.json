@@ -1,0 +1,23 @@
+{
+  "scope_id": "ECAS-TYPED-IR-SEMANTIC-JUDGE-CONTROL-20261014-01",
+  "provider": "glm",
+  "model": "glm-5.2",
+  "thinking": "enabled",
+  "reasoning_effort": "high",
+  "max_input_tokens": 16384,
+  "max_output_tokens": 16384,
+  "judge_call_cap": 4,
+  "shared_total_attempt_cap": 44,
+  "main_root": "/mnt/d/lunwen/EC-CSI投稿/working/exploration/20261014_matched_evidence_labor/matched_generation",
+  "main_ledger": "/mnt/d/lunwen/EC-CSI投稿/working/exploration/20261014_matched_evidence_labor/matched_generation/CALL_LEDGER.json",
+  "main_state": "/mnt/d/lunwen/EC-CSI投稿/working/exploration/20261014_matched_evidence_labor/matched_generation/EXECUTION_STATE.json",
+  "lane": "/root/ecas_semantic_judge_control_20261014",
+  "pwsh": "/mnt/c/Users/PBCDCI/.cache/codex-runtimes/codex-primary-runtime/dependencies/native/powershell/pwsh.exe",
+  "wrapper": "/mnt/d/lunwen/tools/llm/invoke_glm_api.ps1",
+  "timeout_seconds": 600,
+  "model_calls_during_preparation": 0,
+  "representation": "original typed IR; no Rego conversion",
+  "tool_layers": "same-candidate IR shape compilation and Inventory gate only; no OPA equivalence claim",
+  "autoretry": false,
+  "classification": "RETROSPECTIVE_TYPED_IR_SEMANTIC_JUDGE_INTERNAL_CONTROL_NOT_NATIVE_AUTOPAC"
+}

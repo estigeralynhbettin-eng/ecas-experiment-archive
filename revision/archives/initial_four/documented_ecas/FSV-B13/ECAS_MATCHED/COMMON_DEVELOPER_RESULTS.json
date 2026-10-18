@@ -1,0 +1,44 @@
+{
+  "passed": true,
+  "rows": [
+    {
+      "id": "dev_limit",
+      "expected": "allow",
+      "actual": {
+        "policy_id": "FSV-B13-POL-001",
+        "decision": "allow",
+        "fail_closed": true,
+        "violations": []
+      },
+      "pass": true
+    },
+    {
+      "id": "dev_over",
+      "expected": "deny",
+      "actual": {
+        "policy_id": "FSV-B13-POL-001",
+        "decision": "deny",
+        "fail_closed": true,
+        "violations": [
+          {
+            "rule_id": "FSV-B13-RULE-001",
+            "code": "bounded_guard_rejected",
+            "detail": "FSV-B13-RULE-001"
+          }
+        ]
+      },
+      "pass": true
+    },
+    {
+      "id": "dev_role_exception",
+      "expected": "allow",
+      "actual": {
+        "policy_id": "FSV-B13-POL-001",
+        "decision": "allow",
+        "fail_closed": true,
+        "violations": []
+      },
+      "pass": true
+    }
+  ]
+}

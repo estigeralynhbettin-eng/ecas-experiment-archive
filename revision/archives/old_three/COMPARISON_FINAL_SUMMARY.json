@@ -1,0 +1,111 @@
+{
+  "status": "COMPLETED",
+  "classification": "RETROSPECTIVE_ADAPTED_PILOT_WITH_SEPARATE_POSTHOC_INTERFACE_REPLAY",
+  "rows": [
+    {
+      "case": "FSV-B06",
+      "method": "P2P_STYLE",
+      "initial_status": "EVALUATED",
+      "replay_status": "EVALUATED",
+      "legal": "allow",
+      "invalid": "deny",
+      "pair_correct": true,
+      "classification": "POST_HOC_ENGINEERING_INTERFACE_REPAIR_NOT_FRESH_MODEL_EFFECT",
+      "additional_model_calls": 0
+    },
+    {
+      "case": "FSV-B06",
+      "method": "AUTOPAC_STYLE",
+      "initial_status": "DEVELOPMENT_REJECTED",
+      "replay_status": "EVALUATED",
+      "legal": "allow",
+      "invalid": "deny",
+      "pair_correct": true,
+      "classification": "POST_HOC_ENGINEERING_INTERFACE_REPAIR_NOT_FRESH_MODEL_EFFECT",
+      "additional_model_calls": 0
+    },
+    {
+      "case": "FSV-B06",
+      "method": "ECAS_MATCHED",
+      "initial_status": "EVALUATED",
+      "replay_status": "EVALUATED",
+      "legal": "allow",
+      "invalid": "deny",
+      "pair_correct": true,
+      "classification": "POST_HOC_ENGINEERING_INTERFACE_REPAIR_NOT_FRESH_MODEL_EFFECT",
+      "additional_model_calls": 0
+    },
+    {
+      "case": "FSV-S02",
+      "method": "P2P_STYLE",
+      "initial_status": "OUT_OF_SCOPE",
+      "replay_status": "OUT_OF_SCOPE",
+      "legal": null,
+      "invalid": null,
+      "pair_correct": null,
+      "classification": "POST_HOC_ENGINEERING_INTERFACE_REPAIR_NOT_FRESH_MODEL_EFFECT",
+      "additional_model_calls": 0
+    },
+    {
+      "case": "FSV-S02",
+      "method": "AUTOPAC_STYLE",
+      "initial_status": "DEVELOPMENT_REJECTED",
+      "replay_status": "DEVELOPMENT_REJECTED",
+      "legal": null,
+      "invalid": null,
+      "pair_correct": null,
+      "classification": "POST_HOC_ENGINEERING_INTERFACE_REPAIR_NOT_FRESH_MODEL_EFFECT",
+      "additional_model_calls": 0
+    },
+    {
+      "case": "FSV-S02",
+      "method": "ECAS_MATCHED",
+      "initial_status": "EVALUATED",
+      "replay_status": "EVALUATED",
+      "legal": "allow",
+      "invalid": "deny",
+      "pair_correct": true,
+      "classification": "POST_HOC_ENGINEERING_INTERFACE_REPAIR_NOT_FRESH_MODEL_EFFECT",
+      "additional_model_calls": 0
+    },
+    {
+      "case": "FSV-S04",
+      "method": "P2P_STYLE",
+      "initial_status": "DEVELOPMENT_REJECTED",
+      "replay_status": "EVALUATED",
+      "legal": "allow",
+      "invalid": "allow",
+      "pair_correct": false,
+      "classification": "POST_HOC_ENGINEERING_INTERFACE_REPAIR_NOT_FRESH_MODEL_EFFECT",
+      "additional_model_calls": 0
+    },
+    {
+      "case": "FSV-S04",
+      "method": "AUTOPAC_STYLE",
+      "initial_status": "DEVELOPMENT_REJECTED",
+      "replay_status": "EVALUATED",
+      "legal": "allow",
+      "invalid": "deny",
+      "pair_correct": true,
+      "classification": "POST_HOC_ENGINEERING_INTERFACE_REPAIR_NOT_FRESH_MODEL_EFFECT",
+      "additional_model_calls": 0
+    },
+    {
+      "case": "FSV-S04",
+      "method": "ECAS_MATCHED",
+      "initial_status": "EVALUATED",
+      "replay_status": "EVALUATED",
+      "legal": "allow",
+      "invalid": "deny",
+      "pair_correct": true,
+      "classification": "POST_HOC_ENGINEERING_INTERFACE_REPAIR_NOT_FRESH_MODEL_EFFECT",
+      "additional_model_calls": 0
+    }
+  ],
+  "model_calls": 27,
+  "original_generation_summary": "FINAL_SUMMARY.json",
+  "scalar_resource_replay": "binding_replay/SUMMARY.json",
+  "object_resource_replay": "binding_replay_resource_object/SUMMARY.json",
+  "independent_samples_added": 0,
+  "scientific_whole_paper_pass": false
+}

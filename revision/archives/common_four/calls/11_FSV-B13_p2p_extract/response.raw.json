@@ -1,0 +1,28 @@
+{
+  "choices": [
+    {
+      "finish_reason": "stop",
+      "index": 0,
+      "message": {
+        "content": "{\"begin\":\"BEGIN_FSV-B13_p2p_extract_MAIN\",\"stage\":\"p2p_extract\",\"output\":{\"status\":\"READY\",\"components\":[{\"decision\":\"ALLOW\",\"subject\":\"authenticated_api_caller\",\"action\":\"POST /api/resource/Purchase Receipt\",\"resource\":\"ERPNext:16.0.0\",\"condition\":\"(/request/body/qty <= /trusted/derivedMaximumQty) OR (/trusted/authorizedRole == true)\",\"purpose\":\"Enforce Stock Settings over-delivery/receipt quantity allowance with documented authorized-role exception for Purchase Receipt qty\",\"evidence_refs\":[\"VIS-FSV-B13-01#Limit Percent\",\"VIS-FSV-B13-01#Role Allowed to Over Deliver/Receive\",\"VIS-FSV-B13-03#over_delivery_receipt_allowance\",\"VIS-FSV-B13-03#role_allowed_to_over_deliver_receive\",\"VIS-FSV-B13-RUNTIME-ABI#/request/body/qty\",\"VIS-FSV-B13-RUNTIME-ABI#/trusted/derivedMaximumQty\",\"VIS-FSV-B13-RUNTIME-ABI#/trusted/authorizedRole\"]}],\"reason\":\"Visible sources declare the configured receipt quantity allowance and the authorized-role over-receive exception; runtime ABI supplies qty, derivedMaximumQty, and authorizedRole for the target Purchase Receipt operation, matching the focused quantity constraint.\"},\"end\":\"END_FSV-B13_p2p_extract_MAIN\"}",
+        "role": "assistant"
+      }
+    }
+  ],
+  "created": 1791993312,
+  "id": "202610142353482af66240be084372",
+  "model": "glm-5.2",
+  "object": "chat.completion",
+  "request_id": "202610142353482af66240be084372",
+  "usage": {
+    "completion_tokens": 5193,
+    "completion_tokens_details": {
+      "reasoning_tokens": 4846
+    },
+    "prompt_tokens": 3876,
+    "prompt_tokens_details": {
+      "cached_tokens": 256
+    },
+    "total_tokens": 9069
+  }
+}

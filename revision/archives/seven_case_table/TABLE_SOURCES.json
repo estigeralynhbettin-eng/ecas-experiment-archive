@@ -1,0 +1,3400 @@
+{
+  "status": "SOURCE_RECONCILED_DESCRIPTIVE_TABLE_INDEPENDENT_REVIEW_PASSED",
+  "created_date": "2026-10-15",
+  "new_model_calls": 0,
+  "new_method_executions": 0,
+  "batch_A": "Archived original candidates; post-hoc interface mapping and OPA formatting recovery; original qualification failures retained.",
+  "batch_B": "Common-target protocol; first/repaired qualification and sealed original-pair evaluation; different protocol from A.",
+  "aggregation_prohibited": [
+    "pooled_accuracy",
+    "seven_case_single_protocol_claim",
+    "independent_project_count",
+    "native_baseline_performance"
+  ],
+  "sources": [
+    {
+      "task": "FSV-B06",
+      "method": "P2P_STYLE",
+      "batch": "A",
+      "row": {
+        "batch": "A",
+        "task": "FSV-B06",
+        "case_name_cn": "撤销条件",
+        "system": "Fineract",
+        "method": "P2P_STYLE",
+        "method_name_cn": "P2P适配版",
+        "original_pre_format_status": "DEVELOPMENT_REJECTED",
+        "post_format_pre_mapping_status": "EVALUATED",
+        "displayed_status": "EVALUATED",
+        "displayed_symbol": "●",
+        "original_legal_decision": "allow",
+        "original_violation_decision": "deny",
+        "pair_correct_count": 2,
+        "first_generation_eligible": "NOT_COMPARABLE",
+        "repaired_once": true,
+        "result_source": "D:\\lunwen\\EC-CSI投稿\\working\\exploration\\20261014_external_baseline_pilot\\effect_runs\\FSV-B06\\P2P_STYLE\\RESULT.json",
+        "display_source": "D:\\lunwen\\EC-CSI投稿\\working\\exploration\\20261014_external_baseline_pilot\\binding_replay_resource_object\\SUMMARY.json",
+        "final_policy_source": "D:\\lunwen\\EC-CSI投稿\\working\\exploration\\20261014_external_baseline_pilot\\binding_replay_resource_object\\FSV-B06\\P2P_STYLE\\validation\\external_pilot\\policy.rego",
+        "raw_call_indices": "5;6;7;8;9",
+        "note_cn": "原流程开发未通过；OPA格式/接口映射恢复后事后复演",
+        "project_name": "Apache Fineract"
+      },
+      "result": {
+        "path": "D:\\lunwen\\EC-CSI投稿\\working\\exploration\\20261014_external_baseline_pilot\\effect_runs\\FSV-B06\\P2P_STYLE\\RESULT.json",
+        "sha256": "f01b766309bcda0545709f8df874c558d5b7200cbe7c6a1bcb722313ee8a4f86"
+      },
+      "display_summary": {
+        "path": "D:\\lunwen\\EC-CSI投稿\\working\\exploration\\20261014_external_baseline_pilot\\binding_replay_resource_object\\SUMMARY.json",
+        "sha256": "5345278278ae46c7054bbc6c023ff46505c866ac0872f115605aefe222e5dba3"
+      },
+      "policy": {
+        "path": "D:\\lunwen\\EC-CSI投稿\\working\\exploration\\20261014_external_baseline_pilot\\binding_replay_resource_object\\FSV-B06\\P2P_STYLE\\validation\\external_pilot\\policy.rego",
+        "sha256": "59781917a104645d79ab7f64ee6abc4ae3361b7865c48ea687fa71c04fd4b9c5"
+      },
+      "calls": [
+        {
+          "index": 5,
+          "stage": "p2p_detect",
+          "original_ledger_status": "COMPLETED",
+          "raw": {
+            "path": "D:\\lunwen\\EC-CSI投稿\\working\\exploration\\20261014_external_baseline_pilot\\calls\\05_FSV-B06_p2p_detect\\response.raw.json",
+            "sha256": "742bdcc0a9a7d3444e511bb6ddf10868865c065bc46451c33596a3b28c5358a4"
+          },
+          "prompt": {
+            "path": "D:\\lunwen\\EC-CSI投稿\\working\\exploration\\20261014_external_baseline_pilot\\calls\\05_FSV-B06_p2p_detect\\prompt.txt",
+            "sha256": "3248899b3e881f268e76bac2fd92ab4d516d0b0e8086e85d48a8b32a8d64bc2b"
+          },
+          "parsed_output": {
+            "path": "D:\\lunwen\\EC-CSI投稿\\working\\exploration\\20261014_external_baseline_pilot\\calls\\05_FSV-B06_p2p_detect\\parsed_output.json",
+            "sha256": "18929b89f7d6ebb109d1a7bdd419e3d6b42b13cc16a21d7645128170cced316a"
+          }
+        },
+        {
+          "index": 6,
+          "stage": "p2p_extract",
+          "original_ledger_status": "STOPPED_PROTOCOL_OR_TRANSPORT",
+          "raw": {
+            "path": "D:\\lunwen\\EC-CSI投稿\\working\\exploration\\20261014_external_baseline_pilot\\calls\\06_FSV-B06_p2p_extract\\response.raw.json",
+            "sha256": "05f7d4b6f347c8856774608bebe486f3e9cb98bf6c20cfac257dcfbeb9d50928"
+          },
+          "prompt": {
+            "path": "D:\\lunwen\\EC-CSI投稿\\working\\exploration\\20261014_external_baseline_pilot\\calls\\06_FSV-B06_p2p_extract\\prompt.txt",
+            "sha256": "3af9be90ecd01b99f4e525bd6d68cbe1cdba0eca810f1e676d8c3dde59a9d2db"
+          },
+          "parsed_output": {
+            "path": "D:\\lunwen\\EC-CSI投稿\\working\\exploration\\20261014_external_baseline_pilot\\calls\\06_FSV-B06_p2p_extract\\recovered_output.json",
+            "sha256": "8a9358ac601dd933f29173680be40e2a825a3c1f608585572a9e926212c4f08c"
+          },
+          "local_recovery_receipt": {
+            "path": "D:\\lunwen\\EC-CSI投稿\\working\\exploration\\20261014_external_baseline_pilot\\calls\\06_FSV-B06_p2p_extract\\LOCAL_RECOVERY_RECEIPT.json",
+            "sha256": "cffa820c8e59e26986985f75b0570d32f039215c28e8edbf1f8e0b27ee6e1170"
+          }
+        },
+        {
+          "index": 7,
+          "stage": "p2p_rego",
+          "original_ledger_status": "COMPLETED",
+          "raw": {
+            "path": "D:\\lunwen\\EC-CSI投稿\\working\\exploration\\20261014_external_baseline_pilot\\calls\\07_FSV-B06_p2p_rego\\response.raw.json",
+            "sha256": "9bec9293ccc771fc44e23f31edc16b81855531d6225c8e4e0e99b3a621c8a44b"
+          },
+          "prompt": {
+            "path": "D:\\lunwen\\EC-CSI投稿\\working\\exploration\\20261014_external_baseline_pilot\\calls\\07_FSV-B06_p2p_rego\\prompt.txt",
+            "sha256": "7914d4f2fe68ba970f5c9d95671c55388a20128eaf6059c5237252bd488fe0ee"
+          },
+          "parsed_output": {
+            "path": "D:\\lunwen\\EC-CSI投稿\\working\\exploration\\20261014_external_baseline_pilot\\calls\\07_FSV-B06_p2p_rego\\parsed_output.json",
+            "sha256": "a6fdb67e256fbbaa1f4f6bc2813f15894b879de6ad539e56cc5f0985a10675cf"
+          }
+        },
+        {
+          "index": 8,
+          "stage": "p2p_tests",
+          "original_ledger_status": "COMPLETED",
+          "raw": {
+            "path": "D:\\lunwen\\EC-CSI投稿\\working\\exploration\\20261014_external_baseline_pilot\\calls\\08_FSV-B06_p2p_tests\\response.raw.json",
+            "sha256": "b389a1e63aa3a2f4e96df81387c19339e9a5cb74d95384fbf2ae29a81de13eea"
+          },
+          "prompt": {
+            "path": "D:\\lunwen\\EC-CSI投稿\\working\\exploration\\20261014_external_baseline_pilot\\calls\\08_FSV-B06_p2p_tests\\prompt.txt",
+            "sha256": "16ac03545c24be9eaeb702d49c68b0951ac76175b77ccd3982414b74b9287703"
+          },
+          "parsed_output": {
+            "path": "D:\\lunwen\\EC-CSI投稿\\working\\exploration\\20261014_external_baseline_pilot\\calls\\08_FSV-B06_p2p_tests\\parsed_output.json",
+            "sha256": "b84285a002c4adb1f7d47e192fda7080d69a2a3385da62cf05f0aa0c301da8a9"
+          }
+        },
+        {
+          "index": 9,
+          "stage": "repair",
+          "original_ledger_status": "COMPLETED",
+          "raw": {
+            "path": "D:\\lunwen\\EC-CSI投稿\\working\\exploration\\20261014_external_baseline_pilot\\calls\\09_FSV-B06_repair\\response.raw.json",
+            "sha256": "d57e85261b5c098cfb6a7476bb2ccc4944c5ae0ef36866e02f4e248c4eb56240"
+          },
+          "prompt": {
+            "path": "D:\\lunwen\\EC-CSI投稿\\working\\exploration\\20261014_external_baseline_pilot\\calls\\09_FSV-B06_repair\\prompt.txt",
+            "sha256": "dbbc55ef8489db8efe23c63556a471e8fe7dc30517774f1e939b2b1ff047d9e7"
+          },
+          "parsed_output": {
+            "path": "D:\\lunwen\\EC-CSI投稿\\working\\exploration\\20261014_external_baseline_pilot\\calls\\09_FSV-B06_repair\\parsed_output.json",
+            "sha256": "71eb9c9dff1958d8b95f6f4b8ce8b9c09e486c82315ecb000cad9c218617fd97"
+          }
+        }
+      ],
+      "original_pair": [
+        {
+          "channel": "O-L",
+          "input": {
+            "request": {
+              "body": {}
+            },
+            "trusted": {
+              "reAgeIsLatestTransaction": true
+            }
+          },
+          "mapped_input": {
+            "request": {
+              "body": {}
+            },
+            "trusted": {
+              "reAgeIsLatestTransaction": true
+            },
+            "subject": {
+              "role": "authenticated_api_caller"
+            },
+            "action": "POST /v1/loans/{loanId}/transactions/{transactionId}?command=undo",
+            "resource": {
+              "id": "Fineract:1.14.0",
+              "system": "Fineract",
+              "version": "1.14.0"
+            },
+            "subject_role": "authenticated_api_caller",
+            "resource_system": "Fineract",
+            "resource_version": "1.14.0"
+          },
+          "expected": "allow",
+          "actual": {
+            "status": "EXECUTED",
+            "decision": "allow",
+            "exit_code": 0
+          }
+        },
+        {
+          "channel": "O-I",
+          "input": {
+            "request": {
+              "body": {}
+            },
+            "trusted": {
+              "reAgeIsLatestTransaction": false
+            }
+          },
+          "mapped_input": {
+            "request": {
+              "body": {}
+            },
+            "trusted": {
+              "reAgeIsLatestTransaction": false
+            },
+            "subject": {
+              "role": "authenticated_api_caller"
+            },
+            "action": "POST /v1/loans/{loanId}/transactions/{transactionId}?command=undo",
+            "resource": {
+              "id": "Fineract:1.14.0",
+              "system": "Fineract",
+              "version": "1.14.0"
+            },
+            "subject_role": "authenticated_api_caller",
+            "resource_system": "Fineract",
+            "resource_version": "1.14.0"
+          },
+          "expected": "deny",
+          "actual": {
+            "status": "EXECUTED",
+            "decision": "deny",
+            "exit_code": 0
+          }
+        }
+      ],
+      "post_hoc_format_receipt": {
+        "source_policy_sha256": "59781917a104645d79ab7f64ee6abc4ae3361b7865c48ea687fa71c04fd4b9c5",
+        "formatted_sha256": "59781917a104645d79ab7f64ee6abc4ae3361b7865c48ea687fa71c04fd4b9c5",
+        "ast_equal_without_locations": true,
+        "source_path": "/mnt/d/lunwen/EC-CSI投稿/working/exploration/20261014_external_baseline_pilot/effect_runs/FSV-B06/P2P_STYLE/formatted/validated/external_pilot/policy.rego"
+      },
+      "pre_mapping_policy": {
+        "path": "D:\\lunwen\\EC-CSI投稿\\working\\exploration\\20261014_external_baseline_pilot\\effect_runs\\FSV-B06\\P2P_STYLE\\formatted\\validated\\external_pilot\\policy.rego",
+        "sha256": "59781917a104645d79ab7f64ee6abc4ae3361b7865c48ea687fa71c04fd4b9c5"
+      },
+      "original_pre_format_state": {
+        "path": "D:\\lunwen\\EC-CSI投稿\\working\\exploration\\20261014_external_baseline_pilot\\PRE_FORMAT_EXECUTION_STATE.json",
+        "sha256": "662511222e47847aca97ddf4de6d1b4259cfeff4103f157f999a33d030912e36"
+      }
+    },
+    {
+      "task": "FSV-B06",
+      "method": "AUTOPAC_STYLE",
+      "batch": "A",
+      "row": {
+        "batch": "A",
+        "task": "FSV-B06",
+        "case_name_cn": "撤销条件",
+        "system": "Fineract",
+        "method": "AUTOPAC_STYLE",
+        "method_name_cn": "AutoPAC适配版",
+        "original_pre_format_status": "DEVELOPMENT_REJECTED",
+        "post_format_pre_mapping_status": "DEVELOPMENT_REJECTED",
+        "displayed_status": "EVALUATED",
+        "displayed_symbol": "●",
+        "original_legal_decision": "allow",
+        "original_violation_decision": "deny",
+        "pair_correct_count": 2,
+        "first_generation_eligible": "NOT_COMPARABLE",
+        "repaired_once": true,
+        "result_source": "D:\\lunwen\\EC-CSI投稿\\working\\exploration\\20261014_external_baseline_pilot\\effect_runs\\FSV-B06\\AUTOPAC_STYLE\\RESULT.json",
+        "display_source": "D:\\lunwen\\EC-CSI投稿\\working\\exploration\\20261014_external_baseline_pilot\\binding_replay_resource_object\\SUMMARY.json",
+        "final_policy_source": "D:\\lunwen\\EC-CSI投稿\\working\\exploration\\20261014_external_baseline_pilot\\binding_replay_resource_object\\FSV-B06\\AUTOPAC_STYLE\\validation\\external_pilot\\policy.rego",
+        "raw_call_indices": "10;11;12",
+        "note_cn": "原流程开发未通过；OPA格式/接口映射恢复后事后复演",
+        "project_name": "Apache Fineract"
+      },
+      "result": {
+        "path": "D:\\lunwen\\EC-CSI投稿\\working\\exploration\\20261014_external_baseline_pilot\\effect_runs\\FSV-B06\\AUTOPAC_STYLE\\RESULT.json",
+        "sha256": "12108d426144e176534eacc48335380c0e610b2eb54d1c915ec2515f6ddaa56d"
+      },
+      "display_summary": {
+        "path": "D:\\lunwen\\EC-CSI投稿\\working\\exploration\\20261014_external_baseline_pilot\\binding_replay_resource_object\\SUMMARY.json",
+        "sha256": "5345278278ae46c7054bbc6c023ff46505c866ac0872f115605aefe222e5dba3"
+      },
+      "policy": {
+        "path": "D:\\lunwen\\EC-CSI投稿\\working\\exploration\\20261014_external_baseline_pilot\\binding_replay_resource_object\\FSV-B06\\AUTOPAC_STYLE\\validation\\external_pilot\\policy.rego",
+        "sha256": "1c5d26ad1f61a1d82672be2695520197a49bbfbb381559f076e2f0c887f8b4ea"
+      },
+      "calls": [
+        {
+          "index": 10,
+          "stage": "autopac_generate",
+          "original_ledger_status": "COMPLETED",
+          "raw": {
+            "path": "D:\\lunwen\\EC-CSI投稿\\working\\exploration\\20261014_external_baseline_pilot\\calls\\10_FSV-B06_autopac_generate\\response.raw.json",
+            "sha256": "c82ff3b4cb16c79036b4c4d8a2afd40ba84576101ca8f4f07b0d2064eacc223d"
+          },
+          "prompt": {
+            "path": "D:\\lunwen\\EC-CSI投稿\\working\\exploration\\20261014_external_baseline_pilot\\calls\\10_FSV-B06_autopac_generate\\prompt.txt",
+            "sha256": "2e431d0ad51ddb495b243d41e88998f4ad5190866a3a2d8b378e05b5e86fcf3d"
+          },
+          "parsed_output": {
+            "path": "D:\\lunwen\\EC-CSI投稿\\working\\exploration\\20261014_external_baseline_pilot\\calls\\10_FSV-B06_autopac_generate\\parsed_output.json",
+            "sha256": "7839f317484c6e97a3bf4b81bf1ae8545378cee143075ef1087bb06d12a9585f"
+          }
+        },
+        {
+          "index": 11,
+          "stage": "autopac_judge",
+          "original_ledger_status": "COMPLETED",
+          "raw": {
+            "path": "D:\\lunwen\\EC-CSI投稿\\working\\exploration\\20261014_external_baseline_pilot\\calls\\11_FSV-B06_autopac_judge\\response.raw.json",
+            "sha256": "e6f7fba2d0d0bda094a47ab87b3af75ef11a182bec5add5447710144e9e0c5c7"
+          },
+          "prompt": {
+            "path": "D:\\lunwen\\EC-CSI投稿\\working\\exploration\\20261014_external_baseline_pilot\\calls\\11_FSV-B06_autopac_judge\\prompt.txt",
+            "sha256": "a2fdf12d2f353193dc806a288a7a17e1b6ae81cd8735363a45139f788366abe2"
+          },
+          "parsed_output": {
+            "path": "D:\\lunwen\\EC-CSI投稿\\working\\exploration\\20261014_external_baseline_pilot\\calls\\11_FSV-B06_autopac_judge\\parsed_output.json",
+            "sha256": "04f209999292dd80e6379b4046fda98b58a6e1da190e56ce866de1ac2747159b"
+          }
+        },
+        {
+          "index": 12,
+          "stage": "repair",
+          "original_ledger_status": "COMPLETED",
+          "raw": {
+            "path": "D:\\lunwen\\EC-CSI投稿\\working\\exploration\\20261014_external_baseline_pilot\\calls\\12_FSV-B06_repair\\response.raw.json",
+            "sha256": "e493a200e628a0c00a5924514cfbd302b9b4c285d4cee162b35fbdeb3eec3011"
+          },
+          "prompt": {
+            "path": "D:\\lunwen\\EC-CSI投稿\\working\\exploration\\20261014_external_baseline_pilot\\calls\\12_FSV-B06_repair\\prompt.txt",
+            "sha256": "c4df70b0d5ed7ae9759a8b4759066606a40bd40af0599573001f3f7d8da1ecdf"
+          },
+          "parsed_output": {
+            "path": "D:\\lunwen\\EC-CSI投稿\\working\\exploration\\20261014_external_baseline_pilot\\calls\\12_FSV-B06_repair\\parsed_output.json",
+            "sha256": "f6fe3771a552f22547be4de54648f2aa05eb655adff78193caea3a951221ed52"
+          }
+        }
+      ],
+      "original_pair": [
+        {
+          "channel": "O-L",
+          "input": {
+            "request": {
+              "body": {}
+            },
+            "trusted": {
+              "reAgeIsLatestTransaction": true
+            }
+          },
+          "mapped_input": {
+            "request": {
+              "body": {}
+            },
+            "trusted": {
+              "reAgeIsLatestTransaction": true
+            },
+            "subject": {
+              "role": "authenticated_api_caller"
+            },
+            "action": "POST /v1/loans/{loanId}/transactions/{transactionId}?command=undo",
+            "resource": {
+              "id": "Fineract:1.14.0",
+              "system": "Fineract",
+              "version": "1.14.0"
+            },
+            "subject_role": "authenticated_api_caller",
+            "resource_system": "Fineract",
+            "resource_version": "1.14.0"
+          },
+          "expected": "allow",
+          "actual": {
+            "status": "EXECUTED",
+            "decision": "allow",
+            "exit_code": 0
+          }
+        },
+        {
+          "channel": "O-I",
+          "input": {
+            "request": {
+              "body": {}
+            },
+            "trusted": {
+              "reAgeIsLatestTransaction": false
+            }
+          },
+          "mapped_input": {
+            "request": {
+              "body": {}
+            },
+            "trusted": {
+              "reAgeIsLatestTransaction": false
+            },
+            "subject": {
+              "role": "authenticated_api_caller"
+            },
+            "action": "POST /v1/loans/{loanId}/transactions/{transactionId}?command=undo",
+            "resource": {
+              "id": "Fineract:1.14.0",
+              "system": "Fineract",
+              "version": "1.14.0"
+            },
+            "subject_role": "authenticated_api_caller",
+            "resource_system": "Fineract",
+            "resource_version": "1.14.0"
+          },
+          "expected": "deny",
+          "actual": {
+            "status": "EXECUTED",
+            "decision": "deny",
+            "exit_code": 0
+          }
+        }
+      ],
+      "post_hoc_format_receipt": {
+        "source_policy_sha256": "df2ae855232480e7ad4041fd4d6d5576301d4b414ac6483f6571018dbd9c4d77",
+        "formatted_sha256": "1c5d26ad1f61a1d82672be2695520197a49bbfbb381559f076e2f0c887f8b4ea",
+        "ast_equal_without_locations": true,
+        "source_path": "/mnt/d/lunwen/EC-CSI投稿/working/exploration/20261014_external_baseline_pilot/effect_runs/FSV-B06/AUTOPAC_STYLE/repaired/external_pilot/policy.rego"
+      },
+      "pre_mapping_policy": {
+        "path": "D:\\lunwen\\EC-CSI投稿\\working\\exploration\\20261014_external_baseline_pilot\\effect_runs\\FSV-B06\\AUTOPAC_STYLE\\repaired\\external_pilot\\policy.rego",
+        "sha256": "df2ae855232480e7ad4041fd4d6d5576301d4b414ac6483f6571018dbd9c4d77"
+      },
+      "original_pre_format_state": {
+        "path": "D:\\lunwen\\EC-CSI投稿\\working\\exploration\\20261014_external_baseline_pilot\\PRE_FORMAT_EXECUTION_STATE.json",
+        "sha256": "662511222e47847aca97ddf4de6d1b4259cfeff4103f157f999a33d030912e36"
+      }
+    },
+    {
+      "task": "FSV-B06",
+      "method": "ECAS_MATCHED",
+      "batch": "A",
+      "row": {
+        "batch": "A",
+        "task": "FSV-B06",
+        "case_name_cn": "撤销条件",
+        "system": "Fineract",
+        "method": "ECAS_MATCHED",
+        "method_name_cn": "ECAS",
+        "original_pre_format_status": "EVALUATED",
+        "post_format_pre_mapping_status": "EVALUATED",
+        "displayed_status": "EVALUATED",
+        "displayed_symbol": "●",
+        "original_legal_decision": "allow",
+        "original_violation_decision": "deny",
+        "pair_correct_count": 2,
+        "first_generation_eligible": "NOT_COMPARABLE",
+        "repaired_once": false,
+        "result_source": "D:\\lunwen\\EC-CSI投稿\\working\\exploration\\20261014_external_baseline_pilot\\effect_runs\\FSV-B06\\ECAS_MATCHED\\RESULT.json",
+        "display_source": "D:\\lunwen\\EC-CSI投稿\\working\\exploration\\20261014_external_baseline_pilot\\binding_replay_resource_object\\SUMMARY.json",
+        "final_policy_source": "D:\\lunwen\\EC-CSI投稿\\working\\exploration\\20261014_external_baseline_pilot\\effect_runs\\FSV-B06\\ECAS_MATCHED\\admitted_policy.json",
+        "raw_call_indices": "13",
+        "note_cn": "旧批次原请求对；表中沿用事后统一接口复演",
+        "project_name": "Apache Fineract"
+      },
+      "result": {
+        "path": "D:\\lunwen\\EC-CSI投稿\\working\\exploration\\20261014_external_baseline_pilot\\effect_runs\\FSV-B06\\ECAS_MATCHED\\RESULT.json",
+        "sha256": "7ce11d95dd90462618b63c697e2978132ad4250cd5d7831399272c6c6607cdb3"
+      },
+      "display_summary": {
+        "path": "D:\\lunwen\\EC-CSI投稿\\working\\exploration\\20261014_external_baseline_pilot\\binding_replay_resource_object\\SUMMARY.json",
+        "sha256": "5345278278ae46c7054bbc6c023ff46505c866ac0872f115605aefe222e5dba3"
+      },
+      "policy": {
+        "path": "D:\\lunwen\\EC-CSI投稿\\working\\exploration\\20261014_external_baseline_pilot\\effect_runs\\FSV-B06\\ECAS_MATCHED\\admitted_policy.json",
+        "sha256": "5cf6bc67f8f2c31e22a913be53f8b47aac3b2f8cd4b8f154b592de38f9c909c8"
+      },
+      "calls": [
+        {
+          "index": 13,
+          "stage": "ecas_generate",
+          "original_ledger_status": "COMPLETED",
+          "raw": {
+            "path": "D:\\lunwen\\EC-CSI投稿\\working\\exploration\\20261014_external_baseline_pilot\\calls\\13_FSV-B06_ecas_generate\\response.raw.json",
+            "sha256": "ea75f6f68d9ba16ef472bc27f6ee0f2b734a424e1bd970fd97790f0ff7c35ae8"
+          },
+          "prompt": {
+            "path": "D:\\lunwen\\EC-CSI投稿\\working\\exploration\\20261014_external_baseline_pilot\\calls\\13_FSV-B06_ecas_generate\\prompt.txt",
+            "sha256": "0e330e748141a712a1e0d7f7b8d30a8800004b51fb25809357523f62e7345313"
+          },
+          "parsed_output": {
+            "path": "D:\\lunwen\\EC-CSI投稿\\working\\exploration\\20261014_external_baseline_pilot\\calls\\13_FSV-B06_ecas_generate\\parsed_output.json",
+            "sha256": "a53726ee26b88bc9d93a3e04190fab0b3673f93f9404050d2b867a5b62b50b03"
+          }
+        }
+      ],
+      "original_pair": [
+        {
+          "channel": "O-L",
+          "input": {
+            "request": {
+              "body": {}
+            },
+            "trusted": {
+              "reAgeIsLatestTransaction": true
+            }
+          },
+          "mapped_input": {
+            "request": {
+              "body": {}
+            },
+            "trusted": {
+              "reAgeIsLatestTransaction": true
+            },
+            "subject": {
+              "role": "authenticated_api_caller"
+            },
+            "action": "POST /v1/loans/{loanId}/transactions/{transactionId}?command=undo",
+            "resource": {
+              "id": "Fineract:1.14.0",
+              "system": "Fineract",
+              "version": "1.14.0"
+            },
+            "subject_role": "authenticated_api_caller",
+            "resource_system": "Fineract",
+            "resource_version": "1.14.0"
+          },
+          "expected": "allow",
+          "actual": {
+            "policy_id": "pol-FSV-B06-reage-undo-latest-only",
+            "decision": "allow",
+            "fail_closed": true,
+            "violations": []
+          }
+        },
+        {
+          "channel": "O-I",
+          "input": {
+            "request": {
+              "body": {}
+            },
+            "trusted": {
+              "reAgeIsLatestTransaction": false
+            }
+          },
+          "mapped_input": {
+            "request": {
+              "body": {}
+            },
+            "trusted": {
+              "reAgeIsLatestTransaction": false
+            },
+            "subject": {
+              "role": "authenticated_api_caller"
+            },
+            "action": "POST /v1/loans/{loanId}/transactions/{transactionId}?command=undo",
+            "resource": {
+              "id": "Fineract:1.14.0",
+              "system": "Fineract",
+              "version": "1.14.0"
+            },
+            "subject_role": "authenticated_api_caller",
+            "resource_system": "Fineract",
+            "resource_version": "1.14.0"
+          },
+          "expected": "deny",
+          "actual": {
+            "policy_id": "pol-FSV-B06-reage-undo-latest-only",
+            "decision": "deny",
+            "fail_closed": true,
+            "violations": [
+              {
+                "rule_id": "rule-FSV-B06-reage-undo-latest-only",
+                "code": "bounded_guard_rejected",
+                "detail": "rule-FSV-B06-reage-undo-latest-only"
+              }
+            ]
+          }
+        }
+      ],
+      "original_pre_format_state": {
+        "path": "D:\\lunwen\\EC-CSI投稿\\working\\exploration\\20261014_external_baseline_pilot\\PRE_FORMAT_EXECUTION_STATE.json",
+        "sha256": "662511222e47847aca97ddf4de6d1b4259cfeff4103f157f999a33d030912e36"
+      }
+    },
+    {
+      "task": "FSV-S02",
+      "method": "P2P_STYLE",
+      "batch": "A",
+      "row": {
+        "batch": "A",
+        "task": "FSV-S02",
+        "case_name_cn": "字段白名单",
+        "system": "Fineract",
+        "method": "P2P_STYLE",
+        "method_name_cn": "P2P适配版",
+        "original_pre_format_status": "OUT_OF_SCOPE",
+        "post_format_pre_mapping_status": "OUT_OF_SCOPE",
+        "displayed_status": "OUT_OF_SCOPE",
+        "displayed_symbol": "—",
+        "original_legal_decision": "NOT_EXECUTED",
+        "original_violation_decision": "NOT_EXECUTED",
+        "pair_correct_count": null,
+        "first_generation_eligible": "NOT_COMPARABLE",
+        "repaired_once": false,
+        "result_source": "D:\\lunwen\\EC-CSI投稿\\working\\exploration\\20261014_external_baseline_pilot\\effect_runs\\FSV-S02\\P2P_STYLE\\RESULT.json",
+        "display_source": "D:\\lunwen\\EC-CSI投稿\\working\\exploration\\20261014_external_baseline_pilot\\binding_replay_resource_object\\SUMMARY.json",
+        "final_policy_source": "NONE",
+        "raw_call_indices": "14",
+        "note_cn": "检测阶段声明范围外，未执行",
+        "project_name": "Apache Fineract"
+      },
+      "result": {
+        "path": "D:\\lunwen\\EC-CSI投稿\\working\\exploration\\20261014_external_baseline_pilot\\effect_runs\\FSV-S02\\P2P_STYLE\\RESULT.json",
+        "sha256": "63a8b43a00697500b339d443ab754b877dfb56f2425dbb01ac2c5f17e9ee2f78"
+      },
+      "display_summary": {
+        "path": "D:\\lunwen\\EC-CSI投稿\\working\\exploration\\20261014_external_baseline_pilot\\binding_replay_resource_object\\SUMMARY.json",
+        "sha256": "5345278278ae46c7054bbc6c023ff46505c866ac0872f115605aefe222e5dba3"
+      },
+      "policy": null,
+      "calls": [
+        {
+          "index": 14,
+          "stage": "p2p_detect",
+          "original_ledger_status": "COMPLETED",
+          "raw": {
+            "path": "D:\\lunwen\\EC-CSI投稿\\working\\exploration\\20261014_external_baseline_pilot\\calls\\14_FSV-S02_p2p_detect\\response.raw.json",
+            "sha256": "3a4d918539db6515bdc003f909cf0645526ef6a7e319748dc28e84122e713974"
+          },
+          "prompt": {
+            "path": "D:\\lunwen\\EC-CSI投稿\\working\\exploration\\20261014_external_baseline_pilot\\calls\\14_FSV-S02_p2p_detect\\prompt.txt",
+            "sha256": "b27eea78185e7b7ff962a2f32455a864aa494a9bfd55fecf3f25f0af2e9f922b"
+          },
+          "parsed_output": {
+            "path": "D:\\lunwen\\EC-CSI投稿\\working\\exploration\\20261014_external_baseline_pilot\\calls\\14_FSV-S02_p2p_detect\\parsed_output.json",
+            "sha256": "d17c721cf1770dd1a29cc9bd28fc497c0135ef69f57e1dd99f5481295ea19b8e"
+          }
+        }
+      ],
+      "original_pair": [],
+      "original_pre_format_state": {
+        "path": "D:\\lunwen\\EC-CSI投稿\\working\\exploration\\20261014_external_baseline_pilot\\PRE_FORMAT_EXECUTION_STATE.json",
+        "sha256": "662511222e47847aca97ddf4de6d1b4259cfeff4103f157f999a33d030912e36"
+      }
+    },
+    {
+      "task": "FSV-S02",
+      "method": "AUTOPAC_STYLE",
+      "batch": "A",
+      "row": {
+        "batch": "A",
+        "task": "FSV-S02",
+        "case_name_cn": "字段白名单",
+        "system": "Fineract",
+        "method": "AUTOPAC_STYLE",
+        "method_name_cn": "AutoPAC适配版",
+        "original_pre_format_status": "DEVELOPMENT_REJECTED",
+        "post_format_pre_mapping_status": "DEVELOPMENT_REJECTED",
+        "displayed_status": "DEVELOPMENT_REJECTED",
+        "displayed_symbol": "—",
+        "original_legal_decision": "NOT_EXECUTED",
+        "original_violation_decision": "NOT_EXECUTED",
+        "pair_correct_count": null,
+        "first_generation_eligible": "NOT_COMPARABLE",
+        "repaired_once": true,
+        "result_source": "D:\\lunwen\\EC-CSI投稿\\working\\exploration\\20261014_external_baseline_pilot\\effect_runs\\FSV-S02\\AUTOPAC_STYLE\\RESULT.json",
+        "display_source": "D:\\lunwen\\EC-CSI投稿\\working\\exploration\\20261014_external_baseline_pilot\\binding_replay_resource_object\\SUMMARY.json",
+        "final_policy_source": "D:\\lunwen\\EC-CSI投稿\\working\\exploration\\20261014_external_baseline_pilot\\effect_runs\\FSV-S02\\AUTOPAC_STYLE\\repaired\\external_pilot\\policy.rego",
+        "raw_call_indices": "15;16;17",
+        "note_cn": "开发阶段编译失败，未获执行资格",
+        "project_name": "Apache Fineract"
+      },
+      "result": {
+        "path": "D:\\lunwen\\EC-CSI投稿\\working\\exploration\\20261014_external_baseline_pilot\\effect_runs\\FSV-S02\\AUTOPAC_STYLE\\RESULT.json",
+        "sha256": "0089e5c8f6648cd382577e88a5d1914c5540fe7486b0dc17e45a39118967f2ce"
+      },
+      "display_summary": {
+        "path": "D:\\lunwen\\EC-CSI投稿\\working\\exploration\\20261014_external_baseline_pilot\\binding_replay_resource_object\\SUMMARY.json",
+        "sha256": "5345278278ae46c7054bbc6c023ff46505c866ac0872f115605aefe222e5dba3"
+      },
+      "policy": {
+        "path": "D:\\lunwen\\EC-CSI投稿\\working\\exploration\\20261014_external_baseline_pilot\\effect_runs\\FSV-S02\\AUTOPAC_STYLE\\repaired\\external_pilot\\policy.rego",
+        "sha256": "3e28d8eab3e67b126c736bc8d5c8f48497703ceb6f53383bc2fc08f3a4402efe"
+      },
+      "calls": [
+        {
+          "index": 15,
+          "stage": "autopac_generate",
+          "original_ledger_status": "COMPLETED",
+          "raw": {
+            "path": "D:\\lunwen\\EC-CSI投稿\\working\\exploration\\20261014_external_baseline_pilot\\calls\\15_FSV-S02_autopac_generate\\response.raw.json",
+            "sha256": "6cbe5572e7fd4f6b3bbaf1687a3427646b607fa259057a5b90d46ed2d17b4fdc"
+          },
+          "prompt": {
+            "path": "D:\\lunwen\\EC-CSI投稿\\working\\exploration\\20261014_external_baseline_pilot\\calls\\15_FSV-S02_autopac_generate\\prompt.txt",
+            "sha256": "2310fcdce7f7cb9f2597db38558d026db208ff2bdfc2c3889c340e27f666b1cc"
+          },
+          "parsed_output": {
+            "path": "D:\\lunwen\\EC-CSI投稿\\working\\exploration\\20261014_external_baseline_pilot\\calls\\15_FSV-S02_autopac_generate\\parsed_output.json",
+            "sha256": "9bfa733511ea5a68a928770d207263748cf3da678c1bbaccf6b506ea8398b47e"
+          }
+        },
+        {
+          "index": 16,
+          "stage": "autopac_judge",
+          "original_ledger_status": "COMPLETED",
+          "raw": {
+            "path": "D:\\lunwen\\EC-CSI投稿\\working\\exploration\\20261014_external_baseline_pilot\\calls\\16_FSV-S02_autopac_judge\\response.raw.json",
+            "sha256": "acd94d82c97664d09f74ee572f787a35341d74a5e991613baf052cb466ca61d5"
+          },
+          "prompt": {
+            "path": "D:\\lunwen\\EC-CSI投稿\\working\\exploration\\20261014_external_baseline_pilot\\calls\\16_FSV-S02_autopac_judge\\prompt.txt",
+            "sha256": "5fa5f8cf96134a383343cec6c722fd8d48ec47ea519af1fd0844362b059e6cf4"
+          },
+          "parsed_output": {
+            "path": "D:\\lunwen\\EC-CSI投稿\\working\\exploration\\20261014_external_baseline_pilot\\calls\\16_FSV-S02_autopac_judge\\parsed_output.json",
+            "sha256": "eddab795ac57a0be086f476d9d99cc9f07088806c604cbb29cdece4a23f54d5a"
+          }
+        },
+        {
+          "index": 17,
+          "stage": "repair",
+          "original_ledger_status": "COMPLETED",
+          "raw": {
+            "path": "D:\\lunwen\\EC-CSI投稿\\working\\exploration\\20261014_external_baseline_pilot\\calls\\17_FSV-S02_repair\\response.raw.json",
+            "sha256": "d38dfb77b9284c1d09ab51821e42f5404835bf627fff29d22aa898910e087b9c"
+          },
+          "prompt": {
+            "path": "D:\\lunwen\\EC-CSI投稿\\working\\exploration\\20261014_external_baseline_pilot\\calls\\17_FSV-S02_repair\\prompt.txt",
+            "sha256": "8177f56e8f44089f5b4ef7866eadbd47059331ef1ac7dddbc59f9bb44ff1fcd0"
+          },
+          "parsed_output": {
+            "path": "D:\\lunwen\\EC-CSI投稿\\working\\exploration\\20261014_external_baseline_pilot\\calls\\17_FSV-S02_repair\\parsed_output.json",
+            "sha256": "00fa3e18e6b0b72e8a553e5831bee753294f3cd793602a069574f5e057ed6753"
+          }
+        }
+      ],
+      "original_pair": [],
+      "original_pre_format_state": {
+        "path": "D:\\lunwen\\EC-CSI投稿\\working\\exploration\\20261014_external_baseline_pilot\\PRE_FORMAT_EXECUTION_STATE.json",
+        "sha256": "662511222e47847aca97ddf4de6d1b4259cfeff4103f157f999a33d030912e36"
+      }
+    },
+    {
+      "task": "FSV-S02",
+      "method": "ECAS_MATCHED",
+      "batch": "A",
+      "row": {
+        "batch": "A",
+        "task": "FSV-S02",
+        "case_name_cn": "字段白名单",
+        "system": "Fineract",
+        "method": "ECAS_MATCHED",
+        "method_name_cn": "ECAS",
+        "original_pre_format_status": "EVALUATED",
+        "post_format_pre_mapping_status": "EVALUATED",
+        "displayed_status": "EVALUATED",
+        "displayed_symbol": "●",
+        "original_legal_decision": "allow",
+        "original_violation_decision": "deny",
+        "pair_correct_count": 2,
+        "first_generation_eligible": "NOT_COMPARABLE",
+        "repaired_once": false,
+        "result_source": "D:\\lunwen\\EC-CSI投稿\\working\\exploration\\20261014_external_baseline_pilot\\effect_runs\\FSV-S02\\ECAS_MATCHED\\RESULT.json",
+        "display_source": "D:\\lunwen\\EC-CSI投稿\\working\\exploration\\20261014_external_baseline_pilot\\binding_replay_resource_object\\SUMMARY.json",
+        "final_policy_source": "D:\\lunwen\\EC-CSI投稿\\working\\exploration\\20261014_external_baseline_pilot\\effect_runs\\FSV-S02\\ECAS_MATCHED\\admitted_policy.json",
+        "raw_call_indices": "18",
+        "note_cn": "旧批次原请求对；表中沿用事后统一接口复演",
+        "project_name": "Apache Fineract"
+      },
+      "result": {
+        "path": "D:\\lunwen\\EC-CSI投稿\\working\\exploration\\20261014_external_baseline_pilot\\effect_runs\\FSV-S02\\ECAS_MATCHED\\RESULT.json",
+        "sha256": "6f6a57b261d3225205f6c946ab07b53a43ba71fb53034cdfe0de661ece1f0d59"
+      },
+      "display_summary": {
+        "path": "D:\\lunwen\\EC-CSI投稿\\working\\exploration\\20261014_external_baseline_pilot\\binding_replay_resource_object\\SUMMARY.json",
+        "sha256": "5345278278ae46c7054bbc6c023ff46505c866ac0872f115605aefe222e5dba3"
+      },
+      "policy": {
+        "path": "D:\\lunwen\\EC-CSI投稿\\working\\exploration\\20261014_external_baseline_pilot\\effect_runs\\FSV-S02\\ECAS_MATCHED\\admitted_policy.json",
+        "sha256": "996e022383557449a4b8a9663b8bf5457544e5065ffdc7bb4677842ab368bdff"
+      },
+      "calls": [
+        {
+          "index": 18,
+          "stage": "ecas_generate",
+          "original_ledger_status": "COMPLETED",
+          "raw": {
+            "path": "D:\\lunwen\\EC-CSI投稿\\working\\exploration\\20261014_external_baseline_pilot\\calls\\18_FSV-S02_ecas_generate\\response.raw.json",
+            "sha256": "b083f036f9f7399ff0f66cca517a1404a7eaf7f65770eace36e88c97e40e5483"
+          },
+          "prompt": {
+            "path": "D:\\lunwen\\EC-CSI投稿\\working\\exploration\\20261014_external_baseline_pilot\\calls\\18_FSV-S02_ecas_generate\\prompt.txt",
+            "sha256": "b4222cca4ec0eb17173806ec519adfaff586e6fb2da98de35bfc39c71e42a9d7"
+          },
+          "parsed_output": {
+            "path": "D:\\lunwen\\EC-CSI投稿\\working\\exploration\\20261014_external_baseline_pilot\\calls\\18_FSV-S02_ecas_generate\\parsed_output.json",
+            "sha256": "02847bbc9317d8352285815d55db526f8abe42befa6207058614fbe73e619efc"
+          }
+        }
+      ],
+      "original_pair": [
+        {
+          "channel": "O-L",
+          "input": {
+            "request": {
+              "body": {
+                "documentKey": "SYNTHETIC-DOCUMENT-KEY",
+                "documentTypeId": 1,
+                "status": "Active"
+              }
+            },
+            "trusted": {}
+          },
+          "mapped_input": {
+            "request": {
+              "body": {
+                "documentKey": "SYNTHETIC-DOCUMENT-KEY",
+                "documentTypeId": 1,
+                "status": "Active"
+              }
+            },
+            "trusted": {},
+            "subject": {
+              "role": "authenticated_api_caller"
+            },
+            "action": "POST /v1/clients/{clientId}/identifiers",
+            "resource": {
+              "id": "Fineract:1.14.0",
+              "system": "Fineract",
+              "version": "1.14.0"
+            },
+            "subject_role": "authenticated_api_caller",
+            "resource_system": "Fineract",
+            "resource_version": "1.14.0"
+          },
+          "expected": "allow",
+          "actual": {
+            "policy_id": "pol-FSV-S02-001",
+            "decision": "allow",
+            "fail_closed": true,
+            "violations": []
+          }
+        },
+        {
+          "channel": "O-I",
+          "input": {
+            "request": {
+              "body": {
+                "documentKey": "SYNTHETIC-DOCUMENT-KEY",
+                "documentTypeId": 1,
+                "undeclared_script": "<script>alert(1)</script>"
+              }
+            },
+            "trusted": {}
+          },
+          "mapped_input": {
+            "request": {
+              "body": {
+                "documentKey": "SYNTHETIC-DOCUMENT-KEY",
+                "documentTypeId": 1,
+                "undeclared_script": "<script>alert(1)</script>"
+              }
+            },
+            "trusted": {},
+            "subject": {
+              "role": "authenticated_api_caller"
+            },
+            "action": "POST /v1/clients/{clientId}/identifiers",
+            "resource": {
+              "id": "Fineract:1.14.0",
+              "system": "Fineract",
+              "version": "1.14.0"
+            },
+            "subject_role": "authenticated_api_caller",
+            "resource_system": "Fineract",
+            "resource_version": "1.14.0"
+          },
+          "expected": "deny",
+          "actual": {
+            "policy_id": "pol-FSV-S02-001",
+            "decision": "deny",
+            "fail_closed": true,
+            "violations": [
+              {
+                "rule_id": "rule-FSV-S02-001",
+                "code": "unexpected_fields",
+                "detail": "undeclared_script"
+              }
+            ]
+          }
+        }
+      ],
+      "original_pre_format_state": {
+        "path": "D:\\lunwen\\EC-CSI投稿\\working\\exploration\\20261014_external_baseline_pilot\\PRE_FORMAT_EXECUTION_STATE.json",
+        "sha256": "662511222e47847aca97ddf4de6d1b4259cfeff4103f157f999a33d030912e36"
+      }
+    },
+    {
+      "task": "FSV-S04",
+      "method": "P2P_STYLE",
+      "batch": "A",
+      "row": {
+        "batch": "A",
+        "task": "FSV-S04",
+        "case_name_cn": "邮箱格式",
+        "system": "ERPNext",
+        "method": "P2P_STYLE",
+        "method_name_cn": "P2P适配版",
+        "original_pre_format_status": "DEVELOPMENT_REJECTED",
+        "post_format_pre_mapping_status": "DEVELOPMENT_REJECTED",
+        "displayed_status": "EVALUATED",
+        "displayed_symbol": "◐",
+        "original_legal_decision": "allow",
+        "original_violation_decision": "allow",
+        "pair_correct_count": 1,
+        "first_generation_eligible": "NOT_COMPARABLE",
+        "repaired_once": true,
+        "result_source": "D:\\lunwen\\EC-CSI投稿\\working\\exploration\\20261014_external_baseline_pilot\\effect_runs\\FSV-S04\\P2P_STYLE\\RESULT.json",
+        "display_source": "D:\\lunwen\\EC-CSI投稿\\working\\exploration\\20261014_external_baseline_pilot\\binding_replay_resource_object\\SUMMARY.json",
+        "final_policy_source": "D:\\lunwen\\EC-CSI投稿\\working\\exploration\\20261014_external_baseline_pilot\\binding_replay_resource_object\\FSV-S04\\P2P_STYLE\\validation\\external_pilot\\policy.rego",
+        "raw_call_indices": "19;20;21;22;23",
+        "note_cn": "事后复演允许合法邮箱，也允许错误邮箱；遗漏格式约束",
+        "project_name": "ERPNext"
+      },
+      "result": {
+        "path": "D:\\lunwen\\EC-CSI投稿\\working\\exploration\\20261014_external_baseline_pilot\\effect_runs\\FSV-S04\\P2P_STYLE\\RESULT.json",
+        "sha256": "33d6c92eac95904541a5715b7e850cfa75b366c9eacf24589d2edc35a5a448a3"
+      },
+      "display_summary": {
+        "path": "D:\\lunwen\\EC-CSI投稿\\working\\exploration\\20261014_external_baseline_pilot\\binding_replay_resource_object\\SUMMARY.json",
+        "sha256": "5345278278ae46c7054bbc6c023ff46505c866ac0872f115605aefe222e5dba3"
+      },
+      "policy": {
+        "path": "D:\\lunwen\\EC-CSI投稿\\working\\exploration\\20261014_external_baseline_pilot\\binding_replay_resource_object\\FSV-S04\\P2P_STYLE\\validation\\external_pilot\\policy.rego",
+        "sha256": "2cd16b9beefa3bd8f675ddac37fc85dce1dcab22746939950e0714753923294b"
+      },
+      "calls": [
+        {
+          "index": 19,
+          "stage": "p2p_detect",
+          "original_ledger_status": "COMPLETED",
+          "raw": {
+            "path": "D:\\lunwen\\EC-CSI投稿\\working\\exploration\\20261014_external_baseline_pilot\\calls\\19_FSV-S04_p2p_detect\\response.raw.json",
+            "sha256": "0619de7d33e27b992fb1536776631447ce87410c8a207582eca4c458529881b3"
+          },
+          "prompt": {
+            "path": "D:\\lunwen\\EC-CSI投稿\\working\\exploration\\20261014_external_baseline_pilot\\calls\\19_FSV-S04_p2p_detect\\prompt.txt",
+            "sha256": "62c99a2eb27833b62e2e0baa2f239d2059f6519d354958cbc8a9108c37ae89a5"
+          },
+          "parsed_output": {
+            "path": "D:\\lunwen\\EC-CSI投稿\\working\\exploration\\20261014_external_baseline_pilot\\calls\\19_FSV-S04_p2p_detect\\parsed_output.json",
+            "sha256": "1e87ee35c700d44e69f02c0bee925091621051e398fa06eeed543e8dc39c65c6"
+          }
+        },
+        {
+          "index": 20,
+          "stage": "p2p_extract",
+          "original_ledger_status": "COMPLETED",
+          "raw": {
+            "path": "D:\\lunwen\\EC-CSI投稿\\working\\exploration\\20261014_external_baseline_pilot\\calls\\20_FSV-S04_p2p_extract\\response.raw.json",
+            "sha256": "e617412dd14a9ba81e2783f1848a47ab5a6358c2b6e075f758f54378c8178011"
+          },
+          "prompt": {
+            "path": "D:\\lunwen\\EC-CSI投稿\\working\\exploration\\20261014_external_baseline_pilot\\calls\\20_FSV-S04_p2p_extract\\prompt.txt",
+            "sha256": "eed013fb19d345c7ed4f49b0b058b320caf7c893d9a8e255fa837ecdc470ce86"
+          },
+          "parsed_output": {
+            "path": "D:\\lunwen\\EC-CSI投稿\\working\\exploration\\20261014_external_baseline_pilot\\calls\\20_FSV-S04_p2p_extract\\parsed_output.json",
+            "sha256": "b6d2299ff2b3cb767bf5e6d5911f5e548e79ffeab83ee0e496a492dcb440dcc6"
+          }
+        },
+        {
+          "index": 21,
+          "stage": "p2p_rego",
+          "original_ledger_status": "COMPLETED",
+          "raw": {
+            "path": "D:\\lunwen\\EC-CSI投稿\\working\\exploration\\20261014_external_baseline_pilot\\calls\\21_FSV-S04_p2p_rego\\response.raw.json",
+            "sha256": "922b5e55fe9246bc8f01150b40fd33dc7364952a84b3272fcedfe5a47bf3d91e"
+          },
+          "prompt": {
+            "path": "D:\\lunwen\\EC-CSI投稿\\working\\exploration\\20261014_external_baseline_pilot\\calls\\21_FSV-S04_p2p_rego\\prompt.txt",
+            "sha256": "8c6dd58f836f3028b0b2795c144d92ce9ee9cfba85c550a9cc2770b5936e494e"
+          },
+          "parsed_output": {
+            "path": "D:\\lunwen\\EC-CSI投稿\\working\\exploration\\20261014_external_baseline_pilot\\calls\\21_FSV-S04_p2p_rego\\parsed_output.json",
+            "sha256": "06f7d66130515cacb25ee7b17461dd02c4cc7240ca16916bff29626ea878f102"
+          }
+        },
+        {
+          "index": 22,
+          "stage": "p2p_tests",
+          "original_ledger_status": "COMPLETED",
+          "raw": {
+            "path": "D:\\lunwen\\EC-CSI投稿\\working\\exploration\\20261014_external_baseline_pilot\\calls\\22_FSV-S04_p2p_tests\\response.raw.json",
+            "sha256": "5639293e39c7c419370e427b759063b34b505798b0472c5c5d37bd0134f2e719"
+          },
+          "prompt": {
+            "path": "D:\\lunwen\\EC-CSI投稿\\working\\exploration\\20261014_external_baseline_pilot\\calls\\22_FSV-S04_p2p_tests\\prompt.txt",
+            "sha256": "bacbf5ad2e9a8e63891138b7b6cfea38a64ed2a3b4016ccaeb801b6bae7e6b7b"
+          },
+          "parsed_output": {
+            "path": "D:\\lunwen\\EC-CSI投稿\\working\\exploration\\20261014_external_baseline_pilot\\calls\\22_FSV-S04_p2p_tests\\parsed_output.json",
+            "sha256": "86c9fe66ab172a9688a50ab04c7727a6916b549012efa1fa3ccbcd72773e08f6"
+          }
+        },
+        {
+          "index": 23,
+          "stage": "repair",
+          "original_ledger_status": "COMPLETED",
+          "raw": {
+            "path": "D:\\lunwen\\EC-CSI投稿\\working\\exploration\\20261014_external_baseline_pilot\\calls\\23_FSV-S04_repair\\response.raw.json",
+            "sha256": "2c285abe05aa04508aad596d98a4143b91669084f95a32e3dc73f232d1cd9b39"
+          },
+          "prompt": {
+            "path": "D:\\lunwen\\EC-CSI投稿\\working\\exploration\\20261014_external_baseline_pilot\\calls\\23_FSV-S04_repair\\prompt.txt",
+            "sha256": "03ff8b04c5029483daeb4eefb9893a652c69c88dc62a414e449f898aba150763"
+          },
+          "parsed_output": {
+            "path": "D:\\lunwen\\EC-CSI投稿\\working\\exploration\\20261014_external_baseline_pilot\\calls\\23_FSV-S04_repair\\parsed_output.json",
+            "sha256": "b60a7ed9458fc0a4f326541aba36cb26d0e7eace7167d871016bee4aeab9e749"
+          }
+        }
+      ],
+      "original_pair": [
+        {
+          "channel": "O-L",
+          "input": {
+            "request": {
+              "body": {
+                "email_id": "oracle@example.invalid",
+                "first_name": "ECV2 Oracle",
+                "status": "Lead"
+              }
+            },
+            "trusted": {}
+          },
+          "mapped_input": {
+            "request": {
+              "body": {
+                "email_id": "oracle@example.invalid",
+                "first_name": "ECV2 Oracle",
+                "status": "Lead"
+              }
+            },
+            "trusted": {},
+            "subject": {
+              "role": "authenticated_api_caller"
+            },
+            "action": "POST /api/resource/Lead",
+            "resource": {
+              "id": "ERPNext:16.0.0",
+              "system": "ERPNext",
+              "version": "16.0.0"
+            },
+            "subject_role": "authenticated_api_caller",
+            "resource_system": "ERPNext",
+            "resource_version": "16.0.0"
+          },
+          "expected": "allow",
+          "actual": {
+            "status": "EXECUTED",
+            "decision": "allow",
+            "exit_code": 0
+          }
+        },
+        {
+          "channel": "O-I",
+          "input": {
+            "request": {
+              "body": {
+                "email_id": "not-an-email",
+                "first_name": "ECV2 Oracle",
+                "status": "Lead"
+              }
+            },
+            "trusted": {}
+          },
+          "mapped_input": {
+            "request": {
+              "body": {
+                "email_id": "not-an-email",
+                "first_name": "ECV2 Oracle",
+                "status": "Lead"
+              }
+            },
+            "trusted": {},
+            "subject": {
+              "role": "authenticated_api_caller"
+            },
+            "action": "POST /api/resource/Lead",
+            "resource": {
+              "id": "ERPNext:16.0.0",
+              "system": "ERPNext",
+              "version": "16.0.0"
+            },
+            "subject_role": "authenticated_api_caller",
+            "resource_system": "ERPNext",
+            "resource_version": "16.0.0"
+          },
+          "expected": "deny",
+          "actual": {
+            "status": "EXECUTED",
+            "decision": "allow",
+            "exit_code": 0
+          }
+        }
+      ],
+      "post_hoc_format_receipt": {
+        "source_policy_sha256": "2cd16b9beefa3bd8f675ddac37fc85dce1dcab22746939950e0714753923294b",
+        "formatted_sha256": "2cd16b9beefa3bd8f675ddac37fc85dce1dcab22746939950e0714753923294b",
+        "ast_equal_without_locations": true,
+        "source_path": "/mnt/d/lunwen/EC-CSI投稿/working/exploration/20261014_external_baseline_pilot/effect_runs/FSV-S04/P2P_STYLE/repaired/external_pilot/policy.rego"
+      },
+      "pre_mapping_policy": {
+        "path": "D:\\lunwen\\EC-CSI投稿\\working\\exploration\\20261014_external_baseline_pilot\\effect_runs\\FSV-S04\\P2P_STYLE\\repaired\\external_pilot\\policy.rego",
+        "sha256": "2cd16b9beefa3bd8f675ddac37fc85dce1dcab22746939950e0714753923294b"
+      },
+      "original_pre_format_state": {
+        "path": "D:\\lunwen\\EC-CSI投稿\\working\\exploration\\20261014_external_baseline_pilot\\PRE_FORMAT_EXECUTION_STATE.json",
+        "sha256": "662511222e47847aca97ddf4de6d1b4259cfeff4103f157f999a33d030912e36"
+      }
+    },
+    {
+      "task": "FSV-S04",
+      "method": "AUTOPAC_STYLE",
+      "batch": "A",
+      "row": {
+        "batch": "A",
+        "task": "FSV-S04",
+        "case_name_cn": "邮箱格式",
+        "system": "ERPNext",
+        "method": "AUTOPAC_STYLE",
+        "method_name_cn": "AutoPAC适配版",
+        "original_pre_format_status": "DEVELOPMENT_REJECTED",
+        "post_format_pre_mapping_status": "DEVELOPMENT_REJECTED",
+        "displayed_status": "EVALUATED",
+        "displayed_symbol": "●",
+        "original_legal_decision": "allow",
+        "original_violation_decision": "deny",
+        "pair_correct_count": 2,
+        "first_generation_eligible": "NOT_COMPARABLE",
+        "repaired_once": true,
+        "result_source": "D:\\lunwen\\EC-CSI投稿\\working\\exploration\\20261014_external_baseline_pilot\\effect_runs\\FSV-S04\\AUTOPAC_STYLE\\RESULT.json",
+        "display_source": "D:\\lunwen\\EC-CSI投稿\\working\\exploration\\20261014_external_baseline_pilot\\binding_replay_resource_object\\SUMMARY.json",
+        "final_policy_source": "D:\\lunwen\\EC-CSI投稿\\working\\exploration\\20261014_external_baseline_pilot\\binding_replay_resource_object\\FSV-S04\\AUTOPAC_STYLE\\validation\\external_pilot\\policy.rego",
+        "raw_call_indices": "24;25;26",
+        "note_cn": "原流程开发未通过；OPA格式/接口映射恢复后事后复演",
+        "project_name": "ERPNext"
+      },
+      "result": {
+        "path": "D:\\lunwen\\EC-CSI投稿\\working\\exploration\\20261014_external_baseline_pilot\\effect_runs\\FSV-S04\\AUTOPAC_STYLE\\RESULT.json",
+        "sha256": "cd17f1811192ebf66a7c96358174c55fe3573480cab5918af0e00c10d470c618"
+      },
+      "display_summary": {
+        "path": "D:\\lunwen\\EC-CSI投稿\\working\\exploration\\20261014_external_baseline_pilot\\binding_replay_resource_object\\SUMMARY.json",
+        "sha256": "5345278278ae46c7054bbc6c023ff46505c866ac0872f115605aefe222e5dba3"
+      },
+      "policy": {
+        "path": "D:\\lunwen\\EC-CSI投稿\\working\\exploration\\20261014_external_baseline_pilot\\binding_replay_resource_object\\FSV-S04\\AUTOPAC_STYLE\\validation\\external_pilot\\policy.rego",
+        "sha256": "ed176217afffc434f2debccb4584f41e9263a7cbef812af9db5ab991f549c0ce"
+      },
+      "calls": [
+        {
+          "index": 24,
+          "stage": "autopac_generate",
+          "original_ledger_status": "COMPLETED",
+          "raw": {
+            "path": "D:\\lunwen\\EC-CSI投稿\\working\\exploration\\20261014_external_baseline_pilot\\calls\\24_FSV-S04_autopac_generate\\response.raw.json",
+            "sha256": "bfb3bfca2c9ab2c93754a1cafa52b71e5bf0d7f3ecc12274bbb9004f8eb87273"
+          },
+          "prompt": {
+            "path": "D:\\lunwen\\EC-CSI投稿\\working\\exploration\\20261014_external_baseline_pilot\\calls\\24_FSV-S04_autopac_generate\\prompt.txt",
+            "sha256": "033ce3e790fbf452c79d3ba335e9e5f596f0a7e57ab054d6be263424d6ac3fbe"
+          },
+          "parsed_output": {
+            "path": "D:\\lunwen\\EC-CSI投稿\\working\\exploration\\20261014_external_baseline_pilot\\calls\\24_FSV-S04_autopac_generate\\parsed_output.json",
+            "sha256": "1bd409eb8ba263dea5c99b5248745d11cc0cd13e2429aa0e827fa6f620e08649"
+          }
+        },
+        {
+          "index": 25,
+          "stage": "autopac_judge",
+          "original_ledger_status": "COMPLETED",
+          "raw": {
+            "path": "D:\\lunwen\\EC-CSI投稿\\working\\exploration\\20261014_external_baseline_pilot\\calls\\25_FSV-S04_autopac_judge\\response.raw.json",
+            "sha256": "734a2640ce3fdf86fbf149df678718ec9b97faebf0d529e4506e29122cc7b023"
+          },
+          "prompt": {
+            "path": "D:\\lunwen\\EC-CSI投稿\\working\\exploration\\20261014_external_baseline_pilot\\calls\\25_FSV-S04_autopac_judge\\prompt.txt",
+            "sha256": "38b1a2a38760d7cf193087fad7d537f6b07c432505abf8b2b420ffaf4e5ddedc"
+          },
+          "parsed_output": {
+            "path": "D:\\lunwen\\EC-CSI投稿\\working\\exploration\\20261014_external_baseline_pilot\\calls\\25_FSV-S04_autopac_judge\\parsed_output.json",
+            "sha256": "2f2f4fa27ccd9c8d6477c226a6f9547975256455962da20867bed3f93f113092"
+          }
+        },
+        {
+          "index": 26,
+          "stage": "repair",
+          "original_ledger_status": "COMPLETED",
+          "raw": {
+            "path": "D:\\lunwen\\EC-CSI投稿\\working\\exploration\\20261014_external_baseline_pilot\\calls\\26_FSV-S04_repair\\response.raw.json",
+            "sha256": "f73de23da6bc724d2c94a01f8826cfb0e395f5aafbfa05a2cf07338282ca1a45"
+          },
+          "prompt": {
+            "path": "D:\\lunwen\\EC-CSI投稿\\working\\exploration\\20261014_external_baseline_pilot\\calls\\26_FSV-S04_repair\\prompt.txt",
+            "sha256": "68790ca8bfdfb3353093adfd63037a0abdd9344b8cb7e7e81ebc302f916a28ca"
+          },
+          "parsed_output": {
+            "path": "D:\\lunwen\\EC-CSI投稿\\working\\exploration\\20261014_external_baseline_pilot\\calls\\26_FSV-S04_repair\\parsed_output.json",
+            "sha256": "a03ee4c2a6de6c07f6a1a870110cbc91490e6cb66abfa5195718b9ff7c1f12f7"
+          }
+        }
+      ],
+      "original_pair": [
+        {
+          "channel": "O-L",
+          "input": {
+            "request": {
+              "body": {
+                "email_id": "oracle@example.invalid",
+                "first_name": "ECV2 Oracle",
+                "status": "Lead"
+              }
+            },
+            "trusted": {}
+          },
+          "mapped_input": {
+            "request": {
+              "body": {
+                "email_id": "oracle@example.invalid",
+                "first_name": "ECV2 Oracle",
+                "status": "Lead"
+              }
+            },
+            "trusted": {},
+            "subject": {
+              "role": "authenticated_api_caller"
+            },
+            "action": "POST /api/resource/Lead",
+            "resource": {
+              "id": "ERPNext:16.0.0",
+              "system": "ERPNext",
+              "version": "16.0.0"
+            },
+            "subject_role": "authenticated_api_caller",
+            "resource_system": "ERPNext",
+            "resource_version": "16.0.0"
+          },
+          "expected": "allow",
+          "actual": {
+            "status": "EXECUTED",
+            "decision": "allow",
+            "exit_code": 0
+          }
+        },
+        {
+          "channel": "O-I",
+          "input": {
+            "request": {
+              "body": {
+                "email_id": "not-an-email",
+                "first_name": "ECV2 Oracle",
+                "status": "Lead"
+              }
+            },
+            "trusted": {}
+          },
+          "mapped_input": {
+            "request": {
+              "body": {
+                "email_id": "not-an-email",
+                "first_name": "ECV2 Oracle",
+                "status": "Lead"
+              }
+            },
+            "trusted": {},
+            "subject": {
+              "role": "authenticated_api_caller"
+            },
+            "action": "POST /api/resource/Lead",
+            "resource": {
+              "id": "ERPNext:16.0.0",
+              "system": "ERPNext",
+              "version": "16.0.0"
+            },
+            "subject_role": "authenticated_api_caller",
+            "resource_system": "ERPNext",
+            "resource_version": "16.0.0"
+          },
+          "expected": "deny",
+          "actual": {
+            "status": "EXECUTED",
+            "decision": "deny",
+            "exit_code": 0
+          }
+        }
+      ],
+      "post_hoc_format_receipt": {
+        "source_policy_sha256": "7b92667837be28890b1324ca5c852cb2b2bd38d4254e865732e560867deb0023",
+        "formatted_sha256": "ed176217afffc434f2debccb4584f41e9263a7cbef812af9db5ab991f549c0ce",
+        "ast_equal_without_locations": true,
+        "source_path": "/mnt/d/lunwen/EC-CSI投稿/working/exploration/20261014_external_baseline_pilot/effect_runs/FSV-S04/AUTOPAC_STYLE/repaired/external_pilot/policy.rego"
+      },
+      "pre_mapping_policy": {
+        "path": "D:\\lunwen\\EC-CSI投稿\\working\\exploration\\20261014_external_baseline_pilot\\effect_runs\\FSV-S04\\AUTOPAC_STYLE\\repaired\\external_pilot\\policy.rego",
+        "sha256": "7b92667837be28890b1324ca5c852cb2b2bd38d4254e865732e560867deb0023"
+      },
+      "original_pre_format_state": {
+        "path": "D:\\lunwen\\EC-CSI投稿\\working\\exploration\\20261014_external_baseline_pilot\\PRE_FORMAT_EXECUTION_STATE.json",
+        "sha256": "662511222e47847aca97ddf4de6d1b4259cfeff4103f157f999a33d030912e36"
+      }
+    },
+    {
+      "task": "FSV-S04",
+      "method": "ECAS_MATCHED",
+      "batch": "A",
+      "row": {
+        "batch": "A",
+        "task": "FSV-S04",
+        "case_name_cn": "邮箱格式",
+        "system": "ERPNext",
+        "method": "ECAS_MATCHED",
+        "method_name_cn": "ECAS",
+        "original_pre_format_status": "EVALUATED",
+        "post_format_pre_mapping_status": "EVALUATED",
+        "displayed_status": "EVALUATED",
+        "displayed_symbol": "●",
+        "original_legal_decision": "allow",
+        "original_violation_decision": "deny",
+        "pair_correct_count": 2,
+        "first_generation_eligible": "NOT_COMPARABLE",
+        "repaired_once": false,
+        "result_source": "D:\\lunwen\\EC-CSI投稿\\working\\exploration\\20261014_external_baseline_pilot\\effect_runs\\FSV-S04\\ECAS_MATCHED\\RESULT.json",
+        "display_source": "D:\\lunwen\\EC-CSI投稿\\working\\exploration\\20261014_external_baseline_pilot\\binding_replay_resource_object\\SUMMARY.json",
+        "final_policy_source": "D:\\lunwen\\EC-CSI投稿\\working\\exploration\\20261014_external_baseline_pilot\\effect_runs\\FSV-S04\\ECAS_MATCHED\\admitted_policy.json",
+        "raw_call_indices": "27",
+        "note_cn": "旧批次原请求对；表中沿用事后统一接口复演",
+        "project_name": "ERPNext"
+      },
+      "result": {
+        "path": "D:\\lunwen\\EC-CSI投稿\\working\\exploration\\20261014_external_baseline_pilot\\effect_runs\\FSV-S04\\ECAS_MATCHED\\RESULT.json",
+        "sha256": "953f35a201462a86cf6546bd35ed77261797ef3f5e06da0c2479f5f0de2b3fa6"
+      },
+      "display_summary": {
+        "path": "D:\\lunwen\\EC-CSI投稿\\working\\exploration\\20261014_external_baseline_pilot\\binding_replay_resource_object\\SUMMARY.json",
+        "sha256": "5345278278ae46c7054bbc6c023ff46505c866ac0872f115605aefe222e5dba3"
+      },
+      "policy": {
+        "path": "D:\\lunwen\\EC-CSI投稿\\working\\exploration\\20261014_external_baseline_pilot\\effect_runs\\FSV-S04\\ECAS_MATCHED\\admitted_policy.json",
+        "sha256": "386657b8b2358f38e051ed454d57934c70b27d6c37b2bd966959f16966271746"
+      },
+      "calls": [
+        {
+          "index": 27,
+          "stage": "ecas_generate",
+          "original_ledger_status": "COMPLETED",
+          "raw": {
+            "path": "D:\\lunwen\\EC-CSI投稿\\working\\exploration\\20261014_external_baseline_pilot\\calls\\27_FSV-S04_ecas_generate\\response.raw.json",
+            "sha256": "384c79f817e594450b5de5201a073fd2e26b7b6096c95772b5657144d1227515"
+          },
+          "prompt": {
+            "path": "D:\\lunwen\\EC-CSI投稿\\working\\exploration\\20261014_external_baseline_pilot\\calls\\27_FSV-S04_ecas_generate\\prompt.txt",
+            "sha256": "7b81172fa31b9c4a26c0d86214a158edd5f0ce3cd6fcf6f787a935cf159f7746"
+          },
+          "parsed_output": {
+            "path": "D:\\lunwen\\EC-CSI投稿\\working\\exploration\\20261014_external_baseline_pilot\\calls\\27_FSV-S04_ecas_generate\\parsed_output.json",
+            "sha256": "b06dd1092193cba42ef2fb24e12dd007b7230c425890aec2f543daef9c14d1cd"
+          }
+        }
+      ],
+      "original_pair": [
+        {
+          "channel": "O-L",
+          "input": {
+            "request": {
+              "body": {
+                "email_id": "oracle@example.invalid",
+                "first_name": "ECV2 Oracle",
+                "status": "Lead"
+              }
+            },
+            "trusted": {}
+          },
+          "mapped_input": {
+            "request": {
+              "body": {
+                "email_id": "oracle@example.invalid",
+                "first_name": "ECV2 Oracle",
+                "status": "Lead"
+              }
+            },
+            "trusted": {},
+            "subject": {
+              "role": "authenticated_api_caller"
+            },
+            "action": "POST /api/resource/Lead",
+            "resource": {
+              "id": "ERPNext:16.0.0",
+              "system": "ERPNext",
+              "version": "16.0.0"
+            },
+            "subject_role": "authenticated_api_caller",
+            "resource_system": "ERPNext",
+            "resource_version": "16.0.0"
+          },
+          "expected": "allow",
+          "actual": {
+            "policy_id": "POL-FSV-S04-LEAD-EMAIL-FMT",
+            "decision": "allow",
+            "fail_closed": true,
+            "violations": []
+          }
+        },
+        {
+          "channel": "O-I",
+          "input": {
+            "request": {
+              "body": {
+                "email_id": "not-an-email",
+                "first_name": "ECV2 Oracle",
+                "status": "Lead"
+              }
+            },
+            "trusted": {}
+          },
+          "mapped_input": {
+            "request": {
+              "body": {
+                "email_id": "not-an-email",
+                "first_name": "ECV2 Oracle",
+                "status": "Lead"
+              }
+            },
+            "trusted": {},
+            "subject": {
+              "role": "authenticated_api_caller"
+            },
+            "action": "POST /api/resource/Lead",
+            "resource": {
+              "id": "ERPNext:16.0.0",
+              "system": "ERPNext",
+              "version": "16.0.0"
+            },
+            "subject_role": "authenticated_api_caller",
+            "resource_system": "ERPNext",
+            "resource_version": "16.0.0"
+          },
+          "expected": "deny",
+          "actual": {
+            "policy_id": "POL-FSV-S04-LEAD-EMAIL-FMT",
+            "decision": "deny",
+            "fail_closed": true,
+            "violations": [
+              {
+                "rule_id": "RULE-LEAD-EMAIL-FMT",
+                "code": "validator_rejected",
+                "detail": "email_basic_v1"
+              }
+            ]
+          }
+        }
+      ],
+      "original_pre_format_state": {
+        "path": "D:\\lunwen\\EC-CSI投稿\\working\\exploration\\20261014_external_baseline_pilot\\PRE_FORMAT_EXECUTION_STATE.json",
+        "sha256": "662511222e47847aca97ddf4de6d1b4259cfeff4103f157f999a33d030912e36"
+      }
+    },
+    {
+      "task": "FSV-S03",
+      "method": "P2P_STYLE",
+      "batch": "B",
+      "row": {
+        "batch": "B",
+        "task": "FSV-S03",
+        "case_name_cn": "年龄字段类型",
+        "system": "Fineract",
+        "method": "P2P_STYLE",
+        "method_name_cn": "P2P适配版",
+        "original_pre_format_status": "OUT_OF_SCOPE",
+        "post_format_pre_mapping_status": "NOT_APPLICABLE",
+        "displayed_status": "OUT_OF_SCOPE",
+        "displayed_symbol": "—",
+        "original_legal_decision": "NOT_EXECUTED",
+        "original_violation_decision": "NOT_EXECUTED",
+        "pair_correct_count": null,
+        "first_generation_eligible": false,
+        "repaired_once": false,
+        "result_source": "D:\\lunwen\\EC-CSI投稿\\working\\exploration\\20261014_matched_evidence_labor\\matched_generation\\method_runs\\FSV-S03\\P2P_STYLE\\RESULT.json",
+        "display_source": "D:\\lunwen\\EC-CSI投稿\\working\\exploration\\20261014_matched_evidence_labor\\matched_generation\\results_review_v1\\COMPARISON_SUMMARY.json",
+        "final_policy_source": "NONE",
+        "raw_call_indices": "5",
+        "note_cn": "检测阶段声明范围外，未执行",
+        "project_name": "Apache Fineract"
+      },
+      "result": {
+        "path": "D:\\lunwen\\EC-CSI投稿\\working\\exploration\\20261014_matched_evidence_labor\\matched_generation\\method_runs\\FSV-S03\\P2P_STYLE\\RESULT.json",
+        "sha256": "0debecc0820f78bdfab4d38a2995d66e4f1957ad231e9ee436657eb8d9c758ef"
+      },
+      "display_summary": {
+        "path": "D:\\lunwen\\EC-CSI投稿\\working\\exploration\\20261014_matched_evidence_labor\\matched_generation\\results_review_v1\\COMPARISON_SUMMARY.json",
+        "sha256": "e19897b542b10bb0d5db753ac7c8d28d8bed1e52a02fcb6505b7090723660849"
+      },
+      "policy": null,
+      "calls": [
+        {
+          "index": 5,
+          "stage": "p2p_detect",
+          "original_ledger_status": "COMPLETED",
+          "raw": {
+            "path": "D:\\lunwen\\EC-CSI投稿\\working\\exploration\\20261014_matched_evidence_labor\\matched_generation\\calls\\05_FSV-S03_p2p_detect\\response.raw.json",
+            "sha256": "6f2e57c02f0810cb114a3f6e2e4f291622c8c6125437bde1355e9de7320cd800"
+          },
+          "prompt": {
+            "path": "D:\\lunwen\\EC-CSI投稿\\working\\exploration\\20261014_matched_evidence_labor\\matched_generation\\calls\\05_FSV-S03_p2p_detect\\prompt.txt",
+            "sha256": "89c115b6eb85f2056259933b110d080107c9c62e9968c9c12b258e8aed7bdb56"
+          },
+          "parsed_output": {
+            "path": "D:\\lunwen\\EC-CSI投稿\\working\\exploration\\20261014_matched_evidence_labor\\matched_generation\\calls\\05_FSV-S03_p2p_detect\\parsed_output.json",
+            "sha256": "9466c5a07f00a39cb5956afce3112d58331974814f8e49cc7b6a0fc42e84d46e"
+          }
+        }
+      ],
+      "original_pair": [],
+      "primary_reconciliation": {
+        "path": "D:\\lunwen\\EC-CSI投稿\\working\\exploration\\20261014_matched_evidence_labor\\matched_generation\\results_review_v1\\PRIMARY_RECONCILIATION.json",
+        "sha256": "daf23f1770a6fc89ed7eb87f63e82be6317dcaeecdfb19e2a10f7e717c8e8c2d"
+      },
+      "independent_reconciliation": {
+        "path": "D:\\lunwen\\EC-CSI投稿\\working\\exploration\\20261014_matched_evidence_labor\\matched_generation\\FINAL_INDEPENDENT_AUDIT.json",
+        "sha256": "6df4db53ce6ea3e8e992acc1b62558651c4049feb1a92eb7e9f19e18afa104b2"
+      }
+    },
+    {
+      "task": "FSV-S03",
+      "method": "AUTOPAC_STYLE",
+      "batch": "B",
+      "row": {
+        "batch": "B",
+        "task": "FSV-S03",
+        "case_name_cn": "年龄字段类型",
+        "system": "Fineract",
+        "method": "AUTOPAC_STYLE",
+        "method_name_cn": "AutoPAC适配版",
+        "original_pre_format_status": "DEVELOPMENT_REJECTED",
+        "post_format_pre_mapping_status": "NOT_APPLICABLE",
+        "displayed_status": "DEVELOPMENT_REJECTED",
+        "displayed_symbol": "—",
+        "original_legal_decision": "NOT_EXECUTED",
+        "original_violation_decision": "NOT_EXECUTED",
+        "pair_correct_count": null,
+        "first_generation_eligible": false,
+        "repaired_once": true,
+        "result_source": "D:\\lunwen\\EC-CSI投稿\\working\\exploration\\20261014_matched_evidence_labor\\matched_generation\\method_runs\\FSV-S03\\AUTOPAC_STYLE\\RESULT.json",
+        "display_source": "D:\\lunwen\\EC-CSI投稿\\working\\exploration\\20261014_matched_evidence_labor\\matched_generation\\results_review_v1\\COMPARISON_SUMMARY.json",
+        "final_policy_source": "D:\\lunwen\\EC-CSI投稿\\working\\exploration\\20261014_matched_evidence_labor\\matched_generation\\method_runs\\FSV-S03\\AUTOPAC_STYLE\\repaired\\external_pilot\\policy.rego",
+        "raw_call_indices": "6;7;8",
+        "note_cn": "开发阶段编译失败，未获执行资格",
+        "project_name": "Apache Fineract"
+      },
+      "result": {
+        "path": "D:\\lunwen\\EC-CSI投稿\\working\\exploration\\20261014_matched_evidence_labor\\matched_generation\\method_runs\\FSV-S03\\AUTOPAC_STYLE\\RESULT.json",
+        "sha256": "58c0b95241e28fcef14116667dcc1c75ca176c8f0ea0871cb5a2baa696d9c5e3"
+      },
+      "display_summary": {
+        "path": "D:\\lunwen\\EC-CSI投稿\\working\\exploration\\20261014_matched_evidence_labor\\matched_generation\\results_review_v1\\COMPARISON_SUMMARY.json",
+        "sha256": "e19897b542b10bb0d5db753ac7c8d28d8bed1e52a02fcb6505b7090723660849"
+      },
+      "policy": {
+        "path": "D:\\lunwen\\EC-CSI投稿\\working\\exploration\\20261014_matched_evidence_labor\\matched_generation\\method_runs\\FSV-S03\\AUTOPAC_STYLE\\repaired\\external_pilot\\policy.rego",
+        "sha256": "c4b87aa50a5e98d75eecfb98590f861083d123b56bfe0f923861bd6e328bba94"
+      },
+      "calls": [
+        {
+          "index": 6,
+          "stage": "autopac_generate",
+          "original_ledger_status": "COMPLETED",
+          "raw": {
+            "path": "D:\\lunwen\\EC-CSI投稿\\working\\exploration\\20261014_matched_evidence_labor\\matched_generation\\calls\\06_FSV-S03_autopac_generate\\response.raw.json",
+            "sha256": "1799f8c83755f79b129b7be8f44326ab25ee1fae39208eae59fe4a51de539798"
+          },
+          "prompt": {
+            "path": "D:\\lunwen\\EC-CSI投稿\\working\\exploration\\20261014_matched_evidence_labor\\matched_generation\\calls\\06_FSV-S03_autopac_generate\\prompt.txt",
+            "sha256": "adc8510dde15a7a5a72168d6e8c96385ebcd635d4c437b7af3c7474ce09d8a02"
+          },
+          "parsed_output": {
+            "path": "D:\\lunwen\\EC-CSI投稿\\working\\exploration\\20261014_matched_evidence_labor\\matched_generation\\calls\\06_FSV-S03_autopac_generate\\parsed_output.json",
+            "sha256": "49416e3a7f0eeb853daa473c63dc6c71aaae1c7b2fbc0fdfb39d5a54018e379d"
+          }
+        },
+        {
+          "index": 7,
+          "stage": "autopac_judge",
+          "original_ledger_status": "COMPLETED",
+          "raw": {
+            "path": "D:\\lunwen\\EC-CSI投稿\\working\\exploration\\20261014_matched_evidence_labor\\matched_generation\\calls\\07_FSV-S03_autopac_judge\\response.raw.json",
+            "sha256": "69a83576cf7582b00c54c16d0f3dd42a331a146ad6b662fb7532b5ddefa07fe5"
+          },
+          "prompt": {
+            "path": "D:\\lunwen\\EC-CSI投稿\\working\\exploration\\20261014_matched_evidence_labor\\matched_generation\\calls\\07_FSV-S03_autopac_judge\\prompt.txt",
+            "sha256": "da8bd9a95fd822fa1ccf9ccc4a44e13148643cef6db320f267b0ae4446ca52ee"
+          },
+          "parsed_output": {
+            "path": "D:\\lunwen\\EC-CSI投稿\\working\\exploration\\20261014_matched_evidence_labor\\matched_generation\\calls\\07_FSV-S03_autopac_judge\\parsed_output.json",
+            "sha256": "2f2f4fa27ccd9c8d6477c226a6f9547975256455962da20867bed3f93f113092"
+          }
+        },
+        {
+          "index": 8,
+          "stage": "repair",
+          "original_ledger_status": "COMPLETED",
+          "raw": {
+            "path": "D:\\lunwen\\EC-CSI投稿\\working\\exploration\\20261014_matched_evidence_labor\\matched_generation\\calls\\08_FSV-S03_repair\\response.raw.json",
+            "sha256": "3a0f7f658adfc5733cf505e499d07732505c187b288e3725d83fed10f7ec855a"
+          },
+          "prompt": {
+            "path": "D:\\lunwen\\EC-CSI投稿\\working\\exploration\\20261014_matched_evidence_labor\\matched_generation\\calls\\08_FSV-S03_repair\\prompt.txt",
+            "sha256": "3bb1d33179e136c6375e00460f4256b9c271f18c512faf83f1c55fd87033aab0"
+          },
+          "parsed_output": {
+            "path": "D:\\lunwen\\EC-CSI投稿\\working\\exploration\\20261014_matched_evidence_labor\\matched_generation\\calls\\08_FSV-S03_repair\\parsed_output.json",
+            "sha256": "b9f40ec0986a70ef47902a3edbb199f6d34f7aed23e4c589330ed3b53f49f68b"
+          }
+        }
+      ],
+      "original_pair": [],
+      "primary_reconciliation": {
+        "path": "D:\\lunwen\\EC-CSI投稿\\working\\exploration\\20261014_matched_evidence_labor\\matched_generation\\results_review_v1\\PRIMARY_RECONCILIATION.json",
+        "sha256": "daf23f1770a6fc89ed7eb87f63e82be6317dcaeecdfb19e2a10f7e717c8e8c2d"
+      },
+      "independent_reconciliation": {
+        "path": "D:\\lunwen\\EC-CSI投稿\\working\\exploration\\20261014_matched_evidence_labor\\matched_generation\\FINAL_INDEPENDENT_AUDIT.json",
+        "sha256": "6df4db53ce6ea3e8e992acc1b62558651c4049feb1a92eb7e9f19e18afa104b2"
+      }
+    },
+    {
+      "task": "FSV-S03",
+      "method": "ECAS_MATCHED",
+      "batch": "B",
+      "row": {
+        "batch": "B",
+        "task": "FSV-S03",
+        "case_name_cn": "年龄字段类型",
+        "system": "Fineract",
+        "method": "ECAS_MATCHED",
+        "method_name_cn": "ECAS",
+        "original_pre_format_status": "ELIGIBLE",
+        "post_format_pre_mapping_status": "NOT_APPLICABLE",
+        "displayed_status": "ELIGIBLE",
+        "displayed_symbol": "●",
+        "original_legal_decision": "allow",
+        "original_violation_decision": "deny",
+        "pair_correct_count": 2,
+        "first_generation_eligible": true,
+        "repaired_once": false,
+        "result_source": "D:\\lunwen\\EC-CSI投稿\\working\\exploration\\20261014_matched_evidence_labor\\matched_generation\\method_runs\\FSV-S03\\ECAS_MATCHED\\RESULT.json",
+        "display_source": "D:\\lunwen\\EC-CSI投稿\\working\\exploration\\20261014_matched_evidence_labor\\matched_generation\\results_review_v1\\COMPARISON_SUMMARY.json",
+        "final_policy_source": "D:\\lunwen\\EC-CSI投稿\\working\\exploration\\20261014_matched_evidence_labor\\matched_generation\\method_runs\\FSV-S03\\ECAS_MATCHED\\initial\\admitted_policy.json",
+        "raw_call_indices": "9",
+        "note_cn": "共同目标协议下首次生成已合格",
+        "project_name": "Apache Fineract"
+      },
+      "result": {
+        "path": "D:\\lunwen\\EC-CSI投稿\\working\\exploration\\20261014_matched_evidence_labor\\matched_generation\\method_runs\\FSV-S03\\ECAS_MATCHED\\RESULT.json",
+        "sha256": "29bbc1502b3919ddc92e2517729efe173a04df7bf4adc79b92ea86f977cb6957"
+      },
+      "display_summary": {
+        "path": "D:\\lunwen\\EC-CSI投稿\\working\\exploration\\20261014_matched_evidence_labor\\matched_generation\\results_review_v1\\COMPARISON_SUMMARY.json",
+        "sha256": "e19897b542b10bb0d5db753ac7c8d28d8bed1e52a02fcb6505b7090723660849"
+      },
+      "policy": {
+        "path": "D:\\lunwen\\EC-CSI投稿\\working\\exploration\\20261014_matched_evidence_labor\\matched_generation\\method_runs\\FSV-S03\\ECAS_MATCHED\\initial\\admitted_policy.json",
+        "sha256": "5f370d900883fad34ac8eb547f3f0c18fcb4034f387204f52afeba654320f57f"
+      },
+      "calls": [
+        {
+          "index": 9,
+          "stage": "ecas_generate",
+          "original_ledger_status": "COMPLETED",
+          "raw": {
+            "path": "D:\\lunwen\\EC-CSI投稿\\working\\exploration\\20261014_matched_evidence_labor\\matched_generation\\calls\\09_FSV-S03_ecas_generate\\response.raw.json",
+            "sha256": "17d652f5862a53b75567063e9773b5ce0c37ad5ed3b5ecdfbb2b528267411e4d"
+          },
+          "prompt": {
+            "path": "D:\\lunwen\\EC-CSI投稿\\working\\exploration\\20261014_matched_evidence_labor\\matched_generation\\calls\\09_FSV-S03_ecas_generate\\prompt.txt",
+            "sha256": "c20e3fce37da27c05c40e30d0b49abba31103c34562c9a5316849262ac9e8dc4"
+          },
+          "parsed_output": {
+            "path": "D:\\lunwen\\EC-CSI投稿\\working\\exploration\\20261014_matched_evidence_labor\\matched_generation\\calls\\09_FSV-S03_ecas_generate\\parsed_output.json",
+            "sha256": "5dffa34bda70cb5431d5947735549c906b2bc9b3a7c937ccdf2a5bb848d684d5"
+          }
+        }
+      ],
+      "original_pair": [
+        {
+          "channel": "O-L",
+          "input": {
+            "request": {
+              "body": {
+                "age": 30,
+                "firstName": "Synthetic",
+                "isDependent": false,
+                "relationshipId": 1
+              }
+            },
+            "trusted": {}
+          },
+          "expected": "allow",
+          "actual": {
+            "policy_id": "POL-FSV-S03-AGE-TYPE",
+            "decision": "allow",
+            "fail_closed": true,
+            "violations": []
+          },
+          "pass": true
+        },
+        {
+          "channel": "O-I",
+          "input": {
+            "request": {
+              "body": {
+                "age": "30",
+                "firstName": "Synthetic",
+                "isDependent": false,
+                "relationshipId": 1
+              }
+            },
+            "trusted": {}
+          },
+          "expected": "deny",
+          "actual": {
+            "policy_id": "POL-FSV-S03-AGE-TYPE",
+            "decision": "deny",
+            "fail_closed": true,
+            "violations": [
+              {
+                "rule_id": "RULE-AGE-INTEGER",
+                "code": "type_mismatch",
+                "detail": "/request/body/age"
+              }
+            ]
+          },
+          "pass": true
+        }
+      ],
+      "primary_reconciliation": {
+        "path": "D:\\lunwen\\EC-CSI投稿\\working\\exploration\\20261014_matched_evidence_labor\\matched_generation\\results_review_v1\\PRIMARY_RECONCILIATION.json",
+        "sha256": "daf23f1770a6fc89ed7eb87f63e82be6317dcaeecdfb19e2a10f7e717c8e8c2d"
+      },
+      "independent_reconciliation": {
+        "path": "D:\\lunwen\\EC-CSI投稿\\working\\exploration\\20261014_matched_evidence_labor\\matched_generation\\FINAL_INDEPENDENT_AUDIT.json",
+        "sha256": "6df4db53ce6ea3e8e992acc1b62558651c4049feb1a92eb7e9f19e18afa104b2"
+      }
+    },
+    {
+      "task": "FSV-B13",
+      "method": "P2P_STYLE",
+      "batch": "B",
+      "row": {
+        "batch": "B",
+        "task": "FSV-B13",
+        "case_name_cn": "数量上限与授权例外",
+        "system": "ERPNext",
+        "method": "P2P_STYLE",
+        "method_name_cn": "P2P适配版",
+        "original_pre_format_status": "ELIGIBLE",
+        "post_format_pre_mapping_status": "NOT_APPLICABLE",
+        "displayed_status": "ELIGIBLE",
+        "displayed_symbol": "●",
+        "original_legal_decision": "allow",
+        "original_violation_decision": "deny",
+        "pair_correct_count": 2,
+        "first_generation_eligible": true,
+        "repaired_once": false,
+        "result_source": "D:\\lunwen\\EC-CSI投稿\\working\\exploration\\20261014_matched_evidence_labor\\matched_generation\\method_runs\\FSV-B13\\P2P_STYLE\\RESULT.json",
+        "display_source": "D:\\lunwen\\EC-CSI投稿\\working\\exploration\\20261014_matched_evidence_labor\\matched_generation\\results_review_v1\\COMPARISON_SUMMARY.json",
+        "final_policy_source": "D:\\lunwen\\EC-CSI投稿\\working\\exploration\\20261014_matched_evidence_labor\\matched_generation\\method_runs\\FSV-B13\\P2P_STYLE\\initial\\external_pilot\\policy.rego",
+        "raw_call_indices": "10;11;12;13",
+        "note_cn": "共同目标协议下首次生成已合格",
+        "project_name": "ERPNext"
+      },
+      "result": {
+        "path": "D:\\lunwen\\EC-CSI投稿\\working\\exploration\\20261014_matched_evidence_labor\\matched_generation\\method_runs\\FSV-B13\\P2P_STYLE\\RESULT.json",
+        "sha256": "6e61dc2d2e2ae9f23f4ff98b8a90830fe3bcc1f4cc76cec0ad44953f9eeb7b30"
+      },
+      "display_summary": {
+        "path": "D:\\lunwen\\EC-CSI投稿\\working\\exploration\\20261014_matched_evidence_labor\\matched_generation\\results_review_v1\\COMPARISON_SUMMARY.json",
+        "sha256": "e19897b542b10bb0d5db753ac7c8d28d8bed1e52a02fcb6505b7090723660849"
+      },
+      "policy": {
+        "path": "D:\\lunwen\\EC-CSI投稿\\working\\exploration\\20261014_matched_evidence_labor\\matched_generation\\method_runs\\FSV-B13\\P2P_STYLE\\initial\\external_pilot\\policy.rego",
+        "sha256": "a211c57e2bf6bd8f0cbae478273b65fc6e26dbd1c1e855cfa4cbda0015978bb7"
+      },
+      "calls": [
+        {
+          "index": 10,
+          "stage": "p2p_detect",
+          "original_ledger_status": "COMPLETED",
+          "raw": {
+            "path": "D:\\lunwen\\EC-CSI投稿\\working\\exploration\\20261014_matched_evidence_labor\\matched_generation\\calls\\10_FSV-B13_p2p_detect\\response.raw.json",
+            "sha256": "b26d4922f1877c5c677f3096d0b93b2fb0d4eab2c95a6a1eb4c29c029f71967c"
+          },
+          "prompt": {
+            "path": "D:\\lunwen\\EC-CSI投稿\\working\\exploration\\20261014_matched_evidence_labor\\matched_generation\\calls\\10_FSV-B13_p2p_detect\\prompt.txt",
+            "sha256": "9d2a35c224b30b8044386f49066dcb8532545133b40892f046f44a80a054707f"
+          },
+          "parsed_output": {
+            "path": "D:\\lunwen\\EC-CSI投稿\\working\\exploration\\20261014_matched_evidence_labor\\matched_generation\\calls\\10_FSV-B13_p2p_detect\\parsed_output.json",
+            "sha256": "8313eed205bff3da6fd8f15cb83b08e613adf109a991b769af1adcf803210186"
+          }
+        },
+        {
+          "index": 11,
+          "stage": "p2p_extract",
+          "original_ledger_status": "COMPLETED",
+          "raw": {
+            "path": "D:\\lunwen\\EC-CSI投稿\\working\\exploration\\20261014_matched_evidence_labor\\matched_generation\\calls\\11_FSV-B13_p2p_extract\\response.raw.json",
+            "sha256": "5753dd4e0244e7a3eb0403c130b0d2fdee533cae0084460eed073064ed9cf34d"
+          },
+          "prompt": {
+            "path": "D:\\lunwen\\EC-CSI投稿\\working\\exploration\\20261014_matched_evidence_labor\\matched_generation\\calls\\11_FSV-B13_p2p_extract\\prompt.txt",
+            "sha256": "b3ee5bb4ac013b6526103c25219b8de7a2ce99684fe5ee8129c2df5fc7f408c7"
+          },
+          "parsed_output": {
+            "path": "D:\\lunwen\\EC-CSI投稿\\working\\exploration\\20261014_matched_evidence_labor\\matched_generation\\calls\\11_FSV-B13_p2p_extract\\parsed_output.json",
+            "sha256": "3eb7be503dc75baaab6df0d0b9aab11796692bdcab81584fa040fcaff79bb2e7"
+          }
+        },
+        {
+          "index": 12,
+          "stage": "p2p_rego",
+          "original_ledger_status": "COMPLETED",
+          "raw": {
+            "path": "D:\\lunwen\\EC-CSI投稿\\working\\exploration\\20261014_matched_evidence_labor\\matched_generation\\calls\\12_FSV-B13_p2p_rego\\response.raw.json",
+            "sha256": "b2b18430ead5703bfce94142557c760db5c861f4cbbb8531027ed375125258bb"
+          },
+          "prompt": {
+            "path": "D:\\lunwen\\EC-CSI投稿\\working\\exploration\\20261014_matched_evidence_labor\\matched_generation\\calls\\12_FSV-B13_p2p_rego\\prompt.txt",
+            "sha256": "486283fb8c3ad25fb63eed498b107cf3704b46868be79ebe3dca1a96984f1d0d"
+          },
+          "parsed_output": {
+            "path": "D:\\lunwen\\EC-CSI投稿\\working\\exploration\\20261014_matched_evidence_labor\\matched_generation\\calls\\12_FSV-B13_p2p_rego\\parsed_output.json",
+            "sha256": "38ed83a1fb0755c39acdbc5148c5892df2238dd7606e5f1fd2d08ccaae04eec0"
+          }
+        },
+        {
+          "index": 13,
+          "stage": "p2p_tests",
+          "original_ledger_status": "COMPLETED",
+          "raw": {
+            "path": "D:\\lunwen\\EC-CSI投稿\\working\\exploration\\20261014_matched_evidence_labor\\matched_generation\\calls\\13_FSV-B13_p2p_tests\\response.raw.json",
+            "sha256": "d3c3e412823c48fbda4020b8cce70770793a1d21154b66af158bc554edb38c5e"
+          },
+          "prompt": {
+            "path": "D:\\lunwen\\EC-CSI投稿\\working\\exploration\\20261014_matched_evidence_labor\\matched_generation\\calls\\13_FSV-B13_p2p_tests\\prompt.txt",
+            "sha256": "826863492c97a63430bd0c68d549fd0777b16fe8634d0cdf95414b082dc2986e"
+          },
+          "parsed_output": {
+            "path": "D:\\lunwen\\EC-CSI投稿\\working\\exploration\\20261014_matched_evidence_labor\\matched_generation\\calls\\13_FSV-B13_p2p_tests\\parsed_output.json",
+            "sha256": "66d423db3326d6516975809ddcbb162be2516ed3b47f9e4ddf9d1a4f1cb864da"
+          }
+        }
+      ],
+      "original_pair": [
+        {
+          "channel": "O-L",
+          "input": {
+            "request": {
+              "body": {
+                "qty": 110
+              }
+            },
+            "trusted": {
+              "allowancePercent": 10,
+              "authorizedRole": false,
+              "derivedMaximumQty": 110,
+              "orderedQty": 100
+            }
+          },
+          "expected": "allow",
+          "actual": {
+            "status": "EXECUTED",
+            "decision": "allow",
+            "exit_code": 0
+          },
+          "pass": true
+        },
+        {
+          "channel": "O-I",
+          "input": {
+            "request": {
+              "body": {
+                "qty": 111
+              }
+            },
+            "trusted": {
+              "allowancePercent": 10,
+              "authorizedRole": false,
+              "derivedMaximumQty": 110,
+              "orderedQty": 100
+            }
+          },
+          "expected": "deny",
+          "actual": {
+            "status": "EXECUTED",
+            "decision": "deny",
+            "exit_code": 0
+          },
+          "pass": true
+        }
+      ],
+      "primary_reconciliation": {
+        "path": "D:\\lunwen\\EC-CSI投稿\\working\\exploration\\20261014_matched_evidence_labor\\matched_generation\\results_review_v1\\PRIMARY_RECONCILIATION.json",
+        "sha256": "daf23f1770a6fc89ed7eb87f63e82be6317dcaeecdfb19e2a10f7e717c8e8c2d"
+      },
+      "independent_reconciliation": {
+        "path": "D:\\lunwen\\EC-CSI投稿\\working\\exploration\\20261014_matched_evidence_labor\\matched_generation\\FINAL_INDEPENDENT_AUDIT.json",
+        "sha256": "6df4db53ce6ea3e8e992acc1b62558651c4049feb1a92eb7e9f19e18afa104b2"
+      }
+    },
+    {
+      "task": "FSV-B13",
+      "method": "AUTOPAC_STYLE",
+      "batch": "B",
+      "row": {
+        "batch": "B",
+        "task": "FSV-B13",
+        "case_name_cn": "数量上限与授权例外",
+        "system": "ERPNext",
+        "method": "AUTOPAC_STYLE",
+        "method_name_cn": "AutoPAC适配版",
+        "original_pre_format_status": "ELIGIBLE",
+        "post_format_pre_mapping_status": "NOT_APPLICABLE",
+        "displayed_status": "ELIGIBLE",
+        "displayed_symbol": "●",
+        "original_legal_decision": "allow",
+        "original_violation_decision": "deny",
+        "pair_correct_count": 2,
+        "first_generation_eligible": true,
+        "repaired_once": false,
+        "result_source": "D:\\lunwen\\EC-CSI投稿\\working\\exploration\\20261014_matched_evidence_labor\\matched_generation\\method_runs\\FSV-B13\\AUTOPAC_STYLE\\RESULT.json",
+        "display_source": "D:\\lunwen\\EC-CSI投稿\\working\\exploration\\20261014_matched_evidence_labor\\matched_generation\\results_review_v1\\COMPARISON_SUMMARY.json",
+        "final_policy_source": "D:\\lunwen\\EC-CSI投稿\\working\\exploration\\20261014_matched_evidence_labor\\matched_generation\\method_runs\\FSV-B13\\AUTOPAC_STYLE\\initial\\external_pilot\\policy.rego",
+        "raw_call_indices": "14;15",
+        "note_cn": "共同目标协议下首次生成已合格",
+        "project_name": "ERPNext"
+      },
+      "result": {
+        "path": "D:\\lunwen\\EC-CSI投稿\\working\\exploration\\20261014_matched_evidence_labor\\matched_generation\\method_runs\\FSV-B13\\AUTOPAC_STYLE\\RESULT.json",
+        "sha256": "c160399026eeaea95a7edf9a7ea37dd3727f06f50ad103a792834738f242010f"
+      },
+      "display_summary": {
+        "path": "D:\\lunwen\\EC-CSI投稿\\working\\exploration\\20261014_matched_evidence_labor\\matched_generation\\results_review_v1\\COMPARISON_SUMMARY.json",
+        "sha256": "e19897b542b10bb0d5db753ac7c8d28d8bed1e52a02fcb6505b7090723660849"
+      },
+      "policy": {
+        "path": "D:\\lunwen\\EC-CSI投稿\\working\\exploration\\20261014_matched_evidence_labor\\matched_generation\\method_runs\\FSV-B13\\AUTOPAC_STYLE\\initial\\external_pilot\\policy.rego",
+        "sha256": "5379121851d6cb35c212c6edd3bea9e84fd61ec5906c325b7802c6d3bdd7e8dc"
+      },
+      "calls": [
+        {
+          "index": 14,
+          "stage": "autopac_generate",
+          "original_ledger_status": "COMPLETED",
+          "raw": {
+            "path": "D:\\lunwen\\EC-CSI投稿\\working\\exploration\\20261014_matched_evidence_labor\\matched_generation\\calls\\14_FSV-B13_autopac_generate\\response.raw.json",
+            "sha256": "49f489dfd4c94c8d5b443c9a1772eae50f7b49a0b6231fabe315d2a56589f314"
+          },
+          "prompt": {
+            "path": "D:\\lunwen\\EC-CSI投稿\\working\\exploration\\20261014_matched_evidence_labor\\matched_generation\\calls\\14_FSV-B13_autopac_generate\\prompt.txt",
+            "sha256": "1ecae8e9c38756383d31e321704eccaf999f9e8aecebfd721c8e27d1d197fa14"
+          },
+          "parsed_output": {
+            "path": "D:\\lunwen\\EC-CSI投稿\\working\\exploration\\20261014_matched_evidence_labor\\matched_generation\\calls\\14_FSV-B13_autopac_generate\\parsed_output.json",
+            "sha256": "54a1cb563ba0c1952c9ad6156cc24fe84e7756d8a62c1a8a39afe90210f93cdd"
+          }
+        },
+        {
+          "index": 15,
+          "stage": "autopac_judge",
+          "original_ledger_status": "COMPLETED",
+          "raw": {
+            "path": "D:\\lunwen\\EC-CSI投稿\\working\\exploration\\20261014_matched_evidence_labor\\matched_generation\\calls\\15_FSV-B13_autopac_judge\\response.raw.json",
+            "sha256": "43632bfc9934c552e09057631d0517ac89e59eba6187d007134c7edcc44ffdb1"
+          },
+          "prompt": {
+            "path": "D:\\lunwen\\EC-CSI投稿\\working\\exploration\\20261014_matched_evidence_labor\\matched_generation\\calls\\15_FSV-B13_autopac_judge\\prompt.txt",
+            "sha256": "d9b635ec9bbe604477a939bb3902b8b29bc6a0eb1cef74e2fd52606c5e61e52e"
+          },
+          "parsed_output": {
+            "path": "D:\\lunwen\\EC-CSI投稿\\working\\exploration\\20261014_matched_evidence_labor\\matched_generation\\calls\\15_FSV-B13_autopac_judge\\parsed_output.json",
+            "sha256": "2f2f4fa27ccd9c8d6477c226a6f9547975256455962da20867bed3f93f113092"
+          }
+        }
+      ],
+      "original_pair": [
+        {
+          "channel": "O-L",
+          "input": {
+            "request": {
+              "body": {
+                "qty": 110
+              }
+            },
+            "trusted": {
+              "allowancePercent": 10,
+              "authorizedRole": false,
+              "derivedMaximumQty": 110,
+              "orderedQty": 100
+            }
+          },
+          "expected": "allow",
+          "actual": {
+            "status": "EXECUTED",
+            "decision": "allow",
+            "exit_code": 0
+          },
+          "pass": true
+        },
+        {
+          "channel": "O-I",
+          "input": {
+            "request": {
+              "body": {
+                "qty": 111
+              }
+            },
+            "trusted": {
+              "allowancePercent": 10,
+              "authorizedRole": false,
+              "derivedMaximumQty": 110,
+              "orderedQty": 100
+            }
+          },
+          "expected": "deny",
+          "actual": {
+            "status": "EXECUTED",
+            "decision": "deny",
+            "exit_code": 0
+          },
+          "pass": true
+        }
+      ],
+      "primary_reconciliation": {
+        "path": "D:\\lunwen\\EC-CSI投稿\\working\\exploration\\20261014_matched_evidence_labor\\matched_generation\\results_review_v1\\PRIMARY_RECONCILIATION.json",
+        "sha256": "daf23f1770a6fc89ed7eb87f63e82be6317dcaeecdfb19e2a10f7e717c8e8c2d"
+      },
+      "independent_reconciliation": {
+        "path": "D:\\lunwen\\EC-CSI投稿\\working\\exploration\\20261014_matched_evidence_labor\\matched_generation\\FINAL_INDEPENDENT_AUDIT.json",
+        "sha256": "6df4db53ce6ea3e8e992acc1b62558651c4049feb1a92eb7e9f19e18afa104b2"
+      }
+    },
+    {
+      "task": "FSV-B13",
+      "method": "ECAS_MATCHED",
+      "batch": "B",
+      "row": {
+        "batch": "B",
+        "task": "FSV-B13",
+        "case_name_cn": "数量上限与授权例外",
+        "system": "ERPNext",
+        "method": "ECAS_MATCHED",
+        "method_name_cn": "ECAS",
+        "original_pre_format_status": "ELIGIBLE",
+        "post_format_pre_mapping_status": "NOT_APPLICABLE",
+        "displayed_status": "ELIGIBLE",
+        "displayed_symbol": "●",
+        "original_legal_decision": "allow",
+        "original_violation_decision": "deny",
+        "pair_correct_count": 2,
+        "first_generation_eligible": true,
+        "repaired_once": false,
+        "result_source": "D:\\lunwen\\EC-CSI投稿\\working\\exploration\\20261014_matched_evidence_labor\\matched_generation\\method_runs\\FSV-B13\\ECAS_MATCHED\\RESULT.json",
+        "display_source": "D:\\lunwen\\EC-CSI投稿\\working\\exploration\\20261014_matched_evidence_labor\\matched_generation\\results_review_v1\\COMPARISON_SUMMARY.json",
+        "final_policy_source": "D:\\lunwen\\EC-CSI投稿\\working\\exploration\\20261014_matched_evidence_labor\\matched_generation\\method_runs\\FSV-B13\\ECAS_MATCHED\\initial\\admitted_policy.json",
+        "raw_call_indices": "16",
+        "note_cn": "共同目标协议下首次生成已合格",
+        "project_name": "ERPNext"
+      },
+      "result": {
+        "path": "D:\\lunwen\\EC-CSI投稿\\working\\exploration\\20261014_matched_evidence_labor\\matched_generation\\method_runs\\FSV-B13\\ECAS_MATCHED\\RESULT.json",
+        "sha256": "b5f736c8180cc3a16611ffbe471cfde9588d27c1af8fad54a2a083eff489f744"
+      },
+      "display_summary": {
+        "path": "D:\\lunwen\\EC-CSI投稿\\working\\exploration\\20261014_matched_evidence_labor\\matched_generation\\results_review_v1\\COMPARISON_SUMMARY.json",
+        "sha256": "e19897b542b10bb0d5db753ac7c8d28d8bed1e52a02fcb6505b7090723660849"
+      },
+      "policy": {
+        "path": "D:\\lunwen\\EC-CSI投稿\\working\\exploration\\20261014_matched_evidence_labor\\matched_generation\\method_runs\\FSV-B13\\ECAS_MATCHED\\initial\\admitted_policy.json",
+        "sha256": "2c0c40bddf86afebb6ec9a483e9df0bfff922f7b116d3e180846cfe7232fbb00"
+      },
+      "calls": [
+        {
+          "index": 16,
+          "stage": "ecas_generate",
+          "original_ledger_status": "COMPLETED",
+          "raw": {
+            "path": "D:\\lunwen\\EC-CSI投稿\\working\\exploration\\20261014_matched_evidence_labor\\matched_generation\\calls\\16_FSV-B13_ecas_generate\\response.raw.json",
+            "sha256": "636200bd867197465ba9ad86c3a46c79aa7c17fb7e1ba1523f88a426858fa2ad"
+          },
+          "prompt": {
+            "path": "D:\\lunwen\\EC-CSI投稿\\working\\exploration\\20261014_matched_evidence_labor\\matched_generation\\calls\\16_FSV-B13_ecas_generate\\prompt.txt",
+            "sha256": "375d01da32615b412f3a23eab39f0381e785f5dc974d436608dd05a0632a866a"
+          },
+          "parsed_output": {
+            "path": "D:\\lunwen\\EC-CSI投稿\\working\\exploration\\20261014_matched_evidence_labor\\matched_generation\\calls\\16_FSV-B13_ecas_generate\\parsed_output.json",
+            "sha256": "47383c120912aef24035dfc183216303ef9eb8dee89bbaa5d9152f77bcfccb74"
+          }
+        }
+      ],
+      "original_pair": [
+        {
+          "channel": "O-L",
+          "input": {
+            "request": {
+              "body": {
+                "qty": 110
+              }
+            },
+            "trusted": {
+              "allowancePercent": 10,
+              "authorizedRole": false,
+              "derivedMaximumQty": 110,
+              "orderedQty": 100
+            }
+          },
+          "expected": "allow",
+          "actual": {
+            "policy_id": "FSV-B13.PurchaseReceipt.QuantityAllowance",
+            "decision": "allow",
+            "fail_closed": true,
+            "violations": []
+          },
+          "pass": true
+        },
+        {
+          "channel": "O-I",
+          "input": {
+            "request": {
+              "body": {
+                "qty": 111
+              }
+            },
+            "trusted": {
+              "allowancePercent": 10,
+              "authorizedRole": false,
+              "derivedMaximumQty": 110,
+              "orderedQty": 100
+            }
+          },
+          "expected": "deny",
+          "actual": {
+            "policy_id": "FSV-B13.PurchaseReceipt.QuantityAllowance",
+            "decision": "deny",
+            "fail_closed": true,
+            "violations": [
+              {
+                "rule_id": "FSV-B13.PurchaseReceipt.QuantityAllowance.Rule",
+                "code": "bounded_guard_rejected",
+                "detail": "FSV-B13.PurchaseReceipt.QuantityAllowance.Rule"
+              }
+            ]
+          },
+          "pass": true
+        }
+      ],
+      "primary_reconciliation": {
+        "path": "D:\\lunwen\\EC-CSI投稿\\working\\exploration\\20261014_matched_evidence_labor\\matched_generation\\results_review_v1\\PRIMARY_RECONCILIATION.json",
+        "sha256": "daf23f1770a6fc89ed7eb87f63e82be6317dcaeecdfb19e2a10f7e717c8e8c2d"
+      },
+      "independent_reconciliation": {
+        "path": "D:\\lunwen\\EC-CSI投稿\\working\\exploration\\20261014_matched_evidence_labor\\matched_generation\\FINAL_INDEPENDENT_AUDIT.json",
+        "sha256": "6df4db53ce6ea3e8e992acc1b62558651c4049feb1a92eb7e9f19e18afa104b2"
+      }
+    },
+    {
+      "task": "FSV-B17",
+      "method": "P2P_STYLE",
+      "batch": "B",
+      "row": {
+        "batch": "B",
+        "task": "FSV-B17",
+        "case_name_cn": "禁用客户",
+        "system": "ERPNext",
+        "method": "P2P_STYLE",
+        "method_name_cn": "P2P适配版",
+        "original_pre_format_status": "ELIGIBLE",
+        "post_format_pre_mapping_status": "NOT_APPLICABLE",
+        "displayed_status": "ELIGIBLE",
+        "displayed_symbol": "●",
+        "original_legal_decision": "allow",
+        "original_violation_decision": "deny",
+        "pair_correct_count": 2,
+        "first_generation_eligible": true,
+        "repaired_once": false,
+        "result_source": "D:\\lunwen\\EC-CSI投稿\\working\\exploration\\20261014_matched_evidence_labor\\matched_generation\\method_runs\\FSV-B17\\P2P_STYLE\\RESULT.json",
+        "display_source": "D:\\lunwen\\EC-CSI投稿\\working\\exploration\\20261014_matched_evidence_labor\\matched_generation\\results_review_v1\\COMPARISON_SUMMARY.json",
+        "final_policy_source": "D:\\lunwen\\EC-CSI投稿\\working\\exploration\\20261014_matched_evidence_labor\\matched_generation\\method_runs\\FSV-B17\\P2P_STYLE\\initial\\external_pilot\\policy.rego",
+        "raw_call_indices": "17;18;19;20",
+        "note_cn": "共同目标协议下首次生成已合格",
+        "project_name": "ERPNext"
+      },
+      "result": {
+        "path": "D:\\lunwen\\EC-CSI投稿\\working\\exploration\\20261014_matched_evidence_labor\\matched_generation\\method_runs\\FSV-B17\\P2P_STYLE\\RESULT.json",
+        "sha256": "51df3b6b338f71ae4c94f8a9ed25b2475b492f30a89000bd35550febf3f90a2d"
+      },
+      "display_summary": {
+        "path": "D:\\lunwen\\EC-CSI投稿\\working\\exploration\\20261014_matched_evidence_labor\\matched_generation\\results_review_v1\\COMPARISON_SUMMARY.json",
+        "sha256": "e19897b542b10bb0d5db753ac7c8d28d8bed1e52a02fcb6505b7090723660849"
+      },
+      "policy": {
+        "path": "D:\\lunwen\\EC-CSI投稿\\working\\exploration\\20261014_matched_evidence_labor\\matched_generation\\method_runs\\FSV-B17\\P2P_STYLE\\initial\\external_pilot\\policy.rego",
+        "sha256": "83fb3cf00dcea3c7446241ce57acc9288c8efe758decac4bbb73720c1b0f3350"
+      },
+      "calls": [
+        {
+          "index": 17,
+          "stage": "p2p_detect",
+          "original_ledger_status": "COMPLETED",
+          "raw": {
+            "path": "D:\\lunwen\\EC-CSI投稿\\working\\exploration\\20261014_matched_evidence_labor\\matched_generation\\calls\\17_FSV-B17_p2p_detect\\response.raw.json",
+            "sha256": "453e3747c0074ec56f1f199be952c86dca94e91d308ce1cbcee5c4633a653eea"
+          },
+          "prompt": {
+            "path": "D:\\lunwen\\EC-CSI投稿\\working\\exploration\\20261014_matched_evidence_labor\\matched_generation\\calls\\17_FSV-B17_p2p_detect\\prompt.txt",
+            "sha256": "d02830a4dcfc2e893b366f20408bcea1e3b7af6f845ce01e2ddd8ff55b34ba9e"
+          },
+          "parsed_output": {
+            "path": "D:\\lunwen\\EC-CSI投稿\\working\\exploration\\20261014_matched_evidence_labor\\matched_generation\\calls\\17_FSV-B17_p2p_detect\\parsed_output.json",
+            "sha256": "634c88f1e2a85c3ee8a27c9bf4ffcaf98628755761e699dcf5d940136a67563e"
+          }
+        },
+        {
+          "index": 18,
+          "stage": "p2p_extract",
+          "original_ledger_status": "COMPLETED",
+          "raw": {
+            "path": "D:\\lunwen\\EC-CSI投稿\\working\\exploration\\20261014_matched_evidence_labor\\matched_generation\\calls\\18_FSV-B17_p2p_extract\\response.raw.json",
+            "sha256": "a3463cdcdf11596cccb7376c8f80d387b1b5f156f527c3855fa99bcc9288cf15"
+          },
+          "prompt": {
+            "path": "D:\\lunwen\\EC-CSI投稿\\working\\exploration\\20261014_matched_evidence_labor\\matched_generation\\calls\\18_FSV-B17_p2p_extract\\prompt.txt",
+            "sha256": "1af023950fe6267fcf5a617f043066235f23864f3248ce7ff9db16b155c8d882"
+          },
+          "parsed_output": {
+            "path": "D:\\lunwen\\EC-CSI投稿\\working\\exploration\\20261014_matched_evidence_labor\\matched_generation\\calls\\18_FSV-B17_p2p_extract\\parsed_output.json",
+            "sha256": "72b78a63392c15a92af62acd7c5a660fc95f775e4445c59e504e15b7aeb3912c"
+          }
+        },
+        {
+          "index": 19,
+          "stage": "p2p_rego",
+          "original_ledger_status": "COMPLETED",
+          "raw": {
+            "path": "D:\\lunwen\\EC-CSI投稿\\working\\exploration\\20261014_matched_evidence_labor\\matched_generation\\calls\\19_FSV-B17_p2p_rego\\response.raw.json",
+            "sha256": "4b0ab9a383e8eacec8663af23278a8da79e1dffd4ec4b312eec4232883198344"
+          },
+          "prompt": {
+            "path": "D:\\lunwen\\EC-CSI投稿\\working\\exploration\\20261014_matched_evidence_labor\\matched_generation\\calls\\19_FSV-B17_p2p_rego\\prompt.txt",
+            "sha256": "5ed307872543cb6d663925054ecc1106943f86f40a449d030d77ad6f475c2187"
+          },
+          "parsed_output": {
+            "path": "D:\\lunwen\\EC-CSI投稿\\working\\exploration\\20261014_matched_evidence_labor\\matched_generation\\calls\\19_FSV-B17_p2p_rego\\parsed_output.json",
+            "sha256": "1fa942b8c57d5150085658421cceb991d54fb89d5b2a4e875ad6af4aedf7fd92"
+          }
+        },
+        {
+          "index": 20,
+          "stage": "p2p_tests",
+          "original_ledger_status": "COMPLETED",
+          "raw": {
+            "path": "D:\\lunwen\\EC-CSI投稿\\working\\exploration\\20261014_matched_evidence_labor\\matched_generation\\calls\\20_FSV-B17_p2p_tests\\response.raw.json",
+            "sha256": "d74c41f21985506a807aaf5fcfeffea2aba6e96e55efd3d95ed515265fe94c4f"
+          },
+          "prompt": {
+            "path": "D:\\lunwen\\EC-CSI投稿\\working\\exploration\\20261014_matched_evidence_labor\\matched_generation\\calls\\20_FSV-B17_p2p_tests\\prompt.txt",
+            "sha256": "0f70020496d9c6c2fa714000fddd8f5155cf37c62eaff74f0e3a53e5268ff948"
+          },
+          "parsed_output": {
+            "path": "D:\\lunwen\\EC-CSI投稿\\working\\exploration\\20261014_matched_evidence_labor\\matched_generation\\calls\\20_FSV-B17_p2p_tests\\parsed_output.json",
+            "sha256": "2d80bf0295dcb879832cd9ad3eae6a9c52340820c1f969a11f7552b4fff47ff1"
+          }
+        }
+      ],
+      "original_pair": [
+        {
+          "channel": "O-L",
+          "input": {
+            "request": {
+              "body": {
+                "customer": "CUSTOMER-SYNTH-1"
+              }
+            },
+            "trusted": {
+              "customerDisabled": false
+            }
+          },
+          "expected": "allow",
+          "actual": {
+            "status": "EXECUTED",
+            "decision": "allow",
+            "exit_code": 0
+          },
+          "pass": true
+        },
+        {
+          "channel": "O-I",
+          "input": {
+            "request": {
+              "body": {
+                "customer": "CUSTOMER-SYNTH-1"
+              }
+            },
+            "trusted": {
+              "customerDisabled": true
+            }
+          },
+          "expected": "deny",
+          "actual": {
+            "status": "EXECUTED",
+            "decision": "deny",
+            "exit_code": 0
+          },
+          "pass": true
+        }
+      ],
+      "primary_reconciliation": {
+        "path": "D:\\lunwen\\EC-CSI投稿\\working\\exploration\\20261014_matched_evidence_labor\\matched_generation\\results_review_v1\\PRIMARY_RECONCILIATION.json",
+        "sha256": "daf23f1770a6fc89ed7eb87f63e82be6317dcaeecdfb19e2a10f7e717c8e8c2d"
+      },
+      "independent_reconciliation": {
+        "path": "D:\\lunwen\\EC-CSI投稿\\working\\exploration\\20261014_matched_evidence_labor\\matched_generation\\FINAL_INDEPENDENT_AUDIT.json",
+        "sha256": "6df4db53ce6ea3e8e992acc1b62558651c4049feb1a92eb7e9f19e18afa104b2"
+      }
+    },
+    {
+      "task": "FSV-B17",
+      "method": "AUTOPAC_STYLE",
+      "batch": "B",
+      "row": {
+        "batch": "B",
+        "task": "FSV-B17",
+        "case_name_cn": "禁用客户",
+        "system": "ERPNext",
+        "method": "AUTOPAC_STYLE",
+        "method_name_cn": "AutoPAC适配版",
+        "original_pre_format_status": "ELIGIBLE",
+        "post_format_pre_mapping_status": "NOT_APPLICABLE",
+        "displayed_status": "ELIGIBLE",
+        "displayed_symbol": "●",
+        "original_legal_decision": "allow",
+        "original_violation_decision": "deny",
+        "pair_correct_count": 2,
+        "first_generation_eligible": true,
+        "repaired_once": false,
+        "result_source": "D:\\lunwen\\EC-CSI投稿\\working\\exploration\\20261014_matched_evidence_labor\\matched_generation\\method_runs\\FSV-B17\\AUTOPAC_STYLE\\RESULT.json",
+        "display_source": "D:\\lunwen\\EC-CSI投稿\\working\\exploration\\20261014_matched_evidence_labor\\matched_generation\\results_review_v1\\COMPARISON_SUMMARY.json",
+        "final_policy_source": "D:\\lunwen\\EC-CSI投稿\\working\\exploration\\20261014_matched_evidence_labor\\matched_generation\\method_runs\\FSV-B17\\AUTOPAC_STYLE\\initial\\external_pilot\\policy.rego",
+        "raw_call_indices": "21;22",
+        "note_cn": "共同目标协议下首次生成已合格",
+        "project_name": "ERPNext"
+      },
+      "result": {
+        "path": "D:\\lunwen\\EC-CSI投稿\\working\\exploration\\20261014_matched_evidence_labor\\matched_generation\\method_runs\\FSV-B17\\AUTOPAC_STYLE\\RESULT.json",
+        "sha256": "972078202a8c6e1da3241323c36fcab249d8cc46c57f47584db78b8461cd8723"
+      },
+      "display_summary": {
+        "path": "D:\\lunwen\\EC-CSI投稿\\working\\exploration\\20261014_matched_evidence_labor\\matched_generation\\results_review_v1\\COMPARISON_SUMMARY.json",
+        "sha256": "e19897b542b10bb0d5db753ac7c8d28d8bed1e52a02fcb6505b7090723660849"
+      },
+      "policy": {
+        "path": "D:\\lunwen\\EC-CSI投稿\\working\\exploration\\20261014_matched_evidence_labor\\matched_generation\\method_runs\\FSV-B17\\AUTOPAC_STYLE\\initial\\external_pilot\\policy.rego",
+        "sha256": "83fb3cf00dcea3c7446241ce57acc9288c8efe758decac4bbb73720c1b0f3350"
+      },
+      "calls": [
+        {
+          "index": 21,
+          "stage": "autopac_generate",
+          "original_ledger_status": "COMPLETED",
+          "raw": {
+            "path": "D:\\lunwen\\EC-CSI投稿\\working\\exploration\\20261014_matched_evidence_labor\\matched_generation\\calls\\21_FSV-B17_autopac_generate\\response.raw.json",
+            "sha256": "7cf238bdcf86c3c843ac91e1e11373fad3d1980f064c50d4608103d5b7154d25"
+          },
+          "prompt": {
+            "path": "D:\\lunwen\\EC-CSI投稿\\working\\exploration\\20261014_matched_evidence_labor\\matched_generation\\calls\\21_FSV-B17_autopac_generate\\prompt.txt",
+            "sha256": "2b8063f2644d0de6726307c3eaa216992418e76fd73e88495315260826c173f2"
+          },
+          "parsed_output": {
+            "path": "D:\\lunwen\\EC-CSI投稿\\working\\exploration\\20261014_matched_evidence_labor\\matched_generation\\calls\\21_FSV-B17_autopac_generate\\parsed_output.json",
+            "sha256": "533267c429bd5688d0710a3db3a351b2948e581d2e9fffff8d5ab9d667f46989"
+          }
+        },
+        {
+          "index": 22,
+          "stage": "autopac_judge",
+          "original_ledger_status": "COMPLETED",
+          "raw": {
+            "path": "D:\\lunwen\\EC-CSI投稿\\working\\exploration\\20261014_matched_evidence_labor\\matched_generation\\calls\\22_FSV-B17_autopac_judge\\response.raw.json",
+            "sha256": "7db845baf9c5f2292c3e3ab657367c794f607d35719400e23a4ff99f40665a2b"
+          },
+          "prompt": {
+            "path": "D:\\lunwen\\EC-CSI投稿\\working\\exploration\\20261014_matched_evidence_labor\\matched_generation\\calls\\22_FSV-B17_autopac_judge\\prompt.txt",
+            "sha256": "9f9666ee9f7876f6802deaf70775a836a8f286dc86edfa0c3f6a1c1a696e52c9"
+          },
+          "parsed_output": {
+            "path": "D:\\lunwen\\EC-CSI投稿\\working\\exploration\\20261014_matched_evidence_labor\\matched_generation\\calls\\22_FSV-B17_autopac_judge\\parsed_output.json",
+            "sha256": "2f2f4fa27ccd9c8d6477c226a6f9547975256455962da20867bed3f93f113092"
+          }
+        }
+      ],
+      "original_pair": [
+        {
+          "channel": "O-L",
+          "input": {
+            "request": {
+              "body": {
+                "customer": "CUSTOMER-SYNTH-1"
+              }
+            },
+            "trusted": {
+              "customerDisabled": false
+            }
+          },
+          "expected": "allow",
+          "actual": {
+            "status": "EXECUTED",
+            "decision": "allow",
+            "exit_code": 0
+          },
+          "pass": true
+        },
+        {
+          "channel": "O-I",
+          "input": {
+            "request": {
+              "body": {
+                "customer": "CUSTOMER-SYNTH-1"
+              }
+            },
+            "trusted": {
+              "customerDisabled": true
+            }
+          },
+          "expected": "deny",
+          "actual": {
+            "status": "EXECUTED",
+            "decision": "deny",
+            "exit_code": 0
+          },
+          "pass": true
+        }
+      ],
+      "primary_reconciliation": {
+        "path": "D:\\lunwen\\EC-CSI投稿\\working\\exploration\\20261014_matched_evidence_labor\\matched_generation\\results_review_v1\\PRIMARY_RECONCILIATION.json",
+        "sha256": "daf23f1770a6fc89ed7eb87f63e82be6317dcaeecdfb19e2a10f7e717c8e8c2d"
+      },
+      "independent_reconciliation": {
+        "path": "D:\\lunwen\\EC-CSI投稿\\working\\exploration\\20261014_matched_evidence_labor\\matched_generation\\FINAL_INDEPENDENT_AUDIT.json",
+        "sha256": "6df4db53ce6ea3e8e992acc1b62558651c4049feb1a92eb7e9f19e18afa104b2"
+      }
+    },
+    {
+      "task": "FSV-B17",
+      "method": "ECAS_MATCHED",
+      "batch": "B",
+      "row": {
+        "batch": "B",
+        "task": "FSV-B17",
+        "case_name_cn": "禁用客户",
+        "system": "ERPNext",
+        "method": "ECAS_MATCHED",
+        "method_name_cn": "ECAS",
+        "original_pre_format_status": "ELIGIBLE",
+        "post_format_pre_mapping_status": "NOT_APPLICABLE",
+        "displayed_status": "ELIGIBLE",
+        "displayed_symbol": "●",
+        "original_legal_decision": "allow",
+        "original_violation_decision": "deny",
+        "pair_correct_count": 2,
+        "first_generation_eligible": true,
+        "repaired_once": false,
+        "result_source": "D:\\lunwen\\EC-CSI投稿\\working\\exploration\\20261014_matched_evidence_labor\\matched_generation\\method_runs\\FSV-B17\\ECAS_MATCHED\\RESULT.json",
+        "display_source": "D:\\lunwen\\EC-CSI投稿\\working\\exploration\\20261014_matched_evidence_labor\\matched_generation\\results_review_v1\\COMPARISON_SUMMARY.json",
+        "final_policy_source": "D:\\lunwen\\EC-CSI投稿\\working\\exploration\\20261014_matched_evidence_labor\\matched_generation\\method_runs\\FSV-B17\\ECAS_MATCHED\\initial\\admitted_policy.json",
+        "raw_call_indices": "23",
+        "note_cn": "共同目标协议下首次生成已合格",
+        "project_name": "ERPNext"
+      },
+      "result": {
+        "path": "D:\\lunwen\\EC-CSI投稿\\working\\exploration\\20261014_matched_evidence_labor\\matched_generation\\method_runs\\FSV-B17\\ECAS_MATCHED\\RESULT.json",
+        "sha256": "1a4feb547d5ae6475d99d396a8644c24ffd1e627e43921dc4be64fef0e09f8e3"
+      },
+      "display_summary": {
+        "path": "D:\\lunwen\\EC-CSI投稿\\working\\exploration\\20261014_matched_evidence_labor\\matched_generation\\results_review_v1\\COMPARISON_SUMMARY.json",
+        "sha256": "e19897b542b10bb0d5db753ac7c8d28d8bed1e52a02fcb6505b7090723660849"
+      },
+      "policy": {
+        "path": "D:\\lunwen\\EC-CSI投稿\\working\\exploration\\20261014_matched_evidence_labor\\matched_generation\\method_runs\\FSV-B17\\ECAS_MATCHED\\initial\\admitted_policy.json",
+        "sha256": "a206e1535f6402c2864e7b3265b287dc3700c39e2f7aba4103ae62f0ecedc79d"
+      },
+      "calls": [
+        {
+          "index": 23,
+          "stage": "ecas_generate",
+          "original_ledger_status": "COMPLETED",
+          "raw": {
+            "path": "D:\\lunwen\\EC-CSI投稿\\working\\exploration\\20261014_matched_evidence_labor\\matched_generation\\calls\\23_FSV-B17_ecas_generate\\response.raw.json",
+            "sha256": "780ed340d9d004c09a124455c11290ef42b741a9b524d22917a49cd4bb462595"
+          },
+          "prompt": {
+            "path": "D:\\lunwen\\EC-CSI投稿\\working\\exploration\\20261014_matched_evidence_labor\\matched_generation\\calls\\23_FSV-B17_ecas_generate\\prompt.txt",
+            "sha256": "b6989f2cda61ef072a9d0fce7865bffca0b7a0dda07e57e6720be3ae5431766c"
+          },
+          "parsed_output": {
+            "path": "D:\\lunwen\\EC-CSI投稿\\working\\exploration\\20261014_matched_evidence_labor\\matched_generation\\calls\\23_FSV-B17_ecas_generate\\parsed_output.json",
+            "sha256": "af7e092672c30254b135ae168bf2da72c35ba5bf8e2a2f3ea4f6ee91841aa6f1"
+          }
+        }
+      ],
+      "original_pair": [
+        {
+          "channel": "O-L",
+          "input": {
+            "request": {
+              "body": {
+                "customer": "CUSTOMER-SYNTH-1"
+              }
+            },
+            "trusted": {
+              "customerDisabled": false
+            }
+          },
+          "expected": "allow",
+          "actual": {
+            "policy_id": "FSV-B17-DISABLED-CUSTOMER-SO",
+            "decision": "allow",
+            "fail_closed": true,
+            "violations": []
+          },
+          "pass": true
+        },
+        {
+          "channel": "O-I",
+          "input": {
+            "request": {
+              "body": {
+                "customer": "CUSTOMER-SYNTH-1"
+              }
+            },
+            "trusted": {
+              "customerDisabled": true
+            }
+          },
+          "expected": "deny",
+          "actual": {
+            "policy_id": "FSV-B17-DISABLED-CUSTOMER-SO",
+            "decision": "deny",
+            "fail_closed": true,
+            "violations": [
+              {
+                "rule_id": "FSV-B17-RULE-01",
+                "code": "bounded_guard_rejected",
+                "detail": "FSV-B17-RULE-01"
+              }
+            ]
+          },
+          "pass": true
+        }
+      ],
+      "primary_reconciliation": {
+        "path": "D:\\lunwen\\EC-CSI投稿\\working\\exploration\\20261014_matched_evidence_labor\\matched_generation\\results_review_v1\\PRIMARY_RECONCILIATION.json",
+        "sha256": "daf23f1770a6fc89ed7eb87f63e82be6317dcaeecdfb19e2a10f7e717c8e8c2d"
+      },
+      "independent_reconciliation": {
+        "path": "D:\\lunwen\\EC-CSI投稿\\working\\exploration\\20261014_matched_evidence_labor\\matched_generation\\FINAL_INDEPENDENT_AUDIT.json",
+        "sha256": "6df4db53ce6ea3e8e992acc1b62558651c4049feb1a92eb7e9f19e18afa104b2"
+      }
+    },
+    {
+      "task": "FSV-B19",
+      "method": "P2P_STYLE",
+      "batch": "B",
+      "row": {
+        "batch": "B",
+        "task": "FSV-B19",
+        "case_name_cn": "供应商冻结类型",
+        "system": "ERPNext",
+        "method": "P2P_STYLE",
+        "method_name_cn": "P2P适配版",
+        "original_pre_format_status": "ELIGIBLE",
+        "post_format_pre_mapping_status": "NOT_APPLICABLE",
+        "displayed_status": "ELIGIBLE",
+        "displayed_symbol": "●",
+        "original_legal_decision": "allow",
+        "original_violation_decision": "deny",
+        "pair_correct_count": 2,
+        "first_generation_eligible": true,
+        "repaired_once": false,
+        "result_source": "D:\\lunwen\\EC-CSI投稿\\working\\exploration\\20261014_matched_evidence_labor\\matched_generation\\method_runs\\FSV-B19\\P2P_STYLE\\RESULT.json",
+        "display_source": "D:\\lunwen\\EC-CSI投稿\\working\\exploration\\20261014_matched_evidence_labor\\matched_generation\\results_review_v1\\COMPARISON_SUMMARY.json",
+        "final_policy_source": "D:\\lunwen\\EC-CSI投稿\\working\\exploration\\20261014_matched_evidence_labor\\matched_generation\\method_runs\\FSV-B19\\P2P_STYLE\\initial\\external_pilot\\policy.rego",
+        "raw_call_indices": "24;25;26;27",
+        "note_cn": "共同目标协议下首次生成已合格",
+        "project_name": "ERPNext"
+      },
+      "result": {
+        "path": "D:\\lunwen\\EC-CSI投稿\\working\\exploration\\20261014_matched_evidence_labor\\matched_generation\\method_runs\\FSV-B19\\P2P_STYLE\\RESULT.json",
+        "sha256": "9dc5b63621f6c2177d54e7cb079e05306b8b0bc8b4fd846870dc6ca3acc78aa5"
+      },
+      "display_summary": {
+        "path": "D:\\lunwen\\EC-CSI投稿\\working\\exploration\\20261014_matched_evidence_labor\\matched_generation\\results_review_v1\\COMPARISON_SUMMARY.json",
+        "sha256": "e19897b542b10bb0d5db753ac7c8d28d8bed1e52a02fcb6505b7090723660849"
+      },
+      "policy": {
+        "path": "D:\\lunwen\\EC-CSI投稿\\working\\exploration\\20261014_matched_evidence_labor\\matched_generation\\method_runs\\FSV-B19\\P2P_STYLE\\initial\\external_pilot\\policy.rego",
+        "sha256": "0998766d0206e565cafe9067f4408622cf1a3c89b2aaf44993ab8c46a4be9c88"
+      },
+      "calls": [
+        {
+          "index": 24,
+          "stage": "p2p_detect",
+          "original_ledger_status": "COMPLETED",
+          "raw": {
+            "path": "D:\\lunwen\\EC-CSI投稿\\working\\exploration\\20261014_matched_evidence_labor\\matched_generation\\calls\\24_FSV-B19_p2p_detect\\response.raw.json",
+            "sha256": "24c24cfe5ddfdbed3dbf80242974fe3d1ebbe42d3ecc195ce30cd8520c9083b6"
+          },
+          "prompt": {
+            "path": "D:\\lunwen\\EC-CSI投稿\\working\\exploration\\20261014_matched_evidence_labor\\matched_generation\\calls\\24_FSV-B19_p2p_detect\\prompt.txt",
+            "sha256": "34ab1ef29c68027cab7158337c5055945ac127b8daf6ccde28199e909a6de4f1"
+          },
+          "parsed_output": {
+            "path": "D:\\lunwen\\EC-CSI投稿\\working\\exploration\\20261014_matched_evidence_labor\\matched_generation\\calls\\24_FSV-B19_p2p_detect\\parsed_output.json",
+            "sha256": "9b48aa9e72484810e18fe0428cf559ae51cafd65d55608da3cb1e20270969d72"
+          }
+        },
+        {
+          "index": 25,
+          "stage": "p2p_extract",
+          "original_ledger_status": "COMPLETED",
+          "raw": {
+            "path": "D:\\lunwen\\EC-CSI投稿\\working\\exploration\\20261014_matched_evidence_labor\\matched_generation\\calls\\25_FSV-B19_p2p_extract\\response.raw.json",
+            "sha256": "502520aaa1da1c6fe23d19af85e1137764f8a3d0ba266d343046252cc1645e1e"
+          },
+          "prompt": {
+            "path": "D:\\lunwen\\EC-CSI投稿\\working\\exploration\\20261014_matched_evidence_labor\\matched_generation\\calls\\25_FSV-B19_p2p_extract\\prompt.txt",
+            "sha256": "b664601a948eccdf80e0d306f2845f7f661d478f8ff66563290d62868d2ffb6c"
+          },
+          "parsed_output": {
+            "path": "D:\\lunwen\\EC-CSI投稿\\working\\exploration\\20261014_matched_evidence_labor\\matched_generation\\calls\\25_FSV-B19_p2p_extract\\parsed_output.json",
+            "sha256": "0101147306293a7b32766a86458a4ce7a90e4599ef13ecc1e1a71dddfc0331d1"
+          }
+        },
+        {
+          "index": 26,
+          "stage": "p2p_rego",
+          "original_ledger_status": "COMPLETED",
+          "raw": {
+            "path": "D:\\lunwen\\EC-CSI投稿\\working\\exploration\\20261014_matched_evidence_labor\\matched_generation\\calls\\26_FSV-B19_p2p_rego\\response.raw.json",
+            "sha256": "98f48fdfc697da2cf15f8960752b1c336c73fe7c73c409139b9f76308267114f"
+          },
+          "prompt": {
+            "path": "D:\\lunwen\\EC-CSI投稿\\working\\exploration\\20261014_matched_evidence_labor\\matched_generation\\calls\\26_FSV-B19_p2p_rego\\prompt.txt",
+            "sha256": "d169fae417806fccceaec371f9592544abe4370bf9d21d4f4b253ed710e59a76"
+          },
+          "parsed_output": {
+            "path": "D:\\lunwen\\EC-CSI投稿\\working\\exploration\\20261014_matched_evidence_labor\\matched_generation\\calls\\26_FSV-B19_p2p_rego\\parsed_output.json",
+            "sha256": "96bec1ff70c792563ffdbf2c1e28e6ccb01d43db3ed58eebfba36201a3162c6e"
+          }
+        },
+        {
+          "index": 27,
+          "stage": "p2p_tests",
+          "original_ledger_status": "COMPLETED",
+          "raw": {
+            "path": "D:\\lunwen\\EC-CSI投稿\\working\\exploration\\20261014_matched_evidence_labor\\matched_generation\\calls\\27_FSV-B19_p2p_tests\\response.raw.json",
+            "sha256": "28e142c3d559be3a943d28d91df611d76092a623318f1045691411742a87e149"
+          },
+          "prompt": {
+            "path": "D:\\lunwen\\EC-CSI投稿\\working\\exploration\\20261014_matched_evidence_labor\\matched_generation\\calls\\27_FSV-B19_p2p_tests\\prompt.txt",
+            "sha256": "95402272831fee834457b63f447896845588414a3bc3fc926fd64cacf0b554f3"
+          },
+          "parsed_output": {
+            "path": "D:\\lunwen\\EC-CSI投稿\\working\\exploration\\20261014_matched_evidence_labor\\matched_generation\\calls\\27_FSV-B19_p2p_tests\\parsed_output.json",
+            "sha256": "5d8fde4e6cef234a1814f9fcb0926147ece800b494553ea6095f4234a7f47ac6"
+          }
+        }
+      ],
+      "original_pair": [
+        {
+          "channel": "O-L",
+          "input": {
+            "request": {
+              "body": {
+                "action": "PURCHASE_ORDER",
+                "supplier": "SUPPLIER-SYNTH-1"
+              }
+            },
+            "trusted": {
+              "holdType": "",
+              "supplierOnHold": false
+            }
+          },
+          "expected": "allow",
+          "actual": {
+            "status": "EXECUTED",
+            "decision": "allow",
+            "exit_code": 0
+          },
+          "pass": true
+        },
+        {
+          "channel": "O-I",
+          "input": {
+            "request": {
+              "body": {
+                "action": "PURCHASE_ORDER",
+                "supplier": "SUPPLIER-SYNTH-1"
+              }
+            },
+            "trusted": {
+              "holdType": "All",
+              "supplierOnHold": true
+            }
+          },
+          "expected": "deny",
+          "actual": {
+            "status": "EXECUTED",
+            "decision": "deny",
+            "exit_code": 0
+          },
+          "pass": true
+        }
+      ],
+      "primary_reconciliation": {
+        "path": "D:\\lunwen\\EC-CSI投稿\\working\\exploration\\20261014_matched_evidence_labor\\matched_generation\\results_review_v1\\PRIMARY_RECONCILIATION.json",
+        "sha256": "daf23f1770a6fc89ed7eb87f63e82be6317dcaeecdfb19e2a10f7e717c8e8c2d"
+      },
+      "independent_reconciliation": {
+        "path": "D:\\lunwen\\EC-CSI投稿\\working\\exploration\\20261014_matched_evidence_labor\\matched_generation\\FINAL_INDEPENDENT_AUDIT.json",
+        "sha256": "6df4db53ce6ea3e8e992acc1b62558651c4049feb1a92eb7e9f19e18afa104b2"
+      }
+    },
+    {
+      "task": "FSV-B19",
+      "method": "AUTOPAC_STYLE",
+      "batch": "B",
+      "row": {
+        "batch": "B",
+        "task": "FSV-B19",
+        "case_name_cn": "供应商冻结类型",
+        "system": "ERPNext",
+        "method": "AUTOPAC_STYLE",
+        "method_name_cn": "AutoPAC适配版",
+        "original_pre_format_status": "ELIGIBLE",
+        "post_format_pre_mapping_status": "NOT_APPLICABLE",
+        "displayed_status": "ELIGIBLE",
+        "displayed_symbol": "●",
+        "original_legal_decision": "allow",
+        "original_violation_decision": "deny",
+        "pair_correct_count": 2,
+        "first_generation_eligible": true,
+        "repaired_once": false,
+        "result_source": "D:\\lunwen\\EC-CSI投稿\\working\\exploration\\20261014_matched_evidence_labor\\matched_generation\\method_runs\\FSV-B19\\AUTOPAC_STYLE\\RESULT.json",
+        "display_source": "D:\\lunwen\\EC-CSI投稿\\working\\exploration\\20261014_matched_evidence_labor\\matched_generation\\results_review_v1\\COMPARISON_SUMMARY.json",
+        "final_policy_source": "D:\\lunwen\\EC-CSI投稿\\working\\exploration\\20261014_matched_evidence_labor\\matched_generation\\method_runs\\FSV-B19\\AUTOPAC_STYLE\\initial\\external_pilot\\policy.rego",
+        "raw_call_indices": "28;29",
+        "note_cn": "共同目标协议下首次生成已合格",
+        "project_name": "ERPNext"
+      },
+      "result": {
+        "path": "D:\\lunwen\\EC-CSI投稿\\working\\exploration\\20261014_matched_evidence_labor\\matched_generation\\method_runs\\FSV-B19\\AUTOPAC_STYLE\\RESULT.json",
+        "sha256": "a6b596082892264a7f63985070de49e265af76507c83e80100499fc1b69691ba"
+      },
+      "display_summary": {
+        "path": "D:\\lunwen\\EC-CSI投稿\\working\\exploration\\20261014_matched_evidence_labor\\matched_generation\\results_review_v1\\COMPARISON_SUMMARY.json",
+        "sha256": "e19897b542b10bb0d5db753ac7c8d28d8bed1e52a02fcb6505b7090723660849"
+      },
+      "policy": {
+        "path": "D:\\lunwen\\EC-CSI投稿\\working\\exploration\\20261014_matched_evidence_labor\\matched_generation\\method_runs\\FSV-B19\\AUTOPAC_STYLE\\initial\\external_pilot\\policy.rego",
+        "sha256": "8b47a1ae6ba65a6de6839f749dd2d0f5221288ced65ff3e4ead59b1e28dc9ced"
+      },
+      "calls": [
+        {
+          "index": 28,
+          "stage": "autopac_generate",
+          "original_ledger_status": "COMPLETED",
+          "raw": {
+            "path": "D:\\lunwen\\EC-CSI投稿\\working\\exploration\\20261014_matched_evidence_labor\\matched_generation\\calls\\28_FSV-B19_autopac_generate\\response.raw.json",
+            "sha256": "ecc650cc37ba6ff3dc0b10d4a4d41226bbf434c469872801ea69cfc3b21e918e"
+          },
+          "prompt": {
+            "path": "D:\\lunwen\\EC-CSI投稿\\working\\exploration\\20261014_matched_evidence_labor\\matched_generation\\calls\\28_FSV-B19_autopac_generate\\prompt.txt",
+            "sha256": "be67cbdd06852b97cab29f18bb92bbda5e777847b312287e701f4194effde72c"
+          },
+          "parsed_output": {
+            "path": "D:\\lunwen\\EC-CSI投稿\\working\\exploration\\20261014_matched_evidence_labor\\matched_generation\\calls\\28_FSV-B19_autopac_generate\\parsed_output.json",
+            "sha256": "92bb11ed814fafc93fc74ae4736019898ac6cd257963e728a0c8487dbcd9de29"
+          }
+        },
+        {
+          "index": 29,
+          "stage": "autopac_judge",
+          "original_ledger_status": "COMPLETED",
+          "raw": {
+            "path": "D:\\lunwen\\EC-CSI投稿\\working\\exploration\\20261014_matched_evidence_labor\\matched_generation\\calls\\29_FSV-B19_autopac_judge\\response.raw.json",
+            "sha256": "c2e27d78221959a4da0b4198fac07fdf51b12eb354d37bdf9a6603b64c4e5c66"
+          },
+          "prompt": {
+            "path": "D:\\lunwen\\EC-CSI投稿\\working\\exploration\\20261014_matched_evidence_labor\\matched_generation\\calls\\29_FSV-B19_autopac_judge\\prompt.txt",
+            "sha256": "31811124e7cb7d691977304618aefb95c3beb668916ccc8090858f3fbe15ed81"
+          },
+          "parsed_output": {
+            "path": "D:\\lunwen\\EC-CSI投稿\\working\\exploration\\20261014_matched_evidence_labor\\matched_generation\\calls\\29_FSV-B19_autopac_judge\\parsed_output.json",
+            "sha256": "2f2f4fa27ccd9c8d6477c226a6f9547975256455962da20867bed3f93f113092"
+          }
+        }
+      ],
+      "original_pair": [
+        {
+          "channel": "O-L",
+          "input": {
+            "request": {
+              "body": {
+                "action": "PURCHASE_ORDER",
+                "supplier": "SUPPLIER-SYNTH-1"
+              }
+            },
+            "trusted": {
+              "holdType": "",
+              "supplierOnHold": false
+            }
+          },
+          "expected": "allow",
+          "actual": {
+            "status": "EXECUTED",
+            "decision": "allow",
+            "exit_code": 0
+          },
+          "pass": true
+        },
+        {
+          "channel": "O-I",
+          "input": {
+            "request": {
+              "body": {
+                "action": "PURCHASE_ORDER",
+                "supplier": "SUPPLIER-SYNTH-1"
+              }
+            },
+            "trusted": {
+              "holdType": "All",
+              "supplierOnHold": true
+            }
+          },
+          "expected": "deny",
+          "actual": {
+            "status": "EXECUTED",
+            "decision": "deny",
+            "exit_code": 0
+          },
+          "pass": true
+        }
+      ],
+      "primary_reconciliation": {
+        "path": "D:\\lunwen\\EC-CSI投稿\\working\\exploration\\20261014_matched_evidence_labor\\matched_generation\\results_review_v1\\PRIMARY_RECONCILIATION.json",
+        "sha256": "daf23f1770a6fc89ed7eb87f63e82be6317dcaeecdfb19e2a10f7e717c8e8c2d"
+      },
+      "independent_reconciliation": {
+        "path": "D:\\lunwen\\EC-CSI投稿\\working\\exploration\\20261014_matched_evidence_labor\\matched_generation\\FINAL_INDEPENDENT_AUDIT.json",
+        "sha256": "6df4db53ce6ea3e8e992acc1b62558651c4049feb1a92eb7e9f19e18afa104b2"
+      }
+    },
+    {
+      "task": "FSV-B19",
+      "method": "ECAS_MATCHED",
+      "batch": "B",
+      "row": {
+        "batch": "B",
+        "task": "FSV-B19",
+        "case_name_cn": "供应商冻结类型",
+        "system": "ERPNext",
+        "method": "ECAS_MATCHED",
+        "method_name_cn": "ECAS",
+        "original_pre_format_status": "ELIGIBLE",
+        "post_format_pre_mapping_status": "NOT_APPLICABLE",
+        "displayed_status": "ELIGIBLE",
+        "displayed_symbol": "●",
+        "original_legal_decision": "allow",
+        "original_violation_decision": "deny",
+        "pair_correct_count": 2,
+        "first_generation_eligible": true,
+        "repaired_once": false,
+        "result_source": "D:\\lunwen\\EC-CSI投稿\\working\\exploration\\20261014_matched_evidence_labor\\matched_generation\\method_runs\\FSV-B19\\ECAS_MATCHED\\RESULT.json",
+        "display_source": "D:\\lunwen\\EC-CSI投稿\\working\\exploration\\20261014_matched_evidence_labor\\matched_generation\\results_review_v1\\COMPARISON_SUMMARY.json",
+        "final_policy_source": "D:\\lunwen\\EC-CSI投稿\\working\\exploration\\20261014_matched_evidence_labor\\matched_generation\\method_runs\\FSV-B19\\ECAS_MATCHED\\initial\\admitted_policy.json",
+        "raw_call_indices": "30",
+        "note_cn": "共同目标协议下首次生成已合格",
+        "project_name": "ERPNext"
+      },
+      "result": {
+        "path": "D:\\lunwen\\EC-CSI投稿\\working\\exploration\\20261014_matched_evidence_labor\\matched_generation\\method_runs\\FSV-B19\\ECAS_MATCHED\\RESULT.json",
+        "sha256": "8a781167ffc84f72d91d3599c92011af4324381dcd47b13ca38e25944fe5e3b7"
+      },
+      "display_summary": {
+        "path": "D:\\lunwen\\EC-CSI投稿\\working\\exploration\\20261014_matched_evidence_labor\\matched_generation\\results_review_v1\\COMPARISON_SUMMARY.json",
+        "sha256": "e19897b542b10bb0d5db753ac7c8d28d8bed1e52a02fcb6505b7090723660849"
+      },
+      "policy": {
+        "path": "D:\\lunwen\\EC-CSI投稿\\working\\exploration\\20261014_matched_evidence_labor\\matched_generation\\method_runs\\FSV-B19\\ECAS_MATCHED\\initial\\admitted_policy.json",
+        "sha256": "ac7c5bbf8bbdf0ee773ce0b06a357a9b0d48e3bfa11b21bd229cfe22cf16d98d"
+      },
+      "calls": [
+        {
+          "index": 30,
+          "stage": "ecas_generate",
+          "original_ledger_status": "COMPLETED",
+          "raw": {
+            "path": "D:\\lunwen\\EC-CSI投稿\\working\\exploration\\20261014_matched_evidence_labor\\matched_generation\\calls\\30_FSV-B19_ecas_generate\\response.raw.json",
+            "sha256": "a4d91ad4fcff3f55c5d307586eb135f090c84ee9448cea9b3257aa69db530a09"
+          },
+          "prompt": {
+            "path": "D:\\lunwen\\EC-CSI投稿\\working\\exploration\\20261014_matched_evidence_labor\\matched_generation\\calls\\30_FSV-B19_ecas_generate\\prompt.txt",
+            "sha256": "0c0c4b82b5d0c37667f9ed04e2dc6cf3e6ea0c74300463b3a7927853e2a98526"
+          },
+          "parsed_output": {
+            "path": "D:\\lunwen\\EC-CSI投稿\\working\\exploration\\20261014_matched_evidence_labor\\matched_generation\\calls\\30_FSV-B19_ecas_generate\\parsed_output.json",
+            "sha256": "2db3c42b493dc10653bc729572256d0e8e666257fd26b2b53c1c839d22e6d517"
+          }
+        }
+      ],
+      "original_pair": [
+        {
+          "channel": "O-L",
+          "input": {
+            "request": {
+              "body": {
+                "action": "PURCHASE_ORDER",
+                "supplier": "SUPPLIER-SYNTH-1"
+              }
+            },
+            "trusted": {
+              "holdType": "",
+              "supplierOnHold": false
+            }
+          },
+          "expected": "allow",
+          "actual": {
+            "policy_id": "POL-FSV-B19-001",
+            "decision": "allow",
+            "fail_closed": true,
+            "violations": []
+          },
+          "pass": true
+        },
+        {
+          "channel": "O-I",
+          "input": {
+            "request": {
+              "body": {
+                "action": "PURCHASE_ORDER",
+                "supplier": "SUPPLIER-SYNTH-1"
+              }
+            },
+            "trusted": {
+              "holdType": "All",
+              "supplierOnHold": true
+            }
+          },
+          "expected": "deny",
+          "actual": {
+            "policy_id": "POL-FSV-B19-001",
+            "decision": "deny",
+            "fail_closed": true,
+            "violations": [
+              {
+                "rule_id": "RULE-FSV-B19-001",
+                "code": "bounded_guard_rejected",
+                "detail": "RULE-FSV-B19-001"
+              }
+            ]
+          },
+          "pass": true
+        }
+      ],
+      "primary_reconciliation": {
+        "path": "D:\\lunwen\\EC-CSI投稿\\working\\exploration\\20261014_matched_evidence_labor\\matched_generation\\results_review_v1\\PRIMARY_RECONCILIATION.json",
+        "sha256": "daf23f1770a6fc89ed7eb87f63e82be6317dcaeecdfb19e2a10f7e717c8e8c2d"
+      },
+      "independent_reconciliation": {
+        "path": "D:\\lunwen\\EC-CSI投稿\\working\\exploration\\20261014_matched_evidence_labor\\matched_generation\\FINAL_INDEPENDENT_AUDIT.json",
+        "sha256": "6df4db53ce6ea3e8e992acc1b62558651c4049feb1a92eb7e9f19e18afa104b2"
+      }
+    }
+  ],
+  "checks": [
+    {
+      "kind": "capture_identity",
+      "index": 5,
+      "scope": "D:\\lunwen\\EC-CSI投稿\\working\\exploration\\20261014_external_baseline_pilot",
+      "pass": true
+    },
+    {
+      "kind": "capture_identity",
+      "index": 6,
+      "scope": "D:\\lunwen\\EC-CSI投稿\\working\\exploration\\20261014_external_baseline_pilot",
+      "pass": true
+    },
+    {
+      "kind": "capture_identity",
+      "index": 7,
+      "scope": "D:\\lunwen\\EC-CSI投稿\\working\\exploration\\20261014_external_baseline_pilot",
+      "pass": true
+    },
+    {
+      "kind": "capture_identity",
+      "index": 8,
+      "scope": "D:\\lunwen\\EC-CSI投稿\\working\\exploration\\20261014_external_baseline_pilot",
+      "pass": true
+    },
+    {
+      "kind": "capture_identity",
+      "index": 9,
+      "scope": "D:\\lunwen\\EC-CSI投稿\\working\\exploration\\20261014_external_baseline_pilot",
+      "pass": true
+    },
+    {
+      "kind": "row_and_policy_identity",
+      "task": "FSV-B06",
+      "method": "P2P_STYLE",
+      "pass": true
+    },
+    {
+      "kind": "capture_identity",
+      "index": 10,
+      "scope": "D:\\lunwen\\EC-CSI投稿\\working\\exploration\\20261014_external_baseline_pilot",
+      "pass": true
+    },
+    {
+      "kind": "capture_identity",
+      "index": 11,
+      "scope": "D:\\lunwen\\EC-CSI投稿\\working\\exploration\\20261014_external_baseline_pilot",
+      "pass": true
+    },
+    {
+      "kind": "capture_identity",
+      "index": 12,
+      "scope": "D:\\lunwen\\EC-CSI投稿\\working\\exploration\\20261014_external_baseline_pilot",
+      "pass": true
+    },
+    {
+      "kind": "row_and_policy_identity",
+      "task": "FSV-B06",
+      "method": "AUTOPAC_STYLE",
+      "pass": true
+    },
+    {
+      "kind": "capture_identity",
+      "index": 13,
+      "scope": "D:\\lunwen\\EC-CSI投稿\\working\\exploration\\20261014_external_baseline_pilot",
+      "pass": true
+    },
+    {
+      "kind": "row_and_policy_identity",
+      "task": "FSV-B06",
+      "method": "ECAS_MATCHED",
+      "pass": true
+    },
+    {
+      "kind": "capture_identity",
+      "index": 14,
+      "scope": "D:\\lunwen\\EC-CSI投稿\\working\\exploration\\20261014_external_baseline_pilot",
+      "pass": true
+    },
+    {
+      "kind": "row_and_policy_identity",
+      "task": "FSV-S02",
+      "method": "P2P_STYLE",
+      "pass": true
+    },
+    {
+      "kind": "capture_identity",
+      "index": 15,
+      "scope": "D:\\lunwen\\EC-CSI投稿\\working\\exploration\\20261014_external_baseline_pilot",
+      "pass": true
+    },
+    {
+      "kind": "capture_identity",
+      "index": 16,
+      "scope": "D:\\lunwen\\EC-CSI投稿\\working\\exploration\\20261014_external_baseline_pilot",
+      "pass": true
+    },
+    {
+      "kind": "capture_identity",
+      "index": 17,
+      "scope": "D:\\lunwen\\EC-CSI投稿\\working\\exploration\\20261014_external_baseline_pilot",
+      "pass": true
+    },
+    {
+      "kind": "row_and_policy_identity",
+      "task": "FSV-S02",
+      "method": "AUTOPAC_STYLE",
+      "pass": true
+    },
+    {
+      "kind": "capture_identity",
+      "index": 18,
+      "scope": "D:\\lunwen\\EC-CSI投稿\\working\\exploration\\20261014_external_baseline_pilot",
+      "pass": true
+    },
+    {
+      "kind": "row_and_policy_identity",
+      "task": "FSV-S02",
+      "method": "ECAS_MATCHED",
+      "pass": true
+    },
+    {
+      "kind": "capture_identity",
+      "index": 19,
+      "scope": "D:\\lunwen\\EC-CSI投稿\\working\\exploration\\20261014_external_baseline_pilot",
+      "pass": true
+    },
+    {
+      "kind": "capture_identity",
+      "index": 20,
+      "scope": "D:\\lunwen\\EC-CSI投稿\\working\\exploration\\20261014_external_baseline_pilot",
+      "pass": true
+    },
+    {
+      "kind": "capture_identity",
+      "index": 21,
+      "scope": "D:\\lunwen\\EC-CSI投稿\\working\\exploration\\20261014_external_baseline_pilot",
+      "pass": true
+    },
+    {
+      "kind": "capture_identity",
+      "index": 22,
+      "scope": "D:\\lunwen\\EC-CSI投稿\\working\\exploration\\20261014_external_baseline_pilot",
+      "pass": true
+    },
+    {
+      "kind": "capture_identity",
+      "index": 23,
+      "scope": "D:\\lunwen\\EC-CSI投稿\\working\\exploration\\20261014_external_baseline_pilot",
+      "pass": true
+    },
+    {
+      "kind": "row_and_policy_identity",
+      "task": "FSV-S04",
+      "method": "P2P_STYLE",
+      "pass": true
+    },
+    {
+      "kind": "capture_identity",
+      "index": 24,
+      "scope": "D:\\lunwen\\EC-CSI投稿\\working\\exploration\\20261014_external_baseline_pilot",
+      "pass": true
+    },
+    {
+      "kind": "capture_identity",
+      "index": 25,
+      "scope": "D:\\lunwen\\EC-CSI投稿\\working\\exploration\\20261014_external_baseline_pilot",
+      "pass": true
+    },
+    {
+      "kind": "capture_identity",
+      "index": 26,
+      "scope": "D:\\lunwen\\EC-CSI投稿\\working\\exploration\\20261014_external_baseline_pilot",
+      "pass": true
+    },
+    {
+      "kind": "row_and_policy_identity",
+      "task": "FSV-S04",
+      "method": "AUTOPAC_STYLE",
+      "pass": true
+    },
+    {
+      "kind": "capture_identity",
+      "index": 27,
+      "scope": "D:\\lunwen\\EC-CSI投稿\\working\\exploration\\20261014_external_baseline_pilot",
+      "pass": true
+    },
+    {
+      "kind": "row_and_policy_identity",
+      "task": "FSV-S04",
+      "method": "ECAS_MATCHED",
+      "pass": true
+    },
+    {
+      "kind": "capture_identity",
+      "index": 5,
+      "scope": "D:\\lunwen\\EC-CSI投稿\\working\\exploration\\20261014_matched_evidence_labor\\matched_generation",
+      "pass": true
+    },
+    {
+      "kind": "row_and_policy_identity",
+      "task": "FSV-S03",
+      "method": "P2P_STYLE",
+      "pass": true
+    },
+    {
+      "kind": "capture_identity",
+      "index": 6,
+      "scope": "D:\\lunwen\\EC-CSI投稿\\working\\exploration\\20261014_matched_evidence_labor\\matched_generation",
+      "pass": true
+    },
+    {
+      "kind": "capture_identity",
+      "index": 7,
+      "scope": "D:\\lunwen\\EC-CSI投稿\\working\\exploration\\20261014_matched_evidence_labor\\matched_generation",
+      "pass": true
+    },
+    {
+      "kind": "capture_identity",
+      "index": 8,
+      "scope": "D:\\lunwen\\EC-CSI投稿\\working\\exploration\\20261014_matched_evidence_labor\\matched_generation",
+      "pass": true
+    },
+    {
+      "kind": "row_and_policy_identity",
+      "task": "FSV-S03",
+      "method": "AUTOPAC_STYLE",
+      "pass": true
+    },
+    {
+      "kind": "capture_identity",
+      "index": 9,
+      "scope": "D:\\lunwen\\EC-CSI投稿\\working\\exploration\\20261014_matched_evidence_labor\\matched_generation",
+      "pass": true
+    },
+    {
+      "kind": "row_and_policy_identity",
+      "task": "FSV-S03",
+      "method": "ECAS_MATCHED",
+      "pass": true
+    },
+    {
+      "kind": "capture_identity",
+      "index": 10,
+      "scope": "D:\\lunwen\\EC-CSI投稿\\working\\exploration\\20261014_matched_evidence_labor\\matched_generation",
+      "pass": true
+    },
+    {
+      "kind": "capture_identity",
+      "index": 11,
+      "scope": "D:\\lunwen\\EC-CSI投稿\\working\\exploration\\20261014_matched_evidence_labor\\matched_generation",
+      "pass": true
+    },
+    {
+      "kind": "capture_identity",
+      "index": 12,
+      "scope": "D:\\lunwen\\EC-CSI投稿\\working\\exploration\\20261014_matched_evidence_labor\\matched_generation",
+      "pass": true
+    },
+    {
+      "kind": "capture_identity",
+      "index": 13,
+      "scope": "D:\\lunwen\\EC-CSI投稿\\working\\exploration\\20261014_matched_evidence_labor\\matched_generation",
+      "pass": true
+    },
+    {
+      "kind": "row_and_policy_identity",
+      "task": "FSV-B13",
+      "method": "P2P_STYLE",
+      "pass": true
+    },
+    {
+      "kind": "capture_identity",
+      "index": 14,
+      "scope": "D:\\lunwen\\EC-CSI投稿\\working\\exploration\\20261014_matched_evidence_labor\\matched_generation",
+      "pass": true
+    },
+    {
+      "kind": "capture_identity",
+      "index": 15,
+      "scope": "D:\\lunwen\\EC-CSI投稿\\working\\exploration\\20261014_matched_evidence_labor\\matched_generation",
+      "pass": true
+    },
+    {
+      "kind": "row_and_policy_identity",
+      "task": "FSV-B13",
+      "method": "AUTOPAC_STYLE",
+      "pass": true
+    },
+    {
+      "kind": "capture_identity",
+      "index": 16,
+      "scope": "D:\\lunwen\\EC-CSI投稿\\working\\exploration\\20261014_matched_evidence_labor\\matched_generation",
+      "pass": true
+    },
+    {
+      "kind": "row_and_policy_identity",
+      "task": "FSV-B13",
+      "method": "ECAS_MATCHED",
+      "pass": true
+    },
+    {
+      "kind": "capture_identity",
+      "index": 17,
+      "scope": "D:\\lunwen\\EC-CSI投稿\\working\\exploration\\20261014_matched_evidence_labor\\matched_generation",
+      "pass": true
+    },
+    {
+      "kind": "capture_identity",
+      "index": 18,
+      "scope": "D:\\lunwen\\EC-CSI投稿\\working\\exploration\\20261014_matched_evidence_labor\\matched_generation",
+      "pass": true
+    },
+    {
+      "kind": "capture_identity",
+      "index": 19,
+      "scope": "D:\\lunwen\\EC-CSI投稿\\working\\exploration\\20261014_matched_evidence_labor\\matched_generation",
+      "pass": true
+    },
+    {
+      "kind": "capture_identity",
+      "index": 20,
+      "scope": "D:\\lunwen\\EC-CSI投稿\\working\\exploration\\20261014_matched_evidence_labor\\matched_generation",
+      "pass": true
+    },
+    {
+      "kind": "row_and_policy_identity",
+      "task": "FSV-B17",
+      "method": "P2P_STYLE",
+      "pass": true
+    },
+    {
+      "kind": "capture_identity",
+      "index": 21,
+      "scope": "D:\\lunwen\\EC-CSI投稿\\working\\exploration\\20261014_matched_evidence_labor\\matched_generation",
+      "pass": true
+    },
+    {
+      "kind": "capture_identity",
+      "index": 22,
+      "scope": "D:\\lunwen\\EC-CSI投稿\\working\\exploration\\20261014_matched_evidence_labor\\matched_generation",
+      "pass": true
+    },
+    {
+      "kind": "row_and_policy_identity",
+      "task": "FSV-B17",
+      "method": "AUTOPAC_STYLE",
+      "pass": true
+    },
+    {
+      "kind": "capture_identity",
+      "index": 23,
+      "scope": "D:\\lunwen\\EC-CSI投稿\\working\\exploration\\20261014_matched_evidence_labor\\matched_generation",
+      "pass": true
+    },
+    {
+      "kind": "row_and_policy_identity",
+      "task": "FSV-B17",
+      "method": "ECAS_MATCHED",
+      "pass": true
+    },
+    {
+      "kind": "capture_identity",
+      "index": 24,
+      "scope": "D:\\lunwen\\EC-CSI投稿\\working\\exploration\\20261014_matched_evidence_labor\\matched_generation",
+      "pass": true
+    },
+    {
+      "kind": "capture_identity",
+      "index": 25,
+      "scope": "D:\\lunwen\\EC-CSI投稿\\working\\exploration\\20261014_matched_evidence_labor\\matched_generation",
+      "pass": true
+    },
+    {
+      "kind": "capture_identity",
+      "index": 26,
+      "scope": "D:\\lunwen\\EC-CSI投稿\\working\\exploration\\20261014_matched_evidence_labor\\matched_generation",
+      "pass": true
+    },
+    {
+      "kind": "capture_identity",
+      "index": 27,
+      "scope": "D:\\lunwen\\EC-CSI投稿\\working\\exploration\\20261014_matched_evidence_labor\\matched_generation",
+      "pass": true
+    },
+    {
+      "kind": "row_and_policy_identity",
+      "task": "FSV-B19",
+      "method": "P2P_STYLE",
+      "pass": true
+    },
+    {
+      "kind": "capture_identity",
+      "index": 28,
+      "scope": "D:\\lunwen\\EC-CSI投稿\\working\\exploration\\20261014_matched_evidence_labor\\matched_generation",
+      "pass": true
+    },
+    {
+      "kind": "capture_identity",
+      "index": 29,
+      "scope": "D:\\lunwen\\EC-CSI投稿\\working\\exploration\\20261014_matched_evidence_labor\\matched_generation",
+      "pass": true
+    },
+    {
+      "kind": "row_and_policy_identity",
+      "task": "FSV-B19",
+      "method": "AUTOPAC_STYLE",
+      "pass": true
+    },
+    {
+      "kind": "capture_identity",
+      "index": 30,
+      "scope": "D:\\lunwen\\EC-CSI投稿\\working\\exploration\\20261014_matched_evidence_labor\\matched_generation",
+      "pass": true
+    },
+    {
+      "kind": "row_and_policy_identity",
+      "task": "FSV-B19",
+      "method": "ECAS_MATCHED",
+      "pass": true
+    }
+  ],
+  "passed_checks": 70
+}

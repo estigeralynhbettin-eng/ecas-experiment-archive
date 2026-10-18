@@ -1,0 +1,12 @@
+{
+  "status": "COMPLETED_RECONCILED_REPORT",
+  "scope_id": "ECAS-MATCHED-EVIDENCE-LABOR-20261014-01",
+  "builder_sha256": "21bf05608b3a1df1c676be7cd8a436511d42ecf91525a569b8a417ac93af65af",
+  "new_model_calls": 0,
+  "actual_paid_attempts": 30,
+  "scope_ledger_written": false,
+  "report_path": "/mnt/d/lunwen/EC-CSI投稿/working/exploration/20261014_matched_evidence_labor/matched_generation/results_review_v1/RESULTS_CN.md",
+  "summary_sha256": "e19897b542b10bb0d5db753ac7c8d28d8bed1e52a02fcb6505b7090723660849",
+  "qa_sha256": "daf23f1770a6fc89ed7eb87f63e82be6317dcaeecdfb19e2a10f7e717c8e8c2d",
+  "completed_at": "2026-10-15T00:57:14.311136+00:00"
+}

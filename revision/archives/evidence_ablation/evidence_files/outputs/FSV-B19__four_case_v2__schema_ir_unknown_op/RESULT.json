@@ -1,0 +1,22 @@
+{
+  "parent_id": "FSV-B19__four_case_v2",
+  "case": "FSV-B19",
+  "configuration": "four_case_v2",
+  "row_id": "FSV-B19__four_case_v2__schema_ir_unknown_op",
+  "variant": "schema_ir_unknown_op",
+  "classification": "ENGINEERING_MODEL_IR_SCHEMA_CONTROL",
+  "expected_full": "schema_fail",
+  "notes": "Unknown operation; excluded from scientific denominator",
+  "source_parent_candidate": "/root/ecas_evidence_ablation_20261014/inputs/FSV-B19__four_case_v2/candidate.json",
+  "source_parent_contract": "/root/ecas_evidence_ablation_20261014/inputs/FSV-B19__four_case_v2/contract.json",
+  "candidate_sha256": "723e3ddf0a92cabd5a5516f1621d97f76f974f3ed265746250373986db36a5d5",
+  "contract_sha256": "fd0a7bbb9c3d0588d2f6e8970af7b8d9c34cf0ae82dd494bce68478c6671fd30",
+  "output_folder": "/root/ecas_evidence_ablation_20261014/outputs/FSV-B19__four_case_v2__schema_ir_unknown_op",
+  "full_executed": false,
+  "shape_executed": false,
+  "ir_status": "IR_SCHEMA_OR_TYPE_FAILURE",
+  "full_status": "NOT_ATTEMPTED",
+  "shape_status": "NOT_ATTEMPTED",
+  "error": "model IR schema rejected: /: {'ir_version': 'EC-FIELD-MODEL-IR-V3', 'candidate_id': 'FSV-B19-CAND-PO-HOLD-GUARD', 'decision': 'propose', 'target': {'operation': 'POST /api/resource/Purchase Order', 'system': 'ERPNext', 'version': '16.0.0'}, 'policy_id': 'FSV-B19-POLICY-PO-HOLD-GUARD', 'evidence_refs': ['VIS-FSV-B19-01', 'VIS-FSV-B19-RUNTIME-ABI', 'VIS-FSV-B19-04'], 'rules': [{'rule_id': 'FSV-B19-RULE-PO-HOLD-GUARD', 'primitive_id': 'SP-BOUNDED-BUSINESS-GUARD', 'op': 'not_registered', 'evidence_refs': ['VIS-FSV-B19-01', 'VIS-FSV-B19-RUNTIME-ABI'], 'params': {'alternatives': [{'clauses': [{'kind': 'scalar_compare', 'left_path': '/trusted/supplierOnHold', 'operator': 'eq', 'right_source': 'literal', 'right_path': '', 'right_value': False}]}, {'clauses': [{'kind': 'scalar_compare', 'left_path': '/trusted/holdType', 'operator': 'eq', 'right_source': 'literal', 'right_path': '', 'right_value': 'Payments'}]}], 'on_missing': 'deny'}}], 'reason_code': 'none', 'missing_evidence': []} is not valid under any of the given schemas",
+  "eligible_admission_contrast": false
+}

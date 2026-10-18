@@ -1,0 +1,86 @@
+{
+  "row_id": "FSV-B17__four_case_v1__trusted_path_to_unregistered_client_path",
+  "parent_id": "FSV-B17__four_case_v1",
+  "task": "FSV-B17",
+  "configuration": "four_case_v1",
+  "variant": "trusted_path_to_unregistered_client_path",
+  "classification": "CONSTRUCTED_POLICY_PATH_PERTURBATION",
+  "full_executed": false,
+  "shape_executed": true,
+  "full_evaluations": [],
+  "shape_evaluations": [
+    {
+      "fixture_id": "FSV-B17-OL-01",
+      "fixture_class": "CONSTRUCTED_CLIENT_PATH_REPLAY",
+      "expected": null,
+      "actual": {
+        "policy_id": "FSV-B17-CUSTOMER-DISABLED-DISALLOW-SO",
+        "decision": "deny",
+        "fail_closed": true,
+        "violations": [
+          {
+            "rule_id": "FSV-B17-RULE-01",
+            "code": "client_supplied_server_value",
+            "detail": "/request/body/ecasClientClaim/customerDisabled"
+          }
+        ]
+      },
+      "correct": null
+    },
+    {
+      "fixture_id": "FSV-B17-OI-01",
+      "fixture_class": "CONSTRUCTED_CLIENT_PATH_REPLAY",
+      "expected": null,
+      "actual": {
+        "policy_id": "FSV-B17-CUSTOMER-DISABLED-DISALLOW-SO",
+        "decision": "deny",
+        "fail_closed": true,
+        "violations": [
+          {
+            "rule_id": "FSV-B17-RULE-01",
+            "code": "client_supplied_server_value",
+            "detail": "/request/body/ecasClientClaim/customerDisabled"
+          }
+        ]
+      },
+      "correct": null
+    },
+    {
+      "fixture_id": "SYNTH-CLIENT-SPOOF",
+      "fixture_class": "CONSTRUCTED_CLIENT_SPOOF_PROBE",
+      "expected": null,
+      "actual": {
+        "policy_id": "FSV-B17-CUSTOMER-DISABLED-DISALLOW-SO",
+        "decision": "deny",
+        "fail_closed": true,
+        "violations": [
+          {
+            "rule_id": "FSV-B17-RULE-01",
+            "code": "client_supplied_server_value",
+            "detail": "/request/body/ecasClientClaim/customerDisabled"
+          }
+        ]
+      },
+      "correct": null
+    },
+    {
+      "fixture_id": "SYNTH-MISSING-TRUSTED",
+      "fixture_class": "CONSTRUCTED_MISSING_CONTEXT_CONTROL",
+      "expected": null,
+      "actual": {
+        "policy_id": "FSV-B17-CUSTOMER-DISABLED-DISALLOW-SO",
+        "decision": "allow",
+        "fail_closed": true,
+        "violations": []
+      },
+      "correct": null
+    }
+  ],
+  "ir_status": "COMPILED",
+  "contract_shape_valid": true,
+  "full_status": "ADMISSION_REJECTED",
+  "shape_status": "COMPILED_NO_INVENTORY",
+  "eligible_admission_contrast": true,
+  "archive_match": true,
+  "mismatched_fields": []
+}

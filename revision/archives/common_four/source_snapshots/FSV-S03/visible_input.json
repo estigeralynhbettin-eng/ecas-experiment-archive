@@ -1,0 +1,131 @@
+{
+  "selection_basis": "whole_object_not_gap_selected",
+  "target": {
+    "operation": "POST /v1/clients/{clientId}/familymembers",
+    "system": "Fineract",
+    "version": "1.14.0"
+  },
+  "task_window_id": "FSV-S03",
+  "track": "message_structure",
+  "visible_sources": [
+    {
+      "content": {
+        "description": null,
+        "method": "POST",
+        "parameters": [
+          {
+            "required": true,
+            "schema": {
+              "format": "int64",
+              "type": "integer"
+            }
+          }
+        ],
+        "path": "/v1/clients/{clientId}/familymembers",
+        "requestBody": {
+          "content": {
+            "application/json": {
+              "schema": {
+                "properties": {
+                  "age": {
+                    "format": "int64",
+                    "type": "integer"
+                  },
+                  "clientId": {
+                    "format": "int64",
+                    "type": "integer"
+                  },
+                  "dateFormat": {
+                    "type": "string"
+                  },
+                  "dateOfBirth": {
+                    "type": "string"
+                  },
+                  "familyMembers": {
+                    "type": "string"
+                  },
+                  "firstName": {
+                    "type": "string"
+                  },
+                  "genderId": {
+                    "format": "int64",
+                    "type": "integer"
+                  },
+                  "id": {
+                    "format": "int64",
+                    "type": "integer"
+                  },
+                  "isDependent": {
+                    "type": "boolean"
+                  },
+                  "lastName": {
+                    "type": "string"
+                  },
+                  "locale": {
+                    "type": "string"
+                  },
+                  "maritalStatusId": {
+                    "format": "int64",
+                    "type": "integer"
+                  },
+                  "middleName": {
+                    "type": "string"
+                  },
+                  "mobileNumber": {
+                    "type": "string"
+                  },
+                  "professionId": {
+                    "format": "int64",
+                    "type": "integer"
+                  },
+                  "qualification": {
+                    "type": "string"
+                  },
+                  "relationshipId": {
+                    "format": "int64",
+                    "type": "integer"
+                  }
+                },
+                "type": "object"
+              }
+            }
+          }
+        },
+        "summary": null
+      },
+      "evidence_id": "VIS-FSV-S03-01",
+      "locator": "paths./v1/clients/{clientId}/familymembers.post",
+      "source_id": "fineract-openapi-1.14.0.json",
+      "source_sha256": "A44D6FA247D495A4FB147CC8C5EA1A364D8F05A40762B31A055681373E455A48"
+    },
+    {
+      "content": {
+        "available_values": [
+          {
+            "authority": "client",
+            "path": "/request/body",
+            "type": "object"
+          },
+          {
+            "authority": "client",
+            "path": "/request/body/age",
+            "type": "integer"
+          }
+        ],
+        "classification": "visible_runtime_context_contract",
+        "notice": "This declares available adapter paths and types only; it supplies no expected decision or hidden test value.",
+        "proposal_focus": {
+          "paths": [
+            "/request/body/age"
+          ],
+          "primitive": "SP-STRICT-TYPE"
+        },
+        "target_operation": "POST /v1/clients/{clientId}/familymembers"
+      },
+      "evidence_id": "VIS-FSV-S03-RUNTIME-ABI",
+      "locator": "tasks.FSV-S03",
+      "source_id": "EC-V2-RUNTIME-INTERFACE-CATALOG-V1",
+      "source_sha256": "8221DA8A6720B0593A8D337F18569C9947AAB05B02E5C84FB0C50E3DE8C1ABD7"
+    }
+  ]
+}

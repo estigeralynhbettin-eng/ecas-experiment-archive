@@ -1,0 +1,28 @@
+{
+  "choices": [
+    {
+      "finish_reason": "stop",
+      "index": 0,
+      "message": {
+        "content": "{\"begin\":\"BEGIN_FSV-B13_p2p_extract_MAIN\",\"stage\":\"p2p_extract\",\"output\":{\"status\":\"READY\",\"components\":[{\"decision\":\"PERMIT\",\"subject\":{\"id\":\"authenticated_api_caller\",\"role\":\"authenticated_api_caller\"},\"action\":\"POST /api/resource/Purchase Receipt\",\"resource\":{\"id\":\"ERPNext:16.0.0\",\"system\":\"ERPNext\",\"version\":\"16.0.0\"},\"condition\":\"(/request/body/qty <= /trusted/derivedMaximumQty) OR ((/request/body/qty > /trusted/derivedMaximumQty) AND (/trusted/authorizedRole == true))\",\"purpose\":\"unspecified\",\"evidence_refs\":[\"VIS-FSV-B13-01\",\"VIS-FSV-B13-02\",\"VIS-FSV-B13-03\",\"VIS-FSV-B13-RUNTIME-ABI\"]}],\"reason\":\"Stock Settings define an over-delivery/receipt allowance and a role allowed to exceed it; the runtime ABI exposes request qty, derived maximum qty, and authorized role for the target Purchase Receipt POST operation.\"},\"end\":\"END_FSV-B13_p2p_extract_MAIN\"}",
+        "role": "assistant"
+      }
+    }
+  ],
+  "created": 1791978527,
+  "id": "202610141946435340928eab0f4e04",
+  "model": "glm-5.2",
+  "object": "chat.completion",
+  "request_id": "202610141946435340928eab0f4e04",
+  "usage": {
+    "completion_tokens": 6825,
+    "completion_tokens_details": {
+      "reasoning_tokens": 6515
+    },
+    "prompt_tokens": 3771,
+    "prompt_tokens_details": {
+      "cached_tokens": 0
+    },
+    "total_tokens": 10596
+  }
+}

@@ -1,0 +1,154 @@
+{
+  "schema_version": "1.0",
+  "tool": "get_experiment_gate_status",
+  "generated_at": "2026-10-14T03:21:02.070Z",
+  "data": {
+    "found": true,
+    "project": {
+      "name": "EC-CSI投稿",
+      "path": "D:\\lunwen\\EC-CSI投稿",
+      "source": "D:\\lunwen\\PROJECT_INDEX.json"
+    },
+    "phase": "formal",
+    "status": "block",
+    "ready_for_formal_run": false,
+    "gate_fields": [
+      {
+        "field": "MAIN_CLAIM",
+        "present": true,
+        "sources": [
+          "D:\\lunwen\\EC-CSI投稿\\OPUS5_REVISION3_REVIEW_PROTOCOL.md"
+        ]
+      },
+      {
+        "field": "PRIMARY_CONTRADICTION",
+        "present": true,
+        "sources": [
+          "D:\\lunwen\\EC-CSI投稿\\OPUS5_REVISION3_REVIEW_PROTOCOL.md"
+        ]
+      },
+      {
+        "field": "DECISION_CHANGING_EVIDENCE",
+        "present": true,
+        "sources": [
+          "D:\\lunwen\\EC-CSI投稿\\OPUS5_REVISION3_REVIEW_PROTOCOL.md"
+        ]
+      },
+      {
+        "field": "CORE_VS_SIDE",
+        "present": true,
+        "sources": [
+          "D:\\lunwen\\EC-CSI投稿\\OPUS5_REVISION3_REVIEW_PROTOCOL.md"
+        ]
+      },
+      {
+        "field": "STOP_GATE",
+        "present": true,
+        "sources": [
+          "D:\\lunwen\\EC-CSI投稿\\OPUS5_REVISION3_REVIEW_PROTOCOL.md"
+        ]
+      }
+    ],
+    "experiment_scope": null,
+    "t0_evidence": [],
+    "traceability": {
+      "found": true,
+      "project": {
+        "name": "EC-CSI投稿",
+        "path": "D:\\lunwen\\EC-CSI投稿",
+        "source": "D:\\lunwen\\PROJECT_INDEX.json"
+      },
+      "ledger_root": "D:\\lunwen\\EC-CSI投稿",
+      "status": "pass",
+      "diagnostics": {
+        "result_file": {
+          "path": "D:\\lunwen\\EC-CSI投稿\\RESULT_TRACEABILITY.csv",
+          "exists": true,
+          "is_file": true,
+          "is_directory": false,
+          "size_bytes": 23713,
+          "last_write_time": "2026-08-06T15:07:21.224Z"
+        },
+        "claim_file": {
+          "path": "D:\\lunwen\\EC-CSI投稿\\CLAIM_EVIDENCE_MATRIX.csv",
+          "exists": true,
+          "is_file": true,
+          "is_directory": false,
+          "size_bytes": 13588,
+          "last_write_time": "2026-08-06T15:06:59.395Z"
+        },
+        "result_rows": 30,
+        "claim_rows": 30
+      },
+      "p0_count": 0,
+      "p1_count": 0,
+      "p0": [],
+      "p1": [],
+      "details_truncated": false,
+      "submission_freeze_allowed": true,
+      "rule": "MISMATCH, SOURCE_MISSING, and NON_REPRODUCIBLE are P0 submission blockers."
+    },
+    "project_traceability": {
+      "found": true,
+      "project": {
+        "name": "EC-CSI投稿",
+        "path": "D:\\lunwen\\EC-CSI投稿",
+        "source": "D:\\lunwen\\PROJECT_INDEX.json"
+      },
+      "ledger_root": "D:\\lunwen\\EC-CSI投稿",
+      "status": "pass",
+      "diagnostics": {
+        "result_file": {
+          "path": "D:\\lunwen\\EC-CSI投稿\\RESULT_TRACEABILITY.csv",
+          "exists": true,
+          "is_file": true,
+          "is_directory": false,
+          "size_bytes": 23713,
+          "last_write_time": "2026-08-06T15:07:21.224Z"
+        },
+        "claim_file": {
+          "path": "D:\\lunwen\\EC-CSI投稿\\CLAIM_EVIDENCE_MATRIX.csv",
+          "exists": true,
+          "is_file": true,
+          "is_directory": false,
+          "size_bytes": 13588,
+          "last_write_time": "2026-08-06T15:06:59.395Z"
+        },
+        "result_rows": 30,
+        "claim_rows": 30
+      },
+      "p0_count": 0,
+      "p1_count": 0,
+      "p0": [],
+      "p1": [],
+      "details_truncated": false,
+      "submission_freeze_allowed": true,
+      "rule": "MISMATCH, SOURCE_MISSING, and NON_REPRODUCIBLE are P0 submission blockers."
+    },
+    "submission_freeze_allowed": true,
+    "reproduce": {
+      "path": "D:\\lunwen\\EC-CSI投稿\\REPRODUCE.md",
+      "exists": true,
+      "is_file": true,
+      "is_directory": false,
+      "size_bytes": 5569,
+      "last_write_time": "2026-08-07T03:14:58.822Z"
+    },
+    "git_commit": null,
+    "blockers": [
+      {
+        "code": "T0_EVIDENCE_MISSING"
+      }
+    ],
+    "warnings": [
+      {
+        "code": "GIT_COMMIT_UNAVAILABLE"
+      }
+    ],
+    "policy_sources": [
+      "D:\\lunwen\\通用实验环境规则.md",
+      "D:\\lunwen\\论文实验数据追溯与核验规则.md",
+      "D:\\lunwen\\外部模型默认调用规则.md"
+    ]
+  }
+}

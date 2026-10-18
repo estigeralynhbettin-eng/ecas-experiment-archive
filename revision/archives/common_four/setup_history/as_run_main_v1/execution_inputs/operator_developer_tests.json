@@ -1,0 +1,168 @@
+{
+  "classification": "COMMON_PUBLIC_SOURCE_DEVELOPER_TESTS_ALL_METHODS",
+  "tasks": {
+    "FSV-S03": [
+      {
+        "id": "dev_integer",
+        "input": {
+          "request": {
+            "body": {
+              "age": 42
+            }
+          },
+          "trusted": {}
+        },
+        "expected": "allow",
+        "source_ref": "VIS-FSV-S03-01"
+      },
+      {
+        "id": "dev_integer_string",
+        "input": {
+          "request": {
+            "body": {
+              "age": "42"
+            }
+          },
+          "trusted": {}
+        },
+        "expected": "deny",
+        "source_ref": "VIS-FSV-S03-01"
+      }
+    ],
+    "FSV-B13": [
+      {
+        "id": "dev_limit",
+        "input": {
+          "request": {
+            "body": {
+              "qty": 54
+            }
+          },
+          "trusted": {
+            "derivedMaximumQty": 54,
+            "authorizedRole": false
+          }
+        },
+        "expected": "allow",
+        "source_ref": "VIS-FSV-B13-01"
+      },
+      {
+        "id": "dev_over",
+        "input": {
+          "request": {
+            "body": {
+              "qty": 55
+            }
+          },
+          "trusted": {
+            "derivedMaximumQty": 54,
+            "authorizedRole": false
+          }
+        },
+        "expected": "deny",
+        "source_ref": "VIS-FSV-B13-01"
+      },
+      {
+        "id": "dev_role_exception",
+        "input": {
+          "request": {
+            "body": {
+              "qty": 55
+            }
+          },
+          "trusted": {
+            "derivedMaximumQty": 54,
+            "authorizedRole": true
+          }
+        },
+        "expected": "allow",
+        "source_ref": "VIS-FSV-B13-01"
+      }
+    ],
+    "FSV-B17": [
+      {
+        "id": "dev_enabled",
+        "input": {
+          "request": {
+            "body": {
+              "customer": "DEV-CUSTOMER-842"
+            }
+          },
+          "trusted": {
+            "customerDisabled": false
+          }
+        },
+        "expected": "allow",
+        "source_ref": "VIS-FSV-B17-01"
+      },
+      {
+        "id": "dev_disabled",
+        "input": {
+          "request": {
+            "body": {
+              "customer": "DEV-CUSTOMER-843"
+            }
+          },
+          "trusted": {
+            "customerDisabled": true
+          }
+        },
+        "expected": "deny",
+        "source_ref": "VIS-FSV-B17-01"
+      }
+    ],
+    "FSV-B19": [
+      {
+        "id": "dev_not_held",
+        "input": {
+          "request": {
+            "body": {
+              "supplier": "DEV-SUPPLIER-852",
+              "action": "PURCHASE_ORDER"
+            }
+          },
+          "trusted": {
+            "supplierOnHold": false,
+            "holdType": ""
+          }
+        },
+        "expected": "allow",
+        "source_ref": "VIS-FSV-B19-01"
+      },
+      {
+        "id": "dev_invoices",
+        "input": {
+          "request": {
+            "body": {
+              "supplier": "DEV-SUPPLIER-853",
+              "action": "PURCHASE_ORDER"
+            }
+          },
+          "trusted": {
+            "supplierOnHold": true,
+            "holdType": "Invoices"
+          }
+        },
+        "expected": "deny",
+        "source_ref": "VIS-FSV-B19-01"
+      },
+      {
+        "id": "dev_payments",
+        "input": {
+          "request": {
+            "body": {
+              "supplier": "DEV-SUPPLIER-854",
+              "action": "PURCHASE_ORDER"
+            }
+          },
+          "trusted": {
+            "supplierOnHold": true,
+            "holdType": "Payments"
+          }
+        },
+        "expected": "allow",
+        "source_ref": "VIS-FSV-B19-01"
+      }
+    ]
+  }
+}

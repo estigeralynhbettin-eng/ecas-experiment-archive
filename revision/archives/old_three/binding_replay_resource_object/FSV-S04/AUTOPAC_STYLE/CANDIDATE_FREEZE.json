@@ -1,0 +1,7 @@
+{
+  "policy_path": "/mnt/d/lunwen/EC-CSI投稿/working/exploration/20261014_external_baseline_pilot/binding_replay_resource_object/FSV-S04/AUTOPAC_STYLE/validation/external_pilot/policy.rego",
+  "policy_sha256": "ed176217afffc434f2debccb4584f41e9263a7cbef812af9db5ab991f549c0ce",
+  "frozen_at": "2026-10-14T04:27:21.012575+00:00",
+  "no_new_model_call": true,
+  "source": "/mnt/d/lunwen/EC-CSI投稿/working/exploration/20261014_external_baseline_pilot/effect_runs/FSV-S04/AUTOPAC_STYLE/repaired/external_pilot/policy.rego"
+}

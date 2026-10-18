@@ -1,0 +1,1041 @@
+{
+  "status": "PASS",
+  "classification": "INDEPENDENT_DETERMINISTIC_DELIVERY_RECONCILIATION_NOT_SCIENTIFIC_CLEARANCE",
+  "frozen_unique_files": 179,
+  "raw_calls": 38,
+  "comparison_rows": 12,
+  "input_checks": [
+    {
+      "path": "/mnt/d/lunwen/EC-CSI投稿/working/exploration/20261014_four_case_peer_baselines/generation_inputs/FSV-B19/organization_schema.json",
+      "pass": true
+    },
+    {
+      "path": "/mnt/d/lunwen/EC-CSI投稿/working/exploration/20261014_four_case_peer_baselines/effect_runs/FSV-B13/ECAS_MATCHED/candidate.json",
+      "pass": true
+    },
+    {
+      "path": "/mnt/d/lunwen/EC-CSI投稿/working/exploration/20261014_four_case_peer_baselines/freeze_execution.py",
+      "pass": true
+    },
+    {
+      "path": "/mnt/d/lunwen/EC-CSI投稿/working/exploration/20261014_four_case_peer_baselines/build_documented_request.py",
+      "pass": true
+    },
+    {
+      "path": "/mnt/d/lunwen/EC-CSI投稿/working/exploration/20261014_four_case_peer_baselines/effect_runs/FSV-B17/AUTOPAC_STYLE/initial/CHECKS.json",
+      "pass": true
+    },
+    {
+      "path": "/mnt/d/lunwen/EC-CSI投稿/working/exploration/20261014_four_case_peer_baselines/LAYOUT_OMISSION_RECEIPT.json",
+      "pass": true
+    },
+    {
+      "path": "/mnt/d/lunwen/EC-CSI投稿/working/exploration/20261014_four_case_peer_baselines/effect_runs/FSV-B19/P2P_STYLE/generation.json",
+      "pass": true
+    },
+    {
+      "path": "/mnt/d/lunwen/EC-CSI投稿/working/exploration/20261014_four_case_peer_baselines/effect_runs/FSV-B19/AUTOPAC_STYLE/INITIAL_DEVELOPMENT.json",
+      "pass": true
+    },
+    {
+      "path": "/mnt/d/lunwen/EC-CSI投稿/working/exploration/20261014_four_case_peer_baselines/effect_runs/FSV-B19/ECAS_MATCHED/COMMON_DEVELOPER_RESULTS.json",
+      "pass": true
+    },
+    {
+      "path": "/mnt/d/lunwen/EC-CSI投稿/working/exploration/20261014_four_case_peer_baselines/effect_runs/FSV-B13/AUTOPAC_STYLE/final_O-I_0.input.json",
+      "pass": true
+    },
+    {
+      "path": "/mnt/d/lunwen/EC-CSI投稿/working/exploration/20261014_four_case_peer_baselines/T0_RECEIPT.json",
+      "pass": true
+    },
+    {
+      "path": "/mnt/d/lunwen/EC-CSI投稿/working/exploration/20261014_four_case_peer_baselines/effect_runs/FSV-B17/ECAS_MATCHED/COMMON_DEVELOPER_RESULTS.json",
+      "pass": true
+    },
+    {
+      "path": "/mnt/d/lunwen/EC-CSI投稿/working/exploration/20261014_four_case_peer_baselines/execution_inputs/FSV-B17/contract.json",
+      "pass": true
+    },
+    {
+      "path": "/mnt/d/lunwen/EC-CSI投稿/working/exploration/20261014_four_case_peer_baselines/effect_runs/FSV-B17/ECAS_MATCHED/CANDIDATE_FREEZE.json",
+      "pass": true
+    },
+    {
+      "path": "/mnt/d/lunwen/EC-CSI投稿/working/exploration/20261014_four_case_peer_baselines/build_recovery_request.py",
+      "pass": true
+    },
+    {
+      "path": "/mnt/d/lunwen/EC-CSI投稿/working/exploration/20261014_four_case_peer_baselines/effect_runs/FSV-B19/AUTOPAC_STYLE/final_O-L_0.input.json",
+      "pass": true
+    },
+    {
+      "path": "/mnt/d/lunwen/EC-CSI投稿/working/exploration/20261014_four_case_peer_baselines/effect_runs/FSV-B19/P2P_STYLE/RESULT.json",
+      "pass": true
+    },
+    {
+      "path": "/mnt/d/lunwen/EC-CSI投稿/working/exploration/20261014_four_case_peer_baselines/prepare_documented_ecas.py",
+      "pass": true
+    },
+    {
+      "path": "/mnt/d/lunwen/EC-CSI投稿/working/exploration/20261014_four_case_peer_baselines/effect_runs/FSV-B13/AUTOPAC_STYLE/initial/dev_00.input.json",
+      "pass": true
+    },
+    {
+      "path": "/mnt/d/lunwen/EC-CSI投稿/working/exploration/20261014_four_case_peer_baselines/effect_runs/FSV-B19/P2P_STYLE/detection.json",
+      "pass": true
+    },
+    {
+      "path": "/mnt/d/lunwen/EC-CSI投稿/working/exploration/20261014_four_case_peer_baselines/effect_runs/FSV-B19/AUTOPAC_STYLE/repair.json",
+      "pass": true
+    },
+    {
+      "path": "/mnt/d/lunwen/EC-CSI投稿/working/exploration/20261014_four_case_peer_baselines/run_t0.py",
+      "pass": true
+    },
+    {
+      "path": "/mnt/d/lunwen/EC-CSI投稿/working/exploration/20261014_four_case_peer_baselines/effect_runs/FSV-S03/ECAS_MATCHED/compiled_proposal.json",
+      "pass": true
+    },
+    {
+      "path": "/mnt/d/lunwen/EC-CSI投稿/working/exploration/20261014_four_case_peer_baselines/effect_runs/FSV-B19/AUTOPAC_STYLE/repaired/CHECKS.json",
+      "pass": true
+    },
+    {
+      "path": "/mnt/d/lunwen/EC-CSI投稿/working/exploration/20261014_four_case_peer_baselines/effect_runs/FSV-S03/AUTOPAC_STYLE/INITIAL_DEVELOPMENT.json",
+      "pass": true
+    },
+    {
+      "path": "/mnt/d/lunwen/load_llm_api_keys.ps1",
+      "pass": true
+    },
+    {
+      "path": "/mnt/d/lunwen/EC-CSI投稿/working/exploration/20261014_four_case_peer_baselines/effect_runs/FSV-B19/AUTOPAC_STYLE/initial/dev_00.input.json",
+      "pass": true
+    },
+    {
+      "path": "/mnt/d/lunwen/EC-CSI投稿/working/exploration/20261014_four_case_peer_baselines/effect_runs/FSV-B13/P2P_STYLE/RESULT.json",
+      "pass": true
+    },
+    {
+      "path": "/mnt/d/lunwen/EC-CSI投稿/working/exploration/20261014_four_case_peer_baselines/run_pilot.py",
+      "pass": true
+    },
+    {
+      "path": "/mnt/d/lunwen/EC-CSI投稿/working/exploration/20261014_four_case_peer_baselines/sealed_evaluation/FSV-B19/O-I.json",
+      "pass": true
+    },
+    {
+      "path": "/mnt/d/lunwen/EC-CSI投稿/working/exploration/20261014_four_case_peer_baselines/effect_runs/FSV-S03/AUTOPAC_STYLE/final_O-L_0.input.json",
+      "pass": true
+    },
+    {
+      "path": "/root/ecas_four_case_peer_20261014/runtime/EC_FIELD_SECURITY_MODEL_IR_SCHEMA_V2.json",
+      "pass": true
+    },
+    {
+      "path": "/mnt/d/lunwen/EC-CSI投稿/working/exploration/20261014_four_case_peer_baselines/effect_runs/FSV-B19/ECAS_MATCHED/admitted_policy.json",
+      "pass": true
+    },
+    {
+      "path": "/mnt/d/lunwen/EC-CSI投稿/working/exploration/20261014_four_case_peer_baselines/effect_runs/FSV-B13/ECAS_MATCHED/compiled_proposal.json",
+      "pass": true
+    },
+    {
+      "path": "/mnt/d/lunwen/EC-CSI投稿/working/exploration/20261014_four_case_peer_baselines/effect_runs/FSV-B17/AUTOPAC_STYLE/final_O-I_0.input.json",
+      "pass": true
+    },
+    {
+      "path": "/mnt/d/lunwen/EC-CSI投稿/working/exploration/20261014_four_case_peer_baselines/effect_runs/FSV-B19/AUTOPAC_STYLE/initial/dev_01.input.json",
+      "pass": true
+    },
+    {
+      "path": "/mnt/d/lunwen/EC-CSI投稿/working/exploration/20261014_four_case_peer_baselines/effect_runs/FSV-B17/ECAS_MATCHED/admitted_policy.json",
+      "pass": true
+    },
+    {
+      "path": "/mnt/d/lunwen/EC-CSI投稿/working/exploration/20261014_four_case_peer_baselines/effect_runs/FSV-B19/AUTOPAC_STYLE/repaired/dev_02.input.json",
+      "pass": true
+    },
+    {
+      "path": "/mnt/d/lunwen/EC-CSI投稿/working/exploration/20261014_four_case_peer_baselines/effect_runs/FSV-B19/P2P_STYLE/INITIAL_DEVELOPMENT.json",
+      "pass": true
+    },
+    {
+      "path": "/mnt/d/lunwen/EC-CSI投稿/working/exploration/20261014_four_case_peer_baselines/execution_inputs/operator_developer_tests.json",
+      "pass": true
+    },
+    {
+      "path": "/mnt/d/lunwen/EC-CSI投稿/working/exploration/20261014_four_case_peer_baselines/FROZEN_PROTOCOL_CN.md",
+      "pass": true
+    },
+    {
+      "path": "/root/ecas_four_case_peer_20261014/runtime/EC_FIELD_SECURITY_MODEL_IR_SCHEMA_V3.json",
+      "pass": true
+    },
+    {
+      "path": "/mnt/d/lunwen/EC-CSI投稿/working/exploration/20261014_four_case_peer_baselines/effect_runs/FSV-B13/ECAS_MATCHED/admitted_policy.json",
+      "pass": true
+    },
+    {
+      "path": "/mnt/d/lunwen/EC-CSI投稿/working/exploration/20261014_four_case_peer_baselines/effect_runs/FSV-B17/AUTOPAC_STYLE/RESULT.json",
+      "pass": true
+    },
+    {
+      "path": "/mnt/d/lunwen/EC-CSI投稿/working/exploration/20261014_four_case_peer_baselines/DOCUMENTED_ECAS_PROTOCOL_CN.md",
+      "pass": true
+    },
+    {
+      "path": "/mnt/d/lunwen/EC-CSI投稿/working/exploration/20261014_four_case_peer_baselines/effect_runs/FSV-B17/AUTOPAC_STYLE/generation.json",
+      "pass": true
+    },
+    {
+      "path": "/root/ecas_four_case_peer_20261014/runtime/scripts/ec_field_security_engine_v2.py",
+      "pass": true
+    },
+    {
+      "path": "/mnt/d/lunwen/EC-CSI投稿/working/exploration/20261014_four_case_peer_baselines/sealed_evaluation/FSV-B13/O-L.json",
+      "pass": true
+    },
+    {
+      "path": "/mnt/d/lunwen/EC-CSI投稿/working/exploration/20261014_four_case_peer_baselines/source_snapshots/FSV-B19/visible_input.json",
+      "pass": true
+    },
+    {
+      "path": "/root/ecas_four_case_peer_20261014/tools/opa",
+      "pass": true
+    },
+    {
+      "path": "/mnt/d/lunwen/EC-CSI投稿/working/exploration/20261014_four_case_peer_baselines/recover_grounding.py",
+      "pass": true
+    },
+    {
+      "path": "/mnt/d/lunwen/EC-CSI投稿/working/exploration/20261014_four_case_peer_baselines/T0_EVIDENCE.json",
+      "pass": true
+    },
+    {
+      "path": "/mnt/d/lunwen/EC-CSI投稿/working/exploration/20261014_four_case_peer_baselines/SIZE_REPAIR_RECEIPT.json",
+      "pass": true
+    },
+    {
+      "path": "/root/ecas_four_case_peer_20261014/runtime/scripts/ec_field_security_engine_v3.py",
+      "pass": true
+    },
+    {
+      "path": "/mnt/d/lunwen/EC-CSI投稿/working/exploration/20261014_four_case_peer_baselines/effect_runs/FSV-S03/AUTOPAC_STYLE/repaired/dev_00.input.json",
+      "pass": true
+    },
+    {
+      "path": "/mnt/d/lunwen/EC-CSI投稿/working/exploration/20261014_four_case_peer_baselines/effect_runs/FSV-B19/P2P_STYLE/repaired/CHECKS.json",
+      "pass": true
+    },
+    {
+      "path": "/mnt/d/lunwen/EC-CSI投稿/working/exploration/20261014_four_case_peer_baselines/generation_inputs/FSV-B13/packet.json",
+      "pass": true
+    },
+    {
+      "path": "/mnt/d/lunwen/EC-CSI投稿/working/exploration/20261014_four_case_peer_baselines/SCOPED_GATE_READY.json",
+      "pass": true
+    },
+    {
+      "path": "/mnt/d/lunwen/EC-CSI投稿/working/exploration/20261014_four_case_peer_baselines/execution_inputs/FSV-B13/contract.json",
+      "pass": true
+    },
+    {
+      "path": "/mnt/d/lunwen/EC-CSI投稿/working/exploration/20261014_four_case_peer_baselines/effect_runs/FSV-S03/AUTOPAC_STYLE/generation.json",
+      "pass": true
+    },
+    {
+      "path": "/mnt/d/lunwen/EC-CSI投稿/working/exploration/20261014_four_case_peer_baselines/effect_runs/FSV-B19/ECAS_MATCHED/compiled_proposal.json",
+      "pass": true
+    },
+    {
+      "path": "/mnt/d/lunwen/EC-CSI投稿/working/exploration/20261014_four_case_peer_baselines/effect_runs/FSV-B17/AUTOPAC_STYLE/initial/DEVELOPER_RESULTS.json",
+      "pass": true
+    },
+    {
+      "path": "/mnt/d/lunwen/EC-CSI投稿/working/exploration/20261014_four_case_peer_baselines/effect_runs/FSV-B13/AUTOPAC_STYLE/initial/CHECKS.json",
+      "pass": true
+    },
+    {
+      "path": "/mnt/d/lunwen/EC-CSI投稿/working/exploration/20261014_four_case_peer_baselines/managed_entry.py",
+      "pass": true
+    },
+    {
+      "path": "/mnt/d/lunwen/EC-CSI投稿/working/exploration/20261014_four_case_peer_baselines/sealed_evaluation/FSV-B13/O-I.json",
+      "pass": true
+    },
+    {
+      "path": "/mnt/d/lunwen/EC-CSI投稿/working/exploration/20261014_four_case_peer_baselines/sealed_evaluation/FSV-S03/O-I.json",
+      "pass": true
+    },
+    {
+      "path": "/mnt/d/lunwen/EC-CSI投稿/working/exploration/20261014_four_case_peer_baselines/EXPERIMENT_SCOPE.json",
+      "pass": true
+    },
+    {
+      "path": "/root/ecas_four_case_peer_20261014/runtime/EC_FIELD_SECURITY_POLICY_SCHEMA_V3.json",
+      "pass": true
+    },
+    {
+      "path": "/mnt/d/lunwen/EC-CSI投稿/working/exploration/20261014_four_case_peer_baselines/DOCUMENTED_OPERATOR_SEMANTICS.json",
+      "pass": true
+    },
+    {
+      "path": "/mnt/d/lunwen/EC-CSI投稿/working/exploration/20261014_four_case_peer_baselines/effect_runs/FSV-B19/P2P_STYLE/repair.json",
+      "pass": true
+    },
+    {
+      "path": "/mnt/d/lunwen/EC-CSI投稿/working/exploration/20261014_four_case_peer_baselines/effect_runs/FSV-B17/ECAS_MATCHED/compiled_proposal.json",
+      "pass": true
+    },
+    {
+      "path": "/mnt/d/lunwen/EC-CSI投稿/working/exploration/20261014_four_case_peer_baselines/effect_runs/FSV-S03/AUTOPAC_STYLE/CANDIDATE_FREEZE.json",
+      "pass": true
+    },
+    {
+      "path": "/mnt/d/lunwen/EC-CSI投稿/working/exploration/20261014_four_case_peer_baselines/effect_runs/FSV-B13/ECAS_MATCHED/COMMON_DEVELOPER_RESULTS.json",
+      "pass": true
+    },
+    {
+      "path": "/mnt/d/lunwen/EC-CSI投稿/working/exploration/20261014_four_case_peer_baselines/FORMAT_RECOVERY_PROTOCOL_CN.md",
+      "pass": true
+    },
+    {
+      "path": "/mnt/d/lunwen/EC-CSI投稿/working/exploration/20261014_four_case_peer_baselines/effect_runs/FSV-B17/AUTOPAC_STYLE/initial/dev_01.input.json",
+      "pass": true
+    },
+    {
+      "path": "/mnt/d/lunwen/EC-CSI投稿/working/exploration/20261014_four_case_peer_baselines/execution_inputs/ecas_output_schema.json",
+      "pass": true
+    },
+    {
+      "path": "/mnt/d/lunwen/EC-CSI投稿/working/exploration/20261014_four_case_peer_baselines/effect_runs/FSV-B19/AUTOPAC_STYLE/initial/dev_02.input.json",
+      "pass": true
+    },
+    {
+      "path": "/mnt/d/lunwen/EC-CSI投稿/working/exploration/20261014_four_case_peer_baselines/execution_inputs/FSV-S03/contract.json",
+      "pass": true
+    },
+    {
+      "path": "/mnt/d/lunwen/EC-CSI投稿/working/exploration/20261014_four_case_peer_baselines/effect_runs/FSV-S03/AUTOPAC_STYLE/repaired/CHECKS.json",
+      "pass": true
+    },
+    {
+      "path": "/mnt/d/lunwen/EC-CSI投稿/working/exploration/20261014_four_case_peer_baselines/effect_runs/FSV-B19/P2P_STYLE/initial/CHECKS.json",
+      "pass": true
+    },
+    {
+      "path": "/root/ecas_four_case_peer_20261014/runtime/EC_FIELD_SECURITY_POLICY_SCHEMA_V2.json",
+      "pass": true
+    },
+    {
+      "path": "/mnt/d/lunwen/EC-CSI投稿/working/exploration/20261014_four_case_peer_baselines/source_snapshots/FSV-B17/visible_input.json",
+      "pass": true
+    },
+    {
+      "path": "/mnt/d/lunwen/EC-CSI投稿/working/exploration/20261014_four_case_peer_baselines/effect_runs/FSV-B17/P2P_STYLE/extraction.json",
+      "pass": true
+    },
+    {
+      "path": "/mnt/d/lunwen/EC-CSI投稿/working/exploration/20261014_four_case_peer_baselines/AUTHORIZATION_CN.md",
+      "pass": true
+    },
+    {
+      "path": "/mnt/d/lunwen/EC-CSI投稿/working/exploration/20261014_four_case_peer_baselines/effect_runs/FSV-B19/ECAS_MATCHED/RESULT.json",
+      "pass": true
+    },
+    {
+      "path": "/mnt/d/lunwen/EC-CSI投稿/working/exploration/20261014_four_case_peer_baselines/effect_runs/FSV-B13/P2P_STYLE/detection.json",
+      "pass": true
+    },
+    {
+      "path": "/mnt/d/lunwen/tools/llm/invoke_glm_api.ps1",
+      "pass": true
+    },
+    {
+      "path": "/mnt/d/lunwen/EC-CSI投稿/working/exploration/20261014_four_case_peer_baselines/INPUT_DERIVATIONS.json",
+      "pass": true
+    },
+    {
+      "path": "/mnt/d/lunwen/EC-CSI投稿/working/exploration/20261014_four_case_peer_baselines/effect_runs/FSV-B13/ECAS_MATCHED/RESULT.json",
+      "pass": true
+    },
+    {
+      "path": "/mnt/d/lunwen/EC-CSI投稿/working/exploration/20261014_four_case_peer_baselines/effect_runs/FSV-B13/AUTOPAC_STYLE/generation.json",
+      "pass": true
+    },
+    {
+      "path": "/mnt/d/lunwen/EC-CSI投稿/working/exploration/20261014_four_case_peer_baselines/effect_runs/FSV-B19/AUTOPAC_STYLE/generation.json",
+      "pass": true
+    },
+    {
+      "path": "/mnt/d/lunwen/EC-CSI投稿/working/exploration/20261014_four_case_peer_baselines/effect_runs/FSV-B19/AUTOPAC_STYLE/initial/DEVELOPER_RESULTS.json",
+      "pass": true
+    },
+    {
+      "path": "/mnt/d/lunwen/EC-CSI投稿/working/exploration/20261014_four_case_peer_baselines/effect_runs/FSV-B13/AUTOPAC_STYLE/initial/DEVELOPER_RESULTS.json",
+      "pass": true
+    },
+    {
+      "path": "/mnt/d/lunwen/EC-CSI投稿/working/exploration/20261014_four_case_peer_baselines/effect_runs/FSV-S03/P2P_STYLE/detection.json",
+      "pass": true
+    },
+    {
+      "path": "/mnt/d/lunwen/EC-CSI投稿/working/exploration/20261014_four_case_peer_baselines/effect_runs/FSV-S03/ECAS_MATCHED/candidate.json",
+      "pass": true
+    },
+    {
+      "path": "/mnt/d/lunwen/EC-CSI投稿/working/exploration/20261014_four_case_peer_baselines/effect_runs/FSV-B13/P2P_STYLE/extraction.json",
+      "pass": true
+    },
+    {
+      "path": "/mnt/d/lunwen/EC-CSI投稿/working/exploration/20261014_four_case_peer_baselines/effect_runs/FSV-B17/AUTOPAC_STYLE/INITIAL_DEVELOPMENT.json",
+      "pass": true
+    },
+    {
+      "path": "/mnt/d/lunwen/EC-CSI投稿/working/exploration/20261014_four_case_peer_baselines/generation_inputs/FSV-B19/packet.json",
+      "pass": true
+    },
+    {
+      "path": "/mnt/d/lunwen/EC-CSI投稿/working/exploration/20261014_four_case_peer_baselines/omit_presentation_fields.py",
+      "pass": true
+    },
+    {
+      "path": "/mnt/d/lunwen/EC-CSI投稿/working/exploration/20261014_four_case_peer_baselines/effect_runs/FSV-B17/P2P_STYLE/INITIAL_DEVELOPMENT.json",
+      "pass": true
+    },
+    {
+      "path": "/mnt/d/lunwen/EC-CSI投稿/working/exploration/20261014_four_case_peer_baselines/execution_inputs/FSV-B19/contract.json",
+      "pass": true
+    },
+    {
+      "path": "/mnt/d/lunwen/EC-CSI投稿/working/exploration/20261014_four_case_peer_baselines/effect_runs/FSV-B19/ECAS_MATCHED/CANDIDATE_FREEZE.json",
+      "pass": true
+    },
+    {
+      "path": "/mnt/d/lunwen/EC-CSI投稿/working/exploration/20261014_four_case_peer_baselines/effect_runs/FSV-B17/P2P_STYLE/repaired/CHECKS.json",
+      "pass": true
+    },
+    {
+      "path": "/mnt/d/lunwen/EC-CSI投稿/working/exploration/20261014_four_case_peer_baselines/effect_runs/FSV-B19/AUTOPAC_STYLE/repaired/dev_01.input.json",
+      "pass": true
+    },
+    {
+      "path": "/root/ecas_four_case_peer_20261014/runtime/EC_FIELD_SECURITY_PROPOSAL_SCHEMA_V3.json",
+      "pass": true
+    },
+    {
+      "path": "/mnt/d/lunwen/EC-CSI投稿/working/exploration/20261014_four_case_peer_baselines/effect_runs/FSV-B17/P2P_STYLE/generated_developer_tests.json",
+      "pass": true
+    },
+    {
+      "path": "/mnt/d/lunwen/EC-CSI投稿/working/exploration/20261014_four_case_peer_baselines/effect_runs/FSV-B19/AUTOPAC_STYLE/final_O-I_0.input.json",
+      "pass": true
+    },
+    {
+      "path": "/mnt/d/lunwen/EC-CSI投稿/working/exploration/20261014_four_case_peer_baselines/effect_runs/FSV-S03/AUTOPAC_STYLE/judge.json",
+      "pass": true
+    },
+    {
+      "path": "/mnt/d/lunwen/EC-CSI投稿/working/exploration/20261014_four_case_peer_baselines/effect_runs/FSV-S03/ECAS_MATCHED/admitted_policy.json",
+      "pass": true
+    },
+    {
+      "path": "/mnt/d/lunwen/EC-CSI投稿/working/exploration/20261014_four_case_peer_baselines/effect_runs/FSV-S03/AUTOPAC_STYLE/final_O-I_0.input.json",
+      "pass": true
+    },
+    {
+      "path": "/mnt/d/lunwen/EC-CSI投稿/working/exploration/20261014_four_case_peer_baselines/effect_runs/FSV-B13/ECAS_MATCHED/CANDIDATE_FREEZE.json",
+      "pass": true
+    },
+    {
+      "path": "/mnt/d/lunwen/EC-CSI投稿/working/exploration/20261014_four_case_peer_baselines/effect_runs/FSV-B13/AUTOPAC_STYLE/judge.json",
+      "pass": true
+    },
+    {
+      "path": "/mnt/d/lunwen/EC-CSI投稿/working/exploration/20261014_four_case_peer_baselines/effect_runs/FSV-S03/AUTOPAC_STYLE/RESULT.json",
+      "pass": true
+    },
+    {
+      "path": "/mnt/d/lunwen/EC-CSI投稿/working/exploration/20261014_four_case_peer_baselines/source_snapshots/FSV-B13/visible_input.json",
+      "pass": true
+    },
+    {
+      "path": "/mnt/d/lunwen/EC-CSI投稿/working/exploration/20261014_four_case_peer_baselines/effect_runs/FSV-B13/AUTOPAC_STYLE/RESULT.json",
+      "pass": true
+    },
+    {
+      "path": "/mnt/d/lunwen/EC-CSI投稿/working/exploration/20261014_four_case_peer_baselines/effect_runs/FSV-B17/AUTOPAC_STYLE/initial/dev_00.input.json",
+      "pass": true
+    },
+    {
+      "path": "/mnt/d/lunwen/EC-CSI投稿/working/exploration/20261014_four_case_peer_baselines/effect_runs/FSV-B19/P2P_STYLE/generated_developer_tests.json",
+      "pass": true
+    },
+    {
+      "path": "/mnt/d/lunwen/EC-CSI投稿/working/exploration/20261014_four_case_peer_baselines/effect_runs/FSV-B13/AUTOPAC_STYLE/final_O-L_0.input.json",
+      "pass": true
+    },
+    {
+      "path": "/mnt/d/lunwen/EC-CSI投稿/working/exploration/20261014_four_case_peer_baselines/generation_inputs/FSV-B17/packet.json",
+      "pass": true
+    },
+    {
+      "path": "/mnt/d/lunwen/EC-CSI投稿/working/exploration/20261014_four_case_peer_baselines/effect_runs/FSV-B19/AUTOPAC_STYLE/repaired/dev_00.input.json",
+      "pass": true
+    },
+    {
+      "path": "/mnt/d/lunwen/EC-CSI投稿/working/exploration/20261014_four_case_peer_baselines/TASK_CONTRACT_CN.md",
+      "pass": true
+    },
+    {
+      "path": "/root/ecas_four_case_peer_20261014/tools/regal",
+      "pass": true
+    },
+    {
+      "path": "/mnt/d/lunwen/EC-CSI投稿/working/exploration/20261014_four_case_peer_baselines/EXECUTION_CONFIG.json",
+      "pass": true
+    },
+    {
+      "path": "/mnt/d/lunwen/EC-CSI投稿/working/exploration/20261014_four_case_peer_baselines/effect_runs/FSV-B17/AUTOPAC_STYLE/judge.json",
+      "pass": true
+    },
+    {
+      "path": "/mnt/d/lunwen/EC-CSI投稿/working/exploration/20261014_four_case_peer_baselines/effect_runs/FSV-B17/AUTOPAC_STYLE/CANDIDATE_FREEZE.json",
+      "pass": true
+    },
+    {
+      "path": "/mnt/d/lunwen/EC-CSI投稿/working/exploration/20261014_four_case_peer_baselines/effect_runs/FSV-B19/AUTOPAC_STYLE/initial/CHECKS.json",
+      "pass": true
+    },
+    {
+      "path": "/mnt/d/lunwen/EC-CSI投稿/working/exploration/20261014_four_case_peer_baselines/sealed_evaluation/branch_protocol.json",
+      "pass": true
+    },
+    {
+      "path": "/mnt/d/lunwen/EC-CSI投稿/working/exploration/20261014_four_case_peer_baselines/effect_runs/FSV-B19/AUTOPAC_STYLE/judge.json",
+      "pass": true
+    },
+    {
+      "path": "/mnt/d/lunwen/EC-CSI投稿/working/exploration/20261014_four_case_peer_baselines/effect_runs/FSV-B13/AUTOPAC_STYLE/initial/dev_01.input.json",
+      "pass": true
+    },
+    {
+      "path": "/mnt/d/lunwen/EC-CSI投稿/working/exploration/20261014_four_case_peer_baselines/effect_runs/FSV-B13/AUTOPAC_STYLE/INITIAL_DEVELOPMENT.json",
+      "pass": true
+    },
+    {
+      "path": "/mnt/d/lunwen/EC-CSI投稿/working/exploration/20261014_four_case_peer_baselines/effect_runs/FSV-S03/ECAS_MATCHED/CANDIDATE_FREEZE.json",
+      "pass": true
+    },
+    {
+      "path": "/mnt/d/lunwen/EC-CSI投稿/working/exploration/20261014_four_case_peer_baselines/effect_runs/FSV-B17/P2P_STYLE/repair.json",
+      "pass": true
+    },
+    {
+      "path": "/mnt/d/lunwen/EC-CSI投稿/working/exploration/20261014_four_case_peer_baselines/effect_runs/FSV-S03/AUTOPAC_STYLE/initial/CHECKS.json",
+      "pass": true
+    },
+    {
+      "path": "/mnt/d/lunwen/EC-CSI投稿/working/exploration/20261014_four_case_peer_baselines/effect_runs/FSV-S03/AUTOPAC_STYLE/repaired/dev_01.input.json",
+      "pass": true
+    },
+    {
+      "path": "/mnt/d/lunwen/EC-CSI投稿/working/exploration/20261014_four_case_peer_baselines/execution_inputs/ecas_prompt_schema.json",
+      "pass": true
+    },
+    {
+      "path": "/root/ecas_four_case_peer_20261014/runtime/EC_FIELD_SECURITY_PROPOSAL_SCHEMA_V2.json",
+      "pass": true
+    },
+    {
+      "path": "/mnt/d/lunwen/EC-CSI投稿/working/exploration/20261014_four_case_peer_baselines/finalize_preparation.py",
+      "pass": true
+    },
+    {
+      "path": "/root/ecas_four_case_peer_20261014/runtime/EC_EVIDENCE_CONTRACT_SCHEMA_V2.json",
+      "pass": true
+    },
+    {
+      "path": "/mnt/d/lunwen/EC-CSI投稿/working/exploration/20261014_four_case_peer_baselines/PROMPT_TEMPLATES.json",
+      "pass": true
+    },
+    {
+      "path": "/mnt/d/lunwen/EC-CSI投稿/working/exploration/20261014_four_case_peer_baselines/EXECUTION_INPUT_MANIFEST.json",
+      "pass": true
+    },
+    {
+      "path": "/mnt/d/lunwen/EC-CSI投稿/working/exploration/20261014_four_case_peer_baselines/effect_runs/FSV-B17/AUTOPAC_STYLE/final_O-L_0.input.json",
+      "pass": true
+    },
+    {
+      "path": "/mnt/d/lunwen/EC-CSI投稿/working/exploration/20261014_four_case_peer_baselines/effect_runs/FSV-B17/P2P_STYLE/RESULT.json",
+      "pass": true
+    },
+    {
+      "path": "/mnt/d/lunwen/EC-CSI投稿/working/exploration/20261014_four_case_peer_baselines/generation_inputs/FSV-S03/packet.json",
+      "pass": true
+    },
+    {
+      "path": "/mnt/d/lunwen/EC-CSI投稿/working/exploration/20261014_four_case_peer_baselines/effect_runs/FSV-B13/AUTOPAC_STYLE/initial/dev_02.input.json",
+      "pass": true
+    },
+    {
+      "path": "/mnt/d/lunwen/EC-CSI投稿/working/exploration/20261014_four_case_peer_baselines/sealed_evaluation/FSV-B17/O-L.json",
+      "pass": true
+    },
+    {
+      "path": "/mnt/d/lunwen/EC-CSI投稿/working/exploration/20261014_four_case_peer_baselines/effect_runs/FSV-B19/AUTOPAC_STYLE/CANDIDATE_FREEZE.json",
+      "pass": true
+    },
+    {
+      "path": "/mnt/d/lunwen/EC-CSI投稿/working/exploration/20261014_four_case_peer_baselines/EXECUTION_STATE.json",
+      "pass": true
+    },
+    {
+      "path": "/mnt/d/lunwen/EC-CSI投稿/working/exploration/20261014_four_case_peer_baselines/sealed_evaluation/FSV-B17/O-I.json",
+      "pass": true
+    },
+    {
+      "path": "/mnt/d/lunwen/EC-CSI投稿/working/exploration/20261014_four_case_peer_baselines/effect_runs/FSV-B13/AUTOPAC_STYLE/CANDIDATE_FREEZE.json",
+      "pass": true
+    },
+    {
+      "path": "/mnt/d/lunwen/EC-CSI投稿/working/exploration/20261014_four_case_peer_baselines/effect_runs/FSV-B17/P2P_STYLE/generation.json",
+      "pass": true
+    },
+    {
+      "path": "/mnt/d/lunwen/EC-CSI投稿/working/exploration/20261014_four_case_peer_baselines/build_requests.py",
+      "pass": true
+    },
+    {
+      "path": "/mnt/d/lunwen/EC-CSI投稿/working/exploration/20261014_four_case_peer_baselines/effect_runs/FSV-B17/ECAS_MATCHED/candidate.json",
+      "pass": true
+    },
+    {
+      "path": "/mnt/d/lunwen/EC-CSI投稿/working/exploration/20261014_four_case_peer_baselines/effect_runs/FSV-B17/P2P_STYLE/detection.json",
+      "pass": true
+    },
+    {
+      "path": "/mnt/d/lunwen/EC-CSI投稿/working/exploration/20261014_four_case_peer_baselines/source_snapshots/FSV-S03/visible_input.json",
+      "pass": true
+    },
+    {
+      "path": "/mnt/d/lunwen/EC-CSI投稿/working/exploration/20261014_four_case_peer_baselines/DOCUMENTATION_SOURCE_RECEIPT.json",
+      "pass": true
+    },
+    {
+      "path": "/mnt/d/lunwen/EC-CSI投稿/working/exploration/20261014_four_case_peer_baselines/effect_runs/FSV-B17/P2P_STYLE/initial/CHECKS.json",
+      "pass": true
+    },
+    {
+      "path": "/mnt/d/lunwen/EC-CSI投稿/working/exploration/20261014_four_case_peer_baselines/generation_inputs/FSV-B17/organization_schema.json",
+      "pass": true
+    },
+    {
+      "path": "/mnt/d/lunwen/EC-CSI投稿/working/exploration/20261014_four_case_peer_baselines/sealed_evaluation/FSV-S03/O-L.json",
+      "pass": true
+    },
+    {
+      "path": "/mnt/d/lunwen/EC-CSI投稿/working/exploration/20261014_four_case_peer_baselines/effect_runs/FSV-S03/AUTOPAC_STYLE/repaired/DEVELOPER_RESULTS.json",
+      "pass": true
+    },
+    {
+      "path": "/root/ecas_four_case_peer_20261014/runtime/security_knowledge/SECURITY_PRIMITIVE_CATALOG_V1.json",
+      "pass": true
+    },
+    {
+      "path": "/mnt/d/lunwen/EC-CSI投稿/working/exploration/20261014_four_case_peer_baselines/effect_runs/FSV-S03/P2P_STYLE/RESULT.json",
+      "pass": true
+    },
+    {
+      "path": "/mnt/d/lunwen/EC-CSI投稿/working/exploration/20261014_four_case_peer_baselines/prepare_scope.py",
+      "pass": true
+    },
+    {
+      "path": "/mnt/d/lunwen/EC-CSI投稿/working/exploration/20261014_four_case_peer_baselines/effect_runs/FSV-S03/ECAS_MATCHED/RESULT.json",
+      "pass": true
+    },
+    {
+      "path": "/mnt/d/lunwen/EC-CSI投稿/working/exploration/20261014_four_case_peer_baselines/pilot_lib.py",
+      "pass": true
+    },
+    {
+      "path": "/root/ecas_four_case_peer_20261014/runtime/EC_EVIDENCE_CONTRACT_SCHEMA_V3.json",
+      "pass": true
+    },
+    {
+      "path": "/mnt/d/lunwen/EC-CSI投稿/working/exploration/20261014_four_case_peer_baselines/DOCUMENTED_PROMPT_SIZES.json",
+      "pass": true
+    },
+    {
+      "path": "/mnt/d/lunwen/EC-CSI投稿/working/exploration/20261014_four_case_peer_baselines/effect_runs/FSV-S03/ECAS_MATCHED/COMMON_DEVELOPER_RESULTS.json",
+      "pass": true
+    },
+    {
+      "path": "/mnt/d/lunwen/EC-CSI投稿/working/exploration/20261014_four_case_peer_baselines/effect_runs/FSV-B19/ECAS_MATCHED/candidate.json",
+      "pass": true
+    },
+    {
+      "path": "/mnt/d/lunwen/EC-CSI投稿/working/exploration/20261014_four_case_peer_baselines/effect_runs/FSV-B19/AUTOPAC_STYLE/repaired/DEVELOPER_RESULTS.json",
+      "pass": true
+    },
+    {
+      "path": "/root/ecas_four_case_peer_20261014/runtime/security_knowledge/SECURITY_PRIMITIVE_CATALOG_V2.json",
+      "pass": true
+    },
+    {
+      "path": "/mnt/d/lunwen/EC-CSI投稿/working/exploration/20261014_four_case_peer_baselines/run_documented_ecas.py",
+      "pass": true
+    },
+    {
+      "path": "/mnt/d/lunwen/EC-CSI投稿/working/exploration/20261014_four_case_peer_baselines/TOKEN_GATE_READY.json",
+      "pass": true
+    },
+    {
+      "path": "/mnt/d/lunwen/EC-CSI投稿/working/exploration/20261014_four_case_peer_baselines/generation_inputs/FSV-S03/organization_schema.json",
+      "pass": true
+    },
+    {
+      "path": "/mnt/d/lunwen/EC-CSI投稿/working/exploration/20261014_four_case_peer_baselines/generation_inputs/FSV-B13/organization_schema.json",
+      "pass": true
+    },
+    {
+      "path": "/mnt/d/lunwen/EC-CSI投稿/working/exploration/20261014_four_case_peer_baselines/effect_runs/FSV-B19/AUTOPAC_STYLE/RESULT.json",
+      "pass": true
+    },
+    {
+      "path": "/mnt/d/lunwen/EC-CSI投稿/working/exploration/20261014_four_case_peer_baselines/effect_runs/FSV-B17/ECAS_MATCHED/RESULT.json",
+      "pass": true
+    },
+    {
+      "path": "/mnt/d/lunwen/EC-CSI投稿/working/exploration/20261014_four_case_peer_baselines/sealed_evaluation/FSV-B19/O-L.json",
+      "pass": true
+    },
+    {
+      "path": "/mnt/d/lunwen/EC-CSI投稿/working/exploration/20261014_four_case_peer_baselines/effect_runs/FSV-B19/P2P_STYLE/extraction.json",
+      "pass": true
+    },
+    {
+      "path": "/mnt/d/lunwen/EC-CSI投稿/working/exploration/20261014_four_case_peer_baselines/effect_runs/FSV-S03/AUTOPAC_STYLE/repair.json",
+      "pass": true
+    }
+  ],
+  "raw_checks": [
+    {
+      "index": 1,
+      "pass": true,
+      "usage_matches": true,
+      "budget_ok": true
+    },
+    {
+      "index": 2,
+      "pass": true,
+      "usage_matches": true,
+      "budget_ok": true
+    },
+    {
+      "index": 3,
+      "pass": true,
+      "usage_matches": true,
+      "budget_ok": true
+    },
+    {
+      "index": 4,
+      "pass": true,
+      "usage_matches": true,
+      "budget_ok": true
+    },
+    {
+      "index": 5,
+      "pass": true,
+      "usage_matches": true,
+      "budget_ok": true
+    },
+    {
+      "index": 6,
+      "pass": true,
+      "usage_matches": true,
+      "budget_ok": true
+    },
+    {
+      "index": 7,
+      "pass": true,
+      "usage_matches": true,
+      "budget_ok": true
+    },
+    {
+      "index": 8,
+      "pass": true,
+      "usage_matches": true,
+      "budget_ok": true
+    },
+    {
+      "index": 9,
+      "pass": true,
+      "usage_matches": true,
+      "budget_ok": true
+    },
+    {
+      "index": 10,
+      "pass": true,
+      "usage_matches": true,
+      "budget_ok": true
+    },
+    {
+      "index": 11,
+      "pass": true,
+      "usage_matches": true,
+      "budget_ok": true
+    },
+    {
+      "index": 12,
+      "pass": true,
+      "usage_matches": true,
+      "budget_ok": true
+    },
+    {
+      "index": 13,
+      "pass": true,
+      "usage_matches": true,
+      "budget_ok": true
+    },
+    {
+      "index": 14,
+      "pass": true,
+      "usage_matches": true,
+      "budget_ok": true
+    },
+    {
+      "index": 15,
+      "pass": true,
+      "usage_matches": true,
+      "budget_ok": true
+    },
+    {
+      "index": 16,
+      "pass": true,
+      "usage_matches": true,
+      "budget_ok": true
+    },
+    {
+      "index": 17,
+      "pass": true,
+      "usage_matches": true,
+      "budget_ok": true
+    },
+    {
+      "index": 18,
+      "pass": true,
+      "usage_matches": true,
+      "budget_ok": true
+    },
+    {
+      "index": 19,
+      "pass": true,
+      "usage_matches": true,
+      "budget_ok": true
+    },
+    {
+      "index": 20,
+      "pass": true,
+      "usage_matches": true,
+      "budget_ok": true
+    },
+    {
+      "index": 21,
+      "pass": true,
+      "usage_matches": true,
+      "budget_ok": true
+    },
+    {
+      "index": 22,
+      "pass": true,
+      "usage_matches": true,
+      "budget_ok": true
+    },
+    {
+      "index": 23,
+      "pass": true,
+      "usage_matches": true,
+      "budget_ok": true
+    },
+    {
+      "index": 24,
+      "pass": true,
+      "usage_matches": true,
+      "budget_ok": true
+    },
+    {
+      "index": 25,
+      "pass": true,
+      "usage_matches": true,
+      "budget_ok": true
+    },
+    {
+      "index": 26,
+      "pass": true,
+      "usage_matches": true,
+      "budget_ok": true
+    },
+    {
+      "index": 27,
+      "pass": true,
+      "usage_matches": true,
+      "budget_ok": true
+    },
+    {
+      "index": 28,
+      "pass": true,
+      "usage_matches": true,
+      "budget_ok": true
+    },
+    {
+      "index": 29,
+      "pass": true,
+      "usage_matches": true,
+      "budget_ok": true
+    },
+    {
+      "index": 30,
+      "pass": true,
+      "usage_matches": true,
+      "budget_ok": true
+    },
+    {
+      "index": 31,
+      "pass": true,
+      "usage_matches": true,
+      "budget_ok": true
+    },
+    {
+      "index": 32,
+      "pass": true,
+      "usage_matches": true,
+      "budget_ok": true
+    },
+    {
+      "index": 33,
+      "pass": true,
+      "usage_matches": true,
+      "budget_ok": true
+    },
+    {
+      "index": 34,
+      "pass": true,
+      "usage_matches": true,
+      "budget_ok": true
+    },
+    {
+      "index": 35,
+      "pass": true,
+      "usage_matches": true,
+      "budget_ok": true
+    },
+    {
+      "index": 36,
+      "pass": true,
+      "usage_matches": true,
+      "budget_ok": true
+    },
+    {
+      "index": 37,
+      "pass": true,
+      "usage_matches": true,
+      "budget_ok": true
+    },
+    {
+      "index": 38,
+      "pass": true,
+      "usage_matches": true,
+      "budget_ok": true
+    }
+  ],
+  "row_checks": [
+    {
+      "task": "FSV-S03",
+      "method": "P2P_STYLE",
+      "summary_matches_result": true,
+      "pair_flag_matches": true,
+      "probe_flags_match": true
+    },
+    {
+      "task": "FSV-S03",
+      "method": "AUTOPAC_STYLE",
+      "summary_matches_result": true,
+      "pair_flag_matches": true,
+      "probe_flags_match": true
+    },
+    {
+      "task": "FSV-S03",
+      "method": "ECAS_MATCHED",
+      "summary_matches_result": true,
+      "pair_flag_matches": true,
+      "probe_flags_match": true
+    },
+    {
+      "task": "FSV-B13",
+      "method": "P2P_STYLE",
+      "summary_matches_result": true,
+      "pair_flag_matches": true,
+      "probe_flags_match": true
+    },
+    {
+      "task": "FSV-B13",
+      "method": "AUTOPAC_STYLE",
+      "summary_matches_result": true,
+      "pair_flag_matches": true,
+      "probe_flags_match": true
+    },
+    {
+      "task": "FSV-B13",
+      "method": "ECAS_MATCHED",
+      "summary_matches_result": true,
+      "pair_flag_matches": true,
+      "probe_flags_match": true
+    },
+    {
+      "task": "FSV-B17",
+      "method": "P2P_STYLE",
+      "summary_matches_result": true,
+      "pair_flag_matches": true,
+      "probe_flags_match": true
+    },
+    {
+      "task": "FSV-B17",
+      "method": "AUTOPAC_STYLE",
+      "summary_matches_result": true,
+      "pair_flag_matches": true,
+      "probe_flags_match": true
+    },
+    {
+      "task": "FSV-B17",
+      "method": "ECAS_MATCHED",
+      "summary_matches_result": true,
+      "pair_flag_matches": true,
+      "probe_flags_match": true
+    },
+    {
+      "task": "FSV-B19",
+      "method": "P2P_STYLE",
+      "summary_matches_result": true,
+      "pair_flag_matches": true,
+      "probe_flags_match": true
+    },
+    {
+      "task": "FSV-B19",
+      "method": "AUTOPAC_STYLE",
+      "summary_matches_result": true,
+      "pair_flag_matches": true,
+      "probe_flags_match": true
+    },
+    {
+      "task": "FSV-B19",
+      "method": "ECAS_MATCHED",
+      "summary_matches_result": true,
+      "pair_flag_matches": true,
+      "probe_flags_match": true
+    }
+  ]
+}

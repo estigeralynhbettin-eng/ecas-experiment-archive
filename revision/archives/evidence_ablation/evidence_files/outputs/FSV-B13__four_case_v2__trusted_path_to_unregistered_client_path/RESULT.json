@@ -1,0 +1,95 @@
+{
+  "parent_id": "FSV-B13__four_case_v2",
+  "case": "FSV-B13",
+  "configuration": "four_case_v2",
+  "row_id": "FSV-B13__four_case_v2__trusted_path_to_unregistered_client_path",
+  "variant": "trusted_path_to_unregistered_client_path",
+  "classification": "CONSTRUCTED_POLICY_PATH_PERTURBATION",
+  "expected_full": "reject",
+  "notes": "All trusted paths changed to client-body paths without changing inventory declarations",
+  "source_parent_candidate": "/root/ecas_evidence_ablation_20261014/inputs/FSV-B13__four_case_v2/candidate.json",
+  "source_parent_contract": "/root/ecas_evidence_ablation_20261014/inputs/FSV-B13__four_case_v2/contract.json",
+  "candidate_sha256": "5f0bc62a25a7d47804fa63da21ca0173f79ae1e17dffdec09a8b5af2cd8ac77d",
+  "contract_sha256": "32e35f1485dc02131938191da1ef90600de1c272bd4ffa7f3f00aa3428982a84",
+  "output_folder": "/root/ecas_evidence_ablation_20261014/outputs/FSV-B13__four_case_v2__trusted_path_to_unregistered_client_path",
+  "full_executed": false,
+  "shape_executed": true,
+  "ir_status": "COMPILED",
+  "contract_shape_valid": true,
+  "full_status": "ADMISSION_REJECTED",
+  "full_error": "rule FSV-B13-RULE-001 has unbound paths: ['/request/body/ecasClientClaim/authorizedRole', '/request/body/ecasClientClaim/derivedMaximumQty']",
+  "shape_status": "COMPILED_NO_INVENTORY",
+  "eligible_admission_contrast": true,
+  "full_evaluations": [],
+  "shape_evaluations": [
+    {
+      "fixture_id": "FSV-B13-OL-01",
+      "fixture_class": "CONSTRUCTED_CLIENT_PATH_REPLAY",
+      "expected": null,
+      "actual": {
+        "policy_id": "FSV-B13-POL-001",
+        "decision": "allow",
+        "fail_closed": true,
+        "violations": []
+      },
+      "correct": null
+    },
+    {
+      "fixture_id": "FSV-B13-OI-01",
+      "fixture_class": "CONSTRUCTED_CLIENT_PATH_REPLAY",
+      "expected": null,
+      "actual": {
+        "policy_id": "FSV-B13-POL-001",
+        "decision": "deny",
+        "fail_closed": true,
+        "violations": [
+          {
+            "rule_id": "FSV-B13-RULE-001",
+            "code": "bounded_guard_rejected",
+            "detail": "FSV-B13-RULE-001"
+          }
+        ]
+      },
+      "correct": null
+    },
+    {
+      "fixture_id": "SYNTH-CLIENT-SPOOF",
+      "fixture_class": "CONSTRUCTED_CLIENT_SPOOF_PROBE",
+      "expected": null,
+      "actual": {
+        "policy_id": "FSV-B13-POL-001",
+        "decision": "deny",
+        "fail_closed": true,
+        "violations": [
+          {
+            "rule_id": "FSV-B13-RULE-001",
+            "code": "bounded_guard_rejected",
+            "detail": "FSV-B13-RULE-001"
+          }
+        ]
+      },
+      "correct": null
+    },
+    {
+      "fixture_id": "SYNTH-MISSING-TRUSTED",
+      "fixture_class": "CONSTRUCTED_MISSING_CONTEXT_CONTROL",
+      "expected": null,
+      "actual": {
+        "policy_id": "FSV-B13-POL-001",
+        "decision": "deny",
+        "fail_closed": true,
+        "violations": [
+          {
+            "rule_id": "FSV-B13-RULE-001",
+            "code": "required_input_missing",
+            "detail": "FSV-B13-RULE-001"
+          }
+        ]
+      },
+      "correct": null
+    }
+  ],
+  "original_pair_correct": null,
+  "full_execution_errors": 0,
+  "shape_execution_errors": 0
+}

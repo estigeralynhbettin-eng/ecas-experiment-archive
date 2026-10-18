@@ -1,0 +1,12 @@
+{
+  "status": "READY",
+  "statements": [
+    {
+      "text": "Re-Age transactions can be reversed only if they are the latest transaction on the loan account.",
+      "evidence_refs": [
+        "VIS-FSV-B06-01"
+      ]
+    }
+  ],
+  "reason": "Source VIS-FSV-B06-01 contains an explicit access-control statement constraining the reversal (undo) operation on re-age transactions: reversal is permitted only when the transaction is the latest on the loan account. The runtime ABI (VIS-FSV-B06-RUNTIME-ABI) provides a corresponding trusted boolean path /trusted/reAgeIsLatestTransaction. Source VIS-FSV-B06-02 contains only input parameter and implementation details, no access policy."
+}

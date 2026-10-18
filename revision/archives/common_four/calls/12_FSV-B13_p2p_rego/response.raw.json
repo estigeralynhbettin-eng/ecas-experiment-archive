@@ -1,0 +1,28 @@
+{
+  "choices": [
+    {
+      "finish_reason": "stop",
+      "index": 0,
+      "message": {
+        "content": "{\"begin\":\"BEGIN_FSV-B13_p2p_rego_MAIN\",\"stage\":\"p2p_rego\",\"output\":{\"status\":\"READY\",\"rego\":\"package external_pilot\\n\\nimport rego.v1\\n\\ndefault allow := false\\n\\nallow if {\\n    input.request.body.qty <= input.trusted.derivedMaximumQty\\n}\\n\\nallow if {\\n    input.trusted.authorizedRole == true\\n}\\n\",\"reason\":\"Enforces the documented Stock Settings receipt quantity allowance using trusted derivedMaximumQty and allows the documented over-receive exception when trusted.authorizedRole is true.\"},\"end\":\"END_FSV-B13_p2p_rego_MAIN\"}",
+        "role": "assistant"
+      }
+    }
+  ],
+  "created": 1791993334,
+  "id": "20261014235513dd3f2bfe464741e0",
+  "model": "glm-5.2",
+  "object": "chat.completion",
+  "request_id": "20261014235513dd3f2bfe464741e0",
+  "usage": {
+    "completion_tokens": 1384,
+    "completion_tokens_details": {
+      "reasoning_tokens": 1221
+    },
+    "prompt_tokens": 4082,
+    "prompt_tokens_details": {
+      "cached_tokens": 0
+    },
+    "total_tokens": 5466
+  }
+}

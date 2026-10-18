@@ -1,0 +1,31 @@
+{
+  "original_status": "SCHEMA_GROUNDING_REJECTED",
+  "original_source": "/mnt/d/lunwen/EC-CSI投稿/working/exploration/20261014_four_case_peer_baselines/effect_runs/FSV-B13/P2P_STYLE",
+  "changes": [
+    {
+      "component": 0,
+      "field": "subject",
+      "from": {
+        "id": "authenticated_api_caller",
+        "role": "authenticated_api_caller"
+      },
+      "to": "authenticated_api_caller",
+      "classification": "EXACT_NEUTRAL_OBJECT_ID_REPRESENTATION"
+    },
+    {
+      "component": 0,
+      "field": "resource",
+      "from": {
+        "id": "ERPNext:16.0.0",
+        "system": "ERPNext",
+        "version": "16.0.0"
+      },
+      "to": "ERPNext:16.0.0",
+      "classification": "EXACT_NEUTRAL_OBJECT_ID_REPRESENTATION"
+    }
+  ],
+  "business_fields_changed": false,
+  "source_extraction_sha256": "5c2134cf0f0076d5a3c9ddcf7ecc9d61c06f8d464c141bd161183962cbffd4d9",
+  "derived_extraction_sha256": "414ff4efd7180bf426f820d90e69a4de5df456d6796467615a9b8a496de4a121",
+  "no_repeat_detect_extract_calls": true
+}

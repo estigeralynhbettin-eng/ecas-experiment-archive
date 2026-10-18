@@ -1,0 +1,123 @@
+{
+  "classification": "SOURCE_LOCATOR_BINDING_NOT_TEST_ORACLE_CORRECTION",
+  "tests_path": "/mnt/d/lunwen/EC-CSI投稿/working/exploration/20261014_matched_evidence_labor/matched_generation/method_runs/FSV-B13/P2P_STYLE/p2p_tests.json",
+  "tests_sha256": "66d423db3326d6516975809ddcbb162be2516ed3b47f9e4ddf9d1a4f1cb864da",
+  "references": [
+    {
+      "original_reference": "VIS-FSV-B13-01#Limit Percent",
+      "accepted": true,
+      "binding_kind": "EXACT_NORMALIZED_VISIBLE_HEADING",
+      "base_evidence_id": "VIS-FSV-B13-01",
+      "original_fragment": "Limit Percent",
+      "source_id": "erpnext-stock-settings.html",
+      "source_metadata_sha256": "F866B7A7F90AEFCB06DA623C3F9EF25F5524D4261887FC80FFDE3AAA76A530EA",
+      "visible_text_sha256": "26e91efd1a8efa893d8b1f991477c3a4717a31205e5252c739df4ba8056c7cfa",
+      "normalized_fragment": "limit percent",
+      "heading_locations": [
+        {
+          "line_number": 29,
+          "original_heading": "Limit Percent"
+        }
+      ],
+      "original_source_reference_preserved": true,
+      "developer_test_id": "t1_qty_within_allowance"
+    },
+    {
+      "original_reference": "VIS-FSV-B13-01#Role Allowed to Over Deliver/Receive",
+      "accepted": true,
+      "binding_kind": "EXACT_NORMALIZED_VISIBLE_HEADING",
+      "base_evidence_id": "VIS-FSV-B13-01",
+      "original_fragment": "Role Allowed to Over Deliver/Receive",
+      "source_id": "erpnext-stock-settings.html",
+      "source_metadata_sha256": "F866B7A7F90AEFCB06DA623C3F9EF25F5524D4261887FC80FFDE3AAA76A530EA",
+      "visible_text_sha256": "26e91efd1a8efa893d8b1f991477c3a4717a31205e5252c739df4ba8056c7cfa",
+      "normalized_fragment": "role allowed to over deliver/receive",
+      "heading_locations": [
+        {
+          "line_number": 33,
+          "original_heading": "Role Allowed to Over Deliver/Receive"
+        }
+      ],
+      "original_source_reference_preserved": true,
+      "developer_test_id": "t2_qty_exceeds_allowance_with_authorized_role"
+    },
+    {
+      "original_reference": "VIS-FSV-B13-01#Limit Percent",
+      "accepted": true,
+      "binding_kind": "EXACT_NORMALIZED_VISIBLE_HEADING",
+      "base_evidence_id": "VIS-FSV-B13-01",
+      "original_fragment": "Limit Percent",
+      "source_id": "erpnext-stock-settings.html",
+      "source_metadata_sha256": "F866B7A7F90AEFCB06DA623C3F9EF25F5524D4261887FC80FFDE3AAA76A530EA",
+      "visible_text_sha256": "26e91efd1a8efa893d8b1f991477c3a4717a31205e5252c739df4ba8056c7cfa",
+      "normalized_fragment": "limit percent",
+      "heading_locations": [
+        {
+          "line_number": 29,
+          "original_heading": "Limit Percent"
+        }
+      ],
+      "original_source_reference_preserved": true,
+      "developer_test_id": "t3_qty_exceeds_allowance_without_authorized_role"
+    },
+    {
+      "original_reference": "VIS-FSV-B13-01#Limit Percent",
+      "accepted": true,
+      "binding_kind": "EXACT_NORMALIZED_VISIBLE_HEADING",
+      "base_evidence_id": "VIS-FSV-B13-01",
+      "original_fragment": "Limit Percent",
+      "source_id": "erpnext-stock-settings.html",
+      "source_metadata_sha256": "F866B7A7F90AEFCB06DA623C3F9EF25F5524D4261887FC80FFDE3AAA76A530EA",
+      "visible_text_sha256": "26e91efd1a8efa893d8b1f991477c3a4717a31205e5252c739df4ba8056c7cfa",
+      "normalized_fragment": "limit percent",
+      "heading_locations": [
+        {
+          "line_number": 29,
+          "original_heading": "Limit Percent"
+        }
+      ],
+      "original_source_reference_preserved": true,
+      "developer_test_id": "t4_qty_equals_maximum_allowance"
+    },
+    {
+      "original_reference": "VIS-FSV-B13-01#Role Allowed to Over Deliver/Receive",
+      "accepted": true,
+      "binding_kind": "EXACT_NORMALIZED_VISIBLE_HEADING",
+      "base_evidence_id": "VIS-FSV-B13-01",
+      "original_fragment": "Role Allowed to Over Deliver/Receive",
+      "source_id": "erpnext-stock-settings.html",
+      "source_metadata_sha256": "F866B7A7F90AEFCB06DA623C3F9EF25F5524D4261887FC80FFDE3AAA76A530EA",
+      "visible_text_sha256": "26e91efd1a8efa893d8b1f991477c3a4717a31205e5252c739df4ba8056c7cfa",
+      "normalized_fragment": "role allowed to over deliver/receive",
+      "heading_locations": [
+        {
+          "line_number": 33,
+          "original_heading": "Role Allowed to Over Deliver/Receive"
+        }
+      ],
+      "original_source_reference_preserved": true,
+      "developer_test_id": "t5_qty_exceeds_allowance_by_one_without_authorized_role"
+    },
+    {
+      "original_reference": "VIS-FSV-B13-01#Role Allowed to Over Deliver/Receive",
+      "accepted": true,
+      "binding_kind": "EXACT_NORMALIZED_VISIBLE_HEADING",
+      "base_evidence_id": "VIS-FSV-B13-01",
+      "original_fragment": "Role Allowed to Over Deliver/Receive",
+      "source_id": "erpnext-stock-settings.html",
+      "source_metadata_sha256": "F866B7A7F90AEFCB06DA623C3F9EF25F5524D4261887FC80FFDE3AAA76A530EA",
+      "visible_text_sha256": "26e91efd1a8efa893d8b1f991477c3a4717a31205e5252c739df4ba8056c7cfa",
+      "normalized_fragment": "role allowed to over deliver/receive",
+      "heading_locations": [
+        {
+          "line_number": 33,
+          "original_heading": "Role Allowed to Over Deliver/Receive"
+        }
+      ],
+      "original_source_reference_preserved": true,
+      "developer_test_id": "t6_qty_exceeds_allowance_with_authorized_role_false_edge_case"
+    }
+  ],
+  "all_accepted": true,
+  "original_inputs_expected_and_references_changed": false
+}

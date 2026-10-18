@@ -1,0 +1,157 @@
+{
+  "task_window_id": "FSV-S03",
+  "target": {
+    "operation": "POST /v1/clients/{clientId}/familymembers",
+    "system": "Fineract",
+    "version": "1.14.0"
+  },
+  "visible_sources": [
+    {
+      "content": {
+        "description": null,
+        "method": "POST",
+        "parameters": [
+          {
+            "required": true,
+            "schema": {
+              "format": "int64",
+              "type": "integer"
+            }
+          }
+        ],
+        "path": "/v1/clients/{clientId}/familymembers",
+        "requestBody": {
+          "content": {
+            "application/json": {
+              "schema": {
+                "properties": {
+                  "age": {
+                    "format": "int64",
+                    "type": "integer"
+                  },
+                  "clientId": {
+                    "format": "int64",
+                    "type": "integer"
+                  },
+                  "dateFormat": {
+                    "type": "string"
+                  },
+                  "dateOfBirth": {
+                    "type": "string"
+                  },
+                  "familyMembers": {
+                    "type": "string"
+                  },
+                  "firstName": {
+                    "type": "string"
+                  },
+                  "genderId": {
+                    "format": "int64",
+                    "type": "integer"
+                  },
+                  "id": {
+                    "format": "int64",
+                    "type": "integer"
+                  },
+                  "isDependent": {
+                    "type": "boolean"
+                  },
+                  "lastName": {
+                    "type": "string"
+                  },
+                  "locale": {
+                    "type": "string"
+                  },
+                  "maritalStatusId": {
+                    "format": "int64",
+                    "type": "integer"
+                  },
+                  "middleName": {
+                    "type": "string"
+                  },
+                  "mobileNumber": {
+                    "type": "string"
+                  },
+                  "professionId": {
+                    "format": "int64",
+                    "type": "integer"
+                  },
+                  "qualification": {
+                    "type": "string"
+                  },
+                  "relationshipId": {
+                    "format": "int64",
+                    "type": "integer"
+                  }
+                },
+                "type": "object"
+              }
+            }
+          }
+        },
+        "summary": null
+      },
+      "evidence_id": "VIS-FSV-S03-01",
+      "locator": "paths./v1/clients/{clientId}/familymembers.post",
+      "source_id": "fineract-openapi-1.14.0.json",
+      "source_sha256": "A44D6FA247D495A4FB147CC8C5EA1A364D8F05A40762B31A055681373E455A48"
+    },
+    {
+      "content": {
+        "available_values": [
+          {
+            "authority": "client",
+            "path": "/request/body",
+            "type": "object"
+          },
+          {
+            "authority": "client",
+            "path": "/request/body/age",
+            "type": "integer"
+          }
+        ],
+        "target_operation": "POST /v1/clients/{clientId}/familymembers",
+        "notice": "This declares available adapter paths and types only; it supplies no expected decision or hidden test value."
+      },
+      "evidence_id": "VIS-FSV-S03-RUNTIME-ABI",
+      "locator": "tasks.FSV-S03",
+      "source_id": "EC-V2-RUNTIME-INTERFACE-CATALOG-V1",
+      "source_sha256": "8221DA8A6720B0593A8D337F18569C9947AAB05B02E5C84FB0C50E3DE8C1ABD7"
+    }
+  ],
+  "common_adapter": {
+    "subject_role": "authenticated_api_caller",
+    "subject_id": "authenticated_api_caller",
+    "action": "POST /v1/clients/{clientId}/familymembers",
+    "resource_id": "Fineract:1.14.0",
+    "resource_system": "Fineract",
+    "resource_version": "1.14.0",
+    "request_and_trusted_paths": [
+      {
+        "authority": "client",
+        "path": "/request/body",
+        "type": "object"
+      },
+      {
+        "authority": "client",
+        "path": "/request/body/age",
+        "type": "integer"
+      }
+    ],
+    "envelope_representation": {
+      "subject": {
+        "id": "authenticated_api_caller",
+        "role": "authenticated_api_caller"
+      },
+      "action": "POST /v1/clients/{clientId}/familymembers",
+      "resource": {
+        "id": "Fineract:1.14.0",
+        "system": "Fineract",
+        "version": "1.14.0"
+      },
+      "request": "original request unchanged",
+      "trusted": "original trusted unchanged"
+    },
+    "notice": "resource is an object; compare resource.id to organization schema resource strings. Subject id/role are neutral aliases, not an added permission rule. Source evidence and runtime path declarations contain no evaluation label."
+  }
+}

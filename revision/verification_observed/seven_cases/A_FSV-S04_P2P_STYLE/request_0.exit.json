@@ -1,0 +1,15 @@
+{
+  "exit_code": 0,
+  "argv": [
+    "runtime/bin/opa",
+    "eval",
+    "--capabilities",
+    "/root/ecas_a9_artifact_verify_v2/run/restricted_capabilities.json",
+    "--format=json",
+    "--data",
+    "archives/old_three/binding_replay_resource_object/FSV-S04/P2P_STYLE/validation/external_pilot/policy.rego",
+    "--input",
+    "/root/ecas_a9_artifact_verify_v2/run/seven_cases/A_FSV-S04_P2P_STYLE/request_0.input.json",
+    "data.external_pilot.allow"
+  ]
+}

@@ -1,0 +1,105 @@
+{
+  "status": "pass",
+  "checked_at": "2026-10-15T11:40:35.7794724+08:00",
+  "project_path": "D:\\lunwen\\EC-CSI投稿",
+  "since": "2026-10-15T11:30:35.7097352+08:00",
+  "documents": [
+    {
+      "name": "PROJECT_BRIEF.md",
+      "path": "D:\\lunwen\\EC-CSI投稿\\PROJECT_BRIEF.md",
+      "exists": false,
+      "last_write_time": null,
+      "updated_since_start": false
+    },
+    {
+      "name": "LATEST_OUTPUTS.md",
+      "path": "D:\\lunwen\\EC-CSI投稿\\LATEST_OUTPUTS.md",
+      "exists": true,
+      "last_write_time": "2026-10-15T11:39:39.9925157+08:00",
+      "updated_since_start": true
+    },
+    {
+      "name": "RESEARCH_DECISIONS.md",
+      "path": "D:\\lunwen\\EC-CSI投稿\\RESEARCH_DECISIONS.md",
+      "exists": true,
+      "last_write_time": "2026-10-15T11:39:39.9945173+08:00",
+      "updated_since_start": true
+    },
+    {
+      "name": "HANDOFF.md",
+      "path": "D:\\lunwen\\EC-CSI投稿\\HANDOFF.md",
+      "exists": true,
+      "last_write_time": "2026-10-15T11:39:39.9935181+08:00",
+      "updated_since_start": true
+    },
+    {
+      "name": "EXPERIMENT_RESULTS.md",
+      "path": "D:\\lunwen\\EC-CSI投稿\\EXPERIMENT_RESULTS.md",
+      "exists": true,
+      "last_write_time": "2026-10-15T11:39:39.9955173+08:00",
+      "updated_since_start": true
+    },
+    {
+      "name": "REVIEW_NOTES.md",
+      "path": "D:\\lunwen\\EC-CSI投稿\\REVIEW_NOTES.md",
+      "exists": true,
+      "last_write_time": "2026-10-13T20:13:38.8278890+08:00",
+      "updated_since_start": false
+    },
+    {
+      "name": "MANUSCRIPT_OUTLINE.md",
+      "path": "D:\\lunwen\\EC-CSI投稿\\MANUSCRIPT_OUTLINE.md",
+      "exists": false,
+      "last_write_time": null,
+      "updated_since_start": false
+    },
+    {
+      "name": "TODO.md",
+      "path": "D:\\lunwen\\EC-CSI投稿\\TODO.md",
+      "exists": true,
+      "last_write_time": "2026-10-13T20:13:38.8288785+08:00",
+      "updated_since_start": false
+    }
+  ],
+  "expected_outputs": [
+    {
+      "requested_path": "D:\\lunwen\\EC-CSI投稿\\working\\exploration\\20261015_semantic_comparison\\EXPERIMENT_SUMMARY_CN_R3.md",
+      "resolved_path": "D:\\lunwen\\EC-CSI投稿\\working\\exploration\\20261015_semantic_comparison\\EXPERIMENT_SUMMARY_CN_R3.md",
+      "exists": true,
+      "inside_project": true
+    },
+    {
+      "requested_path": "D:\\lunwen\\EC-CSI投稿\\working\\exploration\\20261015_semantic_comparison\\SEMANTIC_COMPARISON_CN.md",
+      "resolved_path": "D:\\lunwen\\EC-CSI投稿\\working\\exploration\\20261015_semantic_comparison\\SEMANTIC_COMPARISON_CN.md",
+      "exists": true,
+      "inside_project": true
+    },
+    {
+      "requested_path": "D:\\lunwen\\EC-CSI投稿\\working\\exploration\\20261015_semantic_comparison\\SEMANTIC_COMPARISON.csv",
+      "resolved_path": "D:\\lunwen\\EC-CSI投稿\\working\\exploration\\20261015_semantic_comparison\\SEMANTIC_COMPARISON.csv",
+      "exists": true,
+      "inside_project": true
+    },
+    {
+      "requested_path": "D:\\lunwen\\EC-CSI投稿\\working\\exploration\\20261015_semantic_comparison\\SEMANTIC_EVIDENCE_INDEX.json",
+      "resolved_path": "D:\\lunwen\\EC-CSI投稿\\working\\exploration\\20261015_semantic_comparison\\SEMANTIC_EVIDENCE_INDEX.json",
+      "exists": true,
+      "inside_project": true
+    },
+    {
+      "requested_path": "D:\\lunwen\\EC-CSI投稿\\working\\exploration\\20261015_semantic_comparison\\INDEPENDENT_SEMANTIC_REVIEW_CN.md",
+      "resolved_path": "D:\\lunwen\\EC-CSI投稿\\working\\exploration\\20261015_semantic_comparison\\INDEPENDENT_SEMANTIC_REVIEW_CN.md",
+      "exists": true,
+      "inside_project": true
+    },
+    {
+      "requested_path": "D:\\lunwen\\EC-CSI投稿\\working\\exploration\\20261015_semantic_comparison\\INDEPENDENT_SEMANTIC_REVIEW.json",
+      "resolved_path": "D:\\lunwen\\EC-CSI投稿\\working\\exploration\\20261015_semantic_comparison\\INDEPENDENT_SEMANTIC_REVIEW.json",
+      "exists": true,
+      "inside_project": true
+    }
+  ],
+  "blockers": [],
+  "warnings": [],
+  "note": "This verifier checks closeout mechanics only. It does not validate scientific correctness or authorize experiment-ledger writes."
+}

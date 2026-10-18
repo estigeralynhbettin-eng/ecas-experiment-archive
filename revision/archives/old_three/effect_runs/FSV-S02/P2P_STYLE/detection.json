@@ -1,0 +1,5 @@
+{
+  "status": "OUT_OF_SCOPE",
+  "statements": [],
+  "reason": "The visible sources contain only API schema definitions (mandatory fields, request body structure) and adapter metadata. There are no explicit access control or policy statements present."
+}

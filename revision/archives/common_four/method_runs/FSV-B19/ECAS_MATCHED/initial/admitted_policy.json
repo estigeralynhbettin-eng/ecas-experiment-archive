@@ -1,0 +1,51 @@
+{
+  "policy_version": "EC-FIELD-SECURITY-V3",
+  "policy_id": "POL-FSV-B19-001",
+  "target": {
+    "operation": "POST /api/resource/Purchase Order",
+    "system": "ERPNext",
+    "version": "16.0.0"
+  },
+  "evidence_refs": [
+    "VIS-FSV-B19-01",
+    "VIS-FSV-B19-RUNTIME-ABI"
+  ],
+  "rules": [
+    {
+      "rule_id": "RULE-FSV-B19-001",
+      "primitive_id": "SP-BOUNDED-BUSINESS-GUARD",
+      "evidence_refs": [
+        "VIS-FSV-B19-01",
+        "VIS-FSV-B19-RUNTIME-ABI"
+      ],
+      "op": "bounded_guard_dnf",
+      "alternatives": [
+        {
+          "clauses": [
+            {
+              "kind": "scalar_compare",
+              "left_path": "/trusted/supplierOnHold",
+              "operator": "eq",
+              "right_path": "",
+              "right_source": "literal",
+              "right_value": false
+            }
+          ]
+        },
+        {
+          "clauses": [
+            {
+              "kind": "scalar_compare",
+              "left_path": "/trusted/holdType",
+              "operator": "eq",
+              "right_path": "",
+              "right_source": "literal",
+              "right_value": "Payments"
+            }
+          ]
+        }
+      ],
+      "on_missing": "deny"
+    }
+  ]
+}

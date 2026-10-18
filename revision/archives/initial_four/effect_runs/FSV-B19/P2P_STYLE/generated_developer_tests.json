@@ -1,0 +1,138 @@
+[
+  {
+    "id": "T1",
+    "input": {
+      "request": {
+        "body": {
+          "action": "POST /api/resource/Purchase Order",
+          "supplier": "SUP-0001"
+        }
+      },
+      "trusted": {
+        "supplierOnHold": true,
+        "holdType": "Invoices"
+      }
+    },
+    "expected": "deny",
+    "source_ref": "VIS-FSV-B19-01"
+  },
+  {
+    "id": "T2",
+    "input": {
+      "request": {
+        "body": {
+          "action": "POST /api/resource/Purchase Order",
+          "supplier": "SUP-0002"
+        }
+      },
+      "trusted": {
+        "supplierOnHold": true,
+        "holdType": "All"
+      }
+    },
+    "expected": "deny",
+    "source_ref": "VIS-FSV-B19-01"
+  },
+  {
+    "id": "T3",
+    "input": {
+      "request": {
+        "body": {
+          "action": "POST /api/resource/Purchase Order",
+          "supplier": "SUP-0003"
+        }
+      },
+      "trusted": {
+        "supplierOnHold": true,
+        "holdType": "Payments"
+      }
+    },
+    "expected": "allow",
+    "source_ref": "VIS-FSV-B19-01"
+  },
+  {
+    "id": "T4",
+    "input": {
+      "request": {
+        "body": {
+          "action": "POST /api/resource/Purchase Order",
+          "supplier": "SUP-0004"
+        }
+      },
+      "trusted": {
+        "supplierOnHold": false,
+        "holdType": "Invoices"
+      }
+    },
+    "expected": "allow",
+    "source_ref": "VIS-FSV-B19-01"
+  },
+  {
+    "id": "T5",
+    "input": {
+      "request": {
+        "body": {
+          "action": "POST /api/resource/Purchase Order",
+          "supplier": "SUP-0005"
+        }
+      },
+      "trusted": {
+        "supplierOnHold": false,
+        "holdType": "All"
+      }
+    },
+    "expected": "allow",
+    "source_ref": "VIS-FSV-B19-01"
+  },
+  {
+    "id": "dev_not_held",
+    "input": {
+      "request": {
+        "body": {
+          "supplier": "DEV-SUPPLIER-852",
+          "action": "PURCHASE_ORDER"
+        }
+      },
+      "trusted": {
+        "supplierOnHold": false,
+        "holdType": ""
+      }
+    },
+    "expected": "allow",
+    "source_ref": "VIS-FSV-B19-01"
+  },
+  {
+    "id": "dev_invoices",
+    "input": {
+      "request": {
+        "body": {
+          "supplier": "DEV-SUPPLIER-853",
+          "action": "PURCHASE_ORDER"
+        }
+      },
+      "trusted": {
+        "supplierOnHold": true,
+        "holdType": "Invoices"
+      }
+    },
+    "expected": "deny",
+    "source_ref": "VIS-FSV-B19-01"
+  },
+  {
+    "id": "dev_payments",
+    "input": {
+      "request": {
+        "body": {
+          "supplier": "DEV-SUPPLIER-854",
+          "action": "PURCHASE_ORDER"
+        }
+      },
+      "trusted": {
+        "supplierOnHold": true,
+        "holdType": "Payments"
+      }
+    },
+    "expected": "allow",
+    "source_ref": "VIS-FSV-B19-01"
+  }
+]

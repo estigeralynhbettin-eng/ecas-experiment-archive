@@ -1,0 +1,26 @@
+{
+  "policy_path": "/mnt/d/lunwen/EC-CSI投稿/working/exploration/20261014_matched_evidence_labor/matched_generation/method_runs/FSV-S03/AUTOPAC_STYLE/initial/external_pilot/policy.rego",
+  "original_path": "/mnt/d/lunwen/EC-CSI投稿/working/exploration/20261014_matched_evidence_labor/matched_generation/method_runs/FSV-S03/AUTOPAC_STYLE/initial/original.rego",
+  "compile_exit": 1,
+  "compile_error": "1 error occurred: /mnt/d/lunwen/EC-CSI投稿/working/exploration/20261014_matched_evidence_labor/matched_generation/method_runs/FSV-S03/AUTOPAC_STYLE/initial/external_pilot/policy.rego:8: rego_type_error: undefined function is_integer\n",
+  "format_receipt": {
+    "original_sha256": "979a29451355e29190d1d00cd5eeee1dc48643165305acaf454d8cc4ebe1584a",
+    "formatted_sha256": "f9d8bc50071d052c2eae80fd0dce85babdba44830d8529034d402e2cc01b31e2",
+    "parse_before_exit": 0,
+    "format_exit": 0,
+    "parse_after_exit": 0,
+    "ast_semantics_equal_without_location": true,
+    "classification": "DETERMINISTIC_FORMAT_ONLY_NOT_MODEL_REPAIR"
+  },
+  "lint_exit": null,
+  "lint_report": null,
+  "accepted": false,
+  "developer_results": {
+    "passed": false,
+    "rows": []
+  },
+  "judge": {
+    "verdict": "ACCEPT",
+    "issues": []
+  }
+}

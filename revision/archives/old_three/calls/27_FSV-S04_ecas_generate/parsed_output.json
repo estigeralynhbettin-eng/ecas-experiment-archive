@@ -1,0 +1,36 @@
+{
+  "candidate": {
+    "candidate_id": "CAND-FSV-S04-EMAIL-FMT",
+    "decision": "propose",
+    "evidence_refs": [
+      "VIS-FSV-S04-01",
+      "VIS-FSV-S04-02",
+      "VIS-FSV-S04-RUNTIME-ABI"
+    ],
+    "ir_version": "EC-FIELD-MODEL-IR-V3",
+    "missing_evidence": [],
+    "policy_id": "POL-FSV-S04-LEAD-EMAIL-FMT",
+    "reason_code": "none",
+    "rules": [
+      {
+        "evidence_refs": [
+          "VIS-FSV-S04-02",
+          "VIS-FSV-S04-RUNTIME-ABI"
+        ],
+        "op": "named_validator",
+        "params": {
+          "on_missing": "skip",
+          "path": "/request/body/email_id",
+          "validator_id": "email_basic_v1"
+        },
+        "primitive_id": "SP-STRUCTURED-FORMAT",
+        "rule_id": "RULE-LEAD-EMAIL-FMT"
+      }
+    ],
+    "target": {
+      "operation": "POST /api/resource/Lead",
+      "system": "ERPNext",
+      "version": "16.0.0"
+    }
+  }
+}

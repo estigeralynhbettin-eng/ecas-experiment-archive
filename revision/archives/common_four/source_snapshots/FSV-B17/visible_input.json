@@ -1,0 +1,505 @@
+{
+  "selection_basis": "all_preexisting_visible_source_windows",
+  "target": {
+    "operation": "POST /api/resource/Sales Order",
+    "system": "ERPNext",
+    "version": "16.0.0"
+  },
+  "task_window_id": "FSV-B17",
+  "track": "business_semantic",
+  "visible_sources": [
+    {
+      "content": "A customer, who is sometimes known as a client, buyer, or purchaser is the one who receives goods, services, products, or ideas, from a seller for a monetary consideration.\n\nEvery customer needs to be assigned a unique id. Customer name itself can be the id or you can set a naming series for ids to be generated in Selling Settings.\n\nTo access the Customer list, go to:\n\nHome > Selling > Customers\n\n### 1. How to create a Customer\n\n- Go to the Customer list and click on New.\n\n- Enter Full Name of the customer.\n\n- Select Individual if the customer represents an individual or Company if the customer represents a company in Type field.\n\n- Select a Customer Group. Individual, Commercial, Non Profit and Government are available by default. You can create additional groups if you need.\n\n- Select the Territory.\n\n- If the customer is being created against a lead, you can select the same in From Lead field.\n\n- Save.\n\nYou can disallow sales orders and sales invoices against a customer by clicking on 'Disabled'.\n\nAdvanced Tip: If the customer represents one of your own companies then check 'Is Internal Customer'. Check Inter Company Invoices for more details.\n\nYou can also upload customer details via the Data Import Tool.\n\n### 2.Features\n\nGeneral flow of transactions for a customer is as following:\n\nNote: Customers are separate from Contacts and Addresses. A Customer can have multiple Contacts and Addresses.\n\n### 2.1 Multiple Contacts and Addresses\n\nContacts and Addresses are stored separately so that you can attach multiple Contacts or Addresses to the customer.\n\n### 2.2 Allow creation of Sales Invoice without Sales Order and Delivery Note\n\nIf the \"Delivery Note Required\" or \"Sales Order Required\" option is configured as \"Yes\" in Selling Settings, it can be overridden for a particular customer by enabling the \"Allow Sales Invoice Creation Without Sales Order\" or \"Allow Sales Invoice Creation Without Delivery Note\" in the Customer Master.\n\n### 2.3 Set Tax Withholding Category\n\nYou can set the Tax Withholding Category to set up TCS against eligible customers. For more information, visit the Tax Withholding Category page.\n\n### 2.4 Default Currency and Price List\n\nERPNext supports Multiple Currencies and Price Lists.\n\nYou can set the default currency to be used for this customer in sales orders and sales invoices by selecting the appropriate currency in Billing Currency.\n\nSimilarly, you can set the default price list to be used for this customer in sales orders and sales invoices by selecting the appropriate currency in Default Price List.\n\n### 2.5 Integration with Accounts\n\nUnlike many accounting software, you need not create a separate accounting ledger for each customer. By default a unified ledger named Debtors is created.\n\nHowever if you specifically need a separate ledger for a customer, first create the ledger under Accounts Receivable in the Chart of Accounts and then add it in ACCOUNTING section of the customer.\n\nAdvanced Tip: ERPNext supports Multi-company Accounting. You can use the same customer records in multiple companies. Since an accounting ledger is company specific, you need to select the company and the corresponding ledger in ACCOUNTING section if you decide have separate accounting ledger for a customer.\n\n### 2.6 Credit Limit and Payment Terms\n\nYou can set the credit limit by entering the amount in 'Credit Limit' field. Read Credit Limit for more details.\n\nYou can select the default Payment Terms to be applied in sales orders and sales invoices in 'Default Payment Terms Template' field.\n\n### 2.7 Sales Team and Sales Partner\n\nIf you have one or more Sales Person to manage the sales to the customer, you can add them in SALES TEAM section. If multiple sales person are involved you can split the contribution among them. Make sure that the sum of all sales persons contribution equals to 100%.\n\nCheck Sales Persons in Sales Transaction for more details.\n\nA Sales Partner is a third party distributor / dealer / commission agent / affiliate / reseller who facilitates your products/services sales, for a commission. If you sell your products/services to the customer through a sales partner you can set it in 'Sales Partner' field and mention the 'Commission Rate' for calculation of commission.\n\n### 2.8 Loyalty Program\n\nIf you would like offer a Loyalty Program to the customer, select the same in Loyalty Program field.\n\n### 2.9 View Accounting Ledger and Accounts Receivable\n\nClick on Accounting Ledger button to view all accounting transactions with the customer.\n\nClick on Accounts Receivable button to view the details of all outstanding invoices.\n\n### 2.10 Set Customer Id, Default Customer Group, Territory, and Price List\n\nYou can set how a unique id should be generated each the customer in Selling Settings.\n\n- Naming Series: If you would like a unique id to be generated for each customer based on the naming series select 'Naming Series' in Customer Naming By.\n\n- Customer Name: If customer name itself should be used as an id then select 'Customer Name' in Customer Naming By. In this case, if you create two customers with identical names, - 1 will be suffixed to the second customer.\n\nYou can set the default customer group, territory and price list in Selling Settings.\n\nYou can customize the Customer DocType using Customize Form tool.\n\n### 3. Related Topics\n\n- Customer Group\n\n- Quotation\n\n- Price List\n\n- Contact\n\n- Difference between Lead, Contact, and Customer\n",
+      "evidence_id": "VIS-FSV-B17-01",
+      "locator": "extracted/erpnext-customer.md:article",
+      "source_id": "erpnext-customer.html",
+      "source_sha256": "BA52637ECC58763F80A1AB3F94CA82F51048E19EAC94DD1D2E41E92853CE1AE9"
+    },
+    {
+      "content": "Frappe framework generates REST API for all of your DocTypes out of the box. You can also run arbitrary python methods using their dotted module path.\n\n## Authentication\n\nThere are two ways to authenticate through Frappe REST API. Token based authentication and password based authentication.\n\n### 1. Token Based Authentication\n\nA token is a pair of API Key and API Secret. To generate these tokens follow these steps:\n\n- Go to User list and open a user.\n\n- Click on the \"Settings\" tab. (skip this step if you don't see tabs)\n\n- Expand the API Access section and click on Generate Keys.\n\n- You will get a popup with the API Secret. Copy this value and keep it somewhere safe (Password Manager).\n\n- You will also see another field \"API Key\" in this section.\n\nThe token is generated by concatenating api_key and api_secret with a colon :. Pass the string token api_key:api_secret to the Authorization header in the request.\nfetch('http://<base-url>/api/method/frappe.auth.get_logged_user', { headers: { 'Authorization': 'token api_key:api_secret' } }) .then(r => r.json()) .then(r => { console.log(r); }) ➜ curl http://<base-url>/api/method/frappe.auth.get_logged_user -H \"Authorization: token api_key:api_secret\"\nEvery request you make with these tokens will be logged against the user you selected in Step 1. This also means that roles will be checked against this user. You can also create a new user just for API calls.\n\n### 2. Password Based Authentication\n\nPassword based authentication relies on cookies and session data to maintain authentication in subsequent requests. In most cases, the library you are using to issue REST calls will handle session data, but if it doesn't you should use Token based authentication.\nfetch('http://<base-url>/api/method/login', { method: 'POST', headers: { 'Accept': 'application/json', 'Content-Type': 'application/json', }, body: JSON.stringify({ usr: 'username or email', pwd: 'password' }) }) .then(r => r.json()) .then(r => { console.log(r); }) ➜ curl --cookie-jar snowcookie --request POST \"http://<base-url>/api/method/login\" -H 'Content-Type: application/json' -H 'Accept: application/json' --data-raw \"{ \"usr\" : \"<username>\", \"pwd\": \"<password>\" }\" {\"message\":\"Logged In\",\"home_page\":\"/app\",\"full_name\":\"<user:full_name>\",\"dashboard_route\":\"/sites\"} ➜ curl --cookie snowcookie --request POST \"http://<base-url>/api/method/frappe.auth.get_logged_user\" -H 'Accept: application/json' {\"message\":\"<username>\"}\n### 3. Access Token\n\nRefer documentation for How to setup OAuth.\n\nUse the generated access_token in request header.\nfetch('http://<base-url>/api/method/frappe.auth.get_logged_user', { headers: { 'Authorization': 'Bearer access_token' } }) .then(r => r.json()) .then(r => { console.log(r); })\n## Listing Documents\n\nTo get a list of records of a DocType, send a GET request at /api/resource/:doctype. By default, it will return 20 records and will only fetch the name of the records. The result for the query can be found under data of the payload.\n\nWe'll be using the ToDo DocType to show example responses for the queries below.\nGET /api/resource/:doctype\nResponse\n{ \"data\":[ {\"name\":\"f765eef382\"}, {\"name\":\"2a26fa1c64\"}, {\"name\":\"f32c68060f\"}, {\"name\":\"9065fa9832\"}, {\"name\":\"419082fc38\"}, {\"name\":\"6234d15099\"}, {\"name\":\"62f2181ee0\"}, {\"name\":\"a50afbbfaa\"}, ... ] }\nYou can specify which fields to fetch in the fields param. It should be a JSON array.\nGET /api/resource/:doctype?fields=[\"field1\", \"field2\"]\nResponse\n{ \"data\":[ {\"description\":\"Business worker talk society. Each try theory prove notice middle. Crime couple trouble guy project hit.\",\"name\":\"f765eef382\"}, {\"description\":\"This reveal as look near sister. Car staff bar specific address.\",\"name\":\"2a26fa1c64\"}, {\"description\":\"Wear bag some walk. Movie partner new class tough run. Brother Democrat imagine.\",\"name\":\"f32c68060f\"}, {\"description\":\"Break laugh apply reveal new now focus heavy. Outside local staff research total. Else point try despite.\",\"name\":\"9065fa9832\"}, {\"description\":\"Truth reduce baby artist actually model. Cost phone us others himself wife almost. Language thing wonder share talk. Factor glass significant could window certain yet.\",\"name\":\"419082fc38\"}, {\"description\":\"Tv memory understand opportunity window beat physical.\",\"name\":\"6234d15099\"}, {\"description\":\"Should floor situation in response sell. Our assume company mean red majority shoulder.\",\"name\":\"62f2181ee0\"}, {\"description\":\"Performance seem sign recent. Court form me tonight simple trouble. Address job garden play teach. Happy speech amount offer change then.\",\"name\":\"a50afbbfaa\"}, ... ] }\nYou can specify which fields to expand in the expand param. It should be a JSON array.\nGET /api/resource/:doctype?expand=[\"priority\"]\nResponse\n{ \"data\":[ { \"name\":\"f765eef382\" \"priority\": { \"name\":\"a1b2c3\", \"title\": \"Medium\", \"creation\": \"2025-11-05 19:02:19.106966\", }, }, { \"name\":\"f765eef393\" \"priority\": { \"name\":\"a1b2c4\", \"title\": \"High\", \"creation\": \"2025-11-05 20:02:19.106966\", }, }, ... ] }\nYou can filter the records by passing filters param. Filters should be an array, where each filter is of the format: [field, operator, value]\nGET /api/resource/:doctype?filters=[[\"field1\", \"=\", \"value1\"], [\"field2\", \">\", \"value2\"]]\nResponse\n{ \"data\":[ {\"name\":\"f765eef382\"}, {\"name\":\"2a26fa1c64\"}, {\"name\":\"f32c68060f\"}, {\"name\":\"9065fa9832\"}, {\"name\":\"419082fc38\"}, {\"name\":\"6234d15099\"}, {\"name\":\"62f2181ee0\"}, {\"name\":\"a50afbbfaa\"}, ... ] }\nfilters parameter joins all the specified filters using AND SQL operator, if you want OR filters you can use the or_filters param. Syntax for or_filters is same as `filters.\n\nYou can also provide the sort field and order. It should be of the format fieldname asc or fieldname desc. The space should be URL encoded. In the following line, we're taking fieldname to be title.\nGET /api/resource/:doctype?order_by=title%20desc\nYou can also page the results by providing the limit_start and limit_page_length params.\nGET /api/resource/:doctype?limit_start=5&limit_page_length=10\nResponse\n{ \"data\": [ {\"name\":\"6234d15099\"}, {\"name\":\"62f2181ee0\"}, {\"name\":\"a50afbbfaa\"}, {\"name\":\"aa12a5cf71\"}, {\"name\":\"6ac9800d4e\"}, {\"name\":\"4bcf8b701c\"}, {\"name\":\"aee15f4c20\"}, {\"name\":\"6ba753afef\"}, ... ] }\nlimit is an alias for limit_page_length for accessing /api/resource in Version 13. This means the following should also return the same payload as the above query.\nGET /api/resource/:doctype?limit_start=5&limit=10\nBy default, you will receive the data as List[dict]. You can retrieve your data as List[List] by passing as_dict=False.\nGET /api/resource/:doctype?limit_start=5&limit=5&as_dict=False\nResponse\n{ \"data\": [ [\"6234d15099\"], [\"62f2181ee0\"], [\"a50afbbfaa\"], [\"aa12a5cf71\"], [\"6ac9800d4e\"] ] }\nTo debug the query built for your reqeusts, you can pass debug=True with the request. This returns the executed query and execution time under exc of the payload.\nGET /api/resource/:doctype?limit_start=10&limit=5&debug=True\nResponse\n{ \"data\": [ {\"name\":\"4bcf8b701c\"}, {\"name\":\"aee15f4c20\"}, {\"name\":\"6ba753afef\"}, {\"name\":\"f4b7e24abc\"}, {\"name\":\"bd9156096c\"} ], \"exc\": \"[\\\"select `tabToDo`.`name`\\\\n\\\\t\\\\t\\\\tfrom `tabToDo`\\\\n\\\\t\\\\t\\\\t\\\\n\\\\t\\\\t\\\\t\\\\n\\\\t\\\\t\\\\t order by `tabToDo`.`modified` DESC\\\\n\\\\t\\\\t\\\\tlimit 5 offset 10\\\", \\\"Execution time: 0.0 sec\\\"]\" }\n## CRUD Operations\n\nFrappe generates REST endpoints for CRUD operations for all DocTypes automatically. Make sure you set the following headers in your requests so that you get proper JSON responses.\n{ \"Accept\": \"application/json\", \"Content-Type\": \"application/json\", }\n### Create\n\nCreate a new document by sending a POST request to /api/resource/:doctype. Send the document as JSON in the Request Body.\nPOST /api/resource/:doctype # Body {\"description\": \"New ToDo\"}\nResponse\n{ \"data\": { \"name\": \"af2e2d0e33\", \"owner\": \"Administrator\", \"creation\": \"2019-06-03 14:19:00.281026\", \"modified\": \"2019-06-03 14:19:00.281026\", \"modified_by\": \"Administrator\", \"idx\": 0, \"docstatus\": 0, \"status\": \"Open\", \"priority\": \"Medium\", \"description\": \"New ToDo\", \"doctype\": \"ToDo\" } }\n### Read\n\nGet a document by sending a GET request to /api/resource/:doctype/:name.\nGET /api/resource/:doctype/:name\nResponse\n{ \"data\": { \"name\": \"bf2e760e13\", \"owner\": \"Administrator\", \"creation\": \"2019-06-03 14:19:00.281026\", \"modified\": \"2019-06-03 14:19:00.281026\", \"modified_by\": \"Administrator\", \"idx\": 0, \"docstatus\": 0, \"status\": \"Open\", \"priority\": \"Medium\", \"description\": \"\nTest description\n\", \"doctype\": \"ToDo\" } }\nExpand all link fields by sending a GET request to /api/resource/:doctype/:name?expand_links=True.\nGET /api/resource/:doctype/:name?expand_links=True\nResponse\n{ \"data\": { \"name\": \"bf2e760e13\", \"owner\": \"Administrator\", \"creation\": \"2019-06-03 14:19:00.281026\", \"modified\": \"2019-06-03 14:19:00.281026\", \"modified_by\": \"Administrator\", \"idx\": 0, \"docstatus\": 0, \"status\": \"Open\", \"priority\": { \"name\":\"a1b2c3\", \"title\": \"Medium\", \"creation\": \"2025-11-05 19:02:19.106966\", }, \"description\": \"\nTest description\n\", \"doctype\": \"ToDo\" } }\n### Update\n\nUpdate a document by sending a PUT request to /api/resource/:doctype/:name. You don't need to send the whole document, instead you can just send the fields that you want to update.\nPUT /api/resource/:doctype/:name # Body {\"description\": \"New description\"}\nResponse\n{ \"data\": { \"name\": \"bf2e760e13\", \"owner\": \"Administrator\", \"creation\": \"2019-06-03 14:19:00.281026\", \"modified\": \"2019-06-03 14:21:00.785117\", \"modified_by\": \"Administrator\", \"idx\": 0, \"docstatus\": 0, \"status\": \"Open\", \"priority\": \"Medium\", \"description\": \"New description\", \"doctype\": \"ToDo\" } }\n### Delete\n\nDelete a document by sending a DELETE request to /api/resource/:doctype/:name.\nDELETE /api/resource/:doctype/:name\nResponse\n{\"message\": \"ok\"}\n## Remote Method Calls\n\nFrappe allows you to trigger arbitrary python methods using the REST API for handling custom logic. These methods must be marked as whitelisted to make them accessible via REST.\n\nTo run a whitelisted python method at frappe.auth.get_logged_user, send a request to the endpoint /api/method/frappe.auth.get_logged_user.\nGET /api/method/frappe.auth.get_logged_user\nResponse\n{ \"message\": \"[email protected]\" }\n- If your method returns some values, you should send a GET request.\n\n- If your method changes the state of the database, use POST. After a successful POST request, the framework will automatically call frappe.db.commit() to commit the changes to the database.\n\n- A successful response will return a JSON object with a message key.\n\n- An errored response will return a JSON object with exc key which contains the stack trace and exc_type which contains the thrown Exception.\n\n- The return value of the method will be converted to a JSON and sent as the response.\n\n## File Uploads\n\nThere is a dedicated method /api/method/upload_file that accepts binary file data and uploads it into the system.\n\nHere is the curl command for it:\n➜ curl -X POST \\ http://<base-url>/api/method/upload_file \\ -H 'Accept: application/json' \\ -H 'Authorization: token xxxx:yyyy' \\ -F file=@/path/to/file/file.png\nIf you are using client side Javascript to upload files, you can append the uploaded files as FormData and send an XHR request. Here is the implementation code in Frappe Desk.\n",
+      "evidence_id": "VIS-FSV-B17-02",
+      "locator": "extracted/frappe-rest-api.md:article",
+      "source_id": "frappe-rest-api.html",
+      "source_sha256": "87CB28850081B1F7D6702521E98E5F242498A456491EF26BDE847C20CCBFE154"
+    },
+    {
+      "content": {
+        "doctype": "Customer",
+        "fields": [
+          {
+            "fieldname": "basic_info",
+            "fieldtype": "Section Break",
+            "options": "fa fa-user"
+          },
+          {
+            "fieldname": "naming_series",
+            "fieldtype": "Select",
+            "label": "Series",
+            "options": "CUST-.YYYY.-"
+          },
+          {
+            "fieldname": "salutation",
+            "fieldtype": "Link",
+            "label": "Salutation",
+            "options": "Salutation"
+          },
+          {
+            "fieldname": "customer_name",
+            "fieldtype": "Data",
+            "label": "Customer Name",
+            "reqd": 1
+          },
+          {
+            "fieldname": "gender",
+            "fieldtype": "Link",
+            "label": "Gender",
+            "options": "Gender"
+          },
+          {
+            "default": "Company",
+            "fieldname": "customer_type",
+            "fieldtype": "Select",
+            "label": "Customer Type",
+            "options": "Company\nIndividual\nPartnership",
+            "reqd": 1
+          },
+          {
+            "fieldname": "default_bank_account",
+            "fieldtype": "Link",
+            "label": "Default Company Bank Account",
+            "options": "Bank Account"
+          },
+          {
+            "fieldname": "lead_name",
+            "fieldtype": "Link",
+            "label": "From Lead",
+            "options": "Lead"
+          },
+          {
+            "fieldname": "image",
+            "fieldtype": "Attach Image",
+            "label": "Image"
+          },
+          {
+            "fieldname": "column_break0",
+            "fieldtype": "Column Break"
+          },
+          {
+            "fieldname": "account_manager",
+            "fieldtype": "Link",
+            "label": "Account Manager",
+            "options": "User"
+          },
+          {
+            "fieldname": "customer_group",
+            "fieldtype": "Link",
+            "label": "Customer Group",
+            "options": "Customer Group"
+          },
+          {
+            "fieldname": "territory",
+            "fieldtype": "Link",
+            "label": "Territory",
+            "options": "Territory"
+          },
+          {
+            "fieldname": "tax_id",
+            "fieldtype": "Data",
+            "label": "Tax ID"
+          },
+          {
+            "fieldname": "tax_category",
+            "fieldtype": "Link",
+            "label": "Tax Category",
+            "options": "Tax Category"
+          },
+          {
+            "default": "0",
+            "fieldname": "disabled",
+            "fieldtype": "Check",
+            "label": "Disabled"
+          },
+          {
+            "default": "0",
+            "fieldname": "is_internal_customer",
+            "fieldtype": "Check",
+            "label": "Is Internal Customer"
+          },
+          {
+            "fieldname": "represents_company",
+            "fieldtype": "Link",
+            "label": "Represents Company",
+            "options": "Company",
+            "unique": 1
+          },
+          {
+            "fieldname": "companies",
+            "fieldtype": "Table",
+            "label": "Allowed To Transact With",
+            "options": "Allowed To Transact With"
+          },
+          {
+            "fieldname": "default_currency",
+            "fieldtype": "Link",
+            "label": "Billing Currency",
+            "options": "Currency"
+          },
+          {
+            "fieldname": "default_price_list",
+            "fieldtype": "Link",
+            "label": "Default Price List",
+            "options": "Price List"
+          },
+          {
+            "fieldname": "column_break_14",
+            "fieldtype": "Column Break"
+          },
+          {
+            "fieldname": "language",
+            "fieldtype": "Link",
+            "label": "Print Language",
+            "options": "Language"
+          },
+          {
+            "fieldname": "address_contacts",
+            "fieldtype": "Section Break",
+            "label": "Address and Contact",
+            "options": "fa fa-map-marker"
+          },
+          {
+            "fieldname": "address_html",
+            "fieldtype": "HTML",
+            "label": "Address HTML",
+            "read_only": 1
+          },
+          {
+            "fieldname": "website",
+            "fieldtype": "Data",
+            "label": "Website"
+          },
+          {
+            "fieldname": "column_break1",
+            "fieldtype": "Column Break"
+          },
+          {
+            "fieldname": "contact_html",
+            "fieldtype": "HTML",
+            "label": "Contact HTML",
+            "read_only": 1
+          },
+          {
+            "fieldname": "primary_address_and_contact_detail",
+            "fieldtype": "Section Break",
+            "label": "Primary Address and Contact"
+          },
+          {
+            "fieldname": "customer_primary_contact",
+            "fieldtype": "Link",
+            "label": "Customer Primary Contact",
+            "options": "Contact"
+          },
+          {
+            "fieldname": "mobile_no",
+            "fieldtype": "Read Only",
+            "label": "Mobile No",
+            "options": "Mobile"
+          },
+          {
+            "fieldname": "email_id",
+            "fieldtype": "Read Only",
+            "label": "Email Id",
+            "options": "Email"
+          },
+          {
+            "fieldname": "column_break_26",
+            "fieldtype": "Column Break"
+          },
+          {
+            "fieldname": "customer_primary_address",
+            "fieldtype": "Link",
+            "label": "Customer Primary Address",
+            "options": "Address"
+          },
+          {
+            "fieldname": "primary_address",
+            "fieldtype": "Text",
+            "label": "Primary Address",
+            "read_only": 1
+          },
+          {
+            "fieldname": "default_receivable_accounts",
+            "fieldtype": "Section Break",
+            "label": "Default Accounts"
+          },
+          {
+            "fieldname": "accounts",
+            "fieldtype": "Table",
+            "label": "Accounts",
+            "options": "Party Account"
+          },
+          {
+            "fieldname": "credit_limit_section",
+            "fieldtype": "Section Break",
+            "label": "Credit Limit and Payment Terms"
+          },
+          {
+            "fieldname": "payment_terms",
+            "fieldtype": "Link",
+            "label": "Default Payment Terms Template",
+            "options": "Payment Terms Template"
+          },
+          {
+            "fieldname": "more_info",
+            "fieldtype": "Section Break",
+            "label": "More Information",
+            "options": "fa fa-file-text"
+          },
+          {
+            "fieldname": "customer_details",
+            "fieldtype": "Text",
+            "label": "Customer Details"
+          },
+          {
+            "fieldname": "column_break_45",
+            "fieldtype": "Column Break"
+          },
+          {
+            "fieldname": "market_segment",
+            "fieldtype": "Link",
+            "label": "Market Segment",
+            "options": "Market Segment"
+          },
+          {
+            "fieldname": "industry",
+            "fieldtype": "Link",
+            "label": "Industry",
+            "options": "Industry Type"
+          },
+          {
+            "default": "0",
+            "fieldname": "is_frozen",
+            "fieldtype": "Check",
+            "label": "Is Frozen"
+          },
+          {
+            "fieldname": "loyalty_program",
+            "fieldtype": "Link",
+            "label": "Loyalty Program",
+            "options": "Loyalty Program"
+          },
+          {
+            "fieldname": "loyalty_program_tier",
+            "fieldtype": "Data",
+            "label": "Loyalty Program Tier",
+            "read_only": 1
+          },
+          {
+            "fieldname": "default_sales_partner",
+            "fieldtype": "Link",
+            "label": "Sales Partner",
+            "options": "Sales Partner"
+          },
+          {
+            "fieldname": "default_commission_rate",
+            "fieldtype": "Float",
+            "label": "Commission Rate"
+          },
+          {
+            "fieldname": "sales_team_section",
+            "fieldtype": "Section Break"
+          },
+          {
+            "fieldname": "sales_team",
+            "fieldtype": "Table",
+            "label": "Sales Team",
+            "options": "Sales Team"
+          },
+          {
+            "fieldname": "customer_pos_id",
+            "fieldtype": "Data",
+            "label": "Customer POS id",
+            "read_only": 1
+          },
+          {
+            "fieldname": "credit_limits",
+            "fieldtype": "Table",
+            "label": "Credit Limit",
+            "options": "Customer Credit Limit"
+          },
+          {
+            "default": "0",
+            "fieldname": "so_required",
+            "fieldtype": "Check",
+            "label": "Allow Sales Invoice Creation Without Sales Order"
+          },
+          {
+            "default": "0",
+            "fieldname": "dn_required",
+            "fieldtype": "Check",
+            "label": "Allow Sales Invoice Creation Without Delivery Note"
+          },
+          {
+            "fieldname": "tax_withholding_category",
+            "fieldtype": "Link",
+            "label": "Tax Withholding Category",
+            "options": "Tax Withholding Category"
+          },
+          {
+            "fieldname": "opportunity_name",
+            "fieldtype": "Link",
+            "label": "From Opportunity",
+            "options": "Opportunity"
+          },
+          {
+            "fieldname": "contact_and_address_tab",
+            "fieldtype": "Tab Break",
+            "label": "Address & Contact"
+          },
+          {
+            "fieldname": "defaults_tab",
+            "fieldtype": "Section Break",
+            "label": "Defaults"
+          },
+          {
+            "fieldname": "settings_tab",
+            "fieldtype": "Tab Break",
+            "label": "Settings"
+          },
+          {
+            "fieldname": "sales_team_tab",
+            "fieldtype": "Tab Break",
+            "label": "Sales Team",
+            "options": "fa fa-group"
+          },
+          {
+            "fieldname": "column_break_66",
+            "fieldtype": "Column Break"
+          },
+          {
+            "fieldname": "column_break_21",
+            "fieldtype": "Column Break"
+          },
+          {
+            "fieldname": "dashboard_tab",
+            "fieldtype": "Tab Break",
+            "label": "Dashboard"
+          },
+          {
+            "fieldname": "column_break_53",
+            "fieldtype": "Column Break"
+          },
+          {
+            "fieldname": "loyalty_points_tab",
+            "fieldtype": "Section Break",
+            "label": "Loyalty Points"
+          },
+          {
+            "fieldname": "taxation_section",
+            "fieldtype": "Section Break"
+          },
+          {
+            "fieldname": "accounting_tab",
+            "fieldtype": "Tab Break",
+            "label": "Accounting"
+          },
+          {
+            "fieldname": "tax_tab",
+            "fieldtype": "Tab Break",
+            "label": "Tax"
+          },
+          {
+            "fieldname": "internal_customer_section",
+            "fieldtype": "Section Break",
+            "label": "Internal Customer"
+          },
+          {
+            "fieldname": "column_break_70",
+            "fieldtype": "Column Break"
+          },
+          {
+            "fieldname": "column_break_54",
+            "fieldtype": "Column Break"
+          },
+          {
+            "fieldname": "portal_users_tab",
+            "fieldtype": "Tab Break",
+            "label": "Portal Users"
+          },
+          {
+            "fieldname": "portal_users",
+            "fieldtype": "Table",
+            "label": "Customer Portal Users",
+            "options": "Portal User"
+          },
+          {
+            "fieldname": "column_break_nwor",
+            "fieldtype": "Column Break"
+          },
+          {
+            "fieldname": "prospect_name",
+            "fieldtype": "Link",
+            "label": "From Prospect",
+            "options": "Prospect"
+          },
+          {
+            "fieldname": "first_name",
+            "fieldtype": "Read Only",
+            "label": "First Name"
+          },
+          {
+            "fieldname": "last_name",
+            "fieldtype": "Read Only",
+            "label": "Last Name"
+          },
+          {
+            "fieldname": "supplier_numbers",
+            "fieldtype": "Table",
+            "label": "Supplier Numbers",
+            "options": "Supplier Number At Customer"
+          },
+          {
+            "fieldname": "tax_withholding_group",
+            "fieldtype": "Link",
+            "label": "Tax Withholding Group",
+            "options": "Tax Withholding Group"
+          }
+        ]
+      },
+      "evidence_id": "VIS-FSV-B17-03",
+      "locator": "erpnext-customer-doctype.json:complete-field-catalog",
+      "source_id": "erpnext-customer-doctype.json",
+      "source_sha256": "F86FCB293BF970C6366E6E0DD1E232A0BA8EA635C25265D426383D05B428F648"
+    },
+    {
+      "content": {
+        "available_values": [
+          {
+            "authority": "client",
+            "path": "/request/body/customer",
+            "type": "string"
+          },
+          {
+            "authority": "server_state",
+            "path": "/trusted/customerDisabled",
+            "type": "boolean"
+          }
+        ],
+        "classification": "visible_runtime_context_contract",
+        "notice": "This declares available adapter paths and types only; it supplies no expected decision or hidden test value.",
+        "proposal_focus": {
+          "instruction": "Propose the focused business guard only when the visible semantic sources support it; otherwise abstain.",
+          "paths": [
+            "/request/body/customer",
+            "/trusted/customerDisabled"
+          ],
+          "primitive": "SP-BOUNDED-BUSINESS-GUARD"
+        },
+        "target_operation": "POST /api/resource/Sales Order"
+      },
+      "evidence_id": "VIS-FSV-B17-RUNTIME-ABI",
+      "locator": "tasks.FSV-B17",
+      "source_id": "EC-V2-RUNTIME-INTERFACE-CATALOG-V1",
+      "source_sha256": "8221DA8A6720B0593A8D337F18569C9947AAB05B02E5C84FB0C50E3DE8C1ABD7"
+    }
+  ]
+}

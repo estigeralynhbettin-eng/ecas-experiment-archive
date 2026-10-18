@@ -1,0 +1,12 @@
+{
+  "status": "READY",
+  "statements": [
+    {
+      "text": "If a supplier is blocked (on hold) with a hold type of 'Invoices' or 'All', ERPNext will not allow Purchase Orders to be created for the supplier.",
+      "evidence_refs": [
+        "VIS-FSV-B19-01"
+      ]
+    }
+  ],
+  "reason": "Source explicitly defines a policy preventing the creation of Purchase Orders for suppliers with a specific hold type, matching the target operation and available trusted state paths."
+}

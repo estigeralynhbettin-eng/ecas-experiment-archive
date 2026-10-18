@@ -1,0 +1,5 @@
+{
+  "status": "READY",
+  "rego": "package external_pilot\n\nimport rego.v1\n\ndefault allow := false\n\nallow if {\n    input.trusted.reAgeIsLatestTransaction == true\n}",
+  "reason": "Source VIS-FSV-B06-01 states that re-age transactions can be reversed only if they are the latest transaction on the loan account. The trusted path /trusted/reAgeIsLatestTransaction is provided by the runtime ABI to evaluate this condition."
+}

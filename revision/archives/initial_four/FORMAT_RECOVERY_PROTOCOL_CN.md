@@ -1,0 +1,11 @@
+# DSARCP标识表示修复协议
+
+观察到B13抽取已包含完整数量上限/角色例外，但subject和resource返回了完整中立对象。原组织schema只接受这些对象的id字符串，导致接口检查拒绝。
+
+仅在首批生成已结束后，对SCHEMA_GROUNDING_REJECTED且精确符合以下条件的P2P分支执行补全：subject对象必须逐项等于本例中立{id,role}；resource对象必须逐项等于中立{id,system,version}。对象id也必须已在原组织schema里。只把这两个字段转换为其id，不改condition、decision、purpose、evidence_refs或目标操作。其他不一致不强行修复。
+
+原检测/抽取raw与原分支RESULT保留；派生extraction_grounded.json和确定性变换回执另存format_recovery/，不覆盖原件。不重新调用检测/抽取模型；继续原计划中尚未执行的Rego生成和开发测试阶段，每例仍至多一次修复。沿用原GLM5.2 high、总40次上限、统一输入/测试与token门禁；不添加样本或提供方。
+
+基线生成和修复提示不包含最终请求或评价标签。本步骤属于事后标识表示修复，表格分别列原接口终态和修复后终态；不冒称原版性能或全程首轮成功。
+
+该规则按所有分支同样执行；不能通过修改业务条件来恢复准入。继续使用原本同一OPA envelope，其request/trusted无变动。

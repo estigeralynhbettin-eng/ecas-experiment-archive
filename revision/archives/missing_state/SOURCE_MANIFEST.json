@@ -1,0 +1,87 @@
+[
+  {
+    "source": "/mnt/d/lunwen/EC-CSI投稿/working/exploration/20261014_matched_evidence_labor/matched_generation/sealed_evaluation/branch_protocol.json",
+    "snapshot": "/mnt/d/lunwen/EC-CSI投稿/working/exploration/20261015_seven_case_mechanism/mechanism_control/inputs/branch_protocol.json",
+    "sha256": "11528a8fa0954a9523fe52d2adf52c3dfc9090b98f0eedf83123c2f7f6c30312"
+  },
+  {
+    "source": "/mnt/d/lunwen/EC-CSI投稿/working/exploration/20261014_matched_evidence_labor/matched_generation/EXECUTION_INPUT_MANIFEST.json",
+    "snapshot": "/mnt/d/lunwen/EC-CSI投稿/working/exploration/20261015_seven_case_mechanism/mechanism_control/inputs/prior_main_manifest.json",
+    "sha256": "e4a7358923e605ab853c99cfb77932a26c90dcfb69a967c17e1a669cfe875bba"
+  },
+  {
+    "source": "/mnt/d/lunwen/EC-CSI投稿/working/exploration/20261014_matched_evidence_labor/matched_generation/method_runs/FSV-B17/ECAS_MATCHED/first_candidate.json",
+    "snapshot": "/mnt/d/lunwen/EC-CSI投稿/working/exploration/20261015_seven_case_mechanism/mechanism_control/inputs/FSV-B17/candidate.json",
+    "sha256": "35603ce747a8a9003d8d8b4af95a29826669d07fb721524bb700f9ddbe355b39"
+  },
+  {
+    "source": "/mnt/d/lunwen/EC-CSI投稿/working/exploration/20261014_matched_evidence_labor/matched_generation/execution_inputs/FSV-B17/contract.json",
+    "snapshot": "/mnt/d/lunwen/EC-CSI投稿/working/exploration/20261015_seven_case_mechanism/mechanism_control/inputs/FSV-B17/contract.json",
+    "sha256": "ae7c83dcf8f9ee8d8bd1a0218cf8d7d72e0f54c97771e6b49e6acf387eeab0bf"
+  },
+  {
+    "source": "/mnt/d/lunwen/EC-CSI投稿/working/exploration/20261014_matched_evidence_labor/matched_generation/generation_inputs/FSV-B17/packet.json",
+    "snapshot": "/mnt/d/lunwen/EC-CSI投稿/working/exploration/20261015_seven_case_mechanism/mechanism_control/inputs/FSV-B17/packet.json",
+    "sha256": "03e726de50a01e76c55ce26e0925632c218de4ab96339c3752d37e33535a6479"
+  },
+  {
+    "source": "/mnt/d/lunwen/EC-CSI投稿/working/exploration/20261014_matched_evidence_labor/matched_generation/method_runs/FSV-B17/P2P_STYLE/initial/external_pilot/policy.rego",
+    "snapshot": "/mnt/d/lunwen/EC-CSI投稿/working/exploration/20261015_seven_case_mechanism/mechanism_control/inputs/FSV-B17/P2P_STYLE.rego",
+    "sha256": "83fb3cf00dcea3c7446241ce57acc9288c8efe758decac4bbb73720c1b0f3350"
+  },
+  {
+    "source": "/mnt/d/lunwen/EC-CSI投稿/working/exploration/20261014_matched_evidence_labor/matched_generation/method_runs/FSV-B17/AUTOPAC_STYLE/initial/external_pilot/policy.rego",
+    "snapshot": "/mnt/d/lunwen/EC-CSI投稿/working/exploration/20261015_seven_case_mechanism/mechanism_control/inputs/FSV-B17/AUTOPAC_STYLE.rego",
+    "sha256": "83fb3cf00dcea3c7446241ce57acc9288c8efe758decac4bbb73720c1b0f3350"
+  },
+  {
+    "source": "/mnt/d/lunwen/EC-CSI投稿/working/exploration/20261014_matched_evidence_labor/matched_generation/sealed_evaluation/FSV-B17/O-L.json",
+    "snapshot": "/mnt/d/lunwen/EC-CSI投稿/working/exploration/20261015_seven_case_mechanism/mechanism_control/inputs/FSV-B17/O-L.json",
+    "sha256": "7b3e59768aeef9b06d5181e2bf0d8511c6d6564eacbd76a0b14eaf42fcdfa6fd"
+  },
+  {
+    "source": "/mnt/d/lunwen/EC-CSI投稿/working/exploration/20261014_matched_evidence_labor/matched_generation/sealed_evaluation/FSV-B17/O-I.json",
+    "snapshot": "/mnt/d/lunwen/EC-CSI投稿/working/exploration/20261015_seven_case_mechanism/mechanism_control/inputs/FSV-B17/O-I.json",
+    "sha256": "1e4f014ba1a820cfd9a367a7053ed11038111af29c420cb341f4483a012f6009"
+  },
+  {
+    "source": "/mnt/d/lunwen/EC-CSI投稿/working/exploration/20261014_matched_evidence_labor/matched_generation/method_runs/FSV-B19/ECAS_MATCHED/first_candidate.json",
+    "snapshot": "/mnt/d/lunwen/EC-CSI投稿/working/exploration/20261015_seven_case_mechanism/mechanism_control/inputs/FSV-B19/candidate.json",
+    "sha256": "2d09501af519f2aa3a459adc4e9df36db1fa0b76332bd72c73189b019e369e90"
+  },
+  {
+    "source": "/mnt/d/lunwen/EC-CSI投稿/working/exploration/20261014_matched_evidence_labor/matched_generation/execution_inputs/FSV-B19/contract.json",
+    "snapshot": "/mnt/d/lunwen/EC-CSI投稿/working/exploration/20261015_seven_case_mechanism/mechanism_control/inputs/FSV-B19/contract.json",
+    "sha256": "fd0a7bbb9c3d0588d2f6e8970af7b8d9c34cf0ae82dd494bce68478c6671fd30"
+  },
+  {
+    "source": "/mnt/d/lunwen/EC-CSI投稿/working/exploration/20261014_matched_evidence_labor/matched_generation/generation_inputs/FSV-B19/packet.json",
+    "snapshot": "/mnt/d/lunwen/EC-CSI投稿/working/exploration/20261015_seven_case_mechanism/mechanism_control/inputs/FSV-B19/packet.json",
+    "sha256": "10c5597e97e4190aa041c53aa3aee8b4c1c48fa77d073bfb4fb5eb5a64a346fd"
+  },
+  {
+    "source": "/mnt/d/lunwen/EC-CSI投稿/working/exploration/20261014_matched_evidence_labor/matched_generation/method_runs/FSV-B19/P2P_STYLE/initial/external_pilot/policy.rego",
+    "snapshot": "/mnt/d/lunwen/EC-CSI投稿/working/exploration/20261015_seven_case_mechanism/mechanism_control/inputs/FSV-B19/P2P_STYLE.rego",
+    "sha256": "0998766d0206e565cafe9067f4408622cf1a3c89b2aaf44993ab8c46a4be9c88"
+  },
+  {
+    "source": "/mnt/d/lunwen/EC-CSI投稿/working/exploration/20261014_matched_evidence_labor/matched_generation/method_runs/FSV-B19/AUTOPAC_STYLE/initial/external_pilot/policy.rego",
+    "snapshot": "/mnt/d/lunwen/EC-CSI投稿/working/exploration/20261015_seven_case_mechanism/mechanism_control/inputs/FSV-B19/AUTOPAC_STYLE.rego",
+    "sha256": "8b47a1ae6ba65a6de6839f749dd2d0f5221288ced65ff3e4ead59b1e28dc9ced"
+  },
+  {
+    "source": "/mnt/d/lunwen/EC-CSI投稿/working/exploration/20261014_matched_evidence_labor/matched_generation/sealed_evaluation/FSV-B19/O-L.json",
+    "snapshot": "/mnt/d/lunwen/EC-CSI投稿/working/exploration/20261015_seven_case_mechanism/mechanism_control/inputs/FSV-B19/O-L.json",
+    "sha256": "a93d62a64f0152442a0d4d33fd1378ab05f0b6f41b707359a3588cfc04f8d7f3"
+  },
+  {
+    "source": "/mnt/d/lunwen/EC-CSI投稿/working/exploration/20261014_matched_evidence_labor/matched_generation/sealed_evaluation/FSV-B19/O-I.json",
+    "snapshot": "/mnt/d/lunwen/EC-CSI投稿/working/exploration/20261015_seven_case_mechanism/mechanism_control/inputs/FSV-B19/O-I.json",
+    "sha256": "ae1d51bf1a028081ed84b19c6b7f5c58ef48ab6a156838976db2ce5ec2257426"
+  },
+  {
+    "source": "/root/ecas_matched_generation_20261014/outputs/t0/restricted_capabilities.json",
+    "snapshot": "/mnt/d/lunwen/EC-CSI投稿/working/exploration/20261015_seven_case_mechanism/mechanism_control/inputs/restricted_capabilities.json",
+    "sha256": "0dd3e43c584c73c23576f977ba3d7463746ef5d4c2fd989e04c46c07beb5a3aa"
+  }
+]

@@ -1,0 +1,16 @@
+{
+  "request": {
+    "body": {
+      "documentKey": "DEV-83001",
+      "documentTypeId": 8,
+      "description": "developer-source-test",
+      "status": "Active"
+    }
+  },
+  "trusted": {},
+  "subject": {
+    "role": "authenticated_api_caller"
+  },
+  "action": "POST /v1/clients/{clientId}/identifiers",
+  "resource": "Fineract:1.14.0"
+}

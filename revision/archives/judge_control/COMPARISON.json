@@ -1,0 +1,1568 @@
+{
+  "status": "COMPLETED",
+  "scope_id": "ECAS-TYPED-IR-SEMANTIC-JUDGE-CONTROL-20261014-01",
+  "classification": "INTERNAL_TYPED_IR_SEMANTIC_JUDGE_NOT_NATIVE_AUTOPAC",
+  "summary": {
+    "archived_parent_candidates": 8,
+    "tasks": 4,
+    "projects": 2,
+    "full_admitted": 8,
+    "shape_compiled": 8,
+    "judge_accept": 5,
+    "judge_revise": 3,
+    "judge_abstain": 0,
+    "known_primary_semantic_defects": 3,
+    "known_primary_defects_flagged": 3,
+    "judge_additional_issue_with_insufficient_support": 1,
+    "interpretation": "bounded retrospective mechanism observation; no accuracy or generalization estimate"
+  },
+  "usage": {
+    "judge": {
+      "prompt_tokens": 19999,
+      "completion_tokens": 6613,
+      "total_tokens": 26612
+    },
+    "main_including_four_smoke": {
+      "prompt_tokens": 132101,
+      "completion_tokens": 45713,
+      "total_tokens": 177814
+    },
+    "judge_calls": 4,
+    "main_calls": 30,
+    "shared_calls": 34,
+    "shared_call_cap": 44,
+    "retry_count": 0,
+    "cost_amount": "UNKNOWN",
+    "cost_status": "NOT_REPORTED_BY_PROVIDER",
+    "combined": {
+      "prompt_tokens": 152100,
+      "completion_tokens": 52326,
+      "total_tokens": 204426
+    }
+  },
+  "rows": [
+    {
+      "parent_id": "FSV-S03__four_case_v1",
+      "task": "FSV-S03",
+      "configuration": "four_case_v1",
+      "candidate_slot": "A",
+      "candidate_id": "FSV-S03-CAND-01",
+      "candidate_sha256": "be891b5d2f4a956bc425c2187d88529ae5e13a21c4055819dfb1dfe3d11bc59b",
+      "contract_sha256": "21d2d1611b1cde80efd859d93220ed39e3852a70a3e2115a0411d8b131e76da3",
+      "full_inventory_admission": "ADMITTED",
+      "shape_only_compilation": "COMPILED_NO_INVENTORY",
+      "original_pair_label_matches": 2,
+      "original_pair_count": 2,
+      "original_pair_is_independent_gold": false,
+      "replayed_observations": [
+        {
+          "fixture_id": "FSV-S03-OL-01",
+          "fixture_class": "ARCHIVED_SYNTHETIC_REQUEST",
+          "expected_archived_label": "allow",
+          "full_actual": {
+            "policy_id": "FSV-S03-POL-01",
+            "decision": "allow",
+            "fail_closed": true,
+            "violations": []
+          },
+          "shape_actual": {
+            "policy_id": "FSV-S03-POL-01",
+            "decision": "allow",
+            "fail_closed": true,
+            "violations": []
+          },
+          "input": {
+            "request": {
+              "body": {
+                "age": 30,
+                "firstName": "Synthetic",
+                "isDependent": false,
+                "relationshipId": 1
+              }
+            },
+            "trusted": {}
+          }
+        },
+        {
+          "fixture_id": "FSV-S03-OI-01",
+          "fixture_class": "ARCHIVED_SYNTHETIC_REQUEST",
+          "expected_archived_label": "deny",
+          "full_actual": {
+            "policy_id": "FSV-S03-POL-01",
+            "decision": "deny",
+            "fail_closed": true,
+            "violations": [
+              {
+                "rule_id": "FSV-S03-R01",
+                "code": "type_mismatch",
+                "detail": "/request/body/age"
+              }
+            ]
+          },
+          "shape_actual": {
+            "policy_id": "FSV-S03-POL-01",
+            "decision": "deny",
+            "fail_closed": true,
+            "violations": [
+              {
+                "rule_id": "FSV-S03-R01",
+                "code": "type_mismatch",
+                "detail": "/request/body/age"
+              }
+            ]
+          },
+          "input": {
+            "request": {
+              "body": {
+                "age": "30",
+                "firstName": "Synthetic",
+                "isDependent": false,
+                "relationshipId": 1
+              }
+            },
+            "trusted": {}
+          }
+        },
+        {
+          "fixture_id": "SYNTH-MISSING-TRUSTED",
+          "fixture_class": "CONSTRUCTED_MISSING_CONTEXT_CONTROL",
+          "expected_archived_label": null,
+          "full_actual": {
+            "policy_id": "FSV-S03-POL-01",
+            "decision": "allow",
+            "fail_closed": true,
+            "violations": []
+          },
+          "shape_actual": {
+            "policy_id": "FSV-S03-POL-01",
+            "decision": "allow",
+            "fail_closed": true,
+            "violations": []
+          },
+          "input": {
+            "request": {
+              "body": {
+                "age": 30,
+                "firstName": "Synthetic",
+                "isDependent": false,
+                "relationshipId": 1
+              }
+            },
+            "trusted": {}
+          }
+        }
+      ],
+      "judge": {
+        "candidate_slot": "A",
+        "candidate_id": "FSV-S03-CAND-01",
+        "verdict": "ACCEPT",
+        "target_implementation": "IMPLEMENTED",
+        "semantic_direction": "CONSISTENT",
+        "unsupported_extra_constraints": "NONE_IDENTIFIED",
+        "issues": [],
+        "reason": "The candidate correctly implements the target objective by applying the strict_type operation to /request/body/age with expected_type integer, matching the OpenAPI and runtime ABI sources. No unsupported constraints are added."
+      },
+      "known_confirmed_primary_defect": null,
+      "known_primary_defect_flagged": null,
+      "source_audit": {
+        "parent_id": "FSV-S03__four_case_v1",
+        "packet_path": "/mnt/d/lunwen/EC-CSI投稿/working/exploration/20261014_matched_evidence_labor/judge_control/generation_inputs/FSV-S03/packet.json",
+        "packet_sha256": "acddb441ffde6b492d77d8964ce22ba69bf037eb164daa9f8674ca1e4a8f596a",
+        "objective": {
+          "constraint_object": "The age field of a family-member creation request",
+          "constraint_kind": "The published API type requirement for age",
+          "scope": "Only the age type requirement in the supplied OpenAPI. Other fields, identity/authentication, age range and presence are outside this task unless the target source requires them for this type constraint."
+        },
+        "source_excerpts": [
+          {
+            "evidence_id": "VIS-FSV-S03-01",
+            "source_id": "fineract-openapi-1.14.0.json",
+            "locator": "paths./v1/clients/{clientId}/familymembers.post",
+            "source_sha256": "A44D6FA247D495A4FB147CC8C5EA1A364D8F05A40762B31A055681373E455A48",
+            "snapshot_content_lines": [
+              {
+                "line": 18,
+                "text": "          \"properties\": {"
+              },
+              {
+                "line": 19,
+                "text": "            \"age\": {"
+              },
+              {
+                "line": 20,
+                "text": "              \"format\": \"int64\","
+              },
+              {
+                "line": 21,
+                "text": "              \"type\": \"integer\""
+              }
+            ]
+          }
+        ],
+        "author_audit": "原v1以strict_type整数实现age类型；原v2仅列全体字段白名单，未约束age类型，并超出本次只检查age的任务范围。存在性不在目标内，v1缺值skip不据此判错。",
+        "issue_audit": []
+      }
+    },
+    {
+      "parent_id": "FSV-S03__four_case_v2",
+      "task": "FSV-S03",
+      "configuration": "four_case_v2",
+      "candidate_slot": "B",
+      "candidate_id": "FSV-S03-C01",
+      "candidate_sha256": "5858008d4ca9d1aba9e7dcfc5209d4d880f77b09258e38524524f93870e591c8",
+      "contract_sha256": "21d2d1611b1cde80efd859d93220ed39e3852a70a3e2115a0411d8b131e76da3",
+      "full_inventory_admission": "ADMITTED",
+      "shape_only_compilation": "COMPILED_NO_INVENTORY",
+      "original_pair_label_matches": 1,
+      "original_pair_count": 2,
+      "original_pair_is_independent_gold": false,
+      "replayed_observations": [
+        {
+          "fixture_id": "FSV-S03-OL-01",
+          "fixture_class": "ARCHIVED_SYNTHETIC_REQUEST",
+          "expected_archived_label": "allow",
+          "full_actual": {
+            "policy_id": "FSV-S03-P01",
+            "decision": "allow",
+            "fail_closed": true,
+            "violations": []
+          },
+          "shape_actual": {
+            "policy_id": "FSV-S03-P01",
+            "decision": "allow",
+            "fail_closed": true,
+            "violations": []
+          },
+          "input": {
+            "request": {
+              "body": {
+                "age": 30,
+                "firstName": "Synthetic",
+                "isDependent": false,
+                "relationshipId": 1
+              }
+            },
+            "trusted": {}
+          }
+        },
+        {
+          "fixture_id": "FSV-S03-OI-01",
+          "fixture_class": "ARCHIVED_SYNTHETIC_REQUEST",
+          "expected_archived_label": "deny",
+          "full_actual": {
+            "policy_id": "FSV-S03-P01",
+            "decision": "allow",
+            "fail_closed": true,
+            "violations": []
+          },
+          "shape_actual": {
+            "policy_id": "FSV-S03-P01",
+            "decision": "allow",
+            "fail_closed": true,
+            "violations": []
+          },
+          "input": {
+            "request": {
+              "body": {
+                "age": "30",
+                "firstName": "Synthetic",
+                "isDependent": false,
+                "relationshipId": 1
+              }
+            },
+            "trusted": {}
+          }
+        },
+        {
+          "fixture_id": "SYNTH-MISSING-TRUSTED",
+          "fixture_class": "CONSTRUCTED_MISSING_CONTEXT_CONTROL",
+          "expected_archived_label": null,
+          "full_actual": {
+            "policy_id": "FSV-S03-P01",
+            "decision": "allow",
+            "fail_closed": true,
+            "violations": []
+          },
+          "shape_actual": {
+            "policy_id": "FSV-S03-P01",
+            "decision": "allow",
+            "fail_closed": true,
+            "violations": []
+          },
+          "input": {
+            "request": {
+              "body": {
+                "age": 30,
+                "firstName": "Synthetic",
+                "isDependent": false,
+                "relationshipId": 1
+              }
+            },
+            "trusted": {}
+          }
+        }
+      ],
+      "judge": {
+        "candidate_slot": "B",
+        "candidate_id": "FSV-S03-C01",
+        "verdict": "REVISE",
+        "target_implementation": "NOT_IMPLEMENTED",
+        "semantic_direction": "NOT_APPLICABLE",
+        "unsupported_extra_constraints": "IDENTIFIED",
+        "issues": [
+          {
+            "category": "TARGET_NOT_IMPLEMENTED",
+            "rule_id": "FSV-S03-R01",
+            "evidence_refs": [
+              "VIS-FSV-S03-01"
+            ],
+            "detail": "The target objective requires implementing the published API type requirement for the age field, but this candidate only applies an allowed_fields constraint to the entire request body and does not enforce any type constraint on the age field."
+          },
+          {
+            "category": "UNSUPPORTED_CONSTRAINT",
+            "rule_id": "FSV-S03-R01",
+            "evidence_refs": [
+              "VIS-FSV-S03-01"
+            ],
+            "detail": "The scope explicitly limits the task to the age type requirement, stating other fields are outside this task. Applying an allowed_fields constraint over all body properties is an unsupported extra constraint."
+          }
+        ],
+        "reason": "Candidate B fails to implement the age type requirement and instead applies an out-of-scope allowed_fields constraint to the entire request body."
+      },
+      "known_confirmed_primary_defect": "AGE_TYPE_NOT_IMPLEMENTED",
+      "known_primary_defect_flagged": true,
+      "source_audit": {
+        "parent_id": "FSV-S03__four_case_v2",
+        "packet_path": "/mnt/d/lunwen/EC-CSI投稿/working/exploration/20261014_matched_evidence_labor/judge_control/generation_inputs/FSV-S03/packet.json",
+        "packet_sha256": "acddb441ffde6b492d77d8964ce22ba69bf037eb164daa9f8674ca1e4a8f596a",
+        "objective": {
+          "constraint_object": "The age field of a family-member creation request",
+          "constraint_kind": "The published API type requirement for age",
+          "scope": "Only the age type requirement in the supplied OpenAPI. Other fields, identity/authentication, age range and presence are outside this task unless the target source requires them for this type constraint."
+        },
+        "source_excerpts": [
+          {
+            "evidence_id": "VIS-FSV-S03-01",
+            "source_id": "fineract-openapi-1.14.0.json",
+            "locator": "paths./v1/clients/{clientId}/familymembers.post",
+            "source_sha256": "A44D6FA247D495A4FB147CC8C5EA1A364D8F05A40762B31A055681373E455A48",
+            "snapshot_content_lines": [
+              {
+                "line": 18,
+                "text": "          \"properties\": {"
+              },
+              {
+                "line": 19,
+                "text": "            \"age\": {"
+              },
+              {
+                "line": 20,
+                "text": "              \"format\": \"int64\","
+              },
+              {
+                "line": 21,
+                "text": "              \"type\": \"integer\""
+              }
+            ]
+          }
+        ],
+        "author_audit": "原v1以strict_type整数实现age类型；原v2仅列全体字段白名单，未约束age类型，并超出本次只检查age的任务范围。存在性不在目标内，v1缺值skip不据此判错。",
+        "issue_audit": [
+          {
+            "category": "TARGET_NOT_IMPLEMENTED",
+            "source_audit": "SUPPORTED_FOR_FOCUSED_TARGET"
+          },
+          {
+            "category": "UNSUPPORTED_CONSTRAINT",
+            "source_audit": "SUPPORTED_FOR_FOCUSED_TARGET"
+          }
+        ]
+      }
+    },
+    {
+      "parent_id": "FSV-B13__four_case_v2",
+      "task": "FSV-B13",
+      "configuration": "four_case_v2",
+      "candidate_slot": "A",
+      "candidate_id": "FSV-B13-CAND-001",
+      "candidate_sha256": "9c0a436179130de1bd8bd5bcc153ff8136e492608706c067e389b7badda19791",
+      "contract_sha256": "32e35f1485dc02131938191da1ef90600de1c272bd4ffa7f3f00aa3428982a84",
+      "full_inventory_admission": "ADMITTED",
+      "shape_only_compilation": "COMPILED_NO_INVENTORY",
+      "original_pair_label_matches": 2,
+      "original_pair_count": 2,
+      "original_pair_is_independent_gold": false,
+      "replayed_observations": [
+        {
+          "fixture_id": "FSV-B13-OL-01",
+          "fixture_class": "ARCHIVED_SYNTHETIC_REQUEST",
+          "expected_archived_label": "allow",
+          "full_actual": {
+            "policy_id": "FSV-B13-POL-001",
+            "decision": "allow",
+            "fail_closed": true,
+            "violations": []
+          },
+          "shape_actual": {
+            "policy_id": "FSV-B13-POL-001",
+            "decision": "allow",
+            "fail_closed": true,
+            "violations": []
+          },
+          "input": {
+            "request": {
+              "body": {
+                "qty": 110
+              }
+            },
+            "trusted": {
+              "allowancePercent": 10,
+              "authorizedRole": false,
+              "derivedMaximumQty": 110,
+              "orderedQty": 100
+            }
+          }
+        },
+        {
+          "fixture_id": "FSV-B13-OI-01",
+          "fixture_class": "ARCHIVED_SYNTHETIC_REQUEST",
+          "expected_archived_label": "deny",
+          "full_actual": {
+            "policy_id": "FSV-B13-POL-001",
+            "decision": "deny",
+            "fail_closed": true,
+            "violations": [
+              {
+                "rule_id": "FSV-B13-RULE-001",
+                "code": "bounded_guard_rejected",
+                "detail": "FSV-B13-RULE-001"
+              }
+            ]
+          },
+          "shape_actual": {
+            "policy_id": "FSV-B13-POL-001",
+            "decision": "deny",
+            "fail_closed": true,
+            "violations": [
+              {
+                "rule_id": "FSV-B13-RULE-001",
+                "code": "bounded_guard_rejected",
+                "detail": "FSV-B13-RULE-001"
+              }
+            ]
+          },
+          "input": {
+            "request": {
+              "body": {
+                "qty": 111
+              }
+            },
+            "trusted": {
+              "allowancePercent": 10,
+              "authorizedRole": false,
+              "derivedMaximumQty": 110,
+              "orderedQty": 100
+            }
+          }
+        },
+        {
+          "fixture_id": "SYNTH-MISSING-TRUSTED",
+          "fixture_class": "CONSTRUCTED_MISSING_CONTEXT_CONTROL",
+          "expected_archived_label": null,
+          "full_actual": {
+            "policy_id": "FSV-B13-POL-001",
+            "decision": "deny",
+            "fail_closed": true,
+            "violations": [
+              {
+                "rule_id": "FSV-B13-RULE-001",
+                "code": "required_input_missing",
+                "detail": "FSV-B13-RULE-001"
+              }
+            ]
+          },
+          "shape_actual": {
+            "policy_id": "FSV-B13-POL-001",
+            "decision": "deny",
+            "fail_closed": true,
+            "violations": [
+              {
+                "rule_id": "FSV-B13-RULE-001",
+                "code": "required_input_missing",
+                "detail": "FSV-B13-RULE-001"
+              }
+            ]
+          },
+          "input": {
+            "request": {
+              "body": {
+                "qty": 110
+              }
+            },
+            "trusted": {}
+          }
+        }
+      ],
+      "judge": {
+        "candidate_slot": "A",
+        "candidate_id": "FSV-B13-CAND-001",
+        "verdict": "ACCEPT",
+        "target_implementation": "IMPLEMENTED",
+        "semantic_direction": "CONSISTENT",
+        "unsupported_extra_constraints": "NONE_IDENTIFIED",
+        "issues": [],
+        "reason": "The bounded_guard_dnf correctly allows the purchase receipt when authorizedRole is true or when qty is less than or equal to derivedMaximumQty. This aligns with the target objective and source semantics for over-delivery allowance and the role exception. No unsupported constraints are added."
+      },
+      "known_confirmed_primary_defect": null,
+      "known_primary_defect_flagged": null,
+      "source_audit": {
+        "parent_id": "FSV-B13__four_case_v2",
+        "packet_path": "/mnt/d/lunwen/EC-CSI投稿/working/exploration/20261014_matched_evidence_labor/judge_control/generation_inputs/FSV-B13/packet.json",
+        "packet_sha256": "0b07fe5eb4c156c96759cb0ff7e45d58523efd87549f88932ef029003a4ecb9b",
+        "objective": {
+          "constraint_object": "Quantity on a Purchase Receipt represented by request.body.qty, supplied quantity limit and authenticated role context",
+          "constraint_kind": "Receipt quantity allowance and the documented authorized-role exception",
+          "scope": "Implement the supplied Stock Settings quantity policy for this target; upstream supplies trusted derivedMaximumQty and authorizedRole. Do not add unrelated field, item, range or full-document validation."
+        },
+        "source_excerpts": [
+          {
+            "evidence_id": "VIS-FSV-B13-01",
+            "source_id": "erpnext-stock-settings.html",
+            "locator": "extracted/erpnext-stock-settings.md:article",
+            "source_sha256": "F866B7A7F90AEFCB06DA623C3F9EF25F5524D4261887FC80FFDE3AAA76A530EA",
+            "snapshot_content_lines": [
+              {
+                "line": 30,
+                "text": ""
+              },
+              {
+                "line": 31,
+                "text": "This is the percentage you are allowed to receive or deliver more against the quantity ordered. For example: If you have ordered 100 units, Supplier sends 120 units and the percentage is set to 10% then you are allowed to receive 110 units. By default, this is set to 0."
+              },
+              {
+                "line": 32,
+                "text": ""
+              },
+              {
+                "line": 33,
+                "text": "### Role Allowed to Over Deliver/Receive"
+              }
+            ]
+          },
+          {
+            "evidence_id": "VIS-FSV-B13-01",
+            "source_id": "erpnext-stock-settings.html",
+            "locator": "extracted/erpnext-stock-settings.md:article",
+            "source_sha256": "F866B7A7F90AEFCB06DA623C3F9EF25F5524D4261887FC80FFDE3AAA76A530EA",
+            "snapshot_content_lines": [
+              {
+                "line": 34,
+                "text": ""
+              },
+              {
+                "line": 35,
+                "text": "Users with this role are allowed to over deliver/receive against orders above the allowance percentage"
+              },
+              {
+                "line": 36,
+                "text": ""
+              },
+              {
+                "line": 37,
+                "text": "### Show Barcode Field"
+              }
+            ]
+          }
+        ],
+        "author_audit": "原v1/v2都表达数量上限或角色例外；原请求对均匹配。Judge称原v1的额外qty>上限为逻辑细化，在本次已声明数值输入上可成立；未据此证明所有缺值、类型或业务分支等价。",
+        "issue_audit": []
+      }
+    },
+    {
+      "parent_id": "FSV-B13__four_case_v1",
+      "task": "FSV-B13",
+      "configuration": "four_case_v1",
+      "candidate_slot": "B",
+      "candidate_id": "FSV-B13-ECAS-PurchaseReceipt-OverReceiveQtyGuard",
+      "candidate_sha256": "cab4a1c4226940ab2ff36694167d50c8a8a529f60e628b19dac2a4f4c75c2723",
+      "contract_sha256": "32e35f1485dc02131938191da1ef90600de1c272bd4ffa7f3f00aa3428982a84",
+      "full_inventory_admission": "ADMITTED",
+      "shape_only_compilation": "COMPILED_NO_INVENTORY",
+      "original_pair_label_matches": 2,
+      "original_pair_count": 2,
+      "original_pair_is_independent_gold": false,
+      "replayed_observations": [
+        {
+          "fixture_id": "FSV-B13-OL-01",
+          "fixture_class": "ARCHIVED_SYNTHETIC_REQUEST",
+          "expected_archived_label": "allow",
+          "full_actual": {
+            "policy_id": "FSV-B13-PurchaseReceipt-OverReceiveQtyGuard",
+            "decision": "allow",
+            "fail_closed": true,
+            "violations": []
+          },
+          "shape_actual": {
+            "policy_id": "FSV-B13-PurchaseReceipt-OverReceiveQtyGuard",
+            "decision": "allow",
+            "fail_closed": true,
+            "violations": []
+          },
+          "input": {
+            "request": {
+              "body": {
+                "qty": 110
+              }
+            },
+            "trusted": {
+              "allowancePercent": 10,
+              "authorizedRole": false,
+              "derivedMaximumQty": 110,
+              "orderedQty": 100
+            }
+          }
+        },
+        {
+          "fixture_id": "FSV-B13-OI-01",
+          "fixture_class": "ARCHIVED_SYNTHETIC_REQUEST",
+          "expected_archived_label": "deny",
+          "full_actual": {
+            "policy_id": "FSV-B13-PurchaseReceipt-OverReceiveQtyGuard",
+            "decision": "deny",
+            "fail_closed": true,
+            "violations": [
+              {
+                "rule_id": "FSV-B13-R1-OverReceiveQtyGuard",
+                "code": "bounded_guard_rejected",
+                "detail": "FSV-B13-R1-OverReceiveQtyGuard"
+              }
+            ]
+          },
+          "shape_actual": {
+            "policy_id": "FSV-B13-PurchaseReceipt-OverReceiveQtyGuard",
+            "decision": "deny",
+            "fail_closed": true,
+            "violations": [
+              {
+                "rule_id": "FSV-B13-R1-OverReceiveQtyGuard",
+                "code": "bounded_guard_rejected",
+                "detail": "FSV-B13-R1-OverReceiveQtyGuard"
+              }
+            ]
+          },
+          "input": {
+            "request": {
+              "body": {
+                "qty": 111
+              }
+            },
+            "trusted": {
+              "allowancePercent": 10,
+              "authorizedRole": false,
+              "derivedMaximumQty": 110,
+              "orderedQty": 100
+            }
+          }
+        },
+        {
+          "fixture_id": "SYNTH-MISSING-TRUSTED",
+          "fixture_class": "CONSTRUCTED_MISSING_CONTEXT_CONTROL",
+          "expected_archived_label": null,
+          "full_actual": {
+            "policy_id": "FSV-B13-PurchaseReceipt-OverReceiveQtyGuard",
+            "decision": "deny",
+            "fail_closed": true,
+            "violations": [
+              {
+                "rule_id": "FSV-B13-R1-OverReceiveQtyGuard",
+                "code": "required_input_missing",
+                "detail": "FSV-B13-R1-OverReceiveQtyGuard"
+              }
+            ]
+          },
+          "shape_actual": {
+            "policy_id": "FSV-B13-PurchaseReceipt-OverReceiveQtyGuard",
+            "decision": "deny",
+            "fail_closed": true,
+            "violations": [
+              {
+                "rule_id": "FSV-B13-R1-OverReceiveQtyGuard",
+                "code": "required_input_missing",
+                "detail": "FSV-B13-R1-OverReceiveQtyGuard"
+              }
+            ]
+          },
+          "input": {
+            "request": {
+              "body": {
+                "qty": 110
+              }
+            },
+            "trusted": {}
+          }
+        }
+      ],
+      "judge": {
+        "candidate_slot": "B",
+        "candidate_id": "FSV-B13-ECAS-PurchaseReceipt-OverReceiveQtyGuard",
+        "verdict": "ACCEPT",
+        "target_implementation": "IMPLEMENTED",
+        "semantic_direction": "CONSISTENT",
+        "unsupported_extra_constraints": "NONE_IDENTIFIED",
+        "issues": [],
+        "reason": "The bounded_guard_dnf correctly implements the quantity allowance and role exception. The additional clause 'qty > derivedMaximumQty' in the second alternative is justified by the source text stating the role allows over-deliver/receive 'above the allowance percentage', and it logically refines the condition without adding unrelated constraints or altering the overall allow logic."
+      },
+      "known_confirmed_primary_defect": null,
+      "known_primary_defect_flagged": null,
+      "source_audit": {
+        "parent_id": "FSV-B13__four_case_v1",
+        "packet_path": "/mnt/d/lunwen/EC-CSI投稿/working/exploration/20261014_matched_evidence_labor/judge_control/generation_inputs/FSV-B13/packet.json",
+        "packet_sha256": "0b07fe5eb4c156c96759cb0ff7e45d58523efd87549f88932ef029003a4ecb9b",
+        "objective": {
+          "constraint_object": "Quantity on a Purchase Receipt represented by request.body.qty, supplied quantity limit and authenticated role context",
+          "constraint_kind": "Receipt quantity allowance and the documented authorized-role exception",
+          "scope": "Implement the supplied Stock Settings quantity policy for this target; upstream supplies trusted derivedMaximumQty and authorizedRole. Do not add unrelated field, item, range or full-document validation."
+        },
+        "source_excerpts": [
+          {
+            "evidence_id": "VIS-FSV-B13-01",
+            "source_id": "erpnext-stock-settings.html",
+            "locator": "extracted/erpnext-stock-settings.md:article",
+            "source_sha256": "F866B7A7F90AEFCB06DA623C3F9EF25F5524D4261887FC80FFDE3AAA76A530EA",
+            "snapshot_content_lines": [
+              {
+                "line": 30,
+                "text": ""
+              },
+              {
+                "line": 31,
+                "text": "This is the percentage you are allowed to receive or deliver more against the quantity ordered. For example: If you have ordered 100 units, Supplier sends 120 units and the percentage is set to 10% then you are allowed to receive 110 units. By default, this is set to 0."
+              },
+              {
+                "line": 32,
+                "text": ""
+              },
+              {
+                "line": 33,
+                "text": "### Role Allowed to Over Deliver/Receive"
+              }
+            ]
+          },
+          {
+            "evidence_id": "VIS-FSV-B13-01",
+            "source_id": "erpnext-stock-settings.html",
+            "locator": "extracted/erpnext-stock-settings.md:article",
+            "source_sha256": "F866B7A7F90AEFCB06DA623C3F9EF25F5524D4261887FC80FFDE3AAA76A530EA",
+            "snapshot_content_lines": [
+              {
+                "line": 34,
+                "text": ""
+              },
+              {
+                "line": 35,
+                "text": "Users with this role are allowed to over deliver/receive against orders above the allowance percentage"
+              },
+              {
+                "line": 36,
+                "text": ""
+              },
+              {
+                "line": 37,
+                "text": "### Show Barcode Field"
+              }
+            ]
+          }
+        ],
+        "author_audit": "原v1/v2都表达数量上限或角色例外；原请求对均匹配。Judge称原v1的额外qty>上限为逻辑细化，在本次已声明数值输入上可成立；未据此证明所有缺值、类型或业务分支等价。",
+        "issue_audit": []
+      }
+    },
+    {
+      "parent_id": "FSV-B17__four_case_v1",
+      "task": "FSV-B17",
+      "configuration": "four_case_v1",
+      "candidate_slot": "A",
+      "candidate_id": "FSV-B17-CAND-01",
+      "candidate_sha256": "48c2e11033971940257cb805e2361f48537c548b3acb66aad8736728ff311c4e",
+      "contract_sha256": "ae7c83dcf8f9ee8d8bd1a0218cf8d7d72e0f54c97771e6b49e6acf387eeab0bf",
+      "full_inventory_admission": "ADMITTED",
+      "shape_only_compilation": "COMPILED_NO_INVENTORY",
+      "original_pair_label_matches": 1,
+      "original_pair_count": 2,
+      "original_pair_is_independent_gold": false,
+      "replayed_observations": [
+        {
+          "fixture_id": "FSV-B17-OL-01",
+          "fixture_class": "ARCHIVED_SYNTHETIC_REQUEST",
+          "expected_archived_label": "allow",
+          "full_actual": {
+            "policy_id": "FSV-B17-CUSTOMER-DISABLED-DISALLOW-SO",
+            "decision": "deny",
+            "fail_closed": true,
+            "violations": [
+              {
+                "rule_id": "FSV-B17-RULE-01",
+                "code": "client_supplied_server_value",
+                "detail": "/trusted/customerDisabled"
+              }
+            ]
+          },
+          "shape_actual": {
+            "policy_id": "FSV-B17-CUSTOMER-DISABLED-DISALLOW-SO",
+            "decision": "deny",
+            "fail_closed": true,
+            "violations": [
+              {
+                "rule_id": "FSV-B17-RULE-01",
+                "code": "client_supplied_server_value",
+                "detail": "/trusted/customerDisabled"
+              }
+            ]
+          },
+          "input": {
+            "request": {
+              "body": {
+                "customer": "CUSTOMER-SYNTH-1"
+              }
+            },
+            "trusted": {
+              "customerDisabled": false
+            }
+          }
+        },
+        {
+          "fixture_id": "FSV-B17-OI-01",
+          "fixture_class": "ARCHIVED_SYNTHETIC_REQUEST",
+          "expected_archived_label": "deny",
+          "full_actual": {
+            "policy_id": "FSV-B17-CUSTOMER-DISABLED-DISALLOW-SO",
+            "decision": "deny",
+            "fail_closed": true,
+            "violations": [
+              {
+                "rule_id": "FSV-B17-RULE-01",
+                "code": "client_supplied_server_value",
+                "detail": "/trusted/customerDisabled"
+              }
+            ]
+          },
+          "shape_actual": {
+            "policy_id": "FSV-B17-CUSTOMER-DISABLED-DISALLOW-SO",
+            "decision": "deny",
+            "fail_closed": true,
+            "violations": [
+              {
+                "rule_id": "FSV-B17-RULE-01",
+                "code": "client_supplied_server_value",
+                "detail": "/trusted/customerDisabled"
+              }
+            ]
+          },
+          "input": {
+            "request": {
+              "body": {
+                "customer": "CUSTOMER-SYNTH-1"
+              }
+            },
+            "trusted": {
+              "customerDisabled": true
+            }
+          }
+        },
+        {
+          "fixture_id": "SYNTH-MISSING-TRUSTED",
+          "fixture_class": "CONSTRUCTED_MISSING_CONTEXT_CONTROL",
+          "expected_archived_label": null,
+          "full_actual": {
+            "policy_id": "FSV-B17-CUSTOMER-DISABLED-DISALLOW-SO",
+            "decision": "allow",
+            "fail_closed": true,
+            "violations": []
+          },
+          "shape_actual": {
+            "policy_id": "FSV-B17-CUSTOMER-DISABLED-DISALLOW-SO",
+            "decision": "allow",
+            "fail_closed": true,
+            "violations": []
+          },
+          "input": {
+            "request": {
+              "body": {
+                "customer": "CUSTOMER-SYNTH-1"
+              }
+            },
+            "trusted": {}
+          }
+        }
+      ],
+      "judge": {
+        "candidate_slot": "A",
+        "candidate_id": "FSV-B17-CAND-01",
+        "verdict": "REVISE",
+        "target_implementation": "NOT_IMPLEMENTED",
+        "semantic_direction": "UNCLEAR",
+        "unsupported_extra_constraints": "IDENTIFIED",
+        "issues": [
+          {
+            "category": "TARGET_NOT_IMPLEMENTED",
+            "rule_id": "FSV-B17-RULE-01",
+            "evidence_refs": [
+              "VIS-FSV-B17-01",
+              "VIS-FSV-B17-RUNTIME-ABI"
+            ],
+            "detail": "server_derived_reject rejects whenever /trusted/customerDisabled EXISTS regardless of value. It is designed to forbid client submission of server-owned fields, not to test a boolean state. This rule rejects Sales Order creation even when customerDisabled is false, so the documented disabled-customer condition is not implemented."
+          },
+          {
+            "category": "UNSUPPORTED_CONSTRAINT",
+            "rule_id": "FSV-B17-RULE-01",
+            "evidence_refs": [
+              "VIS-FSV-B17-RUNTIME-ABI"
+            ],
+            "detail": "The path /trusted/customerDisabled is a server_state boolean, not a client-submitted field. Using server_derived_reject on it adds an unsupported constraint semantics: unconditional rejection on presence rather than a value-based disabled check."
+          }
+        ],
+        "reason": "Candidate A misuses server_derived_reject to check a trusted boolean. Per operator semantics this primitive rejects on path existence regardless of value and is not a boolean-state permission test. The source (VIS-FSV-B17-01) says disallowing sales orders happens when the customer is Disabled, i.e., a value-dependent check. The rule would reject all Sales Order creation whenever the trusted path is present, including when customerDisabled is false, so the target is not implemented and an unsupported constraint is introduced."
+      },
+      "known_confirmed_primary_defect": "PRESENCE_REJECTION_REPLACES_BOOLEAN_CONDITION",
+      "known_primary_defect_flagged": true,
+      "source_audit": {
+        "parent_id": "FSV-B17__four_case_v1",
+        "packet_path": "/mnt/d/lunwen/EC-CSI投稿/working/exploration/20261014_matched_evidence_labor/judge_control/generation_inputs/FSV-B17/packet.json",
+        "packet_sha256": "03e726de50a01e76c55ce26e0925632c218de4ab96339c3752d37e33535a6479",
+        "objective": {
+          "constraint_object": "Customer disabled status relevant to Sales Order creation",
+          "constraint_kind": "The documented disabled-customer condition for the target operation",
+          "scope": "Use the provided trusted customer state for this target only; do not add unrelated Customer or Sales Order validation."
+        },
+        "source_excerpts": [
+          {
+            "evidence_id": "VIS-FSV-B17-01",
+            "source_id": "erpnext-customer.html",
+            "locator": "extracted/erpnext-customer.md:article",
+            "source_sha256": "BA52637ECC58763F80A1AB3F94CA82F51048E19EAC94DD1D2E41E92853CE1AE9",
+            "snapshot_content_lines": [
+              {
+                "line": 24,
+                "text": ""
+              },
+              {
+                "line": 25,
+                "text": "You can disallow sales orders and sales invoices against a customer by clicking on 'Disabled'."
+              },
+              {
+                "line": 26,
+                "text": ""
+              },
+              {
+                "line": 27,
+                "text": "Advanced Tip: If the customer represents one of your own companies then check 'Is Internal Customer'. Check Inter Company Invoices for more details."
+              }
+            ]
+          }
+        ],
+        "author_audit": "原v1使用server_derived_reject，对路径存在即拒绝，不能判断布尔false；重放合法请求被拒。原v2枚举只允许false，原请求对匹配。冻结操作语义明确server_derived_reject不是布尔状态判断。",
+        "issue_audit": [
+          {
+            "category": "TARGET_NOT_IMPLEMENTED",
+            "source_audit": "SUPPORTED_BY_SOURCE_OPERATION_AND_REPLAY"
+          },
+          {
+            "category": "UNSUPPORTED_CONSTRAINT",
+            "source_audit": "SUPPORTED_BY_SOURCE_OPERATION_AND_REPLAY"
+          }
+        ]
+      }
+    },
+    {
+      "parent_id": "FSV-B17__four_case_v2",
+      "task": "FSV-B17",
+      "configuration": "four_case_v2",
+      "candidate_slot": "B",
+      "candidate_id": "FSV-B17-ECAS-CANDIDATE-DISABLED-CUSTOMER",
+      "candidate_sha256": "91f08e6bec9567466f878dcdbed19506c631e8df9117c86e2a8b28829605a9cb",
+      "contract_sha256": "ae7c83dcf8f9ee8d8bd1a0218cf8d7d72e0f54c97771e6b49e6acf387eeab0bf",
+      "full_inventory_admission": "ADMITTED",
+      "shape_only_compilation": "COMPILED_NO_INVENTORY",
+      "original_pair_label_matches": 2,
+      "original_pair_count": 2,
+      "original_pair_is_independent_gold": false,
+      "replayed_observations": [
+        {
+          "fixture_id": "FSV-B17-OL-01",
+          "fixture_class": "ARCHIVED_SYNTHETIC_REQUEST",
+          "expected_archived_label": "allow",
+          "full_actual": {
+            "policy_id": "FSV-B17-disabled-customer-sales-order-block",
+            "decision": "allow",
+            "fail_closed": true,
+            "violations": []
+          },
+          "shape_actual": {
+            "policy_id": "FSV-B17-disabled-customer-sales-order-block",
+            "decision": "allow",
+            "fail_closed": true,
+            "violations": []
+          },
+          "input": {
+            "request": {
+              "body": {
+                "customer": "CUSTOMER-SYNTH-1"
+              }
+            },
+            "trusted": {
+              "customerDisabled": false
+            }
+          }
+        },
+        {
+          "fixture_id": "FSV-B17-OI-01",
+          "fixture_class": "ARCHIVED_SYNTHETIC_REQUEST",
+          "expected_archived_label": "deny",
+          "full_actual": {
+            "policy_id": "FSV-B17-disabled-customer-sales-order-block",
+            "decision": "deny",
+            "fail_closed": true,
+            "violations": [
+              {
+                "rule_id": "FSV-B17-RULE-DISABLED-CUSTOMER-FALSE",
+                "code": "enum_mismatch",
+                "detail": "/trusted/customerDisabled"
+              }
+            ]
+          },
+          "shape_actual": {
+            "policy_id": "FSV-B17-disabled-customer-sales-order-block",
+            "decision": "deny",
+            "fail_closed": true,
+            "violations": [
+              {
+                "rule_id": "FSV-B17-RULE-DISABLED-CUSTOMER-FALSE",
+                "code": "enum_mismatch",
+                "detail": "/trusted/customerDisabled"
+              }
+            ]
+          },
+          "input": {
+            "request": {
+              "body": {
+                "customer": "CUSTOMER-SYNTH-1"
+              }
+            },
+            "trusted": {
+              "customerDisabled": true
+            }
+          }
+        },
+        {
+          "fixture_id": "SYNTH-MISSING-TRUSTED",
+          "fixture_class": "CONSTRUCTED_MISSING_CONTEXT_CONTROL",
+          "expected_archived_label": null,
+          "full_actual": {
+            "policy_id": "FSV-B17-disabled-customer-sales-order-block",
+            "decision": "deny",
+            "fail_closed": true,
+            "violations": [
+              {
+                "rule_id": "FSV-B17-RULE-DISABLED-CUSTOMER-FALSE",
+                "code": "required_input_missing",
+                "detail": "/trusted/customerDisabled"
+              }
+            ]
+          },
+          "shape_actual": {
+            "policy_id": "FSV-B17-disabled-customer-sales-order-block",
+            "decision": "deny",
+            "fail_closed": true,
+            "violations": [
+              {
+                "rule_id": "FSV-B17-RULE-DISABLED-CUSTOMER-FALSE",
+                "code": "required_input_missing",
+                "detail": "/trusted/customerDisabled"
+              }
+            ]
+          },
+          "input": {
+            "request": {
+              "body": {
+                "customer": "CUSTOMER-SYNTH-1"
+              }
+            },
+            "trusted": {}
+          }
+        }
+      ],
+      "judge": {
+        "candidate_slot": "B",
+        "candidate_id": "FSV-B17-ECAS-CANDIDATE-DISABLED-CUSTOMER",
+        "verdict": "ACCEPT",
+        "target_implementation": "IMPLEMENTED",
+        "semantic_direction": "CONSISTENT",
+        "unsupported_extra_constraints": "NONE_IDENTIFIED",
+        "issues": [],
+        "reason": "Candidate B uses enum_allowlist on /trusted/customerDisabled with values [false] and on_missing deny. This correctly allows Sales Order creation only when the customer is not disabled, matching the source statement that disabling a customer disallows sales orders (VIS-FSV-B17-01). The path is a declared server_state boolean (VIS-FSV-B17-RUNTIME-ABI). on_missing deny aligns with the default missing-input rejection semantics. No unsupported constraints are added; scope is limited to the disabled-customer condition for the target operation."
+      },
+      "known_confirmed_primary_defect": null,
+      "known_primary_defect_flagged": null,
+      "source_audit": {
+        "parent_id": "FSV-B17__four_case_v2",
+        "packet_path": "/mnt/d/lunwen/EC-CSI投稿/working/exploration/20261014_matched_evidence_labor/judge_control/generation_inputs/FSV-B17/packet.json",
+        "packet_sha256": "03e726de50a01e76c55ce26e0925632c218de4ab96339c3752d37e33535a6479",
+        "objective": {
+          "constraint_object": "Customer disabled status relevant to Sales Order creation",
+          "constraint_kind": "The documented disabled-customer condition for the target operation",
+          "scope": "Use the provided trusted customer state for this target only; do not add unrelated Customer or Sales Order validation."
+        },
+        "source_excerpts": [
+          {
+            "evidence_id": "VIS-FSV-B17-01",
+            "source_id": "erpnext-customer.html",
+            "locator": "extracted/erpnext-customer.md:article",
+            "source_sha256": "BA52637ECC58763F80A1AB3F94CA82F51048E19EAC94DD1D2E41E92853CE1AE9",
+            "snapshot_content_lines": [
+              {
+                "line": 24,
+                "text": ""
+              },
+              {
+                "line": 25,
+                "text": "You can disallow sales orders and sales invoices against a customer by clicking on 'Disabled'."
+              },
+              {
+                "line": 26,
+                "text": ""
+              },
+              {
+                "line": 27,
+                "text": "Advanced Tip: If the customer represents one of your own companies then check 'Is Internal Customer'. Check Inter Company Invoices for more details."
+              }
+            ]
+          }
+        ],
+        "author_audit": "原v1使用server_derived_reject，对路径存在即拒绝，不能判断布尔false；重放合法请求被拒。原v2枚举只允许false，原请求对匹配。冻结操作语义明确server_derived_reject不是布尔状态判断。",
+        "issue_audit": []
+      }
+    },
+    {
+      "parent_id": "FSV-B19__four_case_v2",
+      "task": "FSV-B19",
+      "configuration": "four_case_v2",
+      "candidate_slot": "A",
+      "candidate_id": "FSV-B19-CAND-PO-HOLD-GUARD",
+      "candidate_sha256": "e50064ef266b67f38bf736238a32946ae7c88a8b6315a97519a5c17b71ab3712",
+      "contract_sha256": "fd0a7bbb9c3d0588d2f6e8970af7b8d9c34cf0ae82dd494bce68478c6671fd30",
+      "full_inventory_admission": "ADMITTED",
+      "shape_only_compilation": "COMPILED_NO_INVENTORY",
+      "original_pair_label_matches": 2,
+      "original_pair_count": 2,
+      "original_pair_is_independent_gold": false,
+      "replayed_observations": [
+        {
+          "fixture_id": "FSV-B19-OL-01",
+          "fixture_class": "ARCHIVED_SYNTHETIC_REQUEST",
+          "expected_archived_label": "allow",
+          "full_actual": {
+            "policy_id": "FSV-B19-POLICY-PO-HOLD-GUARD",
+            "decision": "allow",
+            "fail_closed": true,
+            "violations": []
+          },
+          "shape_actual": {
+            "policy_id": "FSV-B19-POLICY-PO-HOLD-GUARD",
+            "decision": "allow",
+            "fail_closed": true,
+            "violations": []
+          },
+          "input": {
+            "request": {
+              "body": {
+                "action": "PURCHASE_ORDER",
+                "supplier": "SUPPLIER-SYNTH-1"
+              }
+            },
+            "trusted": {
+              "holdType": "",
+              "supplierOnHold": false
+            }
+          }
+        },
+        {
+          "fixture_id": "FSV-B19-OI-01",
+          "fixture_class": "ARCHIVED_SYNTHETIC_REQUEST",
+          "expected_archived_label": "deny",
+          "full_actual": {
+            "policy_id": "FSV-B19-POLICY-PO-HOLD-GUARD",
+            "decision": "deny",
+            "fail_closed": true,
+            "violations": [
+              {
+                "rule_id": "FSV-B19-RULE-PO-HOLD-GUARD",
+                "code": "bounded_guard_rejected",
+                "detail": "FSV-B19-RULE-PO-HOLD-GUARD"
+              }
+            ]
+          },
+          "shape_actual": {
+            "policy_id": "FSV-B19-POLICY-PO-HOLD-GUARD",
+            "decision": "deny",
+            "fail_closed": true,
+            "violations": [
+              {
+                "rule_id": "FSV-B19-RULE-PO-HOLD-GUARD",
+                "code": "bounded_guard_rejected",
+                "detail": "FSV-B19-RULE-PO-HOLD-GUARD"
+              }
+            ]
+          },
+          "input": {
+            "request": {
+              "body": {
+                "action": "PURCHASE_ORDER",
+                "supplier": "SUPPLIER-SYNTH-1"
+              }
+            },
+            "trusted": {
+              "holdType": "All",
+              "supplierOnHold": true
+            }
+          }
+        },
+        {
+          "fixture_id": "SYNTH-MISSING-TRUSTED",
+          "fixture_class": "CONSTRUCTED_MISSING_CONTEXT_CONTROL",
+          "expected_archived_label": null,
+          "full_actual": {
+            "policy_id": "FSV-B19-POLICY-PO-HOLD-GUARD",
+            "decision": "deny",
+            "fail_closed": true,
+            "violations": [
+              {
+                "rule_id": "FSV-B19-RULE-PO-HOLD-GUARD",
+                "code": "required_input_missing",
+                "detail": "FSV-B19-RULE-PO-HOLD-GUARD"
+              }
+            ]
+          },
+          "shape_actual": {
+            "policy_id": "FSV-B19-POLICY-PO-HOLD-GUARD",
+            "decision": "deny",
+            "fail_closed": true,
+            "violations": [
+              {
+                "rule_id": "FSV-B19-RULE-PO-HOLD-GUARD",
+                "code": "required_input_missing",
+                "detail": "FSV-B19-RULE-PO-HOLD-GUARD"
+              }
+            ]
+          },
+          "input": {
+            "request": {
+              "body": {
+                "action": "PURCHASE_ORDER",
+                "supplier": "SUPPLIER-SYNTH-1"
+              }
+            },
+            "trusted": {}
+          }
+        }
+      ],
+      "judge": {
+        "candidate_slot": "A",
+        "candidate_id": "FSV-B19-CAND-PO-HOLD-GUARD",
+        "verdict": "ACCEPT",
+        "target_implementation": "IMPLEMENTED",
+        "semantic_direction": "CONSISTENT",
+        "unsupported_extra_constraints": "NONE_IDENTIFIED",
+        "issues": [],
+        "reason": "Candidate A implements the supplier hold policy for Purchase Order creation. The bounded_guard_dnf ALLOW alternatives are: supplier not on hold, or holdType equals Payments. This matches the source: Invoices and All hold types block Purchase Orders, while Payments does not. Declared trusted paths /trusted/supplierOnHold and /trusted/holdType are used, and on_missing=deny satisfies the missing-input rejection requirement. No unsupported extra constraints or direction issues are visible."
+      },
+      "known_confirmed_primary_defect": null,
+      "known_primary_defect_flagged": null,
+      "source_audit": {
+        "parent_id": "FSV-B19__four_case_v2",
+        "packet_path": "/mnt/d/lunwen/EC-CSI投稿/working/exploration/20261014_matched_evidence_labor/judge_control/generation_inputs/FSV-B19/packet.json",
+        "packet_sha256": "10c5597e97e4190aa041c53aa3aee8b4c1c48fa77d073bfb4fb5eb5a64a346fd",
+        "objective": {
+          "constraint_object": "Supplier on-hold status and hold type relevant to Purchase Order creation",
+          "constraint_kind": "The documented supplier hold-type condition for the target operation",
+          "scope": "Implement the supplier hold policy for this Purchase Order target only; do not add restrictions for invoices, payments, other endpoints or unrelated fields."
+        },
+        "source_excerpts": [
+          {
+            "evidence_id": "VIS-FSV-B19-01",
+            "source_id": "erpnext-supplier.html",
+            "locator": "extracted/erpnext-supplier.md:article",
+            "source_sha256": "1DD2CBED3915F83CC734BA23F7A016A9C386ED6BA9E54962619F70DB706F5C6F",
+            "snapshot_content_lines": [
+              {
+                "line": 62,
+                "text": ""
+              },
+              {
+                "line": 63,
+                "text": "The hold types are as follows:"
+              },
+              {
+                "line": 64,
+                "text": "+ Invoices: ERPNext will not allow Purchase Invoices or Purchase Orders to be created for the supplier + Payments: ERPNext will not allow Payment Entries to be created for the Supplier + All: ERPNext will apply both hold types aboveIf you do not set a release date, ERPNext will hold the Supplier **indefinitely**."
+              },
+              {
+                "line": 65,
+                "text": "### 2.5 Default Payable Accounts"
+              }
+            ]
+          },
+          {
+            "evidence_id": "VIS-FSV-B19-01",
+            "source_id": "erpnext-supplier.html",
+            "locator": "extracted/erpnext-supplier.md:article",
+            "source_sha256": "1DD2CBED3915F83CC734BA23F7A016A9C386ED6BA9E54962619F70DB706F5C6F",
+            "snapshot_content_lines": [
+              {
+                "line": 63,
+                "text": "The hold types are as follows:"
+              },
+              {
+                "line": 64,
+                "text": "+ Invoices: ERPNext will not allow Purchase Invoices or Purchase Orders to be created for the supplier + Payments: ERPNext will not allow Payment Entries to be created for the Supplier + All: ERPNext will apply both hold types aboveIf you do not set a release date, ERPNext will hold the Supplier **indefinitely**."
+              },
+              {
+                "line": 65,
+                "text": "### 2.5 Default Payable Accounts"
+              },
+              {
+                "line": 66,
+                "text": ""
+              }
+            ]
+          }
+        ],
+        "author_audit": "原v1把Invoices/All与on-hold写进ALLOW分支，方向反转，原合法/违规请求均判反；原v2表达未冻结或Payments可允许，原请求对匹配。",
+        "issue_audit": []
+      }
+    },
+    {
+      "parent_id": "FSV-B19__four_case_v1",
+      "task": "FSV-B19",
+      "configuration": "four_case_v1",
+      "candidate_slot": "B",
+      "candidate_id": "FSV-B19-C01",
+      "candidate_sha256": "cda6e9580ee5a94cb63b8afdb012c850b06638587ff21fbb979cc35bf185cd71",
+      "contract_sha256": "fd0a7bbb9c3d0588d2f6e8970af7b8d9c34cf0ae82dd494bce68478c6671fd30",
+      "full_inventory_admission": "ADMITTED",
+      "shape_only_compilation": "COMPILED_NO_INVENTORY",
+      "original_pair_label_matches": 0,
+      "original_pair_count": 2,
+      "original_pair_is_independent_gold": false,
+      "replayed_observations": [
+        {
+          "fixture_id": "FSV-B19-OL-01",
+          "fixture_class": "ARCHIVED_SYNTHETIC_REQUEST",
+          "expected_archived_label": "allow",
+          "full_actual": {
+            "policy_id": "FSV-B19-P01",
+            "decision": "deny",
+            "fail_closed": true,
+            "violations": [
+              {
+                "rule_id": "FSV-B19-R01",
+                "code": "bounded_guard_rejected",
+                "detail": "FSV-B19-R01"
+              }
+            ]
+          },
+          "shape_actual": {
+            "policy_id": "FSV-B19-P01",
+            "decision": "deny",
+            "fail_closed": true,
+            "violations": [
+              {
+                "rule_id": "FSV-B19-R01",
+                "code": "bounded_guard_rejected",
+                "detail": "FSV-B19-R01"
+              }
+            ]
+          },
+          "input": {
+            "request": {
+              "body": {
+                "action": "PURCHASE_ORDER",
+                "supplier": "SUPPLIER-SYNTH-1"
+              }
+            },
+            "trusted": {
+              "holdType": "",
+              "supplierOnHold": false
+            }
+          }
+        },
+        {
+          "fixture_id": "FSV-B19-OI-01",
+          "fixture_class": "ARCHIVED_SYNTHETIC_REQUEST",
+          "expected_archived_label": "deny",
+          "full_actual": {
+            "policy_id": "FSV-B19-P01",
+            "decision": "allow",
+            "fail_closed": true,
+            "violations": []
+          },
+          "shape_actual": {
+            "policy_id": "FSV-B19-P01",
+            "decision": "allow",
+            "fail_closed": true,
+            "violations": []
+          },
+          "input": {
+            "request": {
+              "body": {
+                "action": "PURCHASE_ORDER",
+                "supplier": "SUPPLIER-SYNTH-1"
+              }
+            },
+            "trusted": {
+              "holdType": "All",
+              "supplierOnHold": true
+            }
+          }
+        },
+        {
+          "fixture_id": "SYNTH-MISSING-TRUSTED",
+          "fixture_class": "CONSTRUCTED_MISSING_CONTEXT_CONTROL",
+          "expected_archived_label": null,
+          "full_actual": {
+            "policy_id": "FSV-B19-P01",
+            "decision": "allow",
+            "fail_closed": true,
+            "violations": []
+          },
+          "shape_actual": {
+            "policy_id": "FSV-B19-P01",
+            "decision": "allow",
+            "fail_closed": true,
+            "violations": []
+          },
+          "input": {
+            "request": {
+              "body": {
+                "action": "PURCHASE_ORDER",
+                "supplier": "SUPPLIER-SYNTH-1"
+              }
+            },
+            "trusted": {}
+          }
+        }
+      ],
+      "judge": {
+        "candidate_slot": "B",
+        "candidate_id": "FSV-B19-C01",
+        "verdict": "REVISE",
+        "target_implementation": "NOT_IMPLEMENTED",
+        "semantic_direction": "INVERTED",
+        "unsupported_extra_constraints": "NONE_IDENTIFIED",
+        "issues": [
+          {
+            "category": "DIRECTION_MISMATCH",
+            "rule_id": "FSV-B19-R01",
+            "evidence_refs": [
+              "VIS-FSV-B19-01"
+            ],
+            "detail": "The ALLOW alternatives require supplierOnHold=true and holdType in {Invoices, All}. Source says Invoices and All block Purchase Orders, so these are exactly the conditions that should deny, not allow. The rule is inverted."
+          },
+          {
+            "category": "MISSING_INPUT_HANDLING",
+            "rule_id": "FSV-B19-R01",
+            "evidence_refs": [
+              "VIS-FSV-B19-RUNTIME-ABI"
+            ],
+            "detail": "on_missing is set to skip, but the operation does not explicitly support skip. Missing trusted inputs should reject per declared semantics."
+          }
+        ],
+        "reason": "Candidate B inverts the hold-type semantics: it allows Purchase Order creation when supplierOnHold is true and holdType is Invoices or All, which source evidence states should block Purchase Orders. It also uses on_missing=skip despite no explicit skip support, contrary to the missing-input rejection requirement."
+      },
+      "known_confirmed_primary_defect": "ALLOW_DIRECTION_INVERTED",
+      "known_primary_defect_flagged": true,
+      "source_audit": {
+        "parent_id": "FSV-B19__four_case_v1",
+        "packet_path": "/mnt/d/lunwen/EC-CSI投稿/working/exploration/20261014_matched_evidence_labor/judge_control/generation_inputs/FSV-B19/packet.json",
+        "packet_sha256": "10c5597e97e4190aa041c53aa3aee8b4c1c48fa77d073bfb4fb5eb5a64a346fd",
+        "objective": {
+          "constraint_object": "Supplier on-hold status and hold type relevant to Purchase Order creation",
+          "constraint_kind": "The documented supplier hold-type condition for the target operation",
+          "scope": "Implement the supplier hold policy for this Purchase Order target only; do not add restrictions for invoices, payments, other endpoints or unrelated fields."
+        },
+        "source_excerpts": [
+          {
+            "evidence_id": "VIS-FSV-B19-01",
+            "source_id": "erpnext-supplier.html",
+            "locator": "extracted/erpnext-supplier.md:article",
+            "source_sha256": "1DD2CBED3915F83CC734BA23F7A016A9C386ED6BA9E54962619F70DB706F5C6F",
+            "snapshot_content_lines": [
+              {
+                "line": 62,
+                "text": ""
+              },
+              {
+                "line": 63,
+                "text": "The hold types are as follows:"
+              },
+              {
+                "line": 64,
+                "text": "+ Invoices: ERPNext will not allow Purchase Invoices or Purchase Orders to be created for the supplier + Payments: ERPNext will not allow Payment Entries to be created for the Supplier + All: ERPNext will apply both hold types aboveIf you do not set a release date, ERPNext will hold the Supplier **indefinitely**."
+              },
+              {
+                "line": 65,
+                "text": "### 2.5 Default Payable Accounts"
+              }
+            ]
+          },
+          {
+            "evidence_id": "VIS-FSV-B19-01",
+            "source_id": "erpnext-supplier.html",
+            "locator": "extracted/erpnext-supplier.md:article",
+            "source_sha256": "1DD2CBED3915F83CC734BA23F7A016A9C386ED6BA9E54962619F70DB706F5C6F",
+            "snapshot_content_lines": [
+              {
+                "line": 63,
+                "text": "The hold types are as follows:"
+              },
+              {
+                "line": 64,
+                "text": "+ Invoices: ERPNext will not allow Purchase Invoices or Purchase Orders to be created for the supplier + Payments: ERPNext will not allow Payment Entries to be created for the Supplier + All: ERPNext will apply both hold types aboveIf you do not set a release date, ERPNext will hold the Supplier **indefinitely**."
+              },
+              {
+                "line": 65,
+                "text": "### 2.5 Default Payable Accounts"
+              },
+              {
+                "line": 66,
+                "text": ""
+              }
+            ]
+          }
+        ],
+        "author_audit": "原v1把Invoices/All与on-hold写进ALLOW分支，方向反转，原合法/违规请求均判反；原v2表达未冻结或Payments可允许，原请求对匹配。",
+        "issue_audit": [
+          {
+            "category": "DIRECTION_MISMATCH",
+            "source_audit": "SUPPORTED_BY_SOURCE_ALLOW_SEMANTICS_AND_REPLAY"
+          },
+          {
+            "category": "MISSING_INPUT_HANDLING",
+            "source_audit": "MIXED_BEHAVIOR_OBSERVED_BUT_UNSUPPORTED_OPERATION_CLAIM",
+            "explanation": "缺trusted探针确实allow；但冻结操作文档说缺值follow on_missing，引擎明确支持skip。公开任务未规定缺值必须拒绝，因此Judge称操作不支持skip/必须拒绝的附加断言依据不足，不能计为已证实第二缺陷。"
+          }
+        ]
+      }
+    }
+  ],
+  "main_ledger_sha256": "afe1cd8a5dcb6de7029291b102330cf5187f15213bb373609591d1fdaf9fa5c7",
+  "judge_ledger_sha256": "11c020a129e555309445bedbf64eeaa998d56517c05ac518dbc4747c00b08c8a",
+  "original_ablation_sha256": "9328bb025f8a804616f186a10fb8f1f0ba17688d80a7631e06230b9ed4be03b5",
+  "limitations": [
+    "previously exposed tasks and correlated v1/v2 parent candidates",
+    "single Judge run per task, no repeated-trial stability",
+    "ACCEPT is a model observation, not semantic gold",
+    "not native AutoPAC generator/representation/results",
+    "Judge did not test metadata-corrupted Inventory variants",
+    "no real API forwarding or upstream-state authenticity test"
+  ]
+}

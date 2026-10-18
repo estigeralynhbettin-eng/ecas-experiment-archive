@@ -1,0 +1,28 @@
+{
+  "choices": [
+    {
+      "finish_reason": "stop",
+      "index": 0,
+      "message": {
+        "content": "{\"begin\":\"BEGIN_FSV-B19_ecas_generate_DOCUMENTED_SMOKE\",\"stage\":\"ecas_generate\",\"output\":{\"candidate\":{\"ir_version\":\"EC-FIELD-MODEL-IR-V3\",\"candidate_id\":\"CAND-FSV-B19-001\",\"decision\":\"propose\",\"target\":{\"operation\":\"POST /api/resource/Purchase Order\",\"system\":\"ERPNext\",\"version\":\"16.0.0\"},\"policy_id\":\"POL-FSV-B19-PO-SUPPLIER-HOLD\",\"evidence_refs\":[\"VIS-FSV-B19-01\",\"VIS-FSV-B19-04\",\"VIS-FSV-B19-RUNTIME-ABI\"],\"rules\":[{\"rule_id\":\"R-001\",\"primitive_id\":\"SP-BOUNDED-BUSINESS-GUARD\",\"op\":\"bounded_guard_dnf\",\"evidence_refs\":[\"VIS-FSV-B19-01\",\"VIS-FSV-B19-04\",\"VIS-FSV-B19-RUNTIME-ABI\"],\"params\":{\"alternatives\":[{\"clauses\":[{\"kind\":\"scalar_compare\",\"left_path\":\"/trusted/supplierOnHold\",\"operator\":\"eq\",\"right_source\":\"literal\",\"right_path\":\"\",\"right_value\":false}]},{\"clauses\":[{\"kind\":\"scalar_compare\",\"left_path\":\"/trusted/holdType\",\"operator\":\"eq\",\"right_source\":\"literal\",\"right_path\":\"\",\"right_value\":\"Payments\"}]}],\"on_missing\":\"deny\"}}],\"reason_code\":\"none\",\"missing_evidence\":[]}},\"end\":\"END_FSV-B19_ecas_generate_DOCUMENTED_SMOKE\"}",
+        "role": "assistant"
+      }
+    }
+  ],
+  "created": 1791979768,
+  "id": "2026101420085535a4c14a26a04c3a",
+  "model": "glm-5.2",
+  "object": "chat.completion",
+  "request_id": "2026101420085535a4c14a26a04c3a",
+  "usage": {
+    "completion_tokens": 2877,
+    "completion_tokens_details": {
+      "reasoning_tokens": 2425
+    },
+    "prompt_tokens": 7803,
+    "prompt_tokens_details": {
+      "cached_tokens": 0
+    },
+    "total_tokens": 10680
+  }
+}

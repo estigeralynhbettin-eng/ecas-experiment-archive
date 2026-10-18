@@ -1,0 +1,22 @@
+[
+  {
+    "id": "dev_declared_keys",
+    "expected": "allow",
+    "actual": {
+      "status": "EXECUTED",
+      "decision": "deny",
+      "exit_code": 0
+    },
+    "pass": false
+  },
+  {
+    "id": "dev_unknown_key",
+    "expected": "deny",
+    "actual": {
+      "status": "EXECUTED",
+      "decision": "deny",
+      "exit_code": 0
+    },
+    "pass": true
+  }
+]

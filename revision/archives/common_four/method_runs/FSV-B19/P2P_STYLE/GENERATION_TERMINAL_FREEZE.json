@@ -1,0 +1,9 @@
+{
+  "task": "FSV-B19",
+  "method": "P2P_STYLE",
+  "status": "ELIGIBLE",
+  "execution_eligible": true,
+  "first_freeze_sha256": "b7d5ce0d65075f54a5308814eacb0f6e2d35155df6fd1143a7e77703a23d1f41",
+  "frozen_at": "2026-10-15T00:55:41.682511+00:00",
+  "final_evaluation_not_yet_read": true
+}

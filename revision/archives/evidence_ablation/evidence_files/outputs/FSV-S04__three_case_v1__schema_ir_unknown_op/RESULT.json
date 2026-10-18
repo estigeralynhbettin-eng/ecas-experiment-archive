@@ -1,0 +1,22 @@
+{
+  "parent_id": "FSV-S04__three_case_v1",
+  "case": "FSV-S04",
+  "configuration": "three_case_v1",
+  "row_id": "FSV-S04__three_case_v1__schema_ir_unknown_op",
+  "variant": "schema_ir_unknown_op",
+  "classification": "ENGINEERING_MODEL_IR_SCHEMA_CONTROL",
+  "expected_full": "schema_fail",
+  "notes": "Unknown operation; excluded from scientific denominator",
+  "source_parent_candidate": "/root/ecas_evidence_ablation_20261014/inputs/FSV-S04__three_case_v1/candidate.json",
+  "source_parent_contract": "/root/ecas_evidence_ablation_20261014/inputs/FSV-S04__three_case_v1/contract.json",
+  "candidate_sha256": "ae3370e64234f450642f0a945ac1e7c3115e16e5d6b7f7e39dea08766001ffc6",
+  "contract_sha256": "e59e4c9b5f1fc9dd4442d9f6d08f3b0c974390d4c601672bf615dc7d53932c14",
+  "output_folder": "/root/ecas_evidence_ablation_20261014/outputs/FSV-S04__three_case_v1__schema_ir_unknown_op",
+  "full_executed": false,
+  "shape_executed": false,
+  "ir_status": "IR_SCHEMA_OR_TYPE_FAILURE",
+  "full_status": "NOT_ATTEMPTED",
+  "shape_status": "NOT_ATTEMPTED",
+  "error": "model IR schema rejected: /: {'candidate_id': 'CAND-FSV-S04-EMAIL-FMT', 'decision': 'propose', 'evidence_refs': ['VIS-FSV-S04-01', 'VIS-FSV-S04-02', 'VIS-FSV-S04-RUNTIME-ABI'], 'ir_version': 'EC-FIELD-MODEL-IR-V3', 'missing_evidence': [], 'policy_id': 'POL-FSV-S04-LEAD-EMAIL-FMT', 'reason_code': 'none', 'rules': [{'evidence_refs': ['VIS-FSV-S04-02', 'VIS-FSV-S04-RUNTIME-ABI'], 'op': 'not_registered', 'params': {'on_missing': 'skip', 'path': '/request/body/email_id', 'validator_id': 'email_basic_v1'}, 'primitive_id': 'SP-STRUCTURED-FORMAT', 'rule_id': 'RULE-LEAD-EMAIL-FMT'}], 'target': {'operation': 'POST /api/resource/Lead', 'system': 'ERPNext', 'version': '16.0.0'}} is not valid under any of the given schemas",
+  "eligible_admission_contrast": false
+}

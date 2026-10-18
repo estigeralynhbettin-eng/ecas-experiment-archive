@@ -1,0 +1,24 @@
+{
+  "status": "PASS",
+  "checks": [
+    {
+      "check": "changed_input_digest",
+      "pass": true,
+      "exit_code": 1,
+      "classification": "ENGINEERING_NEGATIVE_INTEGRITY_CONTROL"
+    },
+    {
+      "check": "missing_frozen_request",
+      "pass": true,
+      "exit_code": 1,
+      "classification": "ENGINEERING_NEGATIVE_INTEGRITY_CONTROL"
+    },
+    {
+      "check": "all_original_input_bytes_restored",
+      "pass": true,
+      "files": 4533
+    }
+  ],
+  "new_model_calls": 0,
+  "policy_or_expected_bytes_changed": false
+}

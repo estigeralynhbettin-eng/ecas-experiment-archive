@@ -1,0 +1,28 @@
+{
+  "title": "ECAS Experiment Data and Offline Replay for API Security Rules",
+  "upload_type": "dataset",
+  "description": "Fixed evaluation artifacts for ECAS: Evidence Contracts for API Security Rule Construction and Evaluation. The archive separates the unchanged original 30-task evaluation from later seven-case comparisons using adapted P2P and AutoPAC workflows, 95 related evidence/schema controls, and retained source/state studies. It includes tasks, prompts, public model outputs, policies, request fixtures, results, failures, schemas, the fixed ECAS interpreter and a credential-free archived-output replay. The exact OPA tool is obtained from its official release with a pinned digest before offline replay. No model weights or credentials are included. The source-linked 673-check matrices are a separate resource. Version 1.0.0 accompanies the A18 revised manuscript. Original author data and documentation are licensed under CC BY-SA 4.0; original author software is licensed under Apache-2.0. The unchanged original R12 archive, where present, and third-party materials retain their original terms. These exceptions are identified in LICENSE_STATUS.md and LICENSE_SCOPE.csv. This work was supported by the Discipline Breakthrough Pioneer Program of the Ministry of Education of China (Grant No. JYB2025XDXM122).",
+  "creators": [
+    {
+      "name": "Lv, Yi",
+      "affiliation": "School of Computer Science and Technology, Tongji University",
+      "orcid": "0009-0009-2973-620X"
+    },
+    {
+      "name": "Wang, Cheng",
+      "affiliation": "School of Computer Science and Technology, Tongji University; Key Laboratory of Embedded System and Service Computing, Ministry of Education",
+      "orcid": "0000-0002-4752-0316"
+    }
+  ],
+  "version": "1.0.0",
+  "publication_date": "2026-10-18",
+  "access_right": "open",
+  "license": "cc-by-sa-4.0",
+  "keywords": [
+    "API security",
+    "ECAS",
+    "evidence contracts",
+    "reproducibility"
+  ],
+  "notes": "Dataset and documentation CC BY-SA 4.0; author software Apache-2.0; unchanged original R12 and third-party materials retain existing terms. This metadata file does not establish a Zenodo deposition or DOI. See LICENSE_STATUS.md and LICENSE_SCOPE.csv."
+}

@@ -1,0 +1,359 @@
+{
+  "status": "COMPLETED_READ_ONLY_FIXED_SOURCE_INVESTIGATION",
+  "date": "2026-10-15",
+  "new_model_calls": 0,
+  "network_requests": 0,
+  "policy_or_backend_executions": 0,
+  "source_identity": {
+    "source_tree_windows": "\\\\wsl.localhost\\Ubuntu\\root\\ec\\fineract-1.14.0-e1b",
+    "source_tree_linux": "/root/ec/fineract-1.14.0-e1b",
+    "commit": "7923d9e6cb67611c506b6c527b64497996acdc58",
+    "exact_tag": "1.14.0",
+    "porcelain_status": ""
+  },
+  "source_manifest": {
+    "path": "D:\\lunwen\\EC-CSI投稿\\working\\exploration\\20261013_gateway_case_audit\\selected_case_demo\\sources\\SOURCE_MANIFEST.json",
+    "sha256": "859e2443a59b981b7d57bece8085daf51653edbf87d12fff7e310e433650a9b4",
+    "frozen_commit": "7923d9e6cb67611c506b6c527b64497996acdc58",
+    "doc_and_identifier_api_hash_match": true
+  },
+  "prior_packets": {
+    "FSV-B06": {
+      "path": "D:\\lunwen\\EC-CSI投稿\\working\\exploration\\20261014_external_baseline_pilot\\generation_inputs\\FSV-B06\\packet.json",
+      "sha256": "01ac46f8ed8d0b75d23a4adb7a16fafe35316f1e75fbe52d767540c39fe2f16f",
+      "target": {
+        "operation": "POST /v1/loans/{loanId}/transactions/{transactionId}?command=undo",
+        "system": "Fineract",
+        "version": "1.14.0"
+      }
+    },
+    "FSV-S02": {
+      "path": "D:\\lunwen\\EC-CSI投稿\\working\\exploration\\20261014_external_baseline_pilot\\generation_inputs\\FSV-S02\\packet.json",
+      "sha256": "5c8de100a097aa1cae1c236a1d9d7771e8c1e175d9c8601abc9d319dafca9611",
+      "target": {
+        "operation": "POST /v1/clients/{clientId}/identifiers",
+        "system": "Fineract",
+        "version": "1.14.0"
+      }
+    }
+  },
+  "search_scope": [
+    "已冻结source manifest与旧B06/S02 packet",
+    "/root/ec/fineract-1.14.0-e1b：指定Java入口、反序列化、service、builder、validator、Jersey converter及既有integration-tests和provider/src/test/java关键词搜索",
+    "D:/lunwen/ec/runtime仅做目录名定位（未发现Fineract目录）；未扩展到网络或其他版本"
+  ],
+  "search_terms": [
+    "ClientIdentifier",
+    "checkForUnsupportedParameters",
+    "SUPPORTED_PARAMETERS",
+    "FAIL_ON_UNKNOWN_PROPERTIES",
+    "MappingJackson2HttpMessageConverter",
+    "undoReAge",
+    "UNDO_REAGE",
+    "adjustLoanTransaction",
+    "isReAge",
+    "latest transaction",
+    "unknown property/unsupported identifier test"
+  ],
+  "negative_search_boundary": "无命中只对列出的本地范围有效；不解释为全世界无规范或无实现。WSL无rg，后续使用Windows rg读取WSL UNC与指定文件行段。",
+  "conclusions": [
+    {
+      "case": "FSV-B06",
+      "status": "SOURCE_OPERATION_SCOPE_NOT_CLOSED_SPECIFIC_COUNTEREVIDENCE_FOUND",
+      "confirmed": [
+        "同一1.14.0固定源码文档明确写Re-Age交易只能在为贷款账户最新交易时撤销。",
+        "该固定版本有独立POST /v1/loans/{loanId}/transactions?command=undoReAge，经独立handler进入undoReAge；不携带transactionId。",
+        "旧候选target POST /v1/loans/{loanId}/transactions/{transactionId}?command=undo进入Adjust a Transaction分支；该分支没有把undo映射为undoReAge。",
+        "专用undoReAge服务选择最新未撤销的Re-Age（不是直接比较账户所有类型交易的最新性）；其直接validator仅检查存在Re-Age。",
+        "通用调整另有CUMULATIVE schedule的LastTransactionDate检查，故不能概括为全项目没有最新交易检查。"
+      ],
+      "implication": "保留历史文档目标抽取/可信布尔求值演示；暂不进入来源、真实API操作与状态获取完全闭合的主验证集。后续应另建固定专用操作任务，或证明通用adjust路径在明确交易类型与loan schedule范围内如何对应文档。不能追溯修改旧目标或把新源码当作旧模型已见材料。",
+      "unknown": [
+        "旧target的业务语义与Re-Age条款的完整等价关系未建立。",
+        "专用undoReAge和通用adjust在所有schedule、事件订阅及重处理路径下是否实施文档latest限制，本轮未运行后端或穷举调用链。",
+        "trusted/reAgeIsLatestTransaction在真实系统的认证、新鲜度与计算路径未核验。"
+      ],
+      "evidence_ids": [
+        "DOC_REAGE",
+        "LOAN_API",
+        "UNDO_BUILDER",
+        "UNDO_HANDLER",
+        "REAGE_SERVICE",
+        "REAGE_VALIDATOR",
+        "GENERIC_ADJUST",
+        "ADJUST_SERVICE",
+        "UNDO_TEST_HELPER"
+      ]
+    },
+    {
+      "case": "FSV-S02",
+      "status": "INTERNAL_FOUR_KEY_CONTRACT_FOUND_HTTP_UNKNOWN_KEY_REJECTION_NOT_SUPPORTED",
+      "confirmed": [
+        "OpenAPI公开四字段但没有additionalProperties=false；旧模型可见材料未包含本轮查到的实现链。",
+        "内部ClientIdentifierCommand反序列化确有四字段SUPPORTED_PARAMETERS并调用checkForUnsupportedParameters；helper遇额外参数抛异常。",
+        "HTTP入口却先接收ClientIdentifierRequest typed DTO，再序列化DTO进入命令链。该DTO只有四字段，没有额外属性map或JsonAnySetter。",
+        "Jersey body reader对非String委托Jackson converter；固定源码ObjectMapper关闭FAIL_ON_UNKNOWN_PROPERTIES。因此现有静态HTTP链指向未知键被忽略/丢弃，而非被四字段内部checker拒绝。"
+      ],
+      "implication": "可以把四字段作为受支持命令字段集的源码依据；不能把“原HTTP API必须拒绝未知键”声称已由源码证明。网关主动拒绝未知键可作为显式部署加固策略，但应另行制定、等量提供并标注为操作者策略；不得追溯改写旧例为原文唯一正确语义。",
+      "unknown": [
+        "未运行HTTP，故不声称已观察后端允许未知键，也不声称真实配置无额外拦截层。",
+        "没有找到该固定HTTP接口要求拒绝原始未知键的明确规定；没有在已检查测试范围内找到对应的unknown-key拒绝测试。"
+      ],
+      "evidence_ids": [
+        "IDENTIFIER_API",
+        "IDENTIFIER_DTO",
+        "HTTP_BODY_READER",
+        "JACKSON_CONFIG",
+        "IDENTIFIER_SERVICE",
+        "IDENTIFIER_COMMAND_DESERIALIZER",
+        "UNSUPPORTED_HELPER"
+      ]
+    }
+  ],
+  "evidence": [
+    {
+      "id": "DOC_REAGE",
+      "path_windows": "\\\\wsl.localhost\\Ubuntu\\root\\ec\\fineract-1.14.0-e1b\\fineract-doc\\src\\docs\\en\\chapters\\features\\re-ageing.adoc",
+      "path_linux": "/root/ec/fineract-1.14.0-e1b/fineract-doc/src/docs/en/chapters/features/re-ageing.adoc",
+      "sha256": "95d99f4bee0b70b23487cbee14cc1c767ab4667240f297b6ece0de3545be5f16",
+      "line_excerpts": [
+        {
+          "start": 85,
+          "end": 92,
+          "text": "85:=== Reversal and Replay Rules\n86:\n87:* Re-Age transactions can be **reversed only if they are the latest transaction** on the loan account.\n88:* Any backdated repayment or reversal triggers **reverse + replay**:\n89:- Reverts schedule to original state before re-age.\n90:- Removes special collected installment if it exists.\n91:- Restores charge/fee mapping.\n92:* Backdated transaction posting or reversals triggers **reverse + replay**"
+        }
+      ]
+    },
+    {
+      "id": "LOAN_API",
+      "path_windows": "\\\\wsl.localhost\\Ubuntu\\root\\ec\\fineract-1.14.0-e1b\\fineract-provider\\src\\main\\java\\org\\apache\\fineract\\portfolio\\loanaccount\\api\\LoanTransactionsApiResource.java",
+      "path_linux": "/root/ec/fineract-1.14.0-e1b/fineract-provider/src/main/java/org/apache/fineract/portfolio/loanaccount/api/LoanTransactionsApiResource.java",
+      "sha256": "eb9a2312de08dec55a83b67e6c72ec754504d4d54f8b6b24027648ff8c0cddd2",
+      "line_excerpts": [
+        {
+          "start": 85,
+          "end": 98,
+          "text": "85:import org.springframework.stereotype.Component;\n86:\n87:@Path(\"/v1/loans\")\n88:@Component\n89:@AllArgsConstructor\n90:@Tag(name = \"Loan Transactions\", description = \"Capabilities include loan repayment's, interest waivers and the ability to 'adjust' an existing transaction. An 'adjustment' of a transaction is really a 'reversal' of existing transaction followed by creation of a new transaction with the provided details.\")\n91:public class LoanTransactionsApiResource {\n92:\n93:    public static final String CHARGE_OFF_COMMAND_VALUE = \"charge-off\";\n94:    public static final String UNDO_CHARGE_OFF_COMMAND_VALUE = \"undo-charge-off\";\n95:    public static final String DOWN_PAYMENT = \"downPayment\";\n96:    public static final String UNDO_REAGE = \"undoReAge\";\n97:    public static final String REAGE = \"reAge\";\n98:    public static final String REAMORTIZE = \"reAmortize\";"
+        },
+        {
+          "start": 283,
+          "end": 308,
+          "text": "283:    @POST\n284:    @Path(\"{loanId}/transactions\")\n285:    @Consumes({ MediaType.APPLICATION_JSON })\n286:    @Produces({ MediaType.APPLICATION_JSON })\n287:    @Operation(summary = \"Significant Loan Transactions\", description = \"This API covers the major loan transaction functionality\\n\\n\"\n288:            + \"Example Requests:\\n\\n\" + \"loans/1/transactions?command=repayment\" + \" | Make a Repayment | \\n\"\n289:            + \"loans/1/transactions?command=merchantIssuedRefund\" + \" | Merchant Issued Refund | \\n\"\n290:            + \"loans/1/transactions?command=payoutRefund\" + \" | Payout Refund | \\n\" + \"loans/1/transactions?command=goodwillCredit\"\n291:            + \" | Goodwil Credit | \\n\" + \"loans/1/transactions?command=chargeRefund\" + \" | Charge Refund | \\n\"\n292:            + \"loans/1/transactions?command=waiveinterest\" + \" | Waive Interest | \\n\" + \"loans/1/transactions?command=writeoff\"\n293:            + \" | Write-off Loan | \\n\" + \"loans/1/transactions?command=close-rescheduled\" + \" | Close Rescheduled Loan | \\n\"\n294:            + \"loans/1/transactions?command=close\" + \" | Close Loan | \\n\" + \"loans/1/transactions?command=undowriteoff\"\n295:            + \" | Undo Loan Write-off | \\n\" + \"loans/1/transactions?command=recoverypayment\" + \" | Make Recovery Payment | \\n\"\n296:            + \"loans/1/transactions?command=refundByCash\" + \" | Make a Refund of an Active Loan by Cash | \\n\"\n297:            + \"loans/1/transactions?command=foreclosure\" + \" | Foreclosure of an Active Loan | \\n\"\n298:            + \"loans/1/transactions?command=creditBalanceRefund\" + \" | Credit Balance Refund\" + \" |  \\n\"\n299:            + \"loans/external-id/7dd80a7c-ycba-a446-t378-91eb6f53e854/transactions?command=charge-off\" + \" | Charge-off Loan\" + \" |  \\n\"\n300:            + \"loans/1/transactions?command=downPayment\" + \" | Down Payment\" + \" |  \\n\")\n301:    @RequestBody(required = true, content = @Content(schema = @Schema(implementation = LoanTransactionsApiResourceSwagger.PostLoansLoanIdTransactionsRequest.class)))\n302:    @ApiResponses({\n303:            @ApiResponse(responseCode = \"200\", description = \"OK\", content = @Content(schema = @Schema(implementation = LoanTransactionsApiResourceSwagger.PostLoansLoanIdTransactionsResponse.class))) })\n304:    public String executeLoanTransaction(@PathParam(\"loanId\") @Parameter(description = \"loanId\", required = true) final Long loanId,\n305:            @QueryParam(\"command\") @Parameter(description = \"command\") final String commandParam,\n306:            @Parameter(hidden = true) final String apiRequestBodyAsJson) {\n307:\n308:        return executeTransaction(loanId, null, commandParam, apiRequestBodyAsJson);"
+        },
+        {
+          "start": 347,
+          "end": 361,
+          "text": "347:    @POST\n348:    @Path(\"{loanId}/transactions/{transactionId}\")\n349:    @Consumes({ MediaType.APPLICATION_JSON })\n350:    @Produces({ MediaType.APPLICATION_JSON })\n351:    @Operation(summary = \"Adjust a Transaction\", description = \"Note: there is no need to specify command={transactionType} parameter.\\n\\n\"\n352:            + \"Mandatory Fields: transactionDate, transactionAmount\")\n353:    @RequestBody(required = true, content = @Content(schema = @Schema(implementation = LoanTransactionsApiResourceSwagger.PostLoansLoanIdTransactionsTransactionIdRequest.class)))\n354:    @ApiResponses({\n355:            @ApiResponse(responseCode = \"200\", description = \"OK\", content = @Content(schema = @Schema(implementation = LoanTransactionsApiResourceSwagger.PostLoansLoanIdTransactionsResponse.class))) })\n356:    public String adjustLoanTransaction(@PathParam(\"loanId\") @Parameter(description = \"loanId\", required = true) final Long loanId,\n357:            @PathParam(\"transactionId\") @Parameter(description = \"transactionId\", required = true) final Long transactionId,\n358:            @Parameter(hidden = true) final String apiRequestBodyAsJson,\n359:            @QueryParam(\"command\") @Parameter(description = \"command\") final String commandParam) {\n360:\n361:        return adjustTransaction(loanId, null, transactionId, null, apiRequestBodyAsJson, commandParam);"
+        },
+        {
+          "start": 602,
+          "end": 605,
+          "text": "602:        } else if (CommandParameterUtil.is(commandParam, REAGE)) {\n603:            commandRequest = builder.reAge(resolvedLoanId).build();\n604:        } else if (CommandParameterUtil.is(commandParam, UNDO_REAGE)) {\n605:            commandRequest = builder.undoReAge(resolvedLoanId).build();"
+        },
+        {
+          "start": 722,
+          "end": 745,
+          "text": "722:    private String adjustTransaction(final Long loanId, final String loanExternalIdStr, final Long transactionId,\n723:            final String transactionExternalIdStr, final String apiRequestBodyAsJson, final String commandParam) {\n724:        final CommandWrapperBuilder builder = new CommandWrapperBuilder().withJson(apiRequestBodyAsJson);\n725:\n726:        ExternalId loanExternalId = ExternalIdFactory.produce(loanExternalIdStr);\n727:        ExternalId transactionExternalId = ExternalIdFactory.produce(transactionExternalIdStr);\n728:\n729:        Long resolvedLoanId = loanId == null ? loanReadPlatformService.getResolvedLoanId(loanExternalId) : loanId;\n730:        Long resolvedTransactionId = getResolvedLoanTransactionId(transactionId, transactionExternalId);\n731:        CommandWrapper commandRequest;\n732:        if (CommandParameterUtil.is(commandParam, LoanApiConstants.CHARGEBACK_TRANSACTION_COMMAND)) {\n733:            commandRequest = builder.chargebackTransaction(resolvedLoanId, resolvedTransactionId).build();\n734:        } else if (CommandParameterUtil.is(commandParam, LoanApiConstants.CAPITALIZED_INCOME_ADJUSTMENT_TRANSACTION_COMMAND)) {\n735:            commandRequest = builder.capitalizedIncomeAdjustment(resolvedLoanId, resolvedTransactionId).build();\n736:        } else if (CommandParameterUtil.is(commandParam, LoanApiConstants.BUY_DOWN_FEE_ADJUSTMENT_COMMAND)) {\n737:            commandRequest = builder.buyDownFeeAdjustment(resolvedLoanId, resolvedTransactionId).build();\n738:        } else if (CommandParameterUtil.is(commandParam, INTEREST_REFUND_COMMAND_VALUE)) {\n739:            commandRequest = builder.manualInterestRefund(resolvedLoanId, resolvedTransactionId).build();\n740:        } else { // Default to adjust the Loan Transaction\n741:            commandRequest = builder.adjustTransaction(resolvedLoanId, resolvedTransactionId).build();\n742:        }\n743:\n744:        final CommandProcessingResult result = this.commandsSourceWritePlatformService.logCommandSource(commandRequest);\n745:"
+        }
+      ]
+    },
+    {
+      "id": "UNDO_BUILDER",
+      "path_windows": "\\\\wsl.localhost\\Ubuntu\\root\\ec\\fineract-1.14.0-e1b\\fineract-core\\src\\main\\java\\org\\apache\\fineract\\commands\\service\\CommandWrapperBuilder.java",
+      "path_linux": "/root/ec/fineract-1.14.0-e1b/fineract-core/src/main/java/org/apache/fineract/commands/service/CommandWrapperBuilder.java",
+      "sha256": "ac2896769acc793b82f4abb5e4c8e57d1b3f10f0ef03980b047dbafbe9cc05fe",
+      "line_excerpts": [
+        {
+          "start": 3741,
+          "end": 3748,
+          "text": "3741:    public CommandWrapperBuilder undoReAge(final Long loanId) {\n3742:        this.actionName = \"UNDO_REAGE\";\n3743:        this.entityName = \"LOAN\";\n3744:        this.loanId = loanId;\n3745:        this.href = \"/loans/\" + loanId + \"/transactions?command=undoReAge\";\n3746:        return this;\n3747:    }\n3748:"
+        }
+      ]
+    },
+    {
+      "id": "UNDO_HANDLER",
+      "path_windows": "\\\\wsl.localhost\\Ubuntu\\root\\ec\\fineract-1.14.0-e1b\\fineract-provider\\src\\main\\java\\org\\apache\\fineract\\portfolio\\loanaccount\\handler\\loan\\reaging\\LoanUndoReAgingCommandHandler.java",
+      "path_linux": "/root/ec/fineract-1.14.0-e1b/fineract-provider/src/main/java/org/apache/fineract/portfolio/loanaccount/handler/loan/reaging/LoanUndoReAgingCommandHandler.java",
+      "sha256": "b043ad0e7d2f956eb45eb271f717bc2c605381ed8bff81639c71b25675ec1e30",
+      "line_excerpts": [
+        {
+          "start": 30,
+          "end": 48,
+          "text": "30:import org.springframework.stereotype.Service;\n31:\n32:@Service\n33:@RequiredArgsConstructor\n34:@CommandType(entity = \"LOAN\", action = \"UNDO_REAGE\")\n35:public class LoanUndoReAgingCommandHandler implements NewCommandSourceHandler {\n36:\n37:    private final LoanReAgingService loanReAgingService;\n38:    private final DataIntegrityErrorHandler dataIntegrityErrorHandler;\n39:\n40:    @Override\n41:    public CommandProcessingResult processCommand(JsonCommand command) {\n42:        try {\n43:            return loanReAgingService.undoReAge(command.getLoanId(), command);\n44:        } catch (final JpaSystemException | DataIntegrityViolationException dve) {\n45:            dataIntegrityErrorHandler.handleDataIntegrityIssues(command, dve.getMostSpecificCause(), dve, \"loan.undoReAge\",\n46:                    \"Error while handling undo re-age\");\n47:            return CommandProcessingResult.empty();\n48:        }"
+        }
+      ]
+    },
+    {
+      "id": "REAGE_SERVICE",
+      "path_windows": "\\\\wsl.localhost\\Ubuntu\\root\\ec\\fineract-1.14.0-e1b\\fineract-provider\\src\\main\\java\\org\\apache\\fineract\\portfolio\\loanaccount\\service\\reaging\\LoanReAgingService.java",
+      "path_linux": "/root/ec/fineract-1.14.0-e1b/fineract-provider/src/main/java/org/apache/fineract/portfolio/loanaccount/service/reaging/LoanReAgingService.java",
+      "sha256": "33cc3575059b497dbc533e90c105aa1ce3420ac4885b2775b1661359066aff32",
+      "line_excerpts": [
+        {
+          "start": 161,
+          "end": 180,
+          "text": "161:    public CommandProcessingResult undoReAge(Long loanId, JsonCommand command) {\n162:        Loan loan = loanAssembler.assembleFrom(loanId);\n163:        reAgingValidator.validateUndoReAge(loan);\n164:\n165:        Map<String, Object> changes = new LinkedHashMap<>();\n166:        changes.put(LoanReAgingApiConstants.localeParameterName, command.locale());\n167:        changes.put(LoanReAgingApiConstants.dateFormatParameterName, command.dateFormat());\n168:\n169:        LoanTransaction reAgeTransaction = findLatestNonReversedReAgeTransaction(loan);\n170:        if (reAgeTransaction == null) {\n171:            throw new LoanTransactionNotFoundException(\"Re-Age transaction for loan was not found\");\n172:        }\n173:        if (loan.isProgressiveSchedule()) {\n174:            final ScheduleGeneratorDTO scheduleGeneratorDTO = loanUtilService.buildScheduleGeneratorDTO(loan, null);\n175:            loanScheduleService.regenerateRepaymentSchedule(loan, scheduleGeneratorDTO);\n176:        }\n177:        reverseReAgeTransaction(reAgeTransaction, command);\n178:        loanTransactionRepository.saveAndFlush(reAgeTransaction);\n179:        reprocessLoanTransactionsService.reprocessTransactions(loan);\n180:        loan.updateLoanScheduleDependentDerivedFields();"
+        },
+        {
+          "start": 215,
+          "end": 228,
+          "text": "215:    private void reverseReAgeTransaction(LoanTransaction reAgeTransaction, JsonCommand command) {\n216:        ExternalId reversalExternalId = externalIdFactory.createFromCommand(command, LoanReAgingApiConstants.externalIdParameterName);\n217:        loanChargeValidator.validateRepaymentTypeTransactionNotBeforeAChargeRefund(reAgeTransaction.getLoan(), reAgeTransaction,\n218:                \"reversed\");\n219:        reAgeTransaction.reverse(reversalExternalId);\n220:        reAgeTransaction.manuallyAdjustedOrReversed();\n221:    }\n222:\n223:    private LoanTransaction findLatestNonReversedReAgeTransaction(Loan loan) {\n224:        return loan.getLoanTransactions().stream() //\n225:                .filter(LoanTransaction::isNotReversed) //\n226:                .filter(LoanTransaction::isReAge) //\n227:                .max(Comparator.comparing(LoanTransaction::getTransactionDate)) //\n228:                .orElse(null);"
+        }
+      ]
+    },
+    {
+      "id": "REAGE_VALIDATOR",
+      "path_windows": "\\\\wsl.localhost\\Ubuntu\\root\\ec\\fineract-1.14.0-e1b\\fineract-provider\\src\\main\\java\\org\\apache\\fineract\\portfolio\\loanaccount\\service\\reaging\\LoanReAgingValidator.java",
+      "path_linux": "/root/ec/fineract-1.14.0-e1b/fineract-provider/src/main/java/org/apache/fineract/portfolio/loanaccount/service/reaging/LoanReAgingValidator.java",
+      "sha256": "1d635840c1164bef372007ba1d5c8b87f475301fa335de26f60febc0f58f9731",
+      "line_excerpts": [
+        {
+          "start": 196,
+          "end": 208,
+          "text": "196:    public void validateUndoReAge(Loan loan) {\n197:        validateUndoReAgeBusinessRules(loan);\n198:    }\n199:\n200:    private void validateUndoReAgeBusinessRules(Loan loan) {\n201:        // validate if there's a reaging transaction already\n202:        Optional<LoanTransaction> optionalReAgingTx = loan.getLoanTransactions().stream().filter(tx -> tx.getTypeOf().isReAge())\n203:                .min(Comparator.comparing(LoanTransaction::getTransactionDate));\n204:        if (optionalReAgingTx.isEmpty()) {\n205:            throw new GeneralPlatformDomainRuleException(\"error.msg.loan.reage.reaging.transaction.missing\",\n206:                    \"Undoing a reaging can only be done if there was a reaging already\", loan.getId());\n207:        }\n208:    }"
+        }
+      ]
+    },
+    {
+      "id": "GENERIC_ADJUST",
+      "path_windows": "\\\\wsl.localhost\\Ubuntu\\root\\ec\\fineract-1.14.0-e1b\\fineract-provider\\src\\main\\java\\org\\apache\\fineract\\portfolio\\loanaccount\\service\\LoanWritePlatformServiceJpaRepositoryImpl.java",
+      "path_linux": "/root/ec/fineract-1.14.0-e1b/fineract-provider/src/main/java/org/apache/fineract/portfolio/loanaccount/service/LoanWritePlatformServiceJpaRepositoryImpl.java",
+      "sha256": "d10f4fc11ebb520a7def8d4424b4b4304938743ad13c9ef7f259f6e7d2746e7c",
+      "line_excerpts": [
+        {
+          "start": 1180,
+          "end": 1184,
+          "text": "1180:    public CommandProcessingResult adjustLoanTransaction(final Long loanId, final Long transactionId, final JsonCommand command) {\n1181:\n1182:        this.loanTransactionValidator.validateTransaction(command.json());\n1183:        LoanTransaction transactionToAdjust = this.loanTransactionRepository.findByIdAndLoanId(command.entityId(), command.getLoanId())\n1184:                .orElseThrow(() -> new LoanTransactionNotFoundException(command.entityId(), command.getLoanId()));"
+        },
+        {
+          "start": 1215,
+          "end": 1245,
+          "text": "1215:        Long commandId = command.commandId();\n1216:        final String noteText = command.stringValueOfParameterNamed(\"note\");\n1217:        final LocalDate transactionDate = command.localDateValueOfParameterNamed(\"transactionDate\");\n1218:        final BigDecimal transactionAmount = command.bigDecimalValueOfParameterNamed(\"transactionAmount\");\n1219:        final ExternalId txnExternalId = externalIdFactory.createFromCommand(command, LoanApiConstants.externalIdParameterName);\n1220:\n1221:        final boolean isAdjustCommand = (transactionAmount.compareTo(BigDecimal.ZERO) > 0);\n1222:        if (isAdjustCommand && !transactionToAdjust.isEditable()) {\n1223:            final String errorMessage = \"Loan transaction: \" + transactionId + \" update not allowed as loan transaction is a \"\n1224:                    + transactionToAdjust.getTypeOf().getCode();\n1225:            throw new InvalidLoanTransactionTypeException(\"transaction\", \"error.msg.loan.transaction.update.not.allowed\", errorMessage);\n1226:        }\n1227:\n1228:        // We dont need auto generation for reversal external id... if it is not provided, it remains null (empty)\n1229:        final String reversalExternalId = command.stringValueOfParameterNamedAllowingNull(LoanApiConstants.REVERSAL_EXTERNAL_ID_PARAMNAME);\n1230:        final ExternalId reversalTxnExternalId = ExternalIdFactory.produce(reversalExternalId);\n1231:\n1232:        final Map<String, Object> changes = new LinkedHashMap<>();\n1233:        changes.put(\"transactionDate\", command.stringValueOfParameterNamed(\"transactionDate\"));\n1234:        changes.put(\"transactionAmount\", command.stringValueOfParameterNamed(\"transactionAmount\"));\n1235:        changes.put(\"locale\", command.locale());\n1236:        changes.put(\"dateFormat\", command.dateFormat());\n1237:        changes.put(\"paymentTypeId\", command.longValueOfParameterNamed(\"paymentTypeId\"));\n1238:\n1239:        final PaymentDetail paymentDetail = this.paymentDetailWritePlatformService.createPaymentDetail(command, changes);\n1240:\n1241:        LoanAdjustmentParameter parameter = LoanAdjustmentParameter.builder().transactionAmount(transactionAmount)\n1242:                .paymentDetail(paymentDetail).transactionDate(transactionDate).txnExternalId(txnExternalId)\n1243:                .reversalTxnExternalId(reversalTxnExternalId).noteText(noteText).build();\n1244:\n1245:        return loanAdjustmentService.adjustLoanTransaction(loan, transactionToAdjust, parameter, commandId, changes);"
+        }
+      ]
+    },
+    {
+      "id": "ADJUST_SERVICE",
+      "path_windows": "\\\\wsl.localhost\\Ubuntu\\root\\ec\\fineract-1.14.0-e1b\\fineract-provider\\src\\main\\java\\org\\apache\\fineract\\portfolio\\loanaccount\\service\\adjustment\\LoanAdjustmentServiceImpl.java",
+      "path_linux": "/root/ec/fineract-1.14.0-e1b/fineract-provider/src/main/java/org/apache/fineract/portfolio/loanaccount/service/adjustment/LoanAdjustmentServiceImpl.java",
+      "sha256": "d65ef8f42acb80e77f13481ddb9379b7f4c8bbaa1661fc8b89ad2bc35df70cb9",
+      "line_excerpts": [
+        {
+          "start": 206,
+          "end": 220,
+          "text": "206:        ScheduleGeneratorDTO scheduleGeneratorDTO = this.loanUtilService.buildScheduleGeneratorDTO(loan, recalculateFrom);\n207:\n208:        HolidayDetailDTO holidayDetailDTO = scheduleGeneratorDTO.getHolidayDetailDTO();\n209:        if (loan.getLoanRepaymentScheduleDetail().getLoanScheduleType().equals(LoanScheduleType.CUMULATIVE)) {\n210:            // validate cumulative\n211:            loanTransactionValidator.validateActivityNotBeforeLastTransactionDate(loan, transactionToAdjust.getTransactionDate(),\n212:                    LoanEvent.LOAN_REPAYMENT_OR_WAIVER);\n213:        }\n214:        // common validations\n215:        loanTransactionValidator.validateRepaymentDateIsOnHoliday(newTransactionDetail.getTransactionDate(),\n216:                holidayDetailDTO.isAllowTransactionsOnHoliday(), holidayDetailDTO.getHolidays());\n217:        loanTransactionValidator.validateRepaymentDateIsOnNonWorkingDay(newTransactionDetail.getTransactionDate(),\n218:                holidayDetailDTO.getWorkingDays(), holidayDetailDTO.isAllowTransactionsOnNonWorkingDay());\n219:\n220:        adjustExistingTransaction(loan, newTransactionDetail, transactionToAdjust, scheduleGeneratorDTO, reversalTxnExternalId);"
+        }
+      ]
+    },
+    {
+      "id": "UNDO_TEST_HELPER",
+      "path_windows": "\\\\wsl.localhost\\Ubuntu\\root\\ec\\fineract-1.14.0-e1b\\integration-tests\\src\\test\\java\\org\\apache\\fineract\\integrationtests\\common\\loans\\LoanTransactionHelper.java",
+      "path_linux": "/root/ec/fineract-1.14.0-e1b/integration-tests/src/test/java/org/apache/fineract/integrationtests/common/loans/LoanTransactionHelper.java",
+      "sha256": "face3c887a1e6e4d97c6b5a2940ab93fb4a8d67508b2e614498abc70cbf34ad5",
+      "line_excerpts": [
+        {
+          "start": 1095,
+          "end": 1098,
+          "text": "1095:    public PostLoansLoanIdTransactionsResponse undoReAge(final Long loanId, final PostLoansLoanIdTransactionsRequest request) {\n1096:        return Calls.ok(FineractClientHelper.getFineractClient().loanTransactions.executeLoanTransaction(loanId, request, \"undoReAge\"));\n1097:    }\n1098:"
+        }
+      ]
+    },
+    {
+      "id": "IDENTIFIER_API",
+      "path_windows": "\\\\wsl.localhost\\Ubuntu\\root\\ec\\fineract-1.14.0-e1b\\fineract-provider\\src\\main\\java\\org\\apache\\fineract\\portfolio\\client\\api\\ClientIdentifiersApiResource.java",
+      "path_linux": "/root/ec/fineract-1.14.0-e1b/fineract-provider/src/main/java/org/apache/fineract/portfolio/client/api/ClientIdentifiersApiResource.java",
+      "sha256": "11212c7b4a65db3e57a5b9a08fa717e37cdf3b5c0c092f65633ba94b951a8a66",
+      "line_excerpts": [
+        {
+          "start": 113,
+          "end": 127,
+          "text": "113:    @POST\n114:    @Consumes({ MediaType.APPLICATION_JSON })\n115:    @Produces({ MediaType.APPLICATION_JSON })\n116:    @Operation(summary = \"Create an Identifier for a Client\", description = \"Mandatory Fields\\n\" + \"documentKey, documentTypeId \")\n117:    @RequestBody(required = true, content = @Content(schema = @Schema(implementation = ClientIdentifiersApiResourceSwagger.PostClientsClientIdIdentifiersRequest.class)))\n118:    @ApiResponses({\n119:            @ApiResponse(responseCode = \"200\", description = \"OK\", content = @Content(schema = @Schema(implementation = ClientIdentifiersApiResourceSwagger.PostClientsClientIdIdentifiersResponse.class))) })\n120:    public CommandProcessingResult createClientIdentifier(@PathParam(\"clientId\") @Parameter(description = \"clientId\") final Long clientId,\n121:            @Parameter(hidden = true) final ClientIdentifierRequest clientIdentifierRequest) {\n122:\n123:        try {\n124:            final CommandWrapper commandRequest = new CommandWrapperBuilder().createClientIdentifier(clientId)\n125:                    .withJson(toApiJsonSerializer.serialize(clientIdentifierRequest)).build();\n126:\n127:            return this.commandsSourceWritePlatformService.logCommandSource(commandRequest);"
+        }
+      ]
+    },
+    {
+      "id": "IDENTIFIER_DTO",
+      "path_windows": "\\\\wsl.localhost\\Ubuntu\\root\\ec\\fineract-1.14.0-e1b\\fineract-provider\\src\\main\\java\\org\\apache\\fineract\\portfolio\\client\\data\\ClientIdentifierRequest.java",
+      "path_linux": "/root/ec/fineract-1.14.0-e1b/fineract-provider/src/main/java/org/apache/fineract/portfolio/client/data/ClientIdentifierRequest.java",
+      "sha256": "0df233e71e6e7a87ad07091922321e594bee54807a5020d77eef13ddfbf96df7",
+      "line_excerpts": [
+        {
+          "start": 29,
+          "end": 47,
+          "text": "29:@Getter\n30:@Setter\n31:@NoArgsConstructor\n32:@AllArgsConstructor\n33:public class ClientIdentifierRequest implements Serializable {\n34:\n35:    @Serial\n36:    private static final long serialVersionUID = 1L;\n37:\n38:    @Schema(example = \"1\")\n39:    public Long documentTypeId;\n40:    @Schema(example = \"KA-54677\")\n41:    public String documentKey;\n42:    @Schema(example = \"Document has been verified\")\n43:    public String description;\n44:    @Schema(example = \"Active\")\n45:    public String status;\n46:\n47:}"
+        }
+      ]
+    },
+    {
+      "id": "HTTP_BODY_READER",
+      "path_windows": "\\\\wsl.localhost\\Ubuntu\\root\\ec\\fineract-1.14.0-e1b\\fineract-provider\\src\\main\\java\\org\\apache\\fineract\\infrastructure\\core\\jersey\\JerseyJacksonObjectArgumentHandler.java",
+      "path_linux": "/root/ec/fineract-1.14.0-e1b/fineract-provider/src/main/java/org/apache/fineract/infrastructure/core/jersey/JerseyJacksonObjectArgumentHandler.java",
+      "sha256": "5971f333e20b4465e58877adb16194d7cac81b2c98bba72a5392749bee350f75",
+      "line_excerpts": [
+        {
+          "start": 45,
+          "end": 73,
+          "text": "45:@Provider\n46:@Produces(MediaType.APPLICATION_JSON_VALUE)\n47:@Consumes(MediaType.APPLICATION_JSON_VALUE)\n48:@Component\n49:@RequiredArgsConstructor\n50:public class JerseyJacksonObjectArgumentHandler<T> implements MessageBodyReader<T>, MessageBodyWriter<T> {\n51:\n52:    private final MappingJackson2HttpMessageConverter converter;\n53:\n54:    @Override\n55:    public boolean isReadable(Class<?> type, Type genericType, Annotation[] annotations, jakarta.ws.rs.core.MediaType mediaType) {\n56:        return true;\n57:    }\n58:\n59:    @Override\n60:    @SuppressWarnings({ \"unchecked\" })\n61:    public T readFrom(Class<T> type, Type genericType, Annotation[] annotations, jakarta.ws.rs.core.MediaType mediaType,\n62:            MultivaluedMap<String, String> httpHeaders, InputStream entityStream) throws IOException, WebApplicationException {\n63:        if (String.class == genericType) {\n64:            // If the request type is String, keep it that way.\n65:            StringWriter writer = new StringWriter();\n66:            IOUtils.copy(entityStream, writer, UTF_8);\n67:            String json = writer.toString();\n68:            return type.cast(json);\n69:        } else {\n70:            // Create the proper type from the JSON\n71:            HttpHeaders headers = new HttpHeaders();\n72:            headers.putAll(httpHeaders);\n73:            return (T) converter.read(genericType, type, new MappingJacksonInputMessage(entityStream, headers));"
+        }
+      ]
+    },
+    {
+      "id": "JACKSON_CONFIG",
+      "path_windows": "\\\\wsl.localhost\\Ubuntu\\root\\ec\\fineract-1.14.0-e1b\\fineract-provider\\src\\main\\java\\org\\apache\\fineract\\infrastructure\\core\\jersey\\JerseyJacksonConverterConfig.java",
+      "path_linux": "/root/ec/fineract-1.14.0-e1b/fineract-provider/src/main/java/org/apache/fineract/infrastructure/core/jersey/JerseyJacksonConverterConfig.java",
+      "sha256": "b10a993e6ab778544947b1124e658b16c2714eb6b8900090ce803627441f56d1",
+      "line_excerpts": [
+        {
+          "start": 37,
+          "end": 56,
+          "text": "37:@Configuration\n38:public class JerseyJacksonConverterConfig {\n39:\n40:    @Bean\n41:    public ObjectMapper objectMapper(List<JsonSerializer<?>> serializers, List<JsonDeserializer<?>> deserializers,\n42:            List<JsonConverter<?>> jsonConverters) {\n43:        // Merge JsonConverters with serializers and deserializers\n44:        List<JsonSerializer<?>> mergedSerializers = new ArrayList<>(serializers);\n45:        mergedSerializers.addAll(jsonConverters.stream().map(JacksonSerializerAdapter::new).toList());\n46:        List<JsonDeserializer<?>> mergedDeserializers = new ArrayList<>(deserializers);\n47:        mergedDeserializers.addAll(jsonConverters.stream().map(JacksonDeserializerAdapter::new).toList());\n48:        ObjectMapper objectMapper = new Jackson2ObjectMapperBuilder() //\n49:                .serializers(mergedSerializers.toArray(new JsonSerializer[0])) //\n50:                .serializationInclusion(JsonInclude.Include.NON_NULL) //\n51:                .deserializers(mergedDeserializers.toArray(new JsonDeserializer[0])) //\n52:                .featuresToDisable(DeserializationFeature.FAIL_ON_UNKNOWN_PROPERTIES) //\n53:                .featuresToEnable(MapperFeature.ACCEPT_CASE_INSENSITIVE_ENUMS) //\n54:                .build(); //\n55:        objectMapper.registerModule(new JacksonLocalDateArrayModule());\n56:        return objectMapper;"
+        }
+      ]
+    },
+    {
+      "id": "IDENTIFIER_SERVICE",
+      "path_windows": "\\\\wsl.localhost\\Ubuntu\\root\\ec\\fineract-1.14.0-e1b\\fineract-provider\\src\\main\\java\\org\\apache\\fineract\\portfolio\\client\\service\\ClientIdentifierWritePlatformServiceJpaRepositoryImpl.java",
+      "path_linux": "/root/ec/fineract-1.14.0-e1b/fineract-provider/src/main/java/org/apache/fineract/portfolio/client/service/ClientIdentifierWritePlatformServiceJpaRepositoryImpl.java",
+      "sha256": "57ece708d1a13559610eeeec25a5c261a67ee8477285d6f79d3c6a488e30cace",
+      "line_excerpts": [
+        {
+          "start": 71,
+          "end": 78,
+          "text": "71:    @Transactional\n72:    @Override\n73:    public CommandProcessingResult addClientIdentifier(final Long clientId, final JsonCommand command) {\n74:\n75:        this.context.authenticatedUser();\n76:        final ClientIdentifierCommand clientIdentifierCommand = this.clientIdentifierCommandFromApiJsonDeserializer\n77:                .commandFromApiJson(command.json());\n78:        clientIdentifierCommand.validateForCreate();"
+        }
+      ]
+    },
+    {
+      "id": "IDENTIFIER_COMMAND_DESERIALIZER",
+      "path_windows": "\\\\wsl.localhost\\Ubuntu\\root\\ec\\fineract-1.14.0-e1b\\fineract-provider\\src\\main\\java\\org\\apache\\fineract\\portfolio\\client\\serialization\\ClientIdentifierCommandFromApiJsonDeserializer.java",
+      "path_linux": "/root/ec/fineract-1.14.0-e1b/fineract-provider/src/main/java/org/apache/fineract/portfolio/client/serialization/ClientIdentifierCommandFromApiJsonDeserializer.java",
+      "sha256": "72ad833393e08abb26a133db4ff2e0f032bb038b6a4522ca654a9a6dfe5ec06f",
+      "line_excerpts": [
+        {
+          "start": 43,
+          "end": 52,
+          "text": "43:    public static final String DOCUMENT_TYPE_ID = \"documentTypeId\";\n44:    public static final String DOCUMENT_KEY = \"documentKey\";\n45:    public static final String STATUS = \"status\";\n46:    public static final String DESCRIPTION = \"description\";\n47:    public static final String DOCUMENT_DESCRIPTION = \"documentDescription\";\n48:    /**\n49:     * The parameters supported for this command.\n50:     */\n51:    private static final Set<String> SUPPORTED_PARAMETERS = new HashSet<>(\n52:            Arrays.asList(DOCUMENT_TYPE_ID, DOCUMENT_KEY, STATUS, DESCRIPTION));"
+        },
+        {
+          "start": 60,
+          "end": 77,
+          "text": "60:    @Override\n61:    public ClientIdentifierCommand commandFromApiJson(final String json) {\n62:\n63:        if (StringUtils.isBlank(json)) {\n64:            throw new InvalidJsonException();\n65:        }\n66:\n67:        final Type typeOfMap = new TypeToken<Map<String, Object>>() {\n68:\n69:        }.getType();\n70:        this.fromApiJsonHelper.checkForUnsupportedParameters(typeOfMap, json, SUPPORTED_PARAMETERS);\n71:\n72:        final JsonElement element = this.fromApiJsonHelper.parse(json);\n73:        final Long documentTypeId = this.fromApiJsonHelper.extractLongNamed(DOCUMENT_TYPE_ID, element);\n74:        final String documentKey = this.fromApiJsonHelper.extractStringNamed(DOCUMENT_KEY, element);\n75:        final String documentDescription = this.fromApiJsonHelper.extractStringNamed(DOCUMENT_DESCRIPTION, element);\n76:        final String statusString = this.fromApiJsonHelper.extractStringNamed(STATUS, element);\n77:        return new ClientIdentifierCommand(documentTypeId, documentKey, statusString, documentDescription);"
+        }
+      ]
+    },
+    {
+      "id": "UNSUPPORTED_HELPER",
+      "path_windows": "\\\\wsl.localhost\\Ubuntu\\root\\ec\\fineract-1.14.0-e1b\\fineract-core\\src\\main\\java\\org\\apache\\fineract\\infrastructure\\core\\serialization\\FromJsonHelper.java",
+      "path_linux": "/root/ec/fineract-1.14.0-e1b/fineract-core/src/main/java/org/apache/fineract/infrastructure/core/serialization/FromJsonHelper.java",
+      "sha256": "95ff0045cc207f64178bd77d64ac3a2de6849518815b93b5abc97630c0127ca9",
+      "line_excerpts": [
+        {
+          "start": 86,
+          "end": 102,
+          "text": "86:    public void checkForUnsupportedParameters(final Type typeOfMap, final String json, final Collection<String> supportedParams) {\n87:        if (StringUtils.isBlank(json)) {\n88:            throw new InvalidJsonException();\n89:        }\n90:\n91:        final Map<String, Object> requestMap = this.gsonConverter.fromJson(json, typeOfMap);\n92:\n93:        final List<String> unsupportedParameterList = new ArrayList<>();\n94:        for (final String providedParameter : requestMap.keySet()) {\n95:            if (!supportedParams.contains(providedParameter)) {\n96:                unsupportedParameterList.add(providedParameter);\n97:            }\n98:        }\n99:\n100:        if (!unsupportedParameterList.isEmpty()) {\n101:            throw new UnsupportedParameterException(unsupportedParameterList);\n102:        }"
+        }
+      ]
+    }
+  ],
+  "preservation": "原协议、模型输入/输出、标签、运行记录与R3均未修改。新增源码属于事后核读材料，不追溯补给历史模型。"
+}

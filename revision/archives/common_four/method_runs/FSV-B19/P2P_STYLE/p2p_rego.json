@@ -1,0 +1,5 @@
+{
+  "status": "READY",
+  "rego": "package external_pilot\n\nimport rego.v1\n\ndefault allow := false\n\nallow if {\n    not blocked\n}\n\nblocked if {\n    input.trusted.supplierOnHold == true\n    input.trusted.holdType in {\"Invoices\", \"All\"}\n}\n",
+  "reason": "Denies Purchase Order creation when the supplier is on hold with hold type 'Invoices' or 'All', as explicitly documented in the supplier hold policy."
+}

@@ -1,0 +1,838 @@
+{
+  "engine_schema_hash_checks": [
+    {
+      "manifest_path": "/root/ecas_matched_generation_20261014/runtime/scripts/ec_field_security_engine_v2.py",
+      "manifest_sha256": "21f65c64ea26897f62571ac147b48bc6a20c7426a48084f9cda8d0218e42d970",
+      "match": true,
+      "actual_sha256": "21f65c64ea26897f62571ac147b48bc6a20c7426a48084f9cda8d0218e42d970",
+      "local_path": "D:\\lunwen\\EC-CSI投稿\\working\\exploration\\20261014_matched_evidence_labor\\evidence_ablation\\evidence_files\\runtime\\scripts\\ec_field_security_engine_v2.py"
+    },
+    {
+      "manifest_path": "/root/ecas_matched_generation_20261014/runtime/scripts/ec_field_security_engine_v3.py",
+      "manifest_sha256": "bd509670538cb31f7a271b4d6b353a862157fe968c240218db33065c36b980e3",
+      "match": true,
+      "actual_sha256": "bd509670538cb31f7a271b4d6b353a862157fe968c240218db33065c36b980e3",
+      "local_path": "D:\\lunwen\\EC-CSI投稿\\working\\exploration\\20261014_matched_evidence_labor\\evidence_ablation\\evidence_files\\runtime\\scripts\\ec_field_security_engine_v3.py"
+    },
+    {
+      "manifest_path": "/root/ecas_matched_generation_20261014/runtime/EC_FIELD_SECURITY_MODEL_IR_SCHEMA_V3.json",
+      "manifest_sha256": "d9168bf982cc37e44d994268fba54bbd0ed0640afd41e3ceea2a6eaa2eebdac6",
+      "match": true,
+      "actual_sha256": "d9168bf982cc37e44d994268fba54bbd0ed0640afd41e3ceea2a6eaa2eebdac6",
+      "local_path": "D:\\lunwen\\EC-CSI投稿\\working\\exploration\\20261014_matched_evidence_labor\\evidence_ablation\\evidence_files\\runtime\\EC_FIELD_SECURITY_MODEL_IR_SCHEMA_V3.json"
+    },
+    {
+      "manifest_path": "/root/ecas_matched_generation_20261014/runtime/EC_FIELD_SECURITY_POLICY_SCHEMA_V3.json",
+      "manifest_sha256": "10073d09cfa0dcc597fe196da1169b27805ec76349671ce12f725dc3912d2cce",
+      "match": true,
+      "actual_sha256": "10073d09cfa0dcc597fe196da1169b27805ec76349671ce12f725dc3912d2cce",
+      "local_path": "D:\\lunwen\\EC-CSI投稿\\working\\exploration\\20261014_matched_evidence_labor\\evidence_ablation\\evidence_files\\runtime\\EC_FIELD_SECURITY_POLICY_SCHEMA_V3.json"
+    }
+  ],
+  "date": "2026-10-15",
+  "b06_counterexample": {
+    "source": "existing developer_results.rows",
+    "test_id": "p2p_test_reversal_latest_missing",
+    "path": "D:\\lunwen\\EC-CSI投稿\\working\\exploration\\20261014_external_baseline_pilot\\effect_runs\\FSV-B06\\P2P_STYLE\\RESULT.json",
+    "observed_decision": "deny"
+  },
+  "old_originals_modified": false,
+  "source_observations": [
+    {
+      "sha256": "1a4feb547d5ae6475d99d396a8644c24ffd1e627e43921dc4be64fef0e09f8e3",
+      "task": "FSV-B17",
+      "observed_branches": [
+        {
+          "input": {
+            "request": {
+              "body": {
+                "customer": "CUSTOMER-SYNTH-1"
+              }
+            },
+            "trusted": {
+              "customerDisabled": false
+            }
+          },
+          "kind": "documented_rule",
+          "decision": "allow",
+          "expected": "allow",
+          "violations": [],
+          "label": "enabled"
+        },
+        {
+          "input": {
+            "request": {
+              "body": {
+                "customer": "CUSTOMER-SYNTH-1"
+              }
+            },
+            "trusted": {
+              "customerDisabled": true
+            }
+          },
+          "kind": "documented_rule",
+          "decision": "deny",
+          "expected": "deny",
+          "violations": [
+            {
+              "rule_id": "FSV-B17-RULE-01",
+              "code": "bounded_guard_rejected",
+              "detail": "FSV-B17-RULE-01"
+            }
+          ],
+          "label": "disabled"
+        },
+        {
+          "input": {
+            "request": {
+              "body": {
+                "customer": "CUSTOMER-SYNTH-1",
+                "customerDisabled": false
+              }
+            },
+            "trusted": {
+              "customerDisabled": true
+            }
+          },
+          "kind": "engineering_trust_control",
+          "decision": "deny",
+          "expected": "deny",
+          "violations": [
+            {
+              "rule_id": "FSV-B17-RULE-01",
+              "code": "bounded_guard_rejected",
+              "detail": "FSV-B17-RULE-01"
+            }
+          ],
+          "label": "body-disable-spoof"
+        },
+        {
+          "input": {
+            "request": {
+              "body": {
+                "customer": "CUSTOMER-SYNTH-1"
+              }
+            },
+            "trusted": {}
+          },
+          "kind": "engineering_fail_closed_control",
+          "decision": "deny",
+          "expected": "deny",
+          "violations": [
+            {
+              "rule_id": "FSV-B17-RULE-01",
+              "code": "required_input_missing",
+              "detail": "FSV-B17-RULE-01"
+            }
+          ],
+          "label": "missing-trusted"
+        }
+      ],
+      "method": "ECAS_MATCHED",
+      "path": "D:\\lunwen\\EC-CSI投稿\\working\\exploration\\20261014_matched_evidence_labor\\matched_generation\\method_runs\\FSV-B17\\ECAS_MATCHED\\RESULT.json"
+    },
+    {
+      "sha256": "51df3b6b338f71ae4c94f8a9ed25b2475b492f30a89000bd35550febf3f90a2d",
+      "task": "FSV-B17",
+      "observed_branches": [
+        {
+          "input": {
+            "request": {
+              "body": {
+                "customer": "CUSTOMER-SYNTH-1"
+              }
+            },
+            "trusted": {
+              "customerDisabled": false
+            }
+          },
+          "kind": "documented_rule",
+          "decision": "allow",
+          "expected": "allow",
+          "violations": null,
+          "label": "enabled"
+        },
+        {
+          "input": {
+            "request": {
+              "body": {
+                "customer": "CUSTOMER-SYNTH-1"
+              }
+            },
+            "trusted": {
+              "customerDisabled": true
+            }
+          },
+          "kind": "documented_rule",
+          "decision": "deny",
+          "expected": "deny",
+          "violations": null,
+          "label": "disabled"
+        },
+        {
+          "input": {
+            "request": {
+              "body": {
+                "customer": "CUSTOMER-SYNTH-1",
+                "customerDisabled": false
+              }
+            },
+            "trusted": {
+              "customerDisabled": true
+            }
+          },
+          "kind": "engineering_trust_control",
+          "decision": "deny",
+          "expected": "deny",
+          "violations": null,
+          "label": "body-disable-spoof"
+        },
+        {
+          "input": {
+            "request": {
+              "body": {
+                "customer": "CUSTOMER-SYNTH-1"
+              }
+            },
+            "trusted": {}
+          },
+          "kind": "engineering_fail_closed_control",
+          "decision": "allow",
+          "expected": "deny",
+          "violations": null,
+          "label": "missing-trusted"
+        }
+      ],
+      "method": "P2P_STYLE",
+      "path": "D:\\lunwen\\EC-CSI投稿\\working\\exploration\\20261014_matched_evidence_labor\\matched_generation\\method_runs\\FSV-B17\\P2P_STYLE\\RESULT.json"
+    },
+    {
+      "sha256": "972078202a8c6e1da3241323c36fcab249d8cc46c57f47584db78b8461cd8723",
+      "task": "FSV-B17",
+      "observed_branches": [
+        {
+          "input": {
+            "request": {
+              "body": {
+                "customer": "CUSTOMER-SYNTH-1"
+              }
+            },
+            "trusted": {
+              "customerDisabled": false
+            }
+          },
+          "kind": "documented_rule",
+          "decision": "allow",
+          "expected": "allow",
+          "violations": null,
+          "label": "enabled"
+        },
+        {
+          "input": {
+            "request": {
+              "body": {
+                "customer": "CUSTOMER-SYNTH-1"
+              }
+            },
+            "trusted": {
+              "customerDisabled": true
+            }
+          },
+          "kind": "documented_rule",
+          "decision": "deny",
+          "expected": "deny",
+          "violations": null,
+          "label": "disabled"
+        },
+        {
+          "input": {
+            "request": {
+              "body": {
+                "customer": "CUSTOMER-SYNTH-1",
+                "customerDisabled": false
+              }
+            },
+            "trusted": {
+              "customerDisabled": true
+            }
+          },
+          "kind": "engineering_trust_control",
+          "decision": "deny",
+          "expected": "deny",
+          "violations": null,
+          "label": "body-disable-spoof"
+        },
+        {
+          "input": {
+            "request": {
+              "body": {
+                "customer": "CUSTOMER-SYNTH-1"
+              }
+            },
+            "trusted": {}
+          },
+          "kind": "engineering_fail_closed_control",
+          "decision": "allow",
+          "expected": "deny",
+          "violations": null,
+          "label": "missing-trusted"
+        }
+      ],
+      "method": "AUTOPAC_STYLE",
+      "path": "D:\\lunwen\\EC-CSI投稿\\working\\exploration\\20261014_matched_evidence_labor\\matched_generation\\method_runs\\FSV-B17\\AUTOPAC_STYLE\\RESULT.json"
+    },
+    {
+      "sha256": "8a781167ffc84f72d91d3599c92011af4324381dcd47b13ca38e25944fe5e3b7",
+      "task": "FSV-B19",
+      "observed_branches": [
+        {
+          "input": {
+            "request": {
+              "body": {
+                "action": "PURCHASE_ORDER",
+                "supplier": "SUPPLIER-SYNTH-1"
+              }
+            },
+            "trusted": {
+              "supplierOnHold": false,
+              "holdType": ""
+            }
+          },
+          "kind": "documented_rule",
+          "decision": "allow",
+          "expected": "allow",
+          "violations": [],
+          "label": "not-held"
+        },
+        {
+          "input": {
+            "request": {
+              "body": {
+                "action": "PURCHASE_ORDER",
+                "supplier": "SUPPLIER-SYNTH-1"
+              }
+            },
+            "trusted": {
+              "supplierOnHold": true,
+              "holdType": "All"
+            }
+          },
+          "kind": "documented_rule",
+          "decision": "deny",
+          "expected": "deny",
+          "violations": [
+            {
+              "rule_id": "RULE-FSV-B19-001",
+              "code": "bounded_guard_rejected",
+              "detail": "RULE-FSV-B19-001"
+            }
+          ],
+          "label": "held-all"
+        },
+        {
+          "input": {
+            "request": {
+              "body": {
+                "action": "PURCHASE_ORDER",
+                "supplier": "SUPPLIER-SYNTH-1"
+              }
+            },
+            "trusted": {
+              "supplierOnHold": true,
+              "holdType": "Invoices"
+            }
+          },
+          "kind": "documented_rule",
+          "decision": "deny",
+          "expected": "deny",
+          "violations": [
+            {
+              "rule_id": "RULE-FSV-B19-001",
+              "code": "bounded_guard_rejected",
+              "detail": "RULE-FSV-B19-001"
+            }
+          ],
+          "label": "held-invoices"
+        },
+        {
+          "input": {
+            "request": {
+              "body": {
+                "action": "PURCHASE_ORDER",
+                "supplier": "SUPPLIER-SYNTH-1"
+              }
+            },
+            "trusted": {
+              "supplierOnHold": true,
+              "holdType": "Payments"
+            }
+          },
+          "kind": "documented_rule",
+          "decision": "allow",
+          "expected": "allow",
+          "violations": [],
+          "label": "held-payments"
+        },
+        {
+          "input": {
+            "request": {
+              "body": {
+                "action": "PURCHASE_ORDER",
+                "supplier": "SUPPLIER-SYNTH-1"
+              }
+            },
+            "trusted": {
+              "supplierOnHold": true,
+              "holdType": ""
+            }
+          },
+          "kind": "conservative_empty_type_control",
+          "decision": "deny",
+          "expected": "deny",
+          "violations": [
+            {
+              "rule_id": "RULE-FSV-B19-001",
+              "code": "bounded_guard_rejected",
+              "detail": "RULE-FSV-B19-001"
+            }
+          ],
+          "label": "held-empty-type"
+        },
+        {
+          "input": {
+            "request": {
+              "body": {
+                "action": "PURCHASE_ORDER",
+                "supplier": "SUPPLIER-SYNTH-1"
+              }
+            },
+            "trusted": {
+              "supplierOnHold": true,
+              "holdType": "Unknown"
+            }
+          },
+          "kind": "engineering_unknown_type_control",
+          "decision": "deny",
+          "expected": "deny",
+          "violations": [
+            {
+              "rule_id": "RULE-FSV-B19-001",
+              "code": "bounded_guard_rejected",
+              "detail": "RULE-FSV-B19-001"
+            }
+          ],
+          "label": "held-unknown-type"
+        },
+        {
+          "input": {
+            "request": {
+              "body": {
+                "action": "PURCHASE_ORDER",
+                "supplier": "SUPPLIER-SYNTH-1",
+                "holdType": "Payments"
+              }
+            },
+            "trusted": {
+              "supplierOnHold": true,
+              "holdType": "All"
+            }
+          },
+          "kind": "engineering_trust_control",
+          "decision": "deny",
+          "expected": "deny",
+          "violations": [
+            {
+              "rule_id": "RULE-FSV-B19-001",
+              "code": "bounded_guard_rejected",
+              "detail": "RULE-FSV-B19-001"
+            }
+          ],
+          "label": "body-type-spoof"
+        },
+        {
+          "input": {
+            "request": {
+              "body": {
+                "action": "PURCHASE_ORDER",
+                "supplier": "SUPPLIER-SYNTH-1"
+              }
+            },
+            "trusted": {}
+          },
+          "kind": "engineering_fail_closed_control",
+          "decision": "deny",
+          "expected": "deny",
+          "violations": [
+            {
+              "rule_id": "RULE-FSV-B19-001",
+              "code": "required_input_missing",
+              "detail": "RULE-FSV-B19-001"
+            }
+          ],
+          "label": "missing-trusted"
+        }
+      ],
+      "method": "ECAS_MATCHED",
+      "path": "D:\\lunwen\\EC-CSI投稿\\working\\exploration\\20261014_matched_evidence_labor\\matched_generation\\method_runs\\FSV-B19\\ECAS_MATCHED\\RESULT.json"
+    },
+    {
+      "sha256": "9dc5b63621f6c2177d54e7cb079e05306b8b0bc8b4fd846870dc6ca3acc78aa5",
+      "task": "FSV-B19",
+      "observed_branches": [
+        {
+          "input": {
+            "request": {
+              "body": {
+                "action": "PURCHASE_ORDER",
+                "supplier": "SUPPLIER-SYNTH-1"
+              }
+            },
+            "trusted": {
+              "supplierOnHold": false,
+              "holdType": ""
+            }
+          },
+          "kind": "documented_rule",
+          "decision": "allow",
+          "expected": "allow",
+          "violations": null,
+          "label": "not-held"
+        },
+        {
+          "input": {
+            "request": {
+              "body": {
+                "action": "PURCHASE_ORDER",
+                "supplier": "SUPPLIER-SYNTH-1"
+              }
+            },
+            "trusted": {
+              "supplierOnHold": true,
+              "holdType": "All"
+            }
+          },
+          "kind": "documented_rule",
+          "decision": "deny",
+          "expected": "deny",
+          "violations": null,
+          "label": "held-all"
+        },
+        {
+          "input": {
+            "request": {
+              "body": {
+                "action": "PURCHASE_ORDER",
+                "supplier": "SUPPLIER-SYNTH-1"
+              }
+            },
+            "trusted": {
+              "supplierOnHold": true,
+              "holdType": "Invoices"
+            }
+          },
+          "kind": "documented_rule",
+          "decision": "deny",
+          "expected": "deny",
+          "violations": null,
+          "label": "held-invoices"
+        },
+        {
+          "input": {
+            "request": {
+              "body": {
+                "action": "PURCHASE_ORDER",
+                "supplier": "SUPPLIER-SYNTH-1"
+              }
+            },
+            "trusted": {
+              "supplierOnHold": true,
+              "holdType": "Payments"
+            }
+          },
+          "kind": "documented_rule",
+          "decision": "allow",
+          "expected": "allow",
+          "violations": null,
+          "label": "held-payments"
+        },
+        {
+          "input": {
+            "request": {
+              "body": {
+                "action": "PURCHASE_ORDER",
+                "supplier": "SUPPLIER-SYNTH-1"
+              }
+            },
+            "trusted": {
+              "supplierOnHold": true,
+              "holdType": ""
+            }
+          },
+          "kind": "conservative_empty_type_control",
+          "decision": "allow",
+          "expected": "deny",
+          "violations": null,
+          "label": "held-empty-type"
+        },
+        {
+          "input": {
+            "request": {
+              "body": {
+                "action": "PURCHASE_ORDER",
+                "supplier": "SUPPLIER-SYNTH-1"
+              }
+            },
+            "trusted": {
+              "supplierOnHold": true,
+              "holdType": "Unknown"
+            }
+          },
+          "kind": "engineering_unknown_type_control",
+          "decision": "allow",
+          "expected": "deny",
+          "violations": null,
+          "label": "held-unknown-type"
+        },
+        {
+          "input": {
+            "request": {
+              "body": {
+                "action": "PURCHASE_ORDER",
+                "supplier": "SUPPLIER-SYNTH-1",
+                "holdType": "Payments"
+              }
+            },
+            "trusted": {
+              "supplierOnHold": true,
+              "holdType": "All"
+            }
+          },
+          "kind": "engineering_trust_control",
+          "decision": "deny",
+          "expected": "deny",
+          "violations": null,
+          "label": "body-type-spoof"
+        },
+        {
+          "input": {
+            "request": {
+              "body": {
+                "action": "PURCHASE_ORDER",
+                "supplier": "SUPPLIER-SYNTH-1"
+              }
+            },
+            "trusted": {}
+          },
+          "kind": "engineering_fail_closed_control",
+          "decision": "allow",
+          "expected": "deny",
+          "violations": null,
+          "label": "missing-trusted"
+        }
+      ],
+      "method": "P2P_STYLE",
+      "path": "D:\\lunwen\\EC-CSI投稿\\working\\exploration\\20261014_matched_evidence_labor\\matched_generation\\method_runs\\FSV-B19\\P2P_STYLE\\RESULT.json"
+    },
+    {
+      "sha256": "a6b596082892264a7f63985070de49e265af76507c83e80100499fc1b69691ba",
+      "task": "FSV-B19",
+      "observed_branches": [
+        {
+          "input": {
+            "request": {
+              "body": {
+                "action": "PURCHASE_ORDER",
+                "supplier": "SUPPLIER-SYNTH-1"
+              }
+            },
+            "trusted": {
+              "supplierOnHold": false,
+              "holdType": ""
+            }
+          },
+          "kind": "documented_rule",
+          "decision": "allow",
+          "expected": "allow",
+          "violations": null,
+          "label": "not-held"
+        },
+        {
+          "input": {
+            "request": {
+              "body": {
+                "action": "PURCHASE_ORDER",
+                "supplier": "SUPPLIER-SYNTH-1"
+              }
+            },
+            "trusted": {
+              "supplierOnHold": true,
+              "holdType": "All"
+            }
+          },
+          "kind": "documented_rule",
+          "decision": "deny",
+          "expected": "deny",
+          "violations": null,
+          "label": "held-all"
+        },
+        {
+          "input": {
+            "request": {
+              "body": {
+                "action": "PURCHASE_ORDER",
+                "supplier": "SUPPLIER-SYNTH-1"
+              }
+            },
+            "trusted": {
+              "supplierOnHold": true,
+              "holdType": "Invoices"
+            }
+          },
+          "kind": "documented_rule",
+          "decision": "deny",
+          "expected": "deny",
+          "violations": null,
+          "label": "held-invoices"
+        },
+        {
+          "input": {
+            "request": {
+              "body": {
+                "action": "PURCHASE_ORDER",
+                "supplier": "SUPPLIER-SYNTH-1"
+              }
+            },
+            "trusted": {
+              "supplierOnHold": true,
+              "holdType": "Payments"
+            }
+          },
+          "kind": "documented_rule",
+          "decision": "allow",
+          "expected": "allow",
+          "violations": null,
+          "label": "held-payments"
+        },
+        {
+          "input": {
+            "request": {
+              "body": {
+                "action": "PURCHASE_ORDER",
+                "supplier": "SUPPLIER-SYNTH-1"
+              }
+            },
+            "trusted": {
+              "supplierOnHold": true,
+              "holdType": ""
+            }
+          },
+          "kind": "conservative_empty_type_control",
+          "decision": "allow",
+          "expected": "deny",
+          "violations": null,
+          "label": "held-empty-type"
+        },
+        {
+          "input": {
+            "request": {
+              "body": {
+                "action": "PURCHASE_ORDER",
+                "supplier": "SUPPLIER-SYNTH-1"
+              }
+            },
+            "trusted": {
+              "supplierOnHold": true,
+              "holdType": "Unknown"
+            }
+          },
+          "kind": "engineering_unknown_type_control",
+          "decision": "allow",
+          "expected": "deny",
+          "violations": null,
+          "label": "held-unknown-type"
+        },
+        {
+          "input": {
+            "request": {
+              "body": {
+                "action": "PURCHASE_ORDER",
+                "supplier": "SUPPLIER-SYNTH-1",
+                "holdType": "Payments"
+              }
+            },
+            "trusted": {
+              "supplierOnHold": true,
+              "holdType": "All"
+            }
+          },
+          "kind": "engineering_trust_control",
+          "decision": "deny",
+          "expected": "deny",
+          "violations": null,
+          "label": "body-type-spoof"
+        },
+        {
+          "input": {
+            "request": {
+              "body": {
+                "action": "PURCHASE_ORDER",
+                "supplier": "SUPPLIER-SYNTH-1"
+              }
+            },
+            "trusted": {}
+          },
+          "kind": "engineering_fail_closed_control",
+          "decision": "allow",
+          "expected": "deny",
+          "violations": null,
+          "label": "missing-trusted"
+        }
+      ],
+      "method": "AUTOPAC_STYLE",
+      "path": "D:\\lunwen\\EC-CSI投稿\\working\\exploration\\20261014_matched_evidence_labor\\matched_generation\\method_runs\\FSV-B19\\AUTOPAC_STYLE\\RESULT.json"
+    }
+  ],
+  "new_runtime_evaluations": 0,
+  "external_model_calls": 0,
+  "status": "STATIC_AUDIT_COMPLETED_RUNTIME_COUNTERFACTUALS_PENDING",
+  "static_predictions": [
+    {
+      "classification": "STATIC_PREDICTION_NOT_RUN_OR_NORMATIVE_BUSINESS_LABEL",
+      "task": "FSV-B19",
+      "expected_label": null,
+      "prediction": "allow",
+      "trusted": {
+        "holdType": "Payments"
+      }
+    },
+    {
+      "classification": "STATIC_PREDICTION_NOT_RUN_OR_NORMATIVE_BUSINESS_LABEL",
+      "task": "FSV-B19",
+      "expected_label": null,
+      "prediction": "allow",
+      "trusted": {
+        "supplierOnHold": false
+      }
+    }
+  ],
+  "parameter_counterfactual": {
+    "counterfactual": "skip",
+    "path": "rules[0].params.on_missing",
+    "original": "deny",
+    "schema_allows": true,
+    "full_admission_static_prediction": "ADMITTED",
+    "actual_run_status": "PENDING",
+    "runtime_missing_trusted_static_prediction": "allow"
+  },
+  "actual_followup": {
+    "new_policy_executions_by_independent_auditor": 0,
+    "new_model_calls": 0,
+    "independent_checks": 2191,
+    "initial_static_predictions_retained_as_original": true,
+    "run_id": "missing-state-mechanism-v1",
+    "audit_path": "MECHANISM_INDEPENDENT_AUDIT.json",
+    "status": "SUCCEEDED_AND_INDEPENDENT_RAW_RECONCILIATION_PASSED",
+    "audit_sha256": "79fcca0a9c871644ed3099d1500aee76a194e07eb39ffda80fd2f7f74a2dafa2",
+    "run_observations": 144
+  }
+}

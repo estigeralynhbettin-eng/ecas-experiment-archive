@@ -1,0 +1,531 @@
+{
+  "classification": "INDEPENDENT_ZERO_API_RESUME_AUDIT",
+  "auditor": "root/resume_audit",
+  "audited_at": "2026-10-15T00:47:50.745057+00:00",
+  "status": "PASS",
+  "checks_passed": 79,
+  "checks_total": 79,
+  "blockers": [],
+  "scope_id": "ECAS-MATCHED-EVIDENCE-LABOR-20261014-01",
+  "resume_run_id": "matched-generation-main-resume-v2",
+  "resume_request_path": "/mnt/d/lunwen/EC-CSI投稿/working/exploration/20261014_matched_evidence_labor/matched_generation/matched-generation-main-resume-v2.request.json",
+  "request_sha256_at_audit": "c72959de0acfb5a36d17b8f70b1ca2055f668594af464678faa5507aa8f4d702",
+  "actual_calls_audited": 13,
+  "new_API_calls": 0,
+  "automated_API_retries": 0,
+  "final_evaluation_read": false,
+  "source_reference_test_count": 6,
+  "t0_checks": 65,
+  "dispatch_note": "Root must refresh project T0 pointer, true MCP gate and request hashes before paid start. This audit does not authorize or start a run.",
+  "gate_generated_at_at_audit": "2026-10-15T00:47:04.259Z",
+  "checks": [
+    {
+      "check": "stopped_pre_evaluation",
+      "pass": true,
+      "detail": null
+    },
+    {
+      "check": "generation_not_frozen_yet",
+      "pass": true,
+      "detail": null
+    },
+    {
+      "check": "13_completed_attempts_retry_zero",
+      "pass": true,
+      "detail": null
+    },
+    {
+      "check": "cache_hashes_1",
+      "pass": true,
+      "detail": null
+    },
+    {
+      "check": "raw_normalized_equals_stored_1",
+      "pass": true,
+      "detail": null
+    },
+    {
+      "check": "current_prompt_exact_1",
+      "pass": true,
+      "detail": null
+    },
+    {
+      "check": "provider_tokens_within_caps_1",
+      "pass": true,
+      "detail": null
+    },
+    {
+      "check": "cache_hashes_2",
+      "pass": true,
+      "detail": null
+    },
+    {
+      "check": "raw_normalized_equals_stored_2",
+      "pass": true,
+      "detail": null
+    },
+    {
+      "check": "current_prompt_exact_2",
+      "pass": true,
+      "detail": null
+    },
+    {
+      "check": "provider_tokens_within_caps_2",
+      "pass": true,
+      "detail": null
+    },
+    {
+      "check": "cache_hashes_3",
+      "pass": true,
+      "detail": null
+    },
+    {
+      "check": "raw_normalized_equals_stored_3",
+      "pass": true,
+      "detail": null
+    },
+    {
+      "check": "current_prompt_exact_3",
+      "pass": true,
+      "detail": null
+    },
+    {
+      "check": "provider_tokens_within_caps_3",
+      "pass": true,
+      "detail": null
+    },
+    {
+      "check": "cache_hashes_4",
+      "pass": true,
+      "detail": null
+    },
+    {
+      "check": "raw_normalized_equals_stored_4",
+      "pass": true,
+      "detail": null
+    },
+    {
+      "check": "current_prompt_exact_4",
+      "pass": true,
+      "detail": null
+    },
+    {
+      "check": "provider_tokens_within_caps_4",
+      "pass": true,
+      "detail": null
+    },
+    {
+      "check": "cache_hashes_5",
+      "pass": true,
+      "detail": null
+    },
+    {
+      "check": "raw_normalized_equals_stored_5",
+      "pass": true,
+      "detail": null
+    },
+    {
+      "check": "current_prompt_exact_5",
+      "pass": true,
+      "detail": null
+    },
+    {
+      "check": "provider_tokens_within_caps_5",
+      "pass": true,
+      "detail": null
+    },
+    {
+      "check": "cache_hashes_6",
+      "pass": true,
+      "detail": null
+    },
+    {
+      "check": "raw_normalized_equals_stored_6",
+      "pass": true,
+      "detail": null
+    },
+    {
+      "check": "current_prompt_exact_6",
+      "pass": true,
+      "detail": null
+    },
+    {
+      "check": "provider_tokens_within_caps_6",
+      "pass": true,
+      "detail": null
+    },
+    {
+      "check": "cache_hashes_7",
+      "pass": true,
+      "detail": null
+    },
+    {
+      "check": "raw_normalized_equals_stored_7",
+      "pass": true,
+      "detail": null
+    },
+    {
+      "check": "current_prompt_exact_7",
+      "pass": true,
+      "detail": null
+    },
+    {
+      "check": "provider_tokens_within_caps_7",
+      "pass": true,
+      "detail": null
+    },
+    {
+      "check": "cache_hashes_8",
+      "pass": true,
+      "detail": null
+    },
+    {
+      "check": "raw_normalized_equals_stored_8",
+      "pass": true,
+      "detail": null
+    },
+    {
+      "check": "current_prompt_exact_8",
+      "pass": true,
+      "detail": null
+    },
+    {
+      "check": "provider_tokens_within_caps_8",
+      "pass": true,
+      "detail": null
+    },
+    {
+      "check": "cache_hashes_9",
+      "pass": true,
+      "detail": null
+    },
+    {
+      "check": "raw_normalized_equals_stored_9",
+      "pass": true,
+      "detail": null
+    },
+    {
+      "check": "current_prompt_exact_9",
+      "pass": true,
+      "detail": null
+    },
+    {
+      "check": "provider_tokens_within_caps_9",
+      "pass": true,
+      "detail": null
+    },
+    {
+      "check": "cache_hashes_10",
+      "pass": true,
+      "detail": null
+    },
+    {
+      "check": "raw_normalized_equals_stored_10",
+      "pass": true,
+      "detail": null
+    },
+    {
+      "check": "current_prompt_exact_10",
+      "pass": true,
+      "detail": null
+    },
+    {
+      "check": "provider_tokens_within_caps_10",
+      "pass": true,
+      "detail": null
+    },
+    {
+      "check": "cache_hashes_11",
+      "pass": true,
+      "detail": null
+    },
+    {
+      "check": "raw_normalized_equals_stored_11",
+      "pass": true,
+      "detail": null
+    },
+    {
+      "check": "current_prompt_exact_11",
+      "pass": true,
+      "detail": null
+    },
+    {
+      "check": "provider_tokens_within_caps_11",
+      "pass": true,
+      "detail": null
+    },
+    {
+      "check": "cache_hashes_12",
+      "pass": true,
+      "detail": null
+    },
+    {
+      "check": "raw_normalized_equals_stored_12",
+      "pass": true,
+      "detail": null
+    },
+    {
+      "check": "current_prompt_exact_12",
+      "pass": true,
+      "detail": null
+    },
+    {
+      "check": "provider_tokens_within_caps_12",
+      "pass": true,
+      "detail": null
+    },
+    {
+      "check": "cache_hashes_13",
+      "pass": true,
+      "detail": null
+    },
+    {
+      "check": "raw_normalized_equals_stored_13",
+      "pass": true,
+      "detail": null
+    },
+    {
+      "check": "current_prompt_exact_13",
+      "pass": true,
+      "detail": null
+    },
+    {
+      "check": "provider_tokens_within_caps_13",
+      "pass": true,
+      "detail": null
+    },
+    {
+      "check": "all_as_run_snapshot_hashes",
+      "pass": true,
+      "detail": {
+        "files": 205
+      }
+    },
+    {
+      "check": "state_and_ledger_exact_as_run",
+      "pass": true,
+      "detail": null
+    },
+    {
+      "check": "developer_tests_exact_as_run",
+      "pass": true,
+      "detail": null
+    },
+    {
+      "check": "developer_policy_exact_as_run",
+      "pass": true,
+      "detail": null
+    },
+    {
+      "check": "real_locator_t1_qty_within_allowance",
+      "pass": true,
+      "detail": {
+        "original_reference": "VIS-FSV-B13-01#Limit Percent",
+        "accepted": true,
+        "binding_kind": "EXACT_NORMALIZED_VISIBLE_HEADING",
+        "base_evidence_id": "VIS-FSV-B13-01",
+        "original_fragment": "Limit Percent",
+        "source_id": "erpnext-stock-settings.html",
+        "source_metadata_sha256": "F866B7A7F90AEFCB06DA623C3F9EF25F5524D4261887FC80FFDE3AAA76A530EA",
+        "visible_text_sha256": "26e91efd1a8efa893d8b1f991477c3a4717a31205e5252c739df4ba8056c7cfa",
+        "normalized_fragment": "limit percent",
+        "heading_locations": [
+          {
+            "line_number": 29,
+            "original_heading": "Limit Percent"
+          }
+        ],
+        "original_source_reference_preserved": true
+      }
+    },
+    {
+      "check": "real_locator_t2_qty_exceeds_allowance_with_authorized_role",
+      "pass": true,
+      "detail": {
+        "original_reference": "VIS-FSV-B13-01#Role Allowed to Over Deliver/Receive",
+        "accepted": true,
+        "binding_kind": "EXACT_NORMALIZED_VISIBLE_HEADING",
+        "base_evidence_id": "VIS-FSV-B13-01",
+        "original_fragment": "Role Allowed to Over Deliver/Receive",
+        "source_id": "erpnext-stock-settings.html",
+        "source_metadata_sha256": "F866B7A7F90AEFCB06DA623C3F9EF25F5524D4261887FC80FFDE3AAA76A530EA",
+        "visible_text_sha256": "26e91efd1a8efa893d8b1f991477c3a4717a31205e5252c739df4ba8056c7cfa",
+        "normalized_fragment": "role allowed to over deliver/receive",
+        "heading_locations": [
+          {
+            "line_number": 33,
+            "original_heading": "Role Allowed to Over Deliver/Receive"
+          }
+        ],
+        "original_source_reference_preserved": true
+      }
+    },
+    {
+      "check": "real_locator_t3_qty_exceeds_allowance_without_authorized_role",
+      "pass": true,
+      "detail": {
+        "original_reference": "VIS-FSV-B13-01#Limit Percent",
+        "accepted": true,
+        "binding_kind": "EXACT_NORMALIZED_VISIBLE_HEADING",
+        "base_evidence_id": "VIS-FSV-B13-01",
+        "original_fragment": "Limit Percent",
+        "source_id": "erpnext-stock-settings.html",
+        "source_metadata_sha256": "F866B7A7F90AEFCB06DA623C3F9EF25F5524D4261887FC80FFDE3AAA76A530EA",
+        "visible_text_sha256": "26e91efd1a8efa893d8b1f991477c3a4717a31205e5252c739df4ba8056c7cfa",
+        "normalized_fragment": "limit percent",
+        "heading_locations": [
+          {
+            "line_number": 29,
+            "original_heading": "Limit Percent"
+          }
+        ],
+        "original_source_reference_preserved": true
+      }
+    },
+    {
+      "check": "real_locator_t4_qty_equals_maximum_allowance",
+      "pass": true,
+      "detail": {
+        "original_reference": "VIS-FSV-B13-01#Limit Percent",
+        "accepted": true,
+        "binding_kind": "EXACT_NORMALIZED_VISIBLE_HEADING",
+        "base_evidence_id": "VIS-FSV-B13-01",
+        "original_fragment": "Limit Percent",
+        "source_id": "erpnext-stock-settings.html",
+        "source_metadata_sha256": "F866B7A7F90AEFCB06DA623C3F9EF25F5524D4261887FC80FFDE3AAA76A530EA",
+        "visible_text_sha256": "26e91efd1a8efa893d8b1f991477c3a4717a31205e5252c739df4ba8056c7cfa",
+        "normalized_fragment": "limit percent",
+        "heading_locations": [
+          {
+            "line_number": 29,
+            "original_heading": "Limit Percent"
+          }
+        ],
+        "original_source_reference_preserved": true
+      }
+    },
+    {
+      "check": "real_locator_t5_qty_exceeds_allowance_by_one_without_authorized_role",
+      "pass": true,
+      "detail": {
+        "original_reference": "VIS-FSV-B13-01#Role Allowed to Over Deliver/Receive",
+        "accepted": true,
+        "binding_kind": "EXACT_NORMALIZED_VISIBLE_HEADING",
+        "base_evidence_id": "VIS-FSV-B13-01",
+        "original_fragment": "Role Allowed to Over Deliver/Receive",
+        "source_id": "erpnext-stock-settings.html",
+        "source_metadata_sha256": "F866B7A7F90AEFCB06DA623C3F9EF25F5524D4261887FC80FFDE3AAA76A530EA",
+        "visible_text_sha256": "26e91efd1a8efa893d8b1f991477c3a4717a31205e5252c739df4ba8056c7cfa",
+        "normalized_fragment": "role allowed to over deliver/receive",
+        "heading_locations": [
+          {
+            "line_number": 33,
+            "original_heading": "Role Allowed to Over Deliver/Receive"
+          }
+        ],
+        "original_source_reference_preserved": true
+      }
+    },
+    {
+      "check": "real_locator_t6_qty_exceeds_allowance_with_authorized_role_false_edge_case",
+      "pass": true,
+      "detail": {
+        "original_reference": "VIS-FSV-B13-01#Role Allowed to Over Deliver/Receive",
+        "accepted": true,
+        "binding_kind": "EXACT_NORMALIZED_VISIBLE_HEADING",
+        "base_evidence_id": "VIS-FSV-B13-01",
+        "original_fragment": "Role Allowed to Over Deliver/Receive",
+        "source_id": "erpnext-stock-settings.html",
+        "source_metadata_sha256": "F866B7A7F90AEFCB06DA623C3F9EF25F5524D4261887FC80FFDE3AAA76A530EA",
+        "visible_text_sha256": "26e91efd1a8efa893d8b1f991477c3a4717a31205e5252c739df4ba8056c7cfa",
+        "normalized_fragment": "role allowed to over deliver/receive",
+        "heading_locations": [
+          {
+            "line_number": 33,
+            "original_heading": "Role Allowed to Over Deliver/Receive"
+          }
+        ],
+        "original_source_reference_preserved": true
+      }
+    },
+    {
+      "check": "source_control_unknown_id",
+      "pass": true,
+      "detail": null
+    },
+    {
+      "check": "source_control_unknown_fragment",
+      "pass": true,
+      "detail": null
+    },
+    {
+      "check": "source_control_empty_fragment",
+      "pass": true,
+      "detail": null
+    },
+    {
+      "check": "source_control_known_base",
+      "pass": true,
+      "detail": null
+    },
+    {
+      "check": "explicit_resume_gate",
+      "pass": true,
+      "detail": null
+    },
+    {
+      "check": "resume_negative_running",
+      "pass": true,
+      "detail": null
+    },
+    {
+      "check": "resume_negative_evaluation_read",
+      "pass": true,
+      "detail": null
+    },
+    {
+      "check": "resume_negative_raw_hash_changed",
+      "pass": true,
+      "detail": null
+    },
+    {
+      "check": "resume_negative_unresolved_attempt",
+      "pass": true,
+      "detail": null
+    },
+    {
+      "check": "current_frozen_input_hashes",
+      "pass": true,
+      "detail": {
+        "files": 67,
+        "mismatches": []
+      }
+    },
+    {
+      "check": "latest_t0_v6_identity",
+      "pass": true,
+      "detail": {
+        "observations": 65,
+        "receipt_sha256": "e850c1250f729f09fd310c6d2b257c0721bd2e2ec44fd5d2a27f88072a489eaa"
+      }
+    },
+    {
+      "check": "t0_manifest_exact",
+      "pass": true,
+      "detail": null
+    },
+    {
+      "check": "resume_request_identity",
+      "pass": true,
+      "detail": null
+    },
+    {
+      "check": "request_frozen_inputs_current",
+      "pass": true,
+      "detail": {
+        "files": 74,
+        "mismatches": []
+      }
+    }
+  ]
+}

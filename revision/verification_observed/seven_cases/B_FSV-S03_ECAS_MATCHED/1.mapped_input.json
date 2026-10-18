@@ -1,0 +1,21 @@
+{
+  "request": {
+    "body": {
+      "age": "30",
+      "firstName": "Synthetic",
+      "isDependent": false,
+      "relationshipId": 1
+    }
+  },
+  "trusted": {},
+  "subject": {
+    "id": "authenticated_api_caller",
+    "role": "authenticated_api_caller"
+  },
+  "action": "POST /v1/clients/{clientId}/familymembers",
+  "resource": {
+    "id": "Fineract:1.14.0",
+    "system": "Fineract",
+    "version": "1.14.0"
+  }
+}

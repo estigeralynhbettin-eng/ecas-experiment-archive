@@ -1,0 +1,5 @@
+{
+  "status": "READY",
+  "rego": "package external_pilot\n\nimport rego.v1\n\ndefault allow := false\n\nallow if {\n    input.subject.id == \"authenticated_api_caller\"\n    input.subject.role == \"authenticated_api_caller\"\n    input.action == \"POST /api/resource/Purchase Order\"\n    input.resource.id == \"ERPNext:16.0.0\"\n    not blocked_supplier\n}\n\nblocked_supplier if {\n    input.trusted.supplierOnHold == true\n    input.trusted.holdType in {\"Invoices\", \"All\"}\n}",
+  "reason": "VIS-FSV-B19-01 states ERPNext blocks Purchase Orders for suppliers on hold with holdType Invoices or All; policy allows the target operation otherwise."
+}

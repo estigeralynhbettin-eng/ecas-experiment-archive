@@ -1,0 +1,113 @@
+{
+  "parent_id": "FSV-S04__three_case_v1",
+  "case": "FSV-S04",
+  "configuration": "three_case_v1",
+  "row_id": "FSV-S04__three_case_v1__source_locator_hash_unresolvable",
+  "variant": "source_locator_hash_unresolvable",
+  "classification": "CONSTRUCTED_SOURCE_AUTHENTICITY_CHALLENGE",
+  "expected_full": "admit",
+  "notes": "Inventory fields have valid shape but source identity is intentionally unresolvable; source-file resolution is not performed by the gate",
+  "source_parent_candidate": "/root/ecas_evidence_ablation_20261014/inputs/FSV-S04__three_case_v1/candidate.json",
+  "source_parent_contract": "/root/ecas_evidence_ablation_20261014/inputs/FSV-S04__three_case_v1/contract.json",
+  "candidate_sha256": "61100a221ee3fd6dca2ea31994cae0f377dbcf98e49c1c9963470917476dcf8d",
+  "contract_sha256": "8c9d4fc0c928f696abac59f2a2a58195d74afeedbccbdcf1e6d97c1a313faf9e",
+  "output_folder": "/root/ecas_evidence_ablation_20261014/outputs/FSV-S04__three_case_v1__source_locator_hash_unresolvable",
+  "full_executed": true,
+  "shape_executed": true,
+  "ir_status": "COMPILED",
+  "contract_shape_valid": true,
+  "full_status": "ADMITTED",
+  "shape_status": "COMPILED_NO_INVENTORY",
+  "eligible_admission_contrast": true,
+  "full_evaluations": [
+    {
+      "fixture_id": "FSV-S04-OL-01",
+      "fixture_class": "ARCHIVED_SYNTHETIC_REQUEST",
+      "expected": "allow",
+      "actual": {
+        "policy_id": "POL-FSV-S04-LEAD-EMAIL-FMT",
+        "decision": "allow",
+        "fail_closed": true,
+        "violations": []
+      },
+      "correct": true
+    },
+    {
+      "fixture_id": "FSV-S04-OI-01",
+      "fixture_class": "ARCHIVED_SYNTHETIC_REQUEST",
+      "expected": "deny",
+      "actual": {
+        "policy_id": "POL-FSV-S04-LEAD-EMAIL-FMT",
+        "decision": "deny",
+        "fail_closed": true,
+        "violations": [
+          {
+            "rule_id": "RULE-LEAD-EMAIL-FMT",
+            "code": "validator_rejected",
+            "detail": "email_basic_v1"
+          }
+        ]
+      },
+      "correct": true
+    },
+    {
+      "fixture_id": "SYNTH-MISSING-TRUSTED",
+      "fixture_class": "CONSTRUCTED_MISSING_CONTEXT_CONTROL",
+      "expected": null,
+      "actual": {
+        "policy_id": "POL-FSV-S04-LEAD-EMAIL-FMT",
+        "decision": "allow",
+        "fail_closed": true,
+        "violations": []
+      },
+      "correct": null
+    }
+  ],
+  "shape_evaluations": [
+    {
+      "fixture_id": "FSV-S04-OL-01",
+      "fixture_class": "ARCHIVED_SYNTHETIC_REQUEST",
+      "expected": "allow",
+      "actual": {
+        "policy_id": "POL-FSV-S04-LEAD-EMAIL-FMT",
+        "decision": "allow",
+        "fail_closed": true,
+        "violations": []
+      },
+      "correct": true
+    },
+    {
+      "fixture_id": "FSV-S04-OI-01",
+      "fixture_class": "ARCHIVED_SYNTHETIC_REQUEST",
+      "expected": "deny",
+      "actual": {
+        "policy_id": "POL-FSV-S04-LEAD-EMAIL-FMT",
+        "decision": "deny",
+        "fail_closed": true,
+        "violations": [
+          {
+            "rule_id": "RULE-LEAD-EMAIL-FMT",
+            "code": "validator_rejected",
+            "detail": "email_basic_v1"
+          }
+        ]
+      },
+      "correct": true
+    },
+    {
+      "fixture_id": "SYNTH-MISSING-TRUSTED",
+      "fixture_class": "CONSTRUCTED_MISSING_CONTEXT_CONTROL",
+      "expected": null,
+      "actual": {
+        "policy_id": "POL-FSV-S04-LEAD-EMAIL-FMT",
+        "decision": "allow",
+        "fail_closed": true,
+        "violations": []
+      },
+      "correct": null
+    }
+  ],
+  "original_pair_correct": null,
+  "full_execution_errors": 0,
+  "shape_execution_errors": 0
+}

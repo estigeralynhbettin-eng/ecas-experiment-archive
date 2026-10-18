@@ -1,0 +1,9 @@
+{
+  "status": "PASS",
+  "scope_id": "ECAS-SOURCE-RULE-CHAIN-20261015-01",
+  "run_id": "source-rule-chain-t0-v1",
+  "runtime_lane": "/root/ecas_source_rule_chain_20261015",
+  "receipt_path": "T0_RECEIPT.json",
+  "receipt_sha256": "54675a65b719633b65d9ed85f292411207c64058ef5ebc32166b793ca98f6737",
+  "completed_at": "2026-10-15T04:09:16.826513+00:00"
+}

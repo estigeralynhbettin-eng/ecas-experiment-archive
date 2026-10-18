@@ -1,0 +1,985 @@
+{
+  "status": "PASS",
+  "scope_id": "ECAS-TYPED-IR-SEMANTIC-JUDGE-CONTROL-20261014-01",
+  "completed_at": "2026-10-15T01:06:22.854935+00:00",
+  "model_calls_by_builder": 0,
+  "check_count": 185,
+  "checks": [
+    {
+      "check": "frozen_inputs_unchanged",
+      "pass": true,
+      "detail": null
+    },
+    {
+      "check": "main_observed_managed_run_succeeded",
+      "pass": true,
+      "detail": null
+    },
+    {
+      "check": "pilot_observed_managed_run_succeeded",
+      "pass": true,
+      "detail": null
+    },
+    {
+      "check": "exact_four_calls_and_thirty_main_attempts",
+      "pass": true,
+      "detail": null
+    },
+    {
+      "check": "global_attempt_indices_not_reset",
+      "pass": true,
+      "detail": null
+    },
+    {
+      "check": "pilot_exactly_reused_not_recalled",
+      "pass": true,
+      "detail": null
+    },
+    {
+      "check": "main_frozen_ledger_same_as_approval",
+      "pass": true,
+      "detail": null
+    },
+    {
+      "check": "source_snapshot_unchanged_unchanged_IR_runtime_EC_EVIDENCE_CONTRACT_SCHEMA_V2.json",
+      "pass": true,
+      "detail": null
+    },
+    {
+      "check": "source_snapshot_unchanged_unchanged_IR_runtime_EC_EVIDENCE_CONTRACT_SCHEMA_V3.json",
+      "pass": true,
+      "detail": null
+    },
+    {
+      "check": "source_snapshot_unchanged_unchanged_IR_runtime_EC_FIELD_SECURITY_MODEL_IR_SCHEMA_V2.json",
+      "pass": true,
+      "detail": null
+    },
+    {
+      "check": "source_snapshot_unchanged_unchanged_IR_runtime_EC_FIELD_SECURITY_MODEL_IR_SCHEMA_V3.json",
+      "pass": true,
+      "detail": null
+    },
+    {
+      "check": "source_snapshot_unchanged_unchanged_IR_runtime_EC_FIELD_SECURITY_POLICY_SCHEMA_V2.json",
+      "pass": true,
+      "detail": null
+    },
+    {
+      "check": "source_snapshot_unchanged_unchanged_IR_runtime_EC_FIELD_SECURITY_POLICY_SCHEMA_V3.json",
+      "pass": true,
+      "detail": null
+    },
+    {
+      "check": "source_snapshot_unchanged_unchanged_IR_runtime_EC_FIELD_SECURITY_PROPOSAL_SCHEMA_V2.json",
+      "pass": true,
+      "detail": null
+    },
+    {
+      "check": "source_snapshot_unchanged_unchanged_IR_runtime_EC_FIELD_SECURITY_PROPOSAL_SCHEMA_V3.json",
+      "pass": true,
+      "detail": null
+    },
+    {
+      "check": "source_snapshot_unchanged_unchanged_IR_runtime_ec_field_security_engine_v2.py",
+      "pass": true,
+      "detail": null
+    },
+    {
+      "check": "source_snapshot_unchanged_unchanged_IR_runtime_ec_field_security_engine_v3.py",
+      "pass": true,
+      "detail": null
+    },
+    {
+      "check": "source_snapshot_unchanged_unchanged_IR_runtime_SECURITY_PRIMITIVE_CATALOG_V1.json",
+      "pass": true,
+      "detail": null
+    },
+    {
+      "check": "source_snapshot_unchanged_unchanged_IR_runtime_SECURITY_PRIMITIVE_CATALOG_V2.json",
+      "pass": true,
+      "detail": null
+    },
+    {
+      "check": "source_snapshot_unchanged_shared_public_all_15_operation_semantics_DOCUMENTED_OPERATOR_SEMANTICS.json",
+      "pass": true,
+      "detail": null
+    },
+    {
+      "check": "source_snapshot_unchanged_matched_generation_public_packet_and_target_objective_packet.json",
+      "pass": true,
+      "detail": null
+    },
+    {
+      "check": "source_snapshot_unchanged_same_archived_typed_IR_parent_candidate_A.json",
+      "pass": true,
+      "detail": null
+    },
+    {
+      "check": "source_snapshot_unchanged_original_contract_not_sent_to_judge_A.json",
+      "pass": true,
+      "detail": null
+    },
+    {
+      "check": "source_snapshot_unchanged_same_archived_typed_IR_parent_candidate_B.json",
+      "pass": true,
+      "detail": null
+    },
+    {
+      "check": "source_snapshot_unchanged_original_contract_not_sent_to_judge_B.json",
+      "pass": true,
+      "detail": null
+    },
+    {
+      "check": "source_snapshot_unchanged_matched_generation_public_packet_and_target_objective_packet.json",
+      "pass": true,
+      "detail": null
+    },
+    {
+      "check": "source_snapshot_unchanged_same_archived_typed_IR_parent_candidate_A.json",
+      "pass": true,
+      "detail": null
+    },
+    {
+      "check": "source_snapshot_unchanged_original_contract_not_sent_to_judge_A.json",
+      "pass": true,
+      "detail": null
+    },
+    {
+      "check": "source_snapshot_unchanged_same_archived_typed_IR_parent_candidate_B.json",
+      "pass": true,
+      "detail": null
+    },
+    {
+      "check": "source_snapshot_unchanged_original_contract_not_sent_to_judge_B.json",
+      "pass": true,
+      "detail": null
+    },
+    {
+      "check": "source_snapshot_unchanged_matched_generation_public_packet_and_target_objective_packet.json",
+      "pass": true,
+      "detail": null
+    },
+    {
+      "check": "source_snapshot_unchanged_same_archived_typed_IR_parent_candidate_A.json",
+      "pass": true,
+      "detail": null
+    },
+    {
+      "check": "source_snapshot_unchanged_original_contract_not_sent_to_judge_A.json",
+      "pass": true,
+      "detail": null
+    },
+    {
+      "check": "source_snapshot_unchanged_same_archived_typed_IR_parent_candidate_B.json",
+      "pass": true,
+      "detail": null
+    },
+    {
+      "check": "source_snapshot_unchanged_original_contract_not_sent_to_judge_B.json",
+      "pass": true,
+      "detail": null
+    },
+    {
+      "check": "source_snapshot_unchanged_matched_generation_public_packet_and_target_objective_packet.json",
+      "pass": true,
+      "detail": null
+    },
+    {
+      "check": "source_snapshot_unchanged_same_archived_typed_IR_parent_candidate_A.json",
+      "pass": true,
+      "detail": null
+    },
+    {
+      "check": "source_snapshot_unchanged_original_contract_not_sent_to_judge_A.json",
+      "pass": true,
+      "detail": null
+    },
+    {
+      "check": "source_snapshot_unchanged_same_archived_typed_IR_parent_candidate_B.json",
+      "pass": true,
+      "detail": null
+    },
+    {
+      "check": "source_snapshot_unchanged_original_contract_not_sent_to_judge_B.json",
+      "pass": true,
+      "detail": null
+    },
+    {
+      "check": "call_task_order_FSV-B19",
+      "pass": true,
+      "detail": null
+    },
+    {
+      "check": "call_completed_without_retry_FSV-B19",
+      "pass": true,
+      "detail": null
+    },
+    {
+      "check": "call_hash_FSV-B19_prompt_path",
+      "pass": true,
+      "detail": null
+    },
+    {
+      "check": "call_hash_FSV-B19_raw_response_path",
+      "pass": true,
+      "detail": null
+    },
+    {
+      "check": "call_hash_FSV-B19_output_path",
+      "pass": true,
+      "detail": null
+    },
+    {
+      "check": "raw_content_parsed_output_identical_FSV-B19",
+      "pass": true,
+      "detail": null
+    },
+    {
+      "check": "provider_identity_usage_FSV-B19",
+      "pass": true,
+      "detail": null
+    },
+    {
+      "check": "provider_actual_input_output_bounds_FSV-B19",
+      "pass": true,
+      "detail": null
+    },
+    {
+      "check": "call_task_order_FSV-B13",
+      "pass": true,
+      "detail": null
+    },
+    {
+      "check": "call_completed_without_retry_FSV-B13",
+      "pass": true,
+      "detail": null
+    },
+    {
+      "check": "call_hash_FSV-B13_prompt_path",
+      "pass": true,
+      "detail": null
+    },
+    {
+      "check": "call_hash_FSV-B13_raw_response_path",
+      "pass": true,
+      "detail": null
+    },
+    {
+      "check": "call_hash_FSV-B13_output_path",
+      "pass": true,
+      "detail": null
+    },
+    {
+      "check": "raw_content_parsed_output_identical_FSV-B13",
+      "pass": true,
+      "detail": null
+    },
+    {
+      "check": "provider_identity_usage_FSV-B13",
+      "pass": true,
+      "detail": null
+    },
+    {
+      "check": "provider_actual_input_output_bounds_FSV-B13",
+      "pass": true,
+      "detail": null
+    },
+    {
+      "check": "call_task_order_FSV-B17",
+      "pass": true,
+      "detail": null
+    },
+    {
+      "check": "call_completed_without_retry_FSV-B17",
+      "pass": true,
+      "detail": null
+    },
+    {
+      "check": "call_hash_FSV-B17_prompt_path",
+      "pass": true,
+      "detail": null
+    },
+    {
+      "check": "call_hash_FSV-B17_raw_response_path",
+      "pass": true,
+      "detail": null
+    },
+    {
+      "check": "call_hash_FSV-B17_output_path",
+      "pass": true,
+      "detail": null
+    },
+    {
+      "check": "raw_content_parsed_output_identical_FSV-B17",
+      "pass": true,
+      "detail": null
+    },
+    {
+      "check": "provider_identity_usage_FSV-B17",
+      "pass": true,
+      "detail": null
+    },
+    {
+      "check": "provider_actual_input_output_bounds_FSV-B17",
+      "pass": true,
+      "detail": null
+    },
+    {
+      "check": "call_task_order_FSV-S03",
+      "pass": true,
+      "detail": null
+    },
+    {
+      "check": "call_completed_without_retry_FSV-S03",
+      "pass": true,
+      "detail": null
+    },
+    {
+      "check": "call_hash_FSV-S03_prompt_path",
+      "pass": true,
+      "detail": null
+    },
+    {
+      "check": "call_hash_FSV-S03_raw_response_path",
+      "pass": true,
+      "detail": null
+    },
+    {
+      "check": "call_hash_FSV-S03_output_path",
+      "pass": true,
+      "detail": null
+    },
+    {
+      "check": "raw_content_parsed_output_identical_FSV-S03",
+      "pass": true,
+      "detail": null
+    },
+    {
+      "check": "provider_identity_usage_FSV-S03",
+      "pass": true,
+      "detail": null
+    },
+    {
+      "check": "provider_actual_input_output_bounds_FSV-S03",
+      "pass": true,
+      "detail": null
+    },
+    {
+      "check": "aggregate_matches_all_raw_reviews",
+      "pass": true,
+      "detail": null
+    },
+    {
+      "check": "candidate_original_snapshot_ablation_hash_FSV-S03__four_case_v1",
+      "pass": true,
+      "detail": null
+    },
+    {
+      "check": "contract_original_snapshot_ablation_hash_FSV-S03__four_case_v1",
+      "pass": true,
+      "detail": null
+    },
+    {
+      "check": "original_raw_candidate_exact_FSV-S03__four_case_v1",
+      "pass": true,
+      "detail": null
+    },
+    {
+      "check": "compiled_policy_exactly_archived_FSV-S03__four_case_v1",
+      "pass": true,
+      "detail": null
+    },
+    {
+      "check": "actual_full_replay_FSV-S03__four_case_v1_FSV-S03-OL-01",
+      "pass": true,
+      "detail": null
+    },
+    {
+      "check": "actual_shape_replay_FSV-S03__four_case_v1_FSV-S03-OL-01",
+      "pass": true,
+      "detail": null
+    },
+    {
+      "check": "actual_full_replay_FSV-S03__four_case_v1_FSV-S03-OI-01",
+      "pass": true,
+      "detail": null
+    },
+    {
+      "check": "actual_shape_replay_FSV-S03__four_case_v1_FSV-S03-OI-01",
+      "pass": true,
+      "detail": null
+    },
+    {
+      "check": "actual_full_replay_FSV-S03__four_case_v1_SYNTH-MISSING-TRUSTED",
+      "pass": true,
+      "detail": null
+    },
+    {
+      "check": "actual_shape_replay_FSV-S03__four_case_v1_SYNTH-MISSING-TRUSTED",
+      "pass": true,
+      "detail": null
+    },
+    {
+      "check": "exact_three_archived_fixture_rows_FSV-S03__four_case_v1",
+      "pass": true,
+      "detail": null
+    },
+    {
+      "check": "source_quote_VIS-FSV-S03-01_\"age\"",
+      "pass": true,
+      "detail": null
+    },
+    {
+      "check": "candidate_original_snapshot_ablation_hash_FSV-S03__four_case_v2",
+      "pass": true,
+      "detail": null
+    },
+    {
+      "check": "contract_original_snapshot_ablation_hash_FSV-S03__four_case_v2",
+      "pass": true,
+      "detail": null
+    },
+    {
+      "check": "original_raw_candidate_exact_FSV-S03__four_case_v2",
+      "pass": true,
+      "detail": null
+    },
+    {
+      "check": "compiled_policy_exactly_archived_FSV-S03__four_case_v2",
+      "pass": true,
+      "detail": null
+    },
+    {
+      "check": "actual_full_replay_FSV-S03__four_case_v2_FSV-S03-OL-01",
+      "pass": true,
+      "detail": null
+    },
+    {
+      "check": "actual_shape_replay_FSV-S03__four_case_v2_FSV-S03-OL-01",
+      "pass": true,
+      "detail": null
+    },
+    {
+      "check": "actual_full_replay_FSV-S03__four_case_v2_FSV-S03-OI-01",
+      "pass": true,
+      "detail": null
+    },
+    {
+      "check": "actual_shape_replay_FSV-S03__four_case_v2_FSV-S03-OI-01",
+      "pass": true,
+      "detail": null
+    },
+    {
+      "check": "actual_full_replay_FSV-S03__four_case_v2_SYNTH-MISSING-TRUSTED",
+      "pass": true,
+      "detail": null
+    },
+    {
+      "check": "actual_shape_replay_FSV-S03__four_case_v2_SYNTH-MISSING-TRUSTED",
+      "pass": true,
+      "detail": null
+    },
+    {
+      "check": "exact_three_archived_fixture_rows_FSV-S03__four_case_v2",
+      "pass": true,
+      "detail": null
+    },
+    {
+      "check": "issue_visible_reference_FSV-S03__four_case_v2_TARGET_NOT_IMPLEMENTED",
+      "pass": true,
+      "detail": null
+    },
+    {
+      "check": "issue_visible_reference_FSV-S03__four_case_v2_UNSUPPORTED_CONSTRAINT",
+      "pass": true,
+      "detail": null
+    },
+    {
+      "check": "source_quote_VIS-FSV-S03-01_\"age\"",
+      "pass": true,
+      "detail": null
+    },
+    {
+      "check": "candidate_original_snapshot_ablation_hash_FSV-B13__four_case_v2",
+      "pass": true,
+      "detail": null
+    },
+    {
+      "check": "contract_original_snapshot_ablation_hash_FSV-B13__four_case_v2",
+      "pass": true,
+      "detail": null
+    },
+    {
+      "check": "original_raw_candidate_exact_FSV-B13__four_case_v2",
+      "pass": true,
+      "detail": null
+    },
+    {
+      "check": "compiled_policy_exactly_archived_FSV-B13__four_case_v2",
+      "pass": true,
+      "detail": null
+    },
+    {
+      "check": "actual_full_replay_FSV-B13__four_case_v2_FSV-B13-OL-01",
+      "pass": true,
+      "detail": null
+    },
+    {
+      "check": "actual_shape_replay_FSV-B13__four_case_v2_FSV-B13-OL-01",
+      "pass": true,
+      "detail": null
+    },
+    {
+      "check": "actual_full_replay_FSV-B13__four_case_v2_FSV-B13-OI-01",
+      "pass": true,
+      "detail": null
+    },
+    {
+      "check": "actual_shape_replay_FSV-B13__four_case_v2_FSV-B13-OI-01",
+      "pass": true,
+      "detail": null
+    },
+    {
+      "check": "actual_full_replay_FSV-B13__four_case_v2_SYNTH-MISSING-TRUSTED",
+      "pass": true,
+      "detail": null
+    },
+    {
+      "check": "actual_shape_replay_FSV-B13__four_case_v2_SYNTH-MISSING-TRUSTED",
+      "pass": true,
+      "detail": null
+    },
+    {
+      "check": "exact_three_archived_fixture_rows_FSV-B13__four_case_v2",
+      "pass": true,
+      "detail": null
+    },
+    {
+      "check": "source_quote_VIS-FSV-B13-01_percentage you are allowed",
+      "pass": true,
+      "detail": null
+    },
+    {
+      "check": "source_quote_VIS-FSV-B13-01_Users with this role",
+      "pass": true,
+      "detail": null
+    },
+    {
+      "check": "candidate_original_snapshot_ablation_hash_FSV-B13__four_case_v1",
+      "pass": true,
+      "detail": null
+    },
+    {
+      "check": "contract_original_snapshot_ablation_hash_FSV-B13__four_case_v1",
+      "pass": true,
+      "detail": null
+    },
+    {
+      "check": "original_raw_candidate_exact_FSV-B13__four_case_v1",
+      "pass": true,
+      "detail": null
+    },
+    {
+      "check": "compiled_policy_exactly_archived_FSV-B13__four_case_v1",
+      "pass": true,
+      "detail": null
+    },
+    {
+      "check": "actual_full_replay_FSV-B13__four_case_v1_FSV-B13-OL-01",
+      "pass": true,
+      "detail": null
+    },
+    {
+      "check": "actual_shape_replay_FSV-B13__four_case_v1_FSV-B13-OL-01",
+      "pass": true,
+      "detail": null
+    },
+    {
+      "check": "actual_full_replay_FSV-B13__four_case_v1_FSV-B13-OI-01",
+      "pass": true,
+      "detail": null
+    },
+    {
+      "check": "actual_shape_replay_FSV-B13__four_case_v1_FSV-B13-OI-01",
+      "pass": true,
+      "detail": null
+    },
+    {
+      "check": "actual_full_replay_FSV-B13__four_case_v1_SYNTH-MISSING-TRUSTED",
+      "pass": true,
+      "detail": null
+    },
+    {
+      "check": "actual_shape_replay_FSV-B13__four_case_v1_SYNTH-MISSING-TRUSTED",
+      "pass": true,
+      "detail": null
+    },
+    {
+      "check": "exact_three_archived_fixture_rows_FSV-B13__four_case_v1",
+      "pass": true,
+      "detail": null
+    },
+    {
+      "check": "source_quote_VIS-FSV-B13-01_percentage you are allowed",
+      "pass": true,
+      "detail": null
+    },
+    {
+      "check": "source_quote_VIS-FSV-B13-01_Users with this role",
+      "pass": true,
+      "detail": null
+    },
+    {
+      "check": "candidate_original_snapshot_ablation_hash_FSV-B17__four_case_v1",
+      "pass": true,
+      "detail": null
+    },
+    {
+      "check": "contract_original_snapshot_ablation_hash_FSV-B17__four_case_v1",
+      "pass": true,
+      "detail": null
+    },
+    {
+      "check": "original_raw_candidate_exact_FSV-B17__four_case_v1",
+      "pass": true,
+      "detail": null
+    },
+    {
+      "check": "compiled_policy_exactly_archived_FSV-B17__four_case_v1",
+      "pass": true,
+      "detail": null
+    },
+    {
+      "check": "actual_full_replay_FSV-B17__four_case_v1_FSV-B17-OL-01",
+      "pass": true,
+      "detail": null
+    },
+    {
+      "check": "actual_shape_replay_FSV-B17__four_case_v1_FSV-B17-OL-01",
+      "pass": true,
+      "detail": null
+    },
+    {
+      "check": "actual_full_replay_FSV-B17__four_case_v1_FSV-B17-OI-01",
+      "pass": true,
+      "detail": null
+    },
+    {
+      "check": "actual_shape_replay_FSV-B17__four_case_v1_FSV-B17-OI-01",
+      "pass": true,
+      "detail": null
+    },
+    {
+      "check": "actual_full_replay_FSV-B17__four_case_v1_SYNTH-MISSING-TRUSTED",
+      "pass": true,
+      "detail": null
+    },
+    {
+      "check": "actual_shape_replay_FSV-B17__four_case_v1_SYNTH-MISSING-TRUSTED",
+      "pass": true,
+      "detail": null
+    },
+    {
+      "check": "exact_three_archived_fixture_rows_FSV-B17__four_case_v1",
+      "pass": true,
+      "detail": null
+    },
+    {
+      "check": "issue_visible_reference_FSV-B17__four_case_v1_TARGET_NOT_IMPLEMENTED",
+      "pass": true,
+      "detail": null
+    },
+    {
+      "check": "issue_visible_reference_FSV-B17__four_case_v1_UNSUPPORTED_CONSTRAINT",
+      "pass": true,
+      "detail": null
+    },
+    {
+      "check": "source_quote_VIS-FSV-B17-01_disallow sales orders",
+      "pass": true,
+      "detail": null
+    },
+    {
+      "check": "candidate_original_snapshot_ablation_hash_FSV-B17__four_case_v2",
+      "pass": true,
+      "detail": null
+    },
+    {
+      "check": "contract_original_snapshot_ablation_hash_FSV-B17__four_case_v2",
+      "pass": true,
+      "detail": null
+    },
+    {
+      "check": "original_raw_candidate_exact_FSV-B17__four_case_v2",
+      "pass": true,
+      "detail": null
+    },
+    {
+      "check": "compiled_policy_exactly_archived_FSV-B17__four_case_v2",
+      "pass": true,
+      "detail": null
+    },
+    {
+      "check": "actual_full_replay_FSV-B17__four_case_v2_FSV-B17-OL-01",
+      "pass": true,
+      "detail": null
+    },
+    {
+      "check": "actual_shape_replay_FSV-B17__four_case_v2_FSV-B17-OL-01",
+      "pass": true,
+      "detail": null
+    },
+    {
+      "check": "actual_full_replay_FSV-B17__four_case_v2_FSV-B17-OI-01",
+      "pass": true,
+      "detail": null
+    },
+    {
+      "check": "actual_shape_replay_FSV-B17__four_case_v2_FSV-B17-OI-01",
+      "pass": true,
+      "detail": null
+    },
+    {
+      "check": "actual_full_replay_FSV-B17__four_case_v2_SYNTH-MISSING-TRUSTED",
+      "pass": true,
+      "detail": null
+    },
+    {
+      "check": "actual_shape_replay_FSV-B17__four_case_v2_SYNTH-MISSING-TRUSTED",
+      "pass": true,
+      "detail": null
+    },
+    {
+      "check": "exact_three_archived_fixture_rows_FSV-B17__four_case_v2",
+      "pass": true,
+      "detail": null
+    },
+    {
+      "check": "source_quote_VIS-FSV-B17-01_disallow sales orders",
+      "pass": true,
+      "detail": null
+    },
+    {
+      "check": "candidate_original_snapshot_ablation_hash_FSV-B19__four_case_v2",
+      "pass": true,
+      "detail": null
+    },
+    {
+      "check": "contract_original_snapshot_ablation_hash_FSV-B19__four_case_v2",
+      "pass": true,
+      "detail": null
+    },
+    {
+      "check": "original_raw_candidate_exact_FSV-B19__four_case_v2",
+      "pass": true,
+      "detail": null
+    },
+    {
+      "check": "compiled_policy_exactly_archived_FSV-B19__four_case_v2",
+      "pass": true,
+      "detail": null
+    },
+    {
+      "check": "actual_full_replay_FSV-B19__four_case_v2_FSV-B19-OL-01",
+      "pass": true,
+      "detail": null
+    },
+    {
+      "check": "actual_shape_replay_FSV-B19__four_case_v2_FSV-B19-OL-01",
+      "pass": true,
+      "detail": null
+    },
+    {
+      "check": "actual_full_replay_FSV-B19__four_case_v2_FSV-B19-OI-01",
+      "pass": true,
+      "detail": null
+    },
+    {
+      "check": "actual_shape_replay_FSV-B19__four_case_v2_FSV-B19-OI-01",
+      "pass": true,
+      "detail": null
+    },
+    {
+      "check": "actual_full_replay_FSV-B19__four_case_v2_SYNTH-MISSING-TRUSTED",
+      "pass": true,
+      "detail": null
+    },
+    {
+      "check": "actual_shape_replay_FSV-B19__four_case_v2_SYNTH-MISSING-TRUSTED",
+      "pass": true,
+      "detail": null
+    },
+    {
+      "check": "exact_three_archived_fixture_rows_FSV-B19__four_case_v2",
+      "pass": true,
+      "detail": null
+    },
+    {
+      "check": "source_quote_VIS-FSV-B19-01_The hold types",
+      "pass": true,
+      "detail": null
+    },
+    {
+      "check": "source_quote_VIS-FSV-B19-01_Invoices:",
+      "pass": true,
+      "detail": null
+    },
+    {
+      "check": "candidate_original_snapshot_ablation_hash_FSV-B19__four_case_v1",
+      "pass": true,
+      "detail": null
+    },
+    {
+      "check": "contract_original_snapshot_ablation_hash_FSV-B19__four_case_v1",
+      "pass": true,
+      "detail": null
+    },
+    {
+      "check": "original_raw_candidate_exact_FSV-B19__four_case_v1",
+      "pass": true,
+      "detail": null
+    },
+    {
+      "check": "compiled_policy_exactly_archived_FSV-B19__four_case_v1",
+      "pass": true,
+      "detail": null
+    },
+    {
+      "check": "actual_full_replay_FSV-B19__four_case_v1_FSV-B19-OL-01",
+      "pass": true,
+      "detail": null
+    },
+    {
+      "check": "actual_shape_replay_FSV-B19__four_case_v1_FSV-B19-OL-01",
+      "pass": true,
+      "detail": null
+    },
+    {
+      "check": "actual_full_replay_FSV-B19__four_case_v1_FSV-B19-OI-01",
+      "pass": true,
+      "detail": null
+    },
+    {
+      "check": "actual_shape_replay_FSV-B19__four_case_v1_FSV-B19-OI-01",
+      "pass": true,
+      "detail": null
+    },
+    {
+      "check": "actual_full_replay_FSV-B19__four_case_v1_SYNTH-MISSING-TRUSTED",
+      "pass": true,
+      "detail": null
+    },
+    {
+      "check": "actual_shape_replay_FSV-B19__four_case_v1_SYNTH-MISSING-TRUSTED",
+      "pass": true,
+      "detail": null
+    },
+    {
+      "check": "exact_three_archived_fixture_rows_FSV-B19__four_case_v1",
+      "pass": true,
+      "detail": null
+    },
+    {
+      "check": "issue_visible_reference_FSV-B19__four_case_v1_DIRECTION_MISMATCH",
+      "pass": true,
+      "detail": null
+    },
+    {
+      "check": "issue_visible_reference_FSV-B19__four_case_v1_MISSING_INPUT_HANDLING",
+      "pass": true,
+      "detail": null
+    },
+    {
+      "check": "source_quote_VIS-FSV-B19-01_The hold types",
+      "pass": true,
+      "detail": null
+    },
+    {
+      "check": "source_quote_VIS-FSV-B19-01_Invoices:",
+      "pass": true,
+      "detail": null
+    },
+    {
+      "check": "eight_parent_candidates_four_tasks",
+      "pass": true,
+      "detail": null
+    },
+    {
+      "check": "three_known_primary_defects_flagged",
+      "pass": true,
+      "detail": null
+    },
+    {
+      "check": "five_accept_three_revise",
+      "pass": true,
+      "detail": null
+    },
+    {
+      "check": "scope_result_rows_eight_only",
+      "pass": true,
+      "detail": null
+    },
+    {
+      "check": "root_scientific_ledger_not_written",
+      "pass": true,
+      "detail": "writes restricted to Judge scope"
+    },
+    {
+      "check": "main_ledger_still_frozen",
+      "pass": true,
+      "detail": null
+    }
+  ],
+  "usage": {
+    "judge": {
+      "prompt_tokens": 19999,
+      "completion_tokens": 6613,
+      "total_tokens": 26612
+    },
+    "main_including_four_smoke": {
+      "prompt_tokens": 132101,
+      "completion_tokens": 45713,
+      "total_tokens": 177814
+    },
+    "judge_calls": 4,
+    "main_calls": 30,
+    "shared_calls": 34,
+    "shared_call_cap": 44,
+    "retry_count": 0,
+    "cost_amount": "UNKNOWN",
+    "cost_status": "NOT_REPORTED_BY_PROVIDER",
+    "combined": {
+      "prompt_tokens": 152100,
+      "completion_tokens": 52326,
+      "total_tokens": 204426
+    }
+  },
+  "artifacts": [
+    {
+      "path": "/mnt/d/lunwen/EC-CSI投稿/working/exploration/20261014_matched_evidence_labor/judge_control/COMPARISON.json",
+      "sha256": "1fd210ea5123ee833055f13e08aca9ddebcd0b32f9c34150ef76f208dd8fb680"
+    },
+    {
+      "path": "/mnt/d/lunwen/EC-CSI投稿/working/exploration/20261014_matched_evidence_labor/judge_control/SOURCE_REVIEW.json",
+      "sha256": "23d0858db0740b84ca8cd896551de934e66209e0418f9935961c1427ab929be2"
+    },
+    {
+      "path": "/mnt/d/lunwen/EC-CSI投稿/working/exploration/20261014_matched_evidence_labor/judge_control/RESULTS_CN.md",
+      "sha256": "dfd59dbc3d8428bb7527f8f9c7897c78439468aa4844f7ab105f94b1a38a34c8"
+    },
+    {
+      "path": "/mnt/d/lunwen/EC-CSI投稿/working/exploration/20261014_matched_evidence_labor/judge_control/RESULT_TRACEABILITY.csv",
+      "sha256": "0ac60163a23ada45c542467706b9fbb0facf3271aef38f4ebdfd98254c9c9d7c"
+    },
+    {
+      "path": "/mnt/d/lunwen/EC-CSI投稿/working/exploration/20261014_matched_evidence_labor/judge_control/CALL_LEDGER.json",
+      "sha256": "11c020a129e555309445bedbf64eeaa998d56517c05ac518dbc4747c00b08c8a"
+    }
+  ],
+  "scientific_qualification": "BOUNDED_RETROSPECTIVE_OBSERVATIONS_ONLY",
+  "known_additional_judge_issue": "B19 missing-input behavior observed; no support for assertion that skip is unsupported",
+  "managed_run": "/root/ecas_semantic_judge_control_20261014/managed_runs/typed-ir-judge-control-v3",
+  "managed_state": "SUCCEEDED",
+  "build_script_sha256": "d93eb3d65f531bdef532d55e3649e1151f340e127d81f44fb0052ea022d2c631"
+}

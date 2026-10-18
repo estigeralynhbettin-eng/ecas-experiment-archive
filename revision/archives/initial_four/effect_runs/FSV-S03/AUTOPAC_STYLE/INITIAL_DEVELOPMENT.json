@@ -1,0 +1,46 @@
+{
+  "checks": {
+    "compile_exit": 1,
+    "compile_error": "1 error occurred: /mnt/d/lunwen/EC-CSI投稿/working/exploration/20261014_four_case_peer_baselines/effect_runs/FSV-S03/AUTOPAC_STYLE/initial/external_pilot/policy.rego:12: rego_type_error: undefined function is_integer\n",
+    "policy_path": "/mnt/d/lunwen/EC-CSI投稿/working/exploration/20261014_four_case_peer_baselines/effect_runs/FSV-S03/AUTOPAC_STYLE/initial/external_pilot/policy.rego",
+    "lint_exit": null,
+    "lint_report": null,
+    "accepted": false
+  },
+  "tests": [
+    {
+      "id": "dev_integer",
+      "input": {
+        "request": {
+          "body": {
+            "age": 42
+          }
+        },
+        "trusted": {}
+      },
+      "expected": "allow",
+      "source_ref": "VIS-FSV-S03-01"
+    },
+    {
+      "id": "dev_integer_string",
+      "input": {
+        "request": {
+          "body": {
+            "age": "42"
+          }
+        },
+        "trusted": {}
+      },
+      "expected": "deny",
+      "source_ref": "VIS-FSV-S03-01"
+    }
+  ],
+  "developer_results": {
+    "passed": false,
+    "rows": []
+  },
+  "judge": {
+    "verdict": "ACCEPT",
+    "issues": []
+  }
+}

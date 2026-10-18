@@ -1,0 +1,146 @@
+[
+  {
+    "id": "t1_qty_within_allowance",
+    "input": {
+      "request": {
+        "body": {
+          "qty": 100
+        }
+      },
+      "trusted": {
+        "derivedMaximumQty": 110,
+        "authorizedRole": false
+      }
+    },
+    "expected": "allow",
+    "source_ref": "VIS-FSV-B13-01#Limit Percent"
+  },
+  {
+    "id": "t2_qty_exceeds_allowance_with_authorized_role",
+    "input": {
+      "request": {
+        "body": {
+          "qty": 120
+        }
+      },
+      "trusted": {
+        "derivedMaximumQty": 110,
+        "authorizedRole": true
+      }
+    },
+    "expected": "allow",
+    "source_ref": "VIS-FSV-B13-01#Role Allowed to Over Deliver/Receive"
+  },
+  {
+    "id": "t3_qty_exceeds_allowance_without_authorized_role",
+    "input": {
+      "request": {
+        "body": {
+          "qty": 120
+        }
+      },
+      "trusted": {
+        "derivedMaximumQty": 110,
+        "authorizedRole": false
+      }
+    },
+    "expected": "deny",
+    "source_ref": "VIS-FSV-B13-01#Limit Percent"
+  },
+  {
+    "id": "t4_qty_equals_maximum_allowance",
+    "input": {
+      "request": {
+        "body": {
+          "qty": 110
+        }
+      },
+      "trusted": {
+        "derivedMaximumQty": 110,
+        "authorizedRole": false
+      }
+    },
+    "expected": "allow",
+    "source_ref": "VIS-FSV-B13-01#Limit Percent"
+  },
+  {
+    "id": "t5_qty_exceeds_allowance_by_one_without_authorized_role",
+    "input": {
+      "request": {
+        "body": {
+          "qty": 111
+        }
+      },
+      "trusted": {
+        "derivedMaximumQty": 110,
+        "authorizedRole": false
+      }
+    },
+    "expected": "deny",
+    "source_ref": "VIS-FSV-B13-01#Role Allowed to Over Deliver/Receive"
+  },
+  {
+    "id": "t6_qty_exceeds_allowance_with_authorized_role_false_edge_case",
+    "input": {
+      "request": {
+        "body": {
+          "qty": 200
+        }
+      },
+      "trusted": {
+        "derivedMaximumQty": 150,
+        "authorizedRole": true
+      }
+    },
+    "expected": "allow",
+    "source_ref": "VIS-FSV-B13-01#Role Allowed to Over Deliver/Receive"
+  },
+  {
+    "id": "dev_limit",
+    "input": {
+      "request": {
+        "body": {
+          "qty": 54
+        }
+      },
+      "trusted": {
+        "derivedMaximumQty": 54,
+        "authorizedRole": false
+      }
+    },
+    "expected": "allow",
+    "source_ref": "VIS-FSV-B13-01"
+  },
+  {
+    "id": "dev_over",
+    "input": {
+      "request": {
+        "body": {
+          "qty": 55
+        }
+      },
+      "trusted": {
+        "derivedMaximumQty": 54,
+        "authorizedRole": false
+      }
+    },
+    "expected": "deny",
+    "source_ref": "VIS-FSV-B13-01"
+  },
+  {
+    "id": "dev_role_exception",
+    "input": {
+      "request": {
+        "body": {
+          "qty": 55
+        }
+      },
+      "trusted": {
+        "derivedMaximumQty": 54,
+        "authorizedRole": true
+      }
+    },
+    "expected": "allow",
+    "source_ref": "VIS-FSV-B13-01"
+  }
+]

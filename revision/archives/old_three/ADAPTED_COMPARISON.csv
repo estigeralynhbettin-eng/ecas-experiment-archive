@@ -1,0 +1,10 @@
+﻿task,method,status,legal,invalid,pair_correct,model_calls,repaired_once,reason
+FSV-B06,P2P_STYLE,EVALUATED,allow,deny,True,5,True,
+FSV-B06,AUTOPAC_STYLE,DEVELOPMENT_REJECTED,,,False,3,True,
+FSV-B06,ECAS_MATCHED,EVALUATED,allow,deny,True,1,False,
+FSV-S02,P2P_STYLE,OUT_OF_SCOPE,,,False,1,False,"The visible sources contain only API schema definitions (mandatory fields, request body structure) and adapter metadata. There are no explicit access control or policy statements present."
+FSV-S02,AUTOPAC_STYLE,DEVELOPMENT_REJECTED,,,False,3,True,
+FSV-S02,ECAS_MATCHED,EVALUATED,allow,deny,True,1,False,
+FSV-S04,P2P_STYLE,DEVELOPMENT_REJECTED,,,False,5,True,
+FSV-S04,AUTOPAC_STYLE,DEVELOPMENT_REJECTED,,,False,3,True,
+FSV-S04,ECAS_MATCHED,EVALUATED,allow,deny,True,1,False,

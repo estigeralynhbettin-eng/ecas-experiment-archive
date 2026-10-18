@@ -1,0 +1,10 @@
+﻿arm,method,related_states,source_check_not_blocked_but_policy_deny,source_check_blocked_but_policy_allow,disagreement_count,disagreement_state_ids
+effective_manual,AUTOPAC_STYLE,32,0,0,0,[]
+effective_manual,ECAS_MATCHED,32,0,0,0,[]
+effective_manual,P2P_STYLE,32,0,0,0,[]
+raw,AUTOPAC_STYLE,32,2,3,5,"['state-17', 'state-19', 'state-20', 'state-22', 'state-26']"
+raw,ECAS_MATCHED,32,3,0,3,"['state-18', 'state-22', 'state-26']"
+raw,P2P_STYLE,32,2,3,5,"['state-17', 'state-19', 'state-20', 'state-22', 'state-26']"
+saved,AUTOPAC_STYLE,32,3,0,3,"['state-18', 'state-22', 'state-26']"
+saved,ECAS_MATCHED,32,3,0,3,"['state-18', 'state-22', 'state-26']"
+saved,P2P_STYLE,32,3,0,3,"['state-18', 'state-22', 'state-26']"

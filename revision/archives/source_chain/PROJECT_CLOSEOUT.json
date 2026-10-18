@@ -1,0 +1,135 @@
+{
+  "status": "pass",
+  "checked_at": "2026-10-15T12:21:09.4211483+08:00",
+  "project_path": "D:\\lunwen\\EC-CSI投稿",
+  "since": "2026-10-15T12:11:09.3382402+08:00",
+  "documents": [
+    {
+      "name": "PROJECT_BRIEF.md",
+      "path": "D:\\lunwen\\EC-CSI投稿\\PROJECT_BRIEF.md",
+      "exists": false,
+      "last_write_time": null,
+      "updated_since_start": false
+    },
+    {
+      "name": "LATEST_OUTPUTS.md",
+      "path": "D:\\lunwen\\EC-CSI投稿\\LATEST_OUTPUTS.md",
+      "exists": true,
+      "last_write_time": "2026-10-15T12:19:54.1936154+08:00",
+      "updated_since_start": true
+    },
+    {
+      "name": "RESEARCH_DECISIONS.md",
+      "path": "D:\\lunwen\\EC-CSI投稿\\RESEARCH_DECISIONS.md",
+      "exists": true,
+      "last_write_time": "2026-10-15T12:19:54.1956148+08:00",
+      "updated_since_start": true
+    },
+    {
+      "name": "HANDOFF.md",
+      "path": "D:\\lunwen\\EC-CSI投稿\\HANDOFF.md",
+      "exists": true,
+      "last_write_time": "2026-10-15T12:19:54.1946152+08:00",
+      "updated_since_start": true
+    },
+    {
+      "name": "EXPERIMENT_RESULTS.md",
+      "path": "D:\\lunwen\\EC-CSI投稿\\EXPERIMENT_RESULTS.md",
+      "exists": true,
+      "last_write_time": "2026-10-15T12:19:54.1956148+08:00",
+      "updated_since_start": true
+    },
+    {
+      "name": "REVIEW_NOTES.md",
+      "path": "D:\\lunwen\\EC-CSI投稿\\REVIEW_NOTES.md",
+      "exists": true,
+      "last_write_time": "2026-10-13T20:13:38.8278890+08:00",
+      "updated_since_start": false
+    },
+    {
+      "name": "MANUSCRIPT_OUTLINE.md",
+      "path": "D:\\lunwen\\EC-CSI投稿\\MANUSCRIPT_OUTLINE.md",
+      "exists": false,
+      "last_write_time": null,
+      "updated_since_start": false
+    },
+    {
+      "name": "TODO.md",
+      "path": "D:\\lunwen\\EC-CSI投稿\\TODO.md",
+      "exists": true,
+      "last_write_time": "2026-10-13T20:13:38.8288785+08:00",
+      "updated_since_start": false
+    }
+  ],
+  "expected_outputs": [
+    {
+      "requested_path": "D:\\lunwen\\EC-CSI投稿\\working\\exploration\\20261015_source_rule_chain\\EXPERIMENT_SUMMARY_CN_R4.md",
+      "resolved_path": "D:\\lunwen\\EC-CSI投稿\\working\\exploration\\20261015_source_rule_chain\\EXPERIMENT_SUMMARY_CN_R4.md",
+      "exists": true,
+      "inside_project": true
+    },
+    {
+      "requested_path": "D:\\lunwen\\EC-CSI投稿\\working\\exploration\\20261015_source_rule_chain\\SEVEN_CASE_CHAIN_CN.md",
+      "resolved_path": "D:\\lunwen\\EC-CSI投稿\\working\\exploration\\20261015_source_rule_chain\\SEVEN_CASE_CHAIN_CN.md",
+      "exists": true,
+      "inside_project": true
+    },
+    {
+      "requested_path": "D:\\lunwen\\EC-CSI投稿\\working\\exploration\\20261015_source_rule_chain\\SEVEN_CASE_CHAIN.json",
+      "resolved_path": "D:\\lunwen\\EC-CSI投稿\\working\\exploration\\20261015_source_rule_chain\\SEVEN_CASE_CHAIN.json",
+      "exists": true,
+      "inside_project": true
+    },
+    {
+      "requested_path": "D:\\lunwen\\EC-CSI投稿\\working\\exploration\\20261015_source_rule_chain\\SEVEN_CASE_CHAIN.csv",
+      "resolved_path": "D:\\lunwen\\EC-CSI投稿\\working\\exploration\\20261015_source_rule_chain\\SEVEN_CASE_CHAIN.csv",
+      "exists": true,
+      "inside_project": true
+    },
+    {
+      "requested_path": "D:\\lunwen\\EC-CSI投稿\\working\\exploration\\20261015_source_rule_chain\\RESULTS.json",
+      "resolved_path": "D:\\lunwen\\EC-CSI投稿\\working\\exploration\\20261015_source_rule_chain\\RESULTS.json",
+      "exists": true,
+      "inside_project": true
+    },
+    {
+      "requested_path": "D:\\lunwen\\EC-CSI投稿\\working\\exploration\\20261015_source_rule_chain\\PROBE_SUMMARY.json",
+      "resolved_path": "D:\\lunwen\\EC-CSI投稿\\working\\exploration\\20261015_source_rule_chain\\PROBE_SUMMARY.json",
+      "exists": true,
+      "inside_project": true
+    },
+    {
+      "requested_path": "D:\\lunwen\\EC-CSI投稿\\working\\exploration\\20261015_source_rule_chain\\RUNTIME_SEMANTIC_CONTRACT_PROPOSAL_CN.md",
+      "resolved_path": "D:\\lunwen\\EC-CSI投稿\\working\\exploration\\20261015_source_rule_chain\\RUNTIME_SEMANTIC_CONTRACT_PROPOSAL_CN.md",
+      "exists": true,
+      "inside_project": true
+    },
+    {
+      "requested_path": "D:\\lunwen\\EC-CSI投稿\\working\\exploration\\20261015_source_rule_chain\\PROBE_INDEPENDENT_AUDIT.json",
+      "resolved_path": "D:\\lunwen\\EC-CSI投稿\\working\\exploration\\20261015_source_rule_chain\\PROBE_INDEPENDENT_AUDIT.json",
+      "exists": true,
+      "inside_project": true
+    },
+    {
+      "requested_path": "D:\\lunwen\\EC-CSI投稿\\working\\exploration\\20261015_source_rule_chain\\CHAIN_INDEPENDENT_REVIEW.json",
+      "resolved_path": "D:\\lunwen\\EC-CSI投稿\\working\\exploration\\20261015_source_rule_chain\\CHAIN_INDEPENDENT_REVIEW.json",
+      "exists": true,
+      "inside_project": true
+    },
+    {
+      "requested_path": "D:\\lunwen\\EC-CSI投稿\\working\\exploration\\20261015_source_rule_chain\\FINAL_SCOPED_GATE_RECEIPT.json",
+      "resolved_path": "D:\\lunwen\\EC-CSI投稿\\working\\exploration\\20261015_source_rule_chain\\FINAL_SCOPED_GATE_RECEIPT.json",
+      "exists": true,
+      "inside_project": true
+    },
+    {
+      "requested_path": "D:\\lunwen\\EC-CSI投稿\\working\\exploration\\20261015_source_rule_chain\\REPRODUCE.md",
+      "resolved_path": "D:\\lunwen\\EC-CSI投稿\\working\\exploration\\20261015_source_rule_chain\\REPRODUCE.md",
+      "exists": true,
+      "inside_project": true
+    }
+  ],
+  "blockers": [],
+  "warnings": [],
+  "note": "This verifier checks closeout mechanics only. It does not validate scientific correctness or authorize experiment-ledger writes."
+}

@@ -1,0 +1,28 @@
+{
+  "choices": [
+    {
+      "finish_reason": "stop",
+      "index": 0,
+      "message": {
+        "content": "{\"begin\":\"BEGIN_FSV-B19_autopac_generate_SMOKE\",\"stage\":\"autopac_generate\",\"output\":{\"generation\":{\"status\":\"ok\",\"rego\":\"package external_pilot\\n\\nimport rego.v1\\n\\ndefault allow := false\\n\\nallow if {\\n    input.subject.role == \\\"authenticated_api_caller\\\"\\n    input.action == \\\"POST /api/resource/Purchase Order\\\"\\n    input.resource.id == \\\"ERPNext:16.0.0\\\"\\n    not supplier_blocked_for_pos\\n}\\n\\nsupplier_blocked_for_pos if {\\n    input.trusted.supplierOnHold == true\\n    blocking_hold_type\\n}\\n\\nblocking_hold_type if {\\n    input.trusted.holdType == \\\"Invoices\\\"\\n}\\n\\nblocking_hold_type if {\\n    input.trusted.holdType == \\\"All\\\"\\n}\",\"reason\":\"Per VIS-FSV-B19-01, when a Supplier is blocked with hold type 'Invoices', ERPNext will not allow Purchase Orders to be created; hold type 'All' applies both Invoice and Payment blocks. The policy allows the POST Purchase Order operation only when the supplier is not on hold or the hold type does not block POs (i.e., not 'Invoices' and not 'All').\"},\"judge\":{\"verdict\":\"ACCEPT\",\"issues\":[\"Policy correctly maps hold types 'Invoices' and 'All' to PO creation denial based on supplier documentation.\",\"Resource.id compared as string against organization schema value 'ERPNext:16.0.0', not object-to-string comparison.\",\"Condition paths used (/trusted/supplierOnHold, /trusted/holdType) are all declared in the runtime ABI and organization schema.\",\"Authentication and other domain validation are left upstream; no extra auth restrictions invented.\"]}},\"end\":\"END_FSV-B19_autopac_generate_SMOKE\"}",
+        "role": "assistant"
+      }
+    }
+  ],
+  "created": 1791978173,
+  "id": "2026101419424393f80efc8c464954",
+  "model": "glm-5.2",
+  "object": "chat.completion",
+  "request_id": "2026101419424393f80efc8c464954",
+  "usage": {
+    "completion_tokens": 994,
+    "completion_tokens_details": {
+      "reasoning_tokens": 566
+    },
+    "prompt_tokens": 6339,
+    "prompt_tokens_details": {
+      "cached_tokens": 0
+    },
+    "total_tokens": 7333
+  }
+}

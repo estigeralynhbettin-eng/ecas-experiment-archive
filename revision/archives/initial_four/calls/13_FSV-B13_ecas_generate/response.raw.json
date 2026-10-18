@@ -1,0 +1,28 @@
+{
+  "choices": [
+    {
+      "finish_reason": "stop",
+      "index": 0,
+      "message": {
+        "content": "{\"begin\":\"BEGIN_FSV-B13_ecas_generate_MAIN\",\"stage\":\"ecas_generate\",\"output\":{\"candidate\":{\"ir_version\":\"EC-FIELD-MODEL-IR-V3\",\"candidate_id\":\"FSV-B13-ECAS-PurchaseReceipt-OverReceiveQtyGuard\",\"decision\":\"propose\",\"target\":{\"operation\":\"POST /api/resource/Purchase Receipt\",\"system\":\"ERPNext\",\"version\":\"16.0.0\"},\"policy_id\":\"FSV-B13-PurchaseReceipt-OverReceiveQtyGuard\",\"evidence_refs\":[\"VIS-FSV-B13-01\",\"VIS-FSV-B13-02\",\"VIS-FSV-B13-03\",\"VIS-FSV-B13-RUNTIME-ABI\"],\"rules\":[{\"rule_id\":\"FSV-B13-R1-OverReceiveQtyGuard\",\"primitive_id\":\"SP-BOUNDED-BUSINESS-GUARD\",\"op\":\"bounded_guard_dnf\",\"evidence_refs\":[\"VIS-FSV-B13-01\",\"VIS-FSV-B13-02\",\"VIS-FSV-B13-03\",\"VIS-FSV-B13-RUNTIME-ABI\"],\"params\":{\"alternatives\":[{\"clauses\":[{\"kind\":\"scalar_compare\",\"left_path\":\"/request/body/qty\",\"operator\":\"lte\",\"right_source\":\"path\",\"right_path\":\"/trusted/derivedMaximumQty\",\"right_value\":null}]},{\"clauses\":[{\"kind\":\"scalar_compare\",\"left_path\":\"/request/body/qty\",\"operator\":\"gt\",\"right_source\":\"path\",\"right_path\":\"/trusted/derivedMaximumQty\",\"right_value\":null},{\"kind\":\"scalar_compare\",\"left_path\":\"/trusted/authorizedRole\",\"operator\":\"eq\",\"right_source\":\"literal\",\"right_path\":\"\",\"right_value\":true}]}],\"on_missing\":\"deny\"}}],\"reason_code\":\"none\",\"missing_evidence\":[]}},\"end\":\"END_FSV-B13_ecas_generate_MAIN\"}",
+        "role": "assistant"
+      }
+    }
+  ],
+  "created": 1791978716,
+  "id": "202610141949236221e7e95f484e00",
+  "model": "glm-5.2",
+  "object": "chat.completion",
+  "request_id": "202610141949236221e7e95f484e00",
+  "usage": {
+    "completion_tokens": 7643,
+    "completion_tokens_details": {
+      "reasoning_tokens": 7090
+    },
+    "prompt_tokens": 5701,
+    "prompt_tokens_details": {
+      "cached_tokens": 0
+    },
+    "total_tokens": 13344
+  }
+}

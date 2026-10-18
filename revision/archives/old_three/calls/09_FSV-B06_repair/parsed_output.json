@@ -1,0 +1,5 @@
+{
+  "status": "READY",
+  "rego": "package external_pilot\n\nimport rego.v1\n\ndefault allow := false\n\nallow if {\n\tinput.trusted.reAgeIsLatestTransaction == true\n}",
+  "reason": "Repaired prior policy to satisfy opa-fmt by using canonical OPA formatting with tab indentation. Policy logic is unchanged: default-deny remains false, and allow is true only when /trusted/reAgeIsLatestTransaction is true, per VIS-FSV-B06-01 and the runtime ABI."
+}

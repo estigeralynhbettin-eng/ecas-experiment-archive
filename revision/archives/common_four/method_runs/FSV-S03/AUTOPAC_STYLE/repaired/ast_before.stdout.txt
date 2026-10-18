@@ -1,0 +1,195 @@
+{
+  "package": {
+    "path": [
+      {
+        "type": "var",
+        "value": "data"
+      },
+      {
+        "type": "string",
+        "value": "external_pilot"
+      }
+    ]
+  },
+  "imports": [
+    {
+      "path": {
+        "type": "ref",
+        "value": [
+          {
+            "type": "var",
+            "value": "rego"
+          },
+          {
+            "type": "string",
+            "value": "v1"
+          }
+        ]
+      }
+    }
+  ],
+  "rules": [
+    {
+      "body": [
+        {
+          "index": 0,
+          "terms": {
+            "type": "boolean",
+            "value": true
+          }
+        }
+      ],
+      "default": true,
+      "head": {
+        "name": "allow",
+        "value": {
+          "type": "boolean",
+          "value": false
+        },
+        "assign": true,
+        "ref": [
+          {
+            "type": "var",
+            "value": "allow"
+          }
+        ]
+      }
+    },
+    {
+      "body": [
+        {
+          "index": 0,
+          "terms": [
+            {
+              "type": "ref",
+              "value": [
+                {
+                  "type": "var",
+                  "value": "equal"
+                }
+              ]
+            },
+            {
+              "type": "call",
+              "value": [
+                {
+                  "type": "ref",
+                  "value": [
+                    {
+                      "type": "var",
+                      "value": "typeof"
+                    }
+                  ]
+                },
+                {
+                  "type": "ref",
+                  "value": [
+                    {
+                      "type": "var",
+                      "value": "input"
+                    },
+                    {
+                      "type": "string",
+                      "value": "request"
+                    },
+                    {
+                      "type": "string",
+                      "value": "body"
+                    },
+                    {
+                      "type": "string",
+                      "value": "age"
+                    }
+                  ]
+                }
+              ]
+            },
+            {
+              "type": "string",
+              "value": "number"
+            }
+          ]
+        },
+        {
+          "index": 1,
+          "terms": [
+            {
+              "type": "ref",
+              "value": [
+                {
+                  "type": "var",
+                  "value": "regex"
+                },
+                {
+                  "type": "string",
+                  "value": "match"
+                }
+              ]
+            },
+            {
+              "type": "string",
+              "value": "^-?[0-9]+$"
+            },
+            {
+              "type": "call",
+              "value": [
+                {
+                  "type": "ref",
+                  "value": [
+                    {
+                      "type": "var",
+                      "value": "sprintf"
+                    }
+                  ]
+                },
+                {
+                  "type": "string",
+                  "value": "%v"
+                },
+                {
+                  "type": "array",
+                  "value": [
+                    {
+                      "type": "ref",
+                      "value": [
+                        {
+                          "type": "var",
+                          "value": "input"
+                        },
+                        {
+                          "type": "string",
+                          "value": "request"
+                        },
+                        {
+                          "type": "string",
+                          "value": "body"
+                        },
+                        {
+                          "type": "string",
+                          "value": "age"
+                        }
+                      ]
+                    }
+                  ]
+                }
+              ]
+            }
+          ]
+        }
+      ],
+      "head": {
+        "name": "allow",
+        "value": {
+          "type": "boolean",
+          "value": true
+        },
+        "ref": [
+          {
+            "type": "var",
+            "value": "allow"
+          }
+        ]
+      }
+    }
+  ]
+}

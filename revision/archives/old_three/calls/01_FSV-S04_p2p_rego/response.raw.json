@@ -1,0 +1,28 @@
+{
+  "choices": [
+    {
+      "finish_reason": "stop",
+      "index": 0,
+      "message": {
+        "content": "{\"begin\":\"BEGIN_FSV-S04_p2p_rego_SMOKE\",\"stage\":\"p2p_rego\",\"output\":{\"detection\":{\"status\":\"complete\",\"statements\":[{\"text\":\"Frappe framework auto-generates REST CRUD endpoints for all DocTypes; POST /api/resource/:doctype creates a new document by accepting JSON in the request body.\",\"evidence_refs\":[\"VIS-FSV-S04-01\"]},{\"text\":\"Authentication is performed via token (api_key:api_secret), password/session cookie, or OAuth bearer access_token; roles are checked against the authenticated user.\",\"evidence_refs\":[\"VIS-FSV-S04-01\"]},{\"text\":\"Lead DocType catalog includes email_id (Data, Email options), company_name, lead_owner (Link→User), status, and numerous other fields.\",\"evidence_refs\":[\"VIS-FSV-S04-02\"]},{\"text\":\"Runtime ABI declares available client-controlled paths /request/body (object) and /request/body/email_id (string) only; it supplies no policy condition, expected decision, or evaluation label.\",\"evidence_refs\":[\"VIS-FSV-S04-RUNTIME-ABI\"]}]},\"extraction\":{\"status\":\"out_of_scope\",\"abstention\":\"No policy condition, expected decision, or evaluation label is supplied in visible sources. The adapter notice explicitly states it does not supply a policy condition. A case-specific authorization policy cannot be derived; abstaining from real-case policy derivation.\",\"components\":[{\"decision\":\"abstain\",\"subject\":\"authenticated_api_caller\",\"action\":\"POST /api/resource/Lead\",\"resource\":\"ERPNext:16.0.0\",\"condition\":\"not_supplied\",\"purpose\":\"developer_token_interface_smoke\",\"evidence_refs\":[\"VIS-FSV-S04-RUNTIME-ABI\",\"VIS-FSV-S04-01\",\"VIS-FSV-S04-02\"]}]},\"policy\":{\"status\":\"synthetic_smoke_only\",\"rego\":\"package external_pilot\\n\\nimport rego.v1\\n\\ndefault allow := false\\n\\nallow if {\\n    input.request.body.probe > 0\\n}\\n\",\"reason\":\"No case-specific policy is derivable from the visible sources (adapter declares no condition/decision/label). The Rego below is a synthetic developer token/interface smoke harness only: it demonstrates an allow path when input.request.body.probe > 0. This synthetic probe must NOT be treated as the real-case policy for FSV-S04.\"},\"tests\":[{\"id\":\"smoke-probe-positive\",\"input\":{\"request\":{\"body\":{\"probe\":1}},\"trusted\":{}},\"expected\":\"allow\",\"source_ref\":\"synthetic:VIS-FSV-S04-RUNTIME-ABI\"},{\"id\":\"smoke-probe-zero\",\"input\":{\"request\":{\"body\":{\"probe\":0}},\"trusted\":{}},\"expected\":\"deny\",\"source_ref\":\"synthetic:VIS-FSV-S04-RUNTIME-ABI\"}]},\"end\":\"END_FSV-S04_p2p_rego_SMOKE\"}",
+        "role": "assistant"
+      }
+    }
+  ],
+  "created": 1791949545,
+  "id": "202610141145217011bfe4bafd4bb8",
+  "model": "glm-5.2",
+  "object": "chat.completion",
+  "request_id": "202610141145217011bfe4bafd4bb8",
+  "usage": {
+    "completion_tokens": 1854,
+    "completion_tokens_details": {
+      "reasoning_tokens": 1067
+    },
+    "prompt_tokens": 5991,
+    "prompt_tokens_details": {
+      "cached_tokens": 0
+    },
+    "total_tokens": 7845
+  }
+}

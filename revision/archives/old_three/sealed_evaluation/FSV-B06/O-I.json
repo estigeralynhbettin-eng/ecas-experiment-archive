@@ -1,0 +1,1 @@
+{"oracle_channel":"O-I","task_window_id":"FSV-B06","vectors":[{"envelope":{"request":{"body":{}},"trusted":{"reAgeIsLatestTransaction":false}},"expected_class":"deny","reason":"official scenario rejects non-latest reversal","synthetic_data_only":true,"vector_id":"FSV-B06-OI-01","vector_suffix":"OI-01"}]}

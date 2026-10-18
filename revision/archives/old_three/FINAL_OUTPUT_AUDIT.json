@@ -1,0 +1,537 @@
+{
+  "status": "PASS",
+  "checks": [
+    {
+      "object": "call-1",
+      "check": "immutable_raw_model_finish_usage",
+      "pass": true
+    },
+    {
+      "object": "call-1",
+      "check": "final_fixture_labels_absent_from_prompt",
+      "pass": true
+    },
+    {
+      "object": "call-2",
+      "check": "immutable_raw_model_finish_usage",
+      "pass": true
+    },
+    {
+      "object": "call-2",
+      "check": "final_fixture_labels_absent_from_prompt",
+      "pass": true
+    },
+    {
+      "object": "call-3",
+      "check": "immutable_raw_model_finish_usage",
+      "pass": true
+    },
+    {
+      "object": "call-3",
+      "check": "final_fixture_labels_absent_from_prompt",
+      "pass": true
+    },
+    {
+      "object": "call-4",
+      "check": "immutable_raw_model_finish_usage",
+      "pass": true
+    },
+    {
+      "object": "call-4",
+      "check": "final_fixture_labels_absent_from_prompt",
+      "pass": true
+    },
+    {
+      "object": "call-5",
+      "check": "immutable_raw_model_finish_usage",
+      "pass": true
+    },
+    {
+      "object": "call-5",
+      "check": "final_fixture_labels_absent_from_prompt",
+      "pass": true
+    },
+    {
+      "object": "call-6",
+      "check": "immutable_raw_model_finish_usage",
+      "pass": true
+    },
+    {
+      "object": "call-6",
+      "check": "final_fixture_labels_absent_from_prompt",
+      "pass": true
+    },
+    {
+      "object": "call-7",
+      "check": "immutable_raw_model_finish_usage",
+      "pass": true
+    },
+    {
+      "object": "call-7",
+      "check": "final_fixture_labels_absent_from_prompt",
+      "pass": true
+    },
+    {
+      "object": "call-8",
+      "check": "immutable_raw_model_finish_usage",
+      "pass": true
+    },
+    {
+      "object": "call-8",
+      "check": "final_fixture_labels_absent_from_prompt",
+      "pass": true
+    },
+    {
+      "object": "call-9",
+      "check": "immutable_raw_model_finish_usage",
+      "pass": true
+    },
+    {
+      "object": "call-9",
+      "check": "final_fixture_labels_absent_from_prompt",
+      "pass": true
+    },
+    {
+      "object": "call-10",
+      "check": "immutable_raw_model_finish_usage",
+      "pass": true
+    },
+    {
+      "object": "call-10",
+      "check": "final_fixture_labels_absent_from_prompt",
+      "pass": true
+    },
+    {
+      "object": "call-11",
+      "check": "immutable_raw_model_finish_usage",
+      "pass": true
+    },
+    {
+      "object": "call-11",
+      "check": "final_fixture_labels_absent_from_prompt",
+      "pass": true
+    },
+    {
+      "object": "call-12",
+      "check": "immutable_raw_model_finish_usage",
+      "pass": true
+    },
+    {
+      "object": "call-12",
+      "check": "final_fixture_labels_absent_from_prompt",
+      "pass": true
+    },
+    {
+      "object": "call-13",
+      "check": "immutable_raw_model_finish_usage",
+      "pass": true
+    },
+    {
+      "object": "call-13",
+      "check": "final_fixture_labels_absent_from_prompt",
+      "pass": true
+    },
+    {
+      "object": "call-14",
+      "check": "immutable_raw_model_finish_usage",
+      "pass": true
+    },
+    {
+      "object": "call-14",
+      "check": "final_fixture_labels_absent_from_prompt",
+      "pass": true
+    },
+    {
+      "object": "call-15",
+      "check": "immutable_raw_model_finish_usage",
+      "pass": true
+    },
+    {
+      "object": "call-15",
+      "check": "final_fixture_labels_absent_from_prompt",
+      "pass": true
+    },
+    {
+      "object": "call-16",
+      "check": "immutable_raw_model_finish_usage",
+      "pass": true
+    },
+    {
+      "object": "call-16",
+      "check": "final_fixture_labels_absent_from_prompt",
+      "pass": true
+    },
+    {
+      "object": "call-17",
+      "check": "immutable_raw_model_finish_usage",
+      "pass": true
+    },
+    {
+      "object": "call-17",
+      "check": "final_fixture_labels_absent_from_prompt",
+      "pass": true
+    },
+    {
+      "object": "call-18",
+      "check": "immutable_raw_model_finish_usage",
+      "pass": true
+    },
+    {
+      "object": "call-18",
+      "check": "final_fixture_labels_absent_from_prompt",
+      "pass": true
+    },
+    {
+      "object": "call-19",
+      "check": "immutable_raw_model_finish_usage",
+      "pass": true
+    },
+    {
+      "object": "call-19",
+      "check": "final_fixture_labels_absent_from_prompt",
+      "pass": true
+    },
+    {
+      "object": "call-20",
+      "check": "immutable_raw_model_finish_usage",
+      "pass": true
+    },
+    {
+      "object": "call-20",
+      "check": "final_fixture_labels_absent_from_prompt",
+      "pass": true
+    },
+    {
+      "object": "call-21",
+      "check": "immutable_raw_model_finish_usage",
+      "pass": true
+    },
+    {
+      "object": "call-21",
+      "check": "final_fixture_labels_absent_from_prompt",
+      "pass": true
+    },
+    {
+      "object": "call-22",
+      "check": "immutable_raw_model_finish_usage",
+      "pass": true
+    },
+    {
+      "object": "call-22",
+      "check": "final_fixture_labels_absent_from_prompt",
+      "pass": true
+    },
+    {
+      "object": "call-23",
+      "check": "immutable_raw_model_finish_usage",
+      "pass": true
+    },
+    {
+      "object": "call-23",
+      "check": "final_fixture_labels_absent_from_prompt",
+      "pass": true
+    },
+    {
+      "object": "call-24",
+      "check": "immutable_raw_model_finish_usage",
+      "pass": true
+    },
+    {
+      "object": "call-24",
+      "check": "final_fixture_labels_absent_from_prompt",
+      "pass": true
+    },
+    {
+      "object": "call-25",
+      "check": "immutable_raw_model_finish_usage",
+      "pass": true
+    },
+    {
+      "object": "call-25",
+      "check": "final_fixture_labels_absent_from_prompt",
+      "pass": true
+    },
+    {
+      "object": "call-26",
+      "check": "immutable_raw_model_finish_usage",
+      "pass": true
+    },
+    {
+      "object": "call-26",
+      "check": "final_fixture_labels_absent_from_prompt",
+      "pass": true
+    },
+    {
+      "object": "call-27",
+      "check": "immutable_raw_model_finish_usage",
+      "pass": true
+    },
+    {
+      "object": "call-27",
+      "check": "final_fixture_labels_absent_from_prompt",
+      "pass": true
+    },
+    {
+      "object": "budget",
+      "check": "calls_smoke_repairs_and_distinct_ids",
+      "pass": true
+    },
+    {
+      "object": "FSV-B06/P2P_STYLE",
+      "check": "policy_source_hash_ast_equal",
+      "pass": true
+    },
+    {
+      "object": "FSV-B06/P2P_STYLE/O-L",
+      "check": "archived_fixture_and_payload_trusted_equal",
+      "pass": true
+    },
+    {
+      "object": "FSV-B06/P2P_STYLE/O-L",
+      "check": "raw_opa_boolean_decision",
+      "pass": true
+    },
+    {
+      "object": "FSV-B06/P2P_STYLE/O-I",
+      "check": "archived_fixture_and_payload_trusted_equal",
+      "pass": true
+    },
+    {
+      "object": "FSV-B06/P2P_STYLE/O-I",
+      "check": "raw_opa_boolean_decision",
+      "pass": true
+    },
+    {
+      "object": "FSV-B06/AUTOPAC_STYLE",
+      "check": "policy_source_hash_ast_equal",
+      "pass": true
+    },
+    {
+      "object": "FSV-B06/AUTOPAC_STYLE/O-L",
+      "check": "archived_fixture_and_payload_trusted_equal",
+      "pass": true
+    },
+    {
+      "object": "FSV-B06/AUTOPAC_STYLE/O-L",
+      "check": "raw_opa_boolean_decision",
+      "pass": true
+    },
+    {
+      "object": "FSV-B06/AUTOPAC_STYLE/O-I",
+      "check": "archived_fixture_and_payload_trusted_equal",
+      "pass": true
+    },
+    {
+      "object": "FSV-B06/AUTOPAC_STYLE/O-I",
+      "check": "raw_opa_boolean_decision",
+      "pass": true
+    },
+    {
+      "object": "FSV-B06/ECAS_MATCHED/O-L",
+      "check": "archived_fixture_and_payload_trusted_equal",
+      "pass": true
+    },
+    {
+      "object": "FSV-B06/ECAS_MATCHED/O-I",
+      "check": "archived_fixture_and_payload_trusted_equal",
+      "pass": true
+    },
+    {
+      "object": "FSV-S02/ECAS_MATCHED/O-L",
+      "check": "archived_fixture_and_payload_trusted_equal",
+      "pass": true
+    },
+    {
+      "object": "FSV-S02/ECAS_MATCHED/O-I",
+      "check": "archived_fixture_and_payload_trusted_equal",
+      "pass": true
+    },
+    {
+      "object": "FSV-S04/P2P_STYLE",
+      "check": "policy_source_hash_ast_equal",
+      "pass": true
+    },
+    {
+      "object": "FSV-S04/P2P_STYLE/O-L",
+      "check": "archived_fixture_and_payload_trusted_equal",
+      "pass": true
+    },
+    {
+      "object": "FSV-S04/P2P_STYLE/O-L",
+      "check": "raw_opa_boolean_decision",
+      "pass": true
+    },
+    {
+      "object": "FSV-S04/P2P_STYLE/O-I",
+      "check": "archived_fixture_and_payload_trusted_equal",
+      "pass": true
+    },
+    {
+      "object": "FSV-S04/P2P_STYLE/O-I",
+      "check": "raw_opa_boolean_decision",
+      "pass": true
+    },
+    {
+      "object": "FSV-S04/AUTOPAC_STYLE",
+      "check": "policy_source_hash_ast_equal",
+      "pass": true
+    },
+    {
+      "object": "FSV-S04/ECAS_MATCHED/O-L",
+      "check": "archived_fixture_and_payload_trusted_equal",
+      "pass": true
+    },
+    {
+      "object": "FSV-S04/ECAS_MATCHED/O-I",
+      "check": "archived_fixture_and_payload_trusted_equal",
+      "pass": true
+    },
+    {
+      "object": "FSV-B06/P2P_STYLE",
+      "check": "policy_source_hash_ast_equal",
+      "pass": true
+    },
+    {
+      "object": "FSV-B06/P2P_STYLE/O-L",
+      "check": "archived_fixture_and_payload_trusted_equal",
+      "pass": true
+    },
+    {
+      "object": "FSV-B06/P2P_STYLE/O-L",
+      "check": "raw_opa_boolean_decision",
+      "pass": true
+    },
+    {
+      "object": "FSV-B06/P2P_STYLE/O-I",
+      "check": "archived_fixture_and_payload_trusted_equal",
+      "pass": true
+    },
+    {
+      "object": "FSV-B06/P2P_STYLE/O-I",
+      "check": "raw_opa_boolean_decision",
+      "pass": true
+    },
+    {
+      "object": "FSV-B06/AUTOPAC_STYLE",
+      "check": "policy_source_hash_ast_equal",
+      "pass": true
+    },
+    {
+      "object": "FSV-B06/AUTOPAC_STYLE/O-L",
+      "check": "archived_fixture_and_payload_trusted_equal",
+      "pass": true
+    },
+    {
+      "object": "FSV-B06/AUTOPAC_STYLE/O-L",
+      "check": "raw_opa_boolean_decision",
+      "pass": true
+    },
+    {
+      "object": "FSV-B06/AUTOPAC_STYLE/O-I",
+      "check": "archived_fixture_and_payload_trusted_equal",
+      "pass": true
+    },
+    {
+      "object": "FSV-B06/AUTOPAC_STYLE/O-I",
+      "check": "raw_opa_boolean_decision",
+      "pass": true
+    },
+    {
+      "object": "FSV-B06/ECAS_MATCHED/O-L",
+      "check": "archived_fixture_and_payload_trusted_equal",
+      "pass": true
+    },
+    {
+      "object": "FSV-B06/ECAS_MATCHED/O-I",
+      "check": "archived_fixture_and_payload_trusted_equal",
+      "pass": true
+    },
+    {
+      "object": "FSV-S02/ECAS_MATCHED/O-L",
+      "check": "archived_fixture_and_payload_trusted_equal",
+      "pass": true
+    },
+    {
+      "object": "FSV-S02/ECAS_MATCHED/O-I",
+      "check": "archived_fixture_and_payload_trusted_equal",
+      "pass": true
+    },
+    {
+      "object": "FSV-S04/P2P_STYLE",
+      "check": "policy_source_hash_ast_equal",
+      "pass": true
+    },
+    {
+      "object": "FSV-S04/P2P_STYLE/O-L",
+      "check": "archived_fixture_and_payload_trusted_equal",
+      "pass": true
+    },
+    {
+      "object": "FSV-S04/P2P_STYLE/O-L",
+      "check": "raw_opa_boolean_decision",
+      "pass": true
+    },
+    {
+      "object": "FSV-S04/P2P_STYLE/O-I",
+      "check": "archived_fixture_and_payload_trusted_equal",
+      "pass": true
+    },
+    {
+      "object": "FSV-S04/P2P_STYLE/O-I",
+      "check": "raw_opa_boolean_decision",
+      "pass": true
+    },
+    {
+      "object": "FSV-S04/AUTOPAC_STYLE",
+      "check": "policy_source_hash_ast_equal",
+      "pass": true
+    },
+    {
+      "object": "FSV-S04/AUTOPAC_STYLE/O-L",
+      "check": "archived_fixture_and_payload_trusted_equal",
+      "pass": true
+    },
+    {
+      "object": "FSV-S04/AUTOPAC_STYLE/O-L",
+      "check": "raw_opa_boolean_decision",
+      "pass": true
+    },
+    {
+      "object": "FSV-S04/AUTOPAC_STYLE/O-I",
+      "check": "archived_fixture_and_payload_trusted_equal",
+      "pass": true
+    },
+    {
+      "object": "FSV-S04/AUTOPAC_STYLE/O-I",
+      "check": "raw_opa_boolean_decision",
+      "pass": true
+    },
+    {
+      "object": "FSV-S04/ECAS_MATCHED/O-L",
+      "check": "archived_fixture_and_payload_trusted_equal",
+      "pass": true
+    },
+    {
+      "object": "FSV-S04/ECAS_MATCHED/O-I",
+      "check": "archived_fixture_and_payload_trusted_equal",
+      "pass": true
+    },
+    {
+      "object": "native_methods",
+      "check": "not_claimed_executed",
+      "pass": true
+    },
+    {
+      "object": "regex_diagnostic",
+      "check": "literal_match_observed_without_policy_rewrite",
+      "pass": true
+    }
+  ],
+  "count": 105,
+  "scope": "ECAS-EXTERNAL-ADAPTATION-20261014-01",
+  "model_calls": 27,
+  "original_generation_rows": 9,
+  "posthoc_binding_rows": 18,
+  "independent_samples_added": 0,
+  "scientific_whole_paper_pass": false
+}

@@ -1,0 +1,681 @@
+{
+  "task": "FSV-B19",
+  "method": "ECAS_MATCHED",
+  "status": "EVALUATED",
+  "requests": [
+    {
+      "channel": "O-L",
+      "input": {
+        "request": {
+          "body": {
+            "action": "PURCHASE_ORDER",
+            "supplier": "SUPPLIER-SYNTH-1"
+          }
+        },
+        "trusted": {
+          "holdType": "",
+          "supplierOnHold": false
+        }
+      },
+      "expected": "allow",
+      "actual": {
+        "policy_id": "FSV-B19-POLICY-PO-HOLD-GUARD",
+        "decision": "allow",
+        "fail_closed": true,
+        "violations": []
+      }
+    },
+    {
+      "channel": "O-I",
+      "input": {
+        "request": {
+          "body": {
+            "action": "PURCHASE_ORDER",
+            "supplier": "SUPPLIER-SYNTH-1"
+          }
+        },
+        "trusted": {
+          "holdType": "All",
+          "supplierOnHold": true
+        }
+      },
+      "expected": "deny",
+      "actual": {
+        "policy_id": "FSV-B19-POLICY-PO-HOLD-GUARD",
+        "decision": "deny",
+        "fail_closed": true,
+        "violations": [
+          {
+            "rule_id": "FSV-B19-RULE-PO-HOLD-GUARD",
+            "code": "bounded_guard_rejected",
+            "detail": "FSV-B19-RULE-PO-HOLD-GUARD"
+          }
+        ]
+      }
+    }
+  ],
+  "calls": [
+    38
+  ],
+  "repaired_once": false,
+  "reason": null,
+  "initial_requests": [
+    {
+      "id": "O-L",
+      "input": {
+        "request": {
+          "body": {
+            "action": "PURCHASE_ORDER",
+            "supplier": "SUPPLIER-SYNTH-1"
+          }
+        },
+        "trusted": {
+          "holdType": "",
+          "supplierOnHold": false
+        }
+      },
+      "expected": "allow",
+      "basis": "archived_original",
+      "actual": {
+        "policy_id": "FSV-B19-POLICY-PO-HOLD-GUARD",
+        "decision": "allow",
+        "fail_closed": true,
+        "violations": []
+      },
+      "pass": true
+    },
+    {
+      "id": "O-I",
+      "input": {
+        "request": {
+          "body": {
+            "action": "PURCHASE_ORDER",
+            "supplier": "SUPPLIER-SYNTH-1"
+          }
+        },
+        "trusted": {
+          "holdType": "All",
+          "supplierOnHold": true
+        }
+      },
+      "expected": "deny",
+      "basis": "archived_original",
+      "actual": {
+        "policy_id": "FSV-B19-POLICY-PO-HOLD-GUARD",
+        "decision": "deny",
+        "fail_closed": true,
+        "violations": [
+          {
+            "rule_id": "FSV-B19-RULE-PO-HOLD-GUARD",
+            "code": "bounded_guard_rejected",
+            "detail": "FSV-B19-RULE-PO-HOLD-GUARD"
+          }
+        ]
+      },
+      "pass": true
+    }
+  ],
+  "branch_probes": [
+    {
+      "id": "not-held",
+      "input": {
+        "request": {
+          "body": {
+            "action": "PURCHASE_ORDER",
+            "supplier": "SUPPLIER-SYNTH-1"
+          }
+        },
+        "trusted": {
+          "supplierOnHold": false,
+          "holdType": ""
+        }
+      },
+      "expected": "allow",
+      "basis": "documented_rule",
+      "actual": {
+        "policy_id": "FSV-B19-POLICY-PO-HOLD-GUARD",
+        "decision": "allow",
+        "fail_closed": true,
+        "violations": []
+      },
+      "pass": true
+    },
+    {
+      "id": "held-all",
+      "input": {
+        "request": {
+          "body": {
+            "action": "PURCHASE_ORDER",
+            "supplier": "SUPPLIER-SYNTH-1"
+          }
+        },
+        "trusted": {
+          "supplierOnHold": true,
+          "holdType": "All"
+        }
+      },
+      "expected": "deny",
+      "basis": "documented_rule",
+      "actual": {
+        "policy_id": "FSV-B19-POLICY-PO-HOLD-GUARD",
+        "decision": "deny",
+        "fail_closed": true,
+        "violations": [
+          {
+            "rule_id": "FSV-B19-RULE-PO-HOLD-GUARD",
+            "code": "bounded_guard_rejected",
+            "detail": "FSV-B19-RULE-PO-HOLD-GUARD"
+          }
+        ]
+      },
+      "pass": true
+    },
+    {
+      "id": "held-invoices",
+      "input": {
+        "request": {
+          "body": {
+            "action": "PURCHASE_ORDER",
+            "supplier": "SUPPLIER-SYNTH-1"
+          }
+        },
+        "trusted": {
+          "supplierOnHold": true,
+          "holdType": "Invoices"
+        }
+      },
+      "expected": "deny",
+      "basis": "documented_rule",
+      "actual": {
+        "policy_id": "FSV-B19-POLICY-PO-HOLD-GUARD",
+        "decision": "deny",
+        "fail_closed": true,
+        "violations": [
+          {
+            "rule_id": "FSV-B19-RULE-PO-HOLD-GUARD",
+            "code": "bounded_guard_rejected",
+            "detail": "FSV-B19-RULE-PO-HOLD-GUARD"
+          }
+        ]
+      },
+      "pass": true
+    },
+    {
+      "id": "held-payments",
+      "input": {
+        "request": {
+          "body": {
+            "action": "PURCHASE_ORDER",
+            "supplier": "SUPPLIER-SYNTH-1"
+          }
+        },
+        "trusted": {
+          "supplierOnHold": true,
+          "holdType": "Payments"
+        }
+      },
+      "expected": "allow",
+      "basis": "documented_rule",
+      "actual": {
+        "policy_id": "FSV-B19-POLICY-PO-HOLD-GUARD",
+        "decision": "allow",
+        "fail_closed": true,
+        "violations": []
+      },
+      "pass": true
+    },
+    {
+      "id": "held-empty-type",
+      "input": {
+        "request": {
+          "body": {
+            "action": "PURCHASE_ORDER",
+            "supplier": "SUPPLIER-SYNTH-1"
+          }
+        },
+        "trusted": {
+          "supplierOnHold": true,
+          "holdType": ""
+        }
+      },
+      "expected": "deny",
+      "basis": "conservative_empty_type_control",
+      "actual": {
+        "policy_id": "FSV-B19-POLICY-PO-HOLD-GUARD",
+        "decision": "deny",
+        "fail_closed": true,
+        "violations": [
+          {
+            "rule_id": "FSV-B19-RULE-PO-HOLD-GUARD",
+            "code": "bounded_guard_rejected",
+            "detail": "FSV-B19-RULE-PO-HOLD-GUARD"
+          }
+        ]
+      },
+      "pass": true
+    },
+    {
+      "id": "held-unknown-type",
+      "input": {
+        "request": {
+          "body": {
+            "action": "PURCHASE_ORDER",
+            "supplier": "SUPPLIER-SYNTH-1"
+          }
+        },
+        "trusted": {
+          "supplierOnHold": true,
+          "holdType": "Unknown"
+        }
+      },
+      "expected": "deny",
+      "basis": "engineering_unknown_type_control",
+      "actual": {
+        "policy_id": "FSV-B19-POLICY-PO-HOLD-GUARD",
+        "decision": "deny",
+        "fail_closed": true,
+        "violations": [
+          {
+            "rule_id": "FSV-B19-RULE-PO-HOLD-GUARD",
+            "code": "bounded_guard_rejected",
+            "detail": "FSV-B19-RULE-PO-HOLD-GUARD"
+          }
+        ]
+      },
+      "pass": true
+    },
+    {
+      "id": "body-type-spoof",
+      "input": {
+        "request": {
+          "body": {
+            "action": "PURCHASE_ORDER",
+            "supplier": "SUPPLIER-SYNTH-1",
+            "holdType": "Payments"
+          }
+        },
+        "trusted": {
+          "supplierOnHold": true,
+          "holdType": "All"
+        }
+      },
+      "expected": "deny",
+      "basis": "engineering_trust_control",
+      "actual": {
+        "policy_id": "FSV-B19-POLICY-PO-HOLD-GUARD",
+        "decision": "deny",
+        "fail_closed": true,
+        "violations": [
+          {
+            "rule_id": "FSV-B19-RULE-PO-HOLD-GUARD",
+            "code": "bounded_guard_rejected",
+            "detail": "FSV-B19-RULE-PO-HOLD-GUARD"
+          }
+        ]
+      },
+      "pass": true
+    },
+    {
+      "id": "missing-trusted",
+      "input": {
+        "request": {
+          "body": {
+            "action": "PURCHASE_ORDER",
+            "supplier": "SUPPLIER-SYNTH-1"
+          }
+        },
+        "trusted": {}
+      },
+      "expected": "deny",
+      "basis": "engineering_fail_closed_control",
+      "actual": {
+        "policy_id": "FSV-B19-POLICY-PO-HOLD-GUARD",
+        "decision": "deny",
+        "fail_closed": true,
+        "violations": [
+          {
+            "rule_id": "FSV-B19-RULE-PO-HOLD-GUARD",
+            "code": "required_input_missing",
+            "detail": "FSV-B19-RULE-PO-HOLD-GUARD"
+          }
+        ]
+      },
+      "pass": true
+    }
+  ],
+  "source_folder": "/mnt/d/lunwen/EC-CSI投稿/working/exploration/20261014_four_case_peer_baselines/documented_ecas/FSV-B19/ECAS_MATCHED",
+  "format_recovery": false,
+  "original_interface_status": "EVALUATED",
+  "format_only_recovery": false,
+  "documentation_revision": true,
+  "original_batch_status": "EVALUATED",
+  "original_batch_requests": [
+    {
+      "channel": "O-L",
+      "input": {
+        "request": {
+          "body": {
+            "action": "PURCHASE_ORDER",
+            "supplier": "SUPPLIER-SYNTH-1"
+          }
+        },
+        "trusted": {
+          "holdType": "",
+          "supplierOnHold": false
+        }
+      },
+      "expected": "allow",
+      "actual": {
+        "policy_id": "FSV-B19-P01",
+        "decision": "deny",
+        "fail_closed": true,
+        "violations": [
+          {
+            "rule_id": "FSV-B19-R01",
+            "code": "bounded_guard_rejected",
+            "detail": "FSV-B19-R01"
+          }
+        ]
+      }
+    },
+    {
+      "channel": "O-I",
+      "input": {
+        "request": {
+          "body": {
+            "action": "PURCHASE_ORDER",
+            "supplier": "SUPPLIER-SYNTH-1"
+          }
+        },
+        "trusted": {
+          "holdType": "All",
+          "supplierOnHold": true
+        }
+      },
+      "expected": "deny",
+      "actual": {
+        "policy_id": "FSV-B19-P01",
+        "decision": "allow",
+        "fail_closed": true,
+        "violations": []
+      }
+    }
+  ],
+  "original_batch_pair_correct": false,
+  "common_developer_results": {
+    "passed": true,
+    "rows": [
+      {
+        "id": "dev_not_held",
+        "expected": "allow",
+        "actual": {
+          "policy_id": "FSV-B19-POLICY-PO-HOLD-GUARD",
+          "decision": "allow",
+          "fail_closed": true,
+          "violations": []
+        },
+        "pass": true
+      },
+      {
+        "id": "dev_invoices",
+        "expected": "deny",
+        "actual": {
+          "policy_id": "FSV-B19-POLICY-PO-HOLD-GUARD",
+          "decision": "deny",
+          "fail_closed": true,
+          "violations": [
+            {
+              "rule_id": "FSV-B19-RULE-PO-HOLD-GUARD",
+              "code": "bounded_guard_rejected",
+              "detail": "FSV-B19-RULE-PO-HOLD-GUARD"
+            }
+          ]
+        },
+        "pass": true
+      },
+      {
+        "id": "dev_payments",
+        "expected": "allow",
+        "actual": {
+          "policy_id": "FSV-B19-POLICY-PO-HOLD-GUARD",
+          "decision": "allow",
+          "fail_closed": true,
+          "violations": []
+        },
+        "pass": true
+      }
+    ]
+  },
+  "initial_branch_probes": [
+    {
+      "id": "not-held",
+      "input": {
+        "request": {
+          "body": {
+            "action": "PURCHASE_ORDER",
+            "supplier": "SUPPLIER-SYNTH-1"
+          }
+        },
+        "trusted": {
+          "supplierOnHold": false,
+          "holdType": ""
+        }
+      },
+      "expected": "allow",
+      "basis": "documented_rule",
+      "actual": {
+        "policy_id": "FSV-B19-POLICY-PO-HOLD-GUARD",
+        "decision": "allow",
+        "fail_closed": true,
+        "violations": []
+      },
+      "pass": true
+    },
+    {
+      "id": "held-all",
+      "input": {
+        "request": {
+          "body": {
+            "action": "PURCHASE_ORDER",
+            "supplier": "SUPPLIER-SYNTH-1"
+          }
+        },
+        "trusted": {
+          "supplierOnHold": true,
+          "holdType": "All"
+        }
+      },
+      "expected": "deny",
+      "basis": "documented_rule",
+      "actual": {
+        "policy_id": "FSV-B19-POLICY-PO-HOLD-GUARD",
+        "decision": "deny",
+        "fail_closed": true,
+        "violations": [
+          {
+            "rule_id": "FSV-B19-RULE-PO-HOLD-GUARD",
+            "code": "bounded_guard_rejected",
+            "detail": "FSV-B19-RULE-PO-HOLD-GUARD"
+          }
+        ]
+      },
+      "pass": true
+    },
+    {
+      "id": "held-invoices",
+      "input": {
+        "request": {
+          "body": {
+            "action": "PURCHASE_ORDER",
+            "supplier": "SUPPLIER-SYNTH-1"
+          }
+        },
+        "trusted": {
+          "supplierOnHold": true,
+          "holdType": "Invoices"
+        }
+      },
+      "expected": "deny",
+      "basis": "documented_rule",
+      "actual": {
+        "policy_id": "FSV-B19-POLICY-PO-HOLD-GUARD",
+        "decision": "deny",
+        "fail_closed": true,
+        "violations": [
+          {
+            "rule_id": "FSV-B19-RULE-PO-HOLD-GUARD",
+            "code": "bounded_guard_rejected",
+            "detail": "FSV-B19-RULE-PO-HOLD-GUARD"
+          }
+        ]
+      },
+      "pass": true
+    },
+    {
+      "id": "held-payments",
+      "input": {
+        "request": {
+          "body": {
+            "action": "PURCHASE_ORDER",
+            "supplier": "SUPPLIER-SYNTH-1"
+          }
+        },
+        "trusted": {
+          "supplierOnHold": true,
+          "holdType": "Payments"
+        }
+      },
+      "expected": "allow",
+      "basis": "documented_rule",
+      "actual": {
+        "policy_id": "FSV-B19-POLICY-PO-HOLD-GUARD",
+        "decision": "allow",
+        "fail_closed": true,
+        "violations": []
+      },
+      "pass": true
+    },
+    {
+      "id": "held-empty-type",
+      "input": {
+        "request": {
+          "body": {
+            "action": "PURCHASE_ORDER",
+            "supplier": "SUPPLIER-SYNTH-1"
+          }
+        },
+        "trusted": {
+          "supplierOnHold": true,
+          "holdType": ""
+        }
+      },
+      "expected": "deny",
+      "basis": "conservative_empty_type_control",
+      "actual": {
+        "policy_id": "FSV-B19-POLICY-PO-HOLD-GUARD",
+        "decision": "deny",
+        "fail_closed": true,
+        "violations": [
+          {
+            "rule_id": "FSV-B19-RULE-PO-HOLD-GUARD",
+            "code": "bounded_guard_rejected",
+            "detail": "FSV-B19-RULE-PO-HOLD-GUARD"
+          }
+        ]
+      },
+      "pass": true
+    },
+    {
+      "id": "held-unknown-type",
+      "input": {
+        "request": {
+          "body": {
+            "action": "PURCHASE_ORDER",
+            "supplier": "SUPPLIER-SYNTH-1"
+          }
+        },
+        "trusted": {
+          "supplierOnHold": true,
+          "holdType": "Unknown"
+        }
+      },
+      "expected": "deny",
+      "basis": "engineering_unknown_type_control",
+      "actual": {
+        "policy_id": "FSV-B19-POLICY-PO-HOLD-GUARD",
+        "decision": "deny",
+        "fail_closed": true,
+        "violations": [
+          {
+            "rule_id": "FSV-B19-RULE-PO-HOLD-GUARD",
+            "code": "bounded_guard_rejected",
+            "detail": "FSV-B19-RULE-PO-HOLD-GUARD"
+          }
+        ]
+      },
+      "pass": true
+    },
+    {
+      "id": "body-type-spoof",
+      "input": {
+        "request": {
+          "body": {
+            "action": "PURCHASE_ORDER",
+            "supplier": "SUPPLIER-SYNTH-1",
+            "holdType": "Payments"
+          }
+        },
+        "trusted": {
+          "supplierOnHold": true,
+          "holdType": "All"
+        }
+      },
+      "expected": "deny",
+      "basis": "engineering_trust_control",
+      "actual": {
+        "policy_id": "FSV-B19-POLICY-PO-HOLD-GUARD",
+        "decision": "deny",
+        "fail_closed": true,
+        "violations": [
+          {
+            "rule_id": "FSV-B19-RULE-PO-HOLD-GUARD",
+            "code": "bounded_guard_rejected",
+            "detail": "FSV-B19-RULE-PO-HOLD-GUARD"
+          }
+        ]
+      },
+      "pass": true
+    },
+    {
+      "id": "missing-trusted",
+      "input": {
+        "request": {
+          "body": {
+            "action": "PURCHASE_ORDER",
+            "supplier": "SUPPLIER-SYNTH-1"
+          }
+        },
+        "trusted": {}
+      },
+      "expected": "deny",
+      "basis": "engineering_fail_closed_control",
+      "actual": {
+        "policy_id": "FSV-B19-POLICY-PO-HOLD-GUARD",
+        "decision": "deny",
+        "fail_closed": true,
+        "violations": [
+          {
+            "rule_id": "FSV-B19-RULE-PO-HOLD-GUARD",
+            "code": "required_input_missing",
+            "detail": "FSV-B19-RULE-PO-HOLD-GUARD"
+          }
+        ]
+      },
+      "pass": true
+    }
+  ],
+  "initial_pair_correct": true,
+  "pair_correct": true,
+  "branch_count": 8,
+  "branch_passed": 8
+}

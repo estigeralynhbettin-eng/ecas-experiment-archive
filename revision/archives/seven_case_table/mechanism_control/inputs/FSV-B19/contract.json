@@ -1,0 +1,158 @@
+{
+  "catalog_id": "EC-SECURITY-PRIMITIVE-CATALOG-V2",
+  "contract_id": "ECV2-CONTRACT-FSV-B19",
+  "contract_version": "EC-EVIDENCE-CONTRACT-V3",
+  "evidence": [
+    {
+      "binding_facts": {
+        "visible_plain_language_invariant": true,
+        "visible_server_authority_or_workflow_contract": true
+      },
+      "bound_paths": [
+        "/request/body/action",
+        "/request/body/supplier",
+        "/trusted/holdType",
+        "/trusted/supplierOnHold"
+      ],
+      "evidence_id": "VIS-FSV-B19-01",
+      "locator": "extracted/erpnext-supplier.md:article",
+      "operations": [
+        "POST /api/resource/Purchase Order"
+      ],
+      "relation": "supports",
+      "sha256": "1DD2CBED3915F83CC734BA23F7A016A9C386ED6BA9E54962619F70DB706F5C6F",
+      "source_kind": "business_requirement",
+      "supports_primitives": [
+        "SP-BOUNDED-BUSINESS-GUARD",
+        "SP-SERVER-AUTHORITY-WORKFLOW"
+      ],
+      "system": "ERPNext",
+      "versions": [
+        "16.0.0"
+      ],
+      "visibility": "visible"
+    },
+    {
+      "binding_facts": {
+        "visible_plain_language_invariant": true,
+        "visible_server_authority_or_workflow_contract": true
+      },
+      "bound_paths": [
+        "/request/body/action",
+        "/request/body/supplier",
+        "/trusted/holdType",
+        "/trusted/supplierOnHold"
+      ],
+      "evidence_id": "VIS-FSV-B19-02",
+      "locator": "extracted/frappe-rest-api.md:article",
+      "operations": [
+        "POST /api/resource/Purchase Order"
+      ],
+      "relation": "supports",
+      "sha256": "87CB28850081B1F7D6702521E98E5F242498A456491EF26BDE847C20CCBFE154",
+      "source_kind": "api_documentation",
+      "supports_primitives": [
+        "SP-BOUNDED-BUSINESS-GUARD",
+        "SP-SERVER-AUTHORITY-WORKFLOW"
+      ],
+      "system": "ERPNext",
+      "versions": [
+        "16.0.0"
+      ],
+      "visibility": "visible"
+    },
+    {
+      "binding_facts": {
+        "visible_plain_language_invariant": true,
+        "visible_server_authority_or_workflow_contract": true
+      },
+      "bound_paths": [
+        "/request/body/action",
+        "/request/body/supplier",
+        "/trusted/holdType",
+        "/trusted/supplierOnHold"
+      ],
+      "evidence_id": "VIS-FSV-B19-03",
+      "locator": "erpnext-supplier-doctype.json:complete-field-catalog",
+      "operations": [
+        "POST /api/resource/Purchase Order"
+      ],
+      "relation": "supports",
+      "sha256": "07347D26E75881232AC991A31F0560CE3676335C6A050E7412EF66670FD637CB",
+      "source_kind": "developer_manual",
+      "supports_primitives": [
+        "SP-BOUNDED-BUSINESS-GUARD",
+        "SP-SERVER-AUTHORITY-WORKFLOW"
+      ],
+      "system": "ERPNext",
+      "versions": [
+        "16.0.0"
+      ],
+      "visibility": "visible"
+    },
+    {
+      "binding_facts": {
+        "visible_plain_language_invariant": true,
+        "visible_server_authority_or_workflow_contract": true
+      },
+      "bound_paths": [
+        "/request/body/action",
+        "/request/body/supplier",
+        "/trusted/holdType",
+        "/trusted/supplierOnHold"
+      ],
+      "evidence_id": "VIS-FSV-B19-04",
+      "locator": "erpnext-purchase-order-doctype.json:complete-field-catalog",
+      "operations": [
+        "POST /api/resource/Purchase Order"
+      ],
+      "relation": "supports",
+      "sha256": "99F835C958B3191B09EB61D232A3D6CDEF14990B666EA766979F8C7ACFEF800F",
+      "source_kind": "developer_manual",
+      "supports_primitives": [
+        "SP-BOUNDED-BUSINESS-GUARD",
+        "SP-SERVER-AUTHORITY-WORKFLOW"
+      ],
+      "system": "ERPNext",
+      "versions": [
+        "16.0.0"
+      ],
+      "visibility": "visible"
+    },
+    {
+      "binding_facts": {
+        "trusted_runtime_context_mapping": true,
+        "visible_field_mapping": true,
+        "visible_runtime_interface": true
+      },
+      "bound_paths": [
+        "/request/body/action",
+        "/request/body/supplier",
+        "/trusted/holdType",
+        "/trusted/supplierOnHold"
+      ],
+      "evidence_id": "VIS-FSV-B19-RUNTIME-ABI",
+      "locator": "tasks.FSV-B19",
+      "operations": [
+        "POST /api/resource/Purchase Order"
+      ],
+      "relation": "supports",
+      "sha256": "8221DA8A6720B0593A8D337F18569C9947AAB05B02E5C84FB0C50E3DE8C1ABD7",
+      "source_kind": "runtime_context_contract",
+      "supports_primitives": [
+        "SP-BOUNDED-BUSINESS-GUARD",
+        "SP-SERVER-AUTHORITY-WORKFLOW"
+      ],
+      "system": "ERPNext",
+      "versions": [
+        "16.0.0"
+      ],
+      "visibility": "visible"
+    }
+  ],
+  "target": {
+    "operation": "POST /api/resource/Purchase Order",
+    "system": "ERPNext",
+    "version": "16.0.0"
+  }
+}

@@ -1,0 +1,1553 @@
+{
+  "status": "PASS_SCOPED_STAGE_CONTENT_AND_TRACEABILITY",
+  "review_scope": "Independent read-only review of integrated report; not full manuscript review or independent semantic gold. Reviewer also authored old-three extraction, but independently checked new-four and integrated statements.",
+  "new_model_calls": 0,
+  "new_policy_executions": 0,
+  "scientific_independent_samples_added": 0,
+  "reviewed_outputs": [
+    {
+      "path": "D:\\lunwen\\EC-CSI投稿\\working\\exploration\\20261015_semantic_comparison\\SEMANTIC_COMPARISON.csv",
+      "sha256": "1c6aec2cf83b3be15712d57e5e03025829d45f5aa43fa0101f0e7b312a4565fb"
+    },
+    {
+      "path": "D:\\lunwen\\EC-CSI投稿\\working\\exploration\\20261015_semantic_comparison\\SEMANTIC_EVIDENCE_INDEX.json",
+      "sha256": "27752cc24f75192516a231055681f823b72701da77d6d06f8a7483ba54fa5b05"
+    },
+    {
+      "path": "D:\\lunwen\\EC-CSI投稿\\working\\exploration\\20261015_semantic_comparison\\SEMANTIC_COMPARISON_CN.md",
+      "sha256": "9bc9c05a640b73fb777705ff8e09281b559ba4327697730b5a8cd59c5ce02987"
+    },
+    {
+      "path": "D:\\lunwen\\EC-CSI投稿\\working\\exploration\\20261015_semantic_comparison\\EXPERIMENT_SUMMARY_CN_R3.md",
+      "sha256": "e7f781c3573fe6a45c29728d75567f82276e62bd898fc58d99f96ef149d6f5e8"
+    }
+  ],
+  "unique_case_method_rows": 21,
+  "source_manifest_file_count": 162,
+  "check_count_is_not_sample_size": true,
+  "checks": [
+    {
+      "check": "source_hash:D:\\lunwen\\EC-CSI投稿\\working\\exploration\\20261014_external_baseline_pilot\\effect_runs\\FSV-B06\\P2P_STYLE\\extraction.json",
+      "pass": true
+    },
+    {
+      "check": "source_hash:D:\\lunwen\\EC-CSI投稿\\working\\exploration\\20261014_external_baseline_pilot\\effect_runs\\FSV-B06\\P2P_STYLE\\generation.json",
+      "pass": true
+    },
+    {
+      "check": "source_hash:D:\\lunwen\\EC-CSI投稿\\working\\exploration\\20261014_external_baseline_pilot\\effect_runs\\FSV-B06\\P2P_STYLE\\repair.json",
+      "pass": true
+    },
+    {
+      "check": "source_hash:D:\\lunwen\\EC-CSI投稿\\working\\exploration\\20261014_external_baseline_pilot\\effect_runs\\FSV-B06\\AUTOPAC_STYLE\\generation.json",
+      "pass": true
+    },
+    {
+      "check": "source_hash:D:\\lunwen\\EC-CSI投稿\\working\\exploration\\20261014_external_baseline_pilot\\effect_runs\\FSV-B06\\AUTOPAC_STYLE\\judge.json",
+      "pass": true
+    },
+    {
+      "check": "source_hash:D:\\lunwen\\EC-CSI投稿\\working\\exploration\\20261014_external_baseline_pilot\\effect_runs\\FSV-B06\\AUTOPAC_STYLE\\repair.json",
+      "pass": true
+    },
+    {
+      "check": "source_hash:D:\\lunwen\\EC-CSI投稿\\working\\exploration\\20261014_external_baseline_pilot\\effect_runs\\FSV-B06\\ECAS_MATCHED\\candidate.json",
+      "pass": true
+    },
+    {
+      "check": "source_hash:D:\\lunwen\\EC-CSI投稿\\working\\exploration\\20261014_external_baseline_pilot\\effect_runs\\FSV-B06\\ECAS_MATCHED\\RESULT.json",
+      "pass": true
+    },
+    {
+      "check": "source_hash:D:\\lunwen\\EC-CSI投稿\\working\\exploration\\20261014_external_baseline_pilot\\effect_runs\\FSV-S02\\P2P_STYLE\\detection.json",
+      "pass": true
+    },
+    {
+      "check": "source_hash:D:\\lunwen\\EC-CSI投稿\\working\\exploration\\20261014_external_baseline_pilot\\calls\\14_FSV-S02_p2p_detect\\prompt.txt",
+      "pass": true
+    },
+    {
+      "check": "source_hash:D:\\lunwen\\EC-CSI投稿\\working\\exploration\\20261014_external_baseline_pilot\\effect_runs\\FSV-S02\\AUTOPAC_STYLE\\generation.json",
+      "pass": true
+    },
+    {
+      "check": "source_hash:D:\\lunwen\\EC-CSI投稿\\working\\exploration\\20261014_external_baseline_pilot\\effect_runs\\FSV-S02\\AUTOPAC_STYLE\\judge.json",
+      "pass": true
+    },
+    {
+      "check": "source_hash:D:\\lunwen\\EC-CSI投稿\\working\\exploration\\20261014_external_baseline_pilot\\calls\\17_FSV-S02_repair\\prompt.txt",
+      "pass": true
+    },
+    {
+      "check": "source_hash:D:\\lunwen\\EC-CSI投稿\\working\\exploration\\20261014_external_baseline_pilot\\effect_runs\\FSV-S02\\AUTOPAC_STYLE\\repair.json",
+      "pass": true
+    },
+    {
+      "check": "source_hash:D:\\lunwen\\EC-CSI投稿\\working\\exploration\\20261014_external_baseline_pilot\\effect_runs\\FSV-S02\\AUTOPAC_STYLE\\repaired\\compile.stderr.txt",
+      "pass": true
+    },
+    {
+      "check": "source_hash:D:\\lunwen\\EC-CSI投稿\\working\\exploration\\20261014_external_baseline_pilot\\effect_runs\\FSV-S02\\ECAS_MATCHED\\candidate.json",
+      "pass": true
+    },
+    {
+      "check": "source_hash:D:\\lunwen\\EC-CSI投稿\\working\\exploration\\20261014_external_baseline_pilot\\generation_inputs\\FSV-S02\\packet.json",
+      "pass": true
+    },
+    {
+      "check": "source_hash:D:\\lunwen\\EC-CSI投稿\\working\\exploration\\20261014_external_baseline_pilot\\effect_runs\\FSV-S04\\P2P_STYLE\\extraction.json",
+      "pass": true
+    },
+    {
+      "check": "source_hash:D:\\lunwen\\EC-CSI投稿\\working\\exploration\\20261014_external_baseline_pilot\\effect_runs\\FSV-S04\\P2P_STYLE\\generation.json",
+      "pass": true
+    },
+    {
+      "check": "source_hash:D:\\lunwen\\EC-CSI投稿\\working\\exploration\\20261014_external_baseline_pilot\\effect_runs\\FSV-S04\\P2P_STYLE\\repair.json",
+      "pass": true
+    },
+    {
+      "check": "source_hash:D:\\lunwen\\EC-CSI投稿\\working\\exploration\\20261014_external_baseline_pilot\\effect_runs\\FSV-S04\\AUTOPAC_STYLE\\generation.json",
+      "pass": true
+    },
+    {
+      "check": "source_hash:D:\\lunwen\\EC-CSI投稿\\working\\exploration\\20261014_external_baseline_pilot\\effect_runs\\FSV-S04\\AUTOPAC_STYLE\\judge.json",
+      "pass": true
+    },
+    {
+      "check": "source_hash:D:\\lunwen\\EC-CSI投稿\\working\\exploration\\20261014_external_baseline_pilot\\calls\\26_FSV-S04_repair\\prompt.txt",
+      "pass": true
+    },
+    {
+      "check": "source_hash:D:\\lunwen\\EC-CSI投稿\\working\\exploration\\20261014_external_baseline_pilot\\effect_runs\\FSV-S04\\AUTOPAC_STYLE\\repair.json",
+      "pass": true
+    },
+    {
+      "check": "source_hash:D:\\lunwen\\EC-CSI投稿\\working\\exploration\\20261014_external_baseline_pilot\\binding_replay_resource_object\\SUMMARY.json",
+      "pass": true
+    },
+    {
+      "check": "source_hash:D:\\lunwen\\EC-CSI投稿\\working\\exploration\\20261014_external_baseline_pilot\\effect_runs\\FSV-S04\\ECAS_MATCHED\\candidate.json",
+      "pass": true
+    },
+    {
+      "check": "source_hash:D:\\lunwen\\EC-CSI投稿\\working\\exploration\\20261014_external_baseline_pilot\\generation_inputs\\FSV-S04\\packet.json",
+      "pass": true
+    },
+    {
+      "check": "source_hash:D:\\lunwen\\EC-CSI投稿\\working\\exploration\\20261014_external_baseline_pilot\\calls\\05_FSV-B06_p2p_detect\\response.raw.json",
+      "pass": true
+    },
+    {
+      "check": "source_hash:D:\\lunwen\\EC-CSI投稿\\working\\exploration\\20261014_external_baseline_pilot\\calls\\05_FSV-B06_p2p_detect\\content.json",
+      "pass": true
+    },
+    {
+      "check": "source_hash:D:\\lunwen\\EC-CSI投稿\\working\\exploration\\20261014_external_baseline_pilot\\calls\\05_FSV-B06_p2p_detect\\prompt.txt",
+      "pass": true
+    },
+    {
+      "check": "source_hash:D:\\lunwen\\EC-CSI投稿\\working\\exploration\\20261014_external_baseline_pilot\\calls\\06_FSV-B06_p2p_extract\\response.raw.json",
+      "pass": true
+    },
+    {
+      "check": "source_hash:D:\\lunwen\\EC-CSI投稿\\working\\exploration\\20261014_external_baseline_pilot\\calls\\06_FSV-B06_p2p_extract\\content.json",
+      "pass": true
+    },
+    {
+      "check": "source_hash:D:\\lunwen\\EC-CSI投稿\\working\\exploration\\20261014_external_baseline_pilot\\calls\\06_FSV-B06_p2p_extract\\prompt.txt",
+      "pass": true
+    },
+    {
+      "check": "source_hash:D:\\lunwen\\EC-CSI投稿\\working\\exploration\\20261014_external_baseline_pilot\\calls\\07_FSV-B06_p2p_rego\\response.raw.json",
+      "pass": true
+    },
+    {
+      "check": "source_hash:D:\\lunwen\\EC-CSI投稿\\working\\exploration\\20261014_external_baseline_pilot\\calls\\07_FSV-B06_p2p_rego\\content.json",
+      "pass": true
+    },
+    {
+      "check": "source_hash:D:\\lunwen\\EC-CSI投稿\\working\\exploration\\20261014_external_baseline_pilot\\calls\\07_FSV-B06_p2p_rego\\prompt.txt",
+      "pass": true
+    },
+    {
+      "check": "source_hash:D:\\lunwen\\EC-CSI投稿\\working\\exploration\\20261014_external_baseline_pilot\\calls\\09_FSV-B06_repair\\response.raw.json",
+      "pass": true
+    },
+    {
+      "check": "source_hash:D:\\lunwen\\EC-CSI投稿\\working\\exploration\\20261014_external_baseline_pilot\\calls\\09_FSV-B06_repair\\content.json",
+      "pass": true
+    },
+    {
+      "check": "source_hash:D:\\lunwen\\EC-CSI投稿\\working\\exploration\\20261014_external_baseline_pilot\\calls\\09_FSV-B06_repair\\prompt.txt",
+      "pass": true
+    },
+    {
+      "check": "source_hash:D:\\lunwen\\EC-CSI投稿\\working\\exploration\\20261014_external_baseline_pilot\\calls\\10_FSV-B06_autopac_generate\\response.raw.json",
+      "pass": true
+    },
+    {
+      "check": "source_hash:D:\\lunwen\\EC-CSI投稿\\working\\exploration\\20261014_external_baseline_pilot\\calls\\10_FSV-B06_autopac_generate\\content.json",
+      "pass": true
+    },
+    {
+      "check": "source_hash:D:\\lunwen\\EC-CSI投稿\\working\\exploration\\20261014_external_baseline_pilot\\calls\\10_FSV-B06_autopac_generate\\prompt.txt",
+      "pass": true
+    },
+    {
+      "check": "source_hash:D:\\lunwen\\EC-CSI投稿\\working\\exploration\\20261014_external_baseline_pilot\\calls\\11_FSV-B06_autopac_judge\\response.raw.json",
+      "pass": true
+    },
+    {
+      "check": "source_hash:D:\\lunwen\\EC-CSI投稿\\working\\exploration\\20261014_external_baseline_pilot\\calls\\11_FSV-B06_autopac_judge\\content.json",
+      "pass": true
+    },
+    {
+      "check": "source_hash:D:\\lunwen\\EC-CSI投稿\\working\\exploration\\20261014_external_baseline_pilot\\calls\\11_FSV-B06_autopac_judge\\prompt.txt",
+      "pass": true
+    },
+    {
+      "check": "source_hash:D:\\lunwen\\EC-CSI投稿\\working\\exploration\\20261014_external_baseline_pilot\\calls\\12_FSV-B06_repair\\response.raw.json",
+      "pass": true
+    },
+    {
+      "check": "source_hash:D:\\lunwen\\EC-CSI投稿\\working\\exploration\\20261014_external_baseline_pilot\\calls\\12_FSV-B06_repair\\content.json",
+      "pass": true
+    },
+    {
+      "check": "source_hash:D:\\lunwen\\EC-CSI投稿\\working\\exploration\\20261014_external_baseline_pilot\\calls\\12_FSV-B06_repair\\prompt.txt",
+      "pass": true
+    },
+    {
+      "check": "source_hash:D:\\lunwen\\EC-CSI投稿\\working\\exploration\\20261014_external_baseline_pilot\\calls\\13_FSV-B06_ecas_generate\\response.raw.json",
+      "pass": true
+    },
+    {
+      "check": "source_hash:D:\\lunwen\\EC-CSI投稿\\working\\exploration\\20261014_external_baseline_pilot\\calls\\13_FSV-B06_ecas_generate\\content.json",
+      "pass": true
+    },
+    {
+      "check": "source_hash:D:\\lunwen\\EC-CSI投稿\\working\\exploration\\20261014_external_baseline_pilot\\calls\\13_FSV-B06_ecas_generate\\prompt.txt",
+      "pass": true
+    },
+    {
+      "check": "source_hash:D:\\lunwen\\EC-CSI投稿\\working\\exploration\\20261014_external_baseline_pilot\\calls\\14_FSV-S02_p2p_detect\\response.raw.json",
+      "pass": true
+    },
+    {
+      "check": "source_hash:D:\\lunwen\\EC-CSI投稿\\working\\exploration\\20261014_external_baseline_pilot\\calls\\14_FSV-S02_p2p_detect\\content.json",
+      "pass": true
+    },
+    {
+      "check": "source_hash:D:\\lunwen\\EC-CSI投稿\\working\\exploration\\20261014_external_baseline_pilot\\calls\\15_FSV-S02_autopac_generate\\response.raw.json",
+      "pass": true
+    },
+    {
+      "check": "source_hash:D:\\lunwen\\EC-CSI投稿\\working\\exploration\\20261014_external_baseline_pilot\\calls\\15_FSV-S02_autopac_generate\\content.json",
+      "pass": true
+    },
+    {
+      "check": "source_hash:D:\\lunwen\\EC-CSI投稿\\working\\exploration\\20261014_external_baseline_pilot\\calls\\15_FSV-S02_autopac_generate\\prompt.txt",
+      "pass": true
+    },
+    {
+      "check": "source_hash:D:\\lunwen\\EC-CSI投稿\\working\\exploration\\20261014_external_baseline_pilot\\calls\\16_FSV-S02_autopac_judge\\response.raw.json",
+      "pass": true
+    },
+    {
+      "check": "source_hash:D:\\lunwen\\EC-CSI投稿\\working\\exploration\\20261014_external_baseline_pilot\\calls\\16_FSV-S02_autopac_judge\\content.json",
+      "pass": true
+    },
+    {
+      "check": "source_hash:D:\\lunwen\\EC-CSI投稿\\working\\exploration\\20261014_external_baseline_pilot\\calls\\16_FSV-S02_autopac_judge\\prompt.txt",
+      "pass": true
+    },
+    {
+      "check": "source_hash:D:\\lunwen\\EC-CSI投稿\\working\\exploration\\20261014_external_baseline_pilot\\calls\\17_FSV-S02_repair\\response.raw.json",
+      "pass": true
+    },
+    {
+      "check": "source_hash:D:\\lunwen\\EC-CSI投稿\\working\\exploration\\20261014_external_baseline_pilot\\calls\\17_FSV-S02_repair\\content.json",
+      "pass": true
+    },
+    {
+      "check": "source_hash:D:\\lunwen\\EC-CSI投稿\\working\\exploration\\20261014_external_baseline_pilot\\calls\\18_FSV-S02_ecas_generate\\response.raw.json",
+      "pass": true
+    },
+    {
+      "check": "source_hash:D:\\lunwen\\EC-CSI投稿\\working\\exploration\\20261014_external_baseline_pilot\\calls\\18_FSV-S02_ecas_generate\\content.json",
+      "pass": true
+    },
+    {
+      "check": "source_hash:D:\\lunwen\\EC-CSI投稿\\working\\exploration\\20261014_external_baseline_pilot\\calls\\18_FSV-S02_ecas_generate\\prompt.txt",
+      "pass": true
+    },
+    {
+      "check": "source_hash:D:\\lunwen\\EC-CSI投稿\\working\\exploration\\20261014_external_baseline_pilot\\calls\\19_FSV-S04_p2p_detect\\response.raw.json",
+      "pass": true
+    },
+    {
+      "check": "source_hash:D:\\lunwen\\EC-CSI投稿\\working\\exploration\\20261014_external_baseline_pilot\\calls\\19_FSV-S04_p2p_detect\\content.json",
+      "pass": true
+    },
+    {
+      "check": "source_hash:D:\\lunwen\\EC-CSI投稿\\working\\exploration\\20261014_external_baseline_pilot\\calls\\19_FSV-S04_p2p_detect\\prompt.txt",
+      "pass": true
+    },
+    {
+      "check": "source_hash:D:\\lunwen\\EC-CSI投稿\\working\\exploration\\20261014_external_baseline_pilot\\calls\\20_FSV-S04_p2p_extract\\response.raw.json",
+      "pass": true
+    },
+    {
+      "check": "source_hash:D:\\lunwen\\EC-CSI投稿\\working\\exploration\\20261014_external_baseline_pilot\\calls\\20_FSV-S04_p2p_extract\\content.json",
+      "pass": true
+    },
+    {
+      "check": "source_hash:D:\\lunwen\\EC-CSI投稿\\working\\exploration\\20261014_external_baseline_pilot\\calls\\20_FSV-S04_p2p_extract\\prompt.txt",
+      "pass": true
+    },
+    {
+      "check": "source_hash:D:\\lunwen\\EC-CSI投稿\\working\\exploration\\20261014_external_baseline_pilot\\calls\\21_FSV-S04_p2p_rego\\response.raw.json",
+      "pass": true
+    },
+    {
+      "check": "source_hash:D:\\lunwen\\EC-CSI投稿\\working\\exploration\\20261014_external_baseline_pilot\\calls\\21_FSV-S04_p2p_rego\\content.json",
+      "pass": true
+    },
+    {
+      "check": "source_hash:D:\\lunwen\\EC-CSI投稿\\working\\exploration\\20261014_external_baseline_pilot\\calls\\21_FSV-S04_p2p_rego\\prompt.txt",
+      "pass": true
+    },
+    {
+      "check": "source_hash:D:\\lunwen\\EC-CSI投稿\\working\\exploration\\20261014_external_baseline_pilot\\calls\\23_FSV-S04_repair\\response.raw.json",
+      "pass": true
+    },
+    {
+      "check": "source_hash:D:\\lunwen\\EC-CSI投稿\\working\\exploration\\20261014_external_baseline_pilot\\calls\\23_FSV-S04_repair\\content.json",
+      "pass": true
+    },
+    {
+      "check": "source_hash:D:\\lunwen\\EC-CSI投稿\\working\\exploration\\20261014_external_baseline_pilot\\calls\\23_FSV-S04_repair\\prompt.txt",
+      "pass": true
+    },
+    {
+      "check": "source_hash:D:\\lunwen\\EC-CSI投稿\\working\\exploration\\20261014_external_baseline_pilot\\calls\\24_FSV-S04_autopac_generate\\response.raw.json",
+      "pass": true
+    },
+    {
+      "check": "source_hash:D:\\lunwen\\EC-CSI投稿\\working\\exploration\\20261014_external_baseline_pilot\\calls\\24_FSV-S04_autopac_generate\\content.json",
+      "pass": true
+    },
+    {
+      "check": "source_hash:D:\\lunwen\\EC-CSI投稿\\working\\exploration\\20261014_external_baseline_pilot\\calls\\24_FSV-S04_autopac_generate\\prompt.txt",
+      "pass": true
+    },
+    {
+      "check": "source_hash:D:\\lunwen\\EC-CSI投稿\\working\\exploration\\20261014_external_baseline_pilot\\calls\\25_FSV-S04_autopac_judge\\response.raw.json",
+      "pass": true
+    },
+    {
+      "check": "source_hash:D:\\lunwen\\EC-CSI投稿\\working\\exploration\\20261014_external_baseline_pilot\\calls\\25_FSV-S04_autopac_judge\\content.json",
+      "pass": true
+    },
+    {
+      "check": "source_hash:D:\\lunwen\\EC-CSI投稿\\working\\exploration\\20261014_external_baseline_pilot\\calls\\25_FSV-S04_autopac_judge\\prompt.txt",
+      "pass": true
+    },
+    {
+      "check": "source_hash:D:\\lunwen\\EC-CSI投稿\\working\\exploration\\20261014_external_baseline_pilot\\calls\\26_FSV-S04_repair\\response.raw.json",
+      "pass": true
+    },
+    {
+      "check": "source_hash:D:\\lunwen\\EC-CSI投稿\\working\\exploration\\20261014_external_baseline_pilot\\calls\\26_FSV-S04_repair\\content.json",
+      "pass": true
+    },
+    {
+      "check": "source_hash:D:\\lunwen\\EC-CSI投稿\\working\\exploration\\20261014_external_baseline_pilot\\calls\\27_FSV-S04_ecas_generate\\response.raw.json",
+      "pass": true
+    },
+    {
+      "check": "source_hash:D:\\lunwen\\EC-CSI投稿\\working\\exploration\\20261014_external_baseline_pilot\\calls\\27_FSV-S04_ecas_generate\\content.json",
+      "pass": true
+    },
+    {
+      "check": "source_hash:D:\\lunwen\\EC-CSI投稿\\working\\exploration\\20261014_external_baseline_pilot\\calls\\27_FSV-S04_ecas_generate\\prompt.txt",
+      "pass": true
+    },
+    {
+      "check": "source_hash:D:\\lunwen\\EC-CSI投稿\\working\\exploration\\20261014_external_baseline_pilot\\run_pilot.py",
+      "pass": true
+    },
+    {
+      "check": "source_hash:D:\\lunwen\\EC-CSI投稿\\working\\exploration\\20261014_external_baseline_pilot\\calls\\06_FSV-B06_p2p_extract\\LOCAL_RECOVERY_RECEIPT.json",
+      "pass": true
+    },
+    {
+      "check": "source_hash:D:\\lunwen\\EC-CSI投稿\\working\\exploration\\20261014_external_baseline_pilot\\generation_inputs\\FSV-B06\\packet.json",
+      "pass": true
+    },
+    {
+      "check": "source_hash:D:\\lunwen\\EC-CSI投稿\\working\\exploration\\20261014_matched_evidence_labor\\matched_generation\\generation_inputs\\FSV-S03\\packet.json",
+      "pass": true
+    },
+    {
+      "check": "source_hash:D:\\lunwen\\EC-CSI投稿\\working\\exploration\\20261014_matched_evidence_labor\\matched_generation\\generation_inputs\\FSV-B13\\packet.json",
+      "pass": true
+    },
+    {
+      "check": "source_hash:D:\\lunwen\\EC-CSI投稿\\working\\exploration\\20261014_matched_evidence_labor\\matched_generation\\generation_inputs\\FSV-B17\\packet.json",
+      "pass": true
+    },
+    {
+      "check": "source_hash:D:\\lunwen\\EC-CSI投稿\\working\\exploration\\20261014_matched_evidence_labor\\matched_generation\\generation_inputs\\FSV-B19\\packet.json",
+      "pass": true
+    },
+    {
+      "check": "source_hash:D:\\lunwen\\EC-CSI投稿\\working\\exploration\\20261014_matched_evidence_labor\\matched_generation\\method_runs\\FSV-S03\\P2P_STYLE\\p2p_detect.json",
+      "pass": true
+    },
+    {
+      "check": "source_hash:D:\\lunwen\\EC-CSI投稿\\working\\exploration\\20261014_matched_evidence_labor\\matched_generation\\method_runs\\FSV-S03\\P2P_STYLE\\RESULT.json",
+      "pass": true
+    },
+    {
+      "check": "source_hash:D:\\lunwen\\EC-CSI投稿\\working\\exploration\\20261014_matched_evidence_labor\\matched_generation\\method_runs\\FSV-S03\\AUTOPAC_STYLE\\autopac_generate.json",
+      "pass": true
+    },
+    {
+      "check": "source_hash:D:\\lunwen\\EC-CSI投稿\\working\\exploration\\20261014_matched_evidence_labor\\matched_generation\\method_runs\\FSV-S03\\AUTOPAC_STYLE\\autopac_judge.json",
+      "pass": true
+    },
+    {
+      "check": "source_hash:D:\\lunwen\\EC-CSI投稿\\working\\exploration\\20261014_matched_evidence_labor\\matched_generation\\method_runs\\FSV-S03\\AUTOPAC_STYLE\\initial\\original.rego",
+      "pass": true
+    },
+    {
+      "check": "source_hash:D:\\lunwen\\EC-CSI投稿\\working\\exploration\\20261014_matched_evidence_labor\\matched_generation\\method_runs\\FSV-S03\\AUTOPAC_STYLE\\initial\\CHECKS.json",
+      "pass": true
+    },
+    {
+      "check": "source_hash:D:\\lunwen\\EC-CSI投稿\\working\\exploration\\20261014_matched_evidence_labor\\matched_generation\\method_runs\\FSV-S03\\AUTOPAC_STYLE\\repair.json",
+      "pass": true
+    },
+    {
+      "check": "source_hash:D:\\lunwen\\EC-CSI投稿\\working\\exploration\\20261014_matched_evidence_labor\\matched_generation\\method_runs\\FSV-S03\\AUTOPAC_STYLE\\repaired\\original.rego",
+      "pass": true
+    },
+    {
+      "check": "source_hash:D:\\lunwen\\EC-CSI投稿\\working\\exploration\\20261014_matched_evidence_labor\\matched_generation\\method_runs\\FSV-S03\\AUTOPAC_STYLE\\repaired\\CHECKS.json",
+      "pass": true
+    },
+    {
+      "check": "source_hash:D:\\lunwen\\EC-CSI投稿\\working\\exploration\\20261014_matched_evidence_labor\\matched_generation\\method_runs\\FSV-S03\\AUTOPAC_STYLE\\RESULT.json",
+      "pass": true
+    },
+    {
+      "check": "source_hash:D:\\lunwen\\EC-CSI投稿\\working\\exploration\\20261014_matched_evidence_labor\\matched_generation\\method_runs\\FSV-S03\\ECAS_MATCHED\\first_candidate.json",
+      "pass": true
+    },
+    {
+      "check": "source_hash:D:\\lunwen\\EC-CSI投稿\\working\\exploration\\20261014_matched_evidence_labor\\matched_generation\\method_runs\\FSV-S03\\ECAS_MATCHED\\initial\\admitted_policy.json",
+      "pass": true
+    },
+    {
+      "check": "source_hash:D:\\lunwen\\EC-CSI投稿\\working\\exploration\\20261014_matched_evidence_labor\\matched_generation\\method_runs\\FSV-S03\\ECAS_MATCHED\\initial\\CHECKS.json",
+      "pass": true
+    },
+    {
+      "check": "source_hash:D:\\lunwen\\EC-CSI投稿\\working\\exploration\\20261014_matched_evidence_labor\\matched_generation\\method_runs\\FSV-S03\\ECAS_MATCHED\\RESULT.json",
+      "pass": true
+    },
+    {
+      "check": "source_hash:D:\\lunwen\\EC-CSI投稿\\working\\exploration\\20261014_matched_evidence_labor\\matched_generation\\method_runs\\FSV-B13\\P2P_STYLE\\p2p_detect.json",
+      "pass": true
+    },
+    {
+      "check": "source_hash:D:\\lunwen\\EC-CSI投稿\\working\\exploration\\20261014_matched_evidence_labor\\matched_generation\\method_runs\\FSV-B13\\P2P_STYLE\\p2p_extract.json",
+      "pass": true
+    },
+    {
+      "check": "source_hash:D:\\lunwen\\EC-CSI投稿\\working\\exploration\\20261014_matched_evidence_labor\\matched_generation\\method_runs\\FSV-B13\\P2P_STYLE\\p2p_rego.json",
+      "pass": true
+    },
+    {
+      "check": "source_hash:D:\\lunwen\\EC-CSI投稿\\working\\exploration\\20261014_matched_evidence_labor\\matched_generation\\method_runs\\FSV-B13\\P2P_STYLE\\initial\\original.rego",
+      "pass": true
+    },
+    {
+      "check": "source_hash:D:\\lunwen\\EC-CSI投稿\\working\\exploration\\20261014_matched_evidence_labor\\matched_generation\\method_runs\\FSV-B13\\P2P_STYLE\\initial\\CHECKS.json",
+      "pass": true
+    },
+    {
+      "check": "source_hash:D:\\lunwen\\EC-CSI投稿\\working\\exploration\\20261014_matched_evidence_labor\\matched_generation\\method_runs\\FSV-B13\\P2P_STYLE\\RESULT.json",
+      "pass": true
+    },
+    {
+      "check": "source_hash:D:\\lunwen\\EC-CSI投稿\\working\\exploration\\20261014_matched_evidence_labor\\matched_generation\\method_runs\\FSV-B13\\AUTOPAC_STYLE\\autopac_generate.json",
+      "pass": true
+    },
+    {
+      "check": "source_hash:D:\\lunwen\\EC-CSI投稿\\working\\exploration\\20261014_matched_evidence_labor\\matched_generation\\method_runs\\FSV-B13\\AUTOPAC_STYLE\\autopac_judge.json",
+      "pass": true
+    },
+    {
+      "check": "source_hash:D:\\lunwen\\EC-CSI投稿\\working\\exploration\\20261014_matched_evidence_labor\\matched_generation\\method_runs\\FSV-B13\\AUTOPAC_STYLE\\initial\\original.rego",
+      "pass": true
+    },
+    {
+      "check": "source_hash:D:\\lunwen\\EC-CSI投稿\\working\\exploration\\20261014_matched_evidence_labor\\matched_generation\\method_runs\\FSV-B13\\AUTOPAC_STYLE\\initial\\CHECKS.json",
+      "pass": true
+    },
+    {
+      "check": "source_hash:D:\\lunwen\\EC-CSI投稿\\working\\exploration\\20261014_matched_evidence_labor\\matched_generation\\method_runs\\FSV-B13\\AUTOPAC_STYLE\\RESULT.json",
+      "pass": true
+    },
+    {
+      "check": "source_hash:D:\\lunwen\\EC-CSI投稿\\working\\exploration\\20261014_matched_evidence_labor\\matched_generation\\method_runs\\FSV-B13\\ECAS_MATCHED\\first_candidate.json",
+      "pass": true
+    },
+    {
+      "check": "source_hash:D:\\lunwen\\EC-CSI投稿\\working\\exploration\\20261014_matched_evidence_labor\\matched_generation\\method_runs\\FSV-B13\\ECAS_MATCHED\\initial\\admitted_policy.json",
+      "pass": true
+    },
+    {
+      "check": "source_hash:D:\\lunwen\\EC-CSI投稿\\working\\exploration\\20261014_matched_evidence_labor\\matched_generation\\method_runs\\FSV-B13\\ECAS_MATCHED\\initial\\CHECKS.json",
+      "pass": true
+    },
+    {
+      "check": "source_hash:D:\\lunwen\\EC-CSI投稿\\working\\exploration\\20261014_matched_evidence_labor\\matched_generation\\method_runs\\FSV-B13\\ECAS_MATCHED\\RESULT.json",
+      "pass": true
+    },
+    {
+      "check": "source_hash:D:\\lunwen\\EC-CSI投稿\\working\\exploration\\20261014_matched_evidence_labor\\matched_generation\\method_runs\\FSV-B17\\P2P_STYLE\\p2p_detect.json",
+      "pass": true
+    },
+    {
+      "check": "source_hash:D:\\lunwen\\EC-CSI投稿\\working\\exploration\\20261014_matched_evidence_labor\\matched_generation\\method_runs\\FSV-B17\\P2P_STYLE\\p2p_extract.json",
+      "pass": true
+    },
+    {
+      "check": "source_hash:D:\\lunwen\\EC-CSI投稿\\working\\exploration\\20261014_matched_evidence_labor\\matched_generation\\method_runs\\FSV-B17\\P2P_STYLE\\p2p_rego.json",
+      "pass": true
+    },
+    {
+      "check": "source_hash:D:\\lunwen\\EC-CSI投稿\\working\\exploration\\20261014_matched_evidence_labor\\matched_generation\\method_runs\\FSV-B17\\P2P_STYLE\\initial\\original.rego",
+      "pass": true
+    },
+    {
+      "check": "source_hash:D:\\lunwen\\EC-CSI投稿\\working\\exploration\\20261014_matched_evidence_labor\\matched_generation\\method_runs\\FSV-B17\\P2P_STYLE\\initial\\CHECKS.json",
+      "pass": true
+    },
+    {
+      "check": "source_hash:D:\\lunwen\\EC-CSI投稿\\working\\exploration\\20261014_matched_evidence_labor\\matched_generation\\method_runs\\FSV-B17\\P2P_STYLE\\RESULT.json",
+      "pass": true
+    },
+    {
+      "check": "source_hash:D:\\lunwen\\EC-CSI投稿\\working\\exploration\\20261014_matched_evidence_labor\\matched_generation\\method_runs\\FSV-B17\\AUTOPAC_STYLE\\autopac_generate.json",
+      "pass": true
+    },
+    {
+      "check": "source_hash:D:\\lunwen\\EC-CSI投稿\\working\\exploration\\20261014_matched_evidence_labor\\matched_generation\\method_runs\\FSV-B17\\AUTOPAC_STYLE\\autopac_judge.json",
+      "pass": true
+    },
+    {
+      "check": "source_hash:D:\\lunwen\\EC-CSI投稿\\working\\exploration\\20261014_matched_evidence_labor\\matched_generation\\method_runs\\FSV-B17\\AUTOPAC_STYLE\\initial\\original.rego",
+      "pass": true
+    },
+    {
+      "check": "source_hash:D:\\lunwen\\EC-CSI投稿\\working\\exploration\\20261014_matched_evidence_labor\\matched_generation\\method_runs\\FSV-B17\\AUTOPAC_STYLE\\initial\\CHECKS.json",
+      "pass": true
+    },
+    {
+      "check": "source_hash:D:\\lunwen\\EC-CSI投稿\\working\\exploration\\20261014_matched_evidence_labor\\matched_generation\\method_runs\\FSV-B17\\AUTOPAC_STYLE\\RESULT.json",
+      "pass": true
+    },
+    {
+      "check": "source_hash:D:\\lunwen\\EC-CSI投稿\\working\\exploration\\20261014_matched_evidence_labor\\matched_generation\\method_runs\\FSV-B17\\ECAS_MATCHED\\first_candidate.json",
+      "pass": true
+    },
+    {
+      "check": "source_hash:D:\\lunwen\\EC-CSI投稿\\working\\exploration\\20261014_matched_evidence_labor\\matched_generation\\method_runs\\FSV-B17\\ECAS_MATCHED\\initial\\admitted_policy.json",
+      "pass": true
+    },
+    {
+      "check": "source_hash:D:\\lunwen\\EC-CSI投稿\\working\\exploration\\20261014_matched_evidence_labor\\matched_generation\\method_runs\\FSV-B17\\ECAS_MATCHED\\initial\\CHECKS.json",
+      "pass": true
+    },
+    {
+      "check": "source_hash:D:\\lunwen\\EC-CSI投稿\\working\\exploration\\20261014_matched_evidence_labor\\matched_generation\\method_runs\\FSV-B17\\ECAS_MATCHED\\RESULT.json",
+      "pass": true
+    },
+    {
+      "check": "source_hash:D:\\lunwen\\EC-CSI投稿\\working\\exploration\\20261014_matched_evidence_labor\\matched_generation\\method_runs\\FSV-B19\\P2P_STYLE\\p2p_detect.json",
+      "pass": true
+    },
+    {
+      "check": "source_hash:D:\\lunwen\\EC-CSI投稿\\working\\exploration\\20261014_matched_evidence_labor\\matched_generation\\method_runs\\FSV-B19\\P2P_STYLE\\p2p_extract.json",
+      "pass": true
+    },
+    {
+      "check": "source_hash:D:\\lunwen\\EC-CSI投稿\\working\\exploration\\20261014_matched_evidence_labor\\matched_generation\\method_runs\\FSV-B19\\P2P_STYLE\\p2p_rego.json",
+      "pass": true
+    },
+    {
+      "check": "source_hash:D:\\lunwen\\EC-CSI投稿\\working\\exploration\\20261014_matched_evidence_labor\\matched_generation\\method_runs\\FSV-B19\\P2P_STYLE\\initial\\original.rego",
+      "pass": true
+    },
+    {
+      "check": "source_hash:D:\\lunwen\\EC-CSI投稿\\working\\exploration\\20261014_matched_evidence_labor\\matched_generation\\method_runs\\FSV-B19\\P2P_STYLE\\initial\\CHECKS.json",
+      "pass": true
+    },
+    {
+      "check": "source_hash:D:\\lunwen\\EC-CSI投稿\\working\\exploration\\20261014_matched_evidence_labor\\matched_generation\\method_runs\\FSV-B19\\P2P_STYLE\\RESULT.json",
+      "pass": true
+    },
+    {
+      "check": "source_hash:D:\\lunwen\\EC-CSI投稿\\working\\exploration\\20261014_matched_evidence_labor\\matched_generation\\method_runs\\FSV-B19\\AUTOPAC_STYLE\\autopac_generate.json",
+      "pass": true
+    },
+    {
+      "check": "source_hash:D:\\lunwen\\EC-CSI投稿\\working\\exploration\\20261014_matched_evidence_labor\\matched_generation\\method_runs\\FSV-B19\\AUTOPAC_STYLE\\autopac_judge.json",
+      "pass": true
+    },
+    {
+      "check": "source_hash:D:\\lunwen\\EC-CSI投稿\\working\\exploration\\20261014_matched_evidence_labor\\matched_generation\\method_runs\\FSV-B19\\AUTOPAC_STYLE\\initial\\original.rego",
+      "pass": true
+    },
+    {
+      "check": "source_hash:D:\\lunwen\\EC-CSI投稿\\working\\exploration\\20261014_matched_evidence_labor\\matched_generation\\method_runs\\FSV-B19\\AUTOPAC_STYLE\\initial\\CHECKS.json",
+      "pass": true
+    },
+    {
+      "check": "source_hash:D:\\lunwen\\EC-CSI投稿\\working\\exploration\\20261014_matched_evidence_labor\\matched_generation\\method_runs\\FSV-B19\\AUTOPAC_STYLE\\RESULT.json",
+      "pass": true
+    },
+    {
+      "check": "source_hash:D:\\lunwen\\EC-CSI投稿\\working\\exploration\\20261014_matched_evidence_labor\\matched_generation\\method_runs\\FSV-B19\\ECAS_MATCHED\\first_candidate.json",
+      "pass": true
+    },
+    {
+      "check": "source_hash:D:\\lunwen\\EC-CSI投稿\\working\\exploration\\20261014_matched_evidence_labor\\matched_generation\\method_runs\\FSV-B19\\ECAS_MATCHED\\initial\\admitted_policy.json",
+      "pass": true
+    },
+    {
+      "check": "source_hash:D:\\lunwen\\EC-CSI投稿\\working\\exploration\\20261014_matched_evidence_labor\\matched_generation\\method_runs\\FSV-B19\\ECAS_MATCHED\\initial\\CHECKS.json",
+      "pass": true
+    },
+    {
+      "check": "source_hash:D:\\lunwen\\EC-CSI投稿\\working\\exploration\\20261014_matched_evidence_labor\\matched_generation\\method_runs\\FSV-B19\\ECAS_MATCHED\\RESULT.json",
+      "pass": true
+    },
+    {
+      "check": "source_hash:D:\\lunwen\\EC-CSI投稿\\working\\exploration\\20261015_semantic_comparison\\OLD_THREE_SEMANTIC_AUDIT.json",
+      "pass": true
+    },
+    {
+      "check": "source_hash:D:\\lunwen\\EC-CSI投稿\\working\\exploration\\20261015_semantic_comparison\\NEW_FOUR_SEMANTIC_AUDIT.json",
+      "pass": true
+    },
+    {
+      "check": "source_hash:D:\\lunwen\\EC-CSI投稿\\working\\exploration\\20261015_seven_case_mechanism\\EXPERIMENT_SUMMARY_CN_R2.md",
+      "pass": true
+    },
+    {
+      "check": "source_hash:D:\\lunwen\\EC-CSI投稿\\working\\exploration\\20261015_seven_case_mechanism\\SEVEN_CASE_COMPARISON.csv",
+      "pass": true
+    },
+    {
+      "check": "source_hash:D:\\lunwen\\EC-CSI投稿\\working\\exploration\\20261014_matched_evidence_labor\\evidence_ablation\\RESULTS_CN.md",
+      "pass": true
+    },
+    {
+      "check": "source_hash:D:\\lunwen\\EC-CSI投稿\\working\\exploration\\20261014_matched_evidence_labor\\human_effort\\MODE_FEATURE_MATRIX_CN.md",
+      "pass": true
+    },
+    {
+      "check": "source_hash:D:\\lunwen\\EC-CSI投稿\\working\\exploration\\20261014_matched_evidence_labor\\judge_control\\RESULTS_CN.md",
+      "pass": true
+    },
+    {
+      "check": "source_hash:D:\\lunwen\\EC-CSI投稿\\working\\exploration\\20261015_seven_case_mechanism\\mechanism_control\\RESULTS_CN.md",
+      "pass": true
+    },
+    {
+      "check": "source_hash:D:\\lunwen\\EC-CSI投稿\\working\\exploration\\20261015_semantic_comparison\\TASK_CONTRACT_CN.md",
+      "pass": true
+    },
+    {
+      "check": "delivered_output_hash:D:\\lunwen\\EC-CSI投稿\\working\\exploration\\20261015_semantic_comparison\\SEMANTIC_COMPARISON.csv",
+      "pass": true
+    },
+    {
+      "check": "delivered_output_hash:D:\\lunwen\\EC-CSI投稿\\working\\exploration\\20261015_semantic_comparison\\SEMANTIC_EVIDENCE_INDEX.json",
+      "pass": true
+    },
+    {
+      "check": "delivered_output_hash:D:\\lunwen\\EC-CSI投稿\\working\\exploration\\20261015_semantic_comparison\\SEMANTIC_COMPARISON_CN.md",
+      "pass": true
+    },
+    {
+      "check": "delivered_output_hash:D:\\lunwen\\EC-CSI投稿\\working\\exploration\\20261015_semantic_comparison\\EXPERIMENT_SUMMARY_CN_R3.md",
+      "pass": true
+    },
+    {
+      "check": "protected_file_hash:D:\\lunwen\\EC-CSI投稿\\working\\exploration\\20261015_seven_case_mechanism\\EXPERIMENT_SUMMARY_CN_R2.md",
+      "pass": true
+    },
+    {
+      "check": "protected_file_hash:D:\\lunwen\\EC-CSI投稿\\working\\exploration\\20261015_seven_case_mechanism\\SEVEN_CASE_COMPARISON.csv",
+      "pass": true
+    },
+    {
+      "check": "protected_file_hash:D:\\lunwen\\EC-CSI投稿\\RESULT_TRACEABILITY.csv",
+      "pass": true
+    },
+    {
+      "check": "protected_file_hash:D:\\lunwen\\EC-CSI投稿\\CLAIM_EVIDENCE_MATRIX.csv",
+      "pass": true
+    },
+    {
+      "check": "21_unique_case_method_rows",
+      "pass": true
+    },
+    {
+      "check": "R2_exact_key_join",
+      "pass": true
+    },
+    {
+      "check": "R2_display_status:('FSV-B06', 'ECAS_MATCHED')",
+      "pass": true
+    },
+    {
+      "check": "R2_display_symbol:('FSV-B06', 'ECAS_MATCHED')",
+      "pass": true
+    },
+    {
+      "check": "R2_project_batch:('FSV-B06', 'ECAS_MATCHED')",
+      "pass": true
+    },
+    {
+      "check": "row_evidence_hash:('FSV-B06', 'ECAS_MATCHED'):candidate.json",
+      "pass": true
+    },
+    {
+      "check": "row_pointer_resolves:('FSV-B06', 'ECAS_MATCHED'):/rules/0/params",
+      "pass": true
+    },
+    {
+      "check": "row_evidence_hash:('FSV-B06', 'ECAS_MATCHED'):RESULT.json",
+      "pass": true
+    },
+    {
+      "check": "R2_display_status:('FSV-B06', 'P2P_STYLE')",
+      "pass": true
+    },
+    {
+      "check": "R2_display_symbol:('FSV-B06', 'P2P_STYLE')",
+      "pass": true
+    },
+    {
+      "check": "R2_project_batch:('FSV-B06', 'P2P_STYLE')",
+      "pass": true
+    },
+    {
+      "check": "row_evidence_hash:('FSV-B06', 'P2P_STYLE'):extraction.json",
+      "pass": true
+    },
+    {
+      "check": "row_pointer_resolves:('FSV-B06', 'P2P_STYLE'):/components/0/condition",
+      "pass": true
+    },
+    {
+      "check": "row_evidence_hash:('FSV-B06', 'P2P_STYLE'):generation.json",
+      "pass": true
+    },
+    {
+      "check": "row_pointer_resolves:('FSV-B06', 'P2P_STYLE'):/rego",
+      "pass": true
+    },
+    {
+      "check": "row_evidence_hash:('FSV-B06', 'P2P_STYLE'):repair.json",
+      "pass": true
+    },
+    {
+      "check": "row_pointer_resolves:('FSV-B06', 'P2P_STYLE'):/rego",
+      "pass": true
+    },
+    {
+      "check": "R2_display_status:('FSV-B06', 'AUTOPAC_STYLE')",
+      "pass": true
+    },
+    {
+      "check": "R2_display_symbol:('FSV-B06', 'AUTOPAC_STYLE')",
+      "pass": true
+    },
+    {
+      "check": "R2_project_batch:('FSV-B06', 'AUTOPAC_STYLE')",
+      "pass": true
+    },
+    {
+      "check": "row_evidence_hash:('FSV-B06', 'AUTOPAC_STYLE'):generation.json",
+      "pass": true
+    },
+    {
+      "check": "row_pointer_resolves:('FSV-B06', 'AUTOPAC_STYLE'):/rego",
+      "pass": true
+    },
+    {
+      "check": "row_evidence_hash:('FSV-B06', 'AUTOPAC_STYLE'):judge.json",
+      "pass": true
+    },
+    {
+      "check": "row_pointer_resolves:('FSV-B06', 'AUTOPAC_STYLE'):/issues/0",
+      "pass": true
+    },
+    {
+      "check": "row_evidence_hash:('FSV-B06', 'AUTOPAC_STYLE'):repair.json",
+      "pass": true
+    },
+    {
+      "check": "row_pointer_resolves:('FSV-B06', 'AUTOPAC_STYLE'):/rego",
+      "pass": true
+    },
+    {
+      "check": "R2_display_status:('FSV-S02', 'ECAS_MATCHED')",
+      "pass": true
+    },
+    {
+      "check": "R2_display_symbol:('FSV-S02', 'ECAS_MATCHED')",
+      "pass": true
+    },
+    {
+      "check": "R2_project_batch:('FSV-S02', 'ECAS_MATCHED')",
+      "pass": true
+    },
+    {
+      "check": "row_evidence_hash:('FSV-S02', 'ECAS_MATCHED'):candidate.json",
+      "pass": true
+    },
+    {
+      "check": "row_pointer_resolves:('FSV-S02', 'ECAS_MATCHED'):/rules/0",
+      "pass": true
+    },
+    {
+      "check": "row_evidence_hash:('FSV-S02', 'ECAS_MATCHED'):packet.json",
+      "pass": true
+    },
+    {
+      "check": "row_pointer_resolves:('FSV-S02', 'ECAS_MATCHED'):/visible_sources/0/content/requestBody/content/application~1json/schema",
+      "pass": true
+    },
+    {
+      "check": "R2_display_status:('FSV-S02', 'P2P_STYLE')",
+      "pass": true
+    },
+    {
+      "check": "R2_display_symbol:('FSV-S02', 'P2P_STYLE')",
+      "pass": true
+    },
+    {
+      "check": "R2_project_batch:('FSV-S02', 'P2P_STYLE')",
+      "pass": true
+    },
+    {
+      "check": "row_evidence_hash:('FSV-S02', 'P2P_STYLE'):detection.json",
+      "pass": true
+    },
+    {
+      "check": "row_evidence_hash:('FSV-S02', 'P2P_STYLE'):prompt.txt",
+      "pass": true
+    },
+    {
+      "check": "R2_display_status:('FSV-S02', 'AUTOPAC_STYLE')",
+      "pass": true
+    },
+    {
+      "check": "R2_display_symbol:('FSV-S02', 'AUTOPAC_STYLE')",
+      "pass": true
+    },
+    {
+      "check": "R2_project_batch:('FSV-S02', 'AUTOPAC_STYLE')",
+      "pass": true
+    },
+    {
+      "check": "row_evidence_hash:('FSV-S02', 'AUTOPAC_STYLE'):generation.json",
+      "pass": true
+    },
+    {
+      "check": "row_pointer_resolves:('FSV-S02', 'AUTOPAC_STYLE'):/rego",
+      "pass": true
+    },
+    {
+      "check": "row_evidence_hash:('FSV-S02', 'AUTOPAC_STYLE'):judge.json",
+      "pass": true
+    },
+    {
+      "check": "row_evidence_hash:('FSV-S02', 'AUTOPAC_STYLE'):prompt.txt",
+      "pass": true
+    },
+    {
+      "check": "row_evidence_hash:('FSV-S02', 'AUTOPAC_STYLE'):repair.json",
+      "pass": true
+    },
+    {
+      "check": "row_pointer_resolves:('FSV-S02', 'AUTOPAC_STYLE'):/rego",
+      "pass": true
+    },
+    {
+      "check": "row_evidence_hash:('FSV-S02', 'AUTOPAC_STYLE'):compile.stderr.txt",
+      "pass": true
+    },
+    {
+      "check": "R2_display_status:('FSV-S04', 'ECAS_MATCHED')",
+      "pass": true
+    },
+    {
+      "check": "R2_display_symbol:('FSV-S04', 'ECAS_MATCHED')",
+      "pass": true
+    },
+    {
+      "check": "R2_project_batch:('FSV-S04', 'ECAS_MATCHED')",
+      "pass": true
+    },
+    {
+      "check": "row_evidence_hash:('FSV-S04', 'ECAS_MATCHED'):candidate.json",
+      "pass": true
+    },
+    {
+      "check": "row_pointer_resolves:('FSV-S04', 'ECAS_MATCHED'):/rules/0",
+      "pass": true
+    },
+    {
+      "check": "row_evidence_hash:('FSV-S04', 'ECAS_MATCHED'):packet.json",
+      "pass": true
+    },
+    {
+      "check": "row_pointer_resolves:('FSV-S04', 'ECAS_MATCHED'):/visible_sources/1/content/fields/3",
+      "pass": true
+    },
+    {
+      "check": "R2_display_status:('FSV-S04', 'P2P_STYLE')",
+      "pass": true
+    },
+    {
+      "check": "R2_display_symbol:('FSV-S04', 'P2P_STYLE')",
+      "pass": true
+    },
+    {
+      "check": "R2_project_batch:('FSV-S04', 'P2P_STYLE')",
+      "pass": true
+    },
+    {
+      "check": "row_evidence_hash:('FSV-S04', 'P2P_STYLE'):extraction.json",
+      "pass": true
+    },
+    {
+      "check": "row_pointer_resolves:('FSV-S04', 'P2P_STYLE'):/components",
+      "pass": true
+    },
+    {
+      "check": "row_evidence_hash:('FSV-S04', 'P2P_STYLE'):generation.json",
+      "pass": true
+    },
+    {
+      "check": "row_pointer_resolves:('FSV-S04', 'P2P_STYLE'):/rego",
+      "pass": true
+    },
+    {
+      "check": "row_evidence_hash:('FSV-S04', 'P2P_STYLE'):repair.json",
+      "pass": true
+    },
+    {
+      "check": "row_pointer_resolves:('FSV-S04', 'P2P_STYLE'):/rego",
+      "pass": true
+    },
+    {
+      "check": "R2_display_status:('FSV-S04', 'AUTOPAC_STYLE')",
+      "pass": true
+    },
+    {
+      "check": "R2_display_symbol:('FSV-S04', 'AUTOPAC_STYLE')",
+      "pass": true
+    },
+    {
+      "check": "R2_project_batch:('FSV-S04', 'AUTOPAC_STYLE')",
+      "pass": true
+    },
+    {
+      "check": "row_evidence_hash:('FSV-S04', 'AUTOPAC_STYLE'):generation.json",
+      "pass": true
+    },
+    {
+      "check": "row_pointer_resolves:('FSV-S04', 'AUTOPAC_STYLE'):/rego",
+      "pass": true
+    },
+    {
+      "check": "row_evidence_hash:('FSV-S04', 'AUTOPAC_STYLE'):judge.json",
+      "pass": true
+    },
+    {
+      "check": "row_evidence_hash:('FSV-S04', 'AUTOPAC_STYLE'):prompt.txt",
+      "pass": true
+    },
+    {
+      "check": "row_evidence_hash:('FSV-S04', 'AUTOPAC_STYLE'):repair.json",
+      "pass": true
+    },
+    {
+      "check": "row_pointer_resolves:('FSV-S04', 'AUTOPAC_STYLE'):/rego",
+      "pass": true
+    },
+    {
+      "check": "row_evidence_hash:('FSV-S04', 'AUTOPAC_STYLE'):SUMMARY.json",
+      "pass": true
+    },
+    {
+      "check": "R2_display_status:('FSV-S03', 'ECAS_MATCHED')",
+      "pass": true
+    },
+    {
+      "check": "R2_display_symbol:('FSV-S03', 'ECAS_MATCHED')",
+      "pass": true
+    },
+    {
+      "check": "R2_project_batch:('FSV-S03', 'ECAS_MATCHED')",
+      "pass": true
+    },
+    {
+      "check": "row_evidence_hash:('FSV-S03', 'ECAS_MATCHED'):first_candidate.json",
+      "pass": true
+    },
+    {
+      "check": "row_evidence_hash:('FSV-S03', 'ECAS_MATCHED'):admitted_policy.json",
+      "pass": true
+    },
+    {
+      "check": "row_evidence_hash:('FSV-S03', 'ECAS_MATCHED'):CHECKS.json",
+      "pass": true
+    },
+    {
+      "check": "row_evidence_hash:('FSV-S03', 'ECAS_MATCHED'):RESULT.json",
+      "pass": true
+    },
+    {
+      "check": "R2_display_status:('FSV-S03', 'P2P_STYLE')",
+      "pass": true
+    },
+    {
+      "check": "R2_display_symbol:('FSV-S03', 'P2P_STYLE')",
+      "pass": true
+    },
+    {
+      "check": "R2_project_batch:('FSV-S03', 'P2P_STYLE')",
+      "pass": true
+    },
+    {
+      "check": "row_evidence_hash:('FSV-S03', 'P2P_STYLE'):p2p_detect.json",
+      "pass": true
+    },
+    {
+      "check": "row_evidence_hash:('FSV-S03', 'P2P_STYLE'):RESULT.json",
+      "pass": true
+    },
+    {
+      "check": "R2_display_status:('FSV-S03', 'AUTOPAC_STYLE')",
+      "pass": true
+    },
+    {
+      "check": "R2_display_symbol:('FSV-S03', 'AUTOPAC_STYLE')",
+      "pass": true
+    },
+    {
+      "check": "R2_project_batch:('FSV-S03', 'AUTOPAC_STYLE')",
+      "pass": true
+    },
+    {
+      "check": "row_evidence_hash:('FSV-S03', 'AUTOPAC_STYLE'):autopac_generate.json",
+      "pass": true
+    },
+    {
+      "check": "row_evidence_hash:('FSV-S03', 'AUTOPAC_STYLE'):autopac_judge.json",
+      "pass": true
+    },
+    {
+      "check": "row_evidence_hash:('FSV-S03', 'AUTOPAC_STYLE'):original.rego",
+      "pass": true
+    },
+    {
+      "check": "row_evidence_hash:('FSV-S03', 'AUTOPAC_STYLE'):CHECKS.json",
+      "pass": true
+    },
+    {
+      "check": "row_evidence_hash:('FSV-S03', 'AUTOPAC_STYLE'):repair.json",
+      "pass": true
+    },
+    {
+      "check": "row_evidence_hash:('FSV-S03', 'AUTOPAC_STYLE'):original.rego",
+      "pass": true
+    },
+    {
+      "check": "row_evidence_hash:('FSV-S03', 'AUTOPAC_STYLE'):CHECKS.json",
+      "pass": true
+    },
+    {
+      "check": "row_evidence_hash:('FSV-S03', 'AUTOPAC_STYLE'):RESULT.json",
+      "pass": true
+    },
+    {
+      "check": "R2_display_status:('FSV-B13', 'ECAS_MATCHED')",
+      "pass": true
+    },
+    {
+      "check": "R2_display_symbol:('FSV-B13', 'ECAS_MATCHED')",
+      "pass": true
+    },
+    {
+      "check": "R2_project_batch:('FSV-B13', 'ECAS_MATCHED')",
+      "pass": true
+    },
+    {
+      "check": "row_evidence_hash:('FSV-B13', 'ECAS_MATCHED'):first_candidate.json",
+      "pass": true
+    },
+    {
+      "check": "row_evidence_hash:('FSV-B13', 'ECAS_MATCHED'):admitted_policy.json",
+      "pass": true
+    },
+    {
+      "check": "row_evidence_hash:('FSV-B13', 'ECAS_MATCHED'):CHECKS.json",
+      "pass": true
+    },
+    {
+      "check": "row_evidence_hash:('FSV-B13', 'ECAS_MATCHED'):RESULT.json",
+      "pass": true
+    },
+    {
+      "check": "R2_display_status:('FSV-B13', 'P2P_STYLE')",
+      "pass": true
+    },
+    {
+      "check": "R2_display_symbol:('FSV-B13', 'P2P_STYLE')",
+      "pass": true
+    },
+    {
+      "check": "R2_project_batch:('FSV-B13', 'P2P_STYLE')",
+      "pass": true
+    },
+    {
+      "check": "row_evidence_hash:('FSV-B13', 'P2P_STYLE'):p2p_detect.json",
+      "pass": true
+    },
+    {
+      "check": "row_evidence_hash:('FSV-B13', 'P2P_STYLE'):p2p_extract.json",
+      "pass": true
+    },
+    {
+      "check": "row_evidence_hash:('FSV-B13', 'P2P_STYLE'):p2p_rego.json",
+      "pass": true
+    },
+    {
+      "check": "row_evidence_hash:('FSV-B13', 'P2P_STYLE'):original.rego",
+      "pass": true
+    },
+    {
+      "check": "row_evidence_hash:('FSV-B13', 'P2P_STYLE'):CHECKS.json",
+      "pass": true
+    },
+    {
+      "check": "row_evidence_hash:('FSV-B13', 'P2P_STYLE'):RESULT.json",
+      "pass": true
+    },
+    {
+      "check": "R2_display_status:('FSV-B13', 'AUTOPAC_STYLE')",
+      "pass": true
+    },
+    {
+      "check": "R2_display_symbol:('FSV-B13', 'AUTOPAC_STYLE')",
+      "pass": true
+    },
+    {
+      "check": "R2_project_batch:('FSV-B13', 'AUTOPAC_STYLE')",
+      "pass": true
+    },
+    {
+      "check": "row_evidence_hash:('FSV-B13', 'AUTOPAC_STYLE'):autopac_generate.json",
+      "pass": true
+    },
+    {
+      "check": "row_evidence_hash:('FSV-B13', 'AUTOPAC_STYLE'):autopac_judge.json",
+      "pass": true
+    },
+    {
+      "check": "row_evidence_hash:('FSV-B13', 'AUTOPAC_STYLE'):original.rego",
+      "pass": true
+    },
+    {
+      "check": "row_evidence_hash:('FSV-B13', 'AUTOPAC_STYLE'):CHECKS.json",
+      "pass": true
+    },
+    {
+      "check": "row_evidence_hash:('FSV-B13', 'AUTOPAC_STYLE'):RESULT.json",
+      "pass": true
+    },
+    {
+      "check": "R2_display_status:('FSV-B17', 'ECAS_MATCHED')",
+      "pass": true
+    },
+    {
+      "check": "R2_display_symbol:('FSV-B17', 'ECAS_MATCHED')",
+      "pass": true
+    },
+    {
+      "check": "R2_project_batch:('FSV-B17', 'ECAS_MATCHED')",
+      "pass": true
+    },
+    {
+      "check": "row_evidence_hash:('FSV-B17', 'ECAS_MATCHED'):first_candidate.json",
+      "pass": true
+    },
+    {
+      "check": "row_evidence_hash:('FSV-B17', 'ECAS_MATCHED'):admitted_policy.json",
+      "pass": true
+    },
+    {
+      "check": "row_evidence_hash:('FSV-B17', 'ECAS_MATCHED'):CHECKS.json",
+      "pass": true
+    },
+    {
+      "check": "row_evidence_hash:('FSV-B17', 'ECAS_MATCHED'):RESULT.json",
+      "pass": true
+    },
+    {
+      "check": "R2_display_status:('FSV-B17', 'P2P_STYLE')",
+      "pass": true
+    },
+    {
+      "check": "R2_display_symbol:('FSV-B17', 'P2P_STYLE')",
+      "pass": true
+    },
+    {
+      "check": "R2_project_batch:('FSV-B17', 'P2P_STYLE')",
+      "pass": true
+    },
+    {
+      "check": "row_evidence_hash:('FSV-B17', 'P2P_STYLE'):p2p_detect.json",
+      "pass": true
+    },
+    {
+      "check": "row_evidence_hash:('FSV-B17', 'P2P_STYLE'):p2p_extract.json",
+      "pass": true
+    },
+    {
+      "check": "row_evidence_hash:('FSV-B17', 'P2P_STYLE'):p2p_rego.json",
+      "pass": true
+    },
+    {
+      "check": "row_evidence_hash:('FSV-B17', 'P2P_STYLE'):original.rego",
+      "pass": true
+    },
+    {
+      "check": "row_evidence_hash:('FSV-B17', 'P2P_STYLE'):CHECKS.json",
+      "pass": true
+    },
+    {
+      "check": "row_evidence_hash:('FSV-B17', 'P2P_STYLE'):RESULT.json",
+      "pass": true
+    },
+    {
+      "check": "R2_display_status:('FSV-B17', 'AUTOPAC_STYLE')",
+      "pass": true
+    },
+    {
+      "check": "R2_display_symbol:('FSV-B17', 'AUTOPAC_STYLE')",
+      "pass": true
+    },
+    {
+      "check": "R2_project_batch:('FSV-B17', 'AUTOPAC_STYLE')",
+      "pass": true
+    },
+    {
+      "check": "row_evidence_hash:('FSV-B17', 'AUTOPAC_STYLE'):autopac_generate.json",
+      "pass": true
+    },
+    {
+      "check": "row_evidence_hash:('FSV-B17', 'AUTOPAC_STYLE'):autopac_judge.json",
+      "pass": true
+    },
+    {
+      "check": "row_evidence_hash:('FSV-B17', 'AUTOPAC_STYLE'):original.rego",
+      "pass": true
+    },
+    {
+      "check": "row_evidence_hash:('FSV-B17', 'AUTOPAC_STYLE'):CHECKS.json",
+      "pass": true
+    },
+    {
+      "check": "row_evidence_hash:('FSV-B17', 'AUTOPAC_STYLE'):RESULT.json",
+      "pass": true
+    },
+    {
+      "check": "R2_display_status:('FSV-B19', 'ECAS_MATCHED')",
+      "pass": true
+    },
+    {
+      "check": "R2_display_symbol:('FSV-B19', 'ECAS_MATCHED')",
+      "pass": true
+    },
+    {
+      "check": "R2_project_batch:('FSV-B19', 'ECAS_MATCHED')",
+      "pass": true
+    },
+    {
+      "check": "row_evidence_hash:('FSV-B19', 'ECAS_MATCHED'):first_candidate.json",
+      "pass": true
+    },
+    {
+      "check": "row_evidence_hash:('FSV-B19', 'ECAS_MATCHED'):admitted_policy.json",
+      "pass": true
+    },
+    {
+      "check": "row_evidence_hash:('FSV-B19', 'ECAS_MATCHED'):CHECKS.json",
+      "pass": true
+    },
+    {
+      "check": "row_evidence_hash:('FSV-B19', 'ECAS_MATCHED'):RESULT.json",
+      "pass": true
+    },
+    {
+      "check": "R2_display_status:('FSV-B19', 'P2P_STYLE')",
+      "pass": true
+    },
+    {
+      "check": "R2_display_symbol:('FSV-B19', 'P2P_STYLE')",
+      "pass": true
+    },
+    {
+      "check": "R2_project_batch:('FSV-B19', 'P2P_STYLE')",
+      "pass": true
+    },
+    {
+      "check": "row_evidence_hash:('FSV-B19', 'P2P_STYLE'):p2p_detect.json",
+      "pass": true
+    },
+    {
+      "check": "row_evidence_hash:('FSV-B19', 'P2P_STYLE'):p2p_extract.json",
+      "pass": true
+    },
+    {
+      "check": "row_evidence_hash:('FSV-B19', 'P2P_STYLE'):p2p_rego.json",
+      "pass": true
+    },
+    {
+      "check": "row_evidence_hash:('FSV-B19', 'P2P_STYLE'):original.rego",
+      "pass": true
+    },
+    {
+      "check": "row_evidence_hash:('FSV-B19', 'P2P_STYLE'):CHECKS.json",
+      "pass": true
+    },
+    {
+      "check": "row_evidence_hash:('FSV-B19', 'P2P_STYLE'):RESULT.json",
+      "pass": true
+    },
+    {
+      "check": "R2_display_status:('FSV-B19', 'AUTOPAC_STYLE')",
+      "pass": true
+    },
+    {
+      "check": "R2_display_symbol:('FSV-B19', 'AUTOPAC_STYLE')",
+      "pass": true
+    },
+    {
+      "check": "R2_project_batch:('FSV-B19', 'AUTOPAC_STYLE')",
+      "pass": true
+    },
+    {
+      "check": "row_evidence_hash:('FSV-B19', 'AUTOPAC_STYLE'):autopac_generate.json",
+      "pass": true
+    },
+    {
+      "check": "row_evidence_hash:('FSV-B19', 'AUTOPAC_STYLE'):autopac_judge.json",
+      "pass": true
+    },
+    {
+      "check": "row_evidence_hash:('FSV-B19', 'AUTOPAC_STYLE'):original.rego",
+      "pass": true
+    },
+    {
+      "check": "row_evidence_hash:('FSV-B19', 'AUTOPAC_STYLE'):CHECKS.json",
+      "pass": true
+    },
+    {
+      "check": "row_evidence_hash:('FSV-B19', 'AUTOPAC_STYLE'):RESULT.json",
+      "pass": true
+    },
+    {
+      "check": "S03_integer_intent_in_actual_initial_policy",
+      "pass": true
+    },
+    {
+      "check": "S03_initial_and_repair_compile_failures",
+      "pass": true
+    },
+    {
+      "check": "S03_static_optional_presence_risk_not_execution",
+      "pass": true
+    },
+    {
+      "check": "S03_source_age_integer_not_required",
+      "pass": true
+    },
+    {
+      "check": "S03_objective_excludes_presence",
+      "pass": true
+    },
+    {
+      "check": "S03_ECAS_integer_skip",
+      "pass": true
+    },
+    {
+      "check": "S02_closed_world_source_gap",
+      "pass": true
+    },
+    {
+      "check": "FSV-S02_scope_out_not_wrong_generated_policy",
+      "pass": true
+    },
+    {
+      "check": "FSV-S03_scope_out_not_wrong_generated_policy",
+      "pass": true
+    },
+    {
+      "check": "B06_Judge_scope_contribution",
+      "pass": true
+    },
+    {
+      "check": "B06_repair_not_explicit_type_discriminator",
+      "pass": true
+    },
+    {
+      "check": "B19_source_default_All_visible",
+      "pass": true
+    },
+    {
+      "check": "B19_ABI_string_no_enum",
+      "pass": true
+    },
+    {
+      "check": "B19_adapter_trusted_unchanged",
+      "pass": true
+    },
+    {
+      "check": "B19_ECAS_allows_false_or_Payments_no_explicit_default",
+      "pass": true
+    },
+    {
+      "check": "B19_baseline_known_type_block:P2P_STYLE",
+      "pass": true
+    },
+    {
+      "check": "B19_baseline_known_type_block:AUTOPAC_STYLE",
+      "pass": true
+    },
+    {
+      "check": "both_reports_preserve_S02_boundary",
+      "pass": true
+    },
+    {
+      "check": "both_reports_preserve_S03_static_risk",
+      "pass": true
+    },
+    {
+      "check": "both_reports_preserve_B19_not_default_extraction",
+      "pass": true
+    },
+    {
+      "check": "both_reports_preserve_B19_production_unknown",
+      "pass": true
+    },
+    {
+      "check": "R3_history_not_new_experiment",
+      "pass": true
+    },
+    {
+      "check": "R3_scope_not_native_or_generalized",
+      "pass": true
+    },
+    {
+      "check": "neither_report_claims_unique_semantic_understanding",
+      "pass": true
+    }
+  ],
+  "failures": [],
+  "directly_read_evidence": [
+    {
+      "path": "D:\\lunwen\\EC-CSI投稿\\working\\exploration\\20261014_matched_evidence_labor\\matched_generation\\method_runs\\FSV-S03\\AUTOPAC_STYLE\\autopac_generate.json",
+      "sha256": "49416e3a7f0eeb853daa473c63dc6c71aaae1c7b2fbc0fdfb39d5a54018e379d"
+    },
+    {
+      "path": "D:\\lunwen\\EC-CSI投稿\\working\\exploration\\20261014_matched_evidence_labor\\matched_generation\\method_runs\\FSV-S03\\AUTOPAC_STYLE\\repair.json",
+      "sha256": "b9f40ec0986a70ef47902a3edbb199f6d34f7aed23e4c589330ed3b53f49f68b"
+    },
+    {
+      "path": "D:\\lunwen\\EC-CSI投稿\\working\\exploration\\20261014_matched_evidence_labor\\matched_generation\\method_runs\\FSV-S03\\AUTOPAC_STYLE\\initial\\CHECKS.json",
+      "sha256": "424e7b23ee91e1690a3dbd6ccd24f175eaea4d28081bc12b84ce3e2e807b3cfe"
+    },
+    {
+      "path": "D:\\lunwen\\EC-CSI投稿\\working\\exploration\\20261014_matched_evidence_labor\\matched_generation\\method_runs\\FSV-S03\\AUTOPAC_STYLE\\repaired\\CHECKS.json",
+      "sha256": "4a4b3bfa49c37e9d448729fdfa0423c06a3f7ad30b60f813dd778db8bc1b6dff"
+    },
+    {
+      "path": "D:\\lunwen\\EC-CSI投稿\\working\\exploration\\20261014_matched_evidence_labor\\matched_generation\\generation_inputs\\FSV-S03\\packet.json",
+      "sha256": "acddb441ffde6b492d77d8964ce22ba69bf037eb164daa9f8674ca1e4a8f596a"
+    },
+    {
+      "path": "D:\\lunwen\\EC-CSI投稿\\working\\exploration\\20261014_matched_evidence_labor\\matched_generation\\method_runs\\FSV-S03\\ECAS_MATCHED\\first_candidate.json",
+      "sha256": "12ea58385028e162ad95d0661f77b6468c329462dd3900b963f82b5117ab4890"
+    },
+    {
+      "path": "D:\\lunwen\\EC-CSI投稿\\working\\exploration\\20261014_external_baseline_pilot\\generation_inputs\\FSV-S02\\packet.json",
+      "sha256": "5c8de100a097aa1cae1c236a1d9d7771e8c1e175d9c8601abc9d319dafca9611"
+    },
+    {
+      "path": "D:\\lunwen\\EC-CSI投稿\\working\\exploration\\20261014_external_baseline_pilot\\effect_runs\\FSV-S02\\P2P_STYLE\\detection.json",
+      "sha256": "d17c721cf1770dd1a29cc9bd28fc497c0135ef69f57e1dd99f5481295ea19b8e"
+    },
+    {
+      "path": "D:\\lunwen\\EC-CSI投稿\\working\\exploration\\20261014_matched_evidence_labor\\matched_generation\\method_runs\\FSV-S03\\P2P_STYLE\\p2p_detect.json",
+      "sha256": "9466c5a07f00a39cb5956afce3112d58331974814f8e49cc7b6a0fc42e84d46e"
+    },
+    {
+      "path": "D:\\lunwen\\EC-CSI投稿\\working\\exploration\\20261014_external_baseline_pilot\\effect_runs\\FSV-B06\\AUTOPAC_STYLE\\judge.json",
+      "sha256": "04f209999292dd80e6379b4046fda98b58a6e1da190e56ce866de1ac2747159b"
+    },
+    {
+      "path": "D:\\lunwen\\EC-CSI投稿\\working\\exploration\\20261014_external_baseline_pilot\\effect_runs\\FSV-B06\\AUTOPAC_STYLE\\repair.json",
+      "sha256": "f6fe3771a552f22547be4de54648f2aa05eb655adff78193caea3a951221ed52"
+    },
+    {
+      "path": "D:\\lunwen\\EC-CSI投稿\\working\\exploration\\20261014_matched_evidence_labor\\matched_generation\\generation_inputs\\FSV-B19\\packet.json",
+      "sha256": "10c5597e97e4190aa041c53aa3aee8b4c1c48fa77d073bfb4fb5eb5a64a346fd"
+    },
+    {
+      "path": "D:\\lunwen\\EC-CSI投稿\\working\\exploration\\20261014_matched_evidence_labor\\matched_generation\\method_runs\\FSV-B19\\ECAS_MATCHED\\first_candidate.json",
+      "sha256": "2d09501af519f2aa3a459adc4e9df36db1fa0b76332bd72c73189b019e369e90"
+    },
+    {
+      "path": "D:\\lunwen\\EC-CSI投稿\\working\\exploration\\20261014_matched_evidence_labor\\matched_generation\\method_runs\\FSV-B19\\P2P_STYLE\\initial\\original.rego",
+      "sha256": "bd9dee0463bd7c56b64639c048595efa412fa3c5f169d5a095135c7f8057e108"
+    },
+    {
+      "path": "D:\\lunwen\\EC-CSI投稿\\working\\exploration\\20261014_matched_evidence_labor\\matched_generation\\method_runs\\FSV-B19\\AUTOPAC_STYLE\\initial\\original.rego",
+      "sha256": "0ce13fdc20750fcc8d77f47a8abc66e0e29de746a752f3cf52d56a764e8ba083"
+    }
+  ],
+  "limits": [
+    "B06操作范围仍未闭合。",
+    "S02闭集白名单原文依据仍未闭合。",
+    "S03缺值风险来自静态阅读，没有执行失败政策来虚构缺值拒绝。",
+    "B19来源默认值、ABI与生产可达性必须分列；结果一致不证明显式提取默认值。",
+    "原先机制干预与模型批次仅引用，不重复记本轮产出。",
+    "当前为事后、暴露任务、适配流程核读，不提供准确率或普适优势证据。"
+  ]
+}

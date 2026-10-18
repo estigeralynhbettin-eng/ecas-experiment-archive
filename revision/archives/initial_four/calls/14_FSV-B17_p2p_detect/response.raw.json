@@ -1,0 +1,28 @@
+{
+  "choices": [
+    {
+      "finish_reason": "stop",
+      "index": 0,
+      "message": {
+        "content": "{\"begin\":\"BEGIN_FSV-B17_p2p_detect_MAIN\",\"stage\":\"p2p_detect\",\"output\":{\"status\":\"READY\",\"statements\":[{\"text\":\"You can disallow sales orders and sales invoices against a customer by clicking on 'Disabled'.\",\"evidence_refs\":[\"VIS-FSV-B17-01\"]}],\"reason\":\"The source explicitly provides an access policy statement for disallowing sales orders against disabled customers.\"},\"end\":\"END_FSV-B17_p2p_detect_MAIN\"}",
+        "role": "assistant"
+      }
+    }
+  ],
+  "created": 1791978725,
+  "id": "20261014195158e8ddb0ad60ee4272",
+  "model": "glm-5.2",
+  "object": "chat.completion",
+  "request_id": "20261014195158e8ddb0ad60ee4272",
+  "usage": {
+    "completion_tokens": 717,
+    "completion_tokens_details": {
+      "reasoning_tokens": 578
+    },
+    "prompt_tokens": 3129,
+    "prompt_tokens_details": {
+      "cached_tokens": 0
+    },
+    "total_tokens": 3846
+  }
+}

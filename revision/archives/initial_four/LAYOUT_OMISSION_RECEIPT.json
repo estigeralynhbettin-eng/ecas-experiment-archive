@@ -1,0 +1,770 @@
+{
+  "model_calls": 0,
+  "excluded_types": [
+    "Button",
+    "Column Break",
+    "Fold",
+    "HTML",
+    "Section Break",
+    "Tab Break"
+  ],
+  "changes": [
+    {
+      "task": "FSV-B13",
+      "source": "erpnext-stock-settings-doctype.json",
+      "original_fields": 79,
+      "retained_data_fields": 47,
+      "omitted_widgets": [
+        [
+          "column_break_4",
+          "Column Break",
+          {}
+        ],
+        [
+          "section_break_7",
+          "Section Break",
+          {}
+        ],
+        [
+          "auto_material_request",
+          "Section Break",
+          {}
+        ],
+        [
+          "inter_warehouse_transfer_settings_section",
+          "Section Break",
+          {}
+        ],
+        [
+          "column_break_26",
+          "Column Break",
+          {}
+        ],
+        [
+          "control_historical_stock_transactions_section",
+          "Section Break",
+          {}
+        ],
+        [
+          "item_defaults_section",
+          "Section Break",
+          {}
+        ],
+        [
+          "section_break_9",
+          "Section Break",
+          {}
+        ],
+        [
+          "column_break_12",
+          "Column Break",
+          {}
+        ],
+        [
+          "column_break_27",
+          "Column Break",
+          {}
+        ],
+        [
+          "column_break_31",
+          "Column Break",
+          {}
+        ],
+        [
+          "quality_inspection_settings_section",
+          "Section Break",
+          {}
+        ],
+        [
+          "defaults_tab",
+          "Tab Break",
+          {}
+        ],
+        [
+          "stock_validations_tab",
+          "Tab Break",
+          {}
+        ],
+        [
+          "stock_planning_tab",
+          "Tab Break",
+          {}
+        ],
+        [
+          "stock_closing_tab",
+          "Tab Break",
+          {}
+        ],
+        [
+          "serial_and_batch_item_settings_tab",
+          "Tab Break",
+          {}
+        ],
+        [
+          "column_break_23",
+          "Column Break",
+          {}
+        ],
+        [
+          "price_list_defaults_section",
+          "Section Break",
+          {}
+        ],
+        [
+          "column_break_121",
+          "Column Break",
+          {}
+        ],
+        [
+          "stock_reservation_tab",
+          "Tab Break",
+          {}
+        ],
+        [
+          "column_break_rx3e",
+          "Column Break",
+          {}
+        ],
+        [
+          "column_break_mhzc",
+          "Column Break",
+          {}
+        ],
+        [
+          "serial_and_batch_reservation_section",
+          "Section Break",
+          {}
+        ],
+        [
+          "conversion_factor_section",
+          "Section Break",
+          {}
+        ],
+        [
+          "column_break_lznj",
+          "Column Break",
+          {}
+        ],
+        [
+          "serial_and_batch_bundle_section",
+          "Section Break",
+          {}
+        ],
+        [
+          "section_break_gnhq",
+          "Section Break",
+          {}
+        ],
+        [
+          "column_break_wslv",
+          "Column Break",
+          {}
+        ],
+        [
+          "section_break_ylhd",
+          "Section Break",
+          {}
+        ],
+        [
+          "quality_tab",
+          "Tab Break",
+          {}
+        ],
+        [
+          "section_break_uiau",
+          "Section Break",
+          {}
+        ]
+      ]
+    },
+    {
+      "task": "FSV-B17",
+      "source": "erpnext-customer-doctype.json",
+      "original_fields": 80,
+      "retained_data_fields": 49,
+      "omitted_widgets": [
+        [
+          "basic_info",
+          "Section Break",
+          {
+            "options": "fa fa-user"
+          }
+        ],
+        [
+          "column_break0",
+          "Column Break",
+          {}
+        ],
+        [
+          "column_break_14",
+          "Column Break",
+          {}
+        ],
+        [
+          "address_contacts",
+          "Section Break",
+          {
+            "options": "fa fa-map-marker"
+          }
+        ],
+        [
+          "address_html",
+          "HTML",
+          {
+            "read_only": 1
+          }
+        ],
+        [
+          "column_break1",
+          "Column Break",
+          {}
+        ],
+        [
+          "contact_html",
+          "HTML",
+          {
+            "read_only": 1
+          }
+        ],
+        [
+          "primary_address_and_contact_detail",
+          "Section Break",
+          {}
+        ],
+        [
+          "column_break_26",
+          "Column Break",
+          {}
+        ],
+        [
+          "default_receivable_accounts",
+          "Section Break",
+          {}
+        ],
+        [
+          "credit_limit_section",
+          "Section Break",
+          {}
+        ],
+        [
+          "more_info",
+          "Section Break",
+          {
+            "options": "fa fa-file-text"
+          }
+        ],
+        [
+          "column_break_45",
+          "Column Break",
+          {}
+        ],
+        [
+          "sales_team_section",
+          "Section Break",
+          {}
+        ],
+        [
+          "contact_and_address_tab",
+          "Tab Break",
+          {}
+        ],
+        [
+          "defaults_tab",
+          "Section Break",
+          {}
+        ],
+        [
+          "settings_tab",
+          "Tab Break",
+          {}
+        ],
+        [
+          "sales_team_tab",
+          "Tab Break",
+          {
+            "options": "fa fa-group"
+          }
+        ],
+        [
+          "column_break_66",
+          "Column Break",
+          {}
+        ],
+        [
+          "column_break_21",
+          "Column Break",
+          {}
+        ],
+        [
+          "dashboard_tab",
+          "Tab Break",
+          {}
+        ],
+        [
+          "column_break_53",
+          "Column Break",
+          {}
+        ],
+        [
+          "loyalty_points_tab",
+          "Section Break",
+          {}
+        ],
+        [
+          "taxation_section",
+          "Section Break",
+          {}
+        ],
+        [
+          "accounting_tab",
+          "Tab Break",
+          {}
+        ],
+        [
+          "tax_tab",
+          "Tab Break",
+          {}
+        ],
+        [
+          "internal_customer_section",
+          "Section Break",
+          {}
+        ],
+        [
+          "column_break_70",
+          "Column Break",
+          {}
+        ],
+        [
+          "column_break_54",
+          "Column Break",
+          {}
+        ],
+        [
+          "portal_users_tab",
+          "Tab Break",
+          {}
+        ],
+        [
+          "column_break_nwor",
+          "Column Break",
+          {}
+        ]
+      ]
+    },
+    {
+      "task": "FSV-B19",
+      "source": "erpnext-supplier-doctype.json",
+      "original_fields": 66,
+      "retained_data_fields": 40,
+      "omitted_widgets": [
+        [
+          "column_break0",
+          "Column Break",
+          {}
+        ],
+        [
+          "column_break_10",
+          "Column Break",
+          {}
+        ],
+        [
+          "address_contacts",
+          "Section Break",
+          {
+            "options": "fa fa-map-marker"
+          }
+        ],
+        [
+          "address_html",
+          "HTML",
+          {
+            "read_only": 1
+          }
+        ],
+        [
+          "column_break1",
+          "Column Break",
+          {}
+        ],
+        [
+          "contact_html",
+          "HTML",
+          {
+            "read_only": 1
+          }
+        ],
+        [
+          "column_break2",
+          "Section Break",
+          {}
+        ],
+        [
+          "column_break_30",
+          "Column Break",
+          {}
+        ],
+        [
+          "primary_address_and_contact_detail_section",
+          "Section Break",
+          {}
+        ],
+        [
+          "column_break_44",
+          "Column Break",
+          {}
+        ],
+        [
+          "dashboard_tab",
+          "Tab Break",
+          {}
+        ],
+        [
+          "settings_tab",
+          "Tab Break",
+          {}
+        ],
+        [
+          "contact_and_address_tab",
+          "Tab Break",
+          {}
+        ],
+        [
+          "accounting_tab",
+          "Tab Break",
+          {}
+        ],
+        [
+          "defaults_section",
+          "Section Break",
+          {}
+        ],
+        [
+          "tax_tab",
+          "Tab Break",
+          {}
+        ],
+        [
+          "internal_supplier_section",
+          "Section Break",
+          {}
+        ],
+        [
+          "column_break_16",
+          "Column Break",
+          {}
+        ],
+        [
+          "column_break_27",
+          "Column Break",
+          {}
+        ],
+        [
+          "column_break_54",
+          "Column Break",
+          {}
+        ],
+        [
+          "block_supplier_section",
+          "Section Break",
+          {}
+        ],
+        [
+          "column_break_59",
+          "Column Break",
+          {}
+        ],
+        [
+          "default_accounts_section",
+          "Section Break",
+          {}
+        ],
+        [
+          "portal_users_tab",
+          "Tab Break",
+          {}
+        ],
+        [
+          "column_break_1mqv",
+          "Column Break",
+          {}
+        ],
+        [
+          "column_break_mglr",
+          "Column Break",
+          {}
+        ]
+      ]
+    },
+    {
+      "task": "FSV-B19",
+      "source": "erpnext-purchase-order-doctype.json",
+      "original_fields": 154,
+      "retained_data_fields": 104,
+      "omitted_widgets": [
+        [
+          "supplier_section",
+          "Section Break",
+          {
+            "options": "fa fa-user"
+          }
+        ],
+        [
+          "get_items_from_open_material_requests",
+          "Button",
+          {}
+        ],
+        [
+          "column_break1",
+          "Column Break",
+          {}
+        ],
+        [
+          "drop_ship",
+          "Tab Break",
+          {}
+        ],
+        [
+          "column_break_19",
+          "Column Break",
+          {}
+        ],
+        [
+          "section_addresses",
+          "Section Break",
+          {}
+        ],
+        [
+          "col_break_address",
+          "Column Break",
+          {}
+        ],
+        [
+          "currency_and_price_list",
+          "Section Break",
+          {
+            "options": "fa fa-tag"
+          }
+        ],
+        [
+          "cb_price_list",
+          "Column Break",
+          {}
+        ],
+        [
+          "items_section",
+          "Section Break",
+          {
+            "options": "fa fa-shopping-cart"
+          }
+        ],
+        [
+          "section_break_48",
+          "Section Break",
+          {}
+        ],
+        [
+          "raw_material_details",
+          "Section Break",
+          {}
+        ],
+        [
+          "sb_last_purchase",
+          "Section Break",
+          {}
+        ],
+        [
+          "column_break_26",
+          "Column Break",
+          {}
+        ],
+        [
+          "taxes_section",
+          "Section Break",
+          {
+            "options": "fa fa-money"
+          }
+        ],
+        [
+          "column_break_50",
+          "Column Break",
+          {}
+        ],
+        [
+          "section_break_52",
+          "Section Break",
+          {}
+        ],
+        [
+          "sec_tax_breakup",
+          "Section Break",
+          {}
+        ],
+        [
+          "totals",
+          "Section Break",
+          {
+            "options": "fa fa-money"
+          }
+        ],
+        [
+          "column_break_39",
+          "Column Break",
+          {}
+        ],
+        [
+          "discount_section",
+          "Section Break",
+          {}
+        ],
+        [
+          "column_break_45",
+          "Column Break",
+          {}
+        ],
+        [
+          "totals_section",
+          "Section Break",
+          {}
+        ],
+        [
+          "column_break4",
+          "Column Break",
+          {}
+        ],
+        [
+          "payment_schedule_section",
+          "Section Break",
+          {}
+        ],
+        [
+          "terms_section_break",
+          "Section Break",
+          {
+            "options": "fa fa-legal"
+          }
+        ],
+        [
+          "column_break_74",
+          "Column Break",
+          {}
+        ],
+        [
+          "column_break5",
+          "Section Break",
+          {}
+        ],
+        [
+          "column_break_86",
+          "Column Break",
+          {}
+        ],
+        [
+          "subscription_section",
+          "Section Break",
+          {}
+        ],
+        [
+          "column_break_97",
+          "Column Break",
+          {}
+        ],
+        [
+          "update_auto_repeat_reference",
+          "Button",
+          {}
+        ],
+        [
+          "tracking_section",
+          "Section Break",
+          {}
+        ],
+        [
+          "column_break_75",
+          "Column Break",
+          {}
+        ],
+        [
+          "before_items_section",
+          "Section Break",
+          {}
+        ],
+        [
+          "items_col_break",
+          "Column Break",
+          {}
+        ],
+        [
+          "accounting_dimensions_section",
+          "Section Break",
+          {}
+        ],
+        [
+          "dimension_col_break",
+          "Column Break",
+          {}
+        ],
+        [
+          "terms_tab",
+          "Tab Break",
+          {}
+        ],
+        [
+          "more_info_tab",
+          "Tab Break",
+          {}
+        ],
+        [
+          "column_break_7",
+          "Column Break",
+          {}
+        ],
+        [
+          "column_break_40",
+          "Column Break",
+          {}
+        ],
+        [
+          "column_break_53",
+          "Column Break",
+          {}
+        ],
+        [
+          "address_and_contact_tab",
+          "Tab Break",
+          {}
+        ],
+        [
+          "company_billing_address_section",
+          "Section Break",
+          {}
+        ],
+        [
+          "additional_info_section",
+          "Section Break",
+          {}
+        ],
+        [
+          "column_break_99",
+          "Column Break",
+          {}
+        ],
+        [
+          "column_break_103",
+          "Column Break",
+          {}
+        ],
+        [
+          "shipping_address_section",
+          "Section Break",
+          {}
+        ],
+        [
+          "connections_tab",
+          "Tab Break",
+          {}
+        ]
+      ]
+    }
+  ]
+}
